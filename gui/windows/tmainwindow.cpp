@@ -146,6 +146,7 @@ void TMainWindow::checkBrowserButton(bool checked)
 
 void TMainWindow::setContextMenu(QMenu *menu)
 {
+    mTrayIcon->setContextMenu(menu);
     mContextMenu = menu;
 }
 
@@ -310,4 +311,12 @@ void TMainWindow::slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason
     } else if(reason==QSystemTrayIcon::DoubleClick) {
         emit requestRestoreWindow();
     }
+}
+
+void TMainWindow::contextMenuEvent(QContextMenuEvent *event)
+{
+    if(mContextMenu)
+        mContextMenu->popup(event->globalPos());
+
+    QMainWindow::contextMenuEvent(event);
 }

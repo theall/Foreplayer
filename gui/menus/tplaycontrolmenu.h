@@ -5,6 +5,8 @@
 
 class TPlayControlMenu : public TAbstractMenu
 {
+    Q_OBJECT
+
 public:
     TPlayControlMenu(QWidget *parent = 0);
 

@@ -47,6 +47,8 @@ TPlaymodeMenu::TPlaymodeMenu(QWidget *parent) :
 
 void TPlaymodeMenu::slotActionTriggered(bool triggered)
 {
+    Q_UNUSED(triggered)
+
     QAction *action = static_cast<QAction*>(sender());
 
     if(mLastActivedAction)

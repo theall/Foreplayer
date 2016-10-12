@@ -1,17 +1,14 @@
 #include <QApplication>
 
-#include "tguimanager.h"
-#include "skinloader.h"
-#include "timagebutton.h"
-#include "tvisualwidget.h"
-#include "tcontroller.h"
-#include "tplayercore.h"
+#include "gui/tguimanager.h"
+#include "controller/controller.h"
+#include "core/core.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    TPlayerCore core;
+    TCore core;
 
     TController controller;
 

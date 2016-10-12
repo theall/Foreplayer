@@ -1,22 +1,12 @@
 #include "tplaylistwindow.h"
 
-#include "tsplitter.h"
-
 TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     TAbstractWindow(parent),
     mToolbar(new TToolBar(this)),
-    mBtnClose(new TImageButton(this))
+    mBtnClose(new TImageButton(this)),
+    mCentralWidget(new TPlaylistWidget(this))
 {
     setObjectName("PlaylistWindow");
-
-    QVBoxLayout *layout = new QVBoxLayout(this);
-    TSplitter *splitter = new TSplitter(this);
-    splitter->addWidget(new QListView(this));
-    splitter->addWidget(new QTableView(this));
-
-    layout->addWidget(mBtnClose);
-    layout->addWidget(splitter);
-    layout->addWidget(mToolbar);
 
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
 
@@ -56,6 +46,7 @@ void TPlaylistWindow::resizeEvent(QResizeEvent *event)
     TAbstractWindow::resizeEvent(event);
 
     mBtnClose->updatePos();
-
     mToolbar->updatePos();
+    QRect rt = rect();
+    mCentralWidget->setGeometry(rt);
 }

@@ -1,5 +1,7 @@
 #include "tskinmenu.h"
 
+#define BUF_SIZE 256
+
 TSkinMenu::TSkinMenu(QWidget *parent) :
     TAbstractMenu(parent),
     mLastActivedAction(NULL)
@@ -23,15 +25,25 @@ void TSkinMenu::reload()
     QStringList fileList = dir.entryList(mNameFilter);
     for(auto file : fileList)
     {
-        skinNames.append(getSkinNameFromZip(file));
-        skinFullNames.append(file);
+        QString fullName = dir.absoluteFilePath(file);
+        QString s = getSkinNameFromZip(fullName);
+        if(s.isEmpty())
+            continue;
+
+        skinNames.append(s);
+        skinFullNames.append(fullName);
     }
 
     fileList = dir.entryList(QDir::Dirs|QDir::NoDot|QDir::NoDotDot);
     for(auto file : fileList)
     {
-        skinNames.append(getSkinNameFromXml(file+"/skin.xml"));
-        skinFullNames.append(file);
+        QString fullName = dir.absoluteFilePath(file+"/skin.xml");
+        QString s = getSkinNameFromXml(fullName);
+        if(s.isEmpty())
+            continue;
+
+        skinNames.append(s);
+        skinFullNames.append(fullName);
     }
 
     for(int i=0;i<skinNames.count();i++)
@@ -57,23 +69,31 @@ void TSkinMenu::slotSkinTriggered()
 
 QString TSkinMenu::getSkinNameFromZip(QString zipFile)
 {
+    Q_UNUSED(zipFile)
+
     return QString();
 }
 
 QString TSkinMenu::getSkinNameFromXml(QString xmlFile)
 {
     QString name;
-    QByteArray data;
     QFile file(xmlFile);
-    data.reserve(256);
-    int readed = file.read(data.data(), data.size());
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug()<<"Can't open the file"<<xmlFile;
+        return name;
+    }
+
+    char szBuf[BUF_SIZE];
+    int readed = file.read(szBuf, BUF_SIZE);
+    file.close();
     if(readed<1)
         return name;
 
-    name = data;
+    name = szBuf;
 
-    QRegExp reg("name *= *\"(.+?)\"", Qt::CaseInsensitive);
-    if (reg.indexIn(name) != -1) {
+    QRegExp reg("<skin +version *=.+ +name *= *\"(.+)\" *author", Qt::CaseInsensitive);
+    int pos = reg.indexIn(name);
+    if (pos > -1) {
         name = reg.cap(1);
     }
 
@@ -82,4 +102,11 @@ QString TSkinMenu::getSkinNameFromXml(QString xmlFile)
 
 void TSkinMenu::retranslateUi()
 {
+}
+
+void TSkinMenu::showEvent(QShowEvent *event)
+{
+    reload();
+
+    TAbstractMenu::showEvent(event);
 }

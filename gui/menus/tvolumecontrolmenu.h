@@ -5,6 +5,8 @@
 
 class TVolumeControlMenu : public TAbstractMenu
 {
+    Q_OBJECT
+
 public:
     TVolumeControlMenu(QWidget *parent = 0);
     ~TVolumeControlMenu();

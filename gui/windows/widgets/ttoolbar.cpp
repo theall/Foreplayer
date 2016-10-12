@@ -26,7 +26,7 @@ void TToolBar::setPixmaps(QPixmap normal, QPixmap hover)
     int x = 0;
     int iconWidth, pixmapWidth, pixmapHeight;
     pixmapWidth = normal.width();
-    pixmapHeight = hover.height();
+    pixmapHeight = normal.height();
     iconWidth = pixmapWidth / BUTTON_COUNT;
 
     setGeometry(0, 0, pixmapWidth, pixmapHeight);

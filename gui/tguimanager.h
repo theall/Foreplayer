@@ -55,6 +55,8 @@ private slots:
     void slotRequestToggleWindow();
     void slotRequestRestoreWindow();
     void slotExit();
+    void slotOnOpacityChanged(qreal value);
+    void slotRequestLoadSkin(QString skinFullName);
 
 private:
     TMainWindow *mMainWindow;

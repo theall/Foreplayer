@@ -29,6 +29,14 @@ int TEdge::distanceTo(TEdge *edge)
     return INVALID_DISTANCE;
 }
 
+int TEdge::parallelDistanceTo(TEdge *edge)
+{
+    if(direction != edge->direction)
+        return INVALID_DISTANCE;
+
+    return value-edge->value;
+}
+
 bool TEdge::gumTo(TEdge *edge)
 {
     if((value==edge->value) && ((from>=edge->from && from<=edge->to) || (to>=edge->from && to<=edge->to)))
@@ -340,7 +348,7 @@ void TAbstractWindow::updateEdges()
 
 void TAbstractWindow::paintEvent(QPaintEvent *event)
 {
-    Q_UNUSED(event)
+    QMainWindow::paintEvent(event);
 
     QPainter painter(this);
     mBackgound.draw(&painter, rect());

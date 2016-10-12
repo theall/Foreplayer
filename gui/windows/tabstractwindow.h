@@ -2,7 +2,8 @@
 #define TABSTRACTWINDOW_H
 
 #include "pch.h"
-#include "skinutils.h"
+
+#include "../skinutils.h"
 
 enum TEdgeType
 {
@@ -32,7 +33,12 @@ public:
 
     TEdge(int start, int end, int _value, TEdgeType _edgeType);
 
+    // This distance is parallel distance between two lines which nearby in vertical direction
     int distanceTo(TEdge *edge);
+
+    // This distance is parallel unity distance between two lines whatever where they are
+    int parallelDistanceTo(TEdge *edge);
+
     bool isCloseTo(TEdge *edge, int distance=EDGE_CHECK_WIDTH);
     bool gumTo(TEdge *edge);
     void setValue(int start, int end, int _value);

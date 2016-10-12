@@ -2,8 +2,9 @@
 #define TDESKTOPLYRICWINDOW_H
 
 #include "pch.h"
-#include "skinutils.h"
-#include "timagebutton.h"
+#include "../skinutils.h"
+
+#include "widgets/timagebutton.h"
 #include "tabstractwindow.h"
 
 class TDesktopLyricWindow : public TAbstractWindow

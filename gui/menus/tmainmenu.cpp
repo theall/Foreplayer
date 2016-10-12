@@ -40,6 +40,11 @@ TMainMenu::TMainMenu(QWidget *parent) :
     retranslateUi();
 }
 
+TMainMenu::~TMainMenu()
+{
+
+}
+
 TPlayControlMenu *TMainMenu::playControlMenu()
 {
     return mPlayingMenu;
@@ -67,7 +72,14 @@ TTransparentMenu *TMainMenu::transparentMenu()
 
 void TMainMenu::retranslateUi()
 {
+    mPlayingMenu->setTitle(tr("Play Control"));
+    mVolumeMenu->setTitle(tr("Volume Control"));
+    mPlaymodeMenu->setTitle(tr("Play Mode"));
     mViewMenu->setTitle(tr("View"));
+    mSkinMenu->setTitle(tr("Skins"));
+    mTransparentMenu->setTitle(tr("Transparent"));
+    mFullScreenMenu->setTitle(tr("Fullscreen"));
+    mAboutMenu->setTitle(tr("About"));
     mActionOptions->setText(tr("Options"));
     mActionExit->setText(tr("Exit"));
 }

@@ -19,6 +19,11 @@ TVolumeControlMenu::TVolumeControlMenu(QWidget *parent) :
     retranslateUi();
 }
 
+TVolumeControlMenu::~TVolumeControlMenu()
+{
+
+}
+
 void TVolumeControlMenu::retranslateUi()
 {
     mActionVolumeUp->setText(tr("Up"));

@@ -1,9 +1,10 @@
 #ifndef TEQUALIZERWINDOW_H
 #define TEQUALIZERWINDOW_H
 
-#include "skinutils.h"
-#include "timagebutton.h"
-#include "tsliderbar.h"
+#include "../skinutils.h"
+
+#include "widgets/timagebutton.h"
+#include "widgets/tsliderbar.h"
 #include "tabstractwindow.h"
 
 #define EQ_FACTORS 10

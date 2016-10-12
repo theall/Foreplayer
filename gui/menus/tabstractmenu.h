@@ -5,6 +5,8 @@
 
 class TAbstractMenu : public QMenu
 {
+    Q_OBJECT
+
 public:
     TAbstractMenu(QWidget *parent = 0);
     ~TAbstractMenu();
@@ -15,7 +17,5 @@ public:
 public:
     bool event(QEvent *) Q_DECL_OVERRIDE;
 };
-
-
 
 #endif // TABSTRACTMENU_H

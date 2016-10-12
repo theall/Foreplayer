@@ -5,6 +5,8 @@
 
 class TEqualizerMenu : public TAbstractMenu
 {
+    Q_OBJECT
+
 public:
     TEqualizerMenu(QWidget *parent = 0);
 

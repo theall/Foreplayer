@@ -92,7 +92,12 @@ TGuiManager::TGuiManager(QObject *parent) :
     connect(mDesktopLyricWindow, SIGNAL(requestMoveWindow(QPoint)), this, SLOT(slotRequestMoveWindow(QPoint)));
 
     //Main menu
+    mMainMenu->skinMenu()->setPath("z:/skins");
     connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotExit()));
+    connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(QString)), this, SLOT(slotRequestLoadSkin(QString)));
+
+    connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
+    connect(mMainMenu->transparentMenu(), SIGNAL(onDiableWhileActivedToggled(bool)), this, SLOT(slotOnOpacityChanged()));
 }
 
 void TGuiManager::loadSkin(QString skinPath)
@@ -258,15 +263,25 @@ void TGuiManager::slotRequestResizeWindow(QRect newGeometry)
         movingWindows.append(window);
 
         // Fill all moving edges into list
+        QRect oldGeometry = window->geometry();
+        int oldLeft = oldGeometry.left();
+        int oldRight = oldGeometry.right();
+        int oldTop = oldGeometry.top();
+        int oldBottom = oldGeometry.bottom();
+
         int newLeft = newGeometry.left();
         int newRight = newGeometry.right();
         int newTop = newGeometry.top();
         int newBottom = newGeometry.bottom();
 
-        movingEdges.append(new TEdge(newTop, newBottom, newLeft, ET_LEFT));
-        movingEdges.append(new TEdge(newLeft, newRight, newTop, ET_TOP));
-        movingEdges.append(new TEdge(newTop, newBottom, newRight, ET_RIGHT));
-        movingEdges.append(new TEdge(newLeft, newRight, newBottom, ET_BOTTOM));
+        if(oldLeft != newLeft)
+            movingEdges.append(new TEdge(newTop, newBottom, newLeft, ET_LEFT));
+        if(oldTop != newTop)
+            movingEdges.append(new TEdge(newLeft, newRight, newTop, ET_TOP));
+        if(oldRight != newRight)
+            movingEdges.append(new TEdge(newTop, newBottom, newRight, ET_RIGHT));
+        if(oldBottom != newBottom)
+            movingEdges.append(new TEdge(newLeft, newRight, newBottom, ET_BOTTOM));
 
         // Fill all checking edges into list
         QList<TEdge*> checkingEdges;
@@ -290,7 +305,7 @@ void TGuiManager::slotRequestResizeWindow(QRect newGeometry)
         {
             for(auto wndEdge : movingEdges)
             {
-                int dis = wndEdge->distanceTo(e);
+                int dis = wndEdge->parallelDistanceTo(e);
                 if(dis!=0 && qAbs(dis)<=EDGE_CHECK_WIDTH)
                 {
                     if(wndEdge->edgeType==ET_LEFT)
@@ -354,6 +369,21 @@ void TGuiManager::slotRequestRestoreWindow()
 void TGuiManager::slotExit()
 {
     exit(0);
+}
+
+void TGuiManager::slotOnOpacityChanged(qreal value)
+{
+    mMainWindow->setWindowOpacity(value);
+    mEqualizerWindow->setWindowOpacity(value);
+    mDesktopLyricWindow->setWindowOpacity(value);
+    mLyricWindow->setWindowOpacity(value);
+    mPlaylistWindow->setWindowOpacity(value);
+    mBrowserWindow->setWindowOpacity(value);
+}
+
+void TGuiManager::slotRequestLoadSkin(QString skinFullName)
+{
+    loadSkin(skinFullName);
 }
 
 void TGuiManager::hide()

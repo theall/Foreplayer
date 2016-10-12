@@ -26,7 +26,6 @@ void TButtonIcon::setPixmap(QPixmap pixmap)
     for(int i=0;i<mButtonType;i++)
     {
         QPixmap p = pixmap.copy(x, y, uwidth, height);
-        mUnity.addPixmap(p, QIcon::Mode(i));
         mIcons.append(QIcon(p));
         x += uwidth;
     }
@@ -59,11 +58,6 @@ const QIcon *TButtonIcon::diabled() const
     if(mIcons.size()<4)
         return &mIcons[BI_Normal];
     return &mIcons[BI_Disabled];
-}
-
-const QIcon *TButtonIcon::icon() const
-{
-    return &mUnity;
 }
 
 QSize TButtonIcon::size()

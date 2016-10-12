@@ -2,10 +2,12 @@
 #define TPLAYLISTWINDOW_H
 
 #include "pch.h"
-#include "skinutils.h"
-#include "timagebutton.h"
-#include "ttoolbar.h"
+#include "../skinutils.h"
+
+#include "widgets/timagebutton.h"
+#include "widgets/ttoolbar.h"
 #include "tabstractwindow.h"
+#include "playlist/playlistwidget.h"
 
 class TPlaylistWindow : public TAbstractWindow
 {
@@ -29,6 +31,8 @@ private slots:
 private:
     TToolBar *mToolbar;
     TImageButton *mBtnClose;
+    TPlaylistWidget *mCentralWidget;
+
     // QWidget interface
 protected:
     void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;

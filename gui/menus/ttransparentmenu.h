@@ -5,12 +5,13 @@
 
 class TTransparentMenu : public TAbstractMenu
 {
+    Q_OBJECT
 public:
     TTransparentMenu(QWidget *parent = 0);
 
 signals:
-    void transparentValueChanged(int);
-    void diableWhileActivedToggled(bool);
+    void onOpacityChanged(qreal);
+    void onDiableWhileActivedToggled(bool);
 
 private slots:
     void slotActionTriggered(bool);

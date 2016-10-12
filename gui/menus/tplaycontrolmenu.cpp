@@ -31,6 +31,8 @@ TPlayControlMenu::TPlayControlMenu(QWidget *parent) :
     addAction(mActionNextMusic);
     addSeparator();
     addAction(mActionOpenFile);
+
+    retranslateUi();
 }
 
 void TPlayControlMenu::retranslateUi()

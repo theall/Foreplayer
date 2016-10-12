@@ -3,13 +3,14 @@
 
 #include <QMainWindow>
 
-#include "skinutils.h"
-#include "tlabel.h"
-#include "timagebutton.h"
-#include "tsliderbar.h"
-#include "tvisualwidget.h"
-#include "tscrolllabel.h"
-#include "tledwidget.h"
+#include "../skinutils.h"
+
+#include "widgets/tlabel.h"
+#include "widgets/timagebutton.h"
+#include "widgets/tsliderbar.h"
+#include "widgets/tvisualwidget.h"
+#include "widgets/tscrolllabel.h"
+#include "widgets/tledwidget.h"
 #include "tabstractwindow.h"
 
 class TMainWindow : public TAbstractWindow
@@ -114,6 +115,12 @@ private:
 protected:
     void retranslateUi() Q_DECL_OVERRIDE;
     void timerEvent(QTimerEvent *) Q_DECL_OVERRIDE;
+
+    // QWidget interface
+protected:
+    void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
 };
+
+
 
 #endif // MAINWINDOW_H

@@ -1,7 +1,7 @@
 #ifndef SKINLOADER_H
 #define SKINLOADER_H
 
-#include "skinutils.h"
+#include "../skinutils.h"
 
 class SkinLoader : public QObject
 {

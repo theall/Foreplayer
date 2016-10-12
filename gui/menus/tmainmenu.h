@@ -11,6 +11,8 @@
 
 class TMainMenu : public TAbstractMenu
 {
+    Q_OBJECT
+
 public:
     TMainMenu(QWidget *parent = 0);
     ~TMainMenu();

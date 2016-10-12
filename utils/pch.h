@@ -17,6 +17,26 @@
 #include <QEvent>
 #include <QDebug>
 #include <QColor>
+#include <QDate>
+#include <QList>
+#include <QString>
+#include <QJsonValue>
+#include <QJsonArray>
+#include <QApplication>
+#include <QFont>
+#include <QLibrary>
+#include <QJsonObject>
+#include <QHash>
+#include <QVariant>
+
+#include <QObject>
+#include <QObject>
+#include <QApplication>
+#include <QFont>
+#include <QDir>
+#include <QDebug>
+#include <QAbstractListModel>
+#include <QAbstractTableModel>
 #include <QWidget>
 #include <QBitmap>
 #include <QPixmap>

@@ -13,6 +13,10 @@ public:
 
 private:
     TImageButton *mBtnExpand;
+
+    // QWidget interface
+protected:
+    void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
 };
 
 class TSplitter : public QSplitter

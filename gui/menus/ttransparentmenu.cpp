@@ -59,51 +59,51 @@ void TTransparentMenu::slotActionTriggered(bool)
 
         if(action == mActionDisable)
         {
-            emit transparentValueChanged(0);
+            emit onOpacityChanged(1.0);
         }
         else if(action == mActionTransparent1)
         {
-            emit transparentValueChanged(1);
+            emit onOpacityChanged(0.9);
         }
         else if(action == mActionTransparent2)
         {
-            emit transparentValueChanged(2);
+            emit onOpacityChanged(0.8);
         }
         else if(action == mActionTransparent3)
         {
-            emit transparentValueChanged(3);
+            emit onOpacityChanged(0.7);
         }
         else if(action == mActionTransparent4)
         {
-            emit transparentValueChanged(4);
+            emit onOpacityChanged(0.6);
         }
         else if(action == mActionTransparent5)
         {
-            emit transparentValueChanged(5);
+            emit onOpacityChanged(0.5);
         }
         else if(action == mActionTransparent6)
         {
-            emit transparentValueChanged(6);
+            emit onOpacityChanged(0.4);
         }
         else if(action == mActionTransparent7)
         {
-            emit transparentValueChanged(7);
+            emit onOpacityChanged(0.3);
         }
         else if(action == mActionTransparent8)
         {
-            emit transparentValueChanged(8);
+            emit onOpacityChanged(0.2);
         }
         else if(action == mActionTransparent9)
         {
-            emit transparentValueChanged(9);
+            emit onOpacityChanged(0.1);
         }
         else if(action == mActionTransparent10)
         {
-            emit transparentValueChanged(10);
+            emit onOpacityChanged(0.0);
         }
         else if(action == mActionDisableWhileActived)
         {
-            emit diableWhileActivedToggled(action->isChecked());
+            emit onDiableWhileActivedToggled(action->isChecked());
         }
     }
     mLastActivedAction = action;
@@ -111,4 +111,16 @@ void TTransparentMenu::slotActionTriggered(bool)
 
 void TTransparentMenu::retranslateUi()
 {
+    mActionDisable->setText(tr("Opacity"));
+    mActionTransparent1->setText(tr("10% Transparent"));
+    mActionTransparent2->setText(tr("20% Transparent"));
+    mActionTransparent3->setText(tr("30% Transparent"));
+    mActionTransparent4->setText(tr("40% Transparent"));
+    mActionTransparent5->setText(tr("50% Transparent"));
+    mActionTransparent6->setText(tr("60% Transparent"));
+    mActionTransparent7->setText(tr("70% Transparent"));
+    mActionTransparent8->setText(tr("80% Transparent"));
+    mActionTransparent9->setText(tr("90% Transparent"));
+    mActionTransparent10->setText(tr("100% Transparent"));
+    mActionDisableWhileActived->setText(tr("Opacity While Actived"));
 }

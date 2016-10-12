@@ -31,13 +31,11 @@ public:
     const QIcon *mouseDown() const;
     const QIcon *diabled() const;
 
-    const QIcon *icon() const;
     QSize size();
 
 private:
     QSize mSize;
     QVector<QIcon> mIcons;
-    QIcon mUnity;
     TButtonType mButtonType;
 };
 

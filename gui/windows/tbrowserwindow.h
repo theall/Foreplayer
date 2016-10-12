@@ -2,10 +2,11 @@
 #define TBROWSERWINDOW_H
 
 #include "pch.h"
-#include "skinutils.h"
-#include "tlinklabel.h"
-#include "tcheckbox.h"
-#include "timagebutton.h"
+#include "../skinutils.h"
+
+#include "widgets/tlinklabel.h"
+#include "widgets/tcheckbox.h"
+#include "widgets/timagebutton.h"
 #include "tabstractwindow.h"
 
 class TBrowserWindow : public TAbstractWindow
