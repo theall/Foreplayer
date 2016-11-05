@@ -22,7 +22,7 @@ bool TBackendPlugin::load(QString pluginName)
     if(!initialize)
          return false;
 
-    PROC_MATCHSUFFIXES matchSuffix = (PROC_MATCHSUFFIX)mLibrary->resolve("matchSuffixes");
+    PROC_MATCHSUFFIXES matchSuffix = (PROC_MATCHSUFFIXES)mLibrary->resolve("matchSuffixes");
     if(!matchSuffix)
          return false;
 
@@ -61,7 +61,7 @@ bool TBackendPlugin::load(QString pluginName)
         return false;
 
     // Plugin information
-    pluginInformation(&mPluginInfo);
+    pluginInfo(&mPluginInfo);
 
     mFileName = pluginName;
 
@@ -70,12 +70,16 @@ bool TBackendPlugin::load(QString pluginName)
 
 bool TBackendPlugin::openTrack(TTrackInfo *track)
 {
-    mProcLoadTrack(track);
+    if(mProcLoadTrack)
+        return mProcLoadTrack(track);
+
+    return false;
 }
 
-bool TBackendPlugin::closeTrack()
+void TBackendPlugin::closeTrack()
 {
-    mProcCloseTrack();
+    if(mProcCloseTrack)
+        mProcCloseTrack();
 }
 
 TRequestSamples TBackendPlugin::getCallback()
@@ -90,7 +94,10 @@ bool TBackendPlugin::matchSuffix(QString suffix)
 
 bool TBackendPlugin::parse(QString file, TMusicInfo *musicInfo)
 {
-    mProcParse(file.toLocal8Bit().constData(), musicInfo);
+    if(mProcParse)
+        return mProcParse((char*)file.toLocal8Bit().constData(), musicInfo);
+
+    return false;
 }
 
 TPluginInfo *TBackendPlugin::pluginInfo()

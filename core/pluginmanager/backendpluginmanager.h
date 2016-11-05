@@ -22,9 +22,6 @@
 #include "pch.h"
 
 #include "abstractpluginmanager.h"
-#include "../backend/backendplugin.h"
-
-typedef QList<TBackendPlugin*> TBackendPlugins;
 
 /*!
  * \brief The TBackendPluginManager class manage all backend plugins.
@@ -41,15 +38,11 @@ public:
     TBackendPlugins matchPluginBySuffix(QString suffix);
     TBackendPlugin *parse(QString file, TMusicInfo* musicInfo);
 
-private:
-    TBackendPlugin *loadPlugin(QString pluginName) Q_DECL_OVERRIDE;
-
 signals:
 
 public slots:
-
-
 private:
+    TBackendPlugin *loadPlugin(QString pluginName) Q_DECL_OVERRIDE;
 };
 
 #endif // BACKENDPLUGINMANAGER_H

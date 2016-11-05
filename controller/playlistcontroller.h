@@ -1,25 +1,22 @@
 #ifndef TPLAYLISTCONTROLLER_H
 #define TPLAYLISTCONTROLLER_H
 
-#include "pch.h"
-#include "../core/playlistcore.h"
-#include "../windows/tplaylistwindow.h"
+#include "abstractcontroller.h"
 
-class TPlaylistController : public QObject
+class TPlaylistController : public TAbstractController
 {
     Q_OBJECT
 public:
     explicit TPlaylistController(QObject *parent = 0);
 
-    void joint(TPlaylistWindow *window, TPlaylistCore *core);
-
-signals:
-
-public slots:
+    void joint(TGuiManager *manager, TCore *core) Q_DECL_OVERRIDE;
 
 private:
-    TPlaylistWindow *mWindow;
+    TPlaylistWindow *mGui;
     TPlaylistCore *mCore;
+
+protected slots:
+    void slotTimerEvent() Q_DECL_OVERRIDE;
 };
 
 #endif // TPLAYLISTCONTROLLER_H

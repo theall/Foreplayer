@@ -40,7 +40,7 @@ TBackendPlugins TBackendPluginManager::matchPluginBySuffix(QString suffix)
 
 TBackendPlugin *TBackendPluginManager::parse(QString file, TMusicInfo *musicInfo)
 {
-    char pFile = file.toLocal8Bit().constData();
+    const char *pFile = file.toLocal8Bit().constData();
     for(auto plugin : plugins())
     {
         TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
@@ -53,8 +53,8 @@ TBackendPlugin *TBackendPluginManager::parse(QString file, TMusicInfo *musicInfo
 TBackendPlugin* TBackendPluginManager::loadPlugin(QString pluginName)
 {
     TBackendPlugin *plugin = new TBackendPlugin;
-    if(plugin->load(pluginPath))
+    if(plugin->load(pluginName))
         return plugin;
 
-    return NULL;
+    return (TBackendPlugin*)NULL;
 }

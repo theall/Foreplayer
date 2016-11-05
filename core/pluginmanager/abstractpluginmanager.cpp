@@ -18,8 +18,6 @@
 
 #include "abstractpluginmanager.h"
 
-#include <dir.h>
-
 TAbstractPluginManager::TAbstractPluginManager(QObject *parent) :
     QObject(parent)
 {
@@ -35,7 +33,7 @@ int TAbstractPluginManager::findPlugins(QString path)
     for (int i = 0; i < list.size(); ++i) {
         QFileInfo fileInfo = list.at(i);
         QString filePath = fileInfo.filePath();
-        TAbstractPlugin* plugin = loadPlugin(filePath);
+        TBackendPlugin* plugin = loadPlugin(filePath);
         if(!plugin)
         {
             qDebug()<<"Error while loading plugin,"<<filePath;

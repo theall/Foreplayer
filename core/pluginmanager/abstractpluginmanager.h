@@ -19,24 +19,21 @@
 #ifndef ABSTRACTPLUGINMANAGER_H
 #define ABSTRACTPLUGINMANAGER_H
 
-#include "pch.h"
+#include "../backend/backendplugin.h"
 
-class TAbstractPlugin
-{
-
-};
+typedef QList<TBackendPlugin*> TBackendPlugins;
 
 /*!
  * \brief The TAbstractPluginManager class is base class of PluginLoader
  */
-class TAbstractPluginManager
+class TAbstractPluginManager : public QObject
 {
 public:
     /*!
      * \brief Construct a TAbstractPluginManager with a parent object.
      * \param parent The parent object of the TAbstractPluginManager.
      */
-    explicit TAbstractPluginManager();
+    explicit TAbstractPluginManager(QObject *parent = 0);
 
     /*!
      * \brief Find plugins in specify path.
@@ -44,15 +41,15 @@ public:
      */
     int findPlugins(QString path);
 
-    virtual TAbstractPlugin* loadPlugin(QString pluginName) = 0;
+    virtual TBackendPlugin* loadPlugin(QString pluginName) = 0;
 
-    inline QList<TAbstractPlugin*> plugins()
+    inline TBackendPlugins plugins()
     {
         return mPlugins;
     }
 
 private:
-    QList<TAbstractPlugin*> mPlugins;
+    TBackendPlugins mPlugins;
 };
 
 #endif // ABSTRACTPLUGINMANAGER_H

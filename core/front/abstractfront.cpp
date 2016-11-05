@@ -7,7 +7,12 @@ TAbstractFront::TAbstractFront() :
 
 }
 
-void TAbstractFront::setCallback(TCallback callback)
+TAbstractFront::~TAbstractFront()
+{
+
+}
+
+void TAbstractFront::setCallback(TRequestSamples callback)
 {
     mCallback = callback;
 }

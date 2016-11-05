@@ -1,12 +1,9 @@
 #ifndef TBACKENDCONTROLLER_H
 #define TBACKENDCONTROLLER_H
 
-#include "pch.h"
+#include "abstractcontroller.h"
 
-#include "../core/front/abstractfront.h"
-#include "pluginmanager/backendpluginmanager.h"
-
-class TBackendController : QObject
+class TBackendController : TAbstractController
 {
 public:
     TBackendController(QObject *parent = 0);

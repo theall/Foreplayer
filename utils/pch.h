@@ -74,6 +74,7 @@
 #include <QContextMenuEvent>
 #include <QStyleOptionButton>
 #include <QStyleOptionComplex>
-
+#include <QHeaderView>
+#include <QStyledItemDelegate>
 #endif // PCH_H
 

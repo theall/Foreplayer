@@ -4,8 +4,8 @@ TDirectSoundFront::TDirectSoundFront() :
     TAbstractFront(),
     mPaused(false),
     mLoopLength(0),
-    mInitialized(false),
     mNextSegment(0),
+    mInitialized(false),
     mSamples(NULL),
     mDirectSound(NULL),
     mMainBuffer(NULL),
@@ -131,7 +131,7 @@ TDirectSoundFront::~TDirectSoundFront()
 
 void TDirectSoundFront::start(void)
 {
-    waveLogStart();
+    //waveLogStart();
 
     IDirectSound_SetCooperativeLevel(mDirectSound, GetForegroundWindow(), DSSCL_PRIORITY);
 
@@ -144,7 +144,7 @@ void TDirectSoundFront::stop(void)
     DSBUFFERDESC	dsbuf;
     WAVEFORMATEX	format;
 
-    waveLogStop();
+    //waveLogStop();
 
     IDirectSoundBuffer_Stop(mSecondBuffer);
     // this is a bit cheezity-hacky
@@ -190,7 +190,7 @@ void TDirectSoundFront::flush(void)
     memset(mSamples, 0, mSoundSegLength * 4);
 
     for(int i=0;i<5;i++)
-        update();
+        step();
 
     mPaused = oldpause;
 }
@@ -249,11 +249,21 @@ void TDirectSoundFront::step(void)
             memset(mSamples, 0, mSoundSegLength*4);
         }
 
-        waveLogFrame((unsigned char *)mSamples, mSoundSegLength<<2);
+        //waveLogFrame((unsigned char *)mSamples, mSoundSegLength<<2);
 
         mNextSegment = nFollowingSeg;
         WRAP_INC(nFollowingSeg)
     }
 
     return;
+}
+
+void TDirectSoundFront::setRecorder()
+{
+
+}
+
+void TDirectSoundFront::setFilter()
+{
+
 }

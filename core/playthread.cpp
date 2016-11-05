@@ -14,6 +14,11 @@ void TPlayThread::pause()
     mPaused = true;
 }
 
+void TPlayThread::resume()
+{
+
+}
+
 void TPlayThread::needToTerminate()
 {
     mNeedTerminate = true;

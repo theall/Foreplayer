@@ -7,6 +7,7 @@ class TAbstractFront
 {
 public:
     TAbstractFront();
+    ~TAbstractFront();
 
     virtual void setRecorder() = 0;
     virtual void setFilter() = 0;

@@ -50,6 +50,7 @@ struct TTrackInfo
     string musicFullName;
     string trackName;
     int index;
+    string indexName;
     int64 size;
     int64 startPosition;       //Music properties.
     uint duration;
@@ -70,7 +71,7 @@ struct TMusicInfo
     list<TTrackInfo*> trackList;
 };
 
-void (*TRequestSamples)(int dwSamples, short *samples);
+typedef void (*TRequestSamples)(int dwSamples, short *samples);
 
 // Initialize plugin
 EXPORT bool initialize();

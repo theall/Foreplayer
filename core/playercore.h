@@ -10,17 +10,6 @@
 
 #include "pluginmanager/backendpluginmanager.h"
 
-struct TTrackInfo
-{
-    QString displayName;
-    QString dataFile;
-    QString headerFile;
-    int trackIndex;
-    int start;
-    int end;
-    int duration;
-};
-
 typedef QList<TTrackInfo*> TTrackInfoList;
 
 struct SpectrumInfo

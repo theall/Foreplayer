@@ -1,14 +1,17 @@
 #include "playlistcontroller.h"
 
-TPlaylistController::TPlaylistController(QObject *parent) : QObject(parent)
+TPlaylistController::TPlaylistController(QObject *parent) :
+    TAbstractController(parent)
 {
 
 }
 
-void TPlaylistController::joint(TPlaylistWindow *window, TPlaylistCore *core)
-{
 
-    mWindow = window;
-    mCore = core;
+
+void TPlaylistController::joint(TGuiManager *manager, TCore *core)
+{
 }
 
+void TPlaylistController::slotTimerEvent()
+{
+}

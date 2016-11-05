@@ -1,7 +1,7 @@
 #include <QApplication>
 
-#include "gui/tguimanager.h"
-#include "controller/controller.h"
+#include "gui/guimanager.h"
+#include "controller/maincontroller.h"
 #include "core/core.h"
 
 int main(int argc, char *argv[])
@@ -10,11 +10,11 @@ int main(int argc, char *argv[])
 
     TCore core;
 
-    TController controller;
+    TMainController controller;
 
     TGuiManager gui(&controller);
 
-    gui.loadSkin("Z:/skins/orange/skin.xml");
+    gui.loadSkin("Z:/skins/fulkfour/skin.xml");
 
     controller.joint(&gui, &core);
 

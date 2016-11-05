@@ -2,10 +2,10 @@
 
 TPlayerCore::TPlayerCore() :
     mCallback(NULL),
-    mFront(new TDirectSoundFront()),
     mBackend(NULL),
-    mPluginManager(new TBackendPluginManager()),
-    mPlayThread(NULL)
+    mFront(new TDirectSoundFront()),
+    mPlayThread(NULL),
+    mPluginManager(new TBackendPluginManager())
 {
 
 }
@@ -14,8 +14,11 @@ TPlayerCore::~TPlayerCore()
 {
     destroyPlayThread();
 
-    delete mFront;
-    delete mBackend;
+//    if(mFront)
+//        delete mFront;
+
+    if(mBackend)
+        delete mBackend;
 }
 
 TMusicInfo *TPlayerCore::parse(QString fileName)
@@ -27,7 +30,7 @@ TMusicInfo *TPlayerCore::parse(QString fileName)
 
     if(plugins.isEmpty())
     {
-        TBackendPlugin *plugin = mPluginManager->parse(fileName, &musicInfo);
+        TBackendPlugin *plugin = mPluginManager->parse(fileName, musicInfo);
         if(!plugin)
         {
             delete musicInfo;
@@ -37,7 +40,7 @@ TMusicInfo *TPlayerCore::parse(QString fileName)
     else
     {
         for(auto plugin : plugins)
-            if(plugin->parse(fileName, &musicInfo))
+            if(plugin->parse(fileName, musicInfo))
                 return musicInfo;
     }
 
@@ -52,6 +55,11 @@ void TPlayerCore::setTrack(TTrackInfo *track)
 
     mBackend->openTrack(track);
     mFront->setCallback(mBackend->getCallback());
+}
+
+void TPlayerCore::setCallback(TPlayCallback callback)
+{
+    Q_UNUSED(callback)
 }
 
 void TPlayerCore::play()

@@ -1,4 +1,4 @@
-#include "tabstractmenu.h"
+#include "abstractmenu.h"
 
 TAbstractMenu::TAbstractMenu(QWidget *parent) :
     QMenu(parent)

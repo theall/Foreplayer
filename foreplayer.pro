@@ -16,51 +16,43 @@ TEMPLATE = app
 INCLUDEPATH += \
     utils
 
+LIBS += -ldsound
+
 SOURCES += main.cpp\
     gui/skinloader/skinloader.cpp \
     utils/utils.cpp \
-    gui/windows/widgets/timagebutton.cpp \
-    gui/windows/widgets/tbuttonimage.cpp \
-    gui/windows/widgets/tscrolllabel.cpp \
-    gui/windows/widgets/tledwidget.cpp \
-    gui/windows/widgets/tlabel.cpp \
-    gui/windows/widgets/tsliderbar.cpp \
-    gui/windows/widgets/tsliderstyle.cpp \
-    gui/windows/widgets/tvisualwidget.cpp \
-    gui/windows/tabstractwindow.cpp \
-    gui/windows/tlyricwindow.cpp \
-    gui/tguimanager.cpp \
-    gui/windows/tmainwindow.cpp \
-    gui/windows/tequalizerwindow.cpp \
-    gui/windows/tplaylistwindow.cpp \
+    gui/windows/widgets/imagebutton.cpp \
+    gui/windows/widgets/buttonimage.cpp \
+    gui/windows/widgets/scrolllabel.cpp \
+    gui/windows/widgets/ledwidget.cpp \
+    gui/windows/widgets/label.cpp \
+    gui/windows/widgets/sliderbar.cpp \
+    gui/windows/widgets/sliderstyle.cpp \
+    gui/windows/widgets/visualwidget.cpp \
     gui/skinutils.cpp \
-    gui/windows/widgets/ttoolbar.cpp \
-    gui/windows/widgets/tscrollbar.cpp \
-    gui/windows/tbrowserwindow.cpp \
-    gui/windows/tdesctoplyricwindow.cpp \
-    gui/windows/widgets/tlinklabel.cpp \
-    gui/windows/widgets/tcheckbox.cpp \
-    gui/windows/tdesktopwindow.cpp \
-    gui/windows/widgets/tsplitter.cpp \
-    gui/windows/widgets/tanimationmenu.cpp \
-    gui/menus/tmainmenu.cpp \
-    gui/menus/tplaycontrolmenu.cpp \
-    gui/menus/tvolumecontrolmenu.cpp \
-    gui/menus/tplaymodemenu.cpp \
-    gui/menus/tskinmenu.cpp \
-    gui/menus/ttransparentmenu.cpp \
-    gui/menus/tequalizermenu.cpp \
-    core/filter/tsamplesfilter.cpp \
-    controller/model/playlistmodel.cpp \
-    controller/model/tracklistmodel.cpp \
-    controller/model/musiclistmodel.cpp \
-    gui/windows/playlist/playlistview.cpp \
-    gui/windows/playlist/musiclistview.cpp \
-    gui/windows/playlist/tracklistview.cpp \
+    gui/windows/widgets/toolbar.cpp \
+    gui/windows/widgets/scrollbar.cpp \
+    gui/windows/widgets/linklabel.cpp \
+    gui/windows/widgets/checkbox.cpp \
+    gui/windows/widgets/splitter.cpp \
+    gui/windows/widgets/animationmenu.cpp \
+    gui/menus/mainmenu.cpp \
+    gui/menus/playcontrolmenu.cpp \
+    gui/menus/volumecontrolmenu.cpp \
+    gui/menus/playmodemenu.cpp \
+    gui/menus/skinmenu.cpp \
+    gui/menus/transparentmenu.cpp \
+    gui/menus/equalizermenu.cpp \
+    core/filter/samplesfilter.cpp \
+    gui/windows/playlist/model/playlistmodel.cpp \
+    gui/windows/playlist/model/tracklistmodel.cpp \
+    gui/windows/playlist/model/musiclistmodel.cpp \
+    gui/windows/playlist/view/playlistview.cpp \
+    gui/windows/playlist/view/musiclistview.cpp \
+    gui/windows/playlist/view/tracklistview.cpp \
     gui/windows/playlist/playlistwidget.cpp \
     controller/playlistcontroller.cpp \
     core/core.cpp \
-    controller/controller.cpp \
     core/playercore.cpp \
     core/playlistcore.cpp \
     controller/backendcontroller.cpp \
@@ -72,56 +64,70 @@ SOURCES += main.cpp\
     core/pluginmanager/abstractpluginmanager.cpp \
     core/pluginmanager/backendpluginmanager.cpp \
     controller/playercontroller.cpp \
-    core/playthread.cpp
+    core/playthread.cpp \
+    controller/abstractcontroller.cpp \
+    gui/guimanager.cpp \
+    gui/windows/abstractwindow.cpp \
+    gui/windows/browserwindow.cpp \
+    gui/windows/desctoplyricwindow.cpp \
+    gui/windows/desktopwindow.cpp \
+    gui/windows/equalizerwindow.cpp \
+    gui/windows/lyricwindow.cpp \
+    gui/windows/mainwindow.cpp \
+    gui/windows/playlistwindow.cpp \
+    controller/maincontroller.cpp \
+    gui/windows/playlist/model/abstractmodel.cpp \
+    gui/windows/playlist/view/abstracttableview.cpp \
+    gui/windows/widgets/style/sliderbarstyle.cpp \
+    gui/windows/widgets/style/scrollbarstyle.cpp \
+    gui/windows/widgets/style/abstractstyle.cpp
 
 HEADERS  += \
     utils/pch.h \
-    gui/windows/widgets/timagebutton.h \
-    gui/windows/widgets/tbuttonimage.h \
-    gui/windows/widgets/tscrolllabel.h \
-    gui/windows/widgets/tledwidget.h \
-    gui/windows/widgets/tlabel.h \
-    gui/windows/widgets/tsliderbar.h \
-    gui/windows/widgets/tsliderstyle.h \
-    gui/windows/widgets/tvisualwidget.h \
-    gui/windows/tabstractwindow.h \
-    gui/windows/tlyricwindow.h \
-    gui/tguimanager.h \
+    gui/windows/widgets/imagebutton.h \
+    gui/windows/widgets/buttonimage.h \
+    gui/windows/widgets/scrolllabel.h \
+    gui/windows/widgets/ledwidget.h \
+    gui/windows/widgets/label.h \
+    gui/windows/widgets/sliderbar.h \
+    gui/windows/widgets/sliderstyle.h \
+    gui/windows/widgets/visualwidget.h \
+    gui/windows/abstractwindow.h \
+    gui/windows/lyricwindow.h \
     gui/skinloader/skinloader.h \
-    gui/windows/tmainwindow.h \
-    gui/windows/tequalizerwindow.h \
-    gui/windows/tplaylistwindow.h \
+    gui/windows/mainwindow.h \
+    gui/windows/equalizerwindow.h \
+    gui/windows/playlistwindow.h \
     gui/skinutils.h \
     utils/utils.h \
-    gui/windows/widgets/ttoolbar.h \
-    gui/windows/widgets/tscrollbar.h \
-    gui/windows/tbrowserwindow.h \
-    gui/windows/tdesctoplyricwindow.h \
-    gui/windows/widgets/tlinklabel.h \
-    gui/windows/widgets/tcheckbox.h \
-    gui/windows/tdesktopwindow.h \
-    gui/windows/widgets/tsplitter.h \
-    gui/windows/widgets/tanimationmenu.h \
-    gui/menus/tmainmenu.h \
-    gui/menus/tabstractmenu.h \
-    gui/menus/tplaycontrolmenu.h \
-    gui/menus/tvolumecontrolmenu.h \
-    gui/menus/tplaymodemenu.h \
-    gui/menus/tskinmenu.h \
-    gui/menus/ttransparentmenu.h \
-    gui/menus/tequalizermenu.h \
-    core/filter/tsamplesfilter.h \
-    controller/model/playlistmodel.h \
-    controller/model/tracklistmodel.h \
-    controller/model/musiclistmodel.h \
-    gui/windows/playlist/playlistview.h \
-    gui/windows/playlist/musiclistview.h \
-    gui/windows/playlist/tracklistview.h \
+    gui/windows/widgets/toolbar.h \
+    gui/windows/widgets/scrollbar.h \
+    gui/windows/browserwindow.h \
+    gui/windows/desctoplyricwindow.h \
+    gui/windows/widgets/linklabel.h \
+    gui/windows/widgets/checkbox.h \
+    gui/windows/desktopwindow.h \
+    gui/windows/widgets/splitter.h \
+    gui/windows/widgets/animationmenu.h \
+    gui/menus/mainmenu.h \
+    gui/menus/abstractmenu.h \
+    gui/menus/playcontrolmenu.h \
+    gui/menus/volumecontrolmenu.h \
+    gui/menus/playmodemenu.h \
+    gui/menus/skinmenu.h \
+    gui/menus/transparentmenu.h \
+    gui/menus/equalizermenu.h \
+    core/filter/samplesfilter.h \
+    gui/windows/playlist/model/playlistmodel.h \
+    gui/windows/playlist/model/tracklistmodel.h \
+    gui/windows/playlist/model/musiclistmodel.h \
+    gui/windows/playlist/view/playlistview.h \
+    gui/windows/playlist/view/musiclistview.h \
+    gui/windows/playlist/view/tracklistview.h \
     gui/windows/playlist/playlistwidget.h \
     controller/playlistcontroller.h \
     core/core.h \
     core/playercore.h \
-    controller/controller.h \
     core/playlistcore.h \
     controller/backendcontroller.h \
     core/front/directsoundfront.h \
@@ -132,4 +138,12 @@ HEADERS  += \
     core/pluginmanager/backendpluginmanager.h \
     plugins/backend/backendinterface.h \
     controller/playercontroller.h \
-    core/playthread.h
+    core/playthread.h \
+    controller/abstractcontroller.h \
+    gui/guimanager.h \
+    controller/maincontroller.h \
+    gui/windows/playlist/model/abstractmodel.h \
+    gui/windows/playlist/view/abstracttableview.h \
+    gui/windows/widgets/style/sliderbarstyle.h \
+    gui/windows/widgets/style/scrollbarstyle.h \
+    gui/windows/widgets/style/abstractstyle.h

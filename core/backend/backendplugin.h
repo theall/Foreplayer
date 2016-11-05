@@ -5,18 +5,18 @@
 #include "../../plugins/backend/backendinterface.h"
 
 // Initialize plugin
-bool (*PROC_INITIALIZE)();
+typedef bool (*PROC_INITIALIZE)();
 
 // Verify this plugin can parse specify suffix of file
-char *(*PROC_MATCHSUFFIXES)();
-bool (*PROC_PARSE)(char* file, TMusicInfo* musicInfo);
+typedef char *(*PROC_MATCHSUFFIXES)();
+typedef bool (*PROC_PARSE)(char* file, TMusicInfo* musicInfo);
 
-bool (*PROC_LOADTRACK)(TTrackInfo* track);
-void (*PROC_CLOSETRACK)();
+typedef bool (*PROC_LOADTRACK)(TTrackInfo* track);
+typedef void (*PROC_CLOSETRACK)();
 
-void (*PROC_PLUGININFO)(TPluginInfo *pluginInfo);
+typedef void (*PROC_PLUGININFO)(TPluginInfo *pluginInfo);
 
-bool (*PROC_FREE)();
+typedef bool (*PROC_FREE)();
 
 class TBackendPlugin
 {
@@ -26,7 +26,7 @@ public:
 
     bool load(QString pluginName);
     bool openTrack(TTrackInfo* track);
-    bool closeTrack();
+    void closeTrack();
 
     TRequestSamples getCallback();
 
