@@ -55,3 +55,11 @@ const TButtonPixmap *TSliderBar::buttonPixmap() const
 {
     return &mButtonPixmap;
 }
+
+void TSliderBar::mouseMoveEvent(QMouseEvent *e)
+{
+    QSlider::mouseMoveEvent(e);
+
+    // The slider bar will not send active sub control message, so force update.
+    update();
+}

@@ -1,10 +1,13 @@
 #include "abstractmodel.h"
 
-QFont TAbstractModel::mFont;
-QColor TAbstractModel::mBackColor1;
-QColor TAbstractModel::mBackColor2;
-QColor TAbstractModel::mTextColor;
-QColor TAbstractModel::mCurrentRowTextColor;
+QVariant TAbstractModel::mFont;
+QVariant TAbstractModel::mBackColor1;
+QVariant TAbstractModel::mBackColor2;
+QVariant TAbstractModel::mTextColor;
+QVariant TAbstractModel::mCurrentRowTextColor;
+QVariant TAbstractModel::mSelectedTextColor;
+QVariant TAbstractModel::mNumberColor;
+QVariant TAbstractModel::mDurationColor;
 
 TAbstractModel::TAbstractModel(QObject *parent) :
     QAbstractTableModel(parent),
@@ -27,6 +30,10 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
         if(index.row()==mCurrentRow)
             return mCurrentRowTextColor;
         return TAbstractModel::mTextColor;
+    } else if (role==Utils::TextHighlight) {
+        return TAbstractModel::mSelectedTextColor;
+    } else if (role==Utils::IsCurrentRow) {
+        return index.row()==mCurrentRow;
     }
 
     return QVariant();
@@ -35,6 +42,10 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
 void TAbstractModel::setCurrentIndex(int index)
 {
     mCurrentRow = index;
+
+    QVector<int> roles;
+    roles.append(Qt::TextColorRole);
+    emit dataChanged(QModelIndex(), QModelIndex(), roles);
 }
 
 void TAbstractModel::setFont(QFont font)
@@ -44,10 +55,10 @@ void TAbstractModel::setFont(QFont font)
 
 void TAbstractModel::setBackgroundColor(QColor color)
 {
+    color.setAlpha(0);
     mBackColor1 = color;
+    color.setAlpha(64);
     mBackColor2 = color;
-    mBackColor1.setAlpha(0);
-    mBackColor2.setAlpha(64);
 }
 
 void TAbstractModel::setTextColor(QColor color)
@@ -58,4 +69,29 @@ void TAbstractModel::setTextColor(QColor color)
 void TAbstractModel::setCurrentRowTextColor(QColor color)
 {
     mCurrentRowTextColor = color;
+}
+
+void TAbstractModel::setSelectedTextColor(QColor color)
+{
+    mSelectedTextColor = color;
+}
+
+void TAbstractModel::setColorParameters(QFont font,
+                                        QColor textColor,
+                                        QColor selectedTextColor,
+                                        QColor numberColor,
+                                        QColor durationColor,
+                                        QColor currentRowTextColor,
+                                        QColor backgroundColor)
+{
+    mFont = font;
+    backgroundColor.setAlpha(0);
+    mBackColor1 = backgroundColor;
+    backgroundColor.setAlpha(64);
+    mBackColor2 = backgroundColor;
+    mTextColor = textColor;
+    mCurrentRowTextColor = currentRowTextColor;
+    mSelectedTextColor = selectedTextColor;
+    mNumberColor = numberColor;
+    mDurationColor = durationColor;
 }

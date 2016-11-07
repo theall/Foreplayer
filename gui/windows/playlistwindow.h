@@ -38,6 +38,4 @@ protected:
     void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
 };
 
-
-
 #endif // TPLAYLISTWINDOW_H

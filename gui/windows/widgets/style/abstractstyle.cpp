@@ -51,7 +51,6 @@ void TAbstractStyle::drawButton(QPainter *painter,
         }
         else
         {
-            int rectHeight = buttonRect.height();
             int pixmapHeight = drawPixmap->height();
             int pixmapWidth = drawPixmap->width();
             int headHeight = pixmapHeight / 3;
@@ -63,19 +62,16 @@ void TAbstractStyle::drawButton(QPainter *painter,
             QPixmap fillPixmap = drawPixmap->copy(0, headHeight, pixmapWidth, fillHeight);
             QPixmap tailPixmap = drawPixmap->copy(0, headHeight+fillHeight, pixmapWidth, headHeight);
 
-            int mn = (rectHeight-headHeight)/fillHeight;
-
             int x = (buttonRect.width() - pixmapWidth) / 2;
             int y = buttonRect.y();
+            int bottom = buttonRect.bottom();
             painter->drawPixmap(x, y, headPixmap);
-            y += headHeight;
 
-            for(int i=0;i<mn;i++)
-            {
-                painter->drawPixmap(x, y, fillPixmap);
-                y += fillHeight;
-            }
-            painter->drawPixmap(x, buttonRect.bottom()-headHeight, tailPixmap);
+            buttonRect.setTop(y+headHeight);
+            buttonRect.setBottom(bottom-1);
+            painter->drawPixmap(buttonRect, fillPixmap);
+
+            painter->drawPixmap(x, bottom-headHeight, tailPixmap);
         }
     }
 }

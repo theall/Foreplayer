@@ -27,7 +27,6 @@ SOURCES += main.cpp\
     gui/windows/widgets/ledwidget.cpp \
     gui/windows/widgets/label.cpp \
     gui/windows/widgets/sliderbar.cpp \
-    gui/windows/widgets/sliderstyle.cpp \
     gui/windows/widgets/visualwidget.cpp \
     gui/skinutils.cpp \
     gui/windows/widgets/toolbar.cpp \
@@ -90,7 +89,6 @@ HEADERS  += \
     gui/windows/widgets/ledwidget.h \
     gui/windows/widgets/label.h \
     gui/windows/widgets/sliderbar.h \
-    gui/windows/widgets/sliderstyle.h \
     gui/windows/widgets/visualwidget.h \
     gui/windows/abstractwindow.h \
     gui/windows/lyricwindow.h \

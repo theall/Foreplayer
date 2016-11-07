@@ -3,7 +3,7 @@
 TTracklistView::TTracklistView(QWidget *parent) :
     TAbstractTableView(parent)
 {
-
+    setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 
 void TTracklistView::setModel(QAbstractItemModel *model)

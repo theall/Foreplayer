@@ -1,7 +1,7 @@
 #ifndef TABSTRACTMODEL_H
 #define TABSTRACTMODEL_H
 
-#include "pch.h"
+#include "utils.h"
 
 class TAbstractModel : public QAbstractTableModel
 {
@@ -18,13 +18,24 @@ public:
     static void setBackgroundColor(QColor color);
     static void setTextColor(QColor color);
     static void setCurrentRowTextColor(QColor color);
+    static void setSelectedTextColor(QColor color);
+    static void setColorParameters(QFont font,
+                                   QColor textColor,
+                                   QColor selectedTextColor,
+                                   QColor numberColor,
+                                   QColor durationColor,
+                                   QColor currentRowTextColor,
+                                   QColor backgroundColor);
 
 private:
-    static QFont mFont;
-    static QColor mBackColor1;
-    static QColor mBackColor2;
-    static QColor mTextColor;
-    static QColor mCurrentRowTextColor;
+    static QVariant mFont;
+    static QVariant mBackColor1;
+    static QVariant mBackColor2;
+    static QVariant mTextColor;
+    static QVariant mCurrentRowTextColor;
+    static QVariant mSelectedTextColor;
+    static QVariant mNumberColor;
+    static QVariant mDurationColor;
     int mCurrentRow;
 };
 

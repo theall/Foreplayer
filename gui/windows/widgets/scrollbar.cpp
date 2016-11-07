@@ -20,7 +20,9 @@ TScrollBar::TScrollBar(Qt::Orientation orientation, QWidget *parent) :
 
 void TScrollBar::initialize()
 {
-    setMaximumWidth(TScrollBar::mFixWidth);
+    setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+    setStyleSheet(QString("QScrollBar:vertical {width: %1px;}").arg(TScrollBar::mFixWidth));
 
     setRange(0, 100);
 

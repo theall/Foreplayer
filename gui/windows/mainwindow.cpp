@@ -25,8 +25,8 @@ TMainWindow::TMainWindow(QWidget *parent)
     mBtnLyrics = new TImageButton(this);
     mBtnExit = new TImageButton(this);
     mBtnMinimode = new TImageButton(this);
-    mProgressBar = new TSliderBar(this);
-    mVolumeBar = new TSliderBar(this);
+    mProgressBar = new TSliderBar(Qt::Horizontal, this);
+    mVolumeBar = new TSliderBar(Qt::Horizontal, this);
     mIcon = new TLabel(this);
     mMusicTitle = new TScrollLabel(this);
     mLedTime = new TLedWidget(this);

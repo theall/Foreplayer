@@ -6,7 +6,7 @@ TMusiclistModel::TMusiclistModel(QObject *parent) :
     for(int i=0;i<10;i++)
     {
         TMusicListData *data = new TMusicListData;
-        data->title = "fulkfour";
+        data->title = "fulkfour"+QString::number(i);
         data->album = "beyond";
         data->artist = "beyond";
         data->duration = "2:22";
@@ -44,7 +44,7 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
 
         if(column==0)
         {
-            return QString::number(index.row()+1) + ".";
+            return QString(" %1.").arg(index.row()+1);
         } else if (column==1) {
             return data->artist + "-" + data->title;
         } else if (column==2) {

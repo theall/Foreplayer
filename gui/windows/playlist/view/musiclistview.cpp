@@ -3,7 +3,7 @@
 TMusiclistView::TMusiclistView(QWidget *parent) :
     TAbstractTableView(parent)
 {
-
+    setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 
 void TMusiclistView::setModel(QAbstractItemModel *model)

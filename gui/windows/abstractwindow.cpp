@@ -70,6 +70,7 @@ TAbstractWindow::TAbstractWindow(QWidget *parent) :
 {
     setWindowFlags(Qt::Tool | Qt::X11BypassWindowManagerHint | Qt::FramelessWindowHint);
 
+    setMouseTracking(true);
     setAutoFillBackground(false);
     setAttribute(Qt::WA_TranslucentBackground);
 
@@ -103,7 +104,7 @@ void TAbstractWindow::mousePressEvent(QMouseEvent *event)
         mMouseMoveTriggered = true;
 
         if(mResizingDirection != RD_NONE) {
-            mouseGrabber();
+            grabMouse();
         }
     } else {
         QMainWindow::mousePressEvent(event);
@@ -200,6 +201,11 @@ void TAbstractWindow::mouseMoveEvent(QMouseEvent *event)
         }
 
         setCursor(C_RESIZE_ARROWS[mResizingDirection]);
+
+        if(mResizingDirection != RD_NONE)
+            grabMouse();
+        else
+            releaseMouse();
     } else {
         if(mResizingDirection != RD_NONE) {
             switch(mResizingDirection) {

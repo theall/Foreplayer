@@ -29,6 +29,10 @@ private:
     TButtonPixmap mButtonPixmap;
     TSliderbarStyle mStyle;
     void initialize();
+
+    // QWidget interface
+protected:
+    void mouseMoveEvent(QMouseEvent *) Q_DECL_OVERRIDE;
 };
 
 #endif // TSLIDERBAR_H

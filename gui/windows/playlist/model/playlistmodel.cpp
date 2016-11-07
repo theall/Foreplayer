@@ -48,8 +48,9 @@ QVariant TPlaylistModel::data(const QModelIndex &index, int role) const
         int row = index.row();
         if(row>-1 && row<mPlaylist.size())
             return mPlaylist[row];
+    } else if (role==Qt::TextAlignmentRole) {
+        return QVariant(Qt::AlignLeft|Qt::AlignVCenter);
     }
-
     return TAbstractModel::data(index, role);
 }
 

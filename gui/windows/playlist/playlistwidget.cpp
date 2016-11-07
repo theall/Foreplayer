@@ -2,27 +2,18 @@
 
 TPlaylistWidget::TPlaylistWidget(QWidget *parent) :
     QWidget(parent),
-    mLeft(0),
-    mTop(0),
-    mRight(0),
-    mBottom(0)
+    mMinWidth(100),
+    mMinHeight(60),
+    mMarginLeft(0),
+    mMarginTop(0),
+    mMarginRight(0),
+    mMarginBottom(0)
 {
-    setFontColors(QFont("-11,0,0,0,400,0,0,0,0,3,2,4,34,Tahoma"),
-                  QColor("#6091c6"),
-                  QColor("#e3ecf4"),
-                  QColor("#aac5dd"),
-                  QColor("#6898c4"),
-                  QColor("#3c80c4"),
-                  QColor("#000000"),
-                  QColor("#0c1623"));
-
-    setScrollBarPixmaps(
-                QPixmap("z:/skins/fulkfour/b1.bmp"),
-                QPixmap("z:/skins/fulkfour/scrollbar_button.bmp"),
-                QPixmap("z:/skins/fulkfour/scrollbar_thumb.bmp")
-                );
+    setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     QVBoxLayout *layout = new QVBoxLayout();
+    layout->setContentsMargins(0, 0, 0, 0);
+
     mPlaylistView = new TPlaylistView(this);
     mMusiclistView = new TMusiclistView(this);
     mTracklistView = new TTracklistView(this);
@@ -43,38 +34,38 @@ TPlaylistWidget::TPlaylistWidget(QWidget *parent) :
     mSplitter->addWidget(mMusiclistView);
     mSplitter->addWidget(mTracklistView);
 
+    mSplitter->setStretchFactor(0, 2);
+    mSplitter->setStretchFactor(1, 4);
+    mSplitter->setStretchFactor(2, 4);
     layout->addWidget(mSplitter);
 
     setLayout(layout);
 }
 
-void TPlaylistWidget::setMinimizeRect(QRect rect)
+void TPlaylistWidget::setAlignment(QPixmap background, QRect rect)
 {
-    mLeft = rect.left();
-    mTop = rect.top();
-
-    QRect rt = parentWidget()->rect();
-
-    mRight = rt.width() - rect.right();
-    mBottom = rt.height() - rect.bottom();
-
-    mMinimizeRect = rect;
+    mMarginLeft = rect.left();
+    mMarginTop = rect.top();
+    mMarginRight = background.width() - rect.right() + 1;
+    mMarginBottom = background.height() - rect.bottom() + 1;
+    mMinWidth = rect.width();
+    mMinHeight = rect.height();
 }
 
 bool TPlaylistWidget::updatePosition(QSize size)
 {
-    int newRight = size.width() - mRight;
-    int newBottom = size.height() - mBottom;
-    int newWidth = newRight - mLeft;
-    int newHeight = newBottom - mTop;
-    QRect newGeometry = mMinimizeRect;
+    int newRight = size.width() - mMarginRight;
+    int newBottom = size.height() - mMarginBottom;
+    int newWidth = newRight - mMarginLeft;
+    int newHeight = newBottom - mMarginTop;
+    QRect newGeometry(mMarginLeft, mMarginTop, newWidth, newHeight);
     bool canResize = false;
-    if(newWidth > mMinimizeRect.width())
+    if(newWidth >= mMinWidth)
     {
         newGeometry.setRight(newRight);
         canResize = true;
     }
-    if(newHeight > mMinimizeRect.height())
+    if(newHeight >= mMinHeight)
     {
         newGeometry.setBottom(newBottom);
         canResize = true;
@@ -94,10 +85,13 @@ void TPlaylistWidget::setFontColors(QFont font,
                                     QColor background1,
                                     QColor background2)
 {
-    TAbstractModel::setFont(font);
-    TAbstractModel::setTextColor(text);
-    TAbstractModel::setBackgroundColor(background1);
-    TAbstractModel::setCurrentRowTextColor(hilight);
+    TAbstractModel::setColorParameters(font,
+                                       text,
+                                       hilight,
+                                       number,
+                                       duration,
+                                       select,
+                                       background1);
 
     TAbstractTableView::setBackgroundColor(background2);
 }

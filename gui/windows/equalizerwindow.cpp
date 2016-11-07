@@ -6,9 +6,9 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     mBtnEnabled(new TImageButton(this)),
     mBtnProfile(new TImageButton(this)),
     mBtnReset(new TImageButton(this)),
-    mSldBalance(new TSliderBar(this)),
-    mSldSurround(new TSliderBar(this)),
-    mSldPreamp(new TSliderBar(this))
+    mSldBalance(new TSliderBar(Qt::Horizontal, this)),
+    mSldSurround(new TSliderBar(Qt::Horizontal, this)),
+    mSldPreamp(new TSliderBar(Qt::Horizontal, this))
 {
     setObjectName("EqualizerWindow");
 
@@ -27,7 +27,7 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
 
     for(int i=0;i<EQ_FACTORS;i++)
     {
-        TSliderBar *bar = new TSliderBar(this);
+        TSliderBar *bar = new TSliderBar(Qt::Vertical, this);
         bar->setRange(-12, 12);
         bar->setValue(0);
         bar->setOrientation(Qt::Vertical);

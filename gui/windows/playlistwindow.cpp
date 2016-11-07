@@ -1,16 +1,32 @@
 #include "playlistwindow.h"
 
 TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
-    TAbstractWindow(parent),
-    mToolbar(new TToolBar(this)),
-    mBtnClose(new TImageButton(this)),
-    mCentralWidget(new TPlaylistWidget(this))
+    TAbstractWindow(parent)
 {
     setObjectName("PlaylistWindow");
 
-    connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
-
     setMouseTracking(true);
+
+    TPlaylistWidget::setFontColors(QFont("-11,0,0,0,400,0,0,0,0,3,2,4,34,Tahoma"),
+                  QColor("#6091c6"),
+                  QColor("#e3ecf4"),
+                  QColor("#aac5dd"),
+                  QColor("#6898c4"),
+                  QColor("#3c80c4"),
+                  QColor("#000000"),
+                  QColor("#0c1623"));
+
+    TPlaylistWidget::setScrollBarPixmaps(
+                QPixmap("z:/skins/fulkfour/b1.bmp"),
+                QPixmap("z:/skins/fulkfour/scrollbar_button.bmp"),
+                QPixmap("z:/skins/fulkfour/scrollbar_thumb.bmp")
+                );
+
+    mToolbar = new TToolBar(this);
+    mBtnClose = new TImageButton(this);
+    mCentralWidget = new TPlaylistWidget(this);
+
+    connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
 
     retranslateUi();
 }
@@ -26,7 +42,7 @@ void TPlaylistWindow::setGuiParamter(PlaylistWindowParam *param)
     mToolbar->setGeometry(param->toolbar.position.geometry());
     mToolbar->setAlignment(param->window.background, param->toolbar.alignment);
 
-    mCentralWidget->setMinimizeRect(param->playlist.position.geometry());
+    mCentralWidget->setAlignment(param->window.background, param->playlist.position.geometry());
 }
 
 void TPlaylistWindow::on_btnClose_clicked()

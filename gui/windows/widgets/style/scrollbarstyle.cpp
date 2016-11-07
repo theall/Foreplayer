@@ -13,22 +13,6 @@ int TScrollbarStyle::styleHint(StyleHint hint, const QStyleOption *option, const
 }
 
 int TScrollbarStyle::pixelMetric(PixelMetric metric, const QStyleOption *option, const QWidget *widget) const{
-//    if(const TScrollBar *scrollBar = qobject_cast<const TScrollBar *>(widget)){
-//        Qt::Orientation orientation = scrollBar->orientation();
-//        const QPixmap *normal = scrollBar->handlePixmap()->normal();
-//        if(normal->isNull())
-//        {
-//            return 1;
-//        }
-//        if(orientation==Qt::Vertical)
-//        {
-//            return normal->height();
-//        }
-//        else if(orientation==Qt::Horizontal)
-//        {
-//            return normal->width();
-//        }
-//    }
     return QCommonStyle::pixelMetric(metric, option, widget);
 }
 

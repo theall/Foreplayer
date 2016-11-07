@@ -18,7 +18,7 @@ public:
     /*
      * Set minimize size of this widget.
      */
-    void setMinimizeRect(QRect rect);
+    void setAlignment(QPixmap background, QRect rect);
 
     /*
      * Update this widget position in parent widget.
@@ -30,7 +30,7 @@ public:
     /*
      * Set text color
      */
-    void setFontColors(QFont font,
+    static void setFontColors(QFont font,
                        QColor text,
                        QColor hilight,
                        QColor number,
@@ -42,7 +42,7 @@ public:
     /*
      * Set scroll bar pixmaps
      */
-    void setScrollBarPixmaps(QPixmap groove, QPixmap button, QPixmap handle);
+    static void setScrollBarPixmaps(QPixmap groove, QPixmap button, QPixmap handle);
 
 signals:
 
@@ -58,11 +58,12 @@ private:
     TTrackListModel *mTracklistModel;
 
     TSplitter *mSplitter;
-    QRect mMinimizeRect;
-    int mLeft;
-    int mTop;
-    int mRight;
-    int mBottom;
+    int mMinWidth;
+    int mMinHeight;
+    int mMarginLeft;
+    int mMarginTop;
+    int mMarginRight;
+    int mMarginBottom;
 };
 
 #endif // TPLAYLISTWIDGET_H
