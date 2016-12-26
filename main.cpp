@@ -6,8 +6,11 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-
+    QApplication app(argc, argv);
+    app.setOrganizationDomain("Theall");
+    app.setApplicationName("Foreplayer");
+    app.setApplicationVersion("0.0.1");
+    
     TCore core;
 
     TMainController controller;

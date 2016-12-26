@@ -14,9 +14,14 @@
 #include <QTimer>
 #include <QBrush>
 #include <QPoint>
+#include <QJsonDocument>
 #include <QEvent>
 #include <QDebug>
 #include <QColor>
+#include <QSettings>
+#include <QObject>
+#include <QXmlStreamReader>
+#include <QXmlStreamWriter>
 #include <QDate>
 #include <QList>
 #include <QString>

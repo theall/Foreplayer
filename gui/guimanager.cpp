@@ -1,5 +1,7 @@
 #include "guimanager.h"
 
+#include <QMessageBox>
+
 void findGumedWindows(TWindowList &list, TWindowList &findedList)
 {
     if(list.size()==0 || findedList.size()==0)
@@ -32,31 +34,23 @@ void findGumedWindows(TWindowList &list, TWindowList &findedList)
     }
 }
 
-TGuiManager::TGuiManager(QObject *parent) :
-    QObject(parent),
-    mMainWindow(new TMainWindow),
-    mLyricWindow(new TLyricWindow),
-    mEqualizerWindow(new TEqualizerWindow),
-    mPlaylistWindow(new TPlaylistWindow),
-    mBrowserWindow(new TBrowserWindow),
-    mDesktopLyricWindow(new TDesktopLyricWindow),
-    mDesktopWindow(new TDesktopWindow),
-    mMainMenu(new TMainMenu),
-    mShowDesktopLyric(false)
+TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
+    , mMainWindow(new TMainWindow)
+    , mMiniWindow(new TMiniWindow)
+    , mLyricWindow(new TLyricWindow)
+    , mEqualizerWindow(new TEqualizerWindow)
+    , mPlaylistWindow(new TPlaylistWindow)
+    , mBrowserWindow(new TBrowserWindow)
+    , mDesktopLyricWindow(new TDesktopLyricWindow)
+    , mDesktopWindow(new TDesktopWindow)
+    , mMainMenu(new TMainMenu)
+    , mMinimode(false)
+    , mShowDesktopLyric(false)
 {
-    QStringList titles;
-    titles.append("13: 岁月无声 beyond IV (from 1983-2003) contributed");
-    titles.append("标题: 岁月无声 beyond IV");
-    titles.append("艺术家: beyond beyond IV");
-    titles.append("专辑: beyond IV (from 1983-2003) contributed to beyond.Spirit of wong.");
-    titles.append("格式: MP3 44KHZ 320K");
-
-    mMainWindow->setCaption("fulkfour is coming!");
-    mMainWindow->setTitles(titles);
-    mMainWindow->setTime(99, 354);
     mMainWindow->setContextMenu(mMainMenu);
 
     // Main window
+    connect(mMainWindow, SIGNAL(exitClicked()), this, SLOT(slotRequestExit()));
     connect(mMainWindow, SIGNAL(lyricButtonToggle(bool)), this, SLOT(slotLyricButtonToggled(bool)));
     connect(mMainWindow, SIGNAL(equalizerButtonToggle(bool)), this, SLOT(slotEqualizerButtonToggled(bool)));
     connect(mMainWindow, SIGNAL(playlistButtonToggle(bool)), this, SLOT(slotPlaylistButtonToggled(bool)));
@@ -65,6 +59,17 @@ TGuiManager::TGuiManager(QObject *parent) :
     connect(mMainWindow, SIGNAL(requestShowMinimized()), this, SLOT(slotShowMinimized()));
     connect(mMainWindow, SIGNAL(requestToggleWindow()), this, SLOT(slotRequestToggleWindow()));
     connect(mMainWindow, SIGNAL(requestRestoreWindow()), this, SLOT(slotRequestRestoreWindow()));
+    connect(mMainWindow, SIGNAL(onActivationChange()), this, SLOT(slotMainWindowActivationChanged()));
+    connect(mMainWindow, SIGNAL(requestClose()), this, SLOT(slotMainWindowAboutToClose()));
+
+    // Mini window
+    connect(mMiniWindow, SIGNAL(exitClicked()), this, SLOT(slotRequestExit()));
+    connect(mMiniWindow, SIGNAL(lyricButtonToggle(bool)), this, SLOT(slotLyricButtonToggled(bool)));
+    connect(mMiniWindow, SIGNAL(equalizerButtonToggle(bool)), this, SLOT(slotEqualizerButtonToggled(bool)));
+    connect(mMiniWindow, SIGNAL(playlistButtonToggle(bool)), this, SLOT(slotPlaylistButtonToggled(bool)));
+    connect(mMiniWindow, SIGNAL(browserButtonToggle(bool)), this, SLOT(slotBrowserButtonToggled(bool)));
+    connect(mMiniWindow, SIGNAL(requestMoveWindow(QPoint)), this, SLOT(slotRequestMoveWindow(QPoint)));
+    connect(mMiniWindow, SIGNAL(requestShowMinimized()), this, SLOT(slotShowMinimized()));
 
     //Lyric window
     connect(mLyricWindow, SIGNAL(lyricWindowToggled(bool)), this, SLOT(slotLyricWindowToggled(bool)));
@@ -97,42 +102,77 @@ TGuiManager::TGuiManager(QObject *parent) :
     connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
 }
 
-void TGuiManager::loadSkin(QString skinPath)
+TGuiManager::~TGuiManager()
 {
-    SkinLoader loader;
-    loader.load(skinPath);
+    if(mMainWindow)
+    {
+        delete mMainWindow;
+        mMainWindow = NULL;
+    }
+    if(mMiniWindow)
+    {
+        delete mMiniWindow;
+        mMiniWindow = NULL;
+    }
+    if(mLyricWindow)
+    {
+        delete mLyricWindow;
+        mLyricWindow = NULL;
+    }
+    if(mEqualizerWindow)
+    {
+        delete mEqualizerWindow;
+        mEqualizerWindow = NULL;
+    }
+    if(mPlaylistWindow)
+    {
+        delete mPlaylistWindow;
+        mPlaylistWindow = NULL;
+    }
+    if(mBrowserWindow)
+    {
+        delete mBrowserWindow;
+        mBrowserWindow = NULL;
+    }
+    if(mDesktopLyricWindow)
+    {
+        delete mDesktopLyricWindow;
+        mDesktopLyricWindow = NULL;
+    }
+    if(mDesktopWindow)
+    {
+        delete mDesktopWindow;
+        mDesktopWindow = NULL;
+    }
+    if(mMainMenu)
+    {
+        delete mMainMenu;
+        mMainMenu = NULL;
+    }
+}
 
-    mMainWindow->setGuiParameter(loader.mainWindow(), loader.miniWindow());
+void TGuiManager::loadSkin(QString fileName)
+{
+    if(fileName.isEmpty())
+        return;
 
-    QRect rt;
-
-    rt = mMainWindow->geometry();
-
-    //The window position is releative to main window
-    LyricWindowParam *lyricParam = loader.lyricWindow();
-    rt = lyricParam->window.position.geometry();
-    mLyricWindow->setGuiParamter(lyricParam);
-    mLyricWindow->move(rt.x(), rt.y());
-
-    EqualizerWindowParam *equalizerParam = loader.equalizerWindow();
-    rt = equalizerParam->window.position.geometry();
-    mEqualizerWindow->setGuiParamter(equalizerParam);
-    mEqualizerWindow->move(rt.x(), rt.y());
-
-    PlaylistWindowParam *playlistParam = loader.playlistWindow();
-    rt = playlistParam->window.position.geometry();
-    mPlaylistWindow->setGuiParamter(playlistParam);
-    mPlaylistWindow->move(rt.x(), rt.y());
-
-    BrowserWindowParam *browserParam = loader.browserWindow();
-    rt = browserParam->window.position.geometry();
-    mBrowserWindow->setGuiParamter(browserParam);
-    mBrowserWindow->move(rt.x(), rt.y());
-
-    DesklrcBarParam *desktoplyricParam = loader.desklrcBar();
-    rt = desktoplyricParam->window.position.geometry();
-    mDesktopLyricWindow->setGuiParamter(desktoplyricParam);
-    mDesktopLyricWindow->move(rt.x(), rt.y());
+    TSkin skin;
+    if(skin.load(fileName))
+    {
+        QDomElement root = skin.rootElement();
+        mMainWindow->loadFromSkin(root.firstChildElement(TAG_PLAYER_WINDOW), &skin);
+        mMiniWindow->loadFromSkin(root.firstChildElement(TAG_MINI_WINDOW), &skin);
+        mLyricWindow->loadFromSkin(root.firstChildElement(TAG_LYRIC_WINDOW), &skin);
+        mEqualizerWindow->loadFromSkin(root.firstChildElement(TAG_EQUALIZER_WINDOW), &skin);
+        mPlaylistWindow->loadFromSkin(root.firstChildElement(TAG_PLAYLIST_WINDOW), &skin);
+        mBrowserWindow->loadFromSkin(root.firstChildElement(TAG_BROWSER_WINDOW), &skin);
+        mDesktopLyricWindow->loadFromSkin(root.firstChildElement(TAG_DESKLRC_BAR), &skin);
+    } else {
+        QMessageBox::critical(
+            mMainWindow,
+            tr("Load skin error."),
+            skin.lastError());
+    }
 }
 
 void TGuiManager::showGui()
@@ -146,31 +186,6 @@ void TGuiManager::showGui()
     mEqualizerWindow->show();
     mPlaylistWindow->show();
     //mBrowserWindow->show();
-}
-
-TLyricWindow *TGuiManager::lyricWindow()
-{
-    return mLyricWindow;
-}
-
-TMainWindow *TGuiManager::mainWindow()
-{
-    return mMainWindow;
-}
-
-TEqualizerWindow *TGuiManager::equalizerWindow()
-{
-    return mEqualizerWindow;
-}
-
-TBrowserWindow *TGuiManager::browserWindow()
-{
-    return mBrowserWindow;
-}
-
-TDesktopLyricWindow *TGuiManager::desktopLyricWindow()
-{
-    return mDesktopLyricWindow;
 }
 
 void TGuiManager::slotLyricWindowToggled(bool toggled)
@@ -350,17 +365,27 @@ void TGuiManager::slotShowMinimized()
     hide();
 }
 
+void TGuiManager::slotRequestExit()
+{
+    mMainWindow->close();
+}
+
 void TGuiManager::slotRequestToggleWindow()
 {
     if(mMainWindow->isVisible())
+    {
         hide();
-    else
+    } else {
         show();
+    }
 }
 
 void TGuiManager::slotRequestRestoreWindow()
 {
-    show();
+    if(!mMainWindow->isVisible())
+        show();
+    else
+        mMainWindow->activateWindow();
 }
 
 void TGuiManager::slotExit()
@@ -383,27 +408,47 @@ void TGuiManager::slotRequestLoadSkin(QString skinFullName)
     loadSkin(skinFullName);
 }
 
+void TGuiManager::slotMainWindowActivationChanged()
+{
+    if(mMainWindow->isActiveWindow())
+    {
+        mEqualizerWindow->raise();
+        mLyricWindow->raise();
+        mPlaylistWindow->raise();
+    }
+}
+
+void TGuiManager::slotMainWindowAboutToClose()
+{
+    mLyricWindow->close();
+    mEqualizerWindow->close();
+    mPlaylistWindow->close();
+    mBrowserWindow->close();
+    mDesktopLyricWindow->close();
+    mDesktopWindow->close();
+}
+
 void TGuiManager::hide()
 {
-    mBrowserVisiable = mBrowserWindow->isVisible();
-    mPlaylistVisiable = mPlaylistWindow->isVisible();
-    mLyricWindowVisiable = mLyricWindow->isVisible();
-    mDesktopLyricVisiable = mDesktopLyricWindow->isVisible();
-    mEqualizerVisiable = mEqualizerWindow->isVisible();
+    mBrowserVisible = mBrowserWindow->isVisible();
+    mPlaylistVisible = mPlaylistWindow->isVisible();
+    mLyricWindowVisible = mLyricWindow->isVisible();
+    mDesktopLyricVisible = mDesktopLyricWindow->isVisible();
+    mEqualizerVisible = mEqualizerWindow->isVisible();
 
-    if(mEqualizerVisiable)
+    if(mEqualizerVisible)
         mEqualizerWindow->hide();
 
-    if(mDesktopLyricVisiable)
+    if(mDesktopLyricVisible)
         mDesktopLyricWindow->hide();
 
-    if(mLyricWindowVisiable)
+    if(mLyricWindowVisible)
         mLyricWindow->hide();
 
-    if(mPlaylistVisiable)
+    if(mPlaylistVisible)
         mPlaylistWindow->hide();
 
-    if(mBrowserVisiable)
+    if(mBrowserVisible)
         mBrowserWindow->hide();
 
     mMainWindow->hide();
@@ -411,24 +456,22 @@ void TGuiManager::hide()
 
 void TGuiManager::show()
 {
-    mMainWindow->show();
+    if(mEqualizerVisible)
+        mEqualizerWindow->showNormal();
 
-    if(mEqualizerVisiable)
-        mEqualizerWindow->show();
+    //if(mDesktopLyricVisible)
+    //    mDesktopLyricWindow->showNormal();
 
-    if(mDesktopLyricVisiable)
-        mDesktopLyricWindow->show();
+    if(mLyricWindowVisible)
+        mLyricWindow->showNormal();
 
-    if(mLyricWindowVisiable)
-        mLyricWindow->show();
+    if(mPlaylistVisible)
+        mPlaylistWindow->showNormal();
 
-    if(mPlaylistVisiable)
-        mPlaylistWindow->show();
+    //if(mBrowserVisible)
+    //    mBrowserWindow->showNormal();
 
-    if(mBrowserVisiable)
-        mBrowserWindow->show();
-
-    QApplication::setActiveWindow(mMainWindow);
+    mMainWindow->showNormal();
 }
 
 void TGuiManager::moveWindow(TAbstractWindow *window, int left, int top)

@@ -48,6 +48,11 @@ void TAbstractModel::setCurrentIndex(int index)
     emit dataChanged(QModelIndex(), QModelIndex(), roles);
 }
 
+void TAbstractModel::setPlaylistCore(TPlaylistCore *core)
+{
+    mPlaylistCore = core;
+}
+
 void TAbstractModel::setFont(QFont font)
 {
     mFont = font;

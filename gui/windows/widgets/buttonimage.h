@@ -18,6 +18,7 @@ public:
     explicit TButtonIcon();
 
     void setPixmap(QPixmap pixmap, int count=TBUTTON_COUNT);
+    void seIcon(TButtonIndex index, QIcon icon);
 
     const QIcon *normal() const;
     const QIcon *hover() const;
@@ -37,6 +38,7 @@ public:
     explicit TButtonPixmap();
 
     void setPixmap(QPixmap pixmap, int count=TBUTTON_COUNT);
+    void setPixmap(TButtonIndex index, QPixmap pixmap);
 
     const QPixmap *normal() const;
     const QPixmap *hover() const;

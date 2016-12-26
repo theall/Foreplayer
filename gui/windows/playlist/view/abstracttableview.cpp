@@ -9,6 +9,11 @@ TTableViewDelegate::TTableViewDelegate(QObject *parent) :
     mSelectedPixmap.load("z:/skins/fulkfour/playlist_selected.bmp");
 }
 
+void TTableViewDelegate::setPixmap(QPixmap pixmap)
+{
+    mSelectedPixmap = pixmap;
+}
+
 void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     const QAbstractItemModel *model = index.model();
@@ -126,6 +131,7 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
     TScrollBar *bar = new TScrollBar(Qt::Vertical, this);
     connect(bar, &TScrollBar::onVisibleToggle, this, &TAbstractTableView::updateColumnsWidth);
     setVerticalScrollBar(bar);
+    setContextMenuPolicy(Qt::CustomContextMenu);
 }
 
 void TAbstractTableView::setBackgroundColor(QColor color)

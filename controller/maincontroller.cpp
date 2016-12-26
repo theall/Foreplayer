@@ -42,9 +42,6 @@ void TThread::run()
 TMainController::TMainController(QObject *parent) :
     TAbstractController(parent),
     mThread(NULL),
-    mManager(NULL),
-    mMainWindow(NULL),
-    mCore(NULL),
     mPlaylistController(new TPlaylistController(this))
 {
 

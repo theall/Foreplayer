@@ -74,3 +74,16 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
     }
     return TAbstractModel::data(index, role);
 }
+
+void TMusiclistModel::setCurrentIndex(int index)
+{
+    if(mPlaylistCore)
+        mPlaylistCore->setCurrentIndex(MusicList, index);
+
+    TAbstractModel::setCurrentIndex(index);
+}
+
+void TMusiclistModel::setPlaylistCore(TPlaylistCore *core)
+{
+    TAbstractModel::setPlaylistCore(core);
+}

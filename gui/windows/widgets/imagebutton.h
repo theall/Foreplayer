@@ -2,9 +2,12 @@
 #define TIMAGEBUTTON_H
 
 #include "buttonimage.h"
+#include "../../share/skin.h"
 
-class TImageButton : public QPushButton
+class TImageButton : public QPushButton, TSkinReader
 {
+    Q_OBJECT
+
 public:
     TImageButton(QWidget *parent=0);
     ~TImageButton();
@@ -17,22 +20,30 @@ public:
 
     void updatePos();
 
+signals:
+    void mouseEnter();
+    void mouseLeave();
+
 protected:
-    void enterEvent(QEvent *);//鼠标进入事件
-    void leaveEvent(QEvent *);//离开
-    void mousePressEvent(QMouseEvent *e);//点击
-    void mouseReleaseEvent(QMouseEvent *e);//释放
+    void enterEvent(QEvent *event);
+    void leaveEvent(QEvent *event);
+    void mousePressEvent(QMouseEvent *eevent);
+    void mouseReleaseEvent(QMouseEvent *eevent);
 
 private:
     QSize mAlignSize;
     Qt::Alignment mAlignment;
-    TButtonIcon *m_buttonImages;
+    TButtonIcon *mButtonImages;
 
     void setIconAndSize(QIcon icon);
 
     // QWidget interface
 protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TIMAGEBUTTON_H

@@ -2,7 +2,7 @@
 
 TImageButton::TImageButton(QWidget *parent):
     QPushButton(parent),
-    m_buttonImages(new TButtonIcon)
+    mButtonImages(new TButtonIcon)
 {
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
@@ -14,23 +14,23 @@ TImageButton::TImageButton(QWidget *parent):
 
 TImageButton::~TImageButton()
 {
-    delete m_buttonImages;
+    delete mButtonImages;
 }
 
 void TImageButton::setPixmapRect(QPixmap pixmap, QRect rect)
 {
     setGeometry(rect);
 
-    m_buttonImages->setPixmap(pixmap);
+    mButtonImages->setPixmap(pixmap);
 
-    setIconAndSize(*m_buttonImages->normal());
+    setIconAndSize(*mButtonImages->normal());
 }
 
 void TImageButton::setPixmap(QPixmap pixmap)
 {
-    m_buttonImages->setPixmap(pixmap);
+    mButtonImages->setPixmap(pixmap);
 
-    setIconAndSize(*m_buttonImages->normal());
+    setIconAndSize(*mButtonImages->normal());
 }
 
 Qt::Alignment TImageButton::alignment()
@@ -86,20 +86,24 @@ void TImageButton::enterEvent(QEvent *event)
 {
     QPushButton::enterEvent(event);
 
-    setIconAndSize(*m_buttonImages->hover());
+    setIconAndSize(*mButtonImages->hover());
+
+    emit mouseEnter();
 }
 
 void TImageButton::leaveEvent(QEvent *event)
 {
     QPushButton::leaveEvent(event);
 
-    setIconAndSize(*m_buttonImages->normal());
+    setIconAndSize(*mButtonImages->normal());
+
+    emit mouseLeave();
 }
 
 void TImageButton::mousePressEvent(QMouseEvent *event)
 {
     if(event->button()==Qt::LeftButton)
-        setIconAndSize(*m_buttonImages->mouseDown());
+        setIconAndSize(*mButtonImages->mouseDown());
 
     QPushButton::mousePressEvent(event);
 }
@@ -113,16 +117,16 @@ void TImageButton::mouseReleaseEvent(QMouseEvent *event)
         QPoint pt = event->pos();
         QRect rect(0, 0, width(), height());
         if(rect.contains(pt))
-            setIconAndSize(*m_buttonImages->hover());
+            setIconAndSize(*mButtonImages->hover());
         else
-            setIconAndSize(*m_buttonImages->normal());
+            setIconAndSize(*mButtonImages->normal());
     }
 }
 
 void TImageButton::setIconAndSize(QIcon icon)
 {
     setIcon(icon);
-    setIconSize(m_buttonImages->size());
+    setIconSize(mButtonImages->size());
 }
 
 
@@ -140,10 +144,24 @@ void TImageButton::paintEvent(QPaintEvent *event)
 
     option.text = "";
     if(isChecked())
-        option.icon = *m_buttonImages->mouseDown();
+        option.icon = *mButtonImages->mouseDown();
     else
         option.icon = icon();
     option.iconSize = iconSize();
 
     p.drawControl(QStyle::CE_PushButton, option);
+}
+
+void TImageButton::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    setGeometry(SkinUtils::extractGeometry(element));
+    mButtonImages->setPixmap(skin->findPixmap(element.attribute(ATTR_IMAGE)));
+    setIconAndSize(*mButtonImages->normal());
+
+    QString alignment = element.attribute(ATTR_ALIGN);
+    if(!alignment.isEmpty())
+    {
+        QDomElement parentElement = element.parentNode().toElement();
+        setAlignment(skin->findPixmap(parentElement.attribute(ATTR_IMAGE)), SkinUtils::strToAlign(alignment));
+    }
 }

@@ -30,7 +30,6 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
         TSliderBar *bar = new TSliderBar(Qt::Vertical, this);
         bar->setRange(-12, 12);
         bar->setValue(0);
-        bar->setOrientation(Qt::Vertical);
         connect(bar, SIGNAL(valueChanged(int)), this, SLOT(on_eqFactor_valueChanged(int)));
 
         mSldEqFactors.append(bar);
@@ -43,37 +42,6 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     connect(mSldPreamp, SIGNAL(valueChanged(int)), this, SLOT(on_preamp_valueChanged(int)));
 
     retranslateUi();
-}
-
-void TEqualizerWindow::setGuiParamter(EqualizerWindowParam *param)
-{
-    setWindowParam(&param->window);
-
-    mBtnClose->setPixmapRect(param->close.image, param->close.position.geometry());
-    mBtnEnabled->setPixmapRect(param->enabled.image, param->enabled.position.geometry());
-    mBtnProfile->setPixmapRect(param->profile.image, param->profile.position.geometry());
-    mBtnReset->setPixmapRect(param->reset.image, param->reset.position.geometry());
-
-    mSldBalance->setGeometry(param->balance.position.geometry());
-    mSldBalance->setPixmaps(param->balance.image, param->balance.image1, param->balance.image2);
-
-    mSldSurround->setGeometry(param->surround.position.geometry());
-    mSldSurround->setPixmaps(param->surround.image, param->surround.image1, param->surround.image2);
-
-    mSldPreamp->setGeometry(param->preamp.position.geometry());
-    mSldPreamp->setPixmaps(param->preamp.image, param->preamp.image1, param->preamp.image2);
-
-    QRect rt = param->eqfactor.position.geometry();
-    int space = param->window.interval + rt.width() - 1;
-    int offset = rt.left();
-
-    for(int i=0;i<EQ_FACTORS;i++)
-    {
-        mSldEqFactors[i]->setGeometry(rt);
-        mSldEqFactors[i]->setPixmaps(param->eqfactor.image, param->eqfactor.image1, param->eqfactor.image2);
-        offset += space;
-        rt.moveLeft(offset);
-    }
 }
 
 void TEqualizerWindow::on_btnClose_clicked()
@@ -194,4 +162,30 @@ QString TEqualizerWindow::dbStatusString(int value)
         prefix = "+";
 
     return tr("%1%2 db").arg(prefix).arg(value);
+}
+
+void TEqualizerWindow::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    TAbstractWindow::loadFromSkin(element, skin);
+
+    mBtnClose->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_CLOSE), skin);
+    mBtnEnabled->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_ENABLED), skin);
+    mBtnProfile->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_PROFILE), skin);
+    mBtnReset->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_RESET), skin);
+
+    mSldBalance->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_BALANCE), skin);
+    mSldSurround->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_SURROUND), skin);
+    mSldPreamp->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_PREAMP), skin);
+
+    QDomElement factorElement = element.firstChildElement(TAG_EQUALIZER_EQFACTOR);
+    QRect rt = SkinUtils::strToGeometry(factorElement.attribute(ATTR_POSITION));
+    int space = element.attribute(ATTR_EQ_INTERVAL).toInt() + rt.width() - 1;
+    int offsetX = rt.left();
+    for(int i=0;i<EQ_FACTORS;i++)
+    {
+        TSliderBar *sliderBar = mSldEqFactors[i];
+        sliderBar->loadFromSkin(factorElement, skin);
+        rt.moveLeft(offsetX + i*space);
+        sliderBar->setGeometry(rt);
+    }
 }

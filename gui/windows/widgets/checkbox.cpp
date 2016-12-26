@@ -2,7 +2,7 @@
 
 TCheckBox::TCheckBox(QWidget *parent):
     QCheckBox(parent),
-    m_buttonImages(new TButtonIcon)
+    mButtonImages(new TButtonIcon)
 {
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
@@ -13,43 +13,40 @@ TCheckBox::TCheckBox(QWidget *parent):
 
 TCheckBox::~TCheckBox()
 {
-    delete m_buttonImages;
+    delete mButtonImages;
 }
 
 void TCheckBox::setPixmapRect(QPixmap pixmap, QRect rect)
 {
     setGeometry(rect);
-
-    m_buttonImages->setPixmap(pixmap);
-
-    setIconAndSize(*m_buttonImages->normal());
+    setPixmap(pixmap);
 }
 
 void TCheckBox::setPixmap(QPixmap pixmap)
 {
-    m_buttonImages->setPixmap(pixmap);
+    mButtonImages->setPixmap(pixmap);
 
-    setIconAndSize(*m_buttonImages->normal());
+    setIconAndSize(*mButtonImages->normal());
 }
 
 void TCheckBox::enterEvent(QEvent *event)
 {
     QCheckBox::enterEvent(event);
 
-    setIconAndSize(*m_buttonImages->hover());
+    setIconAndSize(*mButtonImages->hover());
 }
 
 void TCheckBox::leaveEvent(QEvent *event)
 {
     QCheckBox::leaveEvent(event);
 
-    setIconAndSize(*m_buttonImages->normal());
+    setIconAndSize(*mButtonImages->normal());
 }
 
 void TCheckBox::mousePressEvent(QMouseEvent *event)
 {
     if(event->button()==Qt::LeftButton)
-        setIconAndSize(*m_buttonImages->mouseDown());
+        setIconAndSize(*mButtonImages->mouseDown());
 
     QCheckBox::mousePressEvent(event);
 }
@@ -63,18 +60,17 @@ void TCheckBox::mouseReleaseEvent(QMouseEvent *event)
         QPoint pt = event->pos();
         QRect rect(0, 0, width(), height());
         if(rect.contains(pt))
-            setIconAndSize(*m_buttonImages->hover());
+            setIconAndSize(*mButtonImages->hover());
         else
-            setIconAndSize(*m_buttonImages->normal());
+            setIconAndSize(*mButtonImages->normal());
     }
 }
 
 void TCheckBox::setIconAndSize(QIcon icon)
 {
     setIcon(icon);
-    setIconSize(m_buttonImages->size());
+    setIconSize(mButtonImages->size());
 }
-
 
 void TCheckBox::paintEvent(QPaintEvent *event)
 {
@@ -90,7 +86,7 @@ void TCheckBox::paintEvent(QPaintEvent *event)
 
     option.text = text();
     if(isChecked())
-        option.icon = *m_buttonImages->mouseDown();
+        option.icon = *mButtonImages->mouseDown();
     else
         option.icon = icon();
     option.iconSize = iconSize();
@@ -106,3 +102,15 @@ void TCheckBox::setFontColor(QFont font, QColor color)
     setPalette(pa);
 }
 
+void TCheckBox::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    setGeometry(SkinUtils::strToGeometry(element.attribute(ATTR_POSITION)));
+    mButtonImages->setPixmap(skin->findPixmap(element.attribute(ATTR_CKBOX_IMAGE)));
+    setIconAndSize(*mButtonImages->normal());
+
+    setFontColor(SkinUtils::extractFont(element), QColor(element.attribute(ATTR_COLOR)));
+
+    int interval = element.attribute(ATTR_INTERVAL).toInt();
+    Q_UNUSED(interval)
+
+}

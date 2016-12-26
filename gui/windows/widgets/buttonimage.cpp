@@ -44,6 +44,15 @@ void TButtonIcon::setPixmap(QPixmap pixmap, int count)
     mSize.setHeight(height);
 }
 
+void TButtonIcon::seIcon(TButtonIndex index, QIcon icon)
+{
+    int i = (int)index;
+    if(i<0 || i>=mIcons.size())
+        return;
+
+    mIcons[index] = icon;
+}
+
 const QIcon *TButtonIcon::normal() const
 {
     return &mIcons[BI_Normal];
@@ -110,6 +119,15 @@ void TButtonPixmap::setPixmap(QPixmap pixmap, int count)
     }
     mSize.setWidth(uwidth);
     mSize.setHeight(height);
+}
+
+void TButtonPixmap::setPixmap(TButtonIndex index, QPixmap pixmap)
+{
+    int i = (int)index;
+    if(i<0 || i>=mPixmaps.size())
+        return;
+
+    mPixmaps[index] = pixmap;
 }
 
 const QPixmap *TButtonPixmap::normal() const

@@ -3,6 +3,8 @@
 
 #include "utils.h"
 
+#include "../../core/playlistcore.h"
+
 class TAbstractModel : public QAbstractTableModel
 {
     Q_OBJECT
@@ -12,7 +14,9 @@ public:
 
     QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
 
-    void setCurrentIndex(int index);
+    virtual void setCurrentIndex(int index);
+
+    virtual void setPlaylistCore(TPlaylistCore *core);
 
     static void setFont(QFont font);
     static void setBackgroundColor(QColor color);
@@ -36,7 +40,10 @@ private:
     static QVariant mSelectedTextColor;
     static QVariant mNumberColor;
     static QVariant mDurationColor;
+
+protected:
     int mCurrentRow;
+    TPlaylistCore *mPlaylistCore;
 };
 
 #endif // TABSTRACTMODEL_H

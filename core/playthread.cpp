@@ -1,7 +1,6 @@
 #include "playthread.h"
 
 TPlayThread::TPlayThread(TAbstractFront *front):
-    QThread(),
     mPaused(true),
     mNeedTerminate(false),
     mFront(front)

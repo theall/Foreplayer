@@ -1,1 +1,4 @@
 *.user
+tools/skin/
+ui_*.h
+*.zip

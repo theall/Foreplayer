@@ -149,3 +149,11 @@ void TScrollLabel::paintEvent(QPaintEvent *event)
 
     p.end();
 }
+
+void TScrollLabel::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    Q_UNUSED(skin)
+
+    setGeometry(SkinUtils::extractGeometry(element));
+    setFontColor(SkinUtils::extractFont(element), QColor(element.attribute(ATTR_COLOR)));
+}

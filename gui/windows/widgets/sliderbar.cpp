@@ -29,6 +29,16 @@ TSliderBar::~TSliderBar()
 {
 }
 
+void TSliderBar::setPixmap(TSliderBar::TPixmapType type, QPixmap pixmap)
+{
+    if(type==PT_GROOVE)
+        mGroovePixmap = pixmap;
+    else if (type==PT_BUTTON)
+        mButtonPixmap.setPixmap(pixmap);
+    else if (type==PT_FILL)
+        mFillPixmap = pixmap;
+}
+
 void TSliderBar::setPixmaps(QPixmap groove, QPixmap button, QPixmap fill)
 {
     mGroovePixmap = groove;
@@ -62,4 +72,16 @@ void TSliderBar::mouseMoveEvent(QMouseEvent *e)
 
     // The slider bar will not send active sub control message, so force update.
     update();
+}
+
+void TSliderBar::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    QRect rt = SkinUtils::extractGeometry(element);
+    setGeometry(rt);
+    mGroovePixmap = skin->findPixmap(element.attribute(ATTR_BAR_IMAGE));
+    mFillPixmap = skin->findPixmap(element.attribute(ATTR_FILL_IMAGE));
+    mButtonPixmap.setPixmap(skin->findPixmap(element.attribute(ATTR_THUMB_IMAGE)));
+
+    setVertical(rt.height() > rt.width());
+    // SkinUtils::strToBool(element.attribute(ATTR_VERTICAL))
 }

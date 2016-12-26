@@ -2,38 +2,38 @@
 
 const int c_title_interval = 300;
 
-TMainWindow::TMainWindow(QWidget *parent)
-    : TAbstractWindow(parent),
-      mCaptionIndex(0),
-      mTitleTimerId(-1),
-      mMinimode(false),
-      mWindowHided(false)
+TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
+    , mBtnPlay(new TImageButton(this))
+    , mBtnPrev(new TImageButton(this))
+    , mBtnNext(new TImageButton(this))
+    , mBtnPause(new TImageButton(this))
+    , mBtnStop(new TImageButton(this))
+    , mBtnOpen(new TImageButton(this))
+    , mBtnMute(new TImageButton(this))
+    , mBtnMinimize(new TImageButton(this))
+    , mBtnBrowser(new TImageButton(this))
+    , mBtnEqualizer(new TImageButton(this))
+    , mBtnPlaylist(new TImageButton(this))
+    , mBtnLyrics(new TImageButton(this))
+    , mBtnExit(new TImageButton(this))
+    , mBtnMinimode(new TImageButton(this))
+    , mProgressBar(new TSliderBar(Qt::Horizontal, this))
+    , mVolumeBar(new TSliderBar(Qt::Horizontal, this))
+    , mIcon(new TLabel(this))
+    , mMusicTitle(new TScrollLabel(this))
+    , mLedTime(new TLedWidget(this))
+    , mStereo(new TLabel(this))
+    , mStatus(new TLabel(this))
+    , mVisualWidget(new TVisualWidget(this))
+    , mCaptionIndex(0)
+    , mTitleTimerId(-1)
+    , mTrayIcon(new QSystemTrayIcon(this))
+    , mMinimode(false)
+    , mWindowHided(false)
 {
     setObjectName("MainWindow");
 
-    mBtnPlay = new TImageButton(this);
-    mBtnPrev = new TImageButton(this);
-    mBtnNext = new TImageButton(this);
-    mBtnPause = new TImageButton(this);
-    mBtnStop = new TImageButton(this);
-    mBtnOpen = new TImageButton(this);
-    mBtnMute = new TImageButton(this);
-    mBtnMinimize = new TImageButton(this);
-    mBtnBrowser = new TImageButton(this);
-    mBtnEqualizer = new TImageButton(this);
-    mBtnPlaylist = new TImageButton(this);
-    mBtnLyrics = new TImageButton(this);
-    mBtnExit = new TImageButton(this);
-    mBtnMinimode = new TImageButton(this);
-    mProgressBar = new TSliderBar(Qt::Horizontal, this);
-    mVolumeBar = new TSliderBar(Qt::Horizontal, this);
-    mIcon = new TLabel(this);
-    mMusicTitle = new TScrollLabel(this);
-    mLedTime = new TLedWidget(this);
-    mStereo = new TLabel(this);
-    mStatus = new TLabel(this);
-    mVisualWidget = new TVisualWidget(this);
-    mTrayIcon = new QSystemTrayIcon(this);
+    setWindowFlags(Qt::FramelessWindowHint|Qt::BypassWindowManagerHint|Qt::WindowMinimizeButtonHint);
 
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
@@ -67,7 +67,7 @@ TMainWindow::TMainWindow(QWidget *parent)
     mIcon->setScaledContents(true);
     mIcon->setCursor(Qt::PointingHandCursor);
 
-    connect(mBtnExit, SIGNAL(clicked()), this, SLOT(close()));
+    connect(mBtnExit, SIGNAL(clicked()), this, SIGNAL(exitClicked()));
     connect(mBtnPlay, SIGNAL(clicked()), this, SLOT(on_btnPlay_clicked()));
     connect(mBtnPause, SIGNAL(clicked()), this, SLOT(on_btnPause_clicked()));
     connect(mBtnOpen, SIGNAL(clicked()), this, SLOT(on_btnOpen_clicked()));
@@ -75,7 +75,7 @@ TMainWindow::TMainWindow(QWidget *parent)
     connect(mBtnNext, SIGNAL(clicked()), this, SIGNAL(nextClicked()));
     connect(mBtnPrev, SIGNAL(clicked()), this, SIGNAL(prevClicked()));
     connect(mBtnMinimize, SIGNAL(clicked()), this, SIGNAL(requestShowMinimized()));
-    connect(mBtnMinimode, SIGNAL(clicked()), this, SLOT(on_minimode_Clicked()));
+    connect(mBtnMinimode, SIGNAL(clicked()), this, SIGNAL(miniModeClicked()));
     connect(mBtnEqualizer, SIGNAL(clicked(bool)), this, SIGNAL(equalizerButtonToggle(bool)));
     connect(mBtnPlaylist, SIGNAL(clicked(bool)), this, SIGNAL(playlistButtonToggle(bool)));
     connect(mBtnLyrics, SIGNAL(clicked(bool)), this, SIGNAL(lyricButtonToggle(bool)));
@@ -99,15 +99,6 @@ TMainWindow::~TMainWindow()
     }
 }
 
-void TMainWindow::setGuiParameter(PlayerWindowParam *mainParam, PlayerWindowParam *miniParam)
-{
-    mMainParam = *mainParam;
-    mMiniParam = *miniParam;
-
-    updateGuiParameter();
-    mTrayIcon->show();
-}
-
 void TMainWindow::setTime(int time, int total)
 {
     mLedTime->setTime(time, total);
@@ -120,8 +111,19 @@ void TMainWindow::setTitles(QStringList titles)
 
 void TMainWindow::setCaption(QString title)
 {
-    mCaption = tr("Foreplayer %1 - ").arg(title);
     mCaptionIndex = 0;
+    mCaption = tr("%1 - %2").arg(title).arg(QApplication::applicationName());
+    mTrayIcon->setToolTip(mCaption);
+}
+
+void TMainWindow::setPlayState(QString state)
+{
+    mPlayState = state;
+}
+
+void TMainWindow::setEffect(QString effect)
+{
+    mPlayEffect = effect;
 }
 
 void TMainWindow::checkLyricButton(bool checked)
@@ -155,9 +157,7 @@ void TMainWindow::retranslateUi()
     mBtnPause->setToolTip(tr("Pause(%1)").arg(mBtnPause->shortcut().toString()));
     mBtnPlay->setToolTip(tr("Play(%1)").arg(mBtnPlay->shortcut().toString()));
     mBtnBrowser->setToolTip(tr("Open browser(%1)").arg(mBtnBrowser->shortcut().toString()));
-
-    updateMinimodeTooltip();
-
+    mBtnMinimode->setToolTip(tr("Normal Mode(%1)").arg(mBtnMinimode->shortcut().toString()));
     mBtnOpen->setToolTip(tr("Open music(%1)").arg(mBtnOpen->shortcut().toString()));
     mBtnMute->setToolTip(tr("Volume switch(%1)").arg(mBtnMute->shortcut().toString()));
     mBtnPrev->setToolTip(tr("Previous(%1)").arg(mBtnPrev->shortcut().toString()));
@@ -172,9 +172,8 @@ void TMainWindow::retranslateUi()
     mProgressBar->setToolTip(tr("Progress"));
     mVolumeBar->setToolTip(tr("Volume: %1%").arg(mVolumeBar->value()));
 
-    mStatus->setText(tr("Status: Play"));
-    mStereo->setText(tr("Stereo"));
-    mTrayIcon->setToolTip("- Foreplayer");
+    mStatus->setText(tr("Status: %1").arg(mPlayState));
+    mStereo->setText(mPlayEffect);
 }
 
 void TMainWindow::on_btnPlay_clicked()
@@ -204,79 +203,6 @@ void TMainWindow::on_volume_valueChanged(int value)
 {
     mVolumeBar->setToolTip(tr("Volume: %1%").arg(mVolumeBar->value()));
     emit volumeValueChanged(value);
-}
-
-void TMainWindow::on_minimode_Clicked()
-{
-    mMinimode = !mMinimode;
-
-    updateGuiParameter();
-
-    emit showModeSwitch(mMinimode);
-}
-
-void TMainWindow::updateGuiParameter()
-{
-    PlayerWindowParam *param = mMinimode ? &mMiniParam : &mMainParam;
-
-    setWindowParam(&param->window);
-
-    setWindowIcon(param->icon.icon);
-    mTrayIcon->setIcon(param->icon.icon);
-
-    mBtnPlay->setPixmapRect(param->play.image, param->play.position.geometry());
-    mBtnPrev->setPixmapRect(param->prev.image, param->prev.position.geometry());
-    mBtnNext->setPixmapRect(param->next.image, param->next.position.geometry());
-    mBtnPause->setPixmapRect(param->pause.image, param->pause.position.geometry());
-    mBtnStop->setPixmapRect(param->stop.image, param->stop.position.geometry());
-    mBtnOpen->setPixmapRect(param->open.image, param->open.position.geometry());
-    mBtnMute->setPixmapRect(param->mute.image, param->mute.position.geometry());
-    mBtnMinimize->setPixmapRect(param->minimize.image, param->minimize.position.geometry());
-    mBtnBrowser->setPixmapRect(param->browser.image, param->browser.position.geometry());
-    mBtnEqualizer->setPixmapRect(param->equalizer.image, param->equalizer.position.geometry());
-    mBtnPlaylist->setPixmapRect(param->playlist.image, param->playlist.position.geometry());
-    mBtnLyrics->setPixmapRect(param->lyric.image, param->lyric.position.geometry());
-    mBtnExit->setPixmapRect(param->exit.image, param->exit.position.geometry());
-    mBtnMinimode->setPixmapRect(param->minimode.image, param->minimode.position.geometry());
-
-    mProgressBar->setGeometry(param->progress.position.geometry());
-    mProgressBar->setPixmaps(param->progress.image, param->progress.image1, param->progress.image2);
-
-    mVolumeBar->setGeometry(param->volume.position.geometry());
-    mVolumeBar->setPixmaps(param->volume.image, param->volume.image1, param->volume.image2);
-    mVolumeBar->setVertical(param->volume.vertical);
-
-    mIcon->setGeometry(param->icon.position.geometry());
-    mIcon->setPixmap(param->icon.image);
-
-    mMusicTitle->setGeometry(param->info.position.geometry());
-    mMusicTitle->setFontColor(param->info.font, param->info.color);
-
-    mLedTime->setGeometry(param->led.position.geometry());
-    mLedTime->setPixmap(param->led.image);
-    mLedTime->setAlignment(param->led.alignment);
-
-    mStereo->setGeometry(param->stereo.position.geometry());
-    mStereo->setFontColor(param->stereo.font, param->stereo.color);
-    mStereo->setAlignment(param->stereo.alignment);
-
-    mStatus->setGeometry(param->status.position.geometry());
-    mStatus->setFontColor(param->status.font, param->status.color);
-    mStatus->setAlignment(param->status.alignment);
-
-    mVisualWidget->setGeometry(param->visual.position.geometry());
-    mVisualWidget->setColor(QColor(192,192,192), Qt::white, QColor(25,77,92), QColor(25,77,92));
-
-    updateMinimodeTooltip();
-    update();
-}
-
-void TMainWindow::updateMinimodeTooltip()
-{
-    if(mMinimode)
-        mBtnMinimode->setToolTip(tr("Normal Mode(%1)").arg(mBtnMinimode->shortcut().toString()));
-    else
-        mBtnMinimode->setToolTip(tr("Mini Mode(%1)").arg(mBtnMinimode->shortcut().toString()));
 }
 
 void TMainWindow::on_btnOpen_clicked()
@@ -319,4 +245,57 @@ void TMainWindow::contextMenuEvent(QContextMenuEvent *event)
         mContextMenu->popup(event->globalPos());
 
     QMainWindow::contextMenuEvent(event);
+}
+
+void TMainWindow::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    TAbstractWindow::loadFromSkin(element, skin);
+
+    mBtnPlay->loadFromSkin(element.firstChildElement(TAG_PLAYER_PLAY), skin);
+    mBtnPause->loadFromSkin(element.firstChildElement(TAG_PLAYER_PAUSE), skin);
+    mBtnPrev->loadFromSkin(element.firstChildElement(TAG_PLAYER_PREV), skin);
+    mBtnNext->loadFromSkin(element.firstChildElement(TAG_PLAYER_NEXT), skin);
+    mBtnStop->loadFromSkin(element.firstChildElement(TAG_PLAYER_STOP), skin);
+    mBtnOpen->loadFromSkin(element.firstChildElement(TAG_PLAYER_OPEN), skin);
+    mBtnMute->loadFromSkin(element.firstChildElement(TAG_PLAYER_MUTE), skin);
+    mBtnLyrics->loadFromSkin(element.firstChildElement(TAG_PLAYER_LYRIC), skin);
+    mBtnEqualizer->loadFromSkin(element.firstChildElement(TAG_PLAYER_EQUALIZER), skin);
+    mBtnPlaylist->loadFromSkin(element.firstChildElement(TAG_PLAYER_PLAYLIST), skin);
+    mBtnBrowser->loadFromSkin(element.firstChildElement(TAG_PLAYER_BROWSER), skin);
+    mBtnMinimize->loadFromSkin(element.firstChildElement(TAG_PLAYER_MINIMIZE), skin);
+    mBtnMinimode->loadFromSkin(element.firstChildElement(TAG_PLAYER_MINIMODE), skin);
+    mBtnExit->loadFromSkin(element.firstChildElement(TAG_PLAYER_EXIT), skin);
+    mProgressBar->loadFromSkin(element.firstChildElement(TAG_PLAYER_PROGRESS), skin);
+    mVolumeBar->loadFromSkin(element.firstChildElement(TAG_PLAYER_VOLUME), skin);
+    mIcon->loadFromSkin(element.firstChildElement(TAG_PLAYER_ICON), skin);
+    mMusicTitle->loadFromSkin(element.firstChildElement(TAG_PLAYER_INFO), skin);
+    mLedTime->loadFromSkin(element.firstChildElement(TAG_PLAYER_LED), skin);
+    mStereo->loadFromSkin(element.firstChildElement(TAG_PLAYER_STEREO), skin);
+    mStatus->loadFromSkin(element.firstChildElement(TAG_PLAYER_STATUS), skin);
+    mVisualWidget->loadFromSkin(element.firstChildElement(TAG_PLAYER_VISUAL), skin);
+
+    QDomElement iconElement = element.firstChildElement(TAG_PLAYER_ICON);
+    QIcon ico = skin->findIcon(iconElement.attribute(ATTR_ICON));
+    setWindowIcon(ico);
+    mTrayIcon->setIcon(ico);
+    mTrayIcon->show();
+}
+
+void TMainWindow::changeEvent(QEvent *event)
+{
+    QEvent::Type et = event->type();
+    if(et == QEvent::WindowStateChange)
+    {
+        Qt::WindowStates ws = windowState();
+        if(ws==Qt::WindowMinimized)
+            emit requestShowMinimized();
+    } else if (et == QEvent::ActivationChange) {
+        emit onActivationChange();
+    }
+}
+
+void TMainWindow::closeEvent(QCloseEvent *event)
+{
+    emit requestClose();
+    event->accept();
 }

@@ -1,10 +1,9 @@
 #include "desctoplyricwindow.h"
 
-TDesktopLyricWindow::TDesktopLyricWindow(QWidget *parent) : TAbstractWindow(parent)
+TDesktopLyricWindow::TDesktopLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
 {
     setObjectName("DesktopLyricWindow");
 
-    mBtnDesktopLyric = new TImageButton(this);
     mBtnIcon = new TImageButton(this);
     mBtnPlay = new TImageButton(this);
     mBtnPause = new TImageButton(this);
@@ -24,26 +23,6 @@ TDesktopLyricWindow::TDesktopLyricWindow(QWidget *parent) : TAbstractWindow(pare
     connect(mBtnBack, SIGNAL(clicked()), this, SLOT(on_btnBack_clicked()));
 
     retranslateUi();
-}
-
-void TDesktopLyricWindow::setGuiParamter(DesklrcBarParam *param)
-{
-    setWindowParam(&param->window);
-
-    mBtnDesktopLyric->setPixmapRect(param->desklrc_bar.image, param->desklrc_bar.position.geometry());
-    mBtnIcon->setPixmapRect(param->icon.image, param->icon.position.geometry());
-    mBtnPlay->setPixmapRect(param->play.image, param->play.position.geometry());
-    mBtnPause->setPixmapRect(param->pause.image, param->pause.position.geometry());
-    mBtnPrev->setPixmapRect(param->prev.image, param->prev.position.geometry());
-    mBtnNext->setPixmapRect(param->next.image, param->next.position.geometry());
-    mBtnList->setPixmapRect(param->list.image, param->list.position.geometry());
-    mBtnSettings->setPixmapRect(param->settings.image, param->settings.position.geometry());
-    mBtnKalaok->setPixmapRect(param->kalaok.image, param->kalaok.position.geometry());
-    mBtnLines->setPixmapRect(param->lines.image, param->lines.position.geometry());
-    mBtnLock->setPixmapRect(param->lock.image, param->lock.position.geometry());
-    mBtnOnTop->setPixmapRect(param->ontop.image, param->ontop.position.geometry());
-    mBtnBack->setPixmapRect(param->back.image, param->back.position.geometry());
-    mBtnClose->setPixmapRect(param->close.image, param->close.position.geometry());
 }
 
 void TDesktopLyricWindow::on_btnClose_clicked()
@@ -73,7 +52,7 @@ void TDesktopLyricWindow::on_btnOnTop_clicked(bool checked)
 
 void TDesktopLyricWindow::retranslateUi()
 {
-    mBtnDesktopLyric->setToolTip(tr("DesklrcBar"));
+    setWindowTitle(tr("DesklrcBar"));
     mBtnIcon->setToolTip(tr("Main menu"));
     mBtnPlay->setToolTip(tr("Play"));
     mBtnPause->setToolTip(tr("Pause"));
@@ -87,4 +66,23 @@ void TDesktopLyricWindow::retranslateUi()
     mBtnOnTop->setToolTip(tr("Ontop"));
     mBtnBack->setToolTip(tr("Back"));
     mBtnClose->setToolTip(tr("Close"));
+}
+
+void TDesktopLyricWindow::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    TAbstractWindow::loadFromSkin(element, skin);
+
+    mBtnIcon->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_ICON), skin);
+    mBtnPlay->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_PLAY), skin);
+    mBtnPause->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_PAUSE), skin);
+    mBtnPrev->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_PREV), skin);
+    mBtnNext->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_NEXT), skin);
+    mBtnList->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_LIST), skin);
+    mBtnSettings->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_SETTINGS), skin);
+    mBtnKalaok->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_KALAOK), skin);
+    mBtnLines->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_LINES), skin);
+    mBtnLock->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_LOCK), skin);
+    mBtnOnTop->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_ONTOP), skin);
+    mBtnBack->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_RETURN), skin);
+    mBtnClose->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_CLOSE), skin);
 }

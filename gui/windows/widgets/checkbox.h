@@ -1,10 +1,11 @@
 #ifndef TCHECKBOX_H
 #define TCHECKBOX_H
 
-#include "pch.h"
+#include "../../share/skin.h"
+
 #include "buttonimage.h"
 
-class TCheckBox : public QCheckBox
+class TCheckBox : public QCheckBox, TSkinReader
 {
 public:
     TCheckBox(QWidget *parent=0);
@@ -21,13 +22,17 @@ protected:
     void mouseReleaseEvent(QMouseEvent *e);//释放
 
 private:
-    TButtonIcon *m_buttonImages;
+    TButtonIcon *mButtonImages;
 
     void setIconAndSize(QIcon icon);
 
     // QWidget interface
 protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TCHECKBOX_H

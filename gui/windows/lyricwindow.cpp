@@ -1,6 +1,6 @@
 #include "lyricwindow.h"
 
-TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent)
+TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
 {
     setObjectName("LyricWindow");
 
@@ -15,19 +15,6 @@ TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent)
     setMouseTracking(true);
 
     retranslateUi();
-}
-
-void TLyricWindow::setGuiParamter(LyricWindowParam *param)
-{
-    setWindowParam(&param->window);
-
-    mBtnClose->setPixmapRect(param->close.image, param->close.position.geometry());
-    mBtnOnTop->setPixmapRect(param->ontop.image, param->ontop.position.geometry());
-    mBtnDesktopLyric->setPixmapRect(param->desklyc.image, param->desklyc.position.geometry());
-
-    mBtnClose->setAlignment(param->window.background, param->close.alignment);
-    mBtnOnTop->setAlignment(param->window.background, param->ontop.alignment);
-    mBtnDesktopLyric->setAlignment(param->window.background, param->desklyc.alignment);
 }
 
 void TLyricWindow::on_btnClose_clicked()
@@ -69,4 +56,13 @@ void TLyricWindow::resizeEvent(QResizeEvent *event)
     mBtnClose->updatePos();
     mBtnOnTop->updatePos();
     mBtnDesktopLyric->updatePos();
+}
+
+void TLyricWindow::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    TAbstractWindow::loadFromSkin(element, skin);
+
+    mBtnClose->loadFromSkin(element.firstChildElement(TAG_LYRIC_CLOSE), skin);
+    mBtnOnTop->loadFromSkin(element.firstChildElement(TAG_LYRIC_ONTOP), skin);
+    mBtnDesktopLyric->loadFromSkin(element.firstChildElement(TAG_LYRIC_DESKLRC), skin);
 }

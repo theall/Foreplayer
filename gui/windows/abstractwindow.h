@@ -1,9 +1,7 @@
 #ifndef TABSTRACTWINDOW_H
 #define TABSTRACTWINDOW_H
 
-#include "pch.h"
-
-#include "../skinutils.h"
+#include "../share/skin.h"
 
 enum TEdgeType
 {
@@ -109,13 +107,11 @@ enum TResizeDirection {
     ResizeDirectionCount
 };
 
-class TAbstractWindow : public QMainWindow
+class TAbstractWindow : public QMainWindow, TSkinReader
 {
     Q_OBJECT
 public:
-    explicit TAbstractWindow(QWidget *parent = 0);
-
-    void setWindowParam(WindowParam *param);
+    explicit TAbstractWindow(QWidget *parent = 0, bool resizeEnable = false);
 
     virtual void retranslateUi() = 0;
     bool mouseMoveTriggered();
@@ -137,8 +133,10 @@ signals:
 public slots:
 
 private:
+    bool mResizeEnable;
     bool mMousePressed;
     bool mMouseMoveTriggered;
+
     QPoint  mMousePos;
     QPoint  mWindowPos;
     QList<TEdge *> mEdges;
@@ -154,10 +152,15 @@ protected:
     void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
     bool event(QEvent *) Q_DECL_OVERRIDE;
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
+    void focusOutEvent(QFocusEvent *) Q_DECL_OVERRIDE;
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
+
+    // QWidget interface
+protected:
+    void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
 };
-
-
-
-
 
 #endif // TABSTRACTWINDOW_H

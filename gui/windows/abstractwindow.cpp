@@ -63,10 +63,10 @@ const Qt::CursorShape C_RESIZE_ARROWS[ResizeDirectionCount] = {
     Qt::SizeHorCursor
 };
 
-TAbstractWindow::TAbstractWindow(QWidget *parent) :
-    QMainWindow(parent),
-    mMouseMoveTriggered(false),
-    mResizingDirection(RD_NONE)
+TAbstractWindow::TAbstractWindow(QWidget *parent, bool resizeEnable) : QMainWindow(parent)
+    , mResizeEnable(resizeEnable)
+    , mMouseMoveTriggered(false)
+    , mResizingDirection(RD_NONE)
 {
     setWindowFlags(Qt::Tool | Qt::X11BypassWindowManagerHint | Qt::FramelessWindowHint);
 
@@ -75,18 +75,6 @@ TAbstractWindow::TAbstractWindow(QWidget *parent) :
     setAttribute(Qt::WA_TranslucentBackground);
 
     updateEdges();
-}
-
-void TAbstractWindow::setWindowParam(WindowParam *param)
-{
-    if(param->position.geometry().isValid())
-    {
-        setGeometry(param->position.geometry());
-    }
-    setMinimumWidth(param->background.width());
-    setMinimumHeight(param->background.height());
-    if(!param->background.isNull())
-        mBackgound.setPixmap(param->background, param->resize.geometry());
 }
 
 bool TAbstractWindow::mouseMoveTriggered()
@@ -147,67 +135,70 @@ void TAbstractWindow::mouseMoveEvent(QMouseEvent *event)
 
     if (!mMousePressed)
     {
-        // Left
-        if(x>=left && x<=leftEdge)
+        if(mResizeEnable)
         {
-            if(y>=top && y<=topEdge+RESIZE_CHECK_WIDTH)
+            // Left
+            if(x>=left && x<=leftEdge)
             {
-                // Top left
-                mResizingDirection = RD_LEFTTOP;
-            } else if(y>=bottomEdge-RESIZE_CHECK_WIDTH && y<=bottom) {
-                // Bottom left
-                mResizingDirection = RD_LEFTBOTTOM;
+                if(y>=top && y<=topEdge+RESIZE_CHECK_WIDTH)
+                {
+                    // Top left
+                    mResizingDirection = RD_LEFTTOP;
+                } else if(y>=bottomEdge-RESIZE_CHECK_WIDTH && y<=bottom) {
+                    // Bottom left
+                    mResizingDirection = RD_LEFTBOTTOM;
+                } else {
+                    mResizingDirection = RD_LEFT;
+                }
+            } else if(x>=rightEdge && x<=right) {
+                // Right
+                if(y>=top && y<=topEdge+RESIZE_CHECK_WIDTH)
+                {
+                    // Top left
+                    mResizingDirection = RD_RIGHTTOP;
+                } else if(y>=bottomEdge-RESIZE_CHECK_WIDTH && y<=bottom) {
+                    // Right bottom
+                    mResizingDirection = RD_RIGHTBOTTOM;
+                } else {
+                    mResizingDirection = RD_RIGHT;
+                }
+            } else if(y>=top && y<=topEdge) {
+                if(x>=left && x<=leftEdge+RESIZE_CHECK_WIDTH)
+                {
+                    // Top left
+                    mResizingDirection = RD_LEFTTOP;
+                } else if(x>=rightEdge-RESIZE_CHECK_WIDTH && x<=right) {
+                    // Right top
+                    mResizingDirection = RD_RIGHTTOP;
+                } else {
+                    // Up
+                    mResizingDirection = RD_UP;
+                }
+            } else if(y>=bottomEdge && y<=bottom) {
+                if(x>=left && x<=leftEdge+RESIZE_CHECK_WIDTH)
+                {
+                    // Bottom left
+                    mResizingDirection = RD_LEFTBOTTOM;
+                } else if(x>=rightEdge-RESIZE_CHECK_WIDTH && x<=right) {
+                    // Right top
+                    mResizingDirection = RD_RIGHTBOTTOM;
+                } else {
+                    // Down
+                    mResizingDirection = RD_DOWN;
+                }
             } else {
-                mResizingDirection = RD_LEFT;
+                mResizingDirection = RD_NONE;
             }
-        } else if(x>=rightEdge && x<=right) {
-            // Right
-            if(y>=top && y<=topEdge+RESIZE_CHECK_WIDTH)
-            {
-                // Top left
-                mResizingDirection = RD_RIGHTTOP;
-            } else if(y>=bottomEdge-RESIZE_CHECK_WIDTH && y<=bottom) {
-                // Right bottom
-                mResizingDirection = RD_RIGHTBOTTOM;
-            } else {
-                mResizingDirection = RD_RIGHT;
-            }
-        } else if(y>=top && y<=topEdge) {
-            if(x>=left && x<=leftEdge+RESIZE_CHECK_WIDTH)
-            {
-                // Top left
-                mResizingDirection = RD_LEFTTOP;
-            } else if(x>=rightEdge-RESIZE_CHECK_WIDTH && x<=right) {
-                // Right top
-                mResizingDirection = RD_RIGHTTOP;
-            } else {
-                // Up
-                mResizingDirection = RD_UP;
-            }
-        } else if(y>=bottomEdge && y<=bottom) {
-            if(x>=left && x<=leftEdge+RESIZE_CHECK_WIDTH)
-            {
-                // Bottom left
-                mResizingDirection = RD_LEFTBOTTOM;
-            } else if(x>=rightEdge-RESIZE_CHECK_WIDTH && x<=right) {
-                // Right top
-                mResizingDirection = RD_RIGHTBOTTOM;
-            } else {
-                // Down
-                mResizingDirection = RD_DOWN;
-            }
-        } else {
-            mResizingDirection = RD_NONE;
+
+            setCursor(C_RESIZE_ARROWS[mResizingDirection]);
+
+            if(mResizingDirection != RD_NONE)
+                grabMouse();
+            else
+                releaseMouse();
         }
-
-        setCursor(C_RESIZE_ARROWS[mResizingDirection]);
-
-        if(mResizingDirection != RD_NONE)
-            grabMouse();
-        else
-            releaseMouse();
     } else {
-        if(mResizingDirection != RD_NONE) {
+        if(mResizingDirection != RD_NONE && mResizeEnable) {
             switch(mResizingDirection) {
                 case RD_LEFT:
                     if(right - x <= this->minimumWidth())
@@ -451,4 +442,38 @@ void TBackgoundPixmap::setPixmap(QPixmap pixmap, QRect resize)
         mResizable = true;
     }
     mBackgound = pixmap;
+}
+
+
+void TAbstractWindow::focusOutEvent(QFocusEvent *ev)
+{
+    mMousePressed = false;
+
+    QMainWindow::focusOutEvent(ev);
+}
+
+void TAbstractWindow::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    QRect geo = SkinUtils::extractGeometry(element);
+
+    if(geo.isValid())
+    {
+        setGeometry(geo);
+    }
+    QPixmap pixmap = skin->findPixmap(element.attribute(ATTR_IMAGE));
+
+    setMinimumWidth(pixmap.width());
+    setMinimumHeight(pixmap.height());
+
+    if(!pixmap.isNull())
+    {
+        mBackgound.setPixmap(pixmap, SkinUtils::extractResizeRect(element));
+    }
+}
+
+void TAbstractWindow::showEvent(QShowEvent *ev)
+{
+    QMainWindow::showEvent(ev);
+
+    activateWindow();
 }

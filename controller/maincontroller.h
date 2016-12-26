@@ -44,10 +44,10 @@ private slots:
 
 private:
     TThread *mThread;
-    TGuiManager *mManager;
+
     TMainWindow *mMainWindow;
     TPlayerCore *mPlayerCore;
-    TCore *mCore;
+
     TPlaylistController *mPlaylistController;
 
 protected slots:

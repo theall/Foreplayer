@@ -1,26 +1,16 @@
 #ifndef TTOOLBAR_H
 #define TTOOLBAR_H
 
-#include "pch.h"
 #include "imagebutton.h"
 
-class TToolBar : public QWidget
+#include "../../share/skin.h"
+
+class TToolBar : public QWidget, TSkinReader
 {
     Q_OBJECT
 
 public:
-    TToolBar(QWidget *parent=0);
-    ~TToolBar();
-
-    void setPixmaps(QPixmap normal, QPixmap hover);
-    void setAlignment(QPixmap pixmap, Qt::Alignment alignment);
-    void retranslateUi();
-    void updatePos();
-private slots:
-    void onButtonClicked(bool);
-
-private:
-    enum TBUTTON
+    enum BUTTON
     {
         BTN_ADD,
         BTN_DELETE,
@@ -29,11 +19,33 @@ private:
         BTN_FIND,
         BTN_EDIT,
         BTN_MODE,
-        TOOL_BUTTON_COUNT
+        BUTTON_COUNT
     };
+
+    TToolBar(QWidget *parent=0);
+    ~TToolBar();
+
+    void setPixmaps(QPixmap normal, QPixmap hover);
+    void setAlignment(QPixmap pixmap, Qt::Alignment alignment);
+    void retranslateUi();
+    void updatePos();
+
+signals:
+    void buttonClicked(TToolBar::BUTTON id, QPoint pos);
+    void mouseLeave(TToolBar::BUTTON id);
+
+private slots:
+    void slotButtonClicked(bool);
+    void slotButtonMouseLeave();
+
+private:
     QSize mAlignSize;
     Qt::Alignment mAlignment;
-    TImageButton *mButtons[TOOL_BUTTON_COUNT];
+    TImageButton *mButtons[BUTTON_COUNT];
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TTOOLBAR_H

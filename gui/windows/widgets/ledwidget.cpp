@@ -100,7 +100,6 @@ void TLedWidget::paintEvent(QPaintEvent *event)
     p.end();
 }
 
-
 void TLedWidget::mousePressEvent(QMouseEvent *event)
 {
     if(event->button()==Qt::LeftButton)
@@ -110,4 +109,11 @@ void TLedWidget::mousePressEvent(QMouseEvent *event)
     }
 
     QWidget::mousePressEvent(event);
+}
+
+void TLedWidget::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    setGeometry(SkinUtils::extractGeometry(element));
+    setPixmap(skin->findPixmap(element.attribute(ATTR_IMAGE)));
+    setAlignment(SkinUtils::extractAlignment(element));
 }

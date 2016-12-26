@@ -6,7 +6,6 @@ TEqualizerMenu::TEqualizerMenu(QWidget *parent) :
 
 }
 
-
 void TEqualizerMenu::retranslateUi()
 {
 }

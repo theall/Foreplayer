@@ -58,6 +58,8 @@ struct TTrackInfo
     uint samplingRate;
 };
 
+typedef list<TTrackInfo*> TTrackInfoList;
+
 struct TMusicInfo
 {
     string musicFileName;
@@ -68,8 +70,10 @@ struct TMusicInfo
     string date;
     string musicType;
     string musicTypeDesc;
-    list<TTrackInfo*> trackList;
+    TTrackInfoList trackList;
 };
+
+typedef list<TMusicInfo*> TMusicInfoList;
 
 typedef void (*TRequestSamples)(int dwSamples, short *samples);
 

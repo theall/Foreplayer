@@ -21,29 +21,26 @@ TBrowserWindow::TBrowserWindow(QWidget *parent) : TAbstractWindow(parent)
     retranslateUi();
 }
 
-void TBrowserWindow::setGuiParamter(BrowserWindowParam *param)
-{
-    setWindowParam(&param->window);
-
-    mBtnClose->setPixmapRect(param->close.image, param->close.position.geometry());
-    mBtnBackward->setPixmapRect(param->backward.image, param->backward.position.geometry());
-    mBtnForward->setPixmapRect(param->forward.image, param->forward.position.geometry());
-    mBtnRefresh->setPixmapRect(param->refresh.image, param->refresh.position.geometry());
-
-    mCkbStartup->setPixmapRect(param->startup.image, param->startup.position.geometry());
-    mCkbStartup->setFontColor(param->startup.font, param->startup.color);
-
-    mLabelLink->setFontColor(param->linktxt.font, param->linktxt.color);
-    mBtnBrowser->setPixmapRect(param->browser.image, param->browser.position.geometry());
-    mBtnMini->setPixmapRect(param->minibtn.image, param->minibtn.position.geometry());
-    mBtnDownload->setPixmapRect(param->downloadbtn.image, param->downloadbtn.position.geometry());
-}
-
 void TBrowserWindow::on_btnClose_clicked()
 {
     hide();
 
     emit browserWindowToggled(false);
+}
+
+void TBrowserWindow::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    TAbstractWindow::loadFromSkin(element, skin);
+
+    mBtnClose->loadFromSkin(element.firstChildElement(TAG_BROWSER_CLOSE), skin);
+    mBtnBackward->loadFromSkin(element.firstChildElement(TAG_BROWSER_BACKWARD), skin);
+    mBtnForward->loadFromSkin(element.firstChildElement(TAG_BROWSER_FORWARD), skin);
+    mBtnRefresh->loadFromSkin(element.firstChildElement(TAG_BROWSER_REFRESH), skin);
+    mCkbStartup->loadFromSkin(element.firstChildElement(TAG_BROWSER_STARTUP), skin);
+    mLabelLink->loadFromSkin(element.firstChildElement(TAG_BROWSER_LINKTXT), skin);
+    mBtnBrowser->loadFromSkin(element.firstChildElement(TAG_BROWSER_BROWSER), skin);
+    mBtnMini->loadFromSkin(element.firstChildElement(TAG_BROWSER_MINIBTN), skin);
+    mBtnDownload->loadFromSkin(element.firstChildElement(TAG_BROWSER_DOWNLOAD_BUTTON), skin);
 }
 
 void TBrowserWindow::retranslateUi()

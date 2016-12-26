@@ -1,16 +1,12 @@
 #ifndef TPLAYERCORE_H
 #define TPLAYERCORE_H
 
-#include "pch.h"
-
 #include "playthread.h"
 
 #include "front/directsoundfront.h"
 #include "front/sdlfront.h"
 
 #include "pluginmanager/backendpluginmanager.h"
-
-typedef QList<TTrackInfo*> TTrackInfoList;
 
 struct SpectrumInfo
 {

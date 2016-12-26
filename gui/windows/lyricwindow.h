@@ -1,9 +1,6 @@
 #ifndef TLYRICWINDOW_H
 #define TLYRICWINDOW_H
 
-#include "pch.h"
-#include "../skinutils.h"
-
 #include "widgets/imagebutton.h"
 #include "abstractwindow.h"
 
@@ -12,8 +9,6 @@ class TLyricWindow : public TAbstractWindow
     Q_OBJECT
 public:
     explicit TLyricWindow(QWidget *parent = 0);
-
-    void setGuiParamter(LyricWindowParam *param);
 
 signals:
     void requireShowDesktopLyric();
@@ -37,6 +32,10 @@ private:
 protected:
     void retranslateUi() Q_DECL_OVERRIDE;
     void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 

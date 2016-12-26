@@ -17,18 +17,12 @@ TPlaylistWidget::TPlaylistWidget(QWidget *parent) :
     mPlaylistView = new TPlaylistView(this);
     mMusiclistView = new TMusiclistView(this);
     mTracklistView = new TTracklistView(this);
-    mPlaylistModel = new TPlaylistModel(this);
-    mMusiclistModel = new TMusiclistModel(this);
-    mTracklistModel = new TTrackListModel(this);
+
     connect(mPlaylistView, SIGNAL(onCurrentRowSelected(int)), this, SLOT(slotCurrentRowChanged(int)));
     connect(mMusiclistView, SIGNAL(onCurrentRowSelected(int)), this, SLOT(slotCurrentRowChanged(int)));
     connect(mTracklistView, SIGNAL(onCurrentRowSelected(int)), this, SLOT(slotCurrentRowChanged(int)));
 
     mSplitter = new TSplitter(this);
-
-    mPlaylistView->setModel(mPlaylistModel);
-    mMusiclistView->setModel(mMusiclistModel);
-    mTracklistView->setModel(mTracklistModel);
 
     mSplitter->addWidget(mPlaylistView);
     mSplitter->addWidget(mMusiclistView);
@@ -76,39 +70,41 @@ bool TPlaylistWidget::updatePosition(QSize size)
     return canResize;
 }
 
-void TPlaylistWidget::setFontColors(QFont font,
-                                    QColor text,
-                                    QColor hilight,
-                                    QColor number,
-                                    QColor duration,
-                                    QColor select,
-                                    QColor background1,
-                                    QColor background2)
+//void TPlaylistWidget::setFontColors(QFont font,
+//                                    QColor text,
+//                                    QColor hilight,
+//                                    QColor number,
+//                                    QColor duration,
+//                                    QColor select,
+//                                    QColor background1,
+//                                    QColor background2)
+void TPlaylistWidget::setFontColors(QColor background2)
 {
-    TAbstractModel::setColorParameters(font,
-                                       text,
-                                       hilight,
-                                       number,
-                                       duration,
-                                       select,
-                                       background1);
+//    emit requestSetColors(font,
+//                          text,
+//                          hilight,
+//                          number,
+//                          duration,
+//                          select,
+//                          background1);
 
     TAbstractTableView::setBackgroundColor(background2);
-}
-
-void TPlaylistWidget::setScrollBarPixmaps(QPixmap groove, QPixmap button, QPixmap handle)
-{
-    TScrollBar::setPixmaps(groove, button, handle);
 }
 
 void TPlaylistWidget::slotCurrentRowChanged(int index)
 {
     QObject *sendObject = sender();
     if(dynamic_cast<TPlaylistView*>(sendObject)) {
-        mPlaylistModel->setCurrentIndex(index);
+        emit onPlaylistIndexChanged(index);
     } else if (dynamic_cast<TMusiclistView*>(sendObject)) {
-        mMusiclistModel->setCurrentIndex(index);
+        emit onMusiclistIndexChanged(index);
     } else if (dynamic_cast<TTracklistView*>(sendObject)) {
-        mTracklistModel->setCurrentIndex(index);
+        emit onTracklistIndexChanged(index);
     }
+}
+
+void TPlaylistWidget::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    QDomElement parentElement = element.parentNode().toElement();
+    setAlignment(skin->findPixmap(parentElement.attribute(ATTR_IMAGE)), SkinUtils::extractGeometry(element));
 }

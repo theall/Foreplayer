@@ -1,9 +1,9 @@
 #ifndef TSCROLLLABEL_H
 #define TSCROLLLABEL_H
 
-#include "pch.h"
+#include "../../share/skin.h"
 
-class TScrollLabel : public QWidget
+class TScrollLabel : public QWidget, TSkinReader
 {
     Q_OBJECT
 public:
@@ -47,6 +47,10 @@ private:
     int mTimerID;
     int mIdleTime;
     void prepareNext();
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TSCROLLLABEL_H

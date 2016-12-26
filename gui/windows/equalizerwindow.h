@@ -1,8 +1,6 @@
 #ifndef TEQUALIZERWINDOW_H
 #define TEQUALIZERWINDOW_H
 
-#include "../skinutils.h"
-
 #include "widgets/imagebutton.h"
 #include "widgets/sliderbar.h"
 #include "abstractwindow.h"
@@ -15,8 +13,6 @@ class TEqualizerWindow : public TAbstractWindow
 
 public:
     TEqualizerWindow(QWidget *parent=0);
-
-    void setGuiParamter(EqualizerWindowParam *param);
 
 signals:
     void eqWindowToggled(bool);
@@ -55,6 +51,10 @@ private:
     void updateSurroundTooltip();
     void updatePreampTooltip();
     QString dbStatusString(int value);
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TEQUALIZERWINDOW_H

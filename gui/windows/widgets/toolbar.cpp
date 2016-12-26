@@ -3,11 +3,12 @@
 TToolBar::TToolBar(QWidget *parent) :
     QWidget(parent)
 {
-    for(int i=0;i<TOOL_BUTTON_COUNT;i++)
+    for(int i=0;i<BUTTON_COUNT;i++)
     {
         TImageButton *button = new TImageButton(this);
         button->setCheckable(true);
-        connect(button, SIGNAL(clicked(bool)), this, SLOT(onButtonClicked(bool)));
+        connect(button, SIGNAL(clicked(bool)), this, SLOT(slotButtonClicked(bool)));
+        connect(button, SIGNAL(mouseLeave()), this, SLOT(slotButtonMouseLeave()));
         mButtons[i] = button;
     }
     retranslateUi();
@@ -15,7 +16,7 @@ TToolBar::TToolBar(QWidget *parent) :
 
 TToolBar::~TToolBar()
 {
-    for(int i=0;i<TOOL_BUTTON_COUNT;i++)
+    for(int i=0;i<BUTTON_COUNT;i++)
     {
         delete mButtons[i];
     }
@@ -27,10 +28,10 @@ void TToolBar::setPixmaps(QPixmap normal, QPixmap hover)
     int iconWidth, pixmapWidth, pixmapHeight;
     pixmapWidth = normal.width();
     pixmapHeight = normal.height();
-    iconWidth = pixmapWidth / TOOL_BUTTON_COUNT;
+    iconWidth = pixmapWidth / BUTTON_COUNT;
 
     setGeometry(0, 0, pixmapWidth, pixmapHeight);
-    for(int i=0;i<TOOL_BUTTON_COUNT;i++)
+    for(int i=0;i<BUTTON_COUNT;i++)
     {
         TImageButton *button = mButtons[i];
         QPixmap pixmap(iconWidth*4, pixmapHeight);
@@ -59,11 +60,30 @@ void TToolBar::retranslateUi()
     mButtons[BTN_MODE]->setToolTip(tr("Mode"));
 }
 
-void TToolBar::onButtonClicked(bool checked)
+void TToolBar::slotButtonClicked(bool checked)
 {
-    for(int i=0;i<TOOL_BUTTON_COUNT;i++)
+    TImageButton *button = dynamic_cast<TImageButton*>(sender());
+    if(button)
     {
-        mButtons[i]->setChecked(checked);
+        for(int i=0;i<BUTTON_COUNT;i++)
+        {
+            if(mButtons[i]==button)
+                emit buttonClicked(BUTTON(i), button->pos());
+            mButtons[i]->setChecked(checked);
+        }
+    }
+}
+
+void TToolBar::slotButtonMouseLeave()
+{
+    TImageButton *button = dynamic_cast<TImageButton*>(sender());
+    if(button)
+    {
+        for(int i=0;i<BUTTON_COUNT;i++)
+        {
+            if(mButtons[i]==button)
+                emit mouseLeave(BUTTON(i));
+        }
     }
 }
 
@@ -110,5 +130,17 @@ void TToolBar::updatePos()
             y = rt.height() - mAlignSize.height() - geo.height();
 
         move(x, y);
+    }
+}
+
+void TToolBar::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    setPixmaps(skin->findPixmap(element.attribute(ATTR_IMAGE)), skin->findPixmap(element.attribute(ATTR_HOT_IMAGE)));
+    setGeometry(SkinUtils::strToGeometry(element.attribute(ATTR_POSITION)));
+    QString alignment = element.attribute(ATTR_ALIGN);
+    if(!alignment.isEmpty())
+    {
+        QDomElement parentElement = element.parentNode().toElement();
+        setAlignment(skin->findPixmap(parentElement.attribute(ATTR_IMAGE)), SkinUtils::strToAlign(alignment));
     }
 }

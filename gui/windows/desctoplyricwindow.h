@@ -1,9 +1,6 @@
 #ifndef TDESKTOPLYRICWINDOW_H
 #define TDESKTOPLYRICWINDOW_H
 
-#include "pch.h"
-#include "../skinutils.h"
-
 #include "widgets/imagebutton.h"
 #include "abstractwindow.h"
 
@@ -12,8 +9,6 @@ class TDesktopLyricWindow : public TAbstractWindow
     Q_OBJECT
 public:
     explicit TDesktopLyricWindow(QWidget *parent = 0);
-
-    void setGuiParamter(DesklrcBarParam *param);
 
 signals:
     void requireShowLyricWindow();
@@ -31,7 +26,6 @@ private slots:
     void on_btnBack_clicked();
 
 private:
-    TImageButton *mBtnDesktopLyric;
     TImageButton *mBtnIcon;
     TImageButton *mBtnPlay;
     TImageButton *mBtnPause;
@@ -45,6 +39,10 @@ private:
     TImageButton *mBtnOnTop;
     TImageButton *mBtnBack;
     TImageButton *mBtnClose;
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TDESKTOPLYRICWINDOW_H

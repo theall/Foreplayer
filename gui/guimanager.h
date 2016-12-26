@@ -2,7 +2,9 @@
 #define TGUIMANAGER_H
 
 #include "pch.h"
+
 #include "windows/mainwindow.h"
+#include "windows/miniwindow.h"
 #include "windows/lyricwindow.h"
 #include "windows/equalizerwindow.h"
 #include "windows/playlistwindow.h"
@@ -11,7 +13,8 @@
 #include "windows/desktopwindow.h"
 
 #include "menus/mainmenu.h"
-#include "skinloader/skinloader.h"
+
+#include "share/skin.h"
 
 typedef QList<TAbstractWindow *> TWindowList;
 
@@ -20,17 +23,18 @@ class TGuiManager : public QObject
     Q_OBJECT
 public:
     explicit TGuiManager(QObject *parent = 0);
+    ~TGuiManager();
 
     void loadSkin(QString skinPath);
 
     void showGui();
 
-    TLyricWindow *lyricWindow();
-    TMainWindow *mainWindow();
-    TEqualizerWindow *equalizerWindow();
-    TPlaylistWindow *playlistWindow();
-    TBrowserWindow *browserWindow();
-    TDesktopLyricWindow *desktopLyricWindow();
+    TLyricWindow *lyricWindow() { return mLyricWindow; }
+    TMainWindow *mainWindow() { return mMainWindow; }
+    TEqualizerWindow *equalizerWindow() { return mEqualizerWindow; }
+    TPlaylistWindow *playlistWindow() { return mPlaylistWindow; }
+    TBrowserWindow *browserWindow() { return mBrowserWindow; }
+    TDesktopLyricWindow *desktopLyricWindow() { return mDesktopLyricWindow; }
 
 signals:
     void requestPlay();
@@ -53,14 +57,18 @@ private slots:
     void slotRequireShowLyricWindow();
     void slotRequireShowDesktopLyric();
     void slotShowMinimized();
+    void slotRequestExit();
     void slotRequestToggleWindow();
     void slotRequestRestoreWindow();
     void slotExit();
     void slotOnOpacityChanged(qreal value);
     void slotRequestLoadSkin(QString skinFullName);
+    void slotMainWindowActivationChanged();
+    void slotMainWindowAboutToClose();
 
 private:
     TMainWindow *mMainWindow;
+    TMiniWindow *mMiniWindow;
     TLyricWindow *mLyricWindow;
     TEqualizerWindow *mEqualizerWindow;
     TPlaylistWindow *mPlaylistWindow;
@@ -70,12 +78,13 @@ private:
     TWindowList mGumedWindows;
 
     TMainMenu *mMainMenu;
+    bool mMinimode;
     bool mShowDesktopLyric;
-    bool mBrowserVisiable;
-    bool mPlaylistVisiable;
-    bool mLyricWindowVisiable;
-    bool mDesktopLyricVisiable;
-    bool mEqualizerVisiable;
+    bool mBrowserVisible;
+    bool mPlaylistVisible;
+    bool mLyricWindowVisible;
+    bool mDesktopLyricVisible;
+    bool mEqualizerVisible;
 
     void createSystemTrayIcon();
     void hide();

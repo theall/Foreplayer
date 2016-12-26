@@ -1,10 +1,15 @@
 #include "visualwidget.h"
 
-TVisualWidget::TVisualWidget(QWidget *parent) :
-    QWidget(parent)
-{
-    mType = VT_SPECTRUM_BLOCK;
+#define SAMPLE_WIDTH 3.0
+#define SAMPLE_SPACE 1
+#define SAMPLE_TOP_BLOCK_HEIGHT 1
 
+TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
+    , mType(VT_SPECTRUM_BLOCK)
+    , mSpectrumWidth(SAMPLE_WIDTH)
+    , mSpectrumSpace(SAMPLE_SPACE)
+    , mSpectrumTopBlockHeight(SAMPLE_TOP_BLOCK_HEIGHT)
+{
     for(int i=0;i<SAMPLE_SIZE;i++)
         mSamleValues[i] = 0;
 
@@ -16,7 +21,7 @@ TVisualWidget::~TVisualWidget()
 {
 }
 
-void TVisualWidget::setVisualType(VisualType type)
+void TVisualWidget::setVisualType(TVisualType type)
 {
     mType = type;
 }
@@ -61,11 +66,11 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
     QRect mainRect = rect();
     int mainWidth = mainRect.width();
     int mainHeight = mainRect.height();
-    int nWidth = SAMPLE_WIDTH + SAMPLE_SPACE;
+    int nWidth = mSpectrumWidth + mSpectrumSpace;
 
     QBrush blockBrush(mColorBlock);
 
-    QLinearGradient linear(0, SAMPLE_WIDTH/2, 0, height());
+    QLinearGradient linear(0, mSpectrumWidth/2, 0, height());
     linear.setColorAt(0, mColorTop);
     if(mColorMiddle.isValid())
         linear.setColorAt(0.5, mColorMiddle);
@@ -75,13 +80,13 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
 
     for(int i=0;i<SAMPLE_SIZE;i++)
     {
-        if(x+SAMPLE_WIDTH>mainWidth)
+        if(x+mSpectrumWidth>mainWidth)
             break;
 
         int specValue = mSamleValues[i];
 
         // draw spectrum pillar
-        p.fillRect(x, mainHeight-specValue, SAMPLE_WIDTH, specValue, pillarBrush);
+        p.fillRect(x, mainHeight-specValue, mSpectrumWidth, specValue, pillarBrush);
 
         int topBlockValue = mTopBlockValue[i];
         int topBlockSpeed = mTopBlockSpeed[i];
@@ -98,10 +103,10 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
             topBlockValue -= topBlockSpeed;
         }
 
-        int y = mainHeight-topBlockValue-TOP_BLOCK_HEIGHT;
+        int y = mainHeight-topBlockValue-mSpectrumTopBlockHeight;
         if(y>=0)
             // fill block
-            p.fillRect(x, y, SAMPLE_WIDTH, TOP_BLOCK_HEIGHT, blockBrush);
+            p.fillRect(x, y, mSpectrumWidth, mSpectrumTopBlockHeight, blockBrush);
 
         mTopBlockSpeed[i] = topBlockSpeed;
         mTopBlockValue[i] = topBlockValue;
@@ -122,8 +127,19 @@ void TVisualWidget::mousePressEvent(QMouseEvent *event)
 
     if(event->button()==Qt::LeftButton)
     {
-        mType = (VisualType)((int)mType+1);
+        mType = (TVisualType)((int)mType+1);
         if(mType == VisualTypeCount)
             mType = VT_WAVE;
     }
+}
+
+void TVisualWidget::loadFromSkin(QDomElement element, TSkin *skin)
+{
+    Q_UNUSED(skin)
+
+    setGeometry(SkinUtils::extractGeometry(element));
+    mColorBlock = QColor(element.attribute(ATTR_BLOCK_COLOR));
+    mColorTop = QColor(element.attribute(ATTR_BLOCK_COLOR));
+    mColorMiddle = QColor(element.attribute(ATTR_BLOCK_COLOR));
+    mColorBottom = QColor(element.attribute(ATTR_BLOCK_COLOR));
 }

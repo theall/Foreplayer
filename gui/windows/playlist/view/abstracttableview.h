@@ -8,6 +8,8 @@ class TTableViewDelegate : public QStyledItemDelegate
 public:
     explicit TTableViewDelegate(QObject *parent = 0);
 
+    void setPixmap(QPixmap pixmap);
+
     void paint(QPainter *painter,
                const QStyleOptionViewItem &option,
                const QModelIndex &index) const Q_DECL_OVERRIDE;
@@ -25,12 +27,13 @@ public:
 
     static void setBackgroundColor(QColor color);
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
+
 signals:
     void onCurrentRowSelected(int index);
 
 protected:
-    void resizeEvent(QResizeEvent *) Q_DECL_OVERRIDE;
-    void focusOutEvent(QFocusEvent *) Q_DECL_OVERRIDE;
+    void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
+    void focusOutEvent(QFocusEvent *event) Q_DECL_OVERRIDE;
     virtual void updateColumnsWidth() = 0;
 
 private slots:

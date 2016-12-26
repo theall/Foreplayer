@@ -2,7 +2,6 @@
 #define TBROWSERWINDOW_H
 
 #include "pch.h"
-#include "../skinutils.h"
 
 #include "widgets/linklabel.h"
 #include "widgets/checkbox.h"
@@ -14,8 +13,6 @@ class TBrowserWindow : public TAbstractWindow
     Q_OBJECT
 public:
     explicit TBrowserWindow(QWidget *parent = 0);
-
-    void setGuiParamter(BrowserWindowParam *param);
 
 signals:
     void browserWindowToggled(bool);
@@ -38,6 +35,10 @@ private:
     TImageButton *mBtnDownload;
     TCheckBox *mCkbStartup;
     TLinkLabel *mLabelLink;
+
+    // TSkinReader interface
+public:
+    void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
 
 #endif // TBROWSERWINDOW_H
