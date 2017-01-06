@@ -154,6 +154,9 @@ void TImageButton::paintEvent(QPaintEvent *event)
 
 void TImageButton::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     setGeometry(SkinUtils::extractGeometry(element));
     mButtonImages->setPixmap(skin->findPixmap(element.attribute(ATTR_IMAGE)));
     setIconAndSize(*mButtonImages->normal());

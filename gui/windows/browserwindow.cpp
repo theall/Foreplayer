@@ -30,6 +30,9 @@ void TBrowserWindow::on_btnClose_clicked()
 
 void TBrowserWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnClose->loadFromSkin(element.firstChildElement(TAG_BROWSER_CLOSE), skin);

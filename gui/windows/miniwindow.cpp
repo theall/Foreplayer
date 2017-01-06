@@ -31,6 +31,9 @@ void TMiniWindow::retranslateUi()
 
 void TMiniWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnPlay->loadFromSkin(element.firstChildElement(TAG_PLAYER_PLAY), skin);

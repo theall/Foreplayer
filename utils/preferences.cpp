@@ -1,5 +1,7 @@
 #include "preferences.h"
 
+#define SETTING_FILE "setting.ini"
+
 TPreferences *TPreferences::mInstance=NULL;
 
 //
@@ -8,28 +10,35 @@ TPreferences *TPreferences::mInstance=NULL;
 //
 TPreferences::TPreferences(QObject *parent):
     QObject(parent)
+  , mSettings(new QSettings(SETTING_FILE, QSettings::IniFormat))
 {
     // Retrieve gui settings
-    mSettings.beginGroup("Gui");
+    mSettings->beginGroup("Gui");
     mAlwaysTop = boolValue("AlwaysOnTop");
     mLanguage = stringValue("Language");
-    mSettings.endGroup();
+    mSettings->endGroup();
 
     // Keeping track of some usage information
-    mSettings.beginGroup("Install");
+    mSettings->beginGroup("Install");
 
     // This section wrote by main controller while write trial license
-    if(mSettings.contains("RunCount"))
+    if(mSettings->contains("RunCount"))
     {
         mRunCount = intValue("RunCount") + 1;
-        mSettings.setValue("RunCount", mRunCount);
+        mSettings->setValue("RunCount", mRunCount);
     }
 
-    mSettings.endGroup();
+    mSettings->endGroup();
 }
 
 TPreferences::~TPreferences()
 {
+    if(mSettings)
+    {
+        mSettings->sync();
+        delete mSettings;
+        mSettings = NULL;
+    }
 }
 
 TPreferences* TPreferences::instance()
@@ -37,6 +46,15 @@ TPreferences* TPreferences::instance()
     if(mInstance==NULL)
         mInstance = new TPreferences();
     return mInstance;
+}
+
+void TPreferences::deleteInstance()
+{
+    if(mInstance)
+    {
+        delete mInstance;
+        mInstance = NULL;
+    }
 }
 
 QString TPreferences::language()
@@ -49,7 +67,7 @@ void TPreferences::setLanguage(QString language)
     if((mLanguage == language))
         return;
     mLanguage = language;
-    mSettings.setValue("Gui/Language", mLanguage);
+    mSettings->setValue("Gui/Language", mLanguage);
     emit languageChanged();
 }
 
@@ -63,22 +81,24 @@ void TPreferences::windowGeometryState(
         QByteArray* g,
         QByteArray* s)
 {
-    QString section = "Window/";
+    QString section;
     if(type==WT_MAIN)
-        section += "main";
+        section = "MainWindow";
     else if(type==WT_LYRIC)
-        section += "lyric";
+        section = "LyricWindow";
     else if(type==WT_EQUALIZER)
-        section += "equalizer";
+        section = "EqualizerWindow";
     else if(type==WT_PLAYLIST)
-        section += "playlist";
+        section = "PlaylistWindow";
     else if(type==WT_BROWSER)
-        section += "browser";
+        section = "BrowserWindow";
+    else
+        return;
 
-    mSettings.beginGroup(section);
-    *g = mSettings.value("geometry").toByteArray();
-    *s = mSettings.value("windowState").toByteArray();
-    mSettings.endGroup();
+    mSettings->beginGroup(section);
+    *g = mSettings->value("geometry").toByteArray();
+    *s = mSettings->value("windowState").toByteArray();
+    mSettings->endGroup();
 }
 
 void TPreferences::setWindowGeometryState(
@@ -86,42 +106,44 @@ void TPreferences::setWindowGeometryState(
         QVariant geometry,
         QVariant windowState)
 {
-    QString section = "Window/";
+    QString section;
     if(type==WT_MAIN)
-        section += "main";
+        section = "MainWindow";
     else if(type==WT_LYRIC)
-        section += "lyric";
+        section = "LyricWindow";
     else if(type==WT_EQUALIZER)
-        section += "equalizer";
+        section = "EqualizerWindow";
     else if(type==WT_PLAYLIST)
-        section += "playlist";
+        section = "PlaylistWindow";
     else if(type==WT_BROWSER)
-        section += "browser";
+        section = "BrowserWindow";
+    else
+        return;
 
-    mSettings.beginGroup(section);
-    mSettings.setValue("geometry", geometry);
-    mSettings.setValue("windowState", windowState);
-    mSettings.endGroup();
+    mSettings->beginGroup(section);
+    mSettings->setValue("geometry", geometry);
+    mSettings->setValue("windowState", windowState);
+    mSettings->endGroup();
 }
 
 void TPreferences::setValue(QString section, QVariant value)
 {
-    mSettings.setValue(section, value);
+    mSettings->setValue(section, value);
 }
 
 QVariant TPreferences::value(QString section, QVariant defValue)
 {
-    return mSettings.value(section, defValue);
+    return mSettings->value(section, defValue);
 }
 
 bool TPreferences::boolValue(QString key, bool defValue)
 {
-    return mSettings.value(key, defValue).toBool();
+    return mSettings->value(key, defValue).toBool();
 }
 
 QColor TPreferences::colorValue(QString key, QColor defValue)
 {
-    QString name = mSettings.value(key, defValue.name()).toString();
+    QString name = mSettings->value(key, defValue.name()).toString();
     if((!QColor::isValidColor(name)))
         return QColor();
     return QColor(name);
@@ -129,13 +151,13 @@ QColor TPreferences::colorValue(QString key, QColor defValue)
 
 QString TPreferences::stringValue(QString key, QString defValue)
 {
-    return mSettings.value(key, defValue).toString();
+    return mSettings->value(key, defValue).toString();
 }
 
 int TPreferences::intValue(QString key, int defaultValue)
 {
     bool ok = false;
-    int v = mSettings.value(key, defaultValue).toInt(&ok);
+    int v = mSettings->value(key, defaultValue).toInt(&ok);
     if (ok)
         return v;
     return defaultValue;
@@ -144,7 +166,7 @@ int TPreferences::intValue(QString key, int defaultValue)
 float TPreferences::floatValue(QString key, float defaultValue)
 {
     bool ok = false;
-    float v = mSettings.value(key, defaultValue).toFloat(&ok);
+    float v = mSettings->value(key, defaultValue).toFloat(&ok);
     if (ok)
         return v;
     return defaultValue;
@@ -152,7 +174,7 @@ float TPreferences::floatValue(QString key, float defaultValue)
 
 QStringList TPreferences::listValue(QString key)
 {
-    QList<QVariant> list = mSettings.value(key).toList();
+    QList<QVariant> list = mSettings->value(key).toList();
     QStringList r;
     foreach (QVariant v, list) {
         r.append(v.toString());

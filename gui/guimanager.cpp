@@ -1,6 +1,7 @@
 #include "guimanager.h"
 
 #include <QMessageBox>
+#include "preferences.h"
 
 void findGumedWindows(TWindowList &list, TWindowList &findedList)
 {
@@ -44,6 +45,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     , mDesktopLyricWindow(new TDesktopLyricWindow)
     , mDesktopWindow(new TDesktopWindow)
     , mMainMenu(new TMainMenu)
+    , mTrayIcon(new QSystemTrayIcon(this))
     , mMinimode(false)
     , mShowDesktopLyric(false)
 {
@@ -57,10 +59,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mMainWindow, SIGNAL(browserButtonToggle(bool)), this, SLOT(slotBrowserButtonToggled(bool)));
     connect(mMainWindow, SIGNAL(requestMoveWindow(QPoint)), this, SLOT(slotRequestMoveWindow(QPoint)));
     connect(mMainWindow, SIGNAL(requestShowMinimized()), this, SLOT(slotShowMinimized()));
-    connect(mMainWindow, SIGNAL(requestToggleWindow()), this, SLOT(slotRequestToggleWindow()));
-    connect(mMainWindow, SIGNAL(requestRestoreWindow()), this, SLOT(slotRequestRestoreWindow()));
     connect(mMainWindow, SIGNAL(onActivationChange()), this, SLOT(slotMainWindowActivationChanged()));
-    connect(mMainWindow, SIGNAL(requestClose()), this, SLOT(slotMainWindowAboutToClose()));
 
     // Mini window
     connect(mMiniWindow, SIGNAL(exitClicked()), this, SLOT(slotRequestExit()));
@@ -94,70 +93,35 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mDesktopLyricWindow, SIGNAL(requireShowLyricWindow()), this, SLOT(slotRequireShowLyricWindow()));
     connect(mDesktopLyricWindow, SIGNAL(requestMoveWindow(QPoint)), this, SLOT(slotRequestMoveWindow(QPoint)));
 
+    TPreferences *prefs = TPreferences::instance();
+
     //Main menu
-    mMainMenu->skinMenu()->setPath("z:/skins");
-    connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotExit()));
+    mMainMenu->skinMenu()->setPath("skins");
+    connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotRequestExit()));
     connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(QString)), this, SLOT(slotRequestLoadSkin(QString)));
 
     connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
+
+    // Tray icon
+    mTrayIcon->setContextMenu(mMainMenu);
+    connect(mTrayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this, SLOT(slotTrayIconActivated(QSystemTrayIcon::ActivationReason)));
+
 }
 
 TGuiManager::~TGuiManager()
 {
-    if(mMainWindow)
-    {
-        delete mMainWindow;
-        mMainWindow = NULL;
-    }
-    if(mMiniWindow)
-    {
-        delete mMiniWindow;
-        mMiniWindow = NULL;
-    }
-    if(mLyricWindow)
-    {
-        delete mLyricWindow;
-        mLyricWindow = NULL;
-    }
-    if(mEqualizerWindow)
-    {
-        delete mEqualizerWindow;
-        mEqualizerWindow = NULL;
-    }
-    if(mPlaylistWindow)
-    {
-        delete mPlaylistWindow;
-        mPlaylistWindow = NULL;
-    }
-    if(mBrowserWindow)
-    {
-        delete mBrowserWindow;
-        mBrowserWindow = NULL;
-    }
-    if(mDesktopLyricWindow)
-    {
-        delete mDesktopLyricWindow;
-        mDesktopLyricWindow = NULL;
-    }
-    if(mDesktopWindow)
-    {
-        delete mDesktopWindow;
-        mDesktopWindow = NULL;
-    }
-    if(mMainMenu)
-    {
-        delete mMainMenu;
-        mMainMenu = NULL;
-    }
+
 }
 
-void TGuiManager::loadSkin(QString fileName)
+bool TGuiManager::loadSkin(QString fileName)
 {
     if(fileName.isEmpty())
-        return;
+        return false;
 
     TSkin skin;
-    if(skin.load(fileName))
+
+    bool result = skin.load(fileName);
+    if(result)
     {
         QDomElement root = skin.rootElement();
         mMainWindow->loadFromSkin(root.firstChildElement(TAG_PLAYER_WINDOW), &skin);
@@ -167,16 +131,38 @@ void TGuiManager::loadSkin(QString fileName)
         mPlaylistWindow->loadFromSkin(root.firstChildElement(TAG_PLAYLIST_WINDOW), &skin);
         mBrowserWindow->loadFromSkin(root.firstChildElement(TAG_BROWSER_WINDOW), &skin);
         mDesktopLyricWindow->loadFromSkin(root.firstChildElement(TAG_DESKLRC_BAR), &skin);
+
+        mTrayIcon->setIcon(mMainWindow->windowIcon());
     } else {
         QMessageBox::critical(
             mMainWindow,
             tr("Load skin error."),
             skin.lastError());
     }
+
+    return result;
 }
 
 void TGuiManager::showGui()
 {
+    TPreferences *prefs = TPreferences::instance();
+    QByteArray g, s;
+    prefs->windowGeometryState(WT_MAIN, &g, &s);
+    mMainWindow->restoreGeometry(g);
+    mMainWindow->restoreState(s);
+
+    prefs->windowGeometryState(WT_LYRIC, &g, &s);
+    mLyricWindow->restoreGeometry(g);
+    mLyricWindow->restoreState(s);
+
+    prefs->windowGeometryState(WT_EQUALIZER, &g, &s);
+    mEqualizerWindow->restoreGeometry(g);
+    mEqualizerWindow->restoreState(s);
+
+    prefs->windowGeometryState(WT_PLAYLIST, &g, &s);
+    mPlaylistWindow->restoreGeometry(g);
+    mPlaylistWindow->restoreState(s);
+
     mMainWindow->checkLyricButton(true);
     mMainWindow->checkEqualizerButton(true);
     mMainWindow->checkPlaylistButton(true);
@@ -186,6 +172,20 @@ void TGuiManager::showGui()
     mEqualizerWindow->show();
     mPlaylistWindow->show();
     //mBrowserWindow->show();
+
+    mTrayIcon->show();
+}
+
+void TGuiManager::closeGui()
+{
+    mMainWindow->close();
+}
+
+void TGuiManager::setCaption(QString caption)
+{
+    QString newCaption = tr("%1 - %2").arg(caption).arg(QApplication::applicationName());
+    mMainWindow->setCaption(newCaption);
+    mTrayIcon->setToolTip(newCaption);
 }
 
 void TGuiManager::slotLyricWindowToggled(bool toggled)
@@ -367,10 +367,28 @@ void TGuiManager::slotShowMinimized()
 
 void TGuiManager::slotRequestExit()
 {
+    TPreferences *prefs = TPreferences::instance();
+    prefs->setWindowGeometryState(WT_MAIN, mMainWindow->saveGeometry(), mMainWindow->saveState());
+    prefs->setWindowGeometryState(WT_LYRIC, mLyricWindow->saveGeometry(), mLyricWindow->saveState());
+    prefs->setWindowGeometryState(WT_EQUALIZER, mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
+    prefs->setWindowGeometryState(WT_PLAYLIST, mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
+
+    emit requestShutdown();
+
     mMainWindow->close();
+    mMiniWindow->close();
+    mLyricWindow->close();
+    mEqualizerWindow->close();
+    mPlaylistWindow->close();
+    mBrowserWindow->close();
+    mDesktopLyricWindow->close();
+    mDesktopWindow->close();
+    mMainMenu->close();
+
+    qApp->quit();
 }
 
-void TGuiManager::slotRequestToggleWindow()
+void TGuiManager::toggleGui()
 {
     if(mMainWindow->isVisible())
     {
@@ -380,17 +398,12 @@ void TGuiManager::slotRequestToggleWindow()
     }
 }
 
-void TGuiManager::slotRequestRestoreWindow()
+void TGuiManager::restoreGui()
 {
     if(!mMainWindow->isVisible())
         show();
     else
         mMainWindow->activateWindow();
-}
-
-void TGuiManager::slotExit()
-{
-    exit(0);
 }
 
 void TGuiManager::slotOnOpacityChanged(qreal value)
@@ -418,15 +431,26 @@ void TGuiManager::slotMainWindowActivationChanged()
     }
 }
 
-void TGuiManager::slotMainWindowAboutToClose()
+void TGuiManager::slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
-    mLyricWindow->close();
-    mEqualizerWindow->close();
-    mPlaylistWindow->close();
-    mBrowserWindow->close();
-    mDesktopLyricWindow->close();
-    mDesktopWindow->close();
+    if(reason==QSystemTrayIcon::Trigger)
+    {
+        toggleGui();
+    } else if(reason==QSystemTrayIcon::DoubleClick) {
+        restoreGui();
+    }
 }
+
+//void TGuiManager::slotMainWindowAboutToClose()
+//{
+//    mLyricWindow->close();
+//    mEqualizerWindow->close();
+//    mPlaylistWindow->close();
+//    mBrowserWindow->close();
+//    mDesktopLyricWindow->close();
+
+//    mDesktopWindow->close();
+//}
 
 void TGuiManager::hide()
 {

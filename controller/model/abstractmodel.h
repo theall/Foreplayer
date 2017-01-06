@@ -14,6 +14,7 @@ public:
 
     QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
 
+    int currentIndex();
     virtual void setCurrentIndex(int index);
 
     virtual void setPlaylistCore(TPlaylistCore *core);
@@ -29,7 +30,9 @@ public:
                                    QColor numberColor,
                                    QColor durationColor,
                                    QColor currentRowTextColor,
-                                   QColor backgroundColor);
+                                   QColor backgroundColor,
+                                   QColor backgroundColor2
+                                   );
 
 private:
     static QVariant mFont;
@@ -42,7 +45,7 @@ private:
     static QVariant mDurationColor;
 
 protected:
-    int mCurrentRow;
+    int mCurrentIndex;
     TPlaylistCore *mPlaylistCore;
 };
 

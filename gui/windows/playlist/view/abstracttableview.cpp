@@ -2,16 +2,16 @@
 #include "utils.h"
 
 QColor TAbstractTableView::mBackground;
+QPixmap *TTableViewDelegate::mSelectedPixmap = NULL;
 
 TTableViewDelegate::TTableViewDelegate(QObject *parent) :
     QStyledItemDelegate(parent)
 {
-    mSelectedPixmap.load("z:/skins/fulkfour/playlist_selected.bmp");
 }
 
-void TTableViewDelegate::setPixmap(QPixmap pixmap)
+void TTableViewDelegate::setSelectedPixmap(QPixmap *pixmap)
 {
-    mSelectedPixmap = pixmap;
+    TTableViewDelegate::mSelectedPixmap = pixmap;
 }
 
 void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
@@ -27,7 +27,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
     {
         // Draw background
         rect.adjust(0, 0, -1, -1);
-        painter->drawPixmap(option.rect, mSelectedPixmap);
+        painter->drawPixmap(option.rect, *TTableViewDelegate::mSelectedPixmap);
 
         // Draw border
         painter->setPen(Qt::white);
@@ -131,6 +131,7 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
     TScrollBar *bar = new TScrollBar(Qt::Vertical, this);
     connect(bar, &TScrollBar::onVisibleToggle, this, &TAbstractTableView::updateColumnsWidth);
     setVerticalScrollBar(bar);
+
     setContextMenuPolicy(Qt::CustomContextMenu);
 }
 

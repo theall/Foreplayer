@@ -5,7 +5,11 @@ TPlaylistController::TPlaylistController(QObject *parent) :
     mPlaylistModel(new TPlaylistModel(this)),
     mMusiclistModel(new TMusiclistModel(this)),
     mTracklistModel(new TTrackListModel(this)),
+    mPlaylistWindow(NULL),
     mPlaylistWidget(NULL),
+    mPlaylistView(NULL),
+    mMusiclistView(NULL),
+    mTracklistView(NULL),
     mPlaylistCore(NULL)
 {
 
@@ -16,41 +20,44 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     Q_ASSERT(gui);
     Q_ASSERT(core);
 
-    TAbstractModel::setColorParameters(QFont("-11,0,0,0,400,0,0,0,0,3,2,4,34,Tahoma"),
-                  QColor("#6091c6"),
-                  QColor("#e3ecf4"),
-                  QColor("#aac5dd"),
-                  QColor("#6898c4"),
-                  QColor("#3c80c4"),
-                  QColor("#000000"));
-
-    TPlaylistWidget::setFontColors(QColor("#0c1623"));
-    TScrollBar::setPixmaps(
-                QPixmap("z:/skins/fulkfour/b1.bmp"),
-                QPixmap("z:/skins/fulkfour/scrollbar_button.bmp"),
-                QPixmap("z:/skins/fulkfour/scrollbar_thumb.bmp")
-                );
+    mPlaylistWindow = gui->playlistWindow();
+    Q_ASSERT(mPlaylistWindow);
 
     mPlaylistWidget = gui->playlistWindow()->playlistWidget();
-
     Q_ASSERT(mPlaylistWidget);
 
-    connect(mPlaylistWidget, SIGNAL(onPlaylistIndexChanged(int)), this, SLOT(slotPlaylistIndexChanged(int)));
-    connect(mPlaylistWidget, SIGNAL(onMusiclistIndexChanged(int)), this, SLOT(slotMusiclistIndexChanged(int)));
-    connect(mPlaylistWidget, SIGNAL(onTracklistIndexChanged(int)), this, SLOT(slotTracklistIndexChanged(int)));
-//    connect(mPlaylistWidget,
-//            SIGNAL(requestSetColors(QFont,QColor,QColor,QColor,QColor,QColor,QColor)),
-//            this,
-//            SLOT(slotRequestSetColors(QFont,QColor,QColor,QColor,QColor,QColor,QColor)));
+    mPlaylistView = mPlaylistWidget->playlistView();
+    mMusiclistView = mPlaylistWidget->musiclistView();
+    mTracklistView = mPlaylistWidget->tracklistView();
+
+    TAbstractModel::setColorParameters(
+        mPlaylistWidget->textFont(),
+        mPlaylistWidget->colorText(),
+        mPlaylistWidget->colorHilight(),
+        mPlaylistWidget->colorNumber(),
+        mPlaylistWidget->colorDuration(),
+        mPlaylistWidget->colorSelect(),
+        mPlaylistWidget->colorBkgnd(),
+        mPlaylistWidget->colorBkgnd2());
 
     mPlaylistCore = core->playlist();
     mPlaylistModel->setPlaylistCore(mPlaylistCore);
     mMusiclistModel->setPlaylistCore(mPlaylistCore);
     mTracklistModel->setPlaylistCore(mPlaylistCore);
 
-    mPlaylistWidget->playlistView()->setModel(mPlaylistModel);
-    mPlaylistWidget->musiclistView()->setModel(mMusiclistModel);
-    mPlaylistWidget->tracklistView()->setModel(mTracklistModel);
+    mPlaylistView->setModel(mPlaylistModel);
+    mMusiclistView->setModel(mMusiclistModel);
+    mTracklistView->setModel(mTracklistModel);
+
+    connect(mPlaylistWidget, SIGNAL(onPlaylistIndexChanged(int)), this, SLOT(slotPlaylistIndexChanged(int)));
+    connect(mPlaylistWidget, SIGNAL(onMusiclistIndexChanged(int)), this, SLOT(slotMusiclistIndexChanged(int)));
+    connect(mPlaylistWidget, SIGNAL(onTracklistIndexChanged(int)), this, SLOT(slotTracklistIndexChanged(int)));
+
+    connect(mPlaylistWindow, SIGNAL(requestAddNewPlaylist()), this, SLOT(slotRequestAddNewPlaylist()));
+    connect(mPlaylistWindow, SIGNAL(requestRemovePlaylist()), this, SLOT(slotRequestRemovePlaylist()));
+    connect(mPlaylistWindow, SIGNAL(requestRenamePlaylist()), this, SLOT(slotRequestRenamePlaylist()));
+    connect(mPlaylistWindow, SIGNAL(requestSortPlaylists()), this, SLOT(slotRequestSortPlaylists()));
+    connect(mPlaylistWindow, SIGNAL(requestSendTo()), this, SLOT(slotRequestSendTo()));
 
     TAbstractController::joint(gui, core);
 }
@@ -79,22 +86,44 @@ void TPlaylistController::slotTracklistIndexChanged(int index)
     }
 }
 
-void TPlaylistController::slotRequestSetColors(
-        QFont font,
-        QColor textColor,
-        QColor selectedTextColor,
-        QColor numberColor,
-        QColor durationColor,
-        QColor currentRowTextColor,
-        QColor backgroundColor)
+void TPlaylistController::slotRequestAddNewPlaylist()
 {
-    TAbstractModel::setColorParameters(font,
-                                       textColor,
-                                       selectedTextColor,
-                                       numberColor,
-                                       durationColor,
-                                       currentRowTextColor,
-                                       backgroundColor);
+    if(!mPlaylistModel || !mPlaylistView)
+        return;
+
+    mPlaylistModel->add(tr("New playlist"));
+}
+
+void TPlaylistController::slotRequestRemovePlaylist()
+{
+    if(!mPlaylistModel || !mPlaylistView)
+        return;
+
+    int currentIndex = mPlaylistModel->currentIndex();
+    mPlaylistModel->remove(currentIndex);
+
+    // Reget current index after item removed
+    currentIndex = mPlaylistModel->currentIndex();
+    if(currentIndex > -1)
+        mPlaylistView->selectRow(currentIndex);
+}
+
+void TPlaylistController::slotRequestRenamePlaylist()
+{
+    if(!mPlaylistModel || !mPlaylistView)
+        return;
+
+    mPlaylistModel->rename(1, "aa");
+}
+
+void TPlaylistController::slotRequestSortPlaylists()
+{
+
+}
+
+void TPlaylistController::slotRequestSendTo()
+{
+
 }
 
 void TPlaylistController::slotTimerEvent()

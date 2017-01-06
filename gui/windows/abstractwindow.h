@@ -122,6 +122,8 @@ public:
     bool isGumTo(TAbstractWindow *window);
 
     void setGeometry(QRect geometry);
+    bool restoreGeometry(const QByteArray &geometry);
+    bool restoreState(const QByteArray &state, int version = 0);
 
     void move(int x, int y);
     void move(const QPoint &);
@@ -153,14 +155,12 @@ protected:
     bool event(QEvent *) Q_DECL_OVERRIDE;
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
     void focusOutEvent(QFocusEvent *) Q_DECL_OVERRIDE;
+    void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
 
+    void changeEvent(QEvent *) Q_DECL_OVERRIDE;
     // TSkinReader interface
 public:
     void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
-
-    // QWidget interface
-protected:
-    void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
 };
 
 #endif // TABSTRACTWINDOW_H

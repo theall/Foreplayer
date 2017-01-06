@@ -14,7 +14,9 @@ public:
 
     void add(QString name);
     void move(int from, int to);
+
     void remove(int index);
+    void rename(int index, QString newName);
 
 private:
     TPlaylistItems *mPlaylist;

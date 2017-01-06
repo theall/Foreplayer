@@ -1,3 +1,5 @@
+PRECOMPILED_HEADER += \
+    $$PWD/pch.h
 
 SOURCES += \
     $$PWD/utils.cpp \

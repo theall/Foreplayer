@@ -192,10 +192,10 @@ void TAbstractWindow::mouseMoveEvent(QMouseEvent *event)
 
             setCursor(C_RESIZE_ARROWS[mResizingDirection]);
 
-            if(mResizingDirection != RD_NONE)
-                grabMouse();
-            else
+            if(mResizingDirection == RD_NONE)
                 releaseMouse();
+            else
+                grabMouse();
         }
     } else {
         if(mResizingDirection != RD_NONE && mResizeEnable) {
@@ -302,6 +302,22 @@ void TAbstractWindow::setGeometry(QRect geometry)
     QMainWindow::setGeometry(geometry);
 
     updateEdges();
+}
+
+bool TAbstractWindow::restoreGeometry(const QByteArray &geometry)
+{
+    bool status = QMainWindow::restoreGeometry(geometry);
+
+    updateEdges();
+    return status;
+}
+
+bool TAbstractWindow::restoreState(const QByteArray &state, int version)
+{
+    bool status = QMainWindow::restoreState(state, version);
+
+    updateEdges();
+    return status;
 }
 
 void TAbstractWindow::move(int x, int y)
@@ -448,12 +464,15 @@ void TBackgoundPixmap::setPixmap(QPixmap pixmap, QRect resize)
 void TAbstractWindow::focusOutEvent(QFocusEvent *ev)
 {
     mMousePressed = false;
-
+    releaseMouse();
     QMainWindow::focusOutEvent(ev);
 }
 
 void TAbstractWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     QRect geo = SkinUtils::extractGeometry(element);
 
     if(geo.isValid())
@@ -476,4 +495,15 @@ void TAbstractWindow::showEvent(QShowEvent *ev)
     QMainWindow::showEvent(ev);
 
     activateWindow();
+}
+
+void TAbstractWindow::changeEvent(QEvent *event)
+{
+    if (event->type() == QEvent::ActivationChange) {
+        if(!isActiveWindow())
+        {
+            mMousePressed = false;
+            releaseMouse();
+        }
+    }
 }

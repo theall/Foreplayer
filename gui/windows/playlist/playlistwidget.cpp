@@ -70,24 +70,8 @@ bool TPlaylistWidget::updatePosition(QSize size)
     return canResize;
 }
 
-//void TPlaylistWidget::setFontColors(QFont font,
-//                                    QColor text,
-//                                    QColor hilight,
-//                                    QColor number,
-//                                    QColor duration,
-//                                    QColor select,
-//                                    QColor background1,
-//                                    QColor background2)
 void TPlaylistWidget::setFontColors(QColor background2)
 {
-//    emit requestSetColors(font,
-//                          text,
-//                          hilight,
-//                          number,
-//                          duration,
-//                          select,
-//                          background1);
-
     TAbstractTableView::setBackgroundColor(background2);
 }
 
@@ -105,6 +89,21 @@ void TPlaylistWidget::slotCurrentRowChanged(int index)
 
 void TPlaylistWidget::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     QDomElement parentElement = element.parentNode().toElement();
     setAlignment(skin->findPixmap(parentElement.attribute(ATTR_IMAGE)), SkinUtils::extractGeometry(element));
+
+    mTextFont.fromString(element.attribute(ATTR_FONT));
+    mColorText.setNamedColor(element.attribute(ATTR_COLOR_TEXT));
+    mColorHilight.setNamedColor(element.attribute(ATTR_COLOR_HILIGHT));
+    mColorBkgnd.setNamedColor(element.attribute(ATTR_COLOR_BKGND));
+    mColorNumber.setNamedColor(element.attribute(ATTR_COLOR_NUMBER));
+    mColorDuration.setNamedColor(element.attribute(ATTR_COLOR_DURATION));
+    mColorSelect.setNamedColor(element.attribute(ATTR_COLOR_SELECT));
+    mColorBkgnd2.setNamedColor(element.attribute(ATTR_COLOR_BKGND2));
+    TAbstractTableView::setBackgroundColor(mColorBkgnd2);
+    mSelectedPixmap = skin->findPixmap(element.attribute(ATTR_SELECTED_IMAGE));
+    TTableViewDelegate::setSelectedPixmap(&mSelectedPixmap);
 }

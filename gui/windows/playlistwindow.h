@@ -25,6 +25,14 @@ public:
     TPlaylistWidget *playlistWidget() { return mCentralWidget; }
 
 signals:
+    // Controller
+    void requestAddNewPlaylist();
+    void requestRemovePlaylist();
+    void requestRenamePlaylist();
+    void requestSortPlaylists();
+    void requestSendTo();
+
+    // Gui
     void playlistWindowToggled(bool);
 
 public slots:

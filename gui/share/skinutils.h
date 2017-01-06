@@ -3,7 +3,7 @@
 
 #include "pch.h"
 
-#define ZIP_SKIN_NAME        "main.xml"
+#define ZIP_SKIN_NAME        "skin.xml"
 
 #define TAG_SKIN             "skin"
 

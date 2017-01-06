@@ -17,8 +17,6 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
 {
     setObjectName("PlaylistWindow");
 
-    setMouseTracking(true);
-
     mPopmenuMusicList->addMenu(mPopmenuAddMusics);
     mPopmenuMusicList->addMenu(mPopmenuRemoveMusics);
     mPopmenuMusicList->addMenu(mPopmenuSort);
@@ -32,6 +30,12 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mCentralWidget->playlistView(), SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
     connect(mCentralWidget->musiclistView(), SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
     connect(mCentralWidget->tracklistView(), SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
+
+    connect(mPopmenuPlayList, SIGNAL(onActionAddTriggered()), this, SIGNAL(requestAddNewPlaylist()));
+    connect(mPopmenuPlayList, SIGNAL(onActionRemoveTriggered()), this, SIGNAL(requestRemovePlaylist()));
+    connect(mPopmenuPlayList, SIGNAL(onActionRenameTriggered()), this, SIGNAL(requestRenamePlaylist()));
+    connect(mPopmenuPlayList, SIGNAL(onActionSortTriggered()), this, SIGNAL(requestSortPlaylists()));
+    connect(mPopmenuPlayList, SIGNAL(onActionSendTriggered()), this, SIGNAL(requestSendTo()));
 
     retranslateUi();
 }
@@ -88,9 +92,20 @@ void TPlaylistWindow::resizeEvent(QResizeEvent *event)
 
 void TPlaylistWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnClose->loadFromSkin(element.firstChildElement(TAG_PLAYLIST_CLOSE), skin);
     mToolbar->loadFromSkin(element.firstChildElement(TAG_PLAYLIST_TOOLBAR), skin);
     mCentralWidget->loadFromSkin(element.firstChildElement(TAG_PLAYLIST_PLAYLIST), skin);
+
+    QDomElement scrollBarElement = element.firstChildElement(TAG_PLAYLIST_SCROLLBAR);
+
+    TScrollBar::setPixmaps(
+                skin->findPixmap(scrollBarElement.attribute(ATTR_BAR_IMAGE)),
+                skin->findPixmap(scrollBarElement.attribute(ATTR_BUTTONS_IMAGE)),
+                skin->findPixmap(scrollBarElement.attribute(ATTR_THUMB_IMAGE))
+                );
 }

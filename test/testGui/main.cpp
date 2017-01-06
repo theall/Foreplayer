@@ -1,11 +1,13 @@
 #include <QApplication>
 
 #include "../../gui/guimanager.h"
+#include "preferences.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    TPreferences::instance();
     TGuiManager gui;
 
     gui.loadSkin("Z:/skins/fulkfour/skin.xml");
@@ -24,6 +26,9 @@ int main(int argc, char *argv[])
     gui.mainWindow()->setTitles(titles);
     gui.mainWindow()->setTime(99, 354);
 
-    a.exec();
-    return 0;
+    int result = a.exec();
+
+    TPreferences::deleteInstance();
+
+    return result;
 }

@@ -12,8 +12,6 @@ TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
     connect(mBtnOnTop, SIGNAL(clicked(bool)), this, SLOT(on_btnOnTop_clicked(bool)));
     connect(mBtnDesktopLyric, SIGNAL(clicked()), this, SLOT(on_btnShowDescktopLyric_clicked()));
 
-    setMouseTracking(true);
-
     retranslateUi();
 }
 
@@ -60,6 +58,9 @@ void TLyricWindow::resizeEvent(QResizeEvent *event)
 
 void TLyricWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnClose->loadFromSkin(element.firstChildElement(TAG_LYRIC_CLOSE), skin);

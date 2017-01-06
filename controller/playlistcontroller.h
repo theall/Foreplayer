@@ -21,20 +21,23 @@ private:
     TMusiclistModel *mMusiclistModel;
     TTrackListModel *mTracklistModel;
 
+    TPlaylistWindow *mPlaylistWindow;
     TPlaylistWidget *mPlaylistWidget;
+    TPlaylistView *mPlaylistView;
+    TMusiclistView *mMusiclistView;
+    TTracklistView *mTracklistView;
     TPlaylistCore *mPlaylistCore;
 
 private slots:
     void slotPlaylistIndexChanged(int index);
     void slotMusiclistIndexChanged(int index);
     void slotTracklistIndexChanged(int index);
-    void slotRequestSetColors(QFont font,
-                              QColor textColor,
-                              QColor selectedTextColor,
-                              QColor numberColor,
-                              QColor durationColor,
-                              QColor currentRowTextColor,
-                              QColor backgroundColor);
+
+    void slotRequestAddNewPlaylist();
+    void slotRequestRemovePlaylist();
+    void slotRequestRenamePlaylist();
+    void slotRequestSortPlaylists();
+    void slotRequestSendTo();
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

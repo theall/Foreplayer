@@ -27,7 +27,6 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     , mVisualWidget(new TVisualWidget(this))
     , mCaptionIndex(0)
     , mTitleTimerId(-1)
-    , mTrayIcon(new QSystemTrayIcon(this))
     , mMinimode(false)
     , mWindowHided(false)
 {
@@ -84,9 +83,6 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SLOT(on_volume_valueChanged(int)));
     connect(mProgressBar, SIGNAL(valueChanged(int)), this, SIGNAL(progressChanged(int)));
 
-    // Tray icon
-    connect(mTrayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this, SLOT(slotTrayIconActivated(QSystemTrayIcon::ActivationReason)));
-
     retranslateUi();
 }
 
@@ -112,8 +108,8 @@ void TMainWindow::setTitles(QStringList titles)
 void TMainWindow::setCaption(QString title)
 {
     mCaptionIndex = 0;
-    mCaption = tr("%1 - %2").arg(title).arg(QApplication::applicationName());
-    mTrayIcon->setToolTip(mCaption);
+    mCaption = title;
+    setWindowTitle(mCaption);
 }
 
 void TMainWindow::setPlayState(QString state)
@@ -148,7 +144,6 @@ void TMainWindow::checkBrowserButton(bool checked)
 
 void TMainWindow::setContextMenu(QMenu *menu)
 {
-    mTrayIcon->setContextMenu(menu);
     mContextMenu = menu;
 }
 
@@ -229,16 +224,6 @@ void TMainWindow::timerEvent(QTimerEvent *event)
         mCaptionIndex = 0;
 }
 
-void TMainWindow::slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason)
-{
-    if(reason==QSystemTrayIcon::Trigger)
-    {
-        emit requestToggleWindow();
-    } else if(reason==QSystemTrayIcon::DoubleClick) {
-        emit requestRestoreWindow();
-    }
-}
-
 void TMainWindow::contextMenuEvent(QContextMenuEvent *event)
 {
     if(mContextMenu)
@@ -249,6 +234,9 @@ void TMainWindow::contextMenuEvent(QContextMenuEvent *event)
 
 void TMainWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnPlay->loadFromSkin(element.firstChildElement(TAG_PLAYER_PLAY), skin);
@@ -277,8 +265,6 @@ void TMainWindow::loadFromSkin(QDomElement element, TSkin *skin)
     QDomElement iconElement = element.firstChildElement(TAG_PLAYER_ICON);
     QIcon ico = skin->findIcon(iconElement.attribute(ATTR_ICON));
     setWindowIcon(ico);
-    mTrayIcon->setIcon(ico);
-    mTrayIcon->show();
 }
 
 void TMainWindow::changeEvent(QEvent *event)
@@ -292,10 +278,4 @@ void TMainWindow::changeEvent(QEvent *event)
     } else if (et == QEvent::ActivationChange) {
         emit onActivationChange();
     }
-}
-
-void TMainWindow::closeEvent(QCloseEvent *event)
-{
-    emit requestClose();
-    event->accept();
 }

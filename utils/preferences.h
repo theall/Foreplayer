@@ -22,7 +22,8 @@ public:
 
     ~TPreferences();
 
-    static TPreferences* instance();
+    static TPreferences *instance();
+    static void deleteInstance();
 
     QString language();
     void setLanguage(QString language);
@@ -34,7 +35,7 @@ signals:
     void languageChanged();
 
 private:
-    QSettings mSettings;
+    QSettings *mSettings;
     bool mAlwaysTop;
     int mRunCount;
     QString mLanguage;

@@ -25,34 +25,25 @@ public:
      */
     bool updatePosition(QSize size);
 
-    /*
-     * Set text color
-     */
-//    static void setFontColors(QFont font,
-//                       QColor text,
-//                       QColor hilight,
-//                       QColor number,
-//                       QColor duration,
-//                       QColor select,
-//                       QColor background1,
-//                       QColor background2);
     static void setFontColors(QColor background2);
 
-    TPlaylistView *playlistView() { return mPlaylistView;}
-    TMusiclistView *musiclistView() { return mMusiclistView;}
-    TTracklistView *tracklistView() { return mTracklistView;}
+    TPlaylistView *playlistView() { return mPlaylistView; }
+    TMusiclistView *musiclistView() { return mMusiclistView; }
+    TTracklistView *tracklistView() { return mTracklistView; }
+
+    QFont textFont() { return mTextFont; }
+    QColor colorText() { return mColorText; }
+    QColor colorHilight() { return mColorHilight; }
+    QColor colorBkgnd() { return mColorBkgnd; }
+    QColor colorNumber() { return mColorNumber; }
+    QColor colorDuration() { return mColorDuration; }
+    QColor colorSelect() { return mColorSelect; }
+    QColor colorBkgnd2() { return mColorBkgnd2; }
 
 signals:
     void onPlaylistIndexChanged(int index);
     void onMusiclistIndexChanged(int index);
     void onTracklistIndexChanged(int index);
-//    void requestSetColors(QFont font,
-//                          QColor textColor,
-//                          QColor selectedTextColor,
-//                          QColor numberColor,
-//                          QColor durationColor,
-//                          QColor currentRowTextColor,
-//                          QColor backgroundColor);
 
 private slots:
     void slotCurrentRowChanged(int index);
@@ -69,6 +60,18 @@ private:
     int mMarginTop;
     int mMarginRight;
     int mMarginBottom;
+
+    QFont mTextFont;
+    QColor mColorText;
+    QColor mColorHilight;
+    QColor mColorBkgnd;
+    QColor mColorNumber;
+    QColor mColorDuration;
+    QColor mColorSelect;
+    QColor mColorBkgnd2;
+
+    // Cache the selected pixmap
+    QPixmap mSelectedPixmap;
 
     // TSkinReader interface
 public:

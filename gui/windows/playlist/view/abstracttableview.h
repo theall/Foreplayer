@@ -5,17 +5,19 @@
 
 class TTableViewDelegate : public QStyledItemDelegate
 {
+    static QPixmap *mSelectedPixmap;
+
 public:
     explicit TTableViewDelegate(QObject *parent = 0);
 
-    void setPixmap(QPixmap pixmap);
+    static void setSelectedPixmap(QPixmap *pixmap);
 
     void paint(QPainter *painter,
                const QStyleOptionViewItem &option,
                const QModelIndex &index) const Q_DECL_OVERRIDE;
 
 private:
-    QPixmap mSelectedPixmap;
+
 };
 
 class TAbstractTableView : public QTableView

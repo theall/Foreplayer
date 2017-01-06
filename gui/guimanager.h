@@ -25,9 +25,12 @@ public:
     explicit TGuiManager(QObject *parent = 0);
     ~TGuiManager();
 
-    void loadSkin(QString skinPath);
+    bool loadSkin(QString skinPath);
 
     void showGui();
+    void closeGui();
+
+    void setCaption(QString caption);
 
     TLyricWindow *lyricWindow() { return mLyricWindow; }
     TMainWindow *mainWindow() { return mMainWindow; }
@@ -42,6 +45,7 @@ signals:
     void requestStop();
     void requestNext();
     void requestPrevious();
+    void requestShutdown();
 
 private slots:
     void slotLyricWindowToggled(bool toggled);
@@ -58,13 +62,11 @@ private slots:
     void slotRequireShowDesktopLyric();
     void slotShowMinimized();
     void slotRequestExit();
-    void slotRequestToggleWindow();
-    void slotRequestRestoreWindow();
-    void slotExit();
     void slotOnOpacityChanged(qreal value);
     void slotRequestLoadSkin(QString skinFullName);
     void slotMainWindowActivationChanged();
-    void slotMainWindowAboutToClose();
+    void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
+    //void slotMainWindowAboutToClose();
 
 private:
     TMainWindow *mMainWindow;
@@ -78,6 +80,8 @@ private:
     TWindowList mGumedWindows;
 
     TMainMenu *mMainMenu;
+    QSystemTrayIcon *mTrayIcon;
+
     bool mMinimode;
     bool mShowDesktopLyric;
     bool mBrowserVisible;
@@ -89,6 +93,8 @@ private:
     void createSystemTrayIcon();
     void hide();
     void show();
+    void toggleGui();
+    void restoreGui();
     void moveWindow(TAbstractWindow* window, int left, int top);
 };
 

@@ -76,6 +76,9 @@ void TSliderBar::mouseMoveEvent(QMouseEvent *e)
 
 void TSliderBar::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     QRect rt = SkinUtils::extractGeometry(element);
     setGeometry(rt);
     mGroovePixmap = skin->findPixmap(element.attribute(ATTR_BAR_IMAGE));

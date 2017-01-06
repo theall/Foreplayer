@@ -166,6 +166,9 @@ QString TEqualizerWindow::dbStatusString(int value)
 
 void TEqualizerWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnClose->loadFromSkin(element.firstChildElement(TAG_EQUALIZER_CLOSE), skin);

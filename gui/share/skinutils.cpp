@@ -46,15 +46,26 @@ namespace SkinUtils {
     {
         QRect rect;
         QStringList sl = s.split(",");
-        if(sl.size()!=4)
+        if(sl.size()==4)
         {
-            return rect;
+            rect.setLeft(0);
+            rect.setTop(0);
+            rect.setWidth(sl[2].toInt()-sl[0].toInt());
+            rect.setHeight(sl[3].toInt()-sl[1].toInt());
         }
-        rect.setLeft(0);
-        rect.setTop(0);
-        rect.setWidth(sl[2].toInt()-sl[0].toInt());
-        rect.setHeight(sl[3].toInt()-sl[1].toInt());
+
         return rect;
+    }
+
+    QFont strToFont(QString s)
+    {
+        QFont font;
+        QStringList sl = s.split(",");
+        if(sl.size() == 14)
+        {
+
+        }
+        return font;
     }
 
     QRect extractGeometry(QDomElement e, QString attr)

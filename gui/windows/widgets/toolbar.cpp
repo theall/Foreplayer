@@ -135,6 +135,9 @@ void TToolBar::updatePos()
 
 void TToolBar::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     setPixmaps(skin->findPixmap(element.attribute(ATTR_IMAGE)), skin->findPixmap(element.attribute(ATTR_HOT_IMAGE)));
     setGeometry(SkinUtils::strToGeometry(element.attribute(ATTR_POSITION)));
     QString alignment = element.attribute(ATTR_ALIGN);

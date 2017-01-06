@@ -135,11 +135,14 @@ void TVisualWidget::mousePressEvent(QMouseEvent *event)
 
 void TVisualWidget::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     Q_UNUSED(skin)
 
     setGeometry(SkinUtils::extractGeometry(element));
     mColorBlock = QColor(element.attribute(ATTR_BLOCK_COLOR));
-    mColorTop = QColor(element.attribute(ATTR_BLOCK_COLOR));
-    mColorMiddle = QColor(element.attribute(ATTR_BLOCK_COLOR));
-    mColorBottom = QColor(element.attribute(ATTR_BLOCK_COLOR));
+    mColorTop = QColor(element.attribute(ATTR_TOP_COLOR));
+    mColorMiddle = QColor(element.attribute(ATTR_MIDDLE_COLOR));
+    mColorBottom = QColor(element.attribute(ATTR_BOTTOM_COLOR));
 }

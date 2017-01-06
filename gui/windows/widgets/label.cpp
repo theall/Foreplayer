@@ -17,6 +17,9 @@ void TLabel::setFontColor(QFont font, QColor color)
 
 void TLabel::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     setGeometry(SkinUtils::extractGeometry(element));
 
     QPixmap p = skin->findPixmap(element.attribute(ATTR_ICON));

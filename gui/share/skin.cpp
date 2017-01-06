@@ -1,5 +1,7 @@
 #include "skin.h"
 
+#include <QTemporaryFile>
+
 #define BUF_SIZE                    16384
 
 #define TEXT(x) x.toLatin1().constData()
@@ -133,14 +135,11 @@ bool TSkin::loadFromZipFile(QString fileName)
     QByteArray byteArray;
     if(!readFileFromZip(ZIP_SKIN_NAME, byteArray))
     {
-        mError = tr("Fail to open xmp file %1").arg(fileName);
+        mError = tr("Fail to open xml file %1").arg(fileName);
         return false;
     }
 
-    bool status = parseXmlDocument(byteArray);
-    unzClose(mZipfile);
-    mZipfile = NULL;
-    return status;
+    return parseXmlDocument(byteArray);
 }
 
 bool TSkin::parseXmlDocument(const QByteArray &byteArray)
@@ -183,21 +182,24 @@ bool TSkin::parseXmlDocument(const QByteArray &byteArray)
 QPixmap TSkin::readPixmapFromZip(QString fileName)
 {
     QByteArray array;
-    if(!readFileFromZip(fileName, array))
-    {
-        return QPixmap();
-    }
-    return QPixmap(array.data());
+    QPixmap p;
+    if(readFileFromZip(fileName, array))
+        p.loadFromData(array);
+
+    return p;
 }
 
 QIcon TSkin::readIconFromZip(QString fileName)
 {
+    QIcon ico;
     QByteArray array;
-    if(!readFileFromZip(fileName, array))
+    if(readFileFromZip(fileName, array))
     {
-        return QIcon();
+        QPixmap p;
+        p.loadFromData(array);
+        ico.addPixmap(p);
     }
-    return QIcon(array.data());
+    return ico;
 }
 
 bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)

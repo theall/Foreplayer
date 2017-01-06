@@ -70,6 +70,9 @@ void TDesktopLyricWindow::retranslateUi()
 
 void TDesktopLyricWindow::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     TAbstractWindow::loadFromSkin(element, skin);
 
     mBtnIcon->loadFromSkin(element.firstChildElement(TAG_DESKTOP_LYRIC_ICON), skin);

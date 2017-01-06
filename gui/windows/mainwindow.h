@@ -61,17 +61,13 @@ signals:
     void progressChanged(int);
     void requestOpenFiles(QStringList);
     void requestShowMinimized();
-    void requestToggleWindow();
-    void requestRestoreWindow();
     void onActivationChange();
-    void requestClose();
 
 private slots:
     void on_btnPlay_clicked();
     void on_btnPause_clicked();
     void on_btnOpen_clicked();
     void on_volume_valueChanged(int value);
-    void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
 
 private:
     TImageButton *mBtnPlay;
@@ -99,7 +95,6 @@ private:
     QString mCaption;
     int mCaptionIndex;
     int mTitleTimerId;
-    QSystemTrayIcon *mTrayIcon;
     bool mMinimode;
     bool mWindowHided;
     QMenu *mContextMenu;
@@ -118,7 +113,6 @@ public:
 protected:
     void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
     void changeEvent(QEvent *) Q_DECL_OVERRIDE;
-    void closeEvent(QCloseEvent *) Q_DECL_OVERRIDE;
 };
 
 #endif // MAINWINDOW_H

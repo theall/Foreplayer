@@ -46,9 +46,6 @@ void TPlaylistModel::move(int from, int to)
         to = 0;
     if(to >= index)
         to = index;
-
-    //beginMoveRows(QModelIndex(), from, to);
-    //endMoveRows();
 }
 
 void TPlaylistModel::remove(int index)
@@ -62,6 +59,34 @@ void TPlaylistModel::remove(int index)
     beginRemoveRows(QModelIndex(), index, index);
     mPlaylistCore->removePlaylist(index);
     endRemoveRows();
+
+    if(index < mCurrentIndex)
+    {
+        mCurrentIndex--;
+
+        if(mCurrentIndex < 0)
+            mCurrentIndex = 0;
+    }
+
+    int newSize = mPlaylist->size();
+    if(mCurrentIndex >= newSize)
+        mCurrentIndex = newSize - 1;
+
+    if(newSize <= 0)
+        mCurrentIndex = -1;
+}
+
+void TPlaylistModel::rename(int index, QString newName)
+{
+    if(!mPlaylistCore || !mPlaylist)
+        return;
+
+    if(index<0 || index>=mPlaylist->size())
+        return;
+
+    TPlaylistItem *item = mPlaylist->at(index);
+    if(item)
+        item->displayName = newName;
 }
 
 int TPlaylistModel::rowCount(const QModelIndex &parent) const

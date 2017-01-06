@@ -152,6 +152,9 @@ void TScrollLabel::paintEvent(QPaintEvent *event)
 
 void TScrollLabel::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     Q_UNUSED(skin)
 
     setGeometry(SkinUtils::extractGeometry(element));

@@ -97,9 +97,12 @@ void TPlayerCore::pause()
 
 void TPlayerCore::destroyPlayThread()
 {
-    mPlayThread->needToTerminate();
-    mPlayThread->wait();
-    delete mPlayThread;
-    mPlayThread = NULL;
+    if(mPlayThread)
+    {
+        mPlayThread->needToTerminate();
+        mPlayThread->wait();
+        delete mPlayThread;
+        mPlayThread = NULL;
+    }
 }
 

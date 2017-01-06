@@ -104,6 +104,9 @@ void TCheckBox::setFontColor(QFont font, QColor color)
 
 void TCheckBox::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     setGeometry(SkinUtils::strToGeometry(element.attribute(ATTR_POSITION)));
     mButtonImages->setPixmap(skin->findPixmap(element.attribute(ATTR_CKBOX_IMAGE)));
     setIconAndSize(*mButtonImages->normal());

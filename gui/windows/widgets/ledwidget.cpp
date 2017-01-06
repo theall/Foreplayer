@@ -113,6 +113,9 @@ void TLedWidget::mousePressEvent(QMouseEvent *event)
 
 void TLedWidget::loadFromSkin(QDomElement element, TSkin *skin)
 {
+    if(!skin)
+        return;
+
     setGeometry(SkinUtils::extractGeometry(element));
     setPixmap(skin->findPixmap(element.attribute(ATTR_IMAGE)));
     setAlignment(SkinUtils::extractAlignment(element));
