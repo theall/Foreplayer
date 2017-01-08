@@ -159,7 +159,7 @@ QJsonObject TPlaylistItem::toJson()
 {
     QJsonObject object;
     //Set the data of the playlist.
-    object[K_NAME] = displayName;
+    object[K_NAME] = mDisplayName;
     object[K_FILE] = fileName;
     object[K_VERSION] = version;
 
@@ -173,7 +173,7 @@ QJsonObject TPlaylistItem::toJson()
 
 void TPlaylistItem::fromJson(QJsonObject object)
 {
-    displayName = object.value(K_NAME).toString(K_DEFAULT);
+    mDisplayName = object.value(K_NAME).toString(K_DEFAULT);
     version = object.value(K_VERSION).toInt(PL_VERSION);
     QJsonArray musicArray = object.value(K_MUSICLIST).toArray();
     foreach (QJsonValue musicValue, musicArray) {
@@ -182,7 +182,12 @@ void TPlaylistItem::fromJson(QJsonObject object)
         musicItem->fromJson(musicObject);
         musics.append(musicItem);
     }
-    musicCount = musicArray.size();
+}
+
+void TPlaylistItem::setDisplayName(QString newName)
+{
+    mDisplayName = newName;
+    modified = true;
 }
 
 void TPlaylistItem::sort(SortMode mode)

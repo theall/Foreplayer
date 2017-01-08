@@ -191,15 +191,16 @@ QPixmap TSkin::readPixmapFromZip(QString fileName)
 
 QIcon TSkin::readIconFromZip(QString fileName)
 {
-    QIcon ico;
+    QTemporaryFile tempFile;
     QByteArray array;
+    tempFile.setAutoRemove(true);
     if(readFileFromZip(fileName, array))
     {
-        QPixmap p;
-        p.loadFromData(array);
-        ico.addPixmap(p);
+        tempFile.open();
+        tempFile.write(array);
+        tempFile.close();
     }
-    return ico;
+    return QIcon(tempFile.fileName());
 }
 
 bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)

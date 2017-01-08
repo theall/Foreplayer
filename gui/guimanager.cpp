@@ -93,8 +93,6 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mDesktopLyricWindow, SIGNAL(requireShowLyricWindow()), this, SLOT(slotRequireShowLyricWindow()));
     connect(mDesktopLyricWindow, SIGNAL(requestMoveWindow(QPoint)), this, SLOT(slotRequestMoveWindow(QPoint)));
 
-    TPreferences *prefs = TPreferences::instance();
-
     //Main menu
     mMainMenu->skinMenu()->setPath("skins");
     connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotRequestExit()));
@@ -384,8 +382,6 @@ void TGuiManager::slotRequestExit()
     mDesktopLyricWindow->close();
     mDesktopWindow->close();
     mMainMenu->close();
-
-    qApp->quit();
 }
 
 void TGuiManager::toggleGui()

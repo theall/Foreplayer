@@ -41,6 +41,7 @@ public:
 signals:
 
 private slots:
+    void slotQuitApp();
 
 private:
     TThread *mThread;

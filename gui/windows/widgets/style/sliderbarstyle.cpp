@@ -1,8 +1,6 @@
 #include "sliderbarstyle.h"
 #include "../sliderbar.h"
 
-#include <QDebug>
-
 TSliderbarStyle::TSliderbarStyle():
     TAbstractStyle()
 {

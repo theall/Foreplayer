@@ -63,9 +63,7 @@ class TPlaylistItem
 {
 public:
     TMusicItems musics;
-    QString displayName;
     QString fileName;
-    int musicCount;
     bool modified;
     int version;
 
@@ -73,11 +71,16 @@ public:
     ~TPlaylistItem();
 
     QJsonObject toJson();
-
     void fromJson(QJsonObject object);
+
+    inline QString name() { return mDisplayName; }
+    void setDisplayName(QString newName);
     void sort(SortMode mode);
 
     void clear();
+
+private:
+    QString mDisplayName;
 };
 
 typedef QList<TPlaylistItem*> TPlaylistItems;

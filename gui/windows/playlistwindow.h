@@ -35,8 +35,6 @@ signals:
     // Gui
     void playlistWindowToggled(bool);
 
-public slots:
-
 protected:
     void retranslateUi() Q_DECL_OVERRIDE;
 
@@ -46,6 +44,7 @@ private slots:
     void slotToolbarClicked(TToolBar::BUTTON id, QPoint pos);
     void slotToolbarButtonMouseLeave(TToolBar::BUTTON id);
     void slotPopupContextMenu(QPoint pos);
+    void slotActionRenameTriggered();
 
 private:
     TToolBar *mToolbar;

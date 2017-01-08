@@ -10,8 +10,10 @@ TPreferences *TPreferences::mInstance=NULL;
 //
 TPreferences::TPreferences(QObject *parent):
     QObject(parent)
-  , mSettings(new QSettings(SETTING_FILE, QSettings::IniFormat))
 {
+    QDir dir(qApp->applicationDirPath());
+    mSettings = new QSettings(dir.absoluteFilePath(SETTING_FILE), QSettings::IniFormat);
+
     // Retrieve gui settings
     mSettings->beginGroup("Gui");
     mAlwaysTop = boolValue("AlwaysOnTop");

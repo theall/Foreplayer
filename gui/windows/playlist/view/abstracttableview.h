@@ -16,8 +16,9 @@ public:
                const QStyleOptionViewItem &option,
                const QModelIndex &index) const Q_DECL_OVERRIDE;
 
-private:
-
+    // QAbstractItemDelegate interface
+public:
+    QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
 };
 
 class TAbstractTableView : public QTableView
@@ -32,16 +33,23 @@ public:
 
 signals:
     void onCurrentRowSelected(int index);
+    void requestMoveItems(QList<int> indexes, int insertPos, QList<int> &newIndexes);
 
 protected:
     void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
     void focusOutEvent(QFocusEvent *event) Q_DECL_OVERRIDE;
+    void dragMoveEvent(QDragMoveEvent *event) Q_DECL_OVERRIDE;
+    void dragLeaveEvent(QDragLeaveEvent *event) Q_DECL_OVERRIDE;
+    void dropEvent(QDropEvent *event) Q_DECL_OVERRIDE;
+    void paintEvent(QPaintEvent *event) Q_DECL_OVERRIDE;
     virtual void updateColumnsWidth() = 0;
 
 private slots:
 
 private:
     static QColor mBackground;
+    static QColor mHighlightColor;
+    QRect mHighlightRect;
 };
 
 #endif // TABSTRACTTABLEVIEW_H

@@ -3,6 +3,7 @@
 TMusiclistView::TMusiclistView(QWidget *parent) :
     TAbstractTableView(parent)
 {
+    setSelectionMode(QAbstractItemView::ExtendedSelection);
     setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 

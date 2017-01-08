@@ -59,6 +59,7 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     connect(mPlaylistWindow, SIGNAL(requestSortPlaylists()), this, SLOT(slotRequestSortPlaylists()));
     connect(mPlaylistWindow, SIGNAL(requestSendTo()), this, SLOT(slotRequestSendTo()));
 
+    connect(mPlaylistView, SIGNAL(requestMoveItems(QList<int>,int,QList<int>&)), this, SLOT(slotRequestMovePlaylists(QList<int>, int, QList<int>&)));
     TAbstractController::joint(gui, core);
 }
 
@@ -113,17 +114,27 @@ void TPlaylistController::slotRequestRenamePlaylist()
     if(!mPlaylistModel || !mPlaylistView)
         return;
 
-    mPlaylistModel->rename(1, "aa");
+    mPlaylistView->edit(mPlaylistView->currentIndex());
 }
 
 void TPlaylistController::slotRequestSortPlaylists()
 {
+    if(!mPlaylistModel)
+        return;
 
+    mPlaylistModel->sort();
 }
 
 void TPlaylistController::slotRequestSendTo()
 {
 
+}
+
+void TPlaylistController::slotRequestMovePlaylists(QList<int> indexes, int insertPos, QList<int> &newIndexes)
+{
+    if(!mPlaylistModel)
+        return;
+    mPlaylistModel->moveItems(indexes, insertPos, newIndexes);
 }
 
 void TPlaylistController::slotTimerEvent()

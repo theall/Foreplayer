@@ -38,6 +38,7 @@ private slots:
     void slotRequestRenamePlaylist();
     void slotRequestSortPlaylists();
     void slotRequestSendTo();
+    void slotRequestMovePlaylists(QList<int> indexes, int insertPos, QList<int> &newIndexes);
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

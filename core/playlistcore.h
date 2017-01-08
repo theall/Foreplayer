@@ -15,6 +15,12 @@ enum IndexType
 
 typedef QList<int> intn;
 
+enum TPlaylistSortMode
+{
+    SM_NAME,
+    SM_MUSICS
+};
+
 class TPlaylistCore
 {
     Q_DECLARE_TR_FUNCTIONS(TPlaylistCore)
@@ -26,7 +32,7 @@ public:
     QStringList names();
     TPlaylistItems *playlists();
     void insertPlaylist(QString name, int index = -1);
-    void removePlaylist(int index);
+    bool removePlaylist(int index);
     void renamePlaylist(int index, QString newName);
     void sortPlaylist(SortMode mode = TITLE_ASC);
 
@@ -63,11 +69,12 @@ private:
     TPlaylistMap mPlaylistMap;
     TMusiclistMap mMusiclistMap;
 
-    void findPlaylist(QString path);
+    void findPlaylist();
     void loadPlaylist(QString fileName);
     void save();
     QString getFileName();
-    QString getFullPath(QString name);
+    QDir mCurrentDir;
+    QDir mPlaylistDir;
 };
 
 #endif // TPLAYLISTCORE_H

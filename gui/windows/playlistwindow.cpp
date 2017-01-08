@@ -33,7 +33,7 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
 
     connect(mPopmenuPlayList, SIGNAL(onActionAddTriggered()), this, SIGNAL(requestAddNewPlaylist()));
     connect(mPopmenuPlayList, SIGNAL(onActionRemoveTriggered()), this, SIGNAL(requestRemovePlaylist()));
-    connect(mPopmenuPlayList, SIGNAL(onActionRenameTriggered()), this, SIGNAL(requestRenamePlaylist()));
+    connect(mPopmenuPlayList, SIGNAL(onActionRenameTriggered()), this, SLOT(slotActionRenameTriggered()));
     connect(mPopmenuPlayList, SIGNAL(onActionSortTriggered()), this, SIGNAL(requestSortPlaylists()));
     connect(mPopmenuPlayList, SIGNAL(onActionSendTriggered()), this, SIGNAL(requestSendTo()));
 
@@ -71,6 +71,14 @@ void TPlaylistWindow::slotPopupContextMenu(QPoint pos)
     } else if (TTracklistView *tracklistView = dynamic_cast<TTracklistView*>(sender())) {
         mPopmenuTrackList->popup(tracklistView->mapToGlobal(pos));
     }
+}
+
+void TPlaylistWindow::slotActionRenameTriggered()
+{
+    if(!mCentralWidget)
+        return;
+
+    mCentralWidget->playlistView()->editCurrent();
 }
 
 void TPlaylistWindow::retranslateUi()

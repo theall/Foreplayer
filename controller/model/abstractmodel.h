@@ -47,6 +47,12 @@ private:
 protected:
     int mCurrentIndex;
     TPlaylistCore *mPlaylistCore;
+
+    // QAbstractItemModel interface
+public:
+    virtual int rowCount(const QModelIndex &parent) const = 0;
+    virtual int columnCount(const QModelIndex &parent) const = 0;
+    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
 };
 
 #endif // TABSTRACTMODEL_H

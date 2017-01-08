@@ -1,5 +1,7 @@
 #include "abstractmodel.h"
 
+#define BACKGROUND2_ALPHA 128
+
 QVariant TAbstractModel::mFont;
 QVariant TAbstractModel::mBackColor1;
 QVariant TAbstractModel::mBackColor2;
@@ -19,10 +21,8 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
 {
     if(role==Qt::BackgroundRole)
     {
-        int row = index.row();
-        if(row%2==1)
+        if(index.row()%2 == 1)
             return TAbstractModel::mBackColor2;
-
         return TAbstractModel::mBackColor1;
     } else if (role==Qt::FontRole) {
         return TAbstractModel::mFont;
@@ -34,6 +34,8 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
         return TAbstractModel::mSelectedTextColor;
     } else if (role==Utils::IsCurrentRow) {
         return index.row()==mCurrentIndex;
+    } else {
+        return QVariant();
     }
 
     return QVariant();
@@ -67,7 +69,7 @@ void TAbstractModel::setBackgroundColor(QColor color)
 {
     color.setAlpha(0);
     mBackColor1 = color;
-    color.setAlpha(64);
+    color.setAlpha(BACKGROUND2_ALPHA);
     mBackColor2 = color;
 }
 
@@ -98,11 +100,16 @@ void TAbstractModel::setColorParameters(QFont font,
     mFont = font;
     backgroundColor.setAlpha(0);
     mBackColor1 = backgroundColor;
-    backgroundColor2.setAlpha(64);
+    backgroundColor2.setAlpha(BACKGROUND2_ALPHA);
     mBackColor2 = backgroundColor2;
     mTextColor = textColor;
     mCurrentRowTextColor = currentRowTextColor;
     mSelectedTextColor = selectedTextColor;
     mNumberColor = numberColor;
     mDurationColor = durationColor;
+}
+
+Qt::ItemFlags TAbstractModel::flags(const QModelIndex &index) const
+{
+    return QAbstractTableModel::flags(index) | Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled;
 }

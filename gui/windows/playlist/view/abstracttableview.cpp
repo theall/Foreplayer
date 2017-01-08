@@ -1,7 +1,8 @@
 #include "abstracttableview.h"
-#include "utils.h"
 
+#include "utils/utils.h"
 QColor TAbstractTableView::mBackground;
+QColor TAbstractTableView::mHighlightColor;
 QPixmap *TTableViewDelegate::mSelectedPixmap = NULL;
 
 TTableViewDelegate::TTableViewDelegate(QObject *parent) :
@@ -14,6 +15,15 @@ void TTableViewDelegate::setSelectedPixmap(QPixmap *pixmap)
     TTableViewDelegate::mSelectedPixmap = pixmap;
 }
 
+QWidget *TTableViewDelegate::createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const
+{
+    QWidget *editor = QStyledItemDelegate::createEditor(parent, option, index);
+    QPalette pal = editor->palette();
+    pal.setBrush(QPalette::Text, QBrush(index.data(Utils::TextHighlight).value<QColor>()));
+    editor->setPalette(pal);
+    return editor;
+}
+
 void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     const QAbstractItemModel *model = index.model();
@@ -22,6 +32,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
 
     painter->save();
     QRect rect = option.rect;
+    bool isCurrentRow = index.data(Utils::IsCurrentRow).toBool();
 
     if(option.state & QStyle::State_Selected)
     {
@@ -57,8 +68,6 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
     }
 
     // Set pen color
-    bool isCurrentRow = index.data(Utils::IsCurrentRow).toBool();
-
     QColor textColor;
     if(option.state&QStyle::State_Selected)
         textColor = Qt::white;
@@ -133,11 +142,18 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
     setVerticalScrollBar(bar);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
+    setDragEnabled(true);
+    viewport()->setAcceptDrops(true);
+    setDropIndicatorShown(true);
 }
 
 void TAbstractTableView::setBackgroundColor(QColor color)
 {
     mBackground = color;
+    QRgb rgb = color.rgba();
+    rgb = ~rgb;
+    mHighlightColor.setRgba(rgb);
+    mHighlightColor.setAlpha(255);
 }
 
 void TAbstractTableView::setModel(QAbstractItemModel *model)
@@ -158,5 +174,89 @@ void TAbstractTableView::focusOutEvent(QFocusEvent *event)
 {
     QTableView::focusOutEvent(event);
 
-    clearSelection();
+    QPoint p = QCursor::pos();
+    QRect rt = rect();
+    p = mapFromGlobal(p);
+    if(!rt.contains(p))
+        clearSelection();
+}
+
+void TAbstractTableView::paintEvent(QPaintEvent *event)
+{
+    QTableView::paintEvent(event);
+
+    QPainter painter(viewport());
+    if (mHighlightRect.isValid()) {
+        painter.setBrush(TAbstractTableView::mHighlightColor);
+        painter.drawRect(mHighlightRect);
+    }
+
+    painter.end();
+}
+
+void TAbstractTableView::dragMoveEvent(QDragMoveEvent *event)
+{
+    if(event->source()==this) {
+        QModelIndex i = indexAt(event->pos());
+        QRect rt;
+        if(i.isValid()) {
+            rt = visualRect(i);
+            rt.setTop(rt.top()-1);
+        } else {
+            QAbstractItemModel *m = model();
+            int rows = m->rowCount();
+            i = m->index(rows-1, 0);
+            rt = visualRect(i);
+            rt.setTop(rt.bottom()+1);
+        }
+        rt.setLeft(0);
+        rt.setRight(width()-1);
+        rt.setHeight(2);
+        if(rt != mHighlightRect)
+        {
+            mHighlightRect = rt;
+            viewport()->update();
+        }
+        event->accept();
+    } else {
+        event->ignore();
+    }
+}
+
+void TAbstractTableView::dragLeaveEvent(QDragLeaveEvent *event)
+{
+    QRect updateRect = mHighlightRect;
+    mHighlightRect = QRect();
+    update(updateRect);
+    event->accept();
+}
+
+void TAbstractTableView::dropEvent(QDropEvent *event)
+{
+    if(event->source()==this) {
+        QList<int> selected;
+        foreach (QModelIndex i, selectedIndexes()) {
+            selected.append(i.row());
+        }
+        QList<int> newIndexes;
+        int insertRow = indexAt(event->pos()).row();
+        QAbstractItemModel *m = model();
+        if(insertRow < 0)
+            insertRow = m->rowCount();
+
+        emit requestMoveItems(selected, insertRow, newIndexes);
+
+        if(newIndexes.count() > 0)
+        {
+            QItemSelectionModel *selModel = selectionModel();
+            foreach (int i, newIndexes) {
+                selModel->select(m->index(i, 0), QItemSelectionModel::Select);
+            }
+        }
+
+        mHighlightRect = QRect();
+        event->accept();
+    } else {
+        event->ignore();
+    }
 }

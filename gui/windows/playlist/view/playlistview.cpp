@@ -6,6 +6,11 @@ TPlaylistView::TPlaylistView(QWidget *parent) :
     setEditTriggers(QAbstractItemView::SelectedClicked);
 }
 
+void TPlaylistView::editCurrent()
+{
+    edit(currentIndex());
+}
+
 void TPlaylistView::setModel(QAbstractItemModel *model)
 {
     TAbstractTableView::setModel(model);

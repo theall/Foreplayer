@@ -59,12 +59,17 @@ TMainController::~TMainController()
 
 void TMainController::joint(TGuiManager *manager, TCore *core)
 {
+    Q_ASSERT(manager);
+    Q_ASSERT(core);
+
     if(mThread)
     {
         mThread->terminate();
         delete mThread;
         mThread = NULL;
     }
+
+    connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
 
     mPlaylistController->joint(manager, core);
 
@@ -74,6 +79,11 @@ void TMainController::joint(TGuiManager *manager, TCore *core)
     mThread->start();
 
     TAbstractController::joint(manager, core);
+}
+
+void TMainController::slotQuitApp()
+{
+    qApp->quit();
 }
 
 void TMainController::slotTimerEvent()

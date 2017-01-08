@@ -13,12 +13,14 @@ public:
     void setCurrentIndex(int index) Q_DECL_OVERRIDE;
 
     void add(QString name);
-    void move(int from, int to);
+    void moveItems(QList<int> indexes, int insertPos, QList<int> &indexesMoved);
 
     void remove(int index);
     void rename(int index, QString newName);
+    void sort();
 
 private:
+    bool mSortState;
     TPlaylistItems *mPlaylist;
 
 public:
@@ -27,7 +29,7 @@ public:
     int columnCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;
     QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
     bool setData(const QModelIndex &index, const QVariant &value, int role) Q_DECL_OVERRIDE;
-
+    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
 };
 
 #endif // TPLAYLISTMODEL_H
