@@ -1,86 +1,53 @@
 #ifndef TPLAYLISTITEM_H
 #define TPLAYLISTITEM_H
 
-#include "pch.h"
-
-enum SortMode
-{
-    TITLE_ASC,
-    TITLE_DES,
-    LENGTH_ASC,
-    LENGTH_DES,
-    DURATION_ASC,
-    DURATION_DES,
-    INDEX_ASC,
-    INDEX_DES,
-    FILE_ASC,
-    FILE_DES,
-    RANDOM
-};
-
-class TTrackItem
-{
-public:
-    QString displayName;
-    QString index;
-    QString musicFile;
-    int duration;
-    bool enable;
-
-    TTrackItem();
-
-    ~TTrackItem();
-
-    QJsonObject toJson();
-    void fromJson(QJsonObject object);
-};
-typedef QList<TTrackItem*> TTrackItems;
-
-class TMusicItem
-{
-public:
-    QString displayName;
-    QString fileName;
-    int duration;
-    int fileSize;
-    QDateTime lastParsed;
-    TTrackItems tracks;
-
-    TMusicItem();
-
-    ~TMusicItem();
-
-    QJsonObject toJson();
-
-    void fromJson(QJsonObject object);
-
-    void sort(SortMode mode);
-};
-
-typedef QList<TMusicItem*> TMusicItems;
+#include "musicitem.h"
 
 class TPlaylistItem
 {
 public:
-    TMusicItems musics;
-    QString fileName;
-    bool modified;
-    int version;
-
-    TPlaylistItem();
+    TPlaylistItem(QString fileName = QString());
     ~TPlaylistItem();
 
     QJsonObject toJson();
     void fromJson(QJsonObject object);
 
-    inline QString name() { return mDisplayName; }
-    void setDisplayName(QString newName);
-    void sort(SortMode mode);
+    int size();
+    TMusicItem *takeAt(int index);
+    void insert(int pos, TMusicItem *item);
+    bool remove(int index);
+    QList<int> removeRedundant();
+    QList<int> removeErrors();
+    void rename(int index, QString newName);
+    void sort(SortMode mode = TITLE_ASC);
+    int indexOf(TMusicItem *item);
 
+    QString name() { return mDisplayName; }
+    void setDisplayName(QString newName);
+
+    TMusicItem *currentItem();
+    int currentIndex() { return mCurrentIndex; }
+    void setCurrentIndex(int index);
+
+    TMusicItem *musicItem(int index);
+
+    QString fileName() { return mFileName; }
+    void setFileName(QString fileName);
+
+    bool isModified() { return mModified; }
+
+    int version() { return mVersion; }
+
+    void save();
     void clear();
 
 private:
     QString mDisplayName;
+    TMusicItems mMusicItems;
+    QString mFileName;
+    bool mModified;
+    int mVersion;
+    int mCurrentIndex;
 };
 
 typedef QList<TPlaylistItem*> TPlaylistItems;

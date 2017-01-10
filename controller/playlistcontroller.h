@@ -33,12 +33,23 @@ private slots:
     void slotMusiclistIndexChanged(int index);
     void slotTracklistIndexChanged(int index);
 
+    void slotRequestMovePlaylists(QList<int> indexes, int pos, QList<int> &newIndexes);
+    void slotRequestMoveMusics(QList<int> indexes, int pos, QList<int> &newIndexes);
+    void slotRequestMoveTracks(QList<int> indexes, int pos, QList<int> &newIndexes);
+
+    // Play list
     void slotRequestAddNewPlaylist();
     void slotRequestRemovePlaylist();
     void slotRequestRenamePlaylist();
     void slotRequestSortPlaylists();
     void slotRequestSendTo();
-    void slotRequestMovePlaylists(QList<int> indexes, int insertPos, QList<int> &newIndexes);
+
+    // Music list
+    void slotRequestAddMusicFiles(QStringList files, int pos, QList<int> &newIndexes);
+    void slotRequestRemoveSelections(QList<int> indexes);
+    void slotRequestRemoveRedundant();
+    void slotRequestRemoveErrors();
+    void slotRequestRemoveAll();
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

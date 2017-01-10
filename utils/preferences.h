@@ -30,6 +30,10 @@ public:
     int runCount();
     void windowGeometryState(TWindowType type, QByteArray* g, QByteArray* s);
     void setWindowGeometryState(TWindowType type, QVariant geometry, QVariant windowState);
+    QString lastOpenDialogPath();
+    QString lastOpenDirectory();
+    void setLastOpenDialogPath(QString path);
+    void setLastOpenDirectory(QString path);
 
 signals:
     void languageChanged();
@@ -39,6 +43,9 @@ private:
     bool mAlwaysTop;
     int mRunCount;
     QString mLanguage;
+    QString mLastOpenPath;
+    QString mLastOpenDir;
+
     void setValue(QString section, QVariant value);
     QVariant value(QString section, QVariant defValue=QVariant());
     bool boolValue(QString key, bool defValue = false);

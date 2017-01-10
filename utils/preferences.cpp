@@ -1,8 +1,36 @@
 #include "preferences.h"
 
-#define SETTING_FILE "setting.ini"
+#define SETTING_FILE                "setting.ini"
 
-TPreferences *TPreferences::mInstance=NULL;
+// General
+#define SEC_GUI                     "Gui"
+#define SEC_GUI_ALWAYS_ON_TOP       "AlwaysOnTop"
+#define SEC_GUI_LANGUAGE            "Language"
+#define SEC_GUI_GEOMETRY            "Geometry"
+#define SEC_GUI_WINDOW_STATE        "WindowState"
+#define SEC_GUI_LAST_OPEN_PATH      "LastOpenPath"
+#define SEC_GUI_LAST_OPEN_DIR       "LastOpenDirectory"
+
+// Install
+#define SEC_INSTALL                 "Install"
+#define SEC_INSTALL_RUN_COUNT       "RunCount"
+
+// Main window
+#define SEC_MAIN_WINDOW             "MainWindow"
+
+// Lyric window
+#define SEC_LYRIC_WINDOW            "LyricWindow"
+
+// Equalizer window
+#define SEC_EQUALIZER_WINDOW        "EqualizerWindow"
+
+// Playlist window
+#define SEC_PLAYLIST_WINDOW         "PlaylistWindow"
+
+// Browser window
+#define SEC_BROWSER_WINDOW          "BrowserWindow"
+
+TPreferences *TPreferences::mInstance = NULL;
 
 //
 // This class holds user preferences and provides a convenient interface to
@@ -15,19 +43,21 @@ TPreferences::TPreferences(QObject *parent):
     mSettings = new QSettings(dir.absoluteFilePath(SETTING_FILE), QSettings::IniFormat);
 
     // Retrieve gui settings
-    mSettings->beginGroup("Gui");
-    mAlwaysTop = boolValue("AlwaysOnTop");
-    mLanguage = stringValue("Language");
+    mSettings->beginGroup(SEC_GUI);
+    mAlwaysTop = boolValue(SEC_GUI_ALWAYS_ON_TOP);
+    mLanguage = stringValue(SEC_GUI_LANGUAGE);
+    mLastOpenPath = stringValue(SEC_GUI_LAST_OPEN_PATH);
+    mLastOpenDir = stringValue(SEC_GUI_LAST_OPEN_DIR);
     mSettings->endGroup();
 
     // Keeping track of some usage information
-    mSettings->beginGroup("Install");
+    mSettings->beginGroup(SEC_INSTALL);
 
     // This section wrote by main controller while write trial license
-    if(mSettings->contains("RunCount"))
+    if(mSettings->contains(SEC_INSTALL_RUN_COUNT))
     {
-        mRunCount = intValue("RunCount") + 1;
-        mSettings->setValue("RunCount", mRunCount);
+        mRunCount = intValue(SEC_INSTALL_RUN_COUNT) + 1;
+        mSettings->setValue(SEC_INSTALL_RUN_COUNT, mRunCount);
     }
 
     mSettings->endGroup();
@@ -68,8 +98,12 @@ void TPreferences::setLanguage(QString language)
 {
     if((mLanguage == language))
         return;
-    mLanguage = language;
+
+    mSettings->beginGroup(SEC_GUI);
     mSettings->setValue("Gui/Language", mLanguage);
+    mSettings->endGroup();
+    mLanguage = language;
+
     emit languageChanged();
 }
 
@@ -85,21 +119,21 @@ void TPreferences::windowGeometryState(
 {
     QString section;
     if(type==WT_MAIN)
-        section = "MainWindow";
+        section = SEC_MAIN_WINDOW;
     else if(type==WT_LYRIC)
-        section = "LyricWindow";
+        section = SEC_LYRIC_WINDOW;
     else if(type==WT_EQUALIZER)
-        section = "EqualizerWindow";
+        section = SEC_EQUALIZER_WINDOW;
     else if(type==WT_PLAYLIST)
-        section = "PlaylistWindow";
+        section = SEC_PLAYLIST_WINDOW;
     else if(type==WT_BROWSER)
-        section = "BrowserWindow";
+        section = SEC_BROWSER_WINDOW;
     else
         return;
 
     mSettings->beginGroup(section);
-    *g = mSettings->value("geometry").toByteArray();
-    *s = mSettings->value("windowState").toByteArray();
+    *g = mSettings->value(SEC_GUI_GEOMETRY).toByteArray();
+    *s = mSettings->value(SEC_GUI_WINDOW_STATE).toByteArray();
     mSettings->endGroup();
 }
 
@@ -110,22 +144,56 @@ void TPreferences::setWindowGeometryState(
 {
     QString section;
     if(type==WT_MAIN)
-        section = "MainWindow";
+        section = SEC_MAIN_WINDOW;
     else if(type==WT_LYRIC)
-        section = "LyricWindow";
+        section = SEC_LYRIC_WINDOW;
     else if(type==WT_EQUALIZER)
-        section = "EqualizerWindow";
+        section = SEC_EQUALIZER_WINDOW;
     else if(type==WT_PLAYLIST)
-        section = "PlaylistWindow";
+        section = SEC_PLAYLIST_WINDOW;
     else if(type==WT_BROWSER)
-        section = "BrowserWindow";
+        section = SEC_BROWSER_WINDOW;
     else
         return;
 
     mSettings->beginGroup(section);
-    mSettings->setValue("geometry", geometry);
-    mSettings->setValue("windowState", windowState);
+    mSettings->setValue(SEC_GUI_GEOMETRY, geometry);
+    mSettings->setValue(SEC_GUI_WINDOW_STATE, windowState);
     mSettings->endGroup();
+}
+
+QString TPreferences::lastOpenDialogPath()
+{
+    return mLastOpenPath;
+}
+
+QString TPreferences::lastOpenDirectory()
+{
+    return mLastOpenDir;
+}
+
+void TPreferences::setLastOpenDialogPath(QString path)
+{
+    if(path == mLastOpenPath)
+        return;
+
+    mSettings->beginGroup(SEC_GUI);
+    mSettings->setValue(SEC_GUI_LAST_OPEN_PATH, path);
+    mSettings->endGroup();
+
+    mLastOpenPath = path;
+}
+
+void TPreferences::setLastOpenDirectory(QString path)
+{
+    if(path == mLastOpenDir)
+        return;
+
+    mSettings->beginGroup(SEC_GUI);
+    mSettings->setValue(SEC_GUI_LAST_OPEN_DIR, path);
+    mSettings->endGroup();
+
+    mLastOpenDir = path;
 }
 
 void TPreferences::setValue(QString section, QVariant value)

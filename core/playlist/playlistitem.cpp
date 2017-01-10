@@ -1,158 +1,17 @@
 #include "playlistitem.h"
 
-#define PL_VERSION 1
-#define K_NAME "Name"
-#define K_DEFAULT "Default"
-#define K_UNKNOWN "Unknown"
-#define K_VERSION "Version"
-#define K_PLAYLIST "Playlist"
-#define K_MUSICLIST "Musiclist"
-#define K_TRACKLIST "Tracklist"
-#define K_GENERATOR "Generator"
-#define K_FILE "File"
-#define K_DURATION "Duration"
-#define K_SIZE "FileSize"
-#define K_LAST_PARSED "LastParsed"
-#define K_INDEX "Index"
-#define K_ENABLE "Enable"
+#include "playlistdef.h"
 
-TTrackItem::TTrackItem()
+TPlaylistItem::TPlaylistItem(QString fileName) :
+    mFileName(fileName)
+  , mModified(false)
+  , mCurrentIndex(0)
 {
-
-}
-
-TTrackItem::~TTrackItem()
-{
-
-}
-
-QJsonObject TTrackItem::toJson()
-{
-    QJsonObject object;
-    //Set the data of the playlist.
-    object[K_NAME] = displayName;
-    object[K_INDEX] = index;
-    object[K_FILE] = musicFile;
-    object[K_DURATION] = duration;
-    object[K_ENABLE] = enable;
-    return object;
-}
-
-void TTrackItem::fromJson(QJsonObject object)
-{
-    displayName = object.value(K_NAME).toString(K_UNKNOWN);
-    index = object.value(K_INDEX).toString();
-    duration = object.value(K_DURATION).toInt();
-    enable = object.value(K_ENABLE).toBool();
-}
-
-TMusicItem::TMusicItem()
-{
-    duration = 0;
-    fileSize = 0;
-}
-
-TMusicItem::~TMusicItem()
-{
-    foreach (TTrackItem *item, tracks) {
-        delete item;
-    }
-    tracks.clear();
-}
-
-QJsonObject TMusicItem::toJson()
-{
-    QJsonObject object;
-    //Set the data of the playlist.
-    object[K_NAME] = displayName;
-    object[K_FILE] = fileName;
-    object[K_DURATION] = duration;
-    object[K_SIZE] = fileSize;
-    object[K_LAST_PARSED] = lastParsed.toString();
-
-    QJsonArray tracksArray;
-    foreach (TTrackItem *trackItem, tracks) {
-        tracksArray.append(trackItem->toJson());
-    }
-
-    object[K_TRACKLIST] = tracksArray;
-    return object;
-}
-
-void TMusicItem::fromJson(QJsonObject object)
-{
-    displayName = object.value(K_NAME).toString(K_UNKNOWN);
-    fileName = object.value(K_FILE).toString();
-    fileSize = object.value(K_SIZE).toInt();
-    duration = object.value(K_DURATION).toInt();
-    lastParsed = QDateTime::fromString(object.value(K_LAST_PARSED).toString());
-    QJsonArray trackArray = object.value(K_TRACKLIST).toArray();
-    foreach (QJsonValue trackValue, trackArray) {
-        QJsonObject trackObject = trackValue.toObject();
-        TTrackItem *trackItem = new TTrackItem;
-        trackItem->musicFile = fileName;
-        trackItem->fromJson(trackObject);
-        tracks.append(trackItem);
-    }
-}
-
-void TMusicItem::sort(SortMode mode)
-{
-    if(mode==TITLE_ASC)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->displayName.toLower() < b->displayName.toLower();
-        });
-    else if (mode==TITLE_DES)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->displayName.toLower() > b->displayName.toLower();
-        });
-    else if (mode==LENGTH_ASC)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->displayName.count() < b->displayName.count();
-        });
-    else if (mode==LENGTH_DES)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->displayName.count() > b->displayName.count();
-        });
-    else if (mode==DURATION_ASC)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->duration < b->duration;
-        });
-    else if (mode==DURATION_DES)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->duration > b->duration;
-        });
-    else if (mode==INDEX_ASC)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->index < b->index;
-        });
-    else if (mode==INDEX_DES)
-        std::sort(tracks.begin(), tracks.end(), [=](TTrackItem *a, TTrackItem *b){
-            return a->index > b->index;
-        });
-    else if (mode==RANDOM)
-    {
-        int n = tracks.size()-2;
-        for(int i=0;i<tracks.size();i++)
-        {
-            int index = rand()*n/RAND_MAX;
-            TTrackItem *item = tracks.takeAt(index);
-            tracks.append(item);
-        }
-    }
-}
-
-TPlaylistItem::TPlaylistItem()
-{
-    modified = false;
 }
 
 TPlaylistItem::~TPlaylistItem()
 {
-    foreach (TMusicItem *item, musics) {
-        delete item;
-    }
-    musics.clear();
+    clear();
 }
 
 QJsonObject TPlaylistItem::toJson()
@@ -160,11 +19,11 @@ QJsonObject TPlaylistItem::toJson()
     QJsonObject object;
     //Set the data of the playlist.
     object[K_NAME] = mDisplayName;
-    object[K_FILE] = fileName;
-    object[K_VERSION] = version;
+    object[K_FILE] = mFileName;
+    object[K_VERSION] = mVersion;
 
     QJsonArray musicsArray;
-    foreach (TMusicItem *musicItem, musics) {
+    foreach (TMusicItem *musicItem, mMusicItems) {
         musicsArray.append(musicItem->toJson());
     }
     object[K_MUSICLIST] = musicsArray;
@@ -174,72 +33,230 @@ QJsonObject TPlaylistItem::toJson()
 void TPlaylistItem::fromJson(QJsonObject object)
 {
     mDisplayName = object.value(K_NAME).toString(K_DEFAULT);
-    version = object.value(K_VERSION).toInt(PL_VERSION);
+    mVersion = object.value(K_VERSION).toInt(PL_VERSION);
     QJsonArray musicArray = object.value(K_MUSICLIST).toArray();
     foreach (QJsonValue musicValue, musicArray) {
         QJsonObject musicObject = musicValue.toObject();
         TMusicItem *musicItem = new TMusicItem;
         musicItem->fromJson(musicObject);
-        musics.append(musicItem);
+        mMusicItems.append(musicItem);
     }
+}
+
+TMusicItem *TPlaylistItem::takeAt(int index)
+{
+    if(index<0 || index>=mMusicItems.size())
+        return NULL;
+
+    mModified = true;
+    return mMusicItems.takeAt(index);
+}
+
+void TPlaylistItem::insert(int pos, TMusicItem *item)
+{
+    if(!item)
+        return;
+
+    mMusicItems.insert(pos, item);
+    mModified = true;
+}
+
+bool TPlaylistItem::remove(int index)
+{
+    if(index<0 || index>=mMusicItems.size())
+        return NULL;
+
+    delete mMusicItems[index];
+    mMusicItems.removeAt(index);
+    mModified = true;
+}
+
+QList<int> TPlaylistItem::removeRedundant()
+{
+    QSet<int> removedSet;
+    int itemSize = mMusicItems.size();
+    for(int i=0;i<itemSize;i++)
+    {
+        TMusicItem *item1 = mMusicItems[i];
+        for(int j=i+1;j<itemSize;j++)
+        {
+            TMusicItem *item2 = mMusicItems[j];
+            if(item1->fileName().toLower() == item2->fileName().toLower())
+            {
+                removedSet.insert(j);
+            }
+        }
+    }
+    QList<int> removedList = removedSet.toList();
+    int removedSize = removedList.size();
+    if(removedSize > 0)
+    {
+        std::sort(removedList.begin(), removedList.end(), [=](int a, int b) {
+            return a > b;
+        });
+
+        foreach (int i, removedList) {
+            delete mMusicItems[i];
+            mMusicItems.removeAt(i);
+        }
+        mModified = true;
+    }
+    return removedList;
+}
+
+QList<int> TPlaylistItem::removeErrors()
+{
+    QList<int> removed;
+
+    for(int i=0;i<mMusicItems.size();i++)
+    {
+        if(!QFile::exists(mMusicItems[i]->fileName()))
+            removed.append(i);
+    }
+
+    int removedSize = removed.size();
+    if(removedSize > 0)
+    {
+        std::sort(removed.begin(), removed.end());
+
+        for(int i=removed.size()-1;i>=0;i--)
+        {
+            delete mMusicItems[i];
+            mMusicItems.removeAt(i);
+        }
+        mModified = true;
+    }
+    return removed;
 }
 
 void TPlaylistItem::setDisplayName(QString newName)
 {
-    mDisplayName = newName;
-    modified = true;
+    if(mDisplayName != newName)
+    {
+        mDisplayName = newName;
+        mModified = true;
+    }
 }
 
 void TPlaylistItem::sort(SortMode mode)
 {
     if(mode==TITLE_ASC)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->displayName.toLower() < b->displayName.toLower();
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->displayName().toLower() < b->displayName().toLower();
         });
     else if (mode==TITLE_DES)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->displayName.toLower() > b->displayName.toLower();
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->displayName().toLower() > b->displayName().toLower();
         });
     else if (mode==LENGTH_ASC)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->displayName.count() < b->displayName.count();
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->displayName().count() < b->displayName().count();
         });
     else if (mode==LENGTH_DES)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->displayName.count() > b->displayName.count();
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->displayName().count() > b->displayName().count();
         });
     else if (mode==DURATION_ASC)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->duration < b->duration;
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->duration() < b->duration();
         });
     else if (mode==DURATION_DES)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->duration > b->duration;
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->duration() > b->duration();
         });
     else if (mode==FILE_ASC)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->fileName < b->fileName;
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->fileName() < b->fileName();
         });
     else if (mode==FILE_DES)
-        std::sort(musics.begin(), musics.end(), [=](TMusicItem *a, TMusicItem *b){
-            return a->fileName > b->fileName;
+        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+            return a->fileName() > b->fileName();
         });
     else if (mode==RANDOM)
     {
-        int n = musics.size()-2;
-        for(int i=0;i<musics.size();i++)
+        int n = mMusicItems.size()-2;
+        for(int i=0;i<mMusicItems.size();i++)
         {
             int index = rand()*n/RAND_MAX;
-            TMusicItem *item = musics.takeAt(index);
-            musics.append(item);
+            TMusicItem *item = mMusicItems.takeAt(index);
+            mMusicItems.append(item);
         }
+    }
+}
+
+int TPlaylistItem::indexOf(TMusicItem *item)
+{
+    return mMusicItems.indexOf(item);
+}
+
+TMusicItem *TPlaylistItem::currentItem()
+{
+    if(mCurrentIndex<0 || mCurrentIndex>=mMusicItems.size())
+        return NULL;
+
+    return mMusicItems[mCurrentIndex];
+}
+
+void TPlaylistItem::setCurrentIndex(int index)
+{
+    if(mCurrentIndex != index)
+    {
+        mCurrentIndex = index;
+        mModified = true;
+    }
+}
+
+TMusicItem *TPlaylistItem::musicItem(int index)
+{
+    if(index<0 || index>=mMusicItems.size())
+        return NULL;
+
+    return mMusicItems[index];
+}
+
+void TPlaylistItem::setFileName(QString fileName)
+{
+    if(mFileName != fileName)
+    {
+        mFileName = fileName;
+        mModified = true;
+    }
+}
+
+void TPlaylistItem::save()
+{
+    if(mModified)
+    {
+        QFile file(mFileName);
+
+        if(!file.open(QIODevice::WriteOnly))
+            return;
+
+        QJsonDocument playlistDocument;
+        //Set the playlist object to document object.
+        playlistDocument.setObject(toJson());
+        //Write document data to the file.
+        file.write(playlistDocument.toJson(QJsonDocument::Indented));
+        //Close the file.
+        file.close();
+
+        mModified = false;
     }
 }
 
 void TPlaylistItem::clear()
 {
-    foreach (TMusicItem *item, musics) {
+    if(mMusicItems.size() <= 0)
+        return;
+
+    foreach (TMusicItem *item, mMusicItems) {
         delete item;
     }
-    musics.clear();
+    mMusicItems.clear();
+    mModified = true;
+}
+
+int TPlaylistItem::size()
+{
+    return mMusicItems.size();
 }

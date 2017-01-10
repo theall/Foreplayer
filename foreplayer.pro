@@ -13,9 +13,6 @@ CONFIG += c++11
 TARGET = foreplayer
 TEMPLATE = app
 
-PRECOMPILED_HEADER += \
-    utils/pch.h
-
 INCLUDEPATH += \
     utils
 

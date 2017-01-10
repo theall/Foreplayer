@@ -21,7 +21,9 @@ void TPlaylistView::setModel(QAbstractItemModel *model)
 void TPlaylistView::mousePressEvent(QMouseEvent *event)
 {
     QModelIndex index = indexAt(event->pos());
-    emit onCurrentRowSelected(index.row());
+    int row = index.row();
+    if(row >= 0)
+        emit onCurrentRowSelected(row);
     TAbstractTableView::mousePressEvent(event);
 }
 

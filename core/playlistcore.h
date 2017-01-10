@@ -3,16 +3,6 @@
 
 #include "playlist/playlistitem.h"
 
-typedef QMap<TPlaylistItem*, TMusicItems> TPlaylistMap;
-typedef QMap<TMusicItem*, TTrackItems> TMusiclistMap;
-
-enum IndexType
-{
-    PlayList,
-    MusicList,
-    TrackList
-};
-
 typedef QList<int> intn;
 
 enum TPlaylistSortMode
@@ -29,15 +19,23 @@ public:
     explicit TPlaylistCore();
     ~TPlaylistCore();
 
+    /**
+     * Playlist functions
+     */
     QStringList names();
-    TPlaylistItems *playlists();
-    void insertPlaylist(QString name, int index = -1);
-    bool removePlaylist(int index);
-    void renamePlaylist(int index, QString newName);
-    void sortPlaylist(SortMode mode = TITLE_ASC);
+    int size();
+    TPlaylistItem *currentPlaylistItem();
+    TPlaylistItem *playlistItem(int plIndex = -1);
+    TPlaylistItem *takeAt(int plIndex);
+    void insert(int pos, TPlaylistItem *item);
+    void insert(QString name, int index = -1);
+    bool remove(int index);
+    void rename(int index, QString newName);
+    void sort(SortMode mode = TITLE_ASC);
+    int indexOf(TPlaylistItem *item);
 
-    int currentIndex(IndexType type=MusicList);
-    void setCurrentIndex(IndexType type, int index);
+    int currentIndex();
+    void setCurrentIndex(int index);
 
     void exportAs(int index, QString fileName);
     void exportAll(QString path);
@@ -45,7 +43,6 @@ public:
     /**
      * Music list functions.
      */
-    TMusicItems musicList(int plIndex = -1);
     void insertMusic(QStringList fileNames, int playlistIndex=-1, int index=-1);
     void insertMusic(int playlistIndex, int newIndex, intn oldIndex);
     void removeMusic(int playlistIndex, intn index);
@@ -60,21 +57,17 @@ public:
     TTrackItems trackList(int mlIndex = -1);
     void reload(int mlIndex=-1);
 
+    void save();
 private:
-    int mCurrentPlaylistIndex;
-    int mCurrentMusiclistIndex;
-    int mCurrentTracklistIndex;
-
     TPlaylistItems mPlaylist;
-    TPlaylistMap mPlaylistMap;
-    TMusiclistMap mMusiclistMap;
+    int mCurrentPlaylistIndex;
 
     void findPlaylist();
     void loadPlaylist(QString fileName);
-    void save();
     QString getFileName();
     QDir mCurrentDir;
     QDir mPlaylistDir;
+    bool mFileSaving;
 };
 
 #endif // TPLAYLISTCORE_H

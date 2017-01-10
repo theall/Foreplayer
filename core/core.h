@@ -36,6 +36,9 @@ public:
 
     QStringList playlists();
 
+    void open();
+    void close();
+
     /**
      * Play functions.
      */

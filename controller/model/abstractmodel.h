@@ -34,6 +34,8 @@ public:
                                    QColor backgroundColor2
                                    );
 
+    virtual void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved) = 0;
+
 private:
     static QVariant mFont;
     static QVariant mBackColor1;

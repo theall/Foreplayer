@@ -13,13 +13,19 @@ public:
 
 signals:
     void onActionSortAsNameTriggered();
-    void onActionSortAsLengthTriggered();
-    void onActionSortAsRandomTriggered();
+    void onActionSortAsArtistTriggered();
+    void onActionSortAsAlbumTriggered();
+    void onActionSortAsDurationTriggered();
+    void onActionSortRandomTriggered();
+    void onActionSortReverseTriggered();
 
 private:
     QAction *mActionSortAsName;
-    QAction *mActionSortAsLength;
-    QAction *mActionSortAsRandom;
+    QAction *mActionSortAsArtist;
+    QAction *mActionSortAsAlbum;
+    QAction *mActionSortAsDuration;
+    QAction *mActionSortRandom;
+    QAction *mActionSortReverse;
 
     // TAbstractPopMenu interface
 public:

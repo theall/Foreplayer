@@ -1,10 +1,15 @@
 #include "playlistwindow.h"
 
+#include "utils/preferences.h"
+
 TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     TAbstractWindow(parent, true)
     , mToolbar(new TToolBar(this))
     , mBtnClose(new TImageButton(this))
     , mCentralWidget(new TPlaylistWidget(this))
+    , mPlaylistView(mCentralWidget->playlistView())
+    , mMusiclistView(mCentralWidget->musiclistView())
+    , mTracklistView(mCentralWidget->tracklistView())
     , mPopmenuAddMusics(new TPopMenuAddMusics(this))
     , mPopmenuFind(new TPopMenuFind(this))
     , mPopmenuMusicList(new TPopMenuMusicList(this))
@@ -27,15 +32,23 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
     connect(mToolbar, SIGNAL(buttonClicked(TToolBar::BUTTON, QPoint)), this, SLOT(slotToolbarClicked(TToolBar::BUTTON, QPoint)));
     connect(mToolbar, SIGNAL(mouseLeave(TToolBar::BUTTON)), this, SLOT(slotToolbarButtonMouseLeave(TToolBar::BUTTON)));
-    connect(mCentralWidget->playlistView(), SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
-    connect(mCentralWidget->musiclistView(), SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
-    connect(mCentralWidget->tracklistView(), SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
+    connect(mPlaylistView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
+    connect(mMusiclistView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
+    connect(mTracklistView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
 
     connect(mPopmenuPlayList, SIGNAL(onActionAddTriggered()), this, SIGNAL(requestAddNewPlaylist()));
     connect(mPopmenuPlayList, SIGNAL(onActionRemoveTriggered()), this, SIGNAL(requestRemovePlaylist()));
     connect(mPopmenuPlayList, SIGNAL(onActionRenameTriggered()), this, SLOT(slotActionRenameTriggered()));
     connect(mPopmenuPlayList, SIGNAL(onActionSortTriggered()), this, SIGNAL(requestSortPlaylists()));
     connect(mPopmenuPlayList, SIGNAL(onActionSendTriggered()), this, SIGNAL(requestSendTo()));
+
+    connect(mPopmenuAddMusics, SIGNAL(onActionAddMusicsTriggered()), this, SLOT(slotOnActionAddMusicsTriggered()));
+    connect(mPopmenuAddMusics, SIGNAL(onActionAddDirectoryTriggered()), this, SLOT(slotOnActionAddDirectoryTriggered()));
+
+    connect(mPopmenuRemoveMusics, SIGNAL(onActionRemoveSelectionsTriggered()), this, SLOT(slotOnActionRemoveSelectionsTriggered()));
+    connect(mPopmenuRemoveMusics, SIGNAL(onActionRemoveRedundantTriggered()), this, SLOT(slotOnActionRemoveRedundantTriggered()));
+    connect(mPopmenuRemoveMusics, SIGNAL(onActionRemoveErrorsTriggered()), this, SLOT(slotOnActionRemoveErrorsTriggered()));
+    connect(mPopmenuRemoveMusics, SIGNAL(onActionRemoveAllTriggered()), this, SLOT(slotOnActionRemoveAllTriggered()));
 
     retranslateUi();
 }
@@ -75,10 +88,81 @@ void TPlaylistWindow::slotPopupContextMenu(QPoint pos)
 
 void TPlaylistWindow::slotActionRenameTriggered()
 {
-    if(!mCentralWidget)
+    if(!mPlaylistView)
         return;
 
-    mCentralWidget->playlistView()->editCurrent();
+    mPlaylistView->editCurrent();
+}
+
+void TPlaylistWindow::slotOnActionAddMusicsTriggered()
+{
+    TPreferences *prefs = TPreferences::instance();
+
+    QStringList files = QFileDialog::getOpenFileNames(
+                            this,
+                            tr("Add one or more musics files to current playlist"),
+                            prefs->lastOpenDialogPath(),
+                            tr("Music files (*.mp3 *.wav *.wma);All files (*.*)"));
+
+    tryAddMusicFiles(files);
+}
+
+void TPlaylistWindow::slotOnActionAddDirectoryTriggered()
+{
+    TPreferences *prefs = TPreferences::instance();
+
+    QString path = QFileDialog::getExistingDirectory(
+                            this,
+                            tr("Choose directory"),
+                            prefs->lastOpenDirectory());
+
+    QDir dir(path);
+    if(!dir.isReadable())
+        return;
+
+    tryAddMusicFiles(dir.entryList(QDir::Files));
+}
+
+void TPlaylistWindow::slotOnActionRemoveSelectionsTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    QList<int> selected = mMusiclistView->selectedRows().toList();
+    if(selected.size() > 0)
+        emit requestRemoveSelections(selected);
+}
+
+void TPlaylistWindow::slotOnActionRemoveRedundantTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    emit requestRemoveRedundant();
+}
+
+void TPlaylistWindow::slotOnActionRemoveErrorsTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    emit requestRemoveErrors();
+}
+
+void TPlaylistWindow::slotOnActionRemoveAllTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    emit requestRemoveAll();
+}
+
+void TPlaylistWindow::tryAddMusicFiles(QStringList files)
+{
+    if(!mMusiclistView)
+        return;
+
+    mMusiclistView->addFiles(files);
 }
 
 void TPlaylistWindow::retranslateUi()

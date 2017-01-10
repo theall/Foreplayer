@@ -25,31 +25,54 @@ public:
     TPlaylistWidget *playlistWidget() { return mCentralWidget; }
 
 signals:
-    // Controller
+    //// Controller
+    // Play list
     void requestAddNewPlaylist();
     void requestRemovePlaylist();
     void requestRenamePlaylist();
     void requestSortPlaylists();
     void requestSendTo();
 
-    // Gui
+    // Music list
+    // Remove musics
+    void requestRemoveSelections(QList<int> indexes);
+    void requestRemoveRedundant();
+    void requestRemoveErrors();
+    void requestRemoveAll();
+
+    //// Gui
     void playlistWindowToggled(bool);
 
 protected:
     void retranslateUi() Q_DECL_OVERRIDE;
 
 private slots:
+    // Widget
     void on_btnClose_clicked();
 
     void slotToolbarClicked(TToolBar::BUTTON id, QPoint pos);
     void slotToolbarButtonMouseLeave(TToolBar::BUTTON id);
     void slotPopupContextMenu(QPoint pos);
+
+    // Playlist view
     void slotActionRenameTriggered();
+
+    // Add musics
+    void slotOnActionAddMusicsTriggered();
+    void slotOnActionAddDirectoryTriggered();
+    // Remove musics
+    void slotOnActionRemoveSelectionsTriggered();
+    void slotOnActionRemoveRedundantTriggered();
+    void slotOnActionRemoveErrorsTriggered();
+    void slotOnActionRemoveAllTriggered();
 
 private:
     TToolBar *mToolbar;
     TImageButton *mBtnClose;
     TPlaylistWidget *mCentralWidget;
+    TPlaylistView *mPlaylistView;
+    TMusiclistView *mMusiclistView;
+    TTracklistView *mTracklistView;
 
     TPopMenuAddMusics *mPopmenuAddMusics;
     TPopMenuFind *mPopmenuFind;
@@ -60,6 +83,8 @@ private:
     TPopMenuRemoveMusics *mPopmenuRemoveMusics;
     TPopMenuSort *mPopmenuSort;
     TPopMenuTrackList *mPopmenuTrackList;
+
+    void tryAddMusicFiles(QStringList files);
 
     // QWidget interface
 protected:

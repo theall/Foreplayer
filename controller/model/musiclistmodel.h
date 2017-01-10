@@ -20,8 +20,16 @@ class TMusiclistModel : public TAbstractModel
 public:
     TMusiclistModel(QObject *parent = 0);
 
+    void setPlayListItem(TPlaylistItem *item);
+    void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved);
+    void insertFiles(QStringList files, int pos, QList<int> &newIndexes);
+    void removeSelections(QList<int> indexes);
+    QList<int> removeRedundant();
+    QList<int> removeErrors();
+    void removeAll();
+
 private:
-    TMusicListDatas mMusicList;
+    TPlaylistItem *mPlaylistItem;
 
 public:
     // TAbstractModel interface

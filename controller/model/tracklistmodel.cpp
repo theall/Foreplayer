@@ -14,6 +14,11 @@ TTrackListModel::TTrackListModel(QObject *parent) :
     }
 }
 
+void TTrackListModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved)
+{
+
+}
+
 int TTrackListModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
@@ -72,8 +77,8 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 
 void TTrackListModel::setCurrentIndex(int index)
 {
-    if(mPlaylistCore)
-        mPlaylistCore->setCurrentIndex(TrackList, index);
+    //if(mPlaylistCore)
+    //    mPlaylistCore->setCurrentIndex(TrackList, index);
 
     TAbstractModel::setCurrentIndex(index);
 }

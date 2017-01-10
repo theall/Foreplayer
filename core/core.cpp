@@ -35,13 +35,23 @@ QStringList TCore::playlists()
     return mPlaylist->names();
 }
 
+void TCore::open()
+{
+
+}
+
+void TCore::close()
+{
+
+}
+
 /**
  * Play functions.
  */
 void TCore::play(int trackIndex, int musicIndex, int playlist)
 {
     if(musicIndex<0)
-        musicIndex = mPlaylist->currentIndex(MusicList);
+        musicIndex = mPlaylist->currentIndex();
 
     mPlayer->setTrack(NULL);
 }

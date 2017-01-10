@@ -30,14 +30,20 @@ public:
 
     static void setBackgroundColor(QColor color);
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
+    void addFiles(QStringList files, int pos = 0x7fffffff);
+    void addFiles(QList<QUrl> urls, int pos = 0x7fffffff);
+    QSet<int> selectedRows();
+    void selectIndexes(QList<int> indexes, bool locate = true);
 
 signals:
     void onCurrentRowSelected(int index);
-    void requestMoveItems(QList<int> indexes, int insertPos, QList<int> &newIndexes);
+    void requestMoveItems(QList<int> indexes, int pos, QList<int> &newIndexes);
+    void requestAddFiles(QStringList files, int pos, QList<int> &newIndexes);
 
 protected:
     void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
     void focusOutEvent(QFocusEvent *event) Q_DECL_OVERRIDE;
+    void dragEnterEvent(QDragEnterEvent *event) Q_DECL_OVERRIDE;
     void dragMoveEvent(QDragMoveEvent *event) Q_DECL_OVERRIDE;
     void dragLeaveEvent(QDragLeaveEvent *event) Q_DECL_OVERRIDE;
     void dropEvent(QDropEvent *event) Q_DECL_OVERRIDE;

@@ -6,22 +6,18 @@
 class TPlaylistModel : public TAbstractModel
 {
 public:
-    TPlaylistModel(QObject *parent = 0, TPlaylistItems *playlist = NULL);
-
-    void setPlaylistCore(TPlaylistCore *core) Q_DECL_OVERRIDE;
+    TPlaylistModel(QObject *parent = 0);
 
     void setCurrentIndex(int index) Q_DECL_OVERRIDE;
 
     void add(QString name);
-    void moveItems(QList<int> indexes, int insertPos, QList<int> &indexesMoved);
+    void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved);
 
     void remove(int index);
     void rename(int index, QString newName);
     void sort();
 
 private:
-    bool mSortState;
-    TPlaylistItems *mPlaylist;
 
 public:
     // QAbstractItemModel interface

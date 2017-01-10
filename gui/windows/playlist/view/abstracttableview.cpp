@@ -1,6 +1,10 @@
 #include "abstracttableview.h"
 
 #include "utils/utils.h"
+#include <QMimeData>
+
+#define DEFAULT_ROW_HEIGHT      20
+
 QColor TAbstractTableView::mBackground;
 QColor TAbstractTableView::mHighlightColor;
 QPixmap *TTableViewDelegate::mSelectedPixmap = NULL;
@@ -121,7 +125,7 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
     setShowGrid(false);
     horizontalHeader()->setVisible(false);
     verticalHeader()->setVisible(false);
-    verticalHeader()->setDefaultSectionSize(20);
+    verticalHeader()->setDefaultSectionSize(DEFAULT_ROW_HEIGHT);
 
     setTextElideMode(Qt::ElideRight);
 
@@ -163,6 +167,25 @@ void TAbstractTableView::setModel(QAbstractItemModel *model)
     resizeColumnsToContents();
 }
 
+void TAbstractTableView::addFiles(QStringList files, int pos)
+{
+    if(files.count() > 0)
+    {
+        QList<int> newIndexes;
+        emit requestAddFiles(files, pos, newIndexes);
+        selectIndexes(newIndexes);
+    }
+}
+
+void TAbstractTableView::addFiles(QList<QUrl> urls, int pos)
+{
+    QStringList files;
+    foreach (QUrl url, urls) {
+        files.append(url.toLocalFile());
+    }
+    addFiles(files, pos);
+}
+
 void TAbstractTableView::resizeEvent(QResizeEvent *event)
 {
     QTableView::resizeEvent(event);
@@ -194,9 +217,37 @@ void TAbstractTableView::paintEvent(QPaintEvent *event)
     painter.end();
 }
 
+QSet<int> TAbstractTableView::selectedRows()
+{
+    QSet<int> selected;
+    foreach (QModelIndex i, selectedIndexes()) {
+        selected.insert(i.row());
+    }
+    return selected;
+}
+
+void TAbstractTableView::selectIndexes(QList<int> indexes, bool locate)
+{
+    QItemSelectionModel *selModel = selectionModel();
+    QAbstractItemModel *m = model();
+    int indexSize = indexes.size();
+    if(!m || !selModel || indexSize<=0)
+        return;
+
+    int columns = m->columnCount();
+    foreach (int i, indexes)
+        for(int j=0;j<columns;j++)
+            selModel->select(m->index(i, j), QItemSelectionModel::Select);
+
+    if(locate)
+    {
+        scrollTo(m->index(indexes.takeLast(), 0), QAbstractItemView::PositionAtCenter);
+    }
+}
+
 void TAbstractTableView::dragMoveEvent(QDragMoveEvent *event)
 {
-    if(event->source()==this) {
+    if(event->source()==this || event->mimeData()->hasUrls()) {
         QModelIndex i = indexAt(event->pos());
         QRect rt;
         if(i.isValid()) {
@@ -227,34 +278,50 @@ void TAbstractTableView::dragLeaveEvent(QDragLeaveEvent *event)
 {
     QRect updateRect = mHighlightRect;
     mHighlightRect = QRect();
-    update(updateRect);
+    viewport()->update(updateRect);
     event->accept();
 }
 
 void TAbstractTableView::dropEvent(QDropEvent *event)
 {
+    int insertRow = indexAt(event->pos()).row();
+    QAbstractItemModel *m = model();
+    if(!m)
+        return;
+
+    if(insertRow < 0)
+        insertRow = m->rowCount();
+
     if(event->source()==this) {
-        QList<int> selected;
-        foreach (QModelIndex i, selectedIndexes()) {
-            selected.append(i.row());
-        }
-        QList<int> newIndexes;
-        int insertRow = indexAt(event->pos()).row();
-        QAbstractItemModel *m = model();
-        if(insertRow < 0)
-            insertRow = m->rowCount();
-
-        emit requestMoveItems(selected, insertRow, newIndexes);
-
-        if(newIndexes.count() > 0)
+        QList<int> selected = selectedRows().toList();
+        if(selected.size() > 0)
         {
-            QItemSelectionModel *selModel = selectionModel();
-            foreach (int i, newIndexes) {
-                selModel->select(m->index(i, 0), QItemSelectionModel::Select);
-            }
+            QList<int> newIndexes;
+            emit requestMoveItems(selected, insertRow, newIndexes);
+            selectIndexes(newIndexes);
         }
+        event->accept();
+    } else {
+        const QMimeData *mimeData = event->mimeData();
+        if (mimeData->hasUrls())
+        {
+            addFiles(mimeData->urls(), insertRow);
+            event->accept();
+        } else {
+            event->ignore();
+        }
+    }
+    mHighlightRect = QRect();
+    viewport()->update();
+}
 
-        mHighlightRect = QRect();
+void TAbstractTableView::dragEnterEvent(QDragEnterEvent *event)
+{
+    const QMimeData *mimeData = event->mimeData();
+    if(mimeData->hasUrls())
+    {
+        event->accept();
+    } else if (event->source()==this) {
         event->accept();
     } else {
         event->ignore();

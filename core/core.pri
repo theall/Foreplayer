@@ -12,7 +12,9 @@ SOURCES += \
     $$PWD/pluginmanager/abstractpluginmanager.cpp \
     $$PWD/pluginmanager/backendpluginmanager.cpp \
     $$PWD/playthread.cpp \
-    $$PWD/playlist/playlistitem.cpp
+    $$PWD/playlist/playlistitem.cpp \
+    $$PWD/playlist/musicitem.cpp \
+    $$PWD/playlist/trackitem.cpp
 
 HEADERS  += \
     $$PWD/filter/samplesfilter.h \
@@ -26,4 +28,7 @@ HEADERS  += \
     $$PWD/pluginmanager/abstractpluginmanager.h \
     $$PWD/pluginmanager/backendpluginmanager.h \
     $$PWD/playthread.h \
-    $$PWD/playlist/playlistitem.h
+    $$PWD/playlist/playlistitem.h \
+    $$PWD/playlist/musicitem.h \
+    $$PWD/playlist/trackitem.h \
+    $$PWD/playlist/playlistdef.h

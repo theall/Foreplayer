@@ -18,6 +18,8 @@ class TTrackListModel : public TAbstractModel
 public:
     TTrackListModel(QObject *parent = 0);
 
+    void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved);
+
 private:
     TTrackListDatas mTrackList;
 

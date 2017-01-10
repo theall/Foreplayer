@@ -2,11 +2,12 @@
 
 #define PL_DIR "playlist"
 #define PL_INDEX "index.dat"
+#define SECTION_PLAYLIST "playlist"
+#define SECTION_CURRENT "current"
 
 TPlaylistCore::TPlaylistCore() :
     mCurrentPlaylistIndex(-1),
-    mCurrentMusiclistIndex(-1),
-    mCurrentTracklistIndex(-1)
+    mFileSaving(false)
 {
     mCurrentDir.setPath(qApp->applicationDirPath());
     if(mCurrentDir.exists(PL_DIR))
@@ -16,7 +17,7 @@ TPlaylistCore::TPlaylistCore() :
 
     findPlaylist();
     if(mPlaylist.count()<=0)
-        insertPlaylist(tr("default"));
+        insert(tr("default"));
 }
 
 TPlaylistCore::~TPlaylistCore()
@@ -34,16 +35,24 @@ QStringList TPlaylistCore::names()
     return sl;
 }
 
-TPlaylistItems *TPlaylistCore::playlists()
+int TPlaylistCore::size()
 {
-    return &mPlaylist;
+    return mPlaylist.size();
 }
 
-void TPlaylistCore::insertPlaylist(QString name, int index)
+TPlaylistItem *TPlaylistCore::currentPlaylistItem()
+{
+    if(mCurrentPlaylistIndex<0 || mCurrentPlaylistIndex>=mPlaylist.size())
+        return NULL;
+
+    return mPlaylist[mCurrentPlaylistIndex];
+}
+
+void TPlaylistCore::insert(QString name, int index)
 {
     TPlaylistItem *playlistItem = new TPlaylistItem;
     playlistItem->setDisplayName(name);
-    playlistItem->fileName = getFileName();
+    playlistItem->setFileName(getFileName());
 
     if(index>-1)
         mPlaylist.insert(index, playlistItem);
@@ -51,21 +60,23 @@ void TPlaylistCore::insertPlaylist(QString name, int index)
         mPlaylist.append(playlistItem);
 }
 
-bool TPlaylistCore::removePlaylist(int index)
+bool TPlaylistCore::remove(int index)
 {
     if(index<0 || index>=mPlaylist.size())
         return false;
 
-    clearMusics(index);
     TPlaylistItem *item = mPlaylist.at(index);
-    QFile file(item->fileName);
+    QFile file(item->fileName());
     bool status = file.remove();
     if(status)
+    {
         mPlaylist.removeAt(index);
+        delete item;
+    }
     return status;
 }
 
-void TPlaylistCore::renamePlaylist(int index, QString newName)
+void TPlaylistCore::rename(int index, QString newName)
 {
     if(index<0 || index>=mPlaylist.size())
         return;
@@ -74,27 +85,31 @@ void TPlaylistCore::renamePlaylist(int index, QString newName)
     playlistItem->setDisplayName(newName);
 }
 
-void TPlaylistCore::sortPlaylist(SortMode mode)
+void TPlaylistCore::sort(SortMode mode)
 {
-
+    if(mode==TITLE_ASC)
+        std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
+            return a->name().toLower() > b->name().toLower();
+        });
+    else if(mode==TITLE_DES)
+        std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
+            return a->name().toLower() < b->name().toLower();
+        });
 }
 
-int TPlaylistCore::currentIndex(IndexType type)
+int TPlaylistCore::indexOf(TPlaylistItem *item)
 {
-    if(type==PlayList)
-        return mCurrentPlaylistIndex;
-    else if (type==TrackList)
-        return mCurrentTracklistIndex;
-    return mCurrentMusiclistIndex;
+    return mPlaylist.indexOf(item);
 }
 
-void TPlaylistCore::setCurrentIndex(IndexType type, int index)
+int TPlaylistCore::currentIndex()
 {
-    if(type==PlayList)
-        mCurrentPlaylistIndex = index;
-    else if (type==TrackList)
-        mCurrentTracklistIndex = index;
-    mCurrentMusiclistIndex = index;
+    return mCurrentPlaylistIndex;
+}
+
+void TPlaylistCore::setCurrentIndex(int index)
+{
+    mCurrentPlaylistIndex = index;
 }
 
 void TPlaylistCore::exportAs(int index, QString fileName)
@@ -107,42 +122,39 @@ void TPlaylistCore::exportAll(QString path)
 
 }
 
-void TPlaylistCore::clearMusics(int playlistIndex)
+TPlaylistItem *TPlaylistCore::playlistItem(int plIndex)
 {
-    if(playlistIndex<0 || playlistIndex>=mPlaylist.size())
-        return;
+    if(plIndex<0 || plIndex>=mPlaylist.size())
+        return NULL;
 
-    TPlaylistItem *playlistItem = mPlaylist[playlistIndex];
-    foreach (TMusicItem *item, playlistItem->musics) {
-        delete item;
-    }
-    playlistItem->musics.clear();
+    return mPlaylist[plIndex];
+}
+
+TPlaylistItem *TPlaylistCore::takeAt(int plIndex)
+{
+    if(plIndex<0 || plIndex>=mPlaylist.size())
+        return NULL;
+
+    return mPlaylist.takeAt(plIndex);
+}
+
+void TPlaylistCore::insert(int pos, TPlaylistItem *item)
+{
+    mPlaylist.insert(pos, item);
 }
 
 void TPlaylistCore::findPlaylist()
 {
-    QFile indexFile(mPlaylistDir.absoluteFilePath(PL_INDEX));
-    if(!indexFile.open(QFile::ReadOnly))
-        return;
-    QString fileList = indexFile.readAll();
-
-    QStringList fileNames = fileList.split("\r\n");
+    QSettings indexFile(mPlaylistDir.absoluteFilePath(PL_INDEX), QSettings::IniFormat);
+    QStringList fileNames = indexFile.value(SECTION_PLAYLIST).toStringList();
+    mCurrentPlaylistIndex = indexFile.value(SECTION_CURRENT).toInt();
     for(QString fileName : fileNames)
     {
         loadPlaylist(mPlaylistDir.absoluteFilePath(fileName));
     }
-    if(mPlaylist.count() > 0)
-    {
+    int size = mPlaylist.count();
+    if(mCurrentPlaylistIndex<0 || mCurrentPlaylistIndex>=size)
         mCurrentPlaylistIndex = 0;
-        TMusicItems musicItems = mPlaylist[0]->musics;
-        if(musicItems.count() > 0)
-        {
-            mCurrentMusiclistIndex = 0;
-
-            if(musicItems[0]->tracks.count() > 0)
-                mCurrentTracklistIndex = 0;
-        }
-    }
 }
 
 void TPlaylistCore::loadPlaylist(QString fileName)
@@ -160,8 +172,7 @@ void TPlaylistCore::loadPlaylist(QString fileName)
     if(object.isEmpty())
         return;
 
-    TPlaylistItem *playlistItem = new TPlaylistItem;
-    playlistItem->fileName = fileName;
+    TPlaylistItem *playlistItem = new TPlaylistItem(fileName);
     playlistItem->fromJson(object);
 
     mPlaylist.append(playlistItem);
@@ -169,35 +180,24 @@ void TPlaylistCore::loadPlaylist(QString fileName)
 
 void TPlaylistCore::save()
 {
+    if(mFileSaving)
+        return;
+
+    mFileSaving = true;
+
     if(!mCurrentDir.exists(PL_DIR))
         mCurrentDir.mkdir(PL_DIR);
 
     QStringList playlist;
     foreach (TPlaylistItem *playlistItem, mPlaylist) {
-        if(playlistItem->modified)
-        {
-            QFile file(playlistItem->fileName);
-
-            if(!file.open(QIODevice::WriteOnly))
-                continue;
-
-            QJsonDocument playlistDocument;
-            //Set the playlist object to document object.
-            playlistDocument.setObject(playlistItem->toJson());
-            //Write document data to the file.
-            file.write(playlistDocument.toJson(QJsonDocument::Indented));
-            //Close the file.
-            file.close();
-        }
-        playlist.append(playlistItem->fileName);
+        playlistItem->save();
+        playlist.append(playlistItem->fileName());
     }
-    QFile file(mPlaylistDir.absoluteFilePath(PL_INDEX));
-    if(!file.open(QFile::WriteOnly))
-        return;
-
-    QByteArray data = playlist.join("\r\n").toUtf8();
-    file.write(data);
-    file.close();
+    QSettings indexFile(mPlaylistDir.absoluteFilePath(PL_INDEX), QSettings::IniFormat);
+    indexFile.setValue(SECTION_PLAYLIST, playlist);
+    indexFile.setValue(SECTION_CURRENT, mCurrentPlaylistIndex);
+    indexFile.sync();
+    mFileSaving = false;
 }
 
 QString TPlaylistCore::getFileName()
@@ -210,7 +210,7 @@ QString TPlaylistCore::getFileName()
         bool existed = false;
         for(int j=0;j<listSize;j++)
         {
-            if(mPlaylist[j]->fileName == fileName)
+            if(mPlaylist[j]->fileName() == fileName)
             {
                 existed = true;
                 break;

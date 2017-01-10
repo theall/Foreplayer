@@ -84,15 +84,16 @@ bool TAbstractWindow::mouseMoveTriggered()
 
 void TAbstractWindow::mousePressEvent(QMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton)
+    if (event->button() == Qt::LeftButton && isActiveWindow())
     {
         mWindowPos = pos();
         mMousePos = event->globalPos();
         mMousePressed = true;
-        mMouseMoveTriggered = true;
 
         if(mResizingDirection != RD_NONE) {
             grabMouse();
+        } else {
+            mMouseMoveTriggered = true;
         }
     } else {
         QMainWindow::mousePressEvent(event);
@@ -131,7 +132,15 @@ void TAbstractWindow::mouseMoveEvent(QMouseEvent *event)
     int x = gloabalPos.x();
     int y = gloabalPos.y();
 
-    // qDebug("down: %d, dir: %d, rect:%d %d %d %d, pos: %d %d", mMousePressed, mResizingDirection, left, top, right, bottom, x, y);
+//    qDebug("down: %d, dir: %d, rect:%d %d %d %d, pos: %d %d",
+//           mMousePressed,
+//           mResizingDirection,
+//           left,
+//           top,
+//           right,
+//           bottom,
+//           x,
+//           y);
 
     if (!mMousePressed)
     {
@@ -192,10 +201,15 @@ void TAbstractWindow::mouseMoveEvent(QMouseEvent *event)
 
             setCursor(C_RESIZE_ARROWS[mResizingDirection]);
 
-            if(mResizingDirection == RD_NONE)
+            if(mResizingDirection == RD_NONE) {
                 releaseMouse();
-            else
+            } else {
+                if(!isActiveWindow())
+                    activateWindow();
+
+                // Here is to force receive mouse move event if there are child widgets
                 grabMouse();
+            }
         }
     } else {
         if(mResizingDirection != RD_NONE && mResizeEnable) {

@@ -15,6 +15,9 @@ void TTracklistView::setModel(QAbstractItemModel *model)
 
 void TTracklistView::updateColumnsWidth()
 {
+    resizeColumnToContents(0);
+    resizeColumnToContents(2);
+
     int w = rect().width()-columnWidth(0)-columnWidth(2);
     QScrollBar *bar = verticalScrollBar();
     if(bar->isVisible())
