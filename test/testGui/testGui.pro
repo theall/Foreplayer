@@ -14,16 +14,16 @@ TARGET = foreplayer
 TEMPLATE = app
 
 INCLUDEPATH += \
-    ../../ \
-    ../../utils
+    ../../app/ \
+    ../../app/utils
 
 SOURCES += main.cpp
 
 HEADERS  += \
     ../../plugins/backend/backendinterface.h
 
-include(../../gui/gui.pri)
-include(../../utils/utils.pri)
+include(../../app/gui/gui.pri)
+include(../../app/utils/utils.pri)
 
 CONFIG(debug, debug|release){
     TARGET = $$join(TARGET,,,d)

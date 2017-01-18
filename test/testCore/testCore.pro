@@ -14,8 +14,8 @@ TARGET = testCore
 TEMPLATE = app
 
 INCLUDEPATH += \
-    ../../utils \
-    ../../core
+    ../../app/utils \
+    ../../app/core
 
 LIBS += -ldsound
 
@@ -24,4 +24,4 @@ SOURCES += \
     
 HEADERS += 
 
-include(../../core/core.pri)
+include(../../app/core/core.pri)
