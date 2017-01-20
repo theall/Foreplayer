@@ -1,21 +1,24 @@
 #include "playthread.h"
 
-TPlayThread::TPlayThread(TAbstractFront *front):
-    mPaused(true),
+#include "front/sdlfront.h"
+TPlayThread::TPlayThread():
     mNeedTerminate(false),
-    mFront(front)
+    mFront(NULL),
+    mBackendPlugin(NULL)
 {
 
 }
 
 void TPlayThread::pause()
 {
-    mPaused = true;
+    if(mFront)
+        mFront->pause();
 }
 
-void TPlayThread::resume()
+void TPlayThread::play()
 {
-
+    if(mFront)
+        mFront->play();
 }
 
 void TPlayThread::needToTerminate()
@@ -23,19 +26,32 @@ void TPlayThread::needToTerminate()
     mNeedTerminate = true;
 }
 
+void TPlayThread::setBackend(TBackendPlugin *plugin)
+{
+    if(mBackendPlugin == plugin)
+        return;
+
+    if(mBackendPlugin)
+        mBackendPlugin->closeTrack();
+
+    mBackendPlugin = plugin;
+    if(mFront && plugin)
+    {
+        // Connect plugin's callback to front's callback
+        mFront->setCallback(plugin->getCallback());
+    }
+}
+
 void TPlayThread::run()
 {
     if(!mFront)
-        return;
+        mFront = new TSDLFront;
 
     mFront->start();
 
     while(!mNeedTerminate)
     {
         msleep(100);
-
-        if(mPaused)
-            continue;
 
         mFront->step();
     }

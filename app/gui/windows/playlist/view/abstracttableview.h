@@ -36,7 +36,8 @@ public:
     void selectIndexes(QList<int> indexes, bool locate = true);
 
 signals:
-    void onCurrentRowSelected(int index);
+    void onCurrentRowChanged(int row);
+    void onDoubleClickItem(int row);
     void requestMoveItems(QList<int> indexes, int pos, QList<int> &newIndexes);
     void requestAddFiles(QStringList files, int pos, QList<int> &newIndexes);
 
@@ -61,6 +62,14 @@ private:
     static QColor mHighlightColor;
     QRect mHighlightRect;
     bool mColumnsWidthResized;
+
+    // QWidget interface
+protected:
+    void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+
+    // QWidget interface
+protected:
+    void mouseDoubleClickEvent(QMouseEvent *) Q_DECL_OVERRIDE;
 };
 
 #endif // TABSTRACTTABLEVIEW_H

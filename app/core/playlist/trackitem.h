@@ -10,6 +10,7 @@ public:
     QString index;
     QString additionalInfo;
     QString fileName;
+    QString *musicFilePath;
     int duration;
     bool enable;
     bool hidden;

@@ -25,10 +25,6 @@ public:
     QString name() { return mDisplayName; }
     void setDisplayName(QString newName);
 
-    TMusicItem *currentItem();
-    int currentIndex() { return mCurrentIndex; }
-    void setCurrentIndex(int index);
-
     TMusicItem *musicItem(int index);
 
     QString fileName() { return mFileName; }
@@ -47,7 +43,6 @@ private:
     QString mFileName;
     bool mModified;
     int mVersion;
-    int mCurrentIndex;
 };
 
 typedef QList<TPlaylistItem*> TPlaylistItems;

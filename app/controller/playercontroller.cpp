@@ -16,6 +16,9 @@ void TPlayerController::joint(TGuiManager *gui, TCore *core)
     mPlayerCore = core->player();
     Q_ASSERT(mPlayerCore);
 
+    mPlaylistCore = core->playlist();
+    Q_ASSERT(mPlaylistCore);
+
     mMainWindow = gui->mainWindow();
     Q_ASSERT(mMainWindow);
 
@@ -31,12 +34,25 @@ void TPlayerController::joint(TGuiManager *gui, TCore *core)
     mMainWindow->setTime(99, 354);
 }
 
-void TPlayerController::slotRequestPlay()
+void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 {
+    if(!mPlaylistCore || !mPlayerCore)
+        return;
 
+    TPlaylistItem *playlistItem = mPlaylistCore->playlistItem(pIndex);
+    if(playlistItem)
+    {
+        TMusicItem *musicItem = playlistItem->musicItem(mIndex);
+        if(musicItem)
+        {
+            TTrackItem *trackItem = musicItem->trackItem(tIndex);
+            if(trackItem)
+            {
+                mPlayerCore->setTrack(trackItem);
+            }
+        }
+    }
 }
-
-
 
 void TPlayerController::slotTimerEvent()
 {

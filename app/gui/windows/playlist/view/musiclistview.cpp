@@ -26,10 +26,3 @@ void TMusiclistView::updateColumnsWidth()
 
     setColumnWidth(1, w);
 }
-
-void TMusiclistView::mouseDoubleClickEvent(QMouseEvent *event)
-{
-    QModelIndex index = indexAt(event->pos());
-    emit onCurrentRowSelected(index.row());
-    TAbstractTableView::mouseDoubleClickEvent(event);
-}

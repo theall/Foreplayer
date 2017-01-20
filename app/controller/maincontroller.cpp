@@ -45,7 +45,7 @@ TMainController::TMainController(QObject *parent) :
     mPlayerController(new TPlayerController(this)),
     mPlaylistController(new TPlaylistController(this))
 {
-    connect(mPlaylistController, SIGNAL(requestPlay()), mPlayerController, SLOT(slotRequestPlay()));
+    connect(mPlaylistController, SIGNAL(requestPlay(int,int,int)), mPlayerController, SLOT(slotRequestPlay(int,int,int)));
 }
 
 TMainController::~TMainController()

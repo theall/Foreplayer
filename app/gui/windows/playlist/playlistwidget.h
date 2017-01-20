@@ -40,14 +40,6 @@ public:
     QColor colorSelect() { return mColorSelect; }
     QColor colorBkgnd2() { return mColorBkgnd2; }
 
-signals:
-    void onPlaylistIndexChanged(int index);
-    void onMusiclistIndexChanged(int index);
-    void onTracklistIndexChanged(int index);
-
-private slots:
-    void slotCurrentRowChanged(int index);
-
 private:
     TPlaylistView *mPlaylistView;
     TMusiclistView *mMusiclistView;

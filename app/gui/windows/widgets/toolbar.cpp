@@ -6,9 +6,7 @@ TToolBar::TToolBar(QWidget *parent) :
     for(int i=0;i<BUTTON_COUNT;i++)
     {
         TImageButton *button = new TImageButton(this);
-        button->setCheckable(true);
         connect(button, SIGNAL(clicked(bool)), this, SLOT(slotButtonClicked(bool)));
-        connect(button, SIGNAL(mouseLeave()), this, SLOT(slotButtonMouseLeave()));
         mButtons[i] = button;
     }
     retranslateUi();
@@ -65,25 +63,14 @@ void TToolBar::slotButtonClicked(bool checked)
     TImageButton *button = dynamic_cast<TImageButton*>(sender());
     if(button)
     {
+        int btn = -1;
         for(int i=0;i<BUTTON_COUNT;i++)
         {
             if(mButtons[i]==button)
-                emit buttonClicked(BUTTON(i), button->pos());
-            mButtons[i]->setChecked(checked);
+                btn = i;
         }
-    }
-}
-
-void TToolBar::slotButtonMouseLeave()
-{
-    TImageButton *button = dynamic_cast<TImageButton*>(sender());
-    if(button)
-    {
-        for(int i=0;i<BUTTON_COUNT;i++)
-        {
-            if(mButtons[i]==button)
-                emit mouseLeave(BUTTON(i));
-        }
+        if(btn >= 0)
+            emit requestToggleContexMenu(BUTTON(btn), button->pos(), checked);
     }
 }
 
@@ -109,6 +96,14 @@ void TToolBar::setAlignment(QPixmap pixmap, Qt::Alignment alignment)
             mAlignSize.setHeight(0);
 
         updatePos();
+    }
+}
+
+void TToolBar::uncheckButtons()
+{
+    for(int i=0;i<BUTTON_COUNT;i++)
+    {
+        mButtons[i]->setChecked(false);
     }
 }
 

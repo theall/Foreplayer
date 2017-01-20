@@ -17,13 +17,7 @@ TPlaylistWidget::TPlaylistWidget(QWidget *parent) :
     mPlaylistView = new TPlaylistView(this);
     mMusiclistView = new TMusiclistView(this);
     mTracklistView = new TTracklistView(this);
-
-    connect(mPlaylistView, SIGNAL(onCurrentRowSelected(int)), this, SLOT(slotCurrentRowChanged(int)));
-    connect(mMusiclistView, SIGNAL(onCurrentRowSelected(int)), this, SLOT(slotCurrentRowChanged(int)));
-    connect(mTracklistView, SIGNAL(onCurrentRowSelected(int)), this, SLOT(slotCurrentRowChanged(int)));
-
     mSplitter = new TSplitter(this);
-
     mSplitter->addWidget(mPlaylistView);
     mSplitter->addWidget(mMusiclistView);
     mSplitter->addWidget(mTracklistView);
@@ -73,18 +67,6 @@ bool TPlaylistWidget::updatePosition(QSize size)
 void TPlaylistWidget::setFontColors(QColor background2)
 {
     TAbstractTableView::setBackgroundColor(background2);
-}
-
-void TPlaylistWidget::slotCurrentRowChanged(int index)
-{
-    QObject *sendObject = sender();
-    if(dynamic_cast<TPlaylistView*>(sendObject)) {
-        emit onPlaylistIndexChanged(index);
-    } else if (dynamic_cast<TMusiclistView*>(sendObject)) {
-        emit onMusiclistIndexChanged(index);
-    } else if (dynamic_cast<TTracklistView*>(sendObject)) {
-        emit onTracklistIndexChanged(index);
-    }
 }
 
 void TPlaylistWidget::loadFromSkin(QDomElement element, TSkin *skin)

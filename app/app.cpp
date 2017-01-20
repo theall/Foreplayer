@@ -1,5 +1,7 @@
 #include "app.h"
 
+#include <QSharedMemory>
+
 TApp::TApp(int argc, char *argv[]) :
     mApp(new QApplication(argc, argv))
 {
@@ -25,3 +27,12 @@ int TApp::start()
     return mApp->exec();
 }
 
+bool TApp::isRunning()
+{
+    static QSharedMemory data("Foreplayer/Theall");
+    if(data.create(100) == false)
+    {
+        return true;
+    }
+    return false;
+}

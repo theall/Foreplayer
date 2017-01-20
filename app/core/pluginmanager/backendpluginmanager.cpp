@@ -54,20 +54,63 @@ TBackendPlugin *TBackendPluginManager::parse(QString file, TMusicInfo *musicInfo
     TBackendPlugins backendPlugins;
     QFileInfo fi(file);
     QString suffix = fi.suffix();
-    for(auto plugin : mPlugins)
+    if(!suffix.isEmpty())
     {
-        TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
-        if(backendPlugin && backendPlugin->matchSuffix(suffix))
-            backendPlugins.append(backendPlugin);
-    }
-    if(backendPlugins.isEmpty())
-        backendPlugins = mPlugins;
+        for(auto plugin : mPlugins)
+        {
+            TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
+            if(backendPlugin && backendPlugin->matchSuffix(suffix))
+                backendPlugins.append(backendPlugin);
+        }
+        if(backendPlugins.isEmpty())
+            backendPlugins = mPlugins;
+    } else {
+        if(fi.isDir())
+        {
+            // Enumerate files in directory
 
+        } else {
+            backendPlugins = mPlugins;
+        }
+    }
     TBackendPlugin *backendPlugin = NULL;
     for(auto plugin : backendPlugins)
     {
         backendPlugin = dynamic_cast<TBackendPlugin*>(plugin);
         if(backendPlugin && backendPlugin->parse(file, musicInfo))
+            break;
+    }
+    return backendPlugin;
+}
+
+TBackendPlugin *TBackendPluginManager::loadTrack(TTrackInfo *trackInfo)
+{
+    TBackendPlugins backendPlugins;
+    QFileInfo fi(trackInfo->musicFileName.c_str());
+    QString suffix = fi.suffix();
+    if(fi.isDir())
+    {
+        // Re-set suffix to index file if the track is a file under directory
+        QDir dir = fi.absoluteDir();
+        fi.setFile(dir.filePath(trackInfo->indexName.c_str()));
+        suffix = fi.suffix();
+    }
+    if(!suffix.isEmpty())
+    {
+        for(auto plugin : mPlugins)
+        {
+            TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
+            if(backendPlugin && backendPlugin->matchSuffix(suffix))
+                backendPlugins.append(backendPlugin);
+        }
+        if(backendPlugins.isEmpty())
+            backendPlugins = mPlugins;
+    }
+    TBackendPlugin *backendPlugin = NULL;
+    for(auto plugin : backendPlugins)
+    {
+        backendPlugin = dynamic_cast<TBackendPlugin*>(plugin);
+        if(backendPlugin && backendPlugin->openTrack(trackInfo))
             break;
     }
     return backendPlugin;

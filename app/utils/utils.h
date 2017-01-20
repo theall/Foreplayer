@@ -5,7 +5,7 @@
 
 namespace Utils{
     const int TextHighlight = Qt::UserRole + 1;
-    const int IsCurrentRow = TextHighlight + 1;
+    const int IsPlayingItem = TextHighlight + 1;
 
     QString microSecToTimeStr(long ms, bool padZero=true);
     QString secToTimeStr(long seconds, bool padZero=true);

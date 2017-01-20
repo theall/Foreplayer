@@ -2,12 +2,18 @@
 
 TMusiclistModel::TMusiclistModel(QObject *parent) :
     TAbstractModel(parent)
+  , mPlayingIndex(-1)
   , mPlaylistItem(NULL)
 {
 }
 
 void TMusiclistModel::setPlayListItem(TPlaylistItem *item)
 {
+    if(mPlaylistItem == item)
+        return;
+
+    mCurrentIndex = -1;
+    mPlayingIndex = -1;
     beginResetModel();
     mPlaylistItem = item;
     endResetModel();
@@ -18,6 +24,7 @@ int TMusiclistModel::rowCount(const QModelIndex &parent) const
     Q_UNUSED(parent)
     if(mPlaylistItem)
         return mPlaylistItem->size();
+
     return 0;
 }
 
@@ -74,9 +81,6 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
 
 void TMusiclistModel::setCurrentIndex(int index)
 {
-    if(mPlaylistItem)
-        mPlaylistItem->setCurrentIndex(index);
-
     TAbstractModel::setCurrentIndex(index);
 }
 
@@ -105,7 +109,7 @@ void TMusiclistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexes
     TMusicItems items;
 
     // Record current index
-    TMusicItem *currentItem = mPlaylistItem->currentItem();
+    TMusicItem *currentItem = mPlaylistItem->musicItem(mCurrentIndex);
 
     beginResetModel();
     foreach (int i, indexes) {
@@ -151,7 +155,7 @@ void TMusiclistModel::insertFiles(QStringList files, int pos, QList<int> &newInd
         pos = musicsCount;
 
     // Record current item
-    TMusicItem *currentItem = mPlaylistItem->currentItem();
+    TMusicItem *currentItem = mPlaylistItem->musicItem(mCurrentIndex);
 
     beginResetModel();
     int i = 0;

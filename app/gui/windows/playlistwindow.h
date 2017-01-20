@@ -15,6 +15,7 @@
 #include "playlist/menu/popmenuremovemusics.h"
 #include "playlist/menu/popmenusort.h"
 #include "playlist/menu/popmenutracklist.h"
+#include "playlist/menu/popmenumusiclistedit.h"
 
 class TPlaylistWindow : public TAbstractWindow
 {
@@ -50,8 +51,8 @@ private slots:
     // Widget
     void on_btnClose_clicked();
 
-    void slotToolbarClicked(TToolBar::BUTTON id, QPoint pos);
-    void slotToolbarButtonMouseLeave(TToolBar::BUTTON id);
+    // Gui control
+    void slotRequestToggleButtonContexMenu(TToolBar::BUTTON id, QPoint pos, bool checked);
     void slotPopupContextMenu(QPoint pos);
     void slotOnMouseMove(QEvent *event);
 
@@ -61,6 +62,7 @@ private slots:
     // Add musics
     void slotOnActionAddMusicsTriggered();
     void slotOnActionAddDirectoryTriggered();
+
     // Remove musics
     void slotOnActionRemoveSelectionsTriggered();
     void slotOnActionRemoveRedundantTriggered();
@@ -78,6 +80,7 @@ private:
     TPopMenuAddMusics *mPopmenuAddMusics;
     TPopMenuFind *mPopmenuFind;
     TPopMenuMusicList *mPopmenuMusicList;
+    TPopMenuMusiclistEdit *mPopmenuMusiclistEdit;
     TPopMenuMusiclistItem *mPopmenuMusiclistItem;
     TPopMenuPlayList *mPopmenuPlayList;
     TPopMenuPlayMode *mPopmenuPlayMode;

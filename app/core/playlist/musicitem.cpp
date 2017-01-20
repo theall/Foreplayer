@@ -49,7 +49,8 @@ void TMusicItem::fromJson(QJsonObject object)
     foreach (QJsonValue trackValue, trackArray) {
         QJsonObject trackObject = trackValue.toObject();
         TTrackItem *trackItem = new TTrackItem;
-        trackItem->fromJson(trackObject);
+        trackItem->fromJson(trackObject);\
+        trackItem->musicFilePath = &mFileName;
         mTrackItems.append(trackItem);
     }
 }
@@ -195,15 +196,6 @@ TTrackItem *TMusicItem::trackItem(int index)
         return NULL;
 
     return mTrackItems.at(index);
-}
-
-void TMusicItem::setCurrentIndex(int index)
-{
-    if(mCurrentIndex != index)
-    {
-        mCurrentIndex = index;
-        mModified = true;
-    }
 }
 
 int TMusicItem::size()

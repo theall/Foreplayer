@@ -5,7 +5,6 @@
 TPlaylistItem::TPlaylistItem(QString fileName) :
     mFileName(fileName)
   , mModified(false)
-  , mCurrentIndex(0)
 {
 }
 
@@ -187,23 +186,6 @@ void TPlaylistItem::sort(SortMode mode)
 int TPlaylistItem::indexOf(TMusicItem *item)
 {
     return mMusicItems.indexOf(item);
-}
-
-TMusicItem *TPlaylistItem::currentItem()
-{
-    if(mCurrentIndex<0 || mCurrentIndex>=mMusicItems.size())
-        return NULL;
-
-    return mMusicItems[mCurrentIndex];
-}
-
-void TPlaylistItem::setCurrentIndex(int index)
-{
-    if(mCurrentIndex != index)
-    {
-        mCurrentIndex = index;
-        mModified = true;
-    }
 }
 
 TMusicItem *TPlaylistItem::musicItem(int index)

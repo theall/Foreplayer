@@ -28,12 +28,11 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
         return TAbstractModel::mFont;
     } else if (role==Qt::TextColorRole) {
         if(index.row()==mCurrentIndex)
-            return mCurrentRowTextColor;
-        return TAbstractModel::mTextColor;
+            return mSelectedTextColor;//mCurrentRowTextColor;
+        else
+            return TAbstractModel::mTextColor;
     } else if (role==Utils::TextHighlight) {
         return TAbstractModel::mSelectedTextColor;
-    } else if (role==Utils::IsCurrentRow) {
-        return index.row()==mCurrentIndex;
     } else {
         return QVariant();
     }
@@ -48,6 +47,9 @@ int TAbstractModel::currentIndex()
 
 void TAbstractModel::setCurrentIndex(int index)
 {
+    if(mCurrentIndex == index)
+        return;
+
     mCurrentIndex = index;
 
     QVector<int> roles;

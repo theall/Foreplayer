@@ -10,10 +10,6 @@ public:
 
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
 
-    // QWidget interface
-protected:
-    void mouseDoubleClickEvent(QMouseEvent *event) Q_DECL_OVERRIDE;
-
 private:
     void updateColumnsWidth() Q_DECL_OVERRIDE;
 };

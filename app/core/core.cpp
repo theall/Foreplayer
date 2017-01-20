@@ -57,7 +57,7 @@ void TCore::close()
 void TCore::play(int trackIndex, int musicIndex, int playlist)
 {
     if(musicIndex<0)
-        musicIndex = mPlaylist->currentIndex();
+        musicIndex = mPlaylist->playingPlaylistIndex();
 
     mPlayer->setTrack(NULL);
 }

@@ -17,6 +17,7 @@ void TTrackListModel::setMusicItem(TMusicItem *item)
     if(mMusicItem==item)
         return;
 
+    mCurrentIndex = -1;
     beginResetModel();
     mMusicItem = item;
     endResetModel();
@@ -66,6 +67,11 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
             align = Qt::AlignRight;;
         }
         return QVariant(align|Qt::AlignVCenter);
+    } else if (role==Qt::TextColorRole) {
+        if(mMusicItem && !mMusicItem->trackItem(index.row())->enable)
+        {
+            return QColor("#3c3c3c");
+        }
     } else if (role==Qt::ToolTipRole) {
         int row = index.row();
         if(row<0 || row>=mMusicItem->size())
@@ -83,8 +89,6 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 
 void TTrackListModel::setCurrentIndex(int index)
 {
-    if(mMusicItem)
-        mMusicItem->setCurrentIndex(index);
     TAbstractModel::setCurrentIndex(index);
 }
 

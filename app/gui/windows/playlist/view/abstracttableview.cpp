@@ -36,7 +36,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
 
     painter->save();
     QRect rect = option.rect;
-    bool isCurrentRow = index.data(Utils::IsCurrentRow).toBool();
+    bool isPlayingItem = index.data(Utils::IsPlayingItem).toBool();
 
     if(option.state & QStyle::State_Selected)
     {
@@ -68,15 +68,15 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
 
     // Set pen color
     QColor textColor;
-    if(option.state&QStyle::State_Selected)
-        textColor = Qt::white;
+    if(option.state&QStyle::State_Selected || isPlayingItem)
+        textColor = index.data(Utils::TextHighlight).value<QColor>();
     else
-        textColor = index.data(isCurrentRow?Utils::TextHighlight:Qt::TextColorRole).value<QColor>();
+        textColor = index.data(Qt::TextColorRole).value<QColor>();
 
     painter->setPen(textColor);
 
     // Draw triangle icon
-    if(columnCount>1 && columnIndex==0 && isCurrentRow)
+    if(columnCount>1 && columnIndex==0 && isPlayingItem)
     {
         QRect tRect = option.rect;
         tRect.adjust(2, 1, -1, -1);
@@ -332,4 +332,24 @@ void TAbstractTableView::showEvent(QShowEvent *)
         QTimer::singleShot(0, this, &TAbstractTableView::updateColumnsWidth);
         mColumnsWidthResized = true;
     }
+}
+
+void TAbstractTableView::mousePressEvent(QMouseEvent *event)
+{
+    QModelIndex index = indexAt(event->pos());
+    int row = index.row();
+    if(row >= 0)
+        emit onCurrentRowChanged(row);
+
+    QTableView::mousePressEvent(event);
+}
+
+void TAbstractTableView::mouseDoubleClickEvent(QMouseEvent *event)
+{
+    QModelIndex index = indexAt(event->pos());
+    int row = index.row();
+    if(row >= 0)
+        emit onDoubleClickItem(row);
+
+    QTableView::mouseDoubleClickEvent(event);
 }

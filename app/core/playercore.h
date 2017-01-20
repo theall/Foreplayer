@@ -7,6 +7,7 @@
 #include "front/sdlfront.h"
 
 #include "pluginmanager/backendpluginmanager.h"
+#include "playlist/playlistitem.h"
 
 struct SpectrumInfo
 {
@@ -23,11 +24,10 @@ public:
 
     TMusicInfo *parse(QString fileName);
 
-    void setTrack(TTrackInfo *track);
+    void setTrack(TTrackItem *track);
 
     void setCallback(TPlayCallback callback);
 
-    void play();
     void stop();
     void pause();
 
@@ -39,13 +39,10 @@ public:
     void setSpectrumAmp(int index, int value);
 
 private:
-    TPlayCallback *mCallback;
-    TBackendPlugin *mBackend;
-    TDirectSoundFront *mFront;
-
     TPlayThread *mPlayThread;
     TBackendPluginManager *mPluginManager;
 
+    void init();
     void destroyPlayThread();
 };
 

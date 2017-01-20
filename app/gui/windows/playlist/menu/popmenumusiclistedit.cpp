@@ -20,6 +20,7 @@ TPopMenuMusiclistEdit::~TPopMenuMusiclistEdit()
 
 void TPopMenuMusiclistEdit::retranslateUi()
 {
+    setTitle(tr("Edit"));
     mActionCopy->setText(tr("Copy"));
     mActionPaste->setText(tr("Paste"));
     mActionRemove->setText(tr("Remove"));

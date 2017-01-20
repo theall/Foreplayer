@@ -129,7 +129,7 @@ TDirectSoundFront::~TDirectSoundFront()
     }
 }
 
-void TDirectSoundFront::start(void)
+bool TDirectSoundFront::start(void)
 {
     //waveLogStart();
 
@@ -137,6 +137,8 @@ void TDirectSoundFront::start(void)
 
     IDirectSoundBuffer_SetCurrentPosition(mSecondBuffer, 0);
     IDirectSoundBuffer_Play(mSecondBuffer, 0, 0, DSBPLAY_LOOPING);
+
+    return true;
 }
 
 void TDirectSoundFront::stop(void)
@@ -256,6 +258,16 @@ void TDirectSoundFront::step(void)
     }
 
     return;
+}
+
+void TDirectSoundFront::play()
+{
+
+}
+
+void TDirectSoundFront::pause()
+{
+
 }
 
 void TDirectSoundFront::setRecorder()

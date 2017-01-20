@@ -51,8 +51,6 @@ public:
     TTrackItems *trackItems();
     TTrackItem *trackItem(int index);
 
-    void setCurrentIndex(int index);
-
     int size();
     void clear();
 
@@ -63,7 +61,6 @@ private:
     int mDuration;
     int mFileSize;
     bool mModified;
-    int mCurrentIndex;
     QDateTime mLastParsed;
     TTrackItems mTrackItems;
 };

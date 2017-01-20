@@ -35,6 +35,15 @@ public:
     void setLastOpenDialogPath(QString path);
     void setLastOpenDirectory(QString path);
 
+    int playingPlaylistIndex();
+    void setPlayingPlaylistIndex(int index);
+
+    int playingMusicIndex();
+    void setPlayingMusicIndex(int index);
+
+    int playingTrackIndex();
+    void setPlayingTrackIndex(int index);
+
 signals:
     void languageChanged();
 
@@ -42,6 +51,9 @@ private:
     QSettings *mSettings;
     bool mAlwaysTop;
     int mRunCount;
+    int mPlayingPlaylistIndex;
+    int mPlayingMusicIndex;
+    int mPlayingTrackIndex;
     QString mLanguage;
     QString mLastOpenPath;
     QString mLastOpenDir;

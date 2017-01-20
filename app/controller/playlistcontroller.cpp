@@ -51,9 +51,13 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     mMusiclistView->setModel(mMusiclistModel);
     mTracklistView->setModel(mTracklistModel);
 
-    connect(mPlaylistWidget, SIGNAL(onPlaylistIndexChanged(int)), this, SLOT(slotPlaylistIndexChanged(int)));
-    connect(mPlaylistWidget, SIGNAL(onMusiclistIndexChanged(int)), this, SLOT(slotMusiclistIndexChanged(int)));
-    connect(mPlaylistWidget, SIGNAL(onTracklistIndexChanged(int)), this, SLOT(slotTracklistIndexChanged(int)));
+    connect(mPlaylistView, SIGNAL(onCurrentRowChanged(int)), this, SLOT(slotPlaylistIndexChanged(int)));
+    connect(mMusiclistView, SIGNAL(onCurrentRowChanged(int)), this, SLOT(slotMusiclistIndexChanged(int)));
+    connect(mTracklistView, SIGNAL(onCurrentRowChanged(int)), this, SLOT(slotTracklistIndexChanged(int)));
+
+    connect(mPlaylistView, SIGNAL(onDoubleClickItem(int)), this, SLOT(slotPlaylistItemSelected(int)));
+    connect(mMusiclistView, SIGNAL(onDoubleClickItem(int)), this, SLOT(slotMusiclistItemSelected(int)));
+    connect(mTracklistView, SIGNAL(onDoubleClickItem(int)), this, SLOT(slotTracklistItemSelected(int)));
 
     // Play list
     connect(mPlaylistWindow, SIGNAL(requestAddNewPlaylist()), this, SLOT(slotRequestAddNewPlaylist()));
@@ -74,39 +78,73 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
 
     connect(mTracklistView, SIGNAL(requestMoveItems(QList<int>,int,QList<int>&)), this, SLOT(slotRequestMoveTracks(QList<int>, int, QList<int>&)));
 
-    slotPlaylistIndexChanged(mPlaylistCore->currentIndex());
+    //mPlaylistView->selectRow(mPlaylistCore->currentPlaylistIndex());
+    int playingPlaylistIndex = mPlaylistCore->playingPlaylistIndex();
+    mPlaylistModel->setCurrentIndex(playingPlaylistIndex);
+    slotPlaylistIndexChanged(playingPlaylistIndex);
 }
 
 void TPlaylistController::slotPlaylistIndexChanged(int index)
 {
-    if(!mPlaylistModel || !mMusiclistModel || !mPlaylistCore)
+    if(!mMusiclistModel || !mPlaylistModel || !mPlaylistCore)
         return;
 
     mPlaylistModel->setCurrentIndex(index);
-    TPlaylistItem *item = mPlaylistCore->currentPlaylistItem();
+
+    TPlaylistItem *item = mPlaylistCore->playlistItem(index);
     mMusiclistModel->setPlayListItem(item);
-    slotMusiclistIndexChanged(item->currentIndex());
+
+    int musicIndex = 0;
+    if(index == mPlaylistCore->playingPlaylistIndex())
+    {
+        // Is not current playing playlist
+        musicIndex = mPlaylistCore->playingMusicIndex();
+    }
+    mMusiclistModel->setCurrentIndex(musicIndex);
+    slotMusiclistIndexChanged(musicIndex);
 }
 
 void TPlaylistController::slotMusiclistIndexChanged(int index)
 {
-    if(mMusiclistModel || !mTracklistModel)
-    {
-        mMusiclistModel->setCurrentIndex(index);
-        mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->currentItem());
-        slotTracklistIndexChanged(0);
-    }
+    if(!mPlaylistCore || !mTracklistModel)
+        return;
+
+    TPlaylistItem *item = mPlaylistCore->playlistItem(mPlaylistModel->currentIndex());
+    if(item)
+        mTracklistModel->setMusicItem(item->musicItem(index));
 }
 
 void TPlaylistController::slotTracklistIndexChanged(int index)
 {
-    if(mTracklistModel && mPlaylistCore)
-    {
-        mTracklistModel->setCurrentIndex(index);
+    Q_UNUSED(index);
+}
 
-        // Play current track
-        emit requestPlay();
-    }
+void TPlaylistController::slotPlaylistItemSelected(int index)
+{
+    Q_UNUSED(index);
+}
+
+void TPlaylistController::slotMusiclistItemSelected(int index)
+{
+    if(!mMusiclistModel)
+        return;
+
+    mMusiclistModel->setCurrentIndex(index);
+    slotTracklistItemSelected(0);
+}
+
+void TPlaylistController::slotTracklistItemSelected(int index)
+{
+    if(!mPlaylistModel || !mMusiclistModel || !mTracklistModel)
+        return;
+
+    mTracklistModel->setCurrentIndex(index);
+
+    // Play current track
+    emit requestPlay(
+                mPlaylistModel->currentIndex(),
+                mMusiclistModel->currentIndex(),
+                mTracklistModel->currentIndex());
 }
 
 void TPlaylistController::slotRequestAddNewPlaylist()
@@ -182,7 +220,7 @@ void TPlaylistController::slotRequestAddMusicFiles(QStringList files, int pos, Q
         return;
 
     mMusiclistModel->insertFiles(files, pos, newIndexes);
-    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->currentItem());
+    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->musicItem(mMusiclistModel->currentIndex()));
 }
 
 void TPlaylistController::slotRequestRemoveSelections(QList<int> indexes)
@@ -191,7 +229,7 @@ void TPlaylistController::slotRequestRemoveSelections(QList<int> indexes)
         return;
 
     mMusiclistModel->removeSelections(indexes);
-    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->currentItem());
+    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->musicItem(mMusiclistModel->currentIndex()));
 }
 
 void TPlaylistController::slotRequestRemoveRedundant()
@@ -200,7 +238,7 @@ void TPlaylistController::slotRequestRemoveRedundant()
         return;
 
     mMusiclistModel->removeRedundant();
-    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->currentItem());
+    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->musicItem(mMusiclistModel->currentIndex()));
 }
 
 void TPlaylistController::slotRequestRemoveErrors()
@@ -209,7 +247,7 @@ void TPlaylistController::slotRequestRemoveErrors()
         return;
 
     mMusiclistModel->removeErrors();
-    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->currentItem());
+    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->musicItem(mMusiclistModel->currentIndex()));
 }
 
 void TPlaylistController::slotRequestRemoveAll()

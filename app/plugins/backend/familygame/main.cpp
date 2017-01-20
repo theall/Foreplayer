@@ -10,7 +10,7 @@ const char *szName          = "family game";
 const char *szManufacture   = "Your name/organization";
 const char *szContact       = "Your contact information";
 const char *szDescription   = "Plugin description";
-const char *szCreateDate    = "Plugin created date, such as 2016-10-11";
+const char *szCreateDate    = "";//Plugin created date, such as 2016-10-11
 const char *szTypeDesc      = \
         "RSN ;Super Nintendo package\n" \
         "AY  ;ZX Spectrum/Amstrad CPC\n" \
@@ -97,7 +97,11 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
 // Load track to prepare for playing
 EXPORT bool loadTrack(TTrackInfo* trackInfo)
 {
-    gme_err_t error = g_gmeWrap->startTrack(trackInfo->index);
+    if(!g_gmeWrap)
+        return false;
+
+    gme_err_t error = g_gmeWrap->loadFile(trackInfo->musicFileName.c_str());
+    error = g_gmeWrap->startTrack(trackInfo->index);
     return (bool)error;
 }
 

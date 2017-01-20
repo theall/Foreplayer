@@ -8,7 +8,6 @@ TPlaylistModel::TPlaylistModel(QObject *parent) :
 
 void TPlaylistModel::setCurrentIndex(int index)
 {
-    mPlaylistCore->setCurrentIndex(index);
     TAbstractModel::setCurrentIndex(index);
 }
 
@@ -135,13 +134,7 @@ void TPlaylistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesM
     TPlaylistItems items;
 
     // Find and record current index
-    int currentPlaylistIndex = mPlaylistCore->currentIndex();
-    if(currentPlaylistIndex < 0)
-        currentPlaylistIndex = 0;
-    else if(currentPlaylistIndex >= listSize)
-        currentPlaylistIndex = listSize - 1;
-
-    TPlaylistItem *currentItem = mPlaylistCore->playlistItem(currentPlaylistIndex);
+    TPlaylistItem *currentItem = mPlaylistCore->currentPlaylistItem();
 
     beginResetModel();
     foreach (int i, indexes) {

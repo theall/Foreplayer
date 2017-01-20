@@ -1,24 +1,15 @@
 #include "playercore.h"
 
 TPlayerCore::TPlayerCore() :
-    mCallback(NULL),
-    mBackend(NULL),
-    mFront(new TDirectSoundFront()),
     mPlayThread(NULL),
     mPluginManager(TBackendPluginManager::instance())
 {
-
+    init();
 }
 
 TPlayerCore::~TPlayerCore()
 {
     destroyPlayThread();
-
-//    if(mFront)
-//        delete mFront;
-
-    if(mBackend)
-        delete mBackend;
 }
 
 TMusicInfo *TPlayerCore::parse(QString fileName)
@@ -28,13 +19,25 @@ TMusicInfo *TPlayerCore::parse(QString fileName)
     return musicInfo;
 }
 
-void TPlayerCore::setTrack(TTrackInfo *track)
+void TPlayerCore::setTrack(TTrackItem *trackItem)
 {
-    if(!mBackend)
+    if(!mPluginManager || !mPlayThread)
         return;
 
-    mBackend->openTrack(track);
-    mFront->setCallback(mBackend->getCallback());
+    TTrackInfo trackInfo;
+    trackInfo.index = trackItem->index.toInt();
+    trackInfo.indexName = trackItem->index.toStdString();
+    trackInfo.musicFileName = trackItem->musicFilePath->toStdString();
+
+    mPlayThread->pause();
+    // Find a backend plugin which can process this track
+    TBackendPlugin *plugin = mPluginManager->loadTrack(&trackInfo);
+    if(plugin)
+    {
+        // Connect plugin's callback to front's callback
+        mPlayThread->setBackend(plugin);
+    }
+    mPlayThread->play();
 }
 
 void TPlayerCore::setCallback(TPlayCallback callback)
@@ -42,29 +45,21 @@ void TPlayerCore::setCallback(TPlayCallback callback)
     Q_UNUSED(callback)
 }
 
-void TPlayerCore::play()
+void TPlayerCore::init()
 {
-    if(!mBackend)
-        return;
-
     if(mPlayThread)
-        mPlayThread->resume();
+        mPlayThread->play();
     else
     {
-        mPlayThread = new TPlayThread(mFront);
+        mPlayThread = new TPlayThread;
         mPlayThread->start();
     }
 }
 
 void TPlayerCore::stop()
 {
-    if(mPlayThread)
-    {
-        destroyPlayThread();
 
-        if(mBackend)
-            mBackend->closeTrack();
-    }
+    destroyPlayThread();
 }
 
 void TPlayerCore::pause()

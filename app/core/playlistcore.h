@@ -35,8 +35,11 @@ public:
     void sort(SortMode mode = TITLE_ASC);
     int indexOf(TPlaylistItem *item);
 
-    int currentIndex();
-    void setCurrentIndex(int index);
+    int playingPlaylistIndex();
+    int playingMusicIndex();
+    int playingTrackIndex();
+    void playingIndex(int *mIndex, int *pIndex, int *tIndex);
+    void setPlayingIndex(int pIndex, int mIndex, int tIndex);
 
     void exportAs(int index, QString fileName);
     void exportAll(QString path);
@@ -64,13 +67,18 @@ public:
     TMusicItem *parse(QString file);
 
     void save();
+
 private:
     TPlaylistItems mPlaylist;
-    int mCurrentPlaylistIndex;
+
+    // Current playing index
+    int mPlaylistIndex;
+    int mMusiclistIndex;
+    int mTracklistIndex;
     QDir mCurrentDir;
     QDir mPlaylistDir;
     bool mFileSaving;
-    TBackendPluginManager *mParser;
+    TBackendPluginManager *mBackendPluginManager;
 
     void findPlaylist();
     void loadPlaylist(QString fileName);

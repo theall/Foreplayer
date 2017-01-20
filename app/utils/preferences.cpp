@@ -30,6 +30,12 @@
 // Browser window
 #define SEC_BROWSER_WINDOW          "BrowserWindow"
 
+// Playlist
+#define SEC_CORE                    "Core"
+#define SEC_CORE_PLAYLIST_INDEX     "CurrentPlaylist"
+#define SEC_CORE_MUSIC_INDEX        "CurrentMusic"
+#define SEC_CORE_TRACK_INDEX        "CurrentTrack"
+
 TPreferences *TPreferences::mInstance = NULL;
 
 //
@@ -48,6 +54,13 @@ TPreferences::TPreferences(QObject *parent):
     mLanguage = stringValue(SEC_GUI_LANGUAGE);
     mLastOpenPath = stringValue(SEC_GUI_LAST_OPEN_PATH);
     mLastOpenDir = stringValue(SEC_GUI_LAST_OPEN_DIR);
+    mSettings->endGroup();
+
+    // Core settings
+    mSettings->beginGroup(SEC_CORE);
+    mPlayingPlaylistIndex = intValue(SEC_CORE_PLAYLIST_INDEX, -1);
+    mPlayingMusicIndex = intValue(SEC_CORE_MUSIC_INDEX, -1);
+    mPlayingTrackIndex = intValue(SEC_CORE_TRACK_INDEX, -1);
     mSettings->endGroup();
 
     // Keeping track of some usage information
@@ -100,7 +113,7 @@ void TPreferences::setLanguage(QString language)
         return;
 
     mSettings->beginGroup(SEC_GUI);
-    mSettings->setValue("Gui/Language", mLanguage);
+    mSettings->setValue(SEC_GUI_LANGUAGE, mLanguage);
     mSettings->endGroup();
     mLanguage = language;
 
@@ -194,6 +207,57 @@ void TPreferences::setLastOpenDirectory(QString path)
     mSettings->endGroup();
 
     mLastOpenDir = path;
+}
+
+int TPreferences::playingPlaylistIndex()
+{
+    return mPlayingPlaylistIndex;
+}
+
+void TPreferences::setPlayingPlaylistIndex(int index)
+{
+    if(mPlayingPlaylistIndex == index)
+        return;
+
+    mSettings->beginGroup(SEC_CORE);
+    mSettings->setValue(SEC_CORE_PLAYLIST_INDEX, index);
+    mSettings->endGroup();
+
+    mPlayingPlaylistIndex = index;
+}
+
+int TPreferences::playingMusicIndex()
+{
+    return mPlayingMusicIndex;
+}
+
+void TPreferences::setPlayingMusicIndex(int index)
+{
+    if(mPlayingMusicIndex == index)
+        return;
+
+    mSettings->beginGroup(SEC_CORE);
+    mSettings->setValue(SEC_CORE_MUSIC_INDEX, index);
+    mSettings->endGroup();
+
+    mPlayingMusicIndex = index;
+}
+
+int TPreferences::playingTrackIndex()
+{
+    return mPlayingTrackIndex;
+}
+
+void TPreferences::setPlayingTrackIndex(int index)
+{
+    if(mPlayingTrackIndex == index)
+        return;
+
+    mSettings->beginGroup(SEC_CORE);
+    mSettings->setValue(SEC_CORE_TRACK_INDEX, index);
+    mSettings->endGroup();
+
+    mPlayingTrackIndex = index;
 }
 
 void TPreferences::setValue(QString section, QVariant value)

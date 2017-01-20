@@ -9,11 +9,17 @@ public:
     explicit TSDLFront();
     ~TSDLFront();
 
-    void setRecorder();
-    void setFilter();
-    void start();
+    bool start();
     void stop();
     void step();
+
+    void play();
+    void pause();
+
+    void setRecorder();
+    void setFilter();
+
+private:
 };
 
 #endif // TSDLFRONT_H

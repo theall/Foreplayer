@@ -50,6 +50,7 @@ struct TTrackInfo
     string trackName; // Track display name
     int index; // Track index id/start Position
     string indexName; // Track index name if index id is invalid
+    string musicFileName; // Pointer to musicFileName of TMusicInfo
     string additionalInfo;
     int64 fileSize;
     uint duration;
@@ -68,6 +69,7 @@ struct TMusicInfo
     uint duration;
     int64 fileSize;
     string additionalInfo;
+    string musicFileName;
     TTrackInfoList trackList;
 
     TMusicInfo(){

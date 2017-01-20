@@ -14,10 +14,11 @@ public:
 signals:
 
 public slots:
-    void slotRequestPlay();
+    void slotRequestPlay(int pIndex, int mIndex, int tIndex);
 
 private:
     TPlayerCore *mPlayerCore;
+    TPlaylistCore *mPlaylistCore;
     TMainWindow *mMainWindow;
 
     // TAbstractController interface

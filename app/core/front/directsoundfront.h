@@ -10,20 +10,19 @@
 
 #include "abstractfront.h"
 
-#define SAMPLE_RATE 44100
-#define SOUND_SEGMENTS 48
-#define SOUND_FPS 600
-
 class TDirectSoundFront : public TAbstractFront
 {
 public:
     TDirectSoundFront();
     ~TDirectSoundFront();
 
-    void start();
+    bool start();
     void stop();
 
     void step();
+
+    void play();
+    void pause();
 
     void setRecorder();
     void setFilter();

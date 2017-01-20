@@ -24,10 +24,3 @@ void TTracklistView::updateColumnsWidth()
         w -= bar->width()+3;
     setColumnWidth(1, w);
 }
-
-void TTracklistView::mouseDoubleClickEvent(QMouseEvent *event)
-{
-    QModelIndex index = indexAt(event->pos());
-    emit onCurrentRowSelected(index.row());
-    TAbstractTableView::mouseDoubleClickEvent(event);
-}

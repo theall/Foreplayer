@@ -41,6 +41,8 @@ public:
 
     TBackendPlugin *parse(QString file, TMusicInfo* musicInfo);
 
+    TBackendPlugin *loadTrack(TTrackInfo *trackInfo);
+
 signals:
 
 public slots:

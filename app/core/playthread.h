@@ -4,18 +4,21 @@
 #include "pch.h"
 
 #include "front/abstractfront.h"
+#include "pluginmanager/backend/backendplugin.h"
 
 class TPlayThread : public QThread
 {
     Q_OBJECT
 
 public:
-    explicit TPlayThread(TAbstractFront *front);
+    explicit TPlayThread();
     ~TPlayThread(){ }
 
     void pause();
-    void resume();
+    void play();
     void needToTerminate();
+
+    void setBackend(TBackendPlugin *plugin);
 
     // QThread interface
 protected:
@@ -24,9 +27,9 @@ protected:
 private slots:
 
 private:
-    bool mPaused;
     bool mNeedTerminate;
 
     TAbstractFront *mFront;
+    TBackendPlugin *mBackendPlugin;
 };
 #endif // TPLAYTHREAD_H

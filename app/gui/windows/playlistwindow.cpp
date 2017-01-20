@@ -13,6 +13,7 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     , mPopmenuAddMusics(new TPopMenuAddMusics(this))
     , mPopmenuFind(new TPopMenuFind(this))
     , mPopmenuMusicList(new TPopMenuMusicList(this))
+    , mPopmenuMusiclistEdit(new TPopMenuMusiclistEdit(this))
     , mPopmenuMusiclistItem(new TPopMenuMusiclistItem(this))
     , mPopmenuPlayList(new TPopMenuPlayList(this))
     , mPopmenuPlayMode(new TPopMenuPlayMode(this))
@@ -27,11 +28,11 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     mPopmenuMusicList->addMenu(mPopmenuSort);
     mPopmenuMusicList->addMenu(mPopmenuFind);
     mPopmenuMusicList->addMenu(mPopmenuPlayList);
+    mPopmenuMusicList->addMenu(mPopmenuMusiclistEdit);
     mPopmenuMusicList->addMenu(mPopmenuPlayMode);
 
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
-    connect(mToolbar, SIGNAL(buttonClicked(TToolBar::BUTTON, QPoint)), this, SLOT(slotToolbarClicked(TToolBar::BUTTON, QPoint)));
-    connect(mToolbar, SIGNAL(mouseLeave(TToolBar::BUTTON)), this, SLOT(slotToolbarButtonMouseLeave(TToolBar::BUTTON)));
+    connect(mToolbar, SIGNAL(requestToggleContexMenu(TToolBar::BUTTON, QPoint, bool)), this, SLOT(slotRequestToggleButtonContexMenu(TToolBar::BUTTON, QPoint, bool)));
     connect(mPlaylistView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
     connect(mMusiclistView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
     connect(mTracklistView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotPopupContextMenu(QPoint)));
@@ -66,19 +67,32 @@ void TPlaylistWindow::on_btnClose_clicked()
     emit playlistWindowToggled(false);
 }
 
-void TPlaylistWindow::slotToolbarClicked(TToolBar::BUTTON id, QPoint pos)
+void TPlaylistWindow::slotRequestToggleButtonContexMenu(TToolBar::BUTTON id, QPoint pos, bool checked)
 {
-    QPoint pt = mToolbar->pos();
-    pos.setY(pt.y());
-    if(id==TToolBar::BTN_ADD)
+    Q_UNUSED(checked)
+
+    TAbstractPopMenu *menu = NULL;
+    if (id==TToolBar::BTN_ADD)
+         menu = mPopmenuAddMusics;
+    else if (id==TToolBar::BTN_DELETE)
+         menu = mPopmenuRemoveMusics;
+    else if (id==TToolBar::BTN_PLAYLIST)
+         menu = mPopmenuPlayList;
+    else if (id==TToolBar::BTN_SORT)
+         menu = mPopmenuSort;
+    else if (id==TToolBar::BTN_FIND)
+         menu = mPopmenuFind;
+    else if (id==TToolBar::BTN_EDIT)
+         menu = mPopmenuMusiclistEdit;
+    else if (id==TToolBar::BTN_MODE)
+         menu = mPopmenuPlayMode;
+
+    if(menu)
     {
-
+        QPoint pt = mToolbar->mapToGlobal(pos);
+        pt.setY(pt.y() - menu->sizeHint().height());
+        menu->popup(pt);
     }
-}
-
-void TPlaylistWindow::slotToolbarButtonMouseLeave(TToolBar::BUTTON id)
-{
-    Q_UNUSED(id)
 }
 
 void TPlaylistWindow::slotPopupContextMenu(QPoint pos)

@@ -15,7 +15,7 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
     TGmeWrap *gme = TGmeWrap::instance();
     gme->loadFile(mFile.toLocal8Bit().constData());
     int trackCount = gme->trackCount();
-    int trackIndex = 1;
+    int trackIndex = 0;
     for(int i=0;i<trackCount;i++) {
         TTrackInfo *trackInfo = new TTrackInfo;
         const gme_info_t *_trackInfo = gme->trackInfo(i);
@@ -32,7 +32,7 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
         TTrackInfo *trackInfo = musicInfo->trackList.at(0);
         musicInfo->additionalInfo = trackInfo->additionalInfo;
         if(trackCount==1)
-            musicInfo->musicName    = trackInfo->trackName;
+            musicInfo->musicName = trackInfo->trackName;
     }
 
     return true;
@@ -49,7 +49,7 @@ TTrackInfo *TFileParse::parse(QByteArray data)
     TTrackInfo *trackInfo = new TTrackInfo;
     const gme_info_t *_trackInfo = gme->trackInfo(0);
     trackInfo->trackName = _trackInfo->song;
-    trackInfo->index = 1;
+    trackInfo->index = 0;
     trackInfo->duration  = _trackInfo->length/1000;
     trackInfo->fileSize  = data.size();
     trackInfo->additionalInfo = fillAdditionalInfo(_trackInfo);

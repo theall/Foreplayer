@@ -1,14 +1,18 @@
 #include "playlistcore.h"
 
-#define PL_DIR "playlist"
-#define PL_INDEX "index.dat"
-#define SECTION_PLAYLIST "playlist"
-#define SECTION_CURRENT "current"
+#define PL_DIR                  "playlist"
+#define PL_INDEX                "index.dat"
+#define SEC_PLAYLIST            "playlist"
+#define SEC_CURRENT_PLAYLIST    "currentPlaylist"
+#define SEC_CURRENT_MUSIC       "currentMusic"
+#define SEC_CURRENT_TRACK       "currentTrack"
 
 TPlaylistCore::TPlaylistCore() :
-    mCurrentPlaylistIndex(-1),
+    mPlaylistIndex(-1),
+    mMusiclistIndex(-1),
+    mTracklistIndex(-1),
     mFileSaving(false),
-    mParser(TBackendPluginManager::instance())
+    mBackendPluginManager(TBackendPluginManager::instance())
 {
     mCurrentDir.setPath(qApp->applicationDirPath());
     if(!mCurrentDir.exists(PL_DIR))
@@ -43,10 +47,10 @@ int TPlaylistCore::size()
 
 TPlaylistItem *TPlaylistCore::currentPlaylistItem()
 {
-    if(mCurrentPlaylistIndex<0 || mCurrentPlaylistIndex>=mPlaylist.size())
+    if(mPlaylistIndex<0 || mPlaylistIndex>=mPlaylist.size())
         return NULL;
 
-    return mPlaylist[mCurrentPlaylistIndex];
+    return mPlaylist[mPlaylistIndex];
 }
 
 void TPlaylistCore::insert(QString name, int index)
@@ -103,14 +107,36 @@ int TPlaylistCore::indexOf(TPlaylistItem *item)
     return mPlaylist.indexOf(item);
 }
 
-int TPlaylistCore::currentIndex()
+int TPlaylistCore::playingPlaylistIndex()
 {
-    return mCurrentPlaylistIndex;
+    return mPlaylistIndex;
 }
 
-void TPlaylistCore::setCurrentIndex(int index)
+int TPlaylistCore::playingMusicIndex()
 {
-    mCurrentPlaylistIndex = index;
+    return mMusiclistIndex;
+}
+
+int TPlaylistCore::playingTrackIndex()
+{
+    return mTracklistIndex;
+}
+
+void TPlaylistCore::playingIndex(int *mIndex, int *pIndex, int *tIndex)
+{
+    if(mIndex==NULL || pIndex==NULL || tIndex==NULL)
+        return;
+
+    *mIndex = mPlaylistIndex;
+    *pIndex = mMusiclistIndex;
+    *tIndex = mTracklistIndex;
+}
+
+void TPlaylistCore::setPlayingIndex(int pIndex, int mIndex, int tIndex)
+{
+    mPlaylistIndex = mIndex;
+    mMusiclistIndex = pIndex;
+    mTracklistIndex = tIndex;
 }
 
 void TPlaylistCore::exportAs(int index, QString fileName)
@@ -132,7 +158,7 @@ TMusicItem *TPlaylistCore::parse(QString file)
     musicInfo->musicName = fileBaseName.toStdString();
     item->setDisplayName(fileBaseName);
     item->setFileName(file);
-    TBackendPlugin *plugin = mParser->parse(file, musicInfo);
+    TBackendPlugin *plugin = mBackendPluginManager->parse(file, musicInfo);
     if(plugin)
     {
         // If this file is successful parsed, bind it to music item.
@@ -148,11 +174,14 @@ TMusicItem *TPlaylistCore::parse(QString file)
             trackItem->additionalInfo = track->additionalInfo.c_str();
             trackItem->duration = track->duration;
             trackItem->index = track->indexName.c_str();
+            trackItem->musicFilePath = &trackItem->fileName;
             if(trackItem->index.isEmpty())
                 trackItem->index = QString::number(track->index);
             items->append(trackItem);
+            delete track;
         }
     }
+    delete musicInfo;
     return item;
 }
 
@@ -180,15 +209,28 @@ void TPlaylistCore::insert(int pos, TPlaylistItem *item)
 void TPlaylistCore::findPlaylist()
 {
     QSettings indexFile(mPlaylistDir.absoluteFilePath(PL_INDEX), QSettings::IniFormat);
-    QStringList fileNames = indexFile.value(SECTION_PLAYLIST).toStringList();
-    mCurrentPlaylistIndex = indexFile.value(SECTION_CURRENT).toInt();
+    QStringList fileNames = indexFile.value(SEC_PLAYLIST).toStringList();
+    mPlaylistIndex = indexFile.value(SEC_CURRENT_PLAYLIST).toInt();
+    mMusiclistIndex = indexFile.value(SEC_CURRENT_MUSIC).toInt();
+    mTracklistIndex = indexFile.value(SEC_CURRENT_TRACK).toInt();
     for(QString fileName : fileNames)
     {
         loadPlaylist(mPlaylistDir.absoluteFilePath(fileName));
     }
     int size = mPlaylist.count();
-    if(mCurrentPlaylistIndex<0 || mCurrentPlaylistIndex>=size)
-        mCurrentPlaylistIndex = 0;
+    if(mPlaylistIndex<0 || mPlaylistIndex>=size)
+    {
+        mPlaylistIndex = 0;
+        mMusiclistIndex = -1;
+        mTracklistIndex = -1;
+    } else {
+        TPlaylistItem *item = mPlaylist[mPlaylistIndex];
+        if(mMusiclistIndex<0 || mMusiclistIndex>=item->size())
+        {
+            mMusiclistIndex = 0;
+            mTracklistIndex = -1;
+        }
+    }
 }
 
 void TPlaylistCore::loadPlaylist(QString fileName)
@@ -228,8 +270,10 @@ void TPlaylistCore::save()
         playlist.append(playlistItem->fileName());
     }
     QSettings indexFile(mPlaylistDir.absoluteFilePath(PL_INDEX), QSettings::IniFormat);
-    indexFile.setValue(SECTION_PLAYLIST, playlist);
-    indexFile.setValue(SECTION_CURRENT, mCurrentPlaylistIndex);
+    indexFile.setValue(SEC_PLAYLIST, playlist);
+    indexFile.setValue(SEC_CURRENT_PLAYLIST, mPlaylistIndex);
+    indexFile.setValue(SEC_CURRENT_MUSIC, mMusiclistIndex);
+    indexFile.setValue(SEC_CURRENT_TRACK, mTracklistIndex);
     indexFile.sync();
     mFileSaving = false;
 }

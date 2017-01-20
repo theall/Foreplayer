@@ -27,16 +27,16 @@ public:
 
     void setPixmaps(QPixmap normal, QPixmap hover);
     void setAlignment(QPixmap pixmap, Qt::Alignment alignment);
+
+    void uncheckButtons();
     void retranslateUi();
     void updatePos();
 
 signals:
-    void buttonClicked(TToolBar::BUTTON id, QPoint pos);
-    void mouseLeave(TToolBar::BUTTON id);
+    void requestToggleContexMenu(TToolBar::BUTTON id, QPoint pos, bool checked);
 
 private slots:
     void slotButtonClicked(bool);
-    void slotButtonMouseLeave();
 
 private:
     QSize mAlignSize;

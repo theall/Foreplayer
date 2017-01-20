@@ -17,6 +17,7 @@ public:
     void removeAll();
 
 private:
+    int mPlayingIndex;
     TPlaylistItem *mPlaylistItem;
 
 public:

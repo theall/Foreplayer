@@ -17,12 +17,16 @@ public:
     void joint(TGuiManager *manager, TCore *core) Q_DECL_OVERRIDE;
 
 signals:
-    void requestPlay();
+    void requestPlay(int pIndex, int mIndex, int tIndex);
 
 private slots:
     void slotPlaylistIndexChanged(int index);
     void slotMusiclistIndexChanged(int index);
     void slotTracklistIndexChanged(int index);
+
+    void slotPlaylistItemSelected(int index);
+    void slotMusiclistItemSelected(int index);
+    void slotTracklistItemSelected(int index);
 
     void slotRequestMovePlaylists(QList<int> indexes, int pos, QList<int> &newIndexes);
     void slotRequestMoveMusics(QList<int> indexes, int pos, QList<int> &newIndexes);

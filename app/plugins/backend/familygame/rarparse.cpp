@@ -14,9 +14,8 @@ enum USER_DATA {
     LIST
 };
 
-#define BUF_SIZE 16384
+#define BUF_SIZE 262144
 RARHeaderDataEx HeaderData;
-QByteArray g_data;
 
 void OutError(int Error,char *ArcName,int ErrType)
 {
@@ -79,8 +78,7 @@ int CALLBACK CallbackProc(UINT msg, LPARAM userdata, LPARAM p1, LPARAM p2)
         if(musicInfo)
         {
             QByteArray data((char *)p1, p2);
-            g_data.append((char *)p1, p2);
-            if(g_data.size() == (int)HeaderData.UnpSize)
+            if(data.size() == (int)HeaderData.UnpSize)
             {
                 QString currentFile = HeaderData.FileName;
                 currentFile = currentFile.toLower();
@@ -155,7 +153,6 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
 
     while ((RHCode=RARReadHeaderEx(hArcData,&HeaderData))==0)
     {
-        g_data.clear();
         RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
     }
     RARCloseArchive(hArcData);
