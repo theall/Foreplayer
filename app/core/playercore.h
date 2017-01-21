@@ -24,7 +24,7 @@ public:
 
     TMusicInfo *parse(QString fileName);
 
-    void setTrack(TTrackItem *track);
+    bool playTrack(TTrackItem *track);
 
     void setCallback(TPlayCallback callback);
 

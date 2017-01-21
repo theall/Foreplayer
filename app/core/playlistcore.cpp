@@ -122,20 +122,20 @@ int TPlaylistCore::playingTrackIndex()
     return mTracklistIndex;
 }
 
-void TPlaylistCore::playingIndex(int *mIndex, int *pIndex, int *tIndex)
+void TPlaylistCore::playingIndex(int *pIndex, int *mIndex, int *tIndex)
 {
     if(mIndex==NULL || pIndex==NULL || tIndex==NULL)
         return;
 
-    *mIndex = mPlaylistIndex;
-    *pIndex = mMusiclistIndex;
+    *pIndex = mPlaylistIndex;
+    *mIndex = mMusiclistIndex;
     *tIndex = mTracklistIndex;
 }
 
 void TPlaylistCore::setPlayingIndex(int pIndex, int mIndex, int tIndex)
 {
-    mPlaylistIndex = mIndex;
-    mMusiclistIndex = pIndex;
+    mPlaylistIndex = pIndex;
+    mMusiclistIndex = mIndex;
     mTracklistIndex = tIndex;
 }
 
@@ -147,6 +147,24 @@ void TPlaylistCore::exportAs(int index, QString fileName)
 void TPlaylistCore::exportAll(QString path)
 {
 
+}
+
+TMusicItem *TPlaylistCore::currentMusicItem()
+{
+    TPlaylistItem *playlistItem = currentPlaylistItem();
+    if(!playlistItem)
+        return NULL;
+
+    return playlistItem->musicItem(mMusiclistIndex);
+}
+
+TTrackItem *TPlaylistCore::currentTrackItem()
+{
+    TMusicItem *musicItem = currentMusicItem();
+    if(!musicItem)
+        return NULL;
+
+    return musicItem->trackItem(mTracklistIndex);
 }
 
 TMusicItem *TPlaylistCore::parse(QString file)
@@ -221,14 +239,18 @@ void TPlaylistCore::findPlaylist()
     if(mPlaylistIndex<0 || mPlaylistIndex>=size)
     {
         mPlaylistIndex = 0;
-        mMusiclistIndex = -1;
-        mTracklistIndex = -1;
+        mMusiclistIndex = 0;
+        mTracklistIndex = 0;
     } else {
-        TPlaylistItem *item = mPlaylist[mPlaylistIndex];
-        if(mMusiclistIndex<0 || mMusiclistIndex>=item->size())
+        TPlaylistItem *playlistItem = mPlaylist[mPlaylistIndex];
+        TMusicItem *musicItem = playlistItem->musicItem(mMusiclistIndex);
+        if(!musicItem)
         {
             mMusiclistIndex = 0;
-            mTracklistIndex = -1;
+            mTracklistIndex = 0;
+        } else {
+            if(!musicItem->trackItem(mTracklistIndex))
+                mTracklistIndex = 0;
         }
     }
 }

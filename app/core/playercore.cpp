@@ -19,10 +19,10 @@ TMusicInfo *TPlayerCore::parse(QString fileName)
     return musicInfo;
 }
 
-void TPlayerCore::setTrack(TTrackItem *trackItem)
+bool TPlayerCore::playTrack(TTrackItem *trackItem)
 {
     if(!mPluginManager || !mPlayThread)
-        return;
+        return false;
 
     TTrackInfo trackInfo;
     trackInfo.index = trackItem->index.toInt();
@@ -30,14 +30,19 @@ void TPlayerCore::setTrack(TTrackItem *trackItem)
     trackInfo.musicFileName = trackItem->musicFilePath->toStdString();
 
     mPlayThread->pause();
+
+    bool result = false;
     // Find a backend plugin which can process this track
     TBackendPlugin *plugin = mPluginManager->loadTrack(&trackInfo);
     if(plugin)
     {
         // Connect plugin's callback to front's callback
         mPlayThread->setBackend(plugin);
+        result = true;
     }
     mPlayThread->play();
+
+    return result;
 }
 
 void TPlayerCore::setCallback(TPlayCallback callback)

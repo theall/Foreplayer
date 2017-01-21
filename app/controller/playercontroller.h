@@ -12,9 +12,17 @@ public:
     void joint(TGuiManager *gui, TCore *core);
 
 signals:
+    void requestUpdateModelsPlayingIndex(int pi, int mi, int ti);
 
 public slots:
     void slotRequestPlay(int pIndex, int mIndex, int tIndex);
+
+private slots:
+    void slotPlayButtonClicked();
+    void slotPauseButtonClicked();
+    void slotPrevButtonClicked();
+    void slotNextButtonClicked();
+    void slotStopButtonClicked();
 
 private:
     TPlayerCore *mPlayerCore;

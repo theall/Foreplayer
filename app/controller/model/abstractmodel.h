@@ -16,7 +16,7 @@ public:
 
     int currentIndex();
     virtual void setCurrentIndex(int index);
-
+    virtual void setPlayingIndex(int index);
     virtual void setPlaylistCore(TPlaylistCore *core);
 
     static void setFont(QFont font);
@@ -48,6 +48,7 @@ private:
 
 protected:
     int mCurrentIndex;
+    int mPlayingIndex;
     TPlaylistCore *mPlaylistCore;
 
     // QAbstractItemModel interface

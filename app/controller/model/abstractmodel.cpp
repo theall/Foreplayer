@@ -13,7 +13,8 @@ QVariant TAbstractModel::mDurationColor;
 
 TAbstractModel::TAbstractModel(QObject *parent) :
     QAbstractTableModel(parent),
-    mCurrentIndex(-1)
+    mCurrentIndex(-1),
+    mPlayingIndex(-1)
 {
 }
 
@@ -27,12 +28,13 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
     } else if (role==Qt::FontRole) {
         return TAbstractModel::mFont;
     } else if (role==Qt::TextColorRole) {
-        if(index.row()==mCurrentIndex)
-            return mSelectedTextColor;//mCurrentRowTextColor;
-        else
-            return TAbstractModel::mTextColor;
+        return TAbstractModel::mTextColor;
     } else if (role==Utils::TextHighlight) {
         return TAbstractModel::mSelectedTextColor;
+    } else if (role==Utils::IsPlayingItem) {
+        return index.row()==mPlayingIndex;
+    } else if (role==Utils::IsCurrentRow) {
+        return index.row()==mCurrentIndex;
     } else {
         return QVariant();
     }
@@ -54,7 +56,15 @@ void TAbstractModel::setCurrentIndex(int index)
 
     QVector<int> roles;
     roles.append(Qt::TextColorRole);
+    roles.append(Utils::IsCurrentRow);
     emit dataChanged(QModelIndex(), QModelIndex(), roles);
+}
+
+void TAbstractModel::setPlayingIndex(int index)
+{
+    mPlayingIndex = index;
+
+    emit dataChanged(QModelIndex(), QModelIndex());
 }
 
 void TAbstractModel::setPlaylistCore(TPlaylistCore *core)

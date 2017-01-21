@@ -18,6 +18,7 @@ void TTrackListModel::setMusicItem(TMusicItem *item)
         return;
 
     mCurrentIndex = -1;
+    mPlayingIndex = -1;
     beginResetModel();
     mMusicItem = item;
     endResetModel();

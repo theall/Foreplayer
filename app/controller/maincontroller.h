@@ -17,14 +17,7 @@ protected:
     void run() Q_DECL_OVERRIDE;
 
 private slots:
-    void playClicked()
-    {
-        mPlaying = true;
-    }
-    void pauseClicked()
-    {
-        mPlaying = false;
-    }
+
 private:
     TGuiManager* mManager;
     bool mPlaying;

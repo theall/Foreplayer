@@ -2,7 +2,6 @@
 
 TMusiclistModel::TMusiclistModel(QObject *parent) :
     TAbstractModel(parent)
-  , mPlayingIndex(-1)
   , mPlaylistItem(NULL)
 {
 }

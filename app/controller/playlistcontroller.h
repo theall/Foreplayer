@@ -20,6 +20,7 @@ signals:
     void requestPlay(int pIndex, int mIndex, int tIndex);
 
 private slots:
+    // From gui
     void slotPlaylistIndexChanged(int index);
     void slotMusiclistIndexChanged(int index);
     void slotTracklistIndexChanged(int index);
@@ -45,6 +46,9 @@ private slots:
     void slotRequestRemoveRedundant();
     void slotRequestRemoveErrors();
     void slotRequestRemoveAll();
+
+    // From controller
+    void slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti);
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

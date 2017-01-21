@@ -30,6 +30,8 @@ public:
 
     void setContextMenu(QMenu *menu);
 
+    void setButtonPlayChecked(bool checked);
+
     const TScrollLabel *informationLable() const
     {
         return mMusicTitle;
@@ -44,11 +46,14 @@ public:
     }
 
 signals:
+    // For controller
     void playClicked();
     void pauseClicked();
     void prevClicked();
     void nextClicked();
     void stopClicked();
+
+    // For gui control
     void exitClicked();
     void miniModeClicked();
     void equalizerButtonToggle(bool);

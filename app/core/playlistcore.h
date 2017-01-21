@@ -38,7 +38,7 @@ public:
     int playingPlaylistIndex();
     int playingMusicIndex();
     int playingTrackIndex();
-    void playingIndex(int *mIndex, int *pIndex, int *tIndex);
+    void playingIndex(int *pIndex, int *mIndex, int *tIndex);
     void setPlayingIndex(int pIndex, int mIndex, int tIndex);
 
     void exportAs(int index, QString fileName);
@@ -47,6 +47,7 @@ public:
     /**
      * Music list functions.
      */
+    TMusicItem *currentMusicItem();
     void insertMusic(QStringList fileNames, int playlistIndex=-1, int index=-1);
     void insertMusic(int playlistIndex, int newIndex, intn oldIndex);
     void removeMusic(int playlistIndex, intn index);
@@ -58,6 +59,7 @@ public:
     /**
      * Track list functions.
      */
+    TTrackItem *currentTrackItem();
     TTrackItems trackList(int mlIndex = -1);
     void reload(int mlIndex=-1);
 

@@ -37,6 +37,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
     painter->save();
     QRect rect = option.rect;
     bool isPlayingItem = index.data(Utils::IsPlayingItem).toBool();
+    bool isCurrentRow = index.data(Utils::IsCurrentRow).toBool();
 
     if(option.state & QStyle::State_Selected)
     {
@@ -45,22 +46,25 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
         painter->drawPixmap(option.rect, *TTableViewDelegate::mSelectedPixmap);
 
         // Draw border
-        painter->setPen(Qt::white);
-        if(columnCount>1)
+        if(true)
         {
-
-            rect = option.rect;
-            painter->drawLine(rect.left(), rect.top(), rect.right(), rect.top());
-            painter->drawLine(rect.left(), rect.bottom(), rect.right(), rect.bottom());
-
-            if(columnIndex==0)
+            painter->setPen(Qt::white);
+            if(columnCount>1)
             {
-                painter->drawLine(rect.left(), rect.top(), rect.left(), rect.bottom());
-            } else if(columnIndex==2) {
-                painter->drawLine(rect.right(), rect.top(), rect.right(), rect.bottom());
+
+                rect = option.rect;
+                painter->drawLine(rect.left(), rect.top(), rect.right(), rect.top());
+                painter->drawLine(rect.left(), rect.bottom(), rect.right(), rect.bottom());
+
+                if(columnIndex==0)
+                {
+                    painter->drawLine(rect.left(), rect.top(), rect.left(), rect.bottom());
+                } else if(columnIndex==2) {
+                    painter->drawLine(rect.right(), rect.top(), rect.right(), rect.bottom());
+                }
+            } else {
+                painter->drawRect(rect);
             }
-        } else {
-            painter->drawRect(rect);
         }
     } else {
         painter->fillRect(rect, index.data(Qt::BackgroundColorRole).value<QBrush>());
@@ -68,15 +72,20 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
 
     // Set pen color
     QColor textColor;
-    if(option.state&QStyle::State_Selected || isPlayingItem)
+    if(option.state&QStyle::State_Selected)
         textColor = index.data(Utils::TextHighlight).value<QColor>();
     else
-        textColor = index.data(Qt::TextColorRole).value<QColor>();
+    {
+        if(isCurrentRow || isPlayingItem)
+            textColor = index.data(Utils::TextHighlight).value<QColor>();
+        else
+            textColor = index.data(Qt::TextColorRole).value<QColor>();
+    }
 
     painter->setPen(textColor);
 
     // Draw triangle icon
-    if(columnCount>1 && columnIndex==0 && isPlayingItem)
+    if(isPlayingItem && columnCount>1 && columnIndex==0)
     {
         QRect tRect = option.rect;
         tRect.adjust(2, 1, -1, -1);
@@ -104,7 +113,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
     QTextOption textOption;
     textOption.setWrapMode(QTextOption::NoWrap);
     textOption.setAlignment(alignment);
-    rect.adjust(3, 0, -4, 0);
+    rect.adjust(2, 0, -4, 0);
     painter->setFont(model->data(index, Qt::FontRole).value<QFont>());
     painter->drawText(rect, text, textOption);
 

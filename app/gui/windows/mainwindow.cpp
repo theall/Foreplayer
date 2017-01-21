@@ -147,6 +147,15 @@ void TMainWindow::setContextMenu(QMenu *menu)
     mContextMenu = menu;
 }
 
+void TMainWindow::setButtonPlayChecked(bool checked)
+{
+    if(mBtnPlay && mBtnPause)
+    {
+        mBtnPlay->setVisible(checked);
+        mBtnPause->setVisible(!checked);
+    }
+}
+
 void TMainWindow::retranslateUi()
 {
     mBtnPause->setToolTip(tr("Pause(%1)").arg(mBtnPause->shortcut().toString()));
@@ -173,8 +182,6 @@ void TMainWindow::retranslateUi()
 
 void TMainWindow::on_btnPlay_clicked()
 {
-    mBtnPlay->setVisible(false);
-    mBtnPause->setVisible(true);
     if(mTitleTimerId==-1)
         mTitleTimerId = startTimer(c_title_interval);
 

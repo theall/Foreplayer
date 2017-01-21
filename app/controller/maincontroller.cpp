@@ -17,9 +17,6 @@ void TThread::run()
     int maxValue = visualWidget->maxValue();
     samples.resize(sampleSize);
 
-    connect(mainWindow, SIGNAL(playClicked()), this, SLOT(playClicked()));
-    connect(mainWindow, SIGNAL(pauseClicked()), this, SLOT(pauseClicked()));
-
     while(1)
     {
         if(mPlaying)
@@ -45,7 +42,14 @@ TMainController::TMainController(QObject *parent) :
     mPlayerController(new TPlayerController(this)),
     mPlaylistController(new TPlaylistController(this))
 {
-    connect(mPlaylistController, SIGNAL(requestPlay(int,int,int)), mPlayerController, SLOT(slotRequestPlay(int,int,int)));
+    connect(mPlaylistController,
+            SIGNAL(requestPlay(int,int,int)),
+            mPlayerController,
+            SLOT(slotRequestPlay(int,int,int)));
+    connect(mPlayerController,
+            SIGNAL(requestUpdateModelsPlayingIndex(int,int,int)),
+            mPlaylistController,
+            SLOT(slotRequestUpdateModelsPlayingIndex(int,int,int)));
 }
 
 TMainController::~TMainController()

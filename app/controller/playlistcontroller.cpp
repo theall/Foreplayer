@@ -94,10 +94,17 @@ void TPlaylistController::slotPlaylistIndexChanged(int index)
     TPlaylistItem *item = mPlaylistCore->playlistItem(index);
     mMusiclistModel->setPlayListItem(item);
 
+    // Check if is playing index as the playing index in models will reset after every set item
+    if(index == mPlaylistCore->playingPlaylistIndex())
+    {
+        mMusiclistModel->setPlayingIndex(mPlaylistCore->playingMusicIndex());
+    }
+
+    // Change track list model while playlist index changed
     int musicIndex = 0;
     if(index == mPlaylistCore->playingPlaylistIndex())
     {
-        // Is not current playing playlist
+        // Is current playing playlist
         musicIndex = mPlaylistCore->playingMusicIndex();
     }
     mMusiclistModel->setCurrentIndex(musicIndex);
@@ -109,9 +116,16 @@ void TPlaylistController::slotMusiclistIndexChanged(int index)
     if(!mPlaylistCore || !mTracklistModel)
         return;
 
-    TPlaylistItem *item = mPlaylistCore->playlistItem(mPlaylistModel->currentIndex());
-    if(item)
-        mTracklistModel->setMusicItem(item->musicItem(index));
+    TPlaylistItem *playlistItem = mPlaylistCore->playlistItem(mPlaylistModel->currentIndex());
+    if(playlistItem)
+    {
+        TMusicItem *musicItem = playlistItem->musicItem(index);
+        mTracklistModel->setMusicItem(musicItem);
+
+        // Check if this music item is playing
+        if(mPlaylistCore->currentMusicItem()==musicItem)
+            mTracklistModel->setPlayingIndex(mPlaylistCore->playingTrackIndex());
+    }
 }
 
 void TPlaylistController::slotTracklistIndexChanged(int index)
@@ -257,6 +271,18 @@ void TPlaylistController::slotRequestRemoveAll()
 
     mTracklistModel->setMusicItem(NULL);
     mMusiclistModel->removeAll();
+}
+
+void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti)
+{
+    if(mPlaylistModel)
+        mPlaylistModel->setPlayingIndex(pi);
+
+    if(mMusiclistModel)
+        mMusiclistModel->setPlayingIndex(mi);
+
+    if(mTracklistModel)
+        mTracklistModel->setPlayingIndex(ti);
 }
 
 void TPlaylistController::slotTimerEvent()
