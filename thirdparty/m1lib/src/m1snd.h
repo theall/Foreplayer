@@ -36,164 +36,164 @@ extern "C" {
 
 /***************************************************************************
 
-	Useful macros to deal with bit shuffling encryptions
+    Useful macros to deal with bit shuffling encryptions
 
 ***************************************************************************/
 
 #define BITSWAP8(val,B7,B6,B5,B4,B3,B2,B1,B0) \
-		(((((val) >> (B7)) & 1) << 7) | \
-		 ((((val) >> (B6)) & 1) << 6) | \
-		 ((((val) >> (B5)) & 1) << 5) | \
-		 ((((val) >> (B4)) & 1) << 4) | \
-		 ((((val) >> (B3)) & 1) << 3) | \
-		 ((((val) >> (B2)) & 1) << 2) | \
-		 ((((val) >> (B1)) & 1) << 1) | \
-		 ((((val) >> (B0)) & 1) << 0))
+        (((((val) >> (B7)) & 1) << 7) | \
+         ((((val) >> (B6)) & 1) << 6) | \
+         ((((val) >> (B5)) & 1) << 5) | \
+         ((((val) >> (B4)) & 1) << 4) | \
+         ((((val) >> (B3)) & 1) << 3) | \
+         ((((val) >> (B2)) & 1) << 2) | \
+         ((((val) >> (B1)) & 1) << 1) | \
+         ((((val) >> (B0)) & 1) << 0))
 
 #define BITSWAP16(val,B15,B14,B13,B12,B11,B10,B9,B8,B7,B6,B5,B4,B3,B2,B1,B0) \
-		(((((val) >> (B15)) & 1) << 15) | \
-		 ((((val) >> (B14)) & 1) << 14) | \
-		 ((((val) >> (B13)) & 1) << 13) | \
-		 ((((val) >> (B12)) & 1) << 12) | \
-		 ((((val) >> (B11)) & 1) << 11) | \
-		 ((((val) >> (B10)) & 1) << 10) | \
-		 ((((val) >> ( B9)) & 1) <<  9) | \
-		 ((((val) >> ( B8)) & 1) <<  8) | \
-		 ((((val) >> ( B7)) & 1) <<  7) | \
-		 ((((val) >> ( B6)) & 1) <<  6) | \
-		 ((((val) >> ( B5)) & 1) <<  5) | \
-		 ((((val) >> ( B4)) & 1) <<  4) | \
-		 ((((val) >> ( B3)) & 1) <<  3) | \
-		 ((((val) >> ( B2)) & 1) <<  2) | \
-		 ((((val) >> ( B1)) & 1) <<  1) | \
-		 ((((val) >> ( B0)) & 1) <<  0))
+        (((((val) >> (B15)) & 1) << 15) | \
+         ((((val) >> (B14)) & 1) << 14) | \
+         ((((val) >> (B13)) & 1) << 13) | \
+         ((((val) >> (B12)) & 1) << 12) | \
+         ((((val) >> (B11)) & 1) << 11) | \
+         ((((val) >> (B10)) & 1) << 10) | \
+         ((((val) >> ( B9)) & 1) <<  9) | \
+         ((((val) >> ( B8)) & 1) <<  8) | \
+         ((((val) >> ( B7)) & 1) <<  7) | \
+         ((((val) >> ( B6)) & 1) <<  6) | \
+         ((((val) >> ( B5)) & 1) <<  5) | \
+         ((((val) >> ( B4)) & 1) <<  4) | \
+         ((((val) >> ( B3)) & 1) <<  3) | \
+         ((((val) >> ( B2)) & 1) <<  2) | \
+         ((((val) >> ( B1)) & 1) <<  1) | \
+         ((((val) >> ( B0)) & 1) <<  0))
 
 #define BITSWAP24(val,B23,B22,B21,B20,B19,B18,B17,B16,B15,B14,B13,B12,B11,B10,B9,B8,B7,B6,B5,B4,B3,B2,B1,B0) \
-		(((((val) >> (B23)) & 1) << 23) | \
-		 ((((val) >> (B22)) & 1) << 22) | \
-		 ((((val) >> (B21)) & 1) << 21) | \
-		 ((((val) >> (B20)) & 1) << 20) | \
-		 ((((val) >> (B19)) & 1) << 19) | \
-		 ((((val) >> (B18)) & 1) << 18) | \
-		 ((((val) >> (B17)) & 1) << 17) | \
-		 ((((val) >> (B16)) & 1) << 16) | \
-		 ((((val) >> (B15)) & 1) << 15) | \
-		 ((((val) >> (B14)) & 1) << 14) | \
-		 ((((val) >> (B13)) & 1) << 13) | \
-		 ((((val) >> (B12)) & 1) << 12) | \
-		 ((((val) >> (B11)) & 1) << 11) | \
-		 ((((val) >> (B10)) & 1) << 10) | \
-		 ((((val) >> ( B9)) & 1) <<  9) | \
-		 ((((val) >> ( B8)) & 1) <<  8) | \
-		 ((((val) >> ( B7)) & 1) <<  7) | \
-		 ((((val) >> ( B6)) & 1) <<  6) | \
-		 ((((val) >> ( B5)) & 1) <<  5) | \
-		 ((((val) >> ( B4)) & 1) <<  4) | \
-		 ((((val) >> ( B3)) & 1) <<  3) | \
-		 ((((val) >> ( B2)) & 1) <<  2) | \
-		 ((((val) >> ( B1)) & 1) <<  1) | \
-		 ((((val) >> ( B0)) & 1) <<  0))
+        (((((val) >> (B23)) & 1) << 23) | \
+         ((((val) >> (B22)) & 1) << 22) | \
+         ((((val) >> (B21)) & 1) << 21) | \
+         ((((val) >> (B20)) & 1) << 20) | \
+         ((((val) >> (B19)) & 1) << 19) | \
+         ((((val) >> (B18)) & 1) << 18) | \
+         ((((val) >> (B17)) & 1) << 17) | \
+         ((((val) >> (B16)) & 1) << 16) | \
+         ((((val) >> (B15)) & 1) << 15) | \
+         ((((val) >> (B14)) & 1) << 14) | \
+         ((((val) >> (B13)) & 1) << 13) | \
+         ((((val) >> (B12)) & 1) << 12) | \
+         ((((val) >> (B11)) & 1) << 11) | \
+         ((((val) >> (B10)) & 1) << 10) | \
+         ((((val) >> ( B9)) & 1) <<  9) | \
+         ((((val) >> ( B8)) & 1) <<  8) | \
+         ((((val) >> ( B7)) & 1) <<  7) | \
+         ((((val) >> ( B6)) & 1) <<  6) | \
+         ((((val) >> ( B5)) & 1) <<  5) | \
+         ((((val) >> ( B4)) & 1) <<  4) | \
+         ((((val) >> ( B3)) & 1) <<  3) | \
+         ((((val) >> ( B2)) & 1) <<  2) | \
+         ((((val) >> ( B1)) & 1) <<  1) | \
+         ((((val) >> ( B0)) & 1) <<  0))
 
 extern int (STDCALL *m1ui_message)(void *instance, int message, char *txt, int iparm);
 extern void *m1ui_this;
 
 typedef struct m168k_t
 {
-	unsigned int (*read8)(unsigned int address);
-	unsigned int (*read16)(unsigned int address);
-	unsigned int (*read32)(unsigned int address);
-	void (*write8)(unsigned int address, unsigned int data);
-	void (*write16)(unsigned int address, unsigned int data);
-	void (*write32)(unsigned int address, unsigned int data);
+    unsigned int (*read8)(unsigned int address);
+    unsigned int (*read16)(unsigned int address);
+    unsigned int (*read32)(unsigned int address);
+    void (*write8)(unsigned int address, unsigned int data);
+    void (*write16)(unsigned int address, unsigned int data);
+    void (*write32)(unsigned int address, unsigned int data);
 } M168KT;
 
 typedef struct m132031_t
 {
-	unsigned int (*read32)(unsigned int address);
-	void (*write32)(unsigned int address, unsigned int data);
+    unsigned int (*read32)(unsigned int address);
+    void (*write32)(unsigned int address, unsigned int data);
 } M132031T;
 
 typedef struct m16800_t
 {
-	unsigned int (*read)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
-	unsigned int (*readport)(unsigned int address);
-	void (*writeport)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*readport)(unsigned int address);
+    void (*writeport)(unsigned int address, unsigned int data);
 } M16800T;
 
 typedef struct m16809_t
 {
-	unsigned int (*read)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
 } M16809T;
 
 typedef struct m16502_t
 {
-	unsigned int (*read)(unsigned int address);
-	unsigned int (*readop)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    unsigned int (*readop)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
 } M16502T;
 
 typedef struct m16280_t
 {
-	unsigned int (*read)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
-	void (*writeport)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
+    void (*writeport)(unsigned int address, unsigned int data);
 } M16280T;
 
 typedef struct m18039_t
 {
-	unsigned int (*readmem)(unsigned int address);
-	void (*writemem)(unsigned int address, unsigned int data);
-	unsigned int (*readport)(unsigned int address);
-	void (*writeport)(unsigned int address, unsigned int data);
+    unsigned int (*readmem)(unsigned int address);
+    void (*writemem)(unsigned int address, unsigned int data);
+    unsigned int (*readport)(unsigned int address);
+    void (*writeport)(unsigned int address, unsigned int data);
 } M18039T;
 
 typedef struct m1nec_t
 {
-	unsigned int (*read)(unsigned int address);
-	unsigned int (*readop)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
-	unsigned int (*readport)(unsigned int address);
-	void (*writeport)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    unsigned int (*readop)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*readport)(unsigned int address);
+    void (*writeport)(unsigned int address, unsigned int data);
 } M1NECT;
 
 typedef struct m1adsp_t
 {
-	unsigned int (*read8)(unsigned int address);
-	unsigned int (*read16)(unsigned int address);
-	unsigned int (*read32)(unsigned int address);
-	void (*write8)(unsigned int address, unsigned int data);
-	void (*write16)(unsigned int address, unsigned int data);
-	void (*write32)(unsigned int address, unsigned int data);
-	unsigned char *op_rom;	// opcode rom
+    unsigned int (*read8)(unsigned int address);
+    unsigned int (*read16)(unsigned int address);
+    unsigned int (*read32)(unsigned int address);
+    void (*write8)(unsigned int address, unsigned int data);
+    void (*write16)(unsigned int address, unsigned int data);
+    void (*write32)(unsigned int address, unsigned int data);
+    unsigned char *op_rom;	// opcode rom
 } M1ADSPT;
 
 typedef struct m1z80_t
 {
-	unsigned int (*read)(unsigned int address);
-	unsigned int (*readop)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
-	unsigned int (*readport)(unsigned int address);
-	void (*writeport)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    unsigned int (*readop)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*readport)(unsigned int address);
+    void (*writeport)(unsigned int address, unsigned int data);
 } M1Z80T;
 
 typedef struct m137710_t
 {
-	unsigned int (*read)(unsigned int address);
-	void (*write)(unsigned int address, unsigned int data);
-	unsigned int (*read16)(unsigned int address);
-	void (*write16)(unsigned int address, unsigned int data);
+    unsigned int (*read)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*read16)(unsigned int address);
+    void (*write16)(unsigned int address, unsigned int data);
 } M137710T;
 
 typedef struct m1h83k2_t
 {
-	unsigned int (*read8)(unsigned int address);
-	unsigned int (*read16)(unsigned int address);
-	void (*write8)(unsigned int address, unsigned int data);
-	void (*write16)(unsigned int address, unsigned int data);
-	unsigned int (*ioread8)(unsigned int address);
-	void (*iowrite8)(unsigned int address, unsigned int data);
+    unsigned int (*read8)(unsigned int address);
+    unsigned int (*read16)(unsigned int address);
+    void (*write8)(unsigned int address, unsigned int data);
+    void (*write16)(unsigned int address, unsigned int data);
+    unsigned int (*ioread8)(unsigned int address);
+    void (*iowrite8)(unsigned int address, unsigned int data);
 } M1H83K2T;
 
 // globals from m1snd.cpp that are deprecated
@@ -203,169 +203,169 @@ extern int curgame;
 extern unsigned int cmd1;
 
 // no-endian longword read/write helpers
-static unsigned long inline mem_readlong_noswap(unsigned int *addr)
+inline static unsigned long mem_readlong_noswap(unsigned int *addr)
 {
-	unsigned long retval;
+    unsigned long retval;
 
-	retval = *addr;
+    retval = *addr;
 
-	return retval;
+    return retval;
 }
 
-static void inline mem_writelong_noswap(unsigned int *addr, unsigned int value)
+inline static void mem_writelong_noswap(unsigned int *addr, unsigned int value)
 {
-	*addr = value;
+    *addr = value;
 }
 
 // INLINE FUNCTIONS TO SWAP ENDIAN
 
 #if LSB_FIRST
-static unsigned short inline mem_readword_swap(unsigned short *addr)
+inline static unsigned short mem_readword_swap(unsigned short *addr)
 {
-	return ((*addr&0x00ff)<<8)|((*addr&0xff00)>>8);
+    return ((*addr&0x00ff)<<8)|((*addr&0xff00)>>8);
 }
 
-static unsigned short inline mem_readword_swap_le(unsigned short *addr)
+inline static unsigned short mem_readword_swap_le(unsigned short *addr)
 {
-	return *addr;
+    return *addr;
 }
 
-static unsigned int inline mem_readlong_swap_le(unsigned int *addr)
+inline static unsigned int mem_readlong_swap_le(unsigned int *addr)
 {
-	unsigned int retval;
+    unsigned int retval;
 
-	retval = *addr;
+    retval = *addr;
 
-	return retval;
+    return retval;
 }
 
-static unsigned int inline mem_readlong_swap(unsigned int *addr)
+inline static unsigned int mem_readlong_swap(unsigned int *addr)
 {
-	unsigned int res = (((*addr&0xff000000)>>24) |
-		 ((*addr&0x00ff0000)>>8) |
-		 ((*addr&0x0000ff00)<<8) |
-		 ((*addr&0x000000ff)<<24));
+    unsigned int res = (((*addr&0xff000000)>>24) |
+         ((*addr&0x00ff0000)>>8) |
+         ((*addr&0x0000ff00)<<8) |
+         ((*addr&0x000000ff)<<24));
 
-	return res;
+    return res;
 }
 
-static void inline mem_writelong_swap(unsigned int *addr, unsigned int value)
+inline static void mem_writelong_swap(unsigned int *addr, unsigned int value)
 {
-	*addr = (((value&0xff000000)>>24) |
-		 ((value&0x00ff0000)>>8)  |
-		 ((value&0x0000ff00)<<8)  |
-		 ((value&0x000000ff)<<24));
+    *addr = (((value&0xff000000)>>24) |
+         ((value&0x00ff0000)>>8)  |
+         ((value&0x0000ff00)<<8)  |
+         ((value&0x000000ff)<<24));
 }
 
-static void inline mem_writeword_swap(unsigned short *addr, unsigned short value)
+inline static void mem_writeword_swap(unsigned short *addr, unsigned short value)
 {
-	*addr = ((value&0x00ff)<<8)|((value&0xff00)>>8);
+    *addr = ((value&0x00ff)<<8)|((value&0xff00)>>8);
 }
 
-static void inline mem_writeword_swap_le(unsigned short *addr, unsigned short value)
+inline static void mem_writeword_swap_le(unsigned short *addr, unsigned short value)
 {
-	*addr = value;
+    *addr = value;
 }
 
-static void inline mem_writelong_swap_le(unsigned int *addr, unsigned int value)
+inline static void mem_writelong_swap_le(unsigned int *addr, unsigned int value)
 {
-	*addr = value;
+    *addr = value;
 }
 #else	// big endian
-static unsigned short inline mem_readword_swap_le(unsigned short *addr)
+inline static unsigned short mem_readword_swap_le(unsigned short *addr)
 {
-	return ((*addr&0x00ff)<<8)|((*addr&0xff00)>>8);
+    return ((*addr&0x00ff)<<8)|((*addr&0xff00)>>8);
 }
 
-static unsigned short inline mem_readword_swap(unsigned short *addr)
+inline static unsigned short mem_readword_swap(unsigned short *addr)
 {
-	unsigned long retval;
+    unsigned long retval;
 
-	retval = *addr;
+    retval = *addr;
 
-	return retval;
+    return retval;
 }
 
-static unsigned int inline mem_readlong_swap(unsigned int *addr)
+inline static unsigned int mem_readlong_swap(unsigned int *addr)
 {
-	unsigned int retval;
+    unsigned int retval;
 
-	retval = *addr;
+    retval = *addr;
 
-	return retval;
+    return retval;
 }
 
-static void inline mem_writelong_swap(unsigned int *addr, unsigned int value)
+inline static void mem_writelong_swap(unsigned int *addr, unsigned int value)
 {
-	*addr = value;
+    *addr = value;
 }
 
-static void inline mem_writeword_swap(unsigned short *addr, unsigned short value)
+inline static void mem_writeword_swap(unsigned short *addr, unsigned short value)
 {
-	*addr = value;
+    *addr = value;
 }
 
-static void inline mem_writeword_swap_le(unsigned short *addr, unsigned short value)
+inline static void mem_writeword_swap_le(unsigned short *addr, unsigned short value)
 {
-	*addr = ((value&0x00ff)<<8)|((value&0xff00)>>8);
+    *addr = ((value&0x00ff)<<8)|((value&0xff00)>>8);
 }
 
-static unsigned int inline mem_readlong_swap_le(unsigned int *addr)
+inline static unsigned int mem_readlong_swap_le(unsigned int *addr)
 {
-	unsigned int res = (((*addr&0xff000000)>>24) |
-		 ((*addr&0x00ff0000)>>8) |
-		 ((*addr&0x0000ff00)<<8) |
-		 ((*addr&0x000000ff)<<24));
+    unsigned int res = (((*addr&0xff000000)>>24) |
+         ((*addr&0x00ff0000)>>8) |
+         ((*addr&0x0000ff00)<<8) |
+         ((*addr&0x000000ff)<<24));
 
-	return res;
+    return res;
 }
 
-static void inline mem_writelong_swap_le(unsigned int *addr, unsigned int value)
+inline static void mem_writelong_swap_le(unsigned int *addr, unsigned int value)
 {
-	*addr = (((value&0xff000000)>>24) |
-		((value&0x00ff0000)>>8) |
-		((value&0x0000ff00)<<8) |
-		((value&0x000000ff)<<24));
+    *addr = (((value&0xff000000)>>24) |
+        ((value&0x00ff0000)>>8) |
+        ((value&0x0000ff00)<<8) |
+        ((value&0x000000ff)<<24));
 
 }
 #endif
 
-static unsigned short inline mem_readword(unsigned short *addr)
+inline static unsigned short mem_readword(unsigned short *addr)
 {
-	unsigned short retval;
+    unsigned short retval;
 
-	retval = *addr;
+    retval = *addr;
 
-	return retval;
+    return retval;
 }
 
-static unsigned int inline mem_readlong(unsigned int *addr)
+inline static unsigned int mem_readlong(unsigned int *addr)
 {
-	unsigned int retval;
+    unsigned int retval;
 
-	retval = *addr;
+    retval = *addr;
 
-	return retval;
+    return retval;
 }
 
-static void inline mem_writelong(unsigned int *addr, unsigned int value)
+inline static void mem_writelong(unsigned int *addr, unsigned int value)
 {
-	*addr = value;
+    *addr = value;
 }
 
-static void inline mem_writeword(unsigned short *addr, unsigned short value)
+inline static void mem_writeword(unsigned short *addr, unsigned short value)
 {
-	*addr = value;
+    *addr = value;
 }
 
-static unsigned int inline mem_readlong_swap_always(unsigned int *addr)
+inline static unsigned int mem_readlong_swap_always(unsigned int *addr)
 {
-	unsigned int res = (((*addr&0xff000000)>>24) |
-		 ((*addr&0x00ff0000)>>8) |
-		 ((*addr&0x0000ff00)<<8) |
-		 ((*addr&0x000000ff)<<24));
+    unsigned int res = (((*addr&0xff000000)>>24) |
+         ((*addr&0x00ff0000)>>8) |
+         ((*addr&0x0000ff00)<<8) |
+         ((*addr&0x000000ff)<<24));
 
-	return res;
+    return res;
 }
 
 // z80 trick interrupt constants
@@ -380,19 +380,19 @@ static unsigned int inline mem_readlong_swap_always(unsigned int *addr)
 
 // some mame utility macros
 #if LSB_FIRST
-	#define BYTE_XOR_BE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
-	#define BYTE_XOR_LE(a)  	(a)
-	#define BYTE4_XOR_BE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
-	#define BYTE4_XOR_LE(a) 	(a)
-	#define WORD_XOR_BE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
-	#define WORD_XOR_LE(a)  	(a)
+    #define BYTE_XOR_BE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
+    #define BYTE_XOR_LE(a)  	(a)
+    #define BYTE4_XOR_BE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
+    #define BYTE4_XOR_LE(a) 	(a)
+    #define WORD_XOR_BE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
+    #define WORD_XOR_LE(a)  	(a)
 #else
-	#define BYTE_XOR_BE(a)  	(a)
-	#define BYTE_XOR_LE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
-	#define BYTE4_XOR_BE(a) 	(a)
-	#define BYTE4_XOR_LE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
-	#define WORD_XOR_BE(a)  	(a)
-	#define WORD_XOR_LE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
+    #define BYTE_XOR_BE(a)  	(a)
+    #define BYTE_XOR_LE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
+    #define BYTE4_XOR_BE(a) 	(a)
+    #define BYTE4_XOR_LE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
+    #define WORD_XOR_BE(a)  	(a)
+    #define WORD_XOR_LE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
 #endif
 
 // utility function protos

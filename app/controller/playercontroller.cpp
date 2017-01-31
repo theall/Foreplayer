@@ -2,8 +2,14 @@
 
 TPlayerController::TPlayerController(QObject *parent) :
     TAbstractController(parent)
+  , mCurrentItem(NULL)
+  , mSpectrum(new TSpectrumAnalyser(this))
 {
 
+}
+
+TPlayerController::~TPlayerController()
+{
 }
 
 void TPlayerController::joint(TGuiManager *gui, TCore *core)
@@ -28,22 +34,25 @@ void TPlayerController::joint(TGuiManager *gui, TCore *core)
     connect(mMainWindow, SIGNAL(nextClicked()), this, SLOT(slotNextButtonClicked()));
     connect(mMainWindow, SIGNAL(stopClicked()), this, SLOT(slotStopButtonClicked()));
 
-    QStringList titles;
-    titles.append("13: 岁月无声 beyond IV (from 1983-2003) contributed");
-    titles.append("标题: 岁月无声 beyond IV");
-    titles.append("艺术家: beyond beyond IV");
-    titles.append("专辑: beyond IV (from 1983-2003) contributed to beyond.Spirit of wong.");
-    titles.append("格式: MP3 44KHZ 320K");
+    qRegisterMetaType<TFrequencySpectrum>("TFrequencySpectrum");
+    qRegisterMetaType<WindowFunction>("WindowFunction");
 
-    mMainWindow->setCaption("fulkfour is coming!");
-    mMainWindow->setTitles(titles);
-    mMainWindow->setTime(99, 354);
+    connect(mSpectrum,
+            SIGNAL(spectrumChanged(TFrequencySpectrum)),
+            this,
+            SLOT(slotSpectrumChanged(TFrequencySpectrum)));
 }
 
 void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 {
-    if(!mPlaylistCore || !mPlayerCore)
+    if(!mPlaylistCore || !mPlayerCore || !mMainWindow)
         return;
+
+    mCurrentItem = NULL;
+
+    int newPL = -1;
+    int newML = -1;
+    int newTL = -1;
 
     TPlaylistItem *playlistItem = mPlaylistCore->playlistItem(pIndex);
     if(playlistItem)
@@ -55,17 +64,22 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
             bool playing = trackItem && mPlayerCore->playTrack(trackItem);
             if(playing)
             {
-                // Set playing index to playlist core
-                mPlaylistCore->setPlayingIndex(pIndex, mIndex, tIndex);
-
-                // Set playing index to models
-                emit requestUpdateModelsPlayingIndex(pIndex, mIndex, tIndex);
+                newPL = pIndex;
+                newML = mIndex;
+                newTL = tIndex;
+                mCurrentItem = trackItem;
+            } else {
+                mPlaylistCore->playingIndex(&newPL, &newML, &newTL);
             }
-            mMainWindow->setButtonPlayChecked(!playing);
         }
-    } else {
-        emit requestUpdateModelsPlayingIndex(-1, -1, -1);
     }
+
+    // Set playing index to playlist core
+    mPlaylistCore->setPlayingIndex(newPL, newML, newTL);
+    // Set playing index to models
+    emit requestUpdateModelsPlayingIndex(newPL, newML, newTL);
+
+    updateWindowTitles();
 }
 
 void TPlayerController::slotPlayButtonClicked()
@@ -86,7 +100,9 @@ void TPlayerController::slotPauseButtonClicked()
         return;
 
     mPlayerCore->pause();
+    stopTimer();
     mMainWindow->setButtonPlayChecked(true);
+    mMainWindow->setPlayState(tr("Paused"));
 }
 
 void TPlayerController::slotPrevButtonClicked()
@@ -150,6 +166,63 @@ void TPlayerController::slotStopButtonClicked()
         return;
 }
 
+void TPlayerController::slotSpectrumChanged(const TFrequencySpectrum &spectrum)
+{
+
+}
+
+void TPlayerController::updateWindowTitles()
+{
+    if(mCurrentItem)
+    {
+        QStringList titles;
+        titles.append(mCurrentItem->displayName);
+        titles.append(mCurrentItem->additionalInfo.split("\n"));
+        mMainWindow->setCaption(mCurrentItem->displayName);
+        mMainWindow->setTitles(titles);
+        mMainWindow->setPlayState(tr("Playing"));
+        mMainWindow->setButtonPlayChecked(false);
+        startTimer();
+    } else {
+        stopTimer();
+        mMainWindow->setPlayState(tr("Stoped"));
+        mMainWindow->setButtonPlayChecked(true);
+    }
+}
+
 void TPlayerController::slotTimerEvent()
 {
+    if(!mPlayerCore || !mMainWindow)
+        return;
+
+    if(mCurrentItem)
+    {
+        int playedTime = mPlayerCore->playedTime();
+        mMainWindow->setProgess(playedTime, mCurrentItem->duration);
+        if(mCurrentItem->duration+500 <= playedTime)
+        {
+            slotNextButtonClicked();
+        }
+
+        // Update spectrum bar
+        int size = 0;
+        short *samples = NULL;
+        mPlayerCore->currentSamples(&size, &samples);
+        if(size > 0) {
+            QByteArray buffer;
+            short *pSample = samples;
+            for(int i=0;i<size;i++)
+            {
+                short sample = ~*pSample;
+                buffer.append((char)((sample&0xff00)>>16));
+                buffer.append((char)sample&0xff);
+                //buffer.append((char*)&sample, 2);
+                pSample++;
+            }
+            //mSpectrum->calculate(buffer);
+            mMainWindow->visualWidget()->setValue(buffer);
+        }
+    } else {
+        mMainWindow->setProgess(0, 0);
+    }
 }

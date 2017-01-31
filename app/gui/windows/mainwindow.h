@@ -17,7 +17,7 @@ public:
     TMainWindow(QWidget *parent = 0);
     ~TMainWindow();
 
-    void setTime(int time, int total);
+    void setProgess(int time, int total);
     void setTitles(QStringList titles);
     void setCaption(QString title);
     void setPlayState(QString state);
@@ -105,6 +105,9 @@ private:
     QMenu *mContextMenu;
     QString mPlayState;
     QString mPlayEffect;
+
+    void updatePlayStatus();
+    void updatePlayEffect();
 
 protected:
     void retranslateUi() Q_DECL_OVERRIDE;

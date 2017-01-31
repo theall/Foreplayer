@@ -9,7 +9,7 @@ TThread::TThread(TGuiManager *manager):
 
 void TThread::run()
 {
-    QVector<int> samples;
+    QVector<byte> samples;
 
     TMainWindow *mainWindow = mManager->mainWindow();
     TVisualWidget *visualWidget = mainWindow->visualWidget();

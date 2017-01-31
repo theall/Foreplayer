@@ -18,7 +18,10 @@ public:
     void play();
     void needToTerminate();
 
+    int playedTime();
+
     void setBackend(TBackendPlugin *plugin);
+    void currentSamples(int *size, short **samples);
 
     // QThread interface
 protected:
@@ -28,6 +31,7 @@ private slots:
 
 private:
     bool mNeedTerminate;
+    int mCurrentMicroSeconds;
 
     TAbstractFront *mFront;
     TBackendPlugin *mBackendPlugin;

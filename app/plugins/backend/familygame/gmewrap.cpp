@@ -23,7 +23,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 	do {\
 		gme_err_t err_ = (expr);\
 		if ( err_ )\
-			return err_;\
+            return false;\
 	} while ( 0 )
 
 // Number of audio buffers per second. Adjust if you encounter audio skipping.
@@ -38,7 +38,7 @@ TGmeWrap::TGmeWrap()
     mTrackInfo = NULL;
 }
 
-gme_err_t TGmeWrap::init( long sampleRate )
+bool TGmeWrap::init( long sampleRate )
 {
     mSampleRate = sampleRate;
 	
@@ -47,7 +47,7 @@ gme_err_t TGmeWrap::init( long sampleRate )
 	while ( buf_size < min_size )
 		buf_size *= 2;
 	
-    return "";
+    return true;
 }
 
 void TGmeWrap::free()
@@ -78,23 +78,23 @@ void TGmeWrap::deleteInstance()
         mInstance = NULL;
     }
 }
-
-gme_err_t TGmeWrap::loadFile( const char* path )
+#include <stdio.h>
+bool TGmeWrap::loadFile( const char* path )
 {
     free();
 	
     RETURN_ERR( gme_open_file( path, &mEmulator, mSampleRate ) );
 
-    return 0;
+    return true;
 }
 
-gme_err_t TGmeWrap::loadData(void *data, int size)
+bool TGmeWrap::loadData(void *data, int size)
 {
     free();
 
     RETURN_ERR( gme_open_data( data, size, &mEmulator, mSampleRate ) );
 
-    return 0;
+    return true;
 }
 
 int TGmeWrap::trackCount() const
@@ -116,7 +116,7 @@ const gme_info_t *TGmeWrap::trackInfo(int index)
     return mTrackInfo;
 }
 
-gme_err_t TGmeWrap::startTrack( int track )
+bool TGmeWrap::startTrack( int track )
 {
     if ( mEmulator )
     {
@@ -136,12 +136,24 @@ gme_err_t TGmeWrap::startTrack( int track )
             mTrackInfo->length = (long) (2.5 * 60 * 1000);
         gme_set_fade( mEmulator, mTrackInfo->length );
 	}
-	return 0;
+    return true;
+}
+
+bool TGmeWrap::seek(int mSeconds)
+{
+    if(!mEmulator)
+        return false;
+
+    gme_err_t error = gme_seek(mEmulator, mSeconds);
+    if(error)
+        return false;
+
+    return true;
 }
 
 bool TGmeWrap::trackEnded() const
 {
-    return mEmulator ? gme_track_ended( mEmulator ) : false;
+    return mEmulator ? (bool)gme_track_ended( mEmulator ) : false;
 }
 
 void TGmeWrap::setStereoDepth( double tempo )

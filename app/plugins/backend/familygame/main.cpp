@@ -97,12 +97,24 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
 // Load track to prepare for playing
 EXPORT bool loadTrack(TTrackInfo* trackInfo)
 {
-    if(!g_gmeWrap)
+    if(!g_gmeWrap || !trackInfo)
         return false;
 
-    gme_err_t error = g_gmeWrap->loadFile(trackInfo->musicFileName.c_str());
+    bool error = false;
+    const char *cPath = trackInfo->musicFileName.c_str();
+    QFileInfo fi(cPath);
+    QString suffix = fi.suffix().toLower();
+    if(suffix=="rsn" || suffix=="rar")
+    {
+        // File is in package
+        TRarParse rarParse(cPath);
+        QByteArray trackData = rarParse.trackData(trackInfo);
+        error = g_gmeWrap->loadData(trackData.data(), trackData.size());
+    } else {
+        error = g_gmeWrap->loadFile(cPath);
+    }
     error = g_gmeWrap->startTrack(trackInfo->index);
-    return (bool)error;
+    return error;
 }
 
 // Close track
@@ -116,6 +128,15 @@ EXPORT void nextSamples(int size, short* samples)
 {
     if(g_gmeWrap)
         g_gmeWrap->fillBuffer(samples, size);
+}
+
+// Seek time
+EXPORT bool seek(int microSeconds)
+{
+    if(g_gmeWrap)
+        return g_gmeWrap->seek(microSeconds);
+
+    return false;
 }
 
 // Retrieve plugin information

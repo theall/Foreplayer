@@ -26,6 +26,7 @@ public:
     void setDisplayName(QString newName);
 
     TMusicItem *musicItem(int index);
+    int musicItemIndex(TMusicItem *musicItem);
 
     QString fileName() { return mFileName; }
     void setFileName(QString fileName);

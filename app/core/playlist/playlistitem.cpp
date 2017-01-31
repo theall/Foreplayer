@@ -109,7 +109,8 @@ QList<int> TPlaylistItem::removeErrors()
 
     for(int i=0;i<mMusicItems.size();i++)
     {
-        if(!QFile::exists(mMusicItems[i]->fileName()))
+        TMusicItem *musicItem = mMusicItems[i];
+        if(!QFile::exists(musicItem->fileName()) || musicItem->duration()<=0)
             removed.append(i);
     }
 
@@ -120,8 +121,9 @@ QList<int> TPlaylistItem::removeErrors()
 
         for(int i=removed.size()-1;i>=0;i--)
         {
-            delete mMusicItems[i];
-            mMusicItems.removeAt(i);
+            int index = removed[i];
+            delete mMusicItems[index];
+            mMusicItems.removeAt(index);
         }
         mModified = true;
     }
@@ -194,6 +196,11 @@ TMusicItem *TPlaylistItem::musicItem(int index)
         return NULL;
 
     return mMusicItems[index];
+}
+
+int TPlaylistItem::musicItemIndex(TMusicItem *musicItem)
+{
+    return mMusicItems.indexOf(musicItem);
 }
 
 void TPlaylistItem::setFileName(QString fileName)

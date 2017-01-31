@@ -10,6 +10,7 @@ public:
 
     void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved);
     void setMusicItem(TMusicItem *item);
+    TMusicItem *musicItem();
 
 private:
     TMusicItem *mMusicItem;

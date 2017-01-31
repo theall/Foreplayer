@@ -14,6 +14,8 @@ enum TVisualType
     VisualTypeCount
 };
 
+typedef unsigned char byte;
+
 class TVisualWidget : public QWidget, TSkinReader
 {
     Q_OBJECT
@@ -22,8 +24,9 @@ public:
     ~TVisualWidget();
 
     void setVisualType(TVisualType type);
-    void setValue(QList<int> data);
-    void setValue(QVector<int> data);
+    void setValue(QList<byte> data);
+    void setValue(QByteArray data);
+    void setValue(QVector<byte> data);
     void setColor(QColor blockColor, QColor topColor, QColor bottomColor, QColor middleColor=QColor());
     int sampleSize()
     {
@@ -39,9 +42,9 @@ signals:
 public slots:
 
 private:
-    int mSamleValues[SAMPLE_SIZE];
-    int mTopBlockValue[SAMPLE_SIZE];
-    int mTopBlockSpeed[SAMPLE_SIZE];
+    byte mSamleValues[SAMPLE_SIZE];
+    byte mTopBlockValue[SAMPLE_SIZE];
+    byte mTopBlockSpeed[SAMPLE_SIZE];
     TVisualType mType;
 
     int mSpectrumWidth;

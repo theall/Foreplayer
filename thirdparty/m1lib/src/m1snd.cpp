@@ -185,7 +185,7 @@ static void audio_init(void)
 			m1ui_message(m1ui_this, M1_MSG_HARDWAREERROR, NULL, 0);
 		}
         m1sdr_SetCallback((void *)m1snd_do_frame);
-		m1sdr_SetSamplesPerTick(samplerate/60);
+        //m1sdr_SetSamplesPerTick(samplerate/60);
 	}
 }
 #if 0

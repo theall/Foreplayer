@@ -1,5 +1,6 @@
 #include "app.h"
 
+#include <QTextCodec>
 #include <QSharedMemory>
 
 TApp::TApp(int argc, char *argv[]) :
@@ -8,6 +9,8 @@ TApp::TApp(int argc, char *argv[]) :
     mApp->setOrganizationDomain("Theall");
     mApp->setApplicationName("Foreplayer");
     mApp->setApplicationVersion("0.0.1");
+
+    QTextCodec::setCodecForLocale(QTextCodec::codecForName("GBK"));
 
     TPreferences::instance();
 }

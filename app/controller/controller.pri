@@ -1,3 +1,5 @@
+LIBS += -lfftreal
+
 SOURCES += \
     $$PWD/model/playlistmodel.cpp \
     $$PWD/model/tracklistmodel.cpp \
@@ -7,7 +9,10 @@ SOURCES += \
     $$PWD/playercontroller.cpp \
     $$PWD/abstractcontroller.cpp \
     $$PWD/maincontroller.cpp \
-    $$PWD/model/abstractmodel.cpp
+    $$PWD/model/abstractmodel.cpp \
+    $$PWD/spectrum/frequencyspectrum.cpp \
+    $$PWD/spectrum/spectrumanalyser.cpp \
+    $$PWD/spectrum/spectrumutils.cpp
 
 HEADERS  += \
     $$PWD/model/playlistmodel.h \
@@ -18,4 +23,8 @@ HEADERS  += \
     $$PWD/playercontroller.h \
     $$PWD/abstractcontroller.h \
     $$PWD/maincontroller.h \
-    $$PWD/model/abstractmodel.h
+    $$PWD/model/abstractmodel.h \
+    $$PWD/spectrum/frequencyspectrum.h \
+    $$PWD/spectrum/spectrumanalyser.h \
+    $$PWD/spectrum/spectrum.h \
+    $$PWD/spectrum/spectrumutils.h

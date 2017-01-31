@@ -46,6 +46,7 @@ private:
     DrawStatus mStatus;
     int mTimerID;
     int mIdleTime;
+    QString currentLine();
     void prepareNext();
 
     // TSkinReader interface

@@ -95,14 +95,22 @@ TMainWindow::~TMainWindow()
     }
 }
 
-void TMainWindow::setTime(int time, int total)
+void TMainWindow::setProgess(int time, int total)
 {
-    mLedTime->setTime(time, total);
+    if(mLedTime)
+        mLedTime->setTime(time/1000, total/1000);
+
+    if(mProgressBar)
+    {
+        mProgressBar->setMaximum(total);
+        mProgressBar->setValue(time);
+    }
 }
 
 void TMainWindow::setTitles(QStringList titles)
 {
-    mMusicTitle->setStrings(titles);
+    if(mMusicTitle)
+        mMusicTitle->setStrings(titles);
 }
 
 void TMainWindow::setCaption(QString title)
@@ -115,11 +123,13 @@ void TMainWindow::setCaption(QString title)
 void TMainWindow::setPlayState(QString state)
 {
     mPlayState = state;
+    updatePlayStatus();
 }
 
 void TMainWindow::setEffect(QString effect)
 {
     mPlayEffect = effect;
+    updatePlayEffect();
 }
 
 void TMainWindow::checkLyricButton(bool checked)
@@ -176,8 +186,8 @@ void TMainWindow::retranslateUi()
     mProgressBar->setToolTip(tr("Progress"));
     mVolumeBar->setToolTip(tr("Volume: %1%").arg(mVolumeBar->value()));
 
-    mStatus->setText(tr("Status: %1").arg(mPlayState));
-    mStereo->setText(mPlayEffect);
+    updatePlayStatus();
+    updatePlayEffect();
 }
 
 void TMainWindow::on_btnPlay_clicked()
@@ -205,6 +215,16 @@ void TMainWindow::on_volume_valueChanged(int value)
 {
     mVolumeBar->setToolTip(tr("Volume: %1%").arg(mVolumeBar->value()));
     emit volumeValueChanged(value);
+}
+
+void TMainWindow::updatePlayStatus()
+{
+    mStatus->setText(tr("Status: %1").arg(mPlayState));
+}
+
+void TMainWindow::updatePlayEffect()
+{
+    mStereo->setText(mPlayEffect);
 }
 
 void TMainWindow::on_btnOpen_clicked()

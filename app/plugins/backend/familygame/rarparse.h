@@ -11,6 +11,7 @@ public:
     ~TRarParse();
 
     bool parse(TMusicInfo *musicInfo) Q_DECL_OVERRIDE;
+    QByteArray trackData(TTrackInfo *trackInfo);
 
 private:
 };

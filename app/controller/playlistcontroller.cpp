@@ -154,11 +154,13 @@ void TPlaylistController::slotTracklistItemSelected(int index)
 
     mTracklistModel->setCurrentIndex(index);
 
-    // Play current track
-    emit requestPlay(
-                mPlaylistModel->currentIndex(),
-                mMusiclistModel->currentIndex(),
-                mTracklistModel->currentIndex());
+    int musicItemIndex = mMusiclistModel->playlistItem()->musicItemIndex(mTracklistModel->musicItem());
+    if(musicItemIndex > -1)
+        // Play current track
+        emit requestPlay(
+                    mPlaylistModel->currentIndex(),
+                    musicItemIndex,
+                    mTracklistModel->currentIndex());
 }
 
 void TPlaylistController::slotRequestAddNewPlaylist()
@@ -234,7 +236,7 @@ void TPlaylistController::slotRequestAddMusicFiles(QStringList files, int pos, Q
         return;
 
     mMusiclistModel->insertFiles(files, pos, newIndexes);
-    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->musicItem(mMusiclistModel->currentIndex()));
+    mTracklistModel->setMusicItem(mPlaylistCore->currentPlaylistItem()->musicItem(pos));
 }
 
 void TPlaylistController::slotRequestRemoveSelections(QList<int> indexes)

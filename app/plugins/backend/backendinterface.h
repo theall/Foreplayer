@@ -53,7 +53,7 @@ struct TTrackInfo
     string musicFileName; // Pointer to musicFileName of TMusicInfo
     string additionalInfo;
     int64 fileSize;
-    uint duration;
+    int duration;
     TTrackInfo() {
         index = 0;
         fileSize = 0;
@@ -66,7 +66,7 @@ typedef vector<TTrackInfo*> TTrackInfoList;
 struct TMusicInfo
 {
     string musicName; // Music diplay name
-    uint duration;
+    int duration;
     int64 fileSize;
     string additionalInfo;
     string musicFileName;
@@ -102,6 +102,9 @@ EXPORT void closeTrack();
 
 // Request next samples
 EXPORT void nextSamples(int size, short* samples);
+
+// Seek time
+EXPORT bool seek(int microSeconds);
 
 // Retrieve plugin information
 EXPORT void pluginInformation(TPluginInfo *pluginInfo);

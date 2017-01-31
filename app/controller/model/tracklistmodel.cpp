@@ -24,6 +24,11 @@ void TTrackListModel::setMusicItem(TMusicItem *item)
     endResetModel();
 }
 
+TMusicItem *TTrackListModel::musicItem()
+{
+    return mMusicItem;
+}
+
 int TTrackListModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
@@ -58,7 +63,7 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
         } else if (column==1) {
             return item->displayName;
         } else if (column==2) {
-            return Utils::secToTimeStr(item->duration);
+            return Utils::microSecToTimeStr(item->duration);
         }
     } else if (role==Qt::TextAlignmentRole) {
         Qt::Alignment align;
@@ -82,7 +87,7 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
         return QString(tr("Index: %1\r\nName: %2\r\nDuration: %3\r\n\r\n%4") \
                        .arg(item->index) \
                        .arg(item->displayName) \
-                       .arg(Utils::secToTimeStr(item->duration)) \
+                       .arg(Utils::microSecToTimeStr(item->duration)) \
                        .arg(item->additionalInfo));
     }
     return TAbstractModel::data(index, role);

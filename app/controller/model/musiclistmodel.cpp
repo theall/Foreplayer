@@ -50,7 +50,7 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
         } else if (column==1) {
             return data->displayName();
         } else if (column==2) {
-            return Utils::secToTimeStr(data->duration());
+            return Utils::microSecToTimeStr(data->duration());
         }
     } else if (role==Qt::TextAlignmentRole) {
         Qt::Alignment align;
@@ -69,9 +69,9 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
         return QString(tr("Title: %1\r\n"
                           "Duration: %2\r\n"
                           "Filename: %3\r\n"
-                          "\r\n%4\r\n") \
+                          "\r\n%4") \
                        .arg(data->displayName()) \
-                       .arg(Utils::secToTimeStr(data->duration())) \
+                       .arg(Utils::microSecToTimeStr(data->duration())) \
                        .arg(data->fileName())
                        .arg(data->additionalInfo()));
     }
@@ -233,4 +233,9 @@ void TMusiclistModel::removeAll()
     beginResetModel();
     mPlaylistItem->clear();
     endResetModel();
+}
+
+TPlaylistItem *TMusiclistModel::playlistItem()
+{
+    return mPlaylistItem;
 }

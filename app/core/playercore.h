@@ -31,12 +31,16 @@ public:
     void stop();
     void pause();
 
+    int playedTime();
+
     void enableBallence(bool enable=true);
     void enable3DEffect(bool enable=true);
 
     void setAmplification(int value);
 
     void setSpectrumAmp(int index, int value);
+
+    void currentSamples(int *size, short **samples);
 
 private:
     TPlayThread *mPlayThread;

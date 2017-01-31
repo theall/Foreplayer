@@ -44,7 +44,7 @@ bool TSDLFront::start()
         return false;
 
     int min_size = SAMPLE_RATE * 2 / SOUND_FPS;
-    int buf_size = 512;
+    int buf_size = 2048;
     while ( buf_size < min_size )
         buf_size *= 2;
 

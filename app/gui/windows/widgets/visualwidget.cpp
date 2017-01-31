@@ -1,5 +1,6 @@
 #include "visualwidget.h"
 
+#include <QtMath>
 #define SAMPLE_WIDTH 3.0
 #define SAMPLE_SPACE 1
 #define SAMPLE_TOP_BLOCK_HEIGHT 1
@@ -26,7 +27,7 @@ void TVisualWidget::setVisualType(TVisualType type)
     mType = type;
 }
 
-void TVisualWidget::setValue(QList<int> data)
+void TVisualWidget::setValue(QList<byte> data)
 {
     if(data.size() != SAMPLE_SIZE)
         return;
@@ -35,9 +36,30 @@ void TVisualWidget::setValue(QList<int> data)
     {
         mSamleValues[i] = data[i];
     }
+    update();
 }
 
-void TVisualWidget::setValue(QVector<int> data)
+void TVisualWidget::setValue(QByteArray data)
+{
+    int dataSize = data.size();
+    int blockSize = qCeil((double)dataSize/SAMPLE_SIZE);
+    int currentIndex = 0;
+    int forSpectrum = 0;
+    int index = 0;
+    for(int i=0;i<data.size();i++)
+    {
+        forSpectrum += data[i];
+        currentIndex++;
+        if((currentIndex+1) >= blockSize)
+        {
+            mSamleValues[index++] = forSpectrum / blockSize;
+            currentIndex = 0;
+        }
+    }
+    update();
+}
+
+void TVisualWidget::setValue(QVector<byte> data)
 {
     if(data.size() != SAMPLE_SIZE)
         return;
@@ -83,19 +105,20 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
         if(x+mSpectrumWidth>mainWidth)
             break;
 
-        int specValue = mSamleValues[i];
+        byte specValue = mSamleValues[i];
+        int realSpecValue = ((float)specValue/0xff)*mainHeight;
 
         // draw spectrum pillar
-        p.fillRect(x, mainHeight-specValue, mSpectrumWidth, specValue, pillarBrush);
+        p.fillRect(x, mainHeight-realSpecValue, mSpectrumWidth, realSpecValue, pillarBrush);
 
         int topBlockValue = mTopBlockValue[i];
         int topBlockSpeed = mTopBlockSpeed[i];
 
         // draw top block
-        if(specValue >= topBlockValue)
+        if(realSpecValue >= topBlockValue)
         {
             topBlockSpeed = 0;
-            topBlockValue = specValue;
+            topBlockValue = realSpecValue;
         }
         else
         {

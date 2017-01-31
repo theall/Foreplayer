@@ -1,6 +1,7 @@
 #include "rarparse.h"
 
 #include <QDebug>
+#include <QByteArray>
 
 enum ERR_TYPE {
     ERR_OPEN,
@@ -14,7 +15,7 @@ enum USER_DATA {
     LIST
 };
 
-#define BUF_SIZE 262144
+#define BUF_SIZE 16384
 RARHeaderDataEx HeaderData;
 
 void OutError(int Error,char *ArcName,int ErrType)
@@ -73,35 +74,15 @@ int CALLBACK CallbackProc(UINT msg, LPARAM userdata, LPARAM p1, LPARAM p2)
 {
     if(msg == UCM_PROCESSDATA)
     {
-        TMusicInfo *musicInfo = (TMusicInfo*)userdata;
-        qDebug() << HeaderData.FileName << p2;
-        if(musicInfo)
+        QByteArray *buf = (QByteArray*)userdata;
+        if(buf)
         {
-            QByteArray data((char *)p1, p2);
-            if(data.size() == (int)HeaderData.UnpSize)
-            {
-                QString currentFile = HeaderData.FileName;
-                currentFile = currentFile.toLower();
-                if(currentFile=="info.txt")
-                    musicInfo->additionalInfo = data.constData();
-                else {
-                    TFileParse fileParse;
-                    TTrackInfo *track = fileParse.parse(data);
-                    if(track)
-                    {
-                        //__int64 UnpSize = HeaderData.UnpSize+(((__int64)HeaderData.UnpSizeHigh)<<32);
-                        //__int64 PackSize = HeaderData.PackSize+(((__int64)HeaderData.PackSizeHigh)<<32);
-                        track->fileSize = HeaderData.UnpSize;
-                        track->indexName = currentFile.toStdString();
-                        musicInfo->duration += track->duration;
-                        musicInfo->trackList.push_back(track);
-                    }
-                }
-            } else {
-                return -1;
-            }
+            buf->clear();
+            buf->append((char *)p1, p2);
+            return 1;
+        } else {
+            return -1;
         }
-        return 1;
     }
     return 0;
 }
@@ -124,10 +105,12 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
 
     HANDLE hArcData;
     int RHCode;
-    char cmtBuf[BUF_SIZE];
+    char *cmtBuf = new char[BUF_SIZE];
+    QByteArray dataBuf("");
     RAROpenArchiveDataEx openArchiveData;
     wchar_t RedirName[1024];
-    const char *arcName = (char*)mFile.toStdString().c_str();
+    std::string arcNameStr = mFile.toStdString();
+    const char *arcName = (char*)arcNameStr.c_str();
 
     memset(&HeaderData, 0, sizeof(HeaderData));
     memset(&openArchiveData, 0, sizeof(openArchiveData));
@@ -137,25 +120,106 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
     openArchiveData.CmtBufSize  = BUF_SIZE;
     openArchiveData.OpenMode    = RAR_OM_EXTRACT;
     openArchiveData.Callback    = CallbackProc;
-    openArchiveData.UserData    = (LPARAM)musicInfo;
+    openArchiveData.UserData    = (LPARAM)&dataBuf;
     hArcData = RAROpenArchiveEx(&openArchiveData);
 
     if (openArchiveData.OpenResult != 0)
     {
-        qDebug() << "Fait to open file, " << openArchiveData.OpenResult;
+        qDebug() << "fail to open file, " << openArchiveData.OpenResult;
         return false;
     }
-
-    // ShowArcInfo(openArchiveData.Flags, arcName);
-
     HeaderData.RedirName = RedirName;
     HeaderData.RedirNameSize = sizeof(RedirName) / sizeof(RedirName[0]);
 
     while ((RHCode=RARReadHeaderEx(hArcData,&HeaderData))==0)
     {
-        RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
+        int sizeNeed = (int)HeaderData.UnpSize;
+        dataBuf.resize(sizeNeed);
+        int error = RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
+        if(error == ERAR_SUCCESS && sizeNeed == dataBuf.size())
+        {
+            QString currentFile = HeaderData.FileName;
+            currentFile = currentFile.toLower();
+            if(currentFile=="info.txt")
+                musicInfo->additionalInfo = dataBuf.constData();
+            else {
+                TFileParse fileParse;
+                TTrackInfo *track = fileParse.parse(dataBuf);
+                if(track)
+                {
+                    //__int64 UnpSize = HeaderData.UnpSize+(((__int64)HeaderData.UnpSizeHigh)<<32);
+                    //__int64 PackSize = HeaderData.PackSize+(((__int64)HeaderData.PackSizeHigh)<<32);
+                    track->fileSize = HeaderData.UnpSize;
+                    track->indexName = currentFile.toStdString();
+                    musicInfo->duration += track->duration;
+                    musicInfo->trackList.push_back(track);
+                }
+            }
+        } else {
+            qDebug() << error;
+        }
+        qDebug() << HeaderData.FileName << sizeNeed << dataBuf.size();
     }
     RARCloseArchive(hArcData);
 
+    delete cmtBuf;
     return true;
+}
+
+QByteArray TRarParse::trackData(TTrackInfo *trackInfo)
+{
+    if(!trackInfo)
+        return false;
+
+    HANDLE hArcData;
+    int RHCode;
+    char *cmtBuf = new char[BUF_SIZE];
+    QByteArray dataBuf("");
+    RAROpenArchiveDataEx openArchiveData;
+    wchar_t RedirName[1024];
+    std::string arcNameStr = mFile.toStdString();
+    const char *arcName = (char*)arcNameStr.c_str();
+
+    memset(&HeaderData, 0, sizeof(HeaderData));
+    memset(&openArchiveData, 0, sizeof(openArchiveData));
+
+    openArchiveData.ArcName     = (char*)arcName;
+    openArchiveData.CmtBuf      = cmtBuf;
+    openArchiveData.CmtBufSize  = BUF_SIZE;
+    openArchiveData.OpenMode    = RAR_OM_EXTRACT;
+    openArchiveData.Callback    = CallbackProc;
+    openArchiveData.UserData    = (LPARAM)&dataBuf;
+    hArcData = RAROpenArchiveEx(&openArchiveData);
+
+    if (openArchiveData.OpenResult != 0)
+    {
+        qDebug() << "fail to open file, " << openArchiveData.OpenResult;
+        return dataBuf;
+    }
+    HeaderData.RedirName = RedirName;
+    HeaderData.RedirNameSize = sizeof(RedirName) / sizeof(RedirName[0]);
+
+    while ((RHCode=RARReadHeaderEx(hArcData,&HeaderData))==0)
+    {
+        if(trackInfo->indexName == HeaderData.FileName)
+        {
+            int sizeNeed = (int)HeaderData.UnpSize;
+            dataBuf.resize(sizeNeed);
+
+            int error = RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
+            if(error == ERAR_SUCCESS && sizeNeed == dataBuf.size())
+            {
+
+            } else {
+                qDebug() << error;
+            }
+            break;
+        } else {
+            RARProcessFile(hArcData, RAR_SKIP, NULL, NULL);
+        }
+    }
+    RARCloseArchive(hArcData);
+
+    delete cmtBuf;
+    return dataBuf;
 }

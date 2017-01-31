@@ -21,7 +21,9 @@
 
 #include <QThread>
 
-#include "utils.h"
+#include "../../../../thirdparty/m1lib/src/m1ui.h"
+
+STDCALL int m1ui_message(void *user, int message, char *txt, int iparam);
 
 class TM1Thread : public QThread
 {

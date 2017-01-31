@@ -2,7 +2,9 @@
 
 
 TAbstractFront::TAbstractFront() :
-    mCallback(NULL)
+    mCallback(NULL),
+    mSamplesSize(0),
+    mSamples(NULL)
 {
 
 }
@@ -20,5 +22,20 @@ void TAbstractFront::setCallback(TRequestSamples callback)
 void TAbstractFront::requestNextSamples(int n, short *samples)
 {
     if(mCallback)
+    {
         mCallback(n, samples);
+        if(!mSamples || n>mSamplesSize)
+        {
+            free(mSamples);
+            mSamples = (short*)malloc(n*sizeof(short));
+        }
+        mSamplesSize = n;
+        memcpy(mSamples, samples, n);
+    }
+}
+
+void TAbstractFront::currentSamples(int *size, short **samples)
+{
+    *size = mSamplesSize;
+    *samples = mSamples;
 }

@@ -16,6 +16,8 @@ public:
     QList<int> removeErrors();
     void removeAll();
 
+    TPlaylistItem *playlistItem();
+
 private:
     TPlaylistItem *mPlaylistItem;
 

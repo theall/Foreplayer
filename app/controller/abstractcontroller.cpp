@@ -4,7 +4,6 @@ TAbstractController::TAbstractController(QObject *parent) :
     QObject(parent),
     mTimer(new QTimer(this))
 {
-    mTimer->setInterval(1000);
     connect(mTimer, SIGNAL(timeout()), this, SLOT(slotTimerEvent()));
 }
 
@@ -23,10 +22,10 @@ void TAbstractController::joint(TGuiManager *manager, TCore *core)
     mCore = core;
 }
 
-void TAbstractController::startTimer()
+void TAbstractController::startTimer(int mSecs)
 {
     if(mTimer)
-        mTimer->start();
+        mTimer->start(mSecs);
 }
 
 void TAbstractController::stopTimer()

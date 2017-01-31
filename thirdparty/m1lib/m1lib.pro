@@ -4,13 +4,14 @@
 #
 #-------------------------------------------------
 
-QT       -= core gui
+QT       += core
 
 CONFIG += c11
 
 TEMPLATE = lib
+TARGET = m1
 
-LIBS += -lm -ldsound -ldxguid -lunzip -lzlib -lexpat
+LIBS += -lm -ldsound -ldxguid -lunzip -lexpat -lz
 
 DEFINES += SOUND_OUTPUT=1  HAS_YM2612=1  HAS_YM3438=1  HAS_YM2203=1  HAS_YM2610=1  HAS_YM2610B=1  HAS_YM3812=1  HAS_YM3526=1 \
 HAS_M65C02=1  LSB_FIRST=1  HAS_M6803=1  HAS_M6808=1  HAS_ADSP2105=1  HAS_ES5505=1  HAS_ES5506=1  HAS_K005289=1 \
@@ -33,15 +34,11 @@ INCLUDEPATH +=  \
     src/emulator/sound
 
 CONFIG(debug, debug|release) {
-    TARGET = m1_d
-    DESTDIR = z:/player
 } else {
-    TARGET = m1
-    DESTDIR = z:/player
 }
 
-windows {
-    #DEFINES += WINAPI
+win32 {
+    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/arcade
 }
 
 unix {
@@ -186,20 +183,7 @@ HEADERS += \
     src/emulator/mpeg/rtbuf.h \
     src/emulator/mpeg/transform.h \
     src/libs/crypt/md5.h \
-    src/libs/crypt/sha1.h \
-    src/libs/expat/ascii.h \
-    src/libs/expat/asciitab.h \
-    src/libs/expat/expat.h \
-    src/libs/expat/expat_config.h \
-    src/libs/expat/iasciitab.h \
-    src/libs/expat/internal.h \
-    src/libs/expat/latin1tab.h \
-    src/libs/expat/nametab.h \
-    src/libs/expat/utf8tab.h \
-    src/libs/expat/winconfig.h
-    #src/libs/expat/xmlrole.h \
-    #src/libs/expat/xmltok.h \
-    #src/libs/expat/xmltok_impl.h \
+    src/libs/crypt/sha1.h
 
 SOURCES += \
     src/gamelist.cpp \
@@ -474,10 +458,5 @@ SOURCES += \
     src/emulator/mpeg/util.c \
     src/libs/crypt/md5.c \
     src/libs/crypt/sha1.c \
-    src/dsnd.cpp \
-    src/wavelog.cpp
-    #src/libs/expat/xmlparse.c \
-    #src/libs/expat/xmlrole.c \
-    #src/libs/expat/xmltok.c \
-    #src/libs/expat/xmltok_impl.c \
-    #src/libs/expat/xmltok_ns.c \
+    src/wavelog.cpp \
+    src/dsnd.cpp

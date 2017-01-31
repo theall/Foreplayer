@@ -190,37 +190,37 @@ enum
 // services m1snd defines for the use of the UI
 
 // call this on startup to initialize the core.
-DLLEXPORT void m1snd_init(void *, int (STDCALL *m1ui_message)(void *,int, char *, int));
+void m1snd_init(void *, int (STDCALL *m1ui_message)(void *,int, char *, int));
 
 // call this for "running" messages.
-DLLEXPORT int m1snd_run(int command, int iparm);
+int m1snd_run(int command, int iparm);
 
 // call this at program shutdown to shut down the core.
-DLLEXPORT void m1snd_shutdown(void);
+void m1snd_shutdown(void);
 
 // call to set core options
-DLLEXPORT void m1snd_setoption(int option, int value);
+void m1snd_setoption(int option, int value);
 
 // call to get integer information from the core
-DLLEXPORT int m1snd_get_info_int(int iinfo, int parm);
+int m1snd_get_info_int(int iinfo, int parm);
 
 // call to get string information from the core
-DLLEXPORT char *m1snd_get_info_str(int sinfo, int parm);
+char *m1snd_get_info_str(int sinfo, int parm);
 
 // call to get extended string info
-DLLEXPORT char *m1snd_get_info_str_ex(int sinfo, int parm1, int parm2, int parm3);
+char *m1snd_get_info_str_ex(int sinfo, int parm1, int parm2, int parm3);
 
 // call to set string data
-DLLEXPORT void m1snd_set_info_str(int sinfo, char *info, int parm1, int parm2, int parm3);
+void m1snd_set_info_str(int sinfo, char *info, int parm1, int parm2, int parm3);
 
 // call to set integer information in the core
-DLLEXPORT void m1snd_set_info_int(int iinfo, int parm1, int parm2, int parm3);
+void m1snd_set_info_int(int iinfo, int parm1, int parm2, int parm3);
 
 // call when not using M1's internal sound driver to create a frame of output
-DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out);
+void m1snd_do_frame(unsigned long dwSamples, signed short *out);
 
 // call when lang is changed
-DLLEXPORT void m1snd_switchLang(int lang);
+void m1snd_switchLang(int lang);
 
 #ifdef __cplusplus
 }

@@ -24,14 +24,14 @@ void TScrollLabel::setStrings(QStringList strlist)
         killTimer(mTimerID);
         mTimerID = -1;
     }
-    if(strlist.count()>0)
+    if(strlist.count() > 0)
     {
-        strlist.append(strlist[0]);
         mIndex = 0;
         mCurrentIndex = 0;
         prepareNext();
         mStatus = IDLE;
         mIndex = 0;
+        mIdleTime = 0;
         mTimerID = startTimer(c_timer_interval);
     }
 }
@@ -51,7 +51,8 @@ void TScrollLabel::timerEvent(QTimerEvent *event)
     if(mStatus==IDLE)
     {
         mIdleTime += c_timer_interval;
-        if(mIdleTime > c_idle_time)
+        // Switch if current display text is emplty, or idle time is time out
+        if(mIdleTime>c_idle_time || currentLine().trimmed().isEmpty())
         {
             prepareNext();
             mSwitchEnd = false;
@@ -106,8 +107,19 @@ void TScrollLabel::timerEvent(QTimerEvent *event)
     update();
 }
 
+QString TScrollLabel::currentLine()
+{
+    if(mIndex<0 || mIndex>=mStrings.size())
+        return QString();
+
+    return mStrings[mIndex];
+}
+
 void TScrollLabel::prepareNext()
 {
+    if(mIndex<0 || mIndex>=mStrings.size())
+        return;
+
     mLine1 = mStrings[mIndex];
     mIndex++;
     if(mIndex >= mStrings.size())

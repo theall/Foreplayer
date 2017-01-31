@@ -137,11 +137,11 @@ INT16 m1sdr_Init(int sample_rate)
 
 	// create an IDirectSound COM object
 
-	if (DS_OK != DirectSoundCreate(NULL, &lpDS, NULL))
-	{
-    	printf("Unable to create DirectSound object!\n");
-		return(0);
-	}
+    if (DS_OK != DirectSoundCreate(NULL, &lpDS, NULL))
+    {
+        printf("Unable to create DirectSound object!\n");
+        return(0);
+    }
 
 	// set cooperative level where we need it
 

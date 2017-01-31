@@ -1,8 +1,8 @@
 // Simple game music file player
 
 // Game_Music_Emu 0.6.0
-#ifndef MUSIC_PLAYER_H
-#define MUSIC_PLAYER_H
+#ifndef GAME_WRAP
+#define GAME_WRAP
 
 #include "gme.h"
 
@@ -18,17 +18,20 @@ public:
     static void deleteInstance();
 
 	// Initialize player and set sample rate
-    gme_err_t init( long sampleRate = 44100 );
+    bool init( long sampleRate = 44100 );
 	
 	// Load game music file. NULL on success, otherwise error string.
-    gme_err_t loadFile( const char* path );
+    bool loadFile( const char* path );
 	
     // Load data from rsn file
-    gme_err_t loadData(void *data, int size);
+    bool loadData(void *data, int size);
 
 	// (Re)start playing track. Tracks are numbered from 0 to track_count() - 1.
-    gme_err_t startTrack( int track );
+    bool startTrack( int track );
 	
+    // Seek
+    bool seek(int mSeconds);
+
     // Fill samples into buffer
     void fillBuffer( sample_t*, int );
 

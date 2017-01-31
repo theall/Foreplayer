@@ -2,8 +2,10 @@
 #include "m1thread.h"
 #include "../backendinterface.h"
 
+#include <QDir>
 #include <QFile>
 #include <QString>
+#include <QDebug>
 #include <QLibrary>
 #include <QFileInfo>
 #include <QDataStream>
@@ -14,31 +16,27 @@ const char *szContact = "wazcd_1608@qq.com";
 const char *szDescription = "This is the first backend plugin for foreplayer.";
 const char *szCreateDate = "2016-10-11";
 
-const char *szM1lib = "m1lib.dll";
-unsigned char g_headerMark[4]=
-{
-    0x50,0x4b,0x03,0x04
-};
+const char *szM1lib = "m1.dll";
 
 QString szError;
 QString g_curRomPath;
 QLibrary g_library;
 TM1Thread *g_runningThread;
 
-M1SND_INIT proc_init;
-M1SND_RUN proc_run;
-M1SND_SHUTDOWN proc_shutdown;
-M1SND_SETOPTION proc_setoption;
-M1SND_GET_INFO_INT proc_get_info_int;
-M1SND_GET_INFO_STR proc_get_info_str;
-M1SND_GET_INFO_STR_EX proc_get_info_str_ex;
-M1SND_SET_INFO_STR proc_set_info_str;
-M1SND_SET_INFO_INT proc_set_info_int;
-M1SND_DO_FRAME proc_do_frame;
-M1SND_SWITCHLANG proc_switchlang;
+//M1SND_INIT m1snd_init;
+//M1SND_RUN m1snd_run;
+//M1SND_SHUTDOWN m1snd_shutdown;
+//M1SND_SETOPTION m1snd_setoption;
+//M1SND_GET_INFO_INT m1snd_get_info_int;
+//M1SND_GET_INFO_STR m1snd_get_info_str;
+//M1SND_GET_INFO_STR_EX m1snd_get_info_str_ex;
+//M1SND_SET_INFO_STR m1snd_set_info_str;
+//M1SND_SET_INFO_INT m1snd_set_info_int;
+//M1SND_DO_FRAME m1snd_do_frame;
+//M1SND_SWITCHLANG m1snd_switchlang;
 
 // callbacks from the core of interest to the user interface
-int m1ui_message(void *user, int message, char *txt, int iparam)
+STDCALL int m1ui_message(void *user, int message, char *txt, int iparam)
 {
     Q_UNUSED(user)
     Q_UNUSED(iparam)
@@ -54,8 +52,8 @@ int m1ui_message(void *user, int message, char *txt, int iparam)
 
         // called to show the current game's name
         case M1_MSG_GAMENAME:
-            curgame = proc_get_info_int(M1_IINF_CURGAME, 0);
-            printf("Game selected: %s (%s, %s)\n", txt, proc_get_info_str(M1_SINF_MAKER, curgame), proc_get_info_str(M1_SINF_YEAR, curgame));
+            curgame = m1snd_get_info_int(M1_IINF_CURGAME, 0);
+            printf("Game selected: %s (%s, %s)\n", txt, m1snd_get_info_str(M1_SINF_MAKER, curgame), m1snd_get_info_str(M1_SINF_YEAR, curgame));
             break;
 
         // called to show the driver's name
@@ -80,7 +78,7 @@ int m1ui_message(void *user, int message, char *txt, int iparam)
 
         // called if a hardware error occurs
         case M1_MSG_HARDWAREERROR:
-            proc_shutdown();
+            m1snd_shutdown();
             break;
 
         // called when the hardware begins booting
@@ -107,7 +105,7 @@ int m1ui_message(void *user, int message, char *txt, int iparam)
             {
                 if(!g_curRomPath.isEmpty())
                 {
-                    proc_set_info_str(M1_SINF_SET_ROMPATH, (char *)g_curRomPath.toLocal8Bit().constData(), 0, 0, 0);
+                    m1snd_set_info_str(M1_SINF_SET_ROMPATH, (char *)g_curRomPath.toLocal8Bit().constData(), 0, 0, 0);
                     return 1;
                 }
                 return 0;
@@ -128,92 +126,6 @@ int m1ui_message(void *user, int message, char *txt, int iparam)
 // Initialize plugin
 EXPORT bool initialize()
 {
-    g_library.setFileName(szM1lib);
-
-    if(!g_library.load())
-    {
-        szError = "Failed loading m1lib.dll";
-        return false;
-    }
-    proc_init = NULL;
-    proc_run = NULL;
-    proc_shutdown = NULL;
-    proc_setoption = NULL;
-    proc_get_info_int = NULL;
-    proc_get_info_str = NULL;
-    proc_get_info_str_ex = NULL;
-    proc_set_info_str = NULL;
-    proc_set_info_int = NULL;
-    proc_do_frame = NULL;
-    proc_switchlang = NULL;
-
-    proc_init = (M1SND_INIT)g_library.resolve("proc_init");
-    if(proc_init==NULL)
-    {
-        szError = "Can not find procedure address [proc_init] in m1lib";
-        return false;
-    }
-    proc_run = (M1SND_RUN)g_library.resolve("proc_run");
-    if(proc_run==NULL)
-    {
-        szError = "Can not find procedure address [proc_run] in m1lib";
-        return false;
-    }
-    proc_shutdown = (M1SND_SHUTDOWN)g_library.resolve("proc_shutdown");
-    if(proc_shutdown==NULL)
-    {
-        szError = "Can not find procedure address [proc_shutdown] in m1lib";
-        return false;
-    }
-    proc_setoption = (M1SND_SETOPTION)g_library.resolve("proc_setoption");
-    if(proc_setoption==NULL)
-    {
-        szError = "Can not find procedure address [proc_setoption] in m1lib";
-        return false;
-    }
-    proc_get_info_int = (M1SND_GET_INFO_INT)g_library.resolve("proc_get_info_int");
-    if(proc_get_info_int==NULL)
-    {
-        szError = "Can not find procedure address [proc_get_info_int] in m1lib";
-        return false;
-    }
-    proc_get_info_str = (M1SND_GET_INFO_STR)g_library.resolve("proc_get_info_str");
-    if(proc_get_info_str==NULL)
-    {
-        szError = "Can not find procedure address [proc_get_info_str] in m1lib";
-        return false;
-    }
-    proc_get_info_str_ex = (M1SND_GET_INFO_STR_EX)g_library.resolve("proc_get_info_str_ex");
-    if(proc_get_info_str_ex==NULL)
-    {
-        szError = "Can not find procedure address [proc_get_info_str_ex] in m1lib";
-        return false;
-    }
-    proc_set_info_str = (M1SND_SET_INFO_STR)g_library.resolve("proc_set_info_str");
-    if(proc_set_info_str==NULL)
-    {
-        szError = "Can not find procedure address [proc_set_info_str] in m1lib";
-        return false;
-    }
-    proc_set_info_int = (M1SND_SET_INFO_INT)g_library.resolve("proc_set_info_int");
-    if(proc_set_info_int==NULL)
-    {
-        szError = "Can not find procedure address [proc_set_info_int] in m1lib";
-        return false;
-    }
-    proc_do_frame = (M1SND_DO_FRAME)g_library.resolve("proc_do_frame");
-    if(proc_do_frame==NULL)
-    {
-        szError = "Can not find procedure address [proc_do_frame] in m1lib";
-        return false;
-    }
-    proc_switchlang = (M1SND_SWITCHLANG)g_library.resolve("proc_switchlang");
-    if(proc_switchlang==NULL)
-    {
-        szError = "Can not find procedure address [proc_switchlang] in m1lib";
-        return false;
-    }
-
     if(!g_runningThread)
     {
         g_runningThread = new TM1Thread;
@@ -224,51 +136,25 @@ EXPORT bool initialize()
     return true;
 }
 
-EXPORT const char *getLastError()
-{
-    return szError.toLocal8Bit().constData();
-}
-
 // Verify this plugin can parse specify suffix of file
-EXPORT const string matchSuffixes()
+EXPORT const char *matchSuffixes()
 {
     return "zip";
 }
 
 // Parse file to get details information
-EXPORT bool parse(char* file, TMusicInfo* musicInfo)
+EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
 {
-    QFile musicFile(file);
-
-    //If file is less than WMA header, it can't contains tag.
-    if(musicFile.size()<16)
-    {
-        return false;
-    }
-
-    QDataStream musicDataStream(&musicFile);
-
-    //Detect WMA header.
-    char header[4];
-    //Read header data from the music file.
-    musicDataStream.readRawData(header, 4);
-    //Compare the header data with the mark data.
-    if(memcmp(header, g_headerMark, 4)!=0)
-    {
-        //The header is not right.
-        return false;
-    }
-
     int i;
-    int maxGames = proc_get_info_int(M1_IINF_TOTALGAMES, 0);
+    int maxGames = m1snd_get_info_int(M1_IINF_TOTALGAMES, 0);
     bool getOne = false;
     int gameId = 0;
-    QString gameName = musicInfo->musicFileName.c_str();
+    QString gameName = musicInfo->musicName.c_str();
     gameName.chop(4);
 
     for (i = 0; i < maxGames; i++)
     {
-        if (gameName==proc_get_info_str(M1_SINF_ROMNAME, i))
+        if (gameName==m1snd_get_info_str(M1_SINF_ROMNAME, i))
         {
             getOne = true;
 
@@ -281,33 +167,30 @@ EXPORT bool parse(char* file, TMusicInfo* musicInfo)
     if(!getOne)
         return false;
 
-    musicInfo->album = proc_get_info_str(M1_SINF_BNAME, gameId);
-    musicInfo->artist = proc_get_info_str(M1_SINF_MAKER, gameId);
-    musicInfo->date = proc_get_info_str(M1_SINF_YEAR, gameId);
-    musicInfo->musicName = proc_get_info_str(M1_SINF_VISNAME, gameId);
-    musicInfo->musicType = proc_get_info_str(M1_SINF_BNAME, gameId);
-    musicInfo->musicTypeDesc = proc_get_info_str(M1_SINF_BHARDWARE, gameId);
+    musicInfo->musicName = m1snd_get_info_str(M1_SINF_VISNAME, gameId);
+    musicInfo->additionalInfo = QString::asprintf("Board: %s\n"
+                                                  "Maker: %s\n"
+                                                  "Year: %s\n"
+                                                  "Hardware: %s\n",
+                                                  m1snd_get_info_str(M1_SINF_BNAME, gameId),
+                                                  m1snd_get_info_str(M1_SINF_MAKER, gameId),
+                                                  m1snd_get_info_str(M1_SINF_YEAR, gameId),
+                                                  m1snd_get_info_str(M1_SINF_BHARDWARE, gameId)
+                                                  ).toStdString();
 
     //Track list
-    int trackCount = proc_get_info_int(M1_IINF_TRACKS, gameId);
+    int trackCount = m1snd_get_info_int(M1_IINF_TRACKS, gameId);
 
     for (i = 0; i < trackCount; i++)
     {
         TTrackInfo *trackInfo = new TTrackInfo;
         trackInfo->index = (i<<16) | gameId;
-        trackInfo->startPosition = 0;
 
         //Save the duration (unit: ms)
-        trackInfo->duration = proc_get_info_int(M1_IINF_TRKLENGTH, i);
-        //Save the bit rate.
-        //Bitrate (Kbps)
-        trackInfo->bitRate = 44;
-        //Save the sampling rate.
-        trackInfo->samplingRate = 44100;
-        //File path.
-        trackInfo->musicFullName = musicInfo->musicFullName;
+        trackInfo->duration = m1snd_get_info_int(M1_IINF_TRKLENGTH, i);
+
         // TrackName
-        trackInfo->trackName = proc_get_info_str(M1_SINF_TRKNAME, i);
+        trackInfo->trackName = m1snd_get_info_str(M1_SINF_TRKNAME, i);
 
         musicInfo->trackList.push_back(trackInfo);
     }
@@ -321,18 +204,18 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 {
     closeTrack();
 
-    QFileInfo fi(trackInfo->musicFullName.c_str());
+    QFileInfo fi(trackInfo->musicFileName.c_str());
 
     g_curRomPath = fi.absolutePath();
 
     int gameId = trackInfo->index&0xffff;
-    if(gameId != proc_get_info_int(M1_IINF_CURGAME, 0))
+    if(gameId != m1snd_get_info_int(M1_IINF_CURGAME, 0))
     {
-        proc_run(M1_CMD_GAMEJMP, gameId);
+        m1snd_run(M1_CMD_GAMEJMP, gameId);
     }
 
     int songId = trackInfo->index>>16;
-    proc_run(M1_CMD_SONGJMP, songId);
+    m1snd_run(M1_CMD_SONGJMP, songId);
 
     qDebug("switching, game:%d song:%d", trackInfo->index&0xffff, trackInfo->index>>16);
 
@@ -343,15 +226,13 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 // Close track
 EXPORT void closeTrack()
 {
-    if(proc_run)
-        proc_run(M1_CMD_STOP, 0);
+    m1snd_run(M1_CMD_STOP, 0);
 }
 
 // Request next samples
 EXPORT void nextSamples(int size, short* samples)
 {
-    if(proc_do_frame)
-        proc_do_frame((unsigned long)size, (signed short*)samples);
+    m1snd_do_frame((unsigned long)size, (signed short*)samples);
 }
 
 // Retrieve plugin information
@@ -370,10 +251,7 @@ EXPORT void pluginInformation(TPluginInfo *pluginInfo)
 // Use to free plugin
 EXPORT void destroy()
 {
-    if(proc_shutdown) {
-        proc_shutdown();
-        proc_shutdown = NULL;
-    }
+    m1snd_shutdown();
     if(g_runningThread) {
         delete g_runningThread;
         g_runningThread = NULL;

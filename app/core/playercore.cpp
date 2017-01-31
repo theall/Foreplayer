@@ -75,6 +75,24 @@ void TPlayerCore::pause()
     }
 }
 
+int TPlayerCore::playedTime()
+{
+    if(mPlayThread)
+    {
+        return mPlayThread->playedTime();
+    }
+
+    return 0;
+}
+
+void TPlayerCore::currentSamples(int *size, short **samples)
+{
+    if(mPlayThread)
+    {
+        return mPlayThread->currentSamples(size, samples);
+    }
+}
+
 void TPlayerCore::destroyPlayThread()
 {
     if(mPlayThread)

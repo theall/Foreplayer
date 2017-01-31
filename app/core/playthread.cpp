@@ -1,8 +1,12 @@
 #include "playthread.h"
 
 #include "front/sdlfront.h"
+
+#define CYCLE_INTERVAL      300
+
 TPlayThread::TPlayThread():
     mNeedTerminate(false),
+    mCurrentMicroSeconds(0),
     mFront(NULL),
     mBackendPlugin(NULL)
 {
@@ -19,11 +23,18 @@ void TPlayThread::play()
 {
     if(mFront)
         mFront->play();
+
+    mCurrentMicroSeconds = 0;
 }
 
 void TPlayThread::needToTerminate()
 {
     mNeedTerminate = true;
+}
+
+int TPlayThread::playedTime()
+{
+    return mCurrentMicroSeconds;
 }
 
 void TPlayThread::setBackend(TBackendPlugin *plugin)
@@ -42,6 +53,16 @@ void TPlayThread::setBackend(TBackendPlugin *plugin)
     }
 }
 
+void TPlayThread::currentSamples(int *size, short **samples)
+{
+    if(mFront)
+        mFront->currentSamples(size, samples);
+    else {
+        *size = 0;
+        *samples = NULL;
+    }
+}
+
 void TPlayThread::run()
 {
     if(!mFront)
@@ -51,8 +72,11 @@ void TPlayThread::run()
 
     while(!mNeedTerminate)
     {
-        msleep(100);
+        msleep(CYCLE_INTERVAL);
 
+        mCurrentMicroSeconds += CYCLE_INTERVAL;
+
+        // Update progress
         mFront->step();
     }
 
