@@ -105,7 +105,7 @@ void m1snd_update_dsps(long newpos, long totalsamp)
 		dspframes = totalsamp-dsppos;
 	}
 
-	if (cur_board->UpdateDSPs)
+    if (cur_board && cur_board->UpdateDSPs)
 	{
 		cur_board->UpdateDSPs(dsppos, dspframes);
 	}
@@ -121,9 +121,13 @@ void m1snd_update_dsps(long newpos, long totalsamp)
 
 DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out)
 {
-	unsigned int i;
+    if(!cur_board)
+        return;
+
 	int silent = -1;
-	double calc = 0.0;
+//    frSamples++;
+//    if(frSamples%60==0)
+//        printf("%d\n", frSamples);
 
 	dsppos = 0;
 	timer_run_frame();
@@ -134,12 +138,23 @@ DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out)
 	m1snd_update_dsps(dwSamples, dwSamples);
 
 	// now call the "user handler"
-	if (cur_board->RunFrame)
+    if (cur_board->RunFrame)
 	{
 		cur_board->RunFrame();
 	}
 
 	StreamSys_Run(out, dwSamples);
+
+//    if(songtime<100)
+//    {
+//        char szPath[200];
+//        strcpy(szPath, "z:\\frame\\");
+//        char buf[10];
+//        strcat(szPath, itoa(songtime, buf, 10));
+//        FILE *fp = fopen(szPath, "w");
+//        fwrite((void*)out, 2, dwSamples, fp);
+//        fclose(fp);
+//    }
 
 	// see if we want to flush any frames
 	if (flushframes)
@@ -177,16 +192,13 @@ DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out)
 
 static void audio_init(void)
 {
+    if (!m1sdr_Init(samplerate, bUseInternalSnd))
+    {
+        m1ui_message(m1ui_this, M1_MSG_HARDWAREERROR, NULL, 0);
+    }
+    m1sdr_SetCallback((void *)m1snd_do_frame);
+    //m1sdr_SetSamplesPerTick(samplerate/60);
 	// init audio
-	if (bUseInternalSnd)
-	{
-		if (!m1sdr_Init(samplerate))
-		{
-			m1ui_message(m1ui_this, M1_MSG_HARDWAREERROR, NULL, 0);
-		}
-        m1sdr_SetCallback((void *)m1snd_do_frame);
-        //m1sdr_SetSamplesPerTick(samplerate/60);
-	}
 }
 #if 0
 static void audio_kill(void)
@@ -235,7 +247,7 @@ static void construct_board(int num)
 		free((void *)cur_board);
 	}
 
-	cur_board = (BoardT *)malloc(sizeof(BoardT));
+    cur_board = (BoardT *)malloc(sizeof(BoardT));
 	memset(cur_board, 0, sizeof(BoardT));
 
 	cur_board->startupTime = 300;

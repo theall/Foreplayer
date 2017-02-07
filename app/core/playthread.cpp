@@ -46,10 +46,17 @@ void TPlayThread::setBackend(TBackendPlugin *plugin)
         mBackendPlugin->closeTrack();
 
     mBackendPlugin = plugin;
-    if(mFront && plugin)
+    if(mFront)
     {
-        // Connect plugin's callback to front's callback
-        mFront->setCallback(plugin->getCallback());
+        if(plugin)
+        {
+            mFront->setSampleSize(plugin->getSampleSize(SAMPLE_RATE, SOUND_FPS));
+            // Connect plugin's callback to front's callback
+            mFront->setCallback(plugin->getCallback());
+        } else {
+            mFront->stop();
+        }
+
     }
 }
 

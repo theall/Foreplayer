@@ -9,7 +9,7 @@ extern int lnxdrv_apimode;		// 0 = SDL, 1 = ALSA, 2 = OSS, 3 = PulseAudio
 // function protos
 
 void m1sdr_Update(void);
-INT16 m1sdr_Init(int sample_rate);
+INT16 m1sdr_Init(int sample_rate, int useInternal);
 void m1sdr_Exit(void);
 void m1sdr_PlayStart(void);
 void m1sdr_PlayStop(void);

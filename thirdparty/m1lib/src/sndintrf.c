@@ -1009,12 +1009,12 @@ void sound_stop(void)
 {
 	int totalsound = 0;
 
-        if (Machine->drv->sound == NULL)
-                return;
+    if (Machine->drv->sound == NULL)
+        return;
 
 	while (Machine->drv->sound[totalsound].sound_type != 0 && totalsound < MAX_SOUND)
-	{
-		if (sndintf[Machine->drv->sound[totalsound].sound_type].stop)
+	{        
+        if (sndintf[Machine->drv->sound[totalsound].sound_type].stop)
 		{
 			(*sndintf[Machine->drv->sound[totalsound].sound_type].stop)();
 		}

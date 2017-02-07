@@ -95,7 +95,7 @@ TMainWindow::~TMainWindow()
     }
 }
 
-void TMainWindow::setProgess(int time, int total)
+void TMainWindow::setProgress(int time, int total)
 {
     if(mLedTime)
         mLedTime->setTime(time/1000, total/1000);

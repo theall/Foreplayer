@@ -8,10 +8,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
 #include "m1snd.h"
 #include "m1ui.h"
 
 #include "expat.h"
+#include "moddir.h"
 
 static char element_data[2048];
 static int numgames, currgn;
@@ -34,18 +36,18 @@ static XMLStateE xml_state;
 
 static int rgn_from_name(char *name)
 {
-	static char *rnames[RGN_MAX] =
+    static char *rnames[RGN_MAX_COUNT] =
 	{
 		(char *)"cpu1", (char *)"cpu2", (char *)"cpu3", (char *)"cpu4", (char *)"samp1", (char *)"samp2", 
 		(char *)"samp3", (char *)"samp4", (char *)"user1", (char *)"user2", (char *)"disk"
 	};
-	static int rnums[RGN_MAX] =
+    static int rnums[RGN_MAX_COUNT] =
 	{
 		RGN_CPU1, RGN_CPU2, RGN_CPU3, RGN_CPU4, RGN_SAMP1, RGN_SAMP2, RGN_SAMP3, RGN_SAMP4, RGN_USER1, RGN_USER2, RGN_DISK
 	};
 	int i;
 
-	for (i = 0; i < RGN_MAX; i++)
+    for (i = 0; i < RGN_MAX_COUNT; i++)
 	{
 		if (!strcmp(rnames[i], name))
 		{
@@ -321,7 +323,7 @@ static void startElement(void *userData, const char *name, const char **atts)
 
 static void endElement(void *userData, const char *name)
 {
-	int *depthPtr = (int *)userData;
+    int *depthPtr = (int *)userData;
 	*depthPtr -= 1;
 
 //	printf("close [%s]: element data = [%s]\n", name, element_data);
@@ -382,10 +384,13 @@ int gamelist_load(void)
 	numgames = 0;
 	games = (M1GameT *)NULL;	// realloc() will become malloc() if ptr is NULL, which is handy
 
-	f = fopen("m1.xml", "r");
-	if (!f)
-	{
-        f = fopen("m1/m1.xml", "r");
+    wchar_t *szFilePath = currentModulePath();
+    wcscat(szFilePath, L"m1.xml");
+
+    f = _wfopen(szFilePath, L"r");
+    if (!f)
+    {
+        f = _wfopen(L"m1/m1.xml", L"r");
         if(!f)
             return 0;
 	}

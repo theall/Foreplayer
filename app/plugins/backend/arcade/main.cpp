@@ -21,7 +21,7 @@ const char *szM1lib = "m1.dll";
 QString szError;
 QString g_curRomPath;
 QLibrary g_library;
-TM1Thread *g_runningThread;
+TM1Thread *g_runningThread = NULL;
 
 //M1SND_INIT m1snd_init;
 //M1SND_RUN m1snd_run;
@@ -149,9 +149,8 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
     int maxGames = m1snd_get_info_int(M1_IINF_TOTALGAMES, 0);
     bool getOne = false;
     int gameId = 0;
-    QString gameName = musicInfo->musicName.c_str();
-    gameName.chop(4);
-
+    QFileInfo fi(file);
+    QString gameName = fi.baseName();
     for (i = 0; i < maxGames; i++)
     {
         if (gameName==m1snd_get_info_str(M1_SINF_ROMNAME, i))
@@ -171,7 +170,7 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
     musicInfo->additionalInfo = QString::asprintf("Board: %s\n"
                                                   "Maker: %s\n"
                                                   "Year: %s\n"
-                                                  "Hardware: %s\n",
+                                                  "Hardware: %s",
                                                   m1snd_get_info_str(M1_SINF_BNAME, gameId),
                                                   m1snd_get_info_str(M1_SINF_MAKER, gameId),
                                                   m1snd_get_info_str(M1_SINF_YEAR, gameId),
@@ -184,14 +183,20 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
     for (i = 0; i < trackCount; i++)
     {
         TTrackInfo *trackInfo = new TTrackInfo;
-        trackInfo->index = (i<<16) | gameId;
+        int trackCmdParam = (i<<16)|gameId;
+        int trackCmd = m1snd_get_info_int(M1_IINF_TRACKCMD, trackCmdParam);
+        int trackParam = (trackCmd<<16) | gameId;
+        trackInfo->index = trackCmdParam;
+        trackInfo->indexName = QString::asprintf("#%d", trackCmd).toStdString();
 
         //Save the duration (unit: ms)
-        trackInfo->duration = m1snd_get_info_int(M1_IINF_TRKLENGTH, i);
+        trackInfo->duration = m1snd_get_info_int(M1_IINF_TRKLENGTH, trackParam)*1000/60;
 
         // TrackName
-        trackInfo->trackName = m1snd_get_info_str(M1_SINF_TRKNAME, i);
+        trackInfo->trackName = m1snd_get_info_str(M1_SINF_TRKNAME, trackParam);
+        trackInfo->additionalInfo = musicInfo->additionalInfo;
 
+        musicInfo->duration += trackInfo->duration;
         musicInfo->trackList.push_back(trackInfo);
     }
 
@@ -202,11 +207,9 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
 // Load track to prepare for playing
 EXPORT bool loadTrack(TTrackInfo* trackInfo)
 {
-    closeTrack();
-
     QFileInfo fi(trackInfo->musicFileName.c_str());
 
-    g_curRomPath = fi.absolutePath();
+    g_curRomPath = fi.absoluteFilePath();
 
     int gameId = trackInfo->index&0xffff;
     if(gameId != m1snd_get_info_int(M1_IINF_CURGAME, 0))
@@ -226,13 +229,19 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 // Close track
 EXPORT void closeTrack()
 {
-    m1snd_run(M1_CMD_STOP, 0);
+    //m1snd_run(M1_CMD_STOP, 0);
 }
 
 // Request next samples
 EXPORT void nextSamples(int size, short* samples)
 {
-    m1snd_do_frame((unsigned long)size, (signed short*)samples);
+    m1snd_do_frame((unsigned long)size/2, (signed short*)samples);
+}
+
+// Optional, for return customized sample size
+EXPORT int sampleSize(int sampleRate, int fps)
+{
+    return (sampleRate*10+(fps>>1))/fps;
 }
 
 // Retrieve plugin information
@@ -253,6 +262,8 @@ EXPORT void destroy()
 {
     m1snd_shutdown();
     if(g_runningThread) {
+        g_runningThread->terminate();
+        g_runningThread->wait();
         delete g_runningThread;
         g_runningThread = NULL;
     }

@@ -4,6 +4,9 @@
 #include <SDL2/SDL.h>
 #undef main
 
+#define DEFAULT_SAMPLE_SIZE 512
+//static int nSamples = 0;
+//#include <QDebug>
 static void sdl_callback( void* data, Uint8* out, int count )
 {
     TSDLFront *front = static_cast<TSDLFront*>(data);
@@ -11,6 +14,10 @@ static void sdl_callback( void* data, Uint8* out, int count )
     {
         SDL_memset(out, 0, count);
         front->requestNextSamples(count/2, (short*)out);
+
+//        nSamples++;
+//        if(nSamples%60==0)
+//            qDebug() << nSamples;
     }
 }
 
@@ -37,23 +44,30 @@ void TSDLFront::setFilter()
 
 }
 
-bool TSDLFront::start()
+void TSDLFront::setSampleSize(int sampleSize)
 {
-    // Initialize SDL
-    if (SDL_Init(SDL_INIT_AUDIO) < 0)
-        return false;
+    if(mSamplesSize == sampleSize)
+        return;
 
-    int min_size = SAMPLE_RATE * 2 / SOUND_FPS;
-    int buf_size = 2048;
-    while ( buf_size < min_size )
-        buf_size *= 2;
+    SDL_CloseAudio();
+
+    mSamplesSize = sampleSize;
+
+    if(mSamplesSize <= 0)
+    {
+        int min_size = SAMPLE_RATE * 2 / SOUND_FPS;
+        int buf_size = DEFAULT_SAMPLE_SIZE;
+        while ( buf_size < min_size )
+            buf_size *= 2;
+        mSamplesSize = buf_size;
+    }
 
     static SDL_AudioSpec as; // making static clears all fields to 0
     as.freq     = SAMPLE_RATE;
     as.format   = AUDIO_S16SYS;
     as.channels = 2;
     as.callback = sdl_callback;
-    as.samples  = buf_size;
+    as.samples  = mSamplesSize;
     as.userdata = this;
     if (SDL_OpenAudio(&as, 0) < 0)
     {
@@ -61,6 +75,15 @@ bool TSDLFront::start()
         if ( !err )
             qDebug() << "Couldn't open SDL audio," << err;
     }
+}
+
+bool TSDLFront::start()
+{
+    // Initialize SDL
+    if (SDL_Init(SDL_INIT_AUDIO) < 0)
+        return false;
+
+    setSampleSize(DEFAULT_SAMPLE_SIZE);
 
     return true;
 }
@@ -82,6 +105,10 @@ void TSDLFront::step()
 void TSDLFront::play()
 {
     SDL_PauseAudio(false);
+
+    // be sure audio thread is not active
+    SDL_LockAudio();
+    SDL_UnlockAudio();
 }
 
 void TSDLFront::pause()

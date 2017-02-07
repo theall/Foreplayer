@@ -17,6 +17,7 @@ typedef void (*PROC_CLOSETRACK)();
 typedef void (*PROC_PLUGININFO)(TPluginInfo *pluginInfo);
 
 typedef bool (*PROC_FREE)();
+typedef int (*PROC_SAMPLESIZE)(int sampleRate, int fps);
 
 class TBackendPlugin
 {
@@ -33,6 +34,8 @@ public:
     bool matchSuffix(QString suffix);
     bool parse(QString file, TMusicInfo* musicInfo);
 
+    int getSampleSize(int sampleRate, int fps);
+
     TPluginInfo *pluginInfo();
 
 private:
@@ -40,6 +43,7 @@ private:
     PROC_LOADTRACK mProcLoadTrack;
     PROC_CLOSETRACK mProcCloseTrack;
     TRequestSamples mProcNextSamples;
+    PROC_SAMPLESIZE mProcSampleSize;
     PROC_FREE mProcFree;
 
     TPluginInfo mPluginInfo;

@@ -17,7 +17,7 @@ public:
     TMainWindow(QWidget *parent = 0);
     ~TMainWindow();
 
-    void setProgess(int time, int total);
+    void setProgress(int time, int total);
     void setTitles(QStringList titles);
     void setCaption(QString title);
     void setPlayState(QString state);

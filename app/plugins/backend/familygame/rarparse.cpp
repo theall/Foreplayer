@@ -169,7 +169,7 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
 QByteArray TRarParse::trackData(TTrackInfo *trackInfo)
 {
     if(!trackInfo)
-        return false;
+        return QByteArray();
 
     HANDLE hArcData;
     int RHCode;

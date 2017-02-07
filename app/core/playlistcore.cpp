@@ -191,7 +191,8 @@ TMusicItem *TPlaylistCore::parse(QString file)
             trackItem->displayName = track->trackName.c_str();
             trackItem->additionalInfo = track->additionalInfo.c_str();
             trackItem->duration = track->duration;
-            trackItem->index = track->indexName.c_str();
+            trackItem->index = QString::number(track->index);
+            trackItem->indexName = track->indexName.c_str();
             trackItem->musicFilePath = &trackItem->fileName;
             if(trackItem->index.isEmpty())
                 trackItem->index = QString::number(track->index);

@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
+#include "moddir.h"
 #include "m1snd.h"
 #include "trklist.h"
 #include "m1ui.h"
@@ -17,8 +19,8 @@
 // language of trick list
 char *lang[M1_LANG_MAX] =
 {
-    (char *)"en", (char *)"jp", (char *)"ko", (char *)"cn", (char *)"es", (char *)"fr", (char *)"nl", (char *)"be", (char *)"de",
-    (char *)"pl", (char *)"se", (char *)"no", (char *)"fi", (char *)"ru", (char *)"pt", (char *)"br",
+    (char*)"en", (char*)"jp", (char*)"ko", (char*)"cn", (char*)"es", (char*)"fr", (char*)"nl", (char*)"be", (char*)"de",
+    (char*)"pl", (char*)"se", (char*)"no", (char*)"fi", (char*)"ru", (char*)"pt", (char*)"br",
 };
 
 static TrkT *curlist = (TrkT *)NULL;
@@ -650,7 +652,6 @@ TrkT *trklist_load_xml(FILE *f, char *base)
 TrkT *trklist_load(char *base)
 {
 	FILE *f;
-	static char path[512];
 	static char linebuffer[2048];
 	int i, j, end, state, cursong;
 	char token[128];
@@ -664,27 +665,40 @@ TrkT *trklist_load(char *base)
 	curlist = (TrkT *)NULL;
 	version = 1;	// assume version 1
 
-	// if both exist, use the xml list
-	#if __WIN32__
-	sprintf(path, "lists\\%s\\%s.xml", lang[cur_lang], base);
-	#else
-	sprintf(path, "lists/%s/%s.xml", lang[cur_lang], base);
-	#endif
+    wchar_t *root = currentModulePath();
+    wchar_t szFilePath[512];
+    char subPath[260];
 
-	f = fopen(path, "r");
+    wcscpy(szFilePath, root);
+    wchar_t *pEnd = szFilePath + wcslen(szFilePath);
+
+	// if both exist, use the xml list
+#ifdef __WIN32__
+    sprintf(subPath, "lists\\%s\\%s.xml", lang[cur_lang], base);
+#else
+    sprintf(subPath, "lists/%s/%s.xml", lang[cur_lang], base);
+#endif
+    wchar_t *subPathW = c2w(subPath);
+    wcscat(szFilePath, subPathW);
+    delete subPathW;
+
+    f = _wfopen(szFilePath, L"r");
 	if (f != (FILE *)NULL)
 	{
 		return trklist_load_xml(f, base);
 	}
 
 	// no xml list, try the classic one
-	#if __WIN32__
-	sprintf(path, "lists\\%s\\%s.lst", lang[cur_lang], base);
-	#else
-	sprintf(path, "lists/%s/%s.lst", lang[cur_lang], base);
-	#endif
-
-	f = fopen(path, "r");
+#if __WIN32__
+    sprintf(subPath, "lists\\%s\\%s.lst", lang[cur_lang], base);
+#else
+    sprintf(subPath, "lists/%s/%s.lst", lang[cur_lang], base);
+#endif
+    *pEnd = 0;
+    subPathW = c2w(subPath);
+    wcscat(szFilePath, subPathW);
+    delete subPathW;
+    f = _wfopen(szFilePath, L"r");
 	if (f == (FILE *)NULL)
 	{
 		curlist = (TrkT *)NULL;
@@ -887,7 +901,7 @@ char *trklist_getname(TrkT *list, int num)
 		return node->name;
 	}
 
-	return (char *)NULL;
+    return (char*)"";
 }
 
 // trklist_getextra: gets the extra text for a track

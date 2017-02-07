@@ -103,6 +103,9 @@ EXPORT void closeTrack();
 // Request next samples
 EXPORT void nextSamples(int size, short* samples);
 
+// Optional, for return customized sample size
+EXPORT int sampleSize(int sampleRate, int fps);
+
 // Seek time
 EXPORT bool seek(int microSeconds);
 

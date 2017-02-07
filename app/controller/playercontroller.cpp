@@ -168,7 +168,7 @@ void TPlayerController::slotStopButtonClicked()
 
 void TPlayerController::slotSpectrumChanged(const TFrequencySpectrum &spectrum)
 {
-
+    Q_UNUSED(spectrum);
 }
 
 void TPlayerController::updateWindowTitles()
@@ -198,7 +198,7 @@ void TPlayerController::slotTimerEvent()
     if(mCurrentItem)
     {
         int playedTime = mPlayerCore->playedTime();
-        mMainWindow->setProgess(playedTime, mCurrentItem->duration);
+        mMainWindow->setProgress(playedTime, mCurrentItem->duration);
         if(mCurrentItem->duration+500 <= playedTime)
         {
             slotNextButtonClicked();
@@ -223,6 +223,6 @@ void TPlayerController::slotTimerEvent()
             mMainWindow->visualWidget()->setValue(buffer);
         }
     } else {
-        mMainWindow->setProgess(0, 0);
+        mMainWindow->setProgress(0, 0);
     }
 }

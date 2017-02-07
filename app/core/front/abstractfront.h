@@ -22,6 +22,7 @@ public:
 
     virtual void play() = 0;
     virtual void pause() = 0;
+    virtual void setSampleSize(int sampleSize) = 0;
 
     void setCallback(TRequestSamples callback);
     void requestNextSamples(int size, short *samples);

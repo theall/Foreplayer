@@ -18,6 +18,9 @@
 #include "oss.h"
 #include "wavelog.h"
 
+#define USE_DIRECTSOUND
+//#define USE_SDL
+
 static INT16 *samples;	// make sure we reserve enough for worst-case scenario
 static int s32SoundEnable=1;
 
@@ -115,12 +118,13 @@ End:
 //			  thanks to Michael Abrash in DDJ
 //			  for ideas on this.
 
-INT16 m1sdr_Init(int sample_rate)
+INT16 m1sdr_Init(int sample_rate, int useInternal)
 {
 	DSBUFFERDESC	dsbuf;
 	WAVEFORMATEX	format;
 
-	if (!s32SoundEnable) return(0);
+    if (!s32SoundEnable)
+        return(0);
 
 	nDSoundSamRate = sample_rate;
 
@@ -135,82 +139,88 @@ INT16 m1sdr_Init(int sample_rate)
 	nDSoundSegLen=(nDSoundSamRate*10+(nDSoundFps>>1))/nDSoundFps;
 	cbLoopLen=(nDSoundSegLen*nDSoundSegCount)<<2;
 
-	// create an IDirectSound COM object
-
-    if (DS_OK != DirectSoundCreate(NULL, &lpDS, NULL))
+    if(useInternal)
     {
-        printf("Unable to create DirectSound object!\n");
-        return(0);
+
+        // create an IDirectSound COM object
+    #ifdef USE_DIRECTSOUND
+        if (DS_OK != DirectSoundCreate(NULL, &lpDS, NULL))
+        {
+            printf("Unable to create DirectSound object!\n");
+            return(0);
+        }
+
+        // set cooperative level where we need it
+
+        if (DS_OK != IDirectSound_SetCooperativeLevel(lpDS, GetForegroundWindow(), DSSCL_PRIORITY))
+        {
+            printf("Unable to set cooperative level!\n");
+            return(0);
+        }
+
+        // now create a primary sound buffer
+        memset(&format, 0, sizeof(format));
+        format.wFormatTag = WAVE_FORMAT_PCM;
+        format.nChannels = 2;
+        format.wBitsPerSample = 16;
+        format.nSamplesPerSec = nDSoundSamRate;
+        format.nBlockAlign = 4;	// stereo 16-bit
+        format.cbSize = 0;
+        format.nAvgBytesPerSec=format.nSamplesPerSec*format.nBlockAlign;
+
+        memset(&dsbuf, 0, sizeof(dsbuf));
+        dsbuf.dwSize = sizeof(DSBUFFERDESC);
+        dsbuf.dwFlags = DSBCAPS_PRIMARYBUFFER;
+        dsbuf.dwBufferBytes = 0;
+        dsbuf.lpwfxFormat = NULL;
+
+        if (DS_OK != IDirectSound_CreateSoundBuffer(lpDS, &dsbuf, &lpPDSB, NULL))
+        {
+            printf("Unable to create primary buffer!");
+            return(0);
+        }
+
+        // and set it's format how we want
+
+        if (DS_OK != IDirectSoundBuffer_SetFormat(lpPDSB, &format))
+        {
+            printf("Unable to set primary buffer format!\n");
+            return(0);
+        }
+
+        // start the primary buffer playing now so we get
+        // minimal lag when we trigger our secondary buffer
+
+        IDirectSoundBuffer_Play(lpPDSB, 0, 0, DSBPLAY_LOOPING);
+
+        // that's done, now let's create our secondary buffer
+
+        memset(&dsbuf, 0, sizeof(DSBUFFERDESC));
+        dsbuf.dwSize = sizeof(DSBUFFERDESC);
+        // we'll take default controls for this one
+        dsbuf.dwFlags = DSBCAPS_GLOBALFOCUS | DSBCAPS_GETCURRENTPOSITION2 | DSBCAPS_CTRLPOSITIONNOTIFY;
+        dsbuf.dwBufferBytes = cbLoopLen;
+        dsbuf.lpwfxFormat = (LPWAVEFORMATEX)&format;
+
+        if (DS_OK != IDirectSound_CreateSoundBuffer(lpDS, &dsbuf, &lpSecB, NULL))
+        {
+            printf("Unable to create secondary buffer\n");
+            return(0);
+        }
+
+        // ok, cool, we're ready to go!
+        // blank out the entire sound buffer
+        {
+            LPVOID ptr; DWORD len;
+
+            IDirectSoundBuffer_Lock(lpSecB, 0, 0, &ptr, &len, NULL, NULL, DSBLOCK_ENTIREBUFFER);
+            ZeroMemory(ptr, len);
+            IDirectSoundBuffer_Unlock(lpSecB, ptr, len, 0, 0);
+        }
+    #else
+
+    #endif
     }
-
-	// set cooperative level where we need it
-
-	if (DS_OK != IDirectSound_SetCooperativeLevel(lpDS, GetForegroundWindow(), DSSCL_PRIORITY))
-	{
-    	printf("Unable to set cooperative level!\n");
-		return(0);
-	}
-
-	// now create a primary sound buffer
-	memset(&format, 0, sizeof(format));
-	format.wFormatTag = WAVE_FORMAT_PCM;
-	format.nChannels = 2;
-	format.wBitsPerSample = 16;
-	format.nSamplesPerSec = nDSoundSamRate;
-	format.nBlockAlign = 4;	// stereo 16-bit
-	format.cbSize = 0;
-  	format.nAvgBytesPerSec=format.nSamplesPerSec*format.nBlockAlign;
-
-	memset(&dsbuf, 0, sizeof(dsbuf));
-	dsbuf.dwSize = sizeof(DSBUFFERDESC);
-	dsbuf.dwFlags = DSBCAPS_PRIMARYBUFFER;
-	dsbuf.dwBufferBytes = 0;
-	dsbuf.lpwfxFormat = NULL;
-
-	if (DS_OK != IDirectSound_CreateSoundBuffer(lpDS, &dsbuf, &lpPDSB, NULL))
-	{
-    	printf("Unable to create primary buffer!");
-		return(0);		
-	}
-
-	// and set it's format how we want
-	
-	if (DS_OK != IDirectSoundBuffer_SetFormat(lpPDSB, &format))		
-	{
-    	printf("Unable to set primary buffer format!\n");
-		return(0);
-	}
-
-	// start the primary buffer playing now so we get
-	// minimal lag when we trigger our secondary buffer
-
-	IDirectSoundBuffer_Play(lpPDSB, 0, 0, DSBPLAY_LOOPING);
-
-	// that's done, now let's create our secondary buffer
-
-    memset(&dsbuf, 0, sizeof(DSBUFFERDESC));
-    dsbuf.dwSize = sizeof(DSBUFFERDESC);
-	// we'll take default controls for this one
-    dsbuf.dwFlags = DSBCAPS_GLOBALFOCUS | DSBCAPS_GETCURRENTPOSITION2 | DSBCAPS_CTRLPOSITIONNOTIFY; 
-    dsbuf.dwBufferBytes = cbLoopLen;
-    dsbuf.lpwfxFormat = (LPWAVEFORMATEX)&format;
-	
-	if (DS_OK != IDirectSound_CreateSoundBuffer(lpDS, &dsbuf, &lpSecB, NULL))
-	{
-    	printf("Unable to create secondary buffer\n");
-		return(0);
-	}
-
-	// ok, cool, we're ready to go!
-	// blank out the entire sound buffer
-	{
-		LPVOID ptr; DWORD len;
-
-		IDirectSoundBuffer_Lock(lpSecB, 0, 0, &ptr, &len, NULL, NULL, DSBLOCK_ENTIREBUFFER);
-		ZeroMemory(ptr, len);
-		IDirectSoundBuffer_Unlock(lpSecB, ptr, len, 0, 0);
-	}
-
 	// allocate and zero our local buffer
 	samples = (INT16 *)malloc(nDSoundSegLen<<2);
 	ZeroMemory(samples, nDSoundSegLen<<2);
@@ -226,7 +236,7 @@ void m1sdr_Exit(void)
 	{
 		return;
 	}
-
+#ifdef USE_DIRECTSOUND
 	if (lpSecB)
 	{
 		IDirectSoundBuffer_Stop(lpSecB);
@@ -246,6 +256,7 @@ void m1sdr_Exit(void)
 		IDirectSound_Release(lpDS);
 		lpDS = NULL;
     }
+#endif
 
 	if (samples)
 	{
@@ -271,7 +282,7 @@ void m1sdr_PlayStop(void)
 	WAVEFORMATEX	format;
 
 	waveLogStop();
-
+#ifdef USE_DIRECTSOUND
 	IDirectSoundBuffer_Stop(lpSecB);
 	// this is a bit cheezity-hacky
 	IDirectSoundBuffer_Release(lpSecB);
@@ -306,6 +317,8 @@ void m1sdr_PlayStop(void)
 		ZeroMemory(ptr, len);
 		IDirectSoundBuffer_Unlock(lpSecB, ptr, len, 0, 0);
 	}
+
+#endif
 }
 
 
@@ -316,6 +329,7 @@ INT32 m1sdr_HwPresent(void)
 
 INT16 m1sdr_IsThere(void)
 {
+#ifdef USE_DIRECTSOUND
     if(DS_OK == DirectSoundCreate(NULL, &lpDS, NULL)) 
     {
 		IDirectSound_Release(lpDS);
@@ -327,6 +341,8 @@ INT16 m1sdr_IsThere(void)
 		hw_present = 0;
     	return(0);
     }
+#endif
+    return 0;
 }
 
 void m1sdr_SetCallback(void *fn)
@@ -346,11 +362,9 @@ void m1sdr_FlushAudio(void)
 
 	oss_pause = 1;
 	memset(samples, 0, nDSoundSegLen * 4);
-	m1sdr_TimeCheck();
-	m1sdr_TimeCheck();
-	m1sdr_TimeCheck();
-	m1sdr_TimeCheck();
-	m1sdr_TimeCheck();
+
+    for(int i=0;i<5;i++)
+        m1sdr_TimeCheck();
 
 	oss_pause = oldpause;
 }

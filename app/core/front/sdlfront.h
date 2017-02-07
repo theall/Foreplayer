@@ -19,6 +19,8 @@ public:
     void setRecorder();
     void setFilter();
 
+    void setSampleSize(int sampleSize);
+
 private:
 };
 

@@ -8,6 +8,7 @@ class TTrackItem
 public:
     QString displayName;
     QString index;
+    QString indexName;
     QString additionalInfo;
     QString fileName;
     QString *musicFilePath;

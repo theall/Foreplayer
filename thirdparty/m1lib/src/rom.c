@@ -21,7 +21,7 @@
 // locals
 static char *holding;	// holding area for roms
 static char path[4096], pathcpy[4096];
-static RomRegionT regions[RGN_MAX];
+static RomRegionT regions[RGN_MAX_COUNT];
 static struct chd_file *disks[8];	// up to 8 disks per game
 static int curdisk = -1;
 
@@ -310,7 +310,7 @@ static void swap_regions(void)
 {
 	int rgn;
 
-	for (rgn = 0; rgn < RGN_MAX; rgn++)
+	for (rgn = 0; rgn < RGN_MAX_COUNT; rgn++)
 	{
 		if (regions[rgn].size)
 		{
@@ -372,7 +372,7 @@ int rom_loadgame(void)
 	holding = malloc(HOLDING_SIZE);
 
 	// init all regions
-	for (i = 0; i < RGN_MAX; i++)
+	for (i = 0; i < RGN_MAX_COUNT; i++)
 	{
 		regions[i].memory = NULL;
 		regions[i].flags = 0;
@@ -612,7 +612,7 @@ void rom_postinit(void)
 {
 	int i;
 
-	for (i = 0; i < RGN_MAX; i++)
+	for (i = 0; i < RGN_MAX_COUNT; i++)
 	{
 		if (regions[i].flags & RGN_DISPOSE)
 		{
@@ -637,7 +637,7 @@ void rom_shutdown(void)
 		}
 	}
 
-	for (i = 0; i < RGN_MAX; i++)
+	for (i = 0; i < RGN_MAX_COUNT; i++)
 	{
 		if (regions[i].memory)
 		{

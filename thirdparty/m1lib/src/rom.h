@@ -21,7 +21,7 @@ typedef enum
 
 	RGN_DISK,
 
-	RGN_MAX,
+    RGN_MAX_COUNT,
 } MemRegionsE;
 
 // mame compatibility

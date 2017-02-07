@@ -509,17 +509,17 @@ void TGuiManager::moveWindow(TAbstractWindow *window, int left, int top)
     int dy = top - windowRect.top();
 
     TWindowList checkingWindows;
-    if(mMainWindow->isVisible())
+    //if(mMainWindow->isVisible())
         checkingWindows.append(mMainWindow);
-    if(mLyricWindow->isVisible())
+    //if(mLyricWindow->isVisible())
         checkingWindows.append(mLyricWindow);
-    if(mEqualizerWindow->isVisible())
+    //if(mEqualizerWindow->isVisible())
         checkingWindows.append(mEqualizerWindow);
-    if(mPlaylistWindow->isVisible())
+    //if(mPlaylistWindow->isVisible())
         checkingWindows.append(mPlaylistWindow);
-    if(mBrowserWindow->isVisible())
+    //if(mBrowserWindow->isVisible())
         checkingWindows.append(mBrowserWindow);
-    if(mDesktopLyricWindow->isVisible())
+    //if(mDesktopLyricWindow->isVisible())
         checkingWindows.append(mDesktopLyricWindow);
 
     if(window->mouseMoveTriggered())

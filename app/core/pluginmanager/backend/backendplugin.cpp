@@ -5,6 +5,7 @@ TBackendPlugin::TBackendPlugin() :
     mProcLoadTrack(NULL),
     mProcCloseTrack(NULL),
     mProcNextSamples(NULL),
+    mProcSampleSize(NULL),
     mProcFree(NULL),
     mLibrary(NULL)
 {
@@ -26,10 +27,7 @@ TBackendPlugin::~TBackendPlugin()
 }
 
 bool TBackendPlugin::load(QString pluginName)
-{    
-    QFileInfo fi(pluginName);
-    qApp->addLibraryPath(fi.absolutePath());
-
+{
     mLibrary = new QLibrary(pluginName);
 
     PROC_INITIALIZE initialize = (PROC_INITIALIZE)mLibrary->resolve("initialize");
@@ -81,6 +79,9 @@ bool TBackendPlugin::load(QString pluginName)
         return false;
     }
 
+    // Optional procs
+    mProcSampleSize = (PROC_SAMPLESIZE)mLibrary->resolve("sampleSize");
+
     // Initialize plugin
     if(!initialize())
         return false;
@@ -131,6 +132,14 @@ bool TBackendPlugin::parse(QString file, TMusicInfo *musicInfo)
         return mProcParse(s.c_str(), musicInfo);
     }
     return false;
+}
+
+int TBackendPlugin::getSampleSize(int sampleRate, int fps)
+{
+    if(mProcSampleSize)
+        return mProcSampleSize(sampleRate, fps);
+
+    return -1;
 }
 
 TPluginInfo *TBackendPlugin::pluginInfo()

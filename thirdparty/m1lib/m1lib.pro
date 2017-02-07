@@ -11,7 +11,7 @@ CONFIG += c11
 TEMPLATE = lib
 TARGET = m1
 
-LIBS += -lm -ldsound -ldxguid -lunzip -lexpat -lz
+LIBS += -lm -lunzip -lexpat -lz
 
 DEFINES += SOUND_OUTPUT=1  HAS_YM2612=1  HAS_YM3438=1  HAS_YM2203=1  HAS_YM2610=1  HAS_YM2610B=1  HAS_YM3812=1  HAS_YM3526=1 \
 HAS_M65C02=1  LSB_FIRST=1  HAS_M6803=1  HAS_M6808=1  HAS_ADSP2105=1  HAS_ES5505=1  HAS_ES5506=1  HAS_K005289=1 \
@@ -39,11 +39,22 @@ CONFIG(debug, debug|release) {
 
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/arcade
+    LIBS += -ldsound -ldxguid
+
+    SOURCES += \
+        src/dsnd.cpp
 }
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
+    LIBS += -lsdl2
+
+    HEADERS += \
+        src/sdl_sound.h
+
+    SOURCES += \
+        src/sdl_sound.cpp
 }
 
 HEADERS += \
@@ -183,7 +194,8 @@ HEADERS += \
     src/emulator/mpeg/rtbuf.h \
     src/emulator/mpeg/transform.h \
     src/libs/crypt/md5.h \
-    src/libs/crypt/sha1.h
+    src/libs/crypt/sha1.h \
+    src/moddir.h
 
 SOURCES += \
     src/gamelist.cpp \
@@ -459,4 +471,4 @@ SOURCES += \
     src/libs/crypt/md5.c \
     src/libs/crypt/sha1.c \
     src/wavelog.cpp \
-    src/dsnd.cpp
+    src/moddir.cpp

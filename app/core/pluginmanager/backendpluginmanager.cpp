@@ -119,9 +119,13 @@ TBackendPlugin *TBackendPluginManager::loadTrack(TTrackInfo *trackInfo)
 TBackendPlugin* TBackendPluginManager::loadPlugin(QString pluginName)
 {
     TBackendPlugin *plugin = new TBackendPlugin;
+    QFileInfo fi(pluginName);
+    QString oldCurrentPath = QDir::currentPath();
+    QDir::setCurrent(fi.absolutePath());
     if(!plugin->load(pluginName)) {
         delete plugin;
         plugin = NULL;
     }
+    QDir::setCurrent(oldCurrentPath);
     return plugin;
 }

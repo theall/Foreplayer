@@ -84,8 +84,11 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
             return QVariant();
 
         TTrackItem *item = mMusicItem->trackItem(row);
+        QString displayIndex = item->indexName;
+        if(displayIndex.isEmpty())
+            displayIndex = item->index;
         return QString(tr("Index: %1\r\nName: %2\r\nDuration: %3\r\n\r\n%4") \
-                       .arg(item->index) \
+                       .arg(displayIndex) \
                        .arg(item->displayName) \
                        .arg(Utils::microSecToTimeStr(item->duration)) \
                        .arg(item->additionalInfo));

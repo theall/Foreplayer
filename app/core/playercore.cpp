@@ -26,7 +26,7 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
 
     TTrackInfo trackInfo;
     trackInfo.index = trackItem->index.toInt();
-    trackInfo.indexName = trackItem->index.toStdString();
+    trackInfo.indexName = trackItem->indexName.toStdString();
     trackInfo.musicFileName = trackItem->musicFilePath->toStdString();
 
     mPlayThread->pause();
