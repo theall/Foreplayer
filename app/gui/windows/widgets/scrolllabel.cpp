@@ -18,13 +18,18 @@ TScrollLabel::TScrollLabel(QWidget *parent) :
 
 void TScrollLabel::setStrings(QStringList strlist)
 {
+    mStrings.clear();
+    foreach (QString s, strlist) {
+        if(!s.trimmed().isEmpty())
+            mStrings.append(s);
+    }
     mStrings = strlist;
     if(mTimerID != -1)
     {
         killTimer(mTimerID);
         mTimerID = -1;
     }
-    if(strlist.count() > 0)
+    if(mStrings.count() > 0)
     {
         mIndex = 0;
         mCurrentIndex = 0;

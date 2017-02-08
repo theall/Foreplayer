@@ -19,6 +19,7 @@ void TMusiclistView::updateColumnsWidth()
     resizeColumnToContents(0);
     resizeColumnToContents(2);
 
+    setColumnWidth(0, columnWidth(0)+5);
     int w = rect().width()-columnWidth(0)-columnWidth(2);
     QScrollBar *bar = verticalScrollBar();
     if(bar->isVisible())

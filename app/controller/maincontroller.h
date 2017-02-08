@@ -3,26 +3,6 @@
 
 #include "playercontroller.h"
 #include "playlistcontroller.h"
-
-class TThread : public QThread
-{
-    Q_OBJECT
-
-public:
-    explicit TThread(TGuiManager* window=0);
-    ~TThread(){ }
-
-    // QThread interface
-protected:
-    void run() Q_DECL_OVERRIDE;
-
-private slots:
-
-private:
-    TGuiManager* mManager;
-    bool mPlaying;
-};
-
 class TMainController : public TAbstractController
 {
     Q_OBJECT
@@ -38,8 +18,6 @@ private slots:
     void slotQuitApp();
 
 private:
-    TThread *mThread;
-
     TMainWindow *mMainWindow;
     TPlayerCore *mPlayerCore;
 

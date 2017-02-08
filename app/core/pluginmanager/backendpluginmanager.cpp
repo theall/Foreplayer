@@ -30,7 +30,16 @@ TBackendPluginManager::TBackendPluginManager() :
 
 TBackendPluginManager::~TBackendPluginManager()
 {
-
+    for(auto plugin : mPlugins)
+    {
+        TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
+        if(backendPlugin)
+        {
+            backendPlugin->closeTrack();
+            delete backendPlugin;
+        }
+    }
+    mPlugins.clear();
 }
 
 TBackendPluginManager *TBackendPluginManager::instance()

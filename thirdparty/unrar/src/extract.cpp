@@ -891,7 +891,7 @@ void CmdExtract::ExtrPrepareName(Archive &Arc,const wchar *ArcFileName,wchar *De
 
   if (Command=='E' || Cmd->ExclPath==EXCL_SKIPWHOLEPATH)
     wcsncatz(DestName,PointToName(ArcFileName),DestSize);
-  else
+  else if(*Cmd->ExtrPath!=0)
     wcsncatz(DestName,ArcFileName,DestSize);
 
   wchar DiskLetter=toupperw(DestName[0]);

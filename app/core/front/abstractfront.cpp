@@ -2,9 +2,10 @@
 
 
 TAbstractFront::TAbstractFront() :
-    mCallback(NULL),
     mSamplesSize(0),
-    mSamples(NULL)
+    mSamples(NULL),
+    mPlaying(false),
+    mCallback(NULL)
 {
 
 }

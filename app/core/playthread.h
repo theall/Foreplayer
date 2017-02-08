@@ -6,6 +6,15 @@
 #include "front/abstractfront.h"
 #include "pluginmanager/backend/backendplugin.h"
 
+enum TThreadState
+{
+    TS_NULL,
+    TS_READY,
+    TS_PAUSED,
+    TS_RUNNING,
+    TS_TERMINATE
+};
+
 class TPlayThread : public QThread
 {
     Q_OBJECT
@@ -15,6 +24,7 @@ public:
     ~TPlayThread(){ }
 
     void pause();
+    void stop();
     void play();
     void needToTerminate();
 
@@ -22,6 +32,8 @@ public:
 
     void setBackend(TBackendPlugin *plugin);
     void currentSamples(int *size, short **samples);
+
+    bool isPaused();
 
     // QThread interface
 protected:
@@ -32,6 +44,7 @@ private slots:
 private:
     bool mNeedTerminate;
     int mCurrentMicroSeconds;
+    TThreadState mState;
 
     TAbstractFront *mFront;
     TBackendPlugin *mBackendPlugin;

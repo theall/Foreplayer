@@ -33,7 +33,7 @@ int g_initialized=0;
 int wavelog = 0;
 static int dsppos;
 int boardtype;
-static BoardT *cur_board = (BoardT *)NULL;
+static BoardT *g_curBoard = (BoardT *)NULL;
 static int silencecount;
 static int retrigger = 0, retriggernow = 0;
 static int max = 0, min = 0;
@@ -105,9 +105,9 @@ void m1snd_update_dsps(long newpos, long totalsamp)
 		dspframes = totalsamp-dsppos;
 	}
 
-    if (cur_board && cur_board->UpdateDSPs)
+    if (g_curBoard && g_curBoard->UpdateDSPs)
 	{
-		cur_board->UpdateDSPs(dsppos, dspframes);
+        g_curBoard->UpdateDSPs(dsppos, dspframes);
 	}
 	else
 	{
@@ -121,7 +121,7 @@ void m1snd_update_dsps(long newpos, long totalsamp)
 
 DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out)
 {
-    if(!cur_board)
+    if(!g_curBoard)
         return;
 
 	int silent = -1;
@@ -138,9 +138,9 @@ DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out)
 	m1snd_update_dsps(dwSamples, dwSamples);
 
 	// now call the "user handler"
-    if (cur_board->RunFrame)
+    if (g_curBoard && g_curBoard->RunFrame)
 	{
-		cur_board->RunFrame();
+        g_curBoard->RunFrame();
 	}
 
 	StreamSys_Run(out, dwSamples);
@@ -234,26 +234,62 @@ void syslog(char *fmt,...)
 //	printf("%s\n", stmpbuf);
 }
 
+char *getBoardName(int boardNumber)
+{
+    DrivertagsT *tboard = (DrivertagsT *)brdlist[boardNumber];
+    char *pName = (char *)"unknown";
+    if (!strncmp(tboard->id, "TAG0", 4))
+    {
+        int tag = 0;
+        while (tboard->tags[tag].id != TID_INVALID)
+        {
+            if(tboard->tags[tag].id == TID_NAME)
+            {
+                pName = (char *)tboard->tags[tag].data0;
+                break;
+            }
+            tag++;
+        }
+    }
+    return pName;
+}
+
+char *getHardwareInfo(int boardNumber)
+{
+    DrivertagsT *tboard = (DrivertagsT *)brdlist[boardNumber];
+    char *pName = (char*)"unknown";
+    if (!strncmp(tboard->id, "TAG0", 4))
+    {
+        int tag = 0;
+        while (tboard->tags[tag].id != TID_INVALID)
+        {
+            if(tboard->tags[tag].id == TID_HW)
+            {
+                pName = (char *)tboard->tags[tag].data0;
+                break;
+            }
+            tag++;
+        }
+    }
+    return pName;
+}
+
 // build a board structure from a taglist, or alternatively from
 // a pointer to a literal board structure (deprecated)
-static void construct_board(int num)
+static BoardT *construct_board(int num)
 {
 	DrivertagsT *tboard;
 	int	tag, cpu, dsp;
 
 	tboard = (DrivertagsT *)brdlist[num];
-	if (cur_board)
-	{
-		free((void *)cur_board);
-	}
 
-    cur_board = (BoardT *)malloc(sizeof(BoardT));
-	memset(cur_board, 0, sizeof(BoardT));
+    BoardT *newBoard = (BoardT *)malloc(sizeof(BoardT));
+    memset(newBoard, 0, sizeof(BoardT));
 
-	cur_board->startupTime = 300;
-	cur_board->interCmdTime = 100;
+    newBoard->startupTime = 300;
+    newBoard->interCmdTime = 100;
 
-	Machine->refcon = games[curgame].refcon;
+    Machine->refcon = games[curgame].refcon;
 
 	if (!strncmp(tboard->id, "TAG0", 4))
 	{
@@ -273,20 +309,20 @@ static void construct_board(int num)
 			{
 				case TID_CPU:
 					cpu++;
-					cur_board->bcpus[cpu].CPU_type = (long)tboard->tags[tag].data0;
-					cur_board->bcpus[cpu].speed = (long)tboard->tags[tag].data1;
+                    newBoard->bcpus[cpu].CPU_type = (long)tboard->tags[tag].data0;
+                    newBoard->bcpus[cpu].speed = (long)tboard->tags[tag].data1;
 //					printf("Adding CPU type %d speed %ld\n", cur_board->bcpus[cpu].CPU_type, cur_board->bcpus[cpu].speed);
 					break;
 
 				case TID_SOUND:
 					dsp++;
-					cur_board->bmachine[dsp].sound_type = (long)tboard->tags[tag].data0; 
-					cur_board->bmachine[dsp].sound_interface = tboard->tags[tag].data1; 
+                    newBoard->bmachine[dsp].sound_type = (long)tboard->tags[tag].data0;
+                    newBoard->bmachine[dsp].sound_interface = tboard->tags[tag].data1;
 //					printf("Adding DSP type %d intf %x\n", cur_board->bmachine[dsp].sound_type, (unsigned int)cur_board->bmachine[dsp].sound_interface);
 					break;
 
 				case TID_CPUMEMHAND:
-					cur_board->bcpus[cpu].memhandler = tboard->tags[tag].data0;
+                    newBoard->bcpus[cpu].memhandler = tboard->tags[tag].data0;
 					break;
 
 				case TID_CPURW:
@@ -302,38 +338,38 @@ static void construct_board(int num)
 					break;
 
 				case TID_NAME:
-					cur_board->bname = (char *)tboard->tags[tag].data0;
+                    newBoard->bname = (char *)tboard->tags[tag].data0;
 //					printf("Board name is [%s]\n", cur_board->bname);
 					break;
 
 				case TID_HW:
-					cur_board->bhw = (char *)tboard->tags[tag].data0;
+                    newBoard->bhw = (char *)tboard->tags[tag].data0;
 //					printf("Board hardware is [%s]\n", cur_board->bhw);
 					break;
 
 				case TID_DELAYS:
-					cur_board->startupTime = (long)tboard->tags[tag].data0; 
-					cur_board->interCmdTime = (long)tboard->tags[tag].data1; 
+                    newBoard->startupTime = (long)tboard->tags[tag].data0;
+                    newBoard->interCmdTime = (long)tboard->tags[tag].data1;
 //					printf("Board delays are %ld %ld\n", cur_board->startupTime, cur_board->interCmdTime);
 					break;
 
 				case TID_INIT:
-					cur_board->InitBoard = (void (*)(long))tboard->tags[tag].data0;
+                    newBoard->InitBoard = (void (*)(long))tboard->tags[tag].data0;
 					break;
 				case TID_UPDATE:
-					cur_board->UpdateDSPs = (void (*)(long, long))tboard->tags[tag].data0;
+                    newBoard->UpdateDSPs = (void (*)(long, long))tboard->tags[tag].data0;
 					break;
 				case TID_RUN:
-					cur_board->RunFrame = (void (*)(void))tboard->tags[tag].data0;
+                    newBoard->RunFrame = (void (*)(void))tboard->tags[tag].data0;
 					break;
 				case TID_SEND:
-					cur_board->SendCmd = (void (*)(int, int))tboard->tags[tag].data0;
+                    newBoard->SendCmd = (void (*)(int, int))tboard->tags[tag].data0;
 					break;
 				case TID_SHUTDOWN:
-					cur_board->Shutdown = (void (*)(void))tboard->tags[tag].data0;
+                    newBoard->Shutdown = (void (*)(void))tboard->tags[tag].data0;
 					break;
 				case TID_STOP:
-					cur_board->StopCmd = (void (*)(int))tboard->tags[tag].data0;
+                    newBoard->StopCmd = (void (*)(int))tboard->tags[tag].data0;
 					break;
 
 				default:
@@ -347,8 +383,10 @@ static void construct_board(int num)
 	else
 	{
 		// it's an old-style board
-		memcpy(cur_board, brdlist[num], sizeof(BoardT));
+        memcpy(newBoard, brdlist[num], sizeof(BoardT));
 	}
+
+    return newBoard;
 }
 
 // initializes the board
@@ -366,7 +404,7 @@ static int start_board(void)
 	memset(workram, 0, WORKRAM_SIZE);
 
 	// build the board structure
-	construct_board(boardtype);
+    g_curBoard = construct_board(boardtype);
 
 	shuftimer = (TimerT *)NULL;
 
@@ -389,8 +427,8 @@ static int start_board(void)
 	timer_init(samplerate, framerate);
 	timer_set_slices(1);
 
-	Machine->drv->sound = cur_board->bmachine;
-	Machine->drv->cpu = cur_board->bcpus;
+    Machine->drv->sound = g_curBoard->bmachine;
+    Machine->drv->cpu = g_curBoard->bcpus;
 
 	// init hardware
 	prgrom  = rom_getregion(RGN_CPU1);
@@ -399,9 +437,9 @@ static int start_board(void)
 	// streams want to be added at driver init, so do it now
 	streams_sh_start();
 
-	if (cur_board->InitBoard != NULL)
+    if (g_curBoard->InitBoard != NULL)
 	{
-		cur_board->InitBoard(samplerate);
+        g_curBoard->InitBoard(samplerate);
 	}
 
 	// boot cpus after driver init in case of banking, etc.
@@ -413,8 +451,8 @@ static int start_board(void)
 	cpuintrf_reset();
 
 	// output the board info to the UI
-	m1ui_message(m1ui_this, M1_MSG_DRIVERNAME, cur_board->bname, 0);
-	m1ui_message(m1ui_this, M1_MSG_HARDWAREDESC, cur_board->bhw, 0);
+    m1ui_message(m1ui_this, M1_MSG_DRIVERNAME, g_curBoard->bname, 0);
+    m1ui_message(m1ui_this, M1_MSG_HARDWAREDESC, g_curBoard->bhw, 0);
 	
 	// dispose the temp regions
 	rom_postinit();
@@ -432,9 +470,9 @@ static void m1snd_initnewgame(void)
 	silencecount = 0;
 	retriggernow = 0;
 
-	m1snd_startQueue();
-	m1snd_addToCmdQueue(cmd1);
-	m1snd_setQueueInitCmd(cmd1);
+    //m1snd_startQueue();
+    //m1snd_addToCmdQueue(cmd1);
+    //m1snd_setQueueInitCmd(cmd1);
 	
 	m1snd_initNormalizeState();
 
@@ -481,19 +519,19 @@ static int m1snd_switchgame(int newgame)
 		m1sdr_PlayStop();
 	}
 
-	if (cur_board)
+    if (g_curBoard)
 	{
-		if (cur_board->Shutdown)
+        if (g_curBoard->Shutdown)
 		{
-			cur_board->Shutdown();
+            g_curBoard->Shutdown();
 		}
 	
 		sound_stop();
 
-		free((void *)cur_board);
+        free((void *)g_curBoard);
 	}
 
-	cur_board = (BoardT *)NULL;
+    g_curBoard = (BoardT *)NULL;
 	Machine->drv->sound = (MachineSound *)NULL;
 
 	rom_shutdown();
@@ -573,7 +611,7 @@ DLLEXPORT void m1snd_init(void *m1this, int (STDCALL *m1ui_msg)(void *,int, char
 
 	audio_init();
 
-	cur_board = (BoardT *)NULL;
+    g_curBoard = (BoardT *)NULL;
 
 	// find how many boards there are
 	total_boards = 0;
@@ -645,19 +683,19 @@ DLLEXPORT int m1snd_run(int command, int iparm)
 	switch (command)
 	{
 		case M1_CMD_STOP:
-			if (cur_board)
+            if (g_curBoard)
 			{
-				if (cur_board->Shutdown)
+                if (g_curBoard->Shutdown)
 				{
-					cur_board->Shutdown();
+                    g_curBoard->Shutdown();
 				}
 			
 				sound_stop();
 		
-				free((void *)cur_board);
+                free((void *)g_curBoard);
 			}
 		
-			cur_board = (BoardT *)NULL;
+            g_curBoard = (BoardT *)NULL;
 			Machine->drv->sound = (MachineSound *)NULL;
 			
 			rom_shutdown();
@@ -701,7 +739,7 @@ DLLEXPORT int m1snd_run(int command, int iparm)
 			break;
 
 		case M1_CMD_IDLE:	// do idle-time processing
-			if (!cur_board)
+            if (!g_curBoard)
 			{
 				return 0;
 			}
@@ -713,9 +751,9 @@ DLLEXPORT int m1snd_run(int command, int iparm)
 
 			if (retriggernow)
 			{
-				if (cur_board->StopCmd)
+                if (g_curBoard->StopCmd)
 				{
-					cur_board->StopCmd(games[curgame].stopcmd);
+                    g_curBoard->StopCmd(games[curgame].stopcmd);
 				}
 				else
 				{
@@ -785,11 +823,11 @@ DLLEXPORT int m1snd_run(int command, int iparm)
 				waveLogStart();
 
 				cmd1 = iparm;
-				if (cur_board)
+                if (g_curBoard)
 				{
-					if (cur_board->StopCmd)
+                    if (g_curBoard->StopCmd)
 					{
-						cur_board->StopCmd(games[curgame].stopcmd);
+                        g_curBoard->StopCmd(games[curgame].stopcmd);
 					}
 					else
 					{
@@ -828,15 +866,15 @@ DLLEXPORT void m1snd_shutdown(void)
 	timer_clrnoturbo();
 	timer_clear_cpus();
 
-	if (cur_board)
+    if (g_curBoard)
 	{
-		if (cur_board->Shutdown)
+        if (g_curBoard->Shutdown)
 		{
-			cur_board->Shutdown();
+            g_curBoard->Shutdown();
 		}
 
-		free((void *)cur_board);
-		cur_board = (BoardT *)NULL;
+        free((void *)g_curBoard);
+        g_curBoard = (BoardT *)NULL;
 	}
 
 	memory_shutdown();
@@ -985,17 +1023,17 @@ DLLEXPORT void m1snd_setoption(int option, int value)
 }
 
 // get numerical info about a game
-DLLEXPORT int m1snd_get_info_int(int iinfo, int parm)
+DLLEXPORT int m1snd_get_info_int(int iinfo, int param)
 {
 	switch (iinfo)
 	{
 		case M1_IINF_HASPARENT:
-			if ((parm < 0) || (parm > total_games))
+            if ((param < 0) || (param > total_games))
 			{
 				return 0;
 			}
 
-			if (games[parm].parentzip[0] != 0)
+            if (games[param].parentzip[0] != 0)
 			{
 				return 1;
 			}
@@ -1072,7 +1110,7 @@ DLLEXPORT int m1snd_get_info_int(int iinfo, int parm)
 				return 0;
 			}
 
-			return games[parm].defcmd;
+            return games[param].defcmd;
 			break;
 
 		case M1_IINF_MAXDRVS:
@@ -1080,33 +1118,33 @@ DLLEXPORT int m1snd_get_info_int(int iinfo, int parm)
 			break;
 
 		case M1_IINF_BRDDRV:
-			return games[parm].btype;
+            return games[param].btype;
 			break;
 
 		case M1_IINF_ROMSIZE:
-			return rom_getfilesize(parm&0xffff, parm>>16);
+            return rom_getfilesize(param&0xffff, param>>16);
 			break;
 
 		case M1_IINF_ROMCRC:
-			return rom_getfilecrc(parm&0xffff, parm>>16);
+            return rom_getfilecrc(param&0xffff, param>>16);
 			break;
 
 		case M1_IINF_ROMNUM:
-			return rom_getnum(parm);
+            return rom_getnum(param);
 			break;
 
 		case M1_IINF_TRACKS:
-            if(!game_trklists[parm])
-                game_trklists[parm] = trklist_load(games[parm].zipname);
-			return trklist_getnumsongs(game_trklists[parm]);
+            if(!game_trklists[param])
+                game_trklists[param] = trklist_load(games[param].zipname);
+            return trklist_getnumsongs(game_trklists[param]);
 			break;
 
 		case M1_IINF_TRACKCMD:
-			return trklist_song2cmd(game_trklists[parm&0xffff], parm>>16);
+            return trklist_song2cmd(game_trklists[param&0xffff], param>>16);
 			break;
 
 		case M1_IINF_TRKLENGTH:
-			return trklist_getlength(game_trklists[parm&0xffff], parm>>16);
+            return trklist_getlength(game_trklists[param&0xffff], param>>16);
 			break;
 
 		case M1_IINF_CURTIME:
@@ -1114,7 +1152,7 @@ DLLEXPORT int m1snd_get_info_int(int iinfo, int parm)
 			break;
 
 		case M1_IINF_NUMEXTRAS:
-			return trklist_getnumextras(game_trklists[parm&0xffff], parm>>16);
+            return trklist_getnumextras(game_trklists[param&0xffff], param>>16);
 			break;
 
 		case M1_IINF_NORMVOL:
@@ -1126,41 +1164,39 @@ DLLEXPORT int m1snd_get_info_int(int iinfo, int parm)
 			break;
 
 		case M1_IINF_NUMCHANS:
-			return mixer_get_num_chans(parm);
+            return mixer_get_num_chans(param);
 			break;
 
 		case M1_IINF_CHANLEVEL:
-			return mixer_get_chan_level(parm>>16, parm&0xffff);
+            return mixer_get_chan_level(param>>16, param&0xffff);
 			break;
 
 		case M1_IINF_CHANPAN:
-			return mixer_get_chan_pan(parm>>16, parm&0xffff);
+            return mixer_get_chan_pan(param>>16, param&0xffff);
 			break;
 	}
 
 	return -1;
 }
 
-DLLEXPORT char *m1snd_get_info_str(int sinfo, int parm)
+DLLEXPORT char *m1snd_get_info_str(int sinfo, int param)
 {
-	char *ret;
-
 	switch (sinfo)
 	{
 		case M1_SINF_ROMNAME:
-			return games[parm].zipname;
+            return games[param].zipname;
 			break;
 
 		case M1_SINF_YEAR:
-			return games[parm].year;
+            return games[param].year;
 			break;
 
 		case M1_SINF_VISNAME:
-			return games[parm].name;
+            return games[param].name;
 			break;
 
 		case M1_SINF_PARENTNAME:
-			return games[parm].parentzip;
+            return games[param].parentzip;
 			break;
 
 		case M1_SINF_COREVERSION:
@@ -1168,32 +1204,24 @@ DLLEXPORT char *m1snd_get_info_str(int sinfo, int parm)
 			break;
 
 		case M1_SINF_MAKER:
-//			return mfgstrs[games[parm].mfg];
-			return games[parm].mfgstr;
+//			return mfgstrs[games[param].mfg];
+            return games[param].mfgstr;
 			break;
 
 		case M1_SINF_BNAME:
-			construct_board(parm);
-			ret = cur_board->bname;
-			free((void *)cur_board);
-			cur_board = (BoardT *)NULL;
-			return ret;
+            return getBoardName(param);
 			break;
 
 		case M1_SINF_BHARDWARE:
-			construct_board(parm);
-			ret = cur_board->bhw;
-			free((void *)cur_board);
-			cur_board = (BoardT *)NULL;
-			return ret;
+            return getHardwareInfo(param);
 			break;
 
 		case M1_SINF_ROMFNAME:
-			return rom_getfilename(parm&0xffff, parm>>16);
+            return rom_getfilename(param&0xffff, param>>16);
 			break;
 
 		case M1_SINF_TRKNAME:
-			return trklist_getname(game_trklists[parm&0xffff], parm>>16);
+            return trklist_getname(game_trklists[param&0xffff], param>>16);
 			break;
 
 		case M1_SINF_ENCODING:
@@ -1201,7 +1229,7 @@ DLLEXPORT char *m1snd_get_info_str(int sinfo, int parm)
 			break;
 
 		case M1_SINF_CHANNAME:
-			return mixer_get_chan_name(parm>>16, parm&0xffff);
+            return mixer_get_chan_name(param>>16, param&0xffff);
 			break;
 	}
 
@@ -1268,7 +1296,7 @@ void m1snd_initNormalizeState(void)
 
 BoardT *m1snd_getCurBoard(void)
 {
-	return cur_board;
+    return g_curBoard;
 }
 
 void m1snd_setPostVolume(float fPost)

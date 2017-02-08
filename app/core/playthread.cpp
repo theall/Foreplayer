@@ -7,6 +7,7 @@
 TPlayThread::TPlayThread():
     mNeedTerminate(false),
     mCurrentMicroSeconds(0),
+    mState(TS_NULL),
     mFront(NULL),
     mBackendPlugin(NULL)
 {
@@ -16,15 +17,37 @@ TPlayThread::TPlayThread():
 void TPlayThread::pause()
 {
     if(mFront)
+    {
         mFront->pause();
+        mState = TS_PAUSED;
+    } else {
+        mState = TS_READY;
+    }
+}
+
+void TPlayThread::stop()
+{
+    if(mFront)
+    {
+        mFront->stop();
+        mState = TS_READY;
+    } else {
+        mState = TS_READY;
+    }
 }
 
 void TPlayThread::play()
 {
-    if(mFront)
-        mFront->play();
+    if(mState != TS_PAUSED)
+        mCurrentMicroSeconds = 0;
 
-    mCurrentMicroSeconds = 0;
+    if(mFront)
+    {
+        mFront->play();
+        mState = TS_RUNNING;
+    } else {
+        mState = TS_READY;
+    }
 }
 
 void TPlayThread::needToTerminate()
@@ -70,6 +93,11 @@ void TPlayThread::currentSamples(int *size, short **samples)
     }
 }
 
+bool TPlayThread::isPaused()
+{
+    return mState==TS_PAUSED;
+}
+
 void TPlayThread::run()
 {
     if(!mFront)
@@ -77,6 +105,7 @@ void TPlayThread::run()
 
     mFront->start();
 
+    mState = TS_READY;
     while(!mNeedTerminate)
     {
         msleep(CYCLE_INTERVAL);
@@ -88,4 +117,5 @@ void TPlayThread::run()
     }
 
     mFront->stop();
+    mState = TS_TERMINATE;
 }

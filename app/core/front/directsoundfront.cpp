@@ -282,5 +282,5 @@ void TDirectSoundFront::setFilter()
 
 void TDirectSoundFront::setSampleSize(int sampleSize)
 {
-
+    (void)sampleSize;
 }

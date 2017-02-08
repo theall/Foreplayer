@@ -42,6 +42,8 @@ public:
 
     void currentSamples(int *size, short **samples);
 
+    bool resume();
+
 private:
     TPlayThread *mPlayThread;
     TBackendPluginManager *mPluginManager;

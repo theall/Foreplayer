@@ -78,7 +78,7 @@ void TGmeWrap::deleteInstance()
         mInstance = NULL;
     }
 }
-#include <stdio.h>
+
 bool TGmeWrap::loadFile( const char* path )
 {
     free();

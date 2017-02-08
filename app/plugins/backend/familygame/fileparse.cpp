@@ -12,13 +12,13 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
     if(!musicInfo)
         return false;
 
-    TGmeWrap *gme = TGmeWrap::instance();
-    gme->loadFile(mFile.toLocal8Bit().constData());
-    int trackCount = gme->trackCount();
+    TGmeWrap gme;
+    gme.loadFile(mFile.toLocal8Bit().constData());
+    int trackCount = gme.trackCount();
     int trackIndex = 0;
     for(int i=0;i<trackCount;i++) {
         TTrackInfo *trackInfo = new TTrackInfo;
-        const gme_info_t *_trackInfo = gme->trackInfo(i);
+        const gme_info_t *_trackInfo = gme.trackInfo(i);
         trackInfo->trackName = _trackInfo->song;
         if(trackInfo->trackName=="")
             trackInfo->trackName = "unknown";
@@ -44,17 +44,19 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
 
 TTrackInfo *TFileParse::parse(QByteArray data)
 {
-    TGmeWrap *gme = TGmeWrap::instance();
-    gme->loadData((void*)data.constData(), data.size());
-    int trackCount = gme->trackCount();
+    TGmeWrap gme;
+    gme.loadData((void*)data.constData(), data.size());
+    int trackCount = gme.trackCount();
     if(trackCount != 1)
         return NULL;
 
     TTrackInfo *trackInfo = new TTrackInfo;
-    const gme_info_t *_trackInfo = gme->trackInfo(0);
+    const gme_info_t *_trackInfo = gme.trackInfo(0);
     trackInfo->trackName = _trackInfo->song;
     trackInfo->index = 0;
     trackInfo->duration  = _trackInfo->length;
+    if(trackInfo->duration <= 0)
+        trackInfo->duration = _trackInfo->play_length;
     trackInfo->fileSize  = data.size();
     trackInfo->additionalInfo = fillAdditionalInfo(_trackInfo);
 
@@ -63,12 +65,12 @@ TTrackInfo *TFileParse::parse(QByteArray data)
 
 string TFileParse::fillAdditionalInfo(const gme_info_t *trackInfo)
 {
-    return QString::asprintf("game:%s\n"
-                    "system:%s\n"
-                    "author:%s\n"
-                    "dumper:%s\n"
-                    "copyright:%s\n"
-                    "comment:%s",
+    return QString::asprintf("game: %s\n"
+                    "system: %s\n"
+                    "author: %s\n"
+                    "dumper: %s\n"
+                    "copyright: %s\n"
+                    "comment: %s",
                     trackInfo->game,
                     trackInfo->system,
                     trackInfo->author,

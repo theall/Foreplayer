@@ -27,10 +27,12 @@ public:
     void setCallback(TRequestSamples callback);
     void requestNextSamples(int size, short *samples);
     void currentSamples(int *size, short **samples);
+    inline bool isPlaying() { return mPlaying; }
 
 protected:
     int mSamplesSize;
     short *mSamples;
+    bool mPlaying;
 
 private:
     TRequestSamples mCallback;

@@ -10,20 +10,22 @@ TARGET = plugin
 TEMPLATE = lib
 CONFIG += qt c++11
 
-LIBS += -lgme -lunrar
+LIBS += -lgme -lunrar -lunzip -lz
 
 SOURCES += \
     main.cpp \
     gmewrap.cpp \
     rarparse.cpp \
     fileparse.cpp \
-    abstractparse.cpp
+    abstractparse.cpp \
+    zipparse.cpp
 
 HEADERS += \  
     gmewrap.h \
     rarparse.h \
     fileparse.h \
-    abstractparse.h
+    abstractparse.h \
+    zipparse.h
 
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/gme

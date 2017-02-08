@@ -63,11 +63,12 @@ void TPlaylistItem::insert(int pos, TMusicItem *item)
 bool TPlaylistItem::remove(int index)
 {
     if(index<0 || index>=mMusicItems.size())
-        return NULL;
+        return false;
 
     delete mMusicItems[index];
     mMusicItems.removeAt(index);
     mModified = true;
+    return true;
 }
 
 QList<int> TPlaylistItem::removeRedundant()

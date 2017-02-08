@@ -21,7 +21,7 @@ TCore::~TCore()
     }
     if(mPlugins)
     {
-        delete mPlugins;
+        TBackendPluginManager::deleteInstance();
         mPlugins = NULL;
     }
 }

@@ -21,7 +21,7 @@ const char *szM1lib = "m1.dll";
 QString szError;
 QString g_curRomPath;
 QLibrary g_library;
-TM1Thread *g_runningThread = NULL;
+static TM1Thread *g_runningThread=NULL;
 
 //M1SND_INIT m1snd_init;
 //M1SND_RUN m1snd_run;
@@ -129,7 +129,6 @@ EXPORT bool initialize()
     if(!g_runningThread)
     {
         g_runningThread = new TM1Thread;
-        QObject::connect(g_runningThread, &TM1Thread::finished, g_runningThread, &QObject::deleteLater);
         g_runningThread->start();
     }
 

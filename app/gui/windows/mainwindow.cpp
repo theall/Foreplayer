@@ -219,7 +219,7 @@ void TMainWindow::on_volume_valueChanged(int value)
 
 void TMainWindow::updatePlayStatus()
 {
-    mStatus->setText(tr("Status: %1").arg(mPlayState));
+    mStatus->setText(mPlayState);
 }
 
 void TMainWindow::updatePlayEffect()

@@ -5,6 +5,7 @@
 
 #include "fileparse.h"
 #include "rarparse.h"
+#include "zipparse.h"
 
 const char *szName          = "family game";
 const char *szManufacture   = "Your name/organization";
@@ -12,6 +13,7 @@ const char *szContact       = "Your contact information";
 const char *szDescription   = "Plugin description";
 const char *szCreateDate    = "";//Plugin created date, such as 2016-10-11
 const char *szTypeDesc      = \
+        "ZIP ;Universe package\n" \
         "RSN ;Super Nintendo package\n" \
         "AY  ;ZX Spectrum/Amstrad CPC\n" \
         "GBS ;Nintendo Game Boy\n" \
@@ -23,8 +25,8 @@ const char *szTypeDesc      = \
         "SPC ;Super Nintendo/Super Famicom\n" \
         "VGZ ;Sega Master System/Mark III, Sega Genesis/Mega Drive,BBC Micro\n";
 
-TGmeWrap *g_gmeWrap;
-QString g_szSuffixes;
+TGmeWrap *g_gmePlay; // Gme for play
+char g_szSuffixes[1024];
 QMap<QString, QString> g_TypeDesc;
 
 // Initialize plugin
@@ -42,9 +44,10 @@ EXPORT bool initialize()
         g_TypeDesc.insert(suffix, item[1]);
     }
 
-    g_szSuffixes = g_TypeDesc.keys().join(" ");
-    g_gmeWrap = TGmeWrap::instance();
-    g_gmeWrap->init();
+    QByteArray suffixList = QString(g_TypeDesc.keys().join(" ")).toLocal8Bit();
+    strcpy(g_szSuffixes, suffixList.constData());
+    g_gmePlay = TGmeWrap::instance();
+    g_gmePlay->init();
 
     return true;
 }
@@ -58,7 +61,7 @@ EXPORT const char *getLastError()
 EXPORT const char *matchSuffixes()
 {
     // Return suffix list this plugin can process, multiple suffixed seperated by space character
-    return g_szSuffixes.toLocal8Bit().constData();
+    return (const char*)g_szSuffixes;
 }
 
 // Return description of this suffix, for example "mp3" should be "Moving Picture Experts Group Audio Layer III"
@@ -79,17 +82,24 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
     bool result = false;
     TFileParse fileParse(file);
     TRarParse rarParse(file);
+    TZipParse zipParse(file);
     if(g_TypeDesc.contains(suffix))
     {
         if(suffix=="rsn")
             result = rarParse.parse(musicInfo);
+        else if(suffix=="zip")
+            result = zipParse.parse(musicInfo);
         else
             result = fileParse.parse(musicInfo);
     } else {
         // For unknown suffix file, firstly try to verify whether it is a rsn file
         result = rarParse.parse(musicInfo);
         if(!result)
-            result = fileParse.parse(musicInfo);
+        {
+            result = zipParse.parse(musicInfo);
+            if(!result)
+                result = fileParse.parse(musicInfo);
+        }
     }
     return result;
 }
@@ -97,7 +107,7 @@ EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
 // Load track to prepare for playing
 EXPORT bool loadTrack(TTrackInfo* trackInfo)
 {
-    if(!g_gmeWrap || !trackInfo)
+    if(!g_gmePlay || !trackInfo)
         return false;
 
     bool error = false;
@@ -109,32 +119,37 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
         // File is in package
         TRarParse rarParse(cPath);
         QByteArray trackData = rarParse.trackData(trackInfo);
-        error = g_gmeWrap->loadData(trackData.data(), trackData.size());
+        error = g_gmePlay->loadData(trackData.data(), trackData.size());
+    } else if (suffix=="zip") {
+        TZipParse zipParse(cPath);
+        QByteArray trackData = zipParse.trackData(trackInfo);
+        error = g_gmePlay->loadData(trackData.data(), trackData.size());
     } else {
-        error = g_gmeWrap->loadFile(cPath);
+        error = g_gmePlay->loadFile(cPath);
     }
-    error = g_gmeWrap->startTrack(trackInfo->index);
+    if(error)
+        error = g_gmePlay->startTrack(trackInfo->index);
     return error;
 }
 
 // Close track
 EXPORT void closeTrack()
 {
-    g_gmeWrap->free();
+    g_gmePlay->free();
 }
 
 // Request next samples
 EXPORT void nextSamples(int size, short* samples)
 {
-    if(g_gmeWrap)
-        g_gmeWrap->fillBuffer(samples, size);
+    if(g_gmePlay)
+        g_gmePlay->fillBuffer(samples, size);
 }
 
 // Seek time
 EXPORT bool seek(int microSeconds)
 {
-    if(g_gmeWrap)
-        return g_gmeWrap->seek(microSeconds);
+    if(g_gmePlay)
+        return g_gmePlay->seek(microSeconds);
 
     return false;
 }
@@ -155,8 +170,8 @@ EXPORT void pluginInformation(TPluginInfo *pluginInfo)
 // Use to free plugin
 EXPORT void destroy()
 {
-    if(g_gmeWrap) {
+    if(g_gmePlay) {
         TGmeWrap::deleteInstance();
-        g_gmeWrap = NULL;
+        g_gmePlay = NULL;
     }
 }

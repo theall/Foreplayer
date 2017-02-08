@@ -20,6 +20,7 @@
 #define K_HIDDEN      "Hidden"
 #define K_LAST_PARSED "LastParsed"
 #define K_INDEX       "Index"
+#define K_INDEX_NAME  "IndexName"
 #define K_ENABLE      "Enable"
 #define K_ADDITIONAL  "AdditionalInfo"
 

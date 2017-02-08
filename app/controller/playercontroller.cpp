@@ -84,14 +84,20 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 
 void TPlayerController::slotPlayButtonClicked()
 {
-    if(!mPlaylistCore)
+    if(!mPlayerCore || !mPlaylistCore)
         return;
 
-    int pi = -1;
-    int mi = -1;
-    int ti = -1;
-    mPlaylistCore->playingIndex(&pi, &mi, &ti);
-    slotRequestPlay(pi, mi, ti);
+    // Try resume
+    if(mPlayerCore->resume()) {
+        mCurrentItem = mPlaylistCore->currentTrackItem();
+        updateWindowTitles();
+    } else {
+        int pi = -1;
+        int mi = -1;
+        int ti = -1;
+        mPlaylistCore->playingIndex(&pi, &mi, &ti);
+        slotRequestPlay(pi, mi, ti);
+    }
 }
 
 void TPlayerController::slotPauseButtonClicked()
@@ -198,8 +204,9 @@ void TPlayerController::slotTimerEvent()
     if(mCurrentItem)
     {
         int playedTime = mPlayerCore->playedTime();
-        mMainWindow->setProgress(playedTime, mCurrentItem->duration);
-        if(mCurrentItem->duration+500 <= playedTime)
+        int fakeDuration = mCurrentItem->duration>0?mCurrentItem->duration:60000;
+        mMainWindow->setProgress(playedTime, fakeDuration);
+        if(fakeDuration+500 <= playedTime)
         {
             slotNextButtonClicked();
         }

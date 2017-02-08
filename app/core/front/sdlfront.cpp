@@ -10,7 +10,7 @@
 static void sdl_callback( void* data, Uint8* out, int count )
 {
     TSDLFront *front = static_cast<TSDLFront*>(data);
-    if(front)
+    if(front && front->isPlaying())
     {
         SDL_memset(out, 0, count);
         front->requestNextSamples(count/2, (short*)out);
@@ -90,10 +90,12 @@ bool TSDLFront::start()
 
 void TSDLFront::stop()
 {
-    SDL_PauseAudio(true);
-
+    mPlaying = false;
     // be sure audio thread is not active
     SDL_LockAudio();
+
+    SDL_PauseAudio(true);
+
     SDL_UnlockAudio();
 }
 
@@ -109,6 +111,7 @@ void TSDLFront::play()
     // be sure audio thread is not active
     SDL_LockAudio();
     SDL_UnlockAudio();
+    mPlaying = true;
 }
 
 void TSDLFront::pause()

@@ -15,7 +15,7 @@ TPlayerCore::~TPlayerCore()
 TMusicInfo *TPlayerCore::parse(QString fileName)
 {
     TMusicInfo *musicInfo = new TMusicInfo;
-    TBackendPlugin *plugin = mPluginManager->parse(fileName, musicInfo);
+    mPluginManager->parse(fileName, musicInfo);
     return musicInfo;
 }
 
@@ -29,7 +29,7 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
     trackInfo.indexName = trackItem->indexName.toStdString();
     trackInfo.musicFileName = trackItem->musicFilePath->toStdString();
 
-    mPlayThread->pause();
+    mPlayThread->stop();
 
     bool result = false;
     // Find a backend plugin which can process this track
@@ -91,6 +91,16 @@ void TPlayerCore::currentSamples(int *size, short **samples)
     {
         return mPlayThread->currentSamples(size, samples);
     }
+}
+
+bool TPlayerCore::resume()
+{
+    if(mPlayThread && mPlayThread->isPaused())
+    {
+        mPlayThread->play();
+        return true;
+    }
+    return false;
 }
 
 void TPlayerCore::destroyPlayThread()
