@@ -3,7 +3,6 @@
 TPlayerController::TPlayerController(QObject *parent) :
     TAbstractController(parent)
   , mCurrentItem(NULL)
-  , mSpectrum(new TSpectrumAnalyser(this))
 {
 
 }
@@ -33,14 +32,8 @@ void TPlayerController::joint(TGuiManager *gui, TCore *core)
     connect(mMainWindow, SIGNAL(prevClicked()), this, SLOT(slotPrevButtonClicked()));
     connect(mMainWindow, SIGNAL(nextClicked()), this, SLOT(slotNextButtonClicked()));
     connect(mMainWindow, SIGNAL(stopClicked()), this, SLOT(slotStopButtonClicked()));
-
-    qRegisterMetaType<TFrequencySpectrum>("TFrequencySpectrum");
-    qRegisterMetaType<WindowFunction>("WindowFunction");
-
-    connect(mSpectrum,
-            SIGNAL(spectrumChanged(TFrequencySpectrum)),
-            this,
-            SLOT(slotSpectrumChanged(TFrequencySpectrum)));
+    connect(mMainWindow, SIGNAL(volumeValueChanged(float)), this, SLOT(slotVolumeValueChanged(float)));
+    connect(mMainWindow, SIGNAL(volumeToggle(bool)), this, SLOT(slotVolumeToggled(bool)));
 }
 
 void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
@@ -170,11 +163,23 @@ void TPlayerController::slotStopButtonClicked()
 {
     if(!mPlayerCore || !mMainWindow)
         return;
+
+    mPlayerCore->stop();
+    stopTimer();
+    mMainWindow->setButtonPlayChecked(true);
+    mMainWindow->setPlayState(tr("Stoped"));
 }
 
-void TPlayerController::slotSpectrumChanged(const TFrequencySpectrum &spectrum)
+void TPlayerController::slotVolumeValueChanged(float value)
 {
-    Q_UNUSED(spectrum);
+    if(mPlayerCore)
+        mPlayerCore->setAudioParameter(AP_VOLUME, value);
+}
+
+void TPlayerController::slotVolumeToggled(bool toggled)
+{
+    if(mPlayerCore)
+        mPlayerCore->setAudioParameter(AP_VOLUME_ENABLE, (float)!toggled);
 }
 
 void TPlayerController::updateWindowTitles()
@@ -213,21 +218,24 @@ void TPlayerController::slotTimerEvent()
 
         // Update spectrum bar
         int size = 0;
-        short *samples = NULL;
-        mPlayerCore->currentSamples(&size, &samples);
-        if(size > 0) {
-            QByteArray buffer;
-            short *pSample = samples;
-            for(int i=0;i<size;i++)
+        TSpectrumElement *spectrumArray = NULL;
+        mPlayerCore->getAudioData(ADT_SPECTRUM, (void*)&spectrumArray, (void*)&size);
+        if(size>0 && spectrumArray) {
+            int bandWidth = size / BAND_COUNT;
+            if(bandWidth < 4)
+                return;
+
+            float level[BAND_COUNT];
+            for(int i = 0; i < BAND_COUNT; i++)
             {
-                short sample = ~*pSample;
-                buffer.append((char)((sample&0xff00)>>16));
-                buffer.append((char)sample&0xff);
-                //buffer.append((char*)&sample, 2);
-                pSample++;
+                int centPos = i * bandWidth + bandWidth / 2;
+                level[i] = spectrumArray[centPos-2].amplitude*0.1 + \
+                        spectrumArray[centPos-1].amplitude*0.15 + \
+                        spectrumArray[centPos].amplitude * 0.5 + \
+                        spectrumArray[centPos+1].amplitude * 0.15 + \
+                        spectrumArray[centPos+2].amplitude * 0.1;
             }
-            //mSpectrum->calculate(buffer);
-            mMainWindow->visualWidget()->setValue(buffer);
+            mMainWindow->visualWidget()->setValue(level);
         }
     } else {
         mMainWindow->setProgress(0, 0);

@@ -459,7 +459,8 @@ struct snd_interface sndintf[] =
 		SN76496_clock,
 		SN76496_sh_start,
         0,
-		0
+        0,
+        0
 	},
 #endif
 #if (HAS_POKEY)
@@ -966,7 +967,7 @@ int sound_boot(void)
 	/* Verify the order of entries in the sndintf[] array */
 	for (i = 0;i < SOUND_COUNT;i++)
 	{
-		if (sndintf[i].sound_num != i)
+        if (sndintf[i].sound_num != (unsigned int)i)
 		{
 	        	int j;
 		    

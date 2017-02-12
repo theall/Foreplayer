@@ -83,19 +83,21 @@ void TPlayThread::setBackend(TBackendPlugin *plugin)
     }
 }
 
-void TPlayThread::currentSamples(int *size, short **samples)
-{
-    if(mFront)
-        mFront->currentSamples(size, samples);
-    else {
-        *size = 0;
-        *samples = NULL;
-    }
-}
-
 bool TPlayThread::isPaused()
 {
     return mState==TS_PAUSED;
+}
+
+void TPlayThread::setAudioParameter(TAudioParameter type, float value, int param)
+{
+    if(mFront)
+        mFront->setAudioParameter(type, value, param);
+}
+
+void TPlayThread::getAudioData(TAudioDataType dataType, void *param1, void *param2)
+{
+    if(mFront)
+        mFront->getAudioData(dataType, param1, param2);
 }
 
 void TPlayThread::run()

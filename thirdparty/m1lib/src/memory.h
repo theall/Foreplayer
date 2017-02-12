@@ -7,11 +7,15 @@
 extern "C" {
 #endif
 
-#ifdef __GNU__
+#ifndef UNUSEDARG
+#if defined(__GNU__) || defined(__GNUC__)
 #define UNUSEDARG __attribute__((__unused__))
 #else
 #define UNUSEDARG
 #endif
+#endif
+
+#define UNUSED(x) (void)x;
 
 /* obsolete, to be removed */
 #define READ_WORD(a)		  (*(UINT16 *)(a))
@@ -34,9 +38,9 @@ void *auto_malloc(size_t size);
 
 /***************************************************************************
 
-	Basic type definitions
+    Basic type definitions
 
-	These types are used for memory handlers.
+    These types are used for memory handlers.
 
 ***************************************************************************/
 
@@ -74,8 +78,8 @@ typedef write32_handler	port_write32_handler;
 /* ----- typedefs for externally allocated memory ----- */
 struct ExtMemory
 {
-	offs_t 			start, end;
-	UINT8			region;
+    offs_t 			start, end;
+    UINT8			region;
     UINT8 *			data;
 };
 
@@ -83,7 +87,7 @@ struct ExtMemory
 
 /***************************************************************************
 
-	Basic macros
+    Basic macros
 
 ***************************************************************************/
 
@@ -99,35 +103,35 @@ struct ExtMemory
 #define OPBASE_HANDLER(name)	offs_t   name(UNUSEDARG offs_t address)
 
 /* "new" MAME compatibility */
-#define AM_RANGE(x, y) { x, y, 
+#define AM_RANGE(x, y) { x, y,
 #define AM_READ(x) x },
 #define AM_WRITE(x) x },
 
 /* ----- macros for accessing bytes and words within larger chunks ----- */
 #if LSB_FIRST
-	#define BYTE_XOR_BE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
-	#define BYTE_XOR_LE(a)  	(a)
-	#define BYTE4_XOR_BE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
-	#define BYTE4_XOR_LE(a) 	(a)
-	#define WORD_XOR_BE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
-	#define WORD_XOR_LE(a)  	(a)
+    #define BYTE_XOR_BE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
+    #define BYTE_XOR_LE(a)  	(a)
+    #define BYTE4_XOR_BE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
+    #define BYTE4_XOR_LE(a) 	(a)
+    #define WORD_XOR_BE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
+    #define WORD_XOR_LE(a)  	(a)
 #else
-	#define BYTE_XOR_BE(a)  	(a)
-	#define BYTE_XOR_LE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
-	#define BYTE4_XOR_BE(a) 	(a)
-	#define BYTE4_XOR_LE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
-	#define WORD_XOR_BE(a)  	(a)
-	#define WORD_XOR_LE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
+    #define BYTE_XOR_BE(a)  	(a)
+    #define BYTE_XOR_LE(a)  	((a) ^ 1)				/* read/write a byte to a 16-bit space */
+    #define BYTE4_XOR_BE(a) 	(a)
+    #define BYTE4_XOR_LE(a) 	((a) ^ 3)				/* read/write a byte to a 32-bit space */
+    #define WORD_XOR_BE(a)  	(a)
+    #define WORD_XOR_LE(a)  	((a) ^ 2)				/* read/write a word to a 32-bit space */
 #endif
 
 
 
 /***************************************************************************
 
-	Memory/port array constants
+    Memory/port array constants
 
-	These apply to values in the array of read/write handlers that is
-	declared within each driver.
+    These apply to values in the array of read/write handlers that is
+    declared within each driver.
 
 ***************************************************************************/
 
@@ -197,12 +201,12 @@ struct ExtMemory
 
 /***************************************************************************
 
-	Constants for static entries in memory read/write arrays
+    Constants for static entries in memory read/write arrays
 
-	The first 32 entries in the memory lookup table are reserved for
-	"static" handlers. These are internal handlers for RAM, ROM, banks,
-	and unmapped memory areas. The following definitions are the
-	properly-casted versions of the STATIC_ constants above.
+    The first 32 entries in the memory lookup table are reserved for
+    "static" handlers. These are internal handlers for RAM, ROM, banks,
+    and unmapped memory areas. The following definitions are the
+    properly-casted versions of the STATIC_ constants above.
 
 ***************************************************************************/
 
@@ -386,7 +390,7 @@ struct ExtMemory
 
 /***************************************************************************
 
-	Constants for static entries in port read/write arrays
+    Constants for static entries in port read/write arrays
 
 ***************************************************************************/
 
@@ -412,107 +416,107 @@ struct ExtMemory
 
 /***************************************************************************
 
-	Memory/port array type definitions
+    Memory/port array type definitions
 
-	Note that the memory hooks are not passed the actual memory address
-	where the operation takes place, but the offset from the beginning
-	of the block they are assigned to. This makes handling of mirror
-	addresses easier, and makes the handlers a bit more "object oriented".
-	If you handler needs to read/write the main memory area, provide a
-	"base" pointer: it will be initialized by the main engine to point to
-	the beginning of the memory block assigned to the handler. You may
-	also provided a pointer to "size": it will be set to the length of
-	the memory area processed by the handler.
+    Note that the memory hooks are not passed the actual memory address
+    where the operation takes place, but the offset from the beginning
+    of the block they are assigned to. This makes handling of mirror
+    addresses easier, and makes the handlers a bit more "object oriented".
+    If you handler needs to read/write the main memory area, provide a
+    "base" pointer: it will be initialized by the main engine to point to
+    the beginning of the memory block assigned to the handler. You may
+    also provided a pointer to "size": it will be set to the length of
+    the memory area processed by the handler.
 
 ***************************************************************************/
 
 /* ----- structs for memory read arrays ----- */
 struct Memory_ReadAddress
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	mem_read_handler 	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    mem_read_handler 	handler;		/* handler callback */
 };
 
 struct Memory_ReadAddress16
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	mem_read16_handler 	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    mem_read16_handler 	handler;		/* handler callback */
 };
 
 struct Memory_ReadAddress32
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	mem_read32_handler	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    mem_read32_handler	handler;		/* handler callback */
 };
 
 /* ----- structs for memory write arrays ----- */
 struct Memory_WriteAddress
 {
     offs_t				start, end;		/* start, end addresses, inclusive */
-	mem_write_handler	handler;		/* handler callback */
-	data8_t **			base;			/* receives pointer to memory (optional) */
+    mem_write_handler	handler;		/* handler callback */
+    data8_t **			base;			/* receives pointer to memory (optional) */
     size_t *			size;			/* receives size of memory in bytes (optional) */
 };
 
 struct Memory_WriteAddress16
 {
     offs_t				start, end;		/* start, end addresses, inclusive */
-	mem_write16_handler handler;		/* handler callback */
-	data16_t **			base;			/* receives pointer to memory (optional) */
+    mem_write16_handler handler;		/* handler callback */
+    data16_t **			base;			/* receives pointer to memory (optional) */
     size_t *			size;			/* receives size of memory in bytes (optional) */
 };
 
 struct Memory_WriteAddress32
 {
     offs_t				start, end;		/* start, end addresses, inclusive */
-	mem_write32_handler handler;		/* handler callback */
-	data32_t **			base;			/* receives pointer to memory (optional) */
-	size_t *			size;			/* receives size of memory in bytes (optional) */
+    mem_write32_handler handler;		/* handler callback */
+    data32_t **			base;			/* receives pointer to memory (optional) */
+    size_t *			size;			/* receives size of memory in bytes (optional) */
 };
 
 /* ----- structs for port read arrays ----- */
 struct IO_ReadPort
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	port_read_handler 	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    port_read_handler 	handler;		/* handler callback */
 };
 
 struct IO_ReadPort16
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	port_read16_handler	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    port_read16_handler	handler;		/* handler callback */
 };
 
 struct IO_ReadPort32
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	port_read32_handler	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    port_read32_handler	handler;		/* handler callback */
 };
 
 /* ----- structs for port write arrays ----- */
 struct IO_WritePort
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	port_write_handler	handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    port_write_handler	handler;		/* handler callback */
 };
 
 struct IO_WritePort16
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	port_write16_handler handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    port_write16_handler handler;		/* handler callback */
 };
 
 struct IO_WritePort32
 {
-	offs_t				start, end;		/* start, end addresses, inclusive */
-	port_write32_handler handler;		/* handler callback */
+    offs_t				start, end;		/* start, end addresses, inclusive */
+    port_write32_handler handler;		/* handler callback */
 };
 
 
 
 /***************************************************************************
 
-	Memory/port array macros
+    Memory/port array macros
 
 ***************************************************************************/
 
@@ -553,9 +557,9 @@ struct IO_WritePort32
 
 /***************************************************************************
 
-	Memory/port lookup constants
+    Memory/port lookup constants
 
-	These apply to values in the internal lookup table.
+    These apply to values in the internal lookup table.
 
 ***************************************************************************/
 
@@ -578,9 +582,9 @@ struct IO_WritePort32
 
 /***************************************************************************
 
-	Memory/port lookup macros
+    Memory/port lookup macros
 
-	These are used for accessing the internal lookup table.
+    These are used for accessing the internal lookup table.
 
 ***************************************************************************/
 
@@ -599,7 +603,7 @@ struct IO_WritePort32
 
 /***************************************************************************
 
-	Global variables
+    Global variables
 
 ***************************************************************************/
 
@@ -621,7 +625,7 @@ extern UINT8 *cpu_bankbase[];	/* array of bank bases */
 
 /***************************************************************************
 
-	Macros
+    Macros
 
 ***************************************************************************/
 
@@ -645,7 +649,7 @@ extern UINT8 *cpu_bankbase[];	/* array of bank bases */
 /* ----- bank switching for CPU cores ----- */
 #define change_pc_generic(pc,abits2,abitsmin,shift,setop)
 
-#define change_pc16(pc) 	 
+#define change_pc16(pc)
 //change_pc_generic(pc, ABITS2_16, ABITS_MIN_16, 0, cpu_setOPbase16)
 #define change_pc20(pc) 	 change_pc_generic(pc, ABITS2_20, ABITS_MIN_20, 0, cpu_setOPbase20)
 #define change_pc21(pc) 	 change_pc_generic(pc, ABITS2_21, ABITS_MIN_21, 0, cpu_setOPbase21)
@@ -673,7 +677,7 @@ void cpu_setbank(int bank, void *base);
 
 /***************************************************************************
 
-	Function prototypes
+    Function prototypes
 
 ***************************************************************************/
 

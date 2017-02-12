@@ -1030,7 +1030,7 @@ cleanup:
 
 static struct MD5Context md5;
 static struct sha1_ctx sha;
-static int hunknum;
+static UINT32 hunknum;
 static UINT64 sourceoffset;
 
 /*************************************
@@ -1202,7 +1202,7 @@ int chd_compress_ex(struct chd_file *chd, const char *rawfile, UINT64 offset,
 	clock_t lastupdate;
 	int err;
 	UINT64 sourcefileoffset = 0;
-	int hunk, blksread = 0;
+    UINT32 hunk, blksread = 0;
 
 	/* punt if no interface */
 	if (!interface.open)
@@ -1224,7 +1224,7 @@ int chd_compress_ex(struct chd_file *chd, const char *rawfile, UINT64 offset,
 		clock_t curtime = clock();
 		UINT32 bytestochecksum;
 		UINT32 bytesread;
-		int i;
+        UINT32 i;
 
 		/* read the data.  first, zero the whole hunk */
 		memset(chd->cache, 0, chd->header.hunkbytes);
@@ -1577,7 +1577,8 @@ static int write_hunk_from_memory(struct chd_file *chd, UINT32 _hunknum, const U
 	struct map_entry newentry;
 	UINT8 fileentry[MAP_ENTRY_SIZE];
 	const void *data = src;
-	UINT32 bytes, match;
+    UINT32 bytes;
+    int match;
 	
 	/* first compute the CRC */
 	newentry.crc = crc32(0, &src[0], chd->header.hunkbytes);
@@ -1838,7 +1839,8 @@ static int read_hunk_map(struct chd_file *chd)
 	UINT8 cookie[MAP_ENTRY_SIZE];
 	UINT64 fileoffset;
 	UINT32 count;
-	int i, err;
+    UINT32 i;
+    int err;
 
 	/* first allocate memory */
 	chd->map = malloc(sizeof(chd->map[0]) * chd->header.totalhunks);
@@ -1902,7 +1904,7 @@ cleanup:
 
 static void init_crcmap(struct chd_file *chd, int prepopulate)
 {
-	int i;
+    UINT32 i;
 
 	/* if we already have one, bail */
 	if (chd->crcmap)
@@ -1998,7 +2000,7 @@ static int is_really_matching_hunk(struct chd_file *chd, UINT32 _hunknum, const 
 static UINT32 find_matching_hunk(struct chd_file *chd, UINT32 _hunknum, UINT32 crc, const UINT8 *rawdata)
 {
 	UINT32 lasthunk = (_hunknum < chd->header.totalhunks) ? _hunknum : chd->header.totalhunks;
-	int curhunk;
+    UINT32 curhunk;
 	
 	/* if we have a CRC map, use that */
 	if (chd->crctable)

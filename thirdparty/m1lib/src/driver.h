@@ -10,10 +10,12 @@ extern "C" {
 #include "timer.h"
 #include "rom.h"
 
-#ifdef __GNU__
+#ifndef UNUSEDARG
+#if defined(__GNU__) || defined(__GNUC__)
 #define UNUSEDARG __attribute__((__unused__))
 #else
 #define UNUSEDARG
+#endif
 #endif
 
 void logerror(char *fmt,...);

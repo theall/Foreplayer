@@ -50,11 +50,9 @@ unix {
     INSTALLS += target
     LIBS += -lsdl2
 
-    HEADERS += \
-        src/sdl_sound.h
+    HEADERS +=
 
-    SOURCES += \
-        src/sdl_sound.cpp
+    SOURCES +=
 }
 
 HEADERS += \

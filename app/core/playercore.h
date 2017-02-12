@@ -30,19 +30,12 @@ public:
 
     void stop();
     void pause();
+    bool resume();
 
     int playedTime();
 
-    void enableBallence(bool enable=true);
-    void enable3DEffect(bool enable=true);
-
-    void setAmplification(int value);
-
-    void setSpectrumAmp(int index, int value);
-
-    void currentSamples(int *size, short **samples);
-
-    bool resume();
+    void setAudioParameter(TAudioParameter type, float value, int param=0);
+    void getAudioData(TAudioDataType dataType, void *param1, void* param2);
 
 private:
     TPlayThread *mPlayThread;

@@ -38,6 +38,10 @@ void TScrollLabel::setStrings(QStringList strlist)
         mIndex = 0;
         mIdleTime = 0;
         mTimerID = startTimer(c_timer_interval);
+        setToolTip(mStrings.join("\n"));
+        setToolTipDuration(3000);
+    } else {
+        setToolTipDuration(0);
     }
 }
 

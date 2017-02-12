@@ -66,51 +66,38 @@ void TSliderbarStyle::drawWidget(const QWidget *widget, const QStyleOptionComple
 
         if(!fillPixmap->isNull())
         {
-            if(orientation == Qt::Vertical)
-            {
-                painter->drawPixmap((sliderRect.width() - fillPixmap->width()) / 2, buttonRect.y(), fillPixmap->copy(0, buttonRect.y(), fillPixmap->width(), grooveRect.height() - buttonRect.y()));
+            int minValue = sliderBar->minimum();
+            float drawFactor = (float)(sliderBar->value()-minValue)/(sliderBar->maximum()-minValue);
+            int x = 0;
+            int y = 0;
+            int w = 0;
+            int h = 0;
+            QPixmap pixToDraw;
+            if(orientation == Qt::Vertical) {
+                w = fillPixmap->width();
+                x = (sliderRect.width() - w) / 2;
+                h = grooveRect.height()*drawFactor;
+                y = grooveRect.bottom() - h;
+                pixToDraw = fillPixmap->copy(0, y, w, h);
+            } else if(orientation == Qt::Horizontal) {
+                h = fillPixmap->height();
+                y = (sliderRect.height() - h) / 2;
+                w = grooveRect.width()*drawFactor;
+                pixToDraw = fillPixmap->copy(0, 0, w, h);
             }
-            else if(orientation == Qt::Horizontal)
-            {
-                painter->drawPixmap(0, (sliderRect.height() - fillPixmap->height()) / 2, fillPixmap->copy(0, 0, buttonRect.x() == 0 ? 1 : buttonRect.x(), fillPixmap->height()));
-            }
+            painter->drawPixmap(x, y, w, h, pixToDraw);
         }
     }
     if(option->subControls & SC_SliderHandle){
-        const TButtonPixmap *buttonPixmap = sliderBar->buttonPixmap();
-        const QPixmap *normal = buttonPixmap->normal();
-        const QPixmap *hover = buttonPixmap->hover();
-        const QPixmap *mouseDown = buttonPixmap->mouseDown();
-        const QPixmap *disabled = buttonPixmap->diabled();
-        const QPixmap *drawPixmap = normal;
-
-        if((option->state & QStyle::State_MouseOver))
-        {
-            if(option->state & State_Sunken)
-                drawPixmap = mouseDown;
-            else
-                drawPixmap = hover;
-        }else if(!(option->state & QStyle::State_Enabled))
-        {
-            // Diabled
-            drawPixmap = disabled;
-        }
-        if(!drawPixmap->isNull())
-        {
-
-        }
         QRect drawRect(buttonRect.x(), buttonRect.y(), sliderRect.width(), sliderRect.height());
-
         if(orientation == Qt::Vertical){
             drawRect.setLeft(0);
             drawRect.setWidth(sliderRect.width());
             drawRect.setHeight(buttonRect.height());
-            //painter->drawPixmap((sliderRect.width() - drawPixmap->width()) / 2, buttonRect.y(), *drawPixmap);
         }else if(orientation == Qt::Horizontal){
             drawRect.setTop(0);
             drawRect.setHeight(sliderRect.height());
             drawRect.setWidth(buttonRect.width());
-            //painter->drawPixmap(buttonRect.x(), (sliderRect.height() - drawPixmap->height()) / 2, *drawPixmap);
         }
 
         QPoint pt = widget->mapFromGlobal(QCursor::pos());

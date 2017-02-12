@@ -145,17 +145,6 @@ DLLEXPORT void m1snd_do_frame(unsigned long dwSamples, signed short *out)
 
 	StreamSys_Run(out, dwSamples);
 
-//    if(songtime<100)
-//    {
-//        char szPath[200];
-//        strcpy(szPath, "z:\\frame\\");
-//        char buf[10];
-//        strcat(szPath, itoa(songtime, buf, 10));
-//        FILE *fp = fopen(szPath, "w");
-//        fwrite((void*)out, 2, dwSamples, fp);
-//        fclose(fp);
-//    }
-
 	// see if we want to flush any frames
 	if (flushframes)
 	{

@@ -1,9 +1,10 @@
 #include "visualwidget.h"
 
 #include <QtMath>
-#define SAMPLE_WIDTH 3.0
-#define SAMPLE_SPACE 1
-#define SAMPLE_TOP_BLOCK_HEIGHT 1
+#define SAMPLE_WIDTH                3.0
+#define SAMPLE_SPACE                1
+#define SAMPLE_TOP_BLOCK_HEIGHT     1
+#define SAMPLE_TOP_BLOCK_PAUSE_TIME 5
 
 TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
     , mType(VT_SPECTRUM_BLOCK)
@@ -11,11 +12,15 @@ TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
     , mSpectrumSpace(SAMPLE_SPACE)
     , mSpectrumTopBlockHeight(SAMPLE_TOP_BLOCK_HEIGHT)
 {
-    for(int i=0;i<SAMPLE_SIZE;i++)
+    for(int i=0;i<BAND_COUNT;i++)
         mSamleValues[i] = 0;
 
-    for(int i=0;i<SAMPLE_SIZE;i++)
+    for(int i=0;i<BAND_COUNT;i++)
+    {
         mTopBlockValue[i] = 0;
+        mTopBlockSpeed[i] = 0;
+        mTopBlockBlank[i] = 0;
+    }
 }
 
 TVisualWidget::~TVisualWidget()
@@ -27,48 +32,13 @@ void TVisualWidget::setVisualType(TVisualType type)
     mType = type;
 }
 
-void TVisualWidget::setValue(QList<byte> data)
+void TVisualWidget::setValue(float *data, int size)
 {
-    if(data.size() != SAMPLE_SIZE)
+    if(size != BAND_COUNT)
         return;
 
-    for(int i=0;i<SAMPLE_SIZE;i++)
-    {
-        mSamleValues[i] = data[i];
-    }
-    update();
-}
-
-void TVisualWidget::setValue(QByteArray data)
-{
-    int dataSize = data.size();
-    int blockSize = qCeil((double)dataSize/SAMPLE_SIZE);
-    int currentIndex = 0;
-    int forSpectrum = 0;
-    int index = 0;
-    for(int i=0;i<data.size();i++)
-    {
-        forSpectrum += data[i];
-        currentIndex++;
-        if((currentIndex+1) >= blockSize)
-        {
-            mSamleValues[index++] = forSpectrum / blockSize;
-            currentIndex = 0;
-        }
-    }
-    update();
-}
-
-void TVisualWidget::setValue(QVector<byte> data)
-{
-    if(data.size() != SAMPLE_SIZE)
-        return;
-
-    for(int i=0;i<SAMPLE_SIZE;i++)
-    {
-        mSamleValues[i] = data[i];
-    }
-    update();
+    memcpy(mSamleValues, data, BAND_COUNT);
+    caculateTiles();
 }
 
 void TVisualWidget::setColor(QColor blockColor, QColor topColor, QColor bottomColor, QColor middleColor)
@@ -79,12 +49,33 @@ void TVisualWidget::setColor(QColor blockColor, QColor topColor, QColor bottomCo
     mColorBottom = bottomColor;
 }
 
+TVisualType TVisualWidget::visualType()
+{
+    return mType;
+}
+
+void TVisualWidget::caculateTiles()
+{
+    int mainHeight = rect().height();
+    for(int i=0;i<BAND_COUNT;i++)
+    {
+        float realHeight = mSamleValues[i]*mainHeight;
+        if(realHeight < 0)
+            realHeight = 0;
+        else if (realHeight > mainHeight)
+            realHeight = mainHeight;
+        mSamleValues[i] = realHeight;
+    }
+    update();
+}
+
 void TVisualWidget::paintEvent(QPaintEvent *event)
 {
     QWidget::paintEvent(event);
 
-    QPainter p(this);
-    int x = 0;
+    QPainter painter(this);
+    painter.fillRect(rect(), QBrush());
+
     QRect mainRect = rect();
     int mainWidth = mainRect.width();
     int mainHeight = mainRect.height();
@@ -99,17 +90,16 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
     linear.setColorAt(1, mColorBottom);
 
     QBrush pillarBrush(linear);
-
-    for(int i=0;i<SAMPLE_SIZE;i++)
+    int offsetX = 0;
+    for(int i=0;i<BAND_COUNT;i++)
     {
-        if(x+mSpectrumWidth>mainWidth)
+        if(offsetX+mSpectrumWidth>mainWidth)
             break;
 
-        byte specValue = mSamleValues[i];
-        int realSpecValue = ((float)specValue/0xff)*mainHeight;
+        int realSpecValue = mSamleValues[i];
 
         // draw spectrum pillar
-        p.fillRect(x, mainHeight-realSpecValue, mSpectrumWidth, realSpecValue, pillarBrush);
+        painter.fillRect(offsetX, mainHeight-realSpecValue, mSpectrumWidth, realSpecValue, pillarBrush);
 
         int topBlockValue = mTopBlockValue[i];
         int topBlockSpeed = mTopBlockSpeed[i];
@@ -118,25 +108,33 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
         if(realSpecValue >= topBlockValue)
         {
             topBlockSpeed = 0;
+            mTopBlockBlank[i] = SAMPLE_TOP_BLOCK_PAUSE_TIME;
             topBlockValue = realSpecValue;
         }
         else
         {
-            topBlockSpeed++;
-            topBlockValue -= topBlockSpeed;
+            if(mTopBlockBlank[i] > 0)
+                mTopBlockBlank[i]--;
+            else
+            {
+                topBlockSpeed++;
+                topBlockValue -= topBlockSpeed;
+            }
         }
 
-        int y = mainHeight-topBlockValue-mSpectrumTopBlockHeight;
-        if(y>=0)
-            // fill block
-            p.fillRect(x, y, mSpectrumWidth, mSpectrumTopBlockHeight, blockBrush);
+        if(topBlockValue < 0)
+            topBlockValue = 0;
+        if(topBlockValue > mainHeight+mSpectrumTopBlockHeight)
+            topBlockValue = mainHeight;
+        // fill block
+        painter.fillRect(offsetX, mainHeight-topBlockValue-mSpectrumTopBlockHeight, mSpectrumWidth, mSpectrumTopBlockHeight, blockBrush);
 
         mTopBlockSpeed[i] = topBlockSpeed;
         mTopBlockValue[i] = topBlockValue;
-        x += nWidth;
+        offsetX += nWidth;
     }
 
-    p.end();
+    painter.end();
 }
 
 void TVisualWidget::contextMenuEvent(QContextMenuEvent *event)

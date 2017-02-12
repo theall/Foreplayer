@@ -43,10 +43,12 @@ static int nec_vector, z80_vector;
 // dummy set context for CPU cores not supporting it yet
 static void dummy_setctx(void *ctx)
 {
+    UNUSED(ctx);
 }
 
 static void dummy_getctx(void *ctx)
 {
+    UNUSED(ctx);
 }
 
 // TMS32031 memory handlers
@@ -212,6 +214,8 @@ void m6800_writeport(unsigned int address, unsigned int data)
 
 int m6800_irq_callback(int irqline)
 {
+    UNUSED(irqline);
+
 	return 0;
 }
 
@@ -244,6 +248,8 @@ void nec_writeport(unsigned int address, unsigned int data)
 
 int nec_irq_callback(int irqline)
 {
+    UNUSED(irqline);
+
 	return nec_vector;
 }
 
@@ -286,6 +292,8 @@ void adsp_write32(unsigned int address, unsigned int data)
 
 int adsp2100_irq_callback(int irqline)
 {
+    UNUSED(irqline);
+
 //	adsp2105_set_irq_line(irqline, CLEAR_LINE);
 	return 0;
 }
@@ -328,6 +336,8 @@ void h8_mem_write16(unsigned int address, UINT16 data)
 
 int z80_irq_callback(int irqline)
 {
+    UNUSED(irqline);
+
 	return z80_vector;
 }
 
@@ -360,20 +370,28 @@ void m37710_write16(unsigned int address, unsigned int data)
 /* TMS32010 stuff */
 unsigned int tms32010_readport(unsigned int port)
 {
+    UNUSED(port);
+
 	return 0;
 }
 
 void tms32010_writeport(unsigned int port, unsigned int data)
 {
+    UNUSED(port);
+    UNUSED(data);
 }
 
 unsigned int tms32010_read16(unsigned int address) 
 {
+    UNUSED(address);
+
 	return 0;
 }
 
 void tms32010_write16(unsigned int port, unsigned int data)
 {
+    UNUSED(port);
+    UNUSED(data);
 }
 
 // add a 6803 cpu
@@ -498,6 +516,8 @@ void m1snd_add6809(long clock, void *handlers)
 	ctx = malloc(4*1024);
 	cpunum = timer_add_cpu(CPU_M6809, clock, m6809_execute, m6809_getcycles, m6809_yield, m6809_getctx, m6809_setctx, ctx);
 
+    UNUSED(cpunum);
+
 //	printf("Adding 6809 CPU #%d, ctx=%x\n", cpunum, (unsigned int)ctx);
 
 	m6809_reset(NULL);
@@ -509,6 +529,8 @@ void m1snd_add6809(long clock, void *handlers)
 // 6809, managed via memory manager
 void m1snd_add6809b(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	char *ctx;
 	int cpunum;
 
@@ -531,6 +553,8 @@ void m1snd_add6809b(long clock, void *handlers)
 // add a 6309 cpu
 void m1snd_add6309(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	int cpu = timer_add_cpu(CPU_HD6309, clock, hd6309_execute, hd6309_getcycles, hd6309_yield, dummy_getctx, dummy_setctx, NULL);
 
 	memory_register_cpu(cpu, 8, M1_CPU_LE);
@@ -566,6 +590,8 @@ void m1snd_add65c02(long clock, void *handlers)
 // add a 6502 cpu, managed via memory manager
 void m1snd_add6502b(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	char *ctx;
 	int cpunum;
 
@@ -610,6 +636,8 @@ void m1snd_add6280(long clock, void *handlers)
 // add a 8039 cpu
 void m1snd_add8039(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	int cpunum;
 
 	cpunum = timer_add_cpu(CPU_I8039, clock, i8039_execute, i8039_getcycles, i8039_yield, dummy_getctx, dummy_setctx, NULL);
@@ -622,6 +650,8 @@ void m1snd_add8039(long clock, void *handlers)
 // add an 8085A cpu
 void m1snd_add8085(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	int cpunum;
 
 	cpunum = timer_add_cpu(CPU_8085A, clock, i8085_execute, i8085_getcycles, i8085_yield, dummy_getctx, dummy_setctx, NULL);
@@ -634,6 +664,8 @@ void m1snd_add8085(long clock, void *handlers)
 // add a n7751 cpu
 void m1snd_add7751(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	int cpunum;
 
 	cpunum = timer_add_cpu(CPU_N7751, clock, n7751_execute, n7751_getcycles, n7751_yield, dummy_getctx, dummy_setctx, NULL);
@@ -704,6 +736,8 @@ static void z80_setctx(void *ctx)
 // add a Z80 cpu (MAME core)
 void m1snd_addz80(long clock, void *handlers)
 {
+    UNUSED(handlers);
+
 	char *z80cctx;
 	int cpunum;
 
@@ -804,6 +838,8 @@ int cpu_getactivecpu(void)
 
 static void m1snd_adddummy(long clock, void *handlers)
 {
+    UNUSED(clock);
+    UNUSED(handlers);
 }
 
 struct cpu_interface 
@@ -1048,6 +1084,8 @@ void cpuintrf_reset(void)
 
 unsigned activecpu_get_reg(int regnum)
 {
+    UNUSED(regnum);
+
 	return 0;
 }
 

@@ -142,7 +142,7 @@ EXPORT void closeTrack()
 EXPORT void nextSamples(int size, short* samples)
 {
     if(g_gmePlay)
-        g_gmePlay->fillBuffer(samples, size);
+        g_gmePlay->fillBuffer(samples, size*sizeof(short));
 }
 
 // Seek time

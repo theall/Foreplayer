@@ -1,37 +1,85 @@
 #ifndef TSAMPLESFILTER_H
 #define TSAMPLESFILTER_H
 
-#define FILT_TAPS		5
-#define FILT_BASE_BITS	8
+#include <mutex>
+#include <fftreal/fftreal_wrapper.h>
 
-#define	PI	3.14159265358979
+#define SPECTRUM_COUNT  10
 
-//--Filter work struct
-typedef struct
-{
-    long	q[FILT_TAPS];
-    long	dt[FILT_TAPS];
-    long	rd;	//read point
-    long	wt;	//write point
-} FilterWork;
+enum WindowFunction {
+    NoWindow,
+    HannWindow
+};
+
+struct TSpectrumElement {
+    TSpectrumElement()
+    :   frequency(0.0), amplitude(0.0), phase(0.0), clipped(false)
+    { }
+
+    /**
+     * Frequency in Hertz
+     */
+    qreal frequency;
+
+    /**
+     * Amplitude in range [0.0, 1.0]
+     */
+    qreal amplitude;
+
+    /**
+     * Phase in range [0.0, 2*PI]
+     */
+    qreal phase;
+
+    /**
+     * Indicates whether value has been clipped during spectrum analysis
+     */
+    bool clipped;
+};
 
 class TSamplesFilter
 {
 public:
-    TSamplesFilter(int sampleRate);
-
-    long do0(long dt);
-    long do1(long dt);
+    TSamplesFilter(int sampleRate = 44100);
+    ~TSamplesFilter();
 
     void filter(int dwSamples, short *out);
+    void setVolume(float value);
+    void setVolume(int value);
+    float volume();
+
+    void setBallance(float value);
+    void setBallance(float left, float right);
+    void setAmplification(float value);
+    void set3DEffectValue(float value);
+    void setSpectrumFactor(int index, float value);
+
+    void getSpectrumArray(TSpectrumElement **spectrumArray, int *size);
+    int getSilentFrames();
+    int sampleCount() { return mSampleCount; }
 
 private:
-    float mPostVolume;
     float mHeadMix;
     float mVolume;
-    bool mNormalize;
-    FilterWork mFilterWork[2];
-    void ftq(FilterWork *p, long rate, long cutoff, double boost);
+    float mBallanceL;
+    float mBallanceR;
+    float mAmplification;
+    float mEffectValue;
+    int mSampleRate;
+    std::mutex mMutex;
+
+    int mSampleCount;
+    int mSampleBufSize;
+    int mSilentFrames;
+    FFTRealWrapper::DataType *mTimeDomainBuf;
+    FFTRealWrapper::DataType *mFreqDomainBuf;
+    FFTRealWrapper::DataType *mWindow;
+    WindowFunction mWindowFunction;
+    FFTRealWrapper* mFFT;
+    TSpectrumElement *mSpectrumArray;
+
+    void initWindow();
+    float valueFactor(int value);
 };
 
 #endif

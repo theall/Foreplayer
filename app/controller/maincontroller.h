@@ -3,6 +3,8 @@
 
 #include "playercontroller.h"
 #include "playlistcontroller.h"
+#include "equalizercontroller.h"
+
 class TMainController : public TAbstractController
 {
     Q_OBJECT
@@ -23,7 +25,7 @@ private:
 
     TPlayerController *mPlayerController;
     TPlaylistController *mPlaylistController;
-
+    TEqualizerController *mEqualizerController;
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;
 };

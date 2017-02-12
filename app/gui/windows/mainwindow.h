@@ -62,7 +62,9 @@ signals:
     void browserButtonToggle(bool);
     void volumeToggle(bool);
     void requestSwitchToMiniMode();
-    void volumeValueChanged(int);
+
+    // Volume between 0.0~1.0f
+    void volumeValueChanged(float);
     void progressChanged(int);
     void requestOpenFiles(QStringList);
     void requestShowMinimized();
@@ -73,6 +75,7 @@ private slots:
     void on_btnPause_clicked();
     void on_btnOpen_clicked();
     void on_volume_valueChanged(int value);
+    void on_btnMute_clicked();
 
 private:
     TImageButton *mBtnPlay;

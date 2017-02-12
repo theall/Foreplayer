@@ -234,13 +234,15 @@ EXPORT void closeTrack()
 // Request next samples
 EXPORT void nextSamples(int size, short* samples)
 {
-    m1snd_do_frame((unsigned long)size/2, (signed short*)samples);
+    // size is the size of 1 channel samples
+    m1snd_do_frame((unsigned long)size, (signed short*)samples);
 }
 
 // Optional, for return customized sample size
 EXPORT int sampleSize(int sampleRate, int fps)
 {
-    return (sampleRate*10+(fps>>1))/fps;
+    // 1 channel
+    return ((float)sampleRate*10+(fps>>1))/fps+0.5;
 }
 
 // Retrieve plugin information

@@ -3,7 +3,7 @@
 
 #include "../../share/skin.h"
 
-#define SAMPLE_SIZE 64
+#define BAND_COUNT 64
 
 enum TVisualType
 {
@@ -14,8 +14,6 @@ enum TVisualType
     VisualTypeCount
 };
 
-typedef unsigned char byte;
-
 class TVisualWidget : public QWidget, TSkinReader
 {
     Q_OBJECT
@@ -24,27 +22,20 @@ public:
     ~TVisualWidget();
 
     void setVisualType(TVisualType type);
-    void setValue(QList<byte> data);
-    void setValue(QByteArray data);
-    void setValue(QVector<byte> data);
+    void setValue(float *data, int size=BAND_COUNT);
     void setColor(QColor blockColor, QColor topColor, QColor bottomColor, QColor middleColor=QColor());
-    int sampleSize()
-    {
-        return SAMPLE_SIZE;
-    }
-    int maxValue()
-    {
-        return height();
-    }
+
+    TVisualType visualType();
 
 signals:
 
 public slots:
 
 private:
-    byte mSamleValues[SAMPLE_SIZE];
-    byte mTopBlockValue[SAMPLE_SIZE];
-    byte mTopBlockSpeed[SAMPLE_SIZE];
+    float mSamleValues[BAND_COUNT];
+    int mTopBlockValue[BAND_COUNT];
+    int mTopBlockSpeed[BAND_COUNT];
+    int mTopBlockBlank[BAND_COUNT];
     TVisualType mType;
 
     int mSpectrumWidth;
@@ -54,6 +45,8 @@ private:
     QColor mColorTop;
     QColor mColorMiddle;
     QColor mColorBottom;
+
+    void caculateTiles();
 
     // QWidget interface
 protected:

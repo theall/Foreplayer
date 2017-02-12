@@ -531,6 +531,8 @@ static void startElement(void *userData, const char *name, const char **atts)
 
 static void endElement(void *userData, const char *name)
 {
+    UNUSED(name);
+
 	int *depthPtr = (int *)userData;
 	*depthPtr -= 1;
 
@@ -559,12 +561,17 @@ static void endElement(void *userData, const char *name)
 
 static void charData(void *userData, const char *s, int len)
 {
+    UNUSED(userData);
+
 	strncat(element_data, s, len);
 }
 
 // just pass through all 8-bit values for now
 static int unkEncodingHandler(void *handlerData, const XML_Char *name, XML_Encoding *info)
 {
+    UNUSED(handlerData);
+    UNUSED(name);
+
 	int i;
 
 	for (i = 0; i < 256; i++)
@@ -631,7 +638,7 @@ TrkT *trklist_load_xml(FILE *f, char *base)
 		{
 			printf("XML parse error %s at line %d (%s.xml)\n",
 				XML_ErrorString(XML_GetErrorCode(parser)),
-				XML_GetCurrentLineNumber(parser), base);
+                (int)XML_GetCurrentLineNumber(parser), base);
 
 			// clean up
 			XML_ParserFree(parser);

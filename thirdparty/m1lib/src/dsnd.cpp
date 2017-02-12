@@ -47,10 +47,6 @@ unsigned char bDSoundPlaying=0;  // True if the Loop buffer is playing
 
 static int nDSoundNextSeg=0; // We have filled the sound in the loop up to the beginning of 'nNextSeg'
 
-void m1sdr_SetSamplesPerTick(UINT32 spf)
-{
-}
-
 void m1sdr_TimeCheck(void)
 {
 	int nPlaySeg=0, nFollowingSeg=0;
@@ -376,5 +372,6 @@ void m1sdr_Pause(int set)
 
 void m1sdr_SetNoWait(int nw)
 {
+    UNUSED(nw);
 }
 

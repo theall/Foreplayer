@@ -2,6 +2,7 @@
 #define TLYRICWINDOW_H
 
 #include "widgets/imagebutton.h"
+#include "widgets/label.h"
 #include "abstractwindow.h"
 
 class TLyricWindow : public TAbstractWindow
@@ -9,6 +10,8 @@ class TLyricWindow : public TAbstractWindow
     Q_OBJECT
 public:
     explicit TLyricWindow(QWidget *parent = 0);
+
+    void setStringList(QStringList sl);
 
 signals:
     void requireShowDesktopLyric();
@@ -23,7 +26,7 @@ private slots:
     void on_btnShowDescktopLyric_clicked();
 
 private:
-    QWidget *mLyric;
+    TLabel *mLyric;
     TImageButton *mBtnClose;
     TImageButton *mBtnOnTop;
     TImageButton *mBtnDesktopLyric;
@@ -37,9 +40,5 @@ protected:
 public:
     void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;
 };
-
-
-
-
 
 #endif // TLYRICWINDOW_H

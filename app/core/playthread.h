@@ -31,11 +31,12 @@ public:
     int playedTime();
 
     void setBackend(TBackendPlugin *plugin);
-    void currentSamples(int *size, short **samples);
 
     bool isPaused();
 
-    // QThread interface
+    void setAudioParameter(TAudioParameter type, float value, int param);
+    void getAudioData(TAudioDataType dataType, void *param1, void* param2);
+
 protected:
     void run() Q_DECL_OVERRIDE;
 

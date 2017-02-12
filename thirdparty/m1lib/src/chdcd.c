@@ -132,7 +132,7 @@ int cdrom_parse_toc(char *tocfname, struct cdrom_toc *outtoc, struct cdrom_track
 				*/
 
 				foundcolon = 0;
-				for (k = 0; k < strlen(token); k++)
+                for (k = 0; k < (int)strlen(token); k++)
 				{
 					if (token[k] == ' ')
 					{
@@ -140,7 +140,7 @@ int cdrom_parse_toc(char *tocfname, struct cdrom_toc *outtoc, struct cdrom_track
 					}
 				}
 
-				if (k == strlen(token))
+                if (k == (int)strlen(token))
 				{
 					foundcolon = 1;
 				}

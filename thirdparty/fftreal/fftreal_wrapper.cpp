@@ -36,7 +36,6 @@ public:
     FFTRealFixLen<FFTLengthPowerOfTwo> m_fft;
 };
 
-
 FFTRealWrapper::FFTRealWrapper()
     :   m_private(new FFTRealWrapperPrivate)
 {
@@ -48,7 +47,12 @@ FFTRealWrapper::~FFTRealWrapper()
     delete m_private;
 }
 
-void FFTRealWrapper::calculateFFT(DataType in[], const DataType out[])
+void FFTRealWrapper::calculateFFT(const DataType in[], DataType out[])
 {
-    m_private->m_fft.do_fft(in, out);
+    m_private->m_fft.do_fft(out, in);
+}
+
+void FFTRealWrapper::calculateIFFT(const DataType in[], DataType out[])
+{
+    m_private->m_fft.do_ifft(in, out);
 }

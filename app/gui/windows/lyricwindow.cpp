@@ -7,12 +7,18 @@ TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
     mBtnClose = new TImageButton(this);
     mBtnOnTop = new TImageButton(this);
     mBtnDesktopLyric = new TImageButton(this);
+    mLyric = new TLabel(this);
 
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
     connect(mBtnOnTop, SIGNAL(clicked(bool)), this, SLOT(on_btnOnTop_clicked(bool)));
     connect(mBtnDesktopLyric, SIGNAL(clicked()), this, SLOT(on_btnShowDescktopLyric_clicked()));
 
     retranslateUi();
+}
+
+void TLyricWindow::setStringList(QStringList sl)
+{
+    mLyric->setText(sl.join("\n"));
 }
 
 void TLyricWindow::on_btnClose_clicked()

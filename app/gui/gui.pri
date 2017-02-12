@@ -1,5 +1,4 @@
-QT += gui xml
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT += gui widgets xml
 
 INCLUDEPATH += \
     $$PWD/share

@@ -2,208 +2,276 @@
 #include "samplesfilter.h"
 
 #include <math.h>
+#include <memory.h>
 
- TSamplesFilter::TSamplesFilter(int samplerate)
+#define SAMPLE_AMPLITUDE_MIN        -32767
+#define SAMPLE_AMPLITUDE_MAX        32768
+#define SAMPLE_SILENT_CHECK_VALUE   16
+#define PI                          3.14159265358979323846
+// Fudge factor used to calculate the spectrum bar heights
+const float SpectrumAnalyserMultiplier = 0.15;
+
+struct TEqualizerRange
 {
-    int i;
+    int min;
+    int max;
+    float factor;
+};
 
-    for(i=0 ; i < FILT_TAPS ; i++)
+TEqualizerRange g_eqTable[SPECTRUM_COUNT] = {
+    { 20, 40, 1.0f},
+    { 40, 80, 1.0f},
+    { 80, 160, 1.0f},
+    { 160, 320, 1.0f},
+    { 320, 640, 1.0f},
+    { 640, 1280, 1.0f},
+    { 1280, 2560, 1.0f},
+    { 2560, 5120, 1.0f},
+    { 5120, 10240, 1.0f},
+    { 10240, 20480, 1.0f}
+};
+
+TSamplesFilter::TSamplesFilter(int sampleRate) :
+    mVolume(1.0)
+  , mBallanceL(1.0)
+  , mBallanceR(1.0)
+  , mAmplification(0.0)
+  , mEffectValue(1.0)
+  , mSampleRate(sampleRate)
+  , mSampleCount(1<<FFTLengthPowerOfTwo)
+  , mSilentFrames(0)
+  , mWindowFunction(NoWindow)
+  , mFFT(new FFTRealWrapper)
+{   
+    mSampleBufSize = mSampleCount * sizeof(FFTRealWrapper::DataType);
+    mTimeDomainBuf = (FFTRealWrapper::DataType*)malloc(mSampleBufSize);
+    mFreqDomainBuf = (FFTRealWrapper::DataType*)malloc(mSampleBufSize);
+    mSpectrumArray = (TSpectrumElement*)malloc(mSampleCount*sizeof(TSpectrumElement));
+    initWindow();
+}
+
+TSamplesFilter::~TSamplesFilter()
+{
+    if(mTimeDomainBuf)
     {
-        mFilterWork[0].dt[i] = mFilterWork[1].dt[i] = 0;
+        delete mTimeDomainBuf;
+        mTimeDomainBuf = NULL;
     }
-
-    mFilterWork[0].rd=0;
-    mFilterWork[1].rd=0;
-    mFilterWork[0].wt=FILT_TAPS-1;
-    mFilterWork[1].wt=FILT_TAPS-1;
-
-    ftq(&mFilterWork[0],samplerate,samplerate/2,1.0);
-    ftq(&mFilterWork[1],samplerate,samplerate/2,1.0);
+    if(mFreqDomainBuf)
+    {
+        delete mFreqDomainBuf;
+        mFreqDomainBuf = NULL;
+    }
+    if(mWindow)
+    {
+        delete mWindow;
+        mWindow = NULL;
+    }
+    if(mSpectrumArray)
+    {
+        delete mSpectrumArray;
+        mSpectrumArray = NULL;
+    }
 }
 
-void TSamplesFilter::ftq(FilterWork *p, long rate, long cutoff, double boost)
+float TSamplesFilter::valueFactor(int value)
 {
-	double	total=(1<<FILT_BASE_BITS);
-	double	r,fs,fc;
-#ifndef IIR_FILTER
-	long	i;
-#endif
+    float vf = 1.0;
+    if(value < 0)
+        vf = 0.0;
+    else if(value<100)
+        vf = (float)value / 100;
 
-	fs=(double)rate;
-	fc=(double)cutoff;
-#ifndef IIR_FILTER
-	//(CUTOFF*2)<=rate
-
-    if((fc*2)>fs)	fc=fs/2;		//cutoff freq imitting
-	total *= boost;
-	for(i=0;i<FILT_TAPS;i++)
-	{
-		r=(2*PI*fc/fs)*((double)i-(double)(FILT_TAPS/2));
-		if(r==0)
-		{
-			p->q[i]=(long)(2.0*total*fc/fs);
-		}
-		else
-		{
-			p->q[i]=(long)((2.0*total*fc/fs)*(sin(r)/r));
-		}
-	}
-#else
-	r=(2.0 * fc) / fs;
-	if(r > 1) r=1;
-	p->q[0]=(long)(r * total);			//coef
-	p->q[1]=(long)((1.0-r) * total);	//feedback
-#endif
-}
-
-#ifndef IIR_FILTER
-#if 0
-static long TSamplesFilter::FT_DT(FILTWK *p,long dt)
-{
-	long	i, d, idx;
-
-	p->dt[p->wt++]=dt;	
-	if(p->wt >= FILT_TAPS)	p->wt=0;
-	idx=p->rd;			
-	for(i=0,d=0;i<FILT_TAPS;i++)		
-	{
-		d += p->dt[idx++] * p->q[i];		
-		if(idx >= FILT_TAPS)	idx=0;		
-	}						
-	p->rd++;					
-	if(p->rd >= FILT_TAPS)	p->rd=0;		
-	return (d>>FILT_BASE_BITS);			
-}
-#endif
-long TSamplesFilter::do0(long dt)
-{
-	long	i, d, idx;
-
-    mFilterWork[0].dt[mFilterWork[0].wt++]=dt;
-    if(mFilterWork[0].wt >= FILT_TAPS)	mFilterWork[0].wt=0;
-    idx=mFilterWork[0].rd;
-	for(i=0,d=0;i<FILT_TAPS;i++)		
-	{
-        d += mFilterWork[0].dt[idx++] * mFilterWork[0].q[i];
-		if(idx >= FILT_TAPS)	idx=0;		
-	}						
-    mFilterWork[0].rd++;
-    if(mFilterWork[0].rd >= FILT_TAPS)	mFilterWork[0].rd=0;
-	return (d>>FILT_BASE_BITS);			
-}
-
-long TSamplesFilter::do1(long dt)
-{
-	long	i, d, idx;
-
-    mFilterWork[1].dt[mFilterWork[1].wt++]=dt;
-    if(mFilterWork[1].wt >= FILT_TAPS)	mFilterWork[1].wt=0;
-    idx=mFilterWork[1].rd;
-	for(i=0,d=0;i<FILT_TAPS;i++)		
-	{
-        d += mFilterWork[1].dt[idx++] * mFilterWork[1].q[i];
-		if(idx >= FILT_TAPS)	idx=0;		
-	}						
-    mFilterWork[1].rd++;
-    if(mFilterWork[1].rd >= FILT_TAPS)	mFilterWork[1].rd=0;
-    return (d>>FILT_BASE_BITS);
+    return vf;
 }
 
 void TSamplesFilter::filter(int dwSamples, short *out)
 {
-    int i;
-    int max = 0;
-    int min = 0x7fff;
-    int silent = -1;
-    // and lowpass filter the results
-    for (i = 0; i < dwSamples*2; i += 2)
-    {
-        // apply the "headphone mix" too
-        if (mHeadMix > 0.0f)
-        {
-            signed long ot1, ot2;
+    if(dwSamples > mSampleCount)
+        return;
 
-            ot1 = (long)((float)out[i+1] * mHeadMix);
-            ot2 = (long)((float)out[i] * mHeadMix);
+    mMutex.lock();
+    short *ptr = out;
+    bool isSilent = true;
+    memset(mTimeDomainBuf, 0, mSampleBufSize);
+    for (int i=0; i<dwSamples; i++) {
+        const short pcmSample = *ptr++;
+        if(pcmSample>-SAMPLE_SILENT_CHECK_VALUE || pcmSample<SAMPLE_SILENT_CHECK_VALUE)
+            isSilent = false;
 
-            out[i] = (ot1 + out[i])>>1;
-            out[i+1] = (ot2 + out[i+1])>>1;
-        }
-
-#if SHOW_CLIPPING
-        if ((out[i] == SHRT_MAX) || (out[i] == SHRT_MIN)) printf("CLIP!\n");
-        if ((out[i+1] == SHRT_MAX) || (out[i+1] == SHRT_MIN)) printf("CLIP!\n");
-#endif
-        if (out[i] > max) max = out[i];
-        if (out[i] < min) min = out[i];
-        if (out[i+1] > max) max = out[i+1];
-        if (out[i+1] < min) min = out[i+1];
-        out[i] = do0((long)out[i]);
-        out[i+1] = do1((long)out[i+1]);
-        if ((out[i] < 16 && out[i] > -16) && (out[i+1] < 16 && out[i+1] > -16))
-        {	// if we've not yet been marked "noisy" this frame, mark silent
-            if (silent == -1)
-            {
-                silent = 1;
-            }
-        }
-        else
-        {
-            silent = 0;
-        }
+        // Scale down to range [-1.0, 1.0]
+        const FFTRealWrapper::DataType realSample = FFTRealWrapper::DataType(pcmSample)/SAMPLE_AMPLITUDE_MAX;
+        const FFTRealWrapper::DataType windowedSample = (FFTRealWrapper::DataType)realSample * mWindow[i];
+        mTimeDomainBuf[i] = windowedSample;
     }
 
-    // Normalise
-    if ((mNormalize) && (mVolume == 1.0f))
-    {
-        max = (abs(min) > max) ? abs(min) : max;
-        int calc = 32000 / (double)max;
-        if (calc < 1.0) calc = 1.0;
-        for (i = 0; i < dwSamples*2; i += 2)
-        {
-            out[i] *= (short)calc;
-            out[i+1] *= (short)calc;
-        }
-
-        int cur_norm = (int)(calc*100.0);
-    }
+    if(isSilent)
+        mSilentFrames++;
     else
+        mSilentFrames = 0;
+
+    // To frequency domain
+    mFFT->calculateFFT(mTimeDomainBuf, mFreqDomainBuf);
+
+    int halfSampleCount = mSampleCount/2;
+    // Analyze output to obtain amplitude and phase for each frequency
+    for (int i=2; i<=halfSampleCount; ++i) {
+        // Calculate frequency of this complex sample
+        float freq = float(i * mSampleRate) / (mSampleCount);
+
+        mSpectrumArray[i].frequency = freq;
+
+        float real = mFreqDomainBuf[i];
+        float imag = 0.0;
+        if (i>0 && i<halfSampleCount)
+            imag = mFreqDomainBuf[halfSampleCount + i];
+
+        // Apply amplitude of spectrums
+//        for(int j=0;j<SPECTRUM_COUNT;j++)
+//        {
+//            TEqualizerRange *eqRange = &g_eqTable[j];
+//            if(eqRange->factor!=1.0f && freq>=eqRange->min && freq<eqRange->max)
+//            {
+//                real *= eqRange->factor*0.75;
+//                imag *= eqRange->factor*0.25;
+//            }
+//        }
+
+        const float magnitude = sqrt(real*real + imag*imag);
+        float amplitude = 20 * log(magnitude);
+
+        // Bound amplitude to [0.0, 1.0]
+        mSpectrumArray[i].clipped = (amplitude > 1.0);
+        amplitude = std::max(float(0.0), amplitude);
+        amplitude = std::min(float(1.0), amplitude);
+        mSpectrumArray[i].amplitude = amplitude;
+        mFreqDomainBuf[halfSampleCount + i] = 0;
+    }
+
+    // To time domain
+    memset(mTimeDomainBuf, 0, mSampleBufSize);
+    mFFT->calculateIFFT(mFreqDomainBuf, mTimeDomainBuf);
+
+    for (int i = 0; i < dwSamples; i++)
     {
-        for (i = 0; i < dwSamples*2; i+=2)
-        {
-            out[i] = (short)((float)out[i] * mVolume);
-            out[i+1] = (short)((float)out[i+1] * mVolume);
-        }
+        mTimeDomainBuf[i] = ((int)(mTimeDomainBuf[i])/mSampleCount)&0xffff;
     }
 
     // now apply the post volume
-    if (mPostVolume != 1.0f)
+    if (mVolume != 1.0f)
     {
-        for (i = 0; i < dwSamples*2; i+=2)
+        for (int i = 0; i < dwSamples; i++)
         {
-            out[i] = (short)((float)out[i] * mPostVolume);
-            out[i+1] = (short)((float)out[i+1] * mPostVolume);
+            mTimeDomainBuf[i] = mTimeDomainBuf[i] * mVolume;
         }
     }
+
+    if(mAmplification != 0.0f)
+    {
+        for (int i = 0; i < dwSamples; i++)
+        {
+            mTimeDomainBuf[i] = mTimeDomainBuf[i] * mAmplification;
+        }
+    }
+
+    // Ballance
+    for (int i = 0; i < dwSamples; i+=2)
+    {
+        float l = mTimeDomainBuf[i] * mBallanceL * SAMPLE_AMPLITUDE_MAX;
+        //if(l<=SAMPLE_AMPLITUDE_MIN || l>=SAMPLE_AMPLITUDE_MAX)
+        //    l = 0;
+        float r = mTimeDomainBuf[i] * mBallanceR * SAMPLE_AMPLITUDE_MAX;
+        //if(l<=SAMPLE_AMPLITUDE_MIN || l>=SAMPLE_AMPLITUDE_MAX)
+        //    r = 0;
+
+        out[i] = (short)l;
+        out[i+1] = (short)r;
+    }
+    mMutex.unlock();
 }
 
-#else
-static long TSamplesFilter::FT_DT(FILTWK *p,long dt)
+void TSamplesFilter::setVolume(float value)
 {
-	p->dt[0]=(((dt * p->q[0]) + (p->dt[0] * p->q[1]))>>FILT_BASE_BITS);
-	return p->dt[0];
+    mMutex.lock();
+    mVolume = value;
+    mMutex.unlock();
 }
-static long TSamplesFilter::FT_DT0(long dt)
+
+void TSamplesFilter::setVolume(int value)
 {
-    mFilterWork[0].dt[0]=(((dt * mFilterWork[0].q[0]) + (mFilterWork[0].dt[0] * mFilterWork[0].q[1]))>>FILT_BASE_BITS);
-    return mFilterWork[0].dt[0];
+    setVolume(valueFactor(value));
 }
-static long TSamplesFilter::FT_DT1(long dt)
+
+float TSamplesFilter::volume()
 {
-    mFilterWork[1].dt[0]=(((dt * mFilterWork[1].q[0]) + (mFilterWork[1].dt[0] * mFilterWork[1].q[1]))>>FILT_BASE_BITS);
-    return mFilterWork[1].dt[0];
+    return mVolume;
 }
-#endif
 
+void TSamplesFilter::setBallance(float value)
+{
+    mMutex.lock();
+    if(value > 1.0)
+        value = 1.0;
+    else if(value < 0.0f)
+        value = 0.0;
 
+    mBallanceL = value>0.5?(1-value)*2:1.0;
+    mBallanceR = value<0.5?value*2:1.0;
+    mMutex.unlock();
+}
 
+void TSamplesFilter::setBallance(float left, float right)
+{
+    mMutex.lock();
+    mBallanceL = left;
+    mBallanceR = right;
+    mMutex.unlock();
+}
+
+void TSamplesFilter::setAmplification(float value)
+{
+    mAmplification = pow(10, value/10);
+}
+
+void TSamplesFilter::set3DEffectValue(float value)
+{
+    mEffectValue = value;
+}
+
+void TSamplesFilter::setSpectrumFactor(int index, float value)
+{
+    if(index<0 || index>=SPECTRUM_COUNT)
+        return;
+
+    g_eqTable[index].factor = pow(10, value/20);
+}
+
+void TSamplesFilter::getSpectrumArray(TSpectrumElement **spectrumArray, int *size)
+{
+    *spectrumArray = mSpectrumArray;
+    *size = mSampleCount;
+}
+
+int TSamplesFilter::getSilentFrames()
+{
+    return mSilentFrames;
+}
+
+void TSamplesFilter::initWindow()
+{
+    mWindow = (FFTRealWrapper::DataType*)malloc(mSampleBufSize);
+    for (int i=0; i<mSampleCount; ++i) {
+        FFTRealWrapper::DataType x = 0.0;
+
+        switch (mWindowFunction) {
+        case HannWindow:
+            x = 0.5 * (1 - cos((2 * PI * i) / (mSampleCount - 1)));
+            break;
+        case NoWindow:
+        default:
+            x = 1.0;
+            break;
+        }
+        mWindow[i] = x;
+    }
+}

@@ -11,7 +11,7 @@ TEMPLATE = lib
 
 DEFINES += 
 
-LIBS += -LZ:/build/foreplayer/thirdparty/build-m1lib-Desktop_Qt_5_5_1_MinGW_32bit-Release/release -lm1
+LIBS += -LZ:/build/foreplayer/thirdparty/build-m1lib-Desktop_Qt_5_5_1_MinGW_32bit-debug/debug -lm1
 
 SOURCES += \
     main.cpp \

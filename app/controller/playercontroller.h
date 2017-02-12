@@ -2,7 +2,6 @@
 #define TPLAYERCONTROLLER_H
 
 #include "abstractcontroller.h"
-#include "spectrum/spectrumanalyser.h"
 
 class TPlayerController : public TAbstractController
 {
@@ -25,16 +24,14 @@ private slots:
     void slotPrevButtonClicked();
     void slotNextButtonClicked();
     void slotStopButtonClicked();
-    void slotSpectrumChanged(const TFrequencySpectrum &spectrum);
+    void slotVolumeValueChanged(float value);
+    void slotVolumeToggled(bool toggled);
 
 private:
     TPlayerCore *mPlayerCore;
     TPlaylistCore *mPlaylistCore;
     TMainWindow *mMainWindow;
-
     TTrackItem *mCurrentItem;
-
-    TSpectrumAnalyser *mSpectrum;
 
     void updateWindowTitles();
 

@@ -22,6 +22,9 @@ static char wlpath[8192];
 // init wave logging
 void waveLogInit(int enable, char *name, int number)
 {
+    UNUSED(name);
+    UNUSED(number);
+
 //	char fname[256];
 
 	waveLogEnable = enable;

@@ -37,8 +37,10 @@ macx {
     DESTDIR = ../..$${spectrum_build_dir}
 }
 
-EXAMPLE_FILES = bwins/fftreal.def eabi/fftreal.def readme.txt license.txt
-
-target.path = $$[QT_INSTALL_EXAMPLES]/multimedia/spectrum
-INSTALLS += target
+win32 {
+    herder.path = $$[QT_INSTALL_HEADERS]/fftreal
+    herder.files = fftreal_wrapper.h
+    DESTDIR = $$[QT_INSTALL_LIBS]
+    INSTALLS += herder
+}
 

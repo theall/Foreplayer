@@ -1,18 +1,37 @@
 #include "abstractfront.h"
 
+#include <memory.h>
 
 TAbstractFront::TAbstractFront() :
-    mSamplesSize(0),
+    mAudioEnabled(true),
+    mSamplesCount(0),
     mSamples(NULL),
     mPlaying(false),
-    mCallback(NULL)
+    mFilter(new TSamplesFilter(SAMPLE_RATE)),
+    mCallback(NULL),
+    mLoopBuf(new TLoopBuffer)
 {
 
 }
 
 TAbstractFront::~TAbstractFront()
 {
+    if(mFilter)
+    {
+        delete mFilter;
+        mFilter = NULL;
+    }
+    if(mLoopBuf)
+    {
+        delete mLoopBuf;
+        mLoopBuf = NULL;
+    }
+}
 
+void TAbstractFront::setSampleSize(int sampleSize)
+{
+    if(mLoopBuf)
+        mLoopBuf->setCallback(this, sampleSize);
 }
 
 void TAbstractFront::setCallback(TRequestSamples callback)
@@ -20,23 +39,93 @@ void TAbstractFront::setCallback(TRequestSamples callback)
     mCallback = callback;
 }
 
-void TAbstractFront::requestNextSamples(int n, short *samples)
+void TAbstractFront::requestNextSamples(int bufSize, char *samples)
 {
-    if(mCallback)
+//    if(mCallback)
+//    {
+//        int memSize = n*sizeof(short);
+//        if(!mSamples || n>mSamplesSize)
+//        {
+//            free(mSamples);
+//            mSamples = (short*)malloc(memSize);
+//        }
+//        mSamplesSize = n;
+//        memset(mSamples, 0, memSize);
+//        mCallback(mSamplesSize, mSamples);
+//        mFilter->filter(mSamplesSize, mSamples);
+//        if(mAudioEnabled)
+//            memcpy(samples, mSamples, memSize);
+//    }
+    if(mLoopBuf)
     {
-        mCallback(n, samples);
-        if(!mSamples || n>mSamplesSize)
-        {
-            free(mSamples);
-            mSamples = (short*)malloc(n*sizeof(short));
-        }
-        mSamplesSize = n;
-        memcpy(mSamples, samples, n);
+        mLoopBuf->read((byte*)samples, bufSize);
     }
 }
 
-void TAbstractFront::currentSamples(int *size, short **samples)
+int TAbstractFront::sampleCount()
 {
-    *size = mSamplesSize;
-    *samples = mSamples;
+    if(mFilter)
+        return mFilter->sampleCount();
+
+    return 0;
+}
+
+void TAbstractFront::setAudioParameter(TAudioParameter type, float value, int param)
+{
+    if(type == AP_VOLUME_ENABLE)
+        mAudioEnabled = (bool)value;
+    else {
+        if(!mFilter)
+            return;
+
+        switch (type) {
+        case AP_VOLUME:
+            mFilter->setVolume(value);
+            break;
+        case AP_BALLANCE:
+            mFilter->setBallance(value);
+            break;
+        case AP_EFFECT:
+            mFilter->set3DEffectValue(value);
+            break;
+        case AP_AMPLIFICATION:
+            mFilter->setAmplification(value);
+            break;
+        case AP_SPECTRUM:
+            mFilter->setSpectrumFactor(param, value);
+            break;
+        default:
+            break;
+        }
+    }
+}
+
+void TAbstractFront::getAudioData(TAudioDataType dataType, void *param1, void *param2)
+{
+    if(!mFilter)
+        return;
+
+    switch (dataType) {
+    case ADT_SAMPLE:
+        *(short**)param1 = mSamples;
+        *(int*)param2 = mSamplesCount;
+        break;
+    case ADT_SPECTRUM:
+        mFilter->getSpectrumArray((TSpectrumElement**)param1, (int*)param2);
+        break;
+    case ADT_SILENT_FRAME:
+        *(int*)param1 = mFilter->getSilentFrames();
+        break;
+    default:
+        break;
+    }
+}
+
+void TAbstractFront::read(byte *buf, int size)
+{
+    if(mCallback)
+    {
+        // 2 channels * sizeof(short)
+        mCallback(size/4, (short*)buf);
+    }
 }

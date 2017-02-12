@@ -17,10 +17,11 @@ public:
 signals:
     void eqWindowToggled(bool);
     void eqEnableToggled(bool);
-    void eqBalanceChanged(int);
-    void eqSurroundChanged(int);
-    void eqPrempChanged(int);
-    void eqFactorChanged(int index, int value);
+    // Value is between 0.0~1.0f, center value is 0.5f
+    void eqBalanceChanged(float value);
+    void eqSurroundChanged(float);
+    void eqPrempChanged(float);
+    void eqFactorChanged(int index, float value);
 
     /**
      * @brief eqSpectrumChanged

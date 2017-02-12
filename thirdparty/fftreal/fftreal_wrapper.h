@@ -53,7 +53,8 @@ public:
     ~FFTRealWrapper();
 
     typedef float DataType;
-    void calculateFFT(DataType in[], const DataType out[]);
+    void calculateFFT(const DataType in[], DataType out[]);
+    void calculateIFFT(const DataType in[], DataType out[]);
 
 private:
     FFTRealWrapperPrivate*  m_private;

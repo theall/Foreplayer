@@ -79,10 +79,11 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mBtnPlaylist, SIGNAL(clicked(bool)), this, SIGNAL(playlistButtonToggle(bool)));
     connect(mBtnLyrics, SIGNAL(clicked(bool)), this, SIGNAL(lyricButtonToggle(bool)));
     connect(mBtnBrowser, SIGNAL(clicked(bool)), this, SIGNAL(browserButtonToggle(bool)));
-    connect(mBtnMute, SIGNAL(clicked(bool)), this, SIGNAL(volumeToggle(bool)));
+    connect(mBtnMute, SIGNAL(clicked(bool)), this, SLOT(on_btnMute_clicked()));
     connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SLOT(on_volume_valueChanged(int)));
     connect(mProgressBar, SIGNAL(valueChanged(int)), this, SIGNAL(progressChanged(int)));
 
+    mBtnBrowser->setVisible(false);
     retranslateUi();
 }
 
@@ -213,8 +214,18 @@ void TMainWindow::on_btnPause_clicked()
 
 void TMainWindow::on_volume_valueChanged(int value)
 {
+    int minValue = mVolumeBar->minimum();
+    int maxValue = mVolumeBar->maximum();
+    float vf = (float)(value-minValue)/(maxValue-minValue);
+
+    emit volumeValueChanged(vf);
     mVolumeBar->setToolTip(tr("Volume: %1%").arg(mVolumeBar->value()));
-    emit volumeValueChanged(value);
+}
+
+void TMainWindow::on_btnMute_clicked()
+{
+    emit volumeToggle(mBtnMute->isChecked());
+    updatePlayEffect();
 }
 
 void TMainWindow::updatePlayStatus()
@@ -224,7 +235,14 @@ void TMainWindow::updatePlayStatus()
 
 void TMainWindow::updatePlayEffect()
 {
-    mStereo->setText(mPlayEffect);
+    if(mBtnMute->isChecked())
+    {
+        mStereo->setText(tr("Mute"));
+    } else {
+        if(mPlayEffect.isEmpty())
+            mPlayEffect = tr("Stereo");
+        mStereo->setText(mPlayEffect);
+    }
 }
 
 void TMainWindow::on_btnOpen_clicked()

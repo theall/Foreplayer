@@ -102,6 +102,8 @@ static void queue_timercb(int refcon)
 
 static void queue_startcb(int refcon)
 {
+    UNUSED(refcon);
+
 	timer_setturbo(1);
 	m1ui_message(m1ui_this, M1_MSG_BOOTFINISHED, NULL, 0);
 	cmd_qmutex = 0;

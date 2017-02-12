@@ -85,12 +85,18 @@ int TPlayerCore::playedTime()
     return 0;
 }
 
-void TPlayerCore::currentSamples(int *size, short **samples)
+void TPlayerCore::getAudioData(TAudioDataType dataType, void *param1, void* param2)
 {
     if(mPlayThread)
     {
-        return mPlayThread->currentSamples(size, samples);
+        mPlayThread->getAudioData(dataType, param1, param2);
     }
+}
+
+void TPlayerCore::setAudioParameter(TAudioParameter type, float value, int param)
+{
+    if(mPlayThread)
+        mPlayThread->setAudioParameter(type, value, param);
 }
 
 bool TPlayerCore::resume()

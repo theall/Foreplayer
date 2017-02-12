@@ -1,23 +1,18 @@
 #include "sdlfront.h"
 
 // Sound output driver using SDL
-#include <SDL2/SDL.h>
 #undef main
+#include <SDL2/SDL.h>
 
 #define DEFAULT_SAMPLE_SIZE 512
-//static int nSamples = 0;
-//#include <QDebug>
+
 static void sdl_callback( void* data, Uint8* out, int count )
 {
     TSDLFront *front = static_cast<TSDLFront*>(data);
     if(front && front->isPlaying())
     {
         SDL_memset(out, 0, count);
-        front->requestNextSamples(count/2, (short*)out);
-
-//        nSamples++;
-//        if(nSamples%60==0)
-//            qDebug() << nSamples;
+        front->requestNextSamples(count, (char*)out);
     }
 }
 
@@ -46,35 +41,10 @@ void TSDLFront::setFilter()
 
 void TSDLFront::setSampleSize(int sampleSize)
 {
-    if(mSamplesSize == sampleSize)
-        return;
+    if(sampleSize < 1)
+        sampleSize = mSamplesCount*2;
 
-    SDL_CloseAudio();
-
-    mSamplesSize = sampleSize;
-
-    if(mSamplesSize <= 0)
-    {
-        int min_size = SAMPLE_RATE * 2 / SOUND_FPS;
-        int buf_size = DEFAULT_SAMPLE_SIZE;
-        while ( buf_size < min_size )
-            buf_size *= 2;
-        mSamplesSize = buf_size;
-    }
-
-    static SDL_AudioSpec as; // making static clears all fields to 0
-    as.freq     = SAMPLE_RATE;
-    as.format   = AUDIO_S16SYS;
-    as.channels = 2;
-    as.callback = sdl_callback;
-    as.samples  = mSamplesSize;
-    as.userdata = this;
-    if (SDL_OpenAudio(&as, 0) < 0)
-    {
-        const char* err = SDL_GetError();
-        if ( !err )
-            qDebug() << "Couldn't open SDL audio," << err;
-    }
+    TAbstractFront::setSampleSize(sampleSize);
 }
 
 bool TSDLFront::start()
@@ -83,7 +53,28 @@ bool TSDLFront::start()
     if (SDL_Init(SDL_INIT_AUDIO) < 0)
         return false;
 
-    setSampleSize(DEFAULT_SAMPLE_SIZE);
+    SDL_CloseAudio();
+
+    int min_size = SAMPLE_RATE * 2 / SOUND_FPS;
+    int buf_size = DEFAULT_SAMPLE_SIZE;
+    while ( buf_size < min_size )
+        buf_size *= 2;
+
+    mSamplesCount = sampleCount();
+
+    static SDL_AudioSpec as; // making static clears all fields to 0
+    as.freq     = SAMPLE_RATE;
+    as.format   = AUDIO_S16SYS;
+    as.channels = 2;
+    as.callback = sdl_callback;
+    as.samples  = mSamplesCount;
+    as.userdata = this;
+    if (SDL_OpenAudio(&as, 0) < 0)
+    {
+        const char* err = SDL_GetError();
+        if ( !err )
+            qDebug() << "Couldn't open SDL audio," << err;
+    }
 
     return true;
 }

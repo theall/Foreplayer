@@ -8,7 +8,7 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     mBtnReset(new TImageButton(this)),
     mSldBalance(new TSliderBar(Qt::Horizontal, this)),
     mSldSurround(new TSliderBar(Qt::Horizontal, this)),
-    mSldPreamp(new TSliderBar(Qt::Horizontal, this))
+    mSldPreamp(new TSliderBar(Qt::Vertical, this))
 {
     setObjectName("EqualizerWindow");
 
@@ -23,7 +23,6 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
 
     mSldPreamp->setRange(-12, 12);
     mSldPreamp->setValue(0);
-    mSldPreamp->setOrientation(Qt::Vertical);
 
     for(int i=0;i<EQ_FACTORS;i++)
     {
@@ -61,35 +60,44 @@ void TEqualizerWindow::on_btnReset_clicked()
 
 void TEqualizerWindow::on_eqFactor_valueChanged(int value)
 {
-    TSliderBar *factor = static_cast<TSliderBar*>(sender());
-    if(!factor)
+    TSliderBar *factorBar = static_cast<TSliderBar*>(sender());
+    if(!factorBar)
         return;
 
-    int i = mSldEqFactors.indexOf(factor);
-    updateFactorToolTip(i);
+    int i = mSldEqFactors.indexOf(factorBar);
+    if(i != -1)
+    {
+        emit eqFactorChanged(i, (float)value);
 
-    emit eqFactorChanged(i, value);
+        updateFactorToolTip(i);
+    }
 }
 
 void TEqualizerWindow::on_balance_valueChanged(int value)
 {
-    updateBallanceTooltip();
+    int minValue = mSldBalance->minimum();
+    int maxValue = mSldBalance->maximum();
+    float factor = (float)(value-minValue)/(maxValue-minValue);
+    emit eqBalanceChanged(factor);
 
-    emit eqBalanceChanged(value);
+    updateBallanceTooltip();
 }
 
 void TEqualizerWindow::on_surround_valueChanged(int value)
 {
-    updateSurroundTooltip();
+    int minValue = mSldSurround->minimum();
+    int maxValue = mSldSurround->maximum();
+    float factor = (float)(value-minValue)/(maxValue-minValue);
+    emit eqSurroundChanged(factor);
 
-    emit eqSurroundChanged(value);
+    updateSurroundTooltip();
 }
 
 void TEqualizerWindow::on_preamp_valueChanged(int value)
 {
-    updatePreampTooltip();
+    emit eqPrempChanged((float)value);
 
-    emit eqPrempChanged(value);
+    updatePreampTooltip();
 }
 
 void TEqualizerWindow::retranslateUi()

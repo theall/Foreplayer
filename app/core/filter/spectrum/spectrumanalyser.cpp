@@ -105,10 +105,17 @@ void TSpectrumAnalyserThread::calculateSpectrum(const QByteArray &buffer,
                                                 int bytesPerSample)
 {
 #ifndef DISABLE_FFT
-    Q_ASSERT(buffer.size() == mNumSamples * bytesPerSample);
+    int samplesCapcity = mNumSamples * bytesPerSample;
+    int sizeNeed = samplesCapcity - buffer.size();
+    char newBuf[samplesCapcity];
+    memset(newBuf, 0, samplesCapcity);
+    if(sizeNeed > 0)
+        memcpy(newBuf, buffer.constData(), buffer.size());
+    else
+        memcpy(newBuf, buffer.constData(), samplesCapcity);
 
     // Initialize data array
-    const char *ptr = buffer.constData();
+    char *ptr = newBuf;
     for (int i=0; i<mNumSamples; ++i) {
         const qint16 pcmSample = *reinterpret_cast<const qint16*>(ptr);
         // Scale down to range [-1.0, 1.0]
@@ -122,7 +129,7 @@ void TSpectrumAnalyserThread::calculateSpectrum(const QByteArray &buffer,
     mFFT->calculateFFT(mOutput.data(), mInput.data());
 
     // Analyze output to obtain amplitude and phase for each frequency
-    for (int i=2; i<=mNumSamples/2; ++i) {
+    for (int i=0; i<=mNumSamples/2; ++i) {
         // Calculate frequency of this complex sample
         mSpectrum[i].frequency = qreal(i * inputFrequency) / (mNumSamples);
 
