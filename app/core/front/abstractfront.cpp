@@ -5,7 +5,7 @@
 TAbstractFront::TAbstractFront() :
     mAudioEnabled(true),
     mSamplesCount(0),
-    mSamples(NULL),
+    mSamplesBuf(NULL),
     mPlaying(false),
     mFilter(new TSamplesFilter(SAMPLE_RATE)),
     mCallback(NULL),
@@ -41,24 +41,21 @@ void TAbstractFront::setCallback(TRequestSamples callback)
 
 void TAbstractFront::requestNextSamples(int bufSize, char *samples)
 {
-//    if(mCallback)
-//    {
-//        int memSize = n*sizeof(short);
-//        if(!mSamples || n>mSamplesSize)
-//        {
-//            free(mSamples);
-//            mSamples = (short*)malloc(memSize);
-//        }
-//        mSamplesSize = n;
-//        memset(mSamples, 0, memSize);
-//        mCallback(mSamplesSize, mSamples);
-//        mFilter->filter(mSamplesSize, mSamples);
-//        if(mAudioEnabled)
-//            memcpy(samples, mSamples, memSize);
-//    }
     if(mLoopBuf)
     {
-        mLoopBuf->read((byte*)samples, bufSize);
+        int samplesBufSize = mSamplesCount * 2 * sizeof(short);
+        if(!mSamplesBuf || bufSize>samplesBufSize)
+        {
+            samplesBufSize = bufSize;
+            free(mSamplesBuf);
+            mSamplesBuf = (short*)malloc(samplesBufSize);
+        }
+        mSamplesCount = samplesBufSize / 2 / sizeof(short);
+        memset(mSamplesBuf, 0, samplesBufSize);
+        mLoopBuf->read((byte*)mSamplesBuf, samplesBufSize);
+        mFilter->filter(mSamplesCount, mSamplesBuf);
+        if(mAudioEnabled)
+            memcpy(samples, mSamplesBuf, samplesBufSize);
     }
 }
 
@@ -107,7 +104,7 @@ void TAbstractFront::getAudioData(TAudioDataType dataType, void *param1, void *p
 
     switch (dataType) {
     case ADT_SAMPLE:
-        *(short**)param1 = mSamples;
+        *(short**)param1 = mSamplesBuf;
         *(int*)param2 = mSamplesCount;
         break;
     case ADT_SPECTRUM:

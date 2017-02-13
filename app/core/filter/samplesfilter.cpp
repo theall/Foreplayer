@@ -46,7 +46,9 @@ TSamplesFilter::TSamplesFilter(int sampleRate) :
     mSampleBufSize = mSampleCount * sizeof(FFTRealWrapper::DataType);
     mTimeDomainBuf = (FFTRealWrapper::DataType*)malloc(mSampleBufSize);
     mFreqDomainBuf = (FFTRealWrapper::DataType*)malloc(mSampleBufSize);
-    mSpectrumArray = (TSpectrumElement*)malloc(mSampleCount*sizeof(TSpectrumElement));
+
+    mSpectrumArraySize = mSampleCount / 2;
+    mSpectrumArray = (TSpectrumElement*)malloc(mSpectrumArraySize*sizeof(TSpectrumElement));
     initWindow();
 }
 
@@ -92,20 +94,16 @@ void TSamplesFilter::filter(int dwSamples, short *out)
 
     mMutex.lock();
     short *ptr = out;
-    bool isSilent = true;
+    int sumFrame = 0;
     memset(mTimeDomainBuf, 0, mSampleBufSize);
     for (int i=0; i<dwSamples; i++) {
-        const short pcmSample = *ptr++;
-        if(pcmSample>-SAMPLE_SILENT_CHECK_VALUE || pcmSample<SAMPLE_SILENT_CHECK_VALUE)
-            isSilent = false;
-
-        // Scale down to range [-1.0, 1.0]
-        const FFTRealWrapper::DataType realSample = FFTRealWrapper::DataType(pcmSample)/SAMPLE_AMPLITUDE_MAX;
-        const FFTRealWrapper::DataType windowedSample = (FFTRealWrapper::DataType)realSample * mWindow[i];
-        mTimeDomainBuf[i] = windowedSample;
+        const short pcmSample = *ptr;
+        sumFrame += (unsigned short)pcmSample;
+        mTimeDomainBuf[i] = pcmSample;
+        ptr += 2;
     }
 
-    if(isSilent)
+    if(sumFrame==0)
         mSilentFrames++;
     else
         mSilentFrames = 0;
@@ -115,37 +113,27 @@ void TSamplesFilter::filter(int dwSamples, short *out)
 
     int halfSampleCount = mSampleCount/2;
     // Analyze output to obtain amplitude and phase for each frequency
-    for (int i=2; i<=halfSampleCount; ++i) {
+    for (int i=0; i<=halfSampleCount; ++i) {
         // Calculate frequency of this complex sample
         float freq = float(i * mSampleRate) / (mSampleCount);
-
-        mSpectrumArray[i].frequency = freq;
-
         float real = mFreqDomainBuf[i];
         float imag = 0.0;
         if (i>0 && i<halfSampleCount)
             imag = mFreqDomainBuf[halfSampleCount + i];
 
         // Apply amplitude of spectrums
-//        for(int j=0;j<SPECTRUM_COUNT;j++)
-//        {
-//            TEqualizerRange *eqRange = &g_eqTable[j];
-//            if(eqRange->factor!=1.0f && freq>=eqRange->min && freq<eqRange->max)
-//            {
-//                real *= eqRange->factor*0.75;
-//                imag *= eqRange->factor*0.25;
-//            }
-//        }
+        for(int j=0;j<SPECTRUM_COUNT;j++)
+        {
+            TEqualizerRange *eqRange = &g_eqTable[j];
+            if(eqRange->factor!=1.0f && freq>=eqRange->min && freq<eqRange->max)
+            {
+                real *= eqRange->factor*0.75;
+                imag *= eqRange->factor*0.25;
 
-        const float magnitude = sqrt(real*real + imag*imag);
-        float amplitude = 20 * log(magnitude);
-
-        // Bound amplitude to [0.0, 1.0]
-        mSpectrumArray[i].clipped = (amplitude > 1.0);
-        amplitude = std::max(float(0.0), amplitude);
-        amplitude = std::min(float(1.0), amplitude);
-        mSpectrumArray[i].amplitude = amplitude;
-        mFreqDomainBuf[halfSampleCount + i] = 0;
+                mFreqDomainBuf[i] = real;
+                mFreqDomainBuf[halfSampleCount + i] = imag;
+            }
+        }
     }
 
     // To time domain
@@ -154,7 +142,11 @@ void TSamplesFilter::filter(int dwSamples, short *out)
 
     for (int i = 0; i < dwSamples; i++)
     {
-        mTimeDomainBuf[i] = ((int)(mTimeDomainBuf[i])/mSampleCount)&0xffff;
+        FFTRealWrapper::DataType temp = mTimeDomainBuf[i];
+        if(temp > 0)
+            mTimeDomainBuf[i] = int(temp/mSampleCount+0.5);
+        else
+            mTimeDomainBuf[i] = int(temp/mSampleCount-0.5);
     }
 
     // now apply the post volume
@@ -175,18 +167,45 @@ void TSamplesFilter::filter(int dwSamples, short *out)
     }
 
     // Ballance
-    for (int i = 0; i < dwSamples; i+=2)
+    int index = 0;
+    for (int i = 0; i < dwSamples; i++)
     {
-        float l = mTimeDomainBuf[i] * mBallanceL * SAMPLE_AMPLITUDE_MAX;
-        //if(l<=SAMPLE_AMPLITUDE_MIN || l>=SAMPLE_AMPLITUDE_MAX)
-        //    l = 0;
-        float r = mTimeDomainBuf[i] * mBallanceR * SAMPLE_AMPLITUDE_MAX;
-        //if(l<=SAMPLE_AMPLITUDE_MIN || l>=SAMPLE_AMPLITUDE_MAX)
-        //    r = 0;
+        int l = mTimeDomainBuf[i] * mBallanceL;
+        int r = mTimeDomainBuf[i] * mBallanceR;
+        if(l <= SAMPLE_AMPLITUDE_MIN || l>=SAMPLE_AMPLITUDE_MAX)
+            l = 0;
+        if(r <= SAMPLE_AMPLITUDE_MIN || l>=SAMPLE_AMPLITUDE_MAX)
+            r = 0;
 
-        out[i] = (short)l;
-        out[i+1] = (short)r;
+        out[index++] = (short)l;
+        out[index++] = (short)r;
     }
+
+    // To frequency domain
+    mFFT->calculateFFT(mTimeDomainBuf, mFreqDomainBuf);
+
+    // Analyze output to obtain amplitude and phase for each frequency
+    for (int i=0; i<=halfSampleCount; ++i) {
+        // Calculate frequency of this complex sample
+        float freq = float(i * mSampleRate) / (mSampleCount);
+
+        mSpectrumArray[i].frequency = freq;
+
+        float real = mFreqDomainBuf[i];
+        float imag = 0.0;
+        if (i>0 && i<halfSampleCount)
+            imag = mFreqDomainBuf[halfSampleCount + i];
+
+        const float magnitude = sqrt(real*real + imag*imag);
+        float amplitude = 0.25 * magnitude / SAMPLE_AMPLITUDE_MAX;
+
+        // Bound amplitude to [0.0, 1.0]
+        mSpectrumArray[i].clipped = (amplitude > 1.0);
+        amplitude = std::max(float(0.0), amplitude);
+        amplitude = std::min(float(1.0), amplitude);
+        mSpectrumArray[i].amplitude = amplitude;
+    }
+
     mMutex.unlock();
 }
 
@@ -249,7 +268,7 @@ void TSamplesFilter::setSpectrumFactor(int index, float value)
 void TSamplesFilter::getSpectrumArray(TSpectrumElement **spectrumArray, int *size)
 {
     *spectrumArray = mSpectrumArray;
-    *size = mSampleCount;
+    *size = mSpectrumArraySize;
 }
 
 int TSamplesFilter::getSilentFrames()

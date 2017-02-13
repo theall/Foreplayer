@@ -76,6 +76,8 @@ private:
     FFTRealWrapper::DataType *mWindow;
     WindowFunction mWindowFunction;
     FFTRealWrapper* mFFT;
+
+    int mSpectrumArraySize;
     TSpectrumElement *mSpectrumArray;
 
     void initWindow();

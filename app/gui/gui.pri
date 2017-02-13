@@ -57,7 +57,11 @@ SOURCES += \
     $$PWD/windows/playlist/menu/popmenumusiclistedit.cpp \
     $$PWD/share/skin.cpp \
     $$PWD/share/skinutils.cpp \
-    $$PWD/windows/miniwindow.cpp
+    $$PWD/windows/miniwindow.cpp \
+    $$PWD/dialogs/abstractdialog.cpp \
+    $$PWD/dialogs/exportdialog.cpp \
+    $$PWD/dialogs/exportmissionsdialog.cpp \
+    $$PWD/dialogs/optionsdialog.cpp
 
 HEADERS  += \
     $$PWD/windows/widgets/imagebutton.h \
@@ -111,4 +115,13 @@ HEADERS  += \
     $$PWD/windows/playlist/menu/popmenumusiclistedit.h \
     $$PWD/share/skin.h \
     $$PWD/share/skinutils.h \
-    $$PWD/windows/miniwindow.h
+    $$PWD/windows/miniwindow.h \
+    $$PWD/dialogs/abstractdialog.h \
+    $$PWD/dialogs/exportdialog.h \
+    $$PWD/dialogs/exportmissionsdialog.h \
+    $$PWD/dialogs/optionsdialog.h
+
+FORMS += \
+    $$PWD/dialogs/optionsdialog.ui \
+    $$PWD/dialogs/exportdialog.ui \
+    $$PWD/dialogs/exportmissionsdialog.ui

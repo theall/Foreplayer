@@ -226,14 +226,15 @@ void TPlayerController::slotTimerEvent()
                 return;
 
             float level[BAND_COUNT];
+            int centPos = bandWidth/2;
             for(int i = 0; i < BAND_COUNT; i++)
             {
-                int centPos = i * bandWidth + bandWidth / 2;
                 level[i] = spectrumArray[centPos-2].amplitude*0.1 + \
                         spectrumArray[centPos-1].amplitude*0.15 + \
                         spectrumArray[centPos].amplitude * 0.5 + \
                         spectrumArray[centPos+1].amplitude * 0.15 + \
                         spectrumArray[centPos+2].amplitude * 0.1;
+                centPos += bandWidth;
             }
             mMainWindow->visualWidget()->setValue(level);
         }

@@ -1,5 +1,5 @@
 QT += core
-LIBS += -ldsound -lsdl2
+LIBS += -lsdl2
 LIBS += -lfftreal
 
 SOURCES += \

@@ -37,7 +37,7 @@ void TVisualWidget::setValue(float *data, int size)
     if(size != BAND_COUNT)
         return;
 
-    memcpy(mSamleValues, data, BAND_COUNT);
+    memcpy(mSamleValues, data, BAND_COUNT*sizeof(float));
     caculateTiles();
 }
 

@@ -55,7 +55,7 @@ public:
 protected:
     bool mAudioEnabled;
     int mSamplesCount;
-    short *mSamples;
+    short *mSamplesBuf;
     bool mPlaying;
 
 private:

@@ -3,7 +3,6 @@
 
 #include "playthread.h"
 
-#include "front/directsoundfront.h"
 #include "front/sdlfront.h"
 
 #include "pluginmanager/backendpluginmanager.h"
