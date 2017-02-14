@@ -1,16 +1,6 @@
 #include "waveexport.h"
 
-#if 1
-#define Endian16_Swap(x) (x)
-#define Endian_16_Swap(x) (x)
-#define Endian32_Swap(x) (x)
-#else
-#define Endian16_Swap(x) (((x)<<8) | ((x)>>8))
-#define Endian_16_Swap(x) (((x)<<8) | ((x)>>8))
-#define Endian32_Swap(x) ( ((x&0xff000000)>>24) || ((x&0x00ff0000)>>8) || ((x&0x0000ff00)<<8) || ((x&0x000000ff)<<24) )
-#endif
-
-TWaveExport::TWaveExport(wchar_t *fileName, int sampleRate) :
+TWaveExport::TWaveExport(const wchar_t *fileName, int sampleRate) :
     TAbstractExport(fileName)
   , mSampleRate(sampleRate)
 {
@@ -67,7 +57,7 @@ void TWaveExport::end()
     writeInt(Endian32_Swap(nLen));
 }
 
-int TWaveExport::write(char *buf, int size)
+int TWaveExport::write(const byte *buf, int size)
 {
     short *data = (short *)buf;
     for (int i = 0; i < size/2; i++)

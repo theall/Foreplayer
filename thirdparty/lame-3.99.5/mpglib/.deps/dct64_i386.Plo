@@ -1,0 +1,85 @@
+dct64_i386.lo: dct64_i386.c ../config.h dct64_i386.h common.h mpg123.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/stdio.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_directx.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_print_push.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_off_t.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/swprintf.inl \
+ D:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_print_pop.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/string.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/sec_api/string_s.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/signal.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/pthread_signal.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/math.h mpglib.h \
+ ../include/lame.h \
+ D:/msys64/mingw32/lib/gcc/i686-w64-mingw32/6.3.0/include/stddef.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/stddef.h \
+ D:/msys64/mingw32/lib/gcc/i686-w64-mingw32/6.3.0/include/stdarg.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/stdarg.h \
+ D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_stdarg.h tabinit.h
+
+../config.h:
+
+dct64_i386.h:
+
+common.h:
+
+mpg123.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/stdio.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_directx.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_print_push.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_off_t.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/swprintf.inl:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdio_s.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_print_pop.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/string.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/sec_api/string_s.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/signal.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/pthread_signal.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/math.h:
+
+mpglib.h:
+
+../include/lame.h:
+
+D:/msys64/mingw32/lib/gcc/i686-w64-mingw32/6.3.0/include/stddef.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/stddef.h:
+
+D:/msys64/mingw32/lib/gcc/i686-w64-mingw32/6.3.0/include/stdarg.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/stdarg.h:
+
+D:/msys64/mingw32/i686-w64-mingw32/include/_mingw_stdarg.h:
+
+tabinit.h:

@@ -167,7 +167,7 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
         } else {
             qDebug() << error;
         }
-        qDebug() << HeaderData.FileName << userData.sizeNeed << userData.buffer.size();
+        // qDebug() << HeaderData.FileName << userData.sizeNeed << userData.buffer.size();
     }
     RARCloseArchive(hArcData);
 

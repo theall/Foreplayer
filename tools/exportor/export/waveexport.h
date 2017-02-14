@@ -6,10 +6,10 @@
 class TWaveExport : public TAbstractExport
 {
 public:
-    TWaveExport(wchar_t *fileName, int sampleRate);
+    TWaveExport(const wchar_t *fileName, int sampleRate);
     ~TWaveExport();
 
-    int write(char *buf, int size);
+    int write(const byte *buf, int size);
 
 private:
     int mSampleRate;

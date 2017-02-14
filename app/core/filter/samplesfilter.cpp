@@ -3,6 +3,7 @@
 
 #include <math.h>
 #include <memory.h>
+#include <speex/speex.h>
 
 #define SAMPLE_AMPLITUDE_MIN        -32767
 #define SAMPLE_AMPLITUDE_MAX        32768

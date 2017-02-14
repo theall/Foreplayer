@@ -1,6 +1,6 @@
 #include "abstractexport.h"
 
-TAbstractExport::TAbstractExport(wchar_t *fileName) :
+TAbstractExport::TAbstractExport(const wchar_t *fileName) :
     mFile(NULL)
 {
     if(fileName)
@@ -13,6 +13,11 @@ TAbstractExport::TAbstractExport(wchar_t *fileName) :
 TAbstractExport::~TAbstractExport()
 {
     close();
+}
+
+bool TAbstractExport::isOpened()
+{
+    return mFile!=NULL;
 }
 
 void TAbstractExport::open()
@@ -44,6 +49,13 @@ long TAbstractExport::tell()
         return ftell(mFile);
 
     return -1;
+}
+
+int TAbstractExport::writeByte(const byte *buf, int size)
+{
+    if(mFile)
+        return fwrite(buf, 1, size, mFile);
+    return 0;
 }
 
 int TAbstractExport::writeInt(int data)
