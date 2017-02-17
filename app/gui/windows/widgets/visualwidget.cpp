@@ -7,10 +7,12 @@
 #define SAMPLE_TOP_BLOCK_PAUSE_TIME 5
 
 TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
-    , mType(VT_SPECTRUM_BLOCK)
-    , mSpectrumWidth(SAMPLE_WIDTH)
-    , mSpectrumSpace(SAMPLE_SPACE)
-    , mSpectrumTopBlockHeight(SAMPLE_TOP_BLOCK_HEIGHT)
+  , mSampleCount(0)
+  , mSwitchOnClick(true)
+  , mVisualType(VT_SPECTRUM_BLOCK)
+  , mSpectrumWidth(SAMPLE_WIDTH)
+  , mSpectrumSpace(SAMPLE_SPACE)
+  , mSpectrumTopBlockHeight(SAMPLE_TOP_BLOCK_HEIGHT)
 {
     for(int i=0;i<BAND_COUNT;i++)
         mSamleValues[i] = 0;
@@ -29,15 +31,17 @@ TVisualWidget::~TVisualWidget()
 
 void TVisualWidget::setVisualType(TVisualType type)
 {
-    mType = type;
+    mVisualType = type;
 }
 
 void TVisualWidget::setValue(float *data, int size)
 {
-    if(size != BAND_COUNT)
+    if(!data || size<1)
         return;
 
-    memcpy(mSamleValues, data, BAND_COUNT*sizeof(float));
+    mSampleCount = qMin(size, LEVEL_COUNT);
+    memcpy(mSamleValues, data, mSampleCount*sizeof(float));
+
     caculateTiles();
 }
 
@@ -49,47 +53,75 @@ void TVisualWidget::setColor(QColor blockColor, QColor topColor, QColor bottomCo
     mColorBottom = bottomColor;
 }
 
+bool TVisualWidget::spectrumMode()
+{
+    return mVisualType==VT_SPECTRUM_BLOCK || mVisualType==VT_SPECTRUM_LINE;
+}
+
+void TVisualWidget::setSwitchOnClick(bool enable)
+{
+    mSwitchOnClick = enable;
+}
+
 TVisualType TVisualWidget::visualType()
 {
-    return mType;
+    return mVisualType;
 }
 
 void TVisualWidget::caculateTiles()
 {
     int mainHeight = rect().height();
-    for(int i=0;i<BAND_COUNT;i++)
+    if(mVisualType==VT_WAVE_IMPULSE || mVisualType==VT_WAVE_OSCILLOGRAM)
     {
-        float realHeight = mSamleValues[i]*mainHeight;
-        if(realHeight < 0)
-            realHeight = 0;
-        else if (realHeight > mainHeight)
-            realHeight = mainHeight;
-        mSamleValues[i] = realHeight;
+        int halfHeight = mainHeight/2;
+        for(int i=0;i<mSampleCount;i++)
+        {
+            float realHeight = mSamleValues[i]*halfHeight;
+            if(realHeight < -halfHeight)
+                realHeight = -halfHeight;
+            else if (realHeight > halfHeight)
+                realHeight = halfHeight;
+            mSamleValues[i] = realHeight;
+        }
+    } else if(mVisualType == VT_SPECTRUM_BLOCK) {
+        int bandWidth = mSampleCount / BAND_COUNT;
+        if(bandWidth < 4)
+            return;
+
+        float curLevel = 0;
+        int index = 0;
+        for(int i = 0; i < mSampleCount; i++)
+        {
+            curLevel += mSamleValues[i];
+            if((i+1)%bandWidth == 0)
+            {
+                mSamleValues[index++] = curLevel;
+                curLevel = 0;
+            }
+        }
+        mSampleCount = BAND_COUNT;
+    } else {
+        for(int i=0;i<mSampleCount;i++)
+        {
+            float realHeight = mSamleValues[i]*mainHeight;
+            if(realHeight<0 && (mVisualType!=VT_WAVE_IMPULSE || mVisualType!=VT_WAVE_OSCILLOGRAM))
+                realHeight = 0;
+            else if (realHeight > mainHeight)
+                realHeight = mainHeight;
+            mSamleValues[i] = realHeight;
+        }
     }
     update();
 }
 
-void TVisualWidget::paintEvent(QPaintEvent *event)
+void TVisualWidget::drawSpectrumBlock(QPainter *painter, QRect mainRect, QBrush pillarBrush)
 {
-    QWidget::paintEvent(event);
-
-    QPainter painter(this);
-    painter.fillRect(rect(), QBrush());
-
-    QRect mainRect = rect();
     int mainWidth = mainRect.width();
     int mainHeight = mainRect.height();
     int nWidth = mSpectrumWidth + mSpectrumSpace;
 
     QBrush blockBrush(mColorBlock);
 
-    QLinearGradient linear(0, mSpectrumWidth/2, 0, height());
-    linear.setColorAt(0, mColorTop);
-    if(mColorMiddle.isValid())
-        linear.setColorAt(0.5, mColorMiddle);
-    linear.setColorAt(1, mColorBottom);
-
-    QBrush pillarBrush(linear);
     int offsetX = 0;
     for(int i=0;i<BAND_COUNT;i++)
     {
@@ -99,7 +131,8 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
         int realSpecValue = mSamleValues[i];
 
         // draw spectrum pillar
-        painter.fillRect(offsetX, mainHeight-realSpecValue, mSpectrumWidth, realSpecValue, pillarBrush);
+        if(realSpecValue > 0)
+            painter->fillRect(offsetX, mainHeight-realSpecValue, mSpectrumWidth, realSpecValue, pillarBrush);
 
         int topBlockValue = mTopBlockValue[i];
         int topBlockSpeed = mTopBlockSpeed[i];
@@ -127,13 +160,139 @@ void TVisualWidget::paintEvent(QPaintEvent *event)
         if(topBlockValue > mainHeight+mSpectrumTopBlockHeight)
             topBlockValue = mainHeight;
         // fill block
-        painter.fillRect(offsetX, mainHeight-topBlockValue-mSpectrumTopBlockHeight, mSpectrumWidth, mSpectrumTopBlockHeight, blockBrush);
+        painter->fillRect(offsetX, mainHeight-topBlockValue-mSpectrumTopBlockHeight, mSpectrumWidth, mSpectrumTopBlockHeight, blockBrush);
 
         mTopBlockSpeed[i] = topBlockSpeed;
         mTopBlockValue[i] = topBlockValue;
         offsetX += nWidth;
     }
+}
 
+void TVisualWidget::drawSpectrumLine(QPainter *painter, QRect mainRect, QBrush pillarBrush)
+{
+    int mainWidth = mainRect.width();
+    int mainHeight = mainRect.height();
+    int bandWidth = mSampleCount / mainWidth;
+
+    int mapLevel[mainWidth];
+    for(int i=0;i<mainWidth;i++)
+    {
+        mapLevel[i] = (i+1)*bandWidth;
+    }
+    int mapIndex = 0;
+    for(int i=0;i<mainWidth;i++)
+    {
+        float specValue = 0;
+        int boundLimit = qMin(mapLevel[i], mSampleCount);
+
+        int nSpecValues = 0;
+        for(int j=mapIndex;j<boundLimit;j++)
+        {
+            specValue += mSamleValues[mapIndex++];
+            nSpecValues++;
+        }
+
+        int realSpecValue = specValue / nSpecValues;
+
+        // draw spectrum pillar
+        if(realSpecValue > 0)
+            painter->fillRect(i, mainHeight-realSpecValue, 1, realSpecValue, pillarBrush);
+    }
+}
+
+void TVisualWidget::drawWaveImpulse(QPainter *painter, QRect mainRect, QBrush pillarBrush)
+{
+    int mainWidth = mainRect.width();
+    int mainHeight = mainRect.height();
+    int bandWidth = mSampleCount / mainWidth;
+
+    int mapLevel[mainWidth];
+    for(int i=0;i<mainWidth;i++)
+    {
+        mapLevel[i] = (i+1)*bandWidth;
+    }
+    int mapIndex = 0;
+    int halfHeight = mainHeight/2;
+
+    painter->setPen(mColorBottom);
+    painter->drawLine(0, halfHeight, mainWidth, halfHeight);
+    for(int i=0;i<mainWidth;i++)
+    {
+        int boundLimit = qMin(mapLevel[i], mSampleCount);
+
+        int nPositive = 0;
+        int nNegative = 0;
+        float nPositiveValue = 0;
+        float nNegativeValue = 0;
+        for(int j=mapIndex;j<boundLimit;j++)
+        {
+            float t = mSamleValues[mapIndex++];
+            if(t > 0)
+            {
+                nPositiveValue += t;
+                nPositive++;
+            } else if(t < 0){
+                nNegativeValue += t;
+                nNegative++;
+            }
+        }
+
+        int realPositiveValue = nPositiveValue / nPositive;
+        int realNegativeValue = -nNegativeValue / nNegative;
+        // draw spectrum pillar
+        if(realPositiveValue > 0)
+            painter->fillRect(i, halfHeight-realPositiveValue, 1, realPositiveValue, pillarBrush);
+        if(realNegativeValue > 0)
+            painter->fillRect(i, halfHeight, 1, realNegativeValue, pillarBrush);
+    }
+}
+
+void TVisualWidget::drawWaveOsci(QPainter *painter, QRect mainRect, QBrush pillarBrush)
+{
+    painter->drawText(0, mainRect.height()/2, "Not implemented!");
+}
+
+void TVisualWidget::drawVideo(QPainter *painter, QRect mainRect, QBrush pillarBrush)
+{
+    painter->drawText(0, mainRect.height()/2, "Not implemented!");
+}
+
+void TVisualWidget::paintEvent(QPaintEvent *event)
+{
+    QWidget::paintEvent(event);
+
+    QPainter painter(this);
+    QRect mainRect = rect();
+
+    painter.fillRect(mainRect, QBrush());
+
+    QLinearGradient linear(0, mSpectrumWidth/2, 0, height());
+    linear.setColorAt(0, mColorTop);
+    if(mColorMiddle.isValid())
+        linear.setColorAt(0.5, mColorMiddle);
+    linear.setColorAt(1, mColorBottom);
+
+    QBrush pillarBrush(linear);
+
+    switch (mVisualType) {
+    case VT_WAVE_IMPULSE:
+        drawWaveImpulse(&painter, mainRect, pillarBrush);
+        break;
+    case VT_WAVE_OSCILLOGRAM:
+        drawWaveOsci(&painter, mainRect, pillarBrush);
+        break;
+    case VT_SPECTRUM_LINE:
+        drawSpectrumLine(&painter, mainRect, pillarBrush);
+        break;
+    case VT_VIDEO:
+        drawVideo(&painter, mainRect, pillarBrush);
+        break;
+    case VT_SPECTRUM_BLOCK:
+        drawSpectrumBlock(&painter, mainRect, pillarBrush);
+        break;
+    default:
+        break;
+    }
     painter.end();
 }
 
@@ -146,11 +305,11 @@ void TVisualWidget::mousePressEvent(QMouseEvent *event)
 {
     QWidget::mousePressEvent(event);
 
-    if(event->button()==Qt::LeftButton)
+    if(mSwitchOnClick && event->button()==Qt::LeftButton)
     {
-        mType = (TVisualType)((int)mType+1);
-        if(mType == VisualTypeCount)
-            mType = VT_WAVE;
+        mVisualType = (TVisualType)((int)mVisualType+1);
+        if(mVisualType == VisualTypeCount)
+            mVisualType = (TVisualType)0;
     }
 }
 

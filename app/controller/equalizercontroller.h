@@ -17,6 +17,7 @@ private slots:
     void slot3DEffectValueChanged(float value);
     void slotAmplifyValueChanged(float value);
     void slotSpectrumValueChanged(int index, float value);
+    void slotEqualizerSwitchToggled(bool enabled);
 
 private:
     TPlayerCore *mPlayerCore;

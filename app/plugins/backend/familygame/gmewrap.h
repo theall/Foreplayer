@@ -11,14 +11,11 @@ typedef short sample_t;
 class TGmeWrap
 {
 public:
-    TGmeWrap();
+    TGmeWrap(int sampleRate = 44100);
     ~TGmeWrap();
 
     static TGmeWrap *instance();
     static void deleteInstance();
-
-	// Initialize player and set sample rate
-    bool init( long sampleRate = 44100 );
 	
 	// Load game music file. NULL on success, otherwise error string.
     bool loadFile( const char* path );

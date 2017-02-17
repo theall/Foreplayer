@@ -1,6 +1,6 @@
 QT += core
 LIBS += -lsdl2
-LIBS += -lfftreal
+LIBS += -lfftreal -laudio3d
 
 SOURCES += \
     $$PWD/filter/samplesfilter.cpp \

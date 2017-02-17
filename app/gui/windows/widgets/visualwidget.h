@@ -3,14 +3,17 @@
 
 #include "../../share/skin.h"
 
-#define BAND_COUNT 64
+#define BAND_COUNT      64
+#define LEVEL_COUNT     4096
 
 enum TVisualType
 {
-    VT_WAVE,
-    VT_SPECTRUM_PILLAR,
     VT_SPECTRUM_BLOCK,
+    VT_SPECTRUM_LINE,
+    VT_WAVE_IMPULSE,
+    VT_WAVE_OSCILLOGRAM,
     VT_VIDEO,
+    VT_HIDDEN,
     VisualTypeCount
 };
 
@@ -22,8 +25,11 @@ public:
     ~TVisualWidget();
 
     void setVisualType(TVisualType type);
-    void setValue(float *data, int size=BAND_COUNT);
+    void setValue(float *data, int size);
     void setColor(QColor blockColor, QColor topColor, QColor bottomColor, QColor middleColor=QColor());
+
+    bool spectrumMode();
+    void setSwitchOnClick(bool enable);
 
     TVisualType visualType();
 
@@ -32,11 +38,13 @@ signals:
 public slots:
 
 private:
-    float mSamleValues[BAND_COUNT];
-    int mTopBlockValue[BAND_COUNT];
-    int mTopBlockSpeed[BAND_COUNT];
-    int mTopBlockBlank[BAND_COUNT];
-    TVisualType mType;
+    int mSampleCount;
+    bool mSwitchOnClick;
+    float mSamleValues[LEVEL_COUNT];
+    int mTopBlockValue[LEVEL_COUNT];
+    int mTopBlockSpeed[LEVEL_COUNT];
+    int mTopBlockBlank[LEVEL_COUNT];
+    TVisualType mVisualType;
 
     int mSpectrumWidth;
     int mSpectrumSpace;
@@ -47,6 +55,11 @@ private:
     QColor mColorBottom;
 
     void caculateTiles();
+    void drawSpectrumBlock(QPainter *painter, QRect mainRect, QBrush pillarBrush);
+    void drawSpectrumLine(QPainter *painter, QRect mainRect, QBrush pillarBrush);
+    void drawWaveImpulse(QPainter *painter, QRect mainRect, QBrush pillarBrush);
+    void drawWaveOsci(QPainter *painter, QRect mainRect, QBrush pillarBrush);
+    void drawVideo(QPainter *painter, QRect mainRect, QBrush pillarBrush);
 
     // QWidget interface
 protected:

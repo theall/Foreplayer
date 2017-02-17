@@ -26,6 +26,7 @@ void TEqualizerController::joint(TGuiManager *gui, TCore *core)
     mEqWindow = gui->equalizerWindow();
     Q_ASSERT(mEqWindow);
 
+    connect(mEqWindow, SIGNAL(eqEnableToggled(bool)), this, SLOT(slotEqualizerSwitchToggled(bool)));
     connect(mEqWindow, SIGNAL(eqBalanceChanged(float)), this, SLOT(slotBallanceValueChanged(float)));
     connect(mEqWindow, SIGNAL(eqSurroundChanged(float)), this, SLOT(slot3DEffectValueChanged(float)));
     connect(mEqWindow, SIGNAL(eqPrempChanged(float)), this, SLOT(slotAmplifyValueChanged(float)));
@@ -53,7 +54,13 @@ void TEqualizerController::slotAmplifyValueChanged(float value)
 void TEqualizerController::slotSpectrumValueChanged(int index, float value)
 {
     if(mPlayerCore)
-        mPlayerCore->setAudioParameter(AP_SPECTRUM, value, index);
+        mPlayerCore->setAudioParameter(AP_EQUALIZER_FACTOR, value, index);
+}
+
+void TEqualizerController::slotEqualizerSwitchToggled(bool enabled)
+{
+    if(mPlayerCore)
+        mPlayerCore->setAudioParameter(AP_EQUALIZER_ENABLE, (float)enabled);
 }
 
 void TEqualizerController::slotTimerEvent()

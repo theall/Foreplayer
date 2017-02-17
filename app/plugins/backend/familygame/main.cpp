@@ -47,7 +47,6 @@ EXPORT bool initialize()
     QByteArray suffixList = QString(g_TypeDesc.keys().join(" ")).toLocal8Bit();
     strcpy(g_szSuffixes, suffixList.constData());
     g_gmePlay = TGmeWrap::instance();
-    g_gmePlay->init();
 
     return true;
 }

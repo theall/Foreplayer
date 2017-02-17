@@ -30,36 +30,26 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 const int fill_rate = 45;
 TGmeWrap *TGmeWrap::mInstance=NULL;
 
-TGmeWrap::TGmeWrap()
+TGmeWrap::TGmeWrap(int sampleRate) :
+      mEmulator(0)
+    , mScopeBuf(0)
+    , mPaused(false)
+    , mTrackInfo(NULL)
+    , mSampleRate(sampleRate)
 {
-    mEmulator = 0;
-    mScopeBuf = 0;
-    mPaused = false;
-    mTrackInfo = NULL;
-}
 
-bool TGmeWrap::init( long sampleRate )
-{
-    mSampleRate = sampleRate;
-	
-    int min_size = mSampleRate * 2 / fill_rate;
-	int buf_size = 512;
-	while ( buf_size < min_size )
-		buf_size *= 2;
-	
-    return true;
-}
-
-void TGmeWrap::free()
-{
-    gme_delete( mEmulator );
-    mEmulator = NULL;
 }
 
 TGmeWrap::~TGmeWrap()
 {
     free();
     gme_free_info( mTrackInfo );
+}
+
+void TGmeWrap::free()
+{
+    gme_delete( mEmulator );
+    mEmulator = NULL;
 }
 
 TGmeWrap *TGmeWrap::instance()

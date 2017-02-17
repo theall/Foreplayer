@@ -14,7 +14,6 @@ public:
 
     bool exportSingle();
 
-
     QString indexName() { return mIndexName; }
     QString sourceFile() { return mSourceFile; }
     QString destFilePath() { return mDestFilePath; }
@@ -26,6 +25,7 @@ public:
     bool runningAsDaemon() { return mAsDaemon; }
     bool isError() { return mIsError; }
     bool isListMode() { return mListMode; }
+    bool needHelp() { return mNeedHelp; }
 
 private:
     QString mIndexName;
@@ -38,6 +38,7 @@ private:
     bool mVerbose;
     bool mAsDaemon;
     bool mIsError;
+    bool mNeedHelp;
     bool mListMode;
     QStringList mArguments;
 

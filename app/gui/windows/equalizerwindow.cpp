@@ -36,6 +36,7 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
 
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
     connect(mBtnReset, SIGNAL(clicked()), this, SLOT(on_btnReset_clicked()));
+    connect(mBtnEnabled, SIGNAL(clicked()), this, SLOT(on_btnEnabled_clicked()));
     connect(mSldSurround, SIGNAL(valueChanged(int)), this, SLOT(on_surround_valueChanged(int)));
     connect(mSldBalance, SIGNAL(valueChanged(int)), this, SLOT(on_balance_valueChanged(int)));
     connect(mSldPreamp, SIGNAL(valueChanged(int)), this, SLOT(on_preamp_valueChanged(int)));
@@ -52,10 +53,17 @@ void TEqualizerWindow::on_btnClose_clicked()
 
 void TEqualizerWindow::on_btnReset_clicked()
 {
+    mSldPreamp->setValue(0);;
+
     for(auto x : mSldEqFactors)
     {
         x->setValue(0);
     }
+}
+
+void TEqualizerWindow::on_btnEnabled_clicked()
+{
+    emit eqEnableToggled(mBtnEnabled->isChecked());
 }
 
 void TEqualizerWindow::on_eqFactor_valueChanged(int value)
@@ -150,11 +158,11 @@ void TEqualizerWindow::updateSurroundTooltip()
     int value = mSldSurround->value();
     if(value==0)
     {
-        mSldSurround->setToolTip(tr("3D: closed"));
+        mSldSurround->setToolTip(tr("Surround: closed"));
     }
     else
     {
-        mSldSurround->setToolTip(tr("3D: %1").arg(value));
+        mSldSurround->setToolTip(tr("Surround: %1").arg(value));
     }
 }
 

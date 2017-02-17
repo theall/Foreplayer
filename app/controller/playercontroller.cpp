@@ -209,35 +209,54 @@ void TPlayerController::slotTimerEvent()
     if(mCurrentItem)
     {
         int playedTime = mPlayerCore->playedTime();
-        int fakeDuration = mCurrentItem->duration>0?mCurrentItem->duration:60000;
-        mMainWindow->setProgress(playedTime, fakeDuration);
-        if(fakeDuration+500 <= playedTime)
+        int fakeDuration = mCurrentItem->duration;
+        bool needCheck = false;
+        if(mCurrentItem->duration <= 0)
         {
+            needCheck = true;
+            fakeDuration = 150000;
+        }
+        mMainWindow->setProgress(playedTime, fakeDuration);
+        if(needCheck)
+        {
+            int silentMSecs = 0;
+            mPlayerCore->getAudioData(ADT_SILENT_MICRO_SECONDS, &silentMSecs, NULL);
+            if(silentMSecs >= 3000)
+                slotNextButtonClicked();
+        }
+        if(fakeDuration+500 <= playedTime) {
             slotNextButtonClicked();
         }
 
         // Update spectrum bar
-        int size = 0;
-        TSpectrumElement *spectrumArray = NULL;
-        mPlayerCore->getAudioData(ADT_SPECTRUM, (void*)&spectrumArray, (void*)&size);
-        if(size>0 && spectrumArray) {
-            int bandWidth = size / BAND_COUNT;
-            if(bandWidth < 4)
-                return;
-
-            float level[BAND_COUNT];
-            int centPos = bandWidth/2;
-            for(int i = 0; i < BAND_COUNT; i++)
+        TVisualWidget *vw = mMainWindow->visualWidget();
+        if(vw)
+        {
+            int size = 0;
+            if(vw->spectrumMode())
             {
-                level[i] = spectrumArray[centPos-2].amplitude*0.1 + \
-                        spectrumArray[centPos-1].amplitude*0.15 + \
-                        spectrumArray[centPos].amplitude * 0.5 + \
-                        spectrumArray[centPos+1].amplitude * 0.15 + \
-                        spectrumArray[centPos+2].amplitude * 0.1;
-                centPos += bandWidth;
+                TSpectrumElement *spectrumArray = NULL;
+                mPlayerCore->getAudioData(ADT_SPECTRUM, (void*)&spectrumArray, (void*)&size);
+
+                if(size>0 && spectrumArray) {
+                    float levels[size];
+                    for(int i = 0; i < size; i++)
+                        levels[i] = spectrumArray[i].amplitude;
+                    vw->setValue(levels, size);
+                }
+            } else {
+                short *samples = NULL;
+                mPlayerCore->getAudioData(ADT_SAMPLE, (void*)&samples, (void*)&size);
+                if(size > 0)
+                {
+                    float levels[size];
+                    for(int i = 0; i < size; i++)
+                        levels[i] = 8*(float)samples[i] / 0x8000;
+                    vw->setValue(levels, size);
+                }
             }
-            mMainWindow->visualWidget()->setValue(level);
         }
+
     } else {
         mMainWindow->setProgress(0, 0);
     }

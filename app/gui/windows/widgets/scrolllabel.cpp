@@ -4,14 +4,14 @@ const int c_timer_interval = 40;
 const int c_idle_time = 3000;
 const int c_idle_time_short = 1500;
 
-TScrollLabel::TScrollLabel(QWidget *parent) :
-    QWidget(parent),
-    mLineWidth(0),
-    mSwitchEnd(false),
-    mCurrentIndex(-1),
-    mIndex(-1),
-    mStatus(END),
-    mTimerID(-1)
+TScrollLabel::TScrollLabel(QWidget *parent) : QWidget(parent)
+  , mSwitchOnClick(true)
+  , mLineWidth(0)
+  , mSwitchEnd(false)
+  , mCurrentIndex(-1)
+  , mIndex(-1)
+  , mStatus(END)
+  , mTimerID(-1)
 {
 
 }
@@ -51,6 +51,11 @@ void TScrollLabel::setFontColor(QFont font, QColor color)
     QPalette pa;
     pa.setColor(QPalette::WindowText, color);
     setPalette(pa);
+}
+
+void TScrollLabel::setSwitchOnClick(bool enabled)
+{
+    mSwitchOnClick = enabled;
 }
 
 void TScrollLabel::timerEvent(QTimerEvent *event)
@@ -114,6 +119,18 @@ void TScrollLabel::timerEvent(QTimerEvent *event)
         }
     }
     update();
+}
+
+void TScrollLabel::mousePressEvent(QMouseEvent *event)
+{
+    QWidget::mousePressEvent(event);
+
+    if(mSwitchOnClick && event->button()==Qt::LeftButton)
+    {
+        prepareNext();
+        mSwitchEnd = false;
+        mStatus = SWITCH;
+    }
 }
 
 QString TScrollLabel::currentLine()

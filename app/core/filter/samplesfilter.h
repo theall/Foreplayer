@@ -3,8 +3,9 @@
 
 #include <mutex>
 #include <fftreal/fftreal_wrapper.h>
+#include <audio3d/audio_3d.h>
 
-#define SPECTRUM_COUNT  10
+#define EQUALIZER_SEGMENTS  10
 
 enum WindowFunction {
     NoWindow,
@@ -52,10 +53,14 @@ public:
     void setBallance(float left, float right);
     void setAmplification(float value);
     void set3DEffectValue(float value);
-    void setSpectrumFactor(int index, float value);
+    void setEqualizerFactor(int index, float value);
+    void setEqualizerRange(int index, int min, int max);
+    void setEqualizerEnabled(bool enabled);
 
     void getSpectrumArray(TSpectrumElement **spectrumArray, int *size);
     int getSilentFrames();
+
+    void reset();
     int sampleCount() { return mSampleCount; }
 
 private:
@@ -64,13 +69,14 @@ private:
     float mBallanceL;
     float mBallanceR;
     float mAmplification;
-    float mEffectValue;
+    float m3dEffectValue;
     int mSampleRate;
     std::mutex mMutex;
 
     int mSampleCount;
     int mSampleBufSize;
     int mSilentFrames;
+    bool mEqualizerEnabled;
     FFTRealWrapper::DataType *mTimeDomainBuf;
     FFTRealWrapper::DataType *mFreqDomainBuf;
     FFTRealWrapper::DataType *mWindow;
@@ -80,6 +86,10 @@ private:
     int mSpectrumArraySize;
     TSpectrumElement *mSpectrumArray;
 
+    int mElevation;
+    int mAzimuth;
+    int mDistance;
+    Audio3DSource *mAudioSource;
     void initWindow();
     float valueFactor(int value);
 };

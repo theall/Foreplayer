@@ -11,6 +11,7 @@ public:
 
     void setStrings(QStringList strlist);
     void setFontColor(QFont font, QColor color);
+    void setSwitchOnClick(bool enabled);
 
 signals:
 
@@ -21,6 +22,7 @@ protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
 
     void timerEvent(QTimerEvent *event);
+    void mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE;
 
 private:
     enum DrawStatus {
@@ -34,6 +36,7 @@ private:
         END
     };
 
+    bool mSwitchOnClick;
     int mLineWidth;
     bool mSwitchEnd;
     int mCurrentIndex;

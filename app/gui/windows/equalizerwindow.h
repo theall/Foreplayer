@@ -32,6 +32,7 @@ signals:
 private slots:
     void on_btnClose_clicked();
     void on_btnReset_clicked();
+    void on_btnEnabled_clicked();
     void on_eqFactor_valueChanged(int value);
     void on_balance_valueChanged(int value);
     void on_surround_valueChanged(int value);

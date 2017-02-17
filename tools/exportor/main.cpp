@@ -32,7 +32,11 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion("1.0");
 
     TCmdlineParser parser(a.arguments());
-
+    if(parser.needHelp())
+    {
+        parser.showHelp();
+        return 0;
+    }
     if(parser.isError())
     {
         printf(trp("Music file is invalid or non-exist.\n"));
@@ -137,7 +141,7 @@ int main(int argc, char *argv[])
         if((trackListSize>1 && indexName.isEmpty()) || destIsDir)
         {
             // While export muliple tracks, auto set dest name to track name
-            QString baseName = QFileInfo(QString::fromStdString(track->trackName)).baseName()+".mp3";
+            QString baseName = QFileInfo(QString::fromStdString(track->trackName)).baseName()+format;
             destFileFullName = destDir.absoluteFilePath(baseName);
         } else {
             destFileFullName = destFilePath;

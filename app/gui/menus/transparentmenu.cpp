@@ -17,6 +17,19 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     mActionTransparent10 = new QAction(this);
     mActionDisableWhileActived = new QAction(this);
 
+    mActionDisable->setCheckable(true);
+    mActionTransparent1->setCheckable(true);
+    mActionTransparent2->setCheckable(true);
+    mActionTransparent3->setCheckable(true);
+    mActionTransparent4->setCheckable(true);
+    mActionTransparent5->setCheckable(true);
+    mActionTransparent6->setCheckable(true);
+    mActionTransparent7->setCheckable(true);
+    mActionTransparent8->setCheckable(true);
+    mActionTransparent9->setCheckable(true);
+    mActionTransparent10->setCheckable(true);
+    mActionDisableWhileActived->setCheckable(true);
+
     connect(mActionDisable, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
     connect(mActionTransparent1, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
     connect(mActionTransparent2, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));

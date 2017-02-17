@@ -61,13 +61,13 @@ void TMP3Export::start()
     if(!mLame)
     {
         mLame = lame_init();
-        //lame_set_num_channels(mLame, mChannels);
-        //lame_set_in_samplerate(mLame, mSampleRate);
-        //lame_set_quality(mLame, mQuality);
-        //lame_set_brate(mLame, mBrate);
-        //id3tag_set_title(mLame, mTitle);
-        //id3tag_set_artist(mLame, mArtist);
-        //id3tag_set_album(mLame, mAlbum);
+        lame_set_num_channels(mLame, mChannels);
+        lame_set_in_samplerate(mLame, mSampleRate);
+        lame_set_quality(mLame, mQuality);
+        lame_set_brate(mLame, mBrate);
+        id3tag_set_title(mLame, mTitle);
+        id3tag_set_artist(mLame, mArtist);
+        id3tag_set_album(mLame, mAlbum);
         lame_init_params(mLame);
     }
 }

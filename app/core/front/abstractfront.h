@@ -17,13 +17,18 @@ enum TAudioParameter
     AP_BALLANCE,
     AP_EFFECT,
     AP_AMPLIFICATION,
-    AP_SPECTRUM
+    AP_EQUALIZER_ENABLE,
+    AP_EQUALIZER_FACTOR,
+    AP_EQUALIZER_RANGE,
+    AP_RESET
 };
+
 enum TAudioDataType
 {
     ADT_SAMPLE,
     ADT_SPECTRUM,
-    ADT_SILENT_FRAME
+    ADT_SILENT_FRAME,
+    ADT_SILENT_MICRO_SECONDS
 };
 
 class TAbstractFront : public IDataCallback

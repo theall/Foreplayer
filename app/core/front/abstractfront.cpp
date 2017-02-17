@@ -69,15 +69,18 @@ int TAbstractFront::sampleCount()
 
 void TAbstractFront::setAudioParameter(TAudioParameter type, float value, int param)
 {
-    if(type == AP_VOLUME_ENABLE)
-        mAudioEnabled = (bool)value;
-    else {
-        if(!mFilter)
-            return;
+    if(!mFilter)
+        return;
 
-        switch (type) {
+    switch (type) {
         case AP_VOLUME:
             mFilter->setVolume(value);
+            break;
+        case AP_VOLUME_ENABLE:
+            mAudioEnabled = (bool)value;
+            break;
+        case AP_EQUALIZER_ENABLE:
+            mFilter->setEqualizerEnabled((bool)value);
             break;
         case AP_BALLANCE:
             mFilter->setBallance(value);
@@ -88,12 +91,18 @@ void TAbstractFront::setAudioParameter(TAudioParameter type, float value, int pa
         case AP_AMPLIFICATION:
             mFilter->setAmplification(value);
             break;
-        case AP_SPECTRUM:
-            mFilter->setSpectrumFactor(param, value);
+        case AP_EQUALIZER_FACTOR:
+            mFilter->setEqualizerFactor(param, value);
             break;
+        case AP_EQUALIZER_RANGE:
+            mFilter->setEqualizerFactor(param, value);
+            break;
+        case AP_RESET:
         default:
+            mFilter->reset();
+            if(mLoopBuf)
+                mLoopBuf->reset();
             break;
-        }
     }
 }
 
@@ -112,6 +121,9 @@ void TAbstractFront::getAudioData(TAudioDataType dataType, void *param1, void *p
         break;
     case ADT_SILENT_FRAME:
         *(int*)param1 = mFilter->getSilentFrames();
+        break;
+    case ADT_SILENT_MICRO_SECONDS:
+        *(int*)param1 = mFilter->getSilentFrames()*1000*mSamplesCount/SAMPLE_RATE;
         break;
     default:
         break;
