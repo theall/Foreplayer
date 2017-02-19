@@ -1,8 +1,9 @@
 #include "playercore.h"
 
 TPlayerCore::TPlayerCore() :
-    mPlayThread(NULL),
-    mPluginManager(TBackendPluginManager::instance())
+    mPlayThread(NULL)
+  , mPluginManager(TBackendPluginManager::instance())
+  , mPlayerState(PS_STOPED)
 {
     init();
 }
@@ -29,6 +30,7 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
     trackInfo.indexName = trackItem->indexName.toStdString();
     trackInfo.musicFileName = trackItem->musicFilePath->toStdString();
 
+    mPlayerState = PS_STOPED;
     mPlayThread->stop();
 
     bool result = false;
@@ -37,11 +39,12 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
     if(plugin)
     {
         // Connect plugin's callback to front's callback
-        mPlayThread->setAudioParameter(AP_RESET, NULL, NULL);
+        mPlayThread->setAudioParameter(AP_RESET, 0, 0);
         mPlayThread->setBackend(plugin);
         result = true;
+        mPlayThread->play();
+        mPlayerState = PS_PLAYING;
     }
-    mPlayThread->play();
 
     return result;
 }
@@ -54,7 +57,10 @@ void TPlayerCore::setCallback(TPlayCallback callback)
 void TPlayerCore::init()
 {
     if(mPlayThread)
+    {
         mPlayThread->play();
+        mPlayerState = PS_PLAYING;
+    }
     else
     {
         mPlayThread = new TPlayThread;
@@ -64,8 +70,10 @@ void TPlayerCore::init()
 
 void TPlayerCore::stop()
 {
+    if(mPlayThread)
+        mPlayThread->pause();
 
-    destroyPlayThread();
+    mPlayerState = PS_STOPED;
 }
 
 void TPlayerCore::pause()
@@ -73,6 +81,7 @@ void TPlayerCore::pause()
     if(mPlayThread)
     {
         mPlayThread->pause();
+        mPlayerState = PS_PAUSED;
     }
 }
 
@@ -105,15 +114,32 @@ bool TPlayerCore::resume()
     if(mPlayThread && mPlayThread->isPaused())
     {
         mPlayThread->play();
+        mPlayerState = PS_PLAYING;
         return true;
     }
     return false;
+}
+
+bool TPlayerCore::isPaused()
+{
+    return mPlayerState==PS_PAUSED && (mPlayThread && mPlayThread->isPaused());
+}
+
+bool TPlayerCore::isStoped()
+{
+    return mPlayerState==PS_STOPED || !mPlayThread;
+}
+
+bool TPlayerCore::isPlaying()
+{
+    return mPlayerState==PS_PLAYING;
 }
 
 void TPlayerCore::destroyPlayThread()
 {
     if(mPlayThread)
     {
+        stop();
         mPlayThread->needToTerminate();
         mPlayThread->wait();
         delete mPlayThread;

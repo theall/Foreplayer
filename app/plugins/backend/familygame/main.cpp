@@ -70,18 +70,19 @@ EXPORT const char *suffixDescription(const char *suffix)
 }
 
 // Parse file to get details information
-EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
+EXPORT bool parse(const wchar_t *file, TMusicInfo* musicInfo)
 {
     if(!file || !musicInfo)
         return false;
 
     // Parse file and fill result into musicInfo
-    QFileInfo fi(file);
+    QString qFile = QString::fromWCharArray(file);
+    QFileInfo fi(qFile);
     QString suffix = fi.suffix().toLower();
     bool result = false;
-    TFileParse fileParse(file);
-    TRarParse rarParse(file);
-    TZipParse zipParse(file);
+    TFileParse fileParse(qFile);
+    TRarParse rarParse(qFile);
+    TZipParse zipParse(qFile);
     if(g_TypeDesc.contains(suffix))
     {
         if(suffix=="rsn")

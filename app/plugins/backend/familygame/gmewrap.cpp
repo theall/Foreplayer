@@ -34,8 +34,8 @@ TGmeWrap::TGmeWrap(int sampleRate) :
       mEmulator(0)
     , mScopeBuf(0)
     , mPaused(false)
-    , mTrackInfo(NULL)
     , mSampleRate(sampleRate)
+    , mTrackInfo(NULL)
 {
 
 }

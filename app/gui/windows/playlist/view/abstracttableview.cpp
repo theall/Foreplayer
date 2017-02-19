@@ -76,7 +76,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
         textColor = index.data(Utils::TextHighlight).value<QColor>();
     else
     {
-        if(isCurrentRow || isPlayingItem)
+        if(/*isCurrentRow || */isPlayingItem)
             textColor = index.data(Utils::TextHighlight).value<QColor>();
         else
             textColor = index.data(Qt::TextColorRole).value<QColor>();

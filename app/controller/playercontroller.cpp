@@ -81,14 +81,21 @@ void TPlayerController::slotPlayButtonClicked()
         return;
 
     // Try resume
-    if(mPlayerCore->resume()) {
-        mCurrentItem = mPlaylistCore->currentTrackItem();
-        updateWindowTitles();
+    int pi = -1;
+    int mi = -1;
+    int ti = -1;
+    if(mPlayerCore->isPaused())
+    {
+        if(mPlayerCore->resume()) {
+            mCurrentItem = mPlaylistCore->currentTrackItem();
+            updateWindowTitles();
+        } else {
+            mPlaylistCore->playingIndex(&pi, &mi, &ti);
+            slotRequestPlay(pi, mi, ti);
+        }
     } else {
-        int pi = -1;
-        int mi = -1;
-        int ti = -1;
-        mPlaylistCore->playingIndex(&pi, &mi, &ti);
+        // Get current index from playlist controller
+        emit requestCurrentIndex(&pi, &mi, &ti);
         slotRequestPlay(pi, mi, ti);
     }
 }
@@ -99,7 +106,7 @@ void TPlayerController::slotPauseButtonClicked()
         return;
 
     mPlayerCore->pause();
-    stopTimer();
+    QTimer::singleShot(3000, this, SLOT(delayStopTimer()));
     mMainWindow->setButtonPlayChecked(true);
     mMainWindow->setPlayState(tr("Paused"));
 }
@@ -165,9 +172,10 @@ void TPlayerController::slotStopButtonClicked()
         return;
 
     mPlayerCore->stop();
-    stopTimer();
+    QTimer::singleShot(3000, this, SLOT(delayStopTimer()));
     mMainWindow->setButtonPlayChecked(true);
     mMainWindow->setPlayState(tr("Stoped"));
+    mMainWindow->setProgress(0, 0);
 }
 
 void TPlayerController::slotVolumeValueChanged(float value)
@@ -201,6 +209,12 @@ void TPlayerController::updateWindowTitles()
     }
 }
 
+void TPlayerController::delayStopTimer()
+{
+    if(!mPlayerCore || mPlayerCore->isPaused() || mPlayerCore->isStoped())
+        stopTimer();
+}
+
 void TPlayerController::slotTimerEvent()
 {
     if(!mPlayerCore || !mMainWindow)
@@ -208,29 +222,32 @@ void TPlayerController::slotTimerEvent()
 
     if(mCurrentItem)
     {
-        int playedTime = mPlayerCore->playedTime();
-        int fakeDuration = mCurrentItem->duration;
-        bool needCheck = false;
-        if(mCurrentItem->duration <= 0)
+        if(mPlayerCore->isPlaying())
         {
-            needCheck = true;
-            fakeDuration = 150000;
-        }
-        mMainWindow->setProgress(playedTime, fakeDuration);
-        if(needCheck)
-        {
-            int silentMSecs = 0;
-            mPlayerCore->getAudioData(ADT_SILENT_MICRO_SECONDS, &silentMSecs, NULL);
-            if(silentMSecs >= 3000)
+            int playedTime = mPlayerCore->playedTime();
+            int fakeDuration = mCurrentItem->duration;
+            bool needCheck = false;
+            if(mCurrentItem->duration <= 0)
+            {
+                needCheck = true;
+                fakeDuration = 150000;
+            }
+            mMainWindow->setProgress(playedTime, fakeDuration);
+            if(needCheck)
+            {
+                int silentMSecs = 0;
+                mPlayerCore->getAudioData(ADT_SILENT_MICRO_SECONDS, &silentMSecs, NULL);
+                if(silentMSecs > 3000)
+                    slotNextButtonClicked();
+            }
+            if(fakeDuration+500 <= playedTime) {
                 slotNextButtonClicked();
-        }
-        if(fakeDuration+500 <= playedTime) {
-            slotNextButtonClicked();
+            }
         }
 
         // Update spectrum bar
         TVisualWidget *vw = mMainWindow->visualWidget();
-        if(vw)
+        if(vw && !mPlayerCore->isStoped())
         {
             int size = 0;
             if(vw->spectrumMode())
@@ -255,6 +272,10 @@ void TPlayerController::slotTimerEvent()
                     vw->setValue(levels, size);
                 }
             }
+        } else {
+            float levels[LEVEL_COUNT];
+            memset(levels, 0, LEVEL_COUNT*sizeof(float));
+            vw->setValue(levels, LEVEL_COUNT);
         }
 
     } else {

@@ -13,6 +13,7 @@ public:
     void joint(TGuiManager *gui, TCore *core);
 
 signals:
+    void requestCurrentIndex(int *pi, int *mi, int *ti);
     void requestUpdateModelsPlayingIndex(int pi, int mi, int ti);
 
 public slots:
@@ -26,6 +27,9 @@ private slots:
     void slotStopButtonClicked();
     void slotVolumeValueChanged(float value);
     void slotVolumeToggled(bool toggled);
+
+    // Internal use
+    void delayStopTimer();
 
 private:
     TPlayerCore *mPlayerCore;

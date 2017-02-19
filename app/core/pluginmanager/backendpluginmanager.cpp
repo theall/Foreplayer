@@ -30,16 +30,7 @@ TBackendPluginManager::TBackendPluginManager() :
 
 TBackendPluginManager::~TBackendPluginManager()
 {
-    for(auto plugin : mPlugins)
-    {
-        TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
-        if(backendPlugin)
-        {
-            backendPlugin->closeTrack();
-            delete backendPlugin;
-        }
-    }
-    mPlugins.clear();
+
 }
 
 TBackendPluginManager *TBackendPluginManager::instance()
@@ -115,14 +106,17 @@ TBackendPlugin *TBackendPluginManager::loadTrack(TTrackInfo *trackInfo)
         if(backendPlugins.isEmpty())
             backendPlugins = mPlugins;
     }
-    TBackendPlugin *backendPlugin = NULL;
+    TBackendPlugin *pluginFind = NULL;
     for(auto plugin : backendPlugins)
     {
-        backendPlugin = dynamic_cast<TBackendPlugin*>(plugin);
+        TBackendPlugin *backendPlugin = dynamic_cast<TBackendPlugin*>(plugin);
         if(backendPlugin && backendPlugin->openTrack(trackInfo))
+        {
+            pluginFind = backendPlugin;
             break;
+        }
     }
-    return backendPlugin;
+    return pluginFind;
 }
 
 TBackendPlugin* TBackendPluginManager::loadPlugin(QString pluginName)

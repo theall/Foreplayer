@@ -8,9 +8,11 @@
 #include "pluginmanager/backendpluginmanager.h"
 #include "playlist/playlistitem.h"
 
-struct SpectrumInfo
+enum PlayerState
 {
-
+    PS_PAUSED,
+    PS_STOPED,
+    PS_PLAYING
 };
 
 typedef void (*TPlayCallback)(int played, int total, void *data);
@@ -30,6 +32,9 @@ public:
     void stop();
     void pause();
     bool resume();
+    bool isPaused();
+    bool isStoped();
+    bool isPlaying();
 
     int playedTime();
 
@@ -39,6 +44,7 @@ public:
 private:
     TPlayThread *mPlayThread;
     TBackendPluginManager *mPluginManager;
+    PlayerState mPlayerState;
 
     void init();
     void destroyPlayThread();

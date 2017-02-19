@@ -9,7 +9,9 @@ TTrackListModel::TTrackListModel(QObject *parent) :
 
 void TTrackListModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved)
 {
-
+    Q_UNUSED(indexes);
+    Q_UNUSED(pos);
+    Q_UNUSED(indexesMoved);
 }
 
 void TTrackListModel::setMusicItem(TMusicItem *item)
@@ -87,7 +89,7 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
         QString displayIndex = item->indexName;
         if(displayIndex.isEmpty())
             displayIndex = item->index;
-        return QString(tr("Index: %1\r\nName: %2\r\nDuration: %3\r\n\r\n%4") \
+        return QString(tr("Index: %1\r\nName: %2\r\nDuration: %3\r\n%4") \
                        .arg(displayIndex) \
                        .arg(item->displayName) \
                        .arg(Utils::microSecToTimeStr(item->duration)) \

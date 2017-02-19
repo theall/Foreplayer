@@ -78,10 +78,18 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
 
     connect(mTracklistView, SIGNAL(requestMoveItems(QList<int>,int,QList<int>&)), this, SLOT(slotRequestMoveTracks(QList<int>, int, QList<int>&)));
 
-    //mPlaylistView->selectRow(mPlaylistCore->currentPlaylistIndex());
     int playingPlaylistIndex = mPlaylistCore->playingPlaylistIndex();
-    mPlaylistModel->setCurrentIndex(playingPlaylistIndex);
     slotPlaylistIndexChanged(playingPlaylistIndex);
+}
+
+void TPlaylistController::slotRequestCurrentIndex(int *pIndex, int *mIndex, int *tIndex)
+{
+    if(!mMusiclistModel || !mPlaylistModel || !mTracklistModel)
+        return;
+
+    *pIndex = mPlaylistModel->currentIndex();
+    *mIndex = mMusiclistModel->currentIndex();
+    *tIndex = mTracklistModel->currentIndex();
 }
 
 void TPlaylistController::slotPlaylistIndexChanged(int index)
@@ -94,20 +102,18 @@ void TPlaylistController::slotPlaylistIndexChanged(int index)
     TPlaylistItem *item = mPlaylistCore->playlistItem(index);
     mMusiclistModel->setPlayListItem(item);
 
-    // Check if is playing index as the playing index in models will reset after every set item
-    if(index == mPlaylistCore->playingPlaylistIndex())
-    {
-        mMusiclistModel->setPlayingIndex(mPlaylistCore->playingMusicIndex());
-    }
-
-    // Change track list model while playlist index changed
     int musicIndex = 0;
+
+    // Check if is playing index as the playing index in models will reset after every set item
     if(index == mPlaylistCore->playingPlaylistIndex())
     {
         // Is current playing playlist
         musicIndex = mPlaylistCore->playingMusicIndex();
+        mMusiclistModel->setPlayingIndex(musicIndex);
     }
     mMusiclistModel->setCurrentIndex(musicIndex);
+
+    // Change track list model while playlist index changed
     slotMusiclistIndexChanged(musicIndex);
 }
 
@@ -122,9 +128,16 @@ void TPlaylistController::slotMusiclistIndexChanged(int index)
         TMusicItem *musicItem = playlistItem->musicItem(index);
         mTracklistModel->setMusicItem(musicItem);
 
+        int trackIndex = 0;
+
         // Check if this music item is playing
         if(mPlaylistCore->currentMusicItem()==musicItem)
-            mTracklistModel->setPlayingIndex(mPlaylistCore->playingTrackIndex());
+        {
+            trackIndex = mPlaylistCore->playingTrackIndex();
+            mTracklistModel->setPlayingIndex(trackIndex);
+        }
+
+        mTracklistModel->setCurrentIndex(trackIndex);
     }
 }
 

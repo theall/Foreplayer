@@ -1,5 +1,5 @@
 /*
- * Copyright (C) Kreogist Dev Team
+ * Copyright (C) Bilge Theall, wazcd_1608@qq.com
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -92,7 +92,7 @@ EXPORT const char *matchSuffixes();
 EXPORT const char *suffixDescription(const char *suffix);
 
 // Parse file to get details information
-EXPORT bool parse(const char *file, TMusicInfo* musicInfo);
+EXPORT bool parse(const wchar_t *file, TMusicInfo* musicInfo);
 
 // Load track to prepare for playing
 EXPORT bool loadTrack(TTrackInfo* track);

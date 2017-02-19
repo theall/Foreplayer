@@ -142,13 +142,13 @@ EXPORT const char *matchSuffixes()
 }
 
 // Parse file to get details information
-EXPORT bool parse(const char *file, TMusicInfo* musicInfo)
+EXPORT bool parse(const wchar_t *file, TMusicInfo* musicInfo)
 {
     int i;
     int maxGames = m1snd_get_info_int(M1_IINF_TOTALGAMES, 0);
     bool getOne = false;
     int gameId = 0;
-    QFileInfo fi(file);
+    QFileInfo fi(QString::fromWCharArray(file));
     QString gameName = fi.baseName();
     for (i = 0; i < maxGames; i++)
     {

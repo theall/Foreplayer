@@ -9,7 +9,7 @@ typedef bool (*PROC_INITIALIZE)();
 
 // Verify this plugin can parse specify suffix of file
 typedef char *(*PROC_MATCHSUFFIXES)();
-typedef bool (*PROC_PARSE)(const char* file, TMusicInfo* musicInfo);
+typedef bool (*PROC_PARSE)(const wchar_t *file, TMusicInfo* musicInfo);
 
 typedef bool (*PROC_LOADTRACK)(TTrackInfo* track);
 typedef void (*PROC_CLOSETRACK)();

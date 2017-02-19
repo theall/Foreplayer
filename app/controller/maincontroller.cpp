@@ -16,6 +16,11 @@ TMainController::TMainController(QObject *parent) :
             SIGNAL(requestUpdateModelsPlayingIndex(int,int,int)),
             mPlaylistController,
             SLOT(slotRequestUpdateModelsPlayingIndex(int,int,int)));
+
+    connect(mPlayerController,
+            SIGNAL(requestCurrentIndex(int*,int*,int*)),
+            mPlaylistController,
+            SLOT(slotRequestCurrentIndex(int*,int*,int*)));
 }
 
 TMainController::~TMainController()

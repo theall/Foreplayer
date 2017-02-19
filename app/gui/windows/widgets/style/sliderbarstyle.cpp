@@ -15,7 +15,6 @@ int TSliderbarStyle::styleHint(StyleHint hint, const QStyleOption *option, const
 }
 
 int TSliderbarStyle::pixelMetric(PixelMetric metric, const QStyleOption *option, const QWidget *widget) const{
-    // 对Slidr上的handle而言返回的是 横向 宽度;纵向 高度;
     if(const TSliderBar *sliderBar = qobject_cast<const TSliderBar *>(widget)){
         Qt::Orientation orientation = sliderBar->orientation();
         const QPixmap *normal = sliderBar->buttonPixmap()->normal();
@@ -67,25 +66,29 @@ void TSliderbarStyle::drawWidget(const QWidget *widget, const QStyleOptionComple
         if(!fillPixmap->isNull())
         {
             int minValue = sliderBar->minimum();
-            float drawFactor = (float)(sliderBar->value()-minValue)/(sliderBar->maximum()-minValue);
-            int x = 0;
-            int y = 0;
-            int w = 0;
-            int h = 0;
-            QPixmap pixToDraw;
-            if(orientation == Qt::Vertical) {
-                w = fillPixmap->width();
-                x = (sliderRect.width() - w) / 2;
-                h = grooveRect.height()*drawFactor;
-                y = grooveRect.bottom() - h;
-                pixToDraw = fillPixmap->copy(0, y, w, h);
-            } else if(orientation == Qt::Horizontal) {
-                h = fillPixmap->height();
-                y = (sliderRect.height() - h) / 2;
-                w = grooveRect.width()*drawFactor;
-                pixToDraw = fillPixmap->copy(0, 0, w, h);
+            int valueRange = sliderBar->maximum()-minValue;
+            if(valueRange > 0)
+            {
+                float drawFactor = (float)(sliderBar->value()-minValue)/valueRange;
+                int x = 0;
+                int y = 0;
+                int w = 0;
+                int h = 0;
+                QPixmap pixToDraw;
+                if(orientation == Qt::Vertical) {
+                    w = fillPixmap->width();
+                    x = (sliderRect.width() - w) / 2;
+                    h = grooveRect.height()*drawFactor;
+                    y = grooveRect.bottom() - h;
+                    pixToDraw = fillPixmap->copy(0, y, w, h);
+                } else if(orientation == Qt::Horizontal) {
+                    h = fillPixmap->height();
+                    y = (sliderRect.height() - h) / 2;
+                    w = grooveRect.width()*drawFactor;
+                    pixToDraw = fillPixmap->copy(0, 0, w, h);
+                }
+                painter->drawPixmap(x, y, w, h, pixToDraw);
             }
-            painter->drawPixmap(x, y, w, h, pixToDraw);
         }
     }
     if(option->subControls & SC_SliderHandle){

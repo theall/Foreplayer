@@ -24,8 +24,14 @@ TAbstractPluginManager::TAbstractPluginManager()
 
 TAbstractPluginManager::~TAbstractPluginManager()
 {
-    foreach (TBackendPlugin *plugin, mPlugins) {
-        delete plugin;
+    for(auto plugin : mPlugins)
+    {
+        TBackendPlugin *backendPlugin = (TBackendPlugin*)plugin;
+        if(backendPlugin)
+        {
+            backendPlugin->closeTrack();
+            delete backendPlugin;
+        }
     }
     mPlugins.clear();
 }

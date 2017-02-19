@@ -141,12 +141,13 @@ void TPlaylistCore::setPlayingIndex(int pIndex, int mIndex, int tIndex)
 
 void TPlaylistCore::exportAs(int index, QString fileName)
 {
-
+    Q_UNUSED(index);
+    Q_UNUSED(fileName);
 }
 
 void TPlaylistCore::exportAll(QString path)
 {
-
+    Q_UNUSED(path);
 }
 
 TMusicItem *TPlaylistCore::currentMusicItem()

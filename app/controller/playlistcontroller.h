@@ -49,6 +49,7 @@ private slots:
 
     // From controller
     void slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti);
+    void slotRequestCurrentIndex(int *pIndex, int *mIndex, int *tIndex);
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

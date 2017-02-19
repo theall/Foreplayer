@@ -99,10 +99,11 @@ void TLoopBuffer::setCallback(IDataCallback *callback, int sampleSize)
 
 void TLoopBuffer::alloc(int size)
 {
-    if(mBuf)
-        delete mBuf;
+    if(!mBuf)
+        mBuf = (byte*)malloc(size);
+    else
+        mBuf = (byte*)realloc(mBuf, size);
 
-    mBuf = (byte*)malloc(size);
     mBufSize = size;
     mBufEnd = mBuf + mBufSize - 1;
     reset();

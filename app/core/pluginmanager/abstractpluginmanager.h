@@ -34,7 +34,7 @@ public:
      * \param parent The parent object of the TAbstractPluginManager.
      */
     explicit TAbstractPluginManager();
-    ~TAbstractPluginManager();
+    virtual ~TAbstractPluginManager();
 
     /*!
      * \brief Find plugins in specify path.

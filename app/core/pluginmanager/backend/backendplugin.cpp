@@ -128,7 +128,7 @@ bool TBackendPlugin::parse(QString file, TMusicInfo *musicInfo)
 {
     if(mProcParse)
     {
-        std::string s = file.toStdString();
+        std::wstring s = file.toStdWString();
         return mProcParse(s.c_str(), musicInfo);
     }
     return false;

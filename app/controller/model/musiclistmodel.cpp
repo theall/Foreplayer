@@ -69,7 +69,7 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
         return QString(tr("Title: %1\r\n"
                           "Duration: %2\r\n"
                           "Filename: %3\r\n"
-                          "\r\n%4") \
+                          "%4") \
                        .arg(data->displayName()) \
                        .arg(Utils::microSecToTimeStr(data->duration())) \
                        .arg(data->fileName())
