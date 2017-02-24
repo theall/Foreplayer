@@ -35,6 +35,23 @@ static TM1Thread *g_runningThread=NULL;
 //M1SND_DO_FRAME m1snd_do_frame;
 //M1SND_SWITCHLANG m1snd_switchlang;
 
+int findGameIdByName(QString name)
+{
+    int maxGames = m1snd_get_info_int(M1_IINF_TOTALGAMES, 0);
+    int gameId = -1;
+
+    for (int i = 0; i < maxGames; i++)
+    {
+        if (name==m1snd_get_info_str(M1_SINF_ROMNAME, i))
+        {
+            //High 16 bits store game id.
+            gameId = i;
+            break;
+        }
+    }
+    return gameId;
+}
+
 // callbacks from the core of interest to the user interface
 STDCALL int m1ui_message(void *user, int message, char *txt, int iparam)
 {
@@ -144,52 +161,37 @@ EXPORT const char *matchSuffixes()
 // Parse file to get details information
 EXPORT bool parse(const wchar_t *file, TMusicInfo* musicInfo)
 {
-    int i;
-    int maxGames = m1snd_get_info_int(M1_IINF_TOTALGAMES, 0);
-    bool getOne = false;
-    int gameId = 0;
     QFileInfo fi(QString::fromWCharArray(file));
     QString gameName = fi.baseName();
-    for (i = 0; i < maxGames; i++)
-    {
-        if (gameName==m1snd_get_info_str(M1_SINF_ROMNAME, i))
-        {
-            getOne = true;
-
-            //High 16 bits store game id.
-            gameId = i;
-            break;
-        }
-    }
-
-    if(!getOne)
+    int gameId = findGameIdByName(gameName);
+    if(gameId < 0)
         return false;
 
     musicInfo->musicName = m1snd_get_info_str(M1_SINF_VISNAME, gameId);
-    musicInfo->additionalInfo = QString::asprintf("Board: %s\n"
-                                                  "Maker: %s\n"
+    musicInfo->additionalInfo = QString::asprintf("Rom: %s\n"
                                                   "Year: %s\n"
-                                                  "Hardware: %s",
-                                                  m1snd_get_info_str(M1_SINF_BNAME, gameId),
-                                                  m1snd_get_info_str(M1_SINF_MAKER, gameId),
+                                                  "Maker: %s",
+                                                  m1snd_get_info_str(M1_SINF_ROMNAME, gameId),
                                                   m1snd_get_info_str(M1_SINF_YEAR, gameId),
-                                                  m1snd_get_info_str(M1_SINF_BHARDWARE, gameId)
+                                                  m1snd_get_info_str(M1_SINF_MAKER, gameId)
                                                   ).toStdString();
 
     //Track list
     int trackCount = m1snd_get_info_int(M1_IINF_TRACKS, gameId);
 
-    for (i = 0; i < trackCount; i++)
+    for (int i = 0; i < trackCount; i++)
     {
         TTrackInfo *trackInfo = new TTrackInfo;
         int trackCmdParam = (i<<16)|gameId;
         int trackCmd = m1snd_get_info_int(M1_IINF_TRACKCMD, trackCmdParam);
         int trackParam = (trackCmd<<16) | gameId;
-        trackInfo->index = trackCmdParam;
+        trackInfo->index = i;
         trackInfo->indexName = QString::asprintf("#%d", trackCmd).toStdString();
 
         //Save the duration (unit: ms)
         trackInfo->duration = m1snd_get_info_int(M1_IINF_TRKLENGTH, trackParam)*1000/60;
+        if(trackInfo->duration < 0)
+            trackInfo->duration = 0;
 
         // TrackName
         trackInfo->trackName = m1snd_get_info_str(M1_SINF_TRKNAME, trackParam);
@@ -210,18 +212,20 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 
     g_curRomPath = fi.absoluteFilePath();
 
-    int gameId = trackInfo->index&0xffff;
+    int gameId = findGameIdByName(fi.baseName());
+    if(gameId < 0)
+        return false;
+
     if(gameId != m1snd_get_info_int(M1_IINF_CURGAME, 0))
     {
         m1snd_run(M1_CMD_GAMEJMP, gameId);
     }
 
-    int songId = trackInfo->index>>16;
+    int songId = trackInfo->index;
     m1snd_run(M1_CMD_SONGJMP, songId);
 
-    qDebug("switching, game:%d song:%d", trackInfo->index&0xffff, trackInfo->index>>16);
+    qDebug("switching, game:%d song:%d", gameId, trackInfo->index);
 
-    //Mission complete.
     return true;
 }
 

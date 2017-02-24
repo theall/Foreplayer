@@ -19,8 +19,7 @@ INCLUDEPATH += \
 
 SOURCES += main.cpp
 
-HEADERS  += \
-    ../../plugins/backend/backendinterface.h
+HEADERS  +=
 
 include(../../app/gui/gui.pri)
 include(../../app/utils/utils.pri)

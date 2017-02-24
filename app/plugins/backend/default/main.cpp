@@ -15,7 +15,6 @@ const char *szContact = "wazcd_1608@qq.com";
 const char *szDescription = "Bass plugin.http://www.un4seen.com/";
 const char *szCreateDate = "2017-02-19";
 const int g_sampleRate = 44100;
-const int g_bufSize = 20000;
 
 HSTREAM g_handle;
 

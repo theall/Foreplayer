@@ -1,5 +1,11 @@
 #include "tracklistview.h"
 
+#define COLUMN_ICON             0
+#define COLUMN_INDEX            1
+#define COLUMN_TITLE            2
+#define COLUMN_DURATION         3
+#define COLUMN_ICON_WIDTH       6
+
 TTracklistView::TTracklistView(QWidget *parent) :
     TAbstractTableView(parent)
 {
@@ -16,13 +22,14 @@ void TTracklistView::setModel(QAbstractItemModel *model)
 
 void TTracklistView::updateColumnsWidth()
 {
-    resizeColumnToContents(0);
-    resizeColumnToContents(2);
+    setColumnWidth(COLUMN_ICON, COLUMN_ICON_WIDTH);
+    resizeColumnToContents(COLUMN_INDEX);
+    resizeColumnToContents(COLUMN_DURATION);
 
-    setColumnWidth(0, columnWidth(0)+5);
-    int w = rect().width()-columnWidth(0)-columnWidth(2);
+    int w = rect().width()-columnWidth(COLUMN_INDEX)-columnWidth(COLUMN_DURATION)-COLUMN_ICON_WIDTH;
     QScrollBar *bar = verticalScrollBar();
     if(bar->isVisible())
         w -= bar->width()+3;
-    setColumnWidth(1, w);
+
+    setColumnWidth(COLUMN_TITLE, w);
 }

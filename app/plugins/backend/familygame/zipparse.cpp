@@ -1,5 +1,7 @@
 #include "zipparse.h"
 
+#include <QFileInfo>
+
 #define ZIP_FILE_NAME_SIZE 256
 #define ZIP_FILE_BUF_SIZE 16384
 #define ZIP_FILE_MAX_SIZE 4194304
@@ -7,7 +9,17 @@
 TZipParse::TZipParse(QString file) :
     TAbstractParse(file)
 {
-
+    mSuffixList << "ay"
+                << "gbs"
+                << "gym"
+                << "hes"
+                << "kss"
+                << "nsf"
+                << "nsfe"
+                << "sap"
+                << "spc"
+                << "vgz"
+                << "vgm";
 }
 
 TZipParse::~TZipParse()
@@ -20,7 +32,7 @@ bool TZipParse::parse(TMusicInfo *musicInfo)
     if(!musicInfo)
         return false;
 
-    std::string fileName = mFile.toStdString();
+    std::wstring fileName = mFile.toStdWString();
     unzFile zipFile = unzOpen(fileName.c_str());
     if(!zipFile)
         return false;
@@ -40,7 +52,7 @@ bool TZipParse::parse(TMusicInfo *musicInfo)
         unzGetCurrentFileInfo(zipFile, &fileInfo, szFileName, ZIP_FILE_NAME_SIZE, NULL, 0, NULL, 0);
 
         // Only process file size < ZIP_FILE_MAX_SIZE
-        if(fileInfo.uncompressed_size < ZIP_FILE_MAX_SIZE)
+        if(mSuffixList.contains(QFileInfo(szFileName).suffix(), Qt::CaseInsensitive) && fileInfo.uncompressed_size < ZIP_FILE_MAX_SIZE)
         {
             result = unzOpenCurrentFile(zipFile);
             if(result == UNZ_OK)
@@ -87,8 +99,9 @@ QByteArray TZipParse::trackData(TTrackInfo *trackInfo)
         return QByteArray();
 
     QByteArray dataBuf("");
-
-    unzFile zipFile = unzOpen(trackInfo->musicFileName.c_str());
+    QString fileName = QString::fromStdString(trackInfo->musicFileName);
+    std::wstring fileNameW = fileName.toStdWString();
+    unzFile zipFile = unzOpen(fileNameW.c_str());
     if(!zipFile)
         return dataBuf;
 

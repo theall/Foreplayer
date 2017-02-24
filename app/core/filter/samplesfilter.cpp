@@ -46,7 +46,7 @@ TSamplesFilter::TSamplesFilter(int sampleRate) :
   , mBallanceL(1.0)
   , mBallanceR(1.0)
   , mAmplification(0.0)
-  , m3dEffectValue(1.0)
+  , m3dEffectValue(0.0)
   , mSampleRate(sampleRate)
   , mSampleCount(1<<FFTLengthPowerOfTwo)
   , mSilentFrames(0)

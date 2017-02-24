@@ -50,6 +50,7 @@ public:
     }
 
 protected:
+    TBackendPlugin *mDefaultPlugin;
     TBackendPlugins mPlugins;
 };
 

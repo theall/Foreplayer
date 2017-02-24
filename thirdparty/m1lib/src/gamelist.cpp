@@ -2,18 +2,27 @@
  * gamelist.cpp - game list support
  *
  */
-
+#include  <io.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <algorithm>
 
 #include "m1snd.h"
 #include "m1ui.h"
 
+#include "board.h"
+
 #include "expat.h"
 #include "moddir.h"
+#include "gamelist.h"
+
+#define ROM_ENTRY_IS_REGION 0
+#define ROM_ENTRY_IS_ROM    1
+
+typedef unsigned char byte;
 
 static char element_data[2048];
 static int numgames, currgn;
@@ -107,7 +116,7 @@ static void startElement(void *userData, const char *name, const char **atts)
 
 		// parentzip must exist even if no element for it is present (for back compatibility),
 		// so allocate it now
-		games[curgame].parentzip = (char *)malloc(16);
+        //games[curgame].parentzip = (char *)malloc(16);
 		games[curgame].parentzip[0] = '\0';
 
 		// and set the state
@@ -338,7 +347,7 @@ static void endElement(void *userData, const char *name)
 			break;
 
 		case XML_YEAR:
-			games[curgame].year = (char *)malloc(4+1);
+            //games[curgame].year = (char *)malloc(4+1);
 			strncpy(games[curgame].year, element_data, 4);
 			games[curgame].year[4] = '\0';
 			break;
@@ -380,65 +389,438 @@ static int unkEncodingHandler(void *handlerData, const XML_Char *name, XML_Encod
 	return XML_STATUS_OK;
 }
 
-int gamelist_load(void)
+#include <time.h>
+int loadFromXml(wchar_t *xmlFile)
 {
-	XML_Parser parser = XML_ParserCreate(NULL);
-	FILE *f;
-	int depth = 0, done;
-	static char buf[BUFSIZ];
+    XML_Parser parser = XML_ParserCreate(NULL);
+    FILE *f;
+    int depth = 0, done;
+    static char buf[BUFSIZ];
 
-	curgame = -1;
-	numgames = 0;
-	games = (M1GameT *)NULL;	// realloc() will become malloc() if ptr is NULL, which is handy
+    curgame = -1;
+    numgames = 0;
+    games = (M1GameT *)NULL;	// realloc() will become malloc() if ptr is NULL, which is handy
 
-    wchar_t *szFilePath = currentModulePath();
-    wcscat(szFilePath, L"m1.xml");
-
-    f = _wfopen(szFilePath, L"r");
+    f = _wfopen(xmlFile, L"r");
     if (!f)
     {
-        f = _wfopen(L"m1/m1.xml", L"r");
-        if(!f)
-            return 0;
-	}
+        return 0;
+    }
 
-	XML_SetUserData(parser, &depth);
-	XML_SetElementHandler(parser, startElement, endElement);
-	XML_SetCharacterDataHandler(parser, charData);
-	XML_SetUnknownEncodingHandler(parser, unkEncodingHandler, NULL);
+    XML_SetUserData(parser, &depth);
+    XML_SetElementHandler(parser, startElement, endElement);
+    XML_SetCharacterDataHandler(parser, charData);
+    XML_SetUnknownEncodingHandler(parser, unkEncodingHandler, NULL);
 
-	xml_state = XML_INVALID;
-		
-	do 
-	{
-		unsigned int len = fread(buf, 1, sizeof(buf), f);
+    xml_state = XML_INVALID;
 
-		done = (len < sizeof(buf));
+    do
+    {
+        unsigned int len = fread(buf, 1, sizeof(buf), f);
 
-		if (!XML_Parse(parser, buf, len, done))
-		{
-			printf("XML parse error %s at line %d (m1.xml)\n",
-				XML_ErrorString(XML_GetErrorCode(parser)),
+        done = (len < sizeof(buf));
+
+        if (!XML_Parse(parser, buf, len, done))
+        {
+            printf("XML parse error %s at line %d (m1.xml)\n",
+                XML_ErrorString(XML_GetErrorCode(parser)),
                 (int)XML_GetCurrentLineNumber(parser));
 
-			// clean up
-			XML_ParserFree(parser);
-			if (games)
-			{
-				free(games);
-				games = (M1GameT *)NULL;
-			}
-			return 0;
-		}
+            // clean up
+            XML_ParserFree(parser);
+            if (games)
+            {
+                free(games);
+                games = (M1GameT *)NULL;
+            }
+            return 0;
+        }
 
-	} while (!done);
+    } while (!done);
 
-	XML_ParserFree(parser);
+    XML_ParserFree(parser);
 
-	fclose(f);
-
-//	printf("Finished loading, %d games\n", numgames);
-	return numgames;
+    fclose(f);
+    return numgames;
 }
 
+/**
+ *Functions for read from binary
+ */
+void readString(byte *&p, char **dest)
+{
+    *dest = (char*)p;
+    p += strlen(*dest) + 1;
+}
 
+void readInt(byte *&p, int *dest)
+{
+    *dest = *(int*)p;
+    p += sizeof(int);
+}
+
+void readLong(byte *&p, long *dest)
+{
+    *dest = *(long*)p;
+    p += sizeof(long);
+}
+
+void readM1Data(byte *&p, M1GameT *game)
+{
+    readInt(p, &game->defcmd);
+    readInt(p, &game->stopcmd);
+    readInt(p, &game->mincmd);
+    readInt(p, &game->maxcmd);
+    readInt(p, &game->refcon);
+    readInt(p, &game->numcustomtags);
+    if(game->numcustomtags > 0)
+    {
+        int realTags = std::min(game->numcustomtags, MAX_CUSTOM_TAGS);
+        int unitSize = sizeof(BoardOptionsT);
+        int needMoved = std::max(0, (game->numcustomtags-MAX_CUSTOM_TAGS)*unitSize);
+        int i;
+
+        for(i=0;i<realTags;i++)
+        {
+            memcpy(&game->custom_tags[i], p, unitSize);
+            p += unitSize;
+        }
+        if(needMoved > 0)
+        {
+            printf("Ran out of custom tags for game, only %d allowed\n", MAX_CUSTOM_TAGS);
+            p += needMoved;
+        }
+    }
+}
+
+void readRom(byte *&p, RomEntryT *rom)
+{
+    readString(p, &rom->name);
+    readInt(p, (int*)&rom->length);
+    readInt(p, (int*)&rom->crc);
+    readInt(p, (int*)&rom->loadadr);
+    if(*p++)
+        rom->flags |= ROM_REVERSE;
+
+    char skip = *p++;
+    if(skip != -1)
+        rom->flags |= int(skip)<<12;
+
+    char w = *p++;
+    if(w == 4)
+        rom->flags |= ROM_DWORD;
+    else if(w == 2)
+        rom->flags |= ROM_WORD;
+
+    // Check sha1
+    if(*p++)
+    {
+        memcpy(rom->sha1, p, 40);
+        p += 40;// Sha1 length
+    }
+
+    // Check md5
+    if(*p++)
+    {
+        memcpy(rom->md5, p, 32);
+        p += 32;// md5 length
+    }
+}
+
+void readRegion(byte *&p, RomEntryT *rom)
+{
+    readInt(p, (int*)&rom->loadadr);
+    if(rom->loadadr != -1)
+        rom->flags |= ROM_RGNDEF;
+
+    readInt(p, (int*)&rom->length);
+    int clear = 0;
+    readInt(p, &clear);
+    if(clear != -1)
+    {
+        rom->flags |= (clear & 0xff)<<8;
+        rom->flags |= RGN_CLEAR;
+    }
+    if(*p++ == 0)
+        rom->flags |= RGN_BE;
+    else
+        rom->flags |= RGN_LE;
+}
+
+void readRegions(byte *&p, M1GameT *game)
+{
+    int regions = 0;
+    readInt(p, &regions);
+    int i;
+    for(i=0;i<regions;i++)
+    {
+        if(*p++==ROM_ENTRY_IS_REGION)
+            readRegion(p, &game->roms[i]);
+        else
+            readRom(p, &game->roms[i]);
+    }
+    game->roms[i].flags = ROM_ENDLIST;
+}
+
+void readGame(byte *&p, M1GameT *game)
+{
+    readString(p, &game->zipname);
+    readInt(p, &game->btype);
+    readString(p, &game->name);
+    memcpy(game->year, p, 4);
+    p += 5;
+    readString(p, &game->mfgstr);
+    readM1Data(p, game);
+    readRegions(p, game);
+}
+
+int loadFromBin(wchar_t *fileName)
+{
+    FILE *fp = _wfopen(fileName, L"rb");
+    if (!fp)
+        return 0;
+    fseek(fp, 0, SEEK_END);
+    int fileSize = ftell(fp);
+    if(fileSize <= 0)
+    {
+        fclose(fp);
+        return 0;
+    }
+    byte *fileBuf = (byte*)malloc(fileSize);
+    byte *pBuf = fileBuf;
+    fseek(fp, 0, SEEK_SET);
+    int sizeRead = fread(fileBuf, 1, fileSize, fp);
+    fclose(fp);
+    if(sizeRead < fileSize)
+        return 0;
+
+    int gameCount = *((int*)pBuf);
+    pBuf += sizeof(int);
+    if(gameCount <= 0)
+        return 0;
+
+    int i;
+    if(games)
+        games = (M1GameT *)realloc(games, sizeof(M1GameT)*gameCount);
+    else
+        games = (M1GameT *)malloc(sizeof(M1GameT)*gameCount);
+    memset(games, 0, sizeof(M1GameT)*gameCount);
+    for(i=0;i<gameCount;i++)
+        readGame(pBuf, &games[i]);
+
+    //free(fileBuf);
+
+    numgames = gameCount;
+    return gameCount;
+}
+
+int gamelist_load()
+{
+    wchar_t xmlPath[280];
+    wchar_t binPath[280];
+    wchar_t *szFilePath = currentModulePath();
+    wcscpy(xmlPath, szFilePath);
+    wcscat(xmlPath, L"m1.xml");
+    wcscpy(binPath, szFilePath);
+    wcscat(binPath, L"m1.bin");
+    int n = 0;
+#if M1_DEBUG
+    clock_t timeStart = clock();
+#endif
+    if(_waccess(binPath, 0)==-1)
+    {
+        n = loadFromXml(xmlPath);
+        if(n > 0)
+            n = gamelist_save(binPath);
+    } else {
+        n = loadFromBin(binPath);
+//        if(n <= 0)
+//            n = loadFromXml(xmlPath);
+    }
+
+//    wchar_t suffix[280];
+//    int l = wcslen(fileName);
+//    wchar_t *p = fileName + l;
+//    while(*p!=L'.' && p>=fileName)
+//        p--;
+//    p++;
+//    wcscpy(suffix, p);
+//    wcslwr(suffix);
+//    if(!wcscmp(suffix, L"xml"))
+//        return loadFromXml(currentDllPath);
+//    else
+//        return loadFromBin(currentDllPath);
+#if M1_DEBUG
+    printf("Gamelist parse time: %ldms", (clock()-timeStart));
+#endif
+    return n;
+}
+
+/**
+ * @brief gamelist_save
+ * @param fileName
+ * @return
+ */
+
+void writeByte(FILE *fp, byte c)
+{
+    fwrite(&c, sizeof(byte), 1, fp);
+}
+
+void writeInt(FILE *fp, int i)
+{
+    fwrite(&i, sizeof(int), 1, fp);
+}
+
+void writeString(FILE *fp, const char *str)
+{
+    fwrite(str, 1, strlen(str), fp);
+    writeByte(fp, 0);
+}
+
+void writeM1Data(FILE *fp, M1GameT *game)
+{
+    writeInt(fp, game->defcmd);
+    writeInt(fp, game->stopcmd);
+    writeInt(fp, game->mincmd);
+    writeInt(fp, game->maxcmd);
+    writeInt(fp, game->refcon);
+
+    if(game->numcustomtags > MAX_CUSTOM_TAGS)
+        game->numcustomtags = MAX_CUSTOM_TAGS;
+
+    writeInt(fp, game->numcustomtags);
+    if(game->numcustomtags > 0)
+    {
+        fwrite(game->custom_tags, sizeof(BoardOptionsT), game->numcustomtags, fp);
+    }
+}
+
+void writeRom(FILE *fp, RomEntryT *rom)
+{
+    writeString(fp, rom->name);
+    writeInt(fp, rom->length);
+    writeInt(fp, rom->crc);
+    writeInt(fp, rom->loadadr);
+
+    if(rom->flags&ROM_REVERSE)
+        writeByte(fp, 1);
+    else
+        writeByte(fp, 0);
+
+    byte skip = (rom->flags>>12)&0x0f;
+    if(skip > 0)
+        writeByte(fp, skip);
+    else
+        writeByte(fp, -1);
+
+    if(rom->flags & ROM_DWORD)
+        writeByte(fp, 4);
+    else if(rom->flags & ROM_WORD)
+        writeByte(fp, 2);
+    else
+        writeByte(fp, -1);
+
+    // Check sha1
+    if(rom->sha1[0]=='\0')
+        writeByte(fp, 0);
+    else
+    {
+        writeByte(fp, 1);
+        fwrite(rom->sha1, 1, 40, fp);
+    }
+
+    // Check md5
+    if(rom->md5[0]=='\0')
+        writeByte(fp, 0);
+    else
+    {
+        writeByte(fp, 1);
+        fwrite(rom->md5, 1, 32, fp);
+    }
+}
+
+void writeRegion(FILE *fp, RomEntryT *rom)
+{
+    if(rom->flags & ROM_RGNDEF)
+        writeInt(fp, (int)rom->loadadr);
+    else
+        writeInt(fp, -1);
+
+    writeInt(fp, (int)rom->length);
+
+    if(rom->flags & RGN_CLEAR)
+    {
+        int clear = (rom->flags&0xff00)>>8;
+        writeInt(fp, clear);
+    } else {
+        writeInt(fp, -1);
+    }
+    if(rom->flags & RGN_BE)
+        writeByte(fp, 0);
+    else
+        writeByte(fp, 1);
+}
+
+void writeRomEntry(FILE *fp, RomEntryT *rom)
+{
+    if(rom->name==NULL)
+    {
+        writeByte(fp, ROM_ENTRY_IS_REGION);
+        writeRegion(fp, rom);
+    } else {
+        writeByte(fp, ROM_ENTRY_IS_ROM);
+        writeRom(fp, rom);
+    }
+}
+
+void writeRegions(FILE *fp, M1GameT *game)
+{
+    int roms = 0;
+    while(roms <= ROM_MAX)
+    {
+        if(game->roms[roms].name==NULL && game->roms[roms].length==0)
+        {
+            break;
+        }
+        roms++;
+    }
+    if(roms <= ROM_MAX)
+    {
+        writeInt(fp, roms);
+        for(int i=0;i<roms;i++)
+            writeRomEntry(fp, &game->roms[i]);
+    } else {
+        writeInt(fp, 0);
+    }
+}
+
+void writeGame(FILE *fp, M1GameT *game)
+{
+    writeString(fp, game->zipname);
+    writeInt(fp, game->btype);
+    writeString(fp, game->name);
+    writeString(fp, game->year);
+    writeString(fp, game->mfgstr);
+    writeM1Data(fp, game);
+    writeRegions(fp, game);
+}
+
+int gamelist_save(wchar_t *fileName)
+{
+    if(!games || !numgames)
+        return 0;
+
+    FILE *fp = _wfopen(fileName, L"wb");
+    if(!fp)
+        return 0;
+    int i;
+    writeInt(fp, numgames);
+    for(i=0;i<numgames;i++)
+    {
+        writeGame(fp, &games[i]);
+    }
+    fclose(fp);
+
+    return numgames;
+}

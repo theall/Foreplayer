@@ -3,7 +3,7 @@
 
 /* platform specific stuff */
 
-#if (__linux__ || WIN32)
+#if (__linux__ || __MINGW32__ || __WIN32)
 typedef signed   char      INT8;
 typedef signed   short     INT16;
 typedef signed   int       INT32;

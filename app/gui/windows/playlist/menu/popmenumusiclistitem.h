@@ -13,19 +13,27 @@ public:
 
 signals:
     void onActionPlayTriggered();
-    void onActionDetailTriggered();
-    void onActionRemoveTriggered();
     void onActionCopyTriggered();
+    void onActionCutTriggered();
     void onActionPasteTriggered();
-    void onActionCopyToUsbTriggered();
+    void onActionDeleteTriggered();
+    void onActionRenameTriggered();
+    void onActionExplorerTriggered();
+    void onActionExportTriggered();
+    void onActionDetailTriggered();
 
 private:
-    QAction *mActionPlay;
-    QAction *mActionDetail;
-    QAction *mActionRemove;
     QAction *mActionCopy;
-    QAction *mActionPaste;
     QAction *mActionCopyToUsb;
+    QAction *mActionCut;
+    QAction *mActionDelete;
+    QAction *mActionDetail;
+    QAction *mActionExplorer;
+    QAction *mActionExport;
+    QAction *mActionPaste;
+    QAction *mActionPlay;
+    QAction *mActionRemove;
+    QAction *mActionRename;
 
     // TAbstractPopMenu interface
 public:

@@ -43,8 +43,8 @@ typedef struct
 typedef struct m1game_t
 {
 	char *name;
-	char *year;
-	char *parentzip;
+    char year[5];
+    char parentzip[16];
 	char *zipname;
 	int mfg;
 	int btype;

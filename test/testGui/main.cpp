@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     gui.mainWindow()->setCaption("fulkfour is coming!");
     gui.mainWindow()->setTitles(titles);
-    gui.mainWindow()->setTime(99, 354);
+    gui.mainWindow()->setProgress(99, 354);
 
     int result = a.exec();
 

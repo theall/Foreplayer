@@ -31,7 +31,7 @@ int TMusiclistModel::columnCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
 
-    return 3;
+    return 4;
 }
 
 QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
@@ -44,17 +44,17 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
         if(!data)
             return QVariant();
 
-        if(column==0)
+        if(column==1)
         {
-            return QString(" %1.").arg(index.row()+1);
-        } else if (column==1) {
-            return data->displayName();
+            return QString("%1.").arg(index.row()+1);
         } else if (column==2) {
+            return data->displayName();
+        } else if (column==3) {
             return Utils::microSecToTimeStr(data->duration());
         }
     } else if (role==Qt::TextAlignmentRole) {
         Qt::Alignment align;
-        if (index.column()==1) {
+        if (index.column()==2) {
             align = Qt::AlignLeft;
         } else {
             align = Qt::AlignRight;;

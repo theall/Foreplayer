@@ -53,6 +53,15 @@ void TVisualWidget::setColor(QColor blockColor, QColor topColor, QColor bottomCo
     mColorBottom = bottomColor;
 }
 
+void TVisualWidget::reset()
+{
+    memset(&mSamleValues, 0, sizeof(float)*LEVEL_COUNT);
+    memset(&mTopBlockValue, 0, sizeof(int)*LEVEL_COUNT);
+    memset(&mTopBlockSpeed, 0, sizeof(int)*LEVEL_COUNT);
+    memset(&mTopBlockBlank, 0, sizeof(int)*LEVEL_COUNT);
+    update();
+}
+
 bool TVisualWidget::spectrumMode()
 {
     return mVisualType==VT_SPECTRUM_BLOCK || mVisualType==VT_SPECTRUM_LINE;

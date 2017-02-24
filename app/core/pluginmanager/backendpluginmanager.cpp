@@ -63,14 +63,14 @@ TBackendPlugin *TBackendPluginManager::parse(QString file, TMusicInfo *musicInfo
                 backendPlugins.append(backendPlugin);
         }
         if(backendPlugins.isEmpty())
-            backendPlugins = mPlugins;
+            backendPlugins.append(mDefaultPlugin);
     } else {
         if(fi.isDir())
         {
             // Enumerate files in directory
 
         } else {
-            backendPlugins = mPlugins;
+            backendPlugins.append(mDefaultPlugin);
         }
     }
     TBackendPlugin *backendPlugin = NULL;

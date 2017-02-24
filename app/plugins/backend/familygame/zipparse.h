@@ -3,6 +3,8 @@
 
 #include <unzip/unzip.h>
 
+#include <QStringList>
+
 #include "fileparse.h"
 
 class TZipParse : public TAbstractParse
@@ -15,6 +17,7 @@ public:
     QByteArray trackData(TTrackInfo *trackInfo);
 
 private:
+    QStringList mSuffixList;
 };
 
 #endif // TZIPPARSE_H

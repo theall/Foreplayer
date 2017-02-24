@@ -16,6 +16,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 #include "gmewrap.h"
 
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
@@ -33,7 +35,6 @@ TGmeWrap *TGmeWrap::mInstance=NULL;
 TGmeWrap::TGmeWrap(int sampleRate) :
       mEmulator(0)
     , mScopeBuf(0)
-    , mPaused(false)
     , mSampleRate(sampleRate)
     , mTrackInfo(NULL)
 {
@@ -69,13 +70,35 @@ void TGmeWrap::deleteInstance()
     }
 }
 
-bool TGmeWrap::loadFile( const char* path )
+bool TGmeWrap::loadFile(const wchar_t *path )
 {
-    free();
-	
-    RETURN_ERR( gme_open_file( path, &mEmulator, mSampleRate ) );
+    FILE *fp = _wfopen(path, L"rb");
+    if(!fp)
+        return false;
 
-    return true;
+    fseek(fp, 0, SEEK_END);
+    int fileSize = ftell(fp);
+    if(fileSize < 1)
+    {
+        fclose(fp);
+        return false;
+    }
+    fseek(fp, 0, SEEK_SET);
+    char *buf = (char*)malloc(fileSize);
+    if(!buf)
+    {
+        fclose(fp);
+        return false;
+    }
+    int sizeRead = fread(buf, 1, fileSize, fp);
+    fclose(fp);
+
+    bool err = false;
+    if(sizeRead == fileSize)
+        err = loadData(buf, fileSize);
+
+    delete buf;
+    return err;
 }
 
 bool TGmeWrap::loadData(void *data, int size)

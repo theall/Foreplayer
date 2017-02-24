@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
         TApp app(argc, argv);
         return app.start();
     } else {
-        qDebug() << "Foreplayer is running";
+        qDebug() << "Foreplayer is running.";
     }
 
     return 0;

@@ -13,7 +13,8 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
         return false;
 
     TGmeWrap gme;
-    gme.loadFile(mFile.toLocal8Bit().constData());
+    wstring wpath = mFile.toStdWString();
+    gme.loadFile(wpath.c_str());
     int trackCount = gme.trackCount();
     int trackIndex = 0;
     for(int i=0;i<trackCount;i++) {
@@ -24,8 +25,8 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
             trackInfo->trackName = "unknown";
         trackInfo->additionalInfo = fillAdditionalInfo(_trackInfo);
         trackInfo->duration  = _trackInfo->length;
-        if(trackInfo->duration <= 0)
-            trackInfo->duration = _trackInfo->play_length;
+//        if(trackInfo->duration <= 0)
+//            trackInfo->duration = _trackInfo->play_length;
         trackInfo->index     = trackIndex;
         musicInfo->trackList.push_back(trackInfo);
         musicInfo->duration += trackInfo->duration;

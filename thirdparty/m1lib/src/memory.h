@@ -1,7 +1,7 @@
 #ifndef _MEMORY_H
 #define _MEMORY_H
 
-#include <stddef.h>
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -45,19 +45,19 @@ void *auto_malloc(size_t size);
 ***************************************************************************/
 
 /* ----- typedefs for data and offset types ----- */
-typedef UINT8			data8_t;
-typedef UINT16			data16_t;
-typedef UINT32			data32_t;
-typedef UINT32			offs_t;
+typedef uint8_t			data8_t;
+typedef uint16_t		data16_t;
+typedef uint32_t		data32_t;
+typedef uint32_t		offs_t;
 
 /* ----- typedefs for the various common memory/port handlers ----- */
-typedef data8_t			(*read8_handler)  (UNUSEDARG offs_t offset);
-typedef void			(*write8_handler) (UNUSEDARG offs_t offset, UNUSEDARG data8_t data);
-typedef data16_t		(*read16_handler) (UNUSEDARG offs_t offset, UNUSEDARG data16_t mem_mask);
-typedef void			(*write16_handler)(UNUSEDARG offs_t offset, UNUSEDARG data16_t data, UNUSEDARG data16_t mem_mask);
-typedef data32_t		(*read32_handler) (UNUSEDARG offs_t offset, UNUSEDARG data32_t mem_mask);
-typedef void			(*write32_handler)(UNUSEDARG offs_t offset, UNUSEDARG data32_t data, UNUSEDARG data32_t mem_mask);
-typedef offs_t			(*opbase_handler) (UNUSEDARG offs_t address);
+typedef data8_t			(*read8_handler)  (offs_t offset UNUSEDARG);
+typedef void			(*write8_handler) (offs_t offset UNUSEDARG, data8_t data UNUSEDARG);
+typedef data16_t		(*read16_handler) (offs_t offset UNUSEDARG, data16_t mem_mask UNUSEDARG);
+typedef void			(*write16_handler)(offs_t offset UNUSEDARG, data16_t data UNUSEDARG, data16_t mem_mask UNUSEDARG);
+typedef data32_t		(*read32_handler) (offs_t offset UNUSEDARG, data32_t mem_mask UNUSEDARG);
+typedef void			(*write32_handler)(offs_t offset UNUSEDARG, data32_t data UNUSEDARG, data32_t mem_mask UNUSEDARG);
+typedef offs_t			(*opbase_handler) (offs_t address UNUSEDARG);
 
 /* ----- typedefs for the various common memory handlers ----- */
 typedef read8_handler	mem_read_handler;
@@ -78,9 +78,9 @@ typedef write32_handler	port_write32_handler;
 /* ----- typedefs for externally allocated memory ----- */
 struct ExtMemory
 {
-    offs_t 			start, end;
-    UINT8			region;
-    UINT8 *			data;
+    offs_t start, end;
+    uint8_t	region;
+    uint8_t *data;
 };
 
 
@@ -92,15 +92,15 @@ struct ExtMemory
 ***************************************************************************/
 
 /* ----- macros for declaring the various common memory/port handlers ----- */
-#define READ_HANDLER(name) 		data8_t  name(UNUSEDARG offs_t offset)
-#define WRITE_HANDLER(name) 	void     name(UNUSEDARG offs_t offset, UNUSEDARG data8_t data)
-#define READ8_HANDLER(name) 		data8_t  name(UNUSEDARG offs_t offset)
-#define WRITE8_HANDLER(name) 	void     name(UNUSEDARG offs_t offset, UNUSEDARG data8_t data)
-#define READ16_HANDLER(name)	data16_t name(UNUSEDARG offs_t offset, UNUSEDARG data16_t mem_mask)
-#define WRITE16_HANDLER(name)	void     name(UNUSEDARG offs_t offset, UNUSEDARG data16_t data, UNUSEDARG data16_t mem_mask)
-#define READ32_HANDLER(name)	data32_t name(UNUSEDARG offs_t offset, UNUSEDARG data32_t mem_mask)
-#define WRITE32_HANDLER(name)	void     name(UNUSEDARG offs_t offset, UNUSEDARG data32_t data, UNUSEDARG data32_t mem_mask)
-#define OPBASE_HANDLER(name)	offs_t   name(UNUSEDARG offs_t address)
+#define READ_HANDLER(name) 		data8_t  name(offs_t offset UNUSEDARG)
+#define WRITE_HANDLER(name) 	void     name(offs_t offset UNUSEDARG, data8_t data UNUSEDARG)
+#define READ8_HANDLER(name) 	data8_t  name(offs_t offset UNUSEDARG)
+#define WRITE8_HANDLER(name) 	void     name(offs_t offset UNUSEDARG, data8_t data UNUSEDARG)
+#define READ16_HANDLER(name)	data16_t name(offs_t offset UNUSEDARG, data16_t mem_mask UNUSEDARG)
+#define WRITE16_HANDLER(name)	void     name(offs_t offset UNUSEDARG, data16_t data UNUSEDARG, data16_t mem_mask UNUSEDARG)
+#define READ32_HANDLER(name)	data32_t name(offs_t offset UNUSEDARG, data32_t mem_mask UNUSEDARG)
+#define WRITE32_HANDLER(name)	void     name(offs_t offset UNUSEDARG, data32_t data UNUSEDARG, data32_t mem_mask UNUSEDARG)
+#define OPBASE_HANDLER(name)	offs_t   name(offs_t address UNUSEDARG)
 
 /* "new" MAME compatibility */
 #define AM_RANGE(x, y) { x, y,
@@ -613,9 +613,9 @@ extern MHELE ophw;				/* opcode handler */
 extern MHELE *cur_mrhard;		/* current set of read handlers */
 extern MHELE *cur_mwhard;		/* current set of write handlers */
 
-extern UINT8 *OP_RAM;			/* opcode RAM base */
-extern UINT8 *OP_ROM;			/* opcode ROM base */
-extern UINT8 *cpu_bankbase[];	/* array of bank bases */
+extern uint8_t *OP_RAM;			/* opcode RAM base */
+extern uint8_t *OP_ROM;			/* opcode ROM base */
+extern uint8_t *cpu_bankbase[];	/* array of bank bases */
 
 
 /* global memory access width and mask (16-bit and 32-bit under-size accesses) */

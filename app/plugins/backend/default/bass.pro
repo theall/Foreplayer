@@ -11,7 +11,6 @@ TEMPLATE = lib
 
 DEFINES += 
 
-#LIBS += -LF:/opensource/myplayer/Mu-master/src/thirdpart/bass/lib -lbass
 LIBS += F:/opensource/myplayer/Mu-master/src/thirdpart/bass/lib/bass.dll
 
 SOURCES += \
@@ -20,7 +19,7 @@ SOURCES += \
 HEADERS +=
 
 win32 {
-    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/default
+    #DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/default
 }
 unix {
     target.path = /usr/lib

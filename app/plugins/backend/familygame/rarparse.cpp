@@ -2,6 +2,7 @@
 
 #include <QDebug>
 #include <QByteArray>
+#include <QFileInfo>
 
 #define RAR_FILE_MAX_SIZE 4194304
 
@@ -117,14 +118,14 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
 
     RAROpenArchiveDataEx openArchiveData;
     wchar_t RedirName[1024];
-    std::string arcNameStr = mFile.toStdString();
-    const char *arcName = (char*)arcNameStr.c_str();
+    std::wstring arcNameStr = mFile.toStdWString();
+    const wchar_t *arcName = (wchar_t*)arcNameStr.c_str();
 
     RARHeaderDataEx HeaderData;
     memset(&HeaderData, 0, sizeof(HeaderData));
     memset(&openArchiveData, 0, sizeof(openArchiveData));
 
-    openArchiveData.ArcName     = (char*)arcName;
+    openArchiveData.ArcNameW     = (wchar_t*)arcName;
     openArchiveData.CmtBuf      = cmtBuf;
     openArchiveData.CmtBufSize  = BUF_SIZE;
     openArchiveData.OpenMode    = RAR_OM_EXTRACT;
@@ -144,30 +145,35 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
     {
         userData.buffer.clear();
         userData.sizeNeed = (int)HeaderData.UnpSize;
-        int error = RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
-        if(error == ERAR_SUCCESS && userData.sizeNeed == userData.buffer.size())
+        QString currentFile = QString::fromWCharArray(HeaderData.FileNameW);
+        QFileInfo fi(currentFile);
+        if(fi.suffix().toLower() == "spc")
         {
-            QString currentFile = HeaderData.FileName;
-            currentFile = currentFile.toLower();
-            if(currentFile=="info.txt")
-                musicInfo->additionalInfo = userData.buffer.constData();
-            else {
-                TFileParse fileParse;
-                TTrackInfo *track = fileParse.parse(userData.buffer);
-                if(track)
-                {
-                    //__int64 UnpSize = HeaderData.UnpSize+(((__int64)HeaderData.UnpSizeHigh)<<32);
-                    //__int64 PackSize = HeaderData.PackSize+(((__int64)HeaderData.PackSizeHigh)<<32);
-                    track->fileSize = HeaderData.UnpSize;
-                    track->indexName = currentFile.toStdString();
-                    musicInfo->duration += track->duration;
-                    musicInfo->trackList.push_back(track);
+            int error = RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
+            if(error == ERAR_SUCCESS && userData.sizeNeed == userData.buffer.size())
+            {
+                if(currentFile.toLower()=="info.txt")
+                    musicInfo->additionalInfo = userData.buffer.constData();
+                else {
+                    TFileParse fileParse;
+                    TTrackInfo *track = fileParse.parse(userData.buffer);
+                    if(track)
+                    {
+                        //__int64 UnpSize = HeaderData.UnpSize+(((__int64)HeaderData.UnpSizeHigh)<<32);
+                        //__int64 PackSize = HeaderData.PackSize+(((__int64)HeaderData.PackSizeHigh)<<32);
+                        track->fileSize = HeaderData.UnpSize;
+                        track->indexName = currentFile.toStdString();
+                        musicInfo->duration += track->duration;
+                        musicInfo->trackList.push_back(track);
+                    }
                 }
+            } else {
+                qDebug() << error;
             }
+            // qDebug() << HeaderData.FileNameW << userData.sizeNeed << userData.buffer.size();
         } else {
-            qDebug() << error;
+            RARProcessFile(hArcData, RAR_SKIP, NULL, NULL);
         }
-        // qDebug() << HeaderData.FileName << userData.sizeNeed << userData.buffer.size();
     }
     RARCloseArchive(hArcData);
 
@@ -196,14 +202,14 @@ QByteArray TRarParse::trackData(TTrackInfo *trackInfo)
 
     RAROpenArchiveDataEx openArchiveData;
     wchar_t RedirName[1024];
-    std::string arcNameStr = mFile.toStdString();
-    const char *arcName = (char*)arcNameStr.c_str();
+    std::wstring arcNameStr = mFile.toStdWString();
+    const wchar_t *arcName = (wchar_t*)arcNameStr.c_str();
 
     RARHeaderDataEx HeaderData;
     memset(&HeaderData, 0, sizeof(HeaderData));
     memset(&openArchiveData, 0, sizeof(openArchiveData));
 
-    openArchiveData.ArcName     = (char*)arcName;
+    openArchiveData.ArcNameW     = (wchar_t*)arcName;
     openArchiveData.CmtBuf      = cmtBuf;
     openArchiveData.CmtBufSize  = BUF_SIZE;
     openArchiveData.OpenMode    = RAR_OM_EXTRACT;

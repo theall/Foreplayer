@@ -19,10 +19,14 @@
 #ifndef BACKENDINTERFACE_H
 #define BACKENDINTERFACE_H
 
+#include <map>
 #include <vector>
 #include <string>
 
 using namespace std;
+
+typedef pair<string, string> Property;
+typedef vector<Property> Properties;
 
 #ifdef __cplusplus
 extern "C" {
@@ -54,10 +58,15 @@ struct TTrackInfo
     string additionalInfo;
     int64 fileSize;
     int duration;
+    int sampleRate;
+    int channels;
+    Properties properties;
     TTrackInfo() {
         index = 0;
         fileSize = 0;
         duration = 0;
+        channels = 2;
+        sampleRate = 44100;
     }
 };
 
@@ -66,15 +75,19 @@ typedef vector<TTrackInfo*> TTrackInfoList;
 struct TMusicInfo
 {
     string musicName; // Music diplay name
-    int duration;
-    int64 fileSize;
     string additionalInfo;
     string musicFileName;
     TTrackInfoList trackList;
-
+    int duration;
+    int64 fileSize;
+    int sampleRate;
+    int channels;
+    Properties properties;
     TMusicInfo(){
         fileSize = 0;
         duration = 0;
+        channels = 2;
+        sampleRate = 44100;
     }
 };
 

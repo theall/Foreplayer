@@ -1,0 +1,109 @@
+// Mame rom description protocol
+// Copyright, Bilge Theall, wazcd_1608@qq.com
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are
+// met:
+//
+//     * Redistributions of source code must retain the above copyright
+// notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above
+// copyright notice, this list of conditions and the following disclaimer
+// in the documentation and/or other materials provided with the
+// distribution.
+//     * Neither the name of Google Inc. nor the names of its
+// contributors may be used to endorse or promote products derived from
+// this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+syntax = "proto3";
+
+package google.protobuf;
+
+option csharp_namespace = "Google.Protobuf.WellKnownTypes";
+option cc_enable_arenas = true;
+option go_package = "github.com/golang/protobuf/ptypes/struct;structpb";
+option java_package = "com.google.protobuf";
+option java_outer_classname = "StructProto";
+option java_multiple_files = true;
+option objc_class_prefix = "GPB";
+
+// `Game` represents a game section in m1.xml
+//
+//	<game name="10yard" board="Irem M62">
+//		<description>10-Yard Fight (World, set 1)</description>
+//		<year>1983</year>
+//		<manufacturer>Irem</manufacturer>
+//		<m1data default="21" stop="0" min="1" max="64"/>
+//		<region type="cpu1" size="65536">
+//			<rom name="yf-s.3b" size="8192" crc="0392a60c" sha1="68030504eafc58db250099edd3c3323bdb9eff6b" offset="8000"/>
+//			<rom name="yf-s.1b" size="8192" crc="6588f41a" sha1="209305efc68171886427216b9a0b37333f40daa8" offset="a000"/>
+//			<rom name="yf-s.3a" size="8192" crc="bd054e44" sha1="f10c32c70d60680229fc0891d0e1308015fa69d6" offset="c000"/>
+//			<rom name="yf-s.1a" size="8192" crc="2490d4c3" sha1="e4da7b01e8ad075b7e3c8beb6668faff72db9aa2" offset="e000"/>
+//		</region>
+//	</game>
+//
+message Rom {
+    string name = 1;
+    int32 size = 2;
+    int32 crc = 3;
+    string sha1 = 4;
+    int32 offset = 5;
+    bool flip = 6;
+    int32 skip = 7;
+    string merge = 8;
+    int32 width = 9;
+    int32 oddset = 10;
+}
+message Region {
+    string type = 1;
+    int32 size = 2;
+    bool clear = 3;
+    bool little_endian = 4;
+    repeated Rom roms = 5;
+}
+message M1Data {
+    int32 default = 1;
+    int32 stop = 2;
+    int32 min = 3;
+    int32 max = 4;
+    int32 init = 5;
+    int32 cmdadr = 6;
+    int32 z80prg = 7;
+    int32 cmd2adr = 8;
+    int32 cmd3adr = 9;
+    int32 subtype = 10;
+    int32 trigadr = 11;
+    int32 trigval = 12;
+    int32 ftrigadr = 13;
+    int32 ftrigval = 14;
+    int32 cmdmirror = 15;
+}
+message Game {
+    string name = 1;
+    int board = 2;
+    string description = 3;
+    int32 year = 4;
+    string manufacturer = 5;
+    M1Data m1data = 6;
+    repeated Region = 7;
+}
+
+// `ListValue` is a wrapper around a repeated field of values.
+//
+// The JSON representation for `GameList` is JSON array.
+message GameList {
+  // Repeated field of dynamically typed values.
+  repeated Game games = 1;
+}

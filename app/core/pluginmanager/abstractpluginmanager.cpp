@@ -18,7 +18,8 @@
 
 #include "abstractpluginmanager.h"
 
-TAbstractPluginManager::TAbstractPluginManager()
+TAbstractPluginManager::TAbstractPluginManager() :
+    mDefaultPlugin(NULL)
 {
 }
 
@@ -54,10 +55,16 @@ int TAbstractPluginManager::findPlugins(QString path)
         TBackendPlugin* plugin = loadPlugin(filePath);
         if(!plugin)
         {
-            qDebug()<<"Error while loading plugin,"<<filePath;
+            qDebug()<<"Error while loading plugin," << filePath;
         }else{
-            qDebug()<<"plugin loaded,"<<filePath;
+            qDebug()<<"plugin loaded," << filePath;
             mPlugins.append(plugin);
+
+            if(fileInfo.baseName().toLower()=="default")
+            {
+                mDefaultPlugin = plugin;
+                qDebug()<<"Default plugin ," << filePath;
+            }
         }
     }
 

@@ -7,7 +7,6 @@ TSkinMenu::TSkinMenu(QWidget *parent) :
     mLastActivedAction(NULL)
 {
     mNameFilter << "*.zip";
-    mNameFilter << "*.skn";
 }
 
 void TSkinMenu::setPath(QString skinPath)

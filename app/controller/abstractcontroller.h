@@ -13,7 +13,7 @@ public:
 
     virtual void joint(TGuiManager *manager, TCore *core);
 
-    void startTimer(int mSecs = 100);
+    void startTimer(int mSecs = 50);
     void stopTimer();
 
 protected slots:

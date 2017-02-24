@@ -37,7 +37,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
     painter->save();
     QRect rect = option.rect;
     bool isPlayingItem = index.data(Utils::IsPlayingItem).toBool();
-    bool isCurrentRow = index.data(Utils::IsCurrentRow).toBool();
+    //bool isCurrentRow = index.data(Utils::IsCurrentRow).toBool();
 
     if(option.state & QStyle::State_Selected)
     {
@@ -59,7 +59,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
                 if(columnIndex==0)
                 {
                     painter->drawLine(rect.left(), rect.top(), rect.left(), rect.bottom());
-                } else if(columnIndex==2) {
+                } else if(columnIndex==columnCount-1) {
                     painter->drawLine(rect.right(), rect.top(), rect.right(), rect.bottom());
                 }
             } else {
@@ -116,7 +116,6 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
     rect.adjust(2, 0, -4, 0);
     painter->setFont(model->data(index, Qt::FontRole).value<QFont>());
     painter->drawText(rect, text, textOption);
-
     painter->restore();
 }
 
@@ -282,29 +281,29 @@ void TAbstractTableView::dropEvent(QDropEvent *event)
 {
     int insertRow = indexAt(event->pos()).row();
     QAbstractItemModel *m = model();
-    if(!m)
-        return;
+    if(m)
+    {
+        if(insertRow < 0)
+            insertRow = m->rowCount();
 
-    if(insertRow < 0)
-        insertRow = m->rowCount();
-
-    if(event->source()==this) {
-        QList<int> selected = selectedRows().toList();
-        if(selected.size() > 0)
-        {
-            QList<int> newIndexes;
-            emit requestMoveItems(selected, insertRow, newIndexes);
-            selectIndexes(newIndexes);
-        }
-        event->accept();
-    } else {
-        const QMimeData *mimeData = event->mimeData();
-        if (mimeData->hasUrls())
-        {
-            addFiles(mimeData->urls(), insertRow);
+        if(event->source()==this) {
+            QList<int> selected = selectedRows().toList();
+            if(selected.size() > 0)
+            {
+                QList<int> newIndexes;
+                emit requestMoveItems(selected, insertRow, newIndexes);
+                selectIndexes(newIndexes);
+            }
             event->accept();
         } else {
-            event->ignore();
+            const QMimeData *mimeData = event->mimeData();
+            if (mimeData->hasUrls())
+            {
+                addFiles(mimeData->urls(), insertRow);
+                event->accept();
+            } else {
+                event->ignore();
+            }
         }
     }
     mHighlightRect = QRect();

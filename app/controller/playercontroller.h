@@ -15,6 +15,7 @@ public:
 signals:
     void requestCurrentIndex(int *pi, int *mi, int *ti);
     void requestUpdateModelsPlayingIndex(int pi, int mi, int ti);
+    void requestFixDuration(int microSeconds);
 
 public slots:
     void slotRequestPlay(int pIndex, int mIndex, int tIndex);
@@ -37,6 +38,7 @@ private:
     TMainWindow *mMainWindow;
     TTrackItem *mCurrentItem;
 
+    void resetVisualWidget();
     void updateWindowTitles();
 
     // TAbstractController interface

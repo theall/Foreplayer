@@ -65,6 +65,7 @@ const Qt::CursorShape C_RESIZE_ARROWS[ResizeDirectionCount] = {
 
 TAbstractWindow::TAbstractWindow(QWidget *parent, bool resizeEnable) : QMainWindow(parent)
     , mResizeEnable(resizeEnable)
+    , mMousePressed(false)
     , mMouseMoveTriggered(false)
     , mResizingDirection(RD_NONE)
 {

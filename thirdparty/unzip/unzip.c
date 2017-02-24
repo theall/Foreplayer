@@ -340,7 +340,7 @@ local uLong unzlocal_SearchCentralDir(fin)
 	   of this unzip package.
 */
 extern unzFile ZEXPORT unzOpen (path)
-	const char *path;
+    const wchar_t *path;
 {
 	unz_s us;
 	unz_s *s;
@@ -360,7 +360,7 @@ extern unzFile ZEXPORT unzOpen (path)
     if (unz_copyright[0]!=' ')
         return NULL;
 
-    fin=fopen(path,"rb");
+    fin=_wfopen(path,L"rb");
 	if (fin==NULL)
 		return NULL;
 

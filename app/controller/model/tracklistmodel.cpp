@@ -45,7 +45,7 @@ int TTrackListModel::columnCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
 
-    return 3;
+    return 4;
 }
 
 QVariant TTrackListModel::data(const QModelIndex &index, int role) const
@@ -59,17 +59,17 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 
         TTrackItem *item = mMusicItem->trackItem(row);
 
-        if(column==0)
+        if(column==1)
         {
             return QString::number(index.row()+1) + ".";
-        } else if (column==1) {
-            return item->displayName;
         } else if (column==2) {
+            return item->displayName;
+        } else if (column==3) {
             return Utils::microSecToTimeStr(item->duration);
         }
     } else if (role==Qt::TextAlignmentRole) {
         Qt::Alignment align;
-        if (index.column()==1) {
+        if (index.column()==2) {
             align = Qt::AlignLeft;
         } else {
             align = Qt::AlignRight;;

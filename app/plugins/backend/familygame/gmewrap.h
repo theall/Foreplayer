@@ -18,7 +18,7 @@ public:
     static void deleteInstance();
 	
 	// Load game music file. NULL on success, otherwise error string.
-    bool loadFile( const char* path );
+    bool loadFile( const wchar_t* path );
 	
     // Load data from rsn file
     bool loadData(void *data, int size);
@@ -66,7 +66,6 @@ private:
     sample_t* mScopeBuf;
     long mSampleRate;
     int mScopeBufSize;
-    bool mPaused;
     gme_info_t* mTrackInfo;
 
     static TGmeWrap *mInstance;

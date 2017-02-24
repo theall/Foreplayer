@@ -111,7 +111,7 @@ QList<int> TPlaylistItem::removeErrors()
     for(int i=0;i<mMusicItems.size();i++)
     {
         TMusicItem *musicItem = mMusicItems[i];
-        if(!QFile::exists(musicItem->fileName()) || musicItem->duration()<=0)
+        if(!QFile::exists(musicItem->fileName()) || (musicItem->duration()<=0 &&musicItem->trackItems()->size()<=0))
             removed.append(i);
     }
 
@@ -226,7 +226,7 @@ void TPlaylistItem::save()
         //Set the playlist object to document object.
         playlistDocument.setObject(toJson());
         //Write document data to the file.
-        file.write(playlistDocument.toJson(QJsonDocument::Indented));
+        file.write(qCompress(playlistDocument.toJson(QJsonDocument::Indented)));
         //Close the file.
         file.close();
 

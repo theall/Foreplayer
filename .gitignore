@@ -2,3 +2,5 @@
 tools/skin/
 ui_*.h
 *.zip
+thirdparty/m1lib/dist/
+dist/

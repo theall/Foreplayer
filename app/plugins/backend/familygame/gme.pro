@@ -10,7 +10,7 @@ TARGET = plugin
 TEMPLATE = lib
 CONFIG += qt c++11
 
-LIBS += -lgme -lunrar -lunzip -lz
+LIBS += -lgme -lunrar -LZ:/build/foreplayer/debug/debug/plugins/backend/gme -lunzip -lz
 
 SOURCES += \
     main.cpp \

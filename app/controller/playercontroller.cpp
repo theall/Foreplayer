@@ -41,6 +41,8 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
     if(!mPlaylistCore || !mPlayerCore || !mMainWindow)
         return;
 
+    slotStopButtonClicked();
+
     mCurrentItem = NULL;
 
     int newPL = -1;
@@ -204,8 +206,10 @@ void TPlayerController::updateWindowTitles()
         startTimer();
     } else {
         stopTimer();
+        mMainWindow->setTitles(QStringList()<<tr("Play failed."));
         mMainWindow->setPlayState(tr("Stoped"));
         mMainWindow->setButtonPlayChecked(true);
+        resetVisualWidget();
     }
 }
 
@@ -213,6 +217,12 @@ void TPlayerController::delayStopTimer()
 {
     if(!mPlayerCore || mPlayerCore->isPaused() || mPlayerCore->isStoped())
         stopTimer();
+}
+
+void TPlayerController::resetVisualWidget()
+{
+    if(mMainWindow && mMainWindow->visualWidget())
+        mMainWindow->visualWidget()->reset();
 }
 
 void TPlayerController::slotTimerEvent()
@@ -238,7 +248,10 @@ void TPlayerController::slotTimerEvent()
                 int silentMSecs = 0;
                 mPlayerCore->getAudioData(ADT_SILENT_MICRO_SECONDS, &silentMSecs, NULL);
                 if(silentMSecs > 3000)
-                    slotNextButtonClicked();
+                {
+                    // Fix up duration manually
+                    slotNextButtonClicked();                    
+                }
             }
             if(fakeDuration+500 <= playedTime) {
                 slotNextButtonClicked();
@@ -273,9 +286,7 @@ void TPlayerController::slotTimerEvent()
                 }
             }
         } else {
-            float levels[LEVEL_COUNT];
-            memset(levels, 0, LEVEL_COUNT*sizeof(float));
-            vw->setValue(levels, LEVEL_COUNT);
+            resetVisualWidget();
         }
 
     } else {

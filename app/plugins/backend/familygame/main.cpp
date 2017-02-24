@@ -23,7 +23,7 @@ const char *szTypeDesc      = \
         "NSF ;Nintendo NES/Famicom (with VRC 6, Namco 106, and FME-7 sound)\n" \
         "SAP ;Atari systems using POKEY sound chip\n" \
         "SPC ;Super Nintendo/Super Famicom\n" \
-        "VGZ ;Sega Master System/Mark III, Sega Genesis/Mega Drive,BBC Micro\n";
+        "VGM ;Sega Master System/Mark III, Sega Genesis/Mega Drive,BBC Micro\n";
 
 TGmeWrap *g_gmePlay; // Gme for play
 char g_szSuffixes[1024];
@@ -111,21 +111,22 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
         return false;
 
     bool error = false;
-    const char *cPath = trackInfo->musicFileName.c_str();
-    QFileInfo fi(cPath);
+    QString qPath = QString::fromStdString(trackInfo->musicFileName);
+    QFileInfo fi(qPath);
     QString suffix = fi.suffix().toLower();
     if(suffix=="rsn" || suffix=="rar")
     {
         // File is in package
-        TRarParse rarParse(cPath);
+        TRarParse rarParse(qPath);
         QByteArray trackData = rarParse.trackData(trackInfo);
         error = g_gmePlay->loadData(trackData.data(), trackData.size());
     } else if (suffix=="zip") {
-        TZipParse zipParse(cPath);
+        TZipParse zipParse(qPath);
         QByteArray trackData = zipParse.trackData(trackInfo);
         error = g_gmePlay->loadData(trackData.data(), trackData.size());
     } else {
-        error = g_gmePlay->loadFile(cPath);
+        wstring wPath = qPath.toStdWString();
+        error = g_gmePlay->loadFile(wPath.c_str());
     }
     if(error)
         error = g_gmePlay->startTrack(trackInfo->index);

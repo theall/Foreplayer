@@ -33,16 +33,16 @@ INCLUDEPATH +=  \
     src/emulator/cpu \
     src/emulator/sound
 
+LIBS += -lsdl2
+
 CONFIG(debug, debug|release) {
+    DEFINES += M1_DEBUG
 } else {
+    DEFINES += M1_RELEASE
 }
 
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/arcade
-    LIBS += -ldsound -ldxguid
-
-    SOURCES += \
-        src/dsnd.cpp
 }
 
 unix {
@@ -196,6 +196,7 @@ HEADERS += \
     src/moddir.h
 
 SOURCES += \
+    src/dsnd.cpp \
     src/gamelist.cpp \
     src/irem_cpu.cpp \
     src/kabuki.cpp \

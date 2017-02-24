@@ -27,6 +27,7 @@ public:
     void setVisualType(TVisualType type);
     void setValue(float *data, int size);
     void setColor(QColor blockColor, QColor topColor, QColor bottomColor, QColor middleColor=QColor());
+    void reset();
 
     bool spectrumMode();
     void setSwitchOnClick(bool enable);

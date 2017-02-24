@@ -266,7 +266,7 @@ void TPlaylistCore::loadPlaylist(QString fileName)
         return;
     }
 
-    QJsonObject object = QJsonDocument::fromJson(file.readAll()).object();
+    QJsonObject object = QJsonDocument::fromJson(qUncompress(file.readAll())).object();
     file.close();
 
     if(object.isEmpty())

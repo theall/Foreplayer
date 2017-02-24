@@ -61,7 +61,8 @@ SOURCES += \
     $$PWD/dialogs/abstractdialog.cpp \
     $$PWD/dialogs/exportdialog.cpp \
     $$PWD/dialogs/exportmissionsdialog.cpp \
-    $$PWD/dialogs/optionsdialog.cpp
+    $$PWD/dialogs/optionsdialog.cpp \
+    $$PWD/dialogs/propertydialog.cpp
 
 HEADERS  += \
     $$PWD/windows/widgets/imagebutton.h \
@@ -119,9 +120,11 @@ HEADERS  += \
     $$PWD/dialogs/abstractdialog.h \
     $$PWD/dialogs/exportdialog.h \
     $$PWD/dialogs/exportmissionsdialog.h \
-    $$PWD/dialogs/optionsdialog.h
+    $$PWD/dialogs/optionsdialog.h \
+    $$PWD/dialogs/propertydialog.h
 
 FORMS += \
     $$PWD/dialogs/optionsdialog.ui \
     $$PWD/dialogs/exportdialog.ui \
-    $$PWD/dialogs/exportmissionsdialog.ui
+    $$PWD/dialogs/exportmissionsdialog.ui \
+    $$PWD/dialogs/propertydialog.ui

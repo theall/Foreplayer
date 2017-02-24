@@ -884,11 +884,11 @@ DLLEXPORT void m1snd_shutdown(void)
 		trklist_unload(game_trklists[i]);
 		game_trklists[i] = (TrkT *)NULL;
 
-		free(games[i].parentzip);
-		free(games[i].zipname);
-		free(games[i].name);
-		free(games[i].year);
-		free(games[i].mfgstr);
+//		free(games[i].parentzip);
+//		free(games[i].zipname);
+//		free(games[i].name);
+//		free(games[i].year);
+//		free(games[i].mfgstr);
 
 		for (j = 0; j < ROM_MAX; j++)
 		{
@@ -898,14 +898,14 @@ DLLEXPORT void m1snd_shutdown(void)
 				continue;
 			}
 
-			if (games[i].roms[j].flags & ROM_RGNDEF)
-			{
-				// nothing to do here
-			}
-			else
-			{
-				free(games[i].roms[j].name);
-			}
+//			if (games[i].roms[j].flags & ROM_RGNDEF)
+//			{
+//				// nothing to do here
+//			}
+//			else
+//			{
+//				free(games[i].roms[j].name);
+//			}
 		}
 	}
 

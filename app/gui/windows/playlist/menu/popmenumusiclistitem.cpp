@@ -3,16 +3,40 @@
 TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     TAbstractPopMenu(parent)
 {
-    mActionPlay = addAction(QString(), this, SIGNAL(onActionPlayTriggered()));
+    mActionPlay = new QAction(this);
+    mActionCopy = new QAction(this);
+    mActionCut = new QAction(this);
+    mActionPaste = new QAction(this);
+    mActionDelete = new QAction(this);
+    mActionRename = new QAction(this);
+    mActionExplorer = new QAction(this);
+    mActionExport = new QAction(this);
+    mActionDetail = new QAction(this);
+
+    connect(mActionPlay, SIGNAL(triggered()), this, SIGNAL(onActionPlayTriggered()));
+    connect(mActionCopy, SIGNAL(triggered()), this, SIGNAL(onActionCopyTriggered()));
+    connect(mActionCut, SIGNAL(triggered()), this, SIGNAL(onActionCutTriggered()));
+    connect(mActionPaste, SIGNAL(triggered()), this, SIGNAL(onActionPasteTriggered()));
+    connect(mActionDelete, SIGNAL(triggered()), this, SIGNAL(onActionDeleteTriggered()));
+    connect(mActionRename, SIGNAL(triggered()), this, SIGNAL(onActionRenameTriggered()));
+    connect(mActionExplorer, SIGNAL(triggered()), this, SIGNAL(onActionExplorerTriggered()));
+    connect(mActionExport, SIGNAL(triggered()), this, SIGNAL(onActionExportTriggered()));
+    connect(mActionDetail, SIGNAL(triggered()), this, SIGNAL(onActionDetailTriggered()));
+
+    addAction(mActionPlay);
     addSeparator();
-    mActionDetail = addAction(QString(), this, SIGNAL(onActionDetailTriggered()));
+    addAction(mActionCopy);
+    addAction(mActionCut);
+    addAction(mActionPaste);
     addSeparator();
-    mActionCopy = addAction(QString(), this, SIGNAL(onActionCopyTriggered()));
-    mActionPaste = addAction(QString(), this, SIGNAL(onActionPasteTriggered()));
-    mActionRemove = addAction(QString(), this, SIGNAL(onActionRemoveTriggered()));
+    addAction(mActionDelete);
     addSeparator();
-    mActionCopyToUsb = addAction(QString(), this, SIGNAL(onActionCopyToUsbTriggered()));
-    retranslateUi();
+    addAction(mActionRename);
+    addSeparator();
+    addAction(mActionExplorer);
+    addAction(mActionExport);
+    addSeparator();
+    addAction(mActionDetail);
 }
 
 TPopMenuMusiclistItem::~TPopMenuMusiclistItem()
@@ -22,11 +46,16 @@ TPopMenuMusiclistItem::~TPopMenuMusiclistItem()
 
 void TPopMenuMusiclistItem::retranslateUi()
 {
-    setTitle(tr("Edit"));
-    mActionPlay->setText(tr("Play"));
-    mActionDetail->setText(tr("Detail"));
-    mActionRemove->setText(tr("Remove"));
+    mActionCut->setText(tr("Cut"));
     mActionCopy->setText(tr("Copy"));
+    mActionPlay->setText(tr("Play"));
     mActionPaste->setText(tr("Paste"));
+    mActionDelete->setText(tr("Delete"));
+    mActionDetail->setText(tr("Detail"));
+    mActionExport->setText(tr("Export"));
+    mActionRemove->setText(tr("Remove"));
+    mActionExplorer->setText(tr("Explorer"));
+    mActionRename->setText(tr("Rename title"));
+    mActionDetail->setText(tr("View property"));
     mActionCopyToUsb->setText(tr("Copy to storage"));
 }

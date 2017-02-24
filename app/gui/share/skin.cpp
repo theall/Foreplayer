@@ -125,7 +125,8 @@ bool TSkin::loadFromXmlFile(QString fileName)
 
 bool TSkin::loadFromZipFile(QString fileName)
 {
-    mZipfile = unzOpen(TEXT(fileName));
+    std::wstring fileNameW = fileName.toStdWString();
+    mZipfile = unzOpen(fileNameW.c_str());
     if(!mZipfile)
     {
         mError = tr("Fail to open zip file %1").arg(fileName);
