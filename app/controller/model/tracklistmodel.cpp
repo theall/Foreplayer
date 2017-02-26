@@ -98,6 +98,42 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
     return TAbstractModel::data(index, role);
 }
 
+bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, int role)
+{
+    if(role==Qt::EditRole && index.column()==2)// The third column is title
+    {
+        int col = index.column();
+        int row = index.row();
+        if(mMusicItem && row>-1 && row<mMusicItem->size())
+        {
+            TTrackItem *trackItem = mMusicItem->trackItem(row);
+            if(trackItem)
+            {
+                if(col==2)
+                {
+                    // Title
+                    QString newName = value.toString();
+                    if(newName != trackItem->displayName)
+                    {
+                        trackItem->displayName = newName;
+                        mMusicItem->setModified();
+                    }
+                } else if (col==3) {
+                    // Duration
+                    int newDuration = value.toInt();
+                    if(newDuration != trackItem->duration)
+                    {
+                        int diff = newDuration - trackItem->duration;
+                        trackItem->duration = newDuration;
+                        mMusicItem->setDuration(mMusicItem->duration()+diff);
+                    }
+                }
+            }
+        }
+    }
+    return TAbstractModel::setData(index, value, role);
+}
+
 void TTrackListModel::setCurrentIndex(int index)
 {
     TAbstractModel::setCurrentIndex(index);

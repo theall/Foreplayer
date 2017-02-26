@@ -61,7 +61,7 @@ static struct
 	{ 0x53505500, "Sony PlayStation (.spu)", spu_start, spu_sample, spu_frame, spu_stop, spu_command, 60, spu_fill_info },
 	{ 0x50534602, "Sony PlayStation 2 (.psf2)", psf2_start, psf2_sample, psf2_frame, psf2_stop, psf2_command, 60, psf2_fill_info },
 	{ 0x50534612, "Sega Dreamcast (.dsf)", dsf_start, dsf_sample, dsf_frame, dsf_stop, dsf_command, 60, dsf_fill_info },
-    { 0x50534622, "Game Boy Advanced (.gsf)", gsf_start, gsf_sample, gsf_frame, gsf_stop, gsf_command, 60, gsf_fill_info },
+    //{ 0x50534622, "Game Boy Advanced (.gsf)", gsf_start, gsf_sample, gsf_frame, gsf_stop, gsf_command, 60, gsf_fill_info },
 
     { 0xffffffff, "", NULL, NULL, NULL, NULL, NULL, 0, NULL }
 };

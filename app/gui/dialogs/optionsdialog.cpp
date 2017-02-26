@@ -2,7 +2,7 @@
 #include "ui_optionsdialog.h"
 
 TOptionsDialog::TOptionsDialog(QWidget *parent) :
-    QDialog(parent),
+    TAbstractDialog(parent),
     ui(new Ui::TOptionsDialog)
 {
     ui->setupUi(this);

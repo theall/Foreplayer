@@ -60,6 +60,17 @@ void TPlaylistItem::insert(int pos, TMusicItem *item)
     mModified = true;
 }
 
+void TPlaylistItem::update(int index, TMusicItem *item)
+{
+    if(index<0 || index>=mMusicItems.size())
+        return;
+
+    TMusicItem *oldItem = mMusicItems[index];
+    mMusicItems[index] = item;
+    delete oldItem;
+    mModified = true;
+}
+
 bool TPlaylistItem::remove(int index)
 {
     if(index<0 || index>=mMusicItems.size())

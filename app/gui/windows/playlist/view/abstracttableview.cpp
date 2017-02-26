@@ -221,6 +221,14 @@ QSet<int> TAbstractTableView::selectedRows()
     return selected;
 }
 
+int TAbstractTableView::currentRow()
+{
+    QModelIndex i = currentIndex();
+    if(i.isValid())
+        return i.row();
+    return -1;
+}
+
 void TAbstractTableView::selectIndexes(QList<int> indexes, bool locate)
 {
     QItemSelectionModel *selModel = selectionModel();

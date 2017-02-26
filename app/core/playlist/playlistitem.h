@@ -15,6 +15,7 @@ public:
     int size();
     TMusicItem *takeAt(int index);
     void insert(int pos, TMusicItem *item);
+    void update(int index, TMusicItem *item);
     bool remove(int index);
     QList<int> removeRedundant();
     QList<int> removeErrors();

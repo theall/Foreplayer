@@ -41,7 +41,7 @@ int dsf_lib(int libnum, uint8 *lib, uint64 size, corlett_t *c)
 int32 dsf_start(uint8 *buffer, uint32 length)
 {
 	// clear Dreamcast work RAM before we start scribbling in it
-	memset(dc_ram, 0, 8*1024*1024);
+    memset(dc_ram, 0, DC_RAM_SIZE);
 
 	// Decode the current SSF
 	if (corlett_decode(buffer, length, &c, dsf_lib) != AO_SUCCESS)

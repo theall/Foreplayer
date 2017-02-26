@@ -12,6 +12,11 @@
 #include "windows/desctoplyricwindow.h"
 #include "windows/desktopwindow.h"
 
+#include "dialogs/exportdialog.h"
+#include "dialogs/exportmissionsdialog.h"
+#include "dialogs/optionsdialog.h"
+#include "dialogs/propertydialog.h"
+
 #include "menus/mainmenu.h"
 
 #include "share/skin.h"
@@ -38,6 +43,10 @@ public:
     TPlaylistWindow *playlistWindow() { return mPlaylistWindow; }
     TBrowserWindow *browserWindow() { return mBrowserWindow; }
     TDesktopLyricWindow *desktopLyricWindow() { return mDesktopLyricWindow; }
+    TPropertyDialog *propertyDialog() { return mPropertyDialog; }
+    TExportDialog *exportDialog() { return mExportDialog; }
+    TExportMissionsDialog *exportMissionDialog() { return mExportMissionDialog; }
+    TOptionsDialog *optionDialog() { return mOptionDialog; }
 
 signals:
     void requestPlay();
@@ -78,6 +87,11 @@ private:
     TDesktopLyricWindow *mDesktopLyricWindow;
     TDesktopWindow *mDesktopWindow;
     TWindowList mGumedWindows;
+
+    TPropertyDialog *mPropertyDialog;
+    TExportDialog *mExportDialog;
+    TExportMissionsDialog *mExportMissionDialog;
+    TOptionsDialog *mOptionDialog;
 
     TMainMenu *mMainMenu;
     QSystemTrayIcon *mTrayIcon;

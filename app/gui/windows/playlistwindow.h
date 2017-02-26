@@ -34,12 +34,24 @@ signals:
     void requestSortPlaylists();
     void requestSendTo();
 
-    // Music list
+    //// Music list
     // Remove musics
     void requestRemoveSelections(QList<int> indexes);
     void requestRemoveRedundant();
     void requestRemoveErrors();
     void requestRemoveAll();
+
+    // Music item popup menu
+    void requestReparseMusicItem(int row);
+    void requestPlayMusicItem(int row);
+    void requestCopyMusicItem(QSet<int> rows);
+    void requestCutMusicItem(QSet<int> rows);
+    void requestPasteMusicItem(int pos);
+    void requestDeleteMusicItem(QSet<int> rows);
+    void requestRenameMusicItem(int row);
+    void requestExplorerMusicItem(int row);
+    void requestExportMusicItem(int row);
+    void requestDetailMusicItem(int row);
 
     //// Gui
     void playlistWindowToggled(bool);
@@ -68,6 +80,18 @@ private slots:
     void slotOnActionRemoveRedundantTriggered();
     void slotOnActionRemoveErrorsTriggered();
     void slotOnActionRemoveAllTriggered();
+
+    // Music item popup menu
+    void slotReparseMusicItemTriggered();
+    void slotPlayMusicItemTriggered();
+    void slotCopyMusicItemTriggered();
+    void slotCutMusicItemTriggered();
+    void slotPasteMusicItemTriggered();
+    void slotDeleteMusicItemTriggered();
+    void slotRenameMusicItemTriggered();
+    void slotExplorerMusicItemTriggered();
+    void slotExportMusicItemTriggered();
+    void slotDetailMusicItemTriggered();
 
 private:
     TToolBar *mToolbar;

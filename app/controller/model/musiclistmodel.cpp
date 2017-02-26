@@ -78,6 +78,17 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
     return TAbstractModel::data(index, role);
 }
 
+bool TMusiclistModel::setData(const QModelIndex &index, const QVariant &value, int role)
+{
+    if(role==Qt::EditRole && index.column()==2)// The third column is title
+    {
+        int row = index.row();
+        if(mPlaylistItem && row>-1 && row<mPlaylistItem->size())
+            mPlaylistItem->musicItem(row)->setDisplayName(value.toString());
+    }
+    return TAbstractModel::setData(index, value, role);
+}
+
 void TMusiclistModel::setCurrentIndex(int index)
 {
     TAbstractModel::setCurrentIndex(index);
@@ -233,6 +244,11 @@ void TMusiclistModel::removeAll()
     beginResetModel();
     mPlaylistItem->clear();
     endResetModel();
+}
+
+void TMusiclistModel::update()
+{
+    emit dataChanged(QModelIndex(), QModelIndex());
 }
 
 TPlaylistItem *TMusiclistModel::playlistItem()

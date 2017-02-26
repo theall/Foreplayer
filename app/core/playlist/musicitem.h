@@ -51,6 +51,8 @@ public:
     TTrackItems *trackItems();
     TTrackItem *trackItem(int index);
 
+    void setModified();
+
     int size();
     void clear();
 

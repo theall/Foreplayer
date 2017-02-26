@@ -57,6 +57,18 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mPopmenuRemoveMusics, SIGNAL(onActionRemoveErrorsTriggered()), this, SLOT(slotOnActionRemoveErrorsTriggered()));
     connect(mPopmenuRemoveMusics, SIGNAL(onActionRemoveAllTriggered()), this, SLOT(slotOnActionRemoveAllTriggered()));
 
+    // Music item popup menu
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionReparseTriggered()), this, SLOT(slotReparseMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionPlayTriggered()), this, SLOT(slotPlayMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionCopyTriggered()), this, SLOT(slotCopyMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionCutTriggered()), this, SLOT(slotCutMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionPasteTriggered()), this, SLOT(slotPasteMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionDeleteTriggered()), this, SLOT(slotDeleteMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionRenameTriggered()), this, SLOT(slotRenameMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionExplorerTriggered()), this, SLOT(slotExplorerMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionExportTriggered()), this, SLOT(slotExportMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionDetailTriggered()), this, SLOT(slotDetailMusicItemTriggered()));
+
     retranslateUi();
 }
 
@@ -100,7 +112,10 @@ void TPlaylistWindow::slotPopupContextMenu(QPoint pos)
     if(TPlaylistView *plalistView = dynamic_cast<TPlaylistView*>(sender())) {
         mPopmenuPlayList->pop(plalistView->mapToGlobal(pos));
     } else if (TMusiclistView *musiclistView = dynamic_cast<TMusiclistView*>(sender())) {
-        mPopmenuMusicList->popup(musiclistView->mapToGlobal(pos));
+        if(musiclistView->selectedRows().size() > 0)
+            mPopmenuMusiclistItem->popup(musiclistView->mapToGlobal(pos));
+        else
+            mPopmenuMusicList->popup(musiclistView->mapToGlobal(pos));
     } else if (TTracklistView *tracklistView = dynamic_cast<TTracklistView*>(sender())) {
         mPopmenuTrackList->popup(tracklistView->mapToGlobal(pos));
     }
@@ -181,6 +196,105 @@ void TPlaylistWindow::slotOnActionRemoveAllTriggered()
         return;
 
     emit requestRemoveAll();
+}
+
+void TPlaylistWindow::slotReparseMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    if(row != -1)
+        emit requestReparseMusicItem(row);
+}
+
+void TPlaylistWindow::slotPlayMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    if(row != -1)
+        emit requestPlayMusicItem(row);
+}
+
+void TPlaylistWindow::slotCopyMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    QSet<int> rows = mMusiclistView->selectedRows();
+    if(rows.size() > 0)
+        emit requestCopyMusicItem(rows);
+}
+
+void TPlaylistWindow::slotCutMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    QSet<int> rows = mMusiclistView->selectedRows();
+    if(rows.size() > 0)
+        emit requestCutMusicItem(rows);
+}
+
+void TPlaylistWindow::slotPasteMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    emit requestPasteMusicItem(row);
+}
+
+void TPlaylistWindow::slotDeleteMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    QSet<int> rows = mMusiclistView->selectedRows();
+    if(rows.size() > 0)
+        emit requestDeleteMusicItem(rows);
+}
+
+void TPlaylistWindow::slotRenameMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    if(row != -1)
+        emit requestRenameMusicItem(row);
+}
+
+void TPlaylistWindow::slotExplorerMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    if(row != -1)
+        emit requestExplorerMusicItem(row);
+}
+
+void TPlaylistWindow::slotExportMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    if(row != -1)
+        emit requestExportMusicItem(row);
+}
+
+void TPlaylistWindow::slotDetailMusicItemTriggered()
+{
+    if(!mMusiclistView)
+        return;
+
+    int row = mMusiclistView->currentRow();
+    if(row != -1)
+        emit requestDetailMusicItem(row);
 }
 
 void TPlaylistWindow::tryAddMusicFiles(QStringList files)

@@ -2,7 +2,7 @@
 #include "ui_propertydialog.h"
 
 TPropertyDialog::TPropertyDialog(QWidget *parent) :
-    QDialog(parent),
+    TAbstractDialog(parent),
     ui(new Ui::TPropertyDialog)
 {
     ui->setupUi(this);

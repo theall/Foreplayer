@@ -5,7 +5,8 @@
 extern "C" {
 #endif
 
-extern uint8 dc_ram[8*1024*1024];
+#define DC_RAM_SIZE 8*1024*1024
+extern uint8 dc_ram[DC_RAM_SIZE];
 
 void dc_hw_init(void);
 

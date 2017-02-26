@@ -1,7 +1,12 @@
 #include "abstractdialog.h"
 
-TAbstractDialog::TAbstractDialog()
+TAbstractDialog::TAbstractDialog(QWidget *parent) :
+    QDialog(parent)
 {
 
 }
 
+TAbstractDialog::~TAbstractDialog()
+{
+
+}

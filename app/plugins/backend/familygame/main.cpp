@@ -12,7 +12,7 @@ const char *szManufacture   = "Your name/organization";
 const char *szContact       = "Your contact information";
 const char *szDescription   = "Plugin description";
 const char *szCreateDate    = "";//Plugin created date, such as 2016-10-11
-const char *szTypeDesc      = \
+const char *g_typeDesc      = \
         "ZIP ;Universe package\n" \
         "RSN ;Super Nintendo package\n" \
         "AY  ;ZX Spectrum/Amstrad CPC\n" \
@@ -32,7 +32,7 @@ QMap<QString, QString> g_TypeDesc;
 // Initialize plugin
 EXPORT bool initialize()
 {
-    QString desc = szTypeDesc;
+    QString desc = g_typeDesc;
     QStringList itemList = desc.split("\n");
     foreach (QString s, itemList) {
         QStringList item = s.split(";");

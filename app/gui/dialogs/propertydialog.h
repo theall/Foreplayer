@@ -1,13 +1,13 @@
 #ifndef PROPERTYDIALOG_H
 #define PROPERTYDIALOG_H
 
-#include <QDialog>
+#include "abstractdialog.h"
 
 namespace Ui {
 class TPropertyDialog;
 }
 
-class TPropertyDialog : public QDialog
+class TPropertyDialog : public TAbstractDialog
 {
     Q_OBJECT
 

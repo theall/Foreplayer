@@ -36,18 +36,22 @@ void findGumedWindows(TWindowList &list, TWindowList &findedList)
 }
 
 TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
-    , mMainWindow(new TMainWindow)
-    , mMiniWindow(new TMiniWindow)
-    , mLyricWindow(new TLyricWindow)
-    , mEqualizerWindow(new TEqualizerWindow)
-    , mPlaylistWindow(new TPlaylistWindow)
-    , mBrowserWindow(new TBrowserWindow)
-    , mDesktopLyricWindow(new TDesktopLyricWindow)
-    , mDesktopWindow(new TDesktopWindow)
-    , mMainMenu(new TMainMenu)
-    , mTrayIcon(new QSystemTrayIcon(this))
-    , mMinimode(false)
-    , mShowDesktopLyric(false)
+  , mMainWindow(new TMainWindow)
+  , mMiniWindow(new TMiniWindow)
+  , mLyricWindow(new TLyricWindow)
+  , mEqualizerWindow(new TEqualizerWindow)
+  , mPlaylistWindow(new TPlaylistWindow)
+  , mBrowserWindow(new TBrowserWindow)
+  , mDesktopLyricWindow(new TDesktopLyricWindow)
+  , mDesktopWindow(new TDesktopWindow)
+  , mPropertyDialog(new TPropertyDialog)
+  , mExportDialog(new TExportDialog)
+  , mExportMissionDialog(new TExportMissionsDialog)
+  , mOptionDialog(new TOptionsDialog)
+  , mMainMenu(new TMainMenu)
+  , mTrayIcon(new QSystemTrayIcon)
+  , mMinimode(false)
+  , mShowDesktopLyric(false)
 {
     mMainWindow->setContextMenu(mMainMenu);
 
@@ -108,7 +112,76 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
 
 TGuiManager::~TGuiManager()
 {
-
+    if(mMainWindow)
+    {
+         delete mMainWindow;
+         mMainWindow = NULL;
+    }
+    if(mMiniWindow)
+    {
+         delete mMiniWindow;
+         mMiniWindow = NULL;
+    }
+    if(mLyricWindow)
+    {
+         delete mLyricWindow;
+         mLyricWindow = NULL;
+    }
+    if(mEqualizerWindow)
+    {
+         delete mEqualizerWindow;
+         mEqualizerWindow = NULL;
+    }
+    if(mPlaylistWindow)
+    {
+         delete mPlaylistWindow;
+         mPlaylistWindow = NULL;
+    }
+    if(mBrowserWindow)
+    {
+         delete mBrowserWindow;
+         mBrowserWindow = NULL;
+    }
+    if(mDesktopLyricWindow)
+    {
+         delete mDesktopLyricWindow;
+         mDesktopLyricWindow = NULL;
+    }
+    if(mDesktopWindow)
+    {
+         delete mDesktopWindow;
+         mDesktopWindow = NULL;
+    }
+    if(mPropertyDialog)
+    {
+         delete mPropertyDialog;
+         mPropertyDialog = NULL;
+    }
+    if(mExportDialog)
+    {
+         delete mExportDialog;
+         mExportDialog = NULL;
+    }
+    if(mExportMissionDialog)
+    {
+         delete mExportMissionDialog;
+         mExportMissionDialog = NULL;
+    }
+    if(mOptionDialog)
+    {
+         delete mOptionDialog;
+         mOptionDialog = NULL;
+    }
+    if(mMainMenu)
+    {
+         delete mMainMenu;
+         mMainMenu = NULL;
+    }
+    if(mTrayIcon)
+    {
+         delete mTrayIcon;
+         mTrayIcon = NULL;
+    }
 }
 
 bool TGuiManager::loadSkin(QString fileName)

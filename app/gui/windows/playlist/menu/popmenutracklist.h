@@ -29,7 +29,7 @@ private:
     QAction *mActionPaste;
     QAction *mActionDelete;
     QAction *mActionRenameTitle;
-    QAction *mActionRenameDuration;
+    QAction *mActionChangeDuration;
     QAction *mActionExplorer;
     QAction *mActionExport;
     QAction *mActionView;

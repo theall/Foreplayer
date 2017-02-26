@@ -20,7 +20,7 @@ signals:
     void requestPlay(int pIndex, int mIndex, int tIndex);
 
 private slots:
-    // From gui
+    //// From gui
     void slotPlaylistIndexChanged(int index);
     void slotMusiclistIndexChanged(int index);
     void slotTracklistIndexChanged(int index);
@@ -33,21 +33,33 @@ private slots:
     void slotRequestMoveMusics(QList<int> indexes, int pos, QList<int> &newIndexes);
     void slotRequestMoveTracks(QList<int> indexes, int pos, QList<int> &newIndexes);
 
-    // Play list
+    //// Play list
     void slotRequestAddNewPlaylist();
     void slotRequestRemovePlaylist();
     void slotRequestRenamePlaylist();
     void slotRequestSortPlaylists();
     void slotRequestSendTo();
 
-    // Music list
+    //// Music list
     void slotRequestAddMusicFiles(QStringList files, int pos, QList<int> &newIndexes);
     void slotRequestRemoveSelections(QList<int> indexes);
     void slotRequestRemoveRedundant();
     void slotRequestRemoveErrors();
     void slotRequestRemoveAll();
 
-    // From controller
+    // Music item
+    void slotRequestReparseMusicItem(int row);
+    void slotRequestPlayMusicItem(int row);
+    void slotRequestCopyMusicItem(QSet<int> rows);
+    void slotRequestCutMusicItem(QSet<int> rows);
+    void slotRequestPasteMusicItem(int pos);
+    void slotRequestDeleteMusicItem(QSet<int> rows);
+    void slotRequestRenameMusicItem(int row);
+    void slotRequestExplorerMusicItem(int row);
+    void slotRequestExportMusicItem(int row);
+    void slotRequestDetailMusicItem(int row);
+
+    //// From controller
     void slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti);
     void slotRequestCurrentIndex(int *pIndex, int *mIndex, int *tIndex);
 

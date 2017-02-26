@@ -1,7 +1,7 @@
 QT += core
 QT -= gui
 
-TARGET = test
+TARGET = testAoSDK
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG += c++11 object_parallel_to_source

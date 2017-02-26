@@ -157,43 +157,6 @@ static int corlett_decode_tags(corlett_t *c, uint8 *input, uint32 input_len)
 	return true;
 }
 
-
-/* ao_get_lib: called to load secondary files */
-int ao_get_lib(const char *filename, uint8 **buffer, uint64 *length)
-{
-    uint8 *filebuf;
-    uint32 size;
-    FILE *auxfile;
-
-    auxfile = ao_fopen(filename, "rb");
-    if (!auxfile)
-    {
-        printf("Unable to find auxiliary file %s\n", filename);
-        return AO_FAIL;
-    }
-
-    fseek(auxfile, 0, SEEK_END);
-    size = ftell(auxfile);
-    fseek(auxfile, 0, SEEK_SET);
-
-    filebuf = malloc(size);
-
-    if (!filebuf)
-    {
-        fclose(auxfile);
-        printf("ERROR: could not allocate %d bytes of memory\n", size);
-        return AO_FAIL;
-    }
-
-    fread(filebuf, size, 1, auxfile);
-    fclose(auxfile);
-
-    *buffer = filebuf;
-    *length = (uint64)size;
-
-    return AO_SUCCESS;
-}
-
 static int corlett_decode_lib(int libnum, uint8 *input, uint32 input_len, uint8 **output, uint64 *size, corlett_t *c, corlett_lib_callback_t *lib_callback)
 {
 	int ret = AO_SUCCESS;

@@ -1,13 +1,13 @@
 #ifndef OPTIONSDIALOG_H
 #define OPTIONSDIALOG_H
 
-#include <QDialog>
+#include "abstractdialog.h"
 
 namespace Ui {
 class TOptionsDialog;
 }
 
-class TOptionsDialog : public QDialog
+class TOptionsDialog : public TAbstractDialog
 {
     Q_OBJECT
 

@@ -12,6 +12,7 @@ public:
     ~TPopMenuMusiclistItem();
 
 signals:
+    void onActionReparseTriggered();
     void onActionPlayTriggered();
     void onActionCopyTriggered();
     void onActionCutTriggered();
@@ -21,19 +22,20 @@ signals:
     void onActionExplorerTriggered();
     void onActionExportTriggered();
     void onActionDetailTriggered();
+    void onActionCopyToUsbTriggered();
 
 private:
     QAction *mActionCopy;
     QAction *mActionCopyToUsb;
     QAction *mActionCut;
-    QAction *mActionDelete;
+    QAction *mActionRemove;
     QAction *mActionDetail;
     QAction *mActionExplorer;
     QAction *mActionExport;
     QAction *mActionPaste;
     QAction *mActionPlay;
-    QAction *mActionRemove;
     QAction *mActionRename;
+    QAction *mActionReparse;
 
     // TAbstractPopMenu interface
 public:

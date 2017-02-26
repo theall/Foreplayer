@@ -5,20 +5,20 @@ TPopMenuTrackList::TPopMenuTrackList(QWidget *parent) :
 {
     mActionPlay = new QAction(this);
     mActionRenameTitle = new QAction(this);
-    mActionRenameDuration = new QAction(this);
+    mActionChangeDuration = new QAction(this);
     mActionExport = new QAction(this);
     mActionView = new QAction(this);
 
     connect(mActionPlay, SIGNAL(triggered()), this, SIGNAL(onActionPlayTriggered()));
     connect(mActionRenameTitle, SIGNAL(triggered()), this, SIGNAL(onActionRenameTitleTriggered()));
-    connect(mActionRenameDuration, SIGNAL(triggered()), this, SIGNAL(onActionRenameDurationTriggered()));
+    connect(mActionChangeDuration, SIGNAL(triggered()), this, SIGNAL(onActionRenameDurationTriggered()));
     connect(mActionExport, SIGNAL(triggered()), this, SIGNAL(onActionExportTriggered()));
     connect(mActionView, SIGNAL(triggered()), this, SIGNAL(onActionViewTriggered()));
 
     addAction(mActionPlay);
     addSeparator();
     addAction(mActionRenameTitle);
-    addAction(mActionRenameDuration);
+    addAction(mActionChangeDuration);
     addSeparator();
     addAction(mActionExport);
     addSeparator();
@@ -31,7 +31,7 @@ void TPopMenuTrackList::retranslateUi()
 {
     mActionPlay->setText(tr("Play"));
     mActionRenameTitle->setText(tr("Rename title"));
-    mActionRenameDuration->setText(tr("Rename duration"));
+    mActionChangeDuration->setText(tr("Change duration"));
     mActionExport->setText(tr("Export"));
     mActionView->setText(tr("View property"));
 }

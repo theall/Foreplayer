@@ -198,6 +198,11 @@ TTrackItem *TMusicItem::trackItem(int index)
     return mTrackItems.at(index);
 }
 
+void TMusicItem::setModified()
+{
+    mModified = true;
+}
+
 int TMusicItem::size()
 {
     return mTrackItems.size();

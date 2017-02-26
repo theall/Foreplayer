@@ -57,16 +57,20 @@ struct TTrackInfo
     string musicFileName; // Pointer to musicFileName of TMusicInfo
     string additionalInfo;
     int64 fileSize;
+    string game;
+    string artist;
+    string system;
+    int year;
     int duration;
     int sampleRate;
     int channels;
-    Properties properties;
     TTrackInfo() {
         index = 0;
         fileSize = 0;
         duration = 0;
         channels = 2;
         sampleRate = 44100;
+        trackName = "unknown";
     }
 };
 
@@ -75,19 +79,23 @@ typedef vector<TTrackInfo*> TTrackInfoList;
 struct TMusicInfo
 {
     string musicName; // Music diplay name
-    string additionalInfo;
     string musicFileName;
-    TTrackInfoList trackList;
+    string game;
+    string artist;
+    string system;
+    int year;
     int duration;
     int64 fileSize;
     int sampleRate;
     int channels;
-    Properties properties;
+    string additionalInfo;
+    TTrackInfoList trackList;
     TMusicInfo(){
         fileSize = 0;
         duration = 0;
         channels = 2;
         sampleRate = 44100;
+        musicName = "unknown";
     }
 };
 

@@ -12,11 +12,17 @@ TEMPLATE = lib
 DEFINES += 
 
 LIBS += -LZ:/temp/build-aosdk-Desktop_Qt_5_5_1_MinGW_32bit-Debug/debug -laosdk
-
+LIBS += -lunzip -lz
 SOURCES += \
-    main.cpp
+    main.cpp \
+    abstractparse.cpp \
+    fileparse.cpp \
+    zipparse.cpp
 
-HEADERS +=
+HEADERS += \
+    abstractparse.h \
+    fileparse.h \
+    zipparse.h
 
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/ao

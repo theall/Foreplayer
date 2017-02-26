@@ -1,11 +1,22 @@
 #ifndef TEXPORTDIALOG_H
 #define TEXPORTDIALOG_H
 
+#include "abstractdialog.h"
 
-class TExportDialog
+namespace Ui {
+class TExportDialog;
+}
+
+class TExportDialog : public TAbstractDialog
 {
+    Q_OBJECT
+
 public:
-    TExportDialog();
+    explicit TExportDialog(QWidget *parent = 0);
+    ~TExportDialog();
+
+private:
+    Ui::TExportDialog *ui;
 };
 
 #endif // TEXPORTDIALOG_H
