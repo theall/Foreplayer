@@ -19,7 +19,7 @@ SOURCES += \
 HEADERS +=
 
 win32 {
-    #DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/default
+    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/default
 }
 unix {
     target.path = /usr/lib

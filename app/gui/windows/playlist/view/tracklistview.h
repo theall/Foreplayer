@@ -8,6 +8,7 @@ class TTracklistView : public TAbstractTableView
 public:
     TTracklistView(QWidget *parent = 0);
 
+    void editCurrent();
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
 
 private:

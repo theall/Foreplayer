@@ -8,7 +8,8 @@ SOURCES += \
     $$PWD/abstractcontroller.cpp \
     $$PWD/maincontroller.cpp \
     $$PWD/model/abstractmodel.cpp \
-    $$PWD/equalizercontroller.cpp
+    $$PWD/equalizercontroller.cpp \
+    $$PWD/model/missionsmodel.cpp
 
 HEADERS  += \
     $$PWD/model/playlistmodel.h \
@@ -20,4 +21,5 @@ HEADERS  += \
     $$PWD/abstractcontroller.h \
     $$PWD/maincontroller.h \
     $$PWD/model/abstractmodel.h \
-    $$PWD/equalizercontroller.h
+    $$PWD/equalizercontroller.h \
+    $$PWD/model/missionsmodel.h

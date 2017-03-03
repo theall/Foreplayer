@@ -1,8 +1,6 @@
 #ifndef TPLAYTHREAD_H
 #define TPLAYTHREAD_H
 
-#include "pch.h"
-
 #include "front/abstractfront.h"
 #include "pluginmanager/backend/backendplugin.h"
 

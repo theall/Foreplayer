@@ -23,18 +23,31 @@ public:
     TMusicItem();
     ~TMusicItem();
 
-    void *plugin;
     QJsonObject toJson();
 
     void fromJson(QJsonObject object);
+
+    void fromTrackItem(TTrackItem *trackItem);
 
     void sort(SortMode mode);
 
     QString displayName();
     void setDisplayName(QString displayName);
 
+    QString originalName();
+    void setOriginalName(QString name);
+
     QString fileName();
     void setFileName(QString fileName);
+
+    QString system();
+    void setSystem(QString system);
+
+    QString artist();
+    void setArtist(QString artist);
+
+    QString year();
+    void setYear(QString year);
 
     QString additionalInfo();
     void setAdditionalInfo(QString info);
@@ -50,15 +63,23 @@ public:
 
     TTrackItems *trackItems();
     TTrackItem *trackItem(int index);
+    void addTrackItem(TTrackItem *trackItem, int pos=-1);
 
-    void setModified();
+    bool isModified();
+    void setModified(bool modified=true);
 
     int size();
     void clear();
 
+    static QString mimeType() { return "forplayer/musicitem"; }
+
 private:
     QString mDisplayName;
+    QString mOriginalName;
     QString mFileName;
+    QString mSystem;
+    QString mArtist;
+    QString mYear;
     QString mAdditionalInfo;
     int mDuration;
     int mFileSize;

@@ -134,7 +134,7 @@ void TAbstractFront::read(byte *buf, int size)
 {
     if(mCallback)
     {
-        // 2 channels * sizeof(short)
-        mCallback(size/4, (short*)buf);
+        // size = 2 channels * sizeof(short) * samples
+        mCallback(size, buf);
     }
 }

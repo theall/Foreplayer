@@ -175,10 +175,10 @@ EXPORT void closeTrack()
 }
 
 // Request next samples
-EXPORT void nextSamples(int size, short* samples)
+EXPORT void nextSamples(int bufSize, byte* buffer)
 {
     // size is the size of 1 channel samples
-    ao_do_frame((unsigned long)size, (unsigned char*)samples);
+    ao_do_frame((unsigned long)bufSize/4, buffer);
 }
 
 // Optional, for return customized sample size

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Export</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -148,12 +148,12 @@
        <widget class="QDateTimeEdit" name="dtDuration">
         <property name="maximumSize">
          <size>
-          <width>80</width>
+          <width>100</width>
           <height>16777215</height>
          </size>
         </property>
         <property name="displayFormat">
-         <string>HH:mm:ss</string>
+         <string>HH:mm:ss.zzz</string>
         </property>
        </widget>
       </item>

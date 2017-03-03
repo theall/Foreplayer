@@ -54,14 +54,14 @@ void TExportFactory::recycle(TAbstractExport *product)
     if(pIndex >= 0)
         index = pIndex;
 
-    delete mProducts.takeAt(index);
+    free(mProducts.takeAt(index));
 }
 
 void TExportFactory::recycleAll()
 {
     foreach (TAbstractExport *p, mProducts) {
         if(p)
-            delete p;
+            free(p);
     }
     mProducts.clear();
 }

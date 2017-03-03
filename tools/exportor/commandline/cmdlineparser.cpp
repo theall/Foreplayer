@@ -2,6 +2,9 @@
 
 #include <QFileInfo>
 
+QSharedMemory *TCmdlineParser::mSharedMemory=NULL;
+TExportParam *TCmdlineParser::mExportParam=NULL;
+
 TCmdlineParser::TCmdlineParser(QStringList arguments) :
     QCommandLineParser()
   , mIndexName("")
@@ -23,19 +26,19 @@ TCmdlineParser::TCmdlineParser(QStringList arguments) :
 
 TCmdlineParser::~TCmdlineParser()
 {
-
+    mSharedMemory->detach();
 }
 
-bool TCmdlineParser::exportSingle()
+TExportParam *TCmdlineParser::getExportParam()
 {
-    return !mIndexName.isEmpty();
+    return mExportParam;
 }
 
 void TCmdlineParser::initialize()
 {
     addOption({{"l", "list"}, tr("List tracks of music.")});
     addOption({{"i", "index"}, tr("Index name of track."), "index name"});
-    addOption({{"f", "format"}, tr("Export file format: wave,mp3,pcm, default value is \"wave\"."), "format", "wav"});
+    addOption({{"f", "format"}, tr("Export file format: wave,mp3,pcm, default value is \"wave\"."), "format"});
     addOption({{"d", "duration"}, tr("Specify the duration of track to export.The default duration will be used if this parameter is invalid."), "micro seconds"});
     addOption({{"r", "sample_rate"}, tr("Specify the sample rate, default is 44100HZ."), "sample rate", "44100"});
     addOption({{"y", "over_write"}, tr("Over write existed files.")});
@@ -45,7 +48,7 @@ void TCmdlineParser::initialize()
     addPositionalArgument("destination", tr("The destination file path to export."), "[filepath]");
     addHelpOption();
     addVersionOption();
-    setApplicationDescription(tr("Export video game sound track to pcm,wave,mp3 file."));
+    setApplicationDescription(tr("Export video game sound track to pcm,wave,mp3 file.Copyright(c) Bilge Theall"));
 
     process(mArguments);
 
@@ -60,10 +63,6 @@ void TCmdlineParser::initialize()
     mSampleRate = value("r").toInt();
 
     mFormat = value("f");
-
-    if(mFormat.isEmpty())
-        mFormat = "wav";
-    mFormat.prepend(".");
 
     mOverWrite = isSet("y");
     mVerbose = isSet("x");
@@ -87,7 +86,26 @@ void TCmdlineParser::initialize()
         if(mSourceFile.isEmpty())
             mIsError = true;
         else
-            mAsDaemon = true;
+        {
+            mSharedMemory = new QSharedMemory(mSourceFile);
+            if(!mSharedMemory->create(1))
+            {
+                mSharedMemory->attach();
+                mSharedMemory->lock();
+                mExportParam = (TExportParam*)mSharedMemory->data();
+                mSourceFile = QString::fromWCharArray(mExportParam->fileName);
+                mIndexName = QString::fromWCharArray(mExportParam->indexName);
+                mDestFilePath = QString::fromWCharArray(mExportParam->outputPath);
+                mFormat = mExportParam->format;
+                mSampleRate = mExportParam->sampleRate;
+                mDuration = mExportParam->duration;
+                mOverWrite = mExportParam->overwrite;
+                mSharedMemory->unlock();
+                mAsDaemon = true;
+            } else {
+                mIsError = true;
+            }
+        }
     }
 }
 

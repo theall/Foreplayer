@@ -13,24 +13,14 @@ public:
 signals:
     void onActionPlayTriggered();
     void onActionCopyTriggered();
-    void onActionCutTriggered();
-    void onActionPasteTriggered();
-    void onActionDeleteTriggered();
-    void onActionRenameTitleTriggered();
-    void onActionRenameDurationTriggered();
-    void onActionExplorerTriggered();
+    void onActionChangeTriggered();
     void onActionExportTriggered();
     void onActionViewTriggered();
 
 private:
     QAction *mActionPlay;
     QAction *mActionCopy;
-    QAction *mActionCut;
-    QAction *mActionPaste;
-    QAction *mActionDelete;
-    QAction *mActionRenameTitle;
-    QAction *mActionChangeDuration;
-    QAction *mActionExplorer;
+    QAction *mActionChange;
     QAction *mActionExport;
     QAction *mActionView;
 

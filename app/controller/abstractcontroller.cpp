@@ -24,13 +24,13 @@ void TAbstractController::joint(TGuiManager *manager, TCore *core)
 
 void TAbstractController::startTimer(int mSecs)
 {
-    if(mTimer)
+    if(mTimer && !mTimer->isActive())
         mTimer->start(mSecs);
 }
 
 void TAbstractController::stopTimer()
 {
-    if(mTimer)
+    if(mTimer && mTimer->isActive())
         mTimer->stop();
 }
 

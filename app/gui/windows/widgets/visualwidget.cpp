@@ -258,11 +258,13 @@ void TVisualWidget::drawWaveImpulse(QPainter *painter, QRect mainRect, QBrush pi
 
 void TVisualWidget::drawWaveOsci(QPainter *painter, QRect mainRect, QBrush pillarBrush)
 {
+    Q_UNUSED(pillarBrush);
     painter->drawText(0, mainRect.height()/2, "Not implemented!");
 }
 
 void TVisualWidget::drawVideo(QPainter *painter, QRect mainRect, QBrush pillarBrush)
 {
+    Q_UNUSED(pillarBrush);
     painter->drawText(0, mainRect.height()/2, "Not implemented!");
 }
 

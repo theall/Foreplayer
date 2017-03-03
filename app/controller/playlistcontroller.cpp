@@ -1,20 +1,50 @@
 #include "playlistcontroller.h"
 
+#include <QUuid>
 #include <QProcess>
+#include <QMimeData>
+#include <QClipboard>
+#include <QSharedMemory>
+
+void cpy2wchar(wchar_t *dest, QString source)
+{
+    if(dest)
+    {
+        wstring sourceW = source.toStdWString();
+        wcscpy(dest, sourceW.c_str());
+    }
+}
 
 TPlaylistController::TPlaylistController(QObject *parent) :
-    TAbstractController(parent),
-    mPlaylistModel(new TPlaylistModel(this)),
-    mMusiclistModel(new TMusiclistModel(this)),
-    mTracklistModel(new TTrackListModel(this)),
-    mPlaylistWindow(NULL),
-    mPlaylistWidget(NULL),
-    mPlaylistView(NULL),
-    mMusiclistView(NULL),
-    mTracklistView(NULL),
-    mPlaylistCore(NULL)
+    TAbstractController(parent)
+  , mPlaylistModel(new TPlaylistModel(this))
+  , mMusiclistModel(new TMusiclistModel(this))
+  , mTracklistModel(new TTrackListModel(this))
+  , mMissionsModel(new TMissionsModel(this, &mExportMissions))
+  , mPlaylistWindow(NULL)
+  , mPlaylistWidget(NULL)
+  , mPlaylistView(NULL)
+  , mMusiclistView(NULL)
+  , mTracklistView(NULL)
+  , mPlaylistCore(NULL)
+  , mExportDialog(NULL)
+  , mExportMissionDialog(NULL)
+  , mPropertyDialog(NULL)
+  , mCurrentViewRow(-1)
+  , mCurrentViewMusic(true)
 {
 
+}
+
+TPlaylistController::~TPlaylistController()
+{
+    mExportMissionsLock.lock();
+    foreach (QSharedMemory *m, mExportMissions) {
+        m->detach();
+        delete m;
+    }
+    mExportMissions.clear();
+    mExportMissionsLock.unlock();
 }
 
 void TPlaylistController::joint(TGuiManager *gui, TCore *core)
@@ -33,6 +63,11 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     mPlaylistView = mPlaylistWidget->playlistView();
     mMusiclistView = mPlaylistWidget->musiclistView();
     mTracklistView = mPlaylistWidget->tracklistView();
+
+    mExportDialog = gui->exportDialog();
+    mExportMissionDialog = gui->exportMissionDialog();
+    mPropertyDialog = gui->propertyDialog();
+    mExportMissionDialog->setModel(mMissionsModel);
 
     TAbstractModel::setColorParameters(
         mPlaylistWidget->textFont(),
@@ -64,7 +99,6 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     // Play list
     connect(mPlaylistWindow, SIGNAL(requestAddNewPlaylist()), this, SLOT(slotRequestAddNewPlaylist()));
     connect(mPlaylistWindow, SIGNAL(requestRemovePlaylist()), this, SLOT(slotRequestRemovePlaylist()));
-    connect(mPlaylistWindow, SIGNAL(requestRenamePlaylist()), this, SLOT(slotRequestRenamePlaylist()));
     connect(mPlaylistWindow, SIGNAL(requestSortPlaylists()), this, SLOT(slotRequestSortPlaylists()));
     connect(mPlaylistWindow, SIGNAL(requestSendTo()), this, SLOT(slotRequestSendTo()));
 
@@ -81,17 +115,28 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     connect(mPlaylistWindow, SIGNAL(requestCutMusicItem(QSet<int>)), this, SLOT(slotRequestCutMusicItem(QSet<int>)));
     connect(mPlaylistWindow, SIGNAL(requestPasteMusicItem(int)), this, SLOT(slotRequestPasteMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestDeleteMusicItem(QSet<int>)), this, SLOT(slotRequestDeleteMusicItem(QSet<int>)));
-    connect(mPlaylistWindow, SIGNAL(requestRenameMusicItem(int)), this, SLOT(slotRequestRenameMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestExplorerMusicItem(int)), this, SLOT(slotRequestExplorerMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestExportMusicItem(int)), this, SLOT(slotRequestExportMusicItem(int)));
-    connect(mPlaylistWindow, SIGNAL(requestDetailMusicItem(int)), this, SLOT(slotRequestDetailMusicItem(int)));
+    connect(mPlaylistWindow, SIGNAL(requestViewMusicItem(int)), this, SLOT(slotRequestViewMusicItem(int)));
+
+    // Track item
+    connect(mPlaylistWindow, SIGNAL(requestPlayTrackItem(int)), this, SLOT(slotRequestPlayTrackItem(int)));
+    connect(mPlaylistWindow, SIGNAL(requestCopyTrackItem(QSet<int>)), this, SLOT(slotRequestCopyTrackItem(QSet<int>)));
+    connect(mPlaylistWindow, SIGNAL(requestExportTrackItem(int)), this, SLOT(slotRequestExportTrackItem(int)));
+    connect(mPlaylistWindow, SIGNAL(requestViewTrackItem(int)), this, SLOT(slotRequestViewTrackItem(int)));
 
     // list view
     connect(mPlaylistView, SIGNAL(requestMoveItems(QList<int>,int,QList<int>&)), this, SLOT(slotRequestMovePlaylists(QList<int>, int, QList<int>&)));
     connect(mMusiclistView, SIGNAL(requestMoveItems(QList<int>,int,QList<int>&)), this, SLOT(slotRequestMoveMusics(QList<int>, int, QList<int>&)));
     connect(mMusiclistView, SIGNAL(requestAddFiles(QStringList,int,QList<int>&)), this, SLOT(slotRequestAddMusicFiles(QStringList, int, QList<int>&)));
-
     connect(mTracklistView, SIGNAL(requestMoveItems(QList<int>,int,QList<int>&)), this, SLOT(slotRequestMoveTracks(QList<int>, int, QList<int>&)));
+
+    // Export dialog
+    connect(mExportDialog, SIGNAL(onAddClicked()), this, SLOT(slotAddExportMission()));
+
+    // Property dialog
+    connect(mPropertyDialog, SIGNAL(onPreviousClicked()), this, SLOT(slotRequestPreviousMusicProperty()));
+    connect(mPropertyDialog, SIGNAL(onNextClicked()), this, SLOT(slotRequestNextMusicProperty()));
 
     int playingPlaylistIndex = mPlaylistCore->playingPlaylistIndex();
     slotPlaylistIndexChanged(playingPlaylistIndex);
@@ -105,6 +150,86 @@ void TPlaylistController::slotRequestCurrentIndex(int *pIndex, int *mIndex, int 
     *pIndex = mPlaylistModel->currentIndex();
     *mIndex = mMusiclistModel->currentIndex();
     *tIndex = mTracklistModel->currentIndex();
+}
+
+void TPlaylistController::slotAddExportMission()
+{
+    if(!mExportDialog || !mExportMissionDialog)
+        return;
+
+    QString indexName = mExportDialog->getIndexName();
+    QStringList indexList = indexName.split("\r\n");
+    TExportMissions newMissions;
+    foreach (QString index, indexList) {
+        QString strId = QUuid::createUuid().toString();
+        QSharedMemory *sharedMemory = new QSharedMemory(strId);
+        if(!sharedMemory->create(sizeof(TExportParam)))
+            continue;
+        sharedMemory->attach();
+        TExportParam exportParam;
+        cpy2wchar(exportParam.fileName, mExportDialog->getMusicFileName());
+        cpy2wchar(exportParam.indexName, index);
+        cpy2wchar(exportParam.outputPath, mExportDialog->getOutputDir());
+        exportParam.overwrite = true;
+        exportParam.state = ES_READY;
+        memcpy(sharedMemory->data(), &exportParam, sizeof(TExportParam));
+        newMissions.append(sharedMemory);
+    }
+    mExportMissionsLock.lock();
+    mExportMissions += newMissions;
+    mExportMissionsLock.unlock();
+
+    if(mExportMissions.size() > 0)
+        startTimer(300);
+
+    if(!mExportMissionDialog->isVisible())
+        mExportMissionDialog->show();
+}
+
+void TPlaylistController::slotRequestNextMusicProperty()
+{
+    if(!mMusiclistModel || !mTracklistModel)
+        return;
+
+    int trackCount = 0;
+    if(mCurrentViewMusic)
+    {
+        TPlaylistItem *playlistItem = mMusiclistModel->playlistItem();
+        if(playlistItem)
+            trackCount = playlistItem->size();
+    } else {
+        TMusicItem *musicItem = mTracklistModel->musicItem();
+        if(musicItem)
+            trackCount = musicItem->size();
+    }
+    if(mCurrentViewRow<trackCount-1 && trackCount>0)
+    {
+        mCurrentViewRow++;
+        fillPropertyDialog();
+    }
+}
+
+void TPlaylistController::slotRequestPreviousMusicProperty()
+{
+    if(!mMusiclistModel || !mTracklistModel)
+        return;
+
+    int trackCount = 0;
+    if(mCurrentViewMusic)
+    {
+        TPlaylistItem *playlistItem = mMusiclistModel->playlistItem();
+        if(playlistItem)
+            trackCount = playlistItem->size();
+    } else {
+        TMusicItem *musicItem = mTracklistModel->musicItem();
+        if(musicItem)
+            trackCount = musicItem->size();
+    }
+    if(mCurrentViewRow>0 && trackCount>0)
+    {
+        mCurrentViewRow--;
+        fillPropertyDialog();
+    }
 }
 
 void TPlaylistController::slotPlaylistIndexChanged(int index)
@@ -211,14 +336,6 @@ void TPlaylistController::slotRequestRemovePlaylist()
     currentIndex = mPlaylistModel->currentIndex();
     if(currentIndex > -1)
         mPlaylistView->selectRow(currentIndex);
-}
-
-void TPlaylistController::slotRequestRenamePlaylist()
-{
-    if(!mPlaylistModel || !mPlaylistView)
-        return;
-
-    mPlaylistView->edit(mPlaylistView->currentIndex());
 }
 
 void TPlaylistController::slotRequestSortPlaylists()
@@ -332,6 +449,22 @@ void TPlaylistController::slotRequestCopyMusicItem(QSet<int> rows)
     if(!mMusiclistModel)
         return;
 
+    TPlaylistItem *playlistItem = mMusiclistModel->playlistItem();
+    if(playlistItem)
+    {
+        QClipboard *clipBoard = qApp->clipboard();
+        QJsonDocument playlistDocument;
+        QJsonArray musicItemsArray;
+        QMimeData *mimeData = new QMimeData;
+        foreach (int row, rows) {
+            TMusicItem *musicItem = playlistItem->musicItem(row);
+            if(musicItem)
+                musicItemsArray.append(musicItem->toJson());
+        }
+        playlistDocument.setArray(musicItemsArray);
+        mimeData->setData(TMusicItem::mimeType(), playlistDocument.toJson());
+        clipBoard->setMimeData(mimeData);
+    }
 }
 
 void TPlaylistController::slotRequestCutMusicItem(QSet<int> rows)
@@ -339,6 +472,20 @@ void TPlaylistController::slotRequestCutMusicItem(QSet<int> rows)
     if(!mMusiclistModel)
         return;
 
+    TPlaylistItem *playlistItem = mMusiclistModel->playlistItem();
+    if(playlistItem)
+    {
+        QClipboard *clipBoard = qApp->clipboard();
+        foreach (int row, rows) {
+            TMusicItem *musicItem = playlistItem->musicItem(row);
+            if(musicItem)
+            {
+                QMimeData *mimeData = new QMimeData;
+                //mimeData->setData(TMusicItem::mimeType(), musicItem->toJson());
+                clipBoard->setMimeData(mimeData);
+            }
+        }
+    }
 }
 
 void TPlaylistController::slotRequestPasteMusicItem(int pos)
@@ -346,6 +493,29 @@ void TPlaylistController::slotRequestPasteMusicItem(int pos)
     if(!mMusiclistModel)
         return;
 
+    TMusicItems musicItems;
+    const QMimeData *mimeData = qApp->clipboard()->mimeData();
+    if(mimeData->hasFormat(TMusicItem::mimeType())) {
+        QJsonArray musicItemsArray = QJsonDocument::fromJson(mimeData->data(TMusicItem::mimeType())).array();
+        for(int i=0;i<musicItemsArray.size();i++)
+        {
+            TMusicItem *musicItem = new TMusicItem;
+            musicItem->fromJson(musicItemsArray.at(i).toObject());
+            musicItems.append(musicItem);
+        }
+    } else if (mimeData->hasFormat(TTrackItem::mimeType())) {
+        QJsonArray trackItemsArray = QJsonDocument::fromJson(mimeData->data(TTrackItem::mimeType())).array();
+        for(int i=0;i<trackItemsArray.size();i++)
+        {
+            TMusicItem *musicItem = new TMusicItem;
+            TTrackItem *trackItem = new TTrackItem;
+            trackItem->fromJson(trackItemsArray.at(i).toObject());
+            musicItem->fromTrackItem(trackItem);
+            musicItem->addTrackItem(trackItem);
+            musicItems.append(musicItem);
+        }
+    }
+    mMusiclistModel->insertItems(pos, musicItems);
 }
 
 void TPlaylistController::slotRequestDeleteMusicItem(QSet<int> rows)
@@ -354,13 +524,6 @@ void TPlaylistController::slotRequestDeleteMusicItem(QSet<int> rows)
         return;
 
     mMusiclistModel->removeSelections(rows.toList());
-}
-
-void TPlaylistController::slotRequestRenameMusicItem(int row)
-{
-    if(!mMusiclistModel)
-        return;
-
 }
 
 void TPlaylistController::slotRequestExplorerMusicItem(int row)
@@ -382,26 +545,99 @@ void TPlaylistController::slotRequestExplorerMusicItem(int row)
 
 void TPlaylistController::slotRequestExportMusicItem(int row)
 {
-    if(!mMusiclistModel)
+    if(!mMusiclistModel || !mExportDialog || !mExportMissionDialog)
         return;
 
     TMusicItem *musicItem = mMusiclistModel->playlistItem()->musicItem(row);
     if(musicItem)
     {
-        mGui->exportDialog()->show();
+        QStringList indexList;
+        foreach (TTrackItem *trackItem, *musicItem->trackItems()) {
+            indexList.append(trackItem->indexName);
+        }
+        mExportDialog->setMusicFile(musicItem->fileName());
+        mExportDialog->setMaxDuration(0);
+        mExportDialog->setIndexInfo(indexList.join("\n"));
+        if(mExportDialog->getOutputDir().isEmpty())
+            mExportDialog->setOutputPath(QFileInfo(musicItem->fileName()).absolutePath());
+        mExportDialog->exec();
     }
 }
 
-void TPlaylistController::slotRequestDetailMusicItem(int row)
+void TPlaylistController::slotRequestViewMusicItem(int row)
 {
-    if(!mMusiclistModel)
+    if(!mMusiclistModel || !mPropertyDialog)
         return;
 
-    TMusicItem *musicItem = mMusiclistModel->playlistItem()->musicItem(row);
+    mCurrentViewRow = row;
+    mCurrentViewMusic = true;
+
+    fillPropertyDialog();
+    mPropertyDialog->exec();
+}
+
+void TPlaylistController::slotRequestPlayTrackItem(int row)
+{
+    if(row >= 0)
+        slotTracklistItemSelected(row);
+}
+
+void TPlaylistController::slotRequestCopyTrackItem(QSet<int> rows)
+{
+    if(!mTracklistModel)
+        return;
+
+    TMusicItem *musicItem = mTracklistModel->musicItem();
     if(musicItem)
     {
-        mGui->propertyDialog()->show();
+        QClipboard *clipBoard = qApp->clipboard();
+        QJsonDocument playlistDocument;
+        QMimeData *mimeData = new QMimeData;
+        QJsonArray trackItemsArray;
+        foreach (int row, rows)
+        {
+            TTrackItem *trackItem = musicItem->trackItem(row);
+            if(trackItem)
+                trackItemsArray.append(trackItem->toJson());
+
+        }
+        playlistDocument.setArray(trackItemsArray);
+        mimeData->setData(TTrackItem::mimeType(), playlistDocument.toJson());
+        clipBoard->setMimeData(mimeData);
     }
+}
+
+void TPlaylistController::slotRequestExportTrackItem(int row)
+{
+    if(!mTracklistModel || !mExportDialog || !mExportMissionDialog)
+        return;
+
+    TMusicItem *musicItem = mTracklistModel->musicItem();
+    if(musicItem)
+    {
+        TTrackItem *trackItem = musicItem->trackItem(row);
+        if(trackItem)
+        {
+            mExportDialog->setMusicFile(musicItem->fileName());
+            mExportDialog->setMaxDuration(trackItem->duration);
+            mExportDialog->setIndexInfo(trackItem->indexName);
+            if(mExportDialog->getOutputDir().isEmpty())
+                mExportDialog->setOutputPath(QFileInfo(musicItem->fileName()).absolutePath());
+            mExportDialog->exec();
+        }
+    }
+}
+
+void TPlaylistController::slotRequestViewTrackItem(int row)
+{
+    if(!mTracklistModel || !mPropertyDialog)
+        return;
+
+    mCurrentViewRow = row;
+    mCurrentViewMusic = false;
+
+    fillPropertyDialog();
+    mPropertyDialog->exec();
 }
 
 void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti)
@@ -426,4 +662,82 @@ void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, in
 
 void TPlaylistController::slotTimerEvent()
 {
+    if(mMissionsModel && mExportMissionDialog && mExportMissionDialog->isVisible())
+    {
+        mExportMissionsLock.lock();
+        int runningCount = 0;
+        int completeCount = 0;
+        foreach (QSharedMemory *m, mExportMissions) {
+            TExportParam *exportParam = (TExportParam*)m->data();
+            if(exportParam->state == ES_RUN)
+                runningCount++;
+            else if(exportParam->state == ES_COMPLETE)
+                completeCount++;
+        }
+
+        // Maximize 3 processes
+        int newSpawn = 3-runningCount;
+        if(newSpawn > 0)
+        {
+            foreach (QSharedMemory *m, mExportMissions) {
+                TExportParam *exportParam = (TExportParam*)m->data();
+                if(exportParam->state == ES_READY)
+                {
+                    QProcess::startDetached("exportor "+m->key());
+                    exportParam->state = ES_RUN;
+                    newSpawn--;
+                    if(newSpawn <= 0)
+                        break;
+                }
+            }
+        } else {
+            if(completeCount >= mExportMissions.size())
+                stopTimer();
+        }
+        mExportMissionsLock.unlock();
+        mMissionsModel->layoutChanged();
+    }
+}
+
+void TPlaylistController::fillPropertyDialog()
+{
+    if(!mPropertyDialog || !mMusiclistModel || !mTracklistModel)
+        return;
+
+    if(mCurrentViewMusic)
+    {
+        TPlaylistItem *playlistItem = mMusiclistModel->playlistItem();
+        if(playlistItem)
+        {
+            int musicCount = playlistItem->size();
+            TMusicItem *musicItem = playlistItem->musicItem(mCurrentViewRow);
+            if(musicItem)
+            {
+                mPropertyDialog->setMusicFile(musicItem->fileName());
+                mPropertyDialog->setTitle(musicItem->displayName());
+                mPropertyDialog->setAuthor(musicItem->artist());
+                mPropertyDialog->setYear(musicItem->year());
+                mPropertyDialog->setSystem(musicItem->system());
+                mPropertyDialog->setAddionalInfo(musicItem->additionalInfo());
+                mPropertyDialog->setIndex(mCurrentViewRow+1, musicCount);
+            }
+        }
+    } else {
+        TMusicItem *musicItem = mTracklistModel->musicItem();
+        if(musicItem)
+        {
+            int trackCount = musicItem->size();
+            TTrackItem *trackItem = musicItem->trackItem(mCurrentViewRow);
+            if(trackItem)
+            {
+                mPropertyDialog->setMusicFile(musicItem->fileName());
+                mPropertyDialog->setTitle(trackItem->displayName);
+                mPropertyDialog->setAuthor(trackItem->artist);
+                mPropertyDialog->setYear(trackItem->year);
+                mPropertyDialog->setSystem(trackItem->system);
+                mPropertyDialog->setAddionalInfo(trackItem->additionalInfo);
+                mPropertyDialog->setIndex(mCurrentViewRow+1, trackCount);
+            }
+        }
+    }
 }

@@ -7,12 +7,14 @@
 
 #define trp(x) qPrintable(QCoreApplication::translate("main", x))
 
-bool isBlankFrame(short *buf, int size)
+typedef void (*IProgressCallback)(int value, int max);
+
+bool isBlankFrame(byte *buf, int size)
 {
-    short *pBuf = buf;
+    short *pBuf = (short*)buf;
     int validPcm = 0;
     int sumFrame = 0;
-    for(int i=0;i<size;i++)
+    for(int i=0;i<size/2;i++)
     {
         short amp = abs(*pBuf);
         if(amp > 16)
@@ -24,12 +26,87 @@ bool isBlankFrame(short *buf, int size)
     return sumFrame==0 || (float)validPcm/size<0.05;
 }
 
+bool exportTrack(
+        TBackendPlugin *plugin,
+        TTrackInfo *trackInfo,
+        QString outputFile,
+        QString format,
+        TExportParam *exportParam = NULL
+        )
+{
+    if(!plugin || !trackInfo)
+        return false;
+
+    if(!plugin->openTrack(trackInfo))
+    {
+        printf(trp("Failed to load track \"%s\" in %s\n"), trackInfo->indexName.c_str(), trackInfo->musicFileName.c_str());
+        return false;
+    }
+    TExportFactory exportFactory;
+    TAbstractExport *exportor = NULL;
+    wstring fileNameW = outputFile.toStdWString();
+    if(format.isEmpty())
+        exportor = exportFactory.create(fileNameW.c_str(), trackInfo->sampleRate);
+    else
+        exportor = exportFactory.create(format, fileNameW.c_str(), trackInfo->sampleRate);
+
+    if(!exportor->isOpened())
+    {
+        printf(trp("Failed to create exporter of %s\n"), qPrintable(outputFile));
+        return false;
+    }
+    int samples = plugin->getSampleSize(trackInfo->sampleRate, SOUND_FPS);
+    if(samples < 2)
+        samples = 4096;
+
+    int bufSize = samples*4;
+    byte *buf = (byte*)malloc(bufSize);
+    int silentFrames = 0;
+    float framesPerSec = trackInfo->sampleRate*4/bufSize;
+
+    int realDuration = trackInfo->duration;
+    if(realDuration < 1)
+        realDuration = 0x7fffffff;
+
+    int totalFrames = framesPerSec*realDuration/1000 + 0.5;
+    TRequestSamples nextframe = plugin->getCallback();
+    if(exportParam)
+        exportParam->progressTotalFrames = totalFrames;
+
+    for(int i=0;i<totalFrames;i++)
+    {
+        if(exportParam)
+        {
+            while(exportParam->state!=ES_RUN)
+                QThread::msleep(500);
+        }
+        memset(buf, 0, bufSize);
+        nextframe(bufSize, buf);
+        if(isBlankFrame(buf, bufSize))
+        {
+            silentFrames++;
+        } else {
+            silentFrames = 0;
+        }
+        if(silentFrames >= framesPerSec*3){
+            // Frames end
+            break;
+        }
+        exportor->write((const byte*)buf, bufSize);
+        if(exportParam)
+            exportParam->progressCurrentFrames = i+1;
+    }
+    if(exportParam)
+        exportParam->state = ES_COMPLETE;
+    return true;
+}
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
     QCoreApplication::setApplicationName("Exportor");
-    QCoreApplication::setApplicationVersion("1.0");
+    QCoreApplication::setApplicationVersion("1.0.0");
 
     TCmdlineParser parser(a.arguments());
     if(parser.needHelp())
@@ -39,9 +116,11 @@ int main(int argc, char *argv[])
     }
     if(parser.isError())
     {
-        printf(trp("Music file is invalid or non-exist.\n"));
+        printf(trp("Music file path is invalid or non-exists.\n"));
         return 0;
     }
+    // Load backend plugins
+    TBackendPluginManager *plugins = TBackendPluginManager::instance();
     QString indexName = parser.indexName();
     QString sourceFile = parser.sourceFile();
     QString destFilePath = parser.destFilePath();
@@ -52,11 +131,9 @@ int main(int argc, char *argv[])
     bool overWriteFile = parser.overWrite();
     bool bVerbose = parser.verbose();
 
-    //QString sourceFile = parser.
-    TBackendPluginManager *plugins = TBackendPluginManager::instance();
-    TTrackInfo trackInfo;
-    trackInfo.musicFileName = sourceFile.toStdString();
-    trackInfo.indexName = indexName.toStdString();
+    TExportParam *exportParam = NULL;
+    if(parser.runAsDaemon())
+        exportParam = TCmdlineParser::getExportParam();
 
     // Parse track list
     TMusicInfo musicInfo;
@@ -75,8 +152,6 @@ int main(int argc, char *argv[])
     } else if(bVerbose) {
         printf(trp("Find %d tracks in music file.\n"), trackCount);
     }
-
-    TRequestSamples nextframe = plugin->getCallback();
 
     TTrackInfoList trackList;
     if(!indexName.isEmpty())
@@ -122,95 +197,41 @@ int main(int argc, char *argv[])
     QDir destDir(destFilePath);
     int trackListSize = trackList.size();
 
-    TExportFactory exportFactory;
     int nSkip = 0;
     int nSuccess = 0;
     int nFail = 0;
     for(int i=0;i<trackListSize;i++)
     {
-        TTrackInfo *track = trackList[i];
-        track->musicFileName = sourceFile.toStdString();
-        if(!plugin->openTrack(track))
-        {
-            printf(trp("Failed to load track, %s\n"), track->indexName.c_str());
-            nFail++;
-            continue;
-        }
-
+        TTrackInfo *trackInfo = trackList[i];
+        trackInfo->musicFileName = sourceFile.toStdString();
+        trackInfo->sampleRate = sampleRate;
+        if(trackInfo->duration <= 0)
+            trackInfo->duration = duration;
         QString destFileFullName;
         if((trackListSize>1 && indexName.isEmpty()) || destIsDir)
         {
-            // While export muliple tracks, auto set dest name to track name
-            QString baseName = QFileInfo(QString::fromStdString(track->trackName)).baseName()+format;
+            // While exporting muliple tracks, auto set dest name to track name
+            QString baseName = QFileInfo(QString::fromStdString(trackInfo->trackName)).baseName()+".wav";
             destFileFullName = destDir.absoluteFilePath(baseName);
         } else {
             destFileFullName = destFilePath;
         }
 
-        if(QFileInfo(destFileFullName).exists())
+        if(QFileInfo(destFileFullName).exists() && !overWriteFile)
         {
             if(bVerbose)
                 printf(trp("Warning, destination file exists, %s\n"), qPrintable(destFileFullName));
 
-            if(!overWriteFile)
-            {
-                nSkip++;
-                continue;
-            }
-        }
-
-        wstring fileNameW = destFileFullName.toStdWString();
-
-        TAbstractExport *exportor = NULL;
-        if(format.isEmpty())
-            exportor = exportFactory.create(fileNameW.c_str(), sampleRate);
-        else
-            exportor = exportFactory.create(format, fileNameW.c_str(), sampleRate);
-
-        if(exportor->isOpened())
-            printf(trp("Export to %s\n"), qPrintable(destFileFullName));
-        else {
-            exportFactory.recycle();
-            nFail++;
-            printf(trp("Failed to create %s\n"), qPrintable(destFileFullName));
+            nSkip++;
             continue;
         }
-        int samples = plugin->getSampleSize(sampleRate, SOUND_FPS);
-        if(samples < 2)
-            samples = 4096;
-
-        int bufSize = samples*4;
-        short *buf = (short*)malloc(bufSize);
-        int silentFrames = 0;
-        float framesPerSec = sampleRate*4/bufSize;
-
-        int realDuration = duration;
-        if(realDuration < 1)
-            realDuration = trackInfo.duration;
-        if(realDuration < 1)
-            realDuration = 0x7fffffff;
-
-        int totalFrames = framesPerSec*((float)realDuration/1000+0.5) + 0.5;
-
-        for(int i=0;i<totalFrames;i++)
+        if(exportTrack(plugin, trackInfo, destFileFullName, format, exportParam))
         {
-            memset(buf, 0, bufSize);
-            nextframe(samples, buf);
-            if(isBlankFrame(buf, samples))
-            {
-                silentFrames++;
-            } else {
-                silentFrames = 0;
-            }
-            if(silentFrames >= framesPerSec){
-                // Frames end
-                break;
-            }
-            exportor->write((const byte*)buf, bufSize);
+            nSuccess++;
+            printf(trp("Export to %s\n"), qPrintable(destFileFullName));
+        } else {
+            nFail++;
         }
-
-        nSuccess++;
-        exportFactory.recycle();
     }
     if(trackListSize <= 0)
     {

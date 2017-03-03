@@ -6,10 +6,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unzip/unzip.h>
 #include "m1snd.h"
 #include "m1ui.h"
 #include "rom.h"
-#include "unzip.h"
 #include "md5.h"
 #include "sha1.h"
 #include "chd.h"
@@ -51,7 +51,7 @@ const char *cur_zip_path;
 
 static int OPENZIP(unzFile *zipArchive, char* zipname)
 {
-	*zipArchive = unzOpen(zipname);
+    *zipArchive = unzOpenA(zipname);
 	cur_zip_path = zipname;
 
 	if (NULL == *zipArchive)
@@ -83,14 +83,14 @@ static int LOADROM(unzFile zipArchive, char *path, char* mem, int size, unsigned
 		// Try to load by crc32
 		ret = unzGoToFirstFile(zipArchive);
 		if(ret != UNZ_OK) {
-			sprintf(estr, "unzGoToFirstFile failed with error code %d, corrupt zip file (%s) ?", ret, cur_zip_path);
+            sprintf(estr, "unzGoToFirstFile failed with error code %d, corrupt zip file?", ret);
 			m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 			return 0;
 		}
 		for(;;) {
 			ret = unzGetCurrentFileInfo(zipArchive, &info, 0, 0, 0, 0, 0, 0);
 			if(ret != UNZ_OK) {
-				sprintf(estr, "unzGetCurrentFileInfo failed with error code %d, corrupt zip file (%s) ?\n", ret, cur_zip_path);
+                sprintf(estr, "unzGetCurrentFileInfo failed with error code %d, corrupt zip file?\n", ret);
 				m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 				return 0;
 			}
@@ -105,13 +105,13 @@ static int LOADROM(unzFile zipArchive, char *path, char* mem, int size, unsigned
 //				sprintf(estr, "Rom file %s (crc32 %08x) not found in %s\n", path, crc32, cur_zip_path);
 				return 0;
 			} else if(ret != UNZ_OK) {
-				sprintf(estr, "unzGoToNextFile failed with error code %d, corrupt zip file (%s) ?\n", ret, cur_zip_path);
+                sprintf(estr, "unzGoToNextFile failed with error code %d, corrupt zip file?\n", ret);
 				m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 				return 0;
 			}
 		}
 	} else if(ret != UNZ_OK) {
-		sprintf(estr, "Could not find file %s in zip %s\n", path, cur_zip_path);
+        sprintf(estr, "Could not find file %s in zip.\n", path);
 		m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 		return 0;
 	}
@@ -121,7 +121,7 @@ static int LOADROM(unzFile zipArchive, char *path, char* mem, int size, unsigned
 		return 0;
 	}
 
-	if(info.uncompressed_size != size) 
+    if((int)info.uncompressed_size != size)
 	{
 		sprintf(estr, "Wrong size for file %s, expected %d and got %ld\n", path, size, info.uncompressed_size);
 		m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
@@ -137,21 +137,21 @@ static int LOADROM(unzFile zipArchive, char *path, char* mem, int size, unsigned
 
 	ret = unzOpenCurrentFile(zipArchive);
 	if(ret != UNZ_OK) {
-		sprintf(estr, "unzOpenCurrentFile failed with error code %d for the rom %s, corrupt zip file (%s) ?\n", ret, path, cur_zip_path);
+        sprintf(estr, "unzOpenCurrentFile failed with error code %d for the rom %s, corrupt zip file?\n", ret, path);
 		m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 		return 0;
 	}
 
 	ret = unzReadCurrentFile(zipArchive, mem, size);
 	if(ret != size) {
-		sprintf(estr, "unzReadCurrentFile failed with return %d for the rom %s, corrupt zip file (%s) ?\n", ret, path, cur_zip_path);
+        sprintf(estr, "unzReadCurrentFile failed with return %d for the rom %s, corrupt zip file?\n", ret, path);
 		m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 		return 0;
 	}
 
 	ret = unzCloseCurrentFile(zipArchive);
 	if(ret != UNZ_OK) {
-		sprintf(estr, "unzCloseCurrentFile failed with error code %d for the rom %s, corrupt zip file (%s) ?\n", ret, path, cur_zip_path);
+        sprintf(estr, "unzCloseCurrentFile failed with error code %d for the rom %s, corrupt zip file?\n", ret, path);
 		m1ui_message(m1ui_this, M1_MSG_ERROR, estr, 0);
 		return 0;
 	}
@@ -778,7 +778,7 @@ static struct chd_interface_file *chdman_open(const char *filename, const char *
 		}
 
 		/* attempt to open the file */
-		handle = CreateFile(filename, access, share, NULL, disposition, 0, NULL);
+        handle = CreateFileA(filename, access, share, NULL, disposition, 0, NULL);
 		if (handle == INVALID_HANDLE_VALUE)
 			return NULL;
 		return (struct chd_interface_file *)handle;

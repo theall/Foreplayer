@@ -8,7 +8,7 @@ class TPlaylistView : public TAbstractTableView
 public:
     TPlaylistView(QWidget *parent = 0);
 
-    void editCurrent();
+    void editCurrentName();
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
 
     // TAbstractTableView interface

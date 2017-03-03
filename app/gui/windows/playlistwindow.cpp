@@ -67,7 +67,14 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mPopmenuMusiclistItem, SIGNAL(onActionRenameTriggered()), this, SLOT(slotRenameMusicItemTriggered()));
     connect(mPopmenuMusiclistItem, SIGNAL(onActionExplorerTriggered()), this, SLOT(slotExplorerMusicItemTriggered()));
     connect(mPopmenuMusiclistItem, SIGNAL(onActionExportTriggered()), this, SLOT(slotExportMusicItemTriggered()));
-    connect(mPopmenuMusiclistItem, SIGNAL(onActionDetailTriggered()), this, SLOT(slotDetailMusicItemTriggered()));
+    connect(mPopmenuMusiclistItem, SIGNAL(onActionViewTriggered()), this, SLOT(slotViewMusicItemTriggered()));
+
+    // Track list popup menu
+    connect(mPopmenuTrackList, SIGNAL(onActionPlayTriggered()), this, SLOT(slotPlayTrackItemTriggered()));
+    connect(mPopmenuTrackList, SIGNAL(onActionCopyTriggered()), this, SLOT(slotCopyTrackItemTriggered()));
+    connect(mPopmenuTrackList, SIGNAL(onActionChangeTriggered()), this, SLOT(slotChangeTrackItemTriggered()));
+    connect(mPopmenuTrackList, SIGNAL(onActionExportTriggered()), this, SLOT(slotExportTrackItemTriggered()));
+    connect(mPopmenuTrackList, SIGNAL(onActionViewTriggered()), this, SLOT(slotViewTrackItemTriggered()));
 
     retranslateUi();
 }
@@ -132,7 +139,7 @@ void TPlaylistWindow::slotActionRenameTriggered()
     if(!mPlaylistView)
         return;
 
-    mPlaylistView->editCurrent();
+    mPlaylistView->editCurrentName();
 }
 
 void TPlaylistWindow::slotOnActionAddMusicsTriggered()
@@ -262,9 +269,7 @@ void TPlaylistWindow::slotRenameMusicItemTriggered()
     if(!mMusiclistView)
         return;
 
-    int row = mMusiclistView->currentRow();
-    if(row != -1)
-        emit requestRenameMusicItem(row);
+    mMusiclistView->editCurrentName();
 }
 
 void TPlaylistWindow::slotExplorerMusicItemTriggered()
@@ -287,14 +292,62 @@ void TPlaylistWindow::slotExportMusicItemTriggered()
         emit requestExportMusicItem(row);
 }
 
-void TPlaylistWindow::slotDetailMusicItemTriggered()
+void TPlaylistWindow::slotViewMusicItemTriggered()
 {
     if(!mMusiclistView)
         return;
 
     int row = mMusiclistView->currentRow();
     if(row != -1)
-        emit requestDetailMusicItem(row);
+        emit requestViewMusicItem(row);
+}
+
+void TPlaylistWindow::slotPlayTrackItemTriggered()
+{
+    if(!mTracklistView)
+        return;
+
+    int row = mTracklistView->currentRow();
+    if(row != -1)
+        emit requestPlayTrackItem(row);
+}
+
+void TPlaylistWindow::slotCopyTrackItemTriggered()
+{
+    if(!mTracklistView)
+        return;
+
+    QSet<int> rows = mTracklistView->selectedRows();
+    if(rows.size() > 0)
+        emit requestCopyTrackItem(rows);
+}
+
+void TPlaylistWindow::slotChangeTrackItemTriggered()
+{
+    if(!mTracklistView)
+        return;
+
+    mTracklistView->editCurrent();
+}
+
+void TPlaylistWindow::slotExportTrackItemTriggered()
+{
+    if(!mTracklistView)
+        return;
+
+    int row = mTracklistView->currentRow();
+    if(row != -1)
+        emit requestExportTrackItem(row);
+}
+
+void TPlaylistWindow::slotViewTrackItemTriggered()
+{
+    if(!mTracklistView)
+        return;
+
+    int row = mTracklistView->currentRow();
+    if(row != -1)
+        emit requestViewTrackItem(row);
 }
 
 void TPlaylistWindow::tryAddMusicFiles(QStringList files)

@@ -36,7 +36,7 @@ int TMusiclistModel::columnCount(const QModelIndex &parent) const
 
 QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
 {
-    if(role==Qt::DisplayRole)
+    if(role==Qt::DisplayRole || role==Qt::EditRole)
     {
         int column = index.column();
         int row = index.row();
@@ -87,6 +87,14 @@ bool TMusiclistModel::setData(const QModelIndex &index, const QVariant &value, i
             mPlaylistItem->musicItem(row)->setDisplayName(value.toString());
     }
     return TAbstractModel::setData(index, value, role);
+}
+
+Qt::ItemFlags TMusiclistModel::flags(const QModelIndex &index) const
+{
+    Qt::ItemFlags _flags = TAbstractModel::flags(index);
+    if(index.column() == 2)// Title column is editable
+        _flags |= Qt::ItemIsEditable;
+    return _flags;
 }
 
 void TMusiclistModel::setCurrentIndex(int index)
@@ -150,10 +158,19 @@ void TMusiclistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexes
 
 void TMusiclistModel::insertFiles(QStringList files, int pos, QList<int> &newIndexes)
 {
-    if(!mPlaylistCore || !mPlaylistItem)
+    if(files.count()<=0)
         return;
 
-    if(files.count()<=0)
+    TMusicItems musicItems;
+    foreach (QString file, files)
+        musicItems.append(mPlaylistCore->parse(file));
+
+    insertItems(pos, musicItems, newIndexes);
+}
+
+void TMusiclistModel::insertItems(int pos, TMusicItems musicItems, QList<int> &newIndexes)
+{
+    if(!mPlaylistCore || !mPlaylistItem)
         return;
 
     int musicsCount = mPlaylistItem->size();
@@ -167,16 +184,16 @@ void TMusiclistModel::insertFiles(QStringList files, int pos, QList<int> &newInd
     // Record current item
     TMusicItem *currentItem = mPlaylistItem->musicItem(mCurrentIndex);
 
-    beginResetModel();
     int i = 0;
-    foreach (QString file, files) {
-        TMusicItem *item = mPlaylistCore->parse(file);
-        beginInsertRows(index(pos, 0), pos, pos);
-        mPlaylistItem->insert(pos, item);
-        newIndexes.append(pos+i++);
-        endInsertRows();
+    foreach (TMusicItem *musicItem, musicItems) {
+        if(musicItem)
+        {
+            beginInsertRows(index(pos, 0), pos, pos);
+            mPlaylistItem->insert(pos, musicItem);
+            newIndexes.append(pos+i++);
+            endInsertRows();
+        }
     }
-
     // Restore current index
     if(currentItem)
     {
@@ -184,6 +201,12 @@ void TMusiclistModel::insertFiles(QStringList files, int pos, QList<int> &newInd
     }
 
     endResetModel();
+}
+
+void TMusiclistModel::insertItems(int pos, TMusicItems musicItems)
+{
+    QList<int> newIndexes;
+    insertItems(pos, musicItems, newIndexes);
 }
 
 void TMusiclistModel::removeSelections(QList<int> indexes)

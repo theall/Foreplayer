@@ -13,6 +13,11 @@ TMusiclistView::TMusiclistView(QWidget *parent) :
     setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 
+void TMusiclistView::editCurrentName()
+{
+    edit(currentIndex());
+}
+
 void TMusiclistView::setModel(QAbstractItemModel *model)
 {
     TAbstractTableView::setModel(model);

@@ -13,6 +13,11 @@ TTracklistView::TTracklistView(QWidget *parent) :
     setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 
+void TTracklistView::editCurrent()
+{
+    edit(currentIndex());
+}
+
 void TTracklistView::setModel(QAbstractItemModel *model)
 {
     TAbstractTableView::setModel(model);

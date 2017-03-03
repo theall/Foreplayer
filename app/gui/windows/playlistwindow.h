@@ -30,7 +30,6 @@ signals:
     // Play list
     void requestAddNewPlaylist();
     void requestRemovePlaylist();
-    void requestRenamePlaylist();
     void requestSortPlaylists();
     void requestSendTo();
 
@@ -48,10 +47,15 @@ signals:
     void requestCutMusicItem(QSet<int> rows);
     void requestPasteMusicItem(int pos);
     void requestDeleteMusicItem(QSet<int> rows);
-    void requestRenameMusicItem(int row);
     void requestExplorerMusicItem(int row);
     void requestExportMusicItem(int row);
-    void requestDetailMusicItem(int row);
+    void requestViewMusicItem(int row);
+
+    // Track item popup menu
+    void requestPlayTrackItem(int row);
+    void requestCopyTrackItem(QSet<int> rows);
+    void requestExportTrackItem(int row);
+    void requestViewTrackItem(int row);
 
     //// Gui
     void playlistWindowToggled(bool);
@@ -91,7 +95,14 @@ private slots:
     void slotRenameMusicItemTriggered();
     void slotExplorerMusicItemTriggered();
     void slotExportMusicItemTriggered();
-    void slotDetailMusicItemTriggered();
+    void slotViewMusicItemTriggered();
+
+    // Track list popup menu
+    void slotPlayTrackItemTriggered();
+    void slotCopyTrackItemTriggered();
+    void slotChangeTrackItemTriggered();
+    void slotExportTrackItemTriggered();
+    void slotViewTrackItemTriggered();
 
 private:
     TToolBar *mToolbar;

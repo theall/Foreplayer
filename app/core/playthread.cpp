@@ -5,6 +5,7 @@
 #define CYCLE_INTERVAL      300
 
 TPlayThread::TPlayThread():
+    QThread(),
     mNeedTerminate(false),
     mCurrentMicroSeconds(0),
     mState(TS_NULL),
@@ -112,7 +113,8 @@ void TPlayThread::run()
     {
         msleep(CYCLE_INTERVAL);
 
-        mCurrentMicroSeconds += CYCLE_INTERVAL;
+        if(mState==TS_RUNNING)
+            mCurrentMicroSeconds += CYCLE_INTERVAL;
 
         // Update progress
         mFront->step();

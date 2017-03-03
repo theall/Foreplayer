@@ -11,6 +11,8 @@ public:
     void setPlayListItem(TPlaylistItem *item);
     void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved);
     void insertFiles(QStringList files, int pos, QList<int> &newIndexes);
+    void insertItems(int pos, TMusicItems musicItems, QList<int> &newIndexes);
+    void insertItems(int pos, TMusicItems musicItems);
     void removeSelections(QList<int> indexes);
     QList<int> removeRedundant();
     QList<int> removeErrors();
@@ -32,6 +34,7 @@ public:
     int columnCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;
     QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
     bool setData(const QModelIndex &index, const QVariant &value, int role) Q_DECL_OVERRIDE;
+    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
 };
 
 #endif // TMUSICLISTMODEL_H

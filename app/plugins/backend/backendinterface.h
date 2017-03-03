@@ -36,6 +36,7 @@ extern "C" {
 
 typedef unsigned int uint;
 typedef long int64 ;
+typedef unsigned char byte;
 
 #define MAX_PATH 260
 
@@ -101,7 +102,7 @@ struct TMusicInfo
 
 typedef vector<TMusicInfo*> TMusicInfoList;
 
-typedef void (*TRequestSamples)(int dwSamples, short *samples);
+typedef void (*TRequestSamples)(int bufSize, byte *buffer);
 
 // Initialize plugin
 EXPORT bool initialize();
@@ -122,7 +123,7 @@ EXPORT bool loadTrack(TTrackInfo* track);
 EXPORT void closeTrack();
 
 // Request next samples
-EXPORT void nextSamples(int size, short* samples);
+EXPORT void nextSamples(int bufSize, byte* buffer);
 
 // Optional, for return customized sample size
 EXPORT int sampleSize(int sampleRate, int fps);

@@ -32,8 +32,11 @@ public:
 
     bool loadSkin(QString skinPath);
 
-    void showGui();
-    void closeGui();
+    void open();
+    void close();
+
+    void hide();
+    void show();
 
     void setCaption(QString caption);
 
@@ -105,8 +108,7 @@ private:
     bool mEqualizerVisible;
 
     void createSystemTrayIcon();
-    void hide();
-    void show();
+    bool isMainwindowSunken();
     void toggleGui();
     void restoreGui();
     void moveWindow(TAbstractWindow* window, int left, int top);

@@ -214,7 +214,7 @@ bool TGuiManager::loadSkin(QString fileName)
     return result;
 }
 
-void TGuiManager::showGui()
+void TGuiManager::open()
 {
     TPreferences *prefs = TPreferences::instance();
     QByteArray g, s;
@@ -247,7 +247,7 @@ void TGuiManager::showGui()
     mTrayIcon->show();
 }
 
-void TGuiManager::closeGui()
+void TGuiManager::close()
 {
     mMainWindow->close();
 }
@@ -461,7 +461,10 @@ void TGuiManager::toggleGui()
 {
     if(mMainWindow->isVisible())
     {
-        hide();
+        if(!isMainwindowSunken())
+            hide();
+        else
+            mMainWindow->activateWindow();
     } else {
         show();
     }
@@ -470,7 +473,7 @@ void TGuiManager::toggleGui()
 void TGuiManager::restoreGui()
 {
     if(!mMainWindow->isVisible())
-        show();
+        open();
     else
         mMainWindow->activateWindow();
 }
@@ -565,6 +568,14 @@ void TGuiManager::show()
     //    mBrowserWindow->showNormal();
 
     mMainWindow->showNormal();
+    mMainWindow->activateWindow();
+}
+
+bool TGuiManager::isMainwindowSunken()
+{
+    QRect rt = mMainWindow->geometry();
+    TMainWindow *mainWindow = qobject_cast<TMainWindow*>(qApp->widgetAt(rt.left()+1, rt.top()+1));
+    return mainWindow==NULL;
 }
 
 void TGuiManager::moveWindow(TAbstractWindow *window, int left, int top)

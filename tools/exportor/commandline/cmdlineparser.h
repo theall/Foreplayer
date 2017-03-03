@@ -3,8 +3,8 @@
 
 #include <QCommandLineOption>
 #include <QCommandLineParser>
-
-#define tr(x) QCoreApplication::translate("main", x)
+#include <QSharedMemory>
+#include "utils.h"
 
 class TCmdlineParser : public QCommandLineParser
 {
@@ -12,7 +12,7 @@ public:
     TCmdlineParser(QStringList arguments);
     ~TCmdlineParser();
 
-    bool exportSingle();
+    static TExportParam *getExportParam();
 
     QString indexName() { return mIndexName; }
     QString sourceFile() { return mSourceFile; }
@@ -22,7 +22,7 @@ public:
     int duration() { return mDuration; }
     bool overWrite() { return mOverWrite; }
     bool verbose() { return mVerbose; }
-    bool runningAsDaemon() { return mAsDaemon; }
+    bool runAsDaemon() { return mAsDaemon; }
     bool isError() { return mIsError; }
     bool isListMode() { return mListMode; }
     bool needHelp() { return mNeedHelp; }
@@ -41,7 +41,8 @@ private:
     bool mNeedHelp;
     bool mListMode;
     QStringList mArguments;
-
+    static QSharedMemory *mSharedMemory;
+    static TExportParam *mExportParam;
     void initialize();
 };
 

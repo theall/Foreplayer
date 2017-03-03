@@ -7,12 +7,16 @@ class TTrackItem
 {
 public:
     QString displayName;
+    QString originalName;
     QString index;
     QString indexName;
     QString additionalInfo;
     QString fileName;
-    QString *musicFilePath;
+    QString system;
+    QString artist;
+    QString year;
     int duration;
+    int originalDuration;
     bool enable;
     bool hidden;
     TTrackItem();
@@ -21,6 +25,8 @@ public:
 
     QJsonObject toJson();
     void fromJson(QJsonObject object);
+
+    static QString mimeType() { return "forplayer/trackitem"; }
 };
 typedef QList<TTrackItem*> TTrackItems;
 

@@ -21,7 +21,7 @@ signals:
     void onActionRenameTriggered();
     void onActionExplorerTriggered();
     void onActionExportTriggered();
-    void onActionDetailTriggered();
+    void onActionViewTriggered();
     void onActionCopyToUsbTriggered();
 
 private:

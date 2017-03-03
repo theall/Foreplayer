@@ -151,10 +151,10 @@ EXPORT void closeTrack()
 }
 
 // Request next samples
-EXPORT void nextSamples(int size, short* samples)
+EXPORT void nextSamples(int bufSize, byte* buffer)
 {
     if(g_handle && BASS_ChannelIsActive(g_handle))
-        BASS_ChannelGetData(g_handle, samples, size*sizeof(short)*2);
+        BASS_ChannelGetData(g_handle, buffer, (DWORD)bufSize);
 }
 
 // Retrieve plugin information

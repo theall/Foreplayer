@@ -47,6 +47,7 @@ void TLoopBuffer::reset()
     mDataEnd = mBuf;
     mDataSize = 0;
     mPos = 0;
+    memset(mBuf, 0, mBufSize);
 }
 
 void TLoopBuffer::update()

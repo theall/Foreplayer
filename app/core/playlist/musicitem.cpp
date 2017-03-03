@@ -3,8 +3,7 @@
 #include "playlistdef.h"
 
 TMusicItem::TMusicItem() :
-    plugin(NULL)
-    , mDuration(0)
+    mDuration(0)
     , mFileSize(0)
     , mModified(false)
 {
@@ -13,7 +12,6 @@ TMusicItem::TMusicItem() :
 
 TMusicItem::~TMusicItem()
 {
-    plugin = NULL;
     clear();
 }
 
@@ -50,9 +48,24 @@ void TMusicItem::fromJson(QJsonObject object)
         QJsonObject trackObject = trackValue.toObject();
         TTrackItem *trackItem = new TTrackItem;
         trackItem->fromJson(trackObject);\
-        trackItem->musicFilePath = &mFileName;
         mTrackItems.append(trackItem);
     }
+}
+
+void TMusicItem::fromTrackItem(TTrackItem *trackItem)
+{
+    if(!trackItem)
+        return;
+
+    mDisplayName = trackItem->displayName;
+    mOriginalName = trackItem->originalName;
+    mFileName = trackItem->fileName;
+    mSystem = trackItem->system;
+    mArtist = trackItem->artist;
+    mYear = trackItem->year;
+    mAdditionalInfo = trackItem->additionalInfo;
+    mDuration = trackItem->duration;
+    mModified = true;
 }
 
 void TMusicItem::sort(SortMode mode)
@@ -115,6 +128,16 @@ void TMusicItem::setDisplayName(QString displayName)
     }
 }
 
+QString TMusicItem::originalName()
+{
+    return mOriginalName;
+}
+
+void TMusicItem::setOriginalName(QString name)
+{
+    mOriginalName = name;
+}
+
 QString TMusicItem::fileName()
 {
     return mFileName;
@@ -127,6 +150,48 @@ void TMusicItem::setFileName(QString fileName)
         mFileName = fileName;
         mModified = true;
     }
+}
+
+QString TMusicItem::system()
+{
+     return mSystem;
+}
+
+void TMusicItem::setSystem(QString system)
+{
+     if(mSystem == system)
+          return;
+
+     mSystem = system;
+     mModified = true;
+}
+
+QString TMusicItem::artist()
+{
+     return mArtist;
+}
+
+void TMusicItem::setArtist(QString artist)
+{
+     if(mArtist == artist)
+          return;
+
+     mArtist = artist;
+     mModified = true;
+}
+
+QString TMusicItem::year()
+{
+     return mYear;
+}
+
+void TMusicItem::setYear(QString year)
+{
+     if(mYear == year)
+          return;
+
+     mYear = year;
+     mModified = true;
 }
 
 QString TMusicItem::additionalInfo()
@@ -198,9 +263,22 @@ TTrackItem *TMusicItem::trackItem(int index)
     return mTrackItems.at(index);
 }
 
-void TMusicItem::setModified()
+void TMusicItem::addTrackItem(TTrackItem *trackItem, int pos)
 {
-    mModified = true;
+    if(pos == -1)
+        mTrackItems.append(trackItem);
+    else
+        mTrackItems.insert(pos, trackItem);
+}
+
+bool TMusicItem::isModified()
+{
+    return mModified;
+}
+
+void TMusicItem::setModified(bool modified)
+{
+    mModified = modified;
 }
 
 int TMusicItem::size()

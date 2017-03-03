@@ -1,5 +1,25 @@
 #include "tracklistmodel.h"
 
+int strToMSecs(QString s)
+{
+    QStringList sl = s.split(":");
+    int length = sl.size();
+    int hour = 0;
+    int minute = 0;
+    int sec = 0;
+    if(length > 0)
+    {
+        sec = sl[length-1].toInt();
+        if(length > 1)
+        {
+            minute = sl[length-2].toInt();
+            if(length > 2)
+                hour = sl[length-3].toInt();
+        }
+    }
+    return (hour*3600+minute*60+sec)*1000;
+}
+
 TTrackListModel::TTrackListModel(QObject *parent) :
     TAbstractModel(parent)
   , mMusicItem(NULL)
@@ -50,7 +70,7 @@ int TTrackListModel::columnCount(const QModelIndex &parent) const
 
 QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 {
-    if(role==Qt::DisplayRole)
+    if(role==Qt::DisplayRole || role==Qt::EditRole)
     {
         int column = index.column();
         int row = index.row();
@@ -100,7 +120,7 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 
 bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
-    if(role==Qt::EditRole && index.column()==2)// The third column is title
+    if(role==Qt::EditRole)// The third column is title
     {
         int col = index.column();
         int row = index.row();
@@ -120,7 +140,7 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
                     }
                 } else if (col==3) {
                     // Duration
-                    int newDuration = value.toInt();
+                    int newDuration = strToMSecs(value.toString());
                     if(newDuration != trackItem->duration)
                     {
                         int diff = newDuration - trackItem->duration;
@@ -132,6 +152,15 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
         }
     }
     return TAbstractModel::setData(index, value, role);
+}
+
+Qt::ItemFlags TTrackListModel::flags(const QModelIndex &index) const
+{
+    Qt::ItemFlags _flags = TAbstractModel::flags(index);
+    if(index.column()>1)// Title and length columns are editable
+        _flags |= Qt::ItemIsEditable;
+
+    return _flags;
 }
 
 void TTrackListModel::setCurrentIndex(int index)

@@ -140,10 +140,10 @@ EXPORT void closeTrack()
 }
 
 // Request next samples
-EXPORT void nextSamples(int size, short* samples)
+EXPORT void nextSamples(int bufSize, byte* buffer)
 {
     if(g_gmePlay)
-        g_gmePlay->fillBuffer(samples, size*sizeof(short));
+        g_gmePlay->fillBuffer((short*)buffer, bufSize/2);
 }
 
 // Seek time

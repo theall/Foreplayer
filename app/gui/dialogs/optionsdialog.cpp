@@ -6,9 +6,17 @@ TOptionsDialog::TOptionsDialog(QWidget *parent) :
     ui(new Ui::TOptionsDialog)
 {
     ui->setupUi(this);
+
+    retranslateUi();
 }
 
 TOptionsDialog::~TOptionsDialog()
 {
     delete ui;
+}
+
+void TOptionsDialog::retranslateUi()
+{
+    ui->retranslateUi(this);
+
 }

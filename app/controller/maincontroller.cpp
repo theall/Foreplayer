@@ -41,7 +41,7 @@ void TMainController::joint(TGuiManager *manager, TCore *core)
         mPlaylistController->joint(manager, core);
         mEqualizerController->joint(manager, core);
 
-        manager->showGui();
+        manager->open();
     } else {
 
     }

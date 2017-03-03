@@ -11,7 +11,6 @@ TAbstractMenu::~TAbstractMenu()
 
 }
 
-
 bool TAbstractMenu::event(QEvent *event)
 {
     if(event->type()==QEvent::LanguageChange)

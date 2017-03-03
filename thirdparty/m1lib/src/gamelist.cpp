@@ -651,7 +651,7 @@ int gamelist_load()
 //    else
 //        return loadFromBin(currentDllPath);
 #if M1_DEBUG
-    printf("Gamelist parse time: %ldms", (clock()-timeStart));
+    printf("Gamelist parse time: %ldms\n", (clock()-timeStart));
 #endif
     return n;
 }

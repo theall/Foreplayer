@@ -8,6 +8,7 @@ class TMusiclistView : public TAbstractTableView
 public:
     TMusiclistView(QWidget *parent = 0);
 
+    void editCurrentName();
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
 
 private:

@@ -170,39 +170,46 @@ TTrackItem *TPlaylistCore::currentTrackItem()
 
 TMusicItem *TPlaylistCore::parse(QString file)
 {
-    TMusicItem *item = new TMusicItem;
+    TMusicItem *musicItem = new TMusicItem;
     TMusicInfo *musicInfo = new TMusicInfo;
     QFileInfo fi(file);
     QString fileBaseName = fi.baseName();
     musicInfo->musicName = fileBaseName.toStdString();
-    item->setDisplayName(fileBaseName);
-    item->setFileName(file);
+    musicItem->setOriginalName(fileBaseName);
+    musicItem->setDisplayName(fileBaseName);
+    musicItem->setFileName(file);
     TBackendPlugin *plugin = mBackendPluginManager->parse(file, musicInfo);
     if(plugin)
     {
         // If this file is successful parsed, bind it to music item.
-        item->plugin = (void*)plugin;
-        item->setDisplayName(musicInfo->musicName.c_str());
-        item->setAdditionalInfo(musicInfo->additionalInfo.c_str());
-        item->setDuration(musicInfo->duration);
-        TTrackItems *items = item->trackItems();
+        musicItem->setDisplayName(musicInfo->musicName.c_str());
+        musicItem->setOriginalName(musicItem->displayName());
+        musicItem->setArtist(musicInfo->artist.c_str());
+        musicItem->setYear(QString::number(musicInfo->year));
+        musicItem->setSystem(musicInfo->system.c_str());
+        musicItem->setAdditionalInfo(musicInfo->additionalInfo.c_str());
+        musicItem->setDuration(musicInfo->duration);
         foreach (TTrackInfo *track, musicInfo->trackList) {
             TTrackItem *trackItem = new TTrackItem;
             trackItem->fileName = file;
             trackItem->displayName = track->trackName.c_str();
+            trackItem->originalName = trackItem->displayName;
+            trackItem->artist = track->artist.c_str();
+            trackItem->year = QString::number(track->year);
+            trackItem->system = track->system.c_str();
             trackItem->additionalInfo = track->additionalInfo.c_str();
             trackItem->duration = track->duration;
+            trackItem->originalDuration = trackItem->duration;
             trackItem->index = QString::number(track->index);
             trackItem->indexName = track->indexName.c_str();
-            trackItem->musicFilePath = &trackItem->fileName;
             if(trackItem->index.isEmpty())
                 trackItem->index = QString::number(track->index);
-            items->append(trackItem);
+            musicItem->addTrackItem(trackItem);
             delete track;
         }
     }
     delete musicInfo;
-    return item;
+    return musicItem;
 }
 
 TPlaylistItem *TPlaylistCore::playlistItem(int plIndex)

@@ -6,13 +6,17 @@
 #include "model/playlistmodel.h"
 #include "model/musiclistmodel.h"
 #include "model/tracklistmodel.h"
+#include "model/missionsmodel.h"
 
+#include <QMutex>
+#include <QSharedMemory>
 class TPlaylistController : public TAbstractController
 {
     Q_OBJECT
 
 public:
     explicit TPlaylistController(QObject *parent = 0);
+    ~TPlaylistController();
 
     void joint(TGuiManager *manager, TCore *core) Q_DECL_OVERRIDE;
 
@@ -36,7 +40,6 @@ private slots:
     //// Play list
     void slotRequestAddNewPlaylist();
     void slotRequestRemovePlaylist();
-    void slotRequestRenamePlaylist();
     void slotRequestSortPlaylists();
     void slotRequestSendTo();
 
@@ -54,22 +57,34 @@ private slots:
     void slotRequestCutMusicItem(QSet<int> rows);
     void slotRequestPasteMusicItem(int pos);
     void slotRequestDeleteMusicItem(QSet<int> rows);
-    void slotRequestRenameMusicItem(int row);
     void slotRequestExplorerMusicItem(int row);
     void slotRequestExportMusicItem(int row);
-    void slotRequestDetailMusicItem(int row);
+    void slotRequestViewMusicItem(int row);
+
+    // Track item
+    void slotRequestPlayTrackItem(int row);
+    void slotRequestCopyTrackItem(QSet<int> rows);
+    void slotRequestExportTrackItem(int row);
+    void slotRequestViewTrackItem(int row);
 
     //// From controller
     void slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti);
     void slotRequestCurrentIndex(int *pIndex, int *mIndex, int *tIndex);
 
+    // Misc
+    void slotAddExportMission();
+    void slotRequestNextMusicProperty();
+    void slotRequestPreviousMusicProperty();
+
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;
 
 private:
+    TExportMissions mExportMissions;
     TPlaylistModel *mPlaylistModel;
     TMusiclistModel *mMusiclistModel;
     TTrackListModel *mTracklistModel;
+    TMissionsModel *mMissionsModel;
 
     TPlaylistWindow *mPlaylistWindow;
     TPlaylistWidget *mPlaylistWidget;
@@ -77,6 +92,15 @@ private:
     TMusiclistView *mMusiclistView;
     TTracklistView *mTracklistView;
     TPlaylistCore *mPlaylistCore;
+
+    TExportDialog *mExportDialog;
+    TExportMissionsDialog *mExportMissionDialog;
+    TPropertyDialog *mPropertyDialog;
+
+    int mCurrentViewRow;
+    bool mCurrentViewMusic;
+    QMutex mExportMissionsLock;
+    void fillPropertyDialog();
 };
 
 #endif // TPLAYLISTCONTROLLER_H

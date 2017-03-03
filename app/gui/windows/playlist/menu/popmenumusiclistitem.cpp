@@ -24,7 +24,7 @@ TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     connect(mActionRename, SIGNAL(triggered()), this, SIGNAL(onActionRenameTriggered()));
     connect(mActionExplorer, SIGNAL(triggered()), this, SIGNAL(onActionExplorerTriggered()));
     connect(mActionExport, SIGNAL(triggered()), this, SIGNAL(onActionExportTriggered()));
-    connect(mActionDetail, SIGNAL(triggered()), this, SIGNAL(onActionDetailTriggered()));
+    connect(mActionDetail, SIGNAL(triggered()), this, SIGNAL(onActionViewTriggered()));
     connect(mActionCopyToUsb, SIGNAL(triggered()), this, SIGNAL(onActionCopyToUsbTriggered()));
 
     addAction(mActionReparse);

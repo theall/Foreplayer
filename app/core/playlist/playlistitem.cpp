@@ -226,7 +226,11 @@ void TPlaylistItem::setFileName(QString fileName)
 
 void TPlaylistItem::save()
 {
-    if(mModified)
+    bool modified = mModified;
+    foreach (TMusicItem *item, mMusicItems) {
+        modified |= item->isModified();
+    }
+    if(modified)
     {
         QFile file(mFileName);
 
@@ -241,6 +245,9 @@ void TPlaylistItem::save()
         //Close the file.
         file.close();
 
+        foreach (TMusicItem *item, mMusicItems) {
+            item->setModified(false);
+        }
         mModified = false;
     }
 }

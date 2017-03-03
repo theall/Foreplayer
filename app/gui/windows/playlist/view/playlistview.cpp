@@ -6,7 +6,7 @@ TPlaylistView::TPlaylistView(QWidget *parent) :
     setEditTriggers(QAbstractItemView::SelectedClicked);
 }
 
-void TPlaylistView::editCurrent()
+void TPlaylistView::editCurrentName()
 {
     edit(currentIndex());
 }

@@ -17,6 +17,10 @@ public:
 
 private:
     Ui::TOptionsDialog *ui;
+
+    // TAbstractDialog interface
+public:
+    void retranslateUi() Q_DECL_OVERRIDE;
 };
 
 #endif // OPTIONSDIALOG_H
