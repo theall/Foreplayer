@@ -157,8 +157,7 @@ void TPlaylistController::slotAddExportMission()
     if(!mExportDialog || !mExportMissionDialog)
         return;
 
-    QString indexName = mExportDialog->getIndexName();
-    QStringList indexList = indexName.split("\r\n");
+    QStringList indexList = mExportDialog->getIndexInfo();
     TExportMissions newMissions;
     foreach (QString index, indexList) {
         QString strId = QUuid::createUuid().toString();
@@ -170,13 +169,14 @@ void TPlaylistController::slotAddExportMission()
         cpy2wchar(exportParam.fileName, mExportDialog->getMusicFileName());
         cpy2wchar(exportParam.indexName, index);
         cpy2wchar(exportParam.outputPath, mExportDialog->getOutputDir());
+        strcpy(exportParam.format, mExportDialog->getFormat().toLocal8Bit().constData());
         exportParam.overwrite = true;
         exportParam.state = ES_READY;
         memcpy(sharedMemory->data(), &exportParam, sizeof(TExportParam));
         newMissions.append(sharedMemory);
     }
     mExportMissionsLock.lock();
-    mExportMissions += newMissions;
+    mMissionsModel->addMissions(newMissions);
     mExportMissionsLock.unlock();
 
     if(mExportMissions.size() > 0)
@@ -557,7 +557,7 @@ void TPlaylistController::slotRequestExportMusicItem(int row)
         }
         mExportDialog->setMusicFile(musicItem->fileName());
         mExportDialog->setMaxDuration(0);
-        mExportDialog->setIndexInfo(indexList.join("\n"));
+        mExportDialog->setIndexInfo(indexList);
         if(mExportDialog->getOutputDir().isEmpty())
             mExportDialog->setOutputPath(QFileInfo(musicItem->fileName()).absolutePath());
         mExportDialog->exec();
@@ -679,11 +679,16 @@ void TPlaylistController::slotTimerEvent()
         int newSpawn = 3-runningCount;
         if(newSpawn > 0)
         {
+            QString commandLine = "exportor ";
+#ifndef QT_DEBUG
+            commandLine.prepend("noconsole ");
+#endif
             foreach (QSharedMemory *m, mExportMissions) {
                 TExportParam *exportParam = (TExportParam*)m->data();
                 if(exportParam->state == ES_READY)
                 {
-                    QProcess::startDetached("exportor "+m->key());
+                    QProcess::startDetached(commandLine+m->key());
+                    qDebug() << commandLine+m->key();
                     exportParam->state = ES_RUN;
                     newSpawn--;
                     if(newSpawn <= 0)

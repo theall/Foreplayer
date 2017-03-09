@@ -78,7 +78,7 @@ int TApp::start()
 
 bool TApp::isRunning()
 {
-#ifdef QT_DEBUG
+#ifndef QT_DEBUG
     static QSharedMemory data(GLOBAL_SHARE_MEMORY_KEY);
     if(!data.create(1))
     {

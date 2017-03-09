@@ -87,3 +87,34 @@ int TAbstractExport::writeString(const char *pStr)
     return 0;
 }
 
+void TAbstractExport::setTitle(std::string title)
+{
+    mTitle = title;
+}
+
+void TAbstractExport::setArtist(std::string artist)
+{
+    mArtist = artist;
+}
+
+void TAbstractExport::setAlbum(std::string album)
+{
+    mAlbum = album;
+}
+
+void TAbstractExport::setYear(std::string year)
+{
+    mYear = year;
+}
+
+void TAbstractExport::setYear(int year)
+{
+    char buf[10];
+    *buf = 0;
+    mYear = itoa(year, buf, 10);
+}
+
+void TAbstractExport::setComment(std::string comment)
+{
+    mComment = comment;
+}

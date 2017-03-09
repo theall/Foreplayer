@@ -28,5 +28,6 @@ HEADERS += \
     export/pcmexport.h
 
 CONFIG(debug, debug|release){
+    CONFIG += console
     DESTDIR = z:/build/foreplayer/debug/debug
 }

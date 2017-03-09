@@ -17,12 +17,13 @@ public:
 
     void setMusicFile(QString fileName);
     void setIndexInfo(QString indexName);
+    void setIndexInfo(QStringList indexList);
     void setMaxDuration(int microSeconds);
     void setOutputPath(QString fileName);
 
     QString getMusicFileName();
     QString getOutputDir();
-    QString getIndexName();
+    QStringList getIndexInfo();
     QString getFormat();
     int getMaxDuration();
     bool overWrite();
@@ -38,6 +39,8 @@ private slots:
 
 private:
     Ui::TExportDialog *ui;
+
+    QStringList mIndexList;
 
     // TAbstractDialog interface
 public:

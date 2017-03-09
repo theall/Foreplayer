@@ -15,13 +15,10 @@ enum ColumnIndex
 };
 
 TMissionsModel::TMissionsModel(QObject *parent, TExportMissions *exportMissions) :
-    QStandardItemModel(parent)
+    QAbstractTableModel(parent)
   , mExportMissions(exportMissions)
 {
-    QStringList labels;
-    labels << tr(LABEL_TITLE) << tr(LABEL_PROGRESS) << tr(LABEL_SOURCE) << tr(LABEL_DESTINATION);
-    setColumnCount(labels.size());
-    setHorizontalHeaderLabels(labels);
+
 }
 
 TMissionsModel::~TMissionsModel()
@@ -34,13 +31,34 @@ void TMissionsModel::update()
     emit layoutChanged();
 }
 
+void TMissionsModel::addMission(QSharedMemory *mission)
+{
+    if(!mExportMissions)
+        return;
+
+    int index = mExportMissions->size();
+    beginInsertRows(QModelIndex(), index, index);
+    mExportMissions->append(mission);
+    endInsertRows();
+}
+
+void TMissionsModel::addMissions(TExportMissions missions)
+{
+    if(!mExportMissions)
+        return;
+
+    foreach (QSharedMemory *mission, missions) {
+        addMission(mission);
+    }
+}
+
 QVariant TMissionsModel::data(const QModelIndex &index, int role) const
 {
     if(role==Qt::DisplayRole && mExportMissions)
     {
         int row = index.row();
         int col = index.column();
-        if(row>=0 && row<mExportMissions->size()-1)
+        if(row>=0 && row<mExportMissions->size())
         {
             TExportParam *param = (TExportParam*)mExportMissions->at(row)->data();
             switch (col) {
@@ -48,6 +66,8 @@ QVariant TMissionsModel::data(const QModelIndex &index, int role) const
                 return QString::fromWCharArray(param->fileName);
                 break;
             case CI_PROGRESS:
+                if(param->progressTotalFrames==0)
+                    return 0;
                 return (float)param->progressCurrentFrames/param->progressTotalFrames;
                 break;
             case CI_SOURCE:
@@ -64,6 +84,11 @@ QVariant TMissionsModel::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
+bool TMissionsModel::setData(const QModelIndex &index, const QVariant &value, int role)
+{
+    return false;
+}
+
 int TMissionsModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
@@ -78,4 +103,30 @@ int TMissionsModel::columnCount(const QModelIndex &parent) const
     Q_UNUSED(parent);
 
     return CI_COUNT;
+}
+
+QVariant TMissionsModel::headerData(int section, Qt::Orientation orientation, int role) const
+{
+    Q_UNUSED(orientation);
+
+    if(role==Qt::DisplayRole)
+    {
+        switch (section) {
+        case 0:
+            return LABEL_TITLE;
+            break;
+        case 1:
+            return LABEL_PROGRESS;
+            break;
+        case 2:
+            return LABEL_SOURCE;
+            break;
+        case 3:
+            return LABEL_DESTINATION;
+            break;
+        default:
+            break;
+        }
+    }
+    return QAbstractTableModel::headerData(section, orientation, role);
 }

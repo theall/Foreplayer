@@ -86,17 +86,17 @@
        <widget class="QComboBox" name="cmbFormat">
         <item>
          <property name="text">
-          <string>Wave</string>
+          <string>wav</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Mp3</string>
+          <string>mp3</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>PCM</string>
+          <string>pcm</string>
          </property>
         </item>
        </widget>

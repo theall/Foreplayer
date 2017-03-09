@@ -55,6 +55,14 @@ bool exportTrack(
         printf(trp("Failed to create exporter of %s\n"), qPrintable(outputFile));
         return false;
     }
+    if(TMP3Export *mp3Exportor=reinterpret_cast<TMP3Export*>(exportor))
+    {
+        mp3Exportor->setTitle(trackInfo->trackName);
+        mp3Exportor->setArtist(trackInfo->artist);
+        mp3Exportor->setAlbum(trackInfo->game);
+        mp3Exportor->setYear(trackInfo->year);
+        mp3Exportor->setComment(trackInfo->additionalInfo);
+    }
     int samples = plugin->getSampleSize(trackInfo->sampleRate, SOUND_FPS);
     if(samples < 2)
         samples = 4096;
@@ -62,7 +70,7 @@ bool exportTrack(
     int bufSize = samples*4;
     byte *buf = (byte*)malloc(bufSize);
     int silentFrames = 0;
-    float framesPerSec = trackInfo->sampleRate*4/bufSize;
+    float framesPerSec = trackInfo->sampleRate/samples;
 
     int realDuration = trackInfo->duration;
     if(realDuration < 1)
@@ -130,6 +138,7 @@ int main(int argc, char *argv[])
     int duration = parser.duration();
     bool overWriteFile = parser.overWrite();
     bool bVerbose = parser.verbose();
+    bool isListMode = parser.isListMode();
 
     TExportParam *exportParam = NULL;
     if(parser.runAsDaemon())
@@ -203,41 +212,49 @@ int main(int argc, char *argv[])
     for(int i=0;i<trackListSize;i++)
     {
         TTrackInfo *trackInfo = trackList[i];
-        trackInfo->musicFileName = sourceFile.toStdString();
-        trackInfo->sampleRate = sampleRate;
-        if(trackInfo->duration <= 0)
-            trackInfo->duration = duration;
-        QString destFileFullName;
-        if((trackListSize>1 && indexName.isEmpty()) || destIsDir)
-        {
-            // While exporting muliple tracks, auto set dest name to track name
-            QString baseName = QFileInfo(QString::fromStdString(trackInfo->trackName)).baseName()+".wav";
-            destFileFullName = destDir.absoluteFilePath(baseName);
+        if(isListMode) {
+            printf("%s\t%s\n", trackInfo->indexName.c_str(), trackInfo->trackName.c_str());
         } else {
-            destFileFullName = destFilePath;
+            trackInfo->musicFileName = sourceFile.toStdString();
+            trackInfo->sampleRate = sampleRate;
+            if(trackInfo->duration <= 0)
+                trackInfo->duration = duration;
+            QString destFileFullName;
+            if((trackListSize>1 && indexName.isEmpty()) || destIsDir)
+            {
+                // While exporting muliple tracks, auto set dest name to track name
+                QString baseName = QFileInfo(QString::fromStdString(trackInfo->trackName)).baseName()+"."+format;
+                destFileFullName = destDir.absoluteFilePath(baseName);
+            } else {
+                destFileFullName = destFilePath;
+            }
+
+            if(QFileInfo(destFileFullName).exists() && !overWriteFile)
+            {
+                if(bVerbose)
+                    printf(trp("Warning, destination file exists, %s\n"), qPrintable(destFileFullName));
+
+                nSkip++;
+                continue;
+            }
+            if(exportTrack(plugin, trackInfo, destFileFullName, format, exportParam))
+            {
+                nSuccess++;
+                printf(trp("Export to %s\n"), qPrintable(destFileFullName));
+            } else {
+                nFail++;
+            }
         }
 
-        if(QFileInfo(destFileFullName).exists() && !overWriteFile)
-        {
-            if(bVerbose)
-                printf(trp("Warning, destination file exists, %s\n"), qPrintable(destFileFullName));
-
-            nSkip++;
-            continue;
-        }
-        if(exportTrack(plugin, trackInfo, destFileFullName, format, exportParam))
-        {
-            nSuccess++;
-            printf(trp("Export to %s\n"), qPrintable(destFileFullName));
-        } else {
-            nFail++;
-        }
     }
-    if(trackListSize <= 0)
+    if(!isListMode)
     {
-        printf(trp("No tracks exported.\n"));
-    } else if(trackListSize > 1) {
-        printf(trp("Success: %d, Failed: %d, Skipped: %d.\n"), nSuccess, nFail, nSkip);
+        if(trackListSize <= 0)
+        {
+            printf(trp("No tracks exported.\n"));
+        } else if(trackListSize > 1) {
+            printf(trp("Success: %d, Failed: %d, Skipped: %d.\n"), nSuccess, nFail, nSkip);
+        }
     }
 
     a.quit();

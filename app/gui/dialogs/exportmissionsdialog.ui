@@ -74,7 +74,11 @@
     </layout>
    </item>
    <item>
-    <widget class="QTreeView" name="tvMissions"/>
+    <widget class="QTableView" name="tvMissions">
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+    </widget>
    </item>
   </layout>
  </widget>

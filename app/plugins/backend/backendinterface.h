@@ -71,7 +71,7 @@ struct TTrackInfo
         duration = 0;
         channels = 2;
         sampleRate = 44100;
-        trackName = "unknown";
+        trackName = "";
     }
 };
 

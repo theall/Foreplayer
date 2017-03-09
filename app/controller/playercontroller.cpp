@@ -203,7 +203,7 @@ void TPlayerController::updateWindowTitles()
         mMainWindow->setTitles(titles);
         mMainWindow->setPlayState(tr("Playing"));
         mMainWindow->setButtonPlayChecked(false);
-        startTimer();
+        startTimer(40);
     } else {
         stopTimer();
         mMainWindow->setTitles(QStringList()<<tr("Play failed."));

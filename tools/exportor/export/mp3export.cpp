@@ -5,15 +5,13 @@
 TMP3Export::TMP3Export(const wchar_t *fileName, int sampleRate) :
     TAbstractExport(fileName)
   , mLame(NULL)
-  , mVbr(vbr_off)
+  , mVbr(vbr_default)
   , mBrate(2)
   , mQuality(0)
   , mChannels(2)
   , mSampleRate(sampleRate)
 {
-    *mTitle = 0;
-    *mArtist = 0;
-    *mAlbum = 0;
+
 }
 
 TMP3Export::~TMP3Export()
@@ -41,21 +39,6 @@ void TMP3Export::setBrate(int brate)
     mBrate = brate;
 }
 
-void TMP3Export::setTitle(const char *title)
-{
-    strcpy(mTitle, title);
-}
-
-void TMP3Export::setArtist(const char *artist)
-{
-    strcpy(mArtist, artist);
-}
-
-void TMP3Export::setAlbum(const char *album)
-{
-    strcpy(mAlbum, album);
-}
-
 void TMP3Export::start()
 {
     if(!mLame)
@@ -63,11 +46,11 @@ void TMP3Export::start()
         mLame = lame_init();
         lame_set_num_channels(mLame, mChannels);
         lame_set_in_samplerate(mLame, mSampleRate);
-        lame_set_quality(mLame, mQuality);
-        lame_set_brate(mLame, mBrate);
-        id3tag_set_title(mLame, mTitle);
-        id3tag_set_artist(mLame, mArtist);
-        id3tag_set_album(mLame, mAlbum);
+        id3tag_set_title(mLame, mTitle.c_str());
+        id3tag_set_artist(mLame, mArtist.c_str());
+        id3tag_set_album(mLame, mAlbum.c_str());
+        id3tag_set_year(mLame, mYear.c_str());
+        id3tag_set_comment(mLame, mComment.c_str());
         lame_init_params(mLame);
     }
 }

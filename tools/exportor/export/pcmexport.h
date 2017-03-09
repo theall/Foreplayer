@@ -11,6 +11,13 @@ public:
 
     int write(const byte *buf, int size);
 
+    void setTitle(std::string title);
+    void setArtist(std::string artist);
+    void setAlbum(std::string album);
+    void setYear(std::string year);
+    void setYear(int year);
+    void setComment(std::string comment);
+
 private:
     void start();
     void end();

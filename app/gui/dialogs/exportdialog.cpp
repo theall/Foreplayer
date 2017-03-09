@@ -30,6 +30,18 @@ void TExportDialog::setMusicFile(QString fileName)
 void TExportDialog::setIndexInfo(QString indexName)
 {
     ui->leIndex->setText(indexName);
+
+    mIndexList.clear();
+    mIndexList.append(indexName);
+}
+
+void TExportDialog::setIndexInfo(QStringList indexList)
+{
+    mIndexList = indexList;
+    if(mIndexList.size() > 1)
+    {
+        ui->leIndex->setText(QString("%1 Tracks").arg(mIndexList.size()));
+    }
 }
 
 void TExportDialog::setMaxDuration(int microSeconds)
@@ -58,9 +70,9 @@ QString TExportDialog::getOutputDir()
     return ui->leDir->text();
 }
 
-QString TExportDialog::getIndexName()
+QStringList TExportDialog::getIndexInfo()
 {
-    return ui->leIndex->text();
+    return mIndexList;
 }
 
 QString TExportDialog::getFormat()

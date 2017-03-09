@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <string>
 
 #if 1
 #define Endian16_Swap(x) (x)
@@ -24,11 +25,25 @@ public:
 
     virtual void start() = 0;
     virtual void end() = 0;
+
     virtual int write(const byte *buf, int size) = 0;
+
+    void setTitle(std::string title);
+    void setArtist(std::string artist);
+    void setAlbum(std::string album);
+    void setYear(std::string year);
+    void setYear(int year);
+    void setComment(std::string comment);
 
     bool isOpened();
 
 protected:
+    std::string mTitle;
+    std::string mArtist;
+    std::string mAlbum;
+    std::string mYear;
+    std::string mComment;
+
     void open();
     void close();
     int seek(long offset, int orgin);

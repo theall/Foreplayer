@@ -4,7 +4,7 @@
 #define SAMPLE_WIDTH                3.0
 #define SAMPLE_SPACE                1
 #define SAMPLE_TOP_BLOCK_HEIGHT     1
-#define SAMPLE_TOP_BLOCK_PAUSE_TIME 5
+#define SAMPLE_TOP_BLOCK_PAUSE_TIME 15
 
 TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
   , mSampleCount(0)

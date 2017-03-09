@@ -73,24 +73,28 @@ EXPORT bool parse(const wchar_t *file, TMusicInfo* musicInfo)
     if(!handle)
         return false;
 
-    TAG_ID3 *id3=(TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3); // get the ID3 tags
+    TAG_ID3 *id3 = (TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3); // get the ID3 tags
     TTrackInfo *trackInfo = new TTrackInfo;
 
-    if(id3)
+    if(!id3)
     {
-        QString title = toStdString(id3->title).c_str();
-        trackInfo->trackName = title.toStdString();
-        trackInfo->additionalInfo = QString::asprintf(
-                        "artist: %s\n"
-                        "album: %s\n"
-                        "year: %s\n"
-                        "comment: %s",
-                        toStdString(id3->artist).c_str(),
-                        toStdString(id3->album).c_str(),
-                        toStdString(id3->year).c_str(),
-                        toStdString(id3->comment).c_str()
-                        ).toStdString();
+        id3 = (TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3);
+        if(id3)
+        {
+            QString title = toStdString(id3->title).c_str();
+            trackInfo->trackName = title.toStdString();
+            trackInfo->additionalInfo = QString::asprintf(
+                            "artist: %s\n"
+                            "album: %s\n"
+                            "year: %s\n"
+                            "comment: %s",
+                            toStdString(id3->artist).c_str(),
+                            toStdString(id3->album).c_str(),
+                            toStdString(id3->year).c_str(),
+                            toStdString(id3->comment).c_str()
+                            ).toStdString();
 
+        }
     }
 
     if(trackInfo->trackName=="")

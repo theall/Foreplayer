@@ -3,7 +3,7 @@
 
 #include "abstractdialog.h"
 
-#include <QStandardItemModel>
+#include <QAbstractTableModel>
 #include <QItemDelegate>
 
 class TExportItemDelegate : public QItemDelegate
@@ -26,7 +26,7 @@ public:
     explicit TExportMissionsDialog(QWidget *parent = 0);
     ~TExportMissionsDialog();
 
-    void setModel(QStandardItemModel *model);
+    void setModel(QAbstractTableModel *model);
 
 signals:
     void requestCloseWindow();

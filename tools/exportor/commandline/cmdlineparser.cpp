@@ -26,7 +26,10 @@ TCmdlineParser::TCmdlineParser(QStringList arguments) :
 
 TCmdlineParser::~TCmdlineParser()
 {
-    mSharedMemory->detach();
+    if(mSharedMemory)
+    {
+        mSharedMemory->detach();
+    }
 }
 
 TExportParam *TCmdlineParser::getExportParam()

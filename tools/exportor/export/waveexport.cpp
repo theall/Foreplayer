@@ -67,3 +67,33 @@ int TWaveExport::write(const byte *buf, int size)
 
     return size;
 }
+
+void TWaveExport::setTitle(std::string title)
+{
+     (void)title;
+}
+
+void TWaveExport::setArtist(std::string artist)
+{
+     (void)artist;
+}
+
+void TWaveExport::setAlbum(std::string album)
+{
+     (void)album;
+}
+
+void TWaveExport::setYear(std::string year)
+{
+     (void)year;
+}
+
+void TWaveExport::setYear(int year)
+{
+     (void)year;
+}
+
+void TWaveExport::setComment(std::string comment)
+{
+     (void)comment;
+}
