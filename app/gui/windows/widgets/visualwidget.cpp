@@ -319,6 +319,8 @@ void TVisualWidget::mousePressEvent(QMouseEvent *event)
     if(mSwitchOnClick && event->button()==Qt::LeftButton)
     {
         mVisualType = (TVisualType)((int)mVisualType+1);
+        if(mVisualType == VT_WAVE_IMPULSE)
+            mVisualType = VT_SPECTRUM_BLOCK;
         if(mVisualType == VisualTypeCount)
             mVisualType = (TVisualType)0;
     }

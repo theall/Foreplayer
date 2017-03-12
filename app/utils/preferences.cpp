@@ -36,6 +36,12 @@
 #define SEC_CORE_MUSIC_INDEX        "CurrentMusic"
 #define SEC_CORE_TRACK_INDEX        "CurrentTrack"
 
+// Options
+#define SEC_OPTIONS                 "Options"
+#define SEC_OPTION_GENERAL          "OptionGeneral"
+#define SEC_OPTION_AUTO_CORRECT     "AutoCorrect"
+#define SEC_OPTION_FORCE_CORRECT    "ForceCorrect"
+
 TPreferences *TPreferences::mInstance = NULL;
 
 //
@@ -63,7 +69,16 @@ TPreferences::TPreferences(QObject *parent):
     mPlayingTrackIndex = intValue(SEC_CORE_TRACK_INDEX, -1);
     mSettings->endGroup();
 
-    // Keeping track of some usage information
+    //// Options
+    mSettings->beginGroup(SEC_OPTIONS);
+        // general
+        mSettings->beginGroup(SEC_OPTION_GENERAL);
+        mAutoCorrectDuration = boolValue(SEC_OPTION_AUTO_CORRECT, true);
+        mForceCorrectDuration = boolValue(SEC_OPTION_FORCE_CORRECT);
+        mSettings->endGroup();
+    mSettings->endGroup();
+
+    //// Keeping track of some usage information
     mSettings->beginGroup(SEC_INSTALL);
 
     // This section wrote by main controller while write trial license
@@ -258,6 +273,26 @@ void TPreferences::setPlayingTrackIndex(int index)
     mSettings->endGroup();
 
     mPlayingTrackIndex = index;
+}
+
+void TPreferences::autoCorrectDuration()
+{
+
+}
+
+void TPreferences::setCorrectDuration(bool autoCorrect)
+{
+
+}
+
+void TPreferences::forceCorrectDuration()
+{
+
+}
+
+void TPreferences::setForceCorrectDuration(bool force)
+{
+
 }
 
 void TPreferences::setValue(QString section, QVariant value)

@@ -38,7 +38,7 @@ void TMissionsModel::addMission(QSharedMemory *mission)
 
     int index = mExportMissions->size();
     beginInsertRows(QModelIndex(), index, index);
-    mExportMissions->append(mission);
+    mExportMissions->prepend(mission);
     endInsertRows();
 }
 

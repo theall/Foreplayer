@@ -74,7 +74,7 @@ bool exportTrack(
 
     int realDuration = trackInfo->duration;
     if(realDuration < 1)
-        realDuration = 0x7fffffff;
+        realDuration = 150000;
 
     int totalFrames = framesPerSec*realDuration/1000 + 0.5;
     TRequestSamples nextframe = plugin->getCallback();

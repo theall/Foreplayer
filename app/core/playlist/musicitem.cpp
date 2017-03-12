@@ -68,41 +68,41 @@ void TMusicItem::fromTrackItem(TTrackItem *trackItem)
     mModified = true;
 }
 
-void TMusicItem::sort(SortMode mode)
+void TMusicItem::sort(SortMethod mode)
 {
-    if(mode==TITLE_ASC)
+    if(mode==SM_TITLE_ASC)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->displayName.toLower() < b->displayName.toLower();
         });
-    else if (mode==TITLE_DES)
+    else if (mode==SM_TITLE_DES)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->displayName.toLower() > b->displayName.toLower();
         });
-    else if (mode==LENGTH_ASC)
+    else if (mode==SM_LENGTH_ASC)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->displayName.count() < b->displayName.count();
         });
-    else if (mode==LENGTH_DES)
+    else if (mode==SM_LENGTH_DES)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->displayName.count() > b->displayName.count();
         });
-    else if (mode==DURATION_ASC)
+    else if (mode==SM_DURATION_ASC)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->duration < b->duration;
         });
-    else if (mode==DURATION_DES)
+    else if (mode==SM_DURATION_DES)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->duration > b->duration;
         });
-    else if (mode==INDEX_ASC)
+    else if (mode==SM_INDEX_ASC)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->index < b->index;
         });
-    else if (mode==INDEX_DES)
+    else if (mode==SM_INDEX_DES)
         std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
             return a->index > b->index;
         });
-    else if (mode==RANDOM)
+    else if (mode==SM_RANDOM)
     {
         int n = mTrackItems.size()-2;
         for(int i=0;i<mTrackItems.size();i++)

@@ -119,6 +119,14 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     connect(mPlaylistWindow, SIGNAL(requestExportMusicItem(int)), this, SLOT(slotRequestExportMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestViewMusicItem(int)), this, SLOT(slotRequestViewMusicItem(int)));
 
+    // Sort music list
+    connect(mPlaylistWindow, SIGNAL(requestSortMusiclistAsName()), this, SLOT(slotRequestSortMusiclistAsName()));
+    connect(mPlaylistWindow, SIGNAL(requestSortMusiclistAsArtist()), this, SLOT(slotRequestSortMusiclistAsArtist()));
+    connect(mPlaylistWindow, SIGNAL(requestSortMusiclistAsAlbum()), this, SLOT(slotRequestSortMusiclistAsAlbum()));
+    connect(mPlaylistWindow, SIGNAL(requestSortMusiclistAsDuration()), this, SLOT(slotRequestSortMusiclistAsDuration()));
+    connect(mPlaylistWindow, SIGNAL(requestSortMusiclistRandom()), this, SLOT(slotRequestSortMusiclistRandom()));
+    connect(mPlaylistWindow, SIGNAL(requestSortMusiclistReverse()), this, SLOT(slotRequestSortMusiclistReverse()));
+
     // Track item
     connect(mPlaylistWindow, SIGNAL(requestPlayTrackItem(int)), this, SLOT(slotRequestPlayTrackItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestCopyTrackItem(QSet<int>)), this, SLOT(slotRequestCopyTrackItem(QSet<int>)));
@@ -343,7 +351,7 @@ void TPlaylistController::slotRequestSortPlaylists()
     if(!mPlaylistModel)
         return;
 
-    mPlaylistModel->sort();
+    mPlaylistModel->sortItems();
 }
 
 void TPlaylistController::slotRequestSendTo()
@@ -574,6 +582,53 @@ void TPlaylistController::slotRequestViewMusicItem(int row)
 
     fillPropertyDialog();
     mPropertyDialog->exec();
+}
+
+void TPlaylistController::slotRequestSortMusiclistAsName()
+{
+    if(!mMusiclistModel)
+        return;
+
+    mMusiclistModel->sortItems(SM_TITLE_ASC);
+}
+
+void TPlaylistController::slotRequestSortMusiclistAsArtist()
+{
+    if(!mMusiclistModel)
+        return;
+
+
+}
+
+void TPlaylistController::slotRequestSortMusiclistAsAlbum()
+{
+    if(!mMusiclistModel)
+        return;
+
+}
+
+void TPlaylistController::slotRequestSortMusiclistAsDuration()
+{
+    if(!mMusiclistModel)
+        return;
+
+    mMusiclistModel->sortItems(SM_DURATION_ASC);
+}
+
+void TPlaylistController::slotRequestSortMusiclistRandom()
+{
+    if(!mMusiclistModel)
+        return;
+
+    mMusiclistModel->sortItems(SM_RANDOM);
+}
+
+void TPlaylistController::slotRequestSortMusiclistReverse()
+{
+    if(!mMusiclistModel)
+        return;
+
+    mMusiclistModel->sortItems(SM_REVERSE);
 }
 
 void TPlaylistController::slotRequestPlayTrackItem(int row)

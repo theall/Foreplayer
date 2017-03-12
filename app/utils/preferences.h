@@ -44,6 +44,12 @@ public:
     int playingTrackIndex();
     void setPlayingTrackIndex(int index);
 
+    void autoCorrectDuration();
+    void setCorrectDuration(bool autoCorrect);
+
+    void forceCorrectDuration();
+    void setForceCorrectDuration(bool force);
+
 signals:
     void languageChanged();
 
@@ -57,6 +63,8 @@ private:
     QString mLanguage;
     QString mLastOpenPath;
     QString mLastOpenDir;
+    bool mAutoCorrectDuration;
+    bool mForceCorrectDuration;
 
     void setValue(QString section, QVariant value);
     QVariant value(QString section, QVariant defValue=QVariant());

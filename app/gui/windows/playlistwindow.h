@@ -51,6 +51,14 @@ signals:
     void requestExportMusicItem(int row);
     void requestViewMusicItem(int row);
 
+    // Sort music list
+    void requestSortMusiclistAsName();
+    void requestSortMusiclistAsArtist();
+    void requestSortMusiclistAsAlbum();
+    void requestSortMusiclistAsDuration();
+    void requestSortMusiclistRandom();
+    void requestSortMusiclistReverse();
+
     // Track item popup menu
     void requestPlayTrackItem(int row);
     void requestCopyTrackItem(QSet<int> rows);

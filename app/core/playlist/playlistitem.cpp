@@ -122,7 +122,7 @@ QList<int> TPlaylistItem::removeErrors()
     for(int i=0;i<mMusicItems.size();i++)
     {
         TMusicItem *musicItem = mMusicItems[i];
-        if(!QFile::exists(musicItem->fileName()) || (musicItem->duration()<=0 &&musicItem->trackItems()->size()<=0))
+        if(!QFile::exists(musicItem->fileName()) || (musicItem->duration()<=0 && musicItem->trackItems()->size()<=0))
             removed.append(i);
     }
 
@@ -151,41 +151,41 @@ void TPlaylistItem::setDisplayName(QString newName)
     }
 }
 
-void TPlaylistItem::sort(SortMode mode)
+void TPlaylistItem::sort(SortMethod mode)
 {
-    if(mode==TITLE_ASC)
+    if(mode==SM_TITLE_ASC)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->displayName().toLower() < b->displayName().toLower();
         });
-    else if (mode==TITLE_DES)
+    else if (mode==SM_TITLE_DES)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->displayName().toLower() > b->displayName().toLower();
         });
-    else if (mode==LENGTH_ASC)
+    else if (mode==SM_LENGTH_ASC)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->displayName().count() < b->displayName().count();
         });
-    else if (mode==LENGTH_DES)
+    else if (mode==SM_LENGTH_DES)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->displayName().count() > b->displayName().count();
         });
-    else if (mode==DURATION_ASC)
+    else if (mode==SM_DURATION_ASC)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->duration() < b->duration();
         });
-    else if (mode==DURATION_DES)
+    else if (mode==SM_DURATION_DES)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->duration() > b->duration();
         });
-    else if (mode==FILE_ASC)
+    else if (mode==SM_FILE_ASC)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->fileName() < b->fileName();
         });
-    else if (mode==FILE_DES)
+    else if (mode==SM_FILE_DES)
         std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
             return a->fileName() > b->fileName();
         });
-    else if (mode==RANDOM)
+    else if (mode==SM_RANDOM)
     {
         int n = mMusicItems.size()-2;
         for(int i=0;i<mMusicItems.size();i++)
@@ -194,6 +194,13 @@ void TPlaylistItem::sort(SortMode mode)
             TMusicItem *item = mMusicItems.takeAt(index);
             mMusicItems.append(item);
         }
+    } else if (mode==SM_REVERSE) {
+        TMusicItems musicItems;
+        for(int i=0;i<mMusicItems.size();i++)
+        {
+            musicItems.prepend(mMusicItems[i]);
+        }
+        mMusicItems = musicItems;
     }
 }
 

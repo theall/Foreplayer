@@ -15,7 +15,7 @@ public:
 
     void remove(int index);
     void rename(int index, QString newName);
-    void sort();
+    void sortItems();
 
 private:
 

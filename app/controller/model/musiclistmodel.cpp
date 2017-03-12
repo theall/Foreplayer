@@ -1,5 +1,10 @@
 #include "musiclistmodel.h"
 
+#define RecordCurrentItem TMusicItem *currentItem = mPlaylistItem->musicItem(mCurrentIndex)
+#define RestoreCurrentItem \
+if(currentItem)\
+    setCurrentIndex(mPlaylistItem->indexOf(currentItem))
+
 TMusiclistModel::TMusiclistModel(QObject *parent) :
     TAbstractModel(parent)
   , mPlaylistItem(NULL)
@@ -127,7 +132,7 @@ void TMusiclistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexes
     TMusicItems items;
 
     // Record current index
-    TMusicItem *currentItem = mPlaylistItem->musicItem(mCurrentIndex);
+    RecordCurrentItem;
 
     beginResetModel();
     foreach (int i, indexes) {
@@ -147,13 +152,10 @@ void TMusiclistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexes
         endInsertRows();
     }
 
-    // Restore current index
-    if(currentItem)
-    {
-        setCurrentIndex(mPlaylistItem->indexOf(currentItem));
-    }
-
     endResetModel();
+
+    // Restore current index
+    RestoreCurrentItem;
 }
 
 void TMusiclistModel::insertFiles(QStringList files, int pos, QList<int> &newIndexes)
@@ -182,7 +184,7 @@ void TMusiclistModel::insertItems(int pos, TMusicItems musicItems, QList<int> &n
         pos = musicsCount;
 
     // Record current item
-    TMusicItem *currentItem = mPlaylistItem->musicItem(mCurrentIndex);
+    RecordCurrentItem;
 
     int i = 0;
     foreach (TMusicItem *musicItem, musicItems) {
@@ -194,13 +196,10 @@ void TMusiclistModel::insertItems(int pos, TMusicItems musicItems, QList<int> &n
             endInsertRows();
         }
     }
-    // Restore current index
-    if(currentItem)
-    {
-        setCurrentIndex(mPlaylistItem->indexOf(currentItem));
-    }
-
     endResetModel();
+
+    // Restore current index
+    RestoreCurrentItem;
 }
 
 void TMusiclistModel::insertItems(int pos, TMusicItems musicItems)
@@ -272,6 +271,20 @@ void TMusiclistModel::removeAll()
 void TMusiclistModel::update()
 {
     emit dataChanged(QModelIndex(), QModelIndex());
+}
+
+void TMusiclistModel::sortItems(SortMethod sm)
+{
+    if(!mPlaylistItem)
+        return;
+
+    RecordCurrentItem;
+
+    beginResetModel();
+    mPlaylistItem->sort(sm);
+    endResetModel();
+
+    RestoreCurrentItem;
 }
 
 TPlaylistItem *TMusiclistModel::playlistItem()

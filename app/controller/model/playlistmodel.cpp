@@ -60,7 +60,7 @@ void TPlaylistModel::rename(int index, QString newName)
         item->setDisplayName(newName);
 }
 
-void TPlaylistModel::sort()
+void TPlaylistModel::sortItems()
 {
     if(!mPlaylistCore)
         return;

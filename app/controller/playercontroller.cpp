@@ -152,19 +152,22 @@ void TPlayerController::slotNextButtonClicked()
     if(TPlaylistItem *playlistItem=mPlaylistCore->playlistItem(pi))
     {
         TMusicItem *musicItem = playlistItem->musicItem(mi);
-        ti++;
-
-        // Default recycle level is in track list
-        if(ti >= musicItem->size())
+        if(musicItem)
         {
-            mi++;
-            if(mi >= playlistItem->size())
+            ti++;
+
+            // Default recycle level is in track list
+            if(ti >= musicItem->size())
             {
-                mi = 0;
+                mi++;
+                if(mi >= playlistItem->size())
+                {
+                    mi = 0;
+                }
+                ti = 0;
             }
-            ti = 0;
+            slotRequestPlay(pi, mi, ti);
         }
-        slotRequestPlay(pi, mi, ti);
     }
 }
 

@@ -20,3 +20,4 @@ void TOptionsDialog::retranslateUi()
     ui->retranslateUi(this);
 
 }
+

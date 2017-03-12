@@ -2,19 +2,20 @@
 #define TMUSICITEM_H
 
 #include "trackitem.h"
-enum SortMode
+enum SortMethod
 {
-    TITLE_ASC,
-    TITLE_DES,
-    LENGTH_ASC,
-    LENGTH_DES,
-    DURATION_ASC,
-    DURATION_DES,
-    INDEX_ASC,
-    INDEX_DES,
-    FILE_ASC,
-    FILE_DES,
-    RANDOM
+    SM_TITLE_ASC,
+    SM_TITLE_DES,
+    SM_LENGTH_ASC,
+    SM_LENGTH_DES,
+    SM_DURATION_ASC,
+    SM_DURATION_DES,
+    SM_INDEX_ASC,
+    SM_INDEX_DES,
+    SM_FILE_ASC,
+    SM_FILE_DES,
+    SM_RANDOM,
+    SM_REVERSE
 };
 
 class TMusicItem
@@ -29,7 +30,7 @@ public:
 
     void fromTrackItem(TTrackItem *trackItem);
 
-    void sort(SortMode mode);
+    void sort(SortMethod mode);
 
     QString displayName();
     void setDisplayName(QString displayName);

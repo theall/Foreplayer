@@ -90,13 +90,13 @@ void TPlaylistCore::rename(int index, QString newName)
     playlistItem->setDisplayName(newName);
 }
 
-void TPlaylistCore::sort(SortMode mode)
+void TPlaylistCore::sort(SortMethod mode)
 {
-    if(mode==TITLE_ASC)
+    if(mode==SM_TITLE_ASC)
         std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
             return a->name().toLower() > b->name().toLower();
         });
-    else if(mode==TITLE_DES)
+    else if(mode==SM_TITLE_DES)
         std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
             return a->name().toLower() < b->name().toLower();
         });

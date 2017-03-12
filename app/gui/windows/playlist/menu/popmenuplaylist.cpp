@@ -9,6 +9,7 @@ TPopMenuPlayList::TPopMenuPlayList(QWidget *parent) :
     mActionSort = addAction(QString(), this, SIGNAL(onActionSortTriggered()));
     mActionSend = addAction(QString(), this, SIGNAL(onActionSendTriggered()));
 
+    mActionSend->setVisible(false);
     retranslateUi();
 }
 

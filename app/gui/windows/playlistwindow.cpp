@@ -76,6 +76,14 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mPopmenuTrackList, SIGNAL(onActionExportTriggered()), this, SLOT(slotExportTrackItemTriggered()));
     connect(mPopmenuTrackList, SIGNAL(onActionViewTriggered()), this, SLOT(slotViewTrackItemTriggered()));
 
+    // Sort music item menu
+    connect(mPopmenuSort, SIGNAL(onActionSortAsNameTriggered()), this, SIGNAL(requestSortMusiclistAsName()));
+    connect(mPopmenuSort, SIGNAL(onActionSortAsArtistTriggered()), this, SIGNAL(requestSortMusiclistAsArtist()));
+    connect(mPopmenuSort, SIGNAL(onActionSortAsAlbumTriggered()), this, SIGNAL(requestSortMusiclistAsAlbum()));
+    connect(mPopmenuSort, SIGNAL(onActionSortAsDurationTriggered()), this, SIGNAL(requestSortMusiclistAsDuration()));
+    connect(mPopmenuSort, SIGNAL(onActionSortRandomTriggered()), this, SIGNAL(requestSortMusiclistRandom()));
+    connect(mPopmenuSort, SIGNAL(onActionSortReverseTriggered()), this, SIGNAL(requestSortMusiclistReverse()));
+
     retranslateUi();
 }
 
@@ -163,6 +171,9 @@ void TPlaylistWindow::slotOnActionAddDirectoryTriggered()
                             this,
                             tr("Choose directory"),
                             prefs->lastOpenDirectory());
+
+    if(path.isEmpty())
+        return;
 
     QDir dir(path);
     if(!dir.isReadable())

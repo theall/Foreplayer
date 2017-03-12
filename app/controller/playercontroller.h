@@ -3,6 +3,8 @@
 
 #include "abstractcontroller.h"
 
+#include <QMutex>
+
 class TPlayerController : public TAbstractController
 {
     Q_OBJECT

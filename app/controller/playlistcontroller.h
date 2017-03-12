@@ -61,6 +61,14 @@ private slots:
     void slotRequestExportMusicItem(int row);
     void slotRequestViewMusicItem(int row);
 
+    // Sort music list
+    void slotRequestSortMusiclistAsName();
+    void slotRequestSortMusiclistAsArtist();
+    void slotRequestSortMusiclistAsAlbum();
+    void slotRequestSortMusiclistAsDuration();
+    void slotRequestSortMusiclistRandom();
+    void slotRequestSortMusiclistReverse();
+
     // Track item
     void slotRequestPlayTrackItem(int row);
     void slotRequestCopyTrackItem(QSet<int> rows);

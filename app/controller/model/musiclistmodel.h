@@ -19,6 +19,8 @@ public:
     void removeAll();
     void update();
 
+    void sortItems(SortMethod sm);
+
     TPlaylistItem *playlistItem();
 
 private:

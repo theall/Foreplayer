@@ -20,7 +20,7 @@ public:
     QList<int> removeRedundant();
     QList<int> removeErrors();
     void rename(int index, QString newName);
-    void sort(SortMode mode = TITLE_ASC);
+    void sort(SortMethod mode = SM_TITLE_ASC);
     int indexOf(TMusicItem *item);
 
     QString name() { return mDisplayName; }

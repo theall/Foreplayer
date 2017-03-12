@@ -6,12 +6,6 @@
 
 typedef QList<int> intn;
 
-enum TPlaylistSortMode
-{
-    SM_NAME,
-    SM_MUSICS
-};
-
 class TPlaylistCore
 {
     Q_DECLARE_TR_FUNCTIONS(TPlaylistCore)
@@ -32,7 +26,7 @@ public:
     void insert(QString name, int index = -1);
     bool remove(int index);
     void rename(int index, QString newName);
-    void sort(SortMode mode = TITLE_ASC);
+    void sort(SortMethod mode = SM_TITLE_ASC);
     int indexOf(TPlaylistItem *item);
 
     int playingPlaylistIndex();
@@ -54,7 +48,7 @@ public:
     void removeRedundant(int playlistIndex = -1);
     void removeErrorFiles(int playlistIndex = -1);
     void clearMusics(int playlistIndex = -1);
-    void sortMusics(SortMode mode);
+    void sortMusics(SortMethod mode);
 
     /**
      * Track list functions.
