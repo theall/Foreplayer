@@ -1,0 +1,74 @@
+<skin version="2" name="Orange" author="MagiColor" url="http://www.doggiehome.com/" email="mailto:magicolor@gmail.com" transparent_color="#ff00ff">
+    <player_window image="player_skin.bmp">
+	  <icon position="1,1, 16, 16" icon="icon.ico"/>
+      <play position="164, 39, 182, 57" image="play.bmp"/>
+      <pause position="164, 39, 182, 57" image="pause.bmp"/>
+      <stop position="145, 39, 163, 57" image="stop.bmp"/>
+      <next position="202, 39, 220, 57" image="next.bmp"/>
+      <prev position="183, 39, 201, 57" image="prev.bmp"/>
+      <mute position="249, 39, 267, 57" image="mute.bmp"/>
+      <open position="221, 39, 239, 57 " image="open.bmp"/>
+      <equalizer position="152, 92, 187, 113" image="equalizer.bmp"/>
+      <playlist position="188, 92, 223, 113" image="playlist.bmp"/>
+      <lyric position="224, 92, 259, 113" image="lyric.bmp"/>
+	  <visual position="18, 24, 124, 84" />
+	  <minimize position="240, 3, 246, 9" image="minimize.bmp"/>
+	  <minimode position="253, 3, 259, 9" image="minimode.bmp"/>
+      <exit position="266, 3, 272, 9" image="close.bmp"/>
+	  <progress position="145, 77, 267, 89" bar_image="" thumb_image="progress_thumb.bmp" fill_image="progress_fill.bmp"/>
+      <volume position="274, 20, 282, 84" vertical="true" bar_image="" thumb_image="" fill_image="volume_fill.bmp"/>
+      <info position="147, 20, 268, 34" color="#ff9933" font="simsong" font_size="12"/>
+      <led position="175, 63, 235, 74" image="number.bmp" align="right"/>
+      <stereo position="13, 98, 49, 109" color="#FF9014" font="simsong" font_size="12" align="left"/>
+      <status position="59, 98, 129, 109" color="#FF9014" font="simsong" font_size="12" align="left"/>
+   </player_window>
+  
+<mini_window image="mini-player.bmp">
+		<play position="101, 3, 120, 22" image="play.bmp" />
+		<pause position="101, 3, 120, 22" image="pause.bmp" />
+		<stop position="82, 3, 101, 22" image="stop.bmp" />
+		<next position="139, 3, 158, 22" image="next.bmp" />
+		<prev position="120, 3, 139, 22" image="prev.bmp" />
+		<open position="158, 3, 177, 22" image="open.bmp" />
+		<mute position="186, 3, 205, 22" image="mute.bmp"/>
+        <visual position="19, 2, 69, 23" />
+		<icon position="0,4, 16, 14" icon="icon.ico"/>
+		<exit position="218, 6, 225, 13" image="m-exit.bmp"/>
+	    <minimize position="211, 6, 218, 13" image="m-minimize.bmp"/>
+		<lyric position="218, 13, 225, 20"  image="mini-lyric.bmp" />
+        <minimode position="211, 13, 218, 20" image="fullmode.bmp" />
+</mini_window>
+
+   <equalizer_window position="0, 122, 283, 244" image="equalizer_skin.bmp" eq_interval="6">
+      <close position="266, 3, 273, 10" image="close.bmp" align="right"/>
+      <enabled position="5, 66, 41,88" image="eq_enabled.bmp"/>
+      <profile position="5, 88, 41, 110" image="eq_profile.bmp"/>
+      <reset position="41, 77, 77, 99" image="eq_reset.bmp"/>
+      <balance position="11, 18, 72, 32" thumb_image="eq_thumb2.bmp" bar_image=""/>
+      <surround position="11, 41, 72, 55" thumb_image="eq_thumb2.bmp" bar_image=""/>
+      <preamp position="78, 17, 89, 105" thumb_image="eq_thumb.bmp" bar_image=""  fill_image="eqfactor_full.bmp"/>
+      <eqfactor position="96, 17, 107, 105" thumb_image="eq_thumb.bmp" bar_image="" fill_image="eqfactor_full.bmp"/>
+   </equalizer_window>
+   
+   <playlist_window position="0, 244, 283, 366" resize_rect="80, 30, 259, 70" image="playlist_skin.bmp" hilight="#0000ff">
+      <close position="266, 3, 273, 10" image="close.bmp" align="right"/>
+      <toolbar position="21, 96, 258, 107" image="playlist_toolbar.bmp" align="bottom+left"/>
+      <scrollbar buttons_image="scrollbar_button.bmp" thumb_image="scrollbar_thumb.bmp" bar_image="scrollbar_bar.bmp" thumb_resize_center="4"/>
+      <playlist position="14, 22, 270, 90" selected_image="playlist_selected.bmp" Font="-11,0,0,0,400,0,0,0,1,0,0,4,0,Tahoma" 
+		Color_Text="#800000" 
+		Color_Hilight="#ffffff" 
+		Color_Bkgnd="#f58a43" 
+		Color_Number="#800000" 
+		Color_Duration="#800000" 
+		Color_Bkgnd2="#f58a43"/>
+   </playlist_window>
+   
+   <lyric_window position="283, 0, 566, 366 " resize_rect="60, 30, 259, 80" image="lyric_skin.bmp">
+      <mini_border left_top_color="#626262" right_bottom_color="#353535" />
+      <lyric position="14, 24, 272, 96"/>
+	  <ontop position="241, 3, 255, 9" image="ontop.bmp" align="right"/>
+      <close position="266, 3, 272, 9" image="close.bmp" align="right"/>
+   </lyric_window>
+
+
+</skin>

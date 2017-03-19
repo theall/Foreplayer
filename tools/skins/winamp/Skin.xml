@@ -1,0 +1,74 @@
+<skin version="2" name="Winamp Modern" author="ºÜ¸ßºÜÊÝ" url="http://www.tallboythinboy.com/" email="tallboythinboy@163.com"
+	transparent_color="#ff00ff">
+	<player_window image="player_skin.bmp">
+		<play position="35, 112, 65, 140" image="play.bmp" />
+		<pause position="35, 112, 65, 140" image="pause.bmp" />
+		<stop position="65, 112, 95, 140" image="stop.bmp" />
+		<prev position="5, 112, 35, 140" image="prev.bmp" />
+		<next position="95, 112, 125, 140" image="next.bmp" />
+		<mute position="135, 123, 150, 137" image="mute.bmp" />
+		<open position="248, 65, 276, 88" image="open.bmp" />
+		<lyric position="201, 93, 224, 107" image="lyric.bmp" />
+		<equalizer position="228, 93, 251, 107" image="equalizer.bmp" />
+		<playlist position="255, 93, 278, 107" image="playlist.bmp" />
+		<minimize position="249, 4, 260, 14" image="minimize.bmp" />
+		<minimode position="261, 4, 272, 14" image="minimode.bmp" />
+		<exit position="273, 4, 284, 14" image="close.bmp" />
+		<progress position="8, 95, 191, 106" bar_image="" thumb_image="progress_thumb.bmp" fill_image="progress_fill.bmp" />
+		<volume position="158, 129, 241, 138" vertical="false" bar_image="" thumb_image="thumb.bmp" fill_image="volume_fill.bmp" />
+		<visual position="175, 34, 230, 62" />
+		<icon position="266, 26, 282, 42" />
+		<info position="17, 67, 232, 79" color="#ffffff" font="SimSun" font_size="12" />
+		<led position="26, 39, 91, 56" image="number.bmp" align="left" />
+		<stereo position="109, 34, 169, 46" color="#ffffff" font="SimSun" font_size="12" align="right" />
+		<status position="109, 50, 169, 62" color="#ffffff" font="SimSun" font_size="12" align="right" />
+	</player_window>
+	<mini_window image="mini_skin.bmp">
+		<icon position="8, 4, 24, 20" />
+		<prev position="28, 2, 48, 23" image="mini_prev.bmp" />
+		<play position="48, 2, 69, 23" image="mini_play.bmp" />
+		<pause position="48, 2, 69, 23" image="mini_pause.bmp" />
+		<stop position="68, 2, 90, 23" image="mini_stop.bmp" />
+		<next position="90, 2, 110, 23" image="mini_next.bmp" />
+		<mute position="125, 9, 136, 20" image="mini_mute.bmp" />
+		<exit position="341, 4, 352, 14" image="close.bmp" />
+		<minimode position="329, 4, 340, 14" image="mini_normal.bmp" />
+		<minimize position="305, 4, 316, 14" image="minimize.bmp" />
+		<lyric position="317, 4, 328, 14" image="ontop.bmp" />
+		<visual position="218, 5, 283, 17" />
+		<volume position="142, 15, 194, 22" vertical="false" bar_image="" thumb_image="mini_thumb.bmp" fill_image="mini_volume_fill.bmp" />
+	</mini_window>
+	<lyric_window position="290, 0, 580, 145" resize_rect="30, 24, 250, 36" image="lyric_skin.bmp">
+	  <mini_border left_top_color="#000000" right_bottom_color="#000000" />
+		<title position="220, 0, 579, 17" image="lyric_title.bmp" align="center" />
+		<close position="273, 4, 284, 14" image="close.bmp" align="right" />
+		<ontop position="261, 4, 272, 14" image="ontop.bmp" align="right" />
+		<lyric position="6, 24, 284, 78" />
+	</lyric_window>
+	<equalizer_window position="290, 145, 580, 290" image="equalizer_skin.bmp" eq_interval="6">
+		<close position="273, 4, 284, 14" image="close.bmp" align="right" />
+		<enabled position="14, 80, 52, 93" image="eq_enabled.bmp" />
+		<profile position="14, 95, 65, 108" image="eq_profile.bmp" />
+		<reset position="14, 110, 62, 123" image="eq_reset.bmp" />
+		<balance position="5, 39, 74, 49" thumb_image="eq_thumb1.bmp" bar_image="" />
+		<surround position="5, 57, 74, 67" thumb_image="eq_thumb1.bmp" bar_image="" />
+		<preamp position="78, 32, 86, 112" thumb_image="eq_thumb.bmp" bar_image="" />
+		<eqfactor position="124, 32, 133, 112" thumb_image="eq_thumb.bmp" bar_image="" fill_image="" />
+	</equalizer_window>
+	<playlist_window position="0, 145, 290, 290" resize_rect="30, 45, 260, 46" image="playlist_skin.bmp">
+		<title position="122, 0, 188, 18" image="playlist_title.bmp" align="center" />
+		<close position="273, 4, 284, 14" image="close.bmp" align="right" />
+		<toolbar position="1, 18, 274, 34" image="playlist_toolbar.bmp" hot_image="hot_playlist_toolbar.bmp" />
+		<scrollbar buttons_image="scrollbar_button.bmp" thumb_image="scrollbar_thumb.bmp" bar_image="scrollbar_bar.bmp" />
+		<playlist position="8, 40, 284, 95" selected_image="playlist_selected.bmp"
+        Font="-11,0,0,0,400,0,0,0,0,3,2,4,34,Tahoma" 
+		Color_Text="#6091c6" 
+		Color_Hilight="#e3ecf4" 
+		Color_Bkgnd="#000000" 
+		Color_Number="#aac5dd" 
+		Color_Duration="#6898c4" 
+		Color_Select="#3c80c4" 
+		Color_Bkgnd2="#0c1623"
+        />
+	</playlist_window>
+</skin>

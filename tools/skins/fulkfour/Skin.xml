@@ -1,0 +1,99 @@
+<skin version="2" name="fulkfour" author="I-DiDi" url="http://hi.baidu.com/hasaddl040309" email="ididi2009@163.com" transparent_color="#ff00ff">
+    <player_window image="player_skin.bmp">
+        <play position="135, 96, 171, 129" image="play.bmp"/>
+        <pause position="135, 96, 171, 129" image="pause.bmp"/>
+        <prev position="95, 96, 131, 129" image="prev.bmp"/>
+        <next position="174, 96, 210, 129" image="next.bmp"/>
+        <stop position="221, 105, 241, 125" image="stop.bmp"/>
+        <open position="241, 105, 261, 125" image="open.bmp"/>
+        <mute position="262, 105, 282, 125" image="mute.bmp" />
+        <lyric position="63, 105, 84, 125" image="lyric.bmp"/>
+        <equalizer position="19, 105, 40, 125" image="equalizer.bmp"/>
+        <playlist position="41, 105, 62, 125" image="playlist.bmp"/>
+        <browser position="176, 0, 211, 17" image="browser.bmp" />
+        <minimize position="212, 0, 241, 17" image="minimize.bmp"/>
+        <minimode position="241, 0, 260, 17" image="minimode.bmp"/>
+        <exit position="260, 0, 286, 17" image="close.bmp"/>
+        <progress position="2, 131, 298, 141" bar_image="" thumb_image="progress_thumb.bmp" fill_image="progress_fill.bmp" />
+        <volume position="185, 42, 249, 54" vertical="false" bar_image="" thumb_image="progress_thumb2.bmp" fill_image="progress2.bmp" />
+        <icon position="3, 2, 19, 18" icon="shorteye.ico"/>
+        <info position="73, 22, 283, 38" color="#deeaff" font="Tahoma" font_size="13" align="left"/>
+        <led position="18, 25, 66, 38" image="number.bmp" align="right"/>
+        <stereo position="125, 40, 180, 55" color="#7b87a3" font="Tahoma" font_size="13" align="left" />
+        <status position="51, 40, 122, 55" color="#7b87a3" font="Tahoma" font_size="13" align="left" />
+        <visual position="22, 62, 282, 96" top_color="#ffffff" middle_color="#194d5c" bottom_color="#194d5c" block_color="#c0c0c0" />
+    </player_window>
+    <lyric_window position="0, 429, 301, 499" resize_rect="41, 22, 207,47" image="lyric_skin.bmp">
+        <lyric position="3, 25, 298, 52" font="-11,0,0,0,400,0,0,0,134,3,2,4,49,Tahoma" text_color="#588dbe" hilight_color="#e3ecf4" background_olor="#000000"/>
+        <close position="259, 0, 286, 17" image="closelrc.bmp" align="right"/>
+        <ontop position="240, 0, 259, 17" image="ontop.bmp" align="right"/>
+        <desklrc position="212, 0, 240, 17" image="desklrc.bmp" align="right"/>
+    </lyric_window>
+    <equalizer_window position="0, 334, 301, 429" image="eq_skin.bmp" eq_interval="5">
+        <close position="252, 0, 286, 17" image="close2.bmp" align="right"/>
+        <enabled position="164, 0, 196, 17" image="eq_enabled.bmp"/>
+        <profile position="220, 0, 251, 17" image="eq_profile.bmp"/>
+        <reset position="196, 0, 220, 17" image="reset.bmp"/>
+        <balance position="12, 35, 81, 40" thumb_image="tb.bmp" bar_image=""  fill_image="eqfactor_fullrl.bmp"/>
+        <surround position="12, 59, 81, 64" thumb_image="tb.bmp" bar_image=""  fill_image="eqfactor_full3d.bmp"/>
+        <preamp position="88, 27, 100, 81" thumb_image="tb2.bmp" bar_image=""  fill_image="eqfactor_full.bmp"/>
+        <eqfactor position="130, 28, 140, 80" thumb_image="tb2.bmp" bar_image="" fill_image="eqfactor_full.bmp"/>
+    </equalizer_window>
+    <playlist_window position="0, 150, 301, 334" resize_rect="59, 19, 244, 58" image="playlist_skin.bmp">
+        <close position="252, 0, 286, 17" image="close2.bmp" align="right"/>
+        <toolbar position="74, 63, 228, 85" image="playlist_toolbar.bmp" hot_image="playlist_toolbar_hot.bmp" align="bottom+center"/>
+        <scrollbar buttons_image="scrollbar_button.bmp" thumb_image="scrollbar_thumb.bmp" bar_image="b1.bmp" thumb_resize_center="6" />
+        <playlist position="3, 25, 298, 61" 
+        selected_image="playlist_selected.bmp"
+        Font="Tahoma,11,-1,5,34,0,0,0,0,0"
+		Color_Text="#6091c6" 
+		Color_Hilight="#e3ecf4" 
+		Color_Bkgnd="#000000" 
+		Color_Number="#aac5dd" 
+		Color_Duration="#6898c4" 
+		Color_Select="#3c80c4" 
+		Color_Bkgnd2="#0c1623" />
+    </playlist_window>
+    <mini_window image="mini-player.bmp">
+        <play position="166, 0, 183, 24" image="play_mini.bmp" />
+        <pause position="166, 0, 183, 24" image="pause_mini.bmp" />
+        <prev position="149, 0, 166, 24" image="prev_mini.bmp" />
+        <next position="183, 0, 200, 24" image="next_mini.bmp" />
+        <stop position="201, 0, 218, 24" image="stop_mini.bmp" />
+        <open position="219, 0, 236, 24" image="openmini.bmp" />
+        <mute position="237, 0, 254, 24" image="mutemini.bmp" />
+        <lyric position="263, 5, 272, 20" image="lyric_mini.bmp" />
+        <minimode position="284, 5, 293, 20" image="minimode2.bmp" />
+        <minimize position="274, 5, 283, 20" image="minimize2.bmp" />
+        <exit position="294, 5, 303, 20" image="closemini.bmp" />
+        <icon position="3, 5, 19, 21" icon="shorteye.ico"/>
+        <led position="23, 7,65, 19" image="number2.bmp" align="right"/>
+        <info position="67, 7, 144, 20" color="#deeaff" font="Tahoma" font_size="13" align="left"/>
+    </mini_window>
+    <browser_window position="301, 0, 766, 499" image="browser_skin.bmp" transparent_color="#ff00ff">
+        <close position="416, 0, 450, 17" image="close2.bmp" />
+        <backward position="349, 23, 379, 45" image="browser_backward.bmp" />
+        <forward position="419, 23, 450, 45" image="browser_forward.bmp" />
+        <refresh position="384, 23, 415, 45" image="browser_refresh.bmp" />
+        <startup position="7, 477, 109, 490" ckbox_image="browser_startup.bmp" interval="4" color="#b0c6dd" font="Tahoma" font_size="13" />
+        <linktxt position="311, 477, 448, 490" color="#b0c6dd" font="Tahoma" font_size="13" />
+        <browser position="3, 46, 461, 472" />
+        <minibtn position="16,19,105,46" image="browser_mini.bmp" />
+        <downloadbtn position="107,19,196,46" image="browser_download.bmp"/>
+    </browser_window>
+    <desklrc_bar image="desklrc_bar.bmp" transparent_color="#ff00ff">
+        <icon position="3, 5, 19, 21" icon="shorteye.ico" />
+        <play position="43, 0, 59, 24" image="desklrc_play.bmp" />
+        <pause position="43, 0, 59, 24" image="desklrc_play.bmp" />
+        <prev position="26, 0, 42, 24" image="desklrc_prev.bmp" />
+        <next position="60, 0, 76, 24" image="desklrc_next.bmp" />
+        <list position="76, 0, 92, 24" image="desklrc_list.bmp" />
+        <settings position="100, 0, 116, 24" image="desklrc_settings.bmp" />
+        <kalaok position="116, 0, 132, 24" image="desklrc_kalaok.bmp" />
+        <lines position="132, 0, 148, 24" image="desklrc_lines.bmp" />
+        <lock position="148, 0, 164, 24" image="desklrc_lock.bmp" />
+        <ontop position="164, 0, 180, 24" image="desklrc_ontop.bmp"/>
+        <return position="187, 0, 202, 24" image="desklrc_return.bmp"/>
+        <close position="202, 0, 217, 24" image="desklrc_close.bmp" />
+    </desklrc_bar>
+</skin>

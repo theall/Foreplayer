@@ -1,0 +1,80 @@
+<skin version="2" name="炫紫神话" author="ttplayer" url="http://ttplayer.qianqian.com" email="ttplayer@mail.ttplayer.com" transparent_color="#ff00ff">
+    <player_window image="player_skin.bmp">
+      <play position="94, 129, 144, 179" image="play.bmp"/>
+      <pause position="94, 129, 144, 179" image="pause.bmp"/>
+      <prev position="52, 136, 87, 171" image="prev.bmp"/>
+      <next position="151, 136, 206, 171" image="next.bmp"/>
+	  <stop position="10, 136, 45, 171" image="stop.bmp"/>
+      <mute position="186, 75, 205, 91" image="mute.bmp"/>
+      <open position="193, 136, 228, 171" image="open.bmp"/>
+      <browser position="238, 133, 304, 156" image="browser.bmp" />
+      <lyric position="268, 99, 301, 113" image="lyric.bmp"/>
+      <equalizer position="228, 99, 261, 113" image="equalizer.bmp"/>
+      <playlist position="188, 99, 221, 113" image="playlist.bmp"/>
+      <minimize position="265, 3, 284, 19" image="minimize.bmp"/>
+      <minimode position="244, 3, 263, 19" image="minimode.bmp"/>
+      <exit position="286, 3, 305, 19" image="close.bmp"/>
+      <progress position="13, 119, 299, 129" bar_image="" thumb_image="progress_thumb.bmp" fill_image="progress_fill.bmp"/>
+      <volume position="207, 77, 295, 88" vertical="false" bar_image="" thumb_image="thumb.bmp" fill_image="progress2.bmp"/>
+      <icon position="6, 4, 22, 20" image="TTplayer.ico"/>
+      <info position="14, 25, 185, 45" color="#ffffff" font="Tahoma" font_size="13" align="left"/>
+	  <status position="187, 52, 252, 72" color="#ffffff" font="Tahoma" font_size="13" align="right"/>
+	  <stereo position="255, 52, 298, 72" color="#ffffff" font="Tahoma" font_size="13" align="right"/>
+      <led position="230, 30, 299, 49" image="number.bmp" align="right"/>
+      <visual position="10, 53, 174, 114" top_color="#71CDFD" middle_color="#4C5FD1" bottom_color="#71CDFD" block_color="#4C5FD1"/>
+   </player_window>
+  <lyric_window position="0, 420, 310, 602" resize_rect="57, 28, 298, 174" image="lyric_skin.bmp">
+        <lyric position="11, 33, 300, 179"/>
+        <close position="286, 4, 303, 20" image="close.bmp" align="right"/>
+        <ontop position="266, 4, 283, 20" image="ontop.bmp" align="right"/>
+	<desklrc position="246, 4, 263, 20" image="desklrc.bmp" align="right"/>
+   </lyric_window>
+<equalizer_window position="0, 602, 311, 702" image="eq_skin.bmp" eq_interval="5">      
+      <close position="287, 2, 306, 18" image="close.bmp" align="right"/>
+      <enabled position="110, 2, 162, 18" image="eq_enabled.bmp"/>
+      <profile position="222, 2, 274, 18" image="eq_profile.bmp"/>
+      <reset position="166, 2, 218, 18" image="reset.bmp"/>
+      <balance position="31, 37, 101, 45" thumb_image="eq_thumb.bmp" bar_image=""  fill_image="eqfactor_full2.bmp"/>
+      <surround position="31, 62, 101, 70" thumb_image="eq_thumb.bmp" bar_image=""  fill_image="eqfactor_full2.bmp"/>
+      <preamp position="118, 37, 130, 74" thumb_image="eq_thumb.bmp" bar_image=""  fill_image="eqfactor_full.bmp"/>
+      <eqfactor position="165, 37, 173, 74" thumb_image="eq_thumb.bmp" bar_image="" fill_image="eqfactor_full.bmp"/>
+</equalizer_window>
+   <playlist_window position="0, 186, 310, 420" resize_rect="68, 50, 301, 179" image="playlist_skin.bmp">
+      <close position="287, 4, 303, 19" image="close.bmp" align="right"/>
+      <toolbar position="11, 25, 302, 47" image="playlist_toolbar.bmp" align="left"/>
+       <scrollbar buttons_image="scrollbar_button.bmp" thumb_image="scrollbar_thumb.bmp" bar_image="scrollbar_bar.bmp" align="center"/>
+      <playlist position="10, 50, 300, 179" selected_image="playlist_selected.bmp" Font="-11,0,0,0,400,0,0,0,134,3,2,4,49,Tahoma" color="#000000"
+		Color_Text="#7578AB" 
+		Color_Hilight="#E8E8E8" 
+		Color_Bkgnd="#2A2B3F" 
+		Color_Number="#7578AB" 
+		Color_Duration="#7578AB" 
+		Color_Select="#DB49A2" 
+		Color_Bkgnd2="#242639"/>
+   </playlist_window>
+<mini_window image="mini-player.bmp">
+		<play position="201, 1, 225, 35" image="play_mini.bmp" />
+		<pause position="201, 1, 225, 35" image="pause_mini.bmp" />		
+		<prev position="176, 1, 200, 35" image="prev_mini.bmp" />
+		<next position="226, 1, 250, 35" image="next_mini.bmp" />
+		<stop position="151, 1, 175, 35" image="stop_mini.bmp" />
+		<open position="251, 1, 275, 35" image="open_mini.bmp" />
+		<lyric position="285, 16, 316, 27" image="lyric_mini.bmp" />
+		<icon position="7, 6, 23, 22" image="TTplayer.ico" />
+		<minimize position="295, 1, 312, 17" image="minimize.bmp" />
+        <minimode position="277, 1, 294, 17" image="minimode.bmp" />
+        <exit position="313, 1, 330, 17" image="close.bmp" />            
+        <info position="35, 3, 146, 23" color="#ffffff" font="Tahoma" font_size="13" align="left"/>
+</mini_window>
+<browser_window position="310, 0, 875, 590" image="browser_skin.bmp" transparent_color="#ff00ff">
+		<close position="538, 3, 553, 19" image="close2.bmp" />
+		<backward position="112, 3, 133, 19" image="browser_backward.bmp" />
+		<forward position="148, 3, 169, 19" image="browser_forward.bmp" />
+		<refresh position="186, 2, 207, 18" image="browser_refresh.bmp" />
+		<startup position="7, 572, 144, 584" ckbox_image="browser_startup.bmp" interval="4" color="#ffffff" font="SimSun" font_size="12" />
+		<linktxt position="330, 570, 560, 586" color="#ffffff" font="SimSun" font_size="12" />
+		<browser position="6, 24, 560, 566" />
+		<minibtn position="218,3,284,21" image="browser_mini.bmp" />
+		<downloadbtn position="292,3,362,21" image="browser_download.bmp"/>
+</browser_window>
+</skin>

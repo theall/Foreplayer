@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ttplayer_visual>
+	<Visual 
+		SpectrumTopColor="#71CDFD"
+		SpectrumBtmColor="#71CDFD"
+		SpectrumMidColor="#4C5FD1"
+		SpectrumPeakColor="#4C5FD1"
+		SpectrumWide="1"
+		BlurSpeed="3"
+		Blur="0"
+		BlurScopeColor="#4C5FD1"
+		TextColor="#C1AAFD"
+		Font="-11,0,0,0,400,0,0,0,134,3,2,4,49,Tahoma"
+	/>
+</ttplayer_visual>

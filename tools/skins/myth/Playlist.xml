@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ttplayer_playlist>
+	<PlayList
+		Font="-11,0,0,0,400,0,0,0,134,3,2,4,49,Tahoma" color="#000000"
+		Color_Text="#7578AB" 
+		Color_Hilight="#E8E8E8" 
+		Color_Bkgnd="#2A2B3F" 
+		Color_Number="#7578AB" 
+		Color_Duration="#7578AB" 
+		Color_Select="#DB49A2" 
+		Color_Bkgnd2="#242639"
+	/>
+</ttplayer_playlist>
