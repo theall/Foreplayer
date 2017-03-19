@@ -10,7 +10,7 @@ public:
     explicit TEqualizerController(QObject *parent = 0);
     ~TEqualizerController();
 
-    void joint(TGuiManager *gui, TCore *core);
+    bool joint(TGuiManager *gui, TCore *core);
 
 private slots:
     void slotBallanceValueChanged(float value);

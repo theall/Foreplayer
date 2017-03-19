@@ -76,6 +76,7 @@ private slots:
     void on_btnOpen_clicked();
     void on_volume_valueChanged(int value);
     void on_btnMute_clicked();
+    void on_icnLogo_clicked();
 
 private:
     TImageButton *mBtnPlay;
@@ -108,6 +109,7 @@ private:
     QMenu *mContextMenu;
     QString mPlayState;
     QString mPlayEffect;
+    QIcon mDefaultLogo;
 
     void updatePlayStatus();
     void updatePlayEffect();

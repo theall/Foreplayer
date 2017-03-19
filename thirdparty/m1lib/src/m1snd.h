@@ -196,6 +196,14 @@ typedef struct m1h83k2_t
     void (*iowrite8)(unsigned int address, unsigned int data);
 } M1H83K2T;
 
+typedef struct m1nmk004_t
+{
+    unsigned int (*read)(unsigned int address);
+    void (*write)(unsigned int address, unsigned int data);
+    unsigned int (*read16)(unsigned int address);
+    void (*write16)(unsigned int address, unsigned int data);
+} M1NMK004T;
+
 // globals from m1snd.cpp that are deprecated
 extern unsigned char *prgrom, *prgrom2, *workram;
 
@@ -412,6 +420,7 @@ void m1snd_addadsp2115(long clock, void *handlers);	// Analog Devices ADSP-2115
 void m1snd_addz80c(long clock, void *handlers);	// Zilog Z80 (C core)
 void m1snd_addh83002(long clock, void *handlers);	// Hitachi H8/3002
 void m1snd_add32031(long clock, void *handlers);	// TMS32031
+void m1snd_addnmk004(long clock, void *handlers);	// NMK004
 
 BoardT *m1snd_getCurBoard(void);
 void m1snd_initNormalizeState(void);

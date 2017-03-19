@@ -61,7 +61,8 @@ void TScrollBar::setPixmaps(QPixmap groove, QPixmap up, QPixmap down, QPixmap ha
 void TScrollBar::setPixmaps(QPixmap groove, QPixmap buttons, QPixmap handle)
 {
     if(!TScrollBar::mGroovePixmap)
-        TScrollBar::mGroovePixmap = new QPixmap(groove);
+        TScrollBar::mGroovePixmap = new QPixmap;
+    *TScrollBar::mGroovePixmap = groove;
 
     if(!TScrollBar::mUpPixmap)
         TScrollBar::mUpPixmap = new TButtonPixmap;

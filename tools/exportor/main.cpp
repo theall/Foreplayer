@@ -223,12 +223,13 @@ int main(int argc, char *argv[])
             if((trackListSize>1 && indexName.isEmpty()) || destIsDir)
             {
                 // While exporting muliple tracks, auto set dest name to track name
-                QString baseName = QFileInfo(QString::fromStdString(trackInfo->trackName)).baseName()+"."+format;
+                QString tempName = QString::fromStdString(trackInfo->trackName);
+                tempName.prepend(QString("%1.").arg(i+1));
+                QString baseName = tempName+"."+format;
                 destFileFullName = destDir.absoluteFilePath(baseName);
             } else {
                 destFileFullName = destFilePath;
             }
-
             if(QFileInfo(destFileFullName).exists() && !overWriteFile)
             {
                 if(bVerbose)

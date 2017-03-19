@@ -18,13 +18,14 @@ public:
     explicit TPlaylistController(QObject *parent = 0);
     ~TPlaylistController();
 
-    void joint(TGuiManager *manager, TCore *core) Q_DECL_OVERRIDE;
+    bool joint(TGuiManager *manager, TCore *core) Q_DECL_OVERRIDE;
 
 signals:
     void requestPlay(int pIndex, int mIndex, int tIndex);
 
 private slots:
     //// From gui
+    void slotSkinChanged();
     void slotPlaylistIndexChanged(int index);
     void slotMusiclistIndexChanged(int index);
     void slotTracklistIndexChanged(int index);

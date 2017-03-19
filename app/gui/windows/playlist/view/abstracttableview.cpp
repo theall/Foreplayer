@@ -133,9 +133,10 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
 
     setTextElideMode(Qt::ElideRight);
 
-    QPalette pal = palette();
-    pal.setBrush(QPalette::Base, QBrush(TAbstractTableView::mBackground));
-    setPalette(pal);
+    //setStyleSheet("background-color:rgba(0,0,0,0)");
+    QPalette pll = palette();
+    pll.setBrush(QPalette::Base,QBrush(QColor(255,255,255,0)));
+    setPalette(pll);
 
     setSelectionBehavior(QAbstractItemView::SelectRows);
     setSelectionMode(QAbstractItemView::SingleSelection);
@@ -154,6 +155,7 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
     viewport()->setAcceptDrops(true);
     setDropIndicatorShown(true);
     viewport()->installEventFilter(this);
+
     setMouseTracking(true);
 }
 
@@ -203,13 +205,13 @@ void TAbstractTableView::paintEvent(QPaintEvent *event)
 {
     QTableView::paintEvent(event);
 
-    QPainter painter(viewport());
-    if (mHighlightRect.isValid()) {
-        painter.setBrush(TAbstractTableView::mHighlightColor);
-        painter.drawRect(mHighlightRect);
-    }
+//    QPainter painter(viewport());
+//    if (mHighlightRect.isValid()) {
+//        painter.setBrush(TAbstractTableView::mHighlightColor);
+//        painter.drawRect(mHighlightRect);
+//    }
 
-    painter.end();
+//    painter.end();
 }
 
 QSet<int> TAbstractTableView::selectedRows()

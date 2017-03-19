@@ -13,12 +13,10 @@ TEqualizerController::~TEqualizerController()
 
 }
 
-void TEqualizerController::joint(TGuiManager *gui, TCore *core)
+bool TEqualizerController::joint(TGuiManager *gui, TCore *core)
 {
     Q_ASSERT(gui);
     Q_ASSERT(core);
-
-    TAbstractController::joint(gui, core);
 
     mPlayerCore = core->player();
     Q_ASSERT(mPlayerCore);
@@ -31,6 +29,7 @@ void TEqualizerController::joint(TGuiManager *gui, TCore *core)
     connect(mEqWindow, SIGNAL(eqSurroundChanged(float)), this, SLOT(slot3DEffectValueChanged(float)));
     connect(mEqWindow, SIGNAL(eqPrempChanged(float)), this, SLOT(slotAmplifyValueChanged(float)));
     connect(mEqWindow, SIGNAL(eqFactorChanged(int,float)), this, SLOT(slotSpectrumValueChanged(int,float)));
+    return TAbstractController::joint(gui, core);;
 }
 
 void TEqualizerController::slotBallanceValueChanged(float value)

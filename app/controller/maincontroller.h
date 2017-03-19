@@ -12,7 +12,7 @@ public:
     explicit TMainController(QObject *parent = 0);
     ~TMainController();
 
-    void joint(TGuiManager *manager, TCore *core);
+    bool joint(TGuiManager *manager, TCore *core);
 
 signals:
 

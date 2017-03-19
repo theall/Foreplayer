@@ -23,6 +23,13 @@ public:
 
     void addFile(QString diskFile, QString zipFile);
 
+    QString version() { return mVersion; }
+    QString name() { return mName; }
+    QString author() { return mAuthor; }
+    QString url() { return mUrl; }
+    QString email() { return mEmail; }
+    QString fileName() { return mFileName; }
+    QColor transparentColor() { return mTransparentColor; }
     QString lastError() { return mError; }
 
 private:

@@ -150,7 +150,7 @@ const QPixmap *TButtonPixmap::diabled() const
     return &mPixmaps[BI_Disabled];
 }
 
-QSize TButtonPixmap::size()
+const QSize TButtonPixmap::size() const
 {
     return mSize;
 }

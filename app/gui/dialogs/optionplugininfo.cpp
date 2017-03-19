@@ -1,5 +1,5 @@
 #include "optionplugininfo.h"
-#include "ui_toptionplugininfo.h"
+#include "ui_optionplugininfo.h"
 
 TOptionPluginInfo::TOptionPluginInfo(QWidget *parent) :
     QWidget(parent),

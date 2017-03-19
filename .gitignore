@@ -4,3 +4,4 @@ ui_*.h
 *.zip
 thirdparty/m1lib/dist/
 dist/
+*.qm

@@ -47,7 +47,7 @@ TPlaylistController::~TPlaylistController()
     mExportMissionsLock.unlock();
 }
 
-void TPlaylistController::joint(TGuiManager *gui, TCore *core)
+bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
 {
     Q_ASSERT(gui);
     Q_ASSERT(core);
@@ -69,15 +69,7 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     mPropertyDialog = gui->propertyDialog();
     mExportMissionDialog->setModel(mMissionsModel);
 
-    TAbstractModel::setColorParameters(
-        mPlaylistWidget->textFont(),
-        mPlaylistWidget->colorText(),
-        mPlaylistWidget->colorHilight(),
-        mPlaylistWidget->colorNumber(),
-        mPlaylistWidget->colorDuration(),
-        mPlaylistWidget->colorSelect(),
-        mPlaylistWidget->colorBkgnd(),
-        mPlaylistWidget->colorBkgnd2());
+    slotSkinChanged();
 
     mPlaylistCore = core->playlist();
     mPlaylistModel->setPlaylistCore(mPlaylistCore);
@@ -87,6 +79,8 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
     mPlaylistView->setModel(mPlaylistModel);
     mMusiclistView->setModel(mMusiclistModel);
     mTracklistView->setModel(mTracklistModel);
+
+    connect(gui, SIGNAL(skinChanged()), this, SLOT(slotSkinChanged()));
 
     connect(mPlaylistView, SIGNAL(onCurrentRowChanged(int)), this, SLOT(slotPlaylistIndexChanged(int)));
     connect(mMusiclistView, SIGNAL(onCurrentRowChanged(int)), this, SLOT(slotMusiclistIndexChanged(int)));
@@ -148,6 +142,22 @@ void TPlaylistController::joint(TGuiManager *gui, TCore *core)
 
     int playingPlaylistIndex = mPlaylistCore->playingPlaylistIndex();
     slotPlaylistIndexChanged(playingPlaylistIndex);
+
+    return true;
+}
+
+void TPlaylistController::slotSkinChanged()
+{
+    if(mPlaylistWidget)
+        TAbstractModel::setColorParameters(
+            mPlaylistWidget->textFont(),
+            mPlaylistWidget->colorText(),
+            mPlaylistWidget->colorHilight(),
+            mPlaylistWidget->colorNumber(),
+            mPlaylistWidget->colorDuration(),
+            mPlaylistWidget->colorSelect(),
+            mPlaylistWidget->colorBkgnd(),
+            mPlaylistWidget->colorBkgnd2());
 }
 
 void TPlaylistController::slotRequestCurrentIndex(int *pIndex, int *mIndex, int *tIndex)

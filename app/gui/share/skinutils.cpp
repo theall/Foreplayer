@@ -16,14 +16,16 @@ namespace SkinUtils {
     {
         Qt::Alignment i;
         s = s.toLower();
+        if(s.indexOf("center")>=0)
+            i |= Qt::AlignHCenter;
         if(s.indexOf("left")>=0)
             i |= Qt::AlignLeft;
+        if(s.indexOf("top")>=0)
+            i |= Qt::AlignTop;
         if(s.indexOf("right")>=0)
             i |= Qt::AlignRight;
         if(s.indexOf("bottom")>=0)
             i |= Qt::AlignBottom;
-        if(s.indexOf("center")>=0)
-            i |= Qt::AlignCenter;
         return i;
     }
 

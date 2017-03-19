@@ -35,6 +35,8 @@ INCLUDEPATH +=  \
 
 LIBS += -lsdl2
 
+QMAKE_CFLAGS_WARN_OFF += no-missing-field-initializers
+
 CONFIG(debug, debug|release) {
     DEFINES += M1_DEBUG
 } else {
@@ -193,7 +195,8 @@ HEADERS += \
     src/emulator/mpeg/transform.h \
     src/libs/crypt/md5.h \
     src/libs/crypt/sha1.h \
-    src/moddir.h
+    src/moddir.h \
+    src/emulator/cpu/nmk004/nmk004.h
 
 SOURCES += \
     src/dsnd.cpp \
@@ -470,4 +473,6 @@ SOURCES += \
     src/libs/crypt/md5.c \
     src/libs/crypt/sha1.c \
     src/wavelog.cpp \
-    src/moddir.cpp
+    src/moddir.cpp \
+    src/emulator/boards/brd_pgm.cpp \
+    src/emulator/cpu/nmk004/nmk004.cpp

@@ -25,7 +25,8 @@ public:
     TToolBar(QWidget *parent=0);
     ~TToolBar();
 
-    void setPixmaps(QPixmap normal, QPixmap hover);
+    void setPixmaps(QPixmap normal, QPixmap hover, QColor transparentColor);
+    Qt::Alignment alignment();
     void setAlignment(QPixmap pixmap, Qt::Alignment alignment);
 
     void uncheckButtons();

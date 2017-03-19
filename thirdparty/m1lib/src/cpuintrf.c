@@ -22,6 +22,7 @@ static M1ADSPT *rwadsp;
 static M137710T *rw37710;
 static M1H83K2T *rwh83002;
 static M132031T *rwtms32031;
+static M1NMK004T *rwnmk004;
 
 static M16809T m6809b =
 {
@@ -701,6 +702,17 @@ void m1snd_add32031(long clock, void *handlers)
 	tms32031_reset(NULL);
 }
 
+// add a NMK004 cpu
+void m1snd_addnmk004(long clock, void *handlers)
+{
+    rwnmk004 = handlers;
+
+    timer_add_cpu(CPU_NMK004, clock, tms32031_execute, tms32031_getcycles, tms32031_yield, dummy_getctx, dummy_setctx, NULL);
+
+    tms32031_init();
+    tms32031_reset(NULL);
+}
+
 // add a V30 cpu
 void m1snd_addv30(long clock, void *handlers)
 {
@@ -1038,6 +1050,14 @@ struct cpu_interface CPUIntrf[] =
 		i8085_set_irq_callback,
 		NULL,
 	},
+    {
+        "NMK004",
+        m1snd_addnmk004,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
 };
 
 // boot all CPUs

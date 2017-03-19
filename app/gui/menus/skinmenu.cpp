@@ -1,4 +1,5 @@
 #include "skinmenu.h"
+#include "../share/skin.h"
 
 #define BUF_SIZE 256
 
@@ -25,7 +26,7 @@ void TSkinMenu::reload()
     for(auto file : fileList)
     {
         QString fullName = dir.absoluteFilePath(file);
-        QString s = getSkinNameFromZip(fullName);
+        QString s = getSkinNameFromFile(fullName);
         if(s.isEmpty())
             continue;
 
@@ -37,7 +38,7 @@ void TSkinMenu::reload()
     for(auto file : fileList)
     {
         QString fullName = dir.absoluteFilePath(file+"/skin.xml");
-        QString s = getSkinNameFromXml(fullName);
+        QString s = getSkinNameFromFile(fullName);
         if(s.isEmpty())
             continue;
 
@@ -45,58 +46,39 @@ void TSkinMenu::reload()
         skinFullNames.append(fullName);
     }
 
+    emit requestSkinNames(skinNames);
     for(int i=0;i<skinNames.count();i++)
     {
-        QAction *action = addAction(skinNames[i], this, SLOT(slotSkinTriggered()));
+        QAction *action = addAction(skinNames[i], this, SLOT(slotSkinTriggered(bool)));
         action->setCheckable(true);
         action->setData(skinFullNames[i]);
     }
 }
 
-void TSkinMenu::slotSkinTriggered()
+void TSkinMenu::slotSkinTriggered(bool checked)
 {
-    QAction *action = static_cast<QAction*>(sender());
+    QAction *action = qobject_cast<QAction*>(sender());
 
-    if(mLastActivedAction)
-        mLastActivedAction->setChecked(false);
+    if(checked)
+    {
+        if(mLastActivedAction)
+        {
+            mLastActivedAction->blockSignals(true);
+            mLastActivedAction->setChecked(false);
+            mLastActivedAction->blockSignals(false);
+        }
+        mLastActivedAction = action;
 
-    mLastActivedAction = action;
-
-    if(action)
-        emit requestLoadSkin(action->data().toString());
+        if(action)
+            emit requestLoadSkin(action->data().toString());
+    }
 }
 
-QString TSkinMenu::getSkinNameFromZip(QString zipFile)
+QString TSkinMenu::getSkinNameFromFile(QString xmlFile)
 {
-    Q_UNUSED(zipFile)
-
-    return QString();
-}
-
-QString TSkinMenu::getSkinNameFromXml(QString xmlFile)
-{
-    QString name;
-    QFile file(xmlFile);
-    if(!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qDebug()<<"Can't open the file"<<xmlFile;
-        return name;
-    }
-
-    char szBuf[BUF_SIZE];
-    int readed = file.read(szBuf, BUF_SIZE);
-    file.close();
-    if(readed<1)
-        return name;
-
-    name = szBuf;
-
-    QRegExp reg("<skin +version *=.+ +name *= *\"(.+)\" *author", Qt::CaseInsensitive);
-    int pos = reg.indexIn(name);
-    if (pos > -1) {
-        name = reg.cap(1);
-    }
-
-    return name;
+    TSkin skin;
+    skin.load(xmlFile);
+    return skin.name();
 }
 
 void TSkinMenu::retranslateUi()

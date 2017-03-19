@@ -20,31 +20,40 @@ TToolBar::~TToolBar()
     }
 }
 
-void TToolBar::setPixmaps(QPixmap normal, QPixmap hover)
+void TToolBar::setPixmaps(QPixmap normal, QPixmap hover, QColor transparentColor)
 {
     int x = 0;
     int iconWidth, pixmapWidth, pixmapHeight;
     pixmapWidth = normal.width();
     pixmapHeight = normal.height();
     iconWidth = pixmapWidth / BUTTON_COUNT;
-
     setGeometry(0, 0, pixmapWidth, pixmapHeight);
     for(int i=0;i<BUTTON_COUNT;i++)
     {
         TImageButton *button = mButtons[i];
         QPixmap pixmap(iconWidth*4, pixmapHeight);
+        pixmap.fill(transparentColor);
         QPainter painter(&pixmap);
         QPixmap normalPixmap = normal.copy(x, 0, iconWidth, pixmapHeight);
         painter.drawPixmap(0, 0, normalPixmap);
-        painter.drawPixmap(iconWidth, 0, hover.copy(x, 0, iconWidth, pixmapHeight));
+        if(hover.isNull())
+            painter.drawPixmap(iconWidth, 0, normalPixmap);
+        else
+            painter.drawPixmap(iconWidth, 0, hover.copy(x, 0, iconWidth, pixmapHeight));
         painter.drawPixmap(iconWidth*2, 0, normalPixmap);
         painter.drawPixmap(iconWidth*3, 0, normalPixmap);
         painter.end();
 
+        pixmap.setMask(pixmap.createMaskFromColor(transparentColor));
         button->setPixmapRect(pixmap, QRect(x, 0, iconWidth, pixmapHeight));
 
         x += iconWidth;
     }
+}
+
+Qt::Alignment TToolBar::alignment()
+{
+    return mAlignment;
 }
 
 void TToolBar::retranslateUi()
@@ -81,19 +90,19 @@ void TToolBar::setAlignment(QPixmap pixmap, Qt::Alignment alignment)
     if(parent)
     {
         QRect geo = geometry();
-        if(alignment & Qt::AlignLeft)
-            mAlignSize.setWidth(geo.left());
+        if(alignment & Qt::AlignHCenter)
+            mAlignSize.setWidth(0);
         else if(alignment & Qt::AlignRight)
             mAlignSize.setWidth(pixmap.width() - geo.right());
         else
-            mAlignSize.setWidth(0);
+            mAlignSize.setWidth(geo.left());
 
-        if(alignment & Qt::AlignTop)
-            mAlignSize.setHeight(geo.top());
+        if(alignment & Qt::AlignVCenter)
+            mAlignSize.setHeight(0);
         else if(alignment & Qt::AlignBottom)
             mAlignSize.setHeight(pixmap.height() - geo.bottom());
         else
-            mAlignSize.setHeight(0);
+            mAlignSize.setHeight(geo.top());
 
         updatePos();
     }
@@ -116,13 +125,19 @@ void TToolBar::updatePos()
         QRect geo = geometry();
         int x = 0;
         int y = 0;
-        if(mAlignment & Qt::AlignRight)
-            x = rt.width() - mAlignSize.width() - geo.width();
-        else if(mAlignment & Qt::AlignCenter)
+        if(mAlignment & Qt::AlignHCenter)
             x = (rt.width() - geo.width()) / 2;
+        else if(mAlignment & Qt::AlignRight)
+            x = rt.width() - mAlignSize.width() - geo.width();
+        else
+            x = mAlignSize.width();
 
-        if(mAlignment & Qt::AlignBottom)
+        if(mAlignment & Qt::AlignVCenter)
+            y = (rt.height() - geo.height()) / 2;
+        else if(mAlignment & Qt::AlignBottom)
             y = rt.height() - mAlignSize.height() - geo.height();
+        else
+            y = mAlignSize.height();
 
         move(x, y);
     }
@@ -133,9 +148,9 @@ void TToolBar::loadFromSkin(QDomElement element, TSkin *skin)
     if(!skin)
         return;
 
-    setPixmaps(skin->findPixmap(element.attribute(ATTR_IMAGE)), skin->findPixmap(element.attribute(ATTR_HOT_IMAGE)));
+    setPixmaps(skin->findPixmap(element.attribute(ATTR_IMAGE)), skin->findPixmap(element.attribute(ATTR_HOT_IMAGE)), skin->transparentColor());
     setGeometry(SkinUtils::strToGeometry(element.attribute(ATTR_POSITION)));
-    QString alignment = element.attribute(ATTR_ALIGN);
+    QString alignment = element.attribute(ATTR_ALIGN, "left+top");
     if(!alignment.isEmpty())
     {
         QDomElement parentElement = element.parentNode().toElement();

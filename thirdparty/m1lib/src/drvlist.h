@@ -275,6 +275,12 @@
 	DRIVER(hexion)
 	DRIVER(jumping)
 
+    // NMK
+    DRIVER(nmk004)
+
+    // PGM
+    DRIVER(pgm)
+
 #if 0 	// not working/dead drivers
 	DRIVER(gaelco3d)
 	DRIVER(chipsqueak)

@@ -198,7 +198,7 @@ void TEqualizerWindow::loadFromSkin(QDomElement element, TSkin *skin)
 
     QDomElement factorElement = element.firstChildElement(TAG_EQUALIZER_EQFACTOR);
     QRect rt = SkinUtils::strToGeometry(factorElement.attribute(ATTR_POSITION));
-    int space = element.attribute(ATTR_EQ_INTERVAL).toInt() + rt.width() - 1;
+    int space = element.attribute(ATTR_EQ_INTERVAL).toInt() + rt.width();
     int offsetX = rt.left();
     for(int i=0;i<EQ_FACTORS;i++)
     {

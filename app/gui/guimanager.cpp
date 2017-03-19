@@ -1,7 +1,8 @@
 #include "guimanager.h"
 
 #include <QMessageBox>
-#include "preferences.h"
+#include "app/utils/preferences.h"
+#include "share/skinsetting.h"
 
 void findGumedWindows(TWindowList &list, TWindowList &findedList)
 {
@@ -53,6 +54,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
   , mMinimode(false)
   , mShowDesktopLyric(false)
 {
+    qApp->setStyle("Fusion");
     mMainWindow->setContextMenu(mMainMenu);
 
     // Main window
@@ -99,6 +101,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
 
     //Main menu
     mMainMenu->skinMenu()->setPath("skins");
+
     connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotRequestExit()));
     connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(QString)), this, SLOT(slotRequestLoadSkin(QString)));
 
@@ -204,6 +207,62 @@ bool TGuiManager::loadSkin(QString fileName)
         mDesktopLyricWindow->loadFromSkin(root.firstChildElement(TAG_DESKLRC_BAR), &skin);
 
         mTrayIcon->setIcon(mMainWindow->windowIcon());
+
+        mCurrentSkinFile = fileName;
+        emit skinChanged();
+
+        // Load skin setting
+        TSkinSetting skinSetting(fileName);
+        if(skinSetting.exists())
+        {
+            QByteArray mainWindowGeometry;
+            QByteArray mainWindowState;
+            QByteArray equalizerWindowGeometry;
+            QByteArray equalizerWindowState;
+            QByteArray desktoplyricWindowGeometry;
+            QByteArray desktoplyricWindowState;
+            QByteArray lyricWindowGeometry;
+            QByteArray lyricWindowState;
+            QByteArray playlistWindowGeometry;
+            QByteArray playlistWindowState;
+            QByteArray browserWindowGeometry;
+            QByteArray browserWindowState;
+
+            skinSetting.mainWindowState(&mainWindowGeometry, &mainWindowState);
+            skinSetting.equalizerWindowState(&equalizerWindowGeometry, &equalizerWindowState);
+            skinSetting.desktopLyricWindowState(&desktoplyricWindowGeometry, &desktoplyricWindowState);
+            skinSetting.lyricWindowState(&lyricWindowGeometry, &lyricWindowState);
+            skinSetting.playlistWindowState(&playlistWindowGeometry, &playlistWindowState);
+            skinSetting.browserWindowState(&browserWindowGeometry, &browserWindowState);
+
+            if(!mainWindowGeometry.isEmpty())
+                mMainWindow->restoreGeometry(mainWindowGeometry);
+            if(!mainWindowState.isEmpty())
+                mMainWindow->restoreState(mainWindowState);
+            if(!equalizerWindowGeometry.isEmpty())
+                mEqualizerWindow->restoreGeometry(equalizerWindowGeometry);
+            if(!equalizerWindowState.isEmpty())
+                mEqualizerWindow->restoreState(equalizerWindowState);
+            if(!desktoplyricWindowGeometry.isEmpty())
+                mDesktopLyricWindow->restoreGeometry(desktoplyricWindowGeometry);
+            if(!desktoplyricWindowState.isEmpty())
+                mDesktopLyricWindow->restoreState(desktoplyricWindowState);
+            if(!lyricWindowGeometry.isEmpty())
+                mLyricWindow->restoreGeometry(lyricWindowGeometry);
+            if(!lyricWindowState.isEmpty())
+                mLyricWindow->restoreState(lyricWindowState);
+            if(!playlistWindowGeometry.isEmpty())
+                mPlaylistWindow->restoreGeometry(playlistWindowGeometry);
+            if(!playlistWindowState.isEmpty())
+                mPlaylistWindow->restoreState(playlistWindowState);
+            if(!browserWindowGeometry.isEmpty())
+                mBrowserWindow->restoreGeometry(browserWindowGeometry);
+            if(!browserWindowState.isEmpty())
+                mBrowserWindow->restoreState(browserWindowState);
+        } else {
+            // First created
+            centerWindow();
+        }
     } else {
         QMessageBox::critical(
             mMainWindow,
@@ -478,6 +537,70 @@ void TGuiManager::restoreGui()
         mMainWindow->activateWindow();
 }
 
+void TGuiManager::centerWindow()
+{
+    TWindowList movingWindows;
+    movingWindows.append(mMainWindow);
+    movingWindows.append(mLyricWindow);
+    movingWindows.append(mEqualizerWindow);
+    movingWindows.append(mPlaylistWindow);
+    movingWindows.append(mBrowserWindow);
+    movingWindows.append(mDesktopLyricWindow);
+
+    QList<TEdge*> movingEdges;
+
+    // Fill all moving edges into list
+    for(auto wnd : movingWindows)
+    {
+        QRect movingRect = wnd->geometry();
+        int newLeft = movingRect.left();
+        int newRight = movingRect.right();
+        int newTop = movingRect.top();
+        int newBottom = movingRect.bottom();
+
+        movingEdges.append(new TEdge(newTop, newBottom, newLeft, ET_LEFT));
+        movingEdges.append(new TEdge(newLeft, newRight, newTop, ET_TOP));
+        movingEdges.append(new TEdge(newTop, newBottom, newRight, ET_RIGHT));
+        movingEdges.append(new TEdge(newLeft, newRight, newBottom, ET_BOTTOM));
+    }
+
+    // Find maximum boundary
+    int desktopWidth = mDesktopWindow->width();
+    int desktopHeight = mDesktopWindow->height();
+    int left = desktopWidth;
+    int top = desktopHeight;
+    int right = 0;
+    int bottom = 0;
+    for(TEdge *e : movingEdges)
+    {
+        if(e->direction == ED_HORIZONTAL)
+        {
+            if(e->from < left)
+                left = e->from;
+            if(e->to > right)
+                right = e->to;
+        } else if(e->direction == ED_VERTICAL) {
+            if(e->from < top)
+                top = e->from;
+            if(e->to > bottom)
+                bottom = e->to;
+        }
+    }
+    // Destroy moving edges
+    for(auto e : movingEdges)
+        delete e;
+
+    int dx = (float)(desktopWidth - right + left) / 2 + 0.5;
+    int dy = (float)(desktopHeight - bottom + top) / 2 + 0.5;;
+    for(auto subWnd : movingWindows)
+    {
+        QPoint subWndPoint = subWnd->pos();
+        subWndPoint.rx() += dx;
+        subWndPoint.ry() += dy;
+        subWnd->move(subWndPoint);
+    }
+}
+
 void TGuiManager::slotOnOpacityChanged(qreal value)
 {
     mMainWindow->setWindowOpacity(value);
@@ -490,7 +613,21 @@ void TGuiManager::slotOnOpacityChanged(qreal value)
 
 void TGuiManager::slotRequestLoadSkin(QString skinFullName)
 {
-    loadSkin(skinFullName);
+    if(!mCurrentSkinFile.isEmpty())
+    {
+        TSkinSetting skinSetting(mCurrentSkinFile);
+        skinSetting.writeMainWindowState(mMainWindow->saveGeometry(), mMainWindow->saveState());
+        skinSetting.writeEqualizerWindowState(mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
+        skinSetting.writeDesktopLyricWindowState(mDesktopLyricWindow->saveGeometry(), mDesktopLyricWindow->saveState());
+        skinSetting.writeLyricWindowState(mLyricWindow->saveGeometry(), mLyricWindow->saveState());
+        skinSetting.writePlaylistWindowState(mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
+        skinSetting.writeBrowserWindowState(mBrowserWindow->saveGeometry(), mBrowserWindow->saveState());
+    }
+    if(loadSkin(skinFullName))
+    {
+
+
+    }
 }
 
 void TGuiManager::slotMainWindowActivationChanged()
@@ -512,17 +649,6 @@ void TGuiManager::slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason
         restoreGui();
     }
 }
-
-//void TGuiManager::slotMainWindowAboutToClose()
-//{
-//    mLyricWindow->close();
-//    mEqualizerWindow->close();
-//    mPlaylistWindow->close();
-//    mBrowserWindow->close();
-//    mDesktopLyricWindow->close();
-
-//    mDesktopWindow->close();
-//}
 
 void TGuiManager::hide()
 {
@@ -571,10 +697,27 @@ void TGuiManager::show()
     mMainWindow->activateWindow();
 }
 
+void TGuiManager::exit()
+{
+    slotRequestExit();
+}
+
 bool TGuiManager::isMainwindowSunken()
 {
     QRect rt = mMainWindow->geometry();
-    TMainWindow *mainWindow = qobject_cast<TMainWindow*>(qApp->widgetAt(rt.left()+1, rt.top()+1));
+    QList<QPoint> checkPoint;
+    checkPoint.append(QPoint(rt.left()+1, rt.top()+1));
+    checkPoint.append(QPoint(rt.left()+1, rt.center().y()));
+    checkPoint.append(QPoint(rt.center().x(), rt.top()+1));
+    checkPoint.append(QPoint(rt.right()-1, rt.center().y()));
+    checkPoint.append(QPoint(rt.center().x(), rt.bottom()-1));
+    TMainWindow *mainWindow = NULL;
+    for(QPoint pt : checkPoint)
+    {
+        mainWindow = qobject_cast<TMainWindow*>(qApp->widgetAt(pt.x(), pt.y()));
+        if(mainWindow)
+            break;
+    }
     return mainWindow==NULL;
 }
 

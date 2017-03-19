@@ -26,6 +26,7 @@ typedef QList<TAbstractWindow *> TWindowList;
 class TGuiManager : public QObject
 {
     Q_OBJECT
+
 public:
     explicit TGuiManager(QObject *parent = 0);
     ~TGuiManager();
@@ -37,6 +38,8 @@ public:
 
     void hide();
     void show();
+
+    void exit();
 
     void setCaption(QString caption);
 
@@ -58,6 +61,7 @@ signals:
     void requestNext();
     void requestPrevious();
     void requestShutdown();
+    void skinChanged();
 
 private slots:
     void slotLyricWindowToggled(bool toggled);
@@ -78,7 +82,6 @@ private slots:
     void slotRequestLoadSkin(QString skinFullName);
     void slotMainWindowActivationChanged();
     void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
-    //void slotMainWindowAboutToClose();
 
 private:
     TMainWindow *mMainWindow;
@@ -107,10 +110,15 @@ private:
     bool mDesktopLyricVisible;
     bool mEqualizerVisible;
 
+    QString mCurrentSkinFile;
+
     void createSystemTrayIcon();
     bool isMainwindowSunken();
     void toggleGui();
     void restoreGui();
+
+    // Move window to desktop center
+    void centerWindow();
     void moveWindow(TAbstractWindow* window, int left, int top);
 };
 

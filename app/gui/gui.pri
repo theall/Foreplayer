@@ -1,5 +1,10 @@
 QT += gui widgets xml
 
+TRANSLATIONS = \
+    $$PWD/resource/ts/en.ts \
+    $$PWD/resource/ts/zh_cn.ts \
+    $$PWD/resource/ts/zh_tw.ts
+
 INCLUDEPATH += \
     $$PWD/share
 
@@ -66,7 +71,9 @@ SOURCES += \
     $$PWD/dialogs/optionabout.cpp \
     $$PWD/dialogs/optionskin.cpp \
     $$PWD/dialogs/optionplugininfo.cpp \
-    $$PWD/dialogs/aboutdialog.cpp
+    $$PWD/dialogs/aboutdialog.cpp \
+    $$PWD/share/skinsetting.cpp \
+    $$PWD/share/skinmanager.cpp
 
 HEADERS  += \
     $$PWD/windows/widgets/imagebutton.h \
@@ -129,7 +136,9 @@ HEADERS  += \
     $$PWD/dialogs/optionabout.h \
     $$PWD/dialogs/optionskin.h \
     $$PWD/dialogs/optionplugininfo.h \
-    $$PWD/dialogs/aboutdialog.h
+    $$PWD/dialogs/aboutdialog.h \
+    $$PWD/share/skinsetting.h \
+    $$PWD/share/skinmanager.h
 
 FORMS += \
     $$PWD/dialogs/optionsdialog.ui \
@@ -141,3 +150,6 @@ FORMS += \
     $$PWD/dialogs/optionskin.ui \
     $$PWD/dialogs/optionplugininfo.ui \
     $$PWD/dialogs/aboutdialog.ui
+
+RESOURCES += \
+    $$PWD/resource/res.qrc

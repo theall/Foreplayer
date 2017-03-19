@@ -2,6 +2,7 @@
 #define TMUSICITEM_H
 
 #include "trackitem.h"
+
 enum SortMethod
 {
     SM_TITLE_ASC,

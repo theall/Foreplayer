@@ -45,19 +45,19 @@ void TImageButton::setAlignment(QPixmap pixmap, Qt::Alignment alignment)
     if(parent)
     {
         QRect geo = geometry();
-        if(alignment & Qt::AlignLeft)
-            mAlignSize.setWidth(geo.left());
-        else if(alignment & Qt::AlignRight)
+        if(alignment & Qt::AlignRight)
             mAlignSize.setWidth(pixmap.width() - geo.right());
-        else
+        else if(mAlignment & Qt::AlignHCenter)
             mAlignSize.setWidth(0);
-
-        if(alignment & Qt::AlignTop)
-            mAlignSize.setHeight(geo.top());
-        else if(alignment & Qt::AlignBottom)
-            mAlignSize.setHeight(pixmap.height() - geo.bottom());
         else
+            mAlignSize.setWidth(geo.left());
+
+        if(alignment & Qt::AlignBottom)
+            mAlignSize.setHeight(pixmap.height() - geo.bottom());
+        else if(alignment & Qt::AlignVCenter)
             mAlignSize.setHeight(0);
+        else
+            mAlignSize.setHeight(geo.top());
 
         updatePos();
     }
@@ -74,9 +74,19 @@ void TImageButton::updatePos()
         int y = 0;
         if(mAlignment & Qt::AlignRight)
             x = rt.width() - mAlignSize.width() - geo.width();
+        else if(mAlignment & Qt::AlignHCenter)
+            x = (rt.width() - geo.width()) / 2;
+        else // Default align left
+            x = mAlignSize.width();
 
         if(mAlignment & Qt::AlignBottom)
             y = rt.height() - mAlignSize.height() - geo.height();
+        else if(mAlignment & Qt::AlignVCenter)
+            y = (rt.height() - geo.height()) / 2;
+        else // Default align top
+            y = mAlignSize.height();
+
+        move(x, y);
 
         move(x, y);
     }
@@ -140,7 +150,6 @@ void TImageButton::paintEvent(QPaintEvent *event)
     option.initFrom(this);
     option.features = QStyleOptionButton::None;
     option.features |= QStyleOptionButton::Flat;
-    option.features |= QStyleOptionButton::HasMenu;
 
     option.text = "";
     if(isChecked())

@@ -32,6 +32,8 @@ bool TSkin::load(QString fileName)
     bool success = false;
     mError.clear();
 
+    mFileName = fileName;
+
     if(fileSuffix=="xml")
         success = loadFromXmlFile(fileName);
     else
@@ -39,7 +41,6 @@ bool TSkin::load(QString fileName)
 
     if(success)
     {
-        mFileName = fileName;
         mFileDir = QFileInfo(fileName).dir();
     } else {
         qDebug() << mError;
@@ -94,7 +95,7 @@ QPixmap TSkin::findPixmap(QString fileName)
     else
         pixmap.load(mFileDir.absoluteFilePath(fileName));
 
-    QBitmap mask = pixmap.createMaskFromColor(mTransparentColor, Qt::MaskInColor);
+    QBitmap mask = pixmap.createMaskFromColor(mTransparentColor);
     pixmap.setMask(mask);
 
     return pixmap;
@@ -102,6 +103,8 @@ QPixmap TSkin::findPixmap(QString fileName)
 
 QIcon TSkin::findIcon(QString fileName)
 {
+    if(fileName.isEmpty())
+        return QIcon();
     if(mZipfile)
         return readIconFromZip(fileName);
     return QIcon(mFileDir.absoluteFilePath(fileName));
@@ -150,7 +153,7 @@ bool TSkin::parseXmlDocument(const QByteArray &byteArray)
     int errLine = 0;
     int errColumn = 0;
     if(!document.setContent(byteArray, false, &strError, &errLine, &errColumn)) {
-        mError = tr("Parse file failed at line %1, column %2, %3").arg(errLine).arg(errColumn).arg(strError);
+        mError = tr("Parse file failed at line %1, column %2, %3 in %4").arg(errLine).arg(errColumn).arg(strError).arg(mFileName);
         return false;
     }
 
@@ -211,7 +214,7 @@ bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)
         mError = tr("Zip file is not opened.");
         return false;
     }
-    int status = unzLocateFile(mZipfile, TEXT(fileName), 0);
+    int status = unzLocateFile(mZipfile, TEXT(fileName), 2);
     if(status != UNZ_OK)
     {
         mError = tr("Fail to locate file %1").arg(ZIP_SKIN_NAME);

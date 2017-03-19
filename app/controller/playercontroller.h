@@ -12,7 +12,7 @@ public:
     explicit TPlayerController(QObject *parent = 0);
     ~TPlayerController();
 
-    void joint(TGuiManager *gui, TCore *core);
+    bool joint(TGuiManager *gui, TCore *core);
 
 signals:
     void requestCurrentIndex(int *pi, int *mi, int *ti);

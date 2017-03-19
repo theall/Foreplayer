@@ -45,7 +45,7 @@ public:
     const QPixmap *mouseDown() const;
     const QPixmap *diabled() const;
 
-    QSize size();
+    const QSize size() const;
 
 private:
     QSize mSize;

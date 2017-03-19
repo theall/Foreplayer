@@ -5,6 +5,7 @@ TLabel::TLabel(QWidget *parent):
 {
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     setScaledContents(true);
+    setAlignment(Qt::AlignLeft|Qt::AlignVCenter);
 }
 
 void TLabel::setFontColor(QFont font, QColor color)
@@ -29,4 +30,12 @@ void TLabel::loadFromSkin(QDomElement element, TSkin *skin)
     setFontColor(SkinUtils::extractFont(element), QColor(element.attribute(ATTR_COLOR)));
 
     setAlignment(SkinUtils::extractAlignment(element));
+}
+
+void TLabel::mousePressEvent(QMouseEvent *event)
+{
+    if(event->button()==Qt::LeftButton)
+        emit clicked();
+
+    QLabel::mousePressEvent(event);
 }

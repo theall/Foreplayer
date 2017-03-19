@@ -5,6 +5,7 @@
 #define SAMPLE_SPACE                1
 #define SAMPLE_TOP_BLOCK_HEIGHT     1
 #define SAMPLE_TOP_BLOCK_PAUSE_TIME 15
+#define DEFAULT_COLOR               "#FFFFFF"
 
 TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
   , mSampleCount(0)
@@ -23,6 +24,12 @@ TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
         mTopBlockSpeed[i] = 0;
         mTopBlockBlank[i] = 0;
     }
+
+    // Default color
+    mColorBlock.setNamedColor(DEFAULT_COLOR);
+    mColorTop.setNamedColor(DEFAULT_COLOR);
+    mColorMiddle.setNamedColor(DEFAULT_COLOR);
+    mColorBottom.setNamedColor(DEFAULT_COLOR);
 }
 
 TVisualWidget::~TVisualWidget()
@@ -334,8 +341,8 @@ void TVisualWidget::loadFromSkin(QDomElement element, TSkin *skin)
     Q_UNUSED(skin)
 
     setGeometry(SkinUtils::extractGeometry(element));
-    mColorBlock = QColor(element.attribute(ATTR_BLOCK_COLOR));
-    mColorTop = QColor(element.attribute(ATTR_TOP_COLOR));
-    mColorMiddle = QColor(element.attribute(ATTR_MIDDLE_COLOR));
-    mColorBottom = QColor(element.attribute(ATTR_BOTTOM_COLOR));
+    mColorBlock = QColor(element.attribute(ATTR_BLOCK_COLOR, DEFAULT_COLOR));
+    mColorTop = QColor(element.attribute(ATTR_TOP_COLOR, DEFAULT_COLOR));
+    mColorMiddle = QColor(element.attribute(ATTR_MIDDLE_COLOR, DEFAULT_COLOR));
+    mColorBottom = QColor(element.attribute(ATTR_BOTTOM_COLOR, DEFAULT_COLOR));
 }

@@ -77,14 +77,14 @@ void TSliderbarStyle::drawWidget(const QWidget *widget, const QStyleOptionComple
                 QPixmap pixToDraw;
                 if(orientation == Qt::Vertical) {
                     w = fillPixmap->width();
-                    x = (sliderRect.width() - w) / 2;
-                    h = grooveRect.height()*drawFactor;
-                    y = grooveRect.bottom() - h;
+                    x = (float)(sliderRect.width() - w) / 2 + 0.5;
+                    h = grooveRect.height()*drawFactor + 0.5;
+                    y = grooveRect.bottom() - h + 1;
                     pixToDraw = fillPixmap->copy(0, y, w, h);
                 } else if(orientation == Qt::Horizontal) {
                     h = fillPixmap->height();
-                    y = (sliderRect.height() - h) / 2;
-                    w = grooveRect.width()*drawFactor;
+                    y = (float)(sliderRect.height() - h) / 2 + 0.5;
+                    w = grooveRect.width()*drawFactor + 0.5;
                     pixToDraw = fillPixmap->copy(0, 0, w, h);
                 }
                 painter->drawPixmap(x, y, w, h, pixToDraw);

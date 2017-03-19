@@ -153,6 +153,8 @@ M1_BOARD_END
 
 static void NMK2_Init(long srate)
 {
+    (void)srate;
+
 	cmd_latch = 0xff;
 
 	m1snd_addToCmdQueue(1);
@@ -169,3 +171,17 @@ static void NMK_SendCmd(int cmda, int cmdb)
 
 	cmd_latch = cmda;
 }
+
+M1_BOARD_START( nmk004 )
+    MDRV_NAME("NMK004")
+    MDRV_HWDESC("NMK004, YM2203, MSM-6295(x2)")
+    MDRV_SEND( NMK_SendCmd )
+    MDRV_INIT( NMK2_Init )
+
+    MDRV_CPU_ADD(NMK004, 10000000)
+    MDRV_CPU_MEMORY(macross2_sound_readmem,macross2_sound_writemem)
+    MDRV_CPU_PORTS(macross2_sound_readport,macross2_sound_writeport)
+
+    MDRV_SOUND_ADD(YM2203, &ym2203_interface_15)
+    MDRV_SOUND_ADD(OKIM6295, &okim6295_interface_dual)
+M1_BOARD_END

@@ -13,7 +13,8 @@ static struct YM2151interface ym2151_interface =
 	1,			/* 1 chip */
 	3579545,	/* 3.579545 MHz */
 	{ YM3012_VOL(75,MIXER_PAN_LEFT,75,MIXER_PAN_RIGHT) },
-	{ 0 }
+    { 0 },
+    { 0 }
 };
 
 static struct UPD7759_interface upd7759_interface =
@@ -76,6 +77,8 @@ M1_BOARD_END
 
 static void E8_SendCmd(int cmda, int cmdb)
 {
+    (void)cmdb;
+
 	if (!cmda) return;
 
 	cmd_latch = cmda;

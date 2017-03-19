@@ -320,9 +320,17 @@ void TAbstractWindow::setGeometry(QRect geometry)
     updateEdges();
 }
 
-bool TAbstractWindow::restoreGeometry(const QByteArray &geometry)
+bool TAbstractWindow::restoreGeometry(const QByteArray &data)
 {
-    bool status = QMainWindow::restoreGeometry(geometry);
+    QSizePolicy sp = sizePolicy();
+    QRect oldGeo = geometry();
+    bool status = QMainWindow::restoreGeometry(data);
+    QRect newGeo = geometry();
+    if(sp.horizontalPolicy()==QSizePolicy::Fixed)
+        newGeo.setWidth(oldGeo.width());
+    if(sp.verticalPolicy()==QSizePolicy::Fixed)
+        newGeo.setHeight(oldGeo.height());
+    setGeometry(newGeo);
 
     updateEdges();
     return status;
@@ -490,15 +498,16 @@ void TAbstractWindow::loadFromSkin(QDomElement element, TSkin *skin)
         return;
 
     QRect geo = SkinUtils::extractGeometry(element);
-
-    if(geo.isValid())
-    {
-        setGeometry(geo);
-    }
     QPixmap pixmap = skin->findPixmap(element.attribute(ATTR_IMAGE));
-
     setMinimumWidth(pixmap.width());
     setMinimumHeight(pixmap.height());
+
+    if(!geo.isValid())
+    {
+        geo.setWidth(pixmap.width());
+        geo.setHeight(pixmap.height());
+    }
+    setGeometry(geo);
 
     if(!pixmap.isNull())
     {

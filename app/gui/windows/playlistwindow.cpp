@@ -117,7 +117,10 @@ void TPlaylistWindow::slotRequestToggleButtonContexMenu(TToolBar::BUTTON id, QPo
     if(menu)
     {
         QPoint pt = mToolbar->mapToGlobal(pos);
-        pt.setY(pt.y() - menu->sizeHint().height());
+        if(mToolbar->mapToParent(pos).y() > height()/2)
+            pt.setY(pt.y() - menu->sizeHint().height());
+        else
+            pt.setY(pt.y() + mToolbar->height());
         menu->popup(pt);
     }
 }
@@ -404,4 +407,10 @@ void TPlaylistWindow::loadFromSkin(QDomElement element, TSkin *skin)
                 skin->findPixmap(scrollBarElement.attribute(ATTR_BUTTONS_IMAGE)),
                 skin->findPixmap(scrollBarElement.attribute(ATTR_THUMB_IMAGE))
                 );
+
+    if(mCentralWidget->updatePosition(size()))
+    {
+        mBtnClose->updatePos();
+        mToolbar->updatePos();
+    }
 }

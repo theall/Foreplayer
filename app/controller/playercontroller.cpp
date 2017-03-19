@@ -11,12 +11,10 @@ TPlayerController::~TPlayerController()
 {
 }
 
-void TPlayerController::joint(TGuiManager *gui, TCore *core)
+bool TPlayerController::joint(TGuiManager *gui, TCore *core)
 {
     Q_ASSERT(gui);
     Q_ASSERT(core);
-
-    TAbstractController::joint(gui, core);
 
     mPlayerCore = core->player();
     Q_ASSERT(mPlayerCore);
@@ -34,6 +32,8 @@ void TPlayerController::joint(TGuiManager *gui, TCore *core)
     connect(mMainWindow, SIGNAL(stopClicked()), this, SLOT(slotStopButtonClicked()));
     connect(mMainWindow, SIGNAL(volumeValueChanged(float)), this, SLOT(slotVolumeValueChanged(float)));
     connect(mMainWindow, SIGNAL(volumeToggle(bool)), this, SLOT(slotVolumeToggled(bool)));
+
+    return TAbstractController::joint(gui, core);;
 }
 
 void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
@@ -197,18 +197,22 @@ void TPlayerController::slotVolumeToggled(bool toggled)
 
 void TPlayerController::updateWindowTitles()
 {
+    if(!mMainWindow || !mGui)
+        return;
+
     if(mCurrentItem)
     {
         QStringList titles;
         titles.append(mCurrentItem->displayName);
         titles.append(mCurrentItem->additionalInfo.split("\n"));
-        mMainWindow->setCaption(mCurrentItem->displayName);
+        mGui->setCaption(mCurrentItem->displayName);
         mMainWindow->setTitles(titles);
         mMainWindow->setPlayState(tr("Playing"));
         mMainWindow->setButtonPlayChecked(false);
         startTimer(40);
     } else {
         stopTimer();
+        mGui->setCaption("");
         mMainWindow->setTitles(QStringList()<<tr("Play failed."));
         mMainWindow->setPlayState(tr("Stoped"));
         mMainWindow->setButtonPlayChecked(true);

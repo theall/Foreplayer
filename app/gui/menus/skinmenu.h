@@ -14,16 +14,16 @@ public:
 
 signals:
     void requestLoadSkin(QString skinName);
+    void requestSkinNames(QStringList &skinNames);
 
 private slots:
-    void slotSkinTriggered();
+    void slotSkinTriggered(bool checked);
 
 private:
     QString mPath;
     QStringList mNameFilter;
     QAction *mLastActivedAction;
-    QString getSkinNameFromZip(QString zipFile);
-    QString getSkinNameFromXml(QString xmlFile);
+    QString getSkinNameFromFile(QString xmlFile);
 
     // TAbstractMenu interface
 public:
@@ -33,9 +33,5 @@ public:
 protected:
     void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
 };
-
-
-
-
 
 #endif // TSKINMENU_H

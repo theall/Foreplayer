@@ -1,5 +1,8 @@
 #include "app.h"
 
+#include "version/version.h"
+#include "utils/preferences.h"
+
 #include <QTextCodec>
 
 TCheckThread::TCheckThread(TGuiManager *gui) :
@@ -40,9 +43,10 @@ TApp::TApp(int argc, char *argv[]) :
     mApp(new QApplication(argc, argv))
   , mCheckThread(NULL)
 {
-    mApp->setOrganizationDomain("Theall");
-    mApp->setApplicationName("Foreplayer");
-    mApp->setApplicationVersion("0.0.1");
+    TVersionInfo *vi = TVersionInfo::instance(QString(argv[0]));
+    mApp->setOrganizationDomain(vi->domain());
+    mApp->setApplicationName(vi->productName());
+    mApp->setApplicationVersion(vi->productVersion());
 
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("GBK"));
 
@@ -66,7 +70,8 @@ int TApp::start()
     TCore core;
     TMainController controller;
     TGuiManager gui(&controller);
-    controller.joint(&gui, &core);
+    if(!controller.joint(&gui, &core))
+        return 0;
 
     if(!mCheckThread)
     {

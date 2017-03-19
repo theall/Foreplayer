@@ -16,10 +16,11 @@ TAbstractController::~TAbstractController()
     }
 }
 
-void TAbstractController::joint(TGuiManager *manager, TCore *core)
+bool TAbstractController::joint(TGuiManager *manager, TCore *core)
 {
     mGui = manager;
     mCore = core;
+    return true;
 }
 
 void TAbstractController::startTimer(int mSecs)

@@ -3,6 +3,7 @@
 const int c_timer_interval = 40;
 const int c_idle_time = 3000;
 const int c_idle_time_short = 1500;
+static int c_offset_y = 1;
 
 TScrollLabel::TScrollLabel(QWidget *parent) : QWidget(parent)
   , mSwitchOnClick(true)
@@ -51,6 +52,7 @@ void TScrollLabel::setFontColor(QFont font, QColor color)
     QPalette pa;
     pa.setColor(QPalette::WindowText, color);
     setPalette(pa);
+    c_offset_y = (float)(height() - font.pixelSize())/2 + 0.5;
 }
 
 void TScrollLabel::setSwitchOnClick(bool enabled)
@@ -76,7 +78,7 @@ void TScrollLabel::timerEvent(QTimerEvent *event)
     else if(mStatus==SWITCH)
     {
         mOffsetY--;
-        if(mOffsetY < 0)
+        if(mOffsetY < -c_offset_y)
         {
             mCurrentIndex = mIndex;
             mSwitchEnd = true;
@@ -154,7 +156,7 @@ void TScrollLabel::prepareNext()
     }
     mLine2 = mStrings[mIndex];
     mOffsetX = 0;
-    mOffsetY = rect().height()-1;
+    mOffsetY = rect().height()-c_offset_y-1;
     mIdleTime = 0;
 }
 
@@ -169,6 +171,7 @@ void TScrollLabel::paintEvent(QPaintEvent *event)
 
     if(!mSwitchEnd)
         p.drawText(mOffsetX, mOffsetY, mLine1);
+
     p.drawText(mOffsetX, mOffsetY+h, mLine2);
 
     // Line changed
@@ -176,7 +179,7 @@ void TScrollLabel::paintEvent(QPaintEvent *event)
     {
         QRectF needed;
         QRectF source(0, 0, w, h);
-        needed = p.boundingRect(source, Qt::AlignLeft, mStrings[mCurrentIndex]);
+        needed = p.boundingRect(source, Qt::AlignLeft|Qt::AlignVCenter, mStrings[mCurrentIndex]);
 
         mLineWidth = (int)needed.width();
         if(mLineWidth > w)

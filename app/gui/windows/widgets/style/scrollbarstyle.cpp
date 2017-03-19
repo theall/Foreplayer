@@ -45,6 +45,11 @@ void TScrollbarStyle::drawWidget(
     {
         drawRect = subControlRect(CC_ScrollBar, option, SC_ScrollBarSlider, scrollBar);
         buttonPixmap = scrollBar->handlePixmap();
+//        float factor = (float)scrollBar->value() / scrollBar->maximum();
+//        int totalHeight = scrollBar->height() - scrollBar->downPixmap()->size().height() - scrollBar->upPixmap()->size().height() - buttonPixmap->size().height();
+//        int posY = factor * totalHeight + 0.5;
+//        drawRect.setTop(posY);
+//        drawRect.setBottom(drawRect.top()+buttonPixmap->size().height());
         isActived = option->activeSubControls&SC_ScrollBarSlider;
         drawButton(painter,
                    buttonPixmap,
@@ -54,8 +59,9 @@ void TScrollbarStyle::drawWidget(
     }
     if(option->subControls & SC_ScrollBarAddLine)
     {
-        drawRect= subControlRect(CC_ScrollBar, option, SC_ScrollBarAddLine, scrollBar);
+        drawRect = subControlRect(CC_ScrollBar, option, SC_ScrollBarAddLine, scrollBar);
         buttonPixmap = scrollBar->downPixmap();
+        //drawRect.setTop(drawRect.bottom() - buttonPixmap->size().height());
         isActived = option->activeSubControls&SC_ScrollBarAddLine;
         drawButton(painter,
                    buttonPixmap,
@@ -65,8 +71,9 @@ void TScrollbarStyle::drawWidget(
     }
     if(option->subControls & SC_ScrollBarSubLine)
     {
-        drawRect= subControlRect(CC_ScrollBar, option, SC_ScrollBarSubLine, scrollBar);
+        drawRect = subControlRect(CC_ScrollBar, option, SC_ScrollBarSubLine, scrollBar);
         buttonPixmap = scrollBar->upPixmap();
+        //drawRect.setBottom(drawRect.top() + buttonPixmap->size().height());
         isActived = option->activeSubControls&SC_ScrollBarSubLine;
         drawButton(painter,
                    buttonPixmap,

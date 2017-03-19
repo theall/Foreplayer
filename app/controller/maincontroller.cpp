@@ -28,25 +28,24 @@ TMainController::~TMainController()
 
 }
 
-void TMainController::joint(TGuiManager *manager, TCore *core)
+bool TMainController::joint(TGuiManager *manager, TCore *core)
 {
     Q_ASSERT(manager);
     Q_ASSERT(core);
 
     connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
 
-    if(manager->loadSkin("z:/skins/fulkfour.zip"))
-    {
-        mPlayerController->joint(manager, core);
-        mPlaylistController->joint(manager, core);
-        mEqualizerController->joint(manager, core);
+    QDir dir(qApp->applicationDirPath());
+    if(!manager->loadSkin(dir.absoluteFilePath("skins/seven/skin.xml")))
+        return false;
 
-        manager->open();
-    } else {
+    mPlayerController->joint(manager, core);
+    mPlaylistController->joint(manager, core);
+    mEqualizerController->joint(manager, core);
 
-    }
+    manager->open();
 
-    TAbstractController::joint(manager, core);
+    return TAbstractController::joint(manager, core);
 }
 
 void TMainController::slotQuitApp()

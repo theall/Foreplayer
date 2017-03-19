@@ -31,6 +31,7 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     , mWindowHided(false)
 {
     setObjectName("MainWindow");
+    setMouseTracking(false);
 
     setWindowFlags(Qt::FramelessWindowHint|Qt::BypassWindowManagerHint|Qt::WindowMinimizeButtonHint);
 
@@ -82,8 +83,11 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mBtnMute, SIGNAL(clicked(bool)), this, SLOT(on_btnMute_clicked()));
     connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SLOT(on_volume_valueChanged(int)));
     connect(mProgressBar, SIGNAL(valueChanged(int)), this, SIGNAL(progressChanged(int)));
+    connect(mIcon, SIGNAL(clicked()), this, SLOT(on_icnLogo_clicked()));
 
     mBtnBrowser->setVisible(false);
+    mDefaultLogo.addFile(":/window/images/logo.ico");
+
     retranslateUi();
 }
 
@@ -228,6 +232,12 @@ void TMainWindow::on_btnMute_clicked()
     updatePlayEffect();
 }
 
+void TMainWindow::on_icnLogo_clicked()
+{
+    if(mContextMenu)
+        mContextMenu->popup(QCursor::pos());
+}
+
 void TMainWindow::updatePlayStatus()
 {
     mStatus->setText(mPlayState);
@@ -309,7 +319,12 @@ void TMainWindow::loadFromSkin(QDomElement element, TSkin *skin)
 
     QDomElement iconElement = element.firstChildElement(TAG_PLAYER_ICON);
     QIcon ico = skin->findIcon(iconElement.attribute(ATTR_ICON));
-    setWindowIcon(ico);
+    if(!ico.isNull())
+        setWindowIcon(ico);
+    else {
+        setWindowIcon(mDefaultLogo);
+        mIcon->setPixmap(mDefaultLogo.pixmap(64));
+    }
 }
 
 void TMainWindow::changeEvent(QEvent *event)

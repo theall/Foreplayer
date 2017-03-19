@@ -4,12 +4,9 @@
 #include <QApplication>
 #include <QSharedMemory>
 
-#include "gui/guimanager.h"
 #include "controller/maincontroller.h"
-#include "core/core.h"
-#include "utils/preferences.h"
 
-#define GLOBAL_SHARE_MEMORY_KEY     "Foreplayer/Theall2"
+#define GLOBAL_SHARE_MEMORY_KEY     "Foreplayer/Theall"
 class TCheckThread : public QThread
 {
 public:

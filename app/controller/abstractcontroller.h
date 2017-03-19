@@ -11,7 +11,7 @@ public:
     explicit TAbstractController(QObject *parent = 0);
     ~TAbstractController();
 
-    virtual void joint(TGuiManager *manager, TCore *core);
+    virtual bool joint(TGuiManager *manager, TCore *core);
 
     void startTimer(int mSecs = 50);
     void stopTimer();
