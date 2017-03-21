@@ -207,4 +207,6 @@ void TEqualizerWindow::loadFromSkin(QDomElement element, TSkin *skin)
         rt.moveLeft(offsetX + i*space);
         sliderBar->setGeometry(rt);
     }
+
+    update();
 }

@@ -51,6 +51,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
   , mOptionDialog(new TOptionsDialog)
   , mMainMenu(new TMainMenu)
   , mTrayIcon(new QSystemTrayIcon)
+  , mSkinManager(new TSkinManager)
   , mMinimode(false)
   , mShowDesktopLyric(false)
 {
@@ -99,12 +100,12 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mDesktopLyricWindow, SIGNAL(requireShowLyricWindow()), this, SLOT(slotRequireShowLyricWindow()));
     connect(mDesktopLyricWindow, SIGNAL(requestMoveWindow(QPoint)), this, SLOT(slotRequestMoveWindow(QPoint)));
 
-    //Main menu
-    mMainMenu->skinMenu()->setPath("skins");
-
+    // Main menu
     connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotRequestExit()));
-    connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(QString)), this, SLOT(slotRequestLoadSkin(QString)));
-
+    connect(mMainMenu, SIGNAL(onOptionsTriggered()), this, SLOT(slotOpenOptionsDialog()));
+    connect(mMainMenu, SIGNAL(onAboutTriggered()), this, SLOT(slotOpenOptionsDialog()));
+    connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(int)), this, SLOT(slotRequestLoadSkin(int)));
+    connect(mMainMenu->skinMenu(), SIGNAL(requestSkinNames(QStringList&)), this, SLOT(slotRequestSkinNames(QStringList&)));
     connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
 
     // Tray icon
@@ -185,6 +186,11 @@ TGuiManager::~TGuiManager()
          delete mTrayIcon;
          mTrayIcon = NULL;
     }
+    if(mSkinManager)
+    {
+        delete mSkinManager;
+        mSkinManager = NULL;
+    }
 }
 
 bool TGuiManager::loadSkin(QString fileName)
@@ -197,72 +203,8 @@ bool TGuiManager::loadSkin(QString fileName)
     bool result = skin.load(fileName);
     if(result)
     {
-        QDomElement root = skin.rootElement();
-        mMainWindow->loadFromSkin(root.firstChildElement(TAG_PLAYER_WINDOW), &skin);
-        mMiniWindow->loadFromSkin(root.firstChildElement(TAG_MINI_WINDOW), &skin);
-        mLyricWindow->loadFromSkin(root.firstChildElement(TAG_LYRIC_WINDOW), &skin);
-        mEqualizerWindow->loadFromSkin(root.firstChildElement(TAG_EQUALIZER_WINDOW), &skin);
-        mPlaylistWindow->loadFromSkin(root.firstChildElement(TAG_PLAYLIST_WINDOW), &skin);
-        mBrowserWindow->loadFromSkin(root.firstChildElement(TAG_BROWSER_WINDOW), &skin);
-        mDesktopLyricWindow->loadFromSkin(root.firstChildElement(TAG_DESKLRC_BAR), &skin);
-
-        mTrayIcon->setIcon(mMainWindow->windowIcon());
-
-        mCurrentSkinFile = fileName;
-        emit skinChanged();
-
-        // Load skin setting
-        TSkinSetting skinSetting(fileName);
-        if(skinSetting.exists())
-        {
-            QByteArray mainWindowGeometry;
-            QByteArray mainWindowState;
-            QByteArray equalizerWindowGeometry;
-            QByteArray equalizerWindowState;
-            QByteArray desktoplyricWindowGeometry;
-            QByteArray desktoplyricWindowState;
-            QByteArray lyricWindowGeometry;
-            QByteArray lyricWindowState;
-            QByteArray playlistWindowGeometry;
-            QByteArray playlistWindowState;
-            QByteArray browserWindowGeometry;
-            QByteArray browserWindowState;
-
-            skinSetting.mainWindowState(&mainWindowGeometry, &mainWindowState);
-            skinSetting.equalizerWindowState(&equalizerWindowGeometry, &equalizerWindowState);
-            skinSetting.desktopLyricWindowState(&desktoplyricWindowGeometry, &desktoplyricWindowState);
-            skinSetting.lyricWindowState(&lyricWindowGeometry, &lyricWindowState);
-            skinSetting.playlistWindowState(&playlistWindowGeometry, &playlistWindowState);
-            skinSetting.browserWindowState(&browserWindowGeometry, &browserWindowState);
-
-            if(!mainWindowGeometry.isEmpty())
-                mMainWindow->restoreGeometry(mainWindowGeometry);
-            if(!mainWindowState.isEmpty())
-                mMainWindow->restoreState(mainWindowState);
-            if(!equalizerWindowGeometry.isEmpty())
-                mEqualizerWindow->restoreGeometry(equalizerWindowGeometry);
-            if(!equalizerWindowState.isEmpty())
-                mEqualizerWindow->restoreState(equalizerWindowState);
-            if(!desktoplyricWindowGeometry.isEmpty())
-                mDesktopLyricWindow->restoreGeometry(desktoplyricWindowGeometry);
-            if(!desktoplyricWindowState.isEmpty())
-                mDesktopLyricWindow->restoreState(desktoplyricWindowState);
-            if(!lyricWindowGeometry.isEmpty())
-                mLyricWindow->restoreGeometry(lyricWindowGeometry);
-            if(!lyricWindowState.isEmpty())
-                mLyricWindow->restoreState(lyricWindowState);
-            if(!playlistWindowGeometry.isEmpty())
-                mPlaylistWindow->restoreGeometry(playlistWindowGeometry);
-            if(!playlistWindowState.isEmpty())
-                mPlaylistWindow->restoreState(playlistWindowState);
-            if(!browserWindowGeometry.isEmpty())
-                mBrowserWindow->restoreGeometry(browserWindowGeometry);
-            if(!browserWindowState.isEmpty())
-                mBrowserWindow->restoreState(browserWindowState);
-        } else {
-            // First created
-            centerWindow();
-        }
+        mCurrentSkinFile = Utils::absoluteFilePath(fileName);
+        loadSkin(&skin);
     } else {
         QMessageBox::critical(
             mMainWindow,
@@ -516,6 +458,17 @@ void TGuiManager::slotRequestExit()
     mMainMenu->close();
 }
 
+void TGuiManager::slotOpenOptionsDialog()
+{
+    if(mOptionDialog)
+        mOptionDialog->exec();
+}
+
+void TGuiManager::slotOpenOptionAboutPage()
+{
+
+}
+
 void TGuiManager::toggleGui()
 {
     if(mMainWindow->isVisible())
@@ -544,8 +497,8 @@ void TGuiManager::centerWindow()
     movingWindows.append(mLyricWindow);
     movingWindows.append(mEqualizerWindow);
     movingWindows.append(mPlaylistWindow);
-    movingWindows.append(mBrowserWindow);
-    movingWindows.append(mDesktopLyricWindow);
+    //movingWindows.append(mBrowserWindow);
+    //movingWindows.append(mDesktopLyricWindow);
 
     QList<TEdge*> movingEdges;
 
@@ -575,15 +528,16 @@ void TGuiManager::centerWindow()
     {
         if(e->direction == ED_HORIZONTAL)
         {
-            if(e->from < left)
-                left = e->from;
-            if(e->to > right)
-                right = e->to;
+            if(e->value < top)
+                top = e->value;
+            if(e->value > bottom)
+                bottom = e->value;
+
         } else if(e->direction == ED_VERTICAL) {
-            if(e->from < top)
-                top = e->from;
-            if(e->to > bottom)
-                bottom = e->to;
+            if(e->value < left)
+                left = e->value;
+            if(e->value > right)
+                right = e->value;
         }
     }
     // Destroy moving edges
@@ -611,7 +565,7 @@ void TGuiManager::slotOnOpacityChanged(qreal value)
     mBrowserWindow->setWindowOpacity(value);
 }
 
-void TGuiManager::slotRequestLoadSkin(QString skinFullName)
+void TGuiManager::slotRequestLoadSkin(int skinIndex)
 {
     if(!mCurrentSkinFile.isEmpty())
     {
@@ -623,11 +577,15 @@ void TGuiManager::slotRequestLoadSkin(QString skinFullName)
         skinSetting.writePlaylistWindowState(mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
         skinSetting.writeBrowserWindowState(mBrowserWindow->saveGeometry(), mBrowserWindow->saveState());
     }
-    if(loadSkin(skinFullName))
-    {
+    TSkin *skin = mSkinManager->skinAt(skinIndex);
+    if(skin && loadSkin(skin))
+        mCurrentSkinFile = skin->fileName();
+}
 
-
-    }
+void TGuiManager::slotRequestSkinNames(QStringList &names)
+{
+    mSkinManager->reload();
+    names = mSkinManager->skinNames();
 }
 
 void TGuiManager::slotMainWindowActivationChanged()
@@ -839,4 +797,78 @@ void TGuiManager::moveWindow(TAbstractWindow *window, int left, int top)
         subWndPoint.ry() += dy;
         subWnd->move(subWndPoint);
     }
+}
+
+bool TGuiManager::loadSkin(TSkin *skin)
+{
+    if(!skin)
+        return false;
+
+    QDomElement root = skin->rootElement();
+    mMainWindow->loadFromSkin(root.firstChildElement(TAG_PLAYER_WINDOW), skin);
+    mMiniWindow->loadFromSkin(root.firstChildElement(TAG_MINI_WINDOW), skin);
+    mLyricWindow->loadFromSkin(root.firstChildElement(TAG_LYRIC_WINDOW), skin);
+    mEqualizerWindow->loadFromSkin(root.firstChildElement(TAG_EQUALIZER_WINDOW), skin);
+    mPlaylistWindow->loadFromSkin(root.firstChildElement(TAG_PLAYLIST_WINDOW), skin);
+    mBrowserWindow->loadFromSkin(root.firstChildElement(TAG_BROWSER_WINDOW), skin);
+    mDesktopLyricWindow->loadFromSkin(root.firstChildElement(TAG_DESKLRC_BAR), skin);
+
+    mTrayIcon->setIcon(mMainWindow->windowIcon());
+
+    emit skinChanged();
+
+    // Load skin setting
+    TSkinSetting skinSetting(skin->fileName());
+    if(skinSetting.exists())
+    {
+        QByteArray mainWindowGeometry;
+        QByteArray mainWindowState;
+        QByteArray equalizerWindowGeometry;
+        QByteArray equalizerWindowState;
+        QByteArray desktoplyricWindowGeometry;
+        QByteArray desktoplyricWindowState;
+        QByteArray lyricWindowGeometry;
+        QByteArray lyricWindowState;
+        QByteArray playlistWindowGeometry;
+        QByteArray playlistWindowState;
+        QByteArray browserWindowGeometry;
+        QByteArray browserWindowState;
+
+        skinSetting.mainWindowState(&mainWindowGeometry, &mainWindowState);
+        skinSetting.equalizerWindowState(&equalizerWindowGeometry, &equalizerWindowState);
+        skinSetting.desktopLyricWindowState(&desktoplyricWindowGeometry, &desktoplyricWindowState);
+        skinSetting.lyricWindowState(&lyricWindowGeometry, &lyricWindowState);
+        skinSetting.playlistWindowState(&playlistWindowGeometry, &playlistWindowState);
+        skinSetting.browserWindowState(&browserWindowGeometry, &browserWindowState);
+
+        if(!mainWindowGeometry.isEmpty())
+            mMainWindow->restoreGeometry(mainWindowGeometry);
+        if(!mainWindowState.isEmpty())
+            mMainWindow->restoreState(mainWindowState);
+        if(!equalizerWindowGeometry.isEmpty())
+            mEqualizerWindow->restoreGeometry(equalizerWindowGeometry);
+        if(!equalizerWindowState.isEmpty())
+            mEqualizerWindow->restoreState(equalizerWindowState);
+        if(!desktoplyricWindowGeometry.isEmpty())
+            mDesktopLyricWindow->restoreGeometry(desktoplyricWindowGeometry);
+        if(!desktoplyricWindowState.isEmpty())
+            mDesktopLyricWindow->restoreState(desktoplyricWindowState);
+        if(!lyricWindowGeometry.isEmpty())
+            mLyricWindow->restoreGeometry(lyricWindowGeometry);
+        if(!lyricWindowState.isEmpty())
+            mLyricWindow->restoreState(lyricWindowState);
+        if(!playlistWindowGeometry.isEmpty())
+            mPlaylistWindow->restoreGeometry(playlistWindowGeometry);
+        if(!playlistWindowState.isEmpty())
+            mPlaylistWindow->restoreState(playlistWindowState);
+        if(!browserWindowGeometry.isEmpty())
+            mBrowserWindow->restoreGeometry(browserWindowGeometry);
+        if(!browserWindowState.isEmpty())
+            mBrowserWindow->restoreState(browserWindowState);
+    } else {
+        // First created
+        centerWindow();
+    }
+
+    return true;
 }

@@ -20,46 +20,46 @@ enum e_ir
 };
 
 enum tlcs90_e_irq {    INTSWI = 0, INTNMI, INTWD,  INT0,   INTT0,  INTT1,  INTT2,  INTT3,  INTT4,  INT1,   INTT5,  INT2,   INTRX,  INTTX,  INTMAX  };
-DECLARE_ENUM_OPERATORS(tlcs90_e_irq)
+//DECLARE_ENUM_OPERATORS(tlcs90_e_irq)
 
-class tlcs90_device : public cpu_device
+class tlcs90_device
 {
 public:
 	// construction/destruction
-	tlcs90_device(const machine_config &mconfig, device_type type, const char *name, const char *tag, device_t *owner, uint32_t clock, const char *shortname, const char *source, address_map_constructor program_map);
+    tlcs90_device(const char *rom);
 
-	DECLARE_READ8_MEMBER( t90_internal_registers_r );
-	DECLARE_WRITE8_MEMBER( t90_internal_registers_w );
+//	DECLARE_READ8_MEMBER( t90_internal_registers_r );
+//	DECLARE_WRITE8_MEMBER( t90_internal_registers_w );
 
-	TIMER_CALLBACK_MEMBER( t90_timer_callback );
-	TIMER_CALLBACK_MEMBER( t90_timer4_callback );
+//	TIMER_CALLBACK_MEMBER( t90_timer_callback );
+//	TIMER_CALLBACK_MEMBER( t90_timer4_callback );
 
 protected:
 	enum _e_op {    UNKNOWN,    NOP,    EX,     EXX,    LD,     LDW,    LDA,    LDI,    LDIR,   LDD,    LDDR,   CPI,    CPIR,   CPD,    CPDR,   PUSH,   POP,    JP,     JR,     CALL,   CALLR,      RET,    RETI,   HALT,   DI,     EI,     SWI,    DAA,    CPL,    NEG,    LDAR,   RCF,    SCF,    CCF,    TSET,   BIT,    SET,    RES,    INC,    DEC,    INCX,   DECX,   INCW,   DECW,   ADD,    ADC,    SUB,    SBC,    AND,    XOR,    OR,     CP,     RLC,    RRC,    RL,     RR,     SLA,    SRA,    SLL,    SRL,    RLD,    RRD,    DJNZ,   MUL,    DIV     };
 
 	// device-level overrides
-	virtual void device_start() override;
-	virtual void device_reset() override;
+    void device_start();
+    void device_reset();
 
 	// device_execute_interface overrides
-	virtual uint32_t execute_min_cycles() const override { return 2; }
-	virtual uint32_t execute_max_cycles() const override { return 26; }
-	virtual uint32_t execute_input_lines() const override { return 1; }
-	virtual uint32_t execute_default_irq_vector() const override { return 0xff; }
-	virtual void execute_run() override;
-	virtual void execute_set_input(int inputnum, int state) override;
-	virtual void execute_burn(int32_t cycles) override;
+    uint32_t execute_min_cycles() const { return 2; }
+    uint32_t execute_max_cycles() const { return 26; }
+    uint32_t execute_input_lines() const { return 1; }
+    uint32_t execute_default_irq_vector() const { return 0xff; }
+    void execute_run();
+    void execute_set_input(int inputnum, int state);
+    void execute_burn(int32_t cycles);
 
 	// device_memory_interface overrides
-	virtual const address_space_config *memory_space_config(address_spacenum spacenum = AS_0) const override { return (spacenum == AS_PROGRAM) ? &m_program_config : ( (spacenum == AS_IO) ? &m_io_config : nullptr ); }
+//	const address_space_config *memory_space_config(address_spacenum spacenum = AS_0) const { return (spacenum == AS_PROGRAM) ? &m_program_config : ( (spacenum == AS_IO) ? &m_io_config : nullptr ); }
 
 	// device_state_interface overrides
-	virtual void state_string_export(const device_state_entry &entry, std::string &str) const override;
+    //void state_string_export(const device_state_entry &entry, std::string &str) const;
 
 	// device_disasm_interface overrides
-	virtual uint32_t disasm_min_opcode_bytes() const override { return 1; }
-	virtual uint32_t disasm_max_opcode_bytes() const override { return 6; }
-	virtual offs_t disasm_disassemble(std::ostream &stream, offs_t pc, const uint8_t *oprom, const uint8_t *opram, uint32_t options) override;
+    uint32_t disasm_min_opcode_bytes() const { return 1; }
+    uint32_t disasm_max_opcode_bytes() const { return 6; }
+    offs_t disasm_disassemble(std::ostream &stream, offs_t pc, const uint8_t *oprom, const uint8_t *opram, uint32_t options);
 
 private:
 	enum e_mode {
@@ -70,25 +70,25 @@ private:
 		MODE_R16D8, MODE_R16R8
 	};
 
-	address_space_config m_program_config;
-	address_space_config m_io_config;
+    //address_space_config m_program_config;
+    //address_space_config m_io_config;
 
 	PAIR        m_prvpc,m_pc,m_sp,m_af,m_bc,m_de,m_hl,m_ix,m_iy;
 	PAIR        m_af2,m_bc2,m_de2,m_hl2;
 	uint8_t       m_halt, m_after_EI;
 	uint16_t      m_irq_state, m_irq_mask;
-	address_space *m_program;
-	address_space *m_io;
+    //address_space *m_program;
+    //address_space *m_io;
 	int     m_icount;
 	int         m_extra_cycles;       // extra cycles for interrupts
 	uint8_t       m_internal_registers[48];
 	uint32_t      m_ixbase,m_iybase;
 
 	// Timers: 4 x 8-bit + 1 x 16-bit
-	emu_timer   *m_timer[4+1];
+    //emu_timer   *m_timer[4+1];
 	uint8_t       m_timer_value[4];
 	uint16_t      m_timer4_value;
-	attotime    m_timer_period;
+    //attotime    m_timer_period;
 
 	// Work registers
 	uint8_t        m_op;
@@ -148,7 +148,7 @@ class tmp90840_device : public tlcs90_device
 {
 public:
 	// construction/destruction
-	tmp90840_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock);
+    tmp90840_device(const char *tag, uint32_t clock);
 };
 
 
@@ -156,7 +156,7 @@ class tmp90841_device : public tlcs90_device
 {
 public:
 	// construction/destruction
-	tmp90841_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock);
+    tmp90841_device(const char *tag, uint32_t clock);
 };
 
 
@@ -164,14 +164,14 @@ class tmp90845_device : public tlcs90_device
 {
 public:
 	// construction/destruction
-	tmp90845_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock);
+    tmp90845_device(const char *tag, uint32_t clock);
 };
 
 class tmp91640_device : public tlcs90_device
 {
 public:
 	// construction/destruction
-	tmp91640_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock);
+    tmp91640_device(const char *tag, uint32_t clock);
 };
 
 
@@ -179,14 +179,14 @@ class tmp91641_device : public tlcs90_device
 {
 public:
 	// construction/destruction
-	tmp91641_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock);
+    tmp91641_device(const char *tag, uint32_t clock);
 };
 
 
-extern const device_type TMP90840;
-extern const device_type TMP90841;
-extern const device_type TMP90845;
-extern const device_type TMP91640;
-extern const device_type TMP91641;
+//extern const device_type TMP90840;
+//extern const device_type TMP90841;
+//extern const device_type TMP90845;
+//extern const device_type TMP91640;
+//extern const device_type TMP91641;
 
 #endif /* __TLCS90_H__ */

@@ -65,6 +65,7 @@ extern "C" {
 #include "ymf271.h"
 #include "scsp.h"
 #include "msm5232.h"
+#include "ics2115.h"
 
 #ifdef __cplusplus
 }

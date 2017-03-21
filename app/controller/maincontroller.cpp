@@ -21,6 +21,11 @@ TMainController::TMainController(QObject *parent) :
             SIGNAL(requestCurrentIndex(int*,int*,int*)),
             mPlaylistController,
             SLOT(slotRequestCurrentIndex(int*,int*,int*)));
+
+    connect(mPlayerController,
+            SIGNAL(requestFixDuration(int)),
+            mPlaylistController,
+            SLOT(slotRequestFixDuration(int)));
 }
 
 TMainController::~TMainController()
@@ -35,8 +40,7 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
 
     connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
 
-    QDir dir(qApp->applicationDirPath());
-    if(!manager->loadSkin(dir.absoluteFilePath("skins/seven/skin.xml")))
+    if(!manager->loadSkin("skins/winamp.zip"))
         return false;
 
     mPlayerController->joint(manager, core);

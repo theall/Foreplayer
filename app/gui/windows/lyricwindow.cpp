@@ -72,4 +72,6 @@ void TLyricWindow::loadFromSkin(QDomElement element, TSkin *skin)
     mBtnClose->loadFromSkin(element.firstChildElement(TAG_LYRIC_CLOSE), skin);
     mBtnOnTop->loadFromSkin(element.firstChildElement(TAG_LYRIC_ONTOP), skin);
     mBtnDesktopLyric->loadFromSkin(element.firstChildElement(TAG_LYRIC_DESKLRC), skin);
+
+    update();
 }

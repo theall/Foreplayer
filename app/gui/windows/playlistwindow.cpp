@@ -413,4 +413,6 @@ void TPlaylistWindow::loadFromSkin(QDomElement element, TSkin *skin)
         mBtnClose->updatePos();
         mToolbar->updatePos();
     }
+
+    update();
 }

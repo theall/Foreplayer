@@ -9,21 +9,15 @@ class TSkinMenu : public TAbstractMenu
 public:
     TSkinMenu(QWidget *parent = 0);
 
-    void setPath(QString skinPath);
-    void reload();
-
 signals:
-    void requestLoadSkin(QString skinName);
+    void requestLoadSkin(int index);
     void requestSkinNames(QStringList &skinNames);
 
 private slots:
     void slotSkinTriggered(bool checked);
 
 private:
-    QString mPath;
-    QStringList mNameFilter;
     QAction *mLastActivedAction;
-    QString getSkinNameFromFile(QString xmlFile);
 
     // TAbstractMenu interface
 public:

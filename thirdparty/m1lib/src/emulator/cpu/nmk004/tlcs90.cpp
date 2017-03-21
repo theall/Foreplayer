@@ -14,82 +14,80 @@
 
 #include "tlcs90.h"
 
-static const char *const op_names[] =   {   "??",       "nop",  "ex",   "exx",  "ld",   "ldw",  "lda",  "ldi",  "ldir", "ldd",  "lddr", "cpi",  "cpir", "cpd",  "cpdr", "push", "pop",  "jp",   "jr",   "call", "callr",    "ret",  "reti", "halt", "di",   "ei",   "swi",  "daa",  "cpl",  "neg",  "ldar", "rcf",  "scf",  "ccf",  "tset", "bit",  "set",  "res",  "inc",  "dec",  "incx", "decx", "incw", "decw", "add",  "adc",  "sub",  "sbc",  "and",  "xor",  "or",   "cp",   "rlc",  "rrc",  "rl",   "rr",   "sla",  "sra",  "sll",  "srl",  "rld",  "rrd",  "djnz", "mul",  "div"   };
+static const char *const op_names[] = {"??", "nop", "ex", "exx", "ld", "ldw", "lda", "ldi", "ldir", "ldd", "lddr", "cpi", "cpir", "cpd", "cpdr", "push", "pop", "jp", "jr", "call", "callr", "ret", "reti", "halt", "di", "ei", "swi", "daa", "cpl", "neg", "ldar", "rcf", "scf", "ccf", "tset", "bit", "set", "res", "inc", "dec", "incx", "decx", "incw", "decw", "add", "adc", "sub", "sbc", "and", "xor", "or", "cp", "rlc", "rrc", "rl", "rr", "sla", "sra", "sll", "srl", "rld", "rrd", "djnz", "mul", "div"   };
 
-ALLOW_SAVE_TYPE(tlcs90_device::e_mode); // allow save_item on a non-fundamental type
+//ALLOW_SAVE_TYPE(tlcs90_device::e_mode); // allow save_item on a non-fundamental type
 
+//const device_type TMP90840 = &device_creator<tmp90840_device>;
+//const device_type TMP90841 = &device_creator<tmp90841_device>;
+//const device_type TMP90845 = &device_creator<tmp90845_device>;
+//const device_type TMP91640 = &device_creator<tmp91640_device>;
+//const device_type TMP91641 = &device_creator<tmp91641_device>;
 
-const device_type TMP90840 = &device_creator<tmp90840_device>;
-const device_type TMP90841 = &device_creator<tmp90841_device>;
-const device_type TMP90845 = &device_creator<tmp90845_device>;
-const device_type TMP91640 = &device_creator<tmp91640_device>;
-const device_type TMP91641 = &device_creator<tmp91641_device>;
+//static ADDRESS_MAP_START(tmp90840_mem, AS_PROGRAM, 8, tlcs90_device)
+//	AM_RANGE(   0x0000, 0x1fff          )   AM_ROM  // 8KB ROM (internal)
+//	AM_RANGE(   0xfec0, 0xffc0          )   AM_RAM  // 256b RAM (internal)
+//	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   )   AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
+//ADDRESS_MAP_END
 
+//static ADDRESS_MAP_START(tmp90841_mem, AS_PROGRAM, 8, tlcs90_device)
+////  AM_RANGE(   0x0000, 0x1fff          )   AM_ROM  // rom-less
+//	AM_RANGE(   0xfec0, 0xffc0          )   AM_RAM  // 256b RAM (internal)
+//	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   )   AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
+//ADDRESS_MAP_END
 
-static ADDRESS_MAP_START(tmp90840_mem, AS_PROGRAM, 8, tlcs90_device)
-	AM_RANGE(   0x0000,     0x1fff          )   AM_ROM  // 8KB ROM (internal)
-	AM_RANGE(   0xfec0,     0xffc0          )   AM_RAM  // 256b RAM (internal)
-	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   )   AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
-ADDRESS_MAP_END
+//static ADDRESS_MAP_START(tmp91640_mem, AS_PROGRAM, 8, tlcs90_device )
+//	AM_RANGE(   0x0000, 0x3fff          ) AM_ROM    // 16KB ROM (internal)
+//	AM_RANGE(   0xfdc0, 0xffc0          ) AM_RAM    // 512b RAM (internal)
+//	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   ) AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
+//ADDRESS_MAP_END
 
-static ADDRESS_MAP_START(tmp90841_mem, AS_PROGRAM, 8, tlcs90_device)
-//  AM_RANGE(   0x0000,     0x1fff          )   AM_ROM  // rom-less
-	AM_RANGE(   0xfec0,     0xffc0          )   AM_RAM  // 256b RAM (internal)
-	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   )   AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
-ADDRESS_MAP_END
-
-static ADDRESS_MAP_START(tmp91640_mem, AS_PROGRAM, 8, tlcs90_device )
-	AM_RANGE(   0x0000,     0x3fff          ) AM_ROM    // 16KB ROM (internal)
-	AM_RANGE(   0xfdc0,     0xffc0          ) AM_RAM    // 512b RAM (internal)
-	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   ) AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
-ADDRESS_MAP_END
-
-static ADDRESS_MAP_START(tmp91641_mem, AS_PROGRAM, 8, tlcs90_device )
-//  AM_RANGE(   0x0000,     0x3fff          ) AM_ROM    // rom-less
-	AM_RANGE(   0xfdc0,     0xffc0          ) AM_RAM    // 512b RAM (internal)
-	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   ) AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
-ADDRESS_MAP_END
+//static ADDRESS_MAP_START(tmp91641_mem, AS_PROGRAM, 8, tlcs90_device )
+////  AM_RANGE(   0x0000, 0x3fff          ) AM_ROM    // rom-less
+//	AM_RANGE(   0xfdc0, 0xffc0          ) AM_RAM    // 512b RAM (internal)
+//	AM_RANGE(   T90_IOBASE, T90_IOBASE+47   ) AM_READWRITE( t90_internal_registers_r, t90_internal_registers_w )
+//ADDRESS_MAP_END
 
 
-tlcs90_device::tlcs90_device(const machine_config &mconfig, device_type type, const char *name, const char *tag, device_t *owner, uint32_t clock, const char *shortname, const char *source, address_map_constructor program_map)
-	: cpu_device(mconfig, type, name, tag, owner, clock, shortname, source)
-	, m_program_config("program", ENDIANNESS_LITTLE, 8, 20, 0, program_map)
-	, m_io_config("io", ENDIANNESS_LITTLE, 8, 16, 0)
-{
-}
+//tlcs90_device::tlcs90_device(const machine_config &mconfig, device_type type, const char *name, const char *tag, device_t *owner, uint32_t clock, const char *shortname, const char *source, address_map_constructor program_map)
+//	: cpu_device(mconfig, type, name, tag, owner, clock, shortname, source)
+//	, m_program_config("program", ENDIANNESS_LITTLE, 8, 20, 0, program_map)
+//	, m_io_config("io", ENDIANNESS_LITTLE, 8, 16, 0)
+//{
+//}
 
 
-tmp90840_device::tmp90840_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
-	: tlcs90_device(mconfig, TMP90840, "TMP90840", tag, owner, clock, "tmp90840", __FILE__, ADDRESS_MAP_NAME(tmp90840_mem))
-{
-}
+//tmp90840_device::tmp90840_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
+//	: tlcs90_device(mconfig, TMP90840, "TMP90840", tag, owner, clock, "tmp90840", __FILE__, ADDRESS_MAP_NAME(tmp90840_mem))
+//{
+//}
 
-tmp90841_device::tmp90841_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
-	: tlcs90_device(mconfig, TMP90841, "TMP90841", tag, owner, clock, "tmp90841", __FILE__, ADDRESS_MAP_NAME(tmp90841_mem))
-{
-}
+//tmp90841_device::tmp90841_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
+//	: tlcs90_device(mconfig, TMP90841, "TMP90841", tag, owner, clock, "tmp90841", __FILE__, ADDRESS_MAP_NAME(tmp90841_mem))
+//{
+//}
 
-tmp90845_device::tmp90845_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
-	: tlcs90_device(mconfig, TMP90841, "TMP90845", tag, owner, clock, "tmp90845", __FILE__, ADDRESS_MAP_NAME(tmp90841_mem))
-{
-}
+//tmp90845_device::tmp90845_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
+//	: tlcs90_device(mconfig, TMP90841, "TMP90845", tag, owner, clock, "tmp90845", __FILE__, ADDRESS_MAP_NAME(tmp90841_mem))
+//{
+//}
 
 
 
-tmp91640_device::tmp91640_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
-	: tlcs90_device(mconfig, TMP91640, "TMP91640", tag, owner, clock, "tmp91640", __FILE__, ADDRESS_MAP_NAME(tmp91640_mem))
-{
-}
+//tmp91640_device::tmp91640_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
+//	: tlcs90_device(mconfig, TMP91640, "TMP91640", tag, owner, clock, "tmp91640", __FILE__, ADDRESS_MAP_NAME(tmp91640_mem))
+//{
+//}
 
 
-tmp91641_device::tmp91641_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
-	: tlcs90_device(mconfig, TMP91641, "TMP91641", tag, owner, clock, "tmp91641", __FILE__, ADDRESS_MAP_NAME(tmp91641_mem))
-{
-}
+//tmp91641_device::tmp91641_device(const machine_config &mconfig, const char *tag, device_t *owner, uint32_t clock)
+//	: tlcs90_device(mconfig, TMP91641, "TMP91641", tag, owner, clock, "tmp91641", __FILE__, ADDRESS_MAP_NAME(tmp91641_mem))
+//{
+//}
 
 
 enum    {
-		T90_B,  T90_C,  T90_D,  T90_E,  T90_H,  T90_L,  T90_A,
+        T90_B, T90_C, T90_D, T90_E, T90_H, T90_L, T90_A,
 		T90_BC, T90_DE, T90_HL, T90_XX, T90_IX, T90_IY, T90_SP,
 		T90_AF, T90_PC
 };
@@ -118,8 +116,8 @@ enum    {
 
 #define F   m_af.b.l
 
-static const char *const r8_names[] =   {   "b",    "c",    "d",    "e",    "h",    "l",    "a"                             };
-static const char *const r16_names[]    =   {   "bc",   "de",   "hl",   "??",   "ix",   "iy",   "sp",   "af",   "af'",  "pc"    };
+static const char *const r8_names[] =   {   "b", "c", "d", "e", "h", "l", "a"                             };
+static const char *const r16_names[] = {   "bc", "de", "hl", "??", "ix", "iy", "sp", "af", "af'", "pc"    };
 
 // Condition Codes
 
@@ -162,7 +160,7 @@ static uint8_t SZP[256];      /* zero, sign and parity flags */
 static uint8_t SZHV_inc[256]; /* zero, sign, half carry and overflow flags INC r8 */
 static uint8_t SZHV_dec[256]; /* zero, sign, half carry and overflow flags DEC r8 */
 
-static const char *const cc_names[] =   {   "f",    "lt",   "le",   "ule",  "ov",   "mi",   "z",    "c",    "",     "ge",   "gt",   "ugt",  "nov",  "pl",   "nz",   "nc"    };
+static const char *const cc_names[] =   {   "f", "lt", "le", "ule", "ov", "mi", "z", "c", "", "ge", "gt", "ugt", "nov", "pl", "nz", "nc"    };
 
 // Opcodes
 
@@ -974,12 +972,12 @@ void tlcs90_device::decode()
 }
 
 static const char *const ir_names[] =   {
-	"P0",       "P1",       "P01CR/IRFL",   "IRFH",     "P2",       "P2CR",     "P3",       "P3CR",
-	"P4",       "P4CR",     "P5",           "SMMOD",    "P6",       "P7",       "P67CR",    "SMCR",
-	"P8",       "P8CR",     "WDMOD",        "WDCR",     "TREG0",    "TREG1",    "TREG2",    "TREG3",
-	"TCLK",     "TFFCR",    "TMOD",         "TRUN",     "CAP1L",    "CAP1H",    "CAP2L",    "CAL2H",
-	"TREG4L",   "TREG4H",   "TREG5L",       "TREG5H",   "T4MOD",    "T4FFCR",   "INTEL",    "INTEH",
-	"DMAEH",    "SCMOD",    "SCCR",         "SCBUF",    "BX",       "BY",       "ADREG",    "ADMOD"
+    "P0", "P1", "P01CR/IRFL", "IRFH", "P2", "P2CR", "P3", "P3CR",
+    "P4", "P4CR", "P5", "SMMOD", "P6", "P7", "P67CR", "SMCR",
+    "P8", "P8CR", "WDMOD", "WDCR", "TREG0", "TREG1", "TREG2", "TREG3",
+    "TCLK", "TFFCR", "TMOD", "TRUN", "CAP1L", "CAP1H", "CAP2L", "CAL2H",
+    "TREG4L", "TREG4H", "TREG5L", "TREG5H", "T4MOD", "T4FFCR", "INTEL", "INTEH",
+    "DMAEH", "SCMOD", "SCCR", "SCBUF", "BX", "BY", "ADREG", "ADMOD"
 };
 
 const char *tlcs90_device::internal_registers_names(uint16_t x)
@@ -996,29 +994,29 @@ bool tlcs90_device::stream_arg(std::ostream &stream, uint32_t pc, const char *pr
 	{
 		case MODE_NONE:     return false;
 
-		case MODE_BIT8:     util::stream_format(stream, "%s%d",            pre,    r                                   );   return true;
-		case MODE_I8:       util::stream_format(stream, "%s$%02X",         pre,    r                                   );   return true;
-		case MODE_D8:       util::stream_format(stream, "%s$%04X",         pre,    (pc+2+(r&0x7f)-(r&0x80))&0xffff     );   return true;
-		case MODE_I16:      util::stream_format(stream, "%s$%04X",         pre,    r                                   );   return true;
-		case MODE_D16:      util::stream_format(stream, "%s$%04X",         pre,    (pc+2+(r&0x7fff)-(r&0x8000))&0xffff );   return true;
+        case MODE_BIT8:     util::stream_format(stream, "%s%d", pre, r                                   );   return true;
+        case MODE_I8:       util::stream_format(stream, "%s$%02X", pre, r                                   );   return true;
+        case MODE_D8:       util::stream_format(stream, "%s$%04X", pre, (pc+2+(r&0x7f)-(r&0x80))&0xffff     );   return true;
+        case MODE_I16:      util::stream_format(stream, "%s$%04X", pre, r                                   );   return true;
+        case MODE_D16:      util::stream_format(stream, "%s$%04X", pre, (pc+2+(r&0x7fff)-(r&0x8000))&0xffff );   return true;
 		case MODE_MI16:
 			reg_name = internal_registers_names(r);
 			if (reg_name)
 				util::stream_format(stream, "%s(%s)", pre, reg_name);
 			else
-				util::stream_format(stream, "%s($%04X)",       pre,    r                                   );
+                util::stream_format(stream, "%s($%04X)", pre, r                                   );
 			return true;
-		case MODE_R8:       util::stream_format(stream, "%s%s",            pre,    r8_names[r]                         );   return true;
-		case MODE_R16:      util::stream_format(stream, "%s%s",            pre,    r16_names[r]                        );   return true;
-		case MODE_MR16:     util::stream_format(stream, "%s(%s)",          pre,    r16_names[r]                        );   return true;
+        case MODE_R8:       util::stream_format(stream, "%s%s", pre, r8_names[r]                         );   return true;
+        case MODE_R16:      util::stream_format(stream, "%s%s", pre, r16_names[r]                        );   return true;
+        case MODE_MR16:     util::stream_format(stream, "%s(%s)", pre, r16_names[r]                        );   return true;
 
-		case MODE_MR16R8:   util::stream_format(stream, "%s(%s+%s)",       pre,    r16_names[r],   r8_names[rb]        );   return true;
-		case MODE_MR16D8:   util::stream_format(stream, "%s(%s%c$%02X)",   pre,    r16_names[r],   (rb&0x80)?'-':'+',  (rb&0x80)?((rb^0xff)+1):rb  );   return true;
+        case MODE_MR16R8:   util::stream_format(stream, "%s(%s+%s)", pre, r16_names[r], r8_names[rb]        );   return true;
+        case MODE_MR16D8:   util::stream_format(stream, "%s(%s%c$%02X)", pre, r16_names[r], (rb&0x80)?'-':'+', (rb&0x80)?((rb^0xff)+1):rb  );   return true;
 
-		case MODE_CC:       util::stream_format(stream, "%s%s",            pre,    cc_names[r]                         );   return true;
+        case MODE_CC:       util::stream_format(stream, "%s%s", pre, cc_names[r]                         );   return true;
 
-		case MODE_R16R8:    util::stream_format(stream, "%s%s+%s",         pre,    r16_names[r],   r8_names[rb]        );   return true;
-		case MODE_R16D8:    util::stream_format(stream, "%s%s%c$%02X",     pre,    r16_names[r],   (rb&0x80)?'-':'+',  (rb&0x80)?((rb^0xff)+1):rb  );   return true;
+        case MODE_R16R8:    util::stream_format(stream, "%s%s+%s", pre, r16_names[r], r8_names[rb]        );   return true;
+        case MODE_R16D8:    util::stream_format(stream, "%s%s%c$%02X", pre, r16_names[r], (rb&0x80)?'-':'+', (rb&0x80)?((rb^0xff)+1):rb  );   return true;
 
 		default:
 			fatalerror("%04x: unimplemented addr mode = %d\n",pc,mode);
@@ -1035,9 +1033,9 @@ offs_t tlcs90_device::disasm_disassemble(std::ostream &stream, offs_t pc, const 
 	decode();
 	m_op &= ~OP_16;
 
-	util::stream_format         (stream, "%-5s",                op_names[ m_op ] ); // strlen("callr") == 5
-	bool streamed = stream_arg  (stream, pc,       " ",         m_mode1, m_r1, m_r1b );
-	stream_arg                  (stream, pc, streamed ?",":"",  m_mode2, m_r2, m_r2b );
+    util::stream_format         (stream, "%-5s", op_names[ m_op ] ); // strlen("callr") == 5
+    bool streamed = stream_arg  (stream, pc, " ", m_mode1, m_r1, m_r1b );
+    stream_arg                  (stream, pc, streamed ?",":"", m_mode2, m_r2, m_r2b );
 
 	return (m_addr - pc) | DASMFLAG_SUPPORTED;
 }
@@ -2648,7 +2646,6 @@ WRITE8_MEMBER( tlcs90_device::t90_internal_registers_w )
 	m_internal_registers[offset] = data;
 }
 
-
 void tlcs90_device::device_start()
 {
 	int i, p;
@@ -2747,13 +2744,13 @@ void tlcs90_device::device_start()
 
 	state_add( T90_PC, "PC", m_pc.w.l).formatstr("%04X");
 	state_add( T90_SP, "SP", m_sp.w.l).formatstr("%04X");
-	state_add( T90_A,  "~A", m_af.b.h).formatstr("%02X");
-	state_add( T90_B,  "~B", m_bc.b.h).formatstr("%02X");
-	state_add( T90_C,  "~C", m_bc.b.l).formatstr("%02X");
-	state_add( T90_D,  "~D", m_de.b.h).formatstr("%02X");
-	state_add( T90_E,  "~E", m_de.b.l).formatstr("%02X");
-	state_add( T90_H,  "~H", m_hl.b.h).formatstr("%02X");
-	state_add( T90_L,  "~L", m_hl.b.l).formatstr("%02X");
+    state_add( T90_A, "~A", m_af.b.h).formatstr("%02X");
+    state_add( T90_B, "~B", m_bc.b.h).formatstr("%02X");
+    state_add( T90_C, "~C", m_bc.b.l).formatstr("%02X");
+    state_add( T90_D, "~D", m_de.b.h).formatstr("%02X");
+    state_add( T90_E, "~E", m_de.b.l).formatstr("%02X");
+    state_add( T90_H, "~H", m_hl.b.h).formatstr("%02X");
+    state_add( T90_L, "~L", m_hl.b.l).formatstr("%02X");
 	state_add( T90_AF, "AF", m_af.w.l).formatstr("%04X");
 	state_add( T90_BC, "BC", m_bc.w.l).formatstr("%04X");
 	state_add( T90_DE, "DE", m_de.w.l).formatstr("%04X");

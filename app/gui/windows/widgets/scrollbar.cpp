@@ -6,9 +6,15 @@ TButtonPixmap *TScrollBar::mUpPixmap = NULL;
 TButtonPixmap *TScrollBar::mDownPixmap = NULL;
 int TScrollBar::mFixWidth = 13;
 
+#define SCROLLBAR_STYLE_SHEET \
+"QScrollBar:vertical {width: %1px;padding-top:0px;padding-bottom:0px;}" \
+"QScrollBar::sub-line:vertical{height:%2px;width:%3px;}" \
+"QScrollBar::add-line:vertical{height:%4px;width:%5px;}"
+
 TScrollBar::TScrollBar(QWidget *parent) :
     QScrollBar(parent)
 {
+    connect(this, SIGNAL(fixedWidthChanged()), this, SLOT(slotFixedWidthChanged()));
     initialize();
 }
 
@@ -20,10 +26,7 @@ TScrollBar::TScrollBar(Qt::Orientation orientation, QWidget *parent) :
 
 void TScrollBar::initialize()
 {
-    setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-    setStyleSheet(QString("QScrollBar:vertical {width: %1px;}").arg(TScrollBar::mFixWidth));
-
+    setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);    
     setRange(0, 100);
 
     setSingleStep(1);
@@ -123,4 +126,15 @@ void TScrollBar::hideEvent(QHideEvent *e)
     e->accept();
 
     QScrollBar::hideEvent(e);
+}
+
+void TScrollBar::slotFixedWidthChanged()
+{
+    setStyleSheet(QString(SCROLLBAR_STYLE_SHEET)
+                     .arg(TScrollBar::mFixWidth)
+                     .arg(TScrollBar::mUpPixmap->size().height())
+                     .arg(TScrollBar::mUpPixmap->size().width())
+                     .arg(TScrollBar::mDownPixmap->size().height())
+                     .arg(TScrollBar::mDownPixmap->size().width())
+                     );
 }

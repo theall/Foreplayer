@@ -53,29 +53,33 @@ void TAbstractStyle::drawButton(QPainter *painter,
         {
             int pixmapHeight = drawPixmap->height();
             int pixmapWidth = drawPixmap->width();
-            int headHeight = (float)pixmapHeight / 3;
-            if(pixmapHeight%3>0)
-                headHeight++;
-
-            int fillPixmapHeight = pixmapHeight - headHeight*2;
-            QPixmap headPixmap = drawPixmap->copy(0, 0, pixmapWidth, headHeight);
-            QPixmap fillPixmap = drawPixmap->copy(0, headHeight, pixmapWidth, fillPixmapHeight);
-            //QPixmap tailPixmap = drawPixmap->copy(0, headHeight+fillPixmapHeight, pixmapWidth, headHeight);
-
             int x = (float)(buttonRect.width() - pixmapWidth) / 2;
             int y = buttonRect.y();
-            int bottom = buttonRect.bottom();
-            painter->drawPixmap(x, y, headPixmap);
-
-            int fillCount = (float)(buttonRect.height() - headHeight*2) / fillPixmapHeight + 0.5;
-            y += headHeight;
-            for(int i=0;i<fillCount;i++)
+            if(buttonRect.height() < pixmapHeight)
             {
-                painter->drawPixmap(x, y, fillPixmap);
-                y += fillPixmapHeight;
+                painter->drawPixmap(x, y, pixmapWidth, buttonRect.height(), *drawPixmap);
+            } else {
+                int headHeight = (float)pixmapHeight / 3;
+                if(pixmapHeight%3>0)
+                    headHeight++;
+
+                int fillPixmapHeight = pixmapHeight - headHeight*2;
+                QPixmap headPixmap = drawPixmap->copy(0, 0, pixmapWidth, headHeight);
+                QPixmap fillPixmap = drawPixmap->copy(0, headHeight, pixmapWidth, fillPixmapHeight);
+
+                int bottom = buttonRect.bottom();
+                painter->drawPixmap(x, y, headPixmap);
+                y += headHeight;
+
+                int fillCount = (float)(buttonRect.height() - headHeight*2) / fillPixmapHeight + 0.5;
+                for(int i=0;i<fillCount;i++)
+                {
+                    painter->drawPixmap(x, y, fillPixmap);
+                    y += fillPixmapHeight;
+                }
+                headHeight = bottom - y;
+                painter->drawPixmap(x, bottom-headHeight, drawPixmap->copy(0, pixmapHeight-headHeight, pixmapWidth, headHeight));
             }
-            headHeight = bottom - y;
-            painter->drawPixmap(x, bottom-headHeight, drawPixmap->copy(0, pixmapHeight-headHeight, pixmapWidth, headHeight));
         }
     }
 }

@@ -325,6 +325,8 @@ void TMainWindow::loadFromSkin(QDomElement element, TSkin *skin)
         setWindowIcon(mDefaultLogo);
         mIcon->setPixmap(mDefaultLogo.pixmap(64));
     }
+
+    update();
 }
 
 void TMainWindow::changeEvent(QEvent *event)

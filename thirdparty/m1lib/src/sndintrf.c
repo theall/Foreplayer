@@ -905,7 +905,16 @@ struct snd_interface sndintf[] =
                   0,
                   0
      },
-
+    {
+                 SOUND_ICS2115,
+                 "ICS2115",
+                 0,
+                 0,
+                 rf5c400_sh_start,
+                 0,
+                 0,
+                 0
+    },
 #ifdef MESS
 #if (HAS_BEEP)
 	{

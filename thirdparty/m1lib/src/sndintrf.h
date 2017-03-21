@@ -355,6 +355,7 @@ enum
 	SOUND_SCSP,
 #endif
 	SOUND_RF5C400,
+    SOUND_ICS2115,
 	SOUND_COUNT
 };
 

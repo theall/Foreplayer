@@ -1,4 +1,5 @@
 #include "playercontroller.h"
+#include "preferences.h"
 
 TPlayerController::TPlayerController(QObject *parent) :
     TAbstractController(parent)
@@ -71,6 +72,7 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 
     // Set playing index to playlist core
     mPlaylistCore->setPlayingIndex(newPL, newML, newTL);
+
     // Set playing index to models
     emit requestUpdateModelsPlayingIndex(newPL, newML, newTL);
 
@@ -257,6 +259,8 @@ void TPlayerController::slotTimerEvent()
                 if(silentMSecs > 3000)
                 {
                     // Fix up duration manually
+                    if(TPreferences::instance()->autoCorrectDuration())
+                        emit requestFixDuration(playedTime-3000);
                     slotNextButtonClicked();                    
                 }
             }

@@ -172,15 +172,67 @@ static void NMK_SendCmd(int cmda, int cmdb)
 	cmd_latch = cmda;
 }
 
+//// board nmk004
+static MEMORY_READ_START( nmk004_sound_readmem )
+    { 0x0000, 0x7fff, MRA_ROM },
+    { 0x8000, 0xbfff, MRA_BANK1 },	/* banked ROM */
+    { 0xa000, 0xa000, MRA_NOP },	/* IRQ ack? watchdog? */
+    { 0xc000, 0xdfff, MRA_RAM },
+    { 0xf000, 0xf000, latch_r },	/* from 68000 */
+MEMORY_END
+
+static MEMORY_WRITE_START( nmk004_sound_writemem )
+    { 0x0000, 0xbfff, MWA_ROM },
+    { 0xc000, 0xdfff, MWA_RAM },
+    { 0xe001, 0xe001, macross2_sound_bank_w },
+    { 0xf000, 0xf000, MWA_NOP },	/* to 68000 */
+MEMORY_END
+
+static PORT_READ_START( nmk004_sound_readport )
+    { 0xf800, 0xf800, YM2203_status_port_0_r },
+    { 0xf801, 0xf801, YM2203_read_port_0_r },
+    { 0x80, 0x80, OKIM6295_status_0_r },
+    { 0x88, 0x88, OKIM6295_status_1_r },
+PORT_END
+
+static PORT_WRITE_START( nmk004_sound_writeport )
+    { 0x00, 0x00, YM2203_control_port_0_w },
+    { 0x01, 0x01, YM2203_write_port_0_w },
+    { 0x80, 0x80, OKIM6295_data_0_w },
+    { 0x88, 0x88, OKIM6295_data_1_w },
+    { 0x90, 0x97, macross2_oki6295_bankswitch_w },
+PORT_END
+
+static void NMK004_Init(long srate)
+{
+    (void)srate;
+
+    cmd_latch = 0xff;
+
+    m1snd_addToCmdQueue(1);
+    m1snd_addToCmdQueue(0);
+    m1snd_addToCmdQueue(0xffff);
+}
+
+static void NMK004_SendCmd(int cmda, int cmdb)
+{
+    if (cmda == 0xffff)
+    {
+        m1snd_initNormalizeState();
+    }
+
+    cmd_latch = cmda;
+}
+
 M1_BOARD_START( nmk004 )
     MDRV_NAME("NMK004")
     MDRV_HWDESC("NMK004, YM2203, MSM-6295(x2)")
-    MDRV_SEND( NMK_SendCmd )
-    MDRV_INIT( NMK2_Init )
+    MDRV_SEND( NMK004_SendCmd )
+    MDRV_INIT( NMK004_Init )
 
     MDRV_CPU_ADD(NMK004, 10000000)
-    MDRV_CPU_MEMORY(macross2_sound_readmem,macross2_sound_writemem)
-    MDRV_CPU_PORTS(macross2_sound_readport,macross2_sound_writeport)
+    MDRV_CPU_MEMORY(nmk004_sound_readmem,nmk004_sound_writemem)
+    MDRV_CPU_PORTS(nmk004_sound_readport,nmk004_sound_writeport)
 
     MDRV_SOUND_ADD(YM2203, &ym2203_interface_15)
     MDRV_SOUND_ADD(OKIM6295, &okim6295_interface_dual)

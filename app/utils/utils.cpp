@@ -34,3 +34,14 @@ QString Utils::secToTimeStr(long seconds, bool padZero)
 
     return result;
 }
+
+QString Utils::absoluteFilePath(QString fileName)
+{
+    QFileInfo fi(fileName);
+    if(fi.isRelative())
+    {
+        QDir dir(qApp->applicationDirPath());
+        fileName = dir.absoluteFilePath(fileName);
+    }
+    return fileName;
+}

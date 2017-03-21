@@ -25,6 +25,8 @@ public:
     static TPreferences *instance();
     static void deleteInstance();
 
+    void save();
+
     QString language();
     void setLanguage(QString language);
     int runCount();
@@ -44,11 +46,17 @@ public:
     int playingTrackIndex();
     void setPlayingTrackIndex(int index);
 
-    void autoCorrectDuration();
+    bool autoCorrectDuration();
     void setCorrectDuration(bool autoCorrect);
 
-    void forceCorrectDuration();
+    bool forceCorrectDuration();
     void setForceCorrectDuration(bool force);
+
+    int pilotDuration();
+    void setPilotDuration(int duration);
+
+    int checkDuration();
+    void setCheckDuration(int duration);
 
 signals:
     void languageChanged();
@@ -65,6 +73,8 @@ private:
     QString mLastOpenDir;
     bool mAutoCorrectDuration;
     bool mForceCorrectDuration;
+    int mPilotDuration;
+    int mCheckDuration;
 
     void setValue(QString section, QVariant value);
     QVariant value(QString section, QVariant defValue=QVariant());

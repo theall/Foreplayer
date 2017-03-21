@@ -50,4 +50,6 @@ void TMiniWindow::loadFromSkin(QDomElement element, TSkin *skin)
     mBtnMinimize->loadFromSkin(element.firstChildElement(TAG_PLAYER_MINIMIZE), skin);
     mBtnMinimode->loadFromSkin(element.firstChildElement(TAG_PLAYER_MINIMODE), skin);
     mBtnExit->loadFromSkin(element.firstChildElement(TAG_PLAYER_EXIT), skin);
+
+    update();
 }

@@ -36,6 +36,8 @@ public:
 
     virtual void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved) = 0;
 
+    void update();
+
 private:
     static QVariant mFont;
     static QVariant mBackColor1;

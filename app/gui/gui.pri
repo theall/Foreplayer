@@ -73,7 +73,8 @@ SOURCES += \
     $$PWD/dialogs/optionplugininfo.cpp \
     $$PWD/dialogs/aboutdialog.cpp \
     $$PWD/share/skinsetting.cpp \
-    $$PWD/share/skinmanager.cpp
+    $$PWD/share/skinmanager.cpp \
+    $$PWD/dialogs/optiongeneral.cpp
 
 HEADERS  += \
     $$PWD/windows/widgets/imagebutton.h \
@@ -138,7 +139,8 @@ HEADERS  += \
     $$PWD/dialogs/optionplugininfo.h \
     $$PWD/dialogs/aboutdialog.h \
     $$PWD/share/skinsetting.h \
-    $$PWD/share/skinmanager.h
+    $$PWD/share/skinmanager.h \
+    $$PWD/dialogs/optiongeneral.h
 
 FORMS += \
     $$PWD/dialogs/optionsdialog.ui \

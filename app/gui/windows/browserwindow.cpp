@@ -44,6 +44,8 @@ void TBrowserWindow::loadFromSkin(QDomElement element, TSkin *skin)
     mBtnBrowser->loadFromSkin(element.firstChildElement(TAG_BROWSER_BROWSER), skin);
     mBtnMini->loadFromSkin(element.firstChildElement(TAG_BROWSER_MINIBTN), skin);
     mBtnDownload->loadFromSkin(element.firstChildElement(TAG_BROWSER_DOWNLOAD_BUTTON), skin);
+
+    update();
 }
 
 void TBrowserWindow::retranslateUi()

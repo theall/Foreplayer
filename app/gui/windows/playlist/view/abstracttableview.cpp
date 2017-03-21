@@ -133,7 +133,6 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
 
     setTextElideMode(Qt::ElideRight);
 
-    //setStyleSheet("background-color:rgba(0,0,0,0)");
     QPalette pll = palette();
     pll.setBrush(QPalette::Base,QBrush(QColor(255,255,255,0)));
     setPalette(pll);

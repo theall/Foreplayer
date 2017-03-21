@@ -121,6 +121,11 @@ void TAbstractModel::setColorParameters(QFont font,
     mDurationColor = durationColor;
 }
 
+void TAbstractModel::update()
+{
+    emit layoutChanged();
+}
+
 Qt::ItemFlags TAbstractModel::flags(const QModelIndex &index) const
 {
     return QAbstractTableModel::flags(index) | Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled;

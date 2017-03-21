@@ -1,6 +1,7 @@
 #include "skin.h"
 
 #include <QTemporaryFile>
+#include "utils.h"
 
 #define BUF_SIZE                    16384
 
@@ -26,8 +27,8 @@ bool TSkin::load(QString fileName)
     if(fileName.isEmpty())
         return false;
 
-    QFileInfo fi(fileName);
-    QString fileSuffix = fi.suffix().toLower();
+    fileName = Utils::absoluteFilePath(fileName);
+    QString fileSuffix = QFileInfo(fileName).suffix().toLower();
 
     bool success = false;
     mError.clear();

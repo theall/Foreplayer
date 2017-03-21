@@ -170,6 +170,28 @@ void TPlaylistController::slotRequestCurrentIndex(int *pIndex, int *mIndex, int 
     *tIndex = mTracklistModel->currentIndex();
 }
 
+// Send from playercontroller
+void TPlaylistController::slotRequestFixDuration(int microSeconds)
+{
+    if(!mTracklistModel || !mMusiclistModel)
+        return;
+
+    TMusicItem *musicItem = mTracklistModel->musicItem();
+    TTrackItem *trackItem =  mPlaylistCore->currentTrackItem();
+    if(!musicItem || !trackItem || musicItem->trackItems()->indexOf(trackItem)<0)
+        return;
+
+    // Change duration
+    if(microSeconds != trackItem->duration)
+    {
+        int diff = microSeconds - trackItem->duration;
+        trackItem->duration = microSeconds;
+        musicItem->setDuration(musicItem->duration()+diff);
+        mTracklistModel->update();
+        mMusiclistModel->update();
+    }
+}
+
 void TPlaylistController::slotAddExportMission()
 {
     if(!mExportDialog || !mExportMissionDialog)

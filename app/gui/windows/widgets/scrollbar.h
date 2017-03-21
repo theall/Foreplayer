@@ -22,10 +22,14 @@ public:
 
 signals:
     void onVisibleToggle(bool visible);
+    void fixedWidthChanged();
 
 protected:
     void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
     void hideEvent(QHideEvent *) Q_DECL_OVERRIDE;
+
+private slots:
+    void slotFixedWidthChanged();
 
 private:
     static QPixmap *mGroovePixmap;

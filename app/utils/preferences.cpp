@@ -1,4 +1,5 @@
 #include "preferences.h"
+#include "utils.h"
 
 #define SETTING_FILE                "setting.ini"
 
@@ -38,9 +39,12 @@
 
 // Options
 #define SEC_OPTIONS                 "Options"
+
 #define SEC_OPTION_GENERAL          "OptionGeneral"
 #define SEC_OPTION_AUTO_CORRECT     "AutoCorrect"
 #define SEC_OPTION_FORCE_CORRECT    "ForceCorrect"
+#define SEC_OPTION_PILOT_DURATION   "PilotDuration"
+#define SEC_OPTION_CHECK_DURATION   "CheckDuration"
 
 TPreferences *TPreferences::mInstance = NULL;
 
@@ -51,8 +55,7 @@ TPreferences *TPreferences::mInstance = NULL;
 TPreferences::TPreferences(QObject *parent):
     QObject(parent)
 {
-    QDir dir(qApp->applicationDirPath());
-    mSettings = new QSettings(dir.absoluteFilePath(SETTING_FILE), QSettings::IniFormat);
+    mSettings = new QSettings(Utils::absoluteFilePath(SETTING_FILE), QSettings::IniFormat);
 
     // Retrieve gui settings
     mSettings->beginGroup(SEC_GUI);
@@ -75,7 +78,11 @@ TPreferences::TPreferences(QObject *parent):
         mSettings->beginGroup(SEC_OPTION_GENERAL);
         mAutoCorrectDuration = boolValue(SEC_OPTION_AUTO_CORRECT, true);
         mForceCorrectDuration = boolValue(SEC_OPTION_FORCE_CORRECT);
+        mPilotDuration = intValue(SEC_OPTION_PILOT_DURATION, 150000);
+        mCheckDuration = intValue(SEC_OPTION_CHECK_DURATION, 3000);
+
         mSettings->endGroup();
+
     mSettings->endGroup();
 
     //// Keeping track of some usage information
@@ -115,6 +122,11 @@ void TPreferences::deleteInstance()
         delete mInstance;
         mInstance = NULL;
     }
+}
+
+void TPreferences::save()
+{
+    mSettings->sync();
 }
 
 QString TPreferences::language()
@@ -275,24 +287,72 @@ void TPreferences::setPlayingTrackIndex(int index)
     mPlayingTrackIndex = index;
 }
 
-void TPreferences::autoCorrectDuration()
+bool TPreferences::autoCorrectDuration()
 {
-
+    return mAutoCorrectDuration;
 }
 
 void TPreferences::setCorrectDuration(bool autoCorrect)
 {
+    if(mAutoCorrectDuration == autoCorrect)
+        return;
 
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_AUTO_CORRECT, autoCorrect);
+    mSettings->endGroup();
+
+    mAutoCorrectDuration = autoCorrect;
 }
 
-void TPreferences::forceCorrectDuration()
+bool TPreferences::forceCorrectDuration()
 {
-
+    return mForceCorrectDuration;
 }
 
 void TPreferences::setForceCorrectDuration(bool force)
 {
+    if(mForceCorrectDuration == force)
+        return;
 
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_FORCE_CORRECT, force);
+    mSettings->endGroup();
+
+    mForceCorrectDuration = force;
+}
+
+int TPreferences::pilotDuration()
+{
+    return mPilotDuration;
+}
+
+void TPreferences::setPilotDuration(int duration)
+{
+    if(mPilotDuration == duration)
+        return;
+
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_PILOT_DURATION, duration);
+    mSettings->endGroup();
+
+    mPilotDuration = duration;
+}
+
+int TPreferences::checkDuration()
+{
+    return mCheckDuration;
+}
+
+void TPreferences::setCheckDuration(int duration)
+{
+    if(mCheckDuration == duration)
+        return;
+
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_CHECK_DURATION, duration);
+    mSettings->endGroup();
+
+    mCheckDuration = duration;
 }
 
 void TPreferences::setValue(QString section, QVariant value)

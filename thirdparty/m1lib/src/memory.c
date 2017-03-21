@@ -77,7 +77,7 @@ static void *mem_auto_mallocs[MAX_AUTOMALLOC];
 static void *add_ram_chain(M1CPUMemT *cpu, offs_t start, offs_t end)
 {
 	void *rgn;
-	M1MemT *new, *lp;
+    M1MemT *newMem, *lp;
 
 //	logerror("add_ram_chain: RAM region at %x, end %x\n", (int)start, (int)end);
 
@@ -106,13 +106,13 @@ static void *add_ram_chain(M1CPUMemT *cpu, offs_t start, offs_t end)
 	rgn = malloc((end-start)+1);
 	memset(rgn, 0, (end-start)+1);
 
-	// allocate the new RAM node
-	new = (M1MemT *)malloc(sizeof(M1MemT));
-	memset(new, 0, sizeof(M1MemT));
-	new->start = start;
-	new->end = end;
-	new->location = rgn;
-	new->next = (M1MemT *)NULL;
+    // allocate the newMem RAM node
+    newMem = (M1MemT *)malloc(sizeof(M1MemT));
+    memset(newMem, 0, sizeof(M1MemT));
+    newMem->start = start;
+    newMem->end = end;
+    newMem->location = rgn;
+    newMem->next = (M1MemT *)NULL;
 
 	// insert into the nodelist.
 	lp = cpu->ramchain;
@@ -125,11 +125,11 @@ static void *add_ram_chain(M1CPUMemT *cpu, offs_t start, offs_t end)
 		}
 
 		// insert the node
-		lp->next = new;
+        lp->next = newMem;
 	}
 	else	// list is empty
 	{
-		cpu->ramchain = new;
+        cpu->ramchain = newMem;
 	}
 
 	return rgn;

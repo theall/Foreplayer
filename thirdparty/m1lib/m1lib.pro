@@ -6,7 +6,7 @@
 
 QT       += core
 
-CONFIG += c11
+CONFIG += c++11
 
 TEMPLATE = lib
 TARGET = m1
@@ -196,7 +196,9 @@ HEADERS += \
     src/libs/crypt/md5.h \
     src/libs/crypt/sha1.h \
     src/moddir.h \
-    src/emulator/cpu/nmk004/nmk004.h
+    src/emulator/cpu/nmk004/emuhead.h \
+    src/emulator/cpu/nmk004/nmk004.h \
+    src/emulator/cpu/nmk004/tlcs90.h
 
 SOURCES += \
     src/dsnd.cpp \
@@ -475,4 +477,5 @@ SOURCES += \
     src/wavelog.cpp \
     src/moddir.cpp \
     src/emulator/boards/brd_pgm.cpp \
-    src/emulator/cpu/nmk004/nmk004.cpp
+    src/emulator/cpu/nmk004/nmk004.cpp \
+    src/emulator/cpu/nmk004/tlcs90.cpp

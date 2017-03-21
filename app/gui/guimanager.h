@@ -19,7 +19,7 @@
 
 #include "menus/mainmenu.h"
 
-#include "share/skin.h"
+#include "share/skinmanager.h"
 
 typedef QList<TAbstractWindow *> TWindowList;
 
@@ -31,7 +31,7 @@ public:
     explicit TGuiManager(QObject *parent = 0);
     ~TGuiManager();
 
-    bool loadSkin(QString skinPath);
+    bool loadSkin(QString skinPath = QString());
 
     void open();
     void close();
@@ -78,8 +78,11 @@ private slots:
     void slotRequireShowDesktopLyric();
     void slotShowMinimized();
     void slotRequestExit();
+    void slotOpenOptionsDialog();
+    void slotOpenOptionAboutPage();
     void slotOnOpacityChanged(qreal value);
-    void slotRequestLoadSkin(QString skinFullName);
+    void slotRequestLoadSkin(int skinIndex);
+    void slotRequestSkinNames(QStringList &names);
     void slotMainWindowActivationChanged();
     void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
 
@@ -102,6 +105,8 @@ private:
     TMainMenu *mMainMenu;
     QSystemTrayIcon *mTrayIcon;
 
+    TSkinManager *mSkinManager;
+
     bool mMinimode;
     bool mShowDesktopLyric;
     bool mBrowserVisible;
@@ -120,6 +125,7 @@ private:
     // Move window to desktop center
     void centerWindow();
     void moveWindow(TAbstractWindow* window, int left, int top);
+    bool loadSkin(TSkin *skin);
 };
 
 #endif // TGUIMANAGER_H

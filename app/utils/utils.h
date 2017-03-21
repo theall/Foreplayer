@@ -52,6 +52,7 @@ namespace Utils{
 
     QString microSecToTimeStr(long ms, bool padZero=true);
     QString secToTimeStr(long seconds, bool padZero=true);
+    QString absoluteFilePath(QString fileName);
 }
 
 #endif // UTILS_H

@@ -8,6 +8,7 @@
 class TPlayerController : public TAbstractController
 {
     Q_OBJECT
+
 public:
     explicit TPlayerController(QObject *parent = 0);
     ~TPlayerController();
