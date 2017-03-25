@@ -85,6 +85,7 @@ private slots:
     void slotAddExportMission();
     void slotRequestNextMusicProperty();
     void slotRequestPreviousMusicProperty();
+    void slotRequestAdjustColumnWidth();// Adjust column width while duration is edited;
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

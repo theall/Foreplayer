@@ -19,6 +19,7 @@ public:
     // QAbstractItemDelegate interface
 public:
     QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
+    void destroyEditor(QWidget *editor, const QModelIndex &index) const Q_DECL_OVERRIDE;
 };
 
 class TAbstractTableView : public QTableView

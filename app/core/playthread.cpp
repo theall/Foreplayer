@@ -4,15 +4,34 @@
 
 #define CYCLE_INTERVAL      300
 
-TPlayThread::TPlayThread():
-    QThread(),
+TPlayThread::TPlayThread() :
     mNeedTerminate(false),
     mCurrentMicroSeconds(0),
     mState(TS_NULL),
     mFront(NULL),
-    mBackendPlugin(NULL)
+    mBackendPlugin(NULL),
+    mThread(NULL)
 {
 
+}
+
+TPlayThread::~TPlayThread()
+{
+    if(mThread)
+    {
+        mNeedTerminate = true;
+        delete mThread;
+        mThread = NULL;
+    }
+}
+
+void TPlayThread::start()
+{
+    if(mThread == NULL)
+    {
+        mThread = new std::thread(&TPlayThread::run, this);
+        mThread->detach();
+    }
 }
 
 void TPlayThread::pause()
@@ -111,7 +130,7 @@ void TPlayThread::run()
     mState = TS_READY;
     while(!mNeedTerminate)
     {
-        msleep(CYCLE_INTERVAL);
+        std::this_thread::sleep_for((std::chrono::milliseconds(CYCLE_INTERVAL)));
 
         if(mState==TS_RUNNING)
             mCurrentMicroSeconds += CYCLE_INTERVAL;

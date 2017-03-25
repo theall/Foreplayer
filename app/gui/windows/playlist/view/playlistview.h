@@ -10,9 +10,6 @@ public:
 
     void editCurrentName();
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
-
-    // TAbstractTableView interface
-protected:
     void updateColumnsWidth() Q_DECL_OVERRIDE;
 };
 

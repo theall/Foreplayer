@@ -140,6 +140,9 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     connect(mPropertyDialog, SIGNAL(onPreviousClicked()), this, SLOT(slotRequestPreviousMusicProperty()));
     connect(mPropertyDialog, SIGNAL(onNextClicked()), this, SLOT(slotRequestNextMusicProperty()));
 
+    // Misc
+    connect(mTracklistModel, SIGNAL(requestAdjustColumnWidth()), this, SLOT(slotRequestAdjustColumnWidth()));
+
     int playingPlaylistIndex = mPlaylistCore->playingPlaylistIndex();
     slotPlaylistIndexChanged(playingPlaylistIndex);
 
@@ -269,6 +272,18 @@ void TPlaylistController::slotRequestPreviousMusicProperty()
     {
         mCurrentViewRow--;
         fillPropertyDialog();
+    }
+}
+
+void TPlaylistController::slotRequestAdjustColumnWidth()
+{
+    if(mTracklistView)
+        mTracklistView->updateColumnsWidth();
+
+    if(mMusiclistView)
+    {
+        mMusiclistView->updateColumnsWidth();
+        mMusiclistView->update();
     }
 }
 
@@ -629,14 +644,14 @@ void TPlaylistController::slotRequestSortMusiclistAsArtist()
     if(!mMusiclistModel)
         return;
 
-
+    mMusiclistModel->sortItems(SM_ARTIST_ASC);
 }
 
 void TPlaylistController::slotRequestSortMusiclistAsAlbum()
 {
     if(!mMusiclistModel)
         return;
-
+    mMusiclistModel->sortItems(SM_SYSTEM_ASC);
 }
 
 void TPlaylistController::slotRequestSortMusiclistAsDuration()

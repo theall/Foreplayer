@@ -4,6 +4,8 @@
 #include "front/abstractfront.h"
 #include "pluginmanager/backend/backendplugin.h"
 
+#include <thread>
+
 enum TThreadState
 {
     TS_NULL,
@@ -13,13 +15,13 @@ enum TThreadState
     TS_TERMINATE
 };
 
-class TPlayThread : public QThread
+class TPlayThread
 {
-    Q_OBJECT
-
 public:
     explicit TPlayThread();
-    ~TPlayThread(){ }
+    ~TPlayThread();
+
+    void start();
 
     void pause();
     void stop();
@@ -36,7 +38,7 @@ public:
     void getAudioData(TAudioDataType dataType, void *param1, void* param2);
 
 protected:
-    void run() Q_DECL_OVERRIDE;
+    void run();
 
 private slots:
 
@@ -47,5 +49,7 @@ private:
 
     TAbstractFront *mFront;
     TBackendPlugin *mBackendPlugin;
+
+    std::thread *mThread;
 };
 #endif // TPLAYTHREAD_H

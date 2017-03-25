@@ -6,6 +6,7 @@
 #define SAMPLE_TOP_BLOCK_HEIGHT     1
 #define SAMPLE_TOP_BLOCK_PAUSE_TIME 15
 #define DEFAULT_COLOR               "#FFFFFF"
+#define BAND_COUNT_DEFAULT          64
 
 TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
   , mSampleCount(0)
@@ -14,11 +15,12 @@ TVisualWidget::TVisualWidget(QWidget *parent) : QWidget(parent)
   , mSpectrumWidth(SAMPLE_WIDTH)
   , mSpectrumSpace(SAMPLE_SPACE)
   , mSpectrumTopBlockHeight(SAMPLE_TOP_BLOCK_HEIGHT)
+  , mBandCount(BAND_COUNT_DEFAULT)
 {
-    for(int i=0;i<BAND_COUNT;i++)
+    for(int i=0;i<LEVEL_COUNT;i++)
         mSamleValues[i] = 0;
 
-    for(int i=0;i<BAND_COUNT;i++)
+    for(int i=0;i<LEVEL_COUNT;i++)
     {
         mTopBlockValue[i] = 0;
         mTopBlockSpeed[i] = 0;
@@ -100,7 +102,7 @@ void TVisualWidget::caculateTiles()
             mSamleValues[i] = realHeight;
         }
     } else if(mVisualType == VT_SPECTRUM_BLOCK) {
-        int bandWidth = mSampleCount / BAND_COUNT;
+        int bandWidth = mSampleCount / mBandCount;
         if(bandWidth < 4)
             return;
 
@@ -111,11 +113,11 @@ void TVisualWidget::caculateTiles()
             curLevel += mSamleValues[i];
             if((i+1)%bandWidth == 0)
             {
-                mSamleValues[index++] = curLevel;
+                mSamleValues[index++] = curLevel * mainHeight / bandWidth;
                 curLevel = 0;
             }
         }
-        mSampleCount = BAND_COUNT;
+        mSampleCount = mBandCount;
     } else {
         for(int i=0;i<mSampleCount;i++)
         {
@@ -139,7 +141,7 @@ void TVisualWidget::drawSpectrumBlock(QPainter *painter, QRect mainRect, QBrush 
     QBrush blockBrush(mColorBlock);
 
     int offsetX = 0;
-    for(int i=0;i<BAND_COUNT;i++)
+    for(int i=0;i<mBandCount;i++)
     {
         if(offsetX+mSpectrumWidth>mainWidth)
             break;
@@ -173,8 +175,8 @@ void TVisualWidget::drawSpectrumBlock(QPainter *painter, QRect mainRect, QBrush 
 
         if(topBlockValue < 0)
             topBlockValue = 0;
-        if(topBlockValue > mainHeight+mSpectrumTopBlockHeight)
-            topBlockValue = mainHeight;
+        if(topBlockValue > mainHeight-mSpectrumTopBlockHeight)
+            topBlockValue = mainHeight-mSpectrumTopBlockHeight;
         // fill block
         painter->fillRect(offsetX, mainHeight-topBlockValue-mSpectrumTopBlockHeight, mSpectrumWidth, mSpectrumTopBlockHeight, blockBrush);
 
@@ -230,8 +232,6 @@ void TVisualWidget::drawWaveImpulse(QPainter *painter, QRect mainRect, QBrush pi
     int mapIndex = 0;
     int halfHeight = mainHeight/2;
 
-    painter->setPen(mColorBottom);
-    painter->drawLine(0, halfHeight, mainWidth, halfHeight);
     for(int i=0;i<mainWidth;i++)
     {
         int boundLimit = qMin(mapLevel[i], mSampleCount);
@@ -326,7 +326,7 @@ void TVisualWidget::mousePressEvent(QMouseEvent *event)
     if(mSwitchOnClick && event->button()==Qt::LeftButton)
     {
         mVisualType = (TVisualType)((int)mVisualType+1);
-        if(mVisualType == VT_WAVE_IMPULSE)
+        if(mVisualType == VT_WAVE_OSCILLOGRAM)
             mVisualType = VT_SPECTRUM_BLOCK;
         if(mVisualType == VisualTypeCount)
             mVisualType = (TVisualType)0;
@@ -345,4 +345,6 @@ void TVisualWidget::loadFromSkin(QDomElement element, TSkin *skin)
     mColorTop = QColor(element.attribute(ATTR_TOP_COLOR, DEFAULT_COLOR));
     mColorMiddle = QColor(element.attribute(ATTR_MIDDLE_COLOR, DEFAULT_COLOR));
     mColorBottom = QColor(element.attribute(ATTR_BOTTOM_COLOR, DEFAULT_COLOR));
+
+    mBandCount = width() / (SAMPLE_WIDTH+SAMPLE_SPACE);
 }

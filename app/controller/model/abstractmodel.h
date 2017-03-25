@@ -38,6 +38,9 @@ public:
 
     void update();
 
+signals:
+    void requestAdjustColumnWidth();
+
 private:
     static QVariant mFont;
     static QVariant mBackColor1;

@@ -86,6 +86,7 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mIcon, SIGNAL(clicked()), this, SLOT(on_icnLogo_clicked()));
 
     mBtnBrowser->setVisible(false);
+    mBtnLyrics->setVisible(false);
     mDefaultLogo.addFile(":/window/images/logo.ico");
 
     retranslateUi();

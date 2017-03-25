@@ -9,6 +9,9 @@ QColor TAbstractTableView::mBackground;
 QColor TAbstractTableView::mHighlightColor;
 QPixmap *TTableViewDelegate::mSelectedPixmap = NULL;
 
+int g_editingRow = -1;
+int g_editingCol = -1;
+
 TTableViewDelegate::TTableViewDelegate(QObject *parent) :
     QStyledItemDelegate(parent)
 {
@@ -25,7 +28,16 @@ QWidget *TTableViewDelegate::createEditor(QWidget *parent, const QStyleOptionVie
     QPalette pal = editor->palette();
     pal.setBrush(QPalette::Text, QBrush(index.data(Utils::TextHighlight).value<QColor>()));
     editor->setPalette(pal);
+    g_editingRow = index.row();
+    g_editingCol = index.column();
     return editor;
+}
+
+void TTableViewDelegate::destroyEditor(QWidget *editor, const QModelIndex &index) const
+{
+    QStyledItemDelegate::destroyEditor(editor, index);
+    g_editingRow = -1;
+    g_editingCol = -1;
 }
 
 void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
@@ -107,15 +119,19 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
         painter->fillPath(trianglePath, QBrush(textColor));
     }
 
-    // Draw text
-    QString text = index.data().toString();
-    Qt::Alignment alignment = (Qt::Alignment)model->data(index, Qt::TextAlignmentRole).toInt();
-    QTextOption textOption;
-    textOption.setWrapMode(QTextOption::NoWrap);
-    textOption.setAlignment(alignment);
-    rect.adjust(2, 0, -4, 0);
-    painter->setFont(model->data(index, Qt::FontRole).value<QFont>());
-    painter->drawText(rect, text, textOption);
+    if(g_editingRow!=index.row() || g_editingCol!=index.column()) // Disable draw text if current item is in editing
+    {
+        // Draw text
+        QString text = index.data().toString();
+        Qt::Alignment alignment = (Qt::Alignment)model->data(index, Qt::TextAlignmentRole).toInt();
+        QTextOption textOption;
+        textOption.setWrapMode(QTextOption::NoWrap);
+        textOption.setAlignment(alignment);
+        rect.adjust(2, 0, -4, 0);
+        painter->setFont(model->data(index, Qt::FontRole).value<QFont>());
+        painter->drawText(rect, text, textOption);
+    }
+
     painter->restore();
 }
 

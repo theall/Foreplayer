@@ -21,6 +21,8 @@ void TMusiclistModel::setPlayListItem(TPlaylistItem *item)
     beginResetModel();
     mPlaylistItem = item;
     endResetModel();
+
+    emit requestAdjustColumnWidth();
 }
 
 int TMusiclistModel::rowCount(const QModelIndex &parent) const
@@ -89,7 +91,11 @@ bool TMusiclistModel::setData(const QModelIndex &index, const QVariant &value, i
     {
         int row = index.row();
         if(mPlaylistItem && row>-1 && row<mPlaylistItem->size())
-            mPlaylistItem->musicItem(row)->setDisplayName(value.toString());
+        {
+            QString newName = value.toString();
+            if(!newName.isEmpty())
+                mPlaylistItem->musicItem(row)->setDisplayName(value.toString());
+        }
     }
     return TAbstractModel::setData(index, value, role);
 }

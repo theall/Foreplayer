@@ -10,8 +10,6 @@ public:
 
     void editCurrentName();
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
-
-private:
     void updateColumnsWidth() Q_DECL_OVERRIDE;
 };
 

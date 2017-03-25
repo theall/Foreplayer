@@ -70,7 +70,7 @@ private:
 
     // IDataCallback interface
 private:
-    void read(byte *buf, int size) Q_DECL_OVERRIDE;
+    void read(byte *buf, int size) override;
 };
 
 #endif // TABSTRACTFRONT

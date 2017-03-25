@@ -240,7 +240,7 @@ void TGuiManager::open()
     mMainWindow->checkPlaylistButton(true);
 
     mMainWindow->show();
-    mLyricWindow->show();
+    //mLyricWindow->show();
     mEqualizerWindow->show();
     mPlaylistWindow->show();
     //mBrowserWindow->show();

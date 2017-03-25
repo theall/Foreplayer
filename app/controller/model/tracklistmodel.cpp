@@ -44,6 +44,8 @@ void TTrackListModel::setMusicItem(TMusicItem *item)
     beginResetModel();
     mMusicItem = item;
     endResetModel();
+
+    emit requestAdjustColumnWidth();
 }
 
 TMusicItem *TTrackListModel::musicItem()
@@ -133,7 +135,7 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
                 {
                     // Title
                     QString newName = value.toString();
-                    if(newName != trackItem->displayName)
+                    if(!newName.isEmpty() && newName != trackItem->displayName)
                     {
                         trackItem->displayName = newName;
                         mMusicItem->setModified();
@@ -141,11 +143,12 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
                 } else if (col==3) {
                     // Duration
                     int newDuration = strToMSecs(value.toString());
-                    if(newDuration != trackItem->duration)
+                    if(newDuration>=0 && newDuration != trackItem->duration)
                     {
                         int diff = newDuration - trackItem->duration;
                         trackItem->duration = newDuration;
                         mMusicItem->setDuration(mMusicItem->duration()+diff);
+                        emit requestAdjustColumnWidth();
                     }
                 }
             }

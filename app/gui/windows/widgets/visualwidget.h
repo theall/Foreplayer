@@ -3,7 +3,6 @@
 
 #include "../../share/skin.h"
 
-#define BAND_COUNT      64
 #define LEVEL_COUNT     4096
 
 enum TVisualType
@@ -54,6 +53,8 @@ private:
     QColor mColorTop;
     QColor mColorMiddle;
     QColor mColorBottom;
+
+    int mBandCount;
 
     void caculateTiles();
     void drawSpectrumBlock(QPainter *painter, QRect mainRect, QBrush pillarBrush);
