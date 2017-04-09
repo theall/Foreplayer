@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1491293520 source:f:\opensource\foreplayer\sdk\src\dllexport.cpp
+	<foreplayer.h>
+	"core.h"
+
+1491293202 f:\opensource\foreplayer\sdk\include\foreplayer.h
+	<string>
+	<list>
+
+1491106625 source:f:\opensource\foreplayer\sdk\src\filter\samplesfilter.cpp
+	"samplesfilter.h"
+	<math.h>
+	<memory.h>
+
+1491106962 f:\opensource\foreplayer\sdk\src\filter\samplesfilter.h
+	<mutex>
+	<fftreal_wrapper.h>
+	<audio_3d.h>
+
+1490433246 f:\opensource\foreplayer\sdk\thirdparty\fftreal\fftreal_wrapper.h
+	<QtCore/QtGlobal>
+
+1400168255 f:\opensource\foreplayer\sdk\thirdparty\audio3d\include\audio_3d.h
+	<cstdint>
+	<vector>
+
+1491106813 f:\opensource\foreplayer\sdk\src\core.h
+	<vector>
+	"playercore.h"
+	"playlistcore.h"
+
+1490581283 f:\opensource\foreplayer\sdk\src\playercore.h
+	"playthread.h"
+	"front/sdlfront.h"
+	"pluginmanager/backendpluginmanager.h"
+	"playlist/playlistitem.h"
+
+1490519708 f:\opensource\foreplayer\sdk\src\playthread.h
+	"front/abstractfront.h"
+	"pluginmanager/backend/backendplugin.h"
+	<thread>
+
+1491106626 f:\opensource\foreplayer\sdk\src\front\abstractfront.h
+	"../filter/samplesfilter.h"
+	"../plugins/backend/backendinterface.h"
+	"loopbuffer.h"
+
+1490604974 f:\opensource\foreplayer\sdk\plugins\backend\backendinterface.h
+	<map>
+	<vector>
+	<string>
+
+1491106626 f:\opensource\foreplayer\sdk\src\front\loopbuffer.h
+
+1491293839 f:\opensource\foreplayer\sdk\src\pluginmanager\backend\backendplugin.h
+	<string>
+	"library.h"
+	"../../../plugins/backend/backendinterface.h"
+
+1491106626 f:\opensource\foreplayer\sdk\src\front\sdlfront.h
+	"abstractfront.h"
+
+1490581307 f:\opensource\foreplayer\sdk\src\pluginmanager\backendpluginmanager.h
+	<string>
+	"abstractpluginmanager.h"
+
+1490581282 f:\opensource\foreplayer\sdk\src\pluginmanager\abstractpluginmanager.h
+	"backend/backendplugin.h"
+	<vector>
+
+1491106626 f:\opensource\foreplayer\sdk\src\playlist\playlistitem.h
+	"musicitem.h"
+
+1491106626 f:\opensource\foreplayer\sdk\src\playlist\musicitem.h
+	"trackitem.h"
+
+1491106895 f:\opensource\foreplayer\sdk\src\playlist\trackitem.h
+	<string>
+
+1490581283 f:\opensource\foreplayer\sdk\src\playlistcore.h
+	"playlist/playlistitem.h"
+	"pluginmanager/backendpluginmanager.h"
+
+1491293787 f:\opensource\foreplayer\sdk\src\library.h
+
+1491106626 source:f:\opensource\foreplayer\sdk\src\front\abstractfront.cpp
+	"abstractfront.h"
+	<memory.h>
+

@@ -1,1 +1,0 @@
-dlltool -D UnRAR.dll  -d UnRAR.def -l libunrar.a -k

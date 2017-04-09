@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="foreplayerlib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/foreplayerlib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="z:/build/foreplayer/lib/debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-g" />
+					<Add directory="src" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/foreplayerlib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="z:/build/foreplayer/lib/release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+					<Add directory="src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DFOREPLAYER_EXPORT" />
+			<Add directory="F:/opensource/foreplayer/sdk/include" />
+			<Add directory="F:/opensource/foreplayer/sdk/thirdparty/fftreal" />
+			<Add directory="F:/opensource/foreplayer/sdk/thirdparty/Audio3D/include" />
+		</Compiler>
+		<Unit filename="src/core.cpp" />
+		<Unit filename="src/core.h" />
+		<Unit filename="src/dllexport.cpp" />
+		<Unit filename="src/filter/samplesfilter.cpp" />
+		<Unit filename="src/filter/samplesfilter.h" />
+		<Unit filename="src/front/abstractfront.cpp" />
+		<Unit filename="src/front/abstractfront.h" />
+		<Unit filename="src/front/loopbuffer.cpp" />
+		<Unit filename="src/front/loopbuffer.h" />
+		<Unit filename="src/front/sdlfront.cpp" />
+		<Unit filename="src/front/sdlfront.h" />
+		<Unit filename="src/library.cpp" />
+		<Unit filename="src/library.h" />
+		<Unit filename="src/playercore.cpp" />
+		<Unit filename="src/playercore.h" />
+		<Unit filename="src/playlist/musicitem.cpp" />
+		<Unit filename="src/playlist/musicitem.h" />
+		<Unit filename="src/playlist/playlistdef.h" />
+		<Unit filename="src/playlist/playlistitem.cpp" />
+		<Unit filename="src/playlist/playlistitem.h" />
+		<Unit filename="src/playlist/trackitem.cpp" />
+		<Unit filename="src/playlist/trackitem.h" />
+		<Unit filename="src/playlistcore.cpp" />
+		<Unit filename="src/playlistcore.h" />
+		<Unit filename="src/playthread.cpp" />
+		<Unit filename="src/playthread.h" />
+		<Unit filename="src/pluginmanager/abstractpluginmanager.cpp" />
+		<Unit filename="src/pluginmanager/abstractpluginmanager.h" />
+		<Unit filename="src/pluginmanager/backend/backendplugin.cpp" />
+		<Unit filename="src/pluginmanager/backend/backendplugin.h" />
+		<Unit filename="src/pluginmanager/backendpluginmanager.cpp" />
+		<Unit filename="src/pluginmanager/backendpluginmanager.h" />
+		<Unit filename="src/strformat.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
