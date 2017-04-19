@@ -143,46 +143,46 @@ enum ForeplayerCmd
     CMD_OPEN,
 
     /**
-     * Set playlist's store path, default in $approot/playlist, param1 pointer to wstring path
+     * Set playlist's store path, default in $approot/playlist, param1 pointer to wstring path.
      * Param1: pointer to wstring of path
      */
     CMD_SETPLAYLISTPATH,
 
     /**
-     * Set plugins's store path, default in $approot/plugins, param1 pointer to wstring path
+     * Set plugins's store path, default in $approot/plugins, param1 pointer to wstring path.
      * Param1: pointer to wstring of path
      */
     CMD_SETPLUGINSPATH,
 
     /**
-     * Get play lists
+     * Get playlists.
      * param1: return pointer to std::wstring
      */
     CMD_GET_PLAYLISTS_NAME_LIST,
 
     /**
-     * Get play list item
+     * Get playlist item.
      * param1: int pointer to playlist item index
      * param2: return internal pointer to playlist item
      */
     CMD_GET_PLAYLIST_ITEM,
 
     /**
-     * Get play list name
+     * Get playlist name.
      * param1: int pointer to playlist item index
      * param2: return wstring of playlist item name
      */
     CMD_GET_PLAYLIST_NAME,
 
     /**
-     * Set play list name
+     * Set playlist name.
      * param1: int pointer to playlist item index
      * param2: pointer wstring of playlist item new name
      */
     CMD_SET_PLAYLIST_NAME,
 
     /**
-     * Get play list item index
+     * Get playlist item index.
      * param1: playlist item
      * param2: return int pointer of playlist item index
      */
@@ -229,23 +229,152 @@ enum ForeplayerCmd
     CMD_SET_AUDIO_PARAMETER,
 
     /**
-     * Get music item count in playlist item
-     * param1: play list item handle
+     * Get audio data.
+     * param1: value of AudioDataType
+     * param2: additional parameter 1
+     * param3: additional parameter 2
+     * param4: unused
+     */
+    CMD_GET_AUDIO_DATA,
+
+    /**
+     * Get current playing playlist item.
+     * param1: return pointer of void *
+     */
+    CMD_GET_CURRENT_PLAYLIST_ITEM,
+
+    /**
+     * Get current playing music item.
+     * param1: return pointer of void *
+     */
+    CMD_GET_CURRENT_MUSIC_ITEM,
+
+    /**
+     * Get current playing track item.
+     * param1: return pointer of void *
+     */
+    CMD_GET_CURRENT_TRACK_ITEM,
+
+    /**
+     * Get current played time.
+     * param1: return microseconds
+     */
+    CMD_GET_PLAYED_TIME,
+
+    /**
+     * Query player status.
+     * param1: return bool
+     */
+    CMD_PLAYER_IS_PAUSED,
+
+    /**
+     * Play track item.
+     * param1: track item handle
+     * param2: return bool
+     */
+    CMD_PLAYER_PLAY_TRACK,
+
+    /**
+     * Update music item in playlist item
+     * param1: playlist item handle
+     * param2: position
+     * param3: new music item handle
+     * param4: return bool
+     */
+    CMD_PLAYLIST_UPDATE_MUSIC_ITEM,
+
+    /**
+     * Clear all music items in playlist.
+     * param1: playlist handle
+     */
+    CMD_PLAYLIST_ITEM_CLEAR,
+
+    /**
+     * Get playing index.
+     * param1: return int of playlist index
+     * param2: return int of music item index
+     * param3: return int of track item index
+     */
+    CMD_GET_PLAYING_INDEX,
+
+    /**
+     * Remove redundant music items in specify playlist item.
+     * param1: playlist item handle
+     * param2: return list<int> indexes removed
+     */
+    CMD_PLAYLIST_REMOVE_REDUNDANT,
+
+    /**
+     * Query player status.
+     * param1: return bool
+     */
+    CMD_PLAYER_IS_PLAYING,
+
+    /**
+     * Query player status.
+     * param1: return bool
+     */
+    CMD_PLAYER_IS_STOPED,
+
+    /**
+     * Resume playing if player is paused.
+     * param1: return bool
+     */
+    CMD_PLAYER_RESUME,
+
+    /**
+     * Sort music items in playlist.
+     * param1: playlist item handle
+     * param2: pointer to SortMethod
+     */
+    CMD_PLAYLIST_ITEM_SORT,
+
+    /**
+     * Pause player.
+     * param1: return bool
+     */
+    CMD_PLAYER_PAUSE,
+
+    /**
+     * Stop player.
+     * param1: return bool
+     */
+    CMD_PLAYER_STOP,
+
+    /**
+     * Play track item specified by index.
+     * param1: int of playlist index
+     * param2: int of music item index
+     * param3: int of track item index
+     * param4: return bool
+     */
+    CMD_PLAYER_PLAY_INDEX,
+
+    /**
+     * Remove error music items in playlist.
+     * param1: playlist handle
+     * param2: return list<int> indexes removed
+     */
+    CMD_PLAYLIST_REMOVE_ERRORS,
+
+    /**
+     * Get music item count in playlist item.
+     * param1: playlist item handle
      * param2: return a int value
      */
     CMD_GET_MUSIC_ITEM_COUNT,
 
     /**
-     * Get music item in playlist item
-     * param1: play list item handle
-     * param2: music item index in play list item
+     * Get music item in playlist item.
+     * param1: playlist item handle
+     * param2: music item index in playlist item
      * param3: return pointer to music item
      */
     CMD_GET_MUSIC_ITEM,
 
     /**
-     * Get music item index in playlist item
-     * param1: play list item handle
+     * Get music item index in playlist item.
+     * param1: playlist item handle
      * param2: return int
      */
     CMD_GET_MUSIC_ITEM_INDEX,
@@ -260,7 +389,7 @@ enum ForeplayerCmd
 
     /**
      * Insert music item into playlist item
-     * param1: play list item handle
+     * param1: playlist item handle
      * param2: position
      * param3: music item handle
      * param4: return position inserted
@@ -269,21 +398,21 @@ enum ForeplayerCmd
 
     /**
      * Remove music item from playlist item
-     * param1: play list item handle
+     * param1: playlist item handle
      * param2: position
      * param3: return bool
      */
     CMD_REMOVE_MUSIC_ITEM,
 
     /**
-     * Get music item display name
+     * Get music item display name.
      * param1: music item handle
      * param2: return pointer to wstring
      */
     CMD_GET_MUSIC_ITEM_DISPLAY_NAME,
 
     /**
-     * Set music item display name
+     * Set music item display name.
      * param1: music item handle
      * param2: wstring of track item new name
      * param3: return true if name changed
@@ -291,63 +420,63 @@ enum ForeplayerCmd
     CMD_SET_MUSIC_ITEM_DISPLAY_NAME,
 
     /**
-     * Get music item file full name
+     * Get music item file full name.
      * param1: music item handle
      * param2: return pointer to wstring
      */
     CMD_GET_MUSIC_ITEM_FILE_NAME,
 
     /**
-     * Get music item artist name
+     * Get music item artist name.
      * param1: music item handle
      * param2: return pointer to wstring
      */
     CMD_GET_MUSIC_ITEM_ARTIST,
 
     /**
-     * Get music item album name
+     * Get music item album name.
      * param1: music item handle
      * param2: return pointer to wstring
      */
     CMD_GET_MUSIC_ITEM_ALBUM,
 
     /**
-     * Get music item's year
+     * Get music item's year.
      * param1: music item handle
      * param2: return pointer to int
      */
     CMD_GET_MUSIC_ITEM_YEAR,
 
     /**
-     * Get music item type
+     * Get music item type.
      * param1: music item handle
      * param2: return pointer to wstring
      */
     CMD_GET_MUSIC_ITEM_TYPE,
 
     /**
-     * Get music item 's additional information
+     * Get music item 's additional information.
      * param1: music item handle
      * param2: return pointer to wstring
      */
     CMD_GET_MUSIC_ITEM_ADDTIONAL_INFO,
 
     /**
-     * Get music item duration
+     * Get music item duration.
      * param1: music item handle
      * param2: return pointer to int
      */
     CMD_GET_MUSIC_ITEM_DURATION,
 
     /**
-     * Get track item count
+     * Get track item count.
      * param1: music item handle
      * param2: return pointer to int
      */
     CMD_GET_TRACK_ITEM_COUNT,
 
     /**
-     * Get track item
+     * Get track item.
      * param1: music item handle
      * param2: track item index
      * param3: return internal pointer to track item
@@ -355,14 +484,29 @@ enum ForeplayerCmd
     CMD_GET_TRACK_ITEM,
 
     /**
-     * Get track item name
+     * Get track items.
+     * param1: music item handle
+     * param2: return list<trackitem handle>
+     */
+    CMD_GET_TRACK_ITEMS,
+
+    /**
+     * Get track item index in music item.
+     * param1: music item handle
+     * param2: track item handle
+     * param3: return int
+     */
+    CMD_GET_TRACK_ITEM_INDEX,
+
+    /**
+     * Get track item name.
      * param1: track item handle
      * param2: return wstring of track item name
      */
     CMD_GET_TRACK_ITEM_NAME,
 
     /**
-     * Set track item name
+     * Set track item name.
      * param1: track item handle
      * param2: wstring of track item new name
      * param3: return true if name changed
@@ -370,14 +514,14 @@ enum ForeplayerCmd
     CMD_SET_TRACK_ITEM_NAME,
 
     /**
-     * Get track item duration
+     * Get track item duration.
      * param1: track item handle
      * param2: return int of micro seconds
      */
     CMD_GET_TRACK_ITEM_DURATION,
 
     /**
-     * Set track item duration
+     * Set track item duration.
      * param1: track item handle
      * param2: int of new duration in micro seconds
      * param3: return true if duration changed
@@ -385,35 +529,49 @@ enum ForeplayerCmd
     CMD_SET_TRACK_ITEM_DURATION,
 
     /**
-     * Get track item type
+     * Get track item type.
      * param1: track item handle
      * param2: return wstring
      */
     CMD_GET_TRACK_ITEM_TYPE,
 
     /**
-     * Get track item year
+     * Get track item artist.
+     * param1: track item handle
+     * param2: return wstring
+     */
+    CMD_GET_TRACK_ITEM_ARTIST,
+
+    /**
+     * Get track item album.
+     * param1: track item handle
+     * param2: return wstring
+     */
+    CMD_GET_TRACK_ITEM_ALBUM,
+
+    /**
+     * Get track item year.
      * param1: track item handle
      * param2: return int
      */
     CMD_GET_TRACK_ITEM_YEAR,
 
     /**
-     * Get track item additional information
+     * Get track item additional information.
      * param1: track item handle
      * param2: return wstring
      */
     CMD_GET_TRACK_ITEM_ADDITIONAL_INFO,
 
     /**
-     * Retreive track item enable/disable
+     * Retreive track item enable/disable.
      * param1: track item handle
      * param2: return bool
      */
     CMD_GET_TRACK_ITEM_ENABLED,
 
     /**
-     * Retreive track item index name
+     * Retreive track item index name.
      * param1: track item handle
      * param2: return bool
      */

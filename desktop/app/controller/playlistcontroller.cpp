@@ -38,7 +38,7 @@ TPlaylistController::TPlaylistController(QObject *parent) :
 TPlaylistController::~TPlaylistController()
 {
     mExportMissionsLock.lock();
-    foreach (QSharedMemory *m, mExportMissions) {
+    for(QSharedMemory *m : mExportMissions) {
         m->detach();
         delete m;
     }
@@ -186,7 +186,7 @@ void TPlaylistController::slotRequestFixDuration(int microSeconds)
     int trackItemDuration = mCore->getTrackItemDuration(trackItem);
     if(microSeconds != trackItemDuration)
     {
-        mCore->setTrackItemDuration(trackItem, microSeconds);
+        mCore->setTrackItemDuration(musicItem, trackItem, microSeconds);
         mTracklistModel->update();
         mMusiclistModel->update();
     }
@@ -199,7 +199,7 @@ void TPlaylistController::slotAddExportMission()
 
     QStringList indexList = mExportDialog->getIndexInfo();
     TExportMissions newMissions;
-    foreach (QString index, indexList) {
+    for(QString index : indexList) {
         QString strId = QUuid::createUuid().toString();
         QSharedMemory *sharedMemory = new QSharedMemory(strId);
         if(!sharedMemory->create(sizeof(TExportParam)))
@@ -497,25 +497,17 @@ void TPlaylistController::slotRequestPlayMusicItem(int row)
 
 void TPlaylistController::slotRequestCopyMusicItem(QSet<int> rows)
 {
-    if(!mMusiclistModel)
+    if(!mCore || !mMusiclistModel)
         return;
 
-//    TPlayListItem playlistItem = mMusiclistModel->playlistItem();
-//    if(playlistItem)
-//    {
-//        QClipboard *clipBoard = qApp->clipboard();
-//        QJsonDocument playlistDocument;
-//        QJsonArray musicItemsArray;
-//        QMimeData *mimeData = new QMimeData;
-//        foreach (int row, rows) {
-//            TMusicItem musicItem = mCore->getMusicItem(playlistItem, row);
-//            if(musicItem)
-//                musicItemsArray.append(mCore->getMusicItemtoJson());
-//        }
-//        playlistDocument.setArray(musicItemsArray);
-//        mimeData->setData(MIME_TYPE_MUSIC_ITEM, playlistDocument.toJson());
-//        clipBoard->setMimeData(mimeData);
-//    }
+    PlayListItem playlistItem = mMusiclistModel->playlistItem();
+    if(playlistItem)
+    {
+        QClipboard *clipBoard = qApp->clipboard();
+        QMimeData *mimeData = new QMimeData;
+        mimeData->setData(MIME_TYPE_MUSIC_ITEM, mCore->musicItemsToString(playlistItem, rows).toLocal8Bit());
+        clipBoard->setMimeData(mimeData);
+    }
 }
 
 void TPlaylistController::slotRequestCutMusicItem(QSet<int> rows)
@@ -527,7 +519,7 @@ void TPlaylistController::slotRequestCutMusicItem(QSet<int> rows)
     if(playlistItem)
     {
         QClipboard *clipBoard = qApp->clipboard();
-        foreach (int row, rows) {
+        for(int row : rows) {
             MusicItem musicItem = mCore->getMusicItem(playlistItem, row);
             if(musicItem)
             {
@@ -544,27 +536,22 @@ void TPlaylistController::slotRequestPasteMusicItem(int pos)
     if(!mMusiclistModel)
         return;
 
-    TMusicItems musicItems;
-//    const QMimeData *mimeData = qApp->clipboard()->mimeData();
-//    if(mimeData->hasFormat(MIME_TYPE_MUSIC_ITEM)) {
-//        QJsonArray musicItemsArray = QJsonDocument::fromJson(mimeData->data(MIME_TYPE_MUSIC_ITEM)).array();
-//        for(int i=0;i<musicItemsArray.size();i++)
-//        {
-//            TMusicItem musicItem = mCore->toJson(musicItemsArray.at(i).toObject());
-//            musicItems.append(musicItem);
-//        }
-//    } else if (mimeData->hasFormat(MIME_TYPE_TRACK_ITEM)) {
+    MusicItems musicItems;
+    const QMimeData *mimeData = qApp->clipboard()->mimeData();
+    if(mimeData->hasFormat(MIME_TYPE_MUSIC_ITEM)) {
+        musicItems = mCore->stringToMusicItems(mimeData->data(MIME_TYPE_MUSIC_ITEM));
+    } else if (mimeData->hasFormat(MIME_TYPE_TRACK_ITEM)) {
 //        QJsonArray trackItemsArray = QJsonDocument::fromJson(mimeData->data(MIME_TYPE_TRACK_ITEM)).array();
 //        for(int i=0;i<trackItemsArray.size();i++)
 //        {
-//            TMusicItem musicItem = new TMusicItem;
+//            MusicItem musicItem = new MusicItem;
 //            TTrackItem trackItem = new TTrackItem;
 //            trackItem->fromJson(trackItemsArray.at(i).toObject());
 //            mCore->getMusicItemfromTrackItem(trackItem);
 //            mCore->getMusicItemaddTrackItem(trackItem);
 //            musicItems.append(musicItem);
 //        }
-//    }
+    }
     mMusiclistModel->insertItems(pos, musicItems);
 }
 
@@ -602,7 +589,7 @@ void TPlaylistController::slotRequestExportMusicItem(int row)
     if(musicItem)
     {
         QStringList indexList;
-        foreach (TrackItem trackItem, mCore->getTrackItems(musicItem)) {
+        for(TrackItem trackItem : mCore->getTrackItems(musicItem)) {
             indexList.append(mCore->getTrackItemIndexName(trackItem));
         }
         QString musicItemFileName = mCore->getMusicItemFileName(musicItem);
@@ -685,23 +672,14 @@ void TPlaylistController::slotRequestCopyTrackItem(QSet<int> rows)
     if(!mTracklistModel)
         return;
 
-//    TMusicItem musicItem = mTracklistModel->musicItem();
-//    if(musicItem)
-//    {
-//        QClipboard *clipBoard = qApp->clipboard();
-//        QJsonDocument playlistDocument;
-//        QMimeData *mimeData = new QMimeData;
-//        QJsonArray trackItemsArray;
-//        foreach (int row, rows)
-//        {
-//            TTrackItem trackItem = mCore->getTrackItem(musicItem, row);
-//            if(trackItem)
-//                trackItemsArray.append(trackItem->toJson());
-//        }
-//        playlistDocument.setArray(trackItemsArray);
-//        mimeData->setData(MIME_TYPE_TRACK_ITEM, playlistDocument.toJson());
-//        clipBoard->setMimeData(mimeData);
-//    }
+    MusicItem musicItem = mTracklistModel->musicItem();
+    if(musicItem)
+    {
+        QClipboard *clipBoard = qApp->clipboard();
+        QMimeData *mimeData = new QMimeData;
+        mimeData->setData(MIME_TYPE_TRACK_ITEM, mCore->getTrackItemsAsString(musicItem, rows).toLocal8Bit());
+        clipBoard->setMimeData(mimeData);
+    }
 }
 
 void TPlaylistController::slotRequestExportTrackItem(int row)
@@ -765,7 +743,7 @@ void TPlaylistController::slotTimerEvent()
         mExportMissionsLock.lock();
         int runningCount = 0;
         int completeCount = 0;
-        foreach (QSharedMemory *m, mExportMissions) {
+        for(QSharedMemory *m : mExportMissions) {
             TExportParam *exportParam = (TExportParam*)m->data();
             if(exportParam->state == ES_RUN)
                 runningCount++;
@@ -781,7 +759,7 @@ void TPlaylistController::slotTimerEvent()
 #ifndef QT_DEBUG
             commandLine.prepend("noconsole ");
 #endif
-            foreach (QSharedMemory *m, mExportMissions) {
+            for(QSharedMemory *m : mExportMissions) {
                 TExportParam *exportParam = (TExportParam*)m->data();
                 if(exportParam->state == ES_READY)
                 {

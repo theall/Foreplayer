@@ -150,9 +150,6 @@ void TPlayThread::run()
 
         if(mState==TS_RUNNING)
             mCurrentMicroSeconds += CYCLE_INTERVAL;
-
-        // Update progress
-        mFront->step();
     }
 
     mFront->stop();

@@ -39,8 +39,8 @@ public:
     TPlaylistItem *currentPlaylistItem();
     TPlaylistItem *playlistItem(int plIndex = -1);
     TPlaylistItem *takeAt(int plIndex);
-    void insert(int pos, TPlaylistItem *item);
-    void insert(wstring name, int index = -1);
+    int insert(int pos, TPlaylistItem *item);
+    int insert(wstring name, int index = -1);
     bool remove(int index);
     void rename(int index, wstring newName);
     void sort(SortMethod mode = SM_TITLE_ASC);

@@ -128,14 +128,10 @@ void TMusiclistModel::setCurrentIndex(int index)
 
 void TMusiclistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved)
 {
-    std::sort(indexes.begin(), indexes.end(), [=](int a, int b) {
-        return a > b;
-    });
-
     // Record current index
     RecordCurrentItem;
 
-    indexesMoved = mCore->moveMusicItems(indexes, pos);
+    indexesMoved = mCore->moveMusicItems(mPlaylistItem, indexes, pos);
 
     // Restore current index
     RestoreCurrentItem;
@@ -148,19 +144,19 @@ void TMusiclistModel::insertFiles(QStringList files, int pos, QList<int> &newInd
     if(files.count()<=0)
         return;
 
-    TMusicItems musicItems;
-    foreach (QString file, files)
+    MusicItems musicItems;
+    for(QString file : files)
         musicItems.append(mCore->parse(file));
 
     insertItems(pos, musicItems, newIndexes);
 }
 
-void TMusiclistModel::insertItems(int pos, TMusicItems musicItems, QList<int> &newIndexes)
+void TMusiclistModel::insertItems(int pos, MusicItems musicItems, QList<int> &newIndexes)
 {
     // Record current item
     RecordCurrentItem;
 
-    foreach (MusicItem musicItem, musicItems) {
+    for(MusicItem musicItem : musicItems) {
         if(musicItem)
         {
             beginInsertRows(index(pos, 0), pos, pos);
@@ -175,7 +171,7 @@ void TMusiclistModel::insertItems(int pos, TMusicItems musicItems, QList<int> &n
     RestoreCurrentItem;
 }
 
-void TMusiclistModel::insertItems(int pos, TMusicItems musicItems)
+void TMusiclistModel::insertItems(int pos, MusicItems musicItems)
 {
     QList<int> newIndexes;
     insertItems(pos, musicItems, newIndexes);
@@ -190,7 +186,7 @@ void TMusiclistModel::removeSelections(QList<int> indexes)
         return a > b;
     });
 
-    foreach (int i, indexes) {
+    for(int i : indexes) {
         beginRemoveRows(QModelIndex(), i, i);
         mCore->removeMusicItem(mPlaylistItem, i);
         endRemoveRows();
@@ -206,7 +202,7 @@ QList<int> TMusiclistModel::removeRedundant()
 
     rowsRemoved = mCore->removeRedundant(mPlaylistItem);
 
-    foreach (int i, rowsRemoved) {
+    for(int i : rowsRemoved) {
         beginRemoveRows(QModelIndex(), i, i);
         endRemoveRows();
     }
@@ -223,7 +219,7 @@ QList<int> TMusiclistModel::removeErrors()
 
     rowsRemoved = mCore->removeErrors(mPlaylistItem);
 
-    foreach (int i, rowsRemoved) {
+    for(int i : rowsRemoved) {
         beginRemoveRows(QModelIndex(), i, i);
         endRemoveRows();
     }

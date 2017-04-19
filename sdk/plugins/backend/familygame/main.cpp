@@ -49,7 +49,7 @@ map<wstring, wstring> g_typeDesc;
 wstring g_suffixes;
 
 // Initialize plugin
-EXPORT bool initialize()
+bool initialize()
 {
     wstring desc = g_cTypeDesc;
 
@@ -61,9 +61,8 @@ EXPORT bool initialize()
         if(item.size() != 2)
             continue;
 
-        wstring suffix = item[0];
+        wstring suffix = toLower(item[0]);
         trim(suffix);
-        lower(suffix);
         g_typeDesc[suffix] = item[1];
         g_suffixes += L" " + suffix;
     }
@@ -74,26 +73,26 @@ EXPORT bool initialize()
     return true;
 }
 
-EXPORT const wstring getLastError()
+const wstring getLastError()
 {
     return L"";
 }
 
 // Verify this plugin can parse specify suffix of file
-EXPORT const wstring matchSuffixes()
+const wstring matchSuffixes()
 {
     // Return suffix list this plugin can process, multiple suffixed seperated by space character
     return g_suffixes;
 }
 
 // Return description of this suffix, for example "mp3" should be "Moving Picture Experts Group Audio Layer III"
-EXPORT const wstring suffixDescription(const wstring suffix)
+const wstring suffixDescription(const wstring suffix)
 {
     return g_typeDesc[suffix];
 }
 
 // Parse file to get details information
-EXPORT bool parse(const wstring fileName, TMusicInfo* musicInfo)
+bool parse(const wstring fileName, TMusicInfo* musicInfo)
 {
     if(!musicInfo)
         return false;
@@ -126,7 +125,7 @@ EXPORT bool parse(const wstring fileName, TMusicInfo* musicInfo)
 }
 
 // Load track to prepare for playing
-EXPORT bool loadTrack(TTrackInfo* trackInfo)
+bool loadTrack(TTrackInfo* trackInfo)
 {
     if(!g_gmePlay || !trackInfo)
         return false;
@@ -156,20 +155,20 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 }
 
 // Close track
-EXPORT void closeTrack()
+void closeTrack()
 {
     g_gmePlay->free();
 }
 
 // Request next samples
-EXPORT void nextSamples(byte* buffer, int bufSize)
+void nextSamples(byte* buffer, int bufSize)
 {
     if(g_gmePlay)
         g_gmePlay->fillBuffer((short*)buffer, bufSize/2);
 }
 
 // Seek time
-EXPORT bool seek(int microSeconds)
+bool seek(int microSeconds)
 {
     if(g_gmePlay)
         return g_gmePlay->seek(microSeconds);
@@ -178,7 +177,7 @@ EXPORT bool seek(int microSeconds)
 }
 
 // Retrieve plugin information
-EXPORT void pluginInformation(TPluginInfo *pluginInfo)
+void pluginInformation(TPluginInfo *pluginInfo)
 {
     if(!pluginInfo)
         return;
@@ -191,10 +190,59 @@ EXPORT void pluginInformation(TPluginInfo *pluginInfo)
 }
 
 // Use to free plugin
-EXPORT void destroy()
+void destroy()
 {
     if(g_gmePlay) {
         TGmeWrap::deleteInstance();
         g_gmePlay = NULL;
+    }
+}
+
+EXPORT void send_cmd(
+    BackendCmd cmd,
+    void *param1,
+    void *param2,
+    void *param3,
+    void *param4)
+{
+    (void)param4;
+    switch (cmd) {
+    case BC_INITIALIZE:
+        *(bool*)param1 = initialize();
+        break;
+    case BC_GET_MATCH_SUFFIXES:
+        *(wstring*)param1 = matchSuffixes();
+        break;
+    case BC_GET_SUFFIX_DESCRIPTION:
+        *(wstring*)param2 = suffixDescription(*(wstring*)param1);
+        break;
+    case BC_PARSE:
+        *(bool*)param3 = parse(*(wstring*)param1, (TMusicInfo*)param2);
+        break;
+    case BC_LOAD_TRACK:
+        *(bool*)param2 = loadTrack((TTrackInfo*)param1);
+        break;
+    case BC_CLOSE_TRACK:
+        closeTrack();
+        break;
+    case BC_GET_NEXT_SAMPLES:
+        nextSamples((byte*)param1, *(int*)param2);
+        break;
+    case BC_GET_SAMPLE_SIZE:
+        break;
+    case BC_SEEK:
+        *(bool*)param2 = seek(*(int*)param1);
+        break;
+    case BC_GET_PLUGIN_INFORMATION:
+        pluginInformation((TPluginInfo*)param1);
+        break;
+    case BC_GET_LAST_ERROR:
+        *(wstring*)param1 = L"";
+        break;
+    case BC_DESTRORY:
+        destroy();
+        break;
+    default:
+        break;
     }
 }

@@ -129,11 +129,11 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
                 // Title
                 QString newName = value.toString();
                 if(!newName.isEmpty())
-                    mCore->setTrackItemName(trackItem, newName);
+                    mCore->setTrackItemName(mMusicItem, trackItem, newName);
             } else if (col==3) {
                 // Duration
                 int newDuration = strToMSecs(value.toString());
-                if(mCore->setTrackItemDuration(trackItem, newDuration))
+                if(mCore->setTrackItemDuration(mMusicItem, trackItem, newDuration))
                     emit requestAdjustColumnWidth();
             }
         }

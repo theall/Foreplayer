@@ -20,7 +20,7 @@ void TScrollLabel::setStrings(QStringList strlist)
     mMutex.lock();
     mStringList.clear();
     mLineWidths.clear();
-    foreach (QString s, strlist) {
+    for(QString s : strlist) {
         if(!s.trimmed().isEmpty())
         {
             mStringList.append(s);

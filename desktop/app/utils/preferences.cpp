@@ -405,7 +405,7 @@ QStringList TPreferences::listValue(QString key)
 {
     QList<QVariant> list = mSettings->value(key).toList();
     QStringList r;
-    foreach (QVariant v, list) {
+    for(QVariant v : list) {
         r.append(v.toString());
     }
     return r;

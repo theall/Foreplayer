@@ -35,6 +35,8 @@ void trim(string &s);
 void split(wstring s, wstring delim, vector<wstring > *ret);
 
 void lower(wstring &s);
+wstring toLower(const wstring s);
+
 wstring join(vector<wstring> wsl, wstring delim);
 
 bool contains(vector<wstring> wsl, wstring delim, bool caseSensitive);

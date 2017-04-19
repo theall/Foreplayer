@@ -203,7 +203,7 @@ void TAbstractTableView::addFiles(QStringList files, int pos)
 void TAbstractTableView::addFiles(QList<QUrl> urls, int pos)
 {
     QStringList files;
-    foreach (QUrl url, urls) {
+    for(QUrl url : urls) {
         files.append(url.toLocalFile());
     }
     addFiles(files, pos);
@@ -220,19 +220,19 @@ void TAbstractTableView::paintEvent(QPaintEvent *event)
 {
     QTableView::paintEvent(event);
 
-//    QPainter painter(viewport());
-//    if (mHighlightRect.isValid()) {
-//        painter.setBrush(TAbstractTableView::mHighlightColor);
-//        painter.drawRect(mHighlightRect);
-//    }
+    QPainter painter(viewport());
+    if (mHighlightRect.isValid()) {
+        painter.setBrush(TAbstractTableView::mHighlightColor);
+        painter.drawRect(mHighlightRect);
+    }
 
-//    painter.end();
+    painter.end();
 }
 
 QSet<int> TAbstractTableView::selectedRows()
 {
     QSet<int> selected;
-    foreach (QModelIndex i, selectedIndexes()) {
+    for(QModelIndex i : selectedIndexes()) {
         selected.insert(i.row());
     }
     return selected;
@@ -255,7 +255,7 @@ void TAbstractTableView::selectIndexes(QList<int> indexes, bool locate)
         return;
 
     int columns = m->columnCount();
-    foreach (int i, indexes)
+    for(int i : indexes)
         for(int j=0;j<columns;j++)
             selModel->select(m->index(i, j), QItemSelectionModel::Select);
 

@@ -74,10 +74,8 @@ void TAbstractPluginManager::setPluginDir(wstring dir)
 
 int TAbstractPluginManager::findPlugins(wstring path)
 {
-    wchar_t fullPath[FILENAME_MAX];
     wstring abPath = getCurrentDir();
-    swprintf(fullPath, L"%s/%s/%s", abPath.c_str(), mPluginDir.c_str(), path.c_str());
-    abPath = fullPath;
+    abPath += L"/" + mPluginDir + L"/" + path;
     vector<wstring> pathList = getPathList(abPath);
     for(wstring filePath : pathList)
     {

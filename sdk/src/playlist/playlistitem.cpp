@@ -24,9 +24,11 @@
 
 #include <set>
 #include <algorithm>
+#include <zlib.h>
 
 TPlaylistItem::TPlaylistItem(wstring fileName) :
-    mFileName(fileName)
+    TAbstractItem()
+  , mFileName(fileName)
   , mModified(false)
 {
 }
@@ -75,13 +77,17 @@ TMusicItem *TPlaylistItem::takeAt(int index)
     return musicItem;
 }
 
-void TPlaylistItem::insert(int pos, TMusicItem *item)
+int TPlaylistItem::insert(int pos, TMusicItem *item)
 {
     if(!item)
-        return;
+        return -1;
 
+    if(pos < 0)
+        pos = 0;
     mMusicItems.insert(mMusicItems.begin()+pos, item);
     mModified = true;
+
+    return pos;
 }
 
 void TPlaylistItem::update(int index, TMusicItem *item)
@@ -144,7 +150,7 @@ list<int> TPlaylistItem::removeErrors()
     int i=0;
     for(TMusicItem *musicItem : mMusicItems)
     {
-        if(!isExist(musicItem->fileName()) || (musicItem->duration()<=0 && musicItem->trackItems()->size()<=0))
+        if(!isFileExist(musicItem->fileName()) || (musicItem->duration()<=0 && musicItem->trackItems()->size()<=0))
             removed.push_back(i++);
     }
 
@@ -163,13 +169,15 @@ list<int> TPlaylistItem::removeErrors()
     return removed;
 }
 
-void TPlaylistItem::setDisplayName(wstring newName)
+bool TPlaylistItem::setDisplayName(wstring newName)
 {
     if(mDisplayName != newName)
     {
         mDisplayName = newName;
         mModified = true;
+        return true;
     }
+    return false;
 }
 
 void TPlaylistItem::sort(SortMethod mode)
@@ -297,10 +305,22 @@ void TPlaylistItem::save()
         if(!fp)
             return;
 
-        //Set the playlist object to document object.
-        //playlistDocument.setObject(toJson());
-        //Write document data to the file.
-        //file.write(qCompress(playlistDocument.toJson(QJsonDocument::Indented)));
+        json j = toJson();
+        vector<uint8_t> v_cbor = json::to_cbor(j);
+        int fileSize = v_cbor.size();
+        if(fileSize > 0)
+        {
+            uLongf compressedSize = compressBound(fileSize);
+            if(uint8_t *buf = new uint8_t[compressedSize])
+            {
+                if(compress(buf, &compressedSize, &v_cbor[0], fileSize)==Z_OK)
+                {
+                    fwrite(&fileSize, sizeof(int), 1, fp);
+                    fwrite(buf, sizeof(uint8_t), compressedSize, fp);
+                }
+                delete buf;
+            }
+        }
         //Close the file.
         fclose(fp);
 

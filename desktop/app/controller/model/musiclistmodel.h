@@ -11,8 +11,8 @@ public:
     void setPlayListItem(PlayListItem item);
     void moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved);
     void insertFiles(QStringList files, int pos, QList<int> &newIndexes);
-    void insertItems(int pos, TMusicItems musicItems, QList<int> &newIndexes);
-    void insertItems(int pos, TMusicItems musicItems);
+    void insertItems(int pos, MusicItems musicItems, QList<int> &newIndexes);
+    void insertItems(int pos, MusicItems musicItems);
     void removeSelections(QList<int> indexes);
     QList<int> removeRedundant();
     QList<int> removeErrors();

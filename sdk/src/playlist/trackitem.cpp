@@ -20,7 +20,8 @@
 
 #include "playlistdef.h"
 
-TTrackItem::TTrackItem()
+TTrackItem::TTrackItem() :
+    TAbstractItem()
 {
     enable = true;
     hidden = false;

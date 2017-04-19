@@ -15,55 +15,34 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#include "core.h"
 
-TCore::TCore()
-{
-    mPlugins = TBackendPluginManager::instance();
-    mPlayer = new TPlayerCore();
-    mPlaylist = new TPlaylistCore();
-}
+#include "abstractitem.h"
 
-TCore::~TCore()
-{
-    if(mPlayer)
-    {
-        delete mPlayer;
-        mPlayer = NULL;
-    }
-    if(mPlaylist)
-    {
-        delete mPlaylist;
-        mPlaylist = NULL;
-    }
-    if(mPlugins)
-    {
-        TBackendPluginManager::deleteInstance();
-        mPlugins = NULL;
-    }
-}
-
-TPlayerCore *TCore::player()
-{
-    return mPlayer;
-}
-
-TPlaylistCore *TCore::playlist()
-{
-    return mPlaylist;
-}
-
-vector<wstring> TCore::playlists()
-{
-    return mPlaylist->names();
-}
-
-void TCore::open()
+TAbstractItem::TAbstractItem()
 {
 
 }
 
-void TCore::close()
+TAbstractItem::~TAbstractItem()
 {
 
+}
+
+string TAbstractItem::toString()
+{
+    json object = toJson();
+    stringstream ss;
+    ss << object;
+    string s;
+    ss >> s;
+    return s;
+}
+
+void TAbstractItem::fromString(string s)
+{
+    stringstream ss;
+    ss << s;
+    json object;
+    ss >> object;
+    fromJson(object);
 }

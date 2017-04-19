@@ -30,7 +30,7 @@ string wstring2string(wstring ws);
 
 wstring extractSuffix(wstring fileName);
 wstring extractPath(wstring fileName);
-void readFile(wstring fileName, char **buffer, long *size);
+void readFile(wstring fileName, uint8_t **buffer, long *size);
 wstring extractBaseName(wstring fileName);
 wstring trim(wstring ws);
 string trim(string s);
@@ -46,7 +46,8 @@ const char *extractSuffix(const char *src);
 bool contains(vector<wstring> sl, wstring s, bool caseSensitive = false);
 bool contains(vector<string> sl, string s, bool caseSensitive = false);
 
-bool isExist(wstring filePath);
+bool isFileExist(wstring filePath);
+bool isDirExist(wstring filePath);
 wstring getCurrentDir();
 void setCurrentDirectory(wstring path);
 

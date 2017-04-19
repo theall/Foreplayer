@@ -47,7 +47,7 @@ void TMissionsModel::addMissions(TExportMissions missions)
     if(!mExportMissions)
         return;
 
-    foreach (QSharedMemory *mission, missions) {
+    for(QSharedMemory *mission : missions) {
         addMission(mission);
     }
 }

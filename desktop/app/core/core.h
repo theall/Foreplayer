@@ -10,8 +10,8 @@ typedef void* PlayListItem;
 typedef void* MusicItem;
 typedef void* TrackItem;
 typedef QList<PlayListItem> TPlayListItems;
-typedef QList<MusicItem> TMusicItems;
-typedef QList<TrackItem> TTrackItems;
+typedef QList<MusicItem> MusicItems;
+typedef QList<TrackItem> TrackItems;
 
 enum IndexType
 {
@@ -60,8 +60,12 @@ public:
     //// Music items
     int getMusicItemCount(PlayListItem playlistItem);
     MusicItem getMusicItem(PlayListItem playlistItem, int row);
+    QString musicItemToString(PlayListItem playlistItem, int row);
+    QString musicItemsToString(PlayListItem playlistItem, QSet<int> rows);
+    MusicItems stringToMusicItem(QString str);
+    MusicItems stringToMusicItems(QString str);
     int getMusicItemIndex(PlayListItem playlistItem, MusicItem musicItem);
-    QList<int> moveMusicItems(QList<int> indexes, int pos);
+    QList<int> moveMusicItems(PlayListItem playlistItem, QList<int> indexes, int pos);
 
     QString getMusicItemDisplayName(MusicItem musicItem);
     QString getMusicItemFileName(MusicItem musicItem);
@@ -77,11 +81,13 @@ public:
     //// Track items
     int getTrackItemCount(MusicItem musicItem);
     TrackItem getTrackItem(MusicItem musicItem, int index);
-    TTrackItems getTrackItems(MusicItem musicItem);
+    QString getTrackItemAsString(MusicItem musicItem, int index);
+    TrackItems getTrackItems(MusicItem musicItem);
+    QString getTrackItemsAsString(MusicItem musicItem, QSet<int> indexes);
     int getTrackItemIndex(MusicItem musicItem, TrackItem trackItem);
     QString getTrackItemName(TrackItem trackItem);
-    bool setTrackItemName(TrackItem trackItem, QString newName);
-    bool setTrackItemDuration(TrackItem trackItem, int duration);
+    bool setTrackItemName(MusicItem musicItem, TrackItem trackItem, QString newName);
+    bool setTrackItemDuration(MusicItem musicItem, TrackItem trackItem, int duration);
 
     int getTrackItemDuration(TrackItem trackItem);
     QString getTrackItemType(TrackItem trackItem);

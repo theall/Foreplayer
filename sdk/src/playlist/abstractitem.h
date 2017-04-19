@@ -15,55 +15,28 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#include "core.h"
 
-TCore::TCore()
+#ifndef TABSTRACTITEM_H
+#define TABSTRACTITEM_H
+
+#include <string>
+
+#include <json/json.hpp>
+
+using namespace std;
+using namespace nlohmann;
+
+class TAbstractItem
 {
-    mPlugins = TBackendPluginManager::instance();
-    mPlayer = new TPlayerCore();
-    mPlaylist = new TPlaylistCore();
-}
+public:
+    TAbstractItem();
+    ~TAbstractItem();
 
-TCore::~TCore()
-{
-    if(mPlayer)
-    {
-        delete mPlayer;
-        mPlayer = NULL;
-    }
-    if(mPlaylist)
-    {
-        delete mPlaylist;
-        mPlaylist = NULL;
-    }
-    if(mPlugins)
-    {
-        TBackendPluginManager::deleteInstance();
-        mPlugins = NULL;
-    }
-}
+    virtual json toJson() = 0;
+    virtual void fromJson(json object) = 0;
 
-TPlayerCore *TCore::player()
-{
-    return mPlayer;
-}
+    string toString();
+    void fromString(string s);
+};
 
-TPlaylistCore *TCore::playlist()
-{
-    return mPlaylist;
-}
-
-vector<wstring> TCore::playlists()
-{
-    return mPlaylist->names();
-}
-
-void TCore::open()
-{
-
-}
-
-void TCore::close()
-{
-
-}
+#endif // TABSTRACTITEM_H

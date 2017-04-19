@@ -99,6 +99,15 @@ bool TBackendPlugin::matchSuffix(wstring suffix)
     return contains(mMatchSuffixes, suffix);
 }
 
+wstring TBackendPlugin::suffixDescription(wstring suffix)
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(BC_GET_SUFFIX_DESCRIPTION, &suffix, &ret, 0, 0);
+
+    return ret;
+}
+
 bool TBackendPlugin::parse(wstring file, TMusicInfo *musicInfo)
 {
     bool ret = false;
@@ -110,17 +119,33 @@ bool TBackendPlugin::parse(wstring file, TMusicInfo *musicInfo)
 
 int TBackendPlugin::getSampleSize(int sampleRate, int fps)
 {
+    int size = 4096;
     if(mSendCmd)
-    {
-        int size = 0;
         mSendCmd(BC_GET_SAMPLE_SIZE, &sampleRate, &fps, &size, 0);
-        return size;
-    }
-    return -1;
+
+    return size;
+}
+
+bool TBackendPlugin::seek(int microSeconds)
+{
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(BC_SEEK, &microSeconds, 0, 0, 0);
+
+    return ret;
 }
 
 TPluginInfo *TBackendPlugin::pluginInfo()
 {
     return &mPluginInfo;
+}
+
+const wstring TBackendPlugin::getLastError()
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(BC_GET_LAST_ERROR, &ret, 0, 0, 0);
+
+    return ret;
 }
 

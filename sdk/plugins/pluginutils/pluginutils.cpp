@@ -18,7 +18,6 @@
 
 #include "pluginutils.h"
 
-#include <codecvt>
 #include <algorithm>
 #include <numeric>
 
@@ -223,4 +222,11 @@ const char *extractSuffix(const char *src)
             return src;
     }
     return p+1;
+}
+
+wstring toLower(const wstring cs)
+{
+    wstring s = cs;
+    transform(s.begin(), s.end(), s.begin(), ::towlower);
+    return s;
 }

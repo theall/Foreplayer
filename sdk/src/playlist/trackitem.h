@@ -19,19 +19,14 @@
 #ifndef TTRACKITEM_H
 #define TTRACKITEM_H
 
-#include <string>
 #include <vector>
-
-#include <json/json.hpp>
-
-#include "../cplusutils.h"
 
 #include <foreplayer.h>
 
-using namespace std;
-using namespace nlohmann;
+#include "../cplusutils.h"
+#include "abstractitem.h"
 
-class TTrackItem
+class TTrackItem : public TAbstractItem
 {
 public:
     wstring displayName;
@@ -49,11 +44,10 @@ public:
     bool hidden;
     TTrackItem();
 
-    ~TTrackItem();
+    virtual ~TTrackItem();
 
     json toJson();
     void fromJson(json object);
-
 };
 typedef vector<TTrackItem*> TTrackItems;
 

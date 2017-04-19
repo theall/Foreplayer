@@ -175,8 +175,7 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
             int error = RARProcessFile(hArcData, RAR_EXTRACT, NULL, NULL);
             if(error == ERAR_SUCCESS && userData.sizeNeed == userData.bufSize)
             {
-                wstring curentFileL = currentFile;
-                lower(currentFile);
+                wstring curentFileL = toLower(currentFile);
                 if(curentFileL==L"info.txt")
                     musicInfo->additionalInfo = char2wstring(userData.buffer);
                 else {

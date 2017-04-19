@@ -94,43 +94,43 @@ struct TMusicInfo
 typedef vector<TMusicInfo*> TMusicInfoList;
 
 typedef unsigned char byte;
-typedef void (*TRequestSamples)(int bufSize, byte *buffer);
+//typedef void (*TRequestSamples)(int bufSize, byte *buffer);
 
-// Initialize plugin
-bool initialize();
+//// Initialize plugin
+//bool initialize();
 
-// Verify this plugin can parse specify suffix of file
-const wstring matchSuffixes();
+//// Verify this plugin can parse specify suffix of file
+//const wstring matchSuffixes();
 
-// Return description of this suffix, for example "mp3" should be "Moving Picture Experts Group Audio Layer III"
-const wstring suffixDescription(const wstring suffix);
+//// Return description of this suffix, for example "mp3" should be "Moving Picture Experts Group Audio Layer III"
+//const wstring suffixDescription(const wstring suffix);
 
-// Parse file to get details information
-bool parse(const wstring fileName, TMusicInfo* musicInfo);
+//// Parse file to get details information
+//bool parse(const wstring fileName, TMusicInfo* musicInfo);
 
-// Load track to prepare for playing
-bool loadTrack(TTrackInfo* track);
+//// Load track to prepare for playing
+//bool loadTrack(TTrackInfo* track);
 
-// Close track
-void closeTrack();
+//// Close track
+//void closeTrack();
 
-// Request next samples
-void nextSamples(byte* buffer, int bufSize);
+//// Request next samples
+//void nextSamples(byte* buffer, int bufSize);
 
-// Optional, for return customized sample size
-int sampleSize(int sampleRate, int fps);
+//// Optional, for return customized sample size
+//int sampleSize(int sampleRate, int fps);
 
-// Seek time
-bool seek(int microSeconds);
+//// Seek time
+//bool seek(int microSeconds);
 
-// Retrieve plugin information
-void pluginInformation(TPluginInfo *pluginInfo);
+//// Retrieve plugin information
+//void pluginInformation(TPluginInfo *pluginInfo);
 
-// Return last error wstring if failed
-const wstring getLastError();
+//// Return last error wstring if failed
+//const wstring getLastError();
 
-// Use to free plugin
-void destroy();
+//// Use to free plugin
+//void destroy();
 
 enum BackendCmd
 {
@@ -216,13 +216,13 @@ enum BackendCmd
 
 #define SEND_CMD_PROC_NAME      "send_cmd"
 
-void send_cmd(int cmd,
+void send_cmd(BackendCmd cmd,
               void *param1,
               void *param2,
               void *param3,
               void *param4);
 
-typedef void (*SEND_CMD_PROC)(int cmd,
+typedef void (*SEND_CMD_PROC)(BackendCmd cmd,
                               void *param1,
                               void *param2,
                               void *param3,

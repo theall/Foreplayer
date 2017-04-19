@@ -77,7 +77,7 @@ void libCallback(const char *fileName, char **buffer, long *length)
 }
 
 // Initialize plugin
-EXPORT bool initialize()
+bool initialize()
 {
     int i = 0;
     g_SuffixList[0] = '\0';
@@ -90,7 +90,7 @@ EXPORT bool initialize()
 }
 
 // Verify this plugin can parse specify suffix of file
-EXPORT const wstring matchSuffixes()
+const wstring matchSuffixes()
 {
     return wstring(g_SuffixList);
 }
@@ -108,7 +108,7 @@ const wstring suffixDescription(const wstring suffix)
 }
 
 // Parse file to get details information
-EXPORT bool parse(const wstring fileName, TMusicInfo* musicInfo)
+bool parse(const wstring fileName, TMusicInfo* musicInfo)
 {
     wstring suffix = extractSuffix(fileName);
     int i = 0;
@@ -137,7 +137,7 @@ EXPORT bool parse(const wstring fileName, TMusicInfo* musicInfo)
 }
 
 // Load track to prepare for playing
-EXPORT bool loadTrack(TTrackInfo* trackInfo)
+bool loadTrack(TTrackInfo* trackInfo)
 {
     wstring suffix = extractSuffix(trackInfo->musicFileName);
     if(suffix == L"zip")
@@ -156,7 +156,7 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 }
 
 // Seek time
-EXPORT bool seek(int microSeconds)
+bool seek(int microSeconds)
 {
     (void)microSeconds;
 
@@ -164,21 +164,21 @@ EXPORT bool seek(int microSeconds)
 }
 
 // Close track
-EXPORT void closeTrack()
+void closeTrack()
 {
     ao_exit();
     //m1snd_run(M1_CMD_STOP, 0);
 }
 
 // Request next samples
-EXPORT void nextSamples( byte* buffer, int bufSize)
+void nextSamples( byte* buffer, int bufSize)
 {
     // size is the size of 1 channel samples
     ao_do_frame((unsigned long)bufSize/4, buffer);
 }
 
 // Optional, for return customized sample size
-EXPORT int sampleSize(int sampleRate, int fps)
+int sampleSize(int sampleRate, int fps)
 {
     // 1 channel
     (void)fps;
@@ -186,7 +186,7 @@ EXPORT int sampleSize(int sampleRate, int fps)
 }
 
 // Retrieve plugin information
-EXPORT void pluginInformation(TPluginInfo *pluginInfo)
+void pluginInformation(TPluginInfo *pluginInfo)
 {
     if(!pluginInfo)
         return;
@@ -199,7 +199,57 @@ EXPORT void pluginInformation(TPluginInfo *pluginInfo)
 }
 
 // Use to free plugin
-EXPORT void destroy()
+void destroy()
 {
     ao_exit();
+}
+
+EXPORT void send_cmd(
+    BackendCmd cmd,
+    void *param1,
+    void *param2,
+    void *param3,
+    void *param4)
+{
+    (void)param4;
+    switch (cmd) {
+    case BC_INITIALIZE:
+        *(bool*)param1 = initialize();
+        break;
+    case BC_GET_MATCH_SUFFIXES:
+        *(wstring*)param1 = matchSuffixes();
+        break;
+    case BC_GET_SUFFIX_DESCRIPTION:
+        *(wstring*)param2 = suffixDescription(*(wstring*)param1);
+        break;
+    case BC_PARSE:
+        *(bool*)param3 = parse(*(wstring*)param1, (TMusicInfo*)param2);
+        break;
+    case BC_LOAD_TRACK:
+        *(bool*)param2 = loadTrack((TTrackInfo*)param1);
+        break;
+    case BC_CLOSE_TRACK:
+        closeTrack();
+        break;
+    case BC_GET_NEXT_SAMPLES:
+        nextSamples((byte*)param1, *(int*)param2);
+        break;
+    case BC_GET_SAMPLE_SIZE:
+        *(int*)param3 = sampleSize(*(int*)param1, *(int*)param2);
+        break;
+    case BC_SEEK:
+        *(bool*)param2 = seek(*(int*)param1);
+        break;
+    case BC_GET_PLUGIN_INFORMATION:
+        pluginInformation((TPluginInfo*)param1);
+        break;
+    case BC_GET_LAST_ERROR:
+        *(wstring*)param1 = g_error;
+        break;
+    case BC_DESTRORY:
+        destroy();
+        break;
+    default:
+        break;
+    }
 }

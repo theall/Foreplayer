@@ -19,9 +19,10 @@
 
 #include "cplusutils.h"
 #include <fstream>
+#include <zlib.h>
 
 #define PLAYLIST_DIR            L"playlist"
-#define PLAYLIST_INDEX          L"index.dat"
+#define PLAYLIST_INDEX          L"index.json"
 #define DEFAULT_PLUGIN_NAME     L"default"
 #define SEC_PLAYLIST            "playlist"
 #define SEC_CURRENT_PLAYLIST    "currentPlaylist"
@@ -39,7 +40,7 @@ TPlaylistCore::TPlaylistCore() :
 {
     mCurrentDir = getCurrentDir() + L"/";
     mPlaylistDir = mCurrentDir + mPluginDir + L"/";
-    if(!isExist(mPlaylistDir))
+    if(!isFileExist(mPlaylistDir))
         createDir(mPlaylistDir);
 
     findPlaylist();
@@ -80,16 +81,22 @@ TPlaylistItem *TPlaylistCore::currentPlaylistItem()
     return mPlaylist[mPlaylistIndex];
 }
 
-void TPlaylistCore::insert(wstring name, int index)
+int TPlaylistCore::insert(wstring name, int index)
 {
     TPlaylistItem *playlistItem = new TPlaylistItem;
     playlistItem->setDisplayName(name);
     playlistItem->setFileName(getFileName());
 
+    int ret = -1;
     if(index>-1)
+    {
         mPlaylist.insert(mPlaylist.begin()+index, playlistItem);
-    else
+        ret = index;
+    } else {
+        ret = mPlaylist.size();
         mPlaylist.push_back(playlistItem);
+    }
+    return ret;
 }
 
 bool TPlaylistCore::remove(int index)
@@ -258,9 +265,14 @@ TPlaylistItem *TPlaylistCore::takeAt(int plIndex)
     return item;
 }
 
-void TPlaylistCore::insert(int pos, TPlaylistItem *item)
+int TPlaylistCore::insert(int pos, TPlaylistItem *item)
 {
     mPlaylist.insert(mPlaylist.begin()+pos, item);
+    if(pos < 0)
+        pos = 0;
+    else if (pos >= (int)mPlaylist.size())
+        pos = mPlaylist.size()-1;
+    return pos;
 }
 
 void TPlaylistCore::findPlaylist()
@@ -268,8 +280,11 @@ void TPlaylistCore::findPlaylist()
     wstring indexFilePath = mPlaylistDir + PLAYLIST_INDEX;
     ifstream i(wstring2string(indexFilePath));
     json jsonwrap;
-    i >> jsonwrap;
-
+    try {
+        i >> jsonwrap;
+    } catch(...) {
+        return;
+    }
     json fileNameList = jsonwrap[SEC_PLAYLIST];
     mPlaylistIndex = jsonwrap[SEC_CURRENT_PLAYLIST];
     mMusiclistIndex = jsonwrap[SEC_CURRENT_MUSIC];
@@ -277,7 +292,7 @@ void TPlaylistCore::findPlaylist()
     for(json fileNameObject : fileNameList)
     {
         wstring fileName = fileNameObject.get<wstring>();
-        loadPlaylist(mPlaylistDir+fileName);
+        loadPlaylist(fileName);
     }
     int size = mPlaylist.size();
     if(mPlaylistIndex<0 || mPlaylistIndex>=size)
@@ -301,14 +316,42 @@ void TPlaylistCore::findPlaylist()
 
 void TPlaylistCore::loadPlaylist(wstring fileName)
 {
-    ifstream i(wstring2string(fileName));
+    uint8_t *buf;
+    long size;
+    readFile(fileName, &buf, &size);
+    if(!buf)
+        return;
+
+    uLongf uncompressSize = *(int*)buf;
+    uint8_t *destBuf = new uint8_t[uncompressSize];
+    if(!destBuf)
+    {
+        delete buf;
+        return;
+    }
+    int ret = uncompress(destBuf, &uncompressSize, buf+sizeof(int), size-sizeof(int));
+    delete buf;
+    if(ret!=Z_OK)
+        return;
+
+    vector<uint8_t> v_cbor(destBuf, destBuf+uncompressSize);
     json jsonObject;
-    i >> jsonObject;
+    try {
+        jsonObject = json::from_cbor(v_cbor);
+    } catch(...) {
+        return;
+    }
 
-    TPlaylistItem *playlistItem = new TPlaylistItem(fileName);
-    playlistItem->fromJson(jsonObject);
+    delete destBuf;
 
-    mPlaylist.push_back(playlistItem);
+    try{
+        TPlaylistItem *playlistItem = new TPlaylistItem(fileName);
+        playlistItem->fromJson(jsonObject);
+
+        mPlaylist.push_back(playlistItem);
+    } catch(...) {
+
+    }
 }
 
 void TPlaylistCore::save()
@@ -316,7 +359,7 @@ void TPlaylistCore::save()
     if(mFileSaving)
         return;
 
-    if(!isExist(mCurrentDir))
+    if(!isDirExist(mCurrentDir))
         createDir(mCurrentDir);
 
     json playlist;
@@ -336,7 +379,6 @@ void TPlaylistCore::save()
     j[SEC_CURRENT_TRACK] = mTracklistIndex;
 
     indexFile << j;
-
 
     mFileSaving = false;
 }

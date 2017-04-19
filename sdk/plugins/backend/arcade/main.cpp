@@ -36,22 +36,10 @@ const wchar_t *szCreateDate = L"2016-10-11";
 
 const char *szM1lib = "m1.dll";
 
-wstring szError;
+wstring g_error;
 wstring g_curRomPath;
 
 static TM1Thread *g_runningThread=NULL;
-
-//M1SND_INIT m1snd_init;
-//M1SND_RUN m1snd_run;
-//M1SND_SHUTDOWN m1snd_shutdown;
-//M1SND_SETOPTION m1snd_setoption;
-//M1SND_GET_INFO_INT m1snd_get_info_int;
-//M1SND_GET_INFO_STR m1snd_get_info_str;
-//M1SND_GET_INFO_STR_EX m1snd_get_info_str_ex;
-//M1SND_SET_INFO_STR m1snd_set_info_str;
-//M1SND_SET_INFO_INT m1snd_set_info_int;
-//M1SND_DO_FRAME m1snd_do_frame;
-//M1SND_SWITCHLANG m1snd_switchlang;
 
 int findGameIdByName(string name)
 {
@@ -160,7 +148,7 @@ STDCALL int m1ui_message(void *user, int message, char *txt, int iparam)
 }
 
 // Initialize plugin
-EXPORT bool initialize()
+bool initialize()
 {
     if(!g_runningThread)
     {
@@ -171,13 +159,13 @@ EXPORT bool initialize()
 }
 
 // Verify this plugin can parse specify suffix of file
-EXPORT const wstring matchSuffixes()
+const wstring matchSuffixes()
 {
     return L"zip";
 }
 
 // Parse file to get details information
-EXPORT bool parse(const wstring fileName, TMusicInfo* musicInfo)
+bool parse(const wstring fileName, TMusicInfo* musicInfo)
 {
     string gameName = wstring2string(extractBaseName(fileName));
     int gameId = findGameIdByName(gameName);
@@ -225,7 +213,7 @@ EXPORT bool parse(const wstring fileName, TMusicInfo* musicInfo)
 }
 
 // Load track to prepare for playing
-EXPORT bool loadTrack(TTrackInfo* trackInfo)
+bool loadTrack(TTrackInfo* trackInfo)
 {
     g_curRomPath = trackInfo->musicFileName;
     string baseName = wstring2string(extractBaseName(trackInfo->musicFileName));
@@ -245,27 +233,27 @@ EXPORT bool loadTrack(TTrackInfo* trackInfo)
 }
 
 // Close track
-EXPORT void closeTrack()
+void closeTrack()
 {
     //m1snd_run(M1_CMD_STOP, 0);
 }
 
 // Request next samples
-EXPORT void nextSamples(byte* buffer, int bufSize)
+void nextSamples(byte* buffer, int bufSize)
 {
     // size is the size of 1 channel samples
     m1snd_do_frame((unsigned long)bufSize/4, (signed short*)buffer);
 }
 
 // Optional, for return customized sample size
-EXPORT int sampleSize(int sampleRate, int fps)
+int sampleSize(int sampleRate, int fps)
 {
     // 1 channel
     return ((float)sampleRate*10+(fps>>1))/fps+0.5;
 }
 
 // Retrieve plugin information
-EXPORT void pluginInformation(TPluginInfo *pluginInfo)
+void pluginInformation(TPluginInfo *pluginInfo)
 {
     if(!pluginInfo)
         return;
@@ -278,11 +266,73 @@ EXPORT void pluginInformation(TPluginInfo *pluginInfo)
 }
 
 // Use to free plugin
-EXPORT void destroy()
+void destroy()
 {
     m1snd_shutdown();
     if(g_runningThread) {
         delete g_runningThread;
         g_runningThread = NULL;
+    }
+}
+
+bool seek(int microSeconds)
+{
+    (void)microSeconds;
+    return false;
+}
+
+const wstring suffixDescription(const wstring suffix)
+{
+    (void)suffix;
+    return L"Arcade game image";
+}
+
+EXPORT void send_cmd(
+    BackendCmd cmd,
+    void *param1,
+    void *param2,
+    void *param3,
+    void *param4)
+{
+    (void)param4;
+    switch (cmd) {
+    case BC_INITIALIZE:
+        *(bool*)param1 = initialize();
+        break;
+    case BC_GET_MATCH_SUFFIXES:
+        *(wstring*)param1 = matchSuffixes();
+        break;
+    case BC_GET_SUFFIX_DESCRIPTION:
+        *(wstring*)param2 = suffixDescription(*(wstring*)param1);
+        break;
+    case BC_PARSE:
+        *(bool*)param3 = parse(*(wstring*)param1, (TMusicInfo*)param2);
+        break;
+    case BC_LOAD_TRACK:
+        *(bool*)param2 = loadTrack((TTrackInfo*)param1);
+        break;
+    case BC_CLOSE_TRACK:
+        closeTrack();
+        break;
+    case BC_GET_NEXT_SAMPLES:
+        nextSamples((byte*)param1, *(int*)param2);
+        break;
+    case BC_GET_SAMPLE_SIZE:
+        *(int*)param3 = sampleSize(*(int*)param1, *(int*)param2);
+        break;
+    case BC_SEEK:
+        *(bool*)param2 = seek(*(int*)param1);
+        break;
+    case BC_GET_PLUGIN_INFORMATION:
+        pluginInformation((TPluginInfo*)param1);
+        break;
+    case BC_GET_LAST_ERROR:
+        *(wstring*)param1 = g_error;
+        break;
+    case BC_DESTRORY:
+        destroy();
+        break;
+    default:
+        break;
     }
 }

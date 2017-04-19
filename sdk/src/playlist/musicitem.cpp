@@ -24,7 +24,8 @@
 #include <algorithm>
 
 TMusicItem::TMusicItem() :
-    mDuration(0)
+    TAbstractItem()
+    , mDuration(0)
     , mFileSize(0)
     , mModified(false)
 {
@@ -137,13 +138,15 @@ wstring TMusicItem::displayName()
     return mDisplayName;
 }
 
-void TMusicItem::setDisplayName(wstring displayName)
+bool TMusicItem::setDisplayName(wstring displayName)
 {
     if(mDisplayName != displayName)
     {
         mDisplayName = displayName;
         mModified = true;
+        return true;
     }
+    return false;
 }
 
 wstring TMusicItem::originalName()
@@ -307,6 +310,18 @@ TTrackItem *TMusicItem::trackItem(int index)
         return NULL;
 
     return mTrackItems.at(index);
+}
+
+int TMusicItem::indexOf(TTrackItem *trackItem)
+{
+    int i = 0;
+    for(TTrackItem *item : mTrackItems)
+    {
+        if(item==trackItem)
+            return i;
+        i++;
+    }
+    return -1;
 }
 
 void TMusicItem::addTrackItem(TTrackItem *trackItem, int pos)

@@ -25,6 +25,7 @@
 #include <iostream>
 #include <fstream>
 #include <unistd.h>
+#include<dirent.h>
 #include <sys/stat.h>
 
 #ifdef _WIN32
@@ -173,7 +174,7 @@ wstring extractPath(wstring fileName)
     return ret;
 }
 
-void readFile(wstring fileName, char **buffer, long *size)
+void readFile(wstring fileName, uint8_t **buffer, long *size)
 {
     FILE *fp = _wfopen(fileName.c_str(), L"rb");
     if(fp)
@@ -182,10 +183,14 @@ void readFile(wstring fileName, char **buffer, long *size)
         int fileSize = ftell(fp);
         if(fileSize > 0)
         {
-            *buffer = new char[fileSize];
+            *buffer = new uint8_t[fileSize];
+            fseek(fp, 0, SEEK_SET);
             *size = fread(*buffer, 1, fileSize, fp);
         }
         fclose(fp);
+    } else {
+        *buffer = NULL;
+        *size = 0;
     }
 }
 
@@ -303,7 +308,7 @@ wstring upper(wstring s)
     return s;
 }
 
-bool isExist(wstring filePath)
+bool isFileExist(wstring filePath)
 {
     FILE *fp = _wfopen(filePath.c_str(), L"r");
     if(!fp)
@@ -311,6 +316,16 @@ bool isExist(wstring filePath)
 
     fclose(fp);
 
+    return true;
+}
+
+bool isDirExist(wstring filePath)
+{
+    _WDIR *dir = _wopendir(filePath.c_str());
+    if(!dir)
+        return false;
+
+    _wclosedir(dir);
     return true;
 }
 

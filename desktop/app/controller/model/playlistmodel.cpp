@@ -119,19 +119,6 @@ void TPlaylistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesM
     if(!mCore)
         return;
 
-    int listSize = mCore->playlistCount();
-    if(indexes.count()<=0 || listSize<=0)
-        return;
-
-    if(pos < 0)
-        pos = 0;
-    if(pos > listSize)
-        pos = listSize;
-
-    std::sort(indexes.begin(), indexes.end(), [=](int a, int b) {
-        return a > b;
-    });
-
     // Find and record current index
     PlayListItem currentItem = mCore->getPlaylistItem(mCurrentIndex);
 

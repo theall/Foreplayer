@@ -8,15 +8,22 @@ QT += core
 
 TARGET = plugin
 TEMPLATE = lib
+CONFIG += c++11
 
 DEFINES += 
+
+INCLUDEPATH += ../\
+    ../../pluginutils
 
 LIBS += F:/opensource/myplayer/Mu-master/src/thirdpart/bass/lib/bass.dll
 
 SOURCES += \
-    main.cpp
+    main.cpp \
+    ../../pluginutils/pluginutils.cpp
 
-HEADERS +=
+HEADERS += \
+    bass.h \
+    ../../pluginutils/pluginutils.h
 
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/default

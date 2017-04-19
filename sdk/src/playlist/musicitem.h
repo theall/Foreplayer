@@ -21,11 +21,11 @@
 #include "trackitem.h"
 #include "time.h"
 
-class TMusicItem
+class TMusicItem : public TAbstractItem
 {
 public:
     TMusicItem();
-    ~TMusicItem();
+    virtual ~TMusicItem();
 
     json toJson();
     void fromJson(json object);
@@ -35,7 +35,7 @@ public:
     void sort(SortMethod mode);
 
     wstring displayName();
-    void setDisplayName(wstring displayName);
+    bool setDisplayName(wstring displayName);
 
     wstring originalName();
     void setOriginalName(wstring name);
@@ -72,6 +72,7 @@ public:
 
     TTrackItems *trackItems();
     TTrackItem *trackItem(int index);
+    int indexOf(TTrackItem *trackItem);
     void addTrackItem(TTrackItem *trackItem, int pos=-1);
 
     bool isModified();

@@ -20,6 +20,7 @@ INCLUDEPATH += \
 LIBS += -LF:/opensource/foreplayer/dist/lib -laudio3d
 LIBS += -LD:/SDL2-2.0.4/i686-w64-mingw32/lib -lsdl2
 LIBS += -LZ:/cmake/fft -lfftreal
+LIBS += -lz
 
 DESTDIR = Z:/build/foreplayer/debug/debug
 
@@ -40,7 +41,8 @@ SOURCES += \
     src/playlistcore.cpp \
     src/playthread.cpp \
     src/cplusutils.cpp \
-    src/pluginmanager/library.cpp
+    src/pluginmanager/library.cpp \
+    src/playlist/abstractitem.cpp
 
 HEADERS += \
     include/foreplayer.h \
@@ -61,7 +63,8 @@ HEADERS += \
     src/playthread.h \
     src/strformat.hpp \
     src/cplusutils.h \
-    src/pluginmanager/library.h
+    src/pluginmanager/library.h \
+    src/playlist/abstractitem.h
 
 unix {
     target.path = /usr/lib

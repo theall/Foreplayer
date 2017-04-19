@@ -57,30 +57,30 @@ TApp::TApp(int argc, char *argv[]) :
 
 TApp::~TApp()
 {
-    TPreferences::deleteInstance();
-
     if(mCheckThread)
     {
         mCheckThread->terminate();
         delete mCheckThread;
         mCheckThread = NULL;
     }
+
+    TPreferences::deleteInstance();
 }
 
 int TApp::start()
 {
     TMainController controller;
     TGuiManager gui(&controller);
-    TCore *core;
-
+    TCore *core=NULL;
     try
     {
-        core = TCore::instance();
+        core = new TCore;
     } catch(QString s) {
+        core = NULL;
         gui.mainWindow()->setTitles(s);
     }
 
-    if(!controller.joint(&gui, core))
+    if(!core || !controller.joint(&gui, core))
         return 0;
 
 #ifndef QT_DEBUG
@@ -91,7 +91,9 @@ int TApp::start()
     }
 #endif
 
-    return mApp->exec();
+    int ret = mApp->exec();
+    delete core;
+    return ret;
 }
 
 bool TApp::isRunning()

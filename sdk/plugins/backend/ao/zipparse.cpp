@@ -21,6 +21,7 @@
 #include "pluginutils.h"
 
 #include <algorithm>
+#include <string.h>
 
 #define ZIP_FILE_NAME_SIZE 256
 #define ZIP_FILE_BUF_SIZE 16384
@@ -137,7 +138,7 @@ void TZipParse::trackData(TTrackInfo *trackInfo, char **buffer, int *size)
 
         char *buf = (char*)malloc(fileInfo.uncompressed_size);
         int readLength = unzReadCurrentFile(zipFile, buf, ZIP_FILE_BUF_SIZE);
-        if(readLength==UNZ_ERRNO || readLength!=fileInfo.uncompressed_size)
+        if(readLength==UNZ_ERRNO || readLength!=(int)fileInfo.uncompressed_size)
             return;
 
         *size = readLength;

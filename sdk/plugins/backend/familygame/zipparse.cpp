@@ -20,6 +20,8 @@
 
 #include "pluginutils.h"
 
+#include <string.h>
+
 #define ZIP_FILE_NAME_SIZE 256
 #define ZIP_FILE_BUF_SIZE 16384
 #define ZIP_FILE_MAX_SIZE 4194304

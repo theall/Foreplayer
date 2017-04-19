@@ -38,11 +38,15 @@ public:
     void getNextSamples(byte *buffer, int size);
 
     bool matchSuffix(wstring suffix);
+    wstring suffixDescription(wstring suffix);
+
     bool parse(wstring file, TMusicInfo* musicInfo);
 
     int getSampleSize(int sampleRate, int fps);
+    bool seek(int microSeconds);
 
     TPluginInfo *pluginInfo();
+    const wstring getLastError();
 
 private:
     SEND_CMD_PROC mSendCmd;

@@ -29,51 +29,64 @@ const wchar_t *szCreateDate    = L"Plugin created date, such as 2016-10-11";
 const wchar_t *szSuffixes      = L"";// for example "mp3 wma"
 
 // Initialize plugin
-EXPORT bool initialize()
+bool initialize()
 {
     return true;
 }
 
-EXPORT const wstring getLastError()
+const wstring getLastError()
 {
     return L"";
 }
 
 // Verify this plugin can parse specify suffix of file
-EXPORT const wstring matchSuffixes()
+const wstring matchSuffixes()
 {
     // Return suffix list this plugin can process, multiple suffixed seperated by space character
     return szSuffixes;
 }
 
+const wstring suffixDescription(const wstring suffix)
+{
+    return L"Unknow suffix";
+}
+
 // Parse file to get details information
-EXPORT bool parse(wstring file, TMusicInfo* musicInfo)
+bool parse(wstring file, TMusicInfo* musicInfo)
 {
     // Parse file and fill result into musicInfo
 
-    return true;
+    return false;
 }
 
 // Load track to prepare for playing
-EXPORT bool loadTrack(TTrackInfo* trackInfo)
+bool loadTrack(TTrackInfo* trackInfo)
 {
-    return true;
+    return false;
+}
+
+// Seek time
+bool seek(int microSeconds)
+{
+    (void)microSeconds;
+
+    return false;
 }
 
 // Close track
-EXPORT void closeTrack()
+void closeTrack()
 {
 
 }
 
 // Request next samples
-EXPORT void nextSamples(byte* buffer, int bufSize)
+void nextSamples(byte* buffer, int bufSize)
 {
 
 }
 
 // Retrieve plugin information
-EXPORT void pluginInformation(TPluginInfo *pluginInfo)
+void pluginInformation(TPluginInfo *pluginInfo)
 {
     if(!pluginInfo)
         return;
@@ -86,6 +99,55 @@ EXPORT void pluginInformation(TPluginInfo *pluginInfo)
 }
 
 // Use to free plugin
-EXPORT void destroy()
+void destroy()
 {
+}
+
+EXPORT void send_cmd(
+    BackendCmd cmd,
+    void *param1,
+    void *param2,
+    void *param3,
+    void *param4)
+{
+    (void)param4;
+    switch (cmd) {
+    case BC_INITIALIZE:
+        *(bool*)param1 = initialize();
+        break;
+    case BC_GET_MATCH_SUFFIXES:
+        *(wstring*)param1 = matchSuffixes();
+        break;
+    case BC_GET_SUFFIX_DESCRIPTION:
+        *(wstring*)param2 = suffixDescription(*(wstring*)param1);
+        break;
+    case BC_PARSE:
+        *(bool*)param3 = parse(*(wstring*)param1, (TMusicInfo*)param2);
+        break;
+    case BC_LOAD_TRACK:
+        *(bool*)param2 = loadTrack((TTrackInfo*)param1);
+        break;
+    case BC_CLOSE_TRACK:
+        closeTrack();
+        break;
+    case BC_GET_NEXT_SAMPLES:
+        nextSamples((byte*)param1, *(int*)param2);
+        break;
+    case BC_GET_SAMPLE_SIZE:
+        break;
+    case BC_SEEK:
+        *(bool*)param2 = seek(*(int*)param1);
+        break;
+    case BC_GET_PLUGIN_INFORMATION:
+        pluginInformation((TPluginInfo*)param1);
+        break;
+    case BC_GET_LAST_ERROR:
+        *(wstring*)param1 = getLastError();
+        break;
+    case BC_DESTRORY:
+        destroy();
+        break;
+    default:
+        break;
+    }
 }

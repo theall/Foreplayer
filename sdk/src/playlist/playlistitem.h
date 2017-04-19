@@ -22,18 +22,18 @@
 
 #include <list>
 
-class TPlaylistItem
+class TPlaylistItem : public TAbstractItem
 {
 public:
     TPlaylistItem(wstring fileName = wstring());
-    ~TPlaylistItem();
+    virtual ~TPlaylistItem();
 
     json toJson();
     void fromJson(json object);
 
     int size();
     TMusicItem *takeAt(int index);
-    void insert(int pos, TMusicItem *item);
+    int insert(int pos, TMusicItem *item);
     void update(int index, TMusicItem *item);
     bool remove(int index);
     list<int> removeRedundant();
@@ -43,7 +43,7 @@ public:
     int indexOf(TMusicItem *item);
 
     wstring name() { return mDisplayName; }
-    void setDisplayName(wstring newName);
+    bool setDisplayName(wstring newName);
 
     TMusicItem *musicItem(int index);
     int musicItemIndex(TMusicItem *musicItem);

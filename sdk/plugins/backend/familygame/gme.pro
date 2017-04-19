@@ -4,13 +4,18 @@
 #
 #-------------------------------------------------
 
-QT += core
+QT -= core
 
 TARGET = plugin
 TEMPLATE = lib
-CONFIG += qt c++11
+CONFIG += c++11
 
-LIBS += -lgme -lunrar -LZ:/build/foreplayer/debug/debug/plugins/backend/gme -lunzip -lz
+INCLUDEPATH += ../\
+    ../../pluginutils \
+    ../../../thirdparty/unrar/include
+
+LIBS += -lunrar
+LIBS += -LF:/opensource/foreplayer/dist/lib -lgme -lunzip
 
 SOURCES += \
     main.cpp \
@@ -18,14 +23,16 @@ SOURCES += \
     rarparse.cpp \
     fileparse.cpp \
     abstractparse.cpp \
-    zipparse.cpp
+    zipparse.cpp \
+    ../../pluginutils/pluginutils.cpp
 
 HEADERS += \  
     gmewrap.h \
     rarparse.h \
     fileparse.h \
     abstractparse.h \
-    zipparse.h
+    zipparse.h \
+    ../../pluginutils/pluginutils.h
 
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/gme

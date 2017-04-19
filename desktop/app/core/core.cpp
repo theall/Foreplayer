@@ -93,7 +93,7 @@ int TCore::insertPlaylist(QString name, int pos)
 void TCore::removePlaylist(int index)
 {
     if(mSendCmd)
-        mSendCmd(CMD_INSERT_PLAYLIST, &index, 0, 0, 0);
+        mSendCmd(CMD_REMOVE_PLAYLIST, &index, 0, 0, 0);
 }
 
 QList<int> TCore::movePlaylists(QList<int> indexes, int pos)
@@ -161,77 +161,147 @@ void TCore::setAudioParameter(AudioParameter type, float value, int param)
 
 void TCore::getAudioData(AudioDataType dataType, void *param1, void *param2)
 {
-
+    if(mSendCmd)
+        mSendCmd(CMD_GET_AUDIO_DATA, &dataType, param1, param2, 0);
 }
 
 PlayListItem TCore::getPlayingPlaylistItem()
 {
+    PlayListItem item = NULL;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_CURRENT_PLAYLIST_ITEM, &item, 0, 0, 0);
 
+    return item;
 }
 
 MusicItem TCore::getPlayingMusicItem()
 {
+    MusicItem item = NULL;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_CURRENT_MUSIC_ITEM, &item, 0, 0, 0);
 
+    return item;
 }
 
 TrackItem TCore::getPlayingTrackItem()
 {
-    return NULL;
+    TrackItem item = NULL;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_CURRENT_TRACK_ITEM, &item, 0, 0, 0);
+
+    return item;
 }
 
 int TCore::getCurrentPlayedTime()
 {
+    int ret = -1;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLAYED_TIME, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::stop()
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_STOP, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::resume()
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_RESUME, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::isPaused()
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_IS_PAUSED, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::isStoped()
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_IS_STOPED, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::isPlaying()
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_IS_PLAYING, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::pause()
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_PAUSE, &ret, 0, 0, 0);
 
+    return ret;
 }
 
 bool TCore::playTrackItem(TrackItem trackItem)
 {
-    return false;
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_PLAY_TRACK, trackItem, &ret, 0, 0);
+
+    return ret;
 }
 
 bool TCore::playIndex(int pi, int mi, int ti)
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_PLAY_INDEX, &pi, &mi, &ti, &ret);
 
+    return ret;
 }
 
 void TCore::getPlayingIndex(int *pi, int *mi, int *ti)
 {
-
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLAYING_INDEX, (void*)pi, (void*)mi, (void*)ti, 0);
 }
 
 int TCore::getPlayingIndex(IndexType it)
 {
+    int pi = -1;
+    int mi = -1;
+    int ti = -1;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLAYING_INDEX, &pi, &mi, &ti, 0);
 
+    int ret = -1;
+    switch (it) {
+    case IT_PL:
+        ret = pi;
+        break;
+    case IT_ML:
+        ret = mi;
+        break;
+    case IT_TL:
+        ret = ti;
+        break;
+    default:
+        break;
+    }
+    return ret;
 }
 
 int TCore::getMusicItemCount(PlayListItem playlistItem)
@@ -252,6 +322,26 @@ MusicItem TCore::getMusicItem(PlayListItem playlistItem, int row)
     return ret;
 }
 
+QString TCore::musicItemToString(PlayListItem playlistItem, int row)
+{
+
+}
+
+QString TCore::musicItemsToString(PlayListItem playlistItem, QSet<int> rows)
+{
+
+}
+
+MusicItems TCore::stringToMusicItem(QString str)
+{
+
+}
+
+MusicItems TCore::stringToMusicItems(QString str)
+{
+
+}
+
 int TCore::getMusicItemIndex(PlayListItem playlistItem, MusicItem musicItem)
 {
     int index = -1;
@@ -261,12 +351,12 @@ int TCore::getMusicItemIndex(PlayListItem playlistItem, MusicItem musicItem)
     return index;
 }
 
-QList<int> TCore::moveMusicItems(QList<int> indexes, int pos)
+QList<int> TCore::moveMusicItems(PlayListItem playlistItem, QList<int> indexes, int pos)
 {
     list<int> stdList = indexes.toStdList();
     list<int> result;
     if(mSendCmd)
-        mSendCmd(CMD_MOVE_MUSIC_ITEMS, &stdList, &pos, &result, 0);
+        mSendCmd(CMD_MOVE_MUSIC_ITEMS, playlistItem, &stdList, &pos, &result);
 
     return QList<int>::fromStdList(result);
 }
@@ -282,7 +372,7 @@ int TCore::insertMusicItem(PlayListItem playlistItem, int pos, MusicItem musicIt
 
 bool TCore::removeMusicItem(PlayListItem playlistItem, int pos)
 {
-    bool ret = true;
+    bool ret = false;
     if(mSendCmd)
         mSendCmd(CMD_REMOVE_MUSIC_ITEM, playlistItem, &pos, &ret, 0);
 
@@ -291,27 +381,41 @@ bool TCore::removeMusicItem(PlayListItem playlistItem, int pos)
 
 bool TCore::updateMusicItem(PlayListItem playlistItem, int pos, MusicItem musicItem)
 {
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYLIST_UPDATE_MUSIC_ITEM, playlistItem, &pos, musicItem, &ret);
 
+    return ret;
 }
 
 QList<int> TCore::removeRedundant(PlayListItem playlistItem)
 {
+    list<int> result;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYLIST_REMOVE_REDUNDANT, playlistItem, &result, 0, 0);
 
+    return QList<int>::fromStdList(result);
 }
 
 QList<int> TCore::removeErrors(PlayListItem playlistItem)
 {
+    list<int> result;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYLIST_REMOVE_ERRORS, playlistItem, &result, 0, 0);
 
+    return QList<int>::fromStdList(result);
 }
 
 void TCore::clear(PlayListItem playlistItem)
 {
-
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYLIST_ITEM_CLEAR, playlistItem, 0, 0, 0);
 }
 
 void TCore::sort(PlayListItem playlistItem, SortMethod sm)
 {
-
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYLIST_ITEM_SORT, playlistItem, &sm, 0, 0);
 }
 
 QString TCore::getMusicItemDisplayName(MusicItem musicItem)
@@ -327,7 +431,7 @@ QString TCore::getMusicItemFileName(MusicItem musicItem)
 {
     wstring ret;
     if(mSendCmd)
-        mSendCmd(CMD_GET_MUSIC_ITEM_DISPLAY_NAME, musicItem, &ret, 0, 0);
+        mSendCmd(CMD_GET_MUSIC_ITEM_FILE_NAME, musicItem, &ret, 0, 0);
 
     return QString::fromStdWString(ret);
 }
@@ -336,7 +440,7 @@ QString TCore::getMusicItemArtist(MusicItem musicItem)
 {
     wstring ret;
     if(mSendCmd)
-        mSendCmd(CMD_GET_MUSIC_ITEM_DISPLAY_NAME, musicItem, &ret, 0, 0);
+        mSendCmd(CMD_GET_MUSIC_ITEM_ARTIST, musicItem, &ret, 0, 0);
 
     return QString::fromStdWString(ret);
 }
@@ -345,7 +449,7 @@ QString TCore::getMusicItemAlbum(MusicItem musicItem)
 {
     wstring ret;
     if(mSendCmd)
-        mSendCmd(CMD_GET_MUSIC_ITEM_DISPLAY_NAME, musicItem, &ret, 0, 0);
+        mSendCmd(CMD_GET_MUSIC_ITEM_ALBUM, musicItem, &ret, 0, 0);
 
     return QString::fromStdWString(ret);
 }
@@ -354,7 +458,7 @@ QString TCore::getMusicItemType(MusicItem musicItem)
 {
     wstring ret;
     if(mSendCmd)
-        mSendCmd(CMD_GET_MUSIC_ITEM_DISPLAY_NAME, musicItem, &ret, 0, 0);
+        mSendCmd(CMD_GET_MUSIC_ITEM_TYPE, musicItem, &ret, 0, 0);
 
     return QString::fromStdWString(ret);
 }
@@ -363,7 +467,7 @@ QString TCore::getMusicItemYear(MusicItem musicItem)
 {
     wstring ret;
     if(mSendCmd)
-        mSendCmd(CMD_GET_MUSIC_ITEM_DISPLAY_NAME, musicItem, &ret, 0, 0);
+        mSendCmd(CMD_GET_MUSIC_ITEM_YEAR, musicItem, &ret, 0, 0);
 
     return QString::fromStdWString(ret);
 }
@@ -372,7 +476,7 @@ QString TCore::getMusicItemAdditionalInfo(MusicItem musicItem)
 {
     wstring ret;
     if(mSendCmd)
-        mSendCmd(CMD_GET_MUSIC_ITEM_DISPLAY_NAME, musicItem, &ret, 0, 0);
+        mSendCmd(CMD_GET_MUSIC_ITEM_ADDTIONAL_INFO, musicItem, &ret, 0, 0);
 
     return QString::fromStdWString(ret);
 }
@@ -414,7 +518,21 @@ TrackItem TCore::getTrackItem(MusicItem musicItem, int index)
     return ret;
 }
 
-TTrackItems TCore::getTrackItems(MusicItem musicItem)
+QString TCore::getTrackItemAsString(MusicItem musicItem, int index)
+{
+
+}
+
+TrackItems TCore::getTrackItems(MusicItem musicItem)
+{
+    list<TrackItem> result;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEMS, musicItem, &result, 0, 0);
+
+    return QList<TrackItem>::fromStdList(result);
+}
+
+QString TCore::getTrackItemsAsString(MusicItem musicItem, QSet<int> indexes)
 {
 
 }
@@ -422,8 +540,10 @@ TTrackItems TCore::getTrackItems(MusicItem musicItem)
 int TCore::getTrackItemIndex(MusicItem musicItem, TrackItem trackItem)
 {
     int ret = -1;
-    if(!musicItem || !trackItem)
-        return ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_INDEX, musicItem, trackItem, &ret, 0);
+
+    return ret;
 }
 
 QString TCore::getTrackItemName(TrackItem trackItem)
@@ -435,21 +555,21 @@ QString TCore::getTrackItemName(TrackItem trackItem)
     return QString::fromStdWString(ret);
 }
 
-bool TCore::setTrackItemName(TrackItem trackItem, QString newName)
+bool TCore::setTrackItemName(MusicItem musicItem, TrackItem trackItem, QString newName)
 {
     bool ret = false;
     wstring newNameW = newName.toStdWString();
     if(mSendCmd)
-        mSendCmd(CMD_SET_TRACK_ITEM_NAME, trackItem, &newNameW, &ret, 0);
+        mSendCmd(CMD_SET_TRACK_ITEM_NAME, musicItem, trackItem, &newNameW, &ret);
 
     return ret;
 }
 
-bool TCore::setTrackItemDuration(TrackItem trackItem, int duration)
+bool TCore::setTrackItemDuration(MusicItem musicItem, TrackItem trackItem, int duration)
 {
     bool ret = false;
     if(mSendCmd)
-        mSendCmd(CMD_SET_TRACK_ITEM_DURATION, trackItem, &duration, &ret, 0);
+        mSendCmd(CMD_SET_TRACK_ITEM_DURATION, musicItem, trackItem, &duration, &ret);
 
     return ret;
 }
@@ -465,27 +585,47 @@ int TCore::getTrackItemDuration(TrackItem trackItem)
 
 QString TCore::getTrackItemType(TrackItem trackItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_TYPE, trackItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 QString TCore::getTrackItemArtist(TrackItem trackItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_ARTIST, trackItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 QString TCore::getTrackItemAlbum(TrackItem trackItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_ALBUM, trackItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 QString TCore::getTrackItemYear(TrackItem trackItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_YEAR, trackItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 QString TCore::getTrackItemAdditionalInfo(TrackItem trackItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_ADDITIONAL_INFO, trackItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 QString TCore::getTrackItemIndexName(TrackItem trackItem)
