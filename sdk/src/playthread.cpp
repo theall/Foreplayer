@@ -66,12 +66,9 @@ void TPlayThread::pause()
 void TPlayThread::stop()
 {
     if(mFront)
-    {
         mFront->stop();
-        mState = TS_READY;
-    } else {
-        mState = TS_READY;
-    }
+
+    mState = TS_READY;
 }
 
 void TPlayThread::play()

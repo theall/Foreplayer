@@ -1,3 +1,20 @@
+/*
+ * Copyright (C) Bilge Theall, wazcd_1608@qq.com
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ */
 #include "preferences.h"
 #include "utils.h"
 
@@ -40,11 +57,14 @@
 // Options
 #define SEC_OPTIONS                 "Options"
 
-#define SEC_OPTION_GENERAL          "OptionGeneral"
-#define SEC_OPTION_AUTO_CORRECT     "AutoCorrect"
-#define SEC_OPTION_FORCE_CORRECT    "ForceCorrect"
-#define SEC_OPTION_PILOT_DURATION   "PilotDuration"
-#define SEC_OPTION_CHECK_DURATION   "CheckDuration"
+#define SEC_OPTION_GENERAL              "OptionGeneral"
+#define SEC_OPTION_AUTO_CORRECT         "AutoCorrect"
+#define SEC_OPTION_FORCE_CORRECT        "ForceCorrect"
+#define SEC_OPTION_AUTO_PLAY            "AutoPlay"
+#define SEC_OPTION_DISPLAY_TRAY_ICON    "DisplayTrayIcon"
+#define SEC_OPTION_MULTI_INSTANCE       "MultiInstance"
+#define SEC_OPTION_PILOT_DURATION       "PilotDuration"
+#define SEC_OPTION_CHECK_DURATION       "CheckDuration"
 
 TPreferences *TPreferences::mInstance = NULL;
 
@@ -78,6 +98,9 @@ TPreferences::TPreferences(QObject *parent):
         mSettings->beginGroup(SEC_OPTION_GENERAL);
         mAutoCorrectDuration = boolValue(SEC_OPTION_AUTO_CORRECT, true);
         mForceCorrectDuration = boolValue(SEC_OPTION_FORCE_CORRECT);
+        mAutoPlay = boolValue(SEC_OPTION_AUTO_PLAY);
+        mMultiInstance = boolValue(SEC_OPTION_MULTI_INSTANCE);
+        mDisplayTrayIcon = boolValue(SEC_OPTION_DISPLAY_TRAY_ICON);
         mPilotDuration = intValue(SEC_OPTION_PILOT_DURATION, 150000);
         mCheckDuration = intValue(SEC_OPTION_CHECK_DURATION, 3000);
 
@@ -297,8 +320,10 @@ void TPreferences::setCorrectDuration(bool autoCorrect)
     if(mAutoCorrectDuration == autoCorrect)
         return;
 
+    mSettings->beginGroup(SEC_OPTIONS);
     mSettings->beginGroup(SEC_OPTION_GENERAL);
     mSettings->setValue(SEC_OPTION_AUTO_CORRECT, autoCorrect);
+    mSettings->endGroup();
     mSettings->endGroup();
 
     mAutoCorrectDuration = autoCorrect;
@@ -314,8 +339,10 @@ void TPreferences::setForceCorrectDuration(bool force)
     if(mForceCorrectDuration == force)
         return;
 
+    mSettings->beginGroup(SEC_OPTIONS);
     mSettings->beginGroup(SEC_OPTION_GENERAL);
     mSettings->setValue(SEC_OPTION_FORCE_CORRECT, force);
+    mSettings->endGroup();
     mSettings->endGroup();
 
     mForceCorrectDuration = force;
@@ -331,8 +358,10 @@ void TPreferences::setPilotDuration(int duration)
     if(mPilotDuration == duration)
         return;
 
+    mSettings->beginGroup(SEC_OPTIONS);
     mSettings->beginGroup(SEC_OPTION_GENERAL);
     mSettings->setValue(SEC_OPTION_PILOT_DURATION, duration);
+    mSettings->endGroup();
     mSettings->endGroup();
 
     mPilotDuration = duration;
@@ -348,11 +377,70 @@ void TPreferences::setCheckDuration(int duration)
     if(mCheckDuration == duration)
         return;
 
+    mSettings->beginGroup(SEC_OPTIONS);
     mSettings->beginGroup(SEC_OPTION_GENERAL);
     mSettings->setValue(SEC_OPTION_CHECK_DURATION, duration);
     mSettings->endGroup();
+    mSettings->endGroup();
 
     mCheckDuration = duration;
+}
+
+bool TPreferences::autoPlayAfterStarted()
+{
+    return mAutoPlay;
+}
+
+void TPreferences::setAutoPlayAfterStarted(bool bEnabled)
+{
+    if(mAutoPlay==bEnabled)
+        return;
+
+    mSettings->beginGroup(SEC_OPTIONS);
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_AUTO_PLAY, bEnabled);
+    mSettings->endGroup();
+    mSettings->endGroup();
+
+    mAutoPlay = bEnabled;
+}
+
+bool TPreferences::displayTrayIcon()
+{
+    return mDisplayTrayIcon;
+}
+
+void TPreferences::setDisplayTrayIcon(bool bEnabled)
+{
+    if(mDisplayTrayIcon==bEnabled)
+        return;
+
+    mSettings->beginGroup(SEC_OPTIONS);
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_DISPLAY_TRAY_ICON, bEnabled);
+    mSettings->endGroup();
+    mSettings->endGroup();
+
+    mDisplayTrayIcon = bEnabled;
+}
+
+bool TPreferences::enableMultiInstance()
+{
+    return mMultiInstance;
+}
+
+void TPreferences::setEnableMultiInstance(bool bEnabled)
+{
+    if(mMultiInstance==bEnabled)
+        return;
+
+    mSettings->beginGroup(SEC_OPTIONS);
+    mSettings->beginGroup(SEC_OPTION_GENERAL);
+    mSettings->setValue(SEC_OPTION_MULTI_INSTANCE, bEnabled);
+    mSettings->endGroup();
+    mSettings->endGroup();
+
+    mMultiInstance = bEnabled;
 }
 
 void TPreferences::setValue(QString section, QVariant value)

@@ -406,6 +406,11 @@ void FOREPLAYER_API foreplayer_send_cmd(
             *(int*)param3 = -1;
         }
         break;
+    case CMD_SET_PLAYING_INDEX:
+        if(g_playlist)
+        {
+            g_playlist->setPlayingIndex(*(int*)param1, *(int*)param2, *(int*)param3);
+        }
     case CMD_PLAYER_RESUME:
         *(bool*)param1 = g_player?g_player->resume():false;
         break;

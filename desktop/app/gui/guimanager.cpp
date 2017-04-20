@@ -1,3 +1,20 @@
+/*
+ * Copyright (C) Bilge Theall, wazcd_1608@qq.com
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ */
 #include "guimanager.h"
 
 #include <QMessageBox>
@@ -103,7 +120,8 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     // Main menu
     connect(mMainMenu, SIGNAL(onExitTriggered()), this, SLOT(slotRequestExit()));
     connect(mMainMenu, SIGNAL(onOptionsTriggered()), this, SLOT(slotOpenOptionsDialog()));
-    connect(mMainMenu, SIGNAL(onAboutTriggered()), this, SLOT(slotOpenOptionsDialog()));
+    connect(mMainMenu, SIGNAL(onAboutTriggered()), this, SLOT(slotAbout()));
+    connect(mMainMenu, SIGNAL(onAboutQtTriggered()), this, SLOT(slotAboutQt()));
     connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(int)), this, SLOT(slotRequestLoadSkin(int)));
     connect(mMainMenu->skinMenu(), SIGNAL(requestSkinNames(QStringList&)), this, SLOT(slotRequestSkinNames(QStringList&)));
     connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
@@ -461,7 +479,18 @@ void TGuiManager::slotRequestExit()
 void TGuiManager::slotOpenOptionsDialog()
 {
     if(mOptionDialog)
-        mOptionDialog->exec();
+        mOptionDialog->openPage(PI_GENERAL);
+}
+
+void TGuiManager::slotAbout()
+{
+    if(mOptionDialog)
+        mOptionDialog->openPage(PI_ABOUT);
+}
+
+void TGuiManager::slotAboutQt()
+{
+    QMessageBox::aboutQt(mDesktopWindow);
 }
 
 void TGuiManager::slotOpenOptionAboutPage()

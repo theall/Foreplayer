@@ -150,8 +150,9 @@ list<int> TPlaylistItem::removeErrors()
     int i=0;
     for(TMusicItem *musicItem : mMusicItems)
     {
-        if(!isFileExist(musicItem->fileName()) || (musicItem->duration()<=0 && musicItem->trackItems()->size()<=0))
-            removed.push_back(i++);
+        if(!isFileExist(musicItem->fileName()) || (musicItem->duration()<=0 && musicItem->size()<=0))
+            removed.push_back(i);
+        i++;
     }
 
     int removedSize = removed.size();

@@ -106,6 +106,8 @@ void TSDLFront::stop()
     SDL_PauseAudio(true);
 
     SDL_UnlockAudio();
+
+    setAudioParameter(AP_RESET, 0, 0);
 }
 
 void TSDLFront::step()

@@ -298,6 +298,14 @@ enum ForeplayerCmd
     CMD_GET_PLAYING_INDEX,
 
     /**
+     * Set playing index.
+     * param1: int pointer of playlist index
+     * param2: int pointer of music item index
+     * param3: int pointer of track item index
+     */
+    CMD_SET_PLAYING_INDEX,
+
+    /**
      * Remove redundant music items in specify playlist item.
      * param1: playlist item handle
      * param2: return list<int> indexes removed
@@ -371,6 +379,34 @@ enum ForeplayerCmd
      * param3: return pointer to music item
      */
     CMD_GET_MUSIC_ITEM,
+
+    /**
+     * Convert music item to wstring.
+     * param1: music item handle
+     * param2: return wstring
+     */
+    CMD_MUSIC_ITEM_AS_STRING,
+
+    /**
+     * Convert music items to wstring.
+     * param1: music item handle list
+     * param2: return wstring
+     */
+    CMD_MUSIC_ITEMS_AS_STRING,
+
+    /**
+     * Convert wstring to music item.
+     * param1: wstring
+     * param2: return music item handle
+     */
+    CMD_STRING_TO_MUSIC_ITEM,
+
+    /**
+     * Convert wstring to music item array.
+     * param1: wstring
+     * param2: return array of music item handle
+     */
+    CMD_STRING_TO_MUSIC_ITEMS,
 
     /**
      * Get music item index in playlist item.
@@ -484,11 +520,25 @@ enum ForeplayerCmd
     CMD_GET_TRACK_ITEM,
 
     /**
+     * Convert track item to wstring.
+     * param1: track item handle
+     * param2: return wstring
+     */
+    CMD_TRACK_ITEM_AS_STRING,
+
+    /**
      * Get track items.
      * param1: music item handle
      * param2: return list<trackitem handle>
      */
     CMD_GET_TRACK_ITEMS,
+
+    /**
+     * Convert track items to wstring.
+     * param1: list of track item handle
+     * param2: return wstring
+     */
+    CMD_TRACK_ITEMS_AS_STRING,
 
     /**
      * Get track item index in music item.

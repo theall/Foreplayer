@@ -1,3 +1,20 @@
+/*
+ * Copyright (C) Bilge Theall, wazcd_1608@qq.com
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ */
 #ifndef TCORE_H
 #define TCORE_H
 
@@ -60,9 +77,9 @@ public:
     //// Music items
     int getMusicItemCount(PlayListItem playlistItem);
     MusicItem getMusicItem(PlayListItem playlistItem, int row);
-    QString musicItemToString(PlayListItem playlistItem, int row);
-    QString musicItemsToString(PlayListItem playlistItem, QSet<int> rows);
-    MusicItems stringToMusicItem(QString str);
+    QString musicItemToString(MusicItem musicItem);
+    QString musicItemsToString(MusicItems musicItems);
+    MusicItem stringToMusicItem(QString str);
     MusicItems stringToMusicItems(QString str);
     int getMusicItemIndex(PlayListItem playlistItem, MusicItem musicItem);
     QList<int> moveMusicItems(PlayListItem playlistItem, QList<int> indexes, int pos);
@@ -81,9 +98,9 @@ public:
     //// Track items
     int getTrackItemCount(MusicItem musicItem);
     TrackItem getTrackItem(MusicItem musicItem, int index);
-    QString getTrackItemAsString(MusicItem musicItem, int index);
+    QString trackItemToString(TrackItem trackItem);
     TrackItems getTrackItems(MusicItem musicItem);
-    QString getTrackItemsAsString(MusicItem musicItem, QSet<int> indexes);
+    QString trackItemsToString(TrackItems trackItems);
     int getTrackItemIndex(MusicItem musicItem, TrackItem trackItem);
     QString getTrackItemName(TrackItem trackItem);
     bool setTrackItemName(MusicItem musicItem, TrackItem trackItem, QString newName);
@@ -105,6 +122,7 @@ public:
     bool playTrackItem(TrackItem trackItem);
     bool playIndex(int pi, int mi, int ti);
     void getPlayingIndex(int *pi, int *mi, int *ti);
+    void setPlayingIndex(int pi, int mi, int ti);
     int getPlayingIndex(IndexType it);
     bool stop();
     bool resume();

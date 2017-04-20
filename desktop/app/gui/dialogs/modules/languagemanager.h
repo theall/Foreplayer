@@ -15,27 +15,40 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#include "popmenufind.h"
+#ifndef LANGUAGEMANAGER_H
+#define LANGUAGEMANAGER_H
 
-TPopMenuFind::TPopMenuFind(QWidget *parent) :
-    TAbstractPopMenu(parent)
+#include "pch.h"
+
+class TLanguageManager
 {
-    mActionMark = addAction(QString(), this, SIGNAL(onActionMarkTriggered()));
-    mActionFind = addAction(QString(), this, SIGNAL(onActionFindTriggered()));
-    mActionFindNext = addAction(QString(), this, SIGNAL(onActionFindTriggered()));
-    retranslateUi();
-}
+public:
+    static TLanguageManager* instance();
+    static void deleteInstance();
 
-TPopMenuFind::~TPopMenuFind()
-{
+    /**
+     * Installs the translators on the application for Qt and Tiled. Should be
+     * called again when the language changes.
+     */
+    void installTranslators();
 
-}
+    /**
+     * Returns the available languages as a list of country codes.
+     */
+    QStringList languages();
 
-void TPopMenuFind::retranslateUi()
-{
-    setTitle(tr("Find"));
+private:
+    TLanguageManager();
+    ~TLanguageManager();
 
-    mActionMark->setText(tr("Mark"));
-    mActionFind->setText(tr("Find"));
-    mActionFindNext->setText(tr("Find next"));
-}
+    void loadLanguages();
+
+    QString mTranslationsDir;
+    QStringList mLanguages;
+    QTranslator *mQtTranslator;
+    QTranslator *mAppTranslator;
+
+    static TLanguageManager *mInstance;
+};
+
+#endif // LANGUAGEMANAGER_H

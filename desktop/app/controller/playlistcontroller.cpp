@@ -1,3 +1,20 @@
+/*
+ * Copyright (C) Bilge Theall, wazcd_1608@qq.com
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ */
 #include "playlistcontroller.h"
 
 #include <QUuid>
@@ -503,9 +520,12 @@ void TPlaylistController::slotRequestCopyMusicItem(QSet<int> rows)
     PlayListItem playlistItem = mMusiclistModel->playlistItem();
     if(playlistItem)
     {
+        MusicItems musicItems;
+        for(int row : rows)
+            musicItems.append(mCore->getMusicItem(playlistItem, row));
         QClipboard *clipBoard = qApp->clipboard();
         QMimeData *mimeData = new QMimeData;
-        mimeData->setData(MIME_TYPE_MUSIC_ITEM, mCore->musicItemsToString(playlistItem, rows).toLocal8Bit());
+        mimeData->setData(MIME_TYPE_MUSIC_ITEM, mCore->musicItemsToString(musicItems).toLocal8Bit());
         clipBoard->setMimeData(mimeData);
     }
 }
@@ -675,9 +695,12 @@ void TPlaylistController::slotRequestCopyTrackItem(QSet<int> rows)
     MusicItem musicItem = mTracklistModel->musicItem();
     if(musicItem)
     {
+        TrackItems trackItems;
+        for(int row : rows)
+            trackItems.append(mCore->getTrackItem(musicItem, row));
         QClipboard *clipBoard = qApp->clipboard();
         QMimeData *mimeData = new QMimeData;
-        mimeData->setData(MIME_TYPE_TRACK_ITEM, mCore->getTrackItemsAsString(musicItem, rows).toLocal8Bit());
+        mimeData->setData(MIME_TYPE_TRACK_ITEM, mCore->trackItemsToString(trackItems).toLocal8Bit());
         clipBoard->setMimeData(mimeData);
     }
 }

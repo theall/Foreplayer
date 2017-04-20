@@ -13,24 +13,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>20</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>About Qt</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>70</y>
+     <x>310</x>
+     <y>60</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -68,7 +55,7 @@
      <x>50</x>
      <y>40</y>
      <width>54</width>
-     <height>12</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">

@@ -56,7 +56,6 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
     if(plugin)
     {
         // Connect plugin's callback to front's callback
-        mPlayThread->setAudioParameter(AP_RESET, 0, 0);
         mPlayThread->setBackend(plugin);
         result = true;
         mPlayThread->play();

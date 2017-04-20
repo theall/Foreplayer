@@ -1,3 +1,20 @@
+/*
+ * Copyright (C) Bilge Theall, wazcd_1608@qq.com
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ */
 #include "core.h"
 
 #include <QDir>
@@ -279,6 +296,12 @@ void TCore::getPlayingIndex(int *pi, int *mi, int *ti)
         mSendCmd(CMD_GET_PLAYING_INDEX, (void*)pi, (void*)mi, (void*)ti, 0);
 }
 
+void TCore::setPlayingIndex(int pi, int mi, int ti)
+{
+    if(mSendCmd)
+        mSendCmd(CMD_SET_PLAYING_INDEX, (void*)&pi, (void*)&mi, (void*)&ti, 0);
+}
+
 int TCore::getPlayingIndex(IndexType it)
 {
     int pi = -1;
@@ -322,24 +345,43 @@ MusicItem TCore::getMusicItem(PlayListItem playlistItem, int row)
     return ret;
 }
 
-QString TCore::musicItemToString(PlayListItem playlistItem, int row)
+QString TCore::musicItemToString(MusicItem musicItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_MUSIC_ITEM_AS_STRING, musicItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
-QString TCore::musicItemsToString(PlayListItem playlistItem, QSet<int> rows)
+QString TCore::musicItemsToString(MusicItems musicItems)
 {
+    wstring ret;
+    list<MusicItem> musicItemsList = musicItems.toStdList();
+    if(mSendCmd)
+        mSendCmd(CMD_MUSIC_ITEMS_AS_STRING, &musicItemsList, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
-MusicItems TCore::stringToMusicItem(QString str)
+MusicItem TCore::stringToMusicItem(QString str)
 {
+    MusicItem ret;
+    wstring wstr = str.toStdWString();
+    if(mSendCmd)
+        mSendCmd(CMD_STRING_TO_MUSIC_ITEM, &wstr, &ret, 0, 0);
 
+    return ret;
 }
 
 MusicItems TCore::stringToMusicItems(QString str)
 {
+    list<MusicItem> ret;
+    wstring wstr = str.toStdWString();
+    if(mSendCmd)
+        mSendCmd(CMD_STRING_TO_MUSIC_ITEMS, &wstr, &ret, 0, 0);
 
+    return MusicItems::fromStdList(ret);
 }
 
 int TCore::getMusicItemIndex(PlayListItem playlistItem, MusicItem musicItem)
@@ -518,9 +560,13 @@ TrackItem TCore::getTrackItem(MusicItem musicItem, int index)
     return ret;
 }
 
-QString TCore::getTrackItemAsString(MusicItem musicItem, int index)
+QString TCore::trackItemToString(TrackItem trackItem)
 {
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_TRACK_ITEM_AS_STRING, trackItem, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 TrackItems TCore::getTrackItems(MusicItem musicItem)
@@ -532,9 +578,14 @@ TrackItems TCore::getTrackItems(MusicItem musicItem)
     return QList<TrackItem>::fromStdList(result);
 }
 
-QString TCore::getTrackItemsAsString(MusicItem musicItem, QSet<int> indexes)
+QString TCore::trackItemsToString(TrackItems trackItems)
 {
+    wstring ret;
+    list<TrackItem> trackItemsList = trackItems.toStdList();
+    if(mSendCmd)
+        mSendCmd(CMD_TRACK_ITEMS_AS_STRING, &trackItemsList, &ret, 0, 0);
 
+    return QString::fromStdWString(ret);
 }
 
 int TCore::getTrackItemIndex(MusicItem musicItem, TrackItem trackItem)
