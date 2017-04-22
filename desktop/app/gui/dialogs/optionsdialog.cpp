@@ -53,7 +53,11 @@ TOptionsDialog::TOptionsDialog(QWidget *parent) :
             SIGNAL(currentRowChanged(QModelIndex, QModelIndex)),
             this,
             SLOT(slotCurrentRowChanged(QModelIndex, QModelIndex)));
-    mPages.append(new TOptionGeneral);
+
+    TOptionGeneral *optionGeneral = new TOptionGeneral;
+    connect(optionGeneral, SIGNAL(displayTrayIconToggled(bool)), this, SIGNAL(displayTrayIconToggled(bool)));
+
+    mPages.append(optionGeneral);
     mPages.append(new TOptionPluginInfo);
     mPages.append(new TOptionSkin);
     mPages.append(new TOptionAbout);

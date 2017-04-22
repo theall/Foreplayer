@@ -49,6 +49,7 @@ public:
     ~TGuiManager();
 
     bool loadSkin(QString skinPath = QString());
+    bool tryLoadSkins();
 
     void open();
     void close();
@@ -62,6 +63,7 @@ public:
 
     TLyricWindow *lyricWindow() { return mLyricWindow; }
     TMainWindow *mainWindow() { return mMainWindow; }
+    TMainMenu *mainMenu() { return mMainMenu; }
     TEqualizerWindow *equalizerWindow() { return mEqualizerWindow; }
     TPlaylistWindow *playlistWindow() { return mPlaylistWindow; }
     TBrowserWindow *browserWindow() { return mBrowserWindow; }
@@ -72,13 +74,11 @@ public:
     TOptionsDialog *optionDialog() { return mOptionDialog; }
 
 signals:
-    void requestPlay();
-    void requestPause();
-    void requestStop();
-    void requestNext();
-    void requestPrevious();
+    void requestPlayNextMusic();
+    void requestPlayPreviousMusic();
     void requestShutdown();
     void skinChanged();
+    void muteToggled(bool);
 
 private slots:
     void slotLyricWindowToggled(bool toggled);
@@ -98,12 +98,15 @@ private slots:
     void slotOpenOptionsDialog();
     void slotAbout();
     void slotAboutQt();
-    void slotOpenOptionAboutPage();
+    void slotVolumeToggled(bool);
     void slotOnOpacityChanged(qreal value);
     void slotRequestLoadSkin(int skinIndex);
     void slotRequestSkinNames(QStringList &names);
     void slotMainWindowActivationChanged();
     void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
+    void slotVolumeUpTriggered();
+    void slotVolumeDownTriggered();
+    void slotDisplayTrayIconToggled(bool);
 
 private:
     TMainWindow *mMainWindow;

@@ -17,6 +17,8 @@
  */
 #include "transparentmenu.h"
 
+#include "preferences.h"
+
 TTransparentMenu::TTransparentMenu(QWidget *parent) :
     TAbstractMenu(parent),
     mLastActivedAction(NULL)
@@ -61,6 +63,7 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     connect(mActionDisableWhileActived, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
 
     addAction(mActionDisable);
+    addSeparator();
     addAction(mActionTransparent1);
     addAction(mActionTransparent2);
     addAction(mActionTransparent3);
@@ -71,10 +74,62 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     addAction(mActionTransparent8);
     addAction(mActionTransparent9);
     addAction(mActionTransparent10);
-    addSeparator();
-    addAction(mActionDisableWhileActived);
+
+    //addAction(mActionDisableWhileActived);
 
     retranslateUi();
+}
+
+TTransparentMenu::~TTransparentMenu()
+{
+    float opacity = 1.0;
+    if(mActionTransparent1->isChecked())
+        opacity = 0.9;
+    else if(mActionTransparent2->isChecked())
+        opacity = 0.8;
+    else if(mActionTransparent3->isChecked())
+        opacity = 0.7;
+    else if(mActionTransparent4->isChecked())
+        opacity = 0.6;
+    else if(mActionTransparent5->isChecked())
+        opacity = 0.5;
+    else if(mActionTransparent6->isChecked())
+        opacity = 0.4;
+    else if(mActionTransparent7->isChecked())
+        opacity = 0.3;
+    else if(mActionTransparent8->isChecked())
+        opacity = 0.2;
+    else if(mActionTransparent9->isChecked())
+        opacity = 0.1;
+
+    TPreferences::instance()->setOpacity(opacity);
+}
+
+void TTransparentMenu::loadSettings()
+{
+    float opacity = TPreferences::instance()->opacity();
+    if(opacity >= 1)
+        mActionDisable->setChecked(true);
+    else if(opacity>=0.9)
+        mActionTransparent1->setChecked(true);
+    else if(opacity>=0.8)
+        mActionTransparent2->setChecked(true);
+    else if(opacity>=0.7)
+        mActionTransparent3->setChecked(true);
+    else if(opacity>=0.6)
+        mActionTransparent4->setChecked(true);
+    else if(opacity>=0.5)
+        mActionTransparent5->setChecked(true);
+    else if(opacity>=0.4)
+        mActionTransparent6->setChecked(true);
+    else if(opacity>=0.3)
+        mActionTransparent7->setChecked(true);
+    else if(opacity>=0.2)
+        mActionTransparent8->setChecked(true);
+    else if(opacity>=0.1)
+        mActionTransparent9->setChecked(true);
+    else
+        mActionDisable->setChecked(true);
 }
 
 void TTransparentMenu::slotActionTriggered(bool)

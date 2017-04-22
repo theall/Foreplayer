@@ -45,11 +45,11 @@ TMainMenu::TMainMenu(QWidget *parent) :
     addMenu(mPlaymodeMenu);
     addSeparator();
 
-    addMenu(mViewMenu);
-    addSeparator();
+    //addMenu(mViewMenu);
+    //addSeparator();
     addMenu(mSkinMenu);
     addMenu(mTransparentMenu);
-    addMenu(mFullScreenMenu);
+    //addMenu(mFullScreenMenu);
     addSeparator();
     addAction(mActionOptions);
     addSeparator();

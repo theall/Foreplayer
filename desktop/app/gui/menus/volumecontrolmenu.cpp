@@ -23,10 +23,11 @@ TVolumeControlMenu::TVolumeControlMenu(QWidget *parent) :
     mActionVolumeUp = new QAction(this);
     mActionVolumeDown = new QAction(this);
     mActionVolumeMute = new QAction(this);
+    mActionVolumeMute->setCheckable(true);
 
     connect(mActionVolumeUp, SIGNAL(triggered()), this, SIGNAL(onVolumeUpTriggered()));
     connect(mActionVolumeDown, SIGNAL(triggered()), this, SIGNAL(onVolumeDownTriggered()));
-    connect(mActionVolumeMute, SIGNAL(triggered()), this, SIGNAL(onVolumeMuteTriggered()));
+    connect(mActionVolumeMute, SIGNAL(toggled(bool)), this, SIGNAL(onVolumeMuteToggled(bool)));
 
     addAction(mActionVolumeUp);
     addAction(mActionVolumeDown);
@@ -39,6 +40,13 @@ TVolumeControlMenu::TVolumeControlMenu(QWidget *parent) :
 TVolumeControlMenu::~TVolumeControlMenu()
 {
 
+}
+
+void TVolumeControlMenu::checkMuteAction(bool checked)
+{
+    mActionVolumeMute->blockSignals(true);
+    mActionVolumeMute->setChecked(checked);
+    mActionVolumeMute->blockSignals(false);
 }
 
 void TVolumeControlMenu::retranslateUi()

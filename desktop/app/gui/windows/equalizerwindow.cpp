@@ -14,8 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "equalizerwindow.h"
+
+#include "preferences.h"
 
 TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     TAbstractWindow(parent),
@@ -59,6 +61,44 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     connect(mSldPreamp, SIGNAL(valueChanged(int)), this, SLOT(on_preamp_valueChanged(int)));
 
     retranslateUi();
+}
+
+TEqualizerWindow::~TEqualizerWindow()
+{
+    TPreferences *prefs = TPreferences::instance();
+    if(!prefs)
+        return;
+
+    prefs->setEqEnabled(mBtnEnabled->isChecked());
+    prefs->setEqBallance(mSldBalance->value());
+    prefs->setEqSurround(mSldSurround->value());
+    prefs->setEqAmplification(mSldPreamp->value());
+    QList<int> factors;
+    for(TSliderBar *sliderBar : mSldEqFactors)
+        factors.append(sliderBar->value());
+    prefs->setEqFactors(factors);
+}
+
+void TEqualizerWindow::loadSettings()
+{
+    TPreferences *prefs = TPreferences::instance();
+    if(!prefs)
+        return;
+
+    mBtnEnabled->setChecked(prefs->eqEnabled());
+    mBtnEnabled->clicked(prefs->eqEnabled());
+    mSldBalance->setValue(prefs->eqBallance());
+    mSldSurround->setValue(prefs->eqSurround());
+    mSldPreamp->setValue(prefs->eqAmplification());
+
+    QList<int> factors = prefs->eqFactors();
+    if(mSldEqFactors.size()==factors.size())
+    {
+        for(int i=0;i<mSldEqFactors.size();i++)
+        {
+            mSldEqFactors[i]->setValue(factors[i]);
+        }
+    }
 }
 
 void TEqualizerWindow::on_btnClose_clicked()

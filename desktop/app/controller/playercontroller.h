@@ -48,6 +48,8 @@ private slots:
     void slotStopButtonClicked();
     void slotVolumeValueChanged(float value);
     void slotVolumeToggled(bool toggled);
+    void slotPrevMusicTriggered();
+    void slotNextMusicTriggered();
 
     // Internal use
     void delayStopTimer();

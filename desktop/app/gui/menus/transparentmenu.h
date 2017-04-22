@@ -25,6 +25,9 @@ class TTransparentMenu : public TAbstractMenu
     Q_OBJECT
 public:
     TTransparentMenu(QWidget *parent = 0);
+    ~TTransparentMenu();
+
+    void loadSettings();
 
 signals:
     void onOpacityChanged(qreal);

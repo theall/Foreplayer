@@ -20,9 +20,8 @@
 
 TSkinManager::TSkinManager()
 {
-    mSkinPath = Utils::absoluteFilePath("skins");
-
     mNameFilter << "*.zip";
+    setPath("skins");
 }
 
 void TSkinManager::setPath(QString path)
@@ -33,6 +32,9 @@ void TSkinManager::setPath(QString path)
 
 void TSkinManager::reload()
 {
+    for(TSkin *skin : mSkins)
+        delete skin;
+
     mSkins.clear();
 
     QStringList skinFullNames;
@@ -45,11 +47,10 @@ void TSkinManager::reload()
     for(auto file : fileList)
         skinFullNames.append(dir.absoluteFilePath(file+"/skin.xml"));
 
-    for(auto fileName : skinFullNames)
+    for(QString fileName : skinFullNames)
     {
         TSkin *skin = new TSkin;
-        skin->load(fileName);
-        if(skin->name().isEmpty())
+        if(!skin->load(fileName))
         {
             delete skin;
             continue;
@@ -75,3 +76,7 @@ TSkin *TSkinManager::skinAt(int i)
     return NULL;
 }
 
+int TSkinManager::size()
+{
+    return mSkins.size();
+}

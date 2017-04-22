@@ -28,31 +28,38 @@
 #define SEC_GUI_WINDOW_STATE        "WindowState"
 #define SEC_GUI_LAST_OPEN_PATH      "LastOpenPath"
 #define SEC_GUI_LAST_OPEN_DIR       "LastOpenDirectory"
+#define SEC_GUI_LAST_SKIN_PATH      "LastSkinPath"
+#define SEC_GUI_OPACITY             "Opacity"
 
 // Install
 #define SEC_INSTALL                 "Install"
 #define SEC_INSTALL_RUN_COUNT       "RunCount"
 
 // Main window
-#define SEC_MAIN_WINDOW             "MainWindow"
+#define SEC_MAIN_WINDOW                 "MainWindow"
+#define SEC_MAIN_WINDOW_MUTE            "Mute"
+#define SEC_MAIN_WINDOW_VOLUME          "Volume"
+#define SEC_MAIN_WINDOW_LYRIC_BTN       "LyricChecked"
+#define SEC_MAIN_WINDOW_EQ_BTN          "EqualizerChecked"
+#define SEC_MAIN_WINDOW_PLAYLIST_BTN    "PlaylistChecked"
+#define SEC_MAIN_WINDOW_PLAY_MODE       "PlayMode"
 
 // Lyric window
-#define SEC_LYRIC_WINDOW            "LyricWindow"
+#define SEC_LYRIC_WINDOW                "LyricWindow"
 
 // Equalizer window
-#define SEC_EQUALIZER_WINDOW        "EqualizerWindow"
+#define SEC_EQUALIZER_WINDOW            "EqualizerWindow"
+#define SEC_EQUALIZER_WINDOW_ENABLED    "Enabled"
+#define SEC_EQUALIZER_WINDOW_BALLANCE   "Ballance"
+#define SEC_EQUALIZER_WINDOW_SURROUND   "Surround"
+#define SEC_EQUALIZER_WINDOW_AMPLIFY    "Amplification"
+#define SEC_EQUALIZER_WINDOW_FACTORS    "Factors"
 
 // Playlist window
 #define SEC_PLAYLIST_WINDOW         "PlaylistWindow"
 
 // Browser window
 #define SEC_BROWSER_WINDOW          "BrowserWindow"
-
-// Playlist
-#define SEC_CORE                    "Core"
-#define SEC_CORE_PLAYLIST_INDEX     "CurrentPlaylist"
-#define SEC_CORE_MUSIC_INDEX        "CurrentMusic"
-#define SEC_CORE_TRACK_INDEX        "CurrentTrack"
 
 // Options
 #define SEC_OPTIONS                 "Options"
@@ -65,6 +72,14 @@
 #define SEC_OPTION_MULTI_INSTANCE       "MultiInstance"
 #define SEC_OPTION_PILOT_DURATION       "PilotDuration"
 #define SEC_OPTION_CHECK_DURATION       "CheckDuration"
+
+#define SET_VALUE(value,member,parent,section) \
+    if(member==value)\
+        return;\
+    mSettings->beginGroup(parent);\
+    mSettings->setValue(section, value);\
+    mSettings->endGroup();\
+    member = value
 
 TPreferences *TPreferences::mInstance = NULL;
 
@@ -83,13 +98,35 @@ TPreferences::TPreferences(QObject *parent):
     mLanguage = stringValue(SEC_GUI_LANGUAGE);
     mLastOpenPath = stringValue(SEC_GUI_LAST_OPEN_PATH);
     mLastOpenDir = stringValue(SEC_GUI_LAST_OPEN_DIR);
+    mSkinPath = stringValue(SEC_GUI_LAST_SKIN_PATH);
+    mOpacity = floatValue(SEC_GUI_OPACITY, 1.0);
     mSettings->endGroup();
 
-    // Core settings
-    mSettings->beginGroup(SEC_CORE);
-    mPlayingPlaylistIndex = intValue(SEC_CORE_PLAYLIST_INDEX, -1);
-    mPlayingMusicIndex = intValue(SEC_CORE_MUSIC_INDEX, -1);
-    mPlayingTrackIndex = intValue(SEC_CORE_TRACK_INDEX, -1);
+    // Main window
+    mSettings->beginGroup(SEC_MAIN_WINDOW);
+    mMuteEnabled = boolValue(SEC_MAIN_WINDOW_MUTE);
+    mVolumeValue = intValue(SEC_MAIN_WINDOW_VOLUME, 100);
+    mLyricWindowVisible = boolValue(SEC_MAIN_WINDOW_LYRIC_BTN);
+    mEqWindowVisible = boolValue(SEC_MAIN_WINDOW_EQ_BTN, true);
+    mPlaylistWindowVisible = boolValue(SEC_MAIN_WINDOW_PLAYLIST_BTN, true);
+    mSettings->endGroup();
+
+    // Equalizer window
+    mSettings->beginGroup(SEC_EQUALIZER_WINDOW);
+    mEqEnabled = boolValue(SEC_EQUALIZER_WINDOW_ENABLED);
+    mEqBallance = intValue(SEC_EQUALIZER_WINDOW_BALLANCE);
+    mEqSurround = intValue(SEC_EQUALIZER_WINDOW_SURROUND);
+    mEqAmplification = intValue(SEC_EQUALIZER_WINDOW_AMPLIFY);
+    QString factors = stringValue(SEC_EQUALIZER_WINDOW_FACTORS);
+    QStringList sl = factors.split(",");
+    for(QString s : sl)
+        mEqFactors.append(s.toInt());
+    if(mEqFactors.size() != 10)
+    {
+        mEqFactors.clear();
+        for(int i=0;i<10;i++)
+            mEqFactors.append(0);
+    }
     mSettings->endGroup();
 
     //// Options
@@ -98,9 +135,9 @@ TPreferences::TPreferences(QObject *parent):
         mSettings->beginGroup(SEC_OPTION_GENERAL);
         mAutoCorrectDuration = boolValue(SEC_OPTION_AUTO_CORRECT, true);
         mForceCorrectDuration = boolValue(SEC_OPTION_FORCE_CORRECT);
-        mAutoPlay = boolValue(SEC_OPTION_AUTO_PLAY);
+        mAutoPlay = boolValue(SEC_OPTION_AUTO_PLAY, true);
         mMultiInstance = boolValue(SEC_OPTION_MULTI_INSTANCE);
-        mDisplayTrayIcon = boolValue(SEC_OPTION_DISPLAY_TRAY_ICON);
+        mDisplayTrayIcon = boolValue(SEC_OPTION_DISPLAY_TRAY_ICON, true);
         mPilotDuration = intValue(SEC_OPTION_PILOT_DURATION, 150000);
         mCheckDuration = intValue(SEC_OPTION_CHECK_DURATION, 3000);
 
@@ -259,57 +296,6 @@ void TPreferences::setLastOpenDirectory(QString path)
     mLastOpenDir = path;
 }
 
-int TPreferences::playingPlaylistIndex()
-{
-    return mPlayingPlaylistIndex;
-}
-
-void TPreferences::setPlayingPlaylistIndex(int index)
-{
-    if(mPlayingPlaylistIndex == index)
-        return;
-
-    mSettings->beginGroup(SEC_CORE);
-    mSettings->setValue(SEC_CORE_PLAYLIST_INDEX, index);
-    mSettings->endGroup();
-
-    mPlayingPlaylistIndex = index;
-}
-
-int TPreferences::playingMusicIndex()
-{
-    return mPlayingMusicIndex;
-}
-
-void TPreferences::setPlayingMusicIndex(int index)
-{
-    if(mPlayingMusicIndex == index)
-        return;
-
-    mSettings->beginGroup(SEC_CORE);
-    mSettings->setValue(SEC_CORE_MUSIC_INDEX, index);
-    mSettings->endGroup();
-
-    mPlayingMusicIndex = index;
-}
-
-int TPreferences::playingTrackIndex()
-{
-    return mPlayingTrackIndex;
-}
-
-void TPreferences::setPlayingTrackIndex(int index)
-{
-    if(mPlayingTrackIndex == index)
-        return;
-
-    mSettings->beginGroup(SEC_CORE);
-    mSettings->setValue(SEC_CORE_TRACK_INDEX, index);
-    mSettings->endGroup();
-
-    mPlayingTrackIndex = index;
-}
-
 bool TPreferences::autoCorrectDuration()
 {
     return mAutoCorrectDuration;
@@ -441,6 +427,162 @@ void TPreferences::setEnableMultiInstance(bool bEnabled)
     mSettings->endGroup();
 
     mMultiInstance = bEnabled;
+}
+
+QString TPreferences::skinPath()
+{
+    return mSkinPath;
+}
+
+void TPreferences::setSkinPath(QString skinName)
+{
+    if(mSkinPath==skinName)
+        return;
+
+    mSettings->beginGroup(SEC_GUI);
+    mSettings->setValue(SEC_GUI_LAST_SKIN_PATH, skinName);
+    mSettings->endGroup();
+
+    mSkinPath = skinName;
+}
+
+bool TPreferences::muteEnabled()
+{
+    return mMuteEnabled;
+}
+
+void TPreferences::setMuteEnabled(bool enabled)
+{
+    if(mMuteEnabled==enabled)
+        return;
+
+    mSettings->beginGroup(SEC_MAIN_WINDOW);
+    mSettings->setValue(SEC_MAIN_WINDOW_MUTE, enabled);
+    mSettings->endGroup();
+
+    mMuteEnabled = enabled;
+}
+
+float TPreferences::opacity()
+{
+    return mOpacity;
+}
+
+void TPreferences::setOpacity(float value)
+{
+    SET_VALUE(value, mOpacity, SEC_GUI, SEC_GUI_OPACITY);
+}
+
+PlayMode TPreferences::playMode()
+{
+    return mPlayMode;
+}
+
+void TPreferences::setPlayMode(PlayMode playMode)
+{
+    SET_VALUE(playMode, mPlayMode, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_PLAY_MODE);
+}
+
+int TPreferences::volumeValue()
+{
+    return mVolumeValue;
+}
+
+void TPreferences::setVolumeValue(int value)
+{
+    SET_VALUE(value, mVolumeValue, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_VOLUME);
+}
+
+bool TPreferences::lyricWindowVisible()
+{
+    return mLyricWindowVisible;
+}
+
+void TPreferences::setLyricWindowVisible(bool bVisible)
+{
+    SET_VALUE(bVisible, mLyricWindowVisible, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_LYRIC_BTN);
+}
+
+bool TPreferences::eqWindowVisible()
+{
+    return mEqWindowVisible;
+}
+
+void TPreferences::setEqWindowVisible(bool bVisible)
+{
+    SET_VALUE(bVisible, mEqWindowVisible, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_EQ_BTN);
+}
+
+bool TPreferences::playlistWindowVisible()
+{
+    return mPlaylistWindowVisible;
+}
+
+void TPreferences::setPlaylistWindowVisible(bool bVisible)
+{
+    SET_VALUE(bVisible, mPlaylistWindowVisible, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_EQ_BTN);
+}
+
+bool TPreferences::eqEnabled()
+{
+    return mEqEnabled;
+}
+
+void TPreferences::setEqEnabled(bool bEnabled)
+{
+    SET_VALUE(bEnabled, mEqEnabled, SEC_EQUALIZER_WINDOW, SEC_EQUALIZER_WINDOW_ENABLED);
+}
+
+int TPreferences::eqBallance()
+{
+    return mEqBallance;
+}
+
+void TPreferences::setEqBallance(int value)
+{
+    SET_VALUE(value, mEqBallance, SEC_EQUALIZER_WINDOW, SEC_EQUALIZER_WINDOW_BALLANCE);
+}
+
+int TPreferences::eqSurround()
+{
+    return mEqSurround;
+}
+
+void TPreferences::setEqSurround(int value)
+{
+    SET_VALUE(value, mEqSurround, SEC_EQUALIZER_WINDOW, SEC_EQUALIZER_WINDOW_SURROUND);
+}
+
+int TPreferences::eqAmplification()
+{
+    return mEqAmplification;
+}
+
+void TPreferences::setEqAmplification(int value)
+{
+    SET_VALUE(value, mEqAmplification, SEC_EQUALIZER_WINDOW, SEC_EQUALIZER_WINDOW_AMPLIFY);
+}
+
+QList<int> TPreferences::eqFactors()
+{
+    return mEqFactors;
+}
+
+void TPreferences::setEqFactors(QList<int> value)
+{
+    if(mEqFactors==value)
+        return;
+
+    QStringList sl;
+    for(int factor : value)
+    {
+        sl.append(QString::number(factor));
+    }
+    mSettings->beginGroup(SEC_EQUALIZER_WINDOW);
+    mSettings->setValue(SEC_EQUALIZER_WINDOW_FACTORS, sl.join(','));
+    mSettings->endGroup();
+
+    mEqFactors = value;
 }
 
 void TPreferences::setValue(QString section, QVariant value)

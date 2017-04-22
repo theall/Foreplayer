@@ -27,6 +27,7 @@ TOptionGeneral::TOptionGeneral(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    TPreferences *pref = TPreferences::instance();
     //Add language items
     ui->cmbLanguage->blockSignals(true);
     foreach (const QString &name, TLanguageManager::instance()->languages()) {
@@ -41,10 +42,16 @@ TOptionGeneral::TOptionGeneral(QWidget *parent) :
     ui->cmbLanguage->blockSignals(false);
 
     // Not found (-1) ends up at index 0, system default
-    int languageIndex = ui->cmbLanguage->findData(TPreferences::instance()->language());
+    int languageIndex = ui->cmbLanguage->findData(pref->language());
     if (languageIndex == -1)
         languageIndex = 0;
     ui->cmbLanguage->setCurrentIndex(languageIndex);
+
+    ui->ckbAutoPlay->setChecked(pref->autoPlayAfterStarted());
+    ui->ckbMultiInstance->setChecked(pref->enableMultiInstance());
+    ui->ckbTrayIcon->setChecked(pref->displayTrayIcon());
+
+    connect(ui->ckbTrayIcon, SIGNAL(toggled(bool)), this, SIGNAL(displayTrayIconToggled(bool)));
 }
 
 TOptionGeneral::~TOptionGeneral()

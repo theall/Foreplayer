@@ -5,4 +5,5 @@
     <qresource prefix="/other"/>
     <qresource prefix="/popmenu"/>
     <qresource prefix="/"/>
+    <qresource prefix="/skin"/>
 </RCC>

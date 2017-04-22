@@ -43,7 +43,18 @@ bool TPlayerController::joint(TGuiManager *gui, TCore *core)
     connect(mMainWindow, SIGNAL(nextClicked()), this, SLOT(slotNextButtonClicked()));
     connect(mMainWindow, SIGNAL(stopClicked()), this, SLOT(slotStopButtonClicked()));
     connect(mMainWindow, SIGNAL(volumeValueChanged(float)), this, SLOT(slotVolumeValueChanged(float)));
-    connect(mMainWindow, SIGNAL(volumeToggle(bool)), this, SLOT(slotVolumeToggled(bool)));
+    connect(gui, SIGNAL(muteToggled(bool)), this, SLOT(slotVolumeToggled(bool)));
+
+    TMainMenu *mainMenu = gui->mainMenu();
+    Q_ASSERT(mainMenu);
+
+    connect(mainMenu->playControlMenu(), SIGNAL(onPlayTriggered()), this, SLOT(slotPlayButtonClicked()));
+    connect(mainMenu->playControlMenu(), SIGNAL(onPauseTriggered()), this, SLOT(slotPauseButtonClicked()));
+    connect(mainMenu->playControlMenu(), SIGNAL(onStopTriggered()), this, SLOT(slotStopButtonClicked()));
+    connect(mainMenu->playControlMenu(), SIGNAL(onNextTrackTriggered()), this, SLOT(slotNextButtonClicked()));
+    connect(mainMenu->playControlMenu(), SIGNAL(onPrevTrackTriggered()), this, SLOT(slotPrevButtonClicked()));
+    connect(mainMenu->playControlMenu(), SIGNAL(onPrevMusicTriggered()), this, SLOT(slotPrevMusicTriggered()));
+    connect(mainMenu->playControlMenu(), SIGNAL(onNextMusicTriggered()), this, SLOT(slotNextMusicTriggered()));
 
     return TAbstractController::joint(gui, core);;
 }
@@ -92,7 +103,7 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 
 void TPlayerController::slotPlayButtonClicked()
 {
-    if(!mCore || !mCore)
+    if(!mCore)
         return;
 
     // Try resume
@@ -155,7 +166,7 @@ void TPlayerController::slotPrevButtonClicked()
 
 void TPlayerController::slotNextButtonClicked()
 {
-    if(!mCore || !mMainWindow)
+    if(!mCore)
         return;
 
     int pi = -1;
@@ -206,6 +217,48 @@ void TPlayerController::slotVolumeToggled(bool toggled)
 {
     if(mCore)
         mCore->setAudioParameter(AP_VOLUME_ENABLE, (float)!toggled);
+}
+
+void TPlayerController::slotPrevMusicTriggered()
+{
+    if(!mCore)
+        return;
+
+    int pi = -1;
+    int mi = -1;
+    int ti = -1;
+    mCore->getPlayingIndex(&pi, &mi, &ti);
+    if(PlayListItem playlistItem=mCore->getPlaylistItem(pi))
+    {
+        mi--;
+        ti = 0;
+        // Default recycle level is in track list
+        if(mi < 0)
+            mi = mCore->getMusicItemCount(playlistItem) - 1;
+
+        slotRequestPlay(pi, mi, ti);
+    }
+}
+
+void TPlayerController::slotNextMusicTriggered()
+{
+    if(!mCore)
+        return;
+
+    int pi = -1;
+    int mi = -1;
+    int ti = -1;
+    mCore->getPlayingIndex(&pi, &mi, &ti);
+    if(PlayListItem playlistItem=mCore->getPlaylistItem(pi))
+    {
+        mi++;
+        ti = 0;
+        // Default recycle level is in track list
+        if(mi >= mCore->getMusicItemCount(playlistItem))
+            mi = 0;
+
+        slotRequestPlay(pi, mi, ti);
+    }
 }
 
 void TPlayerController::updateWindowTitles()

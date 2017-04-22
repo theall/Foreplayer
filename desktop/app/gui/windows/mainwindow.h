@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -34,6 +34,8 @@ public:
     TMainWindow(QWidget *parent = 0);
     ~TMainWindow();
 
+    void loadSettings();
+
     void setProgress(int time, int total);
     void setTitles(QStringList titles);
     void setTitles(QString title);
@@ -45,10 +47,13 @@ public:
     void checkEqualizerButton(bool checked);
     void checkPlaylistButton(bool checked);
     void checkBrowserButton(bool checked);
+    void checkMuteButton(bool checked);
 
     void setContextMenu(QMenu *menu);
 
     void setButtonPlayChecked(bool checked);
+
+    void upVolume(float factor);
 
     const TScrollLabel *informationLable() const
     {

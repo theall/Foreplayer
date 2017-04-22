@@ -32,6 +32,9 @@ public:
     explicit TOptionGeneral(QWidget *parent = 0);
     ~TOptionGeneral();
 
+signals:
+    void displayTrayIconToggled(bool);
+
 private slots:
     void on_cmbLanguage_currentIndexChanged(int index);
     void on_ckbAutoPlay_toggled(bool checked);

@@ -67,7 +67,7 @@ TSamplesFilter::TSamplesFilter(int sampleRate) :
   , mSampleRate(sampleRate)
   , mSampleCount(1<<FFTLengthPowerOfTwo)
   , mSilentFrames(0)
-  , mEqualizerEnabled(true)
+  , mEqualizerEnabled(false)
   , mWindowFunction(NoWindow)
   , mFFT(new FFTRealWrapper)
   , mElevation(0)

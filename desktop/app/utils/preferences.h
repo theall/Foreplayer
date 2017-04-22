@@ -30,6 +30,25 @@ enum TWindowType
     WindowTypeCount
 };
 
+enum PlayMode
+{
+    SINGLE_TRACK,
+    SINGLE_TRACK_RECYCLE,
+    SINGLE_MUSIC,
+    SINGLE_MUSIC_RECYCLE,
+    SINGLE_PLAY_LIST,
+    SINGLE_PLAY_LIST_RECYCLE,
+    ORDER_TRACK_LIST,
+    ORDER_TRACK_LIST_RECYCLE,
+    ORDER_MUSIC_LIST,
+    ORDER_MUSIC_LIST_RECYCLE,
+    ORDER_PLAY_LIST,
+    ORDER_PLAY_LIST_RECYCLE,
+    RANDOM_TRACK_LIST,
+    RANDOM_MUSIC_LIST,
+    RANDOM_PLAY_LIST
+};
+
 class TPreferences : public QObject
 {
     Q_OBJECT
@@ -54,15 +73,6 @@ public:
     void setLastOpenDialogPath(QString path);
     void setLastOpenDirectory(QString path);
 
-    int playingPlaylistIndex();
-    void setPlayingPlaylistIndex(int index);
-
-    int playingMusicIndex();
-    void setPlayingMusicIndex(int index);
-
-    int playingTrackIndex();
-    void setPlayingTrackIndex(int index);
-
     bool autoCorrectDuration();
     void setCorrectDuration(bool autoCorrect);
 
@@ -84,6 +94,39 @@ public:
     bool enableMultiInstance();
     void setEnableMultiInstance(bool bEnabled);
 
+    QString skinPath();
+    void setSkinPath(QString skinName);
+
+    bool muteEnabled();
+    void setMuteEnabled(bool enabled);
+
+    float opacity();
+    void setOpacity(float value);
+
+    PlayMode playMode();
+    void setPlayMode(PlayMode playMode);
+
+    int volumeValue();
+    void setVolumeValue(int value);
+
+    bool lyricWindowVisible();
+    void setLyricWindowVisible(bool bVisible);
+    bool eqWindowVisible();
+    void setEqWindowVisible(bool bVisible);
+    bool playlistWindowVisible();
+    void setPlaylistWindowVisible(bool bVisible);
+
+    bool eqEnabled();
+    void setEqEnabled(bool bEnabled);
+    int eqBallance();
+    void setEqBallance(int value);
+    int eqSurround();
+    void setEqSurround(int value);
+    int eqAmplification();
+    void setEqAmplification(int value);
+    QList<int> eqFactors();
+    void setEqFactors(QList<int> value);
+
 signals:
     void languageChanged();
 
@@ -91,12 +134,10 @@ private:
     QSettings *mSettings;
     bool mAlwaysTop;
     int mRunCount;
-    int mPlayingPlaylistIndex;
-    int mPlayingMusicIndex;
-    int mPlayingTrackIndex;
     QString mLanguage;
     QString mLastOpenPath;
     QString mLastOpenDir;
+    QString mSkinPath;
     bool mAutoCorrectDuration;
     bool mForceCorrectDuration;
     bool mAutoPlay;
@@ -104,6 +145,18 @@ private:
     bool mDisplayTrayIcon;
     int mPilotDuration;
     int mCheckDuration;
+    bool mMuteEnabled;
+    int mVolumeValue;
+    bool mLyricWindowVisible;
+    bool mEqWindowVisible;
+    bool mPlaylistWindowVisible;
+    bool mEqEnabled;
+    int mEqBallance;
+    int mEqSurround;
+    int mEqAmplification;
+    QList<int> mEqFactors;
+    float mOpacity;
+    PlayMode mPlayMode;
 
     void setValue(QString section, QVariant value);
     QVariant value(QString section, QVariant defValue=QVariant());

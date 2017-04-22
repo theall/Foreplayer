@@ -43,6 +43,10 @@ void TSkinMenu::slotSkinTriggered(bool checked)
 
         if(action)
             emit requestLoadSkin(action->data().toInt());
+
+        mLastActivedAction->blockSignals(true);
+        mLastActivedAction->setChecked(true);
+        mLastActivedAction->blockSignals(false);
     }
 }
 

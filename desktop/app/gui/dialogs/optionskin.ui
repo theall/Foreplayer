@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>665</width>
-    <height>429</height>
+    <width>468</width>
+    <height>350</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -67,6 +67,13 @@
        <property name="sizeConstraint">
         <enum>QLayout::SetDefaultConstraint</enum>
        </property>
+       <item row="0" column="1" colspan="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="0">
         <widget class="QLabel" name="label_6">
          <property name="minimumSize">
@@ -86,13 +93,6 @@
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1" colspan="2">
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>TextLabel</string>
          </property>
         </widget>
        </item>

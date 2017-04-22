@@ -14,8 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "mainwindow.h"
+
+#include "preferences.h"
 
 const int c_title_interval = 300;
 
@@ -116,6 +118,42 @@ TMainWindow::~TMainWindow()
         killTimer(mTitleTimerId);
         mTitleTimerId = -1;
     }
+
+    TPreferences *prefs = TPreferences::instance();
+    if(!prefs)
+        return;
+
+    prefs->setLyricWindowVisible(mBtnLyrics->isChecked());
+    prefs->setEqWindowVisible(mBtnEqualizer->isChecked());
+    prefs->setPlaylistWindowVisible(mBtnPlaylist->isChecked());
+    prefs->setMuteEnabled(mBtnMute->isChecked());
+    prefs->setVolumeValue(mVolumeBar->value());
+}
+
+void TMainWindow::loadSettings()
+{
+    TPreferences *prefs = TPreferences::instance();
+    if(!prefs)
+        return;
+
+    if(prefs->lyricWindowVisible())
+    {
+        mBtnLyrics->setChecked(true);
+        mBtnLyrics->clicked(true);
+    }
+    if(prefs->eqWindowVisible())
+    {
+        mBtnEqualizer->setChecked(true);
+        mBtnEqualizer->clicked(true);
+    }
+    if(prefs->playlistWindowVisible())
+    {
+        mBtnPlaylist->setChecked(true);
+        mBtnPlaylist->clicked(true);
+    }
+
+    mBtnMute->setChecked(prefs->muteEnabled());
+    mVolumeBar->setValue(prefs->volumeValue());
 }
 
 void TMainWindow::setProgress(int time, int total)
@@ -181,6 +219,13 @@ void TMainWindow::checkBrowserButton(bool checked)
     mBtnBrowser->setChecked(checked);
 }
 
+void TMainWindow::checkMuteButton(bool checked)
+{
+    mBtnMute->blockSignals(true);
+    mBtnMute->setChecked(checked);
+    mBtnMute->blockSignals(false);
+}
+
 void TMainWindow::setContextMenu(QMenu *menu)
 {
     mContextMenu = menu;
@@ -193,6 +238,21 @@ void TMainWindow::setButtonPlayChecked(bool checked)
         mBtnPlay->setVisible(checked);
         mBtnPause->setVisible(!checked);
     }
+}
+
+void TMainWindow::upVolume(float factor)
+{
+    int minValue = mVolumeBar->minimum();
+    int maxValue = mVolumeBar->maximum();
+    int newValue = mVolumeBar->value();
+    float vf = (float)(newValue-minValue)/(maxValue-minValue);
+    vf += factor;
+    newValue = vf * (maxValue-minValue);
+    if(newValue > maxValue)
+        newValue = maxValue;
+    else if (newValue < minValue)
+        newValue = minValue;
+    mVolumeBar->setValue(newValue);
 }
 
 void TMainWindow::retranslateUi()

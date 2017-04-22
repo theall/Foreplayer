@@ -17,6 +17,10 @@
  */
 #include "maincontroller.h"
 
+#include "preferences.h"
+
+#include <QMessageBox>
+
 TMainController::TMainController(QObject *parent) :
     TAbstractController(parent)
   , mPlayerController(new TPlayerController(this))
@@ -57,7 +61,7 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
 
     connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
 
-    if(!manager->loadSkin("skins/winamp.zip"))
+    if(!manager->tryLoadSkins())
         return false;
 
     mPlayerController->joint(manager, core);

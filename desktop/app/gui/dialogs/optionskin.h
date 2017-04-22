@@ -32,6 +32,9 @@ public:
     explicit TOptionSkin(QWidget *parent = 0);
     ~TOptionSkin();
 
+signals:
+    void requestSkinNames(QStringList &skinNames);
+
 private:
     Ui::TOptionSkin *ui;
 };

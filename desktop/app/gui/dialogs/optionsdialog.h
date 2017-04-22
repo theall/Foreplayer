@@ -46,6 +46,9 @@ public:
 
     void openPage(PageIndex pageIndex);
 
+signals:
+    void displayTrayIconToggled(bool);
+
 private:
     Ui::TOptionsDialog *ui;
     QList<QWidget*> mPages;

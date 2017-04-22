@@ -28,10 +28,11 @@ public:
     TVolumeControlMenu(QWidget *parent = 0);
     ~TVolumeControlMenu();
 
+    void checkMuteAction(bool checked);
 signals:
     void onVolumeUpTriggered();
     void onVolumeDownTriggered();
-    void onVolumeMuteTriggered();
+    void onVolumeMuteToggled(bool);
 
 private:
     QAction *mActionVolumeUp;
