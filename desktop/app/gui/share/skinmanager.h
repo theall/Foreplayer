@@ -31,6 +31,8 @@ public:
     void reload();
     QStringList skinNames();
     TSkin *skinAt(int i);
+    TSkin *findSkin(QString skinFullPath);
+    int indexOf(QString skinFullPath);
     int size();
 
 private:

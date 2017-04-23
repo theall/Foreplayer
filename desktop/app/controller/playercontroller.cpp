@@ -18,11 +18,13 @@
 #include "playercontroller.h"
 #include "preferences.h"
 
+#include <QDateTime>
+
 TPlayerController::TPlayerController(QObject *parent) :
     TAbstractController(parent)
   , mCurrentItem(NULL)
 {
-
+    srand(QDateTime::currentMSecsSinceEpoch());
 }
 
 TPlayerController::~TPlayerController()
@@ -68,10 +70,6 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 
     mCurrentItem = NULL;
 
-    int newPL = -1;
-    int newML = -1;
-    int newTL = -1;
-
     PlayListItem playlistItem = mCore->getPlaylistItem(pIndex);
     if(playlistItem)
     {
@@ -81,22 +79,17 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
             TrackItem trackItem = mCore->getTrackItem(musicItem, tIndex);
             bool playing = mCore->playTrackItem(trackItem);
             if(playing)
-            {
-                newPL = pIndex;
-                newML = mIndex;
-                newTL = tIndex;
                 mCurrentItem = trackItem;
-            } else {
-                mCore->getPlayingIndex(&newPL, &newML, &newTL);
-            }
+            else
+                mCurrentItem = NULL;
         }
     }
 
     // Set playing index to playlist core
-    mCore->setPlayingIndex(newPL, newML, newTL);
+    mCore->setPlayingIndex(pIndex, mIndex, tIndex);
 
     // Set playing index to models
-    emit requestUpdateModelsPlayingIndex(newPL, newML, newTL);
+    emit requestUpdateModelsPlayingIndex(pIndex, mIndex, tIndex);
 
     updateWindowTitles();
 }
@@ -133,7 +126,7 @@ void TPlayerController::slotPauseButtonClicked()
 
     mCore->pause();
     QTimer::singleShot(3000, this, SLOT(delayStopTimer()));
-    mMainWindow->setButtonPlayChecked(true);
+    mMainWindow->setButtonPlayVisible(true);
     mMainWindow->setPlayState(tr("Paused"));
 }
 
@@ -202,7 +195,7 @@ void TPlayerController::slotStopButtonClicked()
 
     mCore->stop();
     QTimer::singleShot(3000, this, SLOT(delayStopTimer()));
-    mMainWindow->setButtonPlayChecked(true);
+    mMainWindow->setButtonPlayVisible(true);
     mMainWindow->setPlayState(tr("Stoped"));
     mMainWindow->setProgress(0, 0);
 }
@@ -274,16 +267,106 @@ void TPlayerController::updateWindowTitles()
         mGui->setCaption(mCore->getTrackItemName(mCurrentItem));
         mMainWindow->setTitles(titles);
         mMainWindow->setPlayState(tr("Playing"));
-        mMainWindow->setButtonPlayChecked(false);
+        mMainWindow->setButtonPlayVisible(false);
         startTimer(40);
     } else {
         stopTimer();
         mGui->setCaption("");
         mMainWindow->setTitles(QStringList()<<tr("Play failed."));
         mMainWindow->setPlayState(tr("Stoped"));
-        mMainWindow->setButtonPlayChecked(true);
+        mMainWindow->setButtonPlayVisible(true);
         resetVisualWidget();
     }
+}
+
+void TPlayerController::decidePlayNext()
+{
+    if(TPreferences::instance()->playMode()==MANUAL)
+    {
+        slotStopButtonClicked();
+    } else {
+        int pi = -1;
+        int mi = -1;
+        int ti = -1;
+        while(true)
+        {
+            getNextPlayindex(&pi, &mi, &ti);
+            slotRequestPlay(pi, mi, ti);
+            if(mCurrentItem)
+                break;
+
+            QThread::msleep(1);
+        }
+    }
+}
+
+void TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
+{
+    if(!mCore)
+        return;
+
+    PlayMode pm = TPreferences::instance()->playMode();
+    int pi = -1;
+    int mi = -1;
+    int ti = -1;
+    if(pm == RANDOM)
+    {
+        int playlistCount = mCore->playlistCount();
+        pi = ((float)rand()/RAND_MAX) * playlistCount;
+        if(pi >= playlistCount)
+            pi = playlistCount - 1;
+        else if (pi < 0)
+            pi = 0;
+
+        PlayListItem playlistItem = mCore->getPlaylistItem(pi);
+        int musicCount = mCore->getMusicItemCount(playlistItem);
+        mi = ((float)rand()/RAND_MAX) * musicCount;
+        if(mi >= musicCount)
+            mi = musicCount - 1;
+        else if (mi < 0)
+            mi = 0;
+
+        int trackCount = mCore->getTrackItemCount(mCore->getMusicItem(playlistItem, mi));
+        ti = ((float)rand()/RAND_MAX) * trackCount;
+        if(ti >= trackCount)
+            ti = trackCount - 1;
+        else if (ti < 0)
+            ti = 0;
+    } else {
+        mCore->getPlayingIndex(&pi, &mi, &ti);
+
+        if(pm != RECYCLE_TRACK)
+        {
+            PlayListItem playlistItem = mCore->getPlaylistItem(pi);
+            MusicItem musicItem = mCore->getMusicItem(playlistItem, mi);
+            int musicCount = mCore->getMusicItemCount(playlistItem);
+            int trackCount = mCore->getTrackItemCount(musicItem);
+            ti++;
+
+            if(ti >= trackCount)
+            {
+                ti = 0;
+                if (pm==RECYCLE_PLAY_LIST || pm==RECYCLE_ALL) {
+                    mi++;
+                    if(mi >= musicCount)
+                    {
+                        mi = 0;
+                        if(pm==RECYCLE_ALL)
+                        {
+                            pi++;
+                            if(pi >= mCore->playlistCount())
+                                pi = 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    qDebug() << "Next play index" << pi << mi << ti;
+    *pIndex = pi;
+    *mIndex = mi;
+    *tIndex = ti;
 }
 
 void TPlayerController::delayStopTimer()
@@ -307,29 +390,31 @@ void TPlayerController::slotTimerEvent()
     {
         if(mCore->isPlaying())
         {
+            TPreferences *prefs = TPreferences::instance();
             int playedTime = mCore->getCurrentPlayedTime();
             int fakeDuration = mCore->getTrackItemDuration(mCurrentItem);
             bool needCheck = false;
             if(fakeDuration <= 0)
             {
                 needCheck = true;
-                fakeDuration = 150000;
+                fakeDuration = prefs->pilotDuration();
             }
             mMainWindow->setProgress(playedTime, fakeDuration);
-            if(needCheck)
+            if(needCheck || TPreferences::instance()->forceCorrectDuration())
             {
                 int silentMSecs = 0;
                 mCore->getAudioData(ADT_SILENT_MICRO_SECONDS, &silentMSecs, NULL);
-                if(silentMSecs > 3000)
+                int checkDuration = prefs->checkDuration();
+                if(silentMSecs > checkDuration)
                 {
                     // Fix up duration manually
                     if(TPreferences::instance()->autoCorrectDuration())
-                        emit requestFixDuration(playedTime-3000);
-                    slotNextButtonClicked();                    
+                        emit requestFixDuration(playedTime-checkDuration);
+                    decidePlayNext();
                 }
             }
-            if(fakeDuration+500 <= playedTime) {
-                slotNextButtonClicked();
+            if(fakeDuration+100 <= playedTime) {
+                decidePlayNext();
             }
         }
 

@@ -21,9 +21,7 @@
 #include <QStringListModel>
 
 #include "optionplugininfo.h"
-#include "optiongeneral.h"
 #include "optionabout.h"
-#include "optionskin.h"
 
 #include "preferences.h"
 
@@ -54,10 +52,7 @@ TOptionsDialog::TOptionsDialog(QWidget *parent) :
             this,
             SLOT(slotCurrentRowChanged(QModelIndex, QModelIndex)));
 
-    TOptionGeneral *optionGeneral = new TOptionGeneral;
-    connect(optionGeneral, SIGNAL(displayTrayIconToggled(bool)), this, SIGNAL(displayTrayIconToggled(bool)));
-
-    mPages.append(optionGeneral);
+    mPages.append(new TOptionGeneral);
     mPages.append(new TOptionPluginInfo);
     mPages.append(new TOptionSkin);
     mPages.append(new TOptionAbout);
@@ -75,6 +70,11 @@ void TOptionsDialog::openPage(PageIndex pageIndex)
     locatePage(pageIndex);
 
     exec();
+}
+
+TOptionGeneral *TOptionsDialog::optionGeneral()
+{
+    return (TOptionGeneral*)mPages[PI_GENERAL];
 }
 
 void TOptionsDialog::locatePage(PageIndex pageIndex)

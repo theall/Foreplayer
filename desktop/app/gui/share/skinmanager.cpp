@@ -76,6 +76,25 @@ TSkin *TSkinManager::skinAt(int i)
     return NULL;
 }
 
+TSkin *TSkinManager::findSkin(QString skinFullPath)
+{
+    for(TSkin *skin : mSkins)
+        if(skin->fileName() == skinFullPath)
+            return skin;
+
+    return NULL;
+}
+
+int TSkinManager::indexOf(QString skinFullPath)
+{
+    for(int i=0;i<mSkins.size();i++)
+    {
+        if(mSkins[i]->fileName() == skinFullPath)
+            return i;
+    }
+    return -1;
+}
+
 int TSkinManager::size()
 {
     return mSkins.size();

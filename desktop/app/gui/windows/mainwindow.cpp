@@ -137,23 +137,21 @@ void TMainWindow::loadSettings()
         return;
 
     if(prefs->lyricWindowVisible())
-    {
-        mBtnLyrics->setChecked(true);
-        mBtnLyrics->clicked(true);
-    }
-    if(prefs->eqWindowVisible())
-    {
-        mBtnEqualizer->setChecked(true);
-        mBtnEqualizer->clicked(true);
-    }
-    if(prefs->playlistWindowVisible())
-    {
-        mBtnPlaylist->setChecked(true);
-        mBtnPlaylist->clicked(true);
-    }
+        mBtnLyrics->click();
 
-    mBtnMute->setChecked(prefs->muteEnabled());
+    if(prefs->eqWindowVisible())
+        mBtnEqualizer->click();
+
+    if(prefs->playlistWindowVisible())
+        mBtnPlaylist->click();
+
+    if(prefs->muteEnabled())
+        mBtnMute->click();
+
     mVolumeBar->setValue(prefs->volumeValue());
+
+    if(prefs->autoPlayAfterStarted())
+        mBtnPlay->click();
 }
 
 void TMainWindow::setProgress(int time, int total)
@@ -231,13 +229,31 @@ void TMainWindow::setContextMenu(QMenu *menu)
     mContextMenu = menu;
 }
 
-void TMainWindow::setButtonPlayChecked(bool checked)
+void TMainWindow::setButtonPlayVisible(bool checked)
 {
     if(mBtnPlay && mBtnPause)
     {
         mBtnPlay->setVisible(checked);
         mBtnPause->setVisible(!checked);
     }
+}
+
+void TMainWindow::clickStopButton()
+{
+    if(mBtnStop)
+        mBtnStop->click();
+}
+
+void TMainWindow::clickPlayButton()
+{
+    if(mBtnPlay)
+        mBtnPlay->click();
+}
+
+void TMainWindow::clickNextButton()
+{
+    if(mBtnNext)
+        mBtnNext->click();
 }
 
 void TMainWindow::upVolume(float factor)

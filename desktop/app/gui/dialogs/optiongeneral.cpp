@@ -38,10 +38,10 @@ TOptionGeneral::TOptionGeneral(QWidget *parent) :
         ui->cmbLanguage->addItem(string, name);
     }
     ui->cmbLanguage->model()->sort(0);
-    ui->cmbLanguage->insertItem(0, tr("System default"));
+    ui->cmbLanguage->insertItem(0, tr("Default"));
     ui->cmbLanguage->blockSignals(false);
 
-    // Not found (-1) ends up at index 0, system default
+    // Not found (-1) ends up at index 0, set default language
     int languageIndex = ui->cmbLanguage->findData(pref->language());
     if (languageIndex == -1)
         languageIndex = 0;
@@ -50,6 +50,21 @@ TOptionGeneral::TOptionGeneral(QWidget *parent) :
     ui->ckbAutoPlay->setChecked(pref->autoPlayAfterStarted());
     ui->ckbMultiInstance->setChecked(pref->enableMultiInstance());
     ui->ckbTrayIcon->setChecked(pref->displayTrayIcon());
+
+    if(pref->autoCorrectDuration())
+        ui->rbAuto->setChecked(true);
+    else if(pref->forceCorrectDuration())
+        ui->rbForce->setChecked(true);
+    else
+        ui->rbDisable->setChecked(true);
+
+    ui->rbForce->setVisible(false);
+
+    ui->sbCheckDuration->setValue(pref->checkDuration());
+
+    QTime t(0, 0, 0, 0);
+    t = t.addMSecs(pref->pilotDuration());
+    ui->tePlayDuration->setTime(t);
 
     connect(ui->ckbTrayIcon, SIGNAL(toggled(bool)), this, SIGNAL(displayTrayIconToggled(bool)));
 }
@@ -105,5 +120,5 @@ void TOptionGeneral::on_tePlayDuration_timeChanged(const QTime &time)
 {
     QTime t(time);
     t.setHMS(0, 0, 0);
-    TPreferences::instance()->setPilotDuration(time.secsTo(t));
+    TPreferences::instance()->setPilotDuration(t.msecsTo(time));
 }

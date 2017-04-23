@@ -129,6 +129,7 @@ private:
     bool mCurrentViewMusic;
     QMutex mExportMissionsLock;
     void fillPropertyDialog();
+    void locateIndex(int pi, int mi, int ti);
 };
 
 #endif // TPLAYLISTCONTROLLER_H

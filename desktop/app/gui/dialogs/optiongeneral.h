@@ -40,15 +40,10 @@ private slots:
     void on_ckbAutoPlay_toggled(bool checked);
     void on_ckbTrayIcon_toggled(bool checked);
     void on_ckbMultiInstance_toggled(bool checked);
-
     void on_rbDisable_toggled(bool checked);
-
     void on_rbAuto_toggled(bool checked);
-
     void on_rbForce_toggled(bool checked);
-
     void on_sbCheckDuration_valueChanged(int arg1);
-
     void on_tePlayDuration_timeChanged(const QTime &time);
 
 private:

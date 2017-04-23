@@ -25,30 +25,21 @@ class TPlaymodeMenu : public TAbstractMenu
     Q_OBJECT
 public:
     TPlaymodeMenu(QWidget *parent = 0);
+    ~TPlaymodeMenu();
 
-signals:
-    void onSingleOnceTriggered();
-    void onSingleRecycleTriggered();
-    void onTracklistRecycleTriggered();
-    void onTracklistShuffleTriggered();
-    void onShuffleAllTriggered();
-    void onRecycleAllTriggered();
-    void onTracklistOnceTriggered();
-    void onInorderOnceTriggered();
+    void loadSettings();
 
 private slots:
     void slotActionTriggered(bool);
 
 private:
     QAction *mLastActivedAction;
-    QAction *mActionSingleOnce;
-    QAction *mActionSingleRecycle;
-    QAction *mActionTracklistRecycle;
-    QAction *mActionTracklistShuffle;
-    QAction *mActionShuffleAll;
+    QAction *mActionManual;
+    QAction *mActionRecycleTrack;
+    QAction *mActionRecycleTracklist;
+    QAction *mActionRecyclePlaylist;
     QAction *mActionRecycleAll;
-    QAction *mActionTracklistOnce;
-    QAction *mActionInorderOnce;
+    QAction *mActionRandom;
 
     // TAbstractMenu interface
 public:

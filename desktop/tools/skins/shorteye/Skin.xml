@@ -1,4 +1,4 @@
-<skin version="2" name="fulkfour" author="I-DiDi" url="http://hi.baidu.com/hasaddl040309" email="ididi2009@163.com" transparent_color="#ff00ff">
+<skin version="2" name="shorteye" author="I-DiDi" url="http://hi.baidu.com/hasaddl040309" email="ididi2009@163.com" transparent_color="#ff00ff">
     <player_window image="player_skin.bmp">
         <play position="135, 96, 171, 129" image="play.bmp"/>
         <pause position="135, 96, 171, 129" image="pause.bmp"/>

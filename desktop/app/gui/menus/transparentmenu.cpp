@@ -109,27 +109,27 @@ void TTransparentMenu::loadSettings()
 {
     float opacity = TPreferences::instance()->opacity();
     if(opacity >= 1)
-        mActionDisable->setChecked(true);
+        mActionDisable->trigger();
     else if(opacity>=0.9)
-        mActionTransparent1->setChecked(true);
+        mActionTransparent1->trigger();
     else if(opacity>=0.8)
-        mActionTransparent2->setChecked(true);
+        mActionTransparent2->trigger();
     else if(opacity>=0.7)
-        mActionTransparent3->setChecked(true);
+        mActionTransparent3->trigger();
     else if(opacity>=0.6)
-        mActionTransparent4->setChecked(true);
+        mActionTransparent4->trigger();
     else if(opacity>=0.5)
-        mActionTransparent5->setChecked(true);
+        mActionTransparent5->trigger();
     else if(opacity>=0.4)
-        mActionTransparent6->setChecked(true);
+        mActionTransparent6->trigger();
     else if(opacity>=0.3)
-        mActionTransparent7->setChecked(true);
+        mActionTransparent7->trigger();
     else if(opacity>=0.2)
-        mActionTransparent8->setChecked(true);
+        mActionTransparent8->trigger();
     else if(opacity>=0.1)
-        mActionTransparent9->setChecked(true);
+        mActionTransparent9->trigger();
     else
-        mActionDisable->setChecked(true);
+        mActionDisable->trigger();
 }
 
 void TTransparentMenu::slotActionTriggered(bool)

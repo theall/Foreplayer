@@ -115,6 +115,9 @@ int TApp::start()
 
 bool TApp::isRunning()
 {
+    if(TPreferences::instance()->enableMultiInstance())
+        return false;
+
 #ifndef QT_DEBUG
     static QSharedMemory data(GLOBAL_SHARE_MEMORY_KEY);
     if(!data.create(1))
@@ -127,5 +130,6 @@ bool TApp::isRunning()
         return true;
     }
 #endif
+
     return false;
 }

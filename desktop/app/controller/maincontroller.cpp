@@ -61,8 +61,8 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
 
     connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
 
-    if(!manager->tryLoadSkins())
-        return false;
+//    if(!manager->tryLoadSkins())
+//        return false;
 
     mPlayerController->joint(manager, core);
     mPlaylistController->joint(manager, core);

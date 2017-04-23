@@ -51,7 +51,10 @@ public:
 
     void setContextMenu(QMenu *menu);
 
-    void setButtonPlayChecked(bool checked);
+    void setButtonPlayVisible(bool checked);
+    void clickStopButton();
+    void clickPlayButton();
+    void clickNextButton();
 
     void upVolume(float factor);
 

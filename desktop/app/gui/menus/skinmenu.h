@@ -26,9 +26,11 @@ class TSkinMenu : public TAbstractMenu
 public:
     TSkinMenu(QWidget *parent = 0);
 
+    void loadSettings();
+
 signals:
     void requestLoadSkin(int index);
-    void requestSkinNames(QStringList &skinNames);
+    void requestSkinNames(QStringList &skinNames, int &currentIndex);
 
 private slots:
     void slotSkinTriggered(bool checked);

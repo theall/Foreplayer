@@ -2,13 +2,11 @@
 
 int main(int argc, char *argv[])
 {
-    if(!TApp::isRunning())
+    TApp app(argc, argv);
+    if(app.isRunning())
     {
-        TApp app(argc, argv);
-        return app.start();
-    } else {
         qDebug() << "Foreplayer is running.";
+        return 0;
     }
-
-    return 0;
+    return app.start();
 }

@@ -116,6 +116,7 @@ int TMissionsModel::rowCount(const QModelIndex &parent) const
 
     if(mExportMissions)
         return mExportMissions->size();
+
     return 0;
 }
 

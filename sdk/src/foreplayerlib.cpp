@@ -252,18 +252,27 @@ void FOREPLAYER_API foreplayer_send_cmd(
             TTrackItem *trackItem = (TTrackItem*)param2;
             if(trackItem && newDuration>=0 && newDuration!=trackItem->duration)
             {
+                int diff = newDuration - trackItem->duration;
                 trackItem->duration = newDuration;
-                ((TMusicItem*)param1)->setModified();
+                TMusicItem *musicItem = (TMusicItem*)param1;
+                if(musicItem)
+                {
+                    musicItem->setDuration(musicItem->duration()+diff);
+                    musicItem->setModified();
+                }
                 *(bool*)param4 = true;
             }
             *(bool*)param4 = false;
         }
         break;
     case CMD_GET_TRACK_ITEM_TYPE:
+        *(wstring*)param2 = param1?((TTrackItem*)param1)->system:L"";
         break;
     case CMD_GET_TRACK_ITEM_YEAR:
+        *(wstring*)param2 = param1?((TTrackItem*)param1)->year:L"";
         break;
     case CMD_GET_TRACK_ITEM_ADDITIONAL_INFO:
+        *(wstring*)param2 = param1?((TTrackItem*)param1)->additionalInfo:L"";
         break;
     case CMD_GET_TRACK_ITEM_ENABLED:
         *(bool*)param2 = param1?((TTrackItem*)param1)->enable:true;

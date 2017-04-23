@@ -101,6 +101,9 @@ void TLoopBuffer::update()
 void TLoopBuffer::read(byte *buf, int size)
 {
     int dataSize = mDataEnd - mDataStart;
+    if(dataSize < 0)
+        return;
+
     if(dataSize < size)
     {
         update();

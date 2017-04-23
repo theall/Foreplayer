@@ -36,3 +36,24 @@ bool TAbstractMenu::event(QEvent *event)
     }
     return QMenu::event(event);
 }
+
+void TAbstractMenu::closeEvent(QCloseEvent *ev)
+{
+#ifdef QT_DEBUG
+    QObjectList objects = children();
+    bool hasChildMenuVisible = false;
+    for(QObject *object : objects)
+    {
+        QMenu *menu = qobject_cast<QMenu*>(object);
+        if(menu && menu->isVisible())
+        {
+            hasChildMenuVisible = true;
+            break;
+        }
+    }
+    if(hasChildMenuVisible || rect().contains(mapFromGlobal(QCursor::pos())))
+        ev->ignore();
+    else
+#endif
+        ev->accept();
+}

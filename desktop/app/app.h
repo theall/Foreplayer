@@ -45,7 +45,7 @@ public:
     ~TApp();
 
     int start();
-    static bool isRunning();
+    bool isRunning();
 
 private:
     QApplication *mApp;

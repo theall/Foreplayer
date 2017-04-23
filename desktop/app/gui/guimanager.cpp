@@ -62,10 +62,10 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
   , mBrowserWindow(new TBrowserWindow)
   , mDesktopLyricWindow(new TDesktopLyricWindow)
   , mDesktopWindow(new TDesktopWindow)
-  , mPropertyDialog(new TPropertyDialog)
-  , mExportDialog(new TExportDialog)
-  , mExportMissionDialog(new TExportMissionsDialog)
-  , mOptionDialog(new TOptionsDialog)
+  , mPropertyDialog(new TPropertyDialog(mPlaylistWindow))
+  , mExportDialog(new TExportDialog(mPlaylistWindow))
+  , mExportMissionDialog(new TExportMissionsDialog(mPlaylistWindow))
+  , mOptionDialog(new TOptionsDialog(mMainWindow))
   , mMainMenu(new TMainMenu)
   , mTrayIcon(new QSystemTrayIcon)
   , mSkinManager(new TSkinManager)
@@ -127,7 +127,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mMainMenu->volumeControlMenu(), SIGNAL(onVolumeDownTriggered()), this, SLOT(slotVolumeDownTriggered()));
     connect(mMainMenu->volumeControlMenu(), SIGNAL(onVolumeUpTriggered()), this, SLOT(slotVolumeUpTriggered()));
     connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(int)), this, SLOT(slotRequestLoadSkin(int)));
-    connect(mMainMenu->skinMenu(), SIGNAL(requestSkinNames(QStringList&)), this, SLOT(slotRequestSkinNames(QStringList&)));
+    connect(mMainMenu->skinMenu(), SIGNAL(requestSkinNames(QStringList&,int&)), this, SLOT(slotRequestSkinNames(QStringList&,int&)));
     connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
 
     // Tray icon
@@ -135,7 +135,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mTrayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this, SLOT(slotTrayIconActivated(QSystemTrayIcon::ActivationReason)));
 
     // Options dialog
-    connect(mOptionDialog, SIGNAL(displayTrayIconToggled(bool)), this, SLOT(slotDisplayTrayIconToggled(bool)));
+    connect(mOptionDialog->optionGeneral(), SIGNAL(displayTrayIconToggled(bool)), this, SLOT(slotDisplayTrayIconToggled(bool)));
 }
 
 TGuiManager::~TGuiManager()
@@ -180,26 +180,6 @@ TGuiManager::~TGuiManager()
          delete mDesktopWindow;
          mDesktopWindow = NULL;
     }
-    if(mPropertyDialog)
-    {
-         delete mPropertyDialog;
-         mPropertyDialog = NULL;
-    }
-    if(mExportDialog)
-    {
-         delete mExportDialog;
-         mExportDialog = NULL;
-    }
-    if(mExportMissionDialog)
-    {
-         delete mExportMissionDialog;
-         mExportMissionDialog = NULL;
-    }
-    if(mOptionDialog)
-    {
-         delete mOptionDialog;
-         mOptionDialog = NULL;
-    }
     if(mMainMenu)
     {
          delete mMainMenu;
@@ -228,11 +208,6 @@ bool TGuiManager::loadSkin(QString fileName)
     if(result)
     {
         loadSkin(&skin);
-    } else {
-        QMessageBox::critical(
-            mMainWindow,
-            tr("Load skin error."),
-            skin.lastError());
     }
 
     return result;
@@ -241,12 +216,12 @@ bool TGuiManager::loadSkin(QString fileName)
 bool TGuiManager::tryLoadSkins()
 {
     bool ret = false;
-    QString skinPath = TPreferences::instance()->skinPath();
-    if(!skinPath.isEmpty())
-        ret = loadSkin(skinPath);
-    else {
-        if(mSkinManager)
-        {
+    if(mSkinManager)
+    {
+        TSkin *skin = mSkinManager->findSkin(TPreferences::instance()->skinPath());
+        if(skin)
+            ret = loadSkin(skin);
+        else {
             for(int i=0;i<mSkinManager->size();i++)
             {
                 TSkin *skin = mSkinManager->skinAt(i);
@@ -258,7 +233,6 @@ bool TGuiManager::tryLoadSkins()
             }
         }
     }
-
     return ret;
 }
 
@@ -288,31 +262,19 @@ void TGuiManager::open()
     mMainWindow->loadSettings();
 
     // Load settings
-    slotVolumeToggled(prefs->muteEnabled());
-
-//    if(prefs->lyricWindowVisible())
-//    {
-//        mMainWindow->checkLyricButton(true);
-//        //mLyricWindow->show();
-//    }
-//    if(prefs->eqWindowVisible())
-//    {
-//        mMainWindow->checkEqualizerButton(true);
-//        mEqualizerWindow->show();
-//    }
-//    if(prefs->playlistWindowVisible())
-//    {
-//        mMainWindow->checkPlaylistButton(true);
-//        mPlaylistWindow->show();
-//    }
     //mBrowserWindow->show();
 
-    slotVolumeToggled(prefs->muteEnabled());
+    mMainMenu->transparentMenu()->loadSettings();
+    mMainMenu->playmodeMenu()->loadSettings();
+
+    if(!tryLoadSkins())
+        QMessageBox::critical(
+            mMainWindow,
+            tr("Error."),
+            tr("Can't load skin."));
 
     if(prefs->displayTrayIcon())
         mTrayIcon->show();
-
-    mMainMenu->transparentMenu()->loadSettings();
 }
 
 void TGuiManager::close()
@@ -322,7 +284,7 @@ void TGuiManager::close()
 
 void TGuiManager::setCaption(QString caption)
 {
-    QString newCaption = tr("%1 - %2").arg(caption).arg(QApplication::applicationName());
+    QString newCaption = tr("%1 - %2 ").arg(caption).arg(QApplication::applicationName());
     mMainWindow->setCaption(newCaption);
     mTrayIcon->setToolTip(newCaption);
 }
@@ -666,10 +628,11 @@ void TGuiManager::slotRequestLoadSkin(int skinIndex)
         loadSkin(skin);
 }
 
-void TGuiManager::slotRequestSkinNames(QStringList &names)
+void TGuiManager::slotRequestSkinNames(QStringList &names, int &currentIndex)
 {
     mSkinManager->reload();
     names = mSkinManager->skinNames();
+    currentIndex = mSkinManager->indexOf(TPreferences::instance()->skinPath());
 }
 
 void TGuiManager::slotMainWindowActivationChanged()
@@ -914,7 +877,14 @@ bool TGuiManager::loadSkin(TSkin *skin)
     mBrowserWindow->loadFromSkin(root.firstChildElement(TAG_BROWSER_WINDOW), skin);
     mDesktopLyricWindow->loadFromSkin(root.firstChildElement(TAG_DESKLRC_BAR), skin);
 
-    mTrayIcon->setIcon(mMainWindow->windowIcon());
+    QIcon appIcon = mMainWindow->windowIcon();
+    mPlaylistWindow->setWindowIcon(appIcon);
+    mEqualizerWindow->setWindowIcon(appIcon);
+    mLyricWindow->setWindowIcon(appIcon);
+    mBrowserWindow->setWindowIcon(appIcon);
+    mDesktopLyricWindow->setWindowIcon(appIcon);
+
+    mTrayIcon->setIcon(appIcon);
 
     mCurrentSkinFile = skin->fileName();
     TPreferences::instance()->setSkinPath(mCurrentSkinFile);

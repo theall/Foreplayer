@@ -20,6 +20,9 @@
 
 #include "abstractdialog.h"
 
+#include "optiongeneral.h"
+#include "optionskin.h"
+
 #include <QItemSelectionModel>
 
 namespace Ui {
@@ -45,9 +48,7 @@ public:
     ~TOptionsDialog();
 
     void openPage(PageIndex pageIndex);
-
-signals:
-    void displayTrayIconToggled(bool);
+    TOptionGeneral *optionGeneral();
 
 private:
     Ui::TOptionsDialog *ui;

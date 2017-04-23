@@ -39,16 +39,19 @@ TMusicInfo *TPlayerCore::parse(wstring fileName)
 
 bool TPlayerCore::playTrack(TTrackItem *trackItem)
 {
-    if(!mPluginManager || !mPlayThread)
+    if(!mPlayThread)
+        return false;
+
+    mPlayerState = PS_STOPED;
+    mPlayThread->stop();
+
+    if(!trackItem || !mPluginManager)
         return false;
 
     TTrackInfo trackInfo;
     trackInfo.index = _wtoi(trackItem->index.c_str());
     trackInfo.indexName = trackItem->indexName;
     trackInfo.musicFileName = trackItem->fileName;
-
-    mPlayerState = PS_STOPED;
-    mPlayThread->stop();
 
     bool result = false;
     // Find a backend plugin which can process this track

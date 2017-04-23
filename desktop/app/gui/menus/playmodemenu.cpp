@@ -17,49 +17,78 @@
  */
 #include "playmodemenu.h"
 
+#include "preferences.h"
+
 TPlaymodeMenu::TPlaymodeMenu(QWidget *parent) :
     TAbstractMenu(parent),
     mLastActivedAction(NULL)
 {
-    mActionSingleOnce = new QAction(this);
-    mActionSingleRecycle = new QAction(this);
-    mActionTracklistRecycle = new QAction(this);
-    mActionTracklistShuffle = new QAction(this);
-    mActionShuffleAll = new QAction(this);
+    mActionManual = new QAction(this);
+    mActionRecycleTrack = new QAction(this);
+    mActionRecycleTracklist = new QAction(this);
+    mActionRecyclePlaylist = new QAction(this);
     mActionRecycleAll = new QAction(this);
-    mActionTracklistOnce = new QAction(this);
-    mActionInorderOnce = new QAction(this);
+    mActionRandom = new QAction(this);
 
-    mActionSingleOnce->setCheckable(true);
-    mActionSingleRecycle->setCheckable(true);
-    mActionTracklistRecycle->setCheckable(true);
-    mActionTracklistShuffle->setCheckable(true);
-    mActionShuffleAll->setCheckable(true);
+    mActionManual->setCheckable(true);
+    mActionRecycleTrack->setCheckable(true);
+    mActionRecycleTracklist->setCheckable(true);
+    mActionRecyclePlaylist->setCheckable(true);
     mActionRecycleAll->setCheckable(true);
-    mActionTracklistOnce->setCheckable(true);
-    mActionInorderOnce->setCheckable(true);
+    mActionRandom->setCheckable(true);
 
-    connect(mActionSingleOnce, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionSingleRecycle, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionTracklistRecycle, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionTracklistShuffle, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionShuffleAll, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionManual, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionRecycleTrack, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionRecycleTracklist, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionRecyclePlaylist, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
     connect(mActionRecycleAll, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionTracklistOnce, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionInorderOnce, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionRandom, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
 
-    addAction(mActionSingleOnce);
-    addAction(mActionSingleRecycle);
+    addAction(mActionManual);
     addSeparator();
-    addAction(mActionTracklistOnce);
-    addAction(mActionTracklistRecycle);
-    addAction(mActionTracklistShuffle);
+    addAction(mActionRecycleTrack);
+    addAction(mActionRecycleTracklist);
+    addAction(mActionRecyclePlaylist);
     addSeparator();
-    addAction(mActionInorderOnce);
-    addAction(mActionRecycleAll);
-    addAction(mActionShuffleAll);
+    addAction(mActionRandom);
 
     retranslateUi();
+}
+
+TPlaymodeMenu::~TPlaymodeMenu()
+{
+    PlayMode pm = MANUAL;
+    if(mActionRandom->isChecked())
+        pm = RANDOM;
+    else if(mActionRecycleAll->isChecked())
+        pm = RECYCLE_ALL;
+    else if(mActionRecycleTrack->isChecked())
+        pm = RECYCLE_TRACK;
+    else if(mActionRecycleTracklist->isChecked())
+        pm = RECYCLE_TRACK_LIST;
+    else if(mActionRecycleTracklist->isChecked())
+        pm = RECYCLE_PLAY_LIST;
+    else if(mActionManual->isChecked())
+        pm = MANUAL;
+
+    TPreferences::instance()->setPlayMode(pm);
+}
+
+void TPlaymodeMenu::loadSettings()
+{
+    PlayMode pm = TPreferences::instance()->playMode();
+    if(pm==RANDOM)
+        mActionRandom->trigger();
+    else if(pm==RECYCLE_ALL)
+        mActionRecycleAll->trigger();
+    else if(pm==RECYCLE_TRACK_LIST)
+        mActionRecycleTracklist->trigger();
+    else if(pm==RECYCLE_TRACK)
+        mActionRecycleTrack->trigger();
+    else if(pm==RECYCLE_PLAY_LIST)
+        mActionRecyclePlaylist->trigger();
+    else
+        mActionManual->trigger();
 }
 
 void TPlaymodeMenu::slotActionTriggered(bool triggered)
@@ -73,40 +102,30 @@ void TPlaymodeMenu::slotActionTriggered(bool triggered)
 
     mLastActivedAction = action;
 
-    if(action==mActionSingleOnce) {
-        emit onSingleOnceTriggered();
+    PlayMode pm = MANUAL;
+    if(action==mActionRecycleTrack) {
+        pm = RECYCLE_TRACK;
+    } else if(action==mActionRecycleTracklist) {
+        pm = RECYCLE_TRACK_LIST;
+    } else if(action==mActionRecyclePlaylist) {
+        pm = RECYCLE_PLAY_LIST;
+    } else if(action==mActionRecycleAll) {
+        pm = RECYCLE_ALL;
+    } else if(action==mActionRandom) {
+        pm = RANDOM;
+    } else if(action==mActionManual) {
+        pm = MANUAL;
     }
-    else if(action==mActionSingleRecycle) {
-        emit onSingleRecycleTriggered();
-    }
-    else if(action==mActionTracklistRecycle) {
-        emit onTracklistRecycleTriggered();
-    }
-    else if(action==mActionTracklistShuffle) {
-        emit onTracklistShuffleTriggered();
-    }
-    else if(action==mActionShuffleAll) {
-        emit onShuffleAllTriggered();
-    }
-    else if(action==mActionRecycleAll) {
-        emit onRecycleAllTriggered();
-    }
-    else if(action==mActionTracklistOnce) {
-        emit onTracklistOnceTriggered();
-    }
-    else if(action==mActionInorderOnce) {
-        emit onInorderOnceTriggered();
-    }
+
+    TPreferences::instance()->setPlayMode(pm);
 }
 
 void TPlaymodeMenu::retranslateUi()
 {
-    mActionSingleOnce->setText(tr("Track/Music once"));
-    mActionSingleRecycle->setText(tr("Track/Music recycle"));
-    mActionTracklistRecycle->setText(tr("Tracklist recycle"));
-    mActionTracklistShuffle->setText(tr("Tracklist shuffle"));
-    mActionShuffleAll->setText(tr("Shuffle all"));
+    mActionManual->setText(tr("Manual"));
+    mActionRecycleTrack->setText(tr("Recycle track"));
+    mActionRecycleTracklist->setText(tr("Recycle tracklist"));
+    mActionRecyclePlaylist->setText(tr("Recycle playlist"));
     mActionRecycleAll->setText(tr("Recycle all"));
-    mActionTracklistOnce->setText(tr("Tracklist once"));
-    mActionInorderOnce->setText(tr("Inorder once"));
+    mActionRandom->setText(tr("Random"));
 }

@@ -33,6 +33,10 @@ public:
     // QObject interface
 public:
     bool event(QEvent *) Q_DECL_OVERRIDE;
+
+    // QWidget interface
+protected:
+    void closeEvent(QCloseEvent *) Q_DECL_OVERRIDE;
 };
 
 #endif // TABSTRACTMENU_H

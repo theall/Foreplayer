@@ -158,8 +158,13 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     // Misc
     connect(mTracklistModel, SIGNAL(requestAdjustColumnWidth()), this, SLOT(slotRequestAdjustColumnWidth()));
 
-    int playingPlaylistIndex = mCore->getPlayingIndex(IT_PL);
+    int playingPlaylistIndex = -1;
+    int playingMusicIndex = -1;
+    int playingTrackIndex = -1;
+    mCore->getPlayingIndex(&playingPlaylistIndex, &playingMusicIndex, &playingTrackIndex);
     slotPlaylistIndexChanged(playingPlaylistIndex);
+
+    locateIndex(playingPlaylistIndex, playingMusicIndex, playingTrackIndex);
 
     return true;
 }
@@ -741,6 +746,10 @@ void TPlaylistController::slotRequestViewTrackItem(int row)
 
 void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti)
 {
+    slotPlaylistIndexChanged(pi);
+    locateIndex(pi, mi, ti);
+    return;
+
     if(mPlaylistModel && mMusiclistModel && mTracklistModel && mCore)
     {
         mPlaylistModel->setPlayingIndex(pi);
@@ -756,6 +765,7 @@ void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, in
             mMusiclistModel->setPlayingIndex(-1);
             mTracklistModel->setPlayingIndex(-1);
         }
+        locateIndex(pi, mi, ti);
     }
 }
 
@@ -843,5 +853,24 @@ void TPlaylistController::fillPropertyDialog()
                 mPropertyDialog->setIndex(mCurrentViewRow+1, trackCount);
             }
         }
+    }
+}
+
+void TPlaylistController::locateIndex(int pi, int mi, int ti)
+{
+    if(mPlaylistView)
+    {
+        mPlaylistView->selectRow(pi);
+        mPlaylistView->scrollTo(mPlaylistModel->index(pi, 0), QAbstractItemView::PositionAtTop);
+    }
+    if(mMusiclistView)
+    {
+        //mMusiclistView->selectRow(mi);
+        mMusiclistView->scrollTo(mMusiclistModel->index(mi, 1), QAbstractItemView::PositionAtTop);
+    }
+    if(mTracklistView)
+    {
+        //mTracklistView->selectRow(ti);
+        mTracklistView->scrollTo(mTracklistModel->index(ti, 1), QAbstractItemView::PositionAtTop);
     }
 }

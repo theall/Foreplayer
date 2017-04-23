@@ -101,7 +101,7 @@ private slots:
     void slotVolumeToggled(bool);
     void slotOnOpacityChanged(qreal value);
     void slotRequestLoadSkin(int skinIndex);
-    void slotRequestSkinNames(QStringList &names);
+    void slotRequestSkinNames(QStringList &names, int &currentIndex);
     void slotMainWindowActivationChanged();
     void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
     void slotVolumeUpTriggered();

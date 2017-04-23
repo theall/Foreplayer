@@ -27,6 +27,11 @@ TSkinMenu::TSkinMenu(QWidget *parent) :
 
 }
 
+void TSkinMenu::loadSettings()
+{
+
+}
+
 void TSkinMenu::slotSkinTriggered(bool checked)
 {
     QAction *action = qobject_cast<QAction*>(sender());
@@ -58,12 +63,18 @@ void TSkinMenu::showEvent(QShowEvent *event)
 {
     clear();
     QStringList skinNames;
-    emit requestSkinNames(skinNames);
+    int currentIndex;
+    emit requestSkinNames(skinNames, currentIndex);
     for(int i=0;i<skinNames.count();i++)
     {
         QAction *action = addAction(skinNames[i], this, SLOT(slotSkinTriggered(bool)));
         action->setCheckable(true);
         action->setData(i);
+        if(currentIndex == i)
+        {
+            action->setChecked(true);
+            mLastActivedAction = action;
+        }
     }
     TAbstractMenu::showEvent(event);
 }
