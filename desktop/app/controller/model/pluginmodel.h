@@ -15,29 +15,29 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#ifndef OPTIONABOUT_H
-#define OPTIONABOUT_H
+#ifndef PLUGINMODEL_H
+#define PLUGINMODEL_H
 
-#include "optionpagebase.h"
+#include <QAbstractTableModel>
 
-namespace Ui {
-class TOptionAbout;
-}
+#include "../core/core.h"
 
-class TOptionAbout : public TOptionPageBase
+class TPluginModel : public QAbstractTableModel
 {
-    Q_OBJECT
-
 public:
-    explicit TOptionAbout(QWidget *parent = 0);
-    ~TOptionAbout();
+    TPluginModel(QObject *parent = 0);
+    ~TPluginModel();
+
+    void setPlayerCore(TCore *core);
 
 private:
-    Ui::TOptionAbout *ui;
+    TCore *mCore;
 
-    // TOptionPageBase interface
-public:
-    void retranslateUi() Q_DECL_OVERRIDE;
+    // QAbstractItemModel interface
+    int rowCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;
+    int columnCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;
+    QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
+    QVariant headerData(int section, Qt::Orientation orientation, int role) const Q_DECL_OVERRIDE;
 };
 
-#endif // OPTIONABOUT_H
+#endif // PLUGINMODEL_H

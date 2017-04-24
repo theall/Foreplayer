@@ -18,13 +18,26 @@
 #ifndef OPTIONPLUGININFO_H
 #define OPTIONPLUGININFO_H
 
-#include <QWidget>
+#include "optionpagebase.h"
 
 namespace Ui {
 class TOptionPluginInfo;
 }
 
-class TOptionPluginInfo : public QWidget
+struct TPluginInfo
+{
+    QString name;
+    QString manufacture;
+    QString contact;
+    QString description;
+    QString createDate;
+    QString fileName;
+    QMap<QString, QString> suffixDesc;
+};
+
+typedef QList<TPluginInfo*> TPluginInfos;
+
+class TOptionPluginInfo : public TOptionPageBase
 {
     Q_OBJECT
 
@@ -32,8 +45,16 @@ public:
     explicit TOptionPluginInfo(QWidget *parent = 0);
     ~TOptionPluginInfo();
 
+signals:
+    void requestPluginInformation(TPluginInfos&);
+
 private:
     Ui::TOptionPluginInfo *ui;
+    TPluginInfos mPluginInfos;
+
+    // TOptionPageBase interface
+public:
+    void retranslateUi() Q_DECL_OVERRIDE;
 };
 
 #endif // OPTIONPLUGININFO_H

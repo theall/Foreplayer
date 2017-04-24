@@ -22,7 +22,7 @@
 #include "preferences.h"
 
 TOptionGeneral::TOptionGeneral(QWidget *parent) :
-    QWidget(parent),
+    TOptionPageBase(parent),
     ui(new Ui::TOptionGeneral)
 {
     ui->setupUi(this);
@@ -78,6 +78,7 @@ void TOptionGeneral::on_cmbLanguage_currentIndexChanged(int index)
 {
     const QString language = ui->cmbLanguage->itemData(index).toString();
     TPreferences::instance()->setLanguage(language);
+    TLanguageManager::instance()->installTranslators();
 }
 
 void TOptionGeneral::on_ckbAutoPlay_toggled(bool checked)
@@ -121,4 +122,9 @@ void TOptionGeneral::on_tePlayDuration_timeChanged(const QTime &time)
     QTime t(time);
     t.setHMS(0, 0, 0);
     TPreferences::instance()->setPilotDuration(t.msecsTo(time));
+}
+
+void TOptionGeneral::retranslateUi()
+{
+    ui->retranslateUi(this);
 }

@@ -19,7 +19,7 @@
 #include "ui_optionabout.h"
 
 TOptionAbout::TOptionAbout(QWidget *parent) :
-    QWidget(parent),
+    TOptionPageBase(parent),
     ui(new Ui::TOptionAbout)
 {
     ui->setupUi(this);
@@ -28,4 +28,9 @@ TOptionAbout::TOptionAbout(QWidget *parent) :
 TOptionAbout::~TOptionAbout()
 {
     delete ui;
+}
+
+void TOptionAbout::retranslateUi()
+{
+    ui->retranslateUi(this);
 }

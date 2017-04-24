@@ -15,17 +15,19 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#include "aboutdialog.h"
-#include "ui_aboutdialog.h"
+#include "optionpagebase.h"
 
-TAboutDialog::TAboutDialog(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::TAboutDialog)
+TOptionPageBase::TOptionPageBase(QWidget *parent) :
+    QWidget(parent)
 {
-    ui->setupUi(this);
+
 }
 
-TAboutDialog::~TAboutDialog()
+bool TOptionPageBase::event(QEvent *event)
 {
-    delete ui;
+    if(event->type()==QEvent::LanguageChange)
+    {
+        retranslateUi();
+    }
+    return QWidget::event(event);
 }

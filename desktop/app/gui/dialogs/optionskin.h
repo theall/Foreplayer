@@ -18,13 +18,15 @@
 #ifndef OPTIONSKIN_H
 #define OPTIONSKIN_H
 
-#include <QWidget>
+#include "optionpagebase.h"
+
+#include <QShowEvent>
 
 namespace Ui {
 class TOptionSkin;
 }
 
-class TOptionSkin : public QWidget
+class TOptionSkin : public TOptionPageBase
 {
     Q_OBJECT
 
@@ -33,10 +35,25 @@ public:
     ~TOptionSkin();
 
 signals:
-    void requestSkinNames(QStringList &skinNames);
+    void requestLoadSkin(int index);
+    void requestSkinNames(QStringList &skinNames, int &currentIndex);
+    void requestSkinInfo(int index, QPixmap &preview, QString &author, QString &website, QString &contact);
+
+private slots:
+    void slotCurrentSkinIndexChanged(QModelIndex,QModelIndex);
 
 private:
     Ui::TOptionSkin *ui;
+
+    // QWidget interface
+protected:
+    void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
+private slots:
+    void on_btnApply_clicked();
+
+    // TOptionPageBase interface
+public:
+    void retranslateUi() Q_DECL_OVERRIDE;
 };
 
 #endif // OPTIONSKIN_H

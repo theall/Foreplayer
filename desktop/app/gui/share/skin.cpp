@@ -51,18 +51,15 @@ bool TSkin::load(QString fileName)
     mError.clear();
 
     mFileName = fileName;
+    mFileDir = QFileInfo(fileName).dir();
 
     if(fileSuffix=="xml")
         success = loadFromXmlFile(fileName);
     else
         success = loadFromZipFile(fileName);
 
-    if(success)
-    {
-        mFileDir = QFileInfo(fileName).dir();
-    } else {
+    if(!success)
         qDebug() << mError;
-    }
 
     return success;
 }
@@ -126,6 +123,11 @@ QIcon TSkin::findIcon(QString fileName)
     if(mZipfile)
         return readIconFromZip(fileName);
     return QIcon(mFileDir.absoluteFilePath(fileName));
+}
+
+QPixmap TSkin::preview()
+{
+    return mPreview;
 }
 
 bool TSkin::loadFromXmlFile(QString fileName)
@@ -197,6 +199,7 @@ bool TSkin::parseXmlDocument(const QByteArray &byteArray)
     mUrl         = mRootElement.attribute(ATTR_URL);
     mEmail       = mRootElement.attribute(ATTR_EMAIL);
     mTransparentColor = QColor(mRootElement.attribute(ATTR_TRANSPARENT_COLOR));
+    mPreview = findPixmap(mRootElement.firstChildElement(TAG_PLAYER_WINDOW).attribute(ATTR_IMAGE));
 
     return true;
 }

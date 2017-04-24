@@ -102,6 +102,8 @@ private slots:
     void slotOnOpacityChanged(qreal value);
     void slotRequestLoadSkin(int skinIndex);
     void slotRequestSkinNames(QStringList &names, int &currentIndex);
+    void slotRequestSkinInfo(int,QPixmap&,QString&,QString&,QString&);
+
     void slotMainWindowActivationChanged();
     void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
     void slotVolumeUpTriggered();

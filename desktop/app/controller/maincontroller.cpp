@@ -26,7 +26,7 @@ TMainController::TMainController(QObject *parent) :
   , mPlayerController(new TPlayerController(this))
   , mPlaylistController(new TPlaylistController(this))
   , mEqualizerController(new TEqualizerController(this))
-
+  , mOptionsController(new TOptionsController(this))
 {
     connect(mPlaylistController,
             SIGNAL(requestPlay(int,int,int)),
@@ -61,12 +61,10 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
 
     connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
 
-//    if(!manager->tryLoadSkins())
-//        return false;
-
     mPlayerController->joint(manager, core);
     mPlaylistController->joint(manager, core);
     mEqualizerController->joint(manager, core);
+    mOptionsController->joint(manager, core);
 
     manager->open();
 

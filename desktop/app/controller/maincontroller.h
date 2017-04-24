@@ -15,16 +15,18 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#ifndef TCONTROLLER_H
-#define TCONTROLLER_H
+#ifndef TMAINCONTROLLER_H
+#define TMAINCONTROLLER_H
 
 #include "playercontroller.h"
 #include "playlistcontroller.h"
 #include "equalizercontroller.h"
+#include "optionscontroller.h"
 
 class TMainController : public TAbstractController
 {
     Q_OBJECT
+
 public:
     explicit TMainController(QObject *parent = 0);
     ~TMainController();
@@ -42,8 +44,10 @@ private:
     TPlayerController *mPlayerController;
     TPlaylistController *mPlaylistController;
     TEqualizerController *mEqualizerController;
+    TOptionsController *mOptionsController;
+
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;
 };
 
-#endif // TCONTROLLER_H
+#endif // TMAINCONTROLLER_H

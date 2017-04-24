@@ -18,13 +18,13 @@
 #ifndef OPTIONGENERAL_H
 #define OPTIONGENERAL_H
 
-#include <QWidget>
+#include "optionpagebase.h"
 
 namespace Ui {
 class TOptionGeneral;
 }
 
-class TOptionGeneral : public QWidget
+class TOptionGeneral : public TOptionPageBase
 {
     Q_OBJECT
 
@@ -48,6 +48,10 @@ private slots:
 
 private:
     Ui::TOptionGeneral *ui;
+
+    // TOptionPageBase interface
+public:
+    void retranslateUi() Q_DECL_OVERRIDE;
 };
 
 #endif // OPTIONGENERAL_H

@@ -15,29 +15,31 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#ifndef OPTIONABOUT_H
-#define OPTIONABOUT_H
+#include "optionscontroller.h"
 
-#include "optionpagebase.h"
+#include "preferences.h"
 
-namespace Ui {
-class TOptionAbout;
+TOptionsController::TOptionsController(QObject *parent) :
+    TAbstractController(parent)
+  , mPluginModel(new TPluginModel(this))
+{
+
 }
 
-class TOptionAbout : public TOptionPageBase
+TOptionsController::~TOptionsController()
 {
-    Q_OBJECT
 
-public:
-    explicit TOptionAbout(QWidget *parent = 0);
-    ~TOptionAbout();
+}
 
-private:
-    Ui::TOptionAbout *ui;
+bool TOptionsController::joint(TGuiManager *manager, TCore *core)
+{
+    Q_ASSERT(manager);
+    Q_ASSERT(core);
 
-    // TOptionPageBase interface
-public:
-    void retranslateUi() Q_DECL_OVERRIDE;
-};
 
-#endif // OPTIONABOUT_H
+    return TAbstractController::joint(manager, core);
+}
+
+void TOptionsController::slotTimerEvent()
+{
+}

@@ -25,26 +25,14 @@
 
 #include "preferences.h"
 
-const char *g_pageTitle[PI_COUNT] = {
-    "General",
-    "Plugins",
-    "Skin",
-    "About"
-};
-
 TOptionsDialog::TOptionsDialog(QWidget *parent) :
-    TAbstractDialog(parent),
-    ui(new Ui::TOptionsDialog)
+    TAbstractDialog(parent)
+  , ui(new Ui::TOptionsDialog)
+  , mLastPage(NULL)
 {
     ui->setupUi(this);
 
     QStringListModel *model = new QStringListModel(this);
-    QStringList pageTitles;
-    for(int i=0;i<PI_COUNT;i++)
-    {
-        pageTitles.append(tr(g_pageTitle[i]));
-    }
-    model->setStringList(pageTitles);
     ui->listView->setModel(model);
     ui->listView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     connect(ui->listView->selectionModel(),
@@ -56,6 +44,8 @@ TOptionsDialog::TOptionsDialog(QWidget *parent) :
     mPages.append(new TOptionPluginInfo);
     mPages.append(new TOptionSkin);
     mPages.append(new TOptionAbout);
+
+    ui->pageContent->setLayout(new QVBoxLayout);
 
     retranslateUi();
 }
@@ -77,13 +67,22 @@ TOptionGeneral *TOptionsDialog::optionGeneral()
     return (TOptionGeneral*)mPages[PI_GENERAL];
 }
 
+TOptionSkin *TOptionsDialog::optionSkin()
+{
+    return (TOptionSkin*)mPages[PI_SKIN];
+}
+
 void TOptionsDialog::locatePage(PageIndex pageIndex)
 {
     for(QWidget *page : mPages)
         page->hide();
 
-    mPages[pageIndex]->setParent(ui->pageContent);
-    mPages[pageIndex]->showNormal();
+    if(mLastPage)
+        ui->pageContent->layout()->removeWidget(mLastPage);
+
+    mLastPage = mPages[pageIndex];
+    ui->pageContent->layout()->addWidget(mLastPage);
+    mLastPage->showNormal();
 
     ui->listView->clearMask();
     ui->listView->clearSelection();
@@ -93,6 +92,13 @@ void TOptionsDialog::locatePage(PageIndex pageIndex)
 void TOptionsDialog::retranslateUi()
 {
     ui->retranslateUi(this);
+
+    QStringList pageTitles;
+    pageTitles.append(tr("General"));
+    pageTitles.append(tr("Plugins"));
+    pageTitles.append(tr("Skin"));
+    pageTitles.append(tr("About"));
+    ((QStringListModel*)ui->listView->model())->setStringList(pageTitles);
 }
 
 void TOptionsDialog::slotCurrentRowChanged(QModelIndex current, QModelIndex previous)

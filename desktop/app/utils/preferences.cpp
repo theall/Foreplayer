@@ -201,7 +201,7 @@ void TPreferences::setLanguage(QString language)
         return;
 
     mSettings->beginGroup(SEC_GUI);
-    mSettings->setValue(SEC_GUI_LANGUAGE, mLanguage);
+    mSettings->setValue(SEC_GUI_LANGUAGE, language);
     mSettings->endGroup();
     mLanguage = language;
 

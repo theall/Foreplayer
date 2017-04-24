@@ -15,25 +15,22 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#ifndef ABOUTDIALOG_H
-#define ABOUTDIALOG_H
+#ifndef TOPTIONPAGEBASE_H
+#define TOPTIONPAGEBASE_H
 
-#include <QDialog>
+#include <QWidget>
+#include <QEvent>
 
-namespace Ui {
-class TAboutDialog;
-}
-
-class TAboutDialog : public QDialog
+class TOptionPageBase : public QWidget
 {
-    Q_OBJECT
-
 public:
-    explicit TAboutDialog(QWidget *parent = 0);
-    ~TAboutDialog();
+    TOptionPageBase(QWidget *parent = 0);
 
-private:
-    Ui::TAboutDialog *ui;
+    virtual void retranslateUi() = 0;
+
+    // QObject interface
+public:
+    bool event(QEvent *) Q_DECL_OVERRIDE;
 };
 
-#endif // ABOUTDIALOG_H
+#endif // TOPTIONPAGEBASE_H

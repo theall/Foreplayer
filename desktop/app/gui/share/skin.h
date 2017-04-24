@@ -49,6 +49,7 @@ public:
     QString fileName() { return mFileName; }
     QColor transparentColor() { return mTransparentColor; }
     QString lastError() { return mError; }
+    QPixmap preview();
 
 private:
     QString mVersion;
@@ -60,6 +61,7 @@ private:
     QString mFileName;
     QDir mFileDir;
     QString mError;
+    QPixmap mPreview;
 
     QDomElement mRootElement;
 

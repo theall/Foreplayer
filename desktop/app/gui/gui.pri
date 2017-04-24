@@ -71,11 +71,11 @@ SOURCES += \
     $$PWD/dialogs/optionabout.cpp \
     $$PWD/dialogs/optionskin.cpp \
     $$PWD/dialogs/optionplugininfo.cpp \
-    $$PWD/dialogs/aboutdialog.cpp \
     $$PWD/share/skinsetting.cpp \
     $$PWD/share/skinmanager.cpp \
     $$PWD/dialogs/optiongeneral.cpp \
-    $$PWD/dialogs/modules/languagemanager.cpp
+    $$PWD/dialogs/modules/languagemanager.cpp \
+    $$PWD/dialogs/optionpagebase.cpp
 
 HEADERS  += \
     $$PWD/windows/widgets/imagebutton.h \
@@ -138,11 +138,11 @@ HEADERS  += \
     $$PWD/dialogs/optionabout.h \
     $$PWD/dialogs/optionskin.h \
     $$PWD/dialogs/optionplugininfo.h \
-    $$PWD/dialogs/aboutdialog.h \
     $$PWD/share/skinsetting.h \
     $$PWD/share/skinmanager.h \
     $$PWD/dialogs/optiongeneral.h \
-    $$PWD/dialogs/modules/languagemanager.h
+    $$PWD/dialogs/modules/languagemanager.h \
+    $$PWD/dialogs/optionpagebase.h
 
 FORMS += \
     $$PWD/dialogs/optionsdialog.ui \
@@ -152,8 +152,7 @@ FORMS += \
     $$PWD/dialogs/optiongeneral.ui \
     $$PWD/dialogs/optionabout.ui \
     $$PWD/dialogs/optionskin.ui \
-    $$PWD/dialogs/optionplugininfo.ui \
-    $$PWD/dialogs/aboutdialog.ui
+    $$PWD/dialogs/optionplugininfo.ui
 
 RESOURCES += \
     $$PWD/resource/res.qrc

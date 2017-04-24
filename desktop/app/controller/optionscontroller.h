@@ -15,29 +15,30 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#ifndef OPTIONABOUT_H
-#define OPTIONABOUT_H
+#ifndef OPTIONSCONTROLLER_H
+#define OPTIONSCONTROLLER_H
 
-#include "optionpagebase.h"
+#include "abstractcontroller.h"
 
-namespace Ui {
-class TOptionAbout;
-}
+#include "model/pluginmodel.h"
 
-class TOptionAbout : public TOptionPageBase
+class TOptionsController : public TAbstractController
 {
     Q_OBJECT
 
 public:
-    explicit TOptionAbout(QWidget *parent = 0);
-    ~TOptionAbout();
+    explicit TOptionsController(QObject *parent = 0);
+    ~TOptionsController();
+
+    bool joint(TGuiManager *manager, TCore *core);
 
 private:
-    Ui::TOptionAbout *ui;
+    TMainWindow *mMainWindow;
 
-    // TOptionPageBase interface
-public:
-    void retranslateUi() Q_DECL_OVERRIDE;
+    TPluginModel *mPluginModel;
+
+protected slots:
+    void slotTimerEvent() Q_DECL_OVERRIDE;
 };
 
-#endif // OPTIONABOUT_H
+#endif // OPTIONSCONTROLLER_H

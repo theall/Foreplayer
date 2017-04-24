@@ -101,6 +101,7 @@ QStringList TLanguageManager::languages()
 {
     if (mLanguages.isEmpty())
         loadLanguages();
+
     return mLanguages;
 }
 

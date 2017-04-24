@@ -49,11 +49,12 @@ public:
 
     void openPage(PageIndex pageIndex);
     TOptionGeneral *optionGeneral();
+    TOptionSkin *optionSkin();
 
 private:
     Ui::TOptionsDialog *ui;
     QList<QWidget*> mPages;
-
+    QWidget *mLastPage;
     void locatePage(PageIndex pageIndex);
 
     // TAbstractDialog interface

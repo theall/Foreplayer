@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "desctoplyricwindow.h"
 
 TDesktopLyricWindow::TDesktopLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
@@ -69,7 +69,7 @@ void TDesktopLyricWindow::on_btnOnTop_clicked(bool checked)
 
 void TDesktopLyricWindow::retranslateUi()
 {
-    setWindowTitle(tr("DesklrcBar"));
+    setWindowTitle(tr("Desktop lyric bar"));
     mBtnIcon->setToolTip(tr("Main menu"));
     mBtnPlay->setToolTip(tr("Play"));
     mBtnPause->setToolTip(tr("Pause"));

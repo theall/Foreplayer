@@ -136,6 +136,12 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
 
     // Options dialog
     connect(mOptionDialog->optionGeneral(), SIGNAL(displayTrayIconToggled(bool)), this, SLOT(slotDisplayTrayIconToggled(bool)));
+    connect(mOptionDialog->optionSkin(), SIGNAL(requestLoadSkin(int)), this, SLOT(slotRequestLoadSkin(int)));
+    connect(mOptionDialog->optionSkin(), SIGNAL(requestSkinNames(QStringList&,int&)), this, SLOT(slotRequestSkinNames(QStringList&,int&)));
+    connect(mOptionDialog->optionSkin(),
+            SIGNAL(requestSkinInfo(int,QPixmap&,QString&,QString&,QString&)),
+            this,
+            SLOT(slotRequestSkinInfo(int,QPixmap&,QString&,QString&,QString&)));
 }
 
 TGuiManager::~TGuiManager()
@@ -216,15 +222,16 @@ bool TGuiManager::loadSkin(QString fileName)
 bool TGuiManager::tryLoadSkins()
 {
     bool ret = false;
+    TSkin *skin = NULL;
     if(mSkinManager)
     {
-        TSkin *skin = mSkinManager->findSkin(TPreferences::instance()->skinPath());
+        skin = mSkinManager->findSkin(TPreferences::instance()->skinPath());
         if(skin)
             ret = loadSkin(skin);
         else {
             for(int i=0;i<mSkinManager->size();i++)
             {
-                TSkin *skin = mSkinManager->skinAt(i);
+                skin = mSkinManager->skinAt(i);
                 if(loadSkin(skin))
                 {
                     ret = true;
@@ -270,8 +277,8 @@ void TGuiManager::open()
     if(!tryLoadSkins())
         QMessageBox::critical(
             mMainWindow,
-            tr("Error."),
-            tr("Can't load skin."));
+            tr("Error"),
+            tr("Failed to load skin."));
 
     if(prefs->displayTrayIcon())
         mTrayIcon->show();
@@ -633,6 +640,18 @@ void TGuiManager::slotRequestSkinNames(QStringList &names, int &currentIndex)
     mSkinManager->reload();
     names = mSkinManager->skinNames();
     currentIndex = mSkinManager->indexOf(TPreferences::instance()->skinPath());
+}
+
+void TGuiManager::slotRequestSkinInfo(int index, QPixmap &preview, QString &author, QString &website, QString &contact)
+{
+    TSkin *skin = mSkinManager->skinAt(index);
+    if(skin)
+    {
+        preview = skin->preview();
+        author = skin->author();
+        website = skin->url();
+        contact = skin->email();
+    }
 }
 
 void TGuiManager::slotMainWindowActivationChanged()

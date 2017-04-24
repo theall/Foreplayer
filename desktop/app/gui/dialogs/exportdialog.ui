@@ -153,7 +153,7 @@
          </size>
         </property>
         <property name="displayFormat">
-         <string>HH:mm:ss.zzz</string>
+         <string notr="true">HH:mm:ss.zzz</string>
         </property>
        </widget>
       </item>
