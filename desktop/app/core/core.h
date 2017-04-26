@@ -26,9 +26,11 @@ typedef QList<int> intn;
 typedef void* PlayListItem;
 typedef void* MusicItem;
 typedef void* TrackItem;
+typedef void* PluginHandle;
 typedef QList<PlayListItem> TPlayListItems;
 typedef QList<MusicItem> MusicItems;
 typedef QList<TrackItem> TrackItems;
+typedef QList<PluginHandle> PluginHandles;
 
 enum IndexType
 {
@@ -137,6 +139,14 @@ public:
     MusicItem getPlayingMusicItem();
     TrackItem getPlayingTrackItem();
     int getCurrentPlayedTime();
+
+    PluginHandles getPluginHandles();
+    QString getPluginName(PluginHandle pluginHandle);
+    QString getPluginManufacture(PluginHandle pluginHandle);
+    QString getPluginContact(PluginHandle pluginHandle);
+    QString getPluginCreateDate(PluginHandle pluginHandle);
+    QString getPluginDescription(PluginHandle pluginHandle);
+    QMap<QString, QString> getPluginSuffixDescription(PluginHandle pluginHandle);
 
 private:
     QLibrary *mLibrary;

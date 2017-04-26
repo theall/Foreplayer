@@ -32,10 +32,13 @@ public:
 
     bool joint(TGuiManager *manager, TCore *core);
 
+private slots:
+    void slotCurrentPluginIndexChanged(int index);
+
 private:
     TMainWindow *mMainWindow;
-
     TPluginModel *mPluginModel;
+    TSuffixModel *mSuffixModel;
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

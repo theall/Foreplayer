@@ -20,7 +20,6 @@
 
 #include <QStringListModel>
 
-#include "optionplugininfo.h"
 #include "optionabout.h"
 
 #include "preferences.h"
@@ -45,7 +44,9 @@ TOptionsDialog::TOptionsDialog(QWidget *parent) :
     mPages.append(new TOptionSkin);
     mPages.append(new TOptionAbout);
 
-    ui->pageContent->setLayout(new QVBoxLayout);
+    QVBoxLayout *boxLayout = new QVBoxLayout;
+    boxLayout->setMargin(3);
+    ui->pageContent->setLayout(boxLayout);
 
     retranslateUi();
 }
@@ -57,7 +58,7 @@ TOptionsDialog::~TOptionsDialog()
 
 void TOptionsDialog::openPage(PageIndex pageIndex)
 {
-    locatePage(pageIndex);
+    ui->listView->selectionModel()->setCurrentIndex(ui->listView->model()->index((int)pageIndex, 0), QItemSelectionModel::Select);
 
     exec();
 }
@@ -70,6 +71,11 @@ TOptionGeneral *TOptionsDialog::optionGeneral()
 TOptionSkin *TOptionsDialog::optionSkin()
 {
     return (TOptionSkin*)mPages[PI_SKIN];
+}
+
+TOptionPluginInfo *TOptionsDialog::optionPluginInfo()
+{
+    return (TOptionPluginInfo*)mPages[PI_PLUGIN];
 }
 
 void TOptionsDialog::locatePage(PageIndex pageIndex)

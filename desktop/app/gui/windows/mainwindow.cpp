@@ -349,8 +349,7 @@ void TMainWindow::updatePlayEffect()
     {
         mStereo->setText(tr("Mute"));
     } else {
-        if(mPlayEffect.isEmpty())
-            mPlayEffect = tr("Stereo");
+        mPlayEffect = tr("Stereo");
         mStereo->setText(mPlayEffect);
     }
 }

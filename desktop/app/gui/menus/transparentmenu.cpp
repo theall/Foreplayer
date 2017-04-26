@@ -132,9 +132,14 @@ void TTransparentMenu::loadSettings()
         mActionDisable->trigger();
 }
 
-void TTransparentMenu::slotActionTriggered(bool)
+void TTransparentMenu::slotActionTriggered(bool checked)
 {
     QAction *action = static_cast<QAction*>(sender());
+    if(!checked)
+    {
+        mActionDisable->trigger();
+        return;
+    }
     if(action)
     {
         if(action != mActionDisableWhileActived && mLastActivedAction)

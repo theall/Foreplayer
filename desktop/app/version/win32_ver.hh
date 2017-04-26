@@ -12,7 +12,7 @@
 #define K_ORIGINALFILENAME "OriginalFilename"
 #define K_PRODUCTNAME      "ProductName"
 #define K_PRODUCTVERSION   "ProductVersion"
-#define K_COMPILEPLATFORM "CompilePlatform"
+#define K_COMPILEPLATFORM  "CompilePlatform"
 #define K_BUILDNUMBER      "BuildNumber"
 #define K_DOMAIN           "Domain"
 #define K_BUILD_TIME       "BuildTime"

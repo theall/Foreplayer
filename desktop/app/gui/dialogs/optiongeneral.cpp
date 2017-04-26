@@ -38,7 +38,7 @@ TOptionGeneral::TOptionGeneral(QWidget *parent) :
         ui->cmbLanguage->addItem(string, name);
     }
     ui->cmbLanguage->model()->sort(0);
-    ui->cmbLanguage->insertItem(0, tr("Default"));
+    ui->cmbLanguage->insertItem(0, "System default");
     ui->cmbLanguage->blockSignals(false);
 
     // Not found (-1) ends up at index 0, set default language
@@ -127,4 +127,5 @@ void TOptionGeneral::on_tePlayDuration_timeChanged(const QTime &time)
 void TOptionGeneral::retranslateUi()
 {
     ui->retranslateUi(this);
+    ui->cmbLanguage->setItemText(0, tr("System default"));
 }

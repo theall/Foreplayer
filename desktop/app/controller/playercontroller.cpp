@@ -363,7 +363,7 @@ void TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
         }
     }
 
-    qDebug() << "Next play index" << pi << mi << ti;
+    // qDebug() << "Next play index" << pi << mi << ti;
     *pIndex = pi;
     *mIndex = mi;
     *tIndex = ti;

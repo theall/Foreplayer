@@ -38,6 +38,7 @@ public:
     void getNextSamples(byte *buffer, int size);
 
     bool matchSuffix(wstring suffix);
+    map<wstring, wstring> suffixListDescription();
     wstring suffixDescription(wstring suffix);
 
     bool parse(wstring file, TMusicInfo* musicInfo);

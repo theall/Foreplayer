@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef TABSTRACTTABLEVIEW_H
 #define TABSTRACTTABLEVIEW_H
 
@@ -85,10 +85,8 @@ private:
     // QWidget interface
 protected:
     void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
-
-    // QWidget interface
-protected:
     void mouseDoubleClickEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+    void keyPressEvent(QKeyEvent *) Q_DECL_OVERRIDE;
 };
 
 #endif // TABSTRACTTABLEVIEW_H

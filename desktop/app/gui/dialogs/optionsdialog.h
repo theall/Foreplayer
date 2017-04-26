@@ -22,6 +22,7 @@
 
 #include "optiongeneral.h"
 #include "optionskin.h"
+#include "optionplugininfo.h"
 
 #include <QItemSelectionModel>
 
@@ -50,6 +51,7 @@ public:
     void openPage(PageIndex pageIndex);
     TOptionGeneral *optionGeneral();
     TOptionSkin *optionSkin();
+    TOptionPluginInfo *optionPluginInfo();
 
 private:
     Ui::TOptionsDialog *ui;

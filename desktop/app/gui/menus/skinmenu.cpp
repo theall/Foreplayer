@@ -35,6 +35,8 @@ void TSkinMenu::loadSettings()
 void TSkinMenu::slotSkinTriggered(bool checked)
 {
     QAction *action = qobject_cast<QAction*>(sender());
+    if(!action)
+        return;
 
     if(checked)
     {
@@ -52,6 +54,10 @@ void TSkinMenu::slotSkinTriggered(bool checked)
         mLastActivedAction->blockSignals(true);
         mLastActivedAction->setChecked(true);
         mLastActivedAction->blockSignals(false);
+    } else {
+        action->blockSignals(true);
+        action->setChecked(true);
+        action->blockSignals(false);
     }
 }
 

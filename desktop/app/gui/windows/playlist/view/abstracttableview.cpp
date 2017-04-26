@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "abstracttableview.h"
 
 #include "utils.h"
@@ -402,4 +402,21 @@ void TAbstractTableView::mouseDoubleClickEvent(QMouseEvent *event)
         emit onDoubleClickItem(row);
 
     QTableView::mouseDoubleClickEvent(event);
+}
+
+void TAbstractTableView::keyPressEvent(QKeyEvent *event)
+{
+    int key = event->key();
+    if(key==Qt::Key_Return || key==Qt::Key_Enter)
+    {
+        QModelIndex index = selectionModel()->currentIndex();
+        int row = index.row();
+        if(row >= 0)
+        {
+            emit onCurrentRowChanged(row);
+            emit onDoubleClickItem(row);
+        }
+    }
+
+    QTableView::keyPressEvent(event);
 }

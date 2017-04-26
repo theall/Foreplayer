@@ -6,4 +6,9 @@
     <qresource prefix="/popmenu"/>
     <qresource prefix="/"/>
     <qresource prefix="/skin"/>
+    <qresource prefix="/pay">
+        <file>images/alipay.png</file>
+        <file>images/paypal.png</file>
+        <file>images/wechat.png</file>
+    </qresource>
 </RCC>

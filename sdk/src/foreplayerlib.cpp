@@ -426,6 +426,34 @@ void FOREPLAYER_API foreplayer_send_cmd(
     case CMD_PLAYLIST_REMOVE_ERRORS:
         *(list<int>*)param2 = param1?((TPlaylistItem*)param1)->removeErrors():list<int>();
         break;
+    case CMD_GET_PLUGIN_LIST:
+        {
+            TBackendPlugins plugins = TBackendPluginManager::instance()->plugins();
+            list<void*> plguinHandles;
+            for(TBackendPlugin *plugin : plugins)
+                plguinHandles.push_back(plugin);
+
+            *(list<void*>*)param1 = plguinHandles;
+        }
+        break;
+    case CMD_GET_PLUGIN_NAME:
+        *(wstring*)param2 = param1?((TBackendPlugin*)param1)->pluginInfo()->name:L"";
+        break;
+    case CMD_GET_PLUGIN_MANUFACTURE:
+        *(wstring*)param2 = param1?((TBackendPlugin*)param1)->pluginInfo()->manufacture:L"";
+        break;
+    case CMD_GET_PLUGIN_CONTACT:
+        *(wstring*)param2 = param1?((TBackendPlugin*)param1)->pluginInfo()->contact:L"";
+        break;
+    case CMD_GET_PLUGIN_CREATE_DATE:
+        *(wstring*)param2 = param1?((TBackendPlugin*)param1)->pluginInfo()->createDate:L"";
+        break;
+    case CMD_GET_PLUGIN_DESCRIPTION:
+        *(wstring*)param2 = param1?((TBackendPlugin*)param1)->pluginInfo()->description:L"";
+        break;
+    case CMD_GET_PLUGIN_SUFFIXDESCRIPTION:
+        *(map<wstring, wstring>*)param2 = param1?((TBackendPlugin*)param1)->suffixListDescription():map<wstring, wstring>();
+        break;
     default:
         break;
     }

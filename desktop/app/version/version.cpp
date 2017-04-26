@@ -180,7 +180,6 @@ void TVersionInfo::read(QString fileName)
     mDomain = value(lpData, sectionHead+K_DOMAIN, lpBuffer, uLen);
 
     delete[] lpData;
-    return;
 #endif
 }
 

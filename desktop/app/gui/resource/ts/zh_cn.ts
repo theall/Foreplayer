@@ -52,12 +52,12 @@
 <context>
     <name>TCore</name>
     <message>
-        <location filename="../../../core/core.cpp" line="38"/>
+        <location filename="../../../core/core.cpp" line="39"/>
         <source>Failed to resolve proc %1 in library %2</source>
         <translation>定位动态链接库 %2 函数地址 %1 失败</translation>
     </message>
     <message>
-        <location filename="../../../core/core.cpp" line="40"/>
+        <location filename="../../../core/core.cpp" line="41"/>
         <source>Failed to load library %1</source>
         <translation>加载 %1 失败</translation>
     </message>
@@ -582,6 +582,29 @@
     </message>
 </context>
 <context>
+    <name>TMissionsModel</name>
+    <message>
+        <location filename="../../../controller/model/missionsmodel.cpp" line="133"/>
+        <source>Title</source>
+        <translation>标题</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/missionsmodel.cpp" line="136"/>
+        <source>Progress</source>
+        <translation>进度</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/missionsmodel.cpp" line="139"/>
+        <source>Source</source>
+        <translation>源文件</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/missionsmodel.cpp" line="142"/>
+        <source>Destination</source>
+        <translation>目标路径</translation>
+    </message>
+</context>
+<context>
     <name>TMusiclistModel</name>
     <message>
         <location filename="../../../controller/model/musiclistmodel.cpp" line="95"/>
@@ -601,17 +624,42 @@ Filename: %7
     <message>
         <location filename="../../dialogs/optionabout.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../../dialogs/optionabout.ui" line="26"/>
-        <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../dialogs/optionabout.ui" line="61"/>
+        <source>Foreplayer 0.1.0.123, SDK 0.1.0.123 (Mingw 2013 32 bit)</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../../dialogs/optionabout.ui" line="49"/>
-        <source>about</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../dialogs/optionabout.ui" line="68"/>
+        <source>Copyright (c) 2016-2017 Bilge Theall, All rights reserved.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/optionabout.ui" line="98"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;SimSun&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You may modify and redistribute this program under the terms of the GPL (version 2 or later). A copy of the GPL is contained in the &apos;COPYING&apos; file distributed with Foreplayer. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Please consider donating to me, the main developer and maintainer of Foreplayer.Your support would make a big difference to me.If each user can contribute a small donation each month,i will make sure Foreplayer keeps getting better.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;SimSun&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You may modify and redistribute this program under the terms of the GPL (version 2 or later). A copy of the GPL is contained in the &apos;COPYING&apos; file distributed with Foreplayer. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;如果你觉得此程序有用，可以考虑向开发者捐款，通过扫描下面的二维码或者点击Paypal链接跳转到捐赠页面，输入你想捐赠的金额，完成捐赠，你的支持将会用于改进此程序，谢谢。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/optionabout.ui" line="181"/>
+        <source>Wechat</source>
+        <translation>微信</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/optionabout.ui" line="262"/>
+        <source>Alipay</source>
+        <translation>支付宝</translation>
     </message>
 </context>
 <context>
@@ -687,9 +735,13 @@ Filename: %7
         <translation>试播时长：</translation>
     </message>
     <message>
-        <location filename="../../dialogs/optiongeneral.cpp" line="41"/>
         <source>Default</source>
-        <translation>默认</translation>
+        <translation type="vanished">默认</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/optiongeneral.cpp" line="130"/>
+        <source>System default</source>
+        <translation>系统默认</translation>
     </message>
 </context>
 <context>
@@ -697,53 +749,7 @@ Filename: %7
     <message>
         <location filename="../../dialogs/optionplugininfo.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.ui" line="36"/>
-        <source>Extensions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.ui" line="59"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.ui" line="72"/>
-        <source>$name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="32"/>
-        <source>Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="33"/>
-        <source>Manufacture</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="34"/>
-        <source>Contact</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="35"/>
-        <source>CreateDate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="36"/>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="43"/>
-        <source>Description</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/optionplugininfo.cpp" line="42"/>
-        <source>Suffix</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -817,22 +823,22 @@ Filename: %7
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../../dialogs/optionsdialog.cpp" line="97"/>
+        <location filename="../../dialogs/optionsdialog.cpp" line="103"/>
         <source>General</source>
         <translation>通用</translation>
     </message>
     <message>
-        <location filename="../../dialogs/optionsdialog.cpp" line="98"/>
+        <location filename="../../dialogs/optionsdialog.cpp" line="104"/>
         <source>Plugins</source>
         <translation>插件</translation>
     </message>
     <message>
-        <location filename="../../dialogs/optionsdialog.cpp" line="99"/>
+        <location filename="../../dialogs/optionsdialog.cpp" line="105"/>
         <source>Skin</source>
         <translation>皮肤</translation>
     </message>
     <message>
-        <location filename="../../dialogs/optionsdialog.cpp" line="100"/>
+        <location filename="../../dialogs/optionsdialog.cpp" line="106"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
@@ -938,34 +944,62 @@ Filename: %7
 <context>
     <name>TPlaymodeMenu</name>
     <message>
-        <location filename="../../menus/playmodemenu.cpp" line="125"/>
+        <location filename="../../menus/playmodemenu.cpp" line="132"/>
         <source>Manual</source>
         <translation>手动</translation>
     </message>
     <message>
-        <location filename="../../menus/playmodemenu.cpp" line="126"/>
+        <location filename="../../menus/playmodemenu.cpp" line="133"/>
         <source>Recycle track</source>
         <translation>单曲循环</translation>
     </message>
     <message>
-        <location filename="../../menus/playmodemenu.cpp" line="127"/>
+        <location filename="../../menus/playmodemenu.cpp" line="134"/>
         <source>Recycle tracklist</source>
         <translation>音轨列表循环</translation>
     </message>
     <message>
-        <location filename="../../menus/playmodemenu.cpp" line="128"/>
+        <location filename="../../menus/playmodemenu.cpp" line="135"/>
         <source>Recycle playlist</source>
         <translation>播放列表循环</translation>
     </message>
     <message>
-        <location filename="../../menus/playmodemenu.cpp" line="129"/>
+        <location filename="../../menus/playmodemenu.cpp" line="136"/>
         <source>Recycle all</source>
         <translation>循环所有列表</translation>
     </message>
     <message>
-        <location filename="../../menus/playmodemenu.cpp" line="130"/>
+        <location filename="../../menus/playmodemenu.cpp" line="137"/>
         <source>Random</source>
         <translation>随机</translation>
+    </message>
+</context>
+<context>
+    <name>TPluginModel</name>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="102"/>
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="105"/>
+        <source>Manufacture</source>
+        <translation>作者</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="108"/>
+        <source>Contact</source>
+        <translation>联系方式</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="111"/>
+        <source>Create date</source>
+        <translation>日期</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="114"/>
+        <source>Description</source>
+        <translation>说明</translation>
     </message>
 </context>
 <context>
@@ -1388,6 +1422,19 @@ Filename: %7
     </message>
 </context>
 <context>
+    <name>TSuffixModel</name>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="185"/>
+        <source>Suffix</source>
+        <translation>后缀名</translation>
+    </message>
+    <message>
+        <location filename="../../../controller/model/pluginmodel.cpp" line="188"/>
+        <source>Description</source>
+        <translation>说明</translation>
+    </message>
+</context>
+<context>
     <name>TToolBar</name>
     <message>
         <location filename="../../windows/widgets/toolbar.cpp" line="79"/>
@@ -1439,62 +1486,62 @@ Duration: %3
 <context>
     <name>TTransparentMenu</name>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="199"/>
+        <location filename="../../menus/transparentmenu.cpp" line="204"/>
         <source>Opacity</source>
         <translation>不透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="200"/>
+        <location filename="../../menus/transparentmenu.cpp" line="205"/>
         <source>10% Transparent</source>
         <translation>10% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="201"/>
+        <location filename="../../menus/transparentmenu.cpp" line="206"/>
         <source>20% Transparent</source>
         <translation>20% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="202"/>
+        <location filename="../../menus/transparentmenu.cpp" line="207"/>
         <source>30% Transparent</source>
         <translation>30% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="203"/>
+        <location filename="../../menus/transparentmenu.cpp" line="208"/>
         <source>40% Transparent</source>
         <translation>40% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="204"/>
+        <location filename="../../menus/transparentmenu.cpp" line="209"/>
         <source>50% Transparent</source>
         <translation>50% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="205"/>
+        <location filename="../../menus/transparentmenu.cpp" line="210"/>
         <source>60% Transparent</source>
         <translation>60% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="206"/>
+        <location filename="../../menus/transparentmenu.cpp" line="211"/>
         <source>70% Transparent</source>
         <translation>70% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="207"/>
+        <location filename="../../menus/transparentmenu.cpp" line="212"/>
         <source>80% Transparent</source>
         <translation>80% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="208"/>
+        <location filename="../../menus/transparentmenu.cpp" line="213"/>
         <source>90% Transparent</source>
         <translation>90% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="209"/>
+        <location filename="../../menus/transparentmenu.cpp" line="214"/>
         <source>100% Transparent</source>
         <translation>100% 透明</translation>
     </message>
     <message>
-        <location filename="../../menus/transparentmenu.cpp" line="210"/>
+        <location filename="../../menus/transparentmenu.cpp" line="215"/>
         <source>Opacity While Actived</source>
         <translation>激活时不透明</translation>
     </message>

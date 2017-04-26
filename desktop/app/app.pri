@@ -13,5 +13,6 @@ include($$PWD/utils/utils.pri)
 
 win32:{
     RC_FILE = $$PWD/version/res.rc
+    HEADERS += $$PWD/version/win32_ver.h
     LIBS += -lversion
 }

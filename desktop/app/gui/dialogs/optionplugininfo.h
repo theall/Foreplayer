@@ -20,22 +20,11 @@
 
 #include "optionpagebase.h"
 
+#include <QAbstractItemModel>
+
 namespace Ui {
 class TOptionPluginInfo;
 }
-
-struct TPluginInfo
-{
-    QString name;
-    QString manufacture;
-    QString contact;
-    QString description;
-    QString createDate;
-    QString fileName;
-    QMap<QString, QString> suffixDesc;
-};
-
-typedef QList<TPluginInfo*> TPluginInfos;
 
 class TOptionPluginInfo : public TOptionPageBase
 {
@@ -45,12 +34,17 @@ public:
     explicit TOptionPluginInfo(QWidget *parent = 0);
     ~TOptionPluginInfo();
 
+    void setPluginModel(QAbstractItemModel *model);
+    void setSuffixModel(QAbstractItemModel *model);
+
 signals:
-    void requestPluginInformation(TPluginInfos&);
+    void currentPluginIndexChanged(int);
+
+private slots:
+    void slotCurrentPluginRowChanged(QModelIndex,QModelIndex);
 
 private:
     Ui::TOptionPluginInfo *ui;
-    TPluginInfos mPluginInfos;
 
     // TOptionPageBase interface
 public:

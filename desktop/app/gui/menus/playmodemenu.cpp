@@ -91,11 +91,18 @@ void TPlaymodeMenu::loadSettings()
         mActionManual->trigger();
 }
 
-void TPlaymodeMenu::slotActionTriggered(bool triggered)
+void TPlaymodeMenu::slotActionTriggered(bool checked)
 {
-    Q_UNUSED(triggered)
-
     QAction *action = static_cast<QAction*>(sender());
+
+    if(!action)
+        return;
+
+    if(!checked)
+    {
+        mActionManual->trigger();
+        return;
+    }
 
     if(mLastActivedAction)
         mLastActivedAction->setChecked(false);

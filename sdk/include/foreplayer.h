@@ -615,6 +615,54 @@ enum ForeplayerCmd
      */
     CMD_PARSE_FILE,
 
+    /**
+     * Get plugin list.
+     * param1: return std::list<plugin handle>
+     */
+    CMD_GET_PLUGIN_LIST,
+
+    /**
+     * Get plugin name.
+     * param1: plugin handle
+     * param2: return wstring
+     */
+    CMD_GET_PLUGIN_NAME,
+
+    /**
+     * Get plugin manufacture.
+     * param1: plugin handle
+     * param2: return wstring
+     */
+    CMD_GET_PLUGIN_MANUFACTURE,
+
+    /**
+     * Get plugin contact.
+     * param1: plugin handle
+     * param2: return wstring
+     */
+    CMD_GET_PLUGIN_CONTACT,
+
+    /**
+     * Get plugin create date.
+     * param1: plugin handle
+     * param2: return wstring
+     */
+    CMD_GET_PLUGIN_CREATE_DATE,
+
+    /**
+     * Get plugin description.
+     * param1: plugin handle
+     * param2: return wstring
+     */
+    CMD_GET_PLUGIN_DESCRIPTION,
+
+    /**
+     * Get plugin suffixdescription.
+     * param1: plugin handle
+     * param2: return map<wstring suffix, wstring description>
+     */
+    CMD_GET_PLUGIN_SUFFIXDESCRIPTION,
+
     // Close sdk;
     CMD_CLOSE
 };

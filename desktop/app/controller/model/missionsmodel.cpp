@@ -17,11 +17,6 @@
  */
 #include "missionsmodel.h"
 
-#define LABEL_TITLE         "Title"
-#define LABEL_PROGRESS      "Progress"
-#define LABEL_SOURCE        "Source"
-#define LABEL_DESTINATION   "Destination"
-
 enum ColumnIndex
 {
     CI_TITLE=0,
@@ -134,17 +129,17 @@ QVariant TMissionsModel::headerData(int section, Qt::Orientation orientation, in
     if(role==Qt::DisplayRole)
     {
         switch (section) {
-        case 0:
-            return LABEL_TITLE;
+        case CI_TITLE:
+            return tr("Title");
             break;
-        case 1:
-            return LABEL_PROGRESS;
+        case CI_PROGRESS:
+            return tr("Progress");
             break;
-        case 2:
-            return LABEL_SOURCE;
+        case CI_SOURCE:
+            return tr("Source");
             break;
-        case 3:
-            return LABEL_DESTINATION;
+        case CI_DESTINATION:
+            return tr("Destination");
             break;
         default:
             break;

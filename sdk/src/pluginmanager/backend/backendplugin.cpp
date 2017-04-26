@@ -99,6 +99,15 @@ bool TBackendPlugin::matchSuffix(wstring suffix)
     return contains(mMatchSuffixes, suffix);
 }
 
+map<wstring, wstring> TBackendPlugin::suffixListDescription()
+{
+    map<wstring, wstring> sd;
+    for(wstring s : mMatchSuffixes)
+        sd[s] = suffixDescription(s);
+
+    return sd;
+}
+
 wstring TBackendPlugin::suffixDescription(wstring suffix)
 {
     wstring ret;

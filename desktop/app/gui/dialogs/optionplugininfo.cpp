@@ -18,7 +18,19 @@
 #include "optionplugininfo.h"
 #include "ui_optionplugininfo.h"
 
-#include <QStandardItemModel>
+#include <QTimer>
+
+void configTableView(QTableView *tableView)
+{
+    if(tableView)
+    {
+        tableView->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft);
+        tableView->verticalHeader()->setVisible(false);
+        tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        tableView->setSelectionMode(QAbstractItemView::SingleSelection);
+        tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+    }
+}
 
 TOptionPluginInfo::TOptionPluginInfo(QWidget *parent) :
     TOptionPageBase(parent),
@@ -26,34 +38,45 @@ TOptionPluginInfo::TOptionPluginInfo(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->tvPlugins->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft);
-    QStandardItemModel *pluginModel = new QStandardItemModel();
-    pluginModel->setColumnCount(5);
-    pluginModel->setHeaderData(0, Qt::Horizontal, tr("Name"));
-    pluginModel->setHeaderData(1, Qt::Horizontal, tr("Manufacture"));
-    pluginModel->setHeaderData(2, Qt::Horizontal, tr("Contact"));
-    pluginModel->setHeaderData(3, Qt::Horizontal, tr("CreateDate"));
-    pluginModel->setHeaderData(4, Qt::Horizontal, tr("Description"));
-    ui->tvPlugins->setModel(pluginModel);
+    configTableView(ui->tvPlugins);
+    configTableView(ui->tvSuffix);
 
-    ui->tvSuffix->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft);
-    QStandardItemModel *suffixModel = new QStandardItemModel();
-    suffixModel->setColumnCount(2);
-    suffixModel->setHeaderData(0, Qt::Horizontal, tr("Suffix"));
-    suffixModel->setHeaderData(1, Qt::Horizontal, tr("Description"));
-    ui->tvSuffix->setModel(suffixModel);
-
-    emit requestPluginInformation(mPluginInfos);
+    ui->tvPlugins->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+    ui->tvSuffix->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 }
 
 TOptionPluginInfo::~TOptionPluginInfo()
 {
     delete ui;
+}
 
-    for(TPluginInfo *p : mPluginInfos)
-        delete p;
+void TOptionPluginInfo::setPluginModel(QAbstractItemModel *model)
+{
+    ui->tvPlugins->setModel(model);
 
-    mPluginInfos.clear();
+    ui->tvPlugins->resizeColumnsToContents();
+
+    connect(ui->tvPlugins->selectionModel(),
+            SIGNAL(currentRowChanged(QModelIndex,QModelIndex)),
+            this,
+            SLOT(slotCurrentPluginRowChanged(QModelIndex,QModelIndex)));
+
+    ui->tvPlugins->selectionModel()->select(model->index(0, 0), QItemSelectionModel::Select);
+}
+
+void TOptionPluginInfo::setSuffixModel(QAbstractItemModel *model)
+{
+    ui->tvSuffix->setModel(model);
+
+    ui->tvSuffix->resizeColumnsToContents();
+}
+
+void TOptionPluginInfo::slotCurrentPluginRowChanged(QModelIndex newIndex, QModelIndex oldIndex)
+{
+    Q_UNUSED(oldIndex);
+
+    if(newIndex.isValid())
+        emit currentPluginIndexChanged(newIndex.row());
 }
 
 void TOptionPluginInfo::retranslateUi()

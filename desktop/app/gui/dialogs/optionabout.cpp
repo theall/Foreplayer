@@ -18,6 +18,8 @@
 #include "optionabout.h"
 #include "ui_optionabout.h"
 
+#include <QDesktopServices>
+
 TOptionAbout::TOptionAbout(QWidget *parent) :
     TOptionPageBase(parent),
     ui(new Ui::TOptionAbout)

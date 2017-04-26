@@ -62,6 +62,7 @@ bool initialize()
         wcscat(g_SuffixList, L" ");
         i++;
     }
+    g_SuffixList[wcslen(g_SuffixList)-1] = 0;
 
     if (!BASS_Init(0, g_sampleRate, 0, 0, NULL))
         return false;
@@ -83,6 +84,7 @@ const wstring suffixDescription(const wstring suffix)
     {
         if(szTypeDesc[i].suffix==sf)
             return wstring(szTypeDesc[i].desc);
+        i++;
     }
     return L"Unknow suffix";
 }

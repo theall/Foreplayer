@@ -719,16 +719,18 @@ void TGuiManager::hide()
 
 void TGuiManager::show()
 {
-    if(mEqualizerVisible)
+    TPreferences *prefs = TPreferences::instance();
+
+    if(prefs->eqWindowVisible())
         mEqualizerWindow->showNormal();
 
     //if(mDesktopLyricVisible)
     //    mDesktopLyricWindow->showNormal();
 
-    if(mLyricWindowVisible)
+    if(prefs->lyricWindowVisible())
         mLyricWindow->showNormal();
 
-    if(mPlaylistVisible)
+    if(prefs->playlistWindowVisible())
         mPlaylistWindow->showNormal();
 
     //if(mBrowserVisible)
@@ -887,6 +889,8 @@ bool TGuiManager::loadSkin(TSkin *skin)
     if(!skin)
         return false;
 
+    hide();
+
     QDomElement root = skin->rootElement();
     mMainWindow->loadFromSkin(root.firstChildElement(TAG_PLAYER_WINDOW), skin);
     mMiniWindow->loadFromSkin(root.firstChildElement(TAG_MINI_WINDOW), skin);
@@ -962,6 +966,8 @@ bool TGuiManager::loadSkin(TSkin *skin)
         // First created
         centerWindow();
     }
+
+    show();
 
     return true;
 }

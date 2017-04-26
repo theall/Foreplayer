@@ -284,7 +284,7 @@ bool seek(int microSeconds)
 const wstring suffixDescription(const wstring suffix)
 {
     (void)suffix;
-    return L"Arcade game image";
+    return L"Arcade rom";
 }
 
 EXPORT void send_cmd(

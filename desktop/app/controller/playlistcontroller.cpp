@@ -861,16 +861,16 @@ void TPlaylistController::locateIndex(int pi, int mi, int ti)
     if(mPlaylistView)
     {
         mPlaylistView->selectRow(pi);
-        mPlaylistView->scrollTo(mPlaylistModel->index(pi, 0), QAbstractItemView::PositionAtTop);
+        mPlaylistView->scrollTo(mPlaylistModel->index(pi, 0));
     }
     if(mMusiclistView)
     {
         //mMusiclistView->selectRow(mi);
-        mMusiclistView->scrollTo(mMusiclistModel->index(mi, 1), QAbstractItemView::PositionAtTop);
+        mMusiclistView->scrollTo(mMusiclistModel->index(mi, 1));
     }
     if(mTracklistView)
     {
         //mTracklistView->selectRow(ti);
-        mTracklistView->scrollTo(mTracklistModel->index(ti, 1), QAbstractItemView::PositionAtTop);
+        mTracklistView->scrollTo(mTracklistModel->index(ti, 1));
     }
 }

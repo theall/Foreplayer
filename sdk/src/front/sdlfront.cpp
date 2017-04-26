@@ -30,7 +30,12 @@ static void sdl_callback( void* data, Uint8* out, int count )
     TSDLFront *front = static_cast<TSDLFront*>(data);
     if(front && front->isPlaying())
     {
-        front->requestNextSamples(count, (char*)out);
+        try
+        {
+            front->requestNextSamples(count, (char*)out);
+        } catch(...) {
+            SDL_memset(out, 0, count);
+        }
     }
 }
 

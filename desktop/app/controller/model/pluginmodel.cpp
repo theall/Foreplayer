@@ -17,17 +17,13 @@
  */
 #include "pluginmodel.h"
 
-#define LABEL_TITLE         "Title"
-#define LABEL_PROGRESS      "Progress"
-#define LABEL_SOURCE        "Source"
-#define LABEL_DESTINATION   "Destination"
-
 enum ColumnIndex
 {
-    CI_TITLE=0,
-    CI_PROGRESS,
-    CI_SOURCE,
-    CI_DESTINATION,
+    CI_NAME=0,
+    CI_MANUFACTURE,
+    CI_CONTACT,
+    CI_CREATE_DATE,
+    CI_DESCRIPTION,
     CI_COUNT
 };
 
@@ -46,6 +42,8 @@ TPluginModel::~TPluginModel()
 void TPluginModel::setPlayerCore(TCore *core)
 {
     mCore = core;
+    if(mCore)
+        mPlugins = mCore->getPluginHandles();
 }
 
 QVariant TPluginModel::data(const QModelIndex &index, int role) const
@@ -54,28 +52,29 @@ QVariant TPluginModel::data(const QModelIndex &index, int role) const
     {
         int row = index.row();
         int col = index.column();
-//        if(row>=0 && row<mExportMissions->size())
-//        {
-//            TExportParam *param = (TExportParam*)mExportMissions->at(row)->data();
-//            switch (col) {
-//            case CI_TITLE:
-//                return QString::fromWCharArray(param->fileName);
-//                break;
-//            case CI_PROGRESS:
-//                if(param->progressTotalFrames==0)
-//                    return 0;
-//                return (float)param->progressCurrentFrames/param->progressTotalFrames;
-//                break;
-//            case CI_SOURCE:
-//                return QString::fromWCharArray(param->indexName);
-//                break;
-//            case CI_DESTINATION:
-//                return QString::fromWCharArray(param->outputPath);
-//                break;
-//            default:
-//                break;
-//            }
-//        }
+        if(row>=0 && row<mPlugins.size())
+        {
+            PluginHandle plugin = mPlugins.at(row);
+            switch (col) {
+            case CI_NAME:
+                return mCore->getPluginName(plugin);
+                break;
+            case CI_MANUFACTURE:
+                return mCore->getPluginManufacture(plugin);
+                break;
+            case CI_CONTACT:
+                return mCore->getPluginContact(plugin);
+                break;
+            case CI_CREATE_DATE:
+                return mCore->getPluginCreateDate(plugin);
+                break;
+            case CI_DESCRIPTION:
+                return mCore->getPluginDescription(plugin);
+                break;
+            default:
+                break;
+            }
+        }
     }
     return QVariant();
 }
@@ -84,7 +83,7 @@ int TPluginModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
 
-    return 0;
+    return mPlugins.size();
 }
 
 int TPluginModel::columnCount(const QModelIndex &parent) const
@@ -96,26 +95,102 @@ int TPluginModel::columnCount(const QModelIndex &parent) const
 
 QVariant TPluginModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
-    Q_UNUSED(orientation);
-
-    if(role==Qt::DisplayRole)
+    if(role==Qt::DisplayRole && orientation==Qt::Horizontal)
     {
         switch (section) {
-        case 0:
-            return LABEL_TITLE;
+        case CI_NAME:
+            return tr("Name");
             break;
-        case 1:
-            return LABEL_PROGRESS;
+        case CI_MANUFACTURE:
+            return tr("Manufacture");
             break;
-        case 2:
-            return LABEL_SOURCE;
+        case CI_CONTACT:
+            return tr("Contact");
             break;
-        case 3:
-            return LABEL_DESTINATION;
+        case CI_CREATE_DATE:
+            return tr("Create date");
+            break;
+        case CI_DESCRIPTION:
+            return tr("Description");
             break;
         default:
             break;
         }
     }
+
+    return QAbstractTableModel::headerData(section, orientation, role);
+}
+
+//// Suffix list model
+TSuffixModel::TSuffixModel(QObject *parent) :
+    QAbstractTableModel(parent)
+{
+}
+
+TSuffixModel::~TSuffixModel()
+{
+
+}
+
+void TSuffixModel::setSuffixDecription(QMap<QString, QString> sd)
+{
+    mSuffixList = sd.keys();
+    mDesctiption = sd.values();
+
+    emit layoutChanged();
+}
+
+int TSuffixModel::rowCount(const QModelIndex &parent) const
+{
+    Q_UNUSED(parent);
+
+    return mSuffixList.size();
+}
+
+int TSuffixModel::columnCount(const QModelIndex &parent) const
+{
+    Q_UNUSED(parent);
+
+    return 2;
+}
+
+QVariant TSuffixModel::data(const QModelIndex &index, int role) const
+{
+    if(role==Qt::DisplayRole)
+    {
+        int row = index.row();
+        int col = index.column();
+        switch (col) {
+        case 0:
+            if(row>=0 && row<mSuffixList.size())
+                return mSuffixList[row];
+            break;
+        case 1:
+            if(row>=0 && row<mDesctiption.size())
+                return mDesctiption[row];
+            break;
+        default:
+            break;
+        }
+    }
+    return QVariant();
+}
+
+QVariant TSuffixModel::headerData(int section, Qt::Orientation orientation, int role) const
+{
+    if(role==Qt::DisplayRole && orientation==Qt::Horizontal)
+    {
+        switch (section) {
+        case 0:
+            return tr("Suffix");
+            break;
+        case 1:
+            return tr("Description");
+            break;
+        default:
+            break;
+        }
+    }
+
     return QAbstractTableModel::headerData(section, orientation, role);
 }

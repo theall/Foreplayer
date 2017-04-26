@@ -18,6 +18,7 @@
 #include "core.h"
 
 #include <QDir>
+#include <QMap>
 #include <QCoreApplication>
 
 #define tr(x)   qApp->translate("core", x)
@@ -705,4 +706,71 @@ MusicItem TCore::parse(QString filePath)
         mSendCmd(CMD_PARSE_FILE, &filePathW, &ret, 0, 0);
 
     return ret;
+}
+
+PluginHandles TCore::getPluginHandles()
+{
+    list<PluginHandle> pluginHandles;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_LIST, &pluginHandles, 0, 0, 0);
+
+    return PluginHandles::fromStdList(pluginHandles);
+}
+QString TCore::getPluginName(PluginHandle pluginHandle)
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_NAME, pluginHandle, &ret, 0, 0);
+
+    return QString::fromStdWString(ret);
+}
+
+QString TCore::getPluginManufacture(PluginHandle pluginHandle)
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_MANUFACTURE, pluginHandle, &ret, 0, 0);
+
+    return QString::fromStdWString(ret);
+}
+
+QString TCore::getPluginContact(PluginHandle pluginHandle)
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_CONTACT, pluginHandle, &ret, 0, 0);
+
+    return QString::fromStdWString(ret);
+}
+
+QString TCore::getPluginCreateDate(PluginHandle pluginHandle)
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_CREATE_DATE, pluginHandle, &ret, 0, 0);
+
+    return QString::fromStdWString(ret);
+}
+
+QString TCore::getPluginDescription(PluginHandle pluginHandle)
+{
+    wstring ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_DESCRIPTION, pluginHandle, &ret, 0, 0);
+
+    return QString::fromStdWString(ret);
+}
+
+QMap<QString, QString> TCore::getPluginSuffixDescription(PluginHandle pluginHandle)
+{
+    map<wstring, wstring> ret;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLUGIN_SUFFIXDESCRIPTION, pluginHandle, &ret, 0, 0);
+
+    map<wstring, wstring>::iterator it;
+    QMap<QString, QString> _ret;
+    for(it=ret.begin();it!=ret.end();it++)
+        _ret.insert(QString::fromStdWString(it->first), QString::fromStdWString(it->second));
+
+    return _ret;
 }

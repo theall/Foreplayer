@@ -22,6 +22,7 @@
 TOptionsController::TOptionsController(QObject *parent) :
     TAbstractController(parent)
   , mPluginModel(new TPluginModel(this))
+  , mSuffixModel(new TSuffixModel(this))
 {
 
 }
@@ -36,8 +37,30 @@ bool TOptionsController::joint(TGuiManager *manager, TCore *core)
     Q_ASSERT(manager);
     Q_ASSERT(core);
 
+    mPluginModel->setPlayerCore(core);
+
+    manager->optionDialog()->optionPluginInfo()->setPluginModel(mPluginModel);
+
+    connect(manager->optionDialog()->optionPluginInfo(),
+            SIGNAL(currentPluginIndexChanged(int)),
+            this,
+            SLOT(slotCurrentPluginIndexChanged(int)));
+
+    manager->optionDialog()->optionPluginInfo()->setSuffixModel(mSuffixModel);
 
     return TAbstractController::joint(manager, core);
+}
+
+void TOptionsController::slotCurrentPluginIndexChanged(int index)
+{
+    if(mCore)
+    {
+        PluginHandles plugins = mCore->getPluginHandles();
+        if(index>=0 && index<plugins.size())
+        {
+            mSuffixModel->setSuffixDecription(mCore->getPluginSuffixDescription(plugins.at(index)));
+        }
+    }
 }
 
 void TOptionsController::slotTimerEvent()
