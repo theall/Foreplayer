@@ -45,7 +45,7 @@ public:
     void stop();
     void play();
     void needToTerminate();
-
+    bool seek(int ms);
     int playedTime();
 
     void setBackend(TBackendPlugin *plugin);

@@ -105,7 +105,11 @@ void TPlaymodeMenu::slotActionTriggered(bool checked)
     }
 
     if(mLastActivedAction)
+    {
+        mLastActivedAction->blockSignals(true);
         mLastActivedAction->setChecked(false);
+        mLastActivedAction->blockSignals(false);
+    }
 
     mLastActivedAction = action;
 

@@ -1,5 +1,8 @@
 QT += core
 
+INCLUDEPATH += \
+    $$PWD/../../../sdk/include
+
 SOURCES += \
     $$PWD/core.cpp
 

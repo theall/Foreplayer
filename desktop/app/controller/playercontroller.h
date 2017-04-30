@@ -46,6 +46,7 @@ private slots:
     void slotPrevButtonClicked();
     void slotNextButtonClicked();
     void slotStopButtonClicked();
+    void slotRequestSeekPosition(int newValue, bool& result);
     void slotVolumeValueChanged(float value);
     void slotVolumeToggled(bool toggled);
     void slotPrevMusicTriggered();

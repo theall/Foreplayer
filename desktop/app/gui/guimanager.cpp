@@ -265,9 +265,6 @@ void TGuiManager::open()
 
     mMainWindow->show();
 
-    mEqualizerWindow->loadSettings();
-    mMainWindow->loadSettings();
-
     // Load settings
     //mBrowserWindow->show();
 
@@ -282,6 +279,9 @@ void TGuiManager::open()
 
     if(prefs->displayTrayIcon())
         mTrayIcon->show();
+
+    mEqualizerWindow->loadSettings();
+    mMainWindow->loadSettings();
 }
 
 void TGuiManager::close()

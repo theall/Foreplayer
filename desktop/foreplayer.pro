@@ -8,9 +8,6 @@ CONFIG += c++11
 TARGET = foreplayer
 TEMPLATE = app
 
-INCLUDEPATH += \
-    ../sdk/include
-
 SOURCES += main.cpp
 
 include(app/app.pri)

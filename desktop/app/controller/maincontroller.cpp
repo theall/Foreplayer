@@ -66,9 +66,11 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
     mEqualizerController->joint(manager, core);
     mOptionsController->joint(manager, core);
 
+    bool ret = TAbstractController::joint(manager, core);
+
     manager->open();
 
-    return TAbstractController::joint(manager, core);
+    return ret;
 }
 
 void TMainController::slotQuitApp()

@@ -91,7 +91,7 @@ signals:
 
     // Volume between 0.0~1.0f
     void volumeValueChanged(float);
-    void progressChanged(int);
+    void requestSeekPosition(int, bool&);
     void requestOpenFiles(QStringList);
     void requestShowMinimized();
     void onActivationChange();
@@ -103,6 +103,7 @@ private slots:
     void on_volume_valueChanged(int value);
     void on_btnMute_clicked();
     void on_icnLogo_clicked();
+    void on_progressBar_valueChanged(int newValue);
 
 private:
     TImageButton *mBtnPlay;

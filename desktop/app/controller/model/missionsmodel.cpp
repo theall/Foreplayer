@@ -75,7 +75,7 @@ QVariant TMissionsModel::data(const QModelIndex &index, int role) const
             TExportParam *param = (TExportParam*)mExportMissions->at(row)->data();
             switch (col) {
             case CI_TITLE:
-                return QString::fromWCharArray(param->fileName);
+                return QString::fromWCharArray(param->indexName);
                 break;
             case CI_PROGRESS:
                 if(param->progressTotalFrames==0)
@@ -83,7 +83,7 @@ QVariant TMissionsModel::data(const QModelIndex &index, int role) const
                 return (float)param->progressCurrentFrames/param->progressTotalFrames;
                 break;
             case CI_SOURCE:
-                return QString::fromWCharArray(param->indexName);
+                return QString::fromWCharArray(param->fileName);
                 break;
             case CI_DESTINATION:
                 return QString::fromWCharArray(param->outputPath);

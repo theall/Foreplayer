@@ -90,6 +90,18 @@ void TPlayThread::needToTerminate()
     mNeedTerminate = true;
 }
 
+bool TPlayThread::seek(int ms)
+{
+    bool ret = false;
+    if(mBackendPlugin)
+        ret = mBackendPlugin->seek(ms);
+
+    if(ret)
+        mCurrentMicroSeconds = ms;
+
+    return ret;
+}
+
 int TPlayThread::playedTime()
 {
     return mCurrentMicroSeconds;

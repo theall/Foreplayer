@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "popmenumusiclistitem.h"
 
 TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
@@ -44,8 +44,10 @@ TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     connect(mActionDetail, SIGNAL(triggered()), this, SIGNAL(onActionViewTriggered()));
     connect(mActionCopyToUsb, SIGNAL(triggered()), this, SIGNAL(onActionCopyToUsbTriggered()));
 
+#ifndef QT_DEBUG
     addAction(mActionReparse);
     addAction(mActionCopyToUsb);
+#endif
     addAction(mActionPlay);
     addSeparator();
     addAction(mActionCopy);
@@ -60,11 +62,6 @@ TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     addAction(mActionExport);
     addSeparator();
     addAction(mActionDetail);
-
-#ifndef QT_DEBUG
-    mActionReparse->setVisible(false);
-    mActionCopyToUsb->setVisible(false);
-#endif
 
     retranslateUi();
 }

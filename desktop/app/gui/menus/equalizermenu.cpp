@@ -17,8 +17,32 @@
  */
 #include "equalizermenu.h"
 
+#include "preferences.h"
+
+enum ProfileIndex
+{
+    PI_CUSSTOMIZE,
+    PI_ROCK,
+    PI_METAL,
+    PI_ELECTRIC,
+    PI_POP,
+    PI_JAZZ,
+    PI_CLASSIC
+};
+
+void checkAction(QAction *action, bool checked)
+{
+    if(action)
+    {
+        action->blockSignals(true);
+        action->setChecked(checked);
+        action->blockSignals(false);
+    }
+}
+
+
 TEqualizerMenu::TEqualizerMenu(QWidget *parent) :
-    TAbstractMenu(parent)
+    TAbstractMenu(parent, true)
   , mLastActivedAction(NULL)
 {
     mActionRock = new QAction(this);
@@ -37,6 +61,14 @@ TEqualizerMenu::TEqualizerMenu(QWidget *parent) :
     mActionClassic->setCheckable(true);
     mActionCustomize->setCheckable(true);
 
+    connect(mActionRock, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionMetal, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionElectric, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionPop, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionJazz, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionClassic, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+    connect(mActionCustomize, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
+
     addAction(mActionRock);
     addAction(mActionMetal);
     addAction(mActionElectric);
@@ -47,12 +79,79 @@ TEqualizerMenu::TEqualizerMenu(QWidget *parent) :
     addAction(mActionCustomize);
 }
 
-void TEqualizerMenu::slotActionTriggered(bool)
+TEqualizerMenu::~TEqualizerMenu()
+{
+    ProfileIndex profileIndex;
+    if (mActionRock->isChecked())
+        profileIndex = PI_ROCK;
+    else if (mActionMetal->isChecked())
+        profileIndex = PI_METAL;
+    else if (mActionElectric->isChecked())
+        profileIndex = PI_ELECTRIC;
+    else if (mActionPop->isChecked())
+        profileIndex = PI_POP;
+    else if (mActionJazz->isChecked())
+        profileIndex = PI_JAZZ;
+    else if (mActionClassic->isChecked())
+        profileIndex = PI_CLASSIC;
+    else
+        profileIndex = PI_CUSSTOMIZE;
+
+    TPreferences::instance()->setEqProfile((int)profileIndex);
+}
+
+void TEqualizerMenu::loadSettings()
+{
+    ProfileIndex profileIndex = (ProfileIndex)TPreferences::instance()->eqProfile();
+    if (profileIndex==PI_ROCK)
+        mActionRock->trigger();
+    else if (profileIndex==PI_METAL)
+        mActionMetal->trigger();
+    else if (profileIndex==PI_ELECTRIC)
+        mActionElectric->trigger();
+    else if (profileIndex==PI_POP)
+        mActionPop->trigger();
+    else if (profileIndex==PI_JAZZ)
+        mActionJazz->trigger();
+    else if (profileIndex==PI_CLASSIC)
+        mActionClassic->trigger();
+    else
+        mActionCustomize->trigger();
+}
+
+bool TEqualizerMenu::isCustomizeActionChecked()
+{
+    return mActionCustomize->isChecked();
+}
+
+void TEqualizerMenu::checkCustomizeAction()
+{
+    if(mLastActivedAction)
+        checkAction(mLastActivedAction, false);
+
+    checkAction(mActionCustomize, true);
+
+    mLastActivedAction = mActionCustomize;
+}
+
+void TEqualizerMenu::slotActionTriggered(bool checked)
 {
     QAction *action = static_cast<QAction*>(sender());
 
+    if(!checked)
+    {
+        if(action == mActionCustomize)
+        {
+            checkAction(mActionCustomize, true);
+        } else {
+            mActionCustomize->trigger();
+        }
+        return;
+    }
+
     if(mLastActivedAction)
-        mLastActivedAction->setChecked(false);
+        checkAction(mLastActivedAction, false);
+
 
     mLastActivedAction = action;
 

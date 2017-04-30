@@ -117,6 +117,8 @@ public:
     void setEqAmplification(int value);
     QList<int> eqFactors();
     void setEqFactors(QList<int> value);
+    int eqProfile();
+    void setEqProfile(int profile);
 
 signals:
     void languageChanged();
@@ -145,6 +147,7 @@ private:
     int mEqBallance;
     int mEqSurround;
     int mEqAmplification;
+    int mEqProfile;
     QList<int> mEqFactors;
     float mOpacity;
     PlayMode mPlayMode;

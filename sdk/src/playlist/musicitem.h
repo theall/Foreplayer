@@ -58,6 +58,12 @@ public:
     int duration();
     void setDuration(int duration);
 
+    int sampleRate();
+    void setSampleRate(int sampleRate);
+
+    int channels();
+    void setChannels(int channels);
+
     int fileSize();
     void setFileSize(int fileSize);
 
@@ -91,6 +97,8 @@ private:
     wstring mYear;
     wstring mAdditionalInfo;
     int mDuration;
+    int mSampleRate;
+    int mChannels;
     int mFileSize;
     bool mModified;
     time_t mLastParsed;

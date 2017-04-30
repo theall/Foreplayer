@@ -148,8 +148,11 @@ bool loadTrack(TTrackInfo* trackInfo)
 // Seek time
 bool seek(int microSeconds)
 {
-    (void)microSeconds;
-
+    if(g_handle)
+    {
+        int bytes = BASS_ChannelSeconds2Bytes(g_handle, (double)microSeconds/1000);
+        return BASS_ChannelSetPosition(g_handle, bytes, BASS_POS_BYTE);
+    }
     return false;
 }
 

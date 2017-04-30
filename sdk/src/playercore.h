@@ -42,7 +42,7 @@ public:
 
     TMusicInfo *parse(wstring fileName);
 
-    bool playTrack(TTrackItem *track);
+    bool playTrack(TTrackItem *trackItem);
 
     void stop();
     void pause();
@@ -50,16 +50,22 @@ public:
     bool isPaused();
     bool isStoped();
     bool isPlaying();
-
+    bool seek(int ms);
     int playedTime();
 
     void setAudioParameter(AudioParameter type, float value, int param=0);
     void getAudioData(AudioDataType dataType, void *param1, void* param2);
 
+    // For retrieve samples
+    bool loadTrack(TTrackItem *trackItem);
+    int samplesPerFrame(int sampleRate, int fps);
+    void nextSamples(byte *buffer, int bufSize);
+
 private:
     TPlayThread *mPlayThread;
     TBackendPluginManager *mPluginManager;
     PlayerState mPlayerState;
+    TBackendPlugin *mCurrentPlugin;
 
     void init();
     void destroyPlayThread();

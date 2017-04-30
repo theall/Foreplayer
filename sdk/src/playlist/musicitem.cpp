@@ -23,11 +23,20 @@
 
 #include <algorithm>
 
+#define SET_MEMBER(member, value) \
+    if(member != value)\
+    {\
+        member = value;\
+        mModified = true;\
+    }
+
 TMusicItem::TMusicItem() :
     TAbstractItem()
-    , mDuration(0)
-    , mFileSize(0)
-    , mModified(false)
+  , mDuration(0)
+  , mSampleRate(44100)
+  , mChannels(2)
+  , mFileSize(0)
+  , mModified(false)
 {
     time(&mLastParsed);
 }
@@ -45,6 +54,8 @@ json TMusicItem::toJson()
     object[K_FILE] = mFileName;
     object[K_ADDITIONAL] = mAdditionalInfo;
     object[K_DURATION] = mDuration;
+    object[K_SAMPLE_RATE] = mSampleRate;
+    object[K_CHANNELS] = mChannels;
     object[K_SIZE] = mFileSize;
     object[K_LAST_PARSED] = mLastParsed;
 
@@ -63,6 +74,8 @@ void TMusicItem::fromJson(json object)
     mFileName = object[K_FILE].get<wstring>();
     mFileSize = object[K_SIZE];
     mDuration = object[K_DURATION];
+    mSampleRate = object[K_SAMPLE_RATE];
+    mChannels = object[K_CHANNELS];
     mAdditionalInfo = object[K_ADDITIONAL].get<wstring>();
     mLastParsed = object[K_LAST_PARSED];
     json trackArray = object[K_TRACKLIST];
@@ -86,6 +99,8 @@ void TMusicItem::fromTrackItem(TTrackItem *trackItem)
     mYear = trackItem->year;
     mAdditionalInfo = trackItem->additionalInfo;
     mDuration = trackItem->duration;
+    mSampleRate = trackItem->sampleRate;
+    mChannels = trackItem->channels;
     mModified = true;
 }
 
@@ -166,53 +181,37 @@ wstring TMusicItem::fileName()
 
 void TMusicItem::setFileName(wstring fileName)
 {
-    if(mFileName != fileName)
-    {
-        mFileName = fileName;
-        mModified = true;
-    }
+    SET_MEMBER(mFileName, fileName);
 }
 
 wstring TMusicItem::system()
 {
-     return mSystem;
+    return mSystem;
 }
 
 void TMusicItem::setSystem(wstring system)
 {
-     if(mSystem == system)
-          return;
-
-     mSystem = system;
-     mModified = true;
+    SET_MEMBER(mSystem, system);
 }
 
 wstring TMusicItem::artist()
 {
-     return mArtist;
+    return mArtist;
 }
 
 void TMusicItem::setArtist(wstring artist)
 {
-     if(mArtist == artist)
-          return;
-
-     mArtist = artist;
-     mModified = true;
+    SET_MEMBER(mArtist, artist);
 }
 
 wstring TMusicItem::year()
 {
-     return mYear;
+    return mYear;
 }
 
 void TMusicItem::setYear(wstring year)
 {
-     if(mYear == year)
-          return;
-
-     mYear = year;
-     mModified = true;
+    SET_MEMBER(mYear, year);
 }
 
 wstring TMusicItem::additionalInfo()
@@ -222,11 +221,7 @@ wstring TMusicItem::additionalInfo()
 
 void TMusicItem::setAdditionalInfo(wstring info)
 {
-    if(mAdditionalInfo==info)
-        return;
-
-    mAdditionalInfo = info;
-    mModified = true;
+    SET_MEMBER(mAdditionalInfo, info);
 }
 
 int TMusicItem::duration()
@@ -236,11 +231,27 @@ int TMusicItem::duration()
 
 void TMusicItem::setDuration(int duration)
 {
-    if(mDuration != duration)
-    {
-        mDuration = duration;
-        mModified = true;
-    }
+    SET_MEMBER(mDuration, duration);
+}
+
+int TMusicItem::sampleRate()
+{
+    return mSampleRate;
+}
+
+void TMusicItem::setSampleRate(int sampleRate)
+{
+    SET_MEMBER(mSampleRate, sampleRate);
+}
+
+int TMusicItem::channels()
+{
+    return mChannels;
+}
+
+void TMusicItem::setChannels(int channels)
+{
+    SET_MEMBER(mChannels, channels);
 }
 
 int TMusicItem::fileSize()
@@ -250,11 +261,7 @@ int TMusicItem::fileSize()
 
 void TMusicItem::setFileSize(int fileSize)
 {
-    if(mFileSize != fileSize)
-    {
-        mFileSize = fileSize;
-        mModified = true;
-    }
+    SET_MEMBER(mFileSize, fileSize);
 }
 
 wstring TMusicItem::game()
@@ -264,11 +271,7 @@ wstring TMusicItem::game()
 
 void TMusicItem::setGame(wstring game)
 {
-    if(mGame != game)
-    {
-        mGame = game;
-        mModified = true;
-    }
+    SET_MEMBER(mGame, game);
 }
 
 wstring TMusicItem::album()
@@ -278,11 +281,7 @@ wstring TMusicItem::album()
 
 void TMusicItem::setAlbum(wstring album)
 {
-    if(mGame != album)
-    {
-        mGame = album;
-        mModified = true;
-    }
+    SET_MEMBER(mGame, album);
 }
 
 time_t TMusicItem::lastParsed()
@@ -292,11 +291,7 @@ time_t TMusicItem::lastParsed()
 
 void TMusicItem::setLastParsed(time_t lastParsed)
 {
-    if(mLastParsed != lastParsed)
-    {
-        mLastParsed = lastParsed;
-        mModified = true;
-    }
+    SET_MEMBER(mLastParsed, lastParsed);
 }
 
 TTrackItems *TMusicItem::trackItems()

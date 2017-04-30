@@ -325,6 +325,13 @@ enum ForeplayerCmd
     CMD_PLAYER_PAUSE,
 
     /**
+     * Seek position.
+     * param1: micro seconds
+     * param2: return bool
+     */
+    CMD_PLAYER_SEEK_POSITION,
+
+    /**
      * Stop player.
      * param1: return bool
      */
@@ -486,6 +493,20 @@ enum ForeplayerCmd
     CMD_GET_MUSIC_ITEM_DURATION,
 
     /**
+     * Get music item sample rate.
+     * param1: music item handle
+     * param2: return pointer to int
+     */
+    CMD_GET_MUSIC_ITEM_SAMPLE_RATE,
+
+    /**
+     * Get music item channels.
+     * param1: music item handle
+     * param2: return pointer to int
+     */
+    CMD_GET_MUSIC_ITEM_CHANNELS,
+
+    /**
      * Get track item count.
      * param1: music item handle
      * param2: return pointer to int
@@ -508,11 +529,11 @@ enum ForeplayerCmd
     CMD_TRACK_ITEM_AS_STRING,
 
     /**
-     * Get track items.
-     * param1: music item handle
-     * param2: return list<trackitem handle>
+     * Convert wstring to track item.
+     * param1: wstring
+     * param2: return track item handle
      */
-    CMD_GET_TRACK_ITEMS,
+    CMD_STRING_TO_TRACK_ITEM,
 
     /**
      * Convert track items to wstring.
@@ -520,6 +541,20 @@ enum ForeplayerCmd
      * param2: return wstring
      */
     CMD_TRACK_ITEMS_AS_STRING,
+
+    /**
+     * Convert wstring to track item list.
+     * param1: wstring
+     * param2: return track item handle list
+     */
+    CMD_STRING_TO_TRACK_ITEMS,
+
+    /**
+     * Get track items.
+     * param1: music item handle
+     * param2: return list<trackitem handle>
+     */
+    CMD_GET_TRACK_ITEMS,
 
     /**
      * Get track item index in music item.
@@ -609,6 +644,20 @@ enum ForeplayerCmd
     CMD_GET_TRACK_ITEM_INDEX_NAME,
 
     /**
+     * Retreive track item sample rate.
+     * param1: track item handle
+     * param2: return int
+     */
+    CMD_GET_TRACK_ITEM_SAMPLE_RATE,
+
+    /**
+     * Retreive track item channels.
+     * param1: track item handle
+     * param2: return int
+     */
+    CMD_GET_TRACK_ITEM_CHANNEL,
+
+    /**
      * Parse file
      * param1: file full path
      * param2: return music item handle
@@ -662,6 +711,27 @@ enum ForeplayerCmd
      * param2: return map<wstring suffix, wstring description>
      */
     CMD_GET_PLUGIN_SUFFIXDESCRIPTION,
+
+    /**
+     * Load track item for customize.
+     * param1: track item handle
+     * param2: return bool
+     */
+    CMD_EXPORT_LOAD_TRACK,
+
+    /**
+     * Retrieve next frame data.
+     * param1: pointer to buffer
+     * param2: pointer to buffer size
+     */
+    CMD_EXPORT_NEXT_FRAME,
+
+    /**
+     * Retrueve sample count per frame.
+     * param1: sample rate
+     * param2: frames per second
+     */
+    CMD_EXPORT_FRAME_SAMPLE_COUNT,
 
     // Close sdk;
     CMD_CLOSE

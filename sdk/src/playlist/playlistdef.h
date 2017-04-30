@@ -33,6 +33,8 @@
 #define K_ALBUM       "Album"
 #define K_FORMAT      "Format"
 #define K_DURATION    "Duration"
+#define K_SAMPLE_RATE "SampleRate"
+#define K_CHANNELS    "Channels"
 #define K_SIZE        "FileSize"
 #define K_HIDDEN      "Hidden"
 #define K_LAST_PARSED "LastParsed"

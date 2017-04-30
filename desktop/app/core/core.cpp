@@ -273,6 +273,15 @@ bool TCore::pause()
     return ret;
 }
 
+bool TCore::seek(int microSeconds)
+{
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_PLAYER_SEEK_POSITION, &microSeconds, &ret, 0, 0);
+
+    return ret;
+}
+
 bool TCore::playTrackItem(TrackItem trackItem)
 {
     bool ret = false;
@@ -689,6 +698,15 @@ QString TCore::getTrackItemIndexName(TrackItem trackItem)
     return QString::fromStdWString(ret);
 }
 
+int TCore::getTrackItemSampleRate(TrackItem trackItem)
+{
+    int ret = 0;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_TRACK_ITEM_SAMPLE_RATE, trackItem, &ret, 0, 0);
+
+    return ret;
+}
+
 bool TCore::isTrackItemEnabled(TrackItem trackItem)
 {
     bool ret = true;
@@ -773,4 +791,28 @@ QMap<QString, QString> TCore::getPluginSuffixDescription(PluginHandle pluginHand
         _ret.insert(QString::fromStdWString(it->first), QString::fromStdWString(it->second));
 
     return _ret;
+}
+
+bool TCore::loadTrackItem(TrackItem trackItem)
+{
+    bool ret = false;
+    if(mSendCmd)
+        mSendCmd(CMD_EXPORT_LOAD_TRACK, trackItem, &ret, 0, 0);
+
+    return ret;
+}
+
+void TCore::getNextFrame(char *buffer, int size)
+{
+    if(mSendCmd)
+        mSendCmd(CMD_EXPORT_NEXT_FRAME, buffer, &size, 0, 0);
+}
+
+int TCore::getFrameSampleCount(int sampleRate, int fps)
+{
+    int ret = 0;
+    if(mSendCmd)
+        mSendCmd(CMD_EXPORT_FRAME_SAMPLE_COUNT, &sampleRate, &fps, &ret, 0);
+
+    return ret;
 }

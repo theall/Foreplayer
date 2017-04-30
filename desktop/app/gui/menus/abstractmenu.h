@@ -25,10 +25,13 @@ class TAbstractMenu : public QMenu
     Q_OBJECT
 
 public:
-    TAbstractMenu(QWidget *parent = 0);
+    TAbstractMenu(QWidget *parent = 0, bool keepActive = false);
     ~TAbstractMenu();
 
     virtual void retranslateUi() = 0;
+
+private:
+    bool mKeepActive;
 
     // QObject interface
 public:

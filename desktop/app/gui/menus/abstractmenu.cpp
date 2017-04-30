@@ -17,8 +17,9 @@
  */
 #include "abstractmenu.h"
 
-TAbstractMenu::TAbstractMenu(QWidget *parent) :
+TAbstractMenu::TAbstractMenu(QWidget *parent, bool keepActive) :
     QMenu(parent)
+  , mKeepActive(keepActive)
 {
 
 }
@@ -39,21 +40,24 @@ bool TAbstractMenu::event(QEvent *event)
 
 void TAbstractMenu::closeEvent(QCloseEvent *ev)
 {
-#ifdef QT_DEBUG
-    QObjectList objects = children();
-    bool hasChildMenuVisible = false;
-    for(QObject *object : objects)
+    if(mKeepActive)
     {
-        QMenu *menu = qobject_cast<QMenu*>(object);
-        if(menu && menu->isVisible())
+        QObjectList objects = children();
+        bool hasChildMenuVisible = false;
+        for(QObject *object : objects)
         {
-            hasChildMenuVisible = true;
-            break;
+            QMenu *menu = qobject_cast<QMenu*>(object);
+            if(menu && menu->isVisible())
+            {
+                hasChildMenuVisible = true;
+                break;
+            }
         }
-    }
-    if(hasChildMenuVisible || rect().contains(mapFromGlobal(QCursor::pos())))
-        ev->ignore();
-    else
-#endif
+        if(hasChildMenuVisible || rect().contains(mapFromGlobal(QCursor::pos())))
+            ev->ignore();
+        else
+            ev->accept();
+    } else {
         ev->accept();
+    }
 }

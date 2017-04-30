@@ -101,7 +101,7 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mBtnBrowser, SIGNAL(clicked(bool)), this, SIGNAL(browserButtonToggle(bool)));
     connect(mBtnMute, SIGNAL(clicked(bool)), this, SLOT(on_btnMute_clicked()));
     connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SLOT(on_volume_valueChanged(int)));
-    connect(mProgressBar, SIGNAL(valueChanged(int)), this, SIGNAL(progressChanged(int)));
+    connect(mProgressBar, SIGNAL(valueChanged(int)), this, SLOT(on_progressBar_valueChanged(int)));
     connect(mIcon, SIGNAL(clicked()), this, SLOT(on_icnLogo_clicked()));
 
     mBtnBrowser->setVisible(false);
@@ -161,8 +161,10 @@ void TMainWindow::setProgress(int time, int total)
 
     if(mProgressBar)
     {
+        mProgressBar->blockSignals(true);
         mProgressBar->setMaximum(total);
         mProgressBar->setValue(time);
+        mProgressBar->blockSignals(false);
     }
 }
 
@@ -338,6 +340,16 @@ void TMainWindow::on_icnLogo_clicked()
         mContextMenu->popup(QCursor::pos());
 }
 
+void TMainWindow::on_progressBar_valueChanged(int newValue)
+{
+    bool ret = false;
+    requestSeekPosition(newValue, ret);
+    if(ret)
+    {
+        setProgress(newValue, mProgressBar->maximum());
+    }
+}
+
 void TMainWindow::updatePlayStatus()
 {
     mStatus->setText(mPlayState);
@@ -383,7 +395,7 @@ void TMainWindow::contextMenuEvent(QContextMenuEvent *event)
     if(mContextMenu)
         mContextMenu->popup(event->globalPos());
 
-    QMainWindow::contextMenuEvent(event);
+    TAbstractWindow::contextMenuEvent(event);
 }
 
 void TMainWindow::loadFromSkin(QDomElement element, TSkin *skin)

@@ -22,9 +22,13 @@
 
 TTrackItem::TTrackItem() :
     TAbstractItem()
+  , duration(0)
+  , originalDuration(0)
+  , sampleRate(44100)
+  , channels(2)
+  , enable(true)
+  , hidden(false)
 {
-    enable = true;
-    hidden = false;
 }
 
 TTrackItem::~TTrackItem()
@@ -42,6 +46,8 @@ json TTrackItem::toJson()
     object[K_ADDITIONAL] = additionalInfo;
     object[K_FILE] = fileName;
     object[K_DURATION] = duration;
+    object[K_SAMPLE_RATE] = sampleRate;
+    object[K_CHANNELS] = channels;
     object[K_ENABLE] = enable;
     object[K_HIDDEN] = hidden;
     return object;
@@ -55,6 +61,8 @@ void TTrackItem::fromJson(json object)
     indexName = object[K_INDEX_NAME].get<wstring>();
     additionalInfo = object[K_ADDITIONAL].get<wstring>();
     duration = object[K_DURATION];
+    sampleRate = object[K_SAMPLE_RATE];
+    channels = object[K_CHANNELS];
     enable = object[K_ENABLE];
     hidden = object[K_HIDDEN];
 }

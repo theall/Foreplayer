@@ -134,7 +134,7 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 
 bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
-    if(role==Qt::EditRole)// The third column is title
+    if(role==Qt::EditRole)
     {
         int col = index.column();
         int row = index.row();

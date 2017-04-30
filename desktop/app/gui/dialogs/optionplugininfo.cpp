@@ -42,7 +42,8 @@ TOptionPluginInfo::TOptionPluginInfo(QWidget *parent) :
     configTableView(ui->tvSuffix);
 
     ui->tvPlugins->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
-    ui->tvSuffix->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tvSuffix->horizontalHeader()->setStretchLastSection(true);
+    ui->tvSuffix->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
 }
 
 TOptionPluginInfo::~TOptionPluginInfo()

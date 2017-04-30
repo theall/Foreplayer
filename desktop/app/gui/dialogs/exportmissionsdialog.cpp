@@ -65,6 +65,8 @@ TExportMissionsDialog::TExportMissionsDialog(QWidget *parent) :
     ui->tvMissions->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     ui->tvMissions->setMouseTracking(true);
     ui->tvMissions->setItemDelegate(new TExportItemDelegate(this));
+    ui->tvMissions->horizontalHeader()->setStretchLastSection(true);
+    ui->tvMissions->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
     retranslateUi();
 }
@@ -77,6 +79,7 @@ TExportMissionsDialog::~TExportMissionsDialog()
 void TExportMissionsDialog::setModel(QAbstractTableModel *model)
 {
     ui->tvMissions->setModel(model);
+    ui->tvMissions->resizeColumnsToContents();
 }
 
 void TExportMissionsDialog::on_btnSetting_clicked()

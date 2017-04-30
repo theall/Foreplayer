@@ -40,6 +40,8 @@ public:
     wstring year;
     int duration;
     int originalDuration;
+    int sampleRate;
+    int channels;
     bool enable;
     bool hidden;
     TTrackItem();

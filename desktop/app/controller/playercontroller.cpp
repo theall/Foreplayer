@@ -44,6 +44,7 @@ bool TPlayerController::joint(TGuiManager *gui, TCore *core)
     connect(mMainWindow, SIGNAL(prevClicked()), this, SLOT(slotPrevButtonClicked()));
     connect(mMainWindow, SIGNAL(nextClicked()), this, SLOT(slotNextButtonClicked()));
     connect(mMainWindow, SIGNAL(stopClicked()), this, SLOT(slotStopButtonClicked()));
+    connect(mMainWindow, SIGNAL(requestSeekPosition(int,bool&)), this, SLOT(slotRequestSeekPosition(int,bool&)));
     connect(mMainWindow, SIGNAL(volumeValueChanged(float)), this, SLOT(slotVolumeValueChanged(float)));
     connect(gui, SIGNAL(muteToggled(bool)), this, SLOT(slotVolumeToggled(bool)));
 
@@ -198,6 +199,11 @@ void TPlayerController::slotStopButtonClicked()
     mMainWindow->setButtonPlayVisible(true);
     mMainWindow->setPlayState(tr("Stoped"));
     mMainWindow->setProgress(0, 0);
+}
+
+void TPlayerController::slotRequestSeekPosition(int newValue, bool &result)
+{
+    result = mCore && mCore->seek(newValue);
 }
 
 void TPlayerController::slotVolumeValueChanged(float value)

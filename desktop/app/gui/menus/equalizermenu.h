@@ -26,8 +26,11 @@ class TEqualizerMenu : public TAbstractMenu
 
 public:
     TEqualizerMenu(QWidget *parent = 0);
+    ~TEqualizerMenu();
 
-    // TAbstractMenu interface
+    void loadSettings();
+    bool isCustomizeActionChecked();
+    void checkCustomizeAction();
 
 signals:
     void onRockSelected();

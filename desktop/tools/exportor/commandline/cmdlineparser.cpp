@@ -10,7 +10,7 @@ TCmdlineParser::TCmdlineParser(QStringList arguments) :
   , mIndexName("")
   , mSourceFile("")
   , mDestFilePath("")
-  , mFormat("")
+  , mFormat("wav")
   , mSampleRate(44100)
   , mDuration(0)
   , mOverWrite(false)
@@ -66,6 +66,9 @@ void TCmdlineParser::initialize()
     mSampleRate = value("r").toInt();
 
     mFormat = value("f");
+
+    if(mFormat.isEmpty())
+        mFormat = "wav";
 
     mOverWrite = isSet("y");
     mVerbose = isSet("x");

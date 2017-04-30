@@ -19,21 +19,33 @@
 
 #include "preferences.h"
 
+#define EQ_FACTORS 10
+
+const int PROFILE_ROCK[EQ_FACTORS]     = { -2, 0, 2, 4, -2, -2, 0, 0, 4, 4 };
+const int PROFILE_METAL[EQ_FACTORS]    = { -6, 0, 0, 0, 0, 0, 4, 0, 4, 0 };
+const int PROFILE_POP[EQ_FACTORS]      = { 3, 1, 0, -2, -4, -4, -2, 0, 1, 2 };
+const int PROFILE_CLASSIC[EQ_FACTORS]  = { 0, 8, 8, 4, 0, 0, 0, 0, 2, 2 };
+const int PROFILE_JAZZ[EQ_FACTORS]     = { 0, 0, 0, 4, 4, 4, 0, 2, 3, 4 };
+const int PROFILE_ELECTRIC[EQ_FACTORS] = { -6, 1, 4, -2, -2, -4, 0, 0, 6, 6 };
+
 TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
-    TAbstractWindow(parent),
-    mBtnClose(new TImageButton(this)),
-    mBtnEnabled(new TImageButton(this)),
-    mBtnProfile(new TImageButton(this)),
-    mBtnReset(new TImageButton(this)),
-    mSldBalance(new TSliderBar(Qt::Horizontal, this)),
-    mSldSurround(new TSliderBar(Qt::Horizontal, this)),
-    mSldPreamp(new TSliderBar(Qt::Vertical, this))
+    TAbstractWindow(parent)
+  , mBtnClose(new TImageButton(this))
+  , mBtnEnabled(new TImageButton(this))
+  , mBtnProfile(new TImageButton(this))
+  , mBtnReset(new TImageButton(this))
+  , mSldBalance(new TSliderBar(Qt::Horizontal, this))
+  , mSldSurround(new TSliderBar(Qt::Horizontal, this))
+  , mSldPreamp(new TSliderBar(Qt::Vertical, this))
+  , mContextMenu(new TEqualizerMenu(parent))
+  , mTriggerIgnored(false)
 {
     setObjectName("EqualizerWindow");
 
     mBtnEnabled->setCheckable(true);
-
     mBtnEnabled->setShortcut(QKeySequence(Qt::CTRL|Qt::Key_E));
+
+    mBtnProfile->setCursor(Qt::PointingHandCursor);
 
     mSldBalance->setRange(-10, 10);
     mSldBalance->setValue(0);
@@ -56,9 +68,18 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
     connect(mBtnReset, SIGNAL(clicked()), this, SLOT(on_btnReset_clicked()));
     connect(mBtnEnabled, SIGNAL(clicked()), this, SLOT(on_btnEnabled_clicked()));
+    connect(mBtnProfile, SIGNAL(clicked()), this, SLOT(on_btnProfile_clicked()));
     connect(mSldSurround, SIGNAL(valueChanged(int)), this, SLOT(on_surround_valueChanged(int)));
     connect(mSldBalance, SIGNAL(valueChanged(int)), this, SLOT(on_balance_valueChanged(int)));
     connect(mSldPreamp, SIGNAL(valueChanged(int)), this, SLOT(on_preamp_valueChanged(int)));
+
+    connect(mContextMenu, SIGNAL(onRockSelected()), this, SLOT(slotProfileRockSelected()));
+    connect(mContextMenu, SIGNAL(onMetalSelected()), this, SLOT(slotProfileMetalSelected()));
+    connect(mContextMenu, SIGNAL(onElectricSelected()), this, SLOT(slotProfileElectricSelected()));
+    connect(mContextMenu, SIGNAL(onPopSelected()), this, SLOT(slotProfilePopSelected()));
+    connect(mContextMenu, SIGNAL(onJazzSelected()), this, SLOT(slotProfileJazzSelected()));
+    connect(mContextMenu, SIGNAL(onClassicSelected()), this, SLOT(slotProfileClassicSelected()));
+    connect(mContextMenu, SIGNAL(onCustomizeSelected()), this, SLOT(slotProfileCustomizeSelected()));
 
     retranslateUi();
 }
@@ -73,10 +94,8 @@ TEqualizerWindow::~TEqualizerWindow()
     prefs->setEqBallance(mSldBalance->value());
     prefs->setEqSurround(mSldSurround->value());
     prefs->setEqAmplification(mSldPreamp->value());
-    QList<int> factors;
-    for(TSliderBar *sliderBar : mSldEqFactors)
-        factors.append(sliderBar->value());
-    prefs->setEqFactors(factors);
+
+    saveEqFactors();
 }
 
 void TEqualizerWindow::loadSettings()
@@ -91,14 +110,7 @@ void TEqualizerWindow::loadSettings()
     mSldSurround->setValue(prefs->eqSurround());
     mSldPreamp->setValue(prefs->eqAmplification());
 
-    QList<int> factors = prefs->eqFactors();
-    if(mSldEqFactors.size()==factors.size())
-    {
-        for(int i=0;i<mSldEqFactors.size();i++)
-        {
-            mSldEqFactors[i]->setValue(factors[i]);
-        }
-    }
+    mContextMenu->loadSettings();
 }
 
 void TEqualizerWindow::on_btnClose_clicked()
@@ -123,6 +135,12 @@ void TEqualizerWindow::on_btnEnabled_clicked()
     emit eqEnableToggled(!mBtnEnabled->isChecked());
 }
 
+void TEqualizerWindow::on_btnProfile_clicked()
+{
+    if(mContextMenu)
+        mContextMenu->popup(QCursor::pos());
+}
+
 void TEqualizerWindow::on_eqFactor_valueChanged(int value)
 {
     TSliderBar *factorBar = static_cast<TSliderBar*>(sender());
@@ -132,8 +150,9 @@ void TEqualizerWindow::on_eqFactor_valueChanged(int value)
     int i = mSldEqFactors.indexOf(factorBar);
     if(i != -1)
     {
-        emit eqFactorChanged(i, (float)value);
+        saveEqFactors();
 
+        emit eqFactorChanged(i, (float)value);        
         updateFactorToolTip(i);
     }
 }
@@ -163,6 +182,72 @@ void TEqualizerWindow::on_preamp_valueChanged(int value)
     emit eqPrempChanged((float)value);
 
     updatePreampTooltip();
+}
+
+void TEqualizerWindow::slotProfileRockSelected()
+{
+    setEqualizerFactors(PROFILE_ROCK);
+}
+
+void TEqualizerWindow::slotProfileMetalSelected()
+{
+    setEqualizerFactors(PROFILE_METAL);
+}
+
+void TEqualizerWindow::slotProfileElectricSelected()
+{
+    setEqualizerFactors(PROFILE_ELECTRIC);
+}
+
+void TEqualizerWindow::slotProfilePopSelected()
+{
+    setEqualizerFactors(PROFILE_POP);
+}
+
+void TEqualizerWindow::slotProfileJazzSelected()
+{
+    setEqualizerFactors(PROFILE_JAZZ);
+}
+
+void TEqualizerWindow::slotProfileClassicSelected()
+{
+    setEqualizerFactors(PROFILE_CLASSIC);
+}
+
+void TEqualizerWindow::slotProfileCustomizeSelected()
+{
+    QList<int> factors = TPreferences::instance()->eqFactors();
+    if(mSldEqFactors.size()==factors.size())
+    {
+        for(int i=0;i<mSldEqFactors.size();i++)
+        {
+            mSldEqFactors[i]->setValue(factors[i]);
+        }
+    }
+}
+
+void TEqualizerWindow::setEqualizerFactors(const int values[])
+{
+    mTriggerIgnored = true;
+    for(int i=0;i<EQ_FACTORS;i++)
+    {
+        mSldEqFactors[i]->setValue((float)values[i]);
+    }
+    mTriggerIgnored = false;
+}
+
+void TEqualizerWindow::saveEqFactors()
+{
+    if(!mContextMenu->isCustomizeActionChecked() && !mTriggerIgnored)
+        mContextMenu->checkCustomizeAction();
+
+    if(mContextMenu->isCustomizeActionChecked()){
+        QList<int> factors;
+        for(TSliderBar *sliderBar : mSldEqFactors)
+            factors.append(sliderBar->value());
+
+        TPreferences::instance()->setEqFactors(factors);
+    }
 }
 
 void TEqualizerWindow::retranslateUi()
@@ -235,6 +320,14 @@ QString TEqualizerWindow::dbStatusString(int value)
         prefix = "+";
 
     return tr("%1%2 db").arg(prefix).arg(value);
+}
+
+void TEqualizerWindow::contextMenuEvent(QContextMenuEvent *event)
+{
+    if(mContextMenu)
+        mContextMenu->popup(event->globalPos());
+
+    TAbstractWindow::contextMenuEvent(event);
 }
 
 void TEqualizerWindow::loadFromSkin(QDomElement element, TSkin *skin)

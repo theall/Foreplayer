@@ -139,7 +139,7 @@ bool TBackendPlugin::seek(int microSeconds)
 {
     bool ret = false;
     if(mSendCmd)
-        mSendCmd(BC_SEEK, &microSeconds, 0, 0, 0);
+        mSendCmd(BC_SEEK, &microSeconds, &ret, 0, 0);
 
     return ret;
 }

@@ -9,6 +9,13 @@
 
 typedef void (*IProgressCallback)(int value, int max);
 
+struct TrackItemParam
+{
+    QString sourceFile;
+    int sampleRate = 0;
+    int duration = 0;
+};
+
 bool isBlankFrame(byte *buf, int size)
 {
     short *pBuf = (short*)buf;
@@ -27,28 +34,29 @@ bool isBlankFrame(byte *buf, int size)
 }
 
 bool exportTrack(
-        TBackendPlugin *plugin,
-        TTrackInfo *trackInfo,
+        TCore *core,
+        TrackItem trackItem,
+        TrackItemParam *param,
         QString outputFile,
         QString format,
         TExportParam *exportParam = NULL
         )
 {
-    if(!plugin || !trackInfo)
+    if(!core || !trackItem)
         return false;
 
-    if(!plugin->openTrack(trackInfo))
+    if(!core->loadTrackItem(trackItem))
     {
-        printf(trp("Failed to load track \"%s\" in %s\n"), trackInfo->indexName.c_str(), trackInfo->musicFileName.c_str());
+        printf(trp("Failed to load track %s in %s\n"), qPrintable(core->getTrackItemIndexName(trackItem)), qPrintable(param->sourceFile));
         return false;
     }
     TExportFactory exportFactory;
     TAbstractExport *exportor = NULL;
     wstring fileNameW = outputFile.toStdWString();
     if(format.isEmpty())
-        exportor = exportFactory.create(fileNameW.c_str(), trackInfo->sampleRate);
+        exportor = exportFactory.create(fileNameW.c_str(), param->sampleRate);
     else
-        exportor = exportFactory.create(format, fileNameW.c_str(), trackInfo->sampleRate);
+        exportor = exportFactory.create(format, fileNameW.c_str(), param->sampleRate);
 
     if(!exportor->isOpened())
     {
@@ -57,27 +65,26 @@ bool exportTrack(
     }
     if(TMP3Export *mp3Exportor=reinterpret_cast<TMP3Export*>(exportor))
     {
-        mp3Exportor->setTitle(trackInfo->trackName);
-        mp3Exportor->setArtist(trackInfo->artist);
-        mp3Exportor->setAlbum(trackInfo->game);
-        mp3Exportor->setYear(trackInfo->year);
-        mp3Exportor->setComment(trackInfo->additionalInfo);
+        mp3Exportor->setTitle(core->getTrackItemName(trackItem).toStdString());
+        mp3Exportor->setArtist(core->getTrackItemArtist(trackItem).toStdString());
+        mp3Exportor->setAlbum(core->getTrackItemAlbum(trackItem).toStdString());
+        mp3Exportor->setYear(core->getTrackItemYear(trackItem).toInt());
+        mp3Exportor->setComment(core->getTrackItemAdditionalInfo(trackItem).toStdString());
     }
-    int samples = plugin->getSampleSize(trackInfo->sampleRate, SOUND_FPS);
+    int samples = core->getFrameSampleCount(param->sampleRate, 600);
     if(samples < 2)
         samples = 4096;
 
     int bufSize = samples*4;
     byte *buf = (byte*)malloc(bufSize);
     int silentFrames = 0;
-    float framesPerSec = trackInfo->sampleRate/samples;
+    float framesPerSec = param->sampleRate/samples;
 
-    int realDuration = trackInfo->duration;
+    int realDuration = core->getTrackItemDuration(trackItem);
     if(realDuration < 1)
         realDuration = 150000;
 
     int totalFrames = framesPerSec*realDuration/1000 + 0.5;
-    TRequestSamples nextframe = plugin->getCallback();
     if(exportParam)
         exportParam->progressTotalFrames = totalFrames;
 
@@ -89,7 +96,7 @@ bool exportTrack(
                 QThread::msleep(500);
         }
         memset(buf, 0, bufSize);
-        nextframe(bufSize, buf);
+        core->getNextFrame((char*)buf, bufSize);
         if(isBlankFrame(buf, bufSize))
         {
             silentFrames++;
@@ -128,7 +135,7 @@ int main(int argc, char *argv[])
         return 0;
     }
     // Load backend plugins
-    TBackendPluginManager *plugins = TBackendPluginManager::instance();
+    TCore core;
     QString indexName = parser.indexName();
     QString sourceFile = parser.sourceFile();
     QString destFilePath = parser.destFilePath();
@@ -145,15 +152,14 @@ int main(int argc, char *argv[])
         exportParam = TCmdlineParser::getExportParam();
 
     // Parse track list
-    TMusicInfo musicInfo;
-    TBackendPlugin *plugin = plugins->parse(sourceFile, &musicInfo);
-    if(!plugin)
+    MusicItem musicItem = core.parse(sourceFile);
+    if(!musicItem)
     {
         printf(trp("Music file can not be parsed.\n"));
         return 0;
     }
 
-    int trackCount = musicInfo.trackList.size();
+    int trackCount = core.getTrackItemCount(musicItem);
     if(trackCount == 0)
     {
         printf(trp("No tracks in music file.\n"));
@@ -162,29 +168,28 @@ int main(int argc, char *argv[])
         printf(trp("Find %d tracks in music file.\n"), trackCount);
     }
 
-    TTrackInfoList trackList;
+    TrackItems trackItems;
     if(!indexName.isEmpty())
     {
-        TTrackInfo *trackTarget = NULL;
+        TrackItem trackTarget = NULL;
         for(int i=0;i<trackCount;i++)
         {
-            TTrackInfo *trackPointer = musicInfo.trackList[i];
-            if(trackPointer->indexName == indexName.toStdString())
+            TrackItem trackItem = core.getTrackItem(musicItem, i);
+            if(core.getTrackItemIndexName(trackItem).toLower() == indexName.toLower())
             {
-                trackTarget = trackPointer;
+                trackTarget = trackItem;
                 break;
             }
         }
-
         if(trackTarget)
-            trackList.push_back(trackTarget);
+            trackItems.push_back(trackTarget);
         else
         {
             printf(trp("Failed to find specified track with index %s\n"), qPrintable(indexName));
             return 0;
         }
     } else {
-        trackList = musicInfo.trackList;
+        trackItems = core.getTrackItems(musicItem);
     }
 
     bool destIsDir = true;
@@ -204,28 +209,31 @@ int main(int argc, char *argv[])
     }
 
     QDir destDir(destFilePath);
-    int trackListSize = trackList.size();
+    int trackListSize = trackItems.size();
 
     int nSkip = 0;
     int nSuccess = 0;
     int nFail = 0;
     for(int i=0;i<trackListSize;i++)
     {
-        TTrackInfo *trackInfo = trackList[i];
+        TrackItem trackItem = trackItems[i];
+        QString trackItemName = core.getTrackItemName(trackItem);
         if(isListMode) {
-            printf("%s\t%s\n", trackInfo->indexName.c_str(), trackInfo->trackName.c_str());
+            printf("%s %s\n", qPrintable(core.getTrackItemIndexName(trackItem)), qPrintable(trackItemName));
         } else {
-            trackInfo->musicFileName = sourceFile.toStdString();
-            trackInfo->sampleRate = sampleRate;
-            if(trackInfo->duration <= 0)
-                trackInfo->duration = duration;
+            TrackItemParam param;
+            param.sampleRate = sampleRate;
+            if(core.getTrackItemDuration(trackItem) <= 0)
+                param.duration = duration;
+
             QString destFileFullName;
             if((trackListSize>1 && indexName.isEmpty()) || destIsDir)
             {
                 // While exporting muliple tracks, auto set dest name to track name
-                QString tempName = QString::fromStdString(trackInfo->trackName);
-                tempName.prepend(QString("%1.").arg(i+1));
-                QString baseName = tempName+"."+format;
+                QString baseName = trackItemName;
+                baseName.prepend(QString("%1.").arg(i+1));
+                if(QFileInfo(baseName).suffix().toLower() != format.toLower())
+                    baseName += "."+format;
                 destFileFullName = destDir.absoluteFilePath(baseName);
             } else {
                 destFileFullName = destFilePath;
@@ -238,7 +246,7 @@ int main(int argc, char *argv[])
                 nSkip++;
                 continue;
             }
-            if(exportTrack(plugin, trackInfo, destFileFullName, format, exportParam))
+            if(exportTrack(&core, trackItem, &param, destFileFullName, format, exportParam))
             {
                 nSuccess++;
                 printf(trp("Export to %s\n"), qPrintable(destFileFullName));

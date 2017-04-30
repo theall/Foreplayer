@@ -224,6 +224,8 @@ TMusicItem *TPlaylistCore::parse(wstring file)
         musicItem->setSystem(musicInfo->system.c_str());
         musicItem->setAdditionalInfo(musicInfo->additionalInfo.c_str());
         musicItem->setDuration(musicInfo->duration);
+        musicItem->setSampleRate(musicInfo->sampleRate);
+        musicItem->setChannels(musicInfo->channels);
         for (TTrackInfo *track : musicInfo->trackList) {
             TTrackItem *trackItem = new TTrackItem;
             trackItem->fileName = file;
@@ -234,6 +236,8 @@ TMusicItem *TPlaylistCore::parse(wstring file)
             trackItem->system = track->system.c_str();
             trackItem->additionalInfo = track->additionalInfo.c_str();
             trackItem->duration = track->duration;
+            trackItem->sampleRate = track->sampleRate;
+            trackItem->channels = track->channels;
             trackItem->originalDuration = trackItem->duration;
             trackItem->index = i2wstr(track->index);
             trackItem->indexName = track->indexName.c_str();

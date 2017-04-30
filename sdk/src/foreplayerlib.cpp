@@ -221,6 +221,12 @@ void FOREPLAYER_API foreplayer_send_cmd(
     case CMD_GET_MUSIC_ITEM_DURATION:
         *(int*)param2 = param1?((TMusicItem*)param1)->duration():0;
         break;
+    case CMD_GET_MUSIC_ITEM_SAMPLE_RATE:
+        *(int*)param2 = param1?((TMusicItem*)param1)->sampleRate():0;
+        break;
+    case CMD_GET_MUSIC_ITEM_CHANNELS:
+        *(int*)param2 = param1?((TMusicItem*)param1)->channels():0;
+        break;
     case CMD_GET_TRACK_ITEM_COUNT:
         *(int*)param2 = param1?((TMusicItem*)param1)->size():0;
         break;
@@ -291,6 +297,12 @@ void FOREPLAYER_API foreplayer_send_cmd(
             }
         }
         break;
+    case CMD_GET_TRACK_ITEM_SAMPLE_RATE:
+        *(int*)param2 = param1?((TTrackItem*)param1)->sampleRate:0;
+        break;
+    case CMD_GET_TRACK_ITEM_CHANNEL:
+        *(int*)param2 = param1?((TTrackItem*)param1)->channels:0;
+        break;
     case CMD_PARSE_FILE:
         if(g_playlist)
         {
@@ -322,6 +334,9 @@ void FOREPLAYER_API foreplayer_send_cmd(
         } else {
             *(bool*)param1 = false;
         }
+        break;
+    case CMD_PLAYER_SEEK_POSITION:
+        *(bool*)param2 = g_player?g_player->seek(*(int*)param1):false;
         break;
     case CMD_PLAYLIST_ITEM_CLEAR:
         ((TPlaylistItem*)param1)->clear();
@@ -453,6 +468,46 @@ void FOREPLAYER_API foreplayer_send_cmd(
         break;
     case CMD_GET_PLUGIN_SUFFIXDESCRIPTION:
         *(map<wstring, wstring>*)param2 = param1?((TBackendPlugin*)param1)->suffixListDescription():map<wstring, wstring>();
+        break;
+    case CMD_TRACK_ITEM_AS_STRING:
+        break;
+    case CMD_TRACK_ITEMS_AS_STRING:
+        break;
+    case CMD_STRING_TO_TRACK_ITEM:
+        break;
+    case CMD_STRING_TO_TRACK_ITEMS:
+        break;
+    case CMD_MUSIC_ITEM_AS_STRING:
+        break;
+    case CMD_MUSIC_ITEMS_AS_STRING:
+        break;
+    case CMD_STRING_TO_MUSIC_ITEM:
+        break;
+    case CMD_STRING_TO_MUSIC_ITEMS:
+        break;
+    case CMD_EXPORT_FRAME_SAMPLE_COUNT:
+        if(g_player)
+        {
+            *(int*)param3 = g_player->samplesPerFrame(*(int*)param1, *(int*)param2);
+        } else {
+            *(int*)param3 = 0;
+        }
+        break;
+    case CMD_EXPORT_LOAD_TRACK:
+        if(g_player)
+        {
+            *(bool*)param2 = g_player->loadTrack((TTrackItem*)param1);
+        } else {
+            *(bool*)param2 = false;
+        }
+        break;
+    case CMD_EXPORT_NEXT_FRAME:
+        if(g_player)
+        {
+            g_player->nextSamples((byte*)param1, *(int*)param2);
+        } else {
+            *(int*)param2 = 0;
+        }
         break;
     default:
         break;

@@ -406,15 +406,18 @@ void TAbstractTableView::mouseDoubleClickEvent(QMouseEvent *event)
 
 void TAbstractTableView::keyPressEvent(QKeyEvent *event)
 {
-    int key = event->key();
-    if(key==Qt::Key_Return || key==Qt::Key_Enter)
+    if(g_editingRow == -1)
     {
-        QModelIndex index = selectionModel()->currentIndex();
-        int row = index.row();
-        if(row >= 0)
+        int key = event->key();
+        if(key==Qt::Key_Return || key==Qt::Key_Enter)
         {
-            emit onCurrentRowChanged(row);
-            emit onDoubleClickItem(row);
+            QModelIndex index = selectionModel()->currentIndex();
+            int row = index.row();
+            if(row >= 0)
+            {
+                emit onCurrentRowChanged(row);
+                emit onDoubleClickItem(row);
+            }
         }
     }
 

@@ -137,14 +137,23 @@ void TTransparentMenu::slotActionTriggered(bool checked)
     QAction *action = static_cast<QAction*>(sender());
     if(!checked)
     {
-        mActionDisable->trigger();
+        if(action == mActionDisable)
+        {
+            mActionDisable->blockSignals(true);
+            mActionDisable->setChecked(true);
+            mActionDisable->blockSignals(false);
+        } else {
+            mActionDisable->trigger();
+        }
         return;
     }
     if(action)
     {
         if(action != mActionDisableWhileActived && mLastActivedAction)
         {
+            mLastActivedAction->blockSignals(true);
             mLastActivedAction->setChecked(false);
+            mLastActivedAction->blockSignals(false);
         }
 
         if(action == mActionDisable)

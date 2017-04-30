@@ -115,6 +115,7 @@ public:
     QString getTrackItemYear(TrackItem trackItem);
     QString getTrackItemAdditionalInfo(TrackItem trackItem);
     QString getTrackItemIndexName(TrackItem trackItem);
+    int getTrackItemSampleRate(TrackItem trackItem);
     bool isTrackItemEnabled(TrackItem trackItem);
 
     // Parse file
@@ -132,6 +133,7 @@ public:
     bool isStoped();
     bool isPlaying();
     bool pause();
+    bool seek(int microSeconds);
 
     void setAudioParameter(AudioParameter type, float value, int param = 0);
     void getAudioData(AudioDataType dataType, void *param1, void *param2);
@@ -147,6 +149,11 @@ public:
     QString getPluginCreateDate(PluginHandle pluginHandle);
     QString getPluginDescription(PluginHandle pluginHandle);
     QMap<QString, QString> getPluginSuffixDescription(PluginHandle pluginHandle);
+
+    //// For export
+    bool loadTrackItem(TrackItem trackItem);
+    void getNextFrame(char *buffer, int size);
+    int getFrameSampleCount(int sampleRate, int fps);
 
 private:
     QLibrary *mLibrary;

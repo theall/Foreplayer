@@ -54,6 +54,7 @@
 #define SEC_EQUALIZER_WINDOW_SURROUND   "Surround"
 #define SEC_EQUALIZER_WINDOW_AMPLIFY    "Amplification"
 #define SEC_EQUALIZER_WINDOW_FACTORS    "Factors"
+#define SEC_EQUALIZER_WINDOW_PROFILE    "Profile"
 
 // Playlist window
 #define SEC_PLAYLIST_WINDOW         "PlaylistWindow"
@@ -118,6 +119,7 @@ TPreferences::TPreferences(QObject *parent):
     mEqBallance = intValue(SEC_EQUALIZER_WINDOW_BALLANCE);
     mEqSurround = intValue(SEC_EQUALIZER_WINDOW_SURROUND);
     mEqAmplification = intValue(SEC_EQUALIZER_WINDOW_AMPLIFY);
+    mEqProfile = intValue(SEC_EQUALIZER_WINDOW_PROFILE);
     QString factors = stringValue(SEC_EQUALIZER_WINDOW_FACTORS);
     QStringList sl = factors.split(",");
     for(QString s : sl)
@@ -584,6 +586,16 @@ void TPreferences::setEqFactors(QList<int> value)
     mSettings->endGroup();
 
     mEqFactors = value;
+}
+
+int TPreferences::eqProfile()
+{
+    return mEqProfile;
+}
+
+void TPreferences::setEqProfile(int profile)
+{
+    SET_VALUE(profile, mEqProfile, SEC_EQUALIZER_WINDOW, SEC_EQUALIZER_WINDOW_PROFILE);
 }
 
 void TPreferences::setValue(QString section, QVariant value)

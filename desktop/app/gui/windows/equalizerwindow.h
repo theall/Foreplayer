@@ -20,9 +20,10 @@
 
 #include "widgets/imagebutton.h"
 #include "widgets/sliderbar.h"
-#include "abstractwindow.h"
 
-#define EQ_FACTORS 10
+#include "../menus/equalizermenu.h"
+
+#include "abstractwindow.h"
 
 class TEqualizerWindow : public TAbstractWindow
 {
@@ -53,10 +54,19 @@ private slots:
     void on_btnClose_clicked();
     void on_btnReset_clicked();
     void on_btnEnabled_clicked();
+    void on_btnProfile_clicked();
     void on_eqFactor_valueChanged(int value);
     void on_balance_valueChanged(int value);
     void on_surround_valueChanged(int value);
     void on_preamp_valueChanged(int value);
+
+    void slotProfileRockSelected();
+    void slotProfileMetalSelected();
+    void slotProfileElectricSelected();
+    void slotProfilePopSelected();
+    void slotProfileJazzSelected();
+    void slotProfileClassicSelected();
+    void slotProfileCustomizeSelected();
 
 private:
     TImageButton *mBtnClose;
@@ -67,12 +77,22 @@ private:
     TSliderBar *mSldSurround;
     TSliderBar *mSldPreamp;
     QList<TSliderBar *> mSldEqFactors;
+    TEqualizerMenu *mContextMenu;
+    bool mTriggerIgnored;
+
     void retranslateUi();
     void updateFactorToolTip(int index);
     void updateBallanceTooltip();
     void updateSurroundTooltip();
     void updatePreampTooltip();
+    void setEqualizerFactors(const int values[10]);
+    void saveEqFactors();
+
     QString dbStatusString(int value);
+
+    // QWidget interface
+protected:
+    void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
 
     // TSkinReader interface
 public:
