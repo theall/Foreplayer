@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef TPLAYLISTWINDOW_H
 #define TPLAYLISTWINDOW_H
 
@@ -60,10 +60,10 @@ signals:
     // Music item popup menu
     void requestReparseMusicItem(int row);
     void requestPlayMusicItem(int row);
-    void requestCopyMusicItem(QSet<int> rows);
-    void requestCutMusicItem(QSet<int> rows);
+    void requestCopyMusicItem(QList<int> rows);
+    void requestCutMusicItem(QList<int> rows);
     void requestPasteMusicItem(int pos);
-    void requestDeleteMusicItem(QSet<int> rows);
+    void requestDeleteMusicItem(QList<int> rows);
     void requestExplorerMusicItem(int row);
     void requestExportMusicItem(int row);
     void requestViewMusicItem(int row);
@@ -78,7 +78,7 @@ signals:
 
     // Track item popup menu
     void requestPlayTrackItem(int row);
-    void requestCopyTrackItem(QSet<int> rows);
+    void requestCopyTrackItem(QList<int> rows);
     void requestExportTrackItem(int row);
     void requestViewTrackItem(int row);
 
@@ -99,6 +99,7 @@ private slots:
 
     // Playlist view
     void slotActionRenameTriggered();
+    void slotActionRemovePlaylist();
 
     // Add musics
     void slotOnActionAddMusicsTriggered();
@@ -149,6 +150,7 @@ private:
     TPopMenuTrackList *mPopmenuTrackList;
 
     void tryAddMusicFiles(QStringList files);
+    bool verified();
 
     // QWidget interface
 protected:

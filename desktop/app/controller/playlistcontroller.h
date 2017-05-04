@@ -64,7 +64,7 @@ private slots:
 
     //// Music list
     void slotRequestAddMusicFiles(QStringList files, int pos, QList<int> &newIndexes);
-    void slotRequestRemoveSelections(QList<int> indexes);
+    void slotRequestDeleteMusicItem(QList<int> indexes);
     void slotRequestRemoveRedundant();
     void slotRequestRemoveErrors();
     void slotRequestRemoveAll();
@@ -72,10 +72,9 @@ private slots:
     // Music item
     void slotRequestReparseMusicItem(int row);
     void slotRequestPlayMusicItem(int row);
-    void slotRequestCopyMusicItem(QSet<int> rows);
-    void slotRequestCutMusicItem(QSet<int> rows);
+    void slotRequestCopyMusicItem(QList<int> rows);
+    void slotRequestCutMusicItem(QList<int> rows);
     void slotRequestPasteMusicItem(int pos);
-    void slotRequestDeleteMusicItem(QSet<int> rows);
     void slotRequestExplorerMusicItem(int row);
     void slotRequestExportMusicItem(int row);
     void slotRequestViewMusicItem(int row);
@@ -90,7 +89,7 @@ private slots:
 
     // Track item
     void slotRequestPlayTrackItem(int row);
-    void slotRequestCopyTrackItem(QSet<int> rows);
+    void slotRequestCopyTrackItem(QList<int> rows);
     void slotRequestExportTrackItem(int row);
     void slotRequestViewTrackItem(int row);
 
@@ -129,6 +128,7 @@ private:
     bool mCurrentViewMusic;
     QMutex mExportMissionsLock;
     void fillPropertyDialog();
+    void restoreMusicListSelection(int oldIndex);
     void locateIndex(int pi, int mi, int ti);
 };
 

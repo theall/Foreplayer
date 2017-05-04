@@ -50,7 +50,7 @@ public:
     void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
     void addFiles(QStringList files, int pos = 0x7fffffff);
     void addFiles(QList<QUrl> urls, int pos = 0x7fffffff);
-    QSet<int> selectedRows();
+    QList<int> selectedRows();
     int currentRow();
     void selectIndexes(QList<int> indexes, bool locate = true);
 

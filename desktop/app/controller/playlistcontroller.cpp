@@ -112,7 +112,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     connect(mPlaylistWindow, SIGNAL(requestSendTo()), this, SLOT(slotRequestSendTo()));
 
     // Music list
-    connect(mPlaylistWindow, SIGNAL(requestRemoveSelections(QList<int>)), this, SLOT(slotRequestRemoveSelections(QList<int>)));
+    connect(mPlaylistWindow, SIGNAL(requestRemoveSelections(QList<int>)), this, SLOT(slotRequestDeleteMusicItem(QList<int>)));
     connect(mPlaylistWindow, SIGNAL(requestRemoveRedundant()), this, SLOT(slotRequestRemoveRedundant()));
     connect(mPlaylistWindow, SIGNAL(requestRemoveErrors()), this, SLOT(slotRequestRemoveErrors()));
     connect(mPlaylistWindow, SIGNAL(requestRemoveAll()), this, SLOT(slotRequestRemoveAll()));
@@ -120,10 +120,10 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     // Music item
     connect(mPlaylistWindow, SIGNAL(requestReparseMusicItem(int)), this, SLOT(slotRequestReparseMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestPlayMusicItem(int)), this, SLOT(slotRequestPlayMusicItem(int)));
-    connect(mPlaylistWindow, SIGNAL(requestCopyMusicItem(QSet<int>)), this, SLOT(slotRequestCopyMusicItem(QSet<int>)));
-    connect(mPlaylistWindow, SIGNAL(requestCutMusicItem(QSet<int>)), this, SLOT(slotRequestCutMusicItem(QSet<int>)));
+    connect(mPlaylistWindow, SIGNAL(requestCopyMusicItem(QList<int>)), this, SLOT(slotRequestCopyMusicItem(QList<int>)));
+    connect(mPlaylistWindow, SIGNAL(requestCutMusicItem(QList<int>)), this, SLOT(slotRequestCutMusicItem(QList<int>)));
     connect(mPlaylistWindow, SIGNAL(requestPasteMusicItem(int)), this, SLOT(slotRequestPasteMusicItem(int)));
-    connect(mPlaylistWindow, SIGNAL(requestDeleteMusicItem(QSet<int>)), this, SLOT(slotRequestDeleteMusicItem(QSet<int>)));
+    connect(mPlaylistWindow, SIGNAL(requestDeleteMusicItem(QList<int>)), this, SLOT(slotRequestDeleteMusicItem(QList<int>)));
     connect(mPlaylistWindow, SIGNAL(requestExplorerMusicItem(int)), this, SLOT(slotRequestExplorerMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestExportMusicItem(int)), this, SLOT(slotRequestExportMusicItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestViewMusicItem(int)), this, SLOT(slotRequestViewMusicItem(int)));
@@ -138,7 +138,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
 
     // Track item
     connect(mPlaylistWindow, SIGNAL(requestPlayTrackItem(int)), this, SLOT(slotRequestPlayTrackItem(int)));
-    connect(mPlaylistWindow, SIGNAL(requestCopyTrackItem(QSet<int>)), this, SLOT(slotRequestCopyTrackItem(QSet<int>)));
+    connect(mPlaylistWindow, SIGNAL(requestCopyTrackItem(QList<int>)), this, SLOT(slotRequestCopyTrackItem(QList<int>)));
     connect(mPlaylistWindow, SIGNAL(requestExportTrackItem(int)), this, SLOT(slotRequestExportTrackItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestViewTrackItem(int)), this, SLOT(slotRequestViewTrackItem(int)));
 
@@ -242,7 +242,7 @@ void TPlaylistController::slotAddExportMission()
     mExportMissionsLock.unlock();
 
     if(mExportMissions.size() > 0)
-        startTimer(300);
+        startMyTimer(300);
 
     if(!mExportMissionDialog->isVisible())
         mExportMissionDialog->show();
@@ -333,12 +333,14 @@ void TPlaylistController::slotPlaylistIndexChanged(int index)
 
 void TPlaylistController::slotMusiclistIndexChanged(int index)
 {
-    if(!mCore || !mTracklistModel)
+    if(!mCore || !mMusiclistModel || !mTracklistModel)
         return;
 
     PlayListItem playlistItem = mCore->getPlaylistItem(mPlaylistModel->currentIndex());
     if(playlistItem)
     {
+        mMusiclistModel->setCurrentIndex(index);
+
         MusicItem musicItem = mCore->getMusicItem(playlistItem, index);
         mTracklistModel->setMusicItem(musicItem);
 
@@ -404,12 +406,20 @@ void TPlaylistController::slotRequestRemovePlaylist()
         return;
 
     int currentIndex = mPlaylistModel->currentIndex();
+
     mPlaylistModel->remove(currentIndex);
 
     // Reget current index after item removed
     currentIndex = mPlaylistModel->currentIndex();
+    if(currentIndex < 0)
+    {
+        QList<int> selected = mPlaylistView->selectedRows();
+        if(selected.size() > 0)
+            currentIndex = selected.at(0);
+    }
+
     if(currentIndex > -1)
-        mPlaylistView->selectRow(currentIndex);
+        slotPlaylistIndexChanged(currentIndex);
 }
 
 void TPlaylistController::slotRequestSortPlaylists()
@@ -458,12 +468,16 @@ void TPlaylistController::slotRequestAddMusicFiles(QStringList files, int pos, Q
     mTracklistModel->setMusicItem(mCore->getMusicItem(mMusiclistModel->playlistItem(), pos));
 }
 
-void TPlaylistController::slotRequestRemoveSelections(QList<int> indexes)
+void TPlaylistController::slotRequestDeleteMusicItem(QList<int> indexes)
 {
-    if(!mMusiclistModel)
+    if(!mMusiclistModel || !mMusiclistView)
         return;
 
+    int oldIndex = mMusiclistModel->currentIndex();
+
     mMusiclistModel->removeSelections(indexes);
+
+    restoreMusicListSelection(oldIndex);
 }
 
 void TPlaylistController::slotRequestRemoveRedundant()
@@ -471,8 +485,12 @@ void TPlaylistController::slotRequestRemoveRedundant()
     if(!mMusiclistModel)
         return;
 
+    int oldIndex = mMusiclistModel->currentIndex();
+
     mMusiclistModel->removeRedundant();
     mTracklistModel->setMusicItem(mCore->getMusicItem(mCore->getPlayingPlaylistItem(), mMusiclistModel->currentIndex()));
+
+    restoreMusicListSelection(oldIndex);
 }
 
 void TPlaylistController::slotRequestRemoveErrors()
@@ -480,8 +498,12 @@ void TPlaylistController::slotRequestRemoveErrors()
     if(!mMusiclistModel)
         return;
 
+    int oldIndex = mMusiclistModel->currentIndex();
+
     mMusiclistModel->removeErrors();
     mTracklistModel->setMusicItem(mCore->getMusicItem(mCore->getPlayingPlaylistItem(), mMusiclistModel->currentIndex()));
+
+    restoreMusicListSelection(oldIndex);
 }
 
 void TPlaylistController::slotRequestRemoveAll()
@@ -517,7 +539,7 @@ void TPlaylistController::slotRequestPlayMusicItem(int row)
     slotMusiclistItemSelected(row);
 }
 
-void TPlaylistController::slotRequestCopyMusicItem(QSet<int> rows)
+void TPlaylistController::slotRequestCopyMusicItem(QList<int> rows)
 {
     if(!mCore || !mMusiclistModel)
         return;
@@ -530,36 +552,23 @@ void TPlaylistController::slotRequestCopyMusicItem(QSet<int> rows)
             musicItems.append(mCore->getMusicItem(playlistItem, row));
         QClipboard *clipBoard = qApp->clipboard();
         QMimeData *mimeData = new QMimeData;
-        mimeData->setData(MIME_TYPE_MUSIC_ITEM, mCore->musicItemsToString(musicItems).toLocal8Bit());
+        mimeData->setData(MIME_TYPE_MUSIC_ITEM, mCore->musicItemToString(musicItems).toLocal8Bit());
         clipBoard->setMimeData(mimeData);
     }
 }
 
-void TPlaylistController::slotRequestCutMusicItem(QSet<int> rows)
+void TPlaylistController::slotRequestCutMusicItem(QList<int> rows)
 {
-    if(!mMusiclistModel)
-        return;
-
-    PlayListItem playlistItem = mMusiclistModel->playlistItem();
-    if(playlistItem)
-    {
-        QClipboard *clipBoard = qApp->clipboard();
-        for(int row : rows) {
-            MusicItem musicItem = mCore->getMusicItem(playlistItem, row);
-            if(musicItem)
-            {
-                QMimeData *mimeData = new QMimeData;
-                //mimeData->setData(MIME_TYPE_MUSIC_ITEM, mCore->getMusicItemtoJson());
-                clipBoard->setMimeData(mimeData);
-            }
-        }
-    }
+    slotRequestCopyMusicItem(rows);
+    slotRequestDeleteMusicItem(rows);
 }
 
 void TPlaylistController::slotRequestPasteMusicItem(int pos)
 {
     if(!mMusiclistModel)
         return;
+
+    int oldIndex = mMusiclistModel->currentIndex();
 
     MusicItems musicItems;
     const QMimeData *mimeData = qApp->clipboard()->mimeData();
@@ -577,15 +586,10 @@ void TPlaylistController::slotRequestPasteMusicItem(int pos)
 //            musicItems.append(musicItem);
 //        }
     }
+
     mMusiclistModel->insertItems(pos, musicItems);
-}
 
-void TPlaylistController::slotRequestDeleteMusicItem(QSet<int> rows)
-{
-    if(!mMusiclistModel)
-        return;
-
-    mMusiclistModel->removeSelections(rows.toList());
+    restoreMusicListSelection(oldIndex);
 }
 
 void TPlaylistController::slotRequestExplorerMusicItem(int row)
@@ -692,7 +696,7 @@ void TPlaylistController::slotRequestPlayTrackItem(int row)
         slotTracklistItemSelected(row);
 }
 
-void TPlaylistController::slotRequestCopyTrackItem(QSet<int> rows)
+void TPlaylistController::slotRequestCopyTrackItem(QList<int> rows)
 {
     if(!mTracklistModel)
         return;
@@ -705,7 +709,7 @@ void TPlaylistController::slotRequestCopyTrackItem(QSet<int> rows)
             trackItems.append(mCore->getTrackItem(musicItem, row));
         QClipboard *clipBoard = qApp->clipboard();
         QMimeData *mimeData = new QMimeData;
-        mimeData->setData(MIME_TYPE_TRACK_ITEM, mCore->trackItemsToString(trackItems).toLocal8Bit());
+        mimeData->setData(MIME_TYPE_TRACK_ITEM, mCore->trackItemToString(trackItems).toLocal8Bit());
         clipBoard->setMimeData(mimeData);
     }
 }
@@ -746,9 +750,10 @@ void TPlaylistController::slotRequestViewTrackItem(int row)
 
 void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, int ti)
 {
-    slotPlaylistIndexChanged(pi);
-    locateIndex(pi, mi, ti);
-    return;
+//    mPlaylistModel->setPlayingIndex(pi);
+//    slotPlaylistIndexChanged(pi);
+//    locateIndex(pi, mi, ti);
+//    return;
 
     if(mPlaylistModel && mMusiclistModel && mTracklistModel && mCore)
     {
@@ -806,7 +811,7 @@ void TPlaylistController::slotTimerEvent()
             }
         } else {
             if(completeCount >= mExportMissions.size())
-                stopTimer();
+                stopMyTimer();
         }
         mExportMissionsLock.unlock();
         mMissionsModel->layoutChanged();
@@ -856,11 +861,29 @@ void TPlaylistController::fillPropertyDialog()
     }
 }
 
+void TPlaylistController::restoreMusicListSelection(int oldIndex)
+{
+    int currentIndex = mMusiclistModel->currentIndex();
+    int rowCount = mMusiclistModel->rowCount(QModelIndex()) - 1;
+
+    // Reget current index after item removed
+    if(currentIndex < 0)
+    {
+        currentIndex = oldIndex;
+    }
+    if(currentIndex >= rowCount) {
+        currentIndex = rowCount - 1;
+    }
+
+    if(currentIndex > -1)
+        mMusiclistView->selectRow(currentIndex);
+}
+
 void TPlaylistController::locateIndex(int pi, int mi, int ti)
 {
     if(mPlaylistView)
     {
-        mPlaylistView->selectRow(pi);
+        //mPlaylistView->selectRow(pi);
         mPlaylistView->scrollTo(mPlaylistModel->index(pi, 0));
     }
     if(mMusiclistView)

@@ -71,6 +71,26 @@ TPopMenuMusiclistItem::~TPopMenuMusiclistItem()
 
 }
 
+void TPopMenuMusiclistItem::display(QPoint pos, int selectionCount)
+{
+    bool noSelection = selectionCount<=0;
+    bool singleSelection = selectionCount==1;
+
+    mActionReparse->setEnabled(!noSelection);
+    mActionCut->setEnabled(!noSelection);
+    mActionCopy->setEnabled(!noSelection);
+    mActionPlay->setEnabled(singleSelection);
+    mActionRemove->setEnabled(!noSelection);
+    mActionExport->setEnabled(!noSelection);
+    mActionExplorer->setEnabled(singleSelection);
+    mActionRename->setEnabled(singleSelection);
+    mActionDetail->setEnabled(singleSelection);
+    mActionCopyToUsb->setEnabled(!noSelection);
+    mActionPaste->setEnabled(true);
+
+    popup(pos);
+}
+
 void TPopMenuMusiclistItem::retranslateUi()
 {
     mActionReparse->setText(tr("Reparse"));

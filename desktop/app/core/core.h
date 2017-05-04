@@ -80,8 +80,7 @@ public:
     int getMusicItemCount(PlayListItem playlistItem);
     MusicItem getMusicItem(PlayListItem playlistItem, int row);
     QString musicItemToString(MusicItem musicItem);
-    QString musicItemsToString(MusicItems musicItems);
-    MusicItem stringToMusicItem(QString str);
+    QString musicItemToString(MusicItems musicItems);
     MusicItems stringToMusicItems(QString str);
     int getMusicItemIndex(PlayListItem playlistItem, MusicItem musicItem);
     QList<int> moveMusicItems(PlayListItem playlistItem, QList<int> indexes, int pos);
@@ -100,9 +99,9 @@ public:
     //// Track items
     int getTrackItemCount(MusicItem musicItem);
     TrackItem getTrackItem(MusicItem musicItem, int index);
-    QString trackItemToString(TrackItem trackItem);
     TrackItems getTrackItems(MusicItem musicItem);
-    QString trackItemsToString(TrackItems trackItems);
+    QString trackItemToString(TrackItem trackItem);
+    QString trackItemToString(TrackItems trackItems);
     int getTrackItemIndex(MusicItem musicItem, TrackItem trackItem);
     QString getTrackItemName(TrackItem trackItem);
     bool setTrackItemName(MusicItem musicItem, TrackItem trackItem, QString newName);
@@ -127,6 +126,7 @@ public:
     void getPlayingIndex(int *pi, int *mi, int *ti);
     void setPlayingIndex(int pi, int mi, int ti);
     int getPlayingIndex(IndexType it);
+    void setPlayingIndex(IndexType it, int index);
     bool stop();
     bool resume();
     bool isPaused();

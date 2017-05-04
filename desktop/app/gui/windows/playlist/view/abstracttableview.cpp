@@ -32,6 +32,7 @@ int g_editingCol = -1;
 TTableViewDelegate::TTableViewDelegate(QObject *parent) :
     QStyledItemDelegate(parent)
 {
+
 }
 
 void TTableViewDelegate::setSelectedPixmap(QPixmap *pixmap)
@@ -60,8 +61,11 @@ void TTableViewDelegate::destroyEditor(QWidget *editor, const QModelIndex &index
 void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     const QAbstractItemModel *model = index.model();
+    int rowCount = model->rowCount()-1;
     int columnCount = model->columnCount();
     int columnIndex = index.column();
+    if(index.row() >= rowCount)
+        return;
 
     painter->save();
     QRect rect = option.rect;
@@ -160,6 +164,8 @@ TAbstractTableView::TAbstractTableView(QWidget *parent) :
     setFrameShadow(QFrame::Plain);
 
     setShowGrid(false);
+    setAutoFillBackground(false);
+
     horizontalHeader()->setVisible(false);
     verticalHeader()->setVisible(false);
     verticalHeader()->setDefaultSectionSize(DEFAULT_ROW_HEIGHT);
@@ -246,13 +252,13 @@ void TAbstractTableView::paintEvent(QPaintEvent *event)
     painter.end();
 }
 
-QSet<int> TAbstractTableView::selectedRows()
+QList<int> TAbstractTableView::selectedRows()
 {
     QSet<int> selected;
     for(QModelIndex i : selectedIndexes()) {
         selected.insert(i.row());
     }
-    return selected;
+    return selected.toList();
 }
 
 int TAbstractTableView::currentRow()
@@ -266,6 +272,7 @@ int TAbstractTableView::currentRow()
 void TAbstractTableView::selectIndexes(QList<int> indexes, bool locate)
 {
     QItemSelectionModel *selModel = selectionModel();
+    selModel->clearSelection();
     QAbstractItemModel *m = model();
     int indexSize = indexes.size();
     if(!m || !selModel || indexSize<=0)
@@ -292,7 +299,7 @@ void TAbstractTableView::dragMoveEvent(QDragMoveEvent *event)
             rt.setTop(rt.top()-1);
         } else {
             QAbstractItemModel *m = model();
-            int rows = m->rowCount();
+            int rows = m->rowCount()-1;
             i = m->index(rows-1, 0);
             rt = visualRect(i);
             rt.setTop(rt.bottom()+1);
@@ -326,10 +333,10 @@ void TAbstractTableView::dropEvent(QDropEvent *event)
     if(m)
     {
         if(insertRow < 0)
-            insertRow = m->rowCount();
+            insertRow = m->rowCount()-1;
 
         if(event->source()==this) {
-            QList<int> selected = selectedRows().toList();
+            QList<int> selected = selectedRows();
             if(selected.size() > 0)
             {
                 QList<int> newIndexes;
@@ -388,8 +395,13 @@ void TAbstractTableView::mousePressEvent(QMouseEvent *event)
 {
     QModelIndex index = indexAt(event->pos());
     int row = index.row();
-    if(row >= 0)
+    // Last row is stub
+    if(row>=0 && row<model()->rowCount()-1)
         emit onCurrentRowChanged(row);
+    else {
+        clearSelection();
+        setCurrentIndex(QModelIndex());
+    }
 
     QTableView::mousePressEvent(event);
 }
@@ -398,7 +410,8 @@ void TAbstractTableView::mouseDoubleClickEvent(QMouseEvent *event)
 {
     QModelIndex index = indexAt(event->pos());
     int row = index.row();
-    if(row >= 0)
+    // Last row is stub
+    if(row>=0 && row<model()->rowCount()-1)
         emit onDoubleClickItem(row);
 
     QTableView::mouseDoubleClickEvent(event);
@@ -413,7 +426,8 @@ void TAbstractTableView::keyPressEvent(QKeyEvent *event)
         {
             QModelIndex index = selectionModel()->currentIndex();
             int row = index.row();
-            if(row >= 0)
+            // Last row is stub
+            if(row>=0 && row<model()->rowCount()-1)
             {
                 emit onCurrentRowChanged(row);
                 emit onDoubleClickItem(row);

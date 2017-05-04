@@ -21,6 +21,8 @@
 #include "playlist/playlistitem.h"
 #include "pluginmanager/backendpluginmanager.h"
 
+#include <mutex>
+
 typedef vector<int> intn;
 
 class TPlaylistCore
@@ -47,8 +49,11 @@ public:
     int indexOf(TPlaylistItem *item);
 
     int playingPlaylistIndex();
+    void setPlayingPlaylistIndex(int index);
     int playingMusicIndex();
+    void setPlayingMusicListIndex(int index);
     int playingTrackIndex();
+    void setPlayingTrackListIndex(int index);
     void playingIndex(int *pIndex, int *mIndex, int *tIndex);
     void setPlayingIndex(int pIndex, int mIndex, int tIndex);
 
@@ -84,6 +89,8 @@ private:
     wstring mPlaylistDir;
     bool mFileSaving;
     TBackendPluginManager *mBackendPluginManager;
+
+    mutex mMutex;
 
     void findPlaylist();
     void loadPlaylist(wstring fileName);

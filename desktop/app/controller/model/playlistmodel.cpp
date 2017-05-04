@@ -17,6 +17,13 @@
  */
 #include "playlistmodel.h"
 
+#define RecordCurrentItem PlayListItem currentItem = mCore->getPlaylistItem(mCurrentIndex)
+#define RestoreCurrentItem mCurrentIndex = mCore->getPlaylistItemIndex(currentItem)
+#define RecordPlayingItem PlayListItem playingItem = mCore->getPlaylistItem(mPlayingIndex)
+#define RestorePlayingItem \
+    mPlayingIndex = mCore->getPlaylistItemIndex(playingItem);\
+    mCore->setPlayingIndex(IT_PL, mPlayingIndex)
+
 TPlaylistModel::TPlaylistModel(QObject *parent) :
     TAbstractModel(parent)
 {
@@ -49,21 +56,15 @@ void TPlaylistModel::remove(int index)
     if(index<0 || index>=mCore->playlistCount())
         return;
 
+    RecordCurrentItem;
+    RecordPlayingItem;
+
     beginRemoveRows(QModelIndex(), index, index);
     mCore->removePlaylist(index);
     endRemoveRows();
 
-    if(index < mCurrentIndex)
-    {
-        mCurrentIndex--;
-
-        if(mCurrentIndex < 0)
-            mCurrentIndex = 0;
-    }
-
-    int newSize = mCore->playlistCount();
-    if(mCurrentIndex >= newSize)
-        mCurrentIndex = newSize - 1;
+    RestoreCurrentItem;
+    RestorePlayingItem;
 }
 
 void TPlaylistModel::rename(int index, QString newName)
@@ -82,9 +83,13 @@ void TPlaylistModel::sortItems()
     if(!mCore)
         return;
 
-    PlayListItem currentItem = mCore->getPlaylistItem(mCurrentIndex);
+    RecordCurrentItem;
+    RecordPlayingItem;
+
     mCore->sort();
-    mCurrentIndex = mCore->getPlaylistItemIndex(currentItem);
+
+    RestoreCurrentItem;
+    RestorePlayingItem;
 
     update();
 }
@@ -94,7 +99,7 @@ int TPlaylistModel::rowCount(const QModelIndex &parent) const
     Q_UNUSED(parent)
 
     if(mCore)
-        return mCore->playlistCount();
+        return mCore->playlistCount()+1;
 
     return 0;
 }
@@ -108,12 +113,18 @@ int TPlaylistModel::columnCount(const QModelIndex &parent) const
 
 QVariant TPlaylistModel::data(const QModelIndex &index, int role) const
 {
-    if(role==Qt::DisplayRole || role==Qt::EditRole)
+    if(mCore)
     {
-        return mCore->getPlaylistName(index.row());
-    } else if (role==Qt::TextAlignmentRole) {
-        return QVariant(Qt::AlignLeft|Qt::AlignVCenter);
+        if(role==Qt::DisplayRole || role==Qt::EditRole)
+        {
+            int row = index.row();
+            if(row < mCore->playlistCount())
+                return mCore->getPlaylistName(row);
+        } else if (role==Qt::TextAlignmentRole) {
+            return QVariant(Qt::AlignLeft|Qt::AlignVCenter);
+        }
     }
+
     return TAbstractModel::data(index, role);
 }
 
@@ -128,7 +139,11 @@ bool TPlaylistModel::setData(const QModelIndex &index, const QVariant &value, in
 
 Qt::ItemFlags TPlaylistModel::flags(const QModelIndex &index) const
 {
-    return TAbstractModel::flags(index)|Qt::ItemIsEditable;
+    if(mCore && index.row()<mCore->playlistCount())
+    {
+        return TAbstractModel::flags(index)|Qt::ItemIsEditable;
+    }
+    return Qt::NoItemFlags;
 }
 
 void TPlaylistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesMoved)
@@ -136,16 +151,13 @@ void TPlaylistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesM
     if(!mCore)
         return;
 
-    // Find and record current index
-    PlayListItem currentItem = mCore->getPlaylistItem(mCurrentIndex);
+    RecordCurrentItem;
+    RecordPlayingItem;
 
     indexesMoved = mCore->movePlaylists(indexes, pos);
 
-    // Restore current index
-    if(currentItem)
-    {
-        setCurrentIndex(mCore->getPlaylistItemIndex(currentItem));
-    }
+    RestoreCurrentItem;
+    RestorePlayingItem;
 
     endResetModel();
 }

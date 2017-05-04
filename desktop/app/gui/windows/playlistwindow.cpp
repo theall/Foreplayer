@@ -18,6 +18,7 @@
 #include "playlistwindow.h"
 
 #include "preferences.h"
+#include <QMessageBox>
 
 TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     TAbstractWindow(parent, true)
@@ -61,7 +62,7 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mTracklistView, SIGNAL(onMouseMove(QEvent*)), this, SLOT(slotOnMouseMove(QEvent*)));
 
     connect(mPopmenuPlayList, SIGNAL(onActionAddTriggered()), this, SIGNAL(requestAddNewPlaylist()));
-    connect(mPopmenuPlayList, SIGNAL(onActionRemoveTriggered()), this, SIGNAL(requestRemovePlaylist()));
+    connect(mPopmenuPlayList, SIGNAL(onActionRemoveTriggered()), this, SLOT(slotActionRemovePlaylist()));
     connect(mPopmenuPlayList, SIGNAL(onActionRenameTriggered()), this, SLOT(slotActionRenameTriggered()));
     connect(mPopmenuPlayList, SIGNAL(onActionSortTriggered()), this, SIGNAL(requestSortPlaylists()));
     connect(mPopmenuPlayList, SIGNAL(onActionSendTriggered()), this, SIGNAL(requestSendTo()));
@@ -145,13 +146,10 @@ void TPlaylistWindow::slotRequestToggleButtonContexMenu(TToolBar::BUTTON id, QPo
 
 void TPlaylistWindow::slotPopupContextMenu(QPoint pos)
 {
-    if(TPlaylistView *plalistView = dynamic_cast<TPlaylistView*>(sender())) {
-        mPopmenuPlayList->pop(plalistView->mapToGlobal(pos));
+    if(TPlaylistView *playlistView = dynamic_cast<TPlaylistView*>(sender())) {
+        mPopmenuPlayList->display(playlistView->mapToGlobal(pos), playlistView->selectedRows().size());
     } else if (TMusiclistView *musiclistView = dynamic_cast<TMusiclistView*>(sender())) {
-        if(musiclistView->selectedRows().size() > 0)
-            mPopmenuMusiclistItem->popup(musiclistView->mapToGlobal(pos));
-        else
-            mPopmenuMusicList->popup(musiclistView->mapToGlobal(pos));
+        mPopmenuMusiclistItem->display(musiclistView->mapToGlobal(pos), musiclistView->selectedRows().size());
     } else if (TTracklistView *tracklistView = dynamic_cast<TTracklistView*>(sender())) {
         mPopmenuTrackList->popup(tracklistView->mapToGlobal(pos));
     }
@@ -169,6 +167,13 @@ void TPlaylistWindow::slotActionRenameTriggered()
         return;
 
     mPlaylistView->editCurrentName();
+}
+
+void TPlaylistWindow::slotActionRemovePlaylist()
+{
+    if(mPlaylistView->selectedRows().size()>0 && verified())
+        emit requestRemovePlaylist();
+
 }
 
 void TPlaylistWindow::slotOnActionAddMusicsTriggered()
@@ -208,8 +213,8 @@ void TPlaylistWindow::slotOnActionRemoveSelectionsTriggered()
     if(!mMusiclistView)
         return;
 
-    QList<int> selected = mMusiclistView->selectedRows().toList();
-    if(selected.size() > 0)
+    QList<int> selected = mMusiclistView->selectedRows();
+    if(selected.size()>0 && verified())
         emit requestRemoveSelections(selected);
 }
 
@@ -234,7 +239,8 @@ void TPlaylistWindow::slotOnActionRemoveAllTriggered()
     if(!mMusiclistView)
         return;
 
-    emit requestRemoveAll();
+    if(verified())
+        emit requestRemoveAll();
 }
 
 void TPlaylistWindow::slotReparseMusicItemTriggered()
@@ -262,7 +268,7 @@ void TPlaylistWindow::slotCopyMusicItemTriggered()
     if(!mMusiclistView)
         return;
 
-    QSet<int> rows = mMusiclistView->selectedRows();
+    QList<int> rows = mMusiclistView->selectedRows();
     if(rows.size() > 0)
         emit requestCopyMusicItem(rows);
 }
@@ -272,7 +278,7 @@ void TPlaylistWindow::slotCutMusicItemTriggered()
     if(!mMusiclistView)
         return;
 
-    QSet<int> rows = mMusiclistView->selectedRows();
+    QList<int> rows = mMusiclistView->selectedRows();
     if(rows.size() > 0)
         emit requestCutMusicItem(rows);
 }
@@ -283,6 +289,14 @@ void TPlaylistWindow::slotPasteMusicItemTriggered()
         return;
 
     int row = mMusiclistView->currentRow();
+    if(row < 0)
+    {
+        QAbstractItemModel *m = mMusiclistView->model();
+        if(m)
+            row = m->rowCount() - 1;
+        else
+            m = 0;
+    }
     emit requestPasteMusicItem(row);
 }
 
@@ -291,7 +305,7 @@ void TPlaylistWindow::slotDeleteMusicItemTriggered()
     if(!mMusiclistView)
         return;
 
-    QSet<int> rows = mMusiclistView->selectedRows();
+    QList<int> rows = mMusiclistView->selectedRows();
     if(rows.size() > 0)
         emit requestDeleteMusicItem(rows);
 }
@@ -349,7 +363,7 @@ void TPlaylistWindow::slotCopyTrackItemTriggered()
     if(!mTracklistView)
         return;
 
-    QSet<int> rows = mTracklistView->selectedRows();
+    QList<int> rows = mTracklistView->selectedRows();
     if(rows.size() > 0)
         emit requestCopyTrackItem(rows);
 }
@@ -388,6 +402,11 @@ void TPlaylistWindow::tryAddMusicFiles(QStringList files)
         return;
 
     mMusiclistView->addFiles(files);
+}
+
+bool TPlaylistWindow::verified()
+{
+    return QMessageBox::question(this, tr("Question"), tr("Are you sure?"))==QMessageBox::Yes;
 }
 
 void TPlaylistWindow::retranslateUi()

@@ -47,7 +47,6 @@ private:
     QAction *mActionTransparent7;
     QAction *mActionTransparent8;
     QAction *mActionTransparent9;
-    QAction *mActionTransparent10;
     QAction *mActionDisableWhileActived;
 
     // TAbstractMenu interface

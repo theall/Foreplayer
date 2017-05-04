@@ -33,7 +33,6 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     mActionTransparent7 = new QAction(this);
     mActionTransparent8 = new QAction(this);
     mActionTransparent9 = new QAction(this);
-    mActionTransparent10 = new QAction(this);
     mActionDisableWhileActived = new QAction(this);
 
     mActionDisable->setCheckable(true);
@@ -46,7 +45,6 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     mActionTransparent7->setCheckable(true);
     mActionTransparent8->setCheckable(true);
     mActionTransparent9->setCheckable(true);
-    mActionTransparent10->setCheckable(true);
     mActionDisableWhileActived->setCheckable(true);
 
     connect(mActionDisable, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
@@ -59,7 +57,6 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     connect(mActionTransparent7, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
     connect(mActionTransparent8, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
     connect(mActionTransparent9, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
-    connect(mActionTransparent10, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
     connect(mActionDisableWhileActived, SIGNAL(triggered(bool)), this, SLOT(slotActionTriggered(bool)));
 
     addAction(mActionDisable);
@@ -73,8 +70,6 @@ TTransparentMenu::TTransparentMenu(QWidget *parent) :
     addAction(mActionTransparent7);
     addAction(mActionTransparent8);
     addAction(mActionTransparent9);
-    addAction(mActionTransparent10);
-
     //addAction(mActionDisableWhileActived);
 
     retranslateUi();
@@ -196,10 +191,6 @@ void TTransparentMenu::slotActionTriggered(bool checked)
         {
             emit onOpacityChanged(0.1);
         }
-        else if(action == mActionTransparent10)
-        {
-            emit onOpacityChanged(0.0);
-        }
         else if(action == mActionDisableWhileActived)
         {
             emit onOpacityChanged(0.0);
@@ -220,6 +211,5 @@ void TTransparentMenu::retranslateUi()
     mActionTransparent7->setText(tr("70% Transparent"));
     mActionTransparent8->setText(tr("80% Transparent"));
     mActionTransparent9->setText(tr("90% Transparent"));
-    mActionTransparent10->setText(tr("100% Transparent"));
     mActionDisableWhileActived->setText(tr("Opacity While Actived"));
 }

@@ -30,8 +30,8 @@ public:
 
     virtual bool joint(TGuiManager *manager, TCore *core);
 
-    void startTimer(int mSecs = 50);
-    void stopTimer();
+    void startMyTimer(int mSecs = 50);
+    void stopMyTimer();
 
 protected slots:
     virtual void slotTimerEvent() = 0;

@@ -1102,7 +1102,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../windows/playlist/menu/popmenumusiclistitem.cpp" line="84"/>
         <source>Paste</source>
-        <translation>暂停</translation>
+        <translation>粘帖</translation>
     </message>
     <message>
         <location filename="../../windows/playlist/menu/popmenumusiclistitem.cpp" line="85"/>

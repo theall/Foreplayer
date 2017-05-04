@@ -337,6 +337,31 @@ int TCore::getPlayingIndex(IndexType it)
     return ret;
 }
 
+void TCore::setPlayingIndex(IndexType it, int index)
+{
+    int pi = -1;
+    int mi = -1;
+    int ti = -1;
+    if(mSendCmd)
+        mSendCmd(CMD_GET_PLAYING_INDEX, &pi, &mi, &ti, 0);
+
+    switch (it) {
+    case IT_PL:
+        pi = index;
+        break;
+    case IT_ML:
+        mi = index;
+        break;
+    case IT_TL:
+        ti = index;
+        break;
+    default:
+        break;
+    }
+    if(mSendCmd)
+        mSendCmd(CMD_SET_PLAYING_INDEX, (void*)&pi, (void*)&mi, (void*)&ti, 0);
+}
+
 int TCore::getMusicItemCount(PlayListItem playlistItem)
 {
     int ret = 0;
@@ -357,37 +382,25 @@ MusicItem TCore::getMusicItem(PlayListItem playlistItem, int row)
 
 QString TCore::musicItemToString(MusicItem musicItem)
 {
-    wstring ret;
-    if(mSendCmd)
-        mSendCmd(CMD_MUSIC_ITEM_AS_STRING, musicItem, &ret, 0, 0);
-
-    return QString::fromStdWString(ret);
+    MusicItems musicItems;
+    musicItems.append(musicItem);
+    return musicItemToString(musicItems);
 }
 
-QString TCore::musicItemsToString(MusicItems musicItems)
+QString TCore::musicItemToString(MusicItems musicItems)
 {
-    wstring ret;
+    string ret;
     list<MusicItem> musicItemsList = musicItems.toStdList();
     if(mSendCmd)
         mSendCmd(CMD_MUSIC_ITEMS_AS_STRING, &musicItemsList, &ret, 0, 0);
 
-    return QString::fromStdWString(ret);
-}
-
-MusicItem TCore::stringToMusicItem(QString str)
-{
-    MusicItem ret;
-    wstring wstr = str.toStdWString();
-    if(mSendCmd)
-        mSendCmd(CMD_STRING_TO_MUSIC_ITEM, &wstr, &ret, 0, 0);
-
-    return ret;
+    return QString::fromStdString(ret);
 }
 
 MusicItems TCore::stringToMusicItems(QString str)
 {
     list<MusicItem> ret;
-    wstring wstr = str.toStdWString();
+    string wstr = str.toStdString();
     if(mSendCmd)
         mSendCmd(CMD_STRING_TO_MUSIC_ITEMS, &wstr, &ret, 0, 0);
 
@@ -570,15 +583,6 @@ TrackItem TCore::getTrackItem(MusicItem musicItem, int index)
     return ret;
 }
 
-QString TCore::trackItemToString(TrackItem trackItem)
-{
-    wstring ret;
-    if(mSendCmd)
-        mSendCmd(CMD_TRACK_ITEM_AS_STRING, trackItem, &ret, 0, 0);
-
-    return QString::fromStdWString(ret);
-}
-
 TrackItems TCore::getTrackItems(MusicItem musicItem)
 {
     list<TrackItem> result;
@@ -588,7 +592,14 @@ TrackItems TCore::getTrackItems(MusicItem musicItem)
     return QList<TrackItem>::fromStdList(result);
 }
 
-QString TCore::trackItemsToString(TrackItems trackItems)
+QString TCore::trackItemToString(TrackItem trackItem)
+{
+    TrackItems trackItems;
+    trackItems.append(trackItem);
+    return trackItemToString(trackItems);
+}
+
+QString TCore::trackItemToString(TrackItems trackItems)
 {
     wstring ret;
     list<TrackItem> trackItemsList = trackItems.toStdList();

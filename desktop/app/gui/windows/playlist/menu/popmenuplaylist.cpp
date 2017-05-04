@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "popmenuplaylist.h"
 
 TPopMenuPlayList::TPopMenuPlayList(QWidget *parent) :
@@ -35,14 +35,15 @@ TPopMenuPlayList::~TPopMenuPlayList()
 
 }
 
-void TPopMenuPlayList::pop(const QPoint &pos, bool enableAllActions, QAction *at)
+void TPopMenuPlayList::display(const QPoint &pos, int selections)
 {
-    if(!enableAllActions)
-    {
-        mActionRemove->setEnabled(false);
-        mActionRename->setEnabled(false);
-    }
-    popup(pos, at);
+    bool hasSelection = selections>0;
+    mActionAdd->setEnabled(true);
+    mActionRemove->setEnabled(hasSelection);
+    mActionRename->setEnabled(selections==1);
+    mActionSort->setEnabled(!hasSelection);
+
+    popup(pos);
 }
 
 void TPopMenuPlayList::showEvent(QShowEvent *ev)

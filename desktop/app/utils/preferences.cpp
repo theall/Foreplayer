@@ -523,7 +523,7 @@ bool TPreferences::playlistWindowVisible()
 
 void TPreferences::setPlaylistWindowVisible(bool bVisible)
 {
-    SET_VALUE(bVisible, mPlaylistWindowVisible, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_EQ_BTN);
+    SET_VALUE(bVisible, mPlaylistWindowVisible, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_PLAYLIST_BTN);
 }
 
 bool TPreferences::eqEnabled()

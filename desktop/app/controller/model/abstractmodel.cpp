@@ -53,8 +53,6 @@ QVariant TAbstractModel::data(const QModelIndex &index, int role) const
         return index.row()==mPlayingIndex;
     } else if (role==Utils::IsCurrentRow) {
         return index.row()==mCurrentIndex;
-    } else {
-        return QVariant();
     }
 
     return QVariant();

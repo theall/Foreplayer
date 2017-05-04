@@ -369,25 +369,11 @@ enum ForeplayerCmd
     CMD_GET_MUSIC_ITEM,
 
     /**
-     * Convert music item to wstring.
-     * param1: music item handle
-     * param2: return wstring
-     */
-    CMD_MUSIC_ITEM_AS_STRING,
-
-    /**
      * Convert music items to wstring.
      * param1: music item handle list
      * param2: return wstring
      */
     CMD_MUSIC_ITEMS_AS_STRING,
-
-    /**
-     * Convert wstring to music item.
-     * param1: wstring
-     * param2: return music item handle
-     */
-    CMD_STRING_TO_MUSIC_ITEM,
 
     /**
      * Convert wstring to music item array.
@@ -520,20 +506,6 @@ enum ForeplayerCmd
      * param3: return internal pointer to track item
      */
     CMD_GET_TRACK_ITEM,
-
-    /**
-     * Convert track item to wstring.
-     * param1: track item handle
-     * param2: return wstring
-     */
-    CMD_TRACK_ITEM_AS_STRING,
-
-    /**
-     * Convert wstring to track item.
-     * param1: wstring
-     * param2: return track item handle
-     */
-    CMD_STRING_TO_TRACK_ITEM,
 
     /**
      * Convert track items to wstring.

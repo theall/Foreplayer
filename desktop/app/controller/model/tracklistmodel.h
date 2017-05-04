@@ -33,7 +33,6 @@ private:
     MusicItem mMusicItem;
 
 public:
-
     // QAbstractItemModel interface
     int rowCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;
     int columnCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;

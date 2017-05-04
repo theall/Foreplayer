@@ -20,6 +20,8 @@
 
 #include "core.h"
 
+#define K_TEMP  "temp"
+
 static TCore *g_core = nullptr;
 static TPlayerCore *g_player = nullptr;
 static TPlaylistCore *g_playlist = nullptr;
@@ -60,7 +62,7 @@ void FOREPLAYER_API foreplayer_send_cmd(
         if(g_playlist)
         {
             TPlaylistItem *playlistItem = g_playlist->playlistItem(*(int*)param1);
-            *(wstring*)param2 = playlistItem->name();
+            *(wstring*)param2 = playlistItem?playlistItem->name():L"";
         }
         break;
     case CMD_SET_PLAYLIST_NAME:
@@ -469,21 +471,42 @@ void FOREPLAYER_API foreplayer_send_cmd(
     case CMD_GET_PLUGIN_SUFFIXDESCRIPTION:
         *(map<wstring, wstring>*)param2 = param1?((TBackendPlugin*)param1)->suffixListDescription():map<wstring, wstring>();
         break;
-    case CMD_TRACK_ITEM_AS_STRING:
-        break;
     case CMD_TRACK_ITEMS_AS_STRING:
-        break;
-    case CMD_STRING_TO_TRACK_ITEM:
         break;
     case CMD_STRING_TO_TRACK_ITEMS:
         break;
-    case CMD_MUSIC_ITEM_AS_STRING:
-        break;
     case CMD_MUSIC_ITEMS_AS_STRING:
-        break;
-    case CMD_STRING_TO_MUSIC_ITEM:
+        if(param1 && param2)
+        {
+            json object;
+            for(void *m : *(list<void*>*)param1)
+            {
+                TMusicItem *musicItem = (TMusicItem*)m;
+                if(!musicItem)
+                    continue;
+
+                object.push_back(musicItem->toJson());
+            }
+            stringstream ss;
+            ss << object;
+            ss >> *(string*)param2;
+        }
         break;
     case CMD_STRING_TO_MUSIC_ITEMS:
+        if(param1 && param2)
+        {
+            stringstream ss;
+            ss << *(string*)param1;
+            json object;
+            ss >> object;
+            list<void*> musicItems;
+            for (json o : object) {
+                TMusicItem *musicItem = new TMusicItem;
+                musicItem->fromJson(o);
+                musicItems.push_back(musicItem);
+            }
+            *(list<void*>*)param2 = musicItems;
+        }
         break;
     case CMD_EXPORT_FRAME_SAMPLE_COUNT:
         if(g_player)

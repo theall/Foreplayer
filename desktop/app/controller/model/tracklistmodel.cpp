@@ -75,7 +75,7 @@ int TTrackListModel::rowCount(const QModelIndex &parent) const
     Q_UNUSED(parent)
 
     if(mCore)
-        return mCore->getTrackItemCount(mMusicItem);
+        return mCore->getTrackItemCount(mMusicItem)+1;
 
     return 0;
 }
@@ -161,8 +161,13 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
 Qt::ItemFlags TTrackListModel::flags(const QModelIndex &index) const
 {
     Qt::ItemFlags _flags = TAbstractModel::flags(index);
-    if(index.column()>1)// Title and length columns are editable
-        _flags |= Qt::ItemIsEditable;
-
+    if(mCore && index.row()<mCore->getTrackItemCount(mMusicItem))
+    {
+        // Title and length columns are editable
+        if(index.column()>1)
+            _flags |= Qt::ItemIsEditable;
+    } else {
+        _flags = Qt::NoItemFlags;
+    }
     return _flags;
 }

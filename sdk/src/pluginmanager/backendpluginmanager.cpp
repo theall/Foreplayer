@@ -114,12 +114,18 @@ TBackendPlugin *TBackendPluginManager::loadTrack(TTrackInfo *trackInfo)
 TBackendPlugin* TBackendPluginManager::loadPlugin(wstring pluginName)
 {
     TBackendPlugin *plugin = new TBackendPlugin;
+#ifdef _WIN32
     wstring oldCurrentPath = getCurrentDir();
     setCurrentDirectory(extractPath(pluginName));
+#endif
+
     if(!plugin->load(pluginName)) {
         delete plugin;
         plugin = NULL;
     }
+
+#ifdef _WIN32
     setCurrentDirectory(oldCurrentPath);
+#endif
     return plugin;
 }

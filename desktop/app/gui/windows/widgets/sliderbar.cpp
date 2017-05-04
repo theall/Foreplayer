@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "sliderbar.h"
 
 TSliderBar::TSliderBar(QWidget *parent) :
@@ -32,13 +32,10 @@ TSliderBar::TSliderBar(Qt::Orientation orientation, QWidget *parent) :
 void TSliderBar::initialize()
 {
     setCursor(Qt::PointingHandCursor);
-
     setRange(0, 100);
-
     setSingleStep(1);
-
+    setValue(100);
     setMouseTracking(true);
-
     setStyle(&mStyle);
 }
 

@@ -126,6 +126,18 @@
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
          <widget class="QLabel" name="lblPreview">
+          <property name="minimumSize">
+           <size>
+            <width>338</width>
+            <height>214</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>338</width>
+            <height>214</height>
+           </size>
+          </property>
           <property name="text">
            <string>TextLabel</string>
           </property>

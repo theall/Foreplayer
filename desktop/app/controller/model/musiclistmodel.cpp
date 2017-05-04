@@ -18,9 +18,10 @@
 #include "musiclistmodel.h"
 
 #define RecordCurrentItem MusicItem currentItem = mCore->getMusicItem(mPlaylistItem, mCurrentIndex)
-#define RestoreCurrentItem \
-if(currentItem)\
-    setCurrentIndex(mCore->getMusicItemIndex(mPlaylistItem, currentItem))
+#define RestoreCurrentItem mCurrentIndex = mCore->getMusicItemIndex(mPlaylistItem, currentItem)
+#define RecordPlayingItem MusicItem playingItem = mCore->getMusicItem(mPlaylistItem, mPlayingIndex)
+#define RestorePlayingItem mPlayingIndex = mCore->getMusicItemIndex(mPlaylistItem, playingItem);\
+    mCore->setPlayingIndex(IT_ML, mPlayingIndex)
 
 TMusiclistModel::TMusiclistModel(QObject *parent) :
     TAbstractModel(parent)
@@ -46,7 +47,7 @@ int TMusiclistModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent)
     if(mCore)
-        return mCore->getMusicItemCount(mPlaylistItem);
+        return mCore->getMusicItemCount(mPlaylistItem)+1;
 
     return 0;
 }
@@ -133,8 +134,13 @@ bool TMusiclistModel::setData(const QModelIndex &index, const QVariant &value, i
 Qt::ItemFlags TMusiclistModel::flags(const QModelIndex &index) const
 {
     Qt::ItemFlags _flags = TAbstractModel::flags(index);
-    if(index.column() == 2)// Title column is editable
-        _flags |= Qt::ItemIsEditable;
+    if(mCore && index.row()<mCore->getMusicItemCount(mPlaylistItem))
+    {
+        if(index.column()==2)
+            _flags |= Qt::ItemIsEditable;
+    } else {
+        _flags = Qt::NoItemFlags;
+    }
     return _flags;
 }
 
@@ -147,11 +153,13 @@ void TMusiclistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexes
 {
     // Record current index
     RecordCurrentItem;
+    RecordPlayingItem;
 
     indexesMoved = mCore->moveMusicItems(mPlaylistItem, indexes, pos);
 
     // Restore current index
     RestoreCurrentItem;
+    RestorePlayingItem;
 
     update();
 }
@@ -172,6 +180,10 @@ void TMusiclistModel::insertItems(int pos, MusicItems musicItems, QList<int> &ne
 {
     // Record current item
     RecordCurrentItem;
+    RecordPlayingItem;
+
+    if(pos < 0)
+        pos = musicItems.size();
 
     for(MusicItem musicItem : musicItems) {
         if(musicItem)
@@ -186,6 +198,7 @@ void TMusiclistModel::insertItems(int pos, MusicItems musicItems, QList<int> &ne
 
     // Restore current index
     RestoreCurrentItem;
+    RestorePlayingItem;
 }
 
 void TMusiclistModel::insertItems(int pos, MusicItems musicItems)
@@ -203,11 +216,17 @@ void TMusiclistModel::removeSelections(QList<int> indexes)
         return a > b;
     });
 
+    RecordCurrentItem;
+    RecordPlayingItem;
+
     for(int i : indexes) {
         beginRemoveRows(QModelIndex(), i, i);
         mCore->removeMusicItem(mPlaylistItem, i);
         endRemoveRows();
     }
+
+    RestoreCurrentItem;
+    RestorePlayingItem;
 }
 
 QList<int> TMusiclistModel::removeRedundant()
@@ -217,12 +236,18 @@ QList<int> TMusiclistModel::removeRedundant()
     if(!mPlaylistItem)
         return rowsRemoved;
 
+    RecordCurrentItem;
+    RecordPlayingItem;
+
     rowsRemoved = mCore->removeRedundant(mPlaylistItem);
 
     for(int i : rowsRemoved) {
         beginRemoveRows(QModelIndex(), i, i);
         endRemoveRows();
     }
+
+    RestoreCurrentItem;
+    RestorePlayingItem;
 
     return rowsRemoved;
 }
@@ -234,12 +259,18 @@ QList<int> TMusiclistModel::removeErrors()
     if(!mPlaylistItem)
         return rowsRemoved;
 
+    RecordCurrentItem;
+    RecordPlayingItem;
+
     rowsRemoved = mCore->removeErrors(mPlaylistItem);
 
     for(int i : rowsRemoved) {
         beginRemoveRows(QModelIndex(), i, i);
         endRemoveRows();
     }
+
+    RestoreCurrentItem;
+    RestorePlayingItem;
 
     return rowsRemoved;
 }
@@ -249,9 +280,15 @@ void TMusiclistModel::removeAll()
     if(!mPlaylistItem)
         return;
 
+    RecordCurrentItem;
+    RecordPlayingItem;
+
     beginResetModel();
     mCore->clear(mPlaylistItem);
     endResetModel();
+
+    RestoreCurrentItem;
+    RestorePlayingItem;
 }
 
 void TMusiclistModel::update()
@@ -270,10 +307,12 @@ void TMusiclistModel::sortItems(SortMethod sm)
         return;
 
     RecordCurrentItem;
+    RecordPlayingItem;
 
     beginResetModel();
     mCore->sort(mPlaylistItem, sm);
     endResetModel();
 
     RestoreCurrentItem;
+    RestorePlayingItem;
 }

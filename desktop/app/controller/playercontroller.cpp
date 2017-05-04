@@ -274,9 +274,9 @@ void TPlayerController::updateWindowTitles()
         mMainWindow->setTitles(titles);
         mMainWindow->setPlayState(tr("Playing"));
         mMainWindow->setButtonPlayVisible(false);
-        startTimer(40);
+        startMyTimer(40);
     } else {
-        stopTimer();
+        stopMyTimer();
         mGui->setCaption("");
         mMainWindow->setTitles(QStringList()<<tr("Play failed."));
         mMainWindow->setPlayState(tr("Stoped"));
@@ -301,7 +301,7 @@ void TPlayerController::decidePlayNext()
             if(mCurrentItem)
                 break;
 
-            QThread::msleep(1);
+            QThread::msleep(500);
         }
     }
 }
@@ -378,7 +378,7 @@ void TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
 void TPlayerController::delayStopTimer()
 {
     if(!mCore || mCore->isPaused() || mCore->isStoped())
-        stopTimer();
+        stopMyTimer();
 }
 
 void TPlayerController::resetVisualWidget()
