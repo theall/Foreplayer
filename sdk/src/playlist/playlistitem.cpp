@@ -84,10 +84,56 @@ int TPlaylistItem::insert(int pos, TMusicItem *item)
 
     if(pos < 0)
         pos = 0;
+
     mMusicItems.insert(mMusicItems.begin()+pos, item);
     mModified = true;
 
     return pos;
+}
+
+list<int> TPlaylistItem::insert(int pos, TMusicItems musicItems)
+{
+    if(pos < 0)
+        pos = musicItems.size();
+
+    int i = 0;
+    list<int> newIndexes;
+    for(TMusicItem *musicItem : musicItems) {
+        if(musicItem)
+        {
+            insert(pos, musicItem);
+            newIndexes.push_back(pos + i++);
+        }
+    }
+    return newIndexes;
+}
+
+list<int> TPlaylistItem::move(list<int> indexes, int pos)
+{
+    int listSize = mMusicItems.size();
+    if(pos < 0)
+        pos = 0;
+    if(pos > listSize)
+        pos = listSize;
+
+    indexes.sort();
+    indexes.reverse();
+
+    TMusicItems musicItems;
+    for (int i : indexes) {
+        if(i<0 || i>=listSize)
+            continue;
+        musicItems.push_back(takeAt(i));
+        if(i < pos)
+            pos--;
+    }
+    int i = 0;
+    list<int> indexesMoved;
+    for (TMusicItem *item : musicItems) {
+        insert(pos, item);
+        indexesMoved.push_back(pos+i++);
+    }
+    return indexesMoved;
 }
 
 void TPlaylistItem::update(int index, TMusicItem *item)
@@ -110,6 +156,26 @@ bool TPlaylistItem::remove(int index)
     mMusicItems.erase(mMusicItems.begin()+index);
     mModified = true;
     return true;
+}
+
+list<int> TPlaylistItem::remove(list<int> indexes)
+{
+    indexes.sort();
+    indexes.reverse();
+
+    int musicItemsSize = (int)mMusicItems.size();
+    list<int> ret;
+    for(int i : indexes)
+    {
+        if(i<0 || i>=musicItemsSize)
+            continue;
+        delete mMusicItems[i];
+        mMusicItems.erase(mMusicItems.begin()+i);
+        ret.push_back(i);
+    }
+    mModified = true;
+
+    return ret;
 }
 
 list<int> TPlaylistItem::removeRedundant()

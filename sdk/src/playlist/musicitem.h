@@ -76,7 +76,7 @@ public:
     time_t lastParsed();
     void setLastParsed(time_t lastParsed);
 
-    TTrackItems *trackItems();
+    TTrackItems trackItems();
     TTrackItem *trackItem(int index);
     int indexOf(TTrackItem *trackItem);
     void addTrackItem(TTrackItem *trackItem, int pos=-1);

@@ -68,7 +68,9 @@ public:
     void setPlaylistName(int index, QString newName);
 
     int insertMusicItem(PlayListItem playlistItem, int pos, MusicItem musicItem);
+    QList<int> insertMusicItems(PlayListItem playlistItem, int pos, MusicItems musicItems);
     bool removeMusicItem(PlayListItem playlistItem, int pos);
+    QList<int> removeMusicItems(PlayListItem playlistItem, QList<int> posList);
     bool updateMusicItem(PlayListItem playlistItem, int pos, MusicItem musicItem);
 
     QList<int> removeRedundant(PlayListItem playlistItem);

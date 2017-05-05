@@ -294,9 +294,9 @@ void TMusicItem::setLastParsed(time_t lastParsed)
     SET_MEMBER(mLastParsed, lastParsed);
 }
 
-TTrackItems *TMusicItem::trackItems()
+TTrackItems TMusicItem::trackItems()
 {
-    return &mTrackItems;
+    return mTrackItems;
 }
 
 TTrackItem *TMusicItem::trackItem(int index)

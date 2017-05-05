@@ -29,6 +29,9 @@
 #define SEC_CURRENT_MUSIC       "currentMusic"
 #define SEC_CURRENT_TRACK       "currentTrack"
 
+#define RecordMusicItem TMusicItem *currentItem = playlistItem->musicItem(mMusiclistIndex)
+#define RestoreMusicItem mMusiclistIndex = playlistItem->indexOf(currentItem)
+
 wstring TPlaylistCore::mPluginDir = PLAYLIST_DIR;
 
 TPlaylistCore::TPlaylistCore() :
@@ -96,6 +99,8 @@ int TPlaylistCore::insert(wstring name, int index)
 
     int ret = -1;
     mMutex.lock();
+
+    TPlaylistItem *currentItem = mPlaylist.at(mPlaylistIndex);
     if(index>-1)
     {
         mPlaylist.insert(mPlaylist.begin()+index, playlistItem);
@@ -105,6 +110,7 @@ int TPlaylistCore::insert(wstring name, int index)
         mPlaylist.push_back(playlistItem);
     }
     mMutex.unlock();
+    mPlaylistIndex = indexOf(currentItem);
 
     return ret;
 }
@@ -115,9 +121,12 @@ bool TPlaylistCore::remove(int index)
         return false;
 
     mMutex.lock();
+    TPlaylistItem *currentItem = mPlaylist.at(mPlaylistIndex);
     TPlaylistItem *item = mPlaylist.at(index);
     mPlaylist.erase(mPlaylist.begin()+index);
     mMutex.unlock();
+
+    mPlaylistIndex = indexOf(currentItem);
 
     delete item;    
     return true;
@@ -135,6 +144,7 @@ void TPlaylistCore::rename(int index, wstring newName)
 void TPlaylistCore::sort(SortMethod mode)
 {
     mMutex.lock();
+    TPlaylistItem *currentItem = mPlaylist.at(mPlaylistIndex);
     if(mode==SM_TITLE_ASC)
         std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
             return lower(a->name()) > lower(b->name());
@@ -144,6 +154,8 @@ void TPlaylistCore::sort(SortMethod mode)
             return lower(a->name()) < lower(b->name());
         });
     mMutex.unlock();
+
+    mPlaylistIndex = indexOf(currentItem);
 }
 
 int TPlaylistCore::indexOf(TPlaylistItem *item)
@@ -231,6 +243,95 @@ TMusicItem *TPlaylistCore::currentMusicItem()
     return playlistItem->musicItem(mMusiclistIndex);
 }
 
+list<int> TPlaylistCore::removeRedundant(TPlaylistItem *playlistItem)
+{
+    list<int> ret;
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        ret = playlistItem->removeRedundant();
+        RestoreMusicItem;
+    }
+
+    return ret;
+}
+
+list<int> TPlaylistCore::removeErrors(TPlaylistItem *playlistItem)
+{
+    list<int> ret;
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        ret = playlistItem->removeErrors();
+        RestoreMusicItem;
+    }
+
+    return ret;
+}
+
+list<int> TPlaylistCore::removeMusicItems(TPlaylistItem *playlistItem, list<int> indexes)
+{
+    list<int> ret;
+    indexes.sort();
+    indexes.reverse();
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        for(int index : indexes)
+            if(playlistItem->remove(index))
+                ret.push_back(index);
+        RestoreMusicItem;
+    }
+
+    return ret;
+}
+
+list<int> TPlaylistCore::moveMusicItems(TPlaylistItem *playlistItem, list<int> indexes, int pos)
+{
+    list<int> ret;
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        ret = playlistItem->move(indexes, pos);
+        RestoreMusicItem;
+    }
+
+    return ret;
+}
+
+list<int> TPlaylistCore::insertMusicItems(TPlaylistItem *playlistItem, int pos, TMusicItems musicItems)
+{
+    list<int> ret;
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        ret = playlistItem->insert(pos, musicItems);
+        RestoreMusicItem;
+    }
+
+    return ret;
+}
+
+void TPlaylistCore::removeAllMusicItems(TPlaylistItem *playlistItem)
+{
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        playlistItem->clear();
+        RestoreMusicItem;
+    }
+}
+
+void TPlaylistCore::sortMusicItems(TPlaylistItem *playlistItem, SortMethod sm)
+{
+    if(playlistItem)
+    {
+        RecordMusicItem;
+        playlistItem->sort(sm);
+        RestoreMusicItem;
+    }
+}
+
 TTrackItem *TPlaylistCore::currentTrackItem()
 {
     TMusicItem *musicItem = currentMusicItem();
@@ -300,22 +401,60 @@ TPlaylistItem *TPlaylistCore::takeAt(int plIndex)
     if(plIndex<0 || plIndex>=(int)mPlaylist.size())
         return NULL;
 
-    mMutex.lock();
     TPlaylistItem *item = mPlaylist.at(plIndex);
     mPlaylist.erase(mPlaylist.begin()+plIndex);
-    mMutex.unlock();
+
     return item;
+}
+
+list<int> TPlaylistCore::move(list<int> indexes, int pos)
+{
+    mMutex.lock();
+    TPlaylistItem *playingItem = mPlaylist.at(mPlaylistIndex);
+
+    int listSize = mPlaylist.size();
+    TPlaylistItems items;
+    list<int> indexesMoved;
+    if(indexes.size()<=0 || listSize<=0)
+        return indexesMoved;
+
+    if(pos < 0)
+        pos = 0;
+    if(pos > listSize)
+        pos = listSize;
+
+    indexes.sort();
+    indexes.reverse();
+
+    for (int i : indexes) {
+        if(i<0 || i>=listSize)
+            continue;
+        items.push_back(takeAt(i));
+        if(i < pos)
+            pos--;
+    }
+    int i = 0;
+    for (TPlaylistItem *item : items) {
+        insert(pos, item);
+        indexesMoved.push_back(pos+i++);
+    }
+
+    mMutex.unlock();
+
+    mPlaylistIndex = indexOf(playingItem);
+
+    return indexesMoved;
 }
 
 int TPlaylistCore::insert(int pos, TPlaylistItem *item)
 {
-    mMutex.lock();
     mPlaylist.insert(mPlaylist.begin()+pos, item);
-    mMutex.unlock();
+
     if(pos < 0)
         pos = 0;
     else if (pos >= (int)mPlaylist.size())
         pos = mPlaylist.size()-1;
+
     return pos;
 }
 

@@ -20,9 +20,7 @@
 #define RecordCurrentItem PlayListItem currentItem = mCore->getPlaylistItem(mCurrentIndex)
 #define RestoreCurrentItem mCurrentIndex = mCore->getPlaylistItemIndex(currentItem)
 #define RecordPlayingItem PlayListItem playingItem = mCore->getPlaylistItem(mPlayingIndex)
-#define RestorePlayingItem \
-    mPlayingIndex = mCore->getPlaylistItemIndex(playingItem);\
-    mCore->setPlayingIndex(IT_PL, mPlayingIndex)
+#define RestorePlayingItem mPlayingIndex = mCore->getPlaylistItemIndex(playingItem)
 
 TPlaylistModel::TPlaylistModel(QObject *parent) :
     TAbstractModel(parent)
@@ -158,6 +156,4 @@ void TPlaylistModel::moveItems(QList<int> indexes, int pos, QList<int> &indexesM
 
     RestoreCurrentItem;
     RestorePlayingItem;
-
-    endResetModel();
 }

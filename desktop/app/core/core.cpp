@@ -429,19 +429,47 @@ QList<int> TCore::moveMusicItems(PlayListItem playlistItem, QList<int> indexes, 
 int TCore::insertMusicItem(PlayListItem playlistItem, int pos, MusicItem musicItem)
 {
     int ret = -1;
+    QList<int> retPos;
+    MusicItems musicItems;
+    musicItems.append(musicItem);
     if(mSendCmd)
-        mSendCmd(CMD_INSERT_MUSIC_ITEM, playlistItem, &pos, musicItem, &ret);
+        mSendCmd(CMD_INSERT_MUSIC_ITEMS, playlistItem, &pos, &musicItems, &retPos);
+
+    if(retPos.size() > 0)
+        ret = retPos.at(0);
 
     return ret;
 }
 
+QList<int> TCore::insertMusicItems(PlayListItem playlistItem, int pos, MusicItems musicItems)
+{
+    list<int> ret;
+    list<void*> stdList = musicItems.toStdList();
+    if(mSendCmd)
+        mSendCmd(CMD_INSERT_MUSIC_ITEMS, playlistItem, &pos, &stdList, &ret);
+
+    return QList<int>::fromStdList(ret);
+}
+
+QList<int> TCore::removeMusicItems(PlayListItem playlistItem, QList<int> posList)
+{
+    list<int> ret;
+    list<int> stdList = posList.toStdList();
+    if(mSendCmd)
+        mSendCmd(CMD_REMOVE_MUSIC_ITEMS, playlistItem, &stdList, &ret, 0);
+
+    return QList<int>::fromStdList(ret);
+}
+
 bool TCore::removeMusicItem(PlayListItem playlistItem, int pos)
 {
-    bool ret = false;
+    list<int> ret;
+    list<int> posList;
+    posList.push_back(pos);
     if(mSendCmd)
-        mSendCmd(CMD_REMOVE_MUSIC_ITEM, playlistItem, &pos, &ret, 0);
+        mSendCmd(CMD_REMOVE_MUSIC_ITEMS, playlistItem, &posList, &ret, 0);
 
-    return ret;
+    return ret.size()==1;
 }
 
 bool TCore::updateMusicItem(PlayListItem playlistItem, int pos, MusicItem musicItem)

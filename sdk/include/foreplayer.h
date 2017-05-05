@@ -404,7 +404,7 @@ enum ForeplayerCmd
      * param3: music item handle
      * param4: return position inserted
      */
-    CMD_INSERT_MUSIC_ITEM,
+    CMD_INSERT_MUSIC_ITEMS,
 
     /**
      * Remove music item from playlist item
@@ -412,7 +412,7 @@ enum ForeplayerCmd
      * param2: position
      * param3: return bool
      */
-    CMD_REMOVE_MUSIC_ITEM,
+    CMD_REMOVE_MUSIC_ITEMS,
 
     /**
      * Get music item display name.

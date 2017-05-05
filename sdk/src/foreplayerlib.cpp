@@ -26,6 +26,24 @@ static TCore *g_core = nullptr;
 static TPlayerCore *g_player = nullptr;
 static TPlaylistCore *g_playlist = nullptr;
 
+template<class T>
+vector<T*> fromVoid(list<void*> container)
+{
+    vector<T*> ret;
+    for(void *e : container)
+        ret.push_back((T*)e);
+    return ret;
+}
+
+template<class T>
+list<void*> toVoid(vector<T*> container)
+{
+    list<void*> ret;
+    for(T *e : container)
+        ret.push_back((void*)e);
+    return ret;
+}
+
 void FOREPLAYER_API foreplayer_send_cmd(
         int cmd,
         void *param1,
@@ -86,35 +104,7 @@ void FOREPLAYER_API foreplayer_send_cmd(
     case CMD_MOVE_PLAYLISTS:
         if(g_playlist)
         {
-            list<int> indexes = *(list<int>*)param1;
-            int pos = *(int*)param2;
-            int listSize = g_playlist->size();
-            TPlaylistItems items;
-            list<int> indexesMoved;
-            if(indexes.size()<=0 || listSize<=0)
-                return;
-
-            if(pos < 0)
-                pos = 0;
-            if(pos > listSize)
-                pos = listSize;
-
-            indexes.sort();
-            indexes.reverse();
-
-            for (int i : indexes) {
-                if(i<0 || i>=listSize)
-                    continue;
-                items.push_back(g_playlist->takeAt(i));
-                if(i < pos)
-                    pos--;
-            }
-            int i = 0;
-            for (TPlaylistItem *item : items) {
-                g_playlist->insert(pos, item);
-                indexesMoved.push_back(pos+i++);
-            }
-            *(list<int>*)param3 = indexesMoved;
+            *(list<int>*)param3 = g_playlist->move(*(list<int>*)param1, *(int*)param2);
         }
         break;
     case CMD_REMOVE_PLAYLIST:
@@ -157,44 +147,20 @@ void FOREPLAYER_API foreplayer_send_cmd(
         *(int*)param3 = param1?((TPlaylistItem*)param1)->indexOf((TMusicItem*)param2):-1;
         break;
     case CMD_MOVE_MUSIC_ITEMS:
+        if(g_playlist)
         {
-            TPlaylistItem *playlistItem = (TPlaylistItem*)param1;
-            list<int> indexes = *(list<int>*)param2;
-            int pos = *(int*)param3;
-            int listSize = playlistItem->size();
-            TMusicItems items;
-            list<int> indexesMoved;
-            if(!playlistItem || indexes.size()<=0 || listSize<=0)
-                return;
-
-            if(pos < 0)
-                pos = 0;
-            if(pos > listSize)
-                pos = listSize;
-
-            indexes.sort();
-            indexes.reverse();
-
-            for (int i : indexes) {
-                if(i<0 || i>=listSize)
-                    continue;
-                items.push_back(playlistItem->takeAt(i));
-                if(i < pos)
-                    pos--;
-            }
-            int i = 0;
-            for (TMusicItem *item : items) {
-                playlistItem->insert(pos, item);
-                indexesMoved.push_back(pos+i++);
-            }
-            *(list<int>*)param4 = indexesMoved;
+            *(list<int>*)param4 = g_playlist->moveMusicItems((TPlaylistItem*)param1, *(list<int>*)param2, *(int*)param3);
         }
         break;
-    case CMD_INSERT_MUSIC_ITEM:
-        *(int*)param4 = param1?((TPlaylistItem*)param1)->insert(*(int*)param2, (TMusicItem*)param3):-1;
+    case CMD_INSERT_MUSIC_ITEMS:
+        if(g_playlist)
+        {
+            *(list<int>*)param4 = g_playlist->insertMusicItems((TPlaylistItem*)param1, *(int*)param2, fromVoid<TMusicItem>(*(list<void*>*)param3));
+        }
         break;
-    case CMD_REMOVE_MUSIC_ITEM:
-        *(bool*)param3 = param1?((TPlaylistItem*)param1)->remove(*(int*)param2):false;
+    case CMD_REMOVE_MUSIC_ITEMS:
+        if(g_playlist && param1)
+            *(list<int>*)param3 = g_playlist->removeMusicItems((TPlaylistItem*)param1, *(list<int>*)param2);
         break;
     case CMD_GET_MUSIC_ITEM_DISPLAY_NAME:
         *(wstring*)param2 = param1?((TMusicItem*)param1)->displayName():L"";
@@ -391,7 +357,8 @@ void FOREPLAYER_API foreplayer_send_cmd(
         *(bool*)param1 = g_player?g_player->isStoped():true;
         break;
     case CMD_PLAYLIST_REMOVE_REDUNDANT:
-        *(list<int>*)param2 = param1?((TPlaylistItem*)param1)->removeRedundant():list<int>();
+        if(g_playlist && param1)
+            *(list<int>*)param2 = g_playlist->removeRedundant((TPlaylistItem*)param1);
         break;
     case CMD_GET_CURRENT_PLAYLIST_ITEM:
         *(void**)param1 = g_playlist?g_playlist->currentPlaylistItem():NULL;
@@ -410,13 +377,7 @@ void FOREPLAYER_API foreplayer_send_cmd(
     case CMD_GET_TRACK_ITEMS:
         if(param1)
         {
-            list<void*> trackItemsVoid;
-            TTrackItems *trackItems = ((TMusicItem*)param1)->trackItems();
-            for(TTrackItem *item : *trackItems)
-            {
-                trackItemsVoid.push_back(item);
-            }
-            *(list<void*>*)param2 = trackItemsVoid;
+            *(list<void*>*)param2 = toVoid<TTrackItem>(((TMusicItem*)param1)->trackItems());
         }
         break;
     case CMD_GET_CURRENT_MUSIC_ITEM:
@@ -444,14 +405,7 @@ void FOREPLAYER_API foreplayer_send_cmd(
         *(list<int>*)param2 = param1?((TPlaylistItem*)param1)->removeErrors():list<int>();
         break;
     case CMD_GET_PLUGIN_LIST:
-        {
-            TBackendPlugins plugins = TBackendPluginManager::instance()->plugins();
-            list<void*> plguinHandles;
-            for(TBackendPlugin *plugin : plugins)
-                plguinHandles.push_back(plugin);
-
-            *(list<void*>*)param1 = plguinHandles;
-        }
+        *(list<void*>*)param1 = toVoid<TBackendPlugin>(TBackendPluginManager::instance()->plugins());
         break;
     case CMD_GET_PLUGIN_NAME:
         *(wstring*)param2 = param1?((TBackendPlugin*)param1)->pluginInfo()->name:L"";

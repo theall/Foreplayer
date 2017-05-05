@@ -151,7 +151,7 @@ void TPlaylistWindow::slotPopupContextMenu(QPoint pos)
     } else if (TMusiclistView *musiclistView = dynamic_cast<TMusiclistView*>(sender())) {
         mPopmenuMusiclistItem->display(musiclistView->mapToGlobal(pos), musiclistView->selectedRows().size());
     } else if (TTracklistView *tracklistView = dynamic_cast<TTracklistView*>(sender())) {
-        mPopmenuTrackList->popup(tracklistView->mapToGlobal(pos));
+        mPopmenuTrackList->display(tracklistView->mapToGlobal(pos), tracklistView->selectedRows().size());
     }
 }
 
@@ -306,7 +306,7 @@ void TPlaylistWindow::slotDeleteMusicItemTriggered()
         return;
 
     QList<int> rows = mMusiclistView->selectedRows();
-    if(rows.size() > 0)
+    if(rows.size()>0 && verified())
         emit requestDeleteMusicItem(rows);
 }
 

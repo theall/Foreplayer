@@ -559,16 +559,26 @@ void TPlaylistController::slotRequestCopyMusicItem(QList<int> rows)
 
 void TPlaylistController::slotRequestCutMusicItem(QList<int> rows)
 {
+    if(!mMusiclistModel || !mMusiclistView || !mTracklistModel)
+        return;
+
     slotRequestCopyMusicItem(rows);
-    slotRequestDeleteMusicItem(rows);
+    mMusiclistModel->removeSelections(rows);
+
+    // Check whether current music item is removed
+    PlayListItem playlistItem = mMusiclistModel->playlistItem();
+    MusicItem musicItem = mTracklistModel->musicItem();
+    if(playlistItem && musicItem)
+    {
+        if(mCore->getMusicItemIndex(playlistItem, musicItem) < 0)
+            mTracklistModel->setMusicItem(NULL);
+    }
 }
 
 void TPlaylistController::slotRequestPasteMusicItem(int pos)
 {
-    if(!mMusiclistModel)
+    if(!mMusiclistModel || !mMusiclistView)
         return;
-
-    int oldIndex = mMusiclistModel->currentIndex();
 
     MusicItems musicItems;
     const QMimeData *mimeData = qApp->clipboard()->mimeData();
@@ -587,9 +597,8 @@ void TPlaylistController::slotRequestPasteMusicItem(int pos)
 //        }
     }
 
-    mMusiclistModel->insertItems(pos, musicItems);
-
-    restoreMusicListSelection(oldIndex);
+    if(musicItems.size() > 0)
+        mMusiclistView->selectRows(mMusiclistModel->insertItems(pos, musicItems));
 }
 
 void TPlaylistController::slotRequestExplorerMusicItem(int row)
@@ -876,7 +885,10 @@ void TPlaylistController::restoreMusicListSelection(int oldIndex)
     }
 
     if(currentIndex > -1)
+    {
+        slotMusiclistIndexChanged(currentIndex);
         mMusiclistView->selectRow(currentIndex);
+    }
 }
 
 void TPlaylistController::locateIndex(int pi, int mi, int ti)

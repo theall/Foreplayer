@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "popmenutracklist.h"
 
 TPopMenuTrackList::TPopMenuTrackList(QWidget *parent) :
@@ -34,8 +34,8 @@ TPopMenuTrackList::TPopMenuTrackList(QWidget *parent) :
 
     addAction(mActionPlay);
     addSeparator();
-    addAction(mActionCopy);
-    addSeparator();
+    //addAction(mActionCopy);
+    //addSeparator();
     addAction(mActionChange);
     addSeparator();
     addAction(mActionExport);
@@ -43,6 +43,20 @@ TPopMenuTrackList::TPopMenuTrackList(QWidget *parent) :
     addAction(mActionView);
 
     retranslateUi();
+}
+
+void TPopMenuTrackList::display(QPoint pos, int selectionCount)
+{
+    bool noSelection = selectionCount<=0;
+    bool singleSelection = selectionCount==1;
+
+    mActionPlay->setEnabled(singleSelection);
+    mActionChange->setEnabled(singleSelection);
+    mActionView->setEnabled(singleSelection);
+    mActionCopy->setEnabled(!noSelection);
+    mActionExport->setEnabled(!noSelection);
+
+    popup(pos);
 }
 
 void TPopMenuTrackList::retranslateUi()

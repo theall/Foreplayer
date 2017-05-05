@@ -20,7 +20,7 @@
 
 #include "musicitem.h"
 
-#include <list>
+#include <vector>
 
 class TPlaylistItem : public TAbstractItem
 {
@@ -34,8 +34,11 @@ public:
     int size();
     TMusicItem *takeAt(int index);
     int insert(int pos, TMusicItem *item);
+    list<int> insert(int pos, TMusicItems items);
+    list<int> move(list<int> indexes, int pos);
     void update(int index, TMusicItem *item);
     bool remove(int index);
+    list<int> remove(list<int> indexes);
     list<int> removeRedundant();
     list<int> removeErrors();
     void rename(int index, wstring newName);

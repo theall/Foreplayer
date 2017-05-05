@@ -26,8 +26,7 @@ QColor TAbstractTableView::mBackground;
 QColor TAbstractTableView::mHighlightColor;
 QPixmap *TTableViewDelegate::mSelectedPixmap = NULL;
 
-int g_editingRow = -1;
-int g_editingCol = -1;
+QModelIndex g_editingIndex;
 
 TTableViewDelegate::TTableViewDelegate(QObject *parent) :
     QStyledItemDelegate(parent)
@@ -46,16 +45,15 @@ QWidget *TTableViewDelegate::createEditor(QWidget *parent, const QStyleOptionVie
     QPalette pal = editor->palette();
     pal.setBrush(QPalette::Text, QBrush(index.data(Utils::TextHighlight).value<QColor>()));
     editor->setPalette(pal);
-    g_editingRow = index.row();
-    g_editingCol = index.column();
+    g_editingIndex = index;
     return editor;
 }
 
 void TTableViewDelegate::destroyEditor(QWidget *editor, const QModelIndex &index) const
 {
     QStyledItemDelegate::destroyEditor(editor, index);
-    g_editingRow = -1;
-    g_editingCol = -1;
+
+    g_editingIndex = QModelIndex();
 }
 
 void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
@@ -140,7 +138,7 @@ void TTableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &op
         painter->fillPath(trianglePath, QBrush(textColor));
     }
 
-    if(g_editingRow!=index.row() || g_editingCol!=index.column()) // Disable draw text if current item is in editing
+    if(g_editingIndex != index) // Disable draw text if current item is in editing
     {
         // Draw text
         QString text = index.data().toString();
@@ -219,7 +217,7 @@ void TAbstractTableView::addFiles(QStringList files, int pos)
     {
         QList<int> newIndexes;
         emit requestAddFiles(files, pos, newIndexes);
-        selectIndexes(newIndexes);
+        selectRows(newIndexes);
     }
 }
 
@@ -269,23 +267,23 @@ int TAbstractTableView::currentRow()
     return -1;
 }
 
-void TAbstractTableView::selectIndexes(QList<int> indexes, bool locate)
+void TAbstractTableView::selectRows(QList<int> rows, bool locate)
 {
     QItemSelectionModel *selModel = selectionModel();
     selModel->clearSelection();
     QAbstractItemModel *m = model();
-    int indexSize = indexes.size();
+    int indexSize = rows.size();
     if(!m || !selModel || indexSize<=0)
         return;
 
     int columns = m->columnCount();
-    for(int i : indexes)
+    for(int i : rows)
         for(int j=0;j<columns;j++)
             selModel->select(m->index(i, j), QItemSelectionModel::Select);
 
     if(locate)
     {
-        scrollTo(m->index(indexes.takeLast(), 0), QAbstractItemView::PositionAtCenter);
+        scrollTo(m->index(rows.takeLast(), 0), QAbstractItemView::PositionAtCenter);
     }
 }
 
@@ -341,7 +339,7 @@ void TAbstractTableView::dropEvent(QDropEvent *event)
             {
                 QList<int> newIndexes;
                 emit requestMoveItems(selected, insertRow, newIndexes);
-                selectIndexes(newIndexes);
+                selectRows(newIndexes);
             }
             event->accept();
         } else {
@@ -419,7 +417,7 @@ void TAbstractTableView::mouseDoubleClickEvent(QMouseEvent *event)
 
 void TAbstractTableView::keyPressEvent(QKeyEvent *event)
 {
-    if(g_editingRow == -1)
+    if(!g_editingIndex.isValid())
     {
         int key = event->key();
         if(key==Qt::Key_Return || key==Qt::Key_Enter)

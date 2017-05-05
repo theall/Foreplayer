@@ -20,8 +20,7 @@
 #define RecordCurrentItem MusicItem currentItem = mCore->getMusicItem(mPlaylistItem, mCurrentIndex)
 #define RestoreCurrentItem mCurrentIndex = mCore->getMusicItemIndex(mPlaylistItem, currentItem)
 #define RecordPlayingItem MusicItem playingItem = mCore->getMusicItem(mPlaylistItem, mPlayingIndex)
-#define RestorePlayingItem mPlayingIndex = mCore->getMusicItemIndex(mPlaylistItem, playingItem);\
-    mCore->setPlayingIndex(IT_ML, mPlayingIndex)
+#define RestorePlayingItem mPlayingIndex = mCore->getMusicItemIndex(mPlaylistItem, playingItem);
 
 TMusiclistModel::TMusiclistModel(QObject *parent) :
     TAbstractModel(parent)
@@ -182,29 +181,24 @@ void TMusiclistModel::insertItems(int pos, MusicItems musicItems, QList<int> &ne
     RecordCurrentItem;
     RecordPlayingItem;
 
-    if(pos < 0)
-        pos = musicItems.size();
-
-    for(MusicItem musicItem : musicItems) {
-        if(musicItem)
-        {
-            beginInsertRows(index(pos, 0), pos, pos);
-            int posr = mCore->insertMusicItem(mPlaylistItem, pos, musicItem);
-            newIndexes.append(posr);
-            endInsertRows();
-        }
+    newIndexes = mCore->insertMusicItems(mPlaylistItem, pos, musicItems);
+    for(int i : newIndexes)
+    {
+        beginInsertRows(index(i, 0), i, i);
+        endInsertRows();
     }
-    endResetModel();
-
     // Restore current index
     RestoreCurrentItem;
     RestorePlayingItem;
+
+    update();
 }
 
-void TMusiclistModel::insertItems(int pos, MusicItems musicItems)
+QList<int> TMusiclistModel::insertItems(int pos, MusicItems musicItems)
 {
     QList<int> newIndexes;
     insertItems(pos, musicItems, newIndexes);
+    return newIndexes;
 }
 
 void TMusiclistModel::removeSelections(QList<int> indexes)
@@ -212,21 +206,18 @@ void TMusiclistModel::removeSelections(QList<int> indexes)
     if(!mPlaylistItem)
         return;
 
-    std::sort(indexes.begin(), indexes.end(), [=](int a, int b) {
-        return a > b;
-    });
-
     RecordCurrentItem;
     RecordPlayingItem;
 
-    for(int i : indexes) {
+    QList<int> ret = mCore->removeMusicItems(mPlaylistItem, indexes);
+    for(int i : ret) {
         beginRemoveRows(QModelIndex(), i, i);
-        mCore->removeMusicItem(mPlaylistItem, i);
         endRemoveRows();
     }
-
     RestoreCurrentItem;
     RestorePlayingItem;
+
+    update();
 }
 
 QList<int> TMusiclistModel::removeRedundant()
@@ -249,6 +240,7 @@ QList<int> TMusiclistModel::removeRedundant()
     RestoreCurrentItem;
     RestorePlayingItem;
 
+    update();
     return rowsRemoved;
 }
 
@@ -271,6 +263,7 @@ QList<int> TMusiclistModel::removeErrors()
 
     RestoreCurrentItem;
     RestorePlayingItem;
+    update();
 
     return rowsRemoved;
 }
@@ -289,11 +282,13 @@ void TMusiclistModel::removeAll()
 
     RestoreCurrentItem;
     RestorePlayingItem;
+
+    update();
 }
 
 void TMusiclistModel::update()
 {
-    emit dataChanged(QModelIndex(), QModelIndex());
+    emit layoutChanged();
 }
 
 PlayListItem TMusiclistModel::playlistItem()
@@ -315,4 +310,6 @@ void TMusiclistModel::sortItems(SortMethod sm)
 
     RestoreCurrentItem;
     RestorePlayingItem;
+
+    update();
 }

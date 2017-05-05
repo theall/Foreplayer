@@ -52,7 +52,7 @@ public:
     void addFiles(QList<QUrl> urls, int pos = 0x7fffffff);
     QList<int> selectedRows();
     int currentRow();
-    void selectIndexes(QList<int> indexes, bool locate = true);
+    void selectRows(QList<int> rows, bool locate = true);
 
 signals:
     void onCurrentRowChanged(int row);

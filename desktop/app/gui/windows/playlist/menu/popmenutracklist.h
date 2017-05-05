@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef TPOPMENUTRACKLIST_H
 #define TPOPMENUTRACKLIST_H
 
@@ -26,6 +26,8 @@ class TPopMenuTrackList : public TAbstractPopMenu
 
 public:
     TPopMenuTrackList(QWidget *parent = 0);
+
+    void display(QPoint pos, int selectionCount);
 
 signals:
     void onActionPlayTriggered();

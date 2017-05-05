@@ -23,7 +23,7 @@
 
 #include <mutex>
 
-typedef vector<int> intn;
+typedef list<int> intn;
 
 class TPlaylistCore
 {
@@ -40,8 +40,7 @@ public:
     int size();
     TPlaylistItem *currentPlaylistItem();
     TPlaylistItem *playlistItem(int plIndex = -1);
-    TPlaylistItem *takeAt(int plIndex);
-    int insert(int pos, TPlaylistItem *item);
+    list<int> move(list<int> indexes, int pos);
     int insert(wstring name, int index = -1);
     bool remove(int index);
     void rename(int index, wstring newName);
@@ -64,6 +63,13 @@ public:
      * Music list functions.
      */
     TMusicItem *currentMusicItem();
+    list<int> removeRedundant(TPlaylistItem *playlistItem);
+    list<int> removeErrors(TPlaylistItem *playlistItem);
+    list<int> removeMusicItems(TPlaylistItem *playlistItem, list<int> indexes);
+    list<int> moveMusicItems(TPlaylistItem *playlistItem, list<int> indexes, int pos);
+    list<int> insertMusicItems(TPlaylistItem *playlistItem, int pos, TMusicItems musicItems);
+    void removeAllMusicItems(TPlaylistItem *playlistItem);
+    void sortMusicItems(TPlaylistItem *playlistItem, SortMethod sm);
 
     /**
      * Track list functions.
@@ -95,6 +101,8 @@ private:
     void findPlaylist();
     void loadPlaylist(wstring fileName);
     wstring getFileName();
+    TPlaylistItem *takeAt(int plIndex);
+    int insert(int pos, TPlaylistItem *item);
 };
 
 #endif // TPLAYLISTCORE_H

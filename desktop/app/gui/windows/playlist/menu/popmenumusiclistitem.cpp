@@ -17,6 +17,16 @@
  */
 #include "popmenumusiclistitem.h"
 
+#define MIME_TYPE_MUSIC_ITEM    "Foreplayer/MusicItem"
+
+#include <QClipboard>
+#include <QMimeData>
+
+bool hasMusicItem()
+{
+    return qApp->clipboard()->mimeData()->hasFormat(MIME_TYPE_MUSIC_ITEM);
+}
+
 TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     TAbstractPopMenu(parent)
 {
@@ -81,12 +91,12 @@ void TPopMenuMusiclistItem::display(QPoint pos, int selectionCount)
     mActionCopy->setEnabled(!noSelection);
     mActionPlay->setEnabled(singleSelection);
     mActionRemove->setEnabled(!noSelection);
-    mActionExport->setEnabled(!noSelection);
+    mActionExport->setEnabled(singleSelection);
     mActionExplorer->setEnabled(singleSelection);
     mActionRename->setEnabled(singleSelection);
     mActionDetail->setEnabled(singleSelection);
     mActionCopyToUsb->setEnabled(!noSelection);
-    mActionPaste->setEnabled(true);
+    mActionPaste->setEnabled(hasMusicItem());
 
     popup(pos);
 }

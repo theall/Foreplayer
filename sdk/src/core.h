@@ -27,7 +27,7 @@
 
 using namespace std;
 
-typedef vector<int> intn;
+typedef list<int> intn;
 
 class TCore
 {
