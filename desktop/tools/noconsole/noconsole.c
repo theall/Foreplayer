@@ -1,50 +1,126 @@
+/*
+
+  noconsole --- run console application without console window ---
+
+  Copyright (C) 2016 Masamichi Hosoda. All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS SOFTWARE IS PROVIDED BY AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED.  IN NO EVENT SHALL AUTHOR OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  SUCH DAMAGE.
+
+ */
+
 #include <windows.h>
-#include <shellapi.h>
-#include <stdio.h>
+#include <tchar.h>
+#include <strsafe.h>
 
-#ifdef UNICODE
-#define MAIN wWinMain
-#else
-#define MAIN WinMain
-#endif
+static TCHAR szAppName[] = TEXT ("noconsole");
 
-int WINAPI MAIN(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR pCmdLine, int nCmdShow)
+static void MessageBoxFormatMessage (LPCTSTR szMessage)
 {
-	int argnum = 1;
-	STARTUPINFO si;
-	PROCESS_INFORMATION pi;
-	DWORD exit_code;
-	
-	ZeroMemory(&si, sizeof(si));
-	si.cb = sizeof(si);
-	si.dwFlags = STARTF_USESHOWWINDOW;
-	si.wShowWindow = SW_HIDE;
-	ZeroMemory(&pi, sizeof(pi));
+  LPVOID lpBuffer;
+  TCHAR m[1024] = { 0 };
 
-	/* Note: argnum is not like argc... */
-	if (argnum < 1) {
-		fputs("Usage: noconsole <program> [<args>...]\n", stderr);
-		ExitProcess(1);
-	}
+  if (FormatMessage (FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                     FORMAT_MESSAGE_FROM_SYSTEM,
+                     NULL, GetLastError (),
+                     MAKELANGID (LANG_NEUTRAL, SUBLANG_DEFAULT),
+                     (LPTSTR) &lpBuffer, 0, NULL))
+    {
+      if (SUCCEEDED (StringCbPrintf (m, sizeof (m), TEXT ("%s: %s"),
+                                     szMessage, (LPTSTR) lpBuffer)))
+        MessageBox (NULL, m, szAppName, MB_OK);
+      else
+        MessageBox (NULL, (LPTSTR) lpBuffer, szAppName, MB_OK);
+      LocalFree (lpBuffer);
+    }
+  else
+    {
+      if (SUCCEEDED (StringCbPrintf (m, sizeof (m), TEXT ("%s: failed"),
+                                     szMessage)))
+        MessageBox (NULL, m, szAppName, MB_OK);
+      else
+        MessageBox (NULL, TEXT ("failed"), szAppName, MB_OK);
+    }
+}
 
-	/* Start the child process */
-	if (!CreateProcess(NULL, pCmdLine, NULL, NULL, FALSE, 0, NULL, NULL, /* Note that the previous should maybe be set to the cwd of the program being run */
-			&si,
-			&pi))
-	{
-		fprintf(stderr, "Error starting process, code %d.\n", GetLastError());
-		ExitProcess(1);
-	}
+int WINAPI _tWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
+                      LPTSTR lpCmdLine, int nShowCmd)
+{
+  STARTUPINFO si = { sizeof (STARTUPINFO) };
+  PROCESS_INFORMATION pi = {};
+  DWORD result;
 
-	/* Wait for child exit */
-	WaitForSingleObject(pi.hProcess, INFINITE);
+  if (!CreateProcess(NULL, lpCmdLine, NULL, NULL, FALSE,
+                     CREATE_NO_WINDOW, NULL, NULL, &si, &pi))
+    {
+      MessageBoxFormatMessage (TEXT ("CreateProcess"));
+      return -1;
+    }
 
-	GetExitCodeProcess(pi.hProcess, &exit_code);
+  if (!CloseHandle (pi.hThread))
+    MessageBoxFormatMessage (TEXT ("CloseHandle (Thread)"));
 
-	/* Clean up the handles */
-	CloseHandle(pi.hProcess);
-	CloseHandle(pi.hThread);
+  result = WaitForSingleObject (pi.hProcess, INFINITE);
+  switch (result)
+    {
+    case WAIT_ABANDONED:
+      MessageBox (NULL, TEXT ("WAIT_ABANDONED"), szAppName, MB_OK);
+      break;
+    case WAIT_OBJECT_0:
+      {
+        DWORD ecode;
+        if (!GetExitCodeProcess (pi.hProcess, &ecode))
+          MessageBoxFormatMessage (TEXT ("GetExitCodeProcess"));
+        else
+          {
+            if (!CloseHandle (pi.hProcess))
+              MessageBoxFormatMessage (TEXT ("CloseHandle (Process)"));
+            return ecode;
+          }
+      }
+      break;
+    case WAIT_TIMEOUT:
+      MessageBox (NULL, TEXT ("WAIT_TIMEOUT"), szAppName, MB_OK);
+      break;
+    case WAIT_FAILED:
+      MessageBoxFormatMessage (TEXT ("WaitForSingleObject WAIT_FAILED"));
+      break;
+    default:
+      {
+        TCHAR m[1024];
 
-	ExitProcess(exit_code);
-	return 0;
+        if (SUCCEEDED (StringCbPrintf (m, sizeof (m),
+                                       TEXT ("WaitForSingleObject: "
+                                             "unknown return value 0x%08x")
+                                       , result)))
+          MessageBox (NULL, m, szAppName, MB_OK);
+        else
+          MessageBox (NULL, TEXT ("WaitForSingleObject: failed"),
+                      szAppName, MB_OK);
+      }
+      break;
+    }
+
+  if (!CloseHandle (pi.hProcess))
+    MessageBoxFormatMessage (TEXT ("CloseHandle (Process)"));
+
+  return -1;
 }

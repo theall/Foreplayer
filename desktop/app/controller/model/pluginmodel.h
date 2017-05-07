@@ -47,7 +47,7 @@ public:
     TSuffixModel(QObject *parent = 0);
     ~TSuffixModel();
 
-    void setSuffixDecription(QMap<QString, QString> sd);
+    void setSuffixDecription(QHash<QString, QString> sd);
 
 private:
     QStringList mSuffixList;

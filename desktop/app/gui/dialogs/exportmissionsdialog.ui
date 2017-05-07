@@ -14,10 +14,37 @@
    <string>Exporting mission</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>3</number>
+   </property>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QToolButton" name="btnStart">
+      <widget class="QPushButton" name="btnStart">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>Start</string>
        </property>
@@ -25,6 +52,18 @@
      </item>
      <item>
       <widget class="QToolButton" name="btnPause">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>Pause</string>
        </property>
@@ -32,27 +71,56 @@
      </item>
      <item>
       <widget class="QToolButton" name="btnDelete">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>Delete</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="btnSelect">
-       <property name="text">
-        <string>Select</string>
+      <widget class="QToolButton" name="btnSetting">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
        </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QToolButton" name="btnClose">
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>Setting</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QToolButton" name="btnSetting">
+      <widget class="QToolButton" name="btnClose">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>24</height>
+        </size>
+       </property>
        <property name="text">
         <string>Close</string>
        </property>

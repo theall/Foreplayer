@@ -46,6 +46,10 @@ private slots:
     void on_sbCheckDuration_valueChanged(int arg1);
     void on_tePlayDuration_timeChanged(const QTime &time);
 
+    void on_sbParallels_valueChanged(int arg1);
+
+    void on_ckbAutoClearMission_toggled(bool checked);
+
 private:
     Ui::TOptionGeneral *ui;
 

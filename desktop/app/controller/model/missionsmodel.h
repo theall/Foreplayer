@@ -18,6 +18,7 @@
 #ifndef TMISSIONSMODEL_H
 #define TMISSIONSMODEL_H
 
+#include <QMutex>
 #include <QSharedMemory>
 #include <QAbstractTableModel>
 
@@ -28,15 +29,22 @@ typedef QList<QSharedMemory*> TExportMissions;
 class TMissionsModel : public QAbstractTableModel
 {
 public:
-    TMissionsModel(QObject *parent = 0, TExportMissions *exportMissions = NULL);
+    TMissionsModel(QObject *parent = 0, TExportMissions *exportMissions = 0, QMutex *mutex = 0);
     ~TMissionsModel();
 
     void update();
-    void addMission(QSharedMemory *mission);
     void addMissions(TExportMissions missions);
+
+    QList<int> removeMissions(QList<int> indexes);
+    QList<int> startMissions(QList<int> indexes);
+    QList<int> pauseMissions(QList<int> indexes);
+    QList<int> clearCompletedMissions();
 
 private:
     TExportMissions *mExportMissions;
+    QMutex *mExportMissionsLock;
+
+    QList<int> changeMissionsState(QList<int> indexes, ExportState checkState, ExportState newState);
 
     // QAbstractItemModel interface
     int rowCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;

@@ -17,25 +17,32 @@
  */
 #include "core.h"
 
-TCore::TCore()
+#define DELETE_POINTER(x) \
+    if(x)\
+    {\
+        delete x;\
+        x = NULL;\
+    }
+
+TCore::TCore(bool exportMode):
+    mPlayer(NULL)
+  , mPlaylist(NULL)
+  , mExporter(NULL)
+  , mPlugins(TBackendPluginManager::instance())
 {
-    mPlugins = TBackendPluginManager::instance();
-    mPlayer = new TPlayerCore();
-    mPlaylist = new TPlaylistCore();
+    if(exportMode)
+    {
+        mExporter = new TExportCore();
+    } else {
+        mPlayer = new TPlayerCore();
+        mPlaylist = new TPlaylistCore();
+    }
 }
 
 TCore::~TCore()
 {
-    if(mPlayer)
-    {
-        delete mPlayer;
-        mPlayer = NULL;
-    }
-    if(mPlaylist)
-    {
-        delete mPlaylist;
-        mPlaylist = NULL;
-    }
+    DELETE_POINTER(mPlayer);
+    DELETE_POINTER(mPlaylist);
     if(mPlugins)
     {
         TBackendPluginManager::deleteInstance();
@@ -51,6 +58,11 @@ TPlayerCore *TCore::player()
 TPlaylistCore *TCore::playlist()
 {
     return mPlaylist;
+}
+
+TExportCore *TCore::exporter()
+{
+    return mExporter;
 }
 
 vector<wstring> TCore::playlists()

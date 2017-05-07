@@ -85,6 +85,12 @@ public:
     bool enableMultiInstance();
     void setEnableMultiInstance(bool bEnabled);
 
+    int exportProcesses();
+    void setExportProcesses(int value);
+
+    bool autoClearExportMissions();
+    void setAutoClearExportMissions(bool value);
+
     QString skinPath();
     void setSkinPath(QString skinName);
 
@@ -148,9 +154,11 @@ private:
     int mEqSurround;
     int mEqAmplification;
     int mEqProfile;
+    int mExportProcesses;
     QList<int> mEqFactors;
     float mOpacity;
     PlayMode mPlayMode;
+    bool mAutoClearExportMissions;
 
     void setValue(QString section, QVariant value);
     QVariant value(QString section, QVariant defValue=QVariant());

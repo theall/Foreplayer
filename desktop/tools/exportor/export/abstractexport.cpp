@@ -68,7 +68,8 @@ int TAbstractExport::writeInt(int data)
 int TAbstractExport::writeShort(short data)
 {
     if(mFile)
-        return fwrite(&data, sizeof(short), 1, mFile);
+        return fwrite(&data, 1, sizeof(short), mFile);
+
     return 0;
 }
 

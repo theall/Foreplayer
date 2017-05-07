@@ -43,7 +43,7 @@ bool TEqualizerController::joint(TGuiManager *gui, TCore *core)
     connect(mEqWindow, SIGNAL(eqPrempChanged(float)), this, SLOT(slotAmplifyValueChanged(float)));
     connect(mEqWindow, SIGNAL(eqFactorChanged(int,float)), this, SLOT(slotSpectrumValueChanged(int,float)));
 
-    return TAbstractController::joint(gui, core);;
+    return TAbstractController::joint(gui, core);
 }
 
 void TEqualizerController::slotBallanceValueChanged(float value)

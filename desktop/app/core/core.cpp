@@ -25,7 +25,7 @@
 
 TCore *TCore::mInstance = NULL;
 
-TCore::TCore() :
+TCore::TCore(bool exportMode) :
     mLibrary(NULL)
   , mSendCmd(NULL)
 {
@@ -36,11 +36,14 @@ TCore::TCore() :
     {
         mSendCmd = (FOREPLAYER_SEND_CMD)mLibrary->resolve(FOREPLAYER_SEND_CMD_NAME);
         if(!mSendCmd)
-            throw tr("Failed to resolve proc %1 in library %2").arg(FOREPLAYER_SEND_CMD_NAME).arg(FOREPLAYER_LIB_NAME);
+            throw tr("Failed to resolve proc %1 in library %2.").arg(FOREPLAYER_SEND_CMD_NAME).arg(FOREPLAYER_LIB_NAME);
     } else {
-        throw tr("Failed to load library %1").arg(FOREPLAYER_LIB_NAME);
+        throw tr("Failed to load library %1.").arg(FOREPLAYER_LIB_NAME);
     }
-    mSendCmd(CMD_OPEN, 0, 0, 0, 0);
+    bool initialized = false;
+    mSendCmd(CMD_OPEN, &exportMode, &initialized, 0, 0);
+    if(!initialized)
+        throw tr("Failed to initialize sdk %1.").arg(FOREPLAYER_LIB_NAME);
 }
 
 TCore::~TCore()
@@ -818,14 +821,14 @@ QString TCore::getPluginDescription(PluginHandle pluginHandle)
     return QString::fromStdWString(ret);
 }
 
-QMap<QString, QString> TCore::getPluginSuffixDescription(PluginHandle pluginHandle)
+QHash<QString, QString> TCore::getPluginSuffixDescription(PluginHandle pluginHandle)
 {
     map<wstring, wstring> ret;
     if(mSendCmd)
         mSendCmd(CMD_GET_PLUGIN_SUFFIXDESCRIPTION, pluginHandle, &ret, 0, 0);
 
     map<wstring, wstring>::iterator it;
-    QMap<QString, QString> _ret;
+    QHash<QString, QString> _ret;
     for(it=ret.begin();it!=ret.end();it++)
         _ret.insert(QString::fromStdWString(it->first), QString::fromStdWString(it->second));
 

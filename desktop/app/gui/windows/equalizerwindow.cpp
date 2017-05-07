@@ -122,7 +122,7 @@ void TEqualizerWindow::on_btnClose_clicked()
 
 void TEqualizerWindow::on_btnReset_clicked()
 {
-    mSldPreamp->setValue(0);;
+    mSldPreamp->setValue(0);
 
     for(auto x : mSldEqFactors)
     {

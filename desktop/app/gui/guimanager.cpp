@@ -142,6 +142,10 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
             SIGNAL(requestSkinInfo(int,QPixmap&,QString&,QString&,QString&)),
             this,
             SLOT(slotRequestSkinInfo(int,QPixmap&,QString&,QString&,QString&)));
+
+    // Export missions dialog
+    connect(mExportMissionDialog, SIGNAL(requestOpenSettingDialog()), this, SLOT(slotOpenOptionsDialog()));
+
 }
 
 TGuiManager::~TGuiManager()
@@ -598,7 +602,7 @@ void TGuiManager::centerWindow()
         delete e;
 
     int dx = (float)(desktopWidth - right + left) / 2 + 0.5;
-    int dy = (float)(desktopHeight - bottom + top) / 2 + 0.5;;
+    int dy = (float)(desktopHeight - bottom + top) / 2 + 0.5;
     for(auto subWnd : movingWindows)
     {
         QPoint subWndPoint = subWnd->pos();

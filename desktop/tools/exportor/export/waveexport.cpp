@@ -60,12 +60,13 @@ void TWaveExport::end()
 int TWaveExport::write(const byte *buf, int size)
 {
     short *data = (short *)buf;
+    int sizeWrote = 0;
     for (int i = 0; i < size/2; i++)
     {
-        writeShort(Endian16_Swap(data[i]));
+        sizeWrote += writeShort(Endian16_Swap(data[i]));
     }
 
-    return size;
+    return sizeWrote;
 }
 
 void TWaveExport::setTitle(std::string title)

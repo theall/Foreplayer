@@ -22,20 +22,23 @@
 
 enum ExportState
 {
-    ES_NULL,
-    ES_READY,
-    ES_RUN,
-    ES_ERROR,
-    ES_PAUSED,
-    ES_COMPLETE
+    ES_NULL = 0x0,
+    ES_READY = 0x1,
+    ES_STARTING = 0x2,
+    ES_RUNNING = 0x4,
+    ES_ERROR = 0x8,
+    ES_PAUSED = 0x16,
+    ES_COMPLETE = 0x32,
+    ES_ALL = 0xFFFFFFFF
 };
 
 struct TExportParam
 {
     wchar_t fileName[260];
+    wchar_t title[260];
     wchar_t indexName[260];
     wchar_t outputPath[260];
-    wchar_t errorString[512];
+    wchar_t errorString[260];
     char format[10];
     int sampleRate;
     int duration;
@@ -43,6 +46,7 @@ struct TExportParam
     bool overwrite;
     int progressCurrentFrames;
     int progressTotalFrames;
+    int number;
     ExportState state;
 
     TExportParam()
@@ -58,6 +62,7 @@ struct TExportParam
         overwrite = false;
         progressCurrentFrames = 0;
         progressTotalFrames = 0;
+        number = -1;
         state = ES_NULL;
     }
 };
@@ -70,6 +75,8 @@ namespace Utils{
     QString microSecToTimeStr(long ms, bool padZero=true);
     QString secToTimeStr(long seconds, bool padZero=true);
     QString absoluteFilePath(QString fileName);
+    bool exploreFile(QString fileName);
+    void cpy2wchar(wchar_t *dest, QString source);
 }
 
 #endif // UTILS_H

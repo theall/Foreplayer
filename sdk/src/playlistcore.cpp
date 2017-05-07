@@ -38,8 +38,7 @@ TPlaylistCore::TPlaylistCore() :
     mPlaylistIndex(-1),
     mMusiclistIndex(-1),
     mTracklistIndex(-1),
-    mFileSaving(false),
-    mBackendPluginManager(TBackendPluginManager::instance())
+    mFileSaving(false)
 {
     mCurrentDir = getCurrentDir() + L"/";
     mPlaylistDir = mCurrentDir + mPluginDir + L"/";
@@ -100,7 +99,10 @@ int TPlaylistCore::insert(wstring name, int index)
     int ret = -1;
     mMutex.lock();
 
-    TPlaylistItem *currentItem = mPlaylist.at(mPlaylistIndex);
+    TPlaylistItem *currentItem = NULL;
+    if(mPlaylistIndex>=0 && mPlaylistIndex<(int)mPlaylist.size())
+        currentItem = mPlaylist.at(mPlaylistIndex);
+
     if(index>-1)
     {
         mPlaylist.insert(mPlaylist.begin()+index, playlistItem);
@@ -110,7 +112,9 @@ int TPlaylistCore::insert(wstring name, int index)
         mPlaylist.push_back(playlistItem);
     }
     mMutex.unlock();
-    mPlaylistIndex = indexOf(currentItem);
+
+    if(currentItem)
+        mPlaylistIndex = indexOf(currentItem);
 
     return ret;
 }
@@ -350,7 +354,7 @@ TMusicItem *TPlaylistCore::parse(wstring file)
     musicItem->setOriginalName(fileBaseName);
     musicItem->setDisplayName(fileBaseName);
     musicItem->setFileName(file);
-    TBackendPlugin *plugin = mBackendPluginManager->parse(file, musicInfo);
+    TBackendPlugin *plugin = TBackendPluginManager::instance()->parse(file, musicInfo);
     if(plugin)
     {
         // If this file is successful parsed, bind it to music item.

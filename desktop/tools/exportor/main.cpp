@@ -1,11 +1,10 @@
 #include <QCoreApplication>
-#include <QSharedMemory>
 
 #include "../../app/core/core.h"
 #include "export/exportfactory.h"
 #include "commandline/cmdlineparser.h"
 
-#define trp(x) qPrintable(QCoreApplication::translate("main", x))
+#define tr(x) QCoreApplication::translate("main", x)
 
 typedef void (*IProgressCallback)(int value, int max);
 
@@ -15,6 +14,19 @@ struct TrackItemParam
     int sampleRate = 0;
     int duration = 0;
 };
+
+void printError(QString error, TExportParam *param=NULL)
+{
+    printf(qPrintable(error));
+    if(param)
+    {
+        wstring w = error.toStdWString();
+        wcscpy(param->errorString, w.c_str());
+        param->state = ES_ERROR;
+    } else {
+        printf("\n");
+    }
+}
 
 bool isBlankFrame(byte *buf, int size)
 {
@@ -47,7 +59,7 @@ bool exportTrack(
 
     if(!core->loadTrackItem(trackItem))
     {
-        printf(trp("Failed to load track %s in %s\n"), qPrintable(core->getTrackItemIndexName(trackItem)), qPrintable(param->sourceFile));
+        printError(tr("Failed to load track %1 in %2").arg(core->getTrackItemIndexName(trackItem)).arg(param->sourceFile), exportParam);
         return false;
     }
     TExportFactory exportFactory;
@@ -60,7 +72,7 @@ bool exportTrack(
 
     if(!exportor->isOpened())
     {
-        printf(trp("Failed to create exporter of %s\n"), qPrintable(outputFile));
+        printError(tr("Failed to open %1").arg(outputFile), exportParam);
         return false;
     }
     if(TMP3Export *mp3Exportor=reinterpret_cast<TMP3Export*>(exportor))
@@ -86,14 +98,22 @@ bool exportTrack(
 
     int totalFrames = framesPerSec*realDuration/1000 + 0.5;
     if(exportParam)
+    {
+        wcscpy(exportParam->outputPath, fileNameW.c_str());
         exportParam->progressTotalFrames = totalFrames;
+        exportParam->state = ES_RUNNING;
+    }
 
     for(int i=0;i<totalFrames;i++)
     {
         if(exportParam)
         {
-            while(exportParam->state!=ES_RUN)
+            while(exportParam->state!=ES_RUNNING)
+            {
+                if(exportParam->state == ES_COMPLETE)
+                    return true;
                 QThread::msleep(500);
+            }
         }
         memset(buf, 0, bufSize);
         core->getNextFrame((char*)buf, bufSize);
@@ -105,9 +125,17 @@ bool exportTrack(
         }
         if(silentFrames >= framesPerSec*3){
             // Frames end
+            if(exportParam)
+                exportParam->progressTotalFrames = i;
             break;
         }
-        exportor->write((const byte*)buf, bufSize);
+        try {
+            exportor->write((const byte*)buf, bufSize);
+        } catch(...) {
+            printError(tr("IO error."), exportParam);
+            return false;
+        }
+
         if(exportParam)
             exportParam->progressCurrentFrames = i+1;
     }
@@ -131,11 +159,10 @@ int main(int argc, char *argv[])
     }
     if(parser.isError())
     {
-        printf(trp("Music file path is invalid or non-exists.\n"));
+        printError("Music file path is invalid or non-exists.");
         return 0;
     }
-    // Load backend plugins
-    TCore core;
+
     QString indexName = parser.indexName();
     QString sourceFile = parser.sourceFile();
     QString destFilePath = parser.destFilePath();
@@ -151,21 +178,31 @@ int main(int argc, char *argv[])
     if(parser.runAsDaemon())
         exportParam = TCmdlineParser::getExportParam();
 
+    // Load backend plugins
+    TCore *core = NULL;
+    try
+    {
+        core = new TCore(true);
+    } catch(QString s) {
+        printError(s, exportParam);
+        return -1;
+    }
+
     // Parse track list
-    MusicItem musicItem = core.parse(sourceFile);
+    MusicItem musicItem = core->parse(sourceFile);
     if(!musicItem)
     {
-        printf(trp("Music file can not be parsed.\n"));
+        printError(tr("Music file can not be parsed."), exportParam);
         return 0;
     }
 
-    int trackCount = core.getTrackItemCount(musicItem);
+    int trackCount = core->getTrackItemCount(musicItem);
     if(trackCount == 0)
     {
-        printf(trp("No tracks in music file.\n"));
+        printError(tr("No tracks in music file."), exportParam);
         return 0;
     } else if(bVerbose) {
-        printf(trp("Find %d tracks in music file.\n"), trackCount);
+        printError(tr("Find %1 tracks in music file.").arg(trackCount));
     }
 
     TrackItems trackItems;
@@ -174,8 +211,8 @@ int main(int argc, char *argv[])
         TrackItem trackTarget = NULL;
         for(int i=0;i<trackCount;i++)
         {
-            TrackItem trackItem = core.getTrackItem(musicItem, i);
-            if(core.getTrackItemIndexName(trackItem).toLower() == indexName.toLower())
+            TrackItem trackItem = core->getTrackItem(musicItem, i);
+            if(core->getTrackItemIndexName(trackItem).toLower() == indexName.toLower())
             {
                 trackTarget = trackItem;
                 break;
@@ -185,11 +222,11 @@ int main(int argc, char *argv[])
             trackItems.push_back(trackTarget);
         else
         {
-            printf(trp("Failed to find specified track with index %s\n"), qPrintable(indexName));
+            printError(tr("Failed to find specified track with index %1").arg(indexName), exportParam);
             return 0;
         }
     } else {
-        trackItems = core.getTrackItems(musicItem);
+        trackItems = core->getTrackItems(musicItem);
     }
 
     bool destIsDir = true;
@@ -217,13 +254,13 @@ int main(int argc, char *argv[])
     for(int i=0;i<trackListSize;i++)
     {
         TrackItem trackItem = trackItems[i];
-        QString trackItemName = core.getTrackItemName(trackItem);
+        QString trackItemName = core->getTrackItemName(trackItem);
         if(isListMode) {
-            printf("%s %s\n", qPrintable(core.getTrackItemIndexName(trackItem)), qPrintable(trackItemName));
+            printError(tr("%1 %2").arg(core->getTrackItemIndexName(trackItem)).arg(trackItemName));
         } else {
             TrackItemParam param;
             param.sampleRate = sampleRate;
-            if(core.getTrackItemDuration(trackItem) <= 0)
+            if(core->getTrackItemDuration(trackItem) <= 0)
                 param.duration = duration;
 
             QString destFileFullName;
@@ -231,7 +268,14 @@ int main(int argc, char *argv[])
             {
                 // While exporting muliple tracks, auto set dest name to track name
                 QString baseName = trackItemName;
-                baseName.prepend(QString("%1.").arg(i+1));
+                if(exportParam)
+                {
+                    if(exportParam->number>0)
+                        baseName.prepend(QString("%1.").arg(exportParam->number));
+                } else {
+                    if(trackListSize > 1)
+                        baseName.prepend(QString("%1.").arg(i+1));
+                }
                 if(QFileInfo(baseName).suffix().toLower() != format.toLower())
                     baseName += "."+format;
                 destFileFullName = destDir.absoluteFilePath(baseName);
@@ -240,16 +284,16 @@ int main(int argc, char *argv[])
             }
             if(QFileInfo(destFileFullName).exists() && !overWriteFile)
             {
-                if(bVerbose)
-                    printf(trp("Warning, destination file exists, %s\n"), qPrintable(destFileFullName));
+                //if(bVerbose || exportParam)
+                printError(tr("Warning, destination file exists, %1").arg(destFileFullName), exportParam);
 
                 nSkip++;
                 continue;
             }
-            if(exportTrack(&core, trackItem, &param, destFileFullName, format, exportParam))
+            if(exportTrack(core, trackItem, &param, destFileFullName, format, exportParam))
             {
                 nSuccess++;
-                printf(trp("Export to %s\n"), qPrintable(destFileFullName));
+                printError(tr("Export to %1").arg(destFileFullName));
             } else {
                 nFail++;
             }
@@ -260,11 +304,13 @@ int main(int argc, char *argv[])
     {
         if(trackListSize <= 0)
         {
-            printf(trp("No tracks exported.\n"));
+            printError(tr("No tracks exported."));
         } else if(trackListSize > 1) {
-            printf(trp("Success: %d, Failed: %d, Skipped: %d.\n"), nSuccess, nFail, nSkip);
+            printError(tr("Success: %1, Failed: %2, Skipped: %3.").arg(nSuccess).arg(nFail).arg(nSkip));
         }
     }
+
+    delete core;
 
     a.quit();
     return 0;

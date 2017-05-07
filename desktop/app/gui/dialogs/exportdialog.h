@@ -32,15 +32,18 @@ public:
     explicit TExportDialog(QWidget *parent = 0);
     ~TExportDialog();
 
+    void setMusicTitle(QString title);
     void setMusicFile(QString fileName);
-    void setIndexInfo(QString indexName);
-    void setIndexInfo(QStringList indexList);
+    void setIndexInfo(QString indexName, QString title);
+    void setIndexInfo(QList<QPair<QString, QString>> indexList);
     void setMaxDuration(int microSeconds);
     void setOutputPath(QString fileName);
+    bool autoNumber();
 
     QString getMusicFileName();
+    QString getMusicTitle();
     QString getOutputDir();
-    QStringList getIndexInfo();
+    QList<QPair<QString, QString>> getIndexInfo();
     QString getFormat();
     int getMaxDuration();
     bool overWrite();
@@ -56,8 +59,7 @@ private slots:
 
 private:
     Ui::TExportDialog *ui;
-
-    QStringList mIndexList;
+    QList<QPair<QString, QString>> mIndexInfo;
 
     // TAbstractDialog interface
 public:

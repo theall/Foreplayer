@@ -23,10 +23,6 @@
 #include "model/playlistmodel.h"
 #include "model/musiclistmodel.h"
 #include "model/tracklistmodel.h"
-#include "model/missionsmodel.h"
-
-#include <QMutex>
-#include <QSharedMemory>
 
 class TPlaylistController : public TAbstractController
 {
@@ -40,6 +36,7 @@ public:
 
 signals:
     void requestPlay(int pIndex, int mIndex, int tIndex);
+    void requestExport(TExportParam *exportParam, int size);
 
 private slots:
     //// From gui
@@ -108,11 +105,9 @@ protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;
 
 private:
-    TExportMissions mExportMissions;
     TPlaylistModel *mPlaylistModel;
     TMusiclistModel *mMusiclistModel;
     TTrackListModel *mTracklistModel;
-    TMissionsModel *mMissionsModel;
 
     TPlaylistWindow *mPlaylistWindow;
     TPlaylistWidget *mPlaylistWidget;
@@ -121,12 +116,11 @@ private:
     TTracklistView *mTracklistView;
 
     TExportDialog *mExportDialog;
-    TExportMissionsDialog *mExportMissionDialog;
     TPropertyDialog *mPropertyDialog;
 
     int mCurrentViewRow;
     bool mCurrentViewMusic;
-    QMutex mExportMissionsLock;
+
     void fillPropertyDialog();
     void restoreMusicListSelection(int oldIndex);
     void locateIndex(int pi, int mi, int ti);

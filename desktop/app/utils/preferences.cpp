@@ -73,12 +73,24 @@
 #define SEC_OPTION_MULTI_INSTANCE       "MultiInstance"
 #define SEC_OPTION_PILOT_DURATION       "PilotDuration"
 #define SEC_OPTION_CHECK_DURATION       "CheckDuration"
+#define SEC_OPTION_EXPORT_PROCESSES     "ExportProcesses"
+#define SEC_OPTION_EXPORT_AUTO_CLEAR    "AutoClearCompletedMissions"
 
 #define SET_VALUE(value,member,parent,section) \
     if(member==value)\
         return;\
     mSettings->beginGroup(parent);\
     mSettings->setValue(section, value);\
+    mSettings->endGroup();\
+    member = value
+
+#define SET_VALUE2(value,member,parent,sub,section) \
+    if(member==value)\
+        return;\
+    mSettings->beginGroup(parent);\
+    mSettings->beginGroup(sub);\
+    mSettings->setValue(section, value);\
+    mSettings->endGroup();\
     mSettings->endGroup();\
     member = value
 
@@ -143,7 +155,8 @@ TPreferences::TPreferences(QObject *parent):
         mDisplayTrayIcon = boolValue(SEC_OPTION_DISPLAY_TRAY_ICON, true);
         mPilotDuration = intValue(SEC_OPTION_PILOT_DURATION, 150000);
         mCheckDuration = intValue(SEC_OPTION_CHECK_DURATION, 3000);
-
+        mExportProcesses = intValue(SEC_OPTION_EXPORT_PROCESSES, 2);
+        mAutoClearExportMissions = boolValue(SEC_OPTION_EXPORT_AUTO_CLEAR);
         mSettings->endGroup();
 
     mSettings->endGroup();
@@ -199,13 +212,7 @@ QString TPreferences::language()
 
 void TPreferences::setLanguage(QString language)
 {
-    if((mLanguage == language))
-        return;
-
-    mSettings->beginGroup(SEC_GUI);
-    mSettings->setValue(SEC_GUI_LANGUAGE, language);
-    mSettings->endGroup();
-    mLanguage = language;
+    SET_VALUE(language, mLanguage, SEC_GUI, SEC_GUI_LANGUAGE);
 
     emit languageChanged();
 }
@@ -277,26 +284,12 @@ QString TPreferences::lastOpenDirectory()
 
 void TPreferences::setLastOpenDialogPath(QString path)
 {
-    if(path == mLastOpenPath)
-        return;
-
-    mSettings->beginGroup(SEC_GUI);
-    mSettings->setValue(SEC_GUI_LAST_OPEN_PATH, path);
-    mSettings->endGroup();
-
-    mLastOpenPath = path;
+    SET_VALUE(path, mLastOpenPath, SEC_GUI, SEC_GUI_LAST_OPEN_PATH);
 }
 
 void TPreferences::setLastOpenDirectory(QString path)
 {
-    if(path == mLastOpenDir)
-        return;
-
-    mSettings->beginGroup(SEC_GUI);
-    mSettings->setValue(SEC_GUI_LAST_OPEN_DIR, path);
-    mSettings->endGroup();
-
-    mLastOpenDir = path;
+    SET_VALUE(path, mLastOpenDir, SEC_GUI, SEC_GUI_LAST_OPEN_DIR);
 }
 
 bool TPreferences::autoCorrectDuration()
@@ -306,16 +299,7 @@ bool TPreferences::autoCorrectDuration()
 
 void TPreferences::setCorrectDuration(bool autoCorrect)
 {
-    if(mAutoCorrectDuration == autoCorrect)
-        return;
-
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_AUTO_CORRECT, autoCorrect);
-    mSettings->endGroup();
-    mSettings->endGroup();
-
-    mAutoCorrectDuration = autoCorrect;
+    SET_VALUE2(autoCorrect, mAutoCorrectDuration, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_AUTO_CORRECT);
 }
 
 bool TPreferences::forceCorrectDuration()
@@ -325,16 +309,7 @@ bool TPreferences::forceCorrectDuration()
 
 void TPreferences::setForceCorrectDuration(bool force)
 {
-    if(mForceCorrectDuration == force)
-        return;
-
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_FORCE_CORRECT, force);
-    mSettings->endGroup();
-    mSettings->endGroup();
-
-    mForceCorrectDuration = force;
+    SET_VALUE2(force, mForceCorrectDuration, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_FORCE_CORRECT);
 }
 
 int TPreferences::pilotDuration()
@@ -344,16 +319,7 @@ int TPreferences::pilotDuration()
 
 void TPreferences::setPilotDuration(int duration)
 {
-    if(mPilotDuration == duration)
-        return;
-
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_PILOT_DURATION, duration);
-    mSettings->endGroup();
-    mSettings->endGroup();
-
-    mPilotDuration = duration;
+    SET_VALUE2(duration, mPilotDuration, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_PILOT_DURATION);
 }
 
 int TPreferences::checkDuration()
@@ -363,16 +329,7 @@ int TPreferences::checkDuration()
 
 void TPreferences::setCheckDuration(int duration)
 {
-    if(mCheckDuration == duration)
-        return;
-
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_CHECK_DURATION, duration);
-    mSettings->endGroup();
-    mSettings->endGroup();
-
-    mCheckDuration = duration;
+    SET_VALUE2(duration, mCheckDuration, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_CHECK_DURATION);
 }
 
 bool TPreferences::autoPlayAfterStarted()
@@ -382,16 +339,7 @@ bool TPreferences::autoPlayAfterStarted()
 
 void TPreferences::setAutoPlayAfterStarted(bool bEnabled)
 {
-    if(mAutoPlay==bEnabled)
-        return;
-
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_AUTO_PLAY, bEnabled);
-    mSettings->endGroup();
-    mSettings->endGroup();
-
-    mAutoPlay = bEnabled;
+    SET_VALUE2(bEnabled, mAutoPlay, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_AUTO_PLAY);
 }
 
 bool TPreferences::displayTrayIcon()
@@ -401,16 +349,7 @@ bool TPreferences::displayTrayIcon()
 
 void TPreferences::setDisplayTrayIcon(bool bEnabled)
 {
-    if(mDisplayTrayIcon==bEnabled)
-        return;
-
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_DISPLAY_TRAY_ICON, bEnabled);
-    mSettings->endGroup();
-    mSettings->endGroup();
-
-    mDisplayTrayIcon = bEnabled;
+    SET_VALUE2(bEnabled, mDisplayTrayIcon, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_DISPLAY_TRAY_ICON);
 }
 
 bool TPreferences::enableMultiInstance()
@@ -420,16 +359,27 @@ bool TPreferences::enableMultiInstance()
 
 void TPreferences::setEnableMultiInstance(bool bEnabled)
 {
-    if(mMultiInstance==bEnabled)
-        return;
+    SET_VALUE2(bEnabled, mMultiInstance, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_MULTI_INSTANCE);
+}
 
-    mSettings->beginGroup(SEC_OPTIONS);
-    mSettings->beginGroup(SEC_OPTION_GENERAL);
-    mSettings->setValue(SEC_OPTION_MULTI_INSTANCE, bEnabled);
-    mSettings->endGroup();
-    mSettings->endGroup();
+int TPreferences::exportProcesses()
+{
+    return mExportProcesses;
+}
 
-    mMultiInstance = bEnabled;
+void TPreferences::setExportProcesses(int value)
+{
+    SET_VALUE2(value, mExportProcesses, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_EXPORT_PROCESSES);
+}
+
+bool TPreferences::autoClearExportMissions()
+{
+    return mAutoClearExportMissions;
+}
+
+void TPreferences::setAutoClearExportMissions(bool value)
+{
+    SET_VALUE2(value, mAutoClearExportMissions, SEC_OPTIONS, SEC_OPTION_GENERAL, SEC_OPTION_EXPORT_AUTO_CLEAR);
 }
 
 QString TPreferences::skinPath()

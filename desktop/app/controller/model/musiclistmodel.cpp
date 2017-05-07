@@ -83,7 +83,7 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
             if (index.column()==2) {
                 align = Qt::AlignLeft;
             } else {
-                align = Qt::AlignRight;;
+                align = Qt::AlignRight;
             }
             return QVariant(align|Qt::AlignVCenter);
         } else if (role==Qt::ToolTipRole) {

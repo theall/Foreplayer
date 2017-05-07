@@ -79,7 +79,7 @@ public:
     /**
      * Parse track list from music.
      */
-    TMusicItem *parse(wstring file);
+    static TMusicItem *parse(wstring file);
 
     void save();
 
@@ -94,7 +94,6 @@ private:
     wstring mCurrentDir;
     wstring mPlaylistDir;
     bool mFileSaving;
-    TBackendPluginManager *mBackendPluginManager;
 
     mutex mMutex;
 

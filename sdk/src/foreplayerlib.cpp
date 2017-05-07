@@ -25,6 +25,7 @@
 static TCore *g_core = nullptr;
 static TPlayerCore *g_player = nullptr;
 static TPlaylistCore *g_playlist = nullptr;
+static TExportCore *g_exporter = nullptr;
 
 template<class T>
 vector<T*> fromVoid(list<void*> container)
@@ -57,10 +58,12 @@ void FOREPLAYER_API foreplayer_send_cmd(
     case CMD_OPEN:
         if(!g_core)
         {
-            g_core = new TCore;
+            g_core = new TCore(*(bool*)param1);
             g_player = g_core->player();
             g_playlist = g_core->playlist();
+            g_exporter = g_core->exporter();
         }
+        *(bool*)param2 = g_core!=NULL;
         break;
     case CMD_SETPLAYLISTPATH:
         TPlaylistCore::setPlaylistDir(*(wstring*)param1);
@@ -272,10 +275,7 @@ void FOREPLAYER_API foreplayer_send_cmd(
         *(int*)param2 = param1?((TTrackItem*)param1)->channels:0;
         break;
     case CMD_PARSE_FILE:
-        if(g_playlist)
-        {
-            *(void**)param2 = (void*)g_playlist->parse(*(wstring*)param1);
-        }
+        *(void**)param2 = (void*)TPlaylistCore::parse(*(wstring*)param1);
         break;
     case CMD_CLOSE:
         if(g_core)
@@ -463,25 +463,25 @@ void FOREPLAYER_API foreplayer_send_cmd(
         }
         break;
     case CMD_EXPORT_FRAME_SAMPLE_COUNT:
-        if(g_player)
+        if(g_exporter)
         {
-            *(int*)param3 = g_player->samplesPerFrame(*(int*)param1, *(int*)param2);
+            *(int*)param3 = g_exporter->samplesPerFrame(*(int*)param1, *(int*)param2);
         } else {
             *(int*)param3 = 0;
         }
         break;
     case CMD_EXPORT_LOAD_TRACK:
-        if(g_player)
+        if(g_exporter)
         {
-            *(bool*)param2 = g_player->loadTrack((TTrackItem*)param1);
+            *(bool*)param2 = g_exporter->loadTrack((TTrackItem*)param1);
         } else {
             *(bool*)param2 = false;
         }
         break;
     case CMD_EXPORT_NEXT_FRAME:
-        if(g_player)
+        if(g_exporter)
         {
-            g_player->nextSamples((byte*)param1, *(int*)param2);
+            g_exporter->nextSamples((byte*)param1, *(int*)param2);
         } else {
             *(int*)param2 = 0;
         }

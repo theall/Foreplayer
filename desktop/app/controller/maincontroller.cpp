@@ -27,11 +27,17 @@ TMainController::TMainController(QObject *parent) :
   , mPlaylistController(new TPlaylistController(this))
   , mEqualizerController(new TEqualizerController(this))
   , mOptionsController(new TOptionsController(this))
+  , mExportController(new TExportController(this))
 {
     connect(mPlaylistController,
             SIGNAL(requestPlay(int,int,int)),
             mPlayerController,
             SLOT(slotRequestPlay(int,int,int)));
+
+    connect(mPlaylistController,
+            SIGNAL(requestExport(TExportParam*,int)),
+            mExportController,
+            SLOT(slotRequestAddExportMissions(TExportParam*,int)));
 
     connect(mPlayerController,
             SIGNAL(requestUpdateModelsPlayingIndex(int,int,int)),
@@ -65,6 +71,7 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
     mPlaylistController->joint(manager, core);
     mEqualizerController->joint(manager, core);
     mOptionsController->joint(manager, core);
+    mExportController->joint(manager, core);
 
     bool ret = TAbstractController::joint(manager, core);
 

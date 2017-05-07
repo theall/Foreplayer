@@ -21,7 +21,7 @@ TPlayerCore::TPlayerCore() :
     mPlayThread(NULL)
   , mPluginManager(TBackendPluginManager::instance())
   , mPlayerState(PS_STOPED)
-  , mCurrentPlugin(NULL)
+  , mLastTrackItem(NULL)
 {
     init();
 }
@@ -29,44 +29,6 @@ TPlayerCore::TPlayerCore() :
 TPlayerCore::~TPlayerCore()
 {
     destroyPlayThread();
-}
-
-TMusicInfo *TPlayerCore::parse(wstring fileName)
-{
-    TMusicInfo *musicInfo = new TMusicInfo;
-    mPluginManager->parse(fileName, musicInfo);
-    return musicInfo;
-}
-
-bool TPlayerCore::loadTrack(TTrackItem *trackItem)
-{
-    if(!trackItem || !mPluginManager)
-        return false;
-
-    TTrackInfo trackInfo;
-    trackInfo.index = _wtoi(trackItem->index.c_str());
-    trackInfo.indexName = trackItem->indexName;
-    trackInfo.musicFileName = trackItem->fileName;
-
-    mCurrentPlugin = mPluginManager->loadTrack(&trackInfo);
-    return mCurrentPlugin!=NULL;
-}
-
-int TPlayerCore::samplesPerFrame(int sampleRate, int fps)
-{
-    int ret = 0;
-    if(mCurrentPlugin)
-        ret = mCurrentPlugin->getSampleSize(sampleRate, fps);
-
-    return ret;
-}
-
-void TPlayerCore::nextSamples(byte *buffer, int bufSize)
-{
-    if(mCurrentPlugin)
-    {
-        mCurrentPlugin->getNextSamples(buffer, bufSize);
-    }
 }
 
 bool TPlayerCore::playTrack(TTrackItem *trackItem)
@@ -95,6 +57,7 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
         result = true;
         mPlayThread->play();
         mPlayerState = PS_PLAYING;
+        mLastTrackItem = trackItem;
     }
 
     return result;

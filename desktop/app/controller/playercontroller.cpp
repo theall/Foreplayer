@@ -59,7 +59,7 @@ bool TPlayerController::joint(TGuiManager *gui, TCore *core)
     connect(mainMenu->playControlMenu(), SIGNAL(onPrevMusicTriggered()), this, SLOT(slotPrevMusicTriggered()));
     connect(mainMenu->playControlMenu(), SIGNAL(onNextMusicTriggered()), this, SLOT(slotNextMusicTriggered()));
 
-    return TAbstractController::joint(gui, core);;
+    return TAbstractController::joint(gui, core);
 }
 
 void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)

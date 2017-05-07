@@ -66,6 +66,9 @@ TOptionGeneral::TOptionGeneral(QWidget *parent) :
     t = t.addMSecs(pref->pilotDuration());
     ui->tePlayDuration->setTime(t);
 
+    ui->sbParallels->setValue(pref->exportProcesses());
+    ui->ckbAutoClearMission->setChecked(pref->autoClearExportMissions());
+
     connect(ui->ckbTrayIcon, SIGNAL(toggled(bool)), this, SIGNAL(displayTrayIconToggled(bool)));
 }
 
@@ -128,4 +131,14 @@ void TOptionGeneral::retranslateUi()
 {
     ui->retranslateUi(this);
     ui->cmbLanguage->setItemText(0, tr("System default"));
+}
+
+void TOptionGeneral::on_sbParallels_valueChanged(int arg1)
+{
+    TPreferences::instance()->setExportProcesses(arg1);
+}
+
+void TOptionGeneral::on_ckbAutoClearMission_toggled(bool checked)
+{
+    TPreferences::instance()->setAutoClearExportMissions(checked);
 }

@@ -17,34 +17,20 @@
  */
 #include "playlistcontroller.h"
 
-#include <QUuid>
-#include <QProcess>
 #include <QMimeData>
 #include <QClipboard>
-#include <QSharedMemory>
-
-void cpy2wchar(wchar_t *dest, QString source)
-{
-    if(dest)
-    {
-        wstring sourceW = source.toStdWString();
-        wcscpy(dest, sourceW.c_str());
-    }
-}
 
 TPlaylistController::TPlaylistController(QObject *parent) :
     TAbstractController(parent)
   , mPlaylistModel(new TPlaylistModel(this))
   , mMusiclistModel(new TMusiclistModel(this))
   , mTracklistModel(new TTrackListModel(this))
-  , mMissionsModel(new TMissionsModel(this, &mExportMissions))
   , mPlaylistWindow(NULL)
   , mPlaylistWidget(NULL)
   , mPlaylistView(NULL)
   , mMusiclistView(NULL)
   , mTracklistView(NULL)
   , mExportDialog(NULL)
-  , mExportMissionDialog(NULL)
   , mPropertyDialog(NULL)
   , mCurrentViewRow(-1)
   , mCurrentViewMusic(true)
@@ -54,13 +40,7 @@ TPlaylistController::TPlaylistController(QObject *parent) :
 
 TPlaylistController::~TPlaylistController()
 {
-    mExportMissionsLock.lock();
-    for(QSharedMemory *m : mExportMissions) {
-        m->detach();
-        delete m;
-    }
-    mExportMissions.clear();
-    mExportMissionsLock.unlock();
+
 }
 
 bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
@@ -81,9 +61,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     mTracklistView = mPlaylistWidget->tracklistView();
 
     mExportDialog = gui->exportDialog();
-    mExportMissionDialog = gui->exportMissionDialog();
     mPropertyDialog = gui->propertyDialog();
-    mExportMissionDialog->setModel(mMissionsModel);
 
     slotSkinChanged();
 
@@ -216,36 +194,35 @@ void TPlaylistController::slotRequestFixDuration(int microSeconds)
 
 void TPlaylistController::slotAddExportMission()
 {
-    if(!mExportDialog || !mExportMissionDialog)
+    if(!mExportDialog)
         return;
 
-    QStringList indexList = mExportDialog->getIndexInfo();
-    TExportMissions newMissions;
-    for(QString index : indexList) {
-        QString strId = QUuid::createUuid().toString();
-        QSharedMemory *sharedMemory = new QSharedMemory(strId);
-        if(!sharedMemory->create(sizeof(TExportParam)))
-            continue;
-        sharedMemory->attach();
-        TExportParam exportParam;
-        cpy2wchar(exportParam.fileName, mExportDialog->getMusicFileName());
-        cpy2wchar(exportParam.indexName, index);
-        cpy2wchar(exportParam.outputPath, mExportDialog->getOutputDir());
-        strcpy(exportParam.format, mExportDialog->getFormat().toLocal8Bit().constData());
-        exportParam.overwrite = true;
-        exportParam.state = ES_READY;
-        memcpy(sharedMemory->data(), &exportParam, sizeof(TExportParam));
-        newMissions.append(sharedMemory);
+    QList<QPair<QString, QString>> indexInfo = mExportDialog->getIndexInfo();
+    int size = indexInfo.size();
+    if(size > 0)
+    {
+        TExportParam *params = new TExportParam[size];
+        int i = 0;
+        bool autoNumber = mExportDialog->autoNumber();
+        bool overWrite = mExportDialog->overWrite();
+        QString musicFileName = mExportDialog->getMusicFileName();
+        QString outputPath = mExportDialog->getOutputDir();
+        QString format = mExportDialog->getFormat();
+        for(QPair<QString, QString> indexPair : indexInfo) {
+            TExportParam *exportParam = &params[i++];
+            Utils::cpy2wchar(exportParam->fileName, musicFileName);
+            Utils::cpy2wchar(exportParam->indexName, indexPair.first);
+            Utils::cpy2wchar(exportParam->title, indexPair.second);
+            Utils::cpy2wchar(exportParam->outputPath, outputPath);
+            strcpy(exportParam->format, format.toLocal8Bit().constData());
+            exportParam->overwrite = overWrite;
+            if(autoNumber)
+                exportParam->number = i;
+            exportParam->state = ES_NULL;
+        }
+        emit requestExport(params, size);
+        delete params;
     }
-    mExportMissionsLock.lock();
-    mMissionsModel->addMissions(newMissions);
-    mExportMissionsLock.unlock();
-
-    if(mExportMissions.size() > 0)
-        startMyTimer(300);
-
-    if(!mExportMissionDialog->isVisible())
-        mExportMissionDialog->show();
 }
 
 void TPlaylistController::slotRequestNextMusicProperty()
@@ -609,31 +586,27 @@ void TPlaylistController::slotRequestExplorerMusicItem(int row)
     MusicItem musicItem = mCore->getMusicItem(mMusiclistModel->playlistItem(), row);
     if(musicItem)
     {
-        QString fileName = mCore->getMusicItemFileName(musicItem);
-#ifdef Q_OS_WIN32
-        QProcess::startDetached("explorer /select,"+QDir::toNativeSeparators(fileName));
-#elif Q_OS_UNIX
-#elif Q_OS_MACX
-#endif
+        Utils::exploreFile(mCore->getMusicItemFileName(musicItem));
     }
 }
 
 void TPlaylistController::slotRequestExportMusicItem(int row)
 {
-    if(!mMusiclistModel || !mExportDialog || !mExportMissionDialog)
+    if(!mMusiclistModel || !mExportDialog)
         return;
 
     MusicItem musicItem = mCore->getMusicItem(mMusiclistModel->playlistItem(), row);
     if(musicItem)
     {
-        QStringList indexList;
+        QList<QPair<QString, QString>> indexInfo;
         for(TrackItem trackItem : mCore->getTrackItems(musicItem)) {
-            indexList.append(mCore->getTrackItemIndexName(trackItem));
+            indexInfo.append(qMakePair(mCore->getTrackItemIndexName(trackItem), mCore->getTrackItemName(trackItem)));
         }
         QString musicItemFileName = mCore->getMusicItemFileName(musicItem);
+        mExportDialog->setMusicTitle(mCore->getMusicItemDisplayName(musicItem));
         mExportDialog->setMusicFile(musicItemFileName);
         mExportDialog->setMaxDuration(0);
-        mExportDialog->setIndexInfo(indexList);
+        mExportDialog->setIndexInfo(indexInfo);
         if(mExportDialog->getOutputDir().isEmpty())
             mExportDialog->setOutputPath(QFileInfo(musicItemFileName).absolutePath());
         mExportDialog->exec();
@@ -725,7 +698,7 @@ void TPlaylistController::slotRequestCopyTrackItem(QList<int> rows)
 
 void TPlaylistController::slotRequestExportTrackItem(int row)
 {
-    if(!mTracklistModel || !mExportDialog || !mExportMissionDialog)
+    if(!mCore || !mTracklistModel || !mExportDialog)
         return;
 
     MusicItem musicItem = mTracklistModel->musicItem();
@@ -735,9 +708,10 @@ void TPlaylistController::slotRequestExportTrackItem(int row)
         if(trackItem)
         {
             QString musicFileName = mCore->getMusicItemFileName(musicItem);
+            mExportDialog->setMusicTitle(mCore->getMusicItemDisplayName(musicItem));
             mExportDialog->setMusicFile(musicFileName);
             mExportDialog->setMaxDuration(mCore->getTrackItemDuration(trackItem));
-            mExportDialog->setIndexInfo(mCore->getTrackItemIndexName(trackItem));
+            mExportDialog->setIndexInfo(mCore->getTrackItemIndexName(trackItem), mCore->getTrackItemName(trackItem));
             if(mExportDialog->getOutputDir().isEmpty())
                 mExportDialog->setOutputPath(QFileInfo(musicFileName).absolutePath());
             mExportDialog->exec();
@@ -785,46 +759,6 @@ void TPlaylistController::slotRequestUpdateModelsPlayingIndex(int pi, int mi, in
 
 void TPlaylistController::slotTimerEvent()
 {
-    if(mMissionsModel && mExportMissionDialog && mExportMissionDialog->isVisible())
-    {
-        mExportMissionsLock.lock();
-        int runningCount = 0;
-        int completeCount = 0;
-        for(QSharedMemory *m : mExportMissions) {
-            TExportParam *exportParam = (TExportParam*)m->data();
-            if(exportParam->state == ES_RUN)
-                runningCount++;
-            else if(exportParam->state == ES_COMPLETE)
-                completeCount++;
-        }
-
-        // Maximize 3 processes
-        int newSpawn = 3-runningCount;
-        if(newSpawn > 0)
-        {
-            QString commandLine = "exportor ";
-#ifndef QT_DEBUG
-            commandLine.prepend("noconsole ");
-#endif
-            for(QSharedMemory *m : mExportMissions) {
-                TExportParam *exportParam = (TExportParam*)m->data();
-                if(exportParam->state == ES_READY)
-                {
-                    QProcess::startDetached(commandLine+m->key());
-                    qDebug() << commandLine+m->key();
-                    exportParam->state = ES_RUN;
-                    newSpawn--;
-                    if(newSpawn <= 0)
-                        break;
-                }
-            }
-        } else {
-            if(completeCount >= mExportMissions.size())
-                stopMyTimer();
-        }
-        mExportMissionsLock.unlock();
-        mMissionsModel->layoutChanged();
-    }
 }
 
 void TPlaylistController::fillPropertyDialog()

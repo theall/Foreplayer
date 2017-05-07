@@ -46,7 +46,7 @@ enum IndexType
 class TCore
 {
 public:
-    TCore();
+    TCore(bool exportMode = false);
     ~TCore();
 
     static TCore *instance();
@@ -150,7 +150,7 @@ public:
     QString getPluginContact(PluginHandle pluginHandle);
     QString getPluginCreateDate(PluginHandle pluginHandle);
     QString getPluginDescription(PluginHandle pluginHandle);
-    QMap<QString, QString> getPluginSuffixDescription(PluginHandle pluginHandle);
+    QHash<QString, QString> getPluginSuffixDescription(PluginHandle pluginHandle);
 
     //// For export
     bool loadTrackItem(TrackItem trackItem);

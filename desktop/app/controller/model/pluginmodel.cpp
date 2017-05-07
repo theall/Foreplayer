@@ -132,7 +132,7 @@ TSuffixModel::~TSuffixModel()
 
 }
 
-void TSuffixModel::setSuffixDecription(QMap<QString, QString> sd)
+void TSuffixModel::setSuffixDecription(QHash<QString, QString> sd)
 {
     mSuffixList = sd.keys();
     mDesctiption = sd.values();

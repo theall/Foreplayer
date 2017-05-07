@@ -22,6 +22,7 @@
 #include "playlistcontroller.h"
 #include "equalizercontroller.h"
 #include "optionscontroller.h"
+#include "exportcontroller.h"
 
 class TMainController : public TAbstractController
 {
@@ -45,6 +46,7 @@ private:
     TPlaylistController *mPlaylistController;
     TEqualizerController *mEqualizerController;
     TOptionsController *mOptionsController;
+    TExportController *mExportController;
 
 protected slots:
     void slotTimerEvent() Q_DECL_OVERRIDE;

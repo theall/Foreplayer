@@ -42,7 +42,8 @@ SOURCES += \
     src/playthread.cpp \
     src/cplusutils.cpp \
     src/pluginmanager/library.cpp \
-    src/playlist/abstractitem.cpp
+    src/playlist/abstractitem.cpp \
+    src/exportcore.cpp
 
 HEADERS += \
     include/foreplayer.h \
@@ -64,7 +65,8 @@ HEADERS += \
     src/strformat.hpp \
     src/cplusutils.h \
     src/pluginmanager/library.h \
-    src/playlist/abstractitem.h
+    src/playlist/abstractitem.h \
+    src/exportcore.h
 
 unix {
     target.path = /usr/lib

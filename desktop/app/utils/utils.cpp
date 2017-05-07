@@ -18,6 +18,7 @@
 #include "utils.h"
 
 #include <QtMath>
+#include <QProcess>
 
 QString Utils::microSecToTimeStr(long ms, bool padZero)
 {
@@ -61,4 +62,24 @@ QString Utils::absoluteFilePath(QString fileName)
         fileName = dir.absoluteFilePath(fileName);
     }
     return fileName;
+}
+
+bool Utils::exploreFile(QString fileName)
+{
+    bool ret = false;
+#ifdef Q_OS_WIN32
+    ret = QProcess::startDetached("explorer /select,"+QDir::toNativeSeparators(fileName));
+#elif Q_OS_UNIX
+#elif Q_OS_MACX
+#endif
+    return ret;
+}
+
+void Utils::cpy2wchar(wchar_t *dest, QString source)
+{
+    if(dest)
+    {
+        std::wstring sourceW = source.toStdWString();
+        wcscpy(dest, sourceW.c_str());
+    }
 }

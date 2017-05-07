@@ -15,53 +15,26 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#ifndef TPLAYERCORE_H
-#define TPLAYERCORE_H
-
-#include "playthread.h"
-
-#include "front/sdlfront.h"
+#ifndef TEXPORTCORE_H
+#define TEXPORTCORE_H
 
 #include "pluginmanager/backendpluginmanager.h"
-#include "playlist/playlistitem.h"
+#include "playlist/trackitem.h"
 
-enum PlayerState
-{
-    PS_PAUSED,
-    PS_STOPED,
-    PS_PLAYING
-};
-
-typedef void (*TPlayCallback)(int played, int total, void *data);
-
-class TPlayerCore
+class TExportCore
 {
 public:
-    TPlayerCore();
-    ~TPlayerCore();
+    TExportCore();
+    ~TExportCore();
 
-    bool playTrack(TTrackItem *trackItem);
-
-    void stop();
-    void pause();
-    bool resume();
-    bool isPaused();
-    bool isStoped();
-    bool isPlaying();
-    bool seek(int ms);
-    int playedTime();
-
-    void setAudioParameter(AudioParameter type, float value, int param=0);
-    void getAudioData(AudioDataType dataType, void *param1, void* param2);
+    // For retrieve samples
+    bool loadTrack(TTrackItem *trackItem);
+    int samplesPerFrame(int sampleRate, int fps);
+    void nextSamples(byte *buffer, int bufSize);
 
 private:
-    TPlayThread *mPlayThread;
+    TBackendPlugin *mCurrentPlugin;
     TBackendPluginManager *mPluginManager;
-    PlayerState mPlayerState;
-    TTrackItem *mLastTrackItem;
-
-    void init();
-    void destroyPlayThread();
 };
 
-#endif // TPLAYERCORE_H
+#endif // TEXPORTCORE_H

@@ -119,7 +119,8 @@ enum ForeplayerCmd
 {
     /**
      * Open sdk, this may take a few seconds to load all plugins and playlists
-     * param1: return a bool value
+     * param1: open mode, default false will initialize all components, otherwise only initialize exporter
+     * param2: return a bool value
      */
     CMD_OPEN,
 

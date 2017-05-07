@@ -24,6 +24,7 @@
 
 #include "playercore.h"
 #include "playlistcore.h"
+#include "exportcore.h"
 
 using namespace std;
 
@@ -32,11 +33,12 @@ typedef list<int> intn;
 class TCore
 {
 public:
-    TCore();
+    TCore(bool exportMode = false);
     ~TCore();
 
     TPlayerCore *player();
     TPlaylistCore *playlist();
+    TExportCore *exporter();
 
     vector<wstring> playlists();
 
@@ -46,6 +48,7 @@ public:
 private:
     TPlayerCore *mPlayer;
     TPlaylistCore *mPlaylist;
+    TExportCore *mExporter;
     TBackendPluginManager *mPlugins;
 };
 

@@ -6,79 +6,117 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>431</width>
-    <height>297</height>
+    <width>425</width>
+    <height>337</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>3</number>
+   </property>
    <property name="leftMargin">
-    <number>0</number>
+    <number>3</number>
    </property>
    <property name="topMargin">
-    <number>0</number>
+    <number>3</number>
    </property>
    <property name="rightMargin">
-    <number>0</number>
+    <number>3</number>
    </property>
    <property name="bottomMargin">
-    <number>0</number>
+    <number>3</number>
    </property>
    <item>
-    <widget class="QGroupBox" name="groupBox_2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>128</height>
+      </size>
+     </property>
      <property name="title">
       <string>Gui</string>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLabel" name="label_2">
-        <property name="maximumSize">
-         <size>
-          <width>52</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Language:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="cmbLanguage"/>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item>
-    <widget class="QGroupBox" name="groupBox_3">
-     <property name="title">
-      <string>Settings</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QCheckBox" name="ckbAutoPlay">
-        <property name="text">
-         <string>Auto playing last track after started</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="ckbTrayIcon">
-        <property name="text">
-         <string>Display system tray icon</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="ckbMultiInstance">
-        <property name="text">
-         <string>Allow multiple instances</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QCheckBox" name="ckbAutoPlay">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>54</y>
+        <width>246</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Auto play last track after started</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ckbTrayIcon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>77</y>
+        <width>168</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Display system tray icon</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ckbMultiInstance">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>168</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Allow multiple instances</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>52</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>52</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Language:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbLanguage">
+      <property name="geometry">
+       <rect>
+        <x>79</x>
+        <y>30</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </item>
    <item>
@@ -86,7 +124,7 @@
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>99</height>
+       <height>114</height>
       </size>
      </property>
      <property name="title">
@@ -95,8 +133,8 @@
      <widget class="QRadioButton" name="rbAuto">
       <property name="geometry">
        <rect>
-        <x>106</x>
-        <y>23</y>
+        <x>115</x>
+        <y>31</y>
         <width>47</width>
         <height>17</height>
        </rect>
@@ -111,8 +149,8 @@
      <widget class="QRadioButton" name="rbForce">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>23</y>
+        <x>189</x>
+        <y>31</y>
         <width>53</width>
         <height>17</height>
        </rect>
@@ -127,8 +165,8 @@
      <widget class="QRadioButton" name="rbDisable">
       <property name="geometry">
        <rect>
-        <x>11</x>
-        <y>23</y>
+        <x>20</x>
+        <y>31</y>
         <width>65</width>
         <height>17</height>
        </rect>
@@ -143,8 +181,8 @@
      <widget class="QSpinBox" name="sbCheckDuration">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>46</y>
+        <x>119</x>
+        <y>54</y>
         <width>81</width>
         <height>20</height>
        </rect>
@@ -168,8 +206,8 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>11</x>
-        <y>46</y>
+        <x>20</x>
+        <y>54</y>
         <width>91</width>
         <height>16</height>
        </rect>
@@ -184,8 +222,8 @@
      <widget class="QTimeEdit" name="tePlayDuration">
       <property name="geometry">
        <rect>
-        <x>111</x>
-        <y>72</y>
+        <x>120</x>
+        <y>80</y>
         <width>81</width>
         <height>20</height>
        </rect>
@@ -197,8 +235,8 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>72</y>
+        <x>19</x>
+        <y>80</y>
         <width>91</width>
         <height>20</height>
        </rect>
@@ -208,6 +246,61 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Export</string>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>26</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Parallel processes:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sbParallels">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>26</y>
+        <width>44</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ckbAutoClearMission">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>361</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Auto clear completed missions.</string>
       </property>
      </widget>
     </widget>

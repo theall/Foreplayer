@@ -27,8 +27,9 @@ TExportDialog::TExportDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->leMusicName->setReadOnly(true);
-    ui->leIndex->setReadOnly(true);
+    ui->leFileName->setReadOnly(true);
+    ui->leIndexTitle->setReadOnly(true);
+    ui->leMusicTitle->setReadOnly(true);
     ui->dtDuration->setDisplayFormat("HH:mm:ss.zzz");
 
     retranslateUi();
@@ -39,26 +40,34 @@ TExportDialog::~TExportDialog()
     delete ui;
 }
 
+void TExportDialog::setMusicTitle(QString title)
+{
+    ui->leMusicTitle->setText(title);
+}
+
 void TExportDialog::setMusicFile(QString fileName)
 {
-    ui->leMusicName->setText(fileName);
+    ui->leFileName->setText(fileName);
 }
 
-void TExportDialog::setIndexInfo(QString indexName)
+void TExportDialog::setIndexInfo(QString indexName, QString title)
 {
-    ui->leIndex->setText(indexName);
+    ui->leIndexTitle->setText(title);
 
-    mIndexList.clear();
-    mIndexList.append(indexName);
+    mIndexInfo.clear();
+    mIndexInfo.append(qMakePair(indexName, title));
+
+    ui->ckbNumber->setChecked(false);
 }
 
-void TExportDialog::setIndexInfo(QStringList indexList)
+void TExportDialog::setIndexInfo(QList<QPair<QString, QString>> indexList)
 {
-    mIndexList = indexList;
-    if(mIndexList.size() > 1)
+    mIndexInfo = indexList;
+    if(indexList.size() > 1)
     {
-        ui->leIndex->setText(QString("%1 Tracks").arg(mIndexList.size()));
+        ui->leIndexTitle->setText(QString("%1 Tracks").arg(indexList.size()));
     }
+    ui->ckbNumber->setChecked(mIndexInfo.size()>1);
 }
 
 void TExportDialog::setMaxDuration(int microSeconds)
@@ -77,9 +86,19 @@ void TExportDialog::setOutputPath(QString fileName)
 #endif
 }
 
+bool TExportDialog::autoNumber()
+{
+    return ui->ckbNumber->isChecked();
+}
+
 QString TExportDialog::getMusicFileName()
 {
-    return ui->leMusicName->text();
+    return ui->leFileName->text();
+}
+
+QString TExportDialog::getMusicTitle()
+{
+    return ui->leMusicTitle->text();
 }
 
 QString TExportDialog::getOutputDir()
@@ -87,9 +106,9 @@ QString TExportDialog::getOutputDir()
     return ui->leDir->text();
 }
 
-QStringList TExportDialog::getIndexInfo()
+QList<QPair<QString, QString>> TExportDialog::getIndexInfo()
 {
-    return mIndexList;
+    return mIndexInfo;
 }
 
 QString TExportDialog::getFormat()
@@ -125,7 +144,7 @@ void TExportDialog::on_btnCancel_clicked()
 
 void TExportDialog::on_btnChooseDir_clicked()
 {
-    QFileInfo fi(ui->leMusicName->text());
+    QFileInfo fi(ui->leFileName->text());
     QString dir = QFileDialog::getExistingDirectory(
                 this,
                 tr("Choose directory"),

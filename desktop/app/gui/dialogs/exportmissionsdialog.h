@@ -22,6 +22,8 @@
 
 #include <QAbstractTableModel>
 #include <QItemDelegate>
+#include <QMenu>
+#include <QItemSelectionModel>
 
 class TExportItemDelegate : public QItemDelegate
 {
@@ -47,15 +49,38 @@ public:
 
 signals:
     void requestCloseWindow();
-    void requestPauseMissions(QList<int> rows);
-    void requestStartMissions(QList<int> rows);
-    void requestRemoveMissions(QList<int> rows);
+    void requestPauseMissions(QList<int>);
+    void queryMissionsStatus(QList<int>, QList<bool>&);
+    void requestStartMissions(QList<int>);
+    void requestRemoveMissions(QList<int>);
+    void requestExploreFiles(QList<int>);
+    void requestOpenSettingDialog();
 
 private slots:
+    void slotOnCustomizedContextMenu(QPoint);
+    void slotOnActionStartTriggered();
+    void slotOnActionPauseTriggered();
+    void slotOnActionDeleteTriggered();
+    void slotOnActionExploreTriggered();
+    void slotOnSelectionChanged(QItemSelection,QItemSelection);
+
     void on_btnSetting_clicked();
+    void on_btnClose_clicked();
+    void on_btnStart_clicked();
+    void on_btnDelete_clicked();
+    void on_btnPause_clicked();
 
 private:
     Ui::TExportMissionsDialog *ui;
+    QList<int>  getSelectedRows();
+    QMenu *mContextMenu;
+    QAction *mActionStart;
+    QAction *mActionPause;
+    QAction *mActionDelete;
+    QAction *mActionExplore;
+
+    void createContextMenu();
+    void updateUI();
 
     // TAbstractDialog interface
 public:
