@@ -18,8 +18,6 @@
 #ifndef TABSTRACTMODEL_H
 #define TABSTRACTMODEL_H
 
-#include "utils.h"
-
 #include "../core/core.h"
 
 class TAbstractModel : public QAbstractTableModel

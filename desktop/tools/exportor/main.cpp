@@ -1,10 +1,26 @@
 #include <QCoreApplication>
+#include <QTime>
 
 #include "../../app/core/core.h"
 #include "export/exportfactory.h"
 #include "commandline/cmdlineparser.h"
 
+#define TICK_CHECK_TIME 3000
 #define tr(x) QCoreApplication::translate("main", x)
+
+#define CHECK_TICK \
+    exportParam->clientTick = QTime::currentTime().msecsSinceStartOfDay();\
+    if(exportParam->clientTick-exportParam->serverTick > TICK_CHECK_TIME)\
+        return false
+
+#define CHECK_STATE(x) \
+    while(exportParam->state!=x)\
+    {\
+        if(exportParam->state == ES_COMPLETE)\
+            return false;\
+        CHECK_TICK;\
+        QThread::msleep(500);\
+    }
 
 typedef void (*IProgressCallback)(int value, int max);
 
@@ -101,6 +117,8 @@ bool exportTrack(
     {
         wcscpy(exportParam->outputPath, fileNameW.c_str());
         exportParam->progressTotalFrames = totalFrames;
+
+        CHECK_STATE(ES_STARTING);
         exportParam->state = ES_RUNNING;
     }
 
@@ -108,12 +126,8 @@ bool exportTrack(
     {
         if(exportParam)
         {
-            while(exportParam->state!=ES_RUNNING)
-            {
-                if(exportParam->state == ES_COMPLETE)
-                    return true;
-                QThread::msleep(500);
-            }
+            CHECK_TICK;
+            CHECK_STATE(ES_RUNNING);
         }
         memset(buf, 0, bufSize);
         core->getNextFrame((char*)buf, bufSize);
@@ -138,6 +152,12 @@ bool exportTrack(
 
         if(exportParam)
             exportParam->progressCurrentFrames = i+1;
+
+#ifdef QT_DEBUG
+        QThread::msleep(100);
+#else
+        QThread::msleep(1);
+#endif
     }
     if(exportParam)
         exportParam->state = ES_COMPLETE;
@@ -176,7 +196,10 @@ int main(int argc, char *argv[])
 
     TExportParam *exportParam = NULL;
     if(parser.runAsDaemon())
+    {
         exportParam = TCmdlineParser::getExportParam();
+        exportParam->clientTick = QTime::currentTime().msecsSinceStartOfDay()+TICK_CHECK_TIME;
+    }
 
     // Load backend plugins
     TCore *core = NULL;

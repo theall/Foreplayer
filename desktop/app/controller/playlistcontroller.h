@@ -36,7 +36,7 @@ public:
 
 signals:
     void requestPlay(int pIndex, int mIndex, int tIndex);
-    void requestExport(TExportParam *exportParam, int size);
+    void requestExport(void *exportParam, int size);
 
 private slots:
     //// From gui
@@ -87,7 +87,7 @@ private slots:
     // Track item
     void slotRequestPlayTrackItem(int row);
     void slotRequestCopyTrackItem(QList<int> rows);
-    void slotRequestExportTrackItem(int row);
+    void slotRequestExportTrackItem(QList<int> rows);
     void slotRequestViewTrackItem(int row);
 
     //// From controller

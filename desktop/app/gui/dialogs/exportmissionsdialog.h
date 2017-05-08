@@ -50,18 +50,21 @@ public:
 signals:
     void requestCloseWindow();
     void requestPauseMissions(QList<int>);
-    void queryMissionsStatus(QList<int>, QList<bool>&);
+    void queryMissionsStatus(QList<int>, QList<int>&);
     void requestStartMissions(QList<int>);
     void requestRemoveMissions(QList<int>);
     void requestExploreFiles(QList<int>);
+    void requestRestartMissions(QList<int>);
     void requestOpenSettingDialog();
 
 private slots:
     void slotOnCustomizedContextMenu(QPoint);
+    void slotDoubleClickMission(QModelIndex);
     void slotOnActionStartTriggered();
     void slotOnActionPauseTriggered();
     void slotOnActionDeleteTriggered();
     void slotOnActionExploreTriggered();
+    void slotOnActionRestartTriggered();
     void slotOnSelectionChanged(QItemSelection,QItemSelection);
 
     void on_btnSetting_clicked();
@@ -78,6 +81,7 @@ private:
     QAction *mActionPause;
     QAction *mActionDelete;
     QAction *mActionExplore;
+    QAction *mActionRestart;
 
     void createContextMenu();
     void updateUI();

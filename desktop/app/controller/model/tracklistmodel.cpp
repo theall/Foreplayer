@@ -17,6 +17,8 @@
  */
 #include "tracklistmodel.h"
 
+#include "utils.h"
+
 int strToMSecs(QString s)
 {
     QStringList sl = s.split(":");

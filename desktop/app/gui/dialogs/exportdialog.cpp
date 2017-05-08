@@ -50,22 +50,14 @@ void TExportDialog::setMusicFile(QString fileName)
     ui->leFileName->setText(fileName);
 }
 
-void TExportDialog::setIndexInfo(QString indexName, QString title)
-{
-    ui->leIndexTitle->setText(title);
-
-    mIndexInfo.clear();
-    mIndexInfo.append(qMakePair(indexName, title));
-
-    ui->ckbNumber->setChecked(false);
-}
-
 void TExportDialog::setIndexInfo(QList<QPair<QString, QString>> indexList)
 {
     mIndexInfo = indexList;
     if(indexList.size() > 1)
     {
         ui->leIndexTitle->setText(QString("%1 Tracks").arg(indexList.size()));
+    } else {
+        ui->leIndexTitle->setText(indexList[0].second);
     }
     ui->ckbNumber->setChecked(mIndexInfo.size()>1);
 }

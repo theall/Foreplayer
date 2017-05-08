@@ -40,8 +40,6 @@ private slots:
     void slotQuitApp();
 
 private:
-    TMainWindow *mMainWindow;
-
     TPlayerController *mPlayerController;
     TPlaylistController *mPlaylistController;
     TEqualizerController *mEqualizerController;

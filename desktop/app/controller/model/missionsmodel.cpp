@@ -19,6 +19,8 @@
 
 #include <QMutexLocker>
 
+#include "utils.h"
+
 enum ColumnIndex
 {
     CI_TITLE=0,
@@ -97,9 +99,16 @@ QList<int> TMissionsModel::startMissions(QList<int> indexes)
 
 QList<int> TMissionsModel::pauseMissions(QList<int> indexes)
 {
-    QList<int> ret = changeMissionsState(indexes, ES_RUNNING, ES_PAUSED);
+    QList<int> ret = changeMissionsState(indexes, ES_RUNNING|ES_READY|ES_STARTING, ES_PAUSED);
     update();
 
+    return ret;
+}
+
+QList<int> TMissionsModel::restartMissions(QList<int> indexes)
+{
+    QList<int> ret = changeMissionsState(indexes, ES_ERROR, ES_READY);
+    update();
     return ret;
 }
 
@@ -128,7 +137,7 @@ QList<int> TMissionsModel::clearCompletedMissions()
     return ret;
 }
 
-QList<int> TMissionsModel::changeMissionsState(QList<int> indexes, ExportState checkState, ExportState newState)
+QList<int> TMissionsModel::changeMissionsState(QList<int> indexes, int checkState, int newState)
 {
     QList<int> ret;
 
@@ -139,12 +148,21 @@ QList<int> TMissionsModel::changeMissionsState(QList<int> indexes, ExportState c
             continue;
 
         TExportParam *exportParam = (TExportParam*)mExportMissions->at(i)->data();
-        if(!exportParam)
-            continue;
-
         if(checkState & exportParam->state)
-            exportParam->state = newState;
-
+        {
+            if(newState==ES_RUNNING)
+                exportParam->state = exportParam->oldState;
+            else if(newState==ES_PAUSED) {
+                exportParam->oldState = exportParam->state;
+                exportParam->state = ES_PAUSED;
+            } else if(newState==ES_READY) {
+                exportParam->overwrite = true;
+                exportParam->progressCurrentFrames = 0;
+                exportParam->state = (ExportState)newState;
+            } else {
+                exportParam->state = (ExportState)newState;
+            }
+        }
         ret.append(i);
     }
 
@@ -153,63 +171,95 @@ QList<int> TMissionsModel::changeMissionsState(QList<int> indexes, ExportState c
 
 QVariant TMissionsModel::data(const QModelIndex &index, int role) const
 {
-    if(role==Qt::DisplayRole && mExportMissions)
+    if(mExportMissions)
     {
-        int row = index.row();
-        int col = index.column();
-        if(row>=0 && row<mExportMissions->size())
+        if(role==Qt::DisplayRole)
         {
-            TExportParam *param = (TExportParam*)mExportMissions->at(row)->data();
-            switch (col) {
-            case CI_TITLE:
-                return QString::fromWCharArray(param->title);
-                break;
-            case CI_INDEX:
-                return QString::fromWCharArray(param->indexName);
-                break;
-            case CI_PROGRESS:
-                if(param->progressTotalFrames==0)
-                    return 0;
-                return (float)param->progressCurrentFrames/param->progressTotalFrames;
-                break;
-            case CI_SOURCE:
-                return QString::fromWCharArray(param->fileName);
-                break;
-            case CI_DESTINATION:
-                return QString::fromWCharArray(param->outputPath);
-                break;
-            case CI_STATUS:
-                switch (param->state) {
-                case ES_NULL:
-                    return tr("Initialized");
+            int row = index.row();
+            int col = index.column();
+            if(row>=0 && row<mExportMissions->size())
+            {
+                TExportParam *param = (TExportParam*)mExportMissions->at(row)->data();
+                switch (col) {
+                case CI_TITLE:
+                    return QString::fromWCharArray(param->title);
+                    break;
+                case CI_INDEX:
+                    return QString::fromWCharArray(param->indexName);
+                    break;
+                case CI_PROGRESS:
+                    if(param->progressTotalFrames==0)
+                        return 0;
+                    return (float)param->progressCurrentFrames/param->progressTotalFrames;
+                    break;
+                case CI_SOURCE:
+                    return QString::fromWCharArray(param->fileName);
+                    break;
+                case CI_DESTINATION:
+                    return QString::fromWCharArray(param->outputPath);
+                    break;
+                case CI_STATUS:
+                    switch (param->state) {
+                    case ES_NULL:
+                        return tr("Initialized");
+                            break;
+                    case ES_READY:
+                        return tr("Wait process start");
                         break;
-                case ES_READY:
-                    return tr("Wait process start");
-                    break;
-                case ES_STARTING:
-                    return tr("Process starting");
-                    break;
-                case ES_RUNNING:
-                    return tr("Running");
-                    break;
-                case ES_ERROR:
-                    return QString::fromWCharArray(param->errorString);
-                    break;
-                case ES_PAUSED:
-                    return tr("Paused");
-                    break;
-                case ES_COMPLETE:
-                    return tr("Completed");
+                    case ES_STARTING:
+                        return tr("Process starting");
+                        break;
+                    case ES_RUNNING:
+                        return tr("Running");
+                        break;
+                    case ES_ERROR:
+                        return QString::fromWCharArray(param->errorString);
+                        break;
+                    case ES_PAUSED:
+                        return tr("Paused");
+                        break;
+                    case ES_COMPLETE:
+                        return tr("Completed");
+                        break;
+                    default:
+                        break;
+                    }
                     break;
                 default:
                     break;
                 }
-                break;
-            default:
-                break;
+            }
+        } else if(role == Qt::TextColorRole) {
+            int row = index.row();
+            if(row>=0 && row<mExportMissions->size())
+            {
+                TExportParam *param = (TExportParam*)mExportMissions->at(row)->data();
+                if(param && index.column()==CI_STATUS)
+                {
+                    switch (param->state) {
+                    case ES_NULL:
+                    case ES_READY:
+                    case ES_STARTING:
+                        return QColor(Qt::black);
+                        break;
+                    case ES_PAUSED:
+                    case ES_RUNNING:
+                        return QColor(Qt::blue);
+                        break;
+                    case ES_ERROR:
+                        return QColor(Qt::red);
+                        break;
+                    case ES_COMPLETE:
+                        return QColor(Qt::green);
+                        break;
+                    default:
+                        break;
+                    }
+                }
             }
         }
     }
+
     return QVariant();
 }
 

@@ -35,9 +35,9 @@ TMainController::TMainController(QObject *parent) :
             SLOT(slotRequestPlay(int,int,int)));
 
     connect(mPlaylistController,
-            SIGNAL(requestExport(TExportParam*,int)),
+            SIGNAL(requestExport(void*,int)),
             mExportController,
-            SLOT(slotRequestAddExportMissions(TExportParam*,int)));
+            SLOT(slotRequestAddExportMissions(void*,int)));
 
     connect(mPlayerController,
             SIGNAL(requestUpdateModelsPlayingIndex(int,int,int)),
@@ -82,6 +82,14 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
 
 void TMainController::slotQuitApp()
 {
+    if(mExportController && mExportController->hasExportingMissions())
+    {
+        if(QMessageBox::question(
+                        mGui->mainWindow(),
+                        tr("Question"),
+                        tr("There are sound tracks in exporting, do you really want to exit?")) != QMessageBox::Yes)
+            return;
+    }
     qApp->quit();
 }
 

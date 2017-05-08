@@ -22,8 +22,6 @@
 #include <QSharedMemory>
 #include <QAbstractTableModel>
 
-#include "utils.h"
-
 typedef QList<QSharedMemory*> TExportMissions;
 
 class TMissionsModel : public QAbstractTableModel
@@ -38,13 +36,14 @@ public:
     QList<int> removeMissions(QList<int> indexes);
     QList<int> startMissions(QList<int> indexes);
     QList<int> pauseMissions(QList<int> indexes);
+    QList<int> restartMissions(QList<int> indexes);
     QList<int> clearCompletedMissions();
 
 private:
     TExportMissions *mExportMissions;
     QMutex *mExportMissionsLock;
 
-    QList<int> changeMissionsState(QList<int> indexes, ExportState checkState, ExportState newState);
+    QList<int> changeMissionsState(QList<int> indexes, int checkState, int newState);
 
     // QAbstractItemModel interface
     int rowCount(const QModelIndex &parent) const Q_DECL_OVERRIDE;

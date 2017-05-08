@@ -79,7 +79,7 @@ signals:
     // Track item popup menu
     void requestPlayTrackItem(int row);
     void requestCopyTrackItem(QList<int> rows);
-    void requestExportTrackItem(int row);
+    void requestExportTrackItem(QList<int> rows);
     void requestViewTrackItem(int row);
 
     //// Gui

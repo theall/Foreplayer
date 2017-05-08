@@ -21,6 +21,7 @@
 #include <QProcess>
 
 #include "preferences.h"
+#include "utils.h"
 
 #define LOCK(x) QMutexLocker locker(x);\
     Q_UNUSED(locker)
@@ -37,8 +38,12 @@ TExportController::~TExportController()
 {
     LOCK(&mExportMissionsLock);
     for(QSharedMemory *m : mExportMissions) {
+        TExportParam *exportParam = (TExportParam*)m->data();
+        if(exportParam)
+            exportParam->state = ES_COMPLETE;
+
         m->detach();
-        delete m;
+        m->deleteLater();
     }
     mExportMissions.clear();
 }
@@ -64,13 +69,17 @@ bool TExportController::joint(TGuiManager *gui, TCore *core)
             this,
             SLOT(slotRequestStartMissions(QList<int>)));
     connect(mExportMissionDialog,
-            SIGNAL(queryMissionsStatus(QList<int>, QList<bool>&)),
+            SIGNAL(queryMissionsStatus(QList<int>, QList<int>&)),
             this,
-            SLOT(slotQueryMissionsStatus(QList<int>,QList<bool>&)));
+            SLOT(slotQueryMissionsStatus(QList<int>,QList<int>&)));
     connect(mExportMissionDialog,
             SIGNAL(requestExploreFiles(QList<int>)),
             this,
             SLOT(slotRequestExploreFiles(QList<int>)));
+    connect(mExportMissionDialog,
+            SIGNAL(requestRestartMissions(QList<int>)),
+            this,
+            SLOT(slotRequestRestartMissions(QList<int>)));
     connect(mExportMissionDialog,
             SIGNAL(requestCloseWindow()),
             this,
@@ -79,7 +88,12 @@ bool TExportController::joint(TGuiManager *gui, TCore *core)
     return TAbstractController::joint(gui, core);
 }
 
-void TExportController::slotRequestAddExportMissions(TExportParam *missions, int size)
+bool TExportController::hasExportingMissions()
+{
+    return mExportMissions.size() > 0;
+}
+
+void TExportController::slotRequestAddExportMissions(void *missions, int size)
 {
     if(!missions || size<1 || !mExportMissionDialog)
         return;
@@ -87,9 +101,9 @@ void TExportController::slotRequestAddExportMissions(TExportParam *missions, int
     TExportMissions newMissions;
     for(int i=0;i<size;i++)
     {
-        TExportParam *exportParam = &missions[i];
+        TExportParam *exportParam = &((TExportParam*)missions)[i];
         QString strId = QUuid::createUuid().toString();
-        QSharedMemory *sharedMemory = new QSharedMemory(strId);
+        QSharedMemory *sharedMemory = new QSharedMemory(strId, this);
         if(!sharedMemory->create(sizeof(TExportParam)))
             continue;
         sharedMemory->attach();
@@ -140,7 +154,7 @@ void TExportController::slotRequestExploreFiles(QList<int> rows)
         if(!exportParam)
             continue;
 
-        fileNames.append(QString::fromWCharArray(exportParam->fileName));
+        fileNames.append(QString::fromWCharArray(exportParam->outputPath));
     }
 
     for(QString fileName : fileNames)
@@ -149,7 +163,13 @@ void TExportController::slotRequestExploreFiles(QList<int> rows)
     }
 }
 
-void TExportController::slotQueryMissionsStatus(QList<int> rows, QList<bool> &paused)
+void TExportController::slotRequestRestartMissions(QList<int> rows)
+{
+    if(mMissionsModel)
+        mMissionsModel->restartMissions(rows);
+}
+
+void TExportController::slotQueryMissionsStatus(QList<int> rows, QList<int> &state)
 {
     LOCK(&mExportMissionsLock);
     int size = mExportMissions.size();
@@ -160,9 +180,9 @@ void TExportController::slotQueryMissionsStatus(QList<int> rows, QList<bool> &pa
 
         TExportParam *exportParam = (TExportParam*)mExportMissions[i]->data();
         if(!exportParam)
-            continue;
-
-        paused.append(exportParam->state==ES_PAUSED);
+            state.append(ES_NULL);
+        else
+            state.append(exportParam->state);
     }
 }
 
@@ -177,12 +197,24 @@ void TExportController::slotTimerEvent()
     if(mMissionsModel && mExportMissionDialog && mExportMissionDialog->isVisible())
     {
         LOCK(&mExportMissionsLock);
+
+        // Tick check
         int runningCount = 0;
         int completeCount = 0;
         for(QSharedMemory *m : mExportMissions) {
             TExportParam *exportParam = (TExportParam*)m->data();
-            if(exportParam->state==ES_RUNNING || exportParam->state==ES_STARTING || exportParam->state==ES_PAUSED)
-                runningCount++;
+            if(exportParam->state==ES_RUNNING || exportParam->state==ES_STARTING || (exportParam->state==ES_PAUSED && exportParam->oldState!=ES_READY))
+            {
+                exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
+                if(exportParam->serverTick-exportParam->clientTick > 3000)
+                {
+                    // Client process has no responce, restart it
+                    exportParam->overwrite = true;
+                    exportParam->state = ES_READY;
+                } else {
+                    runningCount++;
+                }
+            }
             else if(exportParam->state == ES_COMPLETE)
                 completeCount++;
         }
@@ -204,6 +236,8 @@ void TExportController::slotTimerEvent()
                         exportParam->state = ES_ERROR;
                     }
                     qDebug() << commandLine+m->key();
+                    exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
+                    exportParam->clientTick = exportParam->serverTick;
                     exportParam->state = ES_STARTING;
                     newSpawn--;
                     if(newSpawn <= 0)

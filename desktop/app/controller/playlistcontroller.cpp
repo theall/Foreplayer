@@ -17,6 +17,8 @@
  */
 #include "playlistcontroller.h"
 
+#include "utils.h"
+
 #include <QMimeData>
 #include <QClipboard>
 
@@ -117,7 +119,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     // Track item
     connect(mPlaylistWindow, SIGNAL(requestPlayTrackItem(int)), this, SLOT(slotRequestPlayTrackItem(int)));
     connect(mPlaylistWindow, SIGNAL(requestCopyTrackItem(QList<int>)), this, SLOT(slotRequestCopyTrackItem(QList<int>)));
-    connect(mPlaylistWindow, SIGNAL(requestExportTrackItem(int)), this, SLOT(slotRequestExportTrackItem(int)));
+    connect(mPlaylistWindow, SIGNAL(requestExportTrackItem(QList<int>)), this, SLOT(slotRequestExportTrackItem(QList<int>)));
     connect(mPlaylistWindow, SIGNAL(requestViewTrackItem(int)), this, SLOT(slotRequestViewTrackItem(int)));
 
     // list view
@@ -696,7 +698,7 @@ void TPlaylistController::slotRequestCopyTrackItem(QList<int> rows)
     }
 }
 
-void TPlaylistController::slotRequestExportTrackItem(int row)
+void TPlaylistController::slotRequestExportTrackItem(QList<int> rows)
 {
     if(!mCore || !mTracklistModel || !mExportDialog)
         return;
@@ -704,18 +706,20 @@ void TPlaylistController::slotRequestExportTrackItem(int row)
     MusicItem musicItem = mTracklistModel->musicItem();
     if(musicItem)
     {
-        TrackItem trackItem = mCore->getTrackItem(musicItem, row);
-        if(trackItem)
-        {
-            QString musicFileName = mCore->getMusicItemFileName(musicItem);
-            mExportDialog->setMusicTitle(mCore->getMusicItemDisplayName(musicItem));
-            mExportDialog->setMusicFile(musicFileName);
-            mExportDialog->setMaxDuration(mCore->getTrackItemDuration(trackItem));
-            mExportDialog->setIndexInfo(mCore->getTrackItemIndexName(trackItem), mCore->getTrackItemName(trackItem));
-            if(mExportDialog->getOutputDir().isEmpty())
-                mExportDialog->setOutputPath(QFileInfo(musicFileName).absolutePath());
-            mExportDialog->exec();
+        QList<QPair<QString, QString>> indexInfo;
+        for(int row : rows) {
+            TrackItem trackItem = mCore->getTrackItem(musicItem, row);
+            if(!trackItem)
+                continue;
+            indexInfo.append(qMakePair(mCore->getTrackItemIndexName(trackItem), mCore->getTrackItemName(trackItem)));
         }
+        QString musicItemFileName = mCore->getMusicItemFileName(musicItem);
+        mExportDialog->setMusicTitle(mCore->getMusicItemDisplayName(musicItem));
+        mExportDialog->setMusicFile(musicItemFileName);
+        mExportDialog->setIndexInfo(indexInfo);
+        if(mExportDialog->getOutputDir().isEmpty())
+            mExportDialog->setOutputPath(QFileInfo(musicItemFileName).absolutePath());
+        mExportDialog->exec();
     }
 }
 

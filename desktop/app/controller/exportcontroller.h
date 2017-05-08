@@ -33,16 +33,18 @@ public:
     ~TExportController();
 
     bool joint(TGuiManager *gui, TCore *core);
+    bool hasExportingMissions();
 
 public slots:
-    void slotRequestAddExportMissions(TExportParam *missions, int size);
+    void slotRequestAddExportMissions(void *missions, int size);
 
 private slots:
     void slotRequestCancelMissions(QList<int> rows);
     void slotRequestStartMissions(QList<int> rows);
     void slotRequestPauseMissions(QList<int> rows);
     void slotRequestExploreFiles(QList<int> rows);
-    void slotQueryMissionsStatus(QList<int> rows, QList<bool> &paused);
+    void slotRequestRestartMissions(QList<int> rows);
+    void slotQueryMissionsStatus(QList<int> rows, QList<int> &state);
     void slotRequestCloseWindow();
 
 private:

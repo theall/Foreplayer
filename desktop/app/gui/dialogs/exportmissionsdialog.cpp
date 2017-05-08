@@ -20,6 +20,8 @@
 
 #include <QMessageBox>
 
+#include "utils.h"
+
 TExportItemDelegate::TExportItemDelegate(QObject *parent) :
     QItemDelegate(parent)
 {
@@ -58,6 +60,7 @@ TExportMissionsDialog::TExportMissionsDialog(QWidget *parent) :
   , mActionPause(NULL)
   , mActionDelete(NULL)
   , mActionExplore(NULL)
+  , mActionRestart(NULL)
 {
     ui->setupUi(this);
 
@@ -79,8 +82,13 @@ TExportMissionsDialog::TExportMissionsDialog(QWidget *parent) :
             SIGNAL(customContextMenuRequested(QPoint)),
             this,
             SLOT(slotOnCustomizedContextMenu(QPoint)));
+    connect(ui->tvMissions,
+            SIGNAL(doubleClicked(QModelIndex)),
+            this,
+            SLOT(slotDoubleClickMission(QModelIndex)));
 
     createContextMenu();
+    setWindowModality(Qt::NonModal);
 
     retranslateUi();
 }
@@ -114,6 +122,7 @@ void TExportMissionsDialog::retranslateUi()
     mActionPause->setText(tr("Pause"));
     mActionDelete->setText(tr("Delete"));
     mActionExplore->setText(tr("Explore"));
+    mActionRestart->setText(tr("Restart"));
 }
 
 void TExportMissionsDialog::on_btnClose_clicked()
@@ -136,13 +145,17 @@ void TExportMissionsDialog::on_btnStart_clicked()
 
 void TExportMissionsDialog::on_btnDelete_clicked()
 {
-    if(QMessageBox::question(this, tr("Question"), tr("This will cancel all the missions, are you sure?"))!=QMessageBox::Yes)
+    if(QMessageBox::question(
+                this,
+                tr("Question"),
+                tr("This will cancel the selected missions, are you sure?")) != QMessageBox::Yes)
         return;
 
     QList<int> rows = getSelectedRows();
     if(rows.size() > 0)
     {
         emit requestRemoveMissions(rows);
+        ui->tvMissions->clearSelection();
         updateUI();
     }
 }
@@ -153,18 +166,30 @@ void TExportMissionsDialog::slotOnCustomizedContextMenu(QPoint pos)
         mContextMenu->popup(pos);
 }
 
+void TExportMissionsDialog::slotDoubleClickMission(QModelIndex)
+{
+    updateUI();
+
+    if(ui->btnStart->isEnabled())
+        ui->btnStart->click();
+    else if(ui->btnPause->isEnabled())
+        ui->btnPause->click();
+
+    updateUI();
+}
+
 QList<int> TExportMissionsDialog::getSelectedRows()
 {
     QSet<int> rows;
     for(QModelIndex index : ui->tvMissions->selectionModel()->selectedRows())
         rows.insert(index.row());
 
-    if(rows.size()<=0)
-    {
-        int rowCount = ui->tvMissions->model()->rowCount();
-        for(int i=0;i<rowCount;i++)
-            rows.insert(i);
-    }
+//    if(rows.size()<=0)
+//    {
+//        int rowCount = ui->tvMissions->model()->rowCount();
+//        for(int i=0;i<rowCount;i++)
+//            rows.insert(i);
+//    }
 
     return rows.toList();
 }
@@ -177,7 +202,10 @@ void TExportMissionsDialog::createContextMenu()
         mActionStart = mContextMenu->addAction(QString(), this, SLOT(slotOnActionStartTriggered()));
         mActionPause = mContextMenu->addAction(QString(), this, SLOT(slotOnActionPauseTriggered()));
         mActionDelete = mContextMenu->addAction(QString(), this, SLOT(slotOnActionDeleteTriggered()));
+        mContextMenu->addSeparator();
         mActionExplore = mContextMenu->addAction(QString(), this, SLOT(slotOnActionExploreTriggered()));
+        mContextMenu->addSeparator();
+        mActionRestart = mContextMenu->addAction(QString(), this, SLOT(slotOnActionRestartTriggered()));
     }
 }
 
@@ -195,19 +223,26 @@ void TExportMissionsDialog::updateUI()
         mActionPause->setEnabled(false);
         mActionStart->setEnabled(false);
     } else {
-        QList<bool> status;
+        QList<int> status;
         emit queryMissionsStatus(rows, status);
-        bool allPaused = true;
-        bool allRunning = true;
-        for(bool paused : status)
+        bool canStart = false;
+        bool canPause = false;
+        bool canRestart = false;
+        for(int state : status)
         {
-            allRunning &= !paused;
-            allPaused &= paused;
+            ExportState exportState = (ExportState)state;
+            if(!canStart && (exportState&ES_PAUSED))
+                canStart = true;
+            if(!canPause && (exportState&ES_RUNNING || exportState&ES_READY ||exportState&ES_STARTING))
+                canPause = true;
+            if(!canRestart && exportState&ES_ERROR)
+                canRestart = true;
         }
-        ui->btnPause->setEnabled(!allPaused);
-        ui->btnStart->setEnabled(!allRunning);
-        mActionPause->setEnabled(!allPaused);
-        mActionStart->setEnabled(!allRunning);
+        ui->btnPause->setEnabled(canPause);
+        ui->btnStart->setEnabled(canStart);
+        mActionPause->setEnabled(canPause);
+        mActionStart->setEnabled(canStart);
+        mActionRestart->setEnabled(canRestart);
     }
 }
 
@@ -233,6 +268,15 @@ void TExportMissionsDialog::slotOnActionExploreTriggered()
         return;
 
     emit requestExploreFiles(rows);
+}
+
+void TExportMissionsDialog::slotOnActionRestartTriggered()
+{
+    QList<int> rows = getSelectedRows();
+    if(rows.size() < 1)
+        return;
+
+    emit requestRestartMissions(rows);
 }
 
 void TExportMissionsDialog::slotOnSelectionChanged(QItemSelection, QItemSelection)

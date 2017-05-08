@@ -17,6 +17,8 @@
  */
 #include "musiclistmodel.h"
 
+#include "utils.h"
+
 #define RecordCurrentItem MusicItem currentItem = mCore->getMusicItem(mPlaylistItem, mCurrentIndex)
 #define RestoreCurrentItem mCurrentIndex = mCore->getMusicItemIndex(mPlaylistItem, currentItem)
 #define RecordPlayingItem MusicItem playingItem = mCore->getMusicItem(mPlaylistItem, mPlayingIndex)

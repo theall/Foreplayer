@@ -27,8 +27,8 @@ enum ExportState
     ES_STARTING = 0x2,
     ES_RUNNING = 0x4,
     ES_ERROR = 0x8,
-    ES_PAUSED = 0x16,
-    ES_COMPLETE = 0x32,
+    ES_PAUSED = 0x10,
+    ES_COMPLETE = 0x20,
     ES_ALL = 0xFFFFFFFF
 };
 
@@ -47,8 +47,10 @@ struct TExportParam
     int progressCurrentFrames;
     int progressTotalFrames;
     int number;
+    int serverTick;
+    int clientTick;
     ExportState state;
-
+    ExportState oldState;
     TExportParam()
     {
         *fileName = 0;
@@ -63,7 +65,10 @@ struct TExportParam
         progressCurrentFrames = 0;
         progressTotalFrames = 0;
         number = -1;
+        serverTick = 0;
+        clientTick = 0;
         state = ES_NULL;
+        oldState = ES_NULL;
     }
 };
 

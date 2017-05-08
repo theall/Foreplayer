@@ -381,9 +381,9 @@ void TPlaylistWindow::slotExportTrackItemTriggered()
     if(!mTracklistView)
         return;
 
-    int row = mTracklistView->currentRow();
-    if(row != -1)
-        emit requestExportTrackItem(row);
+    QList<int> rows = mTracklistView->selectedRows();
+    if(rows.size() > 0)
+        emit requestExportTrackItem(rows);
 }
 
 void TPlaylistWindow::slotViewTrackItemTriggered()

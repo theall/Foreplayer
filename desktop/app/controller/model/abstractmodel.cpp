@@ -17,6 +17,8 @@
  */
 #include "abstractmodel.h"
 
+#include "utils.h"
+
 #define BACKGROUND2_ALPHA 128
 
 QVariant TAbstractModel::mFont;

@@ -34,7 +34,6 @@ public:
 
     void setMusicTitle(QString title);
     void setMusicFile(QString fileName);
-    void setIndexInfo(QString indexName, QString title);
     void setIndexInfo(QList<QPair<QString, QString>> indexList);
     void setMaxDuration(int microSeconds);
     void setOutputPath(QString fileName);

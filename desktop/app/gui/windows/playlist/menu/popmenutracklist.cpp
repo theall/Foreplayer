@@ -47,14 +47,14 @@ TPopMenuTrackList::TPopMenuTrackList(QWidget *parent) :
 
 void TPopMenuTrackList::display(QPoint pos, int selectionCount)
 {
-    bool noSelection = selectionCount<=0;
+    bool hasSelection = selectionCount>0;
     bool singleSelection = selectionCount==1;
 
     mActionPlay->setEnabled(singleSelection);
     mActionChange->setEnabled(singleSelection);
     mActionView->setEnabled(singleSelection);
-    mActionCopy->setEnabled(!noSelection);
-    mActionExport->setEnabled(!noSelection);
+    mActionCopy->setEnabled(hasSelection);
+    mActionExport->setEnabled(hasSelection);
 
     popup(pos);
 }
