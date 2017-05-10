@@ -104,14 +104,7 @@ bool TSDLFront::start()
 
 void TSDLFront::stop()
 {
-    mPlaying = false;
-    // be sure audio thread is not active
-    SDL_LockAudio();
-
-    SDL_PauseAudio(true);
-
-    SDL_UnlockAudio();
-
+    pause();
     setAudioParameter(AP_RESET, 0, 0);
 }
 
@@ -132,5 +125,9 @@ void TSDLFront::play()
 
 void TSDLFront::pause()
 {
-    stop();
+    mPlaying = false;
+    // be sure audio thread is not active
+    SDL_LockAudio();
+    SDL_PauseAudio(true);
+    SDL_UnlockAudio();
 }

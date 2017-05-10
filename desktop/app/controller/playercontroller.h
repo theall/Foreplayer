@@ -62,7 +62,7 @@ private:
     void resetVisualWidget();
     void updateWindowTitles();
     void decidePlayNext();
-    void getNextPlayindex(int *pIndex, int *mIndex, int *tIndex);
+    bool getNextPlayindex(int *pIndex, int *mIndex, int *tIndex);
 
     // TAbstractController interface
 protected slots:

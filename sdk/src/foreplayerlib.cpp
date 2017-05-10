@@ -19,6 +19,7 @@
 #include <foreplayer.h>
 
 #include "core.h"
+#include <mutex>
 
 #define K_TEMP  "temp"
 
@@ -26,6 +27,7 @@ static TCore *g_core = nullptr;
 static TPlayerCore *g_player = nullptr;
 static TPlaylistCore *g_playlist = nullptr;
 static TExportCore *g_exporter = nullptr;
+static mutex g_mutex;
 
 template<class T>
 vector<T*> fromVoid(list<void*> container)
@@ -53,6 +55,7 @@ void FOREPLAYER_API foreplayer_send_cmd(
         void *param4)
 {
     ForeplayerCmd fcmd = (ForeplayerCmd)cmd;
+    g_mutex.lock();
     switch(fcmd)
     {
     case CMD_OPEN:
@@ -489,5 +492,6 @@ void FOREPLAYER_API foreplayer_send_cmd(
     default:
         break;
     }
+    g_mutex.unlock();
 }
 

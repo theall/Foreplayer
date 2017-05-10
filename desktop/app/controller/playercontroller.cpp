@@ -294,45 +294,86 @@ void TPlayerController::decidePlayNext()
         int pi = -1;
         int mi = -1;
         int ti = -1;
+        int errorCount = 0;
         while(true)
         {
-            getNextPlayindex(&pi, &mi, &ti);
-            slotRequestPlay(pi, mi, ti);
-            if(mCurrentItem)
+            if(!getNextPlayindex(&pi, &mi, &ti))
+            {
+                slotStopButtonClicked();
                 break;
+            }
 
-            QThread::msleep(500);
+            slotRequestPlay(pi, mi, ti);
+            if(!mCurrentItem)
+            {
+                errorCount++;
+                if(errorCount > 3)
+                {
+                    slotStopButtonClicked();
+                    break;
+                }
+            } else {
+                errorCount = 0;
+                break;
+            }
         }
     }
 }
 
-void TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
+bool TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
 {
     if(!mCore)
-        return;
+        return false;
 
     PlayMode pm = TPreferences::instance()->playMode();
     int pi = -1;
     int mi = -1;
     int ti = -1;
+    QMap<int, QMap<int, int>> validIndexList;
+    for(int i=0;i<mCore->playlistCount();i++)
+    {
+        PlayListItem pItem = mCore->getPlaylistItem(i);
+        int musicItemsCount = mCore->getMusicItemCount(pItem);
+        if(musicItemsCount > 0)
+        {
+            QMap<int, int> musicIndexMap;
+            for(int j=0;j<mCore->getMusicItemCount(pItem);j++)
+            {
+                MusicItem mItem = mCore->getMusicItem(pItem, j);
+                int trackItemsCount = mCore->getTrackItemCount(mItem);
+                if(trackItemsCount > 0)
+                {
+                    musicIndexMap.insert(j, trackItemsCount);
+                }
+            }
+            if(musicIndexMap.size() > 0)
+                validIndexList.insert(i, musicIndexMap);
+        }
+    }
+    if(validIndexList.size() < 1)
+        return false;
+
     if(pm == RANDOM)
     {
-        int playlistCount = mCore->playlistCount();
-        pi = ((float)rand()/RAND_MAX) * playlistCount;
-        if(pi >= playlistCount)
-            pi = playlistCount - 1;
-        else if (pi < 0)
-            pi = 0;
+        QList<int> pIndexList = validIndexList.keys();
+        int playlistCount = pIndexList.size();
+        int pIndex = ((float)rand()/RAND_MAX) * playlistCount-1;
+        if(pIndex >= playlistCount)
+            pIndex = playlistCount - 1;
+        if (pIndex < 0)
+            pIndex = 0;
 
-        PlayListItem playlistItem = mCore->getPlaylistItem(pi);
-        int musicCount = mCore->getMusicItemCount(playlistItem);
+        pi = pIndexList[pIndex];
+        QMap<int, int> musicCountMap = validIndexList[pi];
+        QList<int> musicIndexList = musicCountMap.keys();
+        int musicCount = musicIndexList.size();
         mi = ((float)rand()/RAND_MAX) * musicCount;
         if(mi >= musicCount)
             mi = musicCount - 1;
-        else if (mi < 0)
+        if (mi < 0)
             mi = 0;
 
-        int trackCount = mCore->getTrackItemCount(mCore->getMusicItem(playlistItem, mi));
+        int trackCount = musicCountMap[musicIndexList[mi]];
         ti = ((float)rand()/RAND_MAX) * trackCount;
         if(ti >= trackCount)
             ti = trackCount - 1;
@@ -340,32 +381,59 @@ void TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
             ti = 0;
     } else {
         mCore->getPlayingIndex(&pi, &mi, &ti);
-
-        if(pm != RECYCLE_TRACK)
+        QMap<int, QMap<int, int>>::iterator playlistMapIt = validIndexList.lowerBound(pi);
+        if(playlistMapIt==validIndexList.end())
         {
-            PlayListItem playlistItem = mCore->getPlaylistItem(pi);
-            MusicItem musicItem = mCore->getMusicItem(playlistItem, mi);
-            int musicCount = mCore->getMusicItemCount(playlistItem);
-            int trackCount = mCore->getTrackItemCount(musicItem);
-            ti++;
-
-            if(ti >= trackCount)
+            // pi==-1?, reset play order
+            pi = validIndexList.firstKey();
+            mi = 0;
+            ti = 0;
+        } else {
+            if(pi != playlistMapIt.key())
             {
+                // Current item is removed
+                pi = playlistMapIt.key();
+                mi = playlistMapIt.value().firstKey();
                 ti = 0;
-                if (pm==RECYCLE_PLAY_LIST || pm==RECYCLE_ALL) {
-                    mi++;
-                    if(mi >= musicCount)
+            } else {
+                QMap<int, int> musicCountMap = playlistMapIt.value();
+                QMap<int, int>::iterator musicCountMapIt = musicCountMap.lowerBound(mi);
+                if(musicCountMapIt==musicCountMap.end() || musicCountMapIt.key()!=mi)
+                {
+                    // Invalid music index?
+                    mi = musicCountMap.firstKey();
+                    ti = 0;
+                } else {
+                    if(pm != RECYCLE_TRACK)
                     {
-                        mi = 0;
-                        if(pm==RECYCLE_ALL)
+                        int trackCount = musicCountMapIt.value();
+                        ti++;
+
+                        if(ti >= trackCount)
                         {
-                            pi++;
-                            if(pi >= mCore->playlistCount())
-                                pi = 0;
+                            ti = 0;
+                            if (pm==RECYCLE_PLAY_LIST || pm==RECYCLE_ALL) {
+                                musicCountMapIt++;
+                                if(musicCountMapIt != musicCountMap.end())
+                                {
+                                    mi = musicCountMapIt.key();
+                                } else {
+                                    playlistMapIt++;
+                                    if(playlistMapIt==validIndexList.end())
+                                    {
+                                        playlistMapIt = validIndexList.begin();
+                                        mi = playlistMapIt.value().firstKey();
+                                        ti = 0;
+                                    }
+
+                                    pi = playlistMapIt.key();
+                                }
+                            }
                         }
                     }
                 }
             }
+
         }
     }
 
@@ -373,6 +441,8 @@ void TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
     *pIndex = pi;
     *mIndex = mi;
     *tIndex = ti;
+
+    return true;
 }
 
 void TPlayerController::delayStopTimer()

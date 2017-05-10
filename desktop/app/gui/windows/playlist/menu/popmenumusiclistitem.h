@@ -28,7 +28,11 @@ public:
     TPopMenuMusiclistItem(QWidget *parent = 0);
     ~TPopMenuMusiclistItem();
 
+    void setExternalMenu(QMenu *sortMenu, QMenu *RemoveMenu);
     void display(QPoint pos, int selectionCount);
+
+public slots:
+    void slotOnKeyPressed(int key, bool &proceesed);
 
 signals:
     void onActionReparseTriggered();
@@ -55,6 +59,10 @@ private:
     QAction *mActionPlay;
     QAction *mActionRename;
     QAction *mActionReparse;
+    QMenu *mSortMenu;
+    QMenu *mRemoveMenu;
+
+    void init();
 
     // TAbstractPopMenu interface
 public:

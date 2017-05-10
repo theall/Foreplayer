@@ -27,7 +27,7 @@ typedef void* PlayListItem;
 typedef void* MusicItem;
 typedef void* TrackItem;
 typedef void* PluginHandle;
-typedef QList<PlayListItem> TPlayListItems;
+typedef QList<PlayListItem> PlayListItems;
 typedef QList<MusicItem> MusicItems;
 typedef QList<TrackItem> TrackItems;
 typedef QList<PluginHandle> PluginHandles;

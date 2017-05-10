@@ -430,6 +430,11 @@ void TAbstractTableView::keyPressEvent(QKeyEvent *event)
                 emit onCurrentRowChanged(row);
                 emit onDoubleClickItem(row);
             }
+        } else {
+            bool processed = false;
+            emit onKeyPressed(key|event->modifiers(), processed);
+            if(processed)
+                return;
         }
     }
 

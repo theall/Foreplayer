@@ -19,6 +19,15 @@
 
 #include "utils.h"
 
+enum ColumnIndex
+{
+    CI_STUB = 0,
+    CI_NUMBER,
+    CI_TITLE,
+    CI_DURATION,
+    CI_COUNT
+};
+
 int strToMSecs(QString s)
 {
     QStringList sl = s.split(":");
@@ -101,17 +110,17 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
 
         if(role==Qt::DisplayRole || role==Qt::EditRole)
         {
-            if(column==1)
+            if(column==CI_NUMBER)
             {
                 return QString::number(row+1) + ".";
-            } else if (column==2) {
+            } else if (column==CI_TITLE) {
                 return mCore->getTrackItemName(trackItem);
-            } else if (column==3) {
+            } else if (column==CI_DURATION) {
                 return Utils::microSecToTimeStr(mCore->getTrackItemDuration(trackItem));
             }
         } else if (role==Qt::TextAlignmentRole) {
             Qt::Alignment align;
-            if (column==2) {
+            if (column==CI_TITLE) {
                 align = Qt::AlignLeft;
             } else {
                 align = Qt::AlignRight;
@@ -143,13 +152,13 @@ bool TTrackListModel::setData(const QModelIndex &index, const QVariant &value, i
         TrackItem trackItem = mCore->getTrackItem(mMusicItem, row);
         if(trackItem)
         {
-            if(col==2)
+            if(col==CI_TITLE)
             {
                 // Title
                 QString newName = value.toString();
                 if(!newName.isEmpty())
                     mCore->setTrackItemName(mMusicItem, trackItem, newName);
-            } else if (col==3) {
+            } else if (col==CI_DURATION) {
                 // Duration
                 int newDuration = strToMSecs(value.toString());
                 if(mCore->setTrackItemDuration(mMusicItem, trackItem, newDuration))

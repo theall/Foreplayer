@@ -60,6 +60,7 @@ signals:
     void requestMoveItems(QList<int> indexes, int pos, QList<int> &newIndexes);
     void requestAddFiles(QStringList files, int pos, QList<int> &newIndexes);
 
+    void onKeyPressed(int key, bool& processed);
     // This message post to playlist window
     void onMouseMove(QEvent *ev);
 

@@ -48,6 +48,7 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     mPopmenuMusicList->addMenu(mPopmenuPlayList);
     mPopmenuMusicList->addMenu(mPopmenuMusiclistEdit);
     mPopmenuMusicList->addMenu(mPopmenuPlayMode);
+    mPopmenuMusiclistItem->setExternalMenu(mPopmenuSort, mPopmenuRemoveMusics);
 
     connect(mBtnClose, SIGNAL(clicked()), this, SLOT(on_btnClose_clicked()));
     connect(mToolbar, SIGNAL(requestToggleContexMenu(TToolBar::BUTTON, QPoint, bool)), this, SLOT(slotRequestToggleButtonContexMenu(TToolBar::BUTTON, QPoint, bool)));
@@ -60,6 +61,9 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     connect(mPlaylistView, SIGNAL(onMouseMove(QEvent*)), this, SLOT(slotOnMouseMove(QEvent*)));
     connect(mMusiclistView, SIGNAL(onMouseMove(QEvent*)), this, SLOT(slotOnMouseMove(QEvent*)));
     connect(mTracklistView, SIGNAL(onMouseMove(QEvent*)), this, SLOT(slotOnMouseMove(QEvent*)));
+
+    // key press
+    connect(mMusiclistView, SIGNAL(onKeyPressed(int,bool&)), mPopmenuMusiclistItem, SLOT(slotOnKeyPressed(int,bool&)));
 
     connect(mPopmenuPlayList, SIGNAL(onActionAddTriggered()), this, SIGNAL(requestAddNewPlaylist()));
     connect(mPopmenuPlayList, SIGNAL(onActionRemoveTriggered()), this, SLOT(slotActionRemovePlaylist()));

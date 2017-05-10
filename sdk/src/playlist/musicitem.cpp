@@ -140,11 +140,15 @@ void TMusicItem::sort(SortMethod mode)
         });
     else if (mode==SM_RANDOM)
     {
-        std::sort(mTrackItems.begin(), mTrackItems.end(), [=](TTrackItem *a, TTrackItem *b){
-            (void)a;
-            (void)b;
-            return rand() < rand();
-        });
+        int size = mTrackItems.size();
+        for(int i=0;i<size;i++)
+        {
+            int i1 = ((float)rand()/RAND_MAX)*(size-1);
+            int i2 = ((float)rand()/RAND_MAX)*(size-1);
+            TTrackItem *temp = mTrackItems[i1];
+            mTrackItems[i1] = mTrackItems[i2];
+            mTrackItems[i2] = temp;
+        }
     }
 }
 

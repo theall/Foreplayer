@@ -19,6 +19,15 @@
 
 #include "utils.h"
 
+enum ColumnIndex
+{
+    CI_STUB = 0,
+    CI_NUMBER,
+    CI_TITLE,
+    CI_DURATION,
+    CI_COUNT
+};
+
 #define RecordCurrentItem MusicItem currentItem = mCore->getMusicItem(mPlaylistItem, mCurrentIndex)
 #define RestoreCurrentItem mCurrentIndex = mCore->getMusicItemIndex(mPlaylistItem, currentItem)
 #define RecordPlayingItem MusicItem playingItem = mCore->getMusicItem(mPlaylistItem, mPlayingIndex)
@@ -68,17 +77,17 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
         {
             int column = index.column();
             int row = index.row();
-            MusicItem data = mCore->getMusicItem(mPlaylistItem, row);
-            if(!data)
+            MusicItem musicItem = mCore->getMusicItem(mPlaylistItem, row);
+            if(!musicItem)
                 return QVariant();
 
-            if(column==1)
+            if(column==CI_NUMBER)
             {
                 return QString("%1.").arg(index.row()+1);
-            } else if (column==2) {
-                return mCore->getMusicItemDisplayName(data);
-            } else if (column==3) {
-                return Utils::microSecToTimeStr(mCore->getMusicItemDuration(data));
+            } else if (column==CI_TITLE) {
+                return mCore->getMusicItemDisplayName(musicItem);
+            } else if (column==CI_DURATION) {
+                return Utils::microSecToTimeStr(mCore->getMusicItemDuration(musicItem));
             }
         } else if (role==Qt::TextAlignmentRole) {
             Qt::Alignment align;
@@ -120,7 +129,7 @@ bool TMusiclistModel::setData(const QModelIndex &index, const QVariant &value, i
 {
     if(mCore)
     {
-        if(role==Qt::EditRole && index.column()==2)// The third column is title
+        if(role==Qt::EditRole && index.column()==CI_TITLE)// The third column is title
         {
             MusicItem musicItem = mCore->getMusicItem(mPlaylistItem, index.row());
             QString newName = value.toString();
@@ -137,7 +146,7 @@ Qt::ItemFlags TMusiclistModel::flags(const QModelIndex &index) const
     Qt::ItemFlags _flags = TAbstractModel::flags(index);
     if(mCore && index.row()<mCore->getMusicItemCount(mPlaylistItem))
     {
-        if(index.column()==2)
+        if(index.column()==CI_TITLE)
             _flags |= Qt::ItemIsEditable;
     } else {
         _flags = Qt::NoItemFlags;
@@ -306,9 +315,7 @@ void TMusiclistModel::sortItems(SortMethod sm)
     RecordCurrentItem;
     RecordPlayingItem;
 
-    beginResetModel();
     mCore->sort(mPlaylistItem, sm);
-    endResetModel();
 
     RestoreCurrentItem;
     RestorePlayingItem;

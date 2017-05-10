@@ -29,6 +29,8 @@ bool hasMusicItem()
 
 TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     TAbstractPopMenu(parent)
+  , mSortMenu(NULL)
+  , mRemoveMenu(NULL)
 {
     mActionReparse = new QAction(this);
     mActionPlay = new QAction(this);
@@ -42,6 +44,13 @@ TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     mActionDetail = new QAction(this);
     mActionCopyToUsb = new QAction(this);
 
+    mActionPlay->setShortcut(QKeySequence("F5"));
+    mActionCopy->setShortcut(QKeySequence("Ctrl+C"));
+    mActionCut->setShortcut(QKeySequence("Ctrl+X"));
+    mActionPaste->setShortcut(QKeySequence("Ctrl+V"));
+    mActionRemove->setShortcut(QKeySequence("Del"));
+    mActionDetail->setShortcut(QKeySequence("Alt+R"));
+
     connect(mActionReparse, SIGNAL(triggered()), this, SIGNAL(onActionReparseTriggered()));
     connect(mActionPlay, SIGNAL(triggered()), this, SIGNAL(onActionPlayTriggered()));
     connect(mActionCopy, SIGNAL(triggered()), this, SIGNAL(onActionCopyTriggered()));
@@ -54,25 +63,6 @@ TPopMenuMusiclistItem::TPopMenuMusiclistItem(QWidget *parent) :
     connect(mActionDetail, SIGNAL(triggered()), this, SIGNAL(onActionViewTriggered()));
     connect(mActionCopyToUsb, SIGNAL(triggered()), this, SIGNAL(onActionCopyToUsbTriggered()));
 
-#ifndef QT_DEBUG
-    addAction(mActionReparse);
-    addAction(mActionCopyToUsb);
-#endif
-    addAction(mActionPlay);
-    addSeparator();
-    addAction(mActionCopy);
-    addAction(mActionCut);
-    addAction(mActionPaste);
-    addSeparator();
-    addAction(mActionRemove);
-    addSeparator();
-    addAction(mActionRename);
-    addSeparator();
-    addAction(mActionExplorer);
-    addAction(mActionExport);
-    addSeparator();
-    addAction(mActionDetail);
-
     retranslateUi();
 }
 
@@ -81,24 +71,79 @@ TPopMenuMusiclistItem::~TPopMenuMusiclistItem()
 
 }
 
+void TPopMenuMusiclistItem::setExternalMenu(QMenu *sortMenu, QMenu *RemoveMenu)
+{
+    mSortMenu = sortMenu;
+    mRemoveMenu = RemoveMenu;
+
+    init();
+}
+
 void TPopMenuMusiclistItem::display(QPoint pos, int selectionCount)
 {
-    bool noSelection = selectionCount<=0;
+    bool hasSelection = selectionCount>0;
     bool singleSelection = selectionCount==1;
 
-    mActionReparse->setEnabled(!noSelection);
-    mActionCut->setEnabled(!noSelection);
-    mActionCopy->setEnabled(!noSelection);
+    mActionReparse->setEnabled(hasSelection);
+    mActionCut->setEnabled(hasSelection);
+    mActionCopy->setEnabled(hasSelection);
     mActionPlay->setEnabled(singleSelection);
-    mActionRemove->setEnabled(!noSelection);
+    mActionRemove->setEnabled(hasSelection);
     mActionExport->setEnabled(singleSelection);
     mActionExplorer->setEnabled(singleSelection);
     mActionRename->setEnabled(singleSelection);
     mActionDetail->setEnabled(singleSelection);
-    mActionCopyToUsb->setEnabled(!noSelection);
+    mActionCopyToUsb->setEnabled(hasSelection);
     mActionPaste->setEnabled(hasMusicItem());
 
+    if(mSortMenu)
+        mSortMenu->setEnabled(!hasSelection);
+
     popup(pos);
+}
+
+void TPopMenuMusiclistItem::slotOnKeyPressed(int key, bool &proceesed)
+{
+    QKeySequence ks(key);
+    qDebug() << ks;
+    proceesed = false;
+    for(QAction *a : actions())
+    {
+        if(a->shortcut()==ks)
+        {
+            a->trigger();
+            proceesed = true;
+            break;
+        }
+    }
+}
+
+void TPopMenuMusiclistItem::init()
+{
+    addAction(mActionPlay);
+    addSeparator();
+    addAction(mActionCopy);
+    addAction(mActionCut);
+    addAction(mActionPaste);
+    addAction(mActionRename);
+    addSeparator();
+    if(mRemoveMenu)
+        addMenu(mRemoveMenu);
+    //addAction(mActionRemove);
+    addSeparator();
+    addAction(mActionExplorer);
+    addAction(mActionExport);
+    addSeparator();
+    if(mSortMenu)
+    {
+        addMenu(mSortMenu);
+        addSeparator();
+    }
+    addAction(mActionDetail);
+#ifdef QT_DEBUG
+    addAction(mActionReparse);
+    addAction(mActionCopyToUsb);
+#endif
 }
 
 void TPopMenuMusiclistItem::retranslateUi()

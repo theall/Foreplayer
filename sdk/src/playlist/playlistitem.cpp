@@ -315,11 +315,22 @@ void TPlaylistItem::sort(SortMethod mode)
         });
     else if (mode==SM_RANDOM)
     {
-        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
-            (void)a;
-            (void)b;
-            return rand() < rand();
-        });
+        // Dose this code have problem?This may be a bug of stl.
+//        std::sort(mMusicItems.begin(), mMusicItems.end(), [=](TMusicItem *a, TMusicItem *b){
+//            (void)a;
+//            (void)b;
+//            return rand() < rand();
+//        });
+
+        int size = mMusicItems.size();
+        for(int i=0;i<size;i++)
+        {
+            int i1 = ((float)rand()/RAND_MAX)*(size-1);
+            int i2 = ((float)rand()/RAND_MAX)*(size-1);
+            TMusicItem *temp = mMusicItems[i1];
+            mMusicItems[i1] = mMusicItems[i2];
+            mMusicItems[i2] = temp;
+        }
     } else if (mode==SM_REVERSE) {
         std::reverse(mMusicItems.begin(), mMusicItems.end());
     }

@@ -19,6 +19,7 @@
 
 #include "cplusutils.h"
 #include <fstream>
+#include <time.h>
 #include <zlib.h>
 
 #define PLAYLIST_DIR            L"playlist"
@@ -48,6 +49,9 @@ TPlaylistCore::TPlaylistCore() :
     findPlaylist();
     if(mPlaylist.size()<=0)
         insert(DEFAULT_PLUGIN_NAME);
+
+    time_t tm;
+    srand(time(&tm));
 }
 
 TPlaylistCore::~TPlaylistCore()
