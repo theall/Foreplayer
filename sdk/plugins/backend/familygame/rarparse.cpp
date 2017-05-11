@@ -19,6 +19,7 @@
 #include "rarparse.h"
 
 #include <string.h>
+#include <unrar.h>
 
 #include "pluginutils.h"
 

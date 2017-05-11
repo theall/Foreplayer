@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT -= core
+QT -= core gui
 
 TARGET = plugin
 TEMPLATE = lib
@@ -12,10 +12,11 @@ CONFIG += c++11
 
 INCLUDEPATH += ../\
     ../../pluginutils \
-    ../../../thirdparty/unrar/include
+    ../../../thirdparty/unrar/include \
+    ../../../thirdparty/gme/src \
+    ../../../thirdparty/unzip
 
-LIBS += -lunrar
-LIBS += -LF:/opensource/foreplayer/dist/lib -lgme -lunzip
+LIBS += -LF:/opensource/foreplayer/dist/lib -lunrar -lgme -lunzip
 
 SOURCES += \
     main.cpp \
@@ -37,6 +38,7 @@ HEADERS += \
 win32 {
     DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/gme
 }
+
 unix {
     target.path = /usr/lib
     INSTALLS += target

@@ -177,18 +177,24 @@ void TPlaylistWindow::slotActionRemovePlaylist()
 {
     if(mPlaylistView->selectedRows().size()>0 && verified())
         emit requestRemovePlaylist();
-
 }
 
 void TPlaylistWindow::slotOnActionAddMusicsTriggered()
-{
-    TPreferences *prefs = TPreferences::instance();
+{    
+    QList<QPair<QString, QString>> suffixList;
+    emit requestSupportSuffixList(suffixList);
+    suffixList.append(qMakePair(QString("*.*"), tr("All files")));
+    QStringList sl;
+    for(QPair<QString, QString> sd : suffixList)
+        sl.append(QString("%1 (*.%2)").arg(sd.second, sd.first));
 
     QStringList files = QFileDialog::getOpenFileNames(
                             this,
                             tr("Add one or more musics files to current playlist"),
-                            prefs->lastOpenDialogPath(),
-                            tr("Music files (*.mp3 *.wav *.wma);All files (*.*)"));
+                            "/",
+                            sl.join(QString(";;")));
+    if(files.isEmpty())
+        return;
 
     tryAddMusicFiles(files);
 }

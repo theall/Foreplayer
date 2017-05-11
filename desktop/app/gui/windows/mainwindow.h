@@ -88,18 +88,17 @@ signals:
     void browserButtonToggle(bool);
     void volumeToggle(bool);
     void requestSwitchToMiniMode();
+    void openMusicsClicked();
 
     // Volume between 0.0~1.0f
     void volumeValueChanged(float);
     void requestSeekPosition(int, bool&);
-    void requestOpenFiles(QStringList);
     void requestShowMinimized();
     void onActivationChange();
 
 private slots:
     void on_btnPlay_clicked();
     void on_btnPause_clicked();
-    void on_btnOpen_clicked();
     void on_volume_valueChanged(int value);
     void on_btnMute_clicked();
     void on_icnLogo_clicked();

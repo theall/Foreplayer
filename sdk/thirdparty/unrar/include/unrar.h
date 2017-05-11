@@ -37,15 +37,14 @@
 #define RAR_HASH_CRC32        1
 #define RAR_HASH_BLAKE2       2
 
-#define _UNIX
-#ifdef _UNIX
-#define CALLBACK
-#define PASCAL
+#ifdef _WIN32
+#include <minwindef.h>
+#endif
+
 typedef long LONG;
 typedef void* HANDLE;
 typedef long LPARAM;
 typedef unsigned int UINT;
-#endif
 
 #define RHDF_SPLITBEFORE 0x01
 #define RHDF_SPLITAFTER  0x02

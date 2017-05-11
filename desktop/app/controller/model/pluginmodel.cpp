@@ -132,10 +132,16 @@ TSuffixModel::~TSuffixModel()
 
 }
 
-void TSuffixModel::setSuffixDecription(QHash<QString, QString> sd)
+void TSuffixModel::setSuffixDecription(QList<QPair<QString, QString>> suffixDesc)
 {
-    mSuffixList = sd.keys();
-    mDesctiption = sd.values();
+    mSuffixList.clear();
+    mDesctiption.clear();
+
+    for(QPair<QString, QString> sd : suffixDesc)
+    {
+        mSuffixList.append(sd.first);
+        mDesctiption.append(sd.second);
+    }
 
     emit layoutChanged();
 }

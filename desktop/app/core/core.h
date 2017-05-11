@@ -150,7 +150,7 @@ public:
     QString getPluginContact(PluginHandle pluginHandle);
     QString getPluginCreateDate(PluginHandle pluginHandle);
     QString getPluginDescription(PluginHandle pluginHandle);
-    QHash<QString, QString> getPluginSuffixDescription(PluginHandle pluginHandle);
+    QList<QPair<QString, QString>> getPluginSuffixDescription(PluginHandle pluginHandle);
 
     //// For export
     bool loadTrackItem(TrackItem trackItem);

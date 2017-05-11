@@ -47,7 +47,7 @@ public:
     TSuffixModel(QObject *parent = 0);
     ~TSuffixModel();
 
-    void setSuffixDecription(QHash<QString, QString> sd);
+    void setSuffixDecription(QList<QPair<QString, QString>> suffixDesc);
 
 private:
     QStringList mSuffixList;

@@ -22,7 +22,6 @@
 #include <backendinterface.h>
 
 #include <string>
-#include "gmewrap.h"
 
 class TAbstractParse
 {

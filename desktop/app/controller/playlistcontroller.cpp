@@ -55,7 +55,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     mPlaylistWindow = gui->playlistWindow();
     Q_ASSERT(mPlaylistWindow);
 
-    mPlaylistWidget = gui->playlistWindow()->playlistWidget();
+    mPlaylistWidget = mPlaylistWindow->playlistWidget();
     Q_ASSERT(mPlaylistWidget);
 
     mPlaylistView = mPlaylistWidget->playlistView();
@@ -90,6 +90,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     connect(mPlaylistWindow, SIGNAL(requestRemovePlaylist()), this, SLOT(slotRequestRemovePlaylist()));
     connect(mPlaylistWindow, SIGNAL(requestSortPlaylists()), this, SLOT(slotRequestSortPlaylists()));
     connect(mPlaylistWindow, SIGNAL(requestSendTo()), this, SLOT(slotRequestSendTo()));
+    connect(mPlaylistWindow, SIGNAL(requestSupportSuffixList(QList<QPair<QString,QString> >&)), this, SLOT(slotRequestSupportSuffixList(QList<QPair<QString,QString> >&)));
 
     // Music list
     connect(mPlaylistWindow, SIGNAL(requestRemoveSelections(QList<int>)), this, SLOT(slotRequestDeleteMusicItem(QList<int>)));
@@ -445,6 +446,15 @@ void TPlaylistController::slotRequestAddMusicFiles(QStringList files, int pos, Q
 
     mMusiclistModel->insertFiles(files, pos, newIndexes);
     mTracklistModel->setMusicItem(mCore->getMusicItem(mMusiclistModel->playlistItem(), pos));
+}
+
+void TPlaylistController::slotRequestSupportSuffixList(QList<QPair<QString, QString> > &suffixList)
+{
+    if(!mCore)
+        return;
+
+    for(PluginHandle plugin : mCore->getPluginHandles())
+        suffixList += mCore->getPluginSuffixDescription(plugin);
 }
 
 void TPlaylistController::slotRequestDeleteMusicItem(QList<int> indexes)

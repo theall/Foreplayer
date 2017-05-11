@@ -49,6 +49,7 @@ signals:
     void requestRemovePlaylist();
     void requestSortPlaylists();
     void requestSendTo();
+    void requestSupportSuffixList(QList<QPair<QString, QString>>&);
 
     //// Music list
     // Remove musics

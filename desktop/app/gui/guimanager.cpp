@@ -85,6 +85,7 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mMainWindow, SIGNAL(requestShowMinimized()), this, SLOT(slotShowMinimized()));
     connect(mMainWindow, SIGNAL(onActivationChange()), this, SLOT(slotMainWindowActivationChanged()));
     connect(mMainWindow, SIGNAL(volumeToggle(bool)), this, SLOT(slotVolumeToggled(bool)));
+    connect(mMainWindow, SIGNAL(openMusicsClicked()), mPlaylistWindow, SLOT(slotOnActionAddMusicsTriggered()));
 
     // Mini window
     connect(mMiniWindow, SIGNAL(exitClicked()), this, SLOT(slotRequestExit()));
@@ -129,6 +130,8 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
     connect(mMainMenu->skinMenu(), SIGNAL(requestLoadSkin(int)), this, SLOT(slotRequestLoadSkin(int)));
     connect(mMainMenu->skinMenu(), SIGNAL(requestSkinNames(QStringList&,int&)), this, SLOT(slotRequestSkinNames(QStringList&,int&)));
     connect(mMainMenu->transparentMenu(), SIGNAL(onOpacityChanged(qreal)), this, SLOT(slotOnOpacityChanged(qreal)));
+
+    // Bridge
 
     // Tray icon
     mTrayIcon->setContextMenu(mMainMenu);

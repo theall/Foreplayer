@@ -27,12 +27,13 @@
 #define EXPORT __declspec(dllexport)
 
 const wchar_t *szName          = L"family game";
-const wchar_t *szManufacture   = L"Your name/organization";
-const wchar_t *szContact       = L"Your contact information";
-const wchar_t *szDescription   = L"Plugin description";
-const wchar_t *szCreateDate    = L"";//Plugin created date, such as 2016-10-11
+const wchar_t *szManufacture   = L"Bilge Theall";
+const wchar_t *szContact       = L"wazcd_1608@qq.com";
+const wchar_t *szDescription   = L"Plugin port to gme";
+const wchar_t *szCreateDate    = L"2016/10/22";//Plugin created date, such as 2016-10-11
 const wchar_t *g_cTypeDesc      = \
-        L"ZIP ;Universe package\n" \
+        L"ZIP ;Zip package\n" \
+        L"RAR ;Rar package\n" \
         L"RSN ;Super Nintendo package\n" \
         L"AY  ;ZX Spectrum/Amstrad CPC\n" \
         L"GBS ;Nintendo Game Boy\n" \
@@ -42,11 +43,11 @@ const wchar_t *g_cTypeDesc      = \
         L"NSF ;Nintendo NES/Famicom (with VRC 6, Namco 106, and FME-7 sound)\n" \
         L"SAP ;Atari systems using POKEY sound chip\n" \
         L"SPC ;Super Nintendo/Super Famicom\n" \
-        L"VGM ;Sega Master System/Mark III, Sega Genesis/Mega Drive,BBC Micro\n";
+        L"VGM ;Sega Master System/Mark III, Sega Genesis/Mega Drive,BBC Micro";
 
-TGmeWrap *g_gmePlay; // Gme for play
-map<wstring, wstring> g_typeDesc;
-wstring g_suffixes;
+static TGmeWrap *g_gmePlayer; // Gme for play
+static map<wstring, wstring> g_typeDesc;
+static wstring g_suffixes;
 
 // Initialize plugin
 bool initialize()
@@ -66,9 +67,9 @@ bool initialize()
         g_typeDesc[suffix] = item[1];
         g_suffixes += L" " + suffix;
     }
-    g_suffixes.erase(0);
+    g_suffixes.erase(g_suffixes.begin());
 
-    g_gmePlay = TGmeWrap::instance();
+    g_gmePlayer = TGmeWrap::instance();
 
     return true;
 }
@@ -105,7 +106,7 @@ bool parse(const wstring fileName, TMusicInfo* musicInfo)
     TZipParse zipParse(fileName);
     if(!g_typeDesc[suffix].empty())
     {
-        if(suffix==L"rsn")
+        if(suffix==L"rsn" || suffix==L"rar")
             result = rarParse.parse(musicInfo);
         else if(suffix==L"zip")
             result = zipParse.parse(musicInfo);
@@ -127,7 +128,7 @@ bool parse(const wstring fileName, TMusicInfo* musicInfo)
 // Load track to prepare for playing
 bool loadTrack(TTrackInfo* trackInfo)
 {
-    if(!g_gmePlay || !trackInfo)
+    if(!g_gmePlayer || !trackInfo)
         return false;
 
     bool error = false;
@@ -141,37 +142,37 @@ bool loadTrack(TTrackInfo* trackInfo)
         TRarParse rarParse(fileName);
 
         rarParse.trackData(trackInfo, &data, &size);
-        error = g_gmePlay->loadData(data, size);
+        error = g_gmePlayer->loadData(data, size);
     } else if (suffix==L"zip") {
         TZipParse zipParse(fileName);
         zipParse.trackData(trackInfo, &data, &size);
-        error = g_gmePlay->loadData(data, size);
+        error = g_gmePlayer->loadData(data, size);
     } else {
-        error = g_gmePlay->loadFile(fileName.c_str());
+        error = g_gmePlayer->loadFile(fileName.c_str());
     }
     if(error)
-        error = g_gmePlay->startTrack(trackInfo->index);
+        error = g_gmePlayer->startTrack(trackInfo->index);
     return error;
 }
 
 // Close track
 void closeTrack()
 {
-    g_gmePlay->free();
+    g_gmePlayer->free();
 }
 
 // Request next samples
 void nextSamples(byte* buffer, int bufSize)
 {
-    if(g_gmePlay)
-        g_gmePlay->fillBuffer((short*)buffer, bufSize/2);
+    if(g_gmePlayer)
+        g_gmePlayer->fillBuffer((short*)buffer, bufSize/2);
 }
 
 // Seek time
 bool seek(int microSeconds)
 {
-    if(g_gmePlay)
-        return g_gmePlay->seek(microSeconds);
+    if(g_gmePlayer)
+        return g_gmePlayer->seek(microSeconds);
 
     return false;
 }
@@ -192,9 +193,9 @@ void pluginInformation(TPluginInfo *pluginInfo)
 // Use to free plugin
 void destroy()
 {
-    if(g_gmePlay) {
+    if(g_gmePlayer) {
         TGmeWrap::deleteInstance();
-        g_gmePlay = NULL;
+        g_gmePlayer = NULL;
     }
 }
 

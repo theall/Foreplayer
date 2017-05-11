@@ -821,16 +821,16 @@ QString TCore::getPluginDescription(PluginHandle pluginHandle)
     return QString::fromStdWString(ret);
 }
 
-QHash<QString, QString> TCore::getPluginSuffixDescription(PluginHandle pluginHandle)
+QList<QPair<QString, QString>> TCore::getPluginSuffixDescription(PluginHandle pluginHandle)
 {
     map<wstring, wstring> ret;
     if(mSendCmd)
         mSendCmd(CMD_GET_PLUGIN_SUFFIXDESCRIPTION, pluginHandle, &ret, 0, 0);
 
     map<wstring, wstring>::iterator it;
-    QHash<QString, QString> _ret;
+    QList<QPair<QString, QString>> _ret;
     for(it=ret.begin();it!=ret.end();it++)
-        _ret.insert(QString::fromStdWString(it->first), QString::fromStdWString(it->second));
+        _ret.append(qMakePair(QString::fromStdWString(it->first), QString::fromStdWString(it->second)));
 
     return _ret;
 }

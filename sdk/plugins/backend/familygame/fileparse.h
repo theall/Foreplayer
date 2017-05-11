@@ -20,6 +20,7 @@
 #define TFILEPARSE_H
 
 #include "abstractparse.h"
+#include "gmewrap.h"
 
 class TFileParse : public TAbstractParse
 {

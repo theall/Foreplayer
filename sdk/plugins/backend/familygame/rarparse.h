@@ -19,7 +19,6 @@
 #ifndef TRARPACKAGE_H
 #define TRARPACKAGE_H
 
-#include <unrar.h>
 #include "fileparse.h"
 
 class TRarParse : public TAbstractParse

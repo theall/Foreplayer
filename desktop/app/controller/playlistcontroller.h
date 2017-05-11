@@ -61,6 +61,7 @@ private slots:
 
     //// Music list
     void slotRequestAddMusicFiles(QStringList files, int pos, QList<int> &newIndexes);
+    void slotRequestSupportSuffixList(QList<QPair<QString, QString>>&);
     void slotRequestDeleteMusicItem(QList<int> indexes);
     void slotRequestRemoveRedundant();
     void slotRequestRemoveErrors();

@@ -89,7 +89,7 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mBtnExit, SIGNAL(clicked()), this, SIGNAL(exitClicked()));
     connect(mBtnPlay, SIGNAL(clicked()), this, SLOT(on_btnPlay_clicked()));
     connect(mBtnPause, SIGNAL(clicked()), this, SLOT(on_btnPause_clicked()));
-    connect(mBtnOpen, SIGNAL(clicked()), this, SLOT(on_btnOpen_clicked()));
+    connect(mBtnOpen, SIGNAL(clicked()), this, SIGNAL(openMusicsClicked()));
     connect(mBtnStop, SIGNAL(clicked()), this, SIGNAL(stopClicked()));
     connect(mBtnNext, SIGNAL(clicked()), this, SIGNAL(nextClicked()));
     connect(mBtnPrev, SIGNAL(clicked()), this, SIGNAL(prevClicked()));
@@ -364,18 +364,6 @@ void TMainWindow::updatePlayEffect()
         mPlayEffect = tr("Stereo");
         mStereo->setText(mPlayEffect);
     }
-}
-
-void TMainWindow::on_btnOpen_clicked()
-{
-    QStringList files = QFileDialog::getOpenFileNames(
-                            this,
-                            tr("Select one or more files to open"),
-                            "/",
-                            tr("Musics (*.mp3 *.wma *.zip)"));
-    if(files.isEmpty())
-        return;
-    emit requestOpenFiles(files);
 }
 
 void TMainWindow::timerEvent(QTimerEvent *event)
