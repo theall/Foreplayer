@@ -105,7 +105,6 @@ void TPopMenuMusiclistItem::display(QPoint pos, int selectionCount)
 void TPopMenuMusiclistItem::slotOnKeyPressed(int key, bool &proceesed)
 {
     QKeySequence ks(key);
-    qDebug() << ks;
     proceesed = false;
     for(QAction *a : actions())
     {

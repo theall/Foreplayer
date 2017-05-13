@@ -109,9 +109,9 @@ int32 spu_start(uint8 *buffer, uint32 length)
 	song_ptr = &buffer[0x80208];
 	cur_event = 0;
 
-	strncpy((char *)&buffer[4], name, 128);
-	strncpy((char *)&buffer[0x44], song, 128);
-	strncpy((char *)&buffer[0x84], company, 128);
+    strncpy(name, (char *)&buffer[4], 128);
+    strncpy(song, (char *)&buffer[0x44], 128);
+    strncpy(company, (char *)&buffer[0x84], 128);
 
 	return AO_SUCCESS;
 }

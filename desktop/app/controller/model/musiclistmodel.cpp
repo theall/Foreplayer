@@ -99,26 +99,22 @@ QVariant TMusiclistModel::data(const QModelIndex &index, int role) const
             return QVariant(align|Qt::AlignVCenter);
         } else if (role==Qt::ToolTipRole) {
             int row = index.row();
-            MusicItem data = mCore->getMusicItem(mPlaylistItem, row);
-            if(!data)
+            MusicItem musicItem = mCore->getMusicItem(mPlaylistItem, row);
+            if(!musicItem)
                 return QVariant();
 
-            return QString(tr("Title: %1\r\n"
-                              "Type: %2\r\n"
-                              "Duration: %3\r\n"
-                              "Artist: %4\r\n"
-                              "Album: %5\r\n"
-                              "Year: %6\r\n"
-                              "Filename: %7\r\n"
-                              "%8") \
-                           .arg(mCore->getMusicItemDisplayName(data))
-                           .arg(mCore->getMusicItemType(data))
-                           .arg(Utils::microSecToTimeStr(mCore->getMusicItemDuration(data)))
-                           .arg(mCore->getMusicItemArtist(data))
-                           .arg(mCore->getMusicItemAlbum(data))
-                           .arg(mCore->getMusicItemYear(data))
-                           .arg(mCore->getMusicItemFileName(data))
-                           .arg(mCore->getMusicItemAdditionalInfo(data)));
+            QStringList sl;
+            sl.append(tr("Title: ") + mCore->getMusicItemDisplayName(musicItem));
+            sl.append(tr("Type: ") + mCore->getMusicItemType(musicItem));
+            sl.append(tr("Duration: ") + Utils::microSecToTimeStr(mCore->getMusicItemDuration(musicItem)));
+            sl.append(tr("Artist: ") + mCore->getMusicItemArtist(musicItem));
+            sl.append(tr("Album: ") + mCore->getMusicItemAlbum(musicItem));
+            sl.append(tr("Year: ") + mCore->getMusicItemYear(musicItem));
+            sl.append(tr("Filename: ") + mCore->getMusicItemFileName(musicItem));
+            QString additionalInfo = mCore->getMusicItemAdditionalInfo(musicItem);
+            if(!additionalInfo.isEmpty())
+                sl.append(additionalInfo);
+            return sl.join("\n");
         }
     }
 

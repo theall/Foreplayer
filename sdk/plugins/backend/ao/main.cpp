@@ -24,7 +24,7 @@
 #define EXPORT __declspec(dllexport)
 
 const wchar_t *szName = L"Audio overload";
-const wchar_t *szManufacture = L"bilge theall";
+const wchar_t *szManufacture = L"Bilge Theall";
 const wchar_t *szContact = L"wazcd_1608@qq.com";
 const wchar_t *szDescription = L"Audio overload plugin.";
 const wchar_t *szCreateDate = L"2017-02-18";
@@ -50,7 +50,7 @@ const SuffixDesc g_typeDesc[] =
     {NULL, NULL}
 };
 
-wchar_t g_SuffixList[256];
+wstring g_SuffixList;
 wstring g_error;
 wstring g_fileContext;
 
@@ -80,19 +80,18 @@ void libCallback(const char *fileName, char **buffer, long *length)
 bool initialize()
 {
     int i = 0;
-    g_SuffixList[0] = '\0';
     while (g_typeDesc[i].suffix) {
-        wcscat(g_SuffixList, g_typeDesc[i].suffix);
-        wcscat(g_SuffixList, L" ");
+        g_SuffixList += L" " + wstring(g_typeDesc[i].suffix);
         i++;
     }
+    g_SuffixList.erase(g_SuffixList.begin());
     return true;
 }
 
 // Verify this plugin can parse specify suffix of file
 const wstring matchSuffixes()
 {
-    return wstring(g_SuffixList);
+    return g_SuffixList;
 }
 
 // Return description of this suffix, for example "mp3" should be "Moving Picture Experts Group Audio Layer III"
@@ -111,15 +110,10 @@ const wstring suffixDescription(const wstring suffix)
 bool parse(const wstring fileName, TMusicInfo* musicInfo)
 {
     wstring suffix = extractSuffix(fileName);
-    int i = 0;
-    while(true)
+    if(!suffix.empty() && (int)g_SuffixList.find(suffix.c_str())<0)
     {
-        if(g_typeDesc[i].suffix==suffix || g_typeDesc[i].suffix==NULL)
-            break;
-        i++;
-    }
-    if(g_typeDesc[i].suffix == NULL)
         return false;
+    }
 
     bool result = false;
     if(suffix==L"zip")
@@ -142,11 +136,20 @@ bool loadTrack(TTrackInfo* trackInfo)
     wstring suffix = extractSuffix(trackInfo->musicFileName);
     if(suffix == L"zip")
     {
+        wstring suffix = extractSuffix(trackInfo->indexName);
+        if(!suffix.empty() && (int)g_SuffixList.find(suffix.c_str())<0)
+        {
+            return false;
+        }
+
         g_fileContext = trackInfo->musicFileName;
         TZipParse zipParser(g_fileContext);
         int fileSize;
         char *buf;
         zipParser.trackData(trackInfo, &buf, &fileSize);
+        if(fileSize < 1)
+            return false;
+
         return ao_load_data(buf, fileSize, libCallback);
     } else {
         g_fileContext = extractPath(trackInfo->musicFileName);

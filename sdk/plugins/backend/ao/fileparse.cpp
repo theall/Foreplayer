@@ -17,6 +17,7 @@
  */
 
 #include "fileparse.h"
+#include "pluginutils.h"
 
 #include <string>
 #include <vector>
@@ -213,7 +214,7 @@ bool getMusicInfo(const wchar_t *file, TTrackInfo *info)
     fseek(fp, 0, SEEK_END);
     int fileSize = ftell(fp);
     int tagOffset = headerSize + header[1] + header[2];
-    if(tagOffset>=fileSize)
+    if(tagOffset<0 || tagOffset>=fileSize)
     {
         fclose(fp);
         return false;
@@ -245,7 +246,7 @@ bool getMusicInfo(char *data, int dataSize, TTrackInfo *info)
 
     int fileSize = dataSize;
     int tagOffset = headerSize + header[1] + header[2];
-    if(tagOffset>=fileSize)
+    if(tagOffset <0 || tagOffset>=fileSize)
         return false;
 
     pBuf += tagOffset;
@@ -270,7 +271,10 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
         return false;
 
     TTrackInfo *trackInfo = new TTrackInfo;
-    if(!getMusicInfo(mFile.c_str(), trackInfo))
+    wstring suffix = extractSuffix(musicInfo->musicFileName);
+    if(suffix==L"spu")
+        trackInfo->trackName = extractBaseName(musicInfo->musicFileName);
+    else if(!getMusicInfo(mFile.c_str(), trackInfo))
         return false;
 
     musicInfo->musicName = trackInfo->trackName;

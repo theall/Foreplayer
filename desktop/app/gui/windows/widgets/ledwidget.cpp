@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "ledwidget.h"
 
 TLedWidget::TLedWidget(QWidget *parent) :
@@ -101,7 +101,7 @@ void TLedWidget::paintEvent(QPaintEvent *event)
     {
         x = width() - totalWidth;
     }
-    else if (mAlignment & Qt::AlignCenter)
+    else if (mAlignment & Qt::AlignHCenter)
     {
         x = (width() - totalWidth) / 2;
     }

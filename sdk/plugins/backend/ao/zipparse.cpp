@@ -121,7 +121,8 @@ void TZipParse::trackData(TTrackInfo *trackInfo, char **buffer, int *size)
     if(!zipFile)
         return;
 
-    int result = unzLocateFile(zipFile, wstring2string(trackInfo->indexName).c_str(), false);
+    string indexName = wstring2string(trackInfo->indexName);
+    int result = unzLocateFile(zipFile, indexName.c_str(), false);
     if(result != UNZ_OK)
     {
         unzClose(zipFile);
@@ -137,7 +138,7 @@ void TZipParse::trackData(TTrackInfo *trackInfo, char **buffer, int *size)
             return;
 
         char *buf = (char*)malloc(fileInfo.uncompressed_size);
-        int readLength = unzReadCurrentFile(zipFile, buf, ZIP_FILE_BUF_SIZE);
+        int readLength = unzReadCurrentFile(zipFile, buf, fileInfo.uncompressed_size);
         if(readLength==UNZ_ERRNO || readLength!=(int)fileInfo.uncompressed_size)
             return;
 

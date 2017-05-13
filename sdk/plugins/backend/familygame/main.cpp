@@ -131,7 +131,7 @@ bool loadTrack(TTrackInfo* trackInfo)
     if(!g_gmePlayer || !trackInfo)
         return false;
 
-    bool error = false;
+    bool success = false;
     wstring fileName = trackInfo->musicFileName;
     wstring suffix = extractSuffix(fileName);
     char *data = NULL;
@@ -140,19 +140,25 @@ bool loadTrack(TTrackInfo* trackInfo)
     {
         // File is in package
         TRarParse rarParse(fileName);
-
         rarParse.trackData(trackInfo, &data, &size);
-        error = g_gmePlayer->loadData(data, size);
+        if(size < 1)
+            return false;
+
+        success = g_gmePlayer->loadData(data, size);
     } else if (suffix==L"zip") {
         TZipParse zipParse(fileName);
         zipParse.trackData(trackInfo, &data, &size);
-        error = g_gmePlayer->loadData(data, size);
+        if(size < 1)
+            return false;
+
+        success = g_gmePlayer->loadData(data, size);
     } else {
-        error = g_gmePlayer->loadFile(fileName.c_str());
+        success = g_gmePlayer->loadFile(fileName.c_str());
     }
-    if(error)
-        error = g_gmePlayer->startTrack(trackInfo->index);
-    return error;
+    if(success)
+        success = g_gmePlayer->startTrack(trackInfo->index);
+
+    return success;
 }
 
 // Close track
@@ -232,7 +238,7 @@ EXPORT void send_cmd(
     case BC_GET_SAMPLE_SIZE:
         break;
     case BC_SEEK:
-        *(bool*)param2 = seek(*(int*)param1);
+        *(bool*)param2 = false;//seek(*(int*)param1);
         break;
     case BC_GET_PLUGIN_INFORMATION:
         pluginInformation((TPluginInfo*)param1);

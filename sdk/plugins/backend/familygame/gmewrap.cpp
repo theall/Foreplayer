@@ -151,12 +151,12 @@ bool TGmeWrap::startTrack( int track )
     return true;
 }
 
-bool TGmeWrap::seek(int mSeconds)
+bool TGmeWrap::seek(int microSeconds)
 {
     if(!mEmulator)
         return false;
 
-    gme_err_t error = gme_seek(mEmulator, mSeconds);
+    gme_err_t error = gme_seek(mEmulator, microSeconds);
     if(error)
         return false;
 

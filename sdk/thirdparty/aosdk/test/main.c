@@ -189,7 +189,7 @@ int main(int argc, const char *argv[])
 		NULL
 	);
 
-    argc = 2;//argparse_parse(&argparse, argc, argv);
+    argparse_parse(&argparse, argc, argv);
 
 	if (list_devices)
 	{
@@ -199,13 +199,13 @@ int main(int argc, const char *argv[])
 	}
 
 	// check if an argument was given
-	if (argc < 1)
+    if (argc < 2)
 	{
 		argparse_usage(&argparse);
 		return -1;
 	}
 
-    file = ao_fopen(argv[1], "rb");
+    file = ao_fopen(argv[0], "rb");
 
 	if (!file)
 	{
@@ -351,9 +351,4 @@ int main(int argc, const char *argv[])
 	}
 	#endif
 	return 1;
-}
-
-// stub for MAME stuff
-int change_pc(int foo)
-{
 }

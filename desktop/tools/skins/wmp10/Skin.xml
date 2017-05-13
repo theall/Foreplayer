@@ -19,7 +19,7 @@
 		<visual position="8, 52, 168, 108" top_color="#ff0080" middle_color="#ffff00" bottom_color="#0080ff" block_color="#ffffff"/>
 		<icon position="6, 6, 22, 22" />
 		<info position="8, 32, 260, 46" color="#ffffff" bkgnd="#366AB3" font="SimSun" font_size="12" />
-		<led position="208, 57, 258, 70" image="number.bmp" align="right" />
+		<led position="198, 57, 258, 70" image="number.bmp" align="right" />
 		<stereo position="214, 76, 258, 88" color="#00c000" bkgnd="#000000" font="SimSun" font_size="12" 	align="right" />
 		<status position="180, 94, 258, 106" color="#a0a0a0" bkgnd="#000000" font="SimSun" font_size="12" align="right" />
 	</player_window>

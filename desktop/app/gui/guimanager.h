@@ -150,6 +150,7 @@ private:
     void centerWindow();
     void moveWindow(TAbstractWindow* window, int left, int top);
     bool loadSkin(TSkin *skin);
+    void saveSkinConfig();
 };
 
 #endif // TGUIMANAGER_H

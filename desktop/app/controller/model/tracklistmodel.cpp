@@ -132,11 +132,14 @@ QVariant TTrackListModel::data(const QModelIndex &index, int role) const
                 return QColor("#3c3c3c");
             }
         } else if (role==Qt::ToolTipRole) {
-            return QString(tr("Index: %1\r\nName: %2\r\nDuration: %3\r\n%4") \
-                           .arg(mCore->getTrackItemIndexName(trackItem)) \
-                           .arg(mCore->getTrackItemName(trackItem)) \
-                           .arg(Utils::microSecToTimeStr(mCore->getTrackItemDuration(trackItem))) \
-                           .arg(mCore->getTrackItemAdditionalInfo(trackItem)));
+            QStringList sl;
+            sl.append(tr("Index: ") + mCore->getTrackItemIndexName(trackItem));
+            sl.append(tr("Name: ") + mCore->getTrackItemName(trackItem));
+            sl.append(tr("Duration: ") + Utils::microSecToTimeStr(mCore->getTrackItemDuration(trackItem)));
+            QString additionalInfo = mCore->getTrackItemAdditionalInfo(trackItem);
+            if(!additionalInfo.isEmpty())
+                sl.append(additionalInfo);
+            return sl.join("\n");
         }
     }
 

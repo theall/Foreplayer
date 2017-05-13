@@ -253,22 +253,22 @@ bool TGuiManager::tryLoadSkins()
 void TGuiManager::open()
 {
     TPreferences *prefs = TPreferences::instance();
-    QByteArray g, s;
-    prefs->windowGeometryState(WT_MAIN, &g, &s);
-    mMainWindow->restoreGeometry(g);
-    mMainWindow->restoreState(s);
+//    QByteArray g, s;
+//    prefs->windowGeometryState(WT_MAIN, &g, &s);
+//    mMainWindow->restoreGeometry(g);
+//    mMainWindow->restoreState(s);
 
-    prefs->windowGeometryState(WT_LYRIC, &g, &s);
-    mLyricWindow->restoreGeometry(g);
-    mLyricWindow->restoreState(s);
+//    prefs->windowGeometryState(WT_LYRIC, &g, &s);
+//    mLyricWindow->restoreGeometry(g);
+//    mLyricWindow->restoreState(s);
 
-    prefs->windowGeometryState(WT_EQUALIZER, &g, &s);
-    mEqualizerWindow->restoreGeometry(g);
-    mEqualizerWindow->restoreState(s);
+//    prefs->windowGeometryState(WT_EQUALIZER, &g, &s);
+//    mEqualizerWindow->restoreGeometry(g);
+//    mEqualizerWindow->restoreState(s);
 
-    prefs->windowGeometryState(WT_PLAYLIST, &g, &s);
-    mPlaylistWindow->restoreGeometry(g);
-    mPlaylistWindow->restoreState(s);
+//    prefs->windowGeometryState(WT_PLAYLIST, &g, &s);
+//    mPlaylistWindow->restoreGeometry(g);
+//    mPlaylistWindow->restoreState(s);
 
     mMainWindow->show();
 
@@ -490,6 +490,7 @@ void TGuiManager::slotRequestExit()
     prefs->setWindowGeometryState(WT_LYRIC, mLyricWindow->saveGeometry(), mLyricWindow->saveState());
     prefs->setWindowGeometryState(WT_EQUALIZER, mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
     prefs->setWindowGeometryState(WT_PLAYLIST, mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
+    saveSkinConfig();
 
     emit requestShutdown();
 
@@ -627,16 +628,7 @@ void TGuiManager::slotOnOpacityChanged(qreal value)
 
 void TGuiManager::slotRequestLoadSkin(int skinIndex)
 {
-    if(!mCurrentSkinFile.isEmpty())
-    {
-        TSkinSetting skinSetting(mCurrentSkinFile);
-        skinSetting.writeMainWindowState(mMainWindow->saveGeometry(), mMainWindow->saveState());
-        skinSetting.writeEqualizerWindowState(mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
-        skinSetting.writeDesktopLyricWindowState(mDesktopLyricWindow->saveGeometry(), mDesktopLyricWindow->saveState());
-        skinSetting.writeLyricWindowState(mLyricWindow->saveGeometry(), mLyricWindow->saveState());
-        skinSetting.writePlaylistWindowState(mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
-        skinSetting.writeBrowserWindowState(mBrowserWindow->saveGeometry(), mBrowserWindow->saveState());
-    }
+    saveSkinConfig();
     TSkin *skin = mSkinManager->skinAt(skinIndex);
     if(skin)
         loadSkin(skin);
@@ -977,4 +969,18 @@ bool TGuiManager::loadSkin(TSkin *skin)
     show();
 
     return true;
+}
+
+void TGuiManager::saveSkinConfig()
+{
+    if(!mCurrentSkinFile.isEmpty())
+    {
+        TSkinSetting skinSetting(mCurrentSkinFile);
+        skinSetting.writeMainWindowState(mMainWindow->saveGeometry(), mMainWindow->saveState());
+        skinSetting.writeEqualizerWindowState(mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
+        skinSetting.writeDesktopLyricWindowState(mDesktopLyricWindow->saveGeometry(), mDesktopLyricWindow->saveState());
+        skinSetting.writeLyricWindowState(mLyricWindow->saveGeometry(), mLyricWindow->saveState());
+        skinSetting.writePlaylistWindowState(mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
+        skinSetting.writeBrowserWindowState(mBrowserWindow->saveGeometry(), mBrowserWindow->saveState());
+    }
 }

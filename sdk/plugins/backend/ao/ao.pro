@@ -12,7 +12,7 @@ CONFIG += c++11
 
 DEFINES += 
 
-LIBS += -LZ:/temp/build-aosdk-Desktop_Qt_5_5_1_MinGW_32bit-Debug/debug -laosdk
+LIBS += -LF:/opensource/foreplayer/dist/lib -laosdk
 LIBS += -lunzip -lz
 
 INCLUDEPATH += ../\

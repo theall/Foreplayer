@@ -23,7 +23,6 @@
 #include <string.h>
 
 #define ZIP_FILE_NAME_SIZE 256
-#define ZIP_FILE_BUF_SIZE 16384
 #define ZIP_FILE_MAX_SIZE 4194304
 
 TZipParse::TZipParse(wstring file) :
@@ -122,11 +121,16 @@ void TZipParse::trackData(TTrackInfo *trackInfo, char **buffer, int *size)
     if(!trackInfo)
         return;
 
+    wstring suffix = extractSuffix(trackInfo->indexName);
+    if(!contains(mSuffixList, suffix))
+        return;
+
     unzFile zipFile = unzOpen(trackInfo->musicFileName.c_str());
     if(!zipFile)
         return;
 
-    int result = unzLocateFile(zipFile, wstring2string(trackInfo->indexName).c_str(), false);
+    string indexName = wstring2string(trackInfo->indexName);
+    int result = unzLocateFile(zipFile, indexName.c_str(), false);
     if(result != UNZ_OK)
     {
         unzClose(zipFile);
@@ -142,7 +146,7 @@ void TZipParse::trackData(TTrackInfo *trackInfo, char **buffer, int *size)
             return;
 
         char *buf = (char*)malloc(fileInfo.uncompressed_size);
-        int readLength = unzReadCurrentFile(zipFile, buf, ZIP_FILE_BUF_SIZE);
+        int readLength = unzReadCurrentFile(zipFile, buf, fileInfo.uncompressed_size);
         if(readLength==UNZ_ERRNO || readLength!=(int)fileInfo.uncompressed_size)
             return;
 

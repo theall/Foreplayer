@@ -26,7 +26,7 @@
 #define EXPORT __declspec(dllexport)
 
 const wchar_t *szName = L"Bass";
-const wchar_t *szManufacture = L"bilge theall";
+const wchar_t *szManufacture = L"Bilge Theall";
 const wchar_t *szContact = L"wazcd_1608@qq.com";
 const wchar_t *szDescription = L"Bass plugin.http://www.un4seen.com/";
 const wchar_t *szCreateDate = L"2017-02-19";

@@ -69,7 +69,7 @@ public:
     list<int> moveMusicItems(TPlaylistItem *playlistItem, list<int> indexes, int pos);
     list<int> insertMusicItems(TPlaylistItem *playlistItem, int pos, TMusicItems musicItems);
     void removeAllMusicItems(TPlaylistItem *playlistItem);
-    void sortMusicItems(TPlaylistItem *playlistItem, SortMethod sm);
+    void sort(TPlaylistItem *playlistItem, SortMethod sm);
 
     /**
      * Track list functions.

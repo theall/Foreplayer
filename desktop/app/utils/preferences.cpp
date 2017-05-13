@@ -150,7 +150,7 @@ TPreferences::TPreferences(QObject *parent):
         mSettings->beginGroup(SEC_OPTION_GENERAL);
         mAutoCorrectDuration = boolValue(SEC_OPTION_AUTO_CORRECT, true);
         mForceCorrectDuration = boolValue(SEC_OPTION_FORCE_CORRECT);
-        mAutoPlay = boolValue(SEC_OPTION_AUTO_PLAY, true);
+        mAutoPlay = boolValue(SEC_OPTION_AUTO_PLAY);
         mMultiInstance = boolValue(SEC_OPTION_MULTI_INSTANCE);
         mDisplayTrayIcon = boolValue(SEC_OPTION_DISPLAY_TRAY_ICON, true);
         mPilotDuration = intValue(SEC_OPTION_PILOT_DURATION, 150000);

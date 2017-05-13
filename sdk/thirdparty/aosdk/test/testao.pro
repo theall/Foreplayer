@@ -65,6 +65,7 @@ SOURCES += \
     ../eng_ssf/scsplfo.c \
     ../ao.c \
     ../corlett.c \
+    ../aosdk.c \
     ../dsnd.c \
     ../m1sdr.c \
     ../mem.c \

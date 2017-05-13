@@ -18,7 +18,7 @@
 		<progress position="19, 68, 209, 79" bar_image="" thumb_image="progress_thumb.bmp" fill_image="progress_fill.bmp"/>
 		<volume position="232, 141, 292, 150" vertical="false" bar_image="" thumb_image="progress_thumb2.bmp" fill_image="progress2.bmp"/>
 		<info position="25, 34, 290, 50" color="#CFEDFB" font="Tahoma" font_size="13" align="left"/>
-		<led position="147, 84, 305, 103" image="number.bmp" align="right"/>
+		<led position="226, 84, 305, 103" image="number.bmp" align="center"/>
 		<stereo position="146, 94, 204, 110" color="#578BA4" font="Tahoma" font_size="13" align="right" />
 		<status position="146, 110, 204, 126" color="#578BA4" font="Tahoma" font_size="13" align="right" />
 		<visual position="32, 93, 141, 126" top_color="#194D5C" middle_color="#194D5C" bottom_color="#194D5C" block_color="#194D5C"/>

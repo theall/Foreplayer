@@ -367,8 +367,8 @@ void FOREPLAYER_API foreplayer_send_cmd(
         *(void**)param1 = g_playlist?g_playlist->currentPlaylistItem():NULL;
         break;
     case CMD_PLAYLIST_ITEM_SORT:
-        if(param1)
-            ((TPlaylistItem*)param1)->sort(*(SortMethod*)param2);
+        if(g_playlist && param1)
+            g_playlist->sort((TPlaylistItem*)param1, *(SortMethod*)param2);
         break;
     case CMD_PLAYLIST_UPDATE_MUSIC_ITEM:
         if(param1)

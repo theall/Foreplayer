@@ -33,6 +33,13 @@
 #define RecordMusicItem TMusicItem *currentItem = playlistItem->musicItem(mMusiclistIndex)
 #define RestoreMusicItem mMusiclistIndex = playlistItem->indexOf(currentItem)
 
+#define RecordPlaylistItem TPlaylistItem *currentItem = NULL;\
+if(mPlaylistIndex>=0 && mPlaylistIndex<(int)mPlaylist.size())\
+    currentItem = mPlaylist.at(mPlaylistIndex)
+
+#define RestorePlaylistItem if(currentItem) \
+    mPlaylistIndex = indexOf(currentItem)
+
 wstring TPlaylistCore::mPluginDir = PLAYLIST_DIR;
 
 TPlaylistCore::TPlaylistCore() :
@@ -102,10 +109,7 @@ int TPlaylistCore::insert(wstring name, int index)
 
     int ret = -1;
     mMutex.lock();
-
-    TPlaylistItem *currentItem = NULL;
-    if(mPlaylistIndex>=0 && mPlaylistIndex<(int)mPlaylist.size())
-        currentItem = mPlaylist.at(mPlaylistIndex);
+    RecordPlaylistItem;
 
     if(index>-1)
     {
@@ -115,10 +119,8 @@ int TPlaylistCore::insert(wstring name, int index)
         ret = mPlaylist.size();
         mPlaylist.push_back(playlistItem);
     }
+    RestorePlaylistItem;
     mMutex.unlock();
-
-    if(currentItem)
-        mPlaylistIndex = indexOf(currentItem);
 
     return ret;
 }
@@ -129,12 +131,11 @@ bool TPlaylistCore::remove(int index)
         return false;
 
     mMutex.lock();
-    TPlaylistItem *currentItem = mPlaylist.at(mPlaylistIndex);
+    RecordPlaylistItem;
     TPlaylistItem *item = mPlaylist.at(index);
     mPlaylist.erase(mPlaylist.begin()+index);
+    RestorePlaylistItem;
     mMutex.unlock();
-
-    mPlaylistIndex = indexOf(currentItem);
 
     delete item;    
     return true;
@@ -152,7 +153,7 @@ void TPlaylistCore::rename(int index, wstring newName)
 void TPlaylistCore::sort(SortMethod mode)
 {
     mMutex.lock();
-    TPlaylistItem *currentItem = mPlaylist.at(mPlaylistIndex);
+    RecordPlaylistItem;
     if(mode==SM_TITLE_ASC)
         std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
             return lower(a->name()) > lower(b->name());
@@ -161,9 +162,8 @@ void TPlaylistCore::sort(SortMethod mode)
         std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
             return lower(a->name()) < lower(b->name());
         });
+    RestorePlaylistItem;
     mMutex.unlock();
-
-    mPlaylistIndex = indexOf(currentItem);
 }
 
 int TPlaylistCore::indexOf(TPlaylistItem *item)
@@ -330,7 +330,7 @@ void TPlaylistCore::removeAllMusicItems(TPlaylistItem *playlistItem)
     }
 }
 
-void TPlaylistCore::sortMusicItems(TPlaylistItem *playlistItem, SortMethod sm)
+void TPlaylistCore::sort(TPlaylistItem *playlistItem, SortMethod sm)
 {
     if(playlistItem)
     {
@@ -355,6 +355,7 @@ TMusicItem *TPlaylistCore::parse(wstring file)
     TMusicInfo *musicInfo = new TMusicInfo;
     wstring fileBaseName = extractBaseName(file);
     musicInfo->musicName = fileBaseName;
+    musicInfo->musicFileName = file;
     musicItem->setOriginalName(fileBaseName);
     musicItem->setDisplayName(fileBaseName);
     musicItem->setFileName(file);
