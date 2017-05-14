@@ -65,6 +65,15 @@ TMainMenu::~TMainMenu()
 
 }
 
+void TMainMenu::loadSettings()
+{
+    if(mTransparentMenu)
+        mTransparentMenu->loadSettings();
+
+    if(mPlaymodeMenu)
+        mPlaymodeMenu->loadSettings();
+}
+
 TPlayControlMenu *TMainMenu::playControlMenu()
 {
     return mPlayingMenu;

@@ -31,7 +31,7 @@
 const wchar_t *szName = L"Arcade";
 const wchar_t *szManufacture = L"Bilge Theall";
 const wchar_t *szContact = L"wazcd_1608@qq.com";
-const wchar_t *szDescription = L"This is the first backend plugin for foreplayer.";
+const wchar_t *szDescription = L"Plugin port to m1";
 const wchar_t *szCreateDate = L"2016-10-11";
 
 const char *szM1lib = "m1.dll";

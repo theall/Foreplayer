@@ -32,12 +32,12 @@ enum TWindowType
 
 enum PlayMode
 {
-    MANUAL,
-    RECYCLE_TRACK,
-    RECYCLE_TRACK_LIST,
-    RECYCLE_PLAY_LIST,
-    RECYCLE_ALL,
-    RANDOM
+    PM_MANUAL,
+    PM_RECYCLE_TRACK,
+    PM_RECYCLE_TRACK_LIST,
+    PM_RECYCLE_PLAY_LIST,
+    PM_RECYCLE_ALL,
+    PM_RANDOM
 };
 
 class TPreferences : public QObject

@@ -27,7 +27,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="leMusicFile"/>
+      <widget class="QLineEdit" name="leMusicFile">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -133,7 +137,11 @@
        </widget>
       </item>
       <item row="5" column="1">
-       <widget class="QPlainTextEdit" name="txtOther"/>
+       <widget class="QPlainTextEdit" name="txtOther">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>

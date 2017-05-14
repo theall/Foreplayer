@@ -34,6 +34,7 @@ public:
     TMainMenu(QWidget *parent = 0);
     ~TMainMenu();
 
+    void loadSettings();
     TPlayControlMenu *playControlMenu();
     TVolumeControlMenu *volumeControlMenu();
     TPlaymodeMenu *playmodeMenu();

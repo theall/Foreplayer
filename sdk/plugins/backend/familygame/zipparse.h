@@ -19,7 +19,7 @@
 #ifndef TZIPPARSE_H
 #define TZIPPARSE_H
 
-#include <unzip.h>
+#include <unzip/unzip.h>
 
 #include <string>
 #include <vector>

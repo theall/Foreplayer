@@ -97,7 +97,7 @@ void TPlayerController::slotRequestPlay(int pIndex, int mIndex, int tIndex)
 
 void TPlayerController::slotPlayButtonClicked()
 {
-    if(!mCore)
+    if(!mCore || mCore->isPlaying())
         return;
 
     // Try resume
@@ -287,7 +287,7 @@ void TPlayerController::updateWindowTitles()
 
 void TPlayerController::decidePlayNext()
 {
-    if(TPreferences::instance()->playMode()==MANUAL)
+    if(TPreferences::instance()->playMode()==PM_MANUAL)
     {
         slotStopButtonClicked();
     } else {
@@ -353,7 +353,7 @@ bool TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
     if(validIndexList.size() < 1)
         return false;
 
-    if(pm == RANDOM)
+    if(pm == PM_RANDOM)
     {
         QList<int> pIndexList = validIndexList.keys();
         int playlistCount = pIndexList.size();
@@ -404,7 +404,7 @@ bool TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
                     mi = musicCountMap.firstKey();
                     ti = 0;
                 } else {
-                    if(pm != RECYCLE_TRACK)
+                    if(pm != PM_RECYCLE_TRACK)
                     {
                         int trackCount = musicCountMapIt.value();
                         ti++;
@@ -412,28 +412,30 @@ bool TPlayerController::getNextPlayindex(int *pIndex, int *mIndex, int *tIndex)
                         if(ti >= trackCount)
                         {
                             ti = 0;
-                            if (pm==RECYCLE_PLAY_LIST || pm==RECYCLE_ALL) {
+                            if(pm==PM_RECYCLE_PLAY_LIST || pm==PM_RECYCLE_ALL)
+                            {
                                 musicCountMapIt++;
-                                if(musicCountMapIt != musicCountMap.end())
+                                if(musicCountMapIt == musicCountMap.end())
                                 {
-                                    mi = musicCountMapIt.key();
-                                } else {
-                                    playlistMapIt++;
-                                    if(playlistMapIt==validIndexList.end())
+                                    if(pm==PM_RECYCLE_ALL)
                                     {
-                                        playlistMapIt = validIndexList.begin();
-                                        mi = playlistMapIt.value().firstKey();
-                                        ti = 0;
+                                        playlistMapIt++;
+                                        if(playlistMapIt==validIndexList.end())
+                                        {
+                                            playlistMapIt = validIndexList.begin();
+                                            musicCountMapIt = playlistMapIt.value().begin();
+                                        }
+                                        pi = playlistMapIt.key();
+                                    } else if(pm==PM_RECYCLE_PLAY_LIST) {
+                                        musicCountMapIt = musicCountMap.begin();
                                     }
-
-                                    pi = playlistMapIt.key();
                                 }
+                                mi = musicCountMapIt.key();
                             }
                         }
                     }
                 }
             }
-
         }
     }
 

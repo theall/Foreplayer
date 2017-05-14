@@ -46,18 +46,22 @@ static void MessageBoxFormatMessage (LPCTSTR szMessage)
     {
       if (SUCCEEDED (StringCbPrintf (m, sizeof (m), TEXT ("%s: %s"),
                                      szMessage, (LPTSTR) lpBuffer)))
-        MessageBox (NULL, m, szAppName, MB_OK);
+        //MessageBox (NULL, m, szAppName, MB_OK);
+        printf(m);
       else
-        MessageBox (NULL, (LPTSTR) lpBuffer, szAppName, MB_OK);
+        //MessageBox (NULL, (LPTSTR) lpBuffer, szAppName, MB_OK);
+        printf((LPTSTR) lpBuffer);
       LocalFree (lpBuffer);
     }
   else
     {
       if (SUCCEEDED (StringCbPrintf (m, sizeof (m), TEXT ("%s: failed"),
                                      szMessage)))
-        MessageBox (NULL, m, szAppName, MB_OK);
+          printf(m);
+        //MessageBox (NULL, m, szAppName, MB_OK);
       else
-        MessageBox (NULL, TEXT ("failed"), szAppName, MB_OK);
+          printf((LPTSTR) lpBuffer);
+        //MessageBox (NULL, TEXT ("failed"), szAppName, MB_OK);
     }
 }
 
@@ -71,7 +75,7 @@ int WINAPI _tWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
   if (!CreateProcess(NULL, lpCmdLine, NULL, NULL, FALSE,
                      CREATE_NO_WINDOW, NULL, NULL, &si, &pi))
     {
-      MessageBoxFormatMessage (TEXT ("CreateProcess"));
+      //MessageBoxFormatMessage (TEXT ("CreateProcess"));
       return -1;
     }
 
@@ -82,7 +86,7 @@ int WINAPI _tWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
   switch (result)
     {
     case WAIT_ABANDONED:
-      MessageBox (NULL, TEXT ("WAIT_ABANDONED"), szAppName, MB_OK);
+      //MessageBox (NULL, TEXT ("WAIT_ABANDONED"), szAppName, MB_OK);
       break;
     case WAIT_OBJECT_0:
       {
@@ -98,10 +102,10 @@ int WINAPI _tWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
       }
       break;
     case WAIT_TIMEOUT:
-      MessageBox (NULL, TEXT ("WAIT_TIMEOUT"), szAppName, MB_OK);
+      //MessageBox (NULL, TEXT ("WAIT_TIMEOUT"), szAppName, MB_OK);
       break;
     case WAIT_FAILED:
-      MessageBoxFormatMessage (TEXT ("WaitForSingleObject WAIT_FAILED"));
+      //MessageBoxFormatMessage (TEXT ("WaitForSingleObject WAIT_FAILED"));
       break;
     default:
       {
@@ -111,10 +115,12 @@ int WINAPI _tWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance,
                                        TEXT ("WaitForSingleObject: "
                                              "unknown return value 0x%08x")
                                        , result)))
-          MessageBox (NULL, m, szAppName, MB_OK);
+          //MessageBox (NULL, m, szAppName, MB_OK);
+          printf(m);
         else
-          MessageBox (NULL, TEXT ("WaitForSingleObject: failed"),
-                      szAppName, MB_OK);
+          printf(TEXT ("WaitForSingleObject: failed"));
+          //MessageBox (NULL, TEXT ("WaitForSingleObject: failed"),
+          //            szAppName, MB_OK);
       }
       break;
     }

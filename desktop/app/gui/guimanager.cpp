@@ -275,8 +275,7 @@ void TGuiManager::open()
     // Load settings
     //mBrowserWindow->show();
 
-    mMainMenu->transparentMenu()->loadSettings();
-    mMainMenu->playmodeMenu()->loadSettings();
+    mMainMenu->loadSettings();
 
     if(!tryLoadSkins())
         QMessageBox::critical(

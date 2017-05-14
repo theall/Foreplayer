@@ -49,6 +49,7 @@ TPlaymodeMenu::TPlaymodeMenu(QWidget *parent) :
     addAction(mActionRecycleTrack);
     addAction(mActionRecycleTracklist);
     addAction(mActionRecyclePlaylist);
+    addAction(mActionRecycleAll);
     addSeparator();
     addAction(mActionRandom);
 
@@ -57,19 +58,19 @@ TPlaymodeMenu::TPlaymodeMenu(QWidget *parent) :
 
 TPlaymodeMenu::~TPlaymodeMenu()
 {
-    PlayMode pm = MANUAL;
+    PlayMode pm = PM_MANUAL;
     if(mActionRandom->isChecked())
-        pm = RANDOM;
+        pm = PM_RANDOM;
     else if(mActionRecycleAll->isChecked())
-        pm = RECYCLE_ALL;
+        pm = PM_RECYCLE_ALL;
     else if(mActionRecycleTrack->isChecked())
-        pm = RECYCLE_TRACK;
+        pm = PM_RECYCLE_TRACK;
     else if(mActionRecycleTracklist->isChecked())
-        pm = RECYCLE_TRACK_LIST;
+        pm = PM_RECYCLE_TRACK_LIST;
     else if(mActionRecycleTracklist->isChecked())
-        pm = RECYCLE_PLAY_LIST;
+        pm = PM_RECYCLE_PLAY_LIST;
     else if(mActionManual->isChecked())
-        pm = MANUAL;
+        pm = PM_MANUAL;
 
     TPreferences::instance()->setPlayMode(pm);
 }
@@ -77,15 +78,15 @@ TPlaymodeMenu::~TPlaymodeMenu()
 void TPlaymodeMenu::loadSettings()
 {
     PlayMode pm = TPreferences::instance()->playMode();
-    if(pm==RANDOM)
+    if(pm==PM_RANDOM)
         mActionRandom->trigger();
-    else if(pm==RECYCLE_ALL)
+    else if(pm==PM_RECYCLE_ALL)
         mActionRecycleAll->trigger();
-    else if(pm==RECYCLE_TRACK_LIST)
+    else if(pm==PM_RECYCLE_TRACK_LIST)
         mActionRecycleTracklist->trigger();
-    else if(pm==RECYCLE_TRACK)
+    else if(pm==PM_RECYCLE_TRACK)
         mActionRecycleTrack->trigger();
-    else if(pm==RECYCLE_PLAY_LIST)
+    else if(pm==PM_RECYCLE_PLAY_LIST)
         mActionRecyclePlaylist->trigger();
     else
         mActionManual->trigger();
@@ -113,19 +114,19 @@ void TPlaymodeMenu::slotActionTriggered(bool checked)
 
     mLastActivedAction = action;
 
-    PlayMode pm = MANUAL;
+    PlayMode pm = PM_MANUAL;
     if(action==mActionRecycleTrack) {
-        pm = RECYCLE_TRACK;
+        pm = PM_RECYCLE_TRACK;
     } else if(action==mActionRecycleTracklist) {
-        pm = RECYCLE_TRACK_LIST;
+        pm = PM_RECYCLE_TRACK_LIST;
     } else if(action==mActionRecyclePlaylist) {
-        pm = RECYCLE_PLAY_LIST;
+        pm = PM_RECYCLE_PLAY_LIST;
     } else if(action==mActionRecycleAll) {
-        pm = RECYCLE_ALL;
+        pm = PM_RECYCLE_ALL;
     } else if(action==mActionRandom) {
-        pm = RANDOM;
+        pm = PM_RANDOM;
     } else if(action==mActionManual) {
-        pm = MANUAL;
+        pm = PM_MANUAL;
     }
 
     TPreferences::instance()->setPlayMode(pm);

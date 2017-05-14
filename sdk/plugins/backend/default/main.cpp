@@ -96,24 +96,23 @@ bool parse(const wstring file, TMusicInfo* musicInfo)
     if(!handle)
         return false;
 
-    TAG_ID3 *id3 = (TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3); // get the ID3 tags
     TTrackInfo *trackInfo = new TTrackInfo;
+    TAG_ID3 *id3 = (TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3); // get the ID3 tags
 
-    if(!id3)
+//    if(!id3)
+//        id3 = (TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3V2);
+
+    if(id3)
     {
-        id3 = (TAG_ID3*)BASS_ChannelGetTags(handle, BASS_TAG_ID3);
-        if(id3)
-        {
-            trackInfo->trackName = char2wstring(id3->title);
-            trackInfo->artist = char2wstring(id3->artist);
-            trackInfo->game = char2wstring(id3->album);
-            trackInfo->year = atoi(id3->year);
-            trackInfo->artist = char2wstring(id3->artist);
-            trackInfo->additionalInfo = char2wstring(id3->comment);
-        }
+        trackInfo->trackName = char2wstring(id3->title);
+        trackInfo->artist = char2wstring(id3->artist);
+        trackInfo->game = char2wstring(id3->album);
+        trackInfo->year = atoi(id3->year);
+        trackInfo->artist = char2wstring(id3->artist);
+        trackInfo->additionalInfo = char2wstring(id3->comment);
     }
 
-    if(trackInfo->trackName==L"")
+    if(trackInfo->trackName==L"" || trackInfo->trackName==L"unknown")
         trackInfo->trackName = extractBaseName(file);
 
     DWORD pos = BASS_ChannelGetLength(handle, BASS_POS_BYTE);

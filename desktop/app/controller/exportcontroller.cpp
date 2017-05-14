@@ -208,9 +208,16 @@ void TExportController::slotTimerEvent()
                 exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
                 if(exportParam->serverTick-exportParam->clientTick > 3000)
                 {
-                    // Client process has no responce, restart it
-                    exportParam->overwrite = true;
-                    exportParam->state = ES_READY;
+                    if(exportParam->state == ES_STARTING)
+                    {
+                        // Starting over time
+                        Utils::cpy2wchar(exportParam->errorString, tr("Process can not be started"));
+                        exportParam->state = ES_ERROR;
+                    } else {
+                        // Client process has no responce, restart it
+                        //exportParam->overwrite = true;
+                        //exportParam->state = ES_READY;
+                    }
                 } else {
                     runningCount++;
                 }
@@ -234,11 +241,12 @@ void TExportController::slotTimerEvent()
                     {
                         Utils::cpy2wchar(exportParam->errorString, tr("Failed to start process with command line, %1").arg(runcmd));
                         exportParam->state = ES_ERROR;
+                    } else {
+                        exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
+                        exportParam->clientTick = exportParam->serverTick;
+                        exportParam->state = ES_STARTING;
                     }
                     qDebug() << commandLine+m->key();
-                    exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
-                    exportParam->clientTick = exportParam->serverTick;
-                    exportParam->state = ES_STARTING;
                     newSpawn--;
                     if(newSpawn <= 0)
                         break;

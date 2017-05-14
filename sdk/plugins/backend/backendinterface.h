@@ -57,12 +57,13 @@ struct TTrackInfo
     int sampleRate;
     int channels;
     TTrackInfo() {
-        index = 0;
+        index = -1;
         fileSize = 0;
         duration = 0;
         channels = 2;
         sampleRate = 44100;
         trackName = L"unknown";
+        year = 0;
     }
 };
 

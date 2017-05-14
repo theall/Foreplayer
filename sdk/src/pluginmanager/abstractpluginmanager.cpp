@@ -22,6 +22,13 @@
 
 #include "../cplusutils.h"
 
+#ifdef _WIN32
+    #define PLUGIN_NAME L"/plugin.dll";
+#elif defined(_UNIX)
+    #define PLUGIN_NAME L"/plugin.so";
+#endif
+#define DEFAULT_PLUGIN_DIR_NAME L"/default"
+
 vector<wstring> getPathList(wstring basePath)
 {
     _WDIR *dir;
@@ -76,19 +83,16 @@ int TAbstractPluginManager::findPlugins(wstring path)
 {
     wstring abPath = getCurrentDir();
     abPath += L"/" + mPluginDir + L"/" + path;
+    wstring defaultPluginPath = abPath + DEFAULT_PLUGIN_DIR_NAME + PLUGIN_NAME;
     vector<wstring> pathList = getPathList(abPath);
     for(wstring filePath : pathList)
     {
-#ifdef _WIN32
-        filePath += L"/plugin.dll";
-#elif defined(_UNIX)
-        filePath += L"/plugin.so";
-#endif
+        filePath += PLUGIN_NAME;
         TBackendPlugin* plugin = loadPlugin(filePath);
         if(plugin)
         {
             mPlugins.push_back(plugin);
-            if(lower(extractBaseName(filePath))==L"default")
+            if(defaultPluginPath == filePath)
             {
                 mDefaultPlugin = plugin;
             }

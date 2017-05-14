@@ -27,7 +27,7 @@
 wstring char2wstring(const char *src)
 {
     string s = src;
-    return wstring(s.begin(), s.end());
+    return string2wstring(s);
 }
 
 wstring string2wstring(string s)
