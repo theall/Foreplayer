@@ -22,6 +22,34 @@ cmake_minimum_required(VERSION 2.6)
 # project name: m1lib
 project(m1lib)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
+set(CMAKE_CUSTOME_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../include)
+set(CMAKE_CUSTOME_LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../lib)
+
+if(${CMAKE_BUILD_TYPE} MATCHES "Debug")
+    add_definitions(-DM1_DEBUG)
+else()
+    add_definitions(-DM1_RELEASE)
+endif()
+
+find_package(expat REQUIRED)
+find_package(SDL2 REQUIRED)
+find_file(UNZIP_HEADER unzip.h HINTS ${CMAKE_CUSTOME_INCLUDE_PATH}/unzip)
+find_library(UNZIP_LIB unzip HINTS ${CMAKE_CUSTOME_LIB_PATH})
+
+include_directories(
+    src
+    src/libs/crypt
+    src/libs/expat
+    src/emulator
+    src/emulator/cpu
+    src/emulator/sound
+    ../../include
+    ${EXPAT_INCLUDE_DIR}
+    ${SDL2_INCLUDE_DIR}
+    ${CMAKE_CUSTOME_INCLUDE_PATH}
+)
+
 add_definitions(
     -DSOUND_OUTPUT=1
     -DHAS_YM2612=1
@@ -91,25 +119,9 @@ add_definitions(
     -DUNIX=1
     -DX8664=0
     -DPS2=0
-    #-DINLINE=$$quote(\"static __inline__\")
-    -DPATHSEP
+    -DINLINE=static\ __inline__
 )
 
-if(${CMAKE_BUILD_TYPE} MATCHES "Debug")
-    add_definitions(-DM1_DEBUG)
-else()
-    add_definitions(-DM1_RELEASE)
-endif()
-
-include_directories(
-    src
-    src/libs/crypt
-    src/libs/expat
-    src/emulator
-    src/emulator/cpu
-    src/emulator/sound
-)
-    
 # set source files
 set(m1lib 
     src/dsnd.cpp
@@ -279,18 +291,18 @@ set(m1lib
     src/emulator/boards/brd_wmscvsd.cpp
     src/emulator/boards/brd_xexex.cpp
     src/emulator/boards/brd_yunsun.cpp
-    src/emulator/boards/gen_inc_gems.cpp
-    src/emulator/boards/gen_inc_smpsz80.cpp
-    src/emulator/boards/gen_inc_soundimages.cpp
+    #src/emulator/boards/gen_inc_gems.cpp
+    #src/emulator/boards/gen_inc_smpsz80.cpp
+    #src/emulator/boards/gen_inc_soundimages.cpp
     src/emulator/cpu/2100dasm.c
-    src/emulator/cpu/2100ops.c
-    src/emulator/cpu/6309ops.c
-    src/emulator/cpu/6309tbl.c
-    src/emulator/cpu/6800ops.c
-    src/emulator/cpu/6800tbl.c
-    src/emulator/cpu/6809ops.c
-    src/emulator/cpu/6809tbl.c
-    src/emulator/cpu/32031ops.c
+    #src/emulator/cpu/2100ops.c
+    #src/emulator/cpu/6309ops.c
+    #src/emulator/cpu/6309tbl.c
+    #src/emulator/cpu/6800ops.c
+    #src/emulator/cpu/6800tbl.c
+    #src/emulator/cpu/6809ops.c
+    #src/emulator/cpu/6809tbl.c
+    #src/emulator/cpu/32031ops.c
     src/emulator/cpu/adsp2100.c
     src/emulator/cpu/h8periph.c
     src/emulator/cpu/h6280.c
@@ -299,7 +311,7 @@ set(m1lib
     src/emulator/cpu/i8039.c
     src/emulator/cpu/i8085.c
     src/emulator/cpu/m68kcpu.c
-    src/emulator/cpu/m68kfpu.c
+    #src/emulator/cpu/m68kfpu.c
     src/emulator/cpu/m68kops.c
     src/emulator/cpu/m6502.c
     src/emulator/cpu/m6800.c
@@ -311,9 +323,9 @@ set(m1lib
     src/emulator/cpu/m37710o3.c
     src/emulator/cpu/nec.c
     src/emulator/cpu/pic16c5x.c
-    src/emulator/cpu/t65c02.c
-    src/emulator/cpu/t6502.c
-    src/emulator/cpu/tblh6280.c
+    #src/emulator/cpu/t65c02.c
+    #src/emulator/cpu/t6502.c
+    #src/emulator/cpu/tblh6280.c
     src/emulator/cpu/tms32010.c
     src/emulator/cpu/tms32031.c
     src/emulator/cpu/z80.c
@@ -356,7 +368,7 @@ set(m1lib
     src/emulator/sound/samples.c
     src/emulator/sound/scsp.c
     src/emulator/sound/scspdsp.c
-    src/emulator/sound/scsplfo.c
+    #src/emulator/sound/scsplfo.c
     src/emulator/sound/segapcm.c
     src/emulator/sound/sn76496.c
     src/emulator/sound/streams.c
@@ -387,16 +399,13 @@ set(m1lib
     src/libs/crypt/sha1.c
     src/wavelog.cpp
     src/moddir.cpp
-    src/emulator/boards/brd_pgm.cpp
 )
 
-find_file(SDL2_INCLUDE_DIR NAME SDL.h HINTS SDL2)
-find_library(SDL2_LIBRARY NAME SDL2)
-find_file(EXPAT_INCLUDE_DIR NAME expat.h)
-find_library(EXPAT_LIBRARY NAME expat)
-find_file(UNZIP_INCLUDE_DIR NAME unzip.h)
-find_library(UNZIP_LIBRARY NAME unzip)
-
 # set make to a static library
-add_library(m1lib SHARED ${m1lib})
-target_link_libraries(m1lib sdl2)
+add_library(m1 SHARED ${m1lib})
+target_link_libraries(m1 -LSDL2_LIBRARY -lSDL2 -LEXPAT_LIBRARY -lexpat -L${CMAKE_CUSTOME_LIB_PATH} -lunzip -lz)
+
+install(FILES ${CMAKE_SOURCE_DIR}/src/m1ui.h DESTINATION include)
+install(TARGETS m1
+        RUNTIME DESTINATION bin
+        ARCHIVE DESTINATION lib)

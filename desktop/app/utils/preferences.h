@@ -157,7 +157,7 @@ private:
     int mExportProcesses;
     QList<int> mEqFactors;
     float mOpacity;
-    PlayMode mPlayMode;
+    int mPlayMode;
     bool mAutoClearExportMissions;
 
     void setValue(QString section, QVariant value);

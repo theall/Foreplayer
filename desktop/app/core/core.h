@@ -52,6 +52,9 @@ public:
     static TCore *instance();
     static void deleteInstance();
 
+    bool isInitialized();
+    QString getErrorString();
+
     // Return playlist count
     int playlistCount();
     QStringList playlists();
@@ -160,6 +163,8 @@ public:
 private:
     QLibrary *mLibrary;
     FOREPLAYER_SEND_CMD mSendCmd;
+    bool mInitialized;
+    QString mErrorString;
 
     static TCore *mInstance;
 };

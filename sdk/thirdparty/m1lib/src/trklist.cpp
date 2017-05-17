@@ -14,7 +14,7 @@
 #include "trklist.h"
 #include "m1ui.h"
 
-#include "expat.h"
+#include <expat.h>
 
 // language of trick list
 char *lang[M1_LANG_MAX] =

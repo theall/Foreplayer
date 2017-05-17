@@ -21,6 +21,7 @@ cmake_minimum_required(VERSION 2.6)
 
 # project name: unrar
 project(unrar)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 
 add_definitions(-DRARDLL)
 
@@ -71,3 +72,8 @@ set(unrar
 
 # set make to a static library
 add_library(unrar STATIC ${unrar})
+
+install(FILES ${CMAKE_SOURCE_DIR}/include/unrar.h DESTINATION include)
+install(TARGETS unrar
+        ARCHIVE DESTINATION lib)
+        

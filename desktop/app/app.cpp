@@ -88,17 +88,15 @@ int TApp::start()
 {
     TMainController controller;
     TGuiManager gui(&controller);
-    TCore *core=NULL;
-    try
-    {
-        core = new TCore;
-    } catch(QString s) {
-        core = NULL;
-        gui.mainWindow()->setTitles(s);
-    }
+    TCore *core= new TCore;
+    if(!core->isInitialized())
+        gui.mainWindow()->setTitles(core->getErrorString());
 
-    if(!core || !controller.joint(&gui, core))
+    if(!controller.joint(&gui, core))
+    {
+        delete core;
         return 0;
+    }
 
 #ifndef QT_DEBUG
     if(!mCheckThread)

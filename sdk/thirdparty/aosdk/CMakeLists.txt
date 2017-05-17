@@ -22,7 +22,7 @@ cmake_minimum_required(VERSION 2.6)
 
 # project name: aosdk
 project(aosdk)
-
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 add_definitions(-DLSB_FIRST=1 -DLSB_FIRST -DPATH_MAX=1024 -DHAS_PSXCPU)
 
 include_directories(.)
@@ -79,3 +79,7 @@ find_package(zlib)
 # set make to a SHARED library
 add_library(aosdk SHARED ${src})
 target_link_libraries(aosdk z sdl2)
+
+install(FILES ${CMAKE_SOURCE_DIR}/aosdk.h DESTINATION include)
+install(TARGETS aosdk
+        ARCHIVE DESTINATION lib)

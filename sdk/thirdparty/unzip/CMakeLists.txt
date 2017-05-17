@@ -17,8 +17,11 @@
 #    misrepresented as being the original software.
 # 3. This notice may not be removed or altered from any source distribution.
 #
+cmake_minimum_required (VERSION 2.6) 
 # project name: unzip
 project(unzip)
+
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 
 # set source files
 set(unzip unzip.c unzip.h)
@@ -26,5 +29,6 @@ set(unzip unzip.c unzip.h)
 # set make to a static library
 add_library(unzip STATIC ${unzip})
 
-install(FILES unzip.h ../include)
-install(TARGETS unzip ../lib)
+install(FILES ${CMAKE_SOURCE_DIR}/unzip.h DESTINATION include/unzip)
+install(TARGETS unzip
+        ARCHIVE DESTINATION lib)

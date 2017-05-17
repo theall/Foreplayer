@@ -28,6 +28,7 @@ TCore *TCore::mInstance = NULL;
 TCore::TCore(bool exportMode) :
     mLibrary(NULL)
   , mSendCmd(NULL)
+  , mInitialized(false)
 {
     QDir libDir(qApp->applicationDirPath());
     QString libFilePath = libDir.absoluteFilePath(FOREPLAYER_LIB_NAME);
@@ -36,14 +37,17 @@ TCore::TCore(bool exportMode) :
     {
         mSendCmd = (FOREPLAYER_SEND_CMD)mLibrary->resolve(FOREPLAYER_SEND_CMD_NAME);
         if(!mSendCmd)
-            throw tr("Failed to resolve proc %1 in library %2.").arg(FOREPLAYER_SEND_CMD_NAME).arg(FOREPLAYER_LIB_NAME);
+        {
+            mErrorString = tr("Failed to resolve proc %1 in library %2.").arg(FOREPLAYER_SEND_CMD_NAME).arg(FOREPLAYER_LIB_NAME);
+            return;
+        }
     } else {
-        throw tr("Failed to load library %1.").arg(FOREPLAYER_LIB_NAME);
+        mErrorString = tr("Failed to load library %1.").arg(FOREPLAYER_LIB_NAME);
+        return;
     }
-    bool initialized = false;
-    mSendCmd(CMD_OPEN, &exportMode, &initialized, 0, 0);
-    if(!initialized)
-        throw tr("Failed to initialize sdk %1.").arg(FOREPLAYER_LIB_NAME);
+    mSendCmd(CMD_OPEN, &exportMode, &mInitialized, 0, 0);
+    if(!mInitialized)
+        mErrorString = tr("Failed to initialize sdk %1.").arg(FOREPLAYER_LIB_NAME);
 }
 
 TCore::~TCore()
@@ -75,6 +79,16 @@ void TCore::deleteInstance()
         delete mInstance;
         mInstance = NULL;
     }
+}
+
+bool TCore::isInitialized()
+{
+    return mInitialized;
+}
+
+QString TCore::getErrorString()
+{
+    return mErrorString;
 }
 
 int TCore::playlistCount()

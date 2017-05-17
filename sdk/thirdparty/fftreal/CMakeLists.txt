@@ -23,6 +23,7 @@ cmake_minimum_required(VERSION 2.6)
 # project name: fftreal
 project(fftreal)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 add_definitions(-DFFTREAL_LIBRARY)
 
 # set source files
@@ -32,3 +33,8 @@ set(src
 
 # set make to a static library
 add_library(fftreal STATIC ${src})
+
+install(FILES ${CMAKE_SOURCE_DIR}/fftreal_wrapper.h DESTINATION include/fftreal)
+install(TARGETS fftreal
+        ARCHIVE DESTINATION lib)
+        

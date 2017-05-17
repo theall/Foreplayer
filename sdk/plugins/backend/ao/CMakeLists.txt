@@ -28,14 +28,12 @@ include_directories(../../../thirdparty/aosdk)
 include_directories(../../pluginutils)
 include_directories(../)
 
+add_subdirectory(../../../thirdparty/unzip)
+add_subdirectory(../../../thirdparty/aosdk)
 # set source files
 set(aosdkplugin 
-    abstractparse.cpp
-    fileparse.cpp
-    main.cpp
-    zipparse.cpp
-    ../../pluginutils/pluginutils.cpp
-    ../../../thirdparty/unzip/unzip.c
+    *.*
+    ../../pluginutils/*.*
 )
 
 # set make to a shared library

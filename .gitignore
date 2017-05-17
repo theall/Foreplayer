@@ -4,3 +4,6 @@ ui_*.h
 thirdparty/m1lib/dist/
 dist/
 *.qm
+sdk/include/
+sdk/lib/
+sdk/bin/

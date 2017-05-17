@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../)
+
 # List of source files required by libgme and any emulators
 # This is not 100% accurate (Fir_Resampler for instance) but
 # you'll be OK.
@@ -81,9 +83,10 @@ add_library(gme SHARED ${libgme_SRCS})
 #    PROPERTIES VERSION ${GME_VERSION}
 #               SOVERSION 0)
 
-install(TARGETS gme LIBRARY DESTINATION lib${LIB_SUFFIX}
-                    RUNTIME DESTINATION bin  # DLL platforms
-                    ARCHIVE DESTINATION lib) # DLL platforms
+install(TARGETS gme 
+    LIBRARY DESTINATION lib${LIB_SUFFIX}
+    RUNTIME DESTINATION bin  # DLL platforms
+    ARCHIVE DESTINATION lib) # DLL platforms
 
 install(FILES ${EXPORTED_HEADERS} DESTINATION include/gme)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libgme.pc DESTINATION lib/pkgconfig)

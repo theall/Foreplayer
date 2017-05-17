@@ -15,7 +15,7 @@
 
 #include "board.h"
 
-#include "expat.h"
+#include <expat.h>
 #include "moddir.h"
 #include "gamelist.h"
 

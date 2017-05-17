@@ -67,7 +67,7 @@ TPlaymodeMenu::~TPlaymodeMenu()
         pm = PM_RECYCLE_TRACK;
     else if(mActionRecycleTracklist->isChecked())
         pm = PM_RECYCLE_TRACK_LIST;
-    else if(mActionRecycleTracklist->isChecked())
+    else if(mActionRecyclePlaylist->isChecked())
         pm = PM_RECYCLE_PLAY_LIST;
     else if(mActionManual->isChecked())
         pm = PM_MANUAL;

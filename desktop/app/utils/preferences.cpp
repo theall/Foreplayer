@@ -122,7 +122,7 @@ TPreferences::TPreferences(QObject *parent):
     mLyricWindowVisible = boolValue(SEC_MAIN_WINDOW_LYRIC_BTN);
     mEqWindowVisible = boolValue(SEC_MAIN_WINDOW_EQ_BTN, true);
     mPlaylistWindowVisible = boolValue(SEC_MAIN_WINDOW_PLAYLIST_BTN, true);
-    mPlayMode = (PlayMode)intValue(SEC_MAIN_WINDOW_PLAY_MODE, (int)PM_MANUAL);
+    mPlayMode = intValue(SEC_MAIN_WINDOW_PLAY_MODE);
     mSettings->endGroup();
 
     // Equalizer window
@@ -428,12 +428,12 @@ void TPreferences::setOpacity(float value)
 
 PlayMode TPreferences::playMode()
 {
-    return mPlayMode;
+    return (PlayMode)mPlayMode;
 }
 
 void TPreferences::setPlayMode(PlayMode playMode)
 {
-    SET_VALUE(playMode, mPlayMode, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_PLAY_MODE);
+    SET_VALUE((int)playMode, mPlayMode, SEC_MAIN_WINDOW, SEC_MAIN_WINDOW_PLAY_MODE);
 }
 
 int TPreferences::volumeValue()

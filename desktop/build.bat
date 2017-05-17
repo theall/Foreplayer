@@ -6,13 +6,12 @@ if not exist %project_file% echo Project file is not exist. & exit/b
 
 qmake -v>nul
 if not %errorlevel%==0 (
-	echo qmake not installed. 
+	echo qmake is not installed. 
 	@echo on
 	exit/b
 )
 
-set build_path=z:\foreplayer
-rem %1
+set build_path=%temp%\foreplayer_build
 
 if "%build_path%"=="" (
     echo Use default build path.
@@ -34,7 +33,7 @@ mingw32-make -f Makefile.Release -j2
 rem check whether exe file is generated successful
 set foreplayer_exe_file=release\foreplayer.exe
 if not exist %foreplayer_exe_file% exit/b
-copy %foreplayer_exe_file% ..\dist
+copy /y %foreplayer_exe_file% %cur_path%\..\dist
 
+popd
 @echo on
-pause.
