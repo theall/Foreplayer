@@ -17,7 +17,7 @@
       <progress position="13, 119, 299, 129" bar_image="" thumb_image="progress_thumb.bmp" fill_image="progress_fill.bmp"/>
       <volume position="207, 77, 295, 88" vertical="false" bar_image="" thumb_image="thumb.bmp" fill_image="progress2.bmp"/>
       <icon position="6, 4, 22, 20" image="TTplayer.ico"/>
-      <info position="14, 25, 185, 45" color="#ffffff" font="Tahoma" font_size="13" align="left"/>
+      <info position="14, 25, 226, 45" color="#ffffff" font="Tahoma" font_size="13" align="left"/>
 	  <status position="187, 52, 252, 72" color="#ffffff" font="Tahoma" font_size="13" align="right"/>
 	  <stereo position="255, 52, 298, 72" color="#ffffff" font="Tahoma" font_size="13" align="right"/>
       <led position="230, 30, 299, 49" image="number.bmp" align="right"/>

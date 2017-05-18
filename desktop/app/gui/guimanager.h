@@ -51,7 +51,7 @@ public:
     bool loadSkin(QString skinPath = QString());
     bool tryLoadSkins();
 
-    void open();
+    bool open();
     void close();
 
     void hide();

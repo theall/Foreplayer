@@ -475,7 +475,7 @@ SOURCES += \
     src/libs/crypt/md5.c \
     src/libs/crypt/sha1.c \
     src/wavelog.cpp \
-    src/moddir.cpp \
-    src/emulator/boards/brd_pgm.cpp \
-    src/emulator/cpu/nmk004/nmk004.cpp \
-    src/emulator/cpu/nmk004/tlcs90.cpp
+    src/moddir.cpp
+    #src/emulator/boards/brd_pgm.cpp
+    #src/emulator/cpu/nmk004/nmk004.cpp \
+    #src/emulator/cpu/nmk004/tlcs90.cpp

@@ -103,6 +103,9 @@ private slots:
     void on_btnMute_clicked();
     void on_icnLogo_clicked();
     void on_progressBar_valueChanged(int newValue);
+    void on_btnPlaylist_toggled(bool);
+    void on_btnequalizer_toggled(bool);
+    void on_btnLyric_toggled(bool);
 
 private:
     TImageButton *mBtnPlay;

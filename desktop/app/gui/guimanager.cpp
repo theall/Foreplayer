@@ -250,44 +250,30 @@ bool TGuiManager::tryLoadSkins()
     return ret;
 }
 
-void TGuiManager::open()
+bool TGuiManager::open()
 {
     TPreferences *prefs = TPreferences::instance();
-//    QByteArray g, s;
-//    prefs->windowGeometryState(WT_MAIN, &g, &s);
-//    mMainWindow->restoreGeometry(g);
-//    mMainWindow->restoreState(s);
-
-//    prefs->windowGeometryState(WT_LYRIC, &g, &s);
-//    mLyricWindow->restoreGeometry(g);
-//    mLyricWindow->restoreState(s);
-
-//    prefs->windowGeometryState(WT_EQUALIZER, &g, &s);
-//    mEqualizerWindow->restoreGeometry(g);
-//    mEqualizerWindow->restoreState(s);
-
-//    prefs->windowGeometryState(WT_PLAYLIST, &g, &s);
-//    mPlaylistWindow->restoreGeometry(g);
-//    mPlaylistWindow->restoreState(s);
-
     mMainWindow->show();
-
-    // Load settings
-    //mBrowserWindow->show();
-
     mMainMenu->loadSettings();
 
     if(!tryLoadSkins())
+    {
         QMessageBox::critical(
             mMainWindow,
             tr("Error"),
             tr("Failed to load skin."));
+
+        slotRequestExit();
+        return false;
+    }
 
     if(prefs->displayTrayIcon())
         mTrayIcon->show();
 
     mEqualizerWindow->loadSettings();
     mMainWindow->loadSettings();
+
+    return true;
 }
 
 void TGuiManager::close()

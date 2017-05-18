@@ -95,9 +95,9 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mBtnPrev, SIGNAL(clicked()), this, SIGNAL(prevClicked()));
     connect(mBtnMinimize, SIGNAL(clicked()), this, SIGNAL(requestShowMinimized()));
     connect(mBtnMinimode, SIGNAL(clicked()), this, SIGNAL(miniModeClicked()));
-    connect(mBtnEqualizer, SIGNAL(clicked(bool)), this, SIGNAL(equalizerButtonToggle(bool)));
-    connect(mBtnPlaylist, SIGNAL(clicked(bool)), this, SIGNAL(playlistButtonToggle(bool)));
-    connect(mBtnLyrics, SIGNAL(clicked(bool)), this, SIGNAL(lyricButtonToggle(bool)));
+    connect(mBtnEqualizer, SIGNAL(clicked(bool)), this, SLOT(on_btnequalizer_toggled(bool)));
+    connect(mBtnPlaylist, SIGNAL(clicked(bool)), this, SLOT(on_btnPlaylist_toggled(bool)));
+    connect(mBtnLyrics, SIGNAL(clicked(bool)), this, SLOT(on_btnLyric_toggled(bool)));
     connect(mBtnBrowser, SIGNAL(clicked(bool)), this, SIGNAL(browserButtonToggle(bool)));
     connect(mBtnMute, SIGNAL(clicked(bool)), this, SLOT(on_btnMute_clicked()));
     connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SLOT(on_volume_valueChanged(int)));
@@ -348,6 +348,24 @@ void TMainWindow::on_progressBar_valueChanged(int newValue)
     {
         setProgress(newValue, mProgressBar->maximum());
     }
+}
+
+void TMainWindow::on_btnPlaylist_toggled(bool checked)
+{
+    TPreferences::instance()->setPlaylistWindowVisible(checked);
+    emit playlistButtonToggle(checked);
+}
+
+void TMainWindow::on_btnequalizer_toggled(bool checked)
+{
+    TPreferences::instance()->setEqWindowVisible(checked);
+    emit equalizerButtonToggle(checked);
+}
+
+void TMainWindow::on_btnLyric_toggled(bool checked)
+{
+    TPreferences::instance()->setLyricWindowVisible(checked);
+    emit lyricButtonToggle(checked);
 }
 
 void TMainWindow::updatePlayStatus()

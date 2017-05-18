@@ -31,23 +31,53 @@ TCore::TCore(bool exportMode) :
   , mInitialized(false)
 {
     QDir libDir(qApp->applicationDirPath());
-    QString libFilePath = libDir.absoluteFilePath(FOREPLAYER_LIB_NAME);
+    QStringList fileList;
+    fileList.append(libDir.absoluteFilePath(FOREPLAYER_LIB_NAME));
+    fileList.append(libDir.absoluteFilePath(QString("lib")+FOREPLAYER_LIB_NAME));
+    libDir.cd("sdk");
+    fileList.append(libDir.absoluteFilePath(FOREPLAYER_LIB_NAME));
+    fileList.append(libDir.absoluteFilePath(QString("lib")+FOREPLAYER_LIB_NAME));
+    QString libFilePath;
+    for(QString filePath : fileList)
+    {
+        if(QFileInfo(filePath).exists())
+        {
+            libFilePath = filePath;
+            break;
+        }
+    }
+    if(libFilePath.isEmpty())
+    {
+        mErrorString = tr("Failed to find library %1").arg(FOREPLAYER_LIB_NAME);
+        return;
+    }
+    QFileInfo libFileInfo(libFilePath);
+    QString libName = libFileInfo.completeBaseName();
+    QString libPath = libFileInfo.absolutePath();
+    QString currentPath = QDir::currentPath();
+    if(currentPath != libPath)
+        QDir::setCurrent(libPath);
+
     mLibrary = new QLibrary(libFilePath);
-    if(mLibrary->load())
+    bool loadSuccess = mLibrary->load();
+    if(currentPath != libPath)
+        QDir::setCurrent(currentPath);
+
+    if(loadSuccess)
     {
         mSendCmd = (FOREPLAYER_SEND_CMD)mLibrary->resolve(FOREPLAYER_SEND_CMD_NAME);
         if(!mSendCmd)
         {
-            mErrorString = tr("Failed to resolve proc %1 in library %2.").arg(FOREPLAYER_SEND_CMD_NAME).arg(FOREPLAYER_LIB_NAME);
+            mErrorString = tr("Failed to resolve proc %1 in library %2.").arg(FOREPLAYER_SEND_CMD_NAME).arg(libName);
             return;
         }
     } else {
-        mErrorString = tr("Failed to load library %1.").arg(FOREPLAYER_LIB_NAME);
+        mErrorString = mLibrary->errorString();
         return;
     }
     mSendCmd(CMD_OPEN, &exportMode, &mInitialized, 0, 0);
     if(!mInitialized)
-        mErrorString = tr("Failed to initialize sdk %1.").arg(FOREPLAYER_LIB_NAME);
+        mErrorString = tr("Failed to initialize sdk %1.").arg(libName);
 }
 
 TCore::~TCore()

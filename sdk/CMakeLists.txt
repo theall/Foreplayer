@@ -22,6 +22,12 @@ cmake_minimum_required(VERSION 3.0)
 
 project(foreplayerlib)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR})
+set(CMAKE_CUSTOME_LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+
+add_definitions(-DFOREPLAYER_EXPORT)
+add_compile_options(-std=c++11)
+
 if(UNIX)
 	set(FOREPLAYERLIB_INSTALL_BY_DEFAULT ON)
 else(UNIX)
@@ -30,46 +36,53 @@ endif(UNIX)
 
 option(FOREPLAYERLIB_INSTALL "Install foreplayerlib libs, includes, and CMake scripts" ${FOREPLAYERLIB_INSTALL_BY_DEFAULT})
 option(FOREPLAYERLIB_BUILD_SHARED "Build foreplayerlib shared libraries" ON)
-option(FOREPLAYERLIB_BUILD_PLUGINS "Build plugins" ON)
 
 set(FOREPLAYERLIB_VERSION 0.1.0)
 set(LIB_INSTALL_DIR lib${LIB_SUFFIX})
 set(FOREPLAYERLIB_OUTPUT_PATH bin/foreplayer)
 
-if(FOREPLAYERLIB_BUILD_PLUGINS)
-    #add_subdirectory(plugins)
-endif(FOREPLAYERLIB_BUILD_PLUGINS)
-
 find_package(SDL2 REQUIRED)
-#find_package(fftreal REQUIRED)
-#find_package(audio3d REQUIRED)
 
 # The foreplayerlib library.
 set(source
-    src/filter/samplesfilter.cpp
     src/core.cpp
+    src/cplusutils.cpp
+    src/exportcore.cpp
+    src/foreplayerlib.cpp
     src/playercore.cpp
     src/playlistcore.cpp
-    src/front/sdlfront.cpp
-    src/pluginmanager/backend/backendplugin.cpp
+    src/playthread.cpp
+    src/strformat.hpp
+    src/filter/samplesfilter.cpp
     src/front/abstractfront.cpp
+    src/front/loopbuffer.cpp
+    src/front/sdlfront.cpp
+    src/playlist/abstractitem.cpp
+    src/playlist/musicitem.cpp
+    src/playlist/playlistitem.cpp
+    src/playlist/trackitem.cpp
     src/pluginmanager/abstractpluginmanager.cpp
     src/pluginmanager/backendpluginmanager.cpp
-    src/playthread.cpp
-    src/playlist/playlistitem.cpp
-    src/playlist/musicitem.cpp
-    src/playlist/trackitem.cpp
-    src/front/loopbuffer.cpp
+    src/pluginmanager/library.cpp
+    src/pluginmanager/backend/backendplugin.cpp
 )
+
 include_directories(
     src
+    include
     thirdparty
-    thirdparty/fftreal
-    thirdparty/audio3d/include
+    ${SDL2_INCLUDE_DIR}/../
 )
+
 if(FOREPLAYERLIB_BUILD_SHARED)
     add_library(foreplayerlib SHARED ${source})
-    target_link_libraries(foreplayerlib ${SDL2_LIBRARY} fftreal audio3d)
+    target_link_libraries(foreplayerlib -LSDL2_LIBRARY -lSDL2 -L${CMAKE_CUSTOME_LIB_PATH} -lfftreal -laudio3d -lsamplerate -lz)
 else(FOREPLAYERLIB_BUILD_SHARED)
     add_library(foreplayerlib STATIC ${source})
 endif(FOREPLAYERLIB_BUILD_SHARED)
+
+#install(FILES ${CMAKE_SOURCE_DIR}/include/foreplayer.h DESTINATION include)
+install(TARGETS foreplayerlib
+        RUNTIME DESTINATION ../dist/sdk
+        ARCHIVE DESTINATION lib)
+        

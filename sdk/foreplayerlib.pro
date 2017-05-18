@@ -14,13 +14,10 @@ DEFINES += FOREPLAYER_EXPORT
 
 INCLUDEPATH += \
     include \
-    thirdparty \
-    D:/SDL2-2.0.4/i686-w64-mingw32/include
+    thirdparty
 
-LIBS += -LF:/opensource/foreplayer/dist/lib -laudio3d
-LIBS += -LD:/SDL2-2.0.4/i686-w64-mingw32/lib -lsdl2
-LIBS += -LZ:/cmake/fft -lfftreal
-LIBS += -lz
+LIBS += -Llib -laudio3d -lfftreal
+LIBS += -lsdl2 -lz
 
 DESTDIR = Z:/build/foreplayer/debug/debug
 

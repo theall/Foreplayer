@@ -51,6 +51,7 @@ TEqualizerWindow::TEqualizerWindow(QWidget *parent) :
     mSldBalance->setValue(0);
 
     mSldSurround->setRange(0, 16);
+    mSldSurround->setValue(0);
 
     mSldPreamp->setRange(-12, 12);
     mSldPreamp->setValue(0);

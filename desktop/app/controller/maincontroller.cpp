@@ -74,9 +74,7 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
     mExportController->joint(manager, core);
 
     bool ret = TAbstractController::joint(manager, core);
-
-    manager->open();
-
+    ret &= manager->open();
     return ret;
 }
 

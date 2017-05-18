@@ -3,7 +3,6 @@ project (Audio3D)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 set(CMAKE_MODULE_PATH "${Audio3D_SOURCE_DIR}/cmake/Modules" ${CMAKE_MODULE_PATH})
 
-SET(MIT_KEMAR_DATASET_FLAG    "-DMIT_KEMAR")
 SET(FLANN_INCLUDE_DIRS    .)
 option(USE_MIT_KEMAR_DATASET  "Use MIT KEMAR HRTF dataset" ON)
 
@@ -18,27 +17,19 @@ include_directories(SYSTEM
                     ${Audio3D_SOURCE_DIR}/data 
                    )
 
-add_definitions( ${LIBRESAMPLE_DEFINITIONS} )
+add_definitions( -DMIT_KEMAR )
 
-add_library(kissfft kissfft/kiss_fft.c kissfft/kiss_fftr.c)
-add_library (fft_filter src/fft_filter_impl.cpp src/fft_filter.cpp)
-target_link_libraries (fft_filter kissfft)  
-
-add_library (resampler src/resampler.cpp) 
-target_link_libraries(resampler ${LIBSAMPLERATE_LIBRARIES})
-
-add_library (hrtf src/hrtf.cpp) 
-if(USE_MIT_KEMAR_DATASET)
-   set_target_properties(hrtf PROPERTIES COMPILE_FLAGS ${MIT_KEMAR_DATASET_FLAG} )
-endif(USE_MIT_KEMAR_DATASET)
-target_link_libraries(hrtf resampler)
-
-add_library (${PROJECT_NAME} src/audio_3d.cpp
-                             src/reberation.cpp
-            ) 
-target_link_libraries(${PROJECT_NAME} hrtf fft_filter)
-
-#ADD_SUBDIRECTORY (test)
+add_library (${PROJECT_NAME} STATIC
+    src/audio_3d.cpp 
+    src/fft_filter.cpp 
+    src/fft_filter_impl.cpp 
+    src/hrtf.cpp 
+    src/reberation.cpp 
+    src/resampler.cpp 
+    kissfft/kiss_fft.c 
+    kissfft/kiss_fftr.c
+) 
+target_link_libraries(${PROJECT_NAME} -lsamplerate)
 
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/include DESTINATION include/audio3d)
 install(TARGETS Audio3D
