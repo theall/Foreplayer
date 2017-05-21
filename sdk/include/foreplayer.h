@@ -37,9 +37,9 @@ extern "C" {
 #endif
 
 #ifdef _WIN32
-    #define FOREPLAYER_LIB_NAME "foreplayerlib.dll"
+    #define FOREPLAYER_LIB_NAME "foreplayer.dll"
 #else
-    #define FOREPLAYER_LIB_NAME "libforeplayerlib.so"
+    #define FOREPLAYER_LIB_NAME "libforeplayer.so"
 #endif
 
 enum AudioParameter

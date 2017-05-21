@@ -22,6 +22,18 @@ TLibrary::TLibrary(wstring filePath) :
 {
 #ifdef _WIN32
     mHandle = LoadLibraryW(filePath.c_str());
+    if(!mHandle)
+    {
+        int pos = filePath.find_last_of(L"/");
+        if(pos < 0)
+            pos = filePath.find_last_of(L"\\");
+
+        if(pos > 0)
+        {
+            filePath.insert(pos+1, L"lib");
+            mHandle = LoadLibraryW(filePath.c_str());
+        }
+    }
 #else
 #endif
 }

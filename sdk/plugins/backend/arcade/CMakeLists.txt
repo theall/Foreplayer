@@ -22,6 +22,8 @@ cmake_minimum_required(VERSION 2.6)
 # project name: m1plugin
 project(m1plugin)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/plugins/backend)
+
 include_directories(../../../thirdparty/m1lib/src)
 include_directories(../../pluginutils)
 include_directories(../)
@@ -30,8 +32,21 @@ include_directories(../)
 set(m1plugin 
     m1thread.cpp
     main.cpp
+    ../../pluginutils/pluginutils.cpp
 )
+
+find_library(M1_LIB m1 HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
 
 # set make to a shared library
 add_library(plugin SHARED ${m1plugin})
-target_link_libraries(plugin m1)
+target_link_libraries(plugin ${M1_LIB})
+
+find_library(M1_LIBRARY m1 HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+if(M1_LIBRARY)
+    install(FILES ${M1_LIBRARY} DESTINATION arcade)
+else()
+    MESSAGE(WARNING "Didn't find m1 library!")
+endif()
+
+install(TARGETS plugin
+        RUNTIME DESTINATION arcade)

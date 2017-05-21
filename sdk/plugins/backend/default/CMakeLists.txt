@@ -22,6 +22,7 @@ cmake_minimum_required(VERSION 3.6)
 
 # project name: bassplugin
 project(bassplugin)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/plugins/backend)
 
 include_directories(../)
 include_directories(../../pluginutils)
@@ -32,11 +33,22 @@ set(bassplugin
     ../../pluginutils/pluginutils.cpp
 )
 
+find_library(BASS_LIBRARY bass HINTS bin)
+
 # set make to a shared library
 add_library(plugin SHARED ${bassplugin})
 if(UNIX)
     target_link_libraries(plugin bass)
 else(UNIX)
-    target_link_libraries(plugin bass.dll)
+    target_link_libraries(plugin ${BASS_LIBRARY})
 endif(UNIX)
 
+if(BASS_LIBRARY)
+    install(FILES ${BASS_LIBRARY} DESTINATION default)
+else()
+    MESSAGE(WARNING "Didn't find bass library!")
+endif()
+
+install(TARGETS plugin
+        RUNTIME DESTINATION default)
+        

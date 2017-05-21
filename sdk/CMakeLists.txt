@@ -34,8 +34,8 @@ else(UNIX)
 	set(FOREPLAYERLIB_INSTALL_BY_DEFAULT OFF)
 endif(UNIX)
 
-option(FOREPLAYERLIB_INSTALL "Install foreplayerlib libs, includes, and CMake scripts" ${FOREPLAYERLIB_INSTALL_BY_DEFAULT})
-option(FOREPLAYERLIB_BUILD_SHARED "Build foreplayerlib shared libraries" ON)
+option(FOREPLAYERLIB_INSTALL "Install foreplayer libs, includes, and CMake scripts" ${FOREPLAYERLIB_INSTALL_BY_DEFAULT})
+option(FOREPLAYERLIB_BUILD_SHARED "Build foreplayer shared libraries" ON)
 
 set(FOREPLAYERLIB_VERSION 0.1.0)
 set(LIB_INSTALL_DIR lib${LIB_SUFFIX})
@@ -43,7 +43,7 @@ set(FOREPLAYERLIB_OUTPUT_PATH bin/foreplayer)
 
 find_package(SDL2 REQUIRED)
 
-# The foreplayerlib library.
+# The foreplayer library.
 set(source
     src/core.cpp
     src/cplusutils.cpp
@@ -75,14 +75,21 @@ include_directories(
 )
 
 if(FOREPLAYERLIB_BUILD_SHARED)
-    add_library(foreplayerlib SHARED ${source})
-    target_link_libraries(foreplayerlib -LSDL2_LIBRARY -lSDL2 -L${CMAKE_CUSTOME_LIB_PATH} -lfftreal -laudio3d -lsamplerate -lz)
+    add_library(foreplayer SHARED ${source})
+    target_link_libraries(foreplayer SDL2 -L${CMAKE_CUSTOME_LIB_PATH} -lfftreal -laudio3d -lz)
 else(FOREPLAYERLIB_BUILD_SHARED)
-    add_library(foreplayerlib STATIC ${source})
+    add_library(foreplayer STATIC ${source})
 endif(FOREPLAYERLIB_BUILD_SHARED)
 
+find_library(AUDIO3D_LIBRARY aosdk HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+if(AUDIO3D_LIBRARY)
+    install(FILES ${AUDIO3D_LIBRARY} DESTINATION ../dist)
+else()
+    MESSAGE(WARNING "Didn't find audio3d library!")
+endif()
+
 #install(FILES ${CMAKE_SOURCE_DIR}/include/foreplayer.h DESTINATION include)
-install(TARGETS foreplayerlib
-        RUNTIME DESTINATION ../dist/sdk
+install(TARGETS foreplayer
+        RUNTIME DESTINATION ../dist
         ARCHIVE DESTINATION lib)
         

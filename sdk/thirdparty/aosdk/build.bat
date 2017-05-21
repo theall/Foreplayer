@@ -1,9 +1,9 @@
 @echo off
-set CURDIR=%cd%
 pushd %temp%
-if not exist aosdk_build md aosdk_build
-cd aosdk_build
-cmake %CURDIR% -G"MinGW Makefiles"
+set BUILD_NAME=aosdk_build
+if not exist %BUILD_NAME% md %BUILD_NAME%
+cd %BUILD_NAME%
+cmake %~dp0 -G"MinGW Makefiles"
 mingw32-make -j2 install
 popd
 @echo on

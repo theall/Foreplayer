@@ -148,8 +148,8 @@ bool TSkin::loadFromXmlFile(QString fileName)
 
 bool TSkin::loadFromZipFile(QString fileName)
 {
-    std::wstring fileNameW = fileName.toStdWString();
-    mZipfile = unzOpen(fileNameW.c_str());
+    std::string stdFileName = fileName.toStdString();
+    mZipfile = unzOpen(stdFileName.c_str());
     if(!mZipfile)
     {
         mError = tr("Fail to open zip file %1").arg(fileName);
@@ -159,7 +159,7 @@ bool TSkin::loadFromZipFile(QString fileName)
     QByteArray byteArray;
     if(!readFileFromZip(ZIP_SKIN_NAME, byteArray))
     {
-        mError = tr("Fail to open xml file %1").arg(fileName);
+        mError = tr("Fail to open xml file %1 in %2").arg(ZIP_SKIN_NAME).arg(fileName);
         return false;
     }
 
@@ -228,6 +228,14 @@ QIcon TSkin::readIconFromZip(QString fileName)
     return QIcon(tempFile.fileName());
 }
 
+int fileNameComparer(unzFile file, const char *filename1, const char *filename2)
+{
+    Q_UNUSED(file);
+    QString f1(filename1);
+    QString f2(filename2);
+    return f1.toLower()==f2.toLower()?UNZ_OK:UNZ_ERRNO;
+}
+
 bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)
 {
     if(!mZipfile)
@@ -235,7 +243,7 @@ bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)
         mError = tr("Zip file is not opened.");
         return false;
     }
-    int status = unzLocateFile(mZipfile, TEXT(fileName), 2);
+    int status = unzLocateFile(mZipfile, TEXT(fileName), fileNameComparer);
     if(status != UNZ_OK)
     {
         mError = tr("Fail to locate file %1").arg(ZIP_SKIN_NAME);

@@ -6,7 +6,7 @@
 
 QT       -= core gui
 
-TARGET = foreplayerlib
+TARGET = foreplayer
 TEMPLATE = lib
 CONFIG += c++11
 
@@ -16,54 +16,54 @@ INCLUDEPATH += \
     include \
     thirdparty
 
-LIBS += -Llib -laudio3d -lfftreal
+LIBS += -L$$PWD/lib -lfftreal -laudio3d
 LIBS += -lsdl2 -lz
 
-DESTDIR = Z:/build/foreplayer/debug/debug
+DESTDIR = Z:/dist
 
 SOURCES += \
-    src/filter/samplesfilter.cpp \
-    src/front/abstractfront.cpp \
-    src/front/loopbuffer.cpp \
-    src/front/sdlfront.cpp \
-    src/playlist/musicitem.cpp \
-    src/playlist/playlistitem.cpp \
-    src/playlist/trackitem.cpp \
-    src/pluginmanager/backend/backendplugin.cpp \
-    src/pluginmanager/abstractpluginmanager.cpp \
-    src/pluginmanager/backendpluginmanager.cpp \
-    src/core.cpp \
-    src/foreplayerlib.cpp \
-    src/playercore.cpp \
-    src/playlistcore.cpp \
-    src/playthread.cpp \
-    src/cplusutils.cpp \
-    src/pluginmanager/library.cpp \
-    src/playlist/abstractitem.cpp \
-    src/exportcore.cpp
+    $$PWD/src/filter/samplesfilter.cpp \
+    $$PWD/src/front/abstractfront.cpp \
+    $$PWD/src/front/loopbuffer.cpp \
+    $$PWD/src/front/sdlfront.cpp \
+    $$PWD/src/playlist/musicitem.cpp \
+    $$PWD/src/playlist/playlistitem.cpp \
+    $$PWD/src/playlist/trackitem.cpp \
+    $$PWD/src/pluginmanager/backend/backendplugin.cpp \
+    $$PWD/src/pluginmanager/abstractpluginmanager.cpp \
+    $$PWD/src/pluginmanager/backendpluginmanager.cpp \
+    $$PWD/src/core.cpp \
+    $$PWD/src/foreplayerlib.cpp \
+    $$PWD/src/playercore.cpp \
+    $$PWD/src/playlistcore.cpp \
+    $$PWD/src/playthread.cpp \
+    $$PWD/src/cplusutils.cpp \
+    $$PWD/src/pluginmanager/library.cpp \
+    $$PWD/src/playlist/abstractitem.cpp \
+    $$PWD/src/exportcore.cpp
 
 HEADERS += \
     include/foreplayer.h \
-    src/filter/samplesfilter.h \
-    src/front/abstractfront.h \
-    src/front/loopbuffer.h \
-    src/front/sdlfront.h \
-    src/playlist/musicitem.h \
-    src/playlist/playlistdef.h \
-    src/playlist/playlistitem.h \
-    src/playlist/trackitem.h \
-    src/pluginmanager/backend/backendplugin.h \
-    src/pluginmanager/abstractpluginmanager.h \
-    src/pluginmanager/backendpluginmanager.h \
-    src/core.h \
-    src/playercore.h \
-    src/playlistcore.h \
-    src/playthread.h \
-    src/strformat.hpp \
-    src/cplusutils.h \
-    src/pluginmanager/library.h \
-    src/playlist/abstractitem.h \
-    src/exportcore.h
+    $$PWD/src/filter/samplesfilter.h \
+    $$PWD/src/front/abstractfront.h \
+    $$PWD/src/front/loopbuffer.h \
+    $$PWD/src/front/sdlfront.h \
+    $$PWD/src/playlist/musicitem.h \
+    $$PWD/src/playlist/playlistdef.h \
+    $$PWD/src/playlist/playlistitem.h \
+    $$PWD/src/playlist/trackitem.h \
+    $$PWD/src/pluginmanager/backend/backendplugin.h \
+    $$PWD/src/pluginmanager/abstractpluginmanager.h \
+    $$PWD/src/pluginmanager/backendpluginmanager.h \
+    $$PWD/src/core.h \
+    $$PWD/src/playercore.h \
+    $$PWD/src/playlistcore.h \
+    $$PWD/src/playthread.h \
+    $$PWD/src/strformat.hpp \
+    $$PWD/src/cplusutils.h \
+    $$PWD/src/pluginmanager/library.h \
+    $$PWD/src/playlist/abstractitem.h \
+    $$PWD/src/exportcore.h
 
 unix {
     target.path = /usr/lib

@@ -18,8 +18,7 @@
 #ifndef SKINLOADER_H
 #define SKINLOADER_H
 
-#include <unzip.h>
-
+#include <minizip/unzip.h>
 #include "skinutils.h"
 
 class TSkin : public QObject

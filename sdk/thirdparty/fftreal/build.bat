@@ -1,9 +1,9 @@
 @echo off
-set CURDIR=%cd%
 pushd %temp%
-if not exist fft_build md fft_build
-cd fft_build
-cmake %CURDIR% -G"MinGW Makefiles"
+set BUILD_NAME=fft_build
+if not exist %BUILD_NAME% md %BUILD_NAME%
+cd %BUILD_NAME%
+cmake %~dp0 -G"MinGW Makefiles"
 mingw32-make -j2 install
 popd
 @echo on

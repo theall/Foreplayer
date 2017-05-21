@@ -1,41 +1,27 @@
 @echo Building aosdk...
-@pushd aosdk
-@call build.bat
-@popd
+@call %~dp0\aosdk\build.bat
 @echo Building aosdk completed.
 
 @echo Building Audio3D...
-@pushd Audio3D
-@call build.bat
-@popd
+@call %~dp0\Audio3D\build.bat
 @echo Building Audio3D completed.
 
 @echo Building fftreal...
-@pushd fftreal
-@call build.bat
-@popd
+@call %~dp0\fftreal\build.bat
 @echo Building fftreal completed.
 
 @echo Building gme...
-@pushd gme
-@call build.bat
-@popd
+@call %~dp0\gme\build.bat
 @echo Building gme completed.
 
 @echo Building m1lib...
-@pushd m1lib
-@call build.bat
-@popd
+@call %~dp0\m1lib\build.bat
 @echo Building m1lib completed.
 
 @echo Building unrar...
-@pushd unrar
-@call build.bat
-@popd
+@call %~dp0\unrar\build.bat
 @echo Building unrar completed.
 
 @echo Building unzip...
-@pushd unzip
-@call build.bat
-@popd
+@call %~dp0\unzip\build.bat
 @echo Building unzip completed.

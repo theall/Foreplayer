@@ -25,55 +25,68 @@ set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../)
 
 add_definitions(-DRARDLL)
 
+#INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/src)
+
 # set source files
 set(unrar 
-    src/rs16.cpp
-    src/filefn.cpp
-    src/rar.cpp
-    src/filestr.cpp
-    src/volume.cpp
-    src/list.cpp
-    src/hash.cpp
-    src/system.cpp
-    src/errhnd.cpp
-    src/rs.cpp
-    src/cmddata.cpp
-    src/match.cpp
-    src/timefn.cpp
-    src/filcreat.cpp
-    src/rdwrfn.cpp
-    src/dll.cpp
-    src/pathfn.cpp
-    src/sha1.cpp
-    src/strlist.cpp
-    src/extract.cpp
-    src/rarpch.cpp
-    src/crc.cpp
-    src/file.cpp
-    src/getbits.cpp
-    src/strfn.cpp
-    src/global.cpp
-    src/rijndael.cpp
-    src/options.cpp
-    src/qopen.cpp
-    src/rawread.cpp
-    src/scantree.cpp
-    src/find.cpp
-    src/resource.cpp
-    src/smallfn.cpp
-    src/headers.cpp
-    src/sha256.cpp
+    src/archive.cpp
     src/arcread.cpp
+    src/blake2s.cpp
+    src/cmddata.cpp
+    src/consio.cpp
+    src/crc.cpp
+    src/crypt.cpp
+    src/dll.cpp
     src/encname.cpp
-    src/secpassword.cpp
+    src/errhnd.cpp
+    src/extinfo.cpp
+    src/extract.cpp
+    src/filcreat.cpp
+    src/file.cpp
+    src/filefn.cpp
+    src/filestr.cpp
+    src/find.cpp
+    src/getbits.cpp
+    src/global.cpp
+    src/hash.cpp
+    src/headers.cpp
     src/isnt.cpp
+    src/list.cpp
+    src/match.cpp
+    src/options.cpp
+    src/pathfn.cpp
+    src/qopen.cpp
+    src/rar.cpp
+    src/rarpch.cpp
+    src/rarvm.cpp
+    src/rawread.cpp
+    src/rdwrfn.cpp
+    src/recvol.cpp
+    src/rijndael.cpp
+    src/rs.cpp
+    src/rs16.cpp
+    src/scantree.cpp
+    src/secpassword.cpp
+    src/sha1.cpp
+    src/sha256.cpp
+    src/smallfn.cpp
+    src/strfn.cpp
+    src/strlist.cpp
+    src/system.cpp
+    src/threadpool.cpp
+    src/timefn.cpp
+    src/ui.cpp
     src/unicode.cpp
+    src/unpack.cpp
+    src/volume.cpp
+    src/resource.cpp
 )
 
-# set make to a static library
-add_library(unrar STATIC ${unrar})
+# set make to a shared library
+add_library(unrar SHARED ${unrar})
 
 install(FILES ${CMAKE_SOURCE_DIR}/include/unrar.h DESTINATION include)
 install(TARGETS unrar
+        RUNTIME DESTINATION bin
         ARCHIVE DESTINATION lib)
         

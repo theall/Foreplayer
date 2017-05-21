@@ -85,8 +85,8 @@ add_library(gme SHARED ${libgme_SRCS})
 
 install(TARGETS gme 
     LIBRARY DESTINATION lib${LIB_SUFFIX}
-    RUNTIME DESTINATION bin  # DLL platforms
-    ARCHIVE DESTINATION lib) # DLL platforms
+    RUNTIME DESTINATION bin
+    ARCHIVE DESTINATION lib)
 
 install(FILES ${EXPORTED_HEADERS} DESTINATION include/gme)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libgme.pc DESTINATION lib/pkgconfig)

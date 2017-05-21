@@ -9,7 +9,7 @@ QT       += core
 CONFIG += c++11
 
 TEMPLATE = lib
-TARGET = m1
+TARGET = libm1
 
 LIBS += -lm -lunzip -lexpat -lz
 

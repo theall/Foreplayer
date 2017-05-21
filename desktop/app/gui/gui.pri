@@ -8,7 +8,7 @@ TRANSLATIONS = \
 INCLUDEPATH += \
     $$PWD/share
 
-LIBS += -lunzip -lz
+LIBS += -lminizip -lz
 
 SOURCES += \
     $$PWD/windows/widgets/imagebutton.cpp \

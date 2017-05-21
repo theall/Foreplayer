@@ -4,7 +4,7 @@
     #include <windows.h>
 #endif
 
-#define MODULE_NAME     L"m1.dll"
+#define MODULE_NAME     L"libm1.dll"
 
 wchar_t szFilePath[280];
 

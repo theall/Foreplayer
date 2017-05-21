@@ -19,7 +19,7 @@ include_directories(SYSTEM
 
 add_definitions( -DMIT_KEMAR )
 
-add_library (${PROJECT_NAME} STATIC
+add_library (${PROJECT_NAME} SHARED
     src/audio_3d.cpp 
     src/fft_filter.cpp 
     src/fft_filter_impl.cpp 
@@ -34,3 +34,8 @@ target_link_libraries(${PROJECT_NAME} -lsamplerate)
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/include DESTINATION include/audio3d)
 install(TARGETS Audio3D
         ARCHIVE DESTINATION lib)
+if(LIBSAMPLERATE_LIBRARY)
+    install(FILES ${LIBSAMPLERATE_LIBRARY} DESTINATION lib)
+else()
+    MESSAGE(WARNING "Samplerate library will not be installed.")
+endif()

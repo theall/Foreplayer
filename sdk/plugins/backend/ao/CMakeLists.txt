@@ -23,19 +23,35 @@ cmake_minimum_required(VERSION 2.6)
 # project name: aosdkplugin
 project(aosdkplugin)
 
-include_directories(../../../thirdparty/unzip)
-include_directories(../../../thirdparty/aosdk)
-include_directories(../../pluginutils)
-include_directories(../)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/plugins/backend)
 
-add_subdirectory(../../../thirdparty/unzip)
-add_subdirectory(../../../thirdparty/aosdk)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../pluginutils)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../include/unzip)
+
+set(EXTERNAL_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
+
 # set source files
 set(aosdkplugin 
-    *.*
-    ../../pluginutils/*.*
+    abstractparse.cpp
+    fileparse.cpp
+    main.cpp
+    zipparse.cpp
+    ../../pluginutils/pluginutils.cpp
 )
 
 # set make to a shared library
 add_library(plugin SHARED ${aosdkplugin})
-target_link_libraries(plugin aosdk)
+target_link_libraries(plugin -L${EXTERNAL_LIBRARY} -laosdk -lunzip z)
+
+find_library(AOSDK_LIBRARY aosdk HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+if(AOSDK_LIBRARY)
+    install(FILES ${AOSDK_LIBRARY} DESTINATION ao)
+else()
+    MESSAGE(WARNING "Didn't find aosdk!")
+endif()
+
+install(TARGETS plugin
+        RUNTIME DESTINATION ao)

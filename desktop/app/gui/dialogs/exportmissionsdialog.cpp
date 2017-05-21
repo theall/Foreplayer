@@ -31,7 +31,7 @@ void TExportItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &o
 {
     if(index.column() == 2) {
         float value = index.model()->data(index).toFloat() * 100;
-        QStyleOptionProgressBarV2 pbOption;
+        QStyleOptionProgressBar pbOption;
         pbOption.rect = option.rect.adjusted(4, 4, -4, -4);
         pbOption.minimum = 0;
         pbOption.maximum = 100;

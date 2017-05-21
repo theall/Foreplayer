@@ -23,11 +23,12 @@ cmake_minimum_required(VERSION 3.6)
 # project name: gmeplugin
 project(gmeplugin)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/plugins/backend)
+
 include_directories(../)
 include_directories(../../pluginutils)
 include_directories(../../../thirdparty/gme/src)
-include_directories(../../../thirdparty/unzip)
-include_directories(../../../thirdparty/unrar/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
 
 # set source files
 set(gmeplugin 
@@ -40,8 +41,28 @@ set(gmeplugin
     ../../pluginutils/pluginutils.cpp
 )
 
-find_package(gme)
+find_library(GME_LIB gme HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
+find_library(UNRAR_LIB unrar HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
+find_library(UNZIP_LIB unzip HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
 
 # set make to a shared library
 add_library(plugin SHARED ${gmeplugin})
-target_link_libraries(plugin gme unrar unzip)
+target_link_libraries(plugin ${GME_LIB} ${UNRAR_LIB} ${UNZIP_LIB} z)
+
+find_library(GME_LIBRARY gme HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+if(GME_LIBRARY)
+    install(FILES ${GME_LIBRARY} DESTINATION gme)
+else()
+    MESSAGE(WARNING "Didn't find gme library!")
+endif()
+
+find_library(UNRAR_LIBRARY unrar HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+if(UNRAR_LIBRARY)
+    install(FILES ${UNRAR_LIBRARY} DESTINATION gme)
+else()
+    MESSAGE(WARNING "Didn't find unrar library!")
+endif()
+
+install(TARGETS plugin
+        RUNTIME DESTINATION gme)
+        
