@@ -12,12 +12,12 @@ CONFIG += c++11
 
 DEFINES += 
 
-LIBS += -LF:/opensource/foreplayer/dist/lib -laosdk
+LIBS += -L$$PWD/../../../lib -laosdk
 LIBS += -lunzip -lz
 
 INCLUDEPATH += ../\
     ../../pluginutils \
-    ../../../thirdparty/aosdk
+    ../../../include
 
 SOURCES += \
     main.cpp \
@@ -33,7 +33,7 @@ HEADERS += \
     ../../pluginutils/pluginutils.h
 
 win32 {
-    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/ao
+    DLLDESTDIR = Z:/build/foreplayer/bin/plugins/backend/ao
 }
 unix {
     target.path = /usr/lib

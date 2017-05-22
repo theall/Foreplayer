@@ -112,6 +112,7 @@ void readFile(wstring fileName, char **buffer, long *size)
         int fileSize = ftell(fp);
         if(fileSize > 0)
         {
+            fseek(fp, 0, SEEK_SET);
             *buffer = new char[fileSize];
             *size = fread(*buffer, 1, fileSize, fp);
         }

@@ -33,7 +33,9 @@ target_link_libraries(${PROJECT_NAME} -lsamplerate)
 
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/include DESTINATION include/audio3d)
 install(TARGETS Audio3D
+        RUNTIME DESTINATION bin
         ARCHIVE DESTINATION lib)
+        
 if(LIBSAMPLERATE_LIBRARY)
     install(FILES ${LIBSAMPLERATE_LIBRARY} DESTINATION lib)
 else()

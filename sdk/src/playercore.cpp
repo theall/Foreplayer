@@ -54,10 +54,10 @@ bool TPlayerCore::playTrack(TTrackItem *trackItem)
     {
         // Connect plugin's callback to front's callback
         mPlayThread->setBackend(plugin);
-        result = true;
         mPlayThread->play();
         mPlayerState = PS_PLAYING;
         mLastTrackItem = trackItem;
+        result = true;
     }
 
     return result;

@@ -18,7 +18,7 @@
 #ifndef TLOOPBUFFER_H
 #define TLOOPBUFFER_H
 
-#define DEFAULT_BUF_SIZE        65536
+#define DEFAULT_BUF_SIZE        32768
 typedef unsigned char byte;
 
 class IDataCallback

@@ -23,6 +23,7 @@
 #include "pluginmanager/backend/backendplugin.h"
 
 #include <thread>
+#include <mutex>
 
 enum TThreadState
 {
@@ -44,7 +45,6 @@ public:
     void pause();
     void stop();
     void play();
-    void needToTerminate();
     bool seek(int ms);
     int playedTime();
 
@@ -67,5 +67,7 @@ private:
     TBackendPlugin *mBackendPlugin;
 
     thread *mThread;
+    mutex mMutex;
+    void needToTerminate();
 };
 #endif // TPLAYTHREAD_H

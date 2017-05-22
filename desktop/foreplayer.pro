@@ -14,6 +14,7 @@ include(app/app.pri)
 
 CONFIG(debug, debug|release){
     TARGET = $$join(TARGET,,,d)
+    DESTDIR = bin
 }
 
 HEADERS += \

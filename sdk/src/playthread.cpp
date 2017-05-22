@@ -37,7 +37,7 @@ TPlayThread::~TPlayThread()
 {
     if(mThread)
     {
-        mNeedTerminate = true;
+        needToTerminate();
         delete mThread;
         mThread = NULL;
     }
@@ -54,6 +54,7 @@ void TPlayThread::start()
 
 void TPlayThread::pause()
 {
+    mMutex.lock();
     if(mFront)
     {
         mFront->pause();
@@ -61,18 +62,22 @@ void TPlayThread::pause()
     } else {
         mState = TS_READY;
     }
+    mMutex.unlock();
 }
 
 void TPlayThread::stop()
 {
+    mMutex.lock();
     if(mFront)
         mFront->stop();
 
     mState = TS_READY;
+    mMutex.unlock();
 }
 
 void TPlayThread::play()
 {
+    mMutex.lock();
     if(mState != TS_PAUSED)
         mCurrentMicroSeconds = 0;
 
@@ -83,11 +88,20 @@ void TPlayThread::play()
     } else {
         mState = TS_READY;
     }
+    mMutex.unlock();
 }
 
 void TPlayThread::needToTerminate()
 {
     mNeedTerminate = true;
+    int tick = 0;
+    while(mState!=TS_TERMINATE)
+    {
+        this_thread::sleep_for((chrono::milliseconds(CYCLE_INTERVAL)));
+        tick += CYCLE_INTERVAL;
+        if(tick>1000)
+            mState = TS_TERMINATE;
+    }
 }
 
 bool TPlayThread::seek(int ms)
@@ -147,12 +161,14 @@ void TPlayThread::getAudioData(AudioDataType dataType, void *param1, void *param
 
 void TPlayThread::run()
 {
+    mMutex.lock();
     if(!mFront)
         mFront = new TSDLFront;
 
     mFront->start();
-
     mState = TS_READY;
+    mMutex.unlock();
+
     while(!mNeedTerminate)
     {
         this_thread::sleep_for((chrono::milliseconds(CYCLE_INTERVAL)));
@@ -161,6 +177,8 @@ void TPlayThread::run()
             mCurrentMicroSeconds += CYCLE_INTERVAL;
     }
 
+    mMutex.lock();
     mFront->stop();
     mState = TS_TERMINATE;
+    mMutex.unlock();
 }

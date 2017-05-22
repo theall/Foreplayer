@@ -133,7 +133,7 @@ void TEqualizerWindow::on_btnReset_clicked()
 
 void TEqualizerWindow::on_btnEnabled_clicked()
 {
-    emit eqEnableToggled(!mBtnEnabled->isChecked());
+    emit eqEnableToggled(mBtnEnabled->isChecked());
 }
 
 void TEqualizerWindow::on_btnProfile_clicked()

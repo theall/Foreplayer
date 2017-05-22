@@ -81,7 +81,7 @@ else(FOREPLAYERLIB_BUILD_SHARED)
     add_library(foreplayer STATIC ${source})
 endif(FOREPLAYERLIB_BUILD_SHARED)
 
-find_library(AUDIO3D_LIBRARY aosdk HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+find_library(AUDIO3D_LIBRARY audio3d HINTS ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 if(AUDIO3D_LIBRARY)
     install(FILES ${AUDIO3D_LIBRARY} DESTINATION ../dist)
 else()

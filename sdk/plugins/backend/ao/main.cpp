@@ -174,7 +174,7 @@ void closeTrack()
 }
 
 // Request next samples
-void nextSamples( byte* buffer, int bufSize)
+void nextSamples(byte* buffer, int bufSize)
 {
     // size is the size of 1 channel samples
     ao_do_frame((unsigned long)bufSize/4, buffer);
