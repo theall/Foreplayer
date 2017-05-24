@@ -1,9 +1,15 @@
 *.user
 ui_*.h
 *.zip
-thirdparty/m1lib/dist/
-dist/
 *.qm
 sdk/include/
 sdk/lib/
 sdk/bin/
+dist/plugins/
+dist/playlist/
+*.dll
+sdk/thirdparty/m1lib/dist/
+dist/samples/
+dist/skins/
+*.exe
+*.ini
