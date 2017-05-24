@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef TABSTRACTWINDOW_H
 #define TABSTRACTWINDOW_H
 
@@ -148,6 +148,8 @@ public:
 signals:
     void requestMoveWindow(QPoint);
     void requestResizeWindow(QRect);
+    void requestCloseWindow();
+    void windowActived();
 
 public slots:
 
@@ -173,8 +175,9 @@ protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
     void focusOutEvent(QFocusEvent *) Q_DECL_OVERRIDE;
     void showEvent(QShowEvent *) Q_DECL_OVERRIDE;
-
     void changeEvent(QEvent *) Q_DECL_OVERRIDE;
+    void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
+
     // TSkinReader interface
 public:
     void loadFromSkin(QDomElement element, TSkin *skin) Q_DECL_OVERRIDE;

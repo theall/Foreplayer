@@ -14,7 +14,7 @@ include(app/app.pri)
 
 CONFIG(debug, debug|release){
     TARGET = $$join(TARGET,,,d)
-    DESTDIR = bin
+    DESTDIR = $(FOREPLAYER_OUTPUT_PATH)
 }
 
 HEADERS += \

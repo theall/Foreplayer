@@ -102,10 +102,12 @@ TMainWindow::TMainWindow(QWidget *parent) : TAbstractWindow(parent)
     connect(mBtnMute, SIGNAL(clicked(bool)), this, SLOT(on_btnMute_clicked()));
     connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SLOT(on_volume_valueChanged(int)));
     connect(mProgressBar, SIGNAL(valueChanged(int)), this, SLOT(on_progressBar_valueChanged(int)));
-    connect(mIcon, SIGNAL(clicked()), this, SLOT(on_icnLogo_clicked()));
+    connect(mIcon, SIGNAL(clicked()), this, SLOT(on_icoLogo_clicked()));
 
     mBtnBrowser->setVisible(false);
     mBtnLyrics->setVisible(false);
+    mBtnMinimode->blockSignals(true);
+
     mDefaultLogo.addFile(":/window/images/logo.ico");
 
     retranslateUi();
@@ -278,7 +280,7 @@ void TMainWindow::retranslateUi()
     mBtnPause->setToolTip(tr("Pause(%1)").arg(mBtnPause->shortcut().toString()));
     mBtnPlay->setToolTip(tr("Play(%1)").arg(mBtnPlay->shortcut().toString()));
     mBtnBrowser->setToolTip(tr("Open browser(%1)").arg(mBtnBrowser->shortcut().toString()));
-    mBtnMinimode->setToolTip(tr("Normal Mode(%1)").arg(mBtnMinimode->shortcut().toString()));
+    mBtnMinimode->setToolTip(tr("Mini Mode(%1)").arg(mBtnMinimode->shortcut().toString()));
     mBtnOpen->setToolTip(tr("Open music(%1)").arg(mBtnOpen->shortcut().toString()));
     mBtnMute->setToolTip(tr("Volume switch(%1)").arg(mBtnMute->shortcut().toString()));
     mBtnPrev->setToolTip(tr("Previous(%1)").arg(mBtnPrev->shortcut().toString()));
@@ -334,7 +336,7 @@ void TMainWindow::on_btnMute_clicked()
     updatePlayEffect();
 }
 
-void TMainWindow::on_icnLogo_clicked()
+void TMainWindow::on_icoLogo_clicked()
 {
     if(mContextMenu)
         mContextMenu->popup(QCursor::pos());

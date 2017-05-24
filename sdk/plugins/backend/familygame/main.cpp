@@ -26,15 +26,15 @@
 
 #define EXPORT __declspec(dllexport)
 
-const wchar_t *szName          = L"family game";
+const wchar_t *szName          = L"Gme plugin";
 const wchar_t *szManufacture   = L"Bilge Theall";
 const wchar_t *szContact       = L"wazcd_1608@qq.com";
 const wchar_t *szDescription   = L"Plugin port to gme";
 const wchar_t *szCreateDate    = L"2016/10/22";//Plugin created date, such as 2016-10-11
 const wchar_t *g_cTypeDesc      = \
-        L"ZIP ;Zip package\n" \
-        L"RAR ;Rar package\n" \
-        L"RSN ;Super Nintendo package\n" \
+        L"ZIP ;Gme zip package\n" \
+        L"RAR ;Gme rar package\n" \
+        L"RSN ;Spc tracks package\n" \
         L"AY  ;ZX Spectrum/Amstrad CPC\n" \
         L"GBS ;Nintendo Game Boy\n" \
         L"GYM ;Sega Genesis/Mega Drive\n" \

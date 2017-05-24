@@ -148,7 +148,7 @@ bool TSkin::loadFromXmlFile(QString fileName)
 
 bool TSkin::loadFromZipFile(QString fileName)
 {
-    std::string stdFileName = fileName.toStdString();
+    std::string stdFileName = fileName.toLocal8Bit().toStdString();
     mZipfile = unzOpen(stdFileName.c_str());
     if(!mZipfile)
     {

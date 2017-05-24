@@ -113,6 +113,9 @@ public:
     bool playlistWindowVisible();
     void setPlaylistWindowVisible(bool bVisible);
 
+    bool isMiniMode();
+    void setMiniMode(bool miniMode);
+
     bool eqEnabled();
     void setEqEnabled(bool bEnabled);
     int eqBallance();
@@ -159,6 +162,7 @@ private:
     float mOpacity;
     int mPlayMode;
     bool mAutoClearExportMissions;
+    bool mMiniMode;
 
     void setValue(QString section, QVariant value);
     QVariant value(QString section, QVariant defValue=QVariant());

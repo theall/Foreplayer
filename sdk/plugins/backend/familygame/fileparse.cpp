@@ -56,6 +56,9 @@ bool TFileParse::parse(TMusicInfo *musicInfo)
     if(trackCount > 0)
     {
         TTrackInfo *trackInfo = musicInfo->trackList.at(0);
+        musicInfo->system = trackInfo->system;
+        musicInfo->game = trackInfo->game;
+        musicInfo->artist = trackInfo->artist;
         musicInfo->additionalInfo = trackInfo->additionalInfo;
         if(trackCount==1)
             musicInfo->musicName = trackInfo->trackName;
@@ -74,6 +77,9 @@ TTrackInfo *TFileParse::parse(byte *data, int size)
 
     TTrackInfo *trackInfo = new TTrackInfo;
     const gme_info_t *_trackInfo = gme.trackInfo(0);
+    trackInfo->system = char2wstring(_trackInfo->system);
+    trackInfo->artist = char2wstring(_trackInfo->author);
+    trackInfo->game = char2wstring(_trackInfo->game);
     trackInfo->trackName = char2wstring(_trackInfo->song);
     trackInfo->index = 0;
     trackInfo->duration  = _trackInfo->length;

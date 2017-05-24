@@ -30,6 +30,7 @@
 #define SEC_GUI_LAST_OPEN_DIR       "LastOpenDirectory"
 #define SEC_GUI_LAST_SKIN_PATH      "LastSkinPath"
 #define SEC_GUI_OPACITY             "Opacity"
+#define SEC_GUI_MINIMODE            "MiniMode"
 
 // Install
 #define SEC_INSTALL                 "Install"
@@ -113,6 +114,7 @@ TPreferences::TPreferences(QObject *parent):
     mLastOpenDir = stringValue(SEC_GUI_LAST_OPEN_DIR);
     mSkinPath = stringValue(SEC_GUI_LAST_SKIN_PATH);
     mOpacity = floatValue(SEC_GUI_OPACITY, 1.0);
+    mMiniMode = boolValue(SEC_GUI_MINIMODE);
     mSettings->endGroup();
 
     // Main window
@@ -424,6 +426,16 @@ float TPreferences::opacity()
 void TPreferences::setOpacity(float value)
 {
     SET_VALUE(value, mOpacity, SEC_GUI, SEC_GUI_OPACITY);
+}
+
+bool TPreferences::isMiniMode()
+{
+    return mMiniMode;
+}
+
+void TPreferences::setMiniMode(bool miniMode)
+{
+    SET_VALUE(miniMode, mMiniMode, SEC_GUI, SEC_GUI_MINIMODE);
 }
 
 PlayMode TPreferences::playMode()

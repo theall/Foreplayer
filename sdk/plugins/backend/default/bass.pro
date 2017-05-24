@@ -15,7 +15,7 @@ DEFINES +=
 INCLUDEPATH += ../\
     ../../pluginutils
 
-LIBS += F:/opensource/myplayer/Mu-master/src/thirdpart/bass/lib/bass.dll
+LIBS += $$PWD/../../../lib/bass.dll
 
 SOURCES += \
     main.cpp \
@@ -26,7 +26,7 @@ HEADERS += \
     ../../pluginutils/pluginutils.h
 
 win32 {
-    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/default
+    DLLDESTDIR = $(FOREPLAYER_OUTPUT_PATH)/plugins/backend/default
 }
 unix {
     target.path = /usr/lib

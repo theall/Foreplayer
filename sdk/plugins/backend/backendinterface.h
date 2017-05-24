@@ -84,6 +84,7 @@ struct TMusicInfo
     wstring additionalInfo;
     TTrackInfoList trackList;
     TMusicInfo(){
+        year = 0;
         fileSize = 0;
         duration = 0;
         channels = 2;

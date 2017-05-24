@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef TMINIWINDOW_H
 #define TMINIWINDOW_H
 
@@ -34,6 +34,8 @@ public:
     TMiniWindow(QWidget *parent = 0);
     ~TMiniWindow();
 
+    void setContextMenu(QMenu *menu);
+
 signals:
     void playClicked();
     void pauseClicked();
@@ -41,17 +43,14 @@ signals:
     void nextClicked();
     void stopClicked();
     void exitClicked();
-    void equalizerButtonToggle(bool);
     void lyricButtonToggle(bool);
-    void playlistButtonToggle(bool);
-    void browserButtonToggle(bool);
     void volumeToggle(bool);
-    void requestSwitchToMiniMode(bool normal);
     void volumeValueChanged(int);
     void progressChanged(int);
-    void requestOpenFiles(QStringList);
     void requestShowMinimized();
-    void requestToggleWindow();
+    void openMusicsClicked();
+    void normalModeClicked();
+    void iconClicked();
 
 private:
     TImageButton *mBtnPlay;
@@ -62,16 +61,30 @@ private:
     TImageButton *mBtnOpen;
     TImageButton *mBtnMute;
     TImageButton *mBtnMinimize;
-    TImageButton *mBtnBrowser;
-    TImageButton *mBtnEqualizer;
-    TImageButton *mBtnPlaylist;
     TImageButton *mBtnLyrics;
     TImageButton *mBtnExit;
-    TImageButton *mBtnMinimode;
+    TImageButton *mBtnNormalMode;
+    TSliderBar *mProgressBar;
+    TSliderBar *mVolumeBar;
+    TLabel *mIcon;
+    TScrollLabel *mMusicTitle;
+    TLedWidget *mLedTime;
+    TLabel *mStereo;
+    TLabel *mStatus;
+    TVisualWidget* mVisualWidget;
+
+    QMenu *mContextMenu;
+
+private slots:
+    void on_icoLogo_clicked();
 
     // TAbstractWindow interface
 public:
     void retranslateUi() Q_DECL_OVERRIDE;
+
+    // QWidget interface
+protected:
+    void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
 
     // TSkinReader interface
 public:

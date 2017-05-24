@@ -33,7 +33,7 @@ HEADERS += \
     ../../pluginutils/pluginutils.h
 
 win32 {
-    DLLDESTDIR = Z:/build/foreplayer/bin/plugins/backend/ao
+    DLLDESTDIR = $(FOREPLAYER_OUTPUT_PATH)/plugins/backend/ao
 }
 unix {
     target.path = /usr/lib

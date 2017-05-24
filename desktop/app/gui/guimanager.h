@@ -94,6 +94,8 @@ private slots:
     void slotRequireShowLyricWindow();
     void slotRequireShowDesktopLyric();
     void slotShowMinimized();
+    void slotMinimodeSwitch();
+    void slotNormalModeSwitch();
     void slotRequestExit();
     void slotOpenOptionsDialog();
     void slotAbout();
@@ -103,12 +105,13 @@ private slots:
     void slotRequestLoadSkin(int skinIndex);
     void slotRequestSkinNames(QStringList &names, int &currentIndex);
     void slotRequestSkinInfo(int,QPixmap&,QString&,QString&,QString&);
-
     void slotMainWindowActivationChanged();
     void slotTrayIconActivated(QSystemTrayIcon::ActivationReason reason);
     void slotVolumeUpTriggered();
     void slotVolumeDownTriggered();
     void slotDisplayTrayIconToggled(bool);
+    void slotRequestCloseWindow();
+    void slotMainWindowActived();
 
 private:
     TMainWindow *mMainWindow;
@@ -142,7 +145,7 @@ private:
     QString mCurrentSkinFile;
 
     void createSystemTrayIcon();
-    bool isMainwindowSunken();
+    bool isWindowSunken(TAbstractWindow *window);
     void toggleGui();
     void restoreGui();
 

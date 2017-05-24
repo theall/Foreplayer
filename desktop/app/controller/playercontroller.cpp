@@ -147,11 +147,13 @@ void TPlayerController::slotPrevButtonClicked()
         // Default recycle level is in track list
         if(ti < 0)
         {
-            ti = 0;
             mi--;
             if(mi < 0)
             {
                 mi = mCore->getMusicItemCount(playlistItem) - 1;
+            } else {
+                MusicItem musicItem = mCore->getMusicItem(playlistItem, mi);
+                ti = mCore->getTrackItemCount(musicItem) - 1;
             }
         }
         slotRequestPlay(pi, mi, ti);

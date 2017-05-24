@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "miniwindow.h"
 
 TMiniWindow::TMiniWindow(QWidget *parent) : TAbstractWindow(parent)
@@ -26,14 +26,35 @@ TMiniWindow::TMiniWindow(QWidget *parent) : TAbstractWindow(parent)
   , mBtnOpen(new TImageButton(this))
   , mBtnMute(new TImageButton(this))
   , mBtnMinimize(new TImageButton(this))
-  , mBtnBrowser(new TImageButton(this))
-  , mBtnEqualizer(new TImageButton(this))
-  , mBtnPlaylist(new TImageButton(this))
   , mBtnLyrics(new TImageButton(this))
   , mBtnExit(new TImageButton(this))
-  , mBtnMinimode(new TImageButton(this))
+  , mBtnNormalMode(new TImageButton(this))
+  , mProgressBar(new TSliderBar(Qt::Horizontal, this))
+  , mVolumeBar(new TSliderBar(Qt::Horizontal, this))
+  , mIcon(new TLabel(this))
+  , mMusicTitle(new TScrollLabel(this))
+  , mLedTime(new TLedWidget(this))
+  , mStereo(new TLabel(this))
+  , mStatus(new TLabel(this))
+  , mVisualWidget(new TVisualWidget(this))
 {
+    connect(mBtnExit, SIGNAL(clicked()), this, SIGNAL(exitClicked()));
+    connect(mBtnPlay, SIGNAL(clicked()), this, SIGNAL(playClicked()));
+    connect(mBtnPause, SIGNAL(clicked()), this, SIGNAL(pauseClicked()));
+    connect(mBtnOpen, SIGNAL(clicked()), this, SIGNAL(openMusicsClicked()));
+    connect(mBtnStop, SIGNAL(clicked()), this, SIGNAL(stopClicked()));
+    connect(mBtnNext, SIGNAL(clicked()), this, SIGNAL(nextClicked()));
+    connect(mBtnPrev, SIGNAL(clicked()), this, SIGNAL(prevClicked()));
+    connect(mBtnMinimize, SIGNAL(clicked()), this, SIGNAL(requestShowMinimized()));
+    connect(mBtnNormalMode, SIGNAL(clicked()), this, SIGNAL(normalModeClicked()));
+    connect(mBtnLyrics, SIGNAL(clicked(bool)), this, SIGNAL(lyricButtonToggle(bool)));
+    connect(mBtnMute, SIGNAL(clicked(bool)), this, SIGNAL(volumeToggle(bool)));
+    connect(mVolumeBar, SIGNAL(valueChanged(int)), this, SIGNAL(volumeValueChanged(int)));
+    connect(mProgressBar, SIGNAL(valueChanged(int)), this, SIGNAL(progressChanged(int)));
+    connect(mIcon, SIGNAL(clicked()), this, SLOT(on_icoLogo_clicked()));
 
+    mBtnLyrics->setVisible(false);
+    retranslateUi();
 }
 
 TMiniWindow::~TMiniWindow()
@@ -41,9 +62,41 @@ TMiniWindow::~TMiniWindow()
 
 }
 
+void TMiniWindow::setContextMenu(QMenu *menu)
+{
+    mContextMenu = menu;
+}
+
 void TMiniWindow::retranslateUi()
 {
-    mBtnMinimode->setToolTip(tr("Mini Mode(%1)").arg(mBtnMinimode->shortcut().toString()));
+    mBtnPause->setToolTip(tr("Pause(%1)").arg(mBtnPause->shortcut().toString()));
+    mBtnPlay->setToolTip(tr("Play(%1)").arg(mBtnPlay->shortcut().toString()));
+    mBtnNormalMode->setToolTip(tr("Normal Mode(%1)").arg(mBtnNormalMode->shortcut().toString()));
+    mBtnOpen->setToolTip(tr("Open music(%1)").arg(mBtnOpen->shortcut().toString()));
+    mBtnMute->setToolTip(tr("Volume switch(%1)").arg(mBtnMute->shortcut().toString()));
+    mBtnPrev->setToolTip(tr("Previous(%1)").arg(mBtnPrev->shortcut().toString()));
+    mBtnStop->setToolTip(tr("Stop(%1)").arg(mBtnStop->shortcut().toString()));
+    mBtnExit->setToolTip(tr("Exit"));
+    mBtnNext->setToolTip(tr("Next(%1)").arg(mBtnNext->shortcut().toString()));
+    mBtnMinimize->setToolTip(tr("Minimize"));
+    mBtnLyrics->setToolTip(tr("Lyric(%1)").arg(mBtnLyrics->shortcut().toString()));
+    mIcon->setToolTip(tr("Main menu"));
+    mProgressBar->setToolTip(tr("Progress"));
+    mVolumeBar->setToolTip(tr("Volume: %1%").arg(mVolumeBar->value()));
+}
+
+void TMiniWindow::on_icoLogo_clicked()
+{
+    if(mContextMenu)
+        mContextMenu->popup(QCursor::pos());
+}
+
+void TMiniWindow::contextMenuEvent(QContextMenuEvent *event)
+{
+    if(mContextMenu)
+        mContextMenu->popup(event->globalPos());
+
+    TAbstractWindow::contextMenuEvent(event);
 }
 
 void TMiniWindow::loadFromSkin(QDomElement element, TSkin *skin)
@@ -53,20 +106,18 @@ void TMiniWindow::loadFromSkin(QDomElement element, TSkin *skin)
 
     TAbstractWindow::loadFromSkin(element, skin);
 
-    mBtnPlay->loadFromSkin(element.firstChildElement(TAG_PLAYER_PLAY), skin);
-    mBtnPause->loadFromSkin(element.firstChildElement(TAG_PLAYER_PAUSE), skin);
-    mBtnPrev->loadFromSkin(element.firstChildElement(TAG_PLAYER_PREV), skin);
-    mBtnNext->loadFromSkin(element.firstChildElement(TAG_PLAYER_NEXT), skin);
-    mBtnStop->loadFromSkin(element.firstChildElement(TAG_PLAYER_STOP), skin);
-    mBtnOpen->loadFromSkin(element.firstChildElement(TAG_PLAYER_OPEN), skin);
-    mBtnMute->loadFromSkin(element.firstChildElement(TAG_PLAYER_MUTE), skin);
-    mBtnLyrics->loadFromSkin(element.firstChildElement(TAG_PLAYER_LYRIC), skin);
-    mBtnEqualizer->loadFromSkin(element.firstChildElement(TAG_PLAYER_EQUALIZER), skin);
-    mBtnPlaylist->loadFromSkin(element.firstChildElement(TAG_PLAYER_PLAYLIST), skin);
-    mBtnBrowser->loadFromSkin(element.firstChildElement(TAG_PLAYER_BROWSER), skin);
-    mBtnMinimize->loadFromSkin(element.firstChildElement(TAG_PLAYER_MINIMIZE), skin);
-    mBtnMinimode->loadFromSkin(element.firstChildElement(TAG_PLAYER_MINIMODE), skin);
-    mBtnExit->loadFromSkin(element.firstChildElement(TAG_PLAYER_EXIT), skin);
+    mBtnPlay->loadFromSkin(element.firstChildElement(TAG_MINI_PLAY), skin);
+    mBtnPause->loadFromSkin(element.firstChildElement(TAG_MINI_PAUSE), skin);
+    mBtnPrev->loadFromSkin(element.firstChildElement(TAG_MINI_PREV), skin);
+    mBtnNext->loadFromSkin(element.firstChildElement(TAG_MINI_NEXT), skin);
+    mBtnStop->loadFromSkin(element.firstChildElement(TAG_MINI_STOP), skin);
+    mBtnOpen->loadFromSkin(element.firstChildElement(TAG_MINI_OPEN), skin);
+    mBtnMute->loadFromSkin(element.firstChildElement(TAG_MINI_MUTE), skin);
+    mBtnLyrics->loadFromSkin(element.firstChildElement(TAG_MINI_LYRIC), skin);
+    mBtnMinimize->loadFromSkin(element.firstChildElement(TAG_MINI_MINIMIZE), skin);
+    mBtnNormalMode->loadFromSkin(element.firstChildElement(TAG_MINI_MINIMODE), skin);
+    mBtnExit->loadFromSkin(element.firstChildElement(TAG_MINI_EXIT), skin);
+    mLedTime->loadFromSkin(element.firstChildElement(TAG_MINI_LED), skin);
 
     update();
 }

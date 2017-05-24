@@ -2,7 +2,7 @@
 #define TMP3EXPORT_H
 
 #include "abstractexport.h"
-#include <lame.h>
+#include <lame/lame.h>
 
 class TMP3Export : public TAbstractExport
 {

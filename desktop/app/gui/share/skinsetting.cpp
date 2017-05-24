@@ -20,17 +20,19 @@
 
 #define SECTION_WINDOW              "window"
 #define KEY_MAIN_GEOMETRY           "main_geometry"
-#define KEY_MAIN_STATE              "main_STATE"
+#define KEY_MAIN_STATE              "main_state"
 #define KEY_EQUALIZER_GEOMETRY      "equalizer_geometry"
-#define KEY_EQUALIZER_STATE         "equalizer_STATE"
+#define KEY_EQUALIZER_STATE         "equalizer_state"
 #define KEY_DESKTOPLYRIC_GEOMETRY   "desktoplyric_geometry"
-#define KEY_DESKTOPLYRIC_STATE      "desktoplyric_STATE"
+#define KEY_DESKTOPLYRIC_STATE      "desktoplyric_state"
 #define KEY_LYRIC_GEOMETRY          "lyric_geometry"
-#define KEY_LYRIC_STATE             "lyric_STATE"
+#define KEY_LYRIC_STATE             "lyric_state"
 #define KEY_PLAYLIST_GEOMETRY       "playlist_geometry"
-#define KEY_PLAYLIST_STATE          "playlist_STATE"
+#define KEY_PLAYLIST_STATE          "playlist_state"
 #define KEY_BROWSER_GEOMETRY        "browser_geometry"
-#define KEY_BROWSER_STATE           "browser_STATE"
+#define KEY_BROWSER_STATE           "browser_state"
+#define KEY_MINI_GEOMETRY           "mini_geometry"
+#define KEY_MINI_STATE              "mini_state"
 
 TSkinSetting::TSkinSetting(QString skinName)
 {
@@ -88,6 +90,12 @@ void TSkinSetting::writeBrowserWindowState(const QByteArray &geometry, const QBy
     mSettings->setValue(KEY_BROWSER_STATE, state);
 }
 
+void TSkinSetting::writeMiniWindowState(const QByteArray &geometry, const QByteArray &state)
+{
+    mSettings->setValue(KEY_MINI_GEOMETRY, geometry);
+    mSettings->setValue(KEY_MINI_STATE, state);
+}
+
 void TSkinSetting::mainWindowState(QByteArray *geometry, QByteArray *state)
 {
     *geometry = mSettings->value(KEY_MAIN_GEOMETRY).toByteArray();
@@ -122,4 +130,10 @@ void TSkinSetting::browserWindowState(QByteArray *geometry, QByteArray *state)
 {
     *geometry = mSettings->value(KEY_BROWSER_GEOMETRY).toByteArray();
     *state = mSettings->value(KEY_BROWSER_STATE).toByteArray();
+}
+
+void TSkinSetting::miniWindowState(QByteArray *geometry, QByteArray *state)
+{
+    *geometry = mSettings->value(KEY_MINI_GEOMETRY).toByteArray();
+    *state = mSettings->value(KEY_MINI_STATE).toByteArray();
 }

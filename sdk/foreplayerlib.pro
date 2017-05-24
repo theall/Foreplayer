@@ -19,7 +19,7 @@ INCLUDEPATH += \
 LIBS += -L$$PWD/lib -lfftreal -laudio3d
 LIBS += -lsdl2 -lz
 
-DESTDIR = Z:/build/foreplayer/bin
+DESTDIR = $(FOREPLAYER_OUTPUT_PATH)
 
 SOURCES += \
     $$PWD/src/filter/samplesfilter.cpp \

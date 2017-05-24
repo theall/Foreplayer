@@ -12,11 +12,9 @@ CONFIG += c++11
 
 INCLUDEPATH += ../\
     ../../pluginutils \
-    ../../../thirdparty/unrar/include \
-    ../../../thirdparty/gme/src \
-    ../../../thirdparty/unzip
+    ../../../include
 
-LIBS += -LF:/opensource/foreplayer/dist/lib -lunrar -lgme -lunzip
+LIBS += -L$$PWD/../../../lib -lunrar -lgme -lunzip -lz
 
 SOURCES += \
     main.cpp \
@@ -36,7 +34,7 @@ HEADERS += \
     ../../pluginutils/pluginutils.h
 
 win32 {
-    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/gme
+    DLLDESTDIR = $(FOREPLAYER_OUTPUT_PATH)/plugins/backend/gme
 }
 
 unix {

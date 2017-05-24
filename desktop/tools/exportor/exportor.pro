@@ -29,5 +29,7 @@ HEADERS += \
 
 CONFIG(debug, debug|release){
     CONFIG += console
-    DESTDIR = z:/build/foreplayer/debug/debug
+    DESTDIR = $(FOREPLAYER_OUTPUT_PATH)
+} else {
+    DESTDIR = $$PWD/../../../dist
 }

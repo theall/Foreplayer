@@ -211,8 +211,13 @@ bool TRarParse::parse(TMusicInfo *musicInfo)
 
     if(musicInfo->trackList.size() > 0)
     {
+        TTrackInfo* firstTrack = musicInfo->trackList[0];
+        musicInfo->game = firstTrack->game;
+        musicInfo->artist = firstTrack->artist;
+        musicInfo->system = firstTrack->system;
+        musicInfo->year = firstTrack->year;
         if(musicInfo->additionalInfo.empty())
-            musicInfo->additionalInfo = musicInfo->trackList[0]->additionalInfo;
+            musicInfo->additionalInfo = firstTrack->additionalInfo;
 
         return true;
     }

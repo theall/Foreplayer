@@ -16,7 +16,7 @@ INCLUDEPATH += ../\
     ../../pluginutils \
     ../../../thirdparty/m1lib/src
 
-LIBS += -LZ:/build/foreplayer/thirdparty/build-m1lib-Desktop_Qt_5_5_1_MinGW_32bit-debug/debug -lm1
+LIBS += -L$$PWD/../../../lib -lm1
 
 SOURCES += \
     main.cpp \
@@ -28,7 +28,7 @@ HEADERS += \
     ../../pluginutils/pluginutils.h
 
 win32 {
-    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/arcade
+    DLLDESTDIR = $(FOREPLAYER_OUTPUT_PATH)/plugins/backend/arcade
 }
 unix {
     target.path = /usr/lib
