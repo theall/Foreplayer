@@ -18,7 +18,6 @@
 #ifndef TSAMPLESFILTER_H
 #define TSAMPLESFILTER_H
 
-#include <mutex>
 #include <foreplayer.h>
 #include <fftreal/fftreal_wrapper.h>
 #include <audio3d/include/audio_3d.h>
@@ -65,7 +64,6 @@ private:
     float mAmplification;
     float m3dEffectValue;
     int mSampleRate;
-    mutex mMutex;
 
     int mSampleCount;
     int mSampleBufSize;

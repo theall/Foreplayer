@@ -37,7 +37,7 @@ public:
 signals:
 
 private slots:
-    void slotQuitApp();
+    void slotQuitApp(bool& approved);
 
 private:
     TPlayerController *mPlayerController;

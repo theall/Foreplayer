@@ -58,7 +58,7 @@
        <item>
         <widget class="QLabel" name="lblVersion">
          <property name="text">
-          <string>Foreplayer 0.1.0.123, SDK 0.1.0.123 (Mingw 2013 32 bit)</string>
+          <string>Foreplayer 0.1.0.0, SDK 0.1.0.0 (Mingw 2013 32 bit)</string>
          </property>
         </widget>
        </item>

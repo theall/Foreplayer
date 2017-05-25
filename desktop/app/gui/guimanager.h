@@ -76,7 +76,7 @@ public:
 signals:
     void requestPlayNextMusic();
     void requestPlayPreviousMusic();
-    void requestShutdown();
+    void requestShutdown(bool &approved);
     void skinChanged();
     void muteToggled(bool);
 

@@ -82,8 +82,11 @@ int TPlaylistItem::insert(int pos, TMusicItem *item)
     if(!item)
         return -1;
 
+    int listSize = mMusicItems.size();
     if(pos < 0)
         pos = 0;
+    if(pos > listSize)
+        pos = listSize;
 
     mMusicItems.insert(mMusicItems.begin()+pos, item);
     mModified = true;
@@ -93,8 +96,11 @@ int TPlaylistItem::insert(int pos, TMusicItem *item)
 
 list<int> TPlaylistItem::insert(int pos, TMusicItems musicItems)
 {
+    int listSize = mMusicItems.size();
     if(pos < 0)
-        pos = musicItems.size();
+        pos = 0;
+    if(pos > listSize)
+        pos = listSize;
 
     int i = 0;
     list<int> newIndexes;

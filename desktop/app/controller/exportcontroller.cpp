@@ -26,6 +26,8 @@
 #define LOCK(x) QMutexLocker locker(x);\
     Q_UNUSED(locker)
 
+#define PROCESS_TIMEOUT 3000
+
 TExportController::TExportController(QObject *parent) :
     TAbstractController(parent)
   , mMissionsModel(new TMissionsModel(this, &mExportMissions, &mExportMissionsLock))
@@ -90,7 +92,21 @@ bool TExportController::joint(TGuiManager *gui, TCore *core)
 
 bool TExportController::hasExportingMissions()
 {
-    return mExportMissions.size() > 0;
+    LOCK(&mExportMissionsLock);
+
+    for(QSharedMemory *m : mExportMissions) {
+        TExportParam *exportParam = (TExportParam*)m->data();
+        if(exportParam->state==ES_RUNNING || exportParam->state==ES_STARTING || (exportParam->state==ES_PAUSED && exportParam->oldState!=ES_READY))
+        {
+            exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
+            if(exportParam->serverTick-exportParam->clientTick < PROCESS_TIMEOUT)
+            {
+                return true;
+            }
+        }
+    }
+
+    return false;
 }
 
 void TExportController::slotRequestAddExportMissions(void *missions, int size)
@@ -118,8 +134,7 @@ void TExportController::slotRequestAddExportMissions(void *missions, int size)
     if(mExportMissions.size() > 0)
         startMyTimer(300);
 
-    if(!mExportMissionDialog->isVisible())
-        mExportMissionDialog->show();
+    mExportMissionDialog->showNormal();
 }
 
 void TExportController::slotRequestCancelMissions(QList<int> rows)
@@ -206,7 +221,7 @@ void TExportController::slotTimerEvent()
             if(exportParam->state==ES_RUNNING || exportParam->state==ES_STARTING || (exportParam->state==ES_PAUSED && exportParam->oldState!=ES_READY))
             {
                 exportParam->serverTick = QTime::currentTime().msecsSinceStartOfDay();
-                if(exportParam->serverTick-exportParam->clientTick > 3000)
+                if(exportParam->serverTick-exportParam->clientTick > PROCESS_TIMEOUT)
                 {
                     if(exportParam->state == ES_STARTING)
                     {

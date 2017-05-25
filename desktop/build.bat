@@ -34,6 +34,8 @@ rem check whether exe file is generated successful
 set foreplayer_exe_file=release\foreplayer.exe
 if exist %foreplayer_exe_file% copy /y %foreplayer_exe_file% %cur_path%\..\dist
 
+rem install translation files
+copy /y %cur_path%\app\gui\resource\ts\*.qm %cur_path%\..\dist\ts
 popd
 
 rem Build export tool

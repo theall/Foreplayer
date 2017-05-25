@@ -124,7 +124,7 @@ TPreferences::TPreferences(QObject *parent):
     mLyricWindowVisible = boolValue(SEC_MAIN_WINDOW_LYRIC_BTN);
     mEqWindowVisible = boolValue(SEC_MAIN_WINDOW_EQ_BTN, true);
     mPlaylistWindowVisible = boolValue(SEC_MAIN_WINDOW_PLAYLIST_BTN, true);
-    mPlayMode = intValue(SEC_MAIN_WINDOW_PLAY_MODE);
+    mPlayMode = intValue(SEC_MAIN_WINDOW_PLAY_MODE, PM_RECYCLE_PLAY_LIST);
     mSettings->endGroup();
 
     // Equalizer window

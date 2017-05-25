@@ -183,7 +183,7 @@ void TPlaylistWindow::slotOnActionAddMusicsTriggered()
 {    
     QList<QPair<QString, QString>> suffixList;
     emit requestSupportSuffixList(suffixList);
-    suffixList.append(qMakePair(QString("*.*"), tr("All files")));
+    suffixList.insert(0, qMakePair(QString("*"), tr("All files")));
     QStringList sl;
     for(QPair<QString, QString> sd : suffixList)
         sl.append(QString("%1 (*.%2)").arg(sd.second, sd.first));

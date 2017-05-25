@@ -112,7 +112,6 @@ void TSamplesFilter::filter(int dwSamples, short *out)
     if(dwSamples > mSampleCount)
         return;
 
-    mMutex.lock();
     short *ptr = out;
 
     // Fill time domain buf with one channel samples
@@ -243,15 +242,11 @@ void TSamplesFilter::filter(int dwSamples, short *out)
 
         out[index++] = v;
     }
-
-    mMutex.unlock();
 }
 
 void TSamplesFilter::setVolume(float value)
 {
-    mMutex.lock();
     mVolume = value;
-    mMutex.unlock();
 }
 
 void TSamplesFilter::setVolume(int value)
@@ -266,7 +261,6 @@ float TSamplesFilter::volume()
 
 void TSamplesFilter::setBallance(float value)
 {
-    mMutex.lock();
     if(value > 1.0)
         value = 1.0;
     else if(value < 0.0f)
@@ -274,15 +268,12 @@ void TSamplesFilter::setBallance(float value)
 
     mBallanceL = value>0.5?(1-value)*2:1.0;
     mBallanceR = value<0.5?value*2:1.0;
-    mMutex.unlock();
 }
 
 void TSamplesFilter::setBallance(float left, float right)
 {
-    mMutex.lock();
     mBallanceL = left;
     mBallanceR = right;
-    mMutex.unlock();
 }
 
 void TSamplesFilter::setAmplification(float value)

@@ -377,7 +377,9 @@ void TPlaylistController::slotRequestAddNewPlaylist()
     if(!mPlaylistModel || !mPlaylistView)
         return;
 
-    mPlaylistModel->add(tr("New playlist"));
+    int newIndex = mPlaylistModel->add(tr("New playlist"));
+    mPlaylistView->selectRow(newIndex);
+    slotPlaylistIndexChanged(newIndex);
 }
 
 void TPlaylistController::slotRequestRemovePlaylist()
@@ -445,7 +447,8 @@ void TPlaylistController::slotRequestAddMusicFiles(QStringList files, int pos, Q
         return;
 
     mMusiclistModel->insertFiles(files, pos, newIndexes);
-    mTracklistModel->setMusicItem(mCore->getMusicItem(mMusiclistModel->playlistItem(), pos));
+    if(newIndexes.size() > 0)
+        mTracklistModel->setMusicItem(mCore->getMusicItem(mMusiclistModel->playlistItem(), newIndexes.at(0)));
 }
 
 void TPlaylistController::slotRequestSupportSuffixList(QList<QPair<QString, QString> > &suffixList)

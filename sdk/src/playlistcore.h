@@ -21,8 +21,6 @@
 #include "playlist/playlistitem.h"
 #include "pluginmanager/backendpluginmanager.h"
 
-#include <mutex>
-
 typedef list<int> intn;
 
 class TPlaylistCore
@@ -94,8 +92,6 @@ private:
     wstring mCurrentDir;
     wstring mPlaylistDir;
     bool mFileSaving;
-
-    mutex mMutex;
 
     void findPlaylist();
     void loadPlaylist(wstring fileName);

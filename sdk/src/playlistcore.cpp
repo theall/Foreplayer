@@ -74,31 +74,25 @@ void TPlaylistCore::setPlaylistDir(wstring dir)
 vector<wstring> TPlaylistCore::names()
 {
     vector<wstring> sl;
-    mMutex.lock();
-    for (TPlaylistItem *item : mPlaylist) {
+        for (TPlaylistItem *item : mPlaylist) {
         sl.push_back(item->name());
     }
-    mMutex.unlock();
 
     return sl;
 }
 
 int TPlaylistCore::size()
 {
-    mMutex.lock();
-    int pSize = mPlaylist.size();
-    mMutex.unlock();
-    return pSize;
+        int pSize = mPlaylist.size();
+        return pSize;
 }
 
 TPlaylistItem *TPlaylistCore::currentPlaylistItem()
 {
     TPlaylistItem *ret = NULL;
-    mMutex.lock();
-    if(mPlaylistIndex>=0 && mPlaylistIndex<(int)mPlaylist.size())
+        if(mPlaylistIndex>=0 && mPlaylistIndex<(int)mPlaylist.size())
         ret = mPlaylist[mPlaylistIndex];
-    mMutex.unlock();
-    return ret;
+        return ret;
 }
 
 int TPlaylistCore::insert(wstring name, int index)
@@ -108,8 +102,7 @@ int TPlaylistCore::insert(wstring name, int index)
     playlistItem->setFileName(getFileName());
 
     int ret = -1;
-    mMutex.lock();
-    RecordPlaylistItem;
+        RecordPlaylistItem;
 
     if(index>-1)
     {
@@ -119,9 +112,8 @@ int TPlaylistCore::insert(wstring name, int index)
         ret = mPlaylist.size();
         mPlaylist.push_back(playlistItem);
     }
-    RestorePlaylistItem;
-    mMutex.unlock();
 
+    RestorePlaylistItem;
     return ret;
 }
 
@@ -130,14 +122,12 @@ bool TPlaylistCore::remove(int index)
     if(index<0 || index>=(int)mPlaylist.size())
         return false;
 
-    mMutex.lock();
-    RecordPlaylistItem;
+        RecordPlaylistItem;
     TPlaylistItem *item = mPlaylist.at(index);
     mPlaylist.erase(mPlaylist.begin()+index);
-    RestorePlaylistItem;
-    mMutex.unlock();
+        RestorePlaylistItem;
 
-    delete item;    
+    delete item;
     return true;
 }
 
@@ -152,8 +142,7 @@ void TPlaylistCore::rename(int index, wstring newName)
 
 void TPlaylistCore::sort(SortMethod mode)
 {
-    mMutex.lock();
-    RecordPlaylistItem;
+        RecordPlaylistItem;
     if(mode==SM_TITLE_ASC)
         std::sort(mPlaylist.begin(), mPlaylist.end(), [=](TPlaylistItem *a, TPlaylistItem *b){
             return lower(a->name()) > lower(b->name());
@@ -163,15 +152,13 @@ void TPlaylistCore::sort(SortMethod mode)
             return lower(a->name()) < lower(b->name());
         });
     RestorePlaylistItem;
-    mMutex.unlock();
-}
+    }
 
 int TPlaylistCore::indexOf(TPlaylistItem *item)
 {
     int i = 0;
     int ret = -1;
-    mMutex.lock();
-    for(TPlaylistItem *t : mPlaylist)
+        for(TPlaylistItem *t : mPlaylist)
     {
         if(t==item)
         {
@@ -180,8 +167,7 @@ int TPlaylistCore::indexOf(TPlaylistItem *item)
         }
         i++;
     }
-    mMutex.unlock();
-    return ret;
+        return ret;
 }
 
 int TPlaylistCore::playingPlaylistIndex()
@@ -418,8 +404,7 @@ TPlaylistItem *TPlaylistCore::takeAt(int plIndex)
 
 list<int> TPlaylistCore::move(list<int> indexes, int pos)
 {
-    mMutex.lock();
-    TPlaylistItem *playingItem = mPlaylist.at(mPlaylistIndex);
+        TPlaylistItem *playingItem = mPlaylist.at(mPlaylistIndex);
 
     int listSize = mPlaylist.size();
     TPlaylistItems items;
@@ -448,7 +433,6 @@ list<int> TPlaylistCore::move(list<int> indexes, int pos)
         indexesMoved.push_back(pos+i++);
     }
 
-    mMutex.unlock();
 
     mPlaylistIndex = indexOf(playingItem);
 

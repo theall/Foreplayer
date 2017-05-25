@@ -154,7 +154,7 @@ bool exportTrack(
             exportParam->progressCurrentFrames = i+1;
 
 #ifdef QT_DEBUG
-        QThread::msleep(100);
+        QThread::msleep(1000);
 #else
         QThread::msleep(1);
 #endif
@@ -307,9 +307,12 @@ int main(int argc, char *argv[])
             }
             if(QFileInfo(destFileFullName).exists() && !overWriteFile)
             {
-                //if(bVerbose || exportParam)
                 printError(tr("Warning, destination file exists, %1").arg(destFileFullName), exportParam);
-
+                if(exportParam)
+                {
+                    wstring fileNameW = destFileFullName.toStdWString();
+                    wcscpy(exportParam->outputPath, fileNameW.c_str());
+                }
                 nSkip++;
                 continue;
             }

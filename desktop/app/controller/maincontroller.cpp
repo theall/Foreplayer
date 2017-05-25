@@ -65,7 +65,7 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
     Q_ASSERT(manager);
     Q_ASSERT(core);
 
-    connect(manager, SIGNAL(requestShutdown()), this, SLOT(slotQuitApp()));
+    connect(manager, SIGNAL(requestShutdown(bool&)), this, SLOT(slotQuitApp(bool&)));
 
     mPlayerController->joint(manager, core);
     mPlaylistController->joint(manager, core);
@@ -78,7 +78,7 @@ bool TMainController::joint(TGuiManager *manager, TCore *core)
     return ret;
 }
 
-void TMainController::slotQuitApp()
+void TMainController::slotQuitApp(bool& approved)
 {
     if(mExportController && mExportController->hasExportingMissions())
     {
@@ -86,8 +86,12 @@ void TMainController::slotQuitApp()
                         mGui->mainWindow(),
                         tr("Question"),
                         tr("There are sound tracks in exporting, do you really want to exit?")) != QMessageBox::Yes)
+        {
+            approved = false;
             return;
+        }
     }
+    approved = true;
     qApp->quit();
 }
 

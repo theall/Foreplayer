@@ -462,24 +462,28 @@ void TGuiManager::slotNormalModeSwitch()
 
 void TGuiManager::slotRequestExit()
 {
-    TPreferences *prefs = TPreferences::instance();
-    prefs->setWindowGeometryState(WT_MAIN, mMainWindow->saveGeometry(), mMainWindow->saveState());
-    prefs->setWindowGeometryState(WT_LYRIC, mLyricWindow->saveGeometry(), mLyricWindow->saveState());
-    prefs->setWindowGeometryState(WT_EQUALIZER, mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
-    prefs->setWindowGeometryState(WT_PLAYLIST, mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
-    saveSkinConfig();
+    bool approved = false;
+    emit requestShutdown(approved);
+    if(approved)
+    {
+        TPreferences *prefs = TPreferences::instance();
+        prefs->setWindowGeometryState(WT_MAIN, mMainWindow->saveGeometry(), mMainWindow->saveState());
+        prefs->setWindowGeometryState(WT_LYRIC, mLyricWindow->saveGeometry(), mLyricWindow->saveState());
+        prefs->setWindowGeometryState(WT_EQUALIZER, mEqualizerWindow->saveGeometry(), mEqualizerWindow->saveState());
+        prefs->setWindowGeometryState(WT_PLAYLIST, mPlaylistWindow->saveGeometry(), mPlaylistWindow->saveState());
+        saveSkinConfig();
 
-    emit requestShutdown();
-
-    mMainWindow->close();
-    mMiniWindow->close();
-    mLyricWindow->close();
-    mEqualizerWindow->close();
-    mPlaylistWindow->close();
-    mBrowserWindow->close();
-    mDesktopLyricWindow->close();
-    mDesktopWindow->close();
-    mMainMenu->close();
+        mMiniWindow->close();
+        mLyricWindow->close();
+        mEqualizerWindow->close();
+        mPlaylistWindow->close();
+        mBrowserWindow->close();
+        mDesktopLyricWindow->close();
+        mDesktopWindow->close();
+        // Avoid recall slotrequestexit()
+        mMainWindow->blockSignals(true);
+        mMainWindow->close();
+    }
 }
 
 void TGuiManager::slotOpenOptionsDialog()
