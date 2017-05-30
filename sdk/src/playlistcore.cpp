@@ -30,8 +30,14 @@
 #define SEC_CURRENT_MUSIC       "currentMusic"
 #define SEC_CURRENT_TRACK       "currentTrack"
 
-#define RecordMusicItem TMusicItem *currentItem = playlistItem->musicItem(mMusiclistIndex)
-#define RestoreMusicItem mMusiclistIndex = playlistItem->indexOf(currentItem)
+#define RecordMusicItem \
+    TMusicItem *currentItem = NULL; \
+    if(currentPlaylistItem()==playlistItem) \
+        currentItem = playlistItem->musicItem(mMusiclistIndex)
+
+#define RestoreMusicItem \
+    if(currentItem) \
+        mMusiclistIndex = playlistItem->indexOf(currentItem)
 
 #define RecordPlaylistItem TPlaylistItem *currentItem = NULL;\
 if(mPlaylistIndex>=0 && mPlaylistIndex<(int)mPlaylist.size())\

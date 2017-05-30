@@ -71,11 +71,7 @@ void TAbstractModel::setCurrentIndex(int index)
         return;
 
     mCurrentIndex = index;
-
-    QVector<int> roles;
-    roles.append(Qt::TextColorRole);
-    roles.append(Utils::IsCurrentRow);
-    emit dataChanged(QModelIndex(), QModelIndex(), roles);
+    emit layoutChanged();
 }
 
 void TAbstractModel::setPlayingIndex(int index)

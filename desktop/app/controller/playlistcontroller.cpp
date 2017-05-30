@@ -143,6 +143,7 @@ bool TPlaylistController::joint(TGuiManager *gui, TCore *core)
     int playingMusicIndex = -1;
     int playingTrackIndex = -1;
     mCore->getPlayingIndex(&playingPlaylistIndex, &playingMusicIndex, &playingTrackIndex);
+    mPlaylistModel->setPlayingIndex(playingPlaylistIndex);
     slotPlaylistIndexChanged(playingPlaylistIndex);
 
     locateIndex(playingPlaylistIndex, playingMusicIndex, playingTrackIndex);

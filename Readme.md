@@ -1,6 +1,6 @@
 Foreplayer is a video game music player.
 
-[![Build Status: Windows](https://ci.appveyor.com/api/projects/status/u1a69u5o5ej1pus4?svg=true)](https://ci.appveyor.com/project/AlexSzpakowski/love)
+[![Build status:windows](https://ci.appveyor.com/api/projects/status/jh9oc6my9epcrqpu?svg=true)](https://ci.appveyor.com/project/theall68665/foreplayer)
 
 Install development tools
 -------------

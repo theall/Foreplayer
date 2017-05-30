@@ -1,3 +1,11 @@
+@echo Building unrar...
+@call %~dp0\unrar\build.bat
+@echo Building unrar completed.
+
+@echo Building unzip...
+@call %~dp0\unzip\build.bat
+@echo Building unzip completed.
+
 @echo Building aosdk...
 @call %~dp0\aosdk\build.bat
 @echo Building aosdk completed.
@@ -17,11 +25,3 @@
 @echo Building m1lib...
 @call %~dp0\m1lib\build.bat
 @echo Building m1lib completed.
-
-@echo Building unrar...
-@call %~dp0\unrar\build.bat
-@echo Building unrar completed.
-
-@echo Building unzip...
-@call %~dp0\unzip\build.bat
-@echo Building unzip completed.

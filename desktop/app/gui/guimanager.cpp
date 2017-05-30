@@ -689,13 +689,7 @@ void TGuiManager::slotRequestCloseWindow()
     if(!TPreferences::instance()->displayTrayIcon())
         slotRequestExit();
     else {
-        //mBrowserWindow->showMinimized();
-        //mDesktopLyricWindow->showMinimized();
-        mMainWindow->showMinimized();
-        mPlaylistWindow->hide();
-        mEqualizerWindow->hide();
-        //mLyricWindow->hide();
-        mMiniWindow->hide();
+        slotShowMinimized();
     }
 }
 

@@ -1,0 +1,36 @@
+version: 0.1.0.{build}
+pull_requests:
+  do_not_increment_build_number: true
+skip_tags: true
+init:
+- cmd: set PATH=%PATH%;%MSYS%;%MINGW%
+environment:
+  QTDIR: C:\Qt\5.8\mingw53_32\bin
+  MINGW: c:\msys64\mingw32\bin
+  CMAKE: C:\Program Files (x86)\CMake\bin
+  MSYS: c:\msys64\usr\bin
+  FOREPLAYER_OUTPUT_PATH: c:\foreplayer
+  QTMINGW: C:\Qt\Tools\mingw530_32\bin
+install:
+- cmd: >-
+    pacman -S --noconfirm mingw-w64-i686-SDL2
+
+    pacman -S --noconfirm mingw-w64-i686-libsamplerate
+
+    pacman -S --noconfirm mingw-w64-i686-lame
+build_script:
+- cmd: >-
+    set PATH=%MINGW%;%CMAKE%
+
+    call sdk\build.bat
+
+    set PATH=%QTDIR%;%MINGW%;%CMAKE%
+
+    call desktop\build.bat
+artifacts:
+- path: dist\Foreplayer*setup.exe
+  name: installer
+- path: dist\Foreplayer*.7z
+  name: 7zpackage
+- path: dist\Foreplayer*.zip
+  name: zippackage
