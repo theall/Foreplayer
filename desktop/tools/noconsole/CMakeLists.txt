@@ -26,4 +26,4 @@ set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../)
 # set source files
 add_executable(noconsole noconsole.c)
 install(TARGETS noconsole
-        RUNTIME DESTINATION dist)
+        RUNTIME DESTINATION dist/win32)

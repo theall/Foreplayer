@@ -42,6 +42,11 @@ TDesktopLyricWindow::TDesktopLyricWindow(QWidget *parent) : TAbstractWindow(pare
     retranslateUi();
 }
 
+TDesktopLyricWindow::~TDesktopLyricWindow()
+{
+
+}
+
 void TDesktopLyricWindow::on_btnClose_clicked()
 {
     hide();

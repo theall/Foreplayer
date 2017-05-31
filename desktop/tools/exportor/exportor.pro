@@ -31,5 +31,4 @@ CONFIG(debug, debug|release){
     CONFIG += console
     DESTDIR = $(FOREPLAYER_OUTPUT_PATH)
 } else {
-    DESTDIR = $$PWD/../../../dist
 }

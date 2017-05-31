@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #ifndef TBROWSERWINDOW_H
 #define TBROWSERWINDOW_H
 
@@ -30,6 +30,7 @@ class TBrowserWindow : public TAbstractWindow
     Q_OBJECT
 public:
     explicit TBrowserWindow(QWidget *parent = 0);
+    ~TBrowserWindow();
 
 signals:
     void browserWindowToggled(bool);

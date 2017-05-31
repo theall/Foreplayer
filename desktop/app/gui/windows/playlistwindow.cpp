@@ -110,6 +110,11 @@ TPlaylistWindow::TPlaylistWindow(QWidget *parent) :
     retranslateUi();
 }
 
+TPlaylistWindow::~TPlaylistWindow()
+{
+
+}
+
 void TPlaylistWindow::on_btnClose_clicked()
 {
     hide();

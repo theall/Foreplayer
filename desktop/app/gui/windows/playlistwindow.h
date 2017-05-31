@@ -39,6 +39,7 @@ class TPlaylistWindow : public TAbstractWindow
     Q_OBJECT
 public:
     explicit TPlaylistWindow(QWidget *parent = 0);
+    ~TPlaylistWindow();
 
     TPlaylistWidget *playlistWidget() { return mCentralWidget; }
 

@@ -23,8 +23,6 @@ cmake_minimum_required(VERSION 2.6)
 # project name: aosdkplugin
 project(aosdkplugin)
 
-set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/plugins/backend)
-
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../pluginutils)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty)
@@ -52,6 +50,21 @@ if(AOSDK_LIBRARY)
 else()
     MESSAGE(WARNING "Didn't find aosdk!")
 endif()
+
+if(CMAKE_SYSTEM_NAME MATCHES "Linux")  
+    set(DIST_PATH linux)  
+elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")  
+    set(DIST_PATH win32)
+elseif (CMAKE_SYSTEM_NAME MATCHES "mac")
+    set(DIST_PATH mac)
+elseif (CMAKE_SYSTEM_NAME MATCHES "android")
+    set(DIST_PATH android) 
+elseif (CMAKE_SYSTEM_NAME MATCHES "ios")
+    set(DIST_PATH ios) 
+else()
+    MESSAGE(ERROR "Unsupported platform!")
+endif()
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/${DIST_PATH}/plugins/backend)
 
 install(TARGETS plugin
         RUNTIME DESTINATION ao)

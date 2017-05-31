@@ -1,6 +1,6 @@
 @echo off
 set cur_path=%~dp0
-set project_file=%cur_path%\foreplayer.pro
+set project_file=%cur_path%foreplayer.pro
 
 if not exist %project_file% echo Project file is not exist. & exit/b
 
@@ -20,7 +20,7 @@ if "%build_path%"=="" (
 echo Build path: %build_path%
 
 set foreplayer_build_path=%build_path%\foreplayer
-set dist_path=%build_path%\dist
+set dist_path=%cur_path%..\dist\win32
 
 if not exist %foreplayer_build_path% md %foreplayer_build_path%
 
@@ -32,10 +32,12 @@ mingw32-make -f Makefile.Release -j2
 
 rem check whether exe file is generated successful
 set foreplayer_exe_file=release\foreplayer.exe
-if exist %foreplayer_exe_file% copy /y %foreplayer_exe_file% %cur_path%\..\dist
+if exist %foreplayer_exe_file% copy /y %foreplayer_exe_file% %dist_path%
 
 rem install translation files
-copy /y %cur_path%\app\gui\resource\ts\*.qm %cur_path%\..\dist\ts
+echo Compiling translation files...
+call %~dp0\app\gui\resource\ts\release.cmd
+copy /y %cur_path%app\gui\resource\ts\*.qm %dist_path%\ts
 popd
 
 rem Build export tool

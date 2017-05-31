@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "lyricwindow.h"
 
 TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
@@ -31,6 +31,11 @@ TLyricWindow::TLyricWindow(QWidget *parent) : TAbstractWindow(parent, true)
     connect(mBtnDesktopLyric, SIGNAL(clicked()), this, SLOT(on_btnShowDescktopLyric_clicked()));
 
     retranslateUi();
+}
+
+TLyricWindow::~TLyricWindow()
+{
+
 }
 
 void TLyricWindow::setStringList(QStringList sl)

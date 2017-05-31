@@ -170,16 +170,16 @@ TGuiManager::TGuiManager(QObject *parent) : QObject(parent)
 
 TGuiManager::~TGuiManager()
 {
-    DELETE_POINTER(mMainWindow);
-    DELETE_POINTER(mMiniWindow);
-    DELETE_POINTER(mLyricWindow);
-    DELETE_POINTER(mEqualizerWindow);
-    DELETE_POINTER(mPlaylistWindow);
-    DELETE_POINTER(mBrowserWindow);
-    DELETE_POINTER(mDesktopLyricWindow);
-    DELETE_POINTER(mDesktopWindow);
-    DELETE_POINTER(mMainMenu);
-    DELETE_POINTER(mTrayIcon);
+//    DELETE_POINTER(mMainMenu);
+//    DELETE_POINTER(mTrayIcon);
+//    DELETE_POINTER(mMiniWindow);
+//    DELETE_POINTER(mLyricWindow);
+//    DELETE_POINTER(mEqualizerWindow);
+//    DELETE_POINTER(mPlaylistWindow);
+//    DELETE_POINTER(mBrowserWindow);
+//    DELETE_POINTER(mDesktopLyricWindow);
+//    DELETE_POINTER(mDesktopWindow);
+//    DELETE_POINTER(mMainWindow);
     DELETE_POINTER(mSkinManager);
 }
 

@@ -1,6 +1,6 @@
 @echo off
 set cur_path=%~dp0
-set project_file=%cur_path%\exportor.pro
+set project_file=%cur_path%exportor.pro
 
 if not exist %project_file% echo Project file is not exist. & exit/b
 
@@ -20,7 +20,7 @@ if "%build_path%"=="" (
 echo Build path: %build_path%
 
 set exportor_build_path=%build_path%
-set dist_path=%cur_path%\..\..\..\dist
+set dist_path=%cur_path%..\..\..\dist\win32
 
 if not exist %exportor_build_path% md %exportor_build_path%
 
@@ -32,7 +32,8 @@ mingw32-make -f Makefile.Release -j2
 
 rem check whether exe file is generated successful
 set exportor_exe_file=release\exportor.exe
-if exist %exportor_exe_file% copy /y %exportor_exe_file% %cur_path%\..\dist
+@echo on
+if exist %exportor_exe_file% copy /y %exportor_exe_file% %dist_path%
 
 popd
 @echo on

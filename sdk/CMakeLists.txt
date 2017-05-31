@@ -22,7 +22,6 @@ cmake_minimum_required(VERSION 3.0)
 
 project(foreplayerlib)
 
-set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR})
 set(CMAKE_CUSTOME_LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 add_definitions(-DFOREPLAYER_EXPORT)
@@ -74,6 +73,22 @@ include_directories(
     ${SDL2_INCLUDE_DIR}/../
 )
 
+if(CMAKE_SYSTEM_NAME MATCHES "Linux")  
+    set(DIST_PATH linux)  
+elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")  
+    set(DIST_PATH win32)
+elseif (CMAKE_SYSTEM_NAME MATCHES "mac")
+    set(DIST_PATH mac)
+elseif (CMAKE_SYSTEM_NAME MATCHES "android")
+    set(DIST_PATH android) 
+elseif (CMAKE_SYSTEM_NAME MATCHES "ios")
+    set(DIST_PATH ios) 
+else()
+    MESSAGE(ERROR "Unsupported platform!")
+endif()
+
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../dist)
+
 if(FOREPLAYERLIB_BUILD_SHARED)
     add_library(foreplayer SHARED ${source})
     target_link_libraries(foreplayer SDL2 -L${CMAKE_CUSTOME_LIB_PATH} -lfftreal -laudio3d -lz)
@@ -83,13 +98,13 @@ endif(FOREPLAYERLIB_BUILD_SHARED)
 
 find_library(AUDIO3D_LIBRARY audio3d HINTS ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 if(AUDIO3D_LIBRARY)
-    install(FILES ${AUDIO3D_LIBRARY} DESTINATION ../dist)
+    install(FILES ${AUDIO3D_LIBRARY} DESTINATION ${DIST_PATH})
 else()
     MESSAGE(WARNING "Didn't find audio3d library!")
 endif()
 
 #install(FILES ${CMAKE_SOURCE_DIR}/include/foreplayer.h DESTINATION include)
 install(TARGETS foreplayer
-        RUNTIME DESTINATION ../dist
-        ARCHIVE DESTINATION lib)
+        RUNTIME DESTINATION ${DIST_PATH}
+        ARCHIVE DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/lib)
         
