@@ -22,21 +22,44 @@
 
 #include <QTextCodec>
 
+#define FLAG_OFF    0x0
+#define FLAG_ON     0x1
+
+#define CMD_NULL    0x0
+#define CMD_RAISE   0x1
+#define CMD_EXIT    0x2
+
+#ifdef QT_DEBUG
+#define GLOBAL_SHARE_MEMORY_KEY     "Foreplayerd/Theall"
+#else
+#define GLOBAL_SHARE_MEMORY_KEY     "Foreplayer/Theall"
+#endif
+
+struct PROCESS_CHANNEL
+{
+    char flag;
+    char command;
+};
+
 TCheckThread::TCheckThread(TGuiManager *gui) :
     QThread()
   , mGui(gui)
   , mShareMemory(new QSharedMemory(GLOBAL_SHARE_MEMORY_KEY))
 {
-#ifndef QT_DEBUG
-    mShareMemory->create(1);
+    mShareMemory->create(sizeof(PROCESS_CHANNEL));
     mShareMemory->attach();
-#endif
+    mShareMemory->lock();
+    PROCESS_CHANNEL *pc = (PROCESS_CHANNEL*)mShareMemory->data();
+    pc->flag = FLAG_ON;
+    pc->command = CMD_NULL;
+    mShareMemory->unlock();
 }
 
 TCheckThread::~TCheckThread()
 {
     if(mShareMemory)
     {
+        mShareMemory->detach();
         delete mShareMemory;
         mShareMemory = NULL;
     }
@@ -47,11 +70,29 @@ void TCheckThread::run()
     while(true)
     {
         mShareMemory->lock();
-        char *b = (char*)mShareMemory->data();
-        if(b && *b && mGui)
+        PROCESS_CHANNEL *pc = (PROCESS_CHANNEL*)mShareMemory->data();
+        if(pc)
         {
-            *b = 0;
-            mGui->show();
+            if(TPreferences::instance()->enableMultiInstance())
+                pc->flag = FLAG_OFF;
+            else {
+                pc->flag = FLAG_ON;
+                switch (pc->command) {
+                case CMD_RAISE:
+                    pc->command = CMD_NULL;
+                    emit requestRestoreGui();
+                    break;
+                case CMD_EXIT:
+                    pc->command = CMD_NULL;
+                    if(mGui)
+                        mGui->exit();
+                    break;
+                case CMD_NULL:
+                    break;
+                default:
+                    break;
+                }
+            }
         }
         mShareMemory->unlock();
         msleep(500);
@@ -77,6 +118,7 @@ TApp::~TApp()
     if(mCheckThread)
     {
         mCheckThread->terminate();
+        mCheckThread->wait();
         delete mCheckThread;
         mCheckThread = NULL;
     }
@@ -88,46 +130,50 @@ int TApp::start()
 {
     TMainController controller;
     TGuiManager gui(&controller);
-    TCore *core= new TCore;
-    if(!core->isInitialized())
-        gui.mainWindow()->setTitles(core->getErrorString());
+    TCore core;
+    if(!core.isInitialized())
+        gui.mainWindow()->setTitles(core.getErrorString());
 
-    if(!controller.joint(&gui, core))
-    {
-        delete core;
+    if(!controller.joint(&gui, &core))
         return 0;
-    }
 
-#ifndef QT_DEBUG
     if(!mCheckThread)
     {
         mCheckThread = new TCheckThread(&gui);
+        QObject::connect(mCheckThread, &TCheckThread::requestRestoreGui, &gui, &TGuiManager::restoreGui);
         mCheckThread->start();
     }
-#endif
 
     int ret = mApp->exec();
-    delete core;
     return ret;
 }
 
 bool TApp::isRunning()
 {
-    if(TPreferences::instance()->enableMultiInstance())
-        return false;
+    bool ret = false;
 
-#ifndef QT_DEBUG
-    static QSharedMemory data(GLOBAL_SHARE_MEMORY_KEY);
-    if(!data.create(1))
+    if(!TPreferences::instance()->enableMultiInstance())
     {
-        data.attach();
-        data.lock();
-        *(char*)data.data() = 1;
-        data.unlock();
-        data.detach();
-        return true;
+        static QSharedMemory data(GLOBAL_SHARE_MEMORY_KEY);
+        if(!data.create(sizeof(PROCESS_CHANNEL)))
+        {
+            data.attach();
+            data.lock();
+            PROCESS_CHANNEL *pc = (PROCESS_CHANNEL*)data.data();
+            if(pc)
+            {
+                if(pc->flag==FLAG_ON)
+                {
+                    pc->command = CMD_RAISE;
+                    ret = true;
+                } else {
+                    ret = false;
+                }
+            }
+            data.unlock();
+            data.detach();
+        }
     }
-#endif
 
-    return false;
+    return ret;
 }

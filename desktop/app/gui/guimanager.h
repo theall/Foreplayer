@@ -56,6 +56,7 @@ public:
 
     void hide();
     void show();
+    void restoreGui();
 
     void exit();
 
@@ -147,7 +148,6 @@ private:
     void createSystemTrayIcon();
     bool isWindowSunken(TAbstractWindow *window);
     void toggleGui();
-    void restoreGui();
 
     // Move window to desktop center
     void centerWindow();

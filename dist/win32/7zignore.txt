@@ -1,0 +1,11 @@
+------------------------------ 
+CopyDependency
+CopyDependency.exe
+*.7z
+*.zip
+*.bat
+*.cmd
+7zignore.txt
+zipignore.txt
+setting.ini
+------------------------------

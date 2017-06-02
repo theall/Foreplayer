@@ -23,12 +23,16 @@
 
 #include "controller/maincontroller.h"
 
-#define GLOBAL_SHARE_MEMORY_KEY     "Foreplayer/Theall"
 class TCheckThread : public QThread
 {
+    Q_OBJECT
+
 public:
     explicit TCheckThread(TGuiManager *gui);
     ~TCheckThread();
+
+signals:
+    void requestRestoreGui();
 
 protected:
     void run() Q_DECL_OVERRIDE;

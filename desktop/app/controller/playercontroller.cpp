@@ -116,7 +116,8 @@ void TPlayerController::slotPlayButtonClicked()
     } else {
         // Get current index from playlist controller
         emit requestCurrentIndex(&pi, &mi, &ti);
-        slotRequestPlay(pi, mi, ti);
+        if(pi!=-1 && mi!=-1 && ti!=-1)
+            slotRequestPlay(pi, mi, ti);
     }
 }
 
