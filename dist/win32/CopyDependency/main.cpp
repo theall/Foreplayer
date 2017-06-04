@@ -1,8 +1,16 @@
 #include <iostream>
 #include <vector>
+#include <string>
+#include <algorithm>
 #include <windows.h>
 #include <tlhelp32.h>
 using namespace std;
+
+string toLower(string s)
+{
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
+    return s;
+}
 
 int pushFile(char *fileName)
 {
@@ -14,7 +22,7 @@ int pushFile(char *fileName)
     DWORD opt;
     PROCESS_INFORMATION pInfo;
     STARTUPINFOA startInfo;
-    DEBUG_EVENT devent;
+    //DEBUG_EVENT devent;
     char buffer[MAX_PATH];
     ZeroMemory(&me, sizeof(MODULEENTRY32));
     me.dwSize = sizeof(MODULEENTRY32);
@@ -39,7 +47,7 @@ int pushFile(char *fileName)
         printf("Failed to create process, %d\n", (int)GetLastError());
         return -1;
     }
-    bool state = true;
+    //bool state = true;
 //    while(state)
 //    {
 //        if(WaitForDebugEvent(&devent, INFINITE))             //等待调试事件
@@ -82,14 +90,16 @@ int pushFile(char *fileName)
     vector<string> fileNameList;
     GetWindowsDirectory(buffer, MAX_PATH);
     string systemDir = buffer;
+    systemDir = toLower(systemDir);
     GetCurrentDirectory(MAX_PATH, buffer);
     string currentDir = buffer;
     bMore = Module32First(hSnap, &me);
     while(bMore)
     {
         string fileNameTemp = me.szExePath;
-        if(fileNameTemp.substr(0, systemDir.size())!=systemDir &&
-                fileNameTemp.substr(0, currentDir.size())!=currentDir)
+        string subStr1 = toLower(fileNameTemp.substr(0, systemDir.size()));
+        string subStr2 = toLower(fileNameTemp.substr(0, currentDir.size()));
+        if(subStr1!=systemDir && subStr2!=currentDir)
         {
             //printf("%s\n", fileNameTemp.c_str());
             fileList.push_back(fileNameTemp);
