@@ -48,15 +48,19 @@ add_library(plugin SHARED ${gmeplugin})
 target_link_libraries(plugin ${GME_LIB} ${UNRAR_LIB} ${UNZIP_LIB} z)
 
 find_library(GME_LIBRARY gme HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+find_file(GME_LICENSE license_gme.txt HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/gme)
+
 if(GME_LIBRARY)
-    install(FILES ${GME_LIBRARY} DESTINATION gme)
+    install(FILES ${GME_LIBRARY} ${GME_LICENSE} DESTINATION gme)
 else()
     MESSAGE(WARNING "Didn't find gme library!")
 endif()
 
 find_library(UNRAR_LIBRARY unrar HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+find_file(UNRAR_LICENSE license.txt HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/unrar)
+
 if(UNRAR_LIBRARY)
-    install(FILES ${UNRAR_LIBRARY} DESTINATION gme)
+    install(FILES ${UNRAR_LIBRARY} ${UNRAR_LICENSE} DESTINATION gme)
 else()
     MESSAGE(WARNING "Didn't find unrar library!")
 endif()

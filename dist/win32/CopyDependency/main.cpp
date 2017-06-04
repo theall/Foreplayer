@@ -114,10 +114,11 @@ int pushFile(char *fileName)
 
 int printUsage()
 {
-    printf("Copy dependency libraries to current directory.\n");
-    printf("Copyright (C) Bilge Theall, all rights reserved.\n");
     printf("\nUsage:\n");
     printf("\tCopyDependency program\n");
+    printf("\n");
+    printf("Copy dependency libraries to current directory.\n");
+    printf("Copyright (C) Bilge Theall, all rights reserved.\n");
     return 0;
 }
 

@@ -1,1 +1,1 @@
-lupdate ../../../stringex.pro
+lupdate %~dp0/../../../../foreplayer.pro

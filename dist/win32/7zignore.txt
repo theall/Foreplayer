@@ -8,4 +8,6 @@ CopyDependency.exe
 7zignore.txt
 zipignore.txt
 setting.ini
+.git
+*.nsi
 ------------------------------

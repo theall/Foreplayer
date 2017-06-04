@@ -13,9 +13,10 @@ CONFIG += c++11
 DEFINES += 
 
 INCLUDEPATH += ../\
-    ../../pluginutils
+    ../../pluginutils \
+    $$PWD/../../../thirdparty/bass/include
 
-LIBS += $$PWD/../../../lib/bass.dll
+LIBS += $$PWD/../../../thirdparty/bass/bin/bass.dll
 
 SOURCES += \
     main.cpp \

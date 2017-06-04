@@ -37,6 +37,7 @@ if exist %foreplayer_exe_file% copy /y %foreplayer_exe_file% %dist_path%
 rem install translation files
 echo Compiling translation files...
 call %~dp0\app\gui\resource\ts\release.cmd
+if not exist %dist_path%\ts md %dist_path%\ts
 copy /y %cur_path%app\gui\resource\ts\*.qm %dist_path%\ts
 popd
 

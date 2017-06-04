@@ -45,8 +45,10 @@ add_library(plugin SHARED ${aosdkplugin})
 target_link_libraries(plugin -L${EXTERNAL_LIBRARY} -laosdk -lunzip z)
 
 find_library(AOSDK_LIBRARY aosdk HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../bin)
+find_file(AOSDK_LICENSE license.txt HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/aosdk)
+
 if(AOSDK_LIBRARY)
-    install(FILES ${AOSDK_LIBRARY} DESTINATION ao)
+    install(FILES ${AOSDK_LIBRARY} ${AOSDK_LICENSE} DESTINATION ao)
 else()
     MESSAGE(WARNING "Didn't find aosdk!")
 endif()

@@ -23,30 +23,15 @@ cmake_minimum_required(VERSION 3.6)
 # project name: bassplugin
 project(bassplugin)
 
-include_directories(../)
-include_directories(../../pluginutils)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../pluginutils)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/bass/include)
 
 # set source files
 set(bassplugin 
     main.cpp
     ../../pluginutils/pluginutils.cpp
 )
-
-find_library(BASS_LIBRARY bass HINTS bin)
-
-# set make to a shared library
-add_library(plugin SHARED ${bassplugin})
-if(UNIX)
-    target_link_libraries(plugin bass)
-else(UNIX)
-    target_link_libraries(plugin ${BASS_LIBRARY})
-endif(UNIX)
-
-if(BASS_LIBRARY)
-    install(FILES ${BASS_LIBRARY} DESTINATION default)
-else()
-    MESSAGE(WARNING "Didn't find bass library!")
-endif()
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")  
     set(DIST_PATH linux)  
@@ -62,6 +47,23 @@ else()
     MESSAGE(ERROR "Unsupported platform!")
 endif()
 set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../../../dist/${DIST_PATH}/plugins/backend)
+
+find_library(BASS_LIBRARY bass HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/bass/bin)
+find_file(BASS_LICENSE license.txt HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../thirdparty/bass/dist)
+
+# set make to a shared library
+add_library(plugin SHARED ${bassplugin})
+if(UNIX)
+    target_link_libraries(plugin bass)
+else(UNIX)
+    target_link_libraries(plugin ${BASS_LIBRARY})
+endif(UNIX)
+
+if(BASS_LIBRARY)
+    install(FILES ${BASS_LIBRARY} ${BASS_LICENSE} DESTINATION default)
+else()
+    MESSAGE(WARNING "Didn't find bass library!")
+endif()
 
 install(TARGETS plugin
         RUNTIME DESTINATION default)
