@@ -1,0 +1,99 @@
+﻿$name=victlapw
+$version=2
+$default=80
+$main
+
+#080 Attract 1
+#085 Attract 2
+#064 Course Select
+#072 Rude
+#068 Haze in Daylight
+#076 Slightly Refraction
+#096 Let It Go
+#198 Out for the Blue Shower
+#110 Infinity
+#052 Game Over
+#048 Continue?
+#090 Ending 1
+#059 Ending 2
+
+#001 Sound Check
+
+-------------------------------------------------------
+  [Voice]
+
+#128 [Voice]
+#129 [Voice] Keep up the pace.
+#130 [Voice] Step on it.
+#131 [Voice] Yee-hoo
+#132 [Voice]
+#133 [Voice] What's wrong with you?
+#134 [Voice]
+#135 [Voice]
+#136 [Voice] Look out behind you.
+#137 [Voice] I did it.
+#138 [Voice] Crash ahead, watch yourself.
+#139 [Voice]
+#140 [Voice]
+#141 [Voice] Adios.
+#142 [Voice]
+#143 [Voice]
+#144 [Voice] C'mon, any problems?
+#145 [Voice] What's going on?
+#146 [Voice] Return to the course.
+#147 [Voice] You okay?
+#148 [Voice]
+#149 [Voice] Ace Driver Victory Lap
+#150 [Voice] Please select a racing course.
+#151 [Voice] Please select a racing class.
+#152 [Voice] Please choose your transmission type.
+#153 [Voice] Get out my way.
+#154 [Voice] Ladies and gentlemen, welcome back to the Stream Field circuit.
+#155 [Voice] We're broadcasting from Serow Valley circuit.
+#156 [Voice] 
+#157 [Voice] First round of this championship series.
+#158 [Voice] Second round of this championship series.
+#159 [Voice] Final round of this championship series.
+#160 [Voice] Go!
+#161 [Voice] You're loosing time.
+#162 [Voice] Hurry up.
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] Final lap
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] Great maneuver
+#170 [Voice] It's agreat victory
+#171 [Voice] Two laps to go
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] The second race will be Stream Field.
+#177 [Voice] The second race will be Serow Valley.
+#178 [Voice] The second race will be Capital City.
+#179 [Voice] The third race will be Stream Field.
+#180 [Voice] The third race will be Serow Valley.
+#181 [Voice] The third race will be Capital City.
+#182 [Voice] Even though it's early in the season, all drivers look ..
+#183 [Voice] It's the half way point in the season and the competition is really starting ..
+#184 [Voice] 
+#185 [Voice] The winner of this championship series is Red Lightning, No.25.
+#186 [Voice] Congratulations.
+#187 [Voice] 
+#188 [Voice] Please continue to the next round. The rece is in Serow Vally.
+#189 [Voice] Please enter your name.
+#190 [Voice] Game over
+#191 [Voice] Aaagh
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] You're running first.
+#195 [Voice] The engine will blow up, shift up now.
+#196 [Voice] Final turn, be careful.
+
+  [Source]
+  Ace Driver Series / Arcade Soundtrack 005
+  Pony Canyon / Wonder Spirits  WSCA-00003  Sep 19, 1997
+
+$end

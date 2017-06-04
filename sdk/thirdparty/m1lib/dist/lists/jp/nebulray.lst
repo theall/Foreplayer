@@ -1,0 +1,36 @@
+﻿$name=nebulray
+$version=2
+$default=4
+$main
+
+#004 Overture
+#124 Coin
+#016 Exeo
+#003 Evergrenes
+#009 Lost-Marinarc
+#025 Sandvurn [Multi Looper]
+#007 RayMax
+#012 Survive
+#029 Stream Drive
+#020 Enemies-Space-Fortress Entrance
+#030 Enemies-Space-Fortress Attack
+#031 Final-Enemy
+#022 Return to Mother-Ship
+#018 Failure
+#014 everlasting...
+
+#001 Stereo check
+#002 Unused
+
+  ■出典
+  NEBULASRAY PCB (NB-1)
+
+  NEBULASRAY / NAMCO GAME SOUND EXPRESS Vol.13
+  VICTOR ENTERTAINMENT  VICL-15027  1994.07.21
+
+  ■作曲
+  CHARLY (福澤 正洋, ちぁーりー): 04, 16, 03, 09, 07, 12, 18
+  T. ISHIKAWA (石川 隆之, イシカバン): 29, 20, 30, 31, 22, 14
+
+// リスト作成: 加山。さん
+$end

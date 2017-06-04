@@ -1,0 +1,42 @@
+﻿$name=raflesia
+$version=2
+$default=151
+//$songmax=$a4
+$main
+ 
+ * Track names from the sound test mode.
+
+#151 Rafflesia BGM (Title Screen)<time="21.5">
+#149 Coin <time="2">
+#129 Start / Main BGM <time="1:21">
+#131 Boss BGM <time="7.4">
+#132 VS Boss BGM <time="21.4">
+#146 Boss Die <time="1.8">
+#130 (Main BGM) <time="1:20">
+#152 Player Bomb <time="2.5">
+#136 Area Clear <time="6.5">
+#135 Game Clear <time="4">
+#133 Naming <time="48.3">
+#134 Naming End <time="3">
+
+------------------------------------------------------
+
+#137 [SFX] Beam <time="2.5">
+#144 [SFX] Shot <time="2.5">
+#145 [SFX] Enemy Die <time="2.5">
+#146 [SFX] Boss Die <time="2.5">
+#147 [SFX] Rafflesia Die <time="2.5">
+#148 [SFX] Power Up <time="2.5">
+#149 [SFX] Coin <time="2.5">
+#150 [SFX] Extra Up <time="2.5">
+#152 [SFX] Player Bomb <time="3.5">
+#153 [SFX] UFO <time="2.5">
+#160 [SFX] UFO Bomb <time="2.5">
+#161 [SFX] Message <time="2.5">
+#162 [SFX] Score Up <time="2.5">
+#163 [SFX] Special <time="2.5">
+#164 [SFX] Teardrop <time="2.5">
+
+// List contribution by Neo Techno Bou
+// Updated by KC
+$end

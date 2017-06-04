@@ -1,0 +1,72 @@
+﻿$name=skykiddx
+$version=2
+$default=01
+//$songmax=$4C
+$fixed_volume=100
+$main
+
+#01 Mission Start 1 <time="3.08">
+#02 Mission Start 2 <time="2.78">
+#05 Main Theme 1 <time="1:15.80">
+#03 Mission Clear <time="3">
+#04 Thunder <time="8.1">
+
+#06 Main Theme 1' <time="1:15.8">
+#07 (Main Theme 1') <time="1:15.85">
+
+#08 Main Theme 2 <time="1:15.8">
+#09 (Main Theme 2) <time="1:15.9">
+
+#10 Main Theme 2' <time="1:15.8">
+#11 (Main Theme 2') <time="1:15.9">
+
+#23 [PSG] BGM Intro<time="2.8">
+#17 [PSG] BGM <time="38.5">
+#20 [PSG] Mission Clear
+#19 [PSG] Round Music
+#18 [PSG] Name Entry <time="25.3">
+
+#12 [SFX] 
+#13 [SFX] 
+#14 [SFX] 
+#15 [SFX] 
+#16 [SFX] Coin
+#22 [SFX] Balloon and Parashute Bursted, Counting Bonus
+#24 [SFX] Looping
+#25 [SFX] Bomb Approaching
+#26 [SFX] Crash (Hit by a friendly shot)
+#27 [SFX] Barron's Shot, Counting Bonus
+#28 [SFX] Max's Shot
+#29 [SFX] AA Gun Explosion
+#30 [SFX] Got a Bomg, Recovery from Crash
+#31 [SFX] Destroyed an Aircraft
+#32 [SFX] Destroyed a Ground Enemy
+#33 [SFX] Destroyed a Target
+#34 [SFX] Got a Hitt
+#35 [SFX] Crash
+#36 Extend Music
+#37 High Score Music
+#38 [SFX] Barron, Max Explosion
+#39 [SFX] Target Approaching
+#40 [SFX] Midway Start
+#41 [SFX] Landing
+#42 [SFX] AA Gun Shot
+#43 Unused
+#44 [SFX] Missed a Target
+
+  [Source / OST]
+  Namco Game Music Vol.2
+  Alfa Records  28XA-171  Aug 25, 1987
+
+  Namco Game Music Vol.2 (Legend Series)
+  SME / Scitron  SCDC-00234  Apr 23, 2003
+
+  Namco Video Game Music Programming Collection
+  Dempa  Apr 25, 1986
+
+  [Sound Composer]
+  Junko Ozawa
+
+// List Contribution by Neo Techno Bou
+// Updated by Fuj
+$end

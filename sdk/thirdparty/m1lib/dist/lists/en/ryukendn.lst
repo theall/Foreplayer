@@ -1,0 +1,35 @@
+﻿$name=ryukendn
+$version=2
+$default=001
+$main
+
+#001 Credit Inserted
+#066 Game Start
+#002 Shadow Soldier (Round 1 - Los Angeles)
+#005 Smo Wrestler (Round 1, 3 Boss)
+#052 Round Clear 1
+#004 PAT (Round 2 - New York)
+#007 I am Man (Round 2, 5 Boss)
+#053 Round Clear 2
+#003 Casino (Round 3 Las Vegas)
+#006 Na-N-To (Round 3 - Boss)
+#054 Round Clear 3
+#009 Symphony of Nature (JP ver. Round 4 - Grand Canyon)
+#055 Round Clear 4
+#008 Until the Last Gun is Fired (Round 5 - Transcontinental Train)
+#056 Round Clear 5
+#062 Evil's Humming (Last Round)
+#063 Last Fight (Last Round Boss)
+#044 Time Out
+#067 Game Over
+#047 Do You Like Sukiya..ki? (Ending)
+#045 That's the Way the Ball Bounces (Name Entry)
+
+  [Soundtrack]
+  Ninja Ryuukenden -G.S.M. Tecmo 1-
+  Pony Canyon / Scitron  D28B0013  Feb 1, 1989
+
+// List Contribution by Min
+// English List by Fujix
+// Fixed by GolGol
+$end

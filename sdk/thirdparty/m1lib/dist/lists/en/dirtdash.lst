@@ -1,0 +1,34 @@
+﻿$name=dirtdash
+$version=2
+$default=039
+$songmax=260
+$main
+
+#039 Title (Not on CD)
+#032 Select The Stage and The Car
+#040 City
+#041 Hill
+#038 Jungle
+#035 Mountain
+#043 Snow
+#028 Goal
+#031 Continue
+#025 Game Over
+#062 Ending
+#036 Rough and Road
+
+#001 Sound Check
+
+  [Source]
+  Dirt Dash / Arcade Soundtrack 015
+  Pony Canyon / Wonder Spirits  WSCA-00017  Jun 17, 1998
+
+  [Sound Composers]
+  Shinji Hosoe: #32, #40, #43, #28, #31, #25, #62, #36
+  Nobuyoshi Sano: #41
+  Yuri Misumi: #38
+  Hiroto Sasaki: #35
+
+// List by Skeleton081983
+// Updated by Ku
+$end

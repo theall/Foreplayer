@@ -1,0 +1,55 @@
+﻿$name=circusc
+$version=2
+$default=065
+$fixed_volume=111
+$main
+
+#065 Credit Inserted
+#029 Washington and Lee Swing (Stage Select)
+#019 Jump Through the Wheel of Fire, Get on the Bend (Stage 1, 5)
+#020 Ropewalking, Jump on the Jewel (Stage 2, 4)
+#022 Aerial Bar (Stage 6)
+#021 Trombonanza (Trampoline (Stage 3), Name Entry)
+#023 Miss
+
+#024 Stage 1, 5 (Faster)
+#025 Stage 2, 4 (Faster)
+#026 Stage 3 (Faster)
+#027 Stage 6 (Faster)
+#028 Stage 1, 5 (Restart)
+
+#065 [SFX] 
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+
+#128 [SFX] Cheer (Mid)
+#129 [SFX] Cheer (Long)
+#130 [SFX] Cheer (Short)
+
+  [Source]
+  Konami Game Music Vol.2
+  Alfa Records  ALC-22904  Sep 25, 1986
+
+  Konami Game Music Vol.2 (Legend Series)
+  SME / Scitron  SCDC-00060  Jan 11, 2001
+
+  Legend of Game Music 2 - Platinum Box -
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

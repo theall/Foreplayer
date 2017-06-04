@@ -1,0 +1,90 @@
+﻿$name=nwarr
+$version=2
+$default=0043
+//$songmax=1023
+$fixed_volume=274
+$main
+
+#0043 QSound Logo
+//Main QSound
+
+ &lt;DISC 1&gt;
+#0001 Opening～Title
+#0003 Player Select 1
+#0047 Player Select 2
+#0002 VS.
+#1004 LEI-LEI Stage (China)
+#1006 LEI-LEI Winning
+#1008 LEI-LEI Ending 1
+#1022 LEI-LEI Ending 2
+#0016 AULBATH Stage (Brazil)
+#0028 AULBATH Winning
+#0040 AULBATH Ending 1
+#1018 AULBATH Ending 2
+#0010 VICTOR Stage (Germany)
+#0022 VICTOR Winning
+#0034 VICTOR Ending 1
+#1012 VICTOR Ending 2
+#0013 ANAKARIS Stage (Egypt)
+#0025 ANAKARIS Winning
+#0037 ANAKARIS Ending 1
+#1015 ANAKARIS Ending 2
+#0018 PHOBOS Stage (Mexico)
+#0030 PHOBOS Winning
+#1002 PHOBOS Ending 1
+#1020 PHOBOS Ending 2
+#0012 MORRIGAN Stage (Scotland)
+#0024 MORRIGAN Winning
+#0036 MORRIGAN Ending 1
+#1014 MORRIGAN Ending 2
+#0019 PYRON Stage (Hellstorm)
+#0031 PYRON Winning
+#1003 PYRON Ending 1
+#1021 PYRON Ending 2
+
+ &lt;DISC 2&gt;
+#0011 ZABEL Stage (Australia)
+#0023 ZABEL Winning
+#0035 ZABEL Ending 1
+#1013 ZABEL Ending 2
+#0009 GALLON Stage (England)
+#0021 GALLON Winning
+#0033 GALLON Ending 1
+#1011 GALLON Ending 2
+#0008 DEMITRI Stage (Romania)
+#0020 DEMITRI Winning
+#0045 DEMITRI Ending 1-A
+#0032 DEMITRI Ending 1-B
+#1010 DEMITRI Ending 2
+#0004 Here Comes A New Challenger
+#0014 FELICIA Stage (U.S.A.)
+#0026 FELICIA Winning
+#0038 FELICIA Ending 1
+#1016 FELICIA Ending 2
+#0015 BISHAMON Stage (Japan)
+#0027 BISHAMON Winning
+#0039 BISHAMON Ending 1
+#1017 BISHAMON Ending 2
+#0017 SASQUATCH Stage (Canada)
+#0029 SASQUATCH Winning
+#0041 SASQUATCH Ending 1
+#1019 SASQUATCH Ending 2
+#1005 DONOVAN Stage (Unknown)
+#1007 DONOVAN Winning
+#1009 DONOVAN Ending 1
+#1023 DONOVAN Ending 2
+#0006 Continue
+#0007 Game Over
+#0005 Ranking Display
+#0042 Staff Roll 1
+#0046 Staff Roll 2
+
+#0044 QSound Logo 2
+//Sub QSound
+
+  ■出典
+  ヴァンパイアハンター　アーケード ゲームトラック
+  Sony Records  SRCL-3197～8  1995.05.21
+
+// List Contribution by NK
+$end

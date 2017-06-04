@@ -1,0 +1,51 @@
+﻿$name=tokkae
+$version=2
+$default=258
+$main
+
+#258 Tokkaete Go! (Title)
+#259 Game Mode Select
+#260 Player Select
+#261 Map Preview
+#271 Vs. Screen
+#262 Tokkaemasu March (Easy Level)
+#263 Rensashitenen (Medium Level)
+#265 Play Music (Later Stages)
+#273 Opponent in a Pinch
+#274 Win
+#264 How Skilled.. (Hard Level)
+#267 Player in a Pinch
+#269 Player in a Pinch (Later Stages)
+#272 Loss
+#270 Continue
+#278 Easy Game Ending Message
+#266 Futari ga Ichiban! (2-player Game)
+#268 Dangerous (2-player Game)
+#275 Complete Fanfare
+#277 See U Again (Credits)
+#293 Hard Level Final Result
+#276 Name Entry
+
+#280 Ending - Shin with Crystal Might
+#281 Ending - Hiroshi & Hitomi
+#282 Ending - Shirakawa Easter III
+#283 Ending - Doki Doki Vanilla
+#284 Ending - Ayame Sanjouzuka
+#285 Ending - Red Heels Yamaguchi
+#286 Ending - Dr. Dopply
+#287 Ending - Upata
+#288 Ending - Saburou Yanatori
+#289 Ending - Rika Shirakawa
+
+#279 ??
+#290 ??
+//#291 Win = #274
+//#292 = #280
+
+#257 Sound Test
+
+  [Source]
+  Konami Best Selection '98 Autumn
+  King Records  KICA-7913  Oct 9, 1998
+
+$end

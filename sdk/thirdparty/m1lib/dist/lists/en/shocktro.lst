@@ -1,0 +1,44 @@
+﻿$name=shocktro
+$version=2
+$default=002
+$fixed_volume=157
+$main
+
+#002 Neo Geo Logo
+
+#071 Shock Troopers (Opening)
+#074 Instruction
+#064 Select (Player Select, Map Preview)
+#038 Ride on
+#040 Neo Tokyo 2015
+//#041 Neo Tokyo 2015
+//#033 Neo Tokyo 2015
+#035 Junglizm
+#067 Remark #1
+//#050 Remark #1
+//#068 Remark #1
+//#069 Remark #1
+#072 Remark #2 (Intermissions)
+#039 Undercover
+#037 Bumpers
+//#045 Bumpers
+//#044 Bumpers
+#042 Nu Era of Technorogy
+//#043 Nu Era of Technorogy
+//#036 Nu Era of Technorogy
+#034 Dark Matter (Boss A)
+#048 Breakbeat Science (Boss B)
+#065 Stage Clear
+#066 Last Stage
+#049 Last Boss
+#070 Last Boss Clear
+
+#051 Talk Darty to Me (Ending)
+//#052 Talk Darty to me
+#073 Ranking
+
+  [Source]
+  Shock Troopers Second Squad / Shock Troopers
+  Pony Canyon / Scitron  PCCB-00355  Jan 20, 1999
+
+$end

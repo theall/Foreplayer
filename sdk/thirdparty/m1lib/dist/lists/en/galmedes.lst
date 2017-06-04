@@ -1,0 +1,84 @@
+﻿$name=galmedes
+$version=2
+$default=050
+$main
+
+#050 Credit Inserted <time="2">
+#003 Start Demo <time="27.8">
+#005 Round 1
+#004 Round 2
+#006 Round 3
+#009 Round 4
+#010 Boss 1
+#008 Round 4
+#011 Boss 2
+#012 Clear <time="10.5">
+#013 Ending
+#015 Continue? <time="11">
+#016 Name Entry
+
+#012 Clear
+#007 Unused 1
+#014 Unused 2
+
+---------------------------------------------------
+ [SFX] 
+
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+
+// List contribution by ZEK.
+$end

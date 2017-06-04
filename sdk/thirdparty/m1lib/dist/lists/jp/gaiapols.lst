@@ -1,0 +1,51 @@
+﻿$name=gaiapols
+$version=2
+$default=$23
+$main
+
+$23 夕映えの中を -IN THE EVENING GROW- (タイトルデモBGM)
+$1b 出発の朝 -MORNING DEPARTURE- (プレイヤーセレクト／パスワード入力画面)
+$2e 大空を駆ける -DOWN TO THE EARTH- (スタートデモBGM)
+$20 追跡 -AVARON- (Stage 1 BGM)
+$13 戦闘 -BATTLE- (通常ボスBGM)
+$1a 勇者の刻印 -SYMBOL OF THE HERO- (パターンクリアBGM)
+$2d 地図を広げて -MAP- -intro- (マップ画面BGM -intro-)
+$25 地図を広げて -MAP- (マップ画面BGM)
+$2a 炎の騎士のテーマ -KNIGHT OF FLAMES- (炎の男デモBGM)
+$11 碧の大地で -NEOMOSK- (Stage 2, 7 BGM)
+$0f さらわれた娘 -TAKE BACK MY DAUGHTER- (領主デモBGM)
+$10 伯爵 -TORAN- (Stage 3 BGM)
+$29 オリンピアのテーマ -OLYNPIA- (女の子デモBGM)
+$12 鍵の都市 -KEY CITY- (Stage 4, 10, 14 BGM)
+$15 コーランの響く街角 -MAHARISH- (Stage 5 BGM)
+$24 有翼の石 -STONE OF THE WINGED MAN- (有翼の石デモBGM)
+$1d 宝探し -KOBEN- (Stage 6 BGM)
+$2c ラダーのテーマ -LADDER- (ラダーデモBGM)
+$08 水晶の剣 -CRYSTAL SWORD- (水晶の剣デモBGM)
+$16 水の精霊を呼ぶ歌 -BRANMUTE- (Stage 8 BGM)
+$28 魔界に落ちる -THE ENTRANCE TO DARK CORRIDOR- (暗黒回廊入り口デモBGM)
+$17 暗黒回廊 -DARK CORRIDOR- (Stage 9 BGM)
+$2b 有翼人のテーマ -THE WINGED MAN- (飛翔人デモBGM)
+$1e 呪術師の村 -ALEISTA- (Stage 11 BGM)
+$26 遥かなる航海 -FAR BEYOND TO SAIL- (船長脅迫デモBGM)
+$18 金色の丘 -ATRANTIKA- (Stage 12 BGM)
+$27 遠き日を慕んで -THE MEMORY OF THE PAST MISTAKE- (機械デモBGM)
+$1c 迷宮をさまよう -LOS- (Stage 13 BGM)
+$0a 邪悪なる鼓動 -WICKED PULSATION- (貴公子デモBGM)
+$0e 楽園への道 -HIGHWAY- (Stage 15 BGM)
+$0b 運命の扉 -THE DOOR OF DESTINY- (ガイアポリス入り口デモBGM)
+$1f 伝説の宮殿 -GAIAPOLIS- (Stage 16 BGM)
+$0d 侵入 -INVATION- (Stage 17 BGM 1)
+$21 キングダークネス -KING DARKNESS- (Stage 17 BGM 2)
+$09 最後の闘い -THE FINAL BATTLE- -intro- (最後ドラゴンBGM -intro-)
+$22 最後の闘い -THE FINAL BATTLE- (最後ドラゴンBGM)
+$0c 果てしない時の彼方に -EPILOGUE- (エンドデモBGM)
+$14 終章 -CODA- (ゲームオーバーBGM)
+$19 勝利を讃えて -CELEBRATION- (ランキングBGM)
+$2f 追憶 -ENDING- (エンディングBGM)
+
+  ■出典
+  コナミ・アミューズメントサウンズ '93 - 夏
+  KING RECORDS  KICA-7616～7617  1993.08.21
+
+$end

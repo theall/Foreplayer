@@ -1,0 +1,32 @@
+﻿$name=gticlub
+$version=2
+$default=268
+$main
+
+#268 Konami Logo <time="6">
+#259 Beat Bomb (Title Screen)
+#260 Beat "Loop" Bomb (Car Selection)
+#263 Hybrid Notes (Novice, Expert)
+#258 "3-4-5" (Novice, Expert Final Lap, Tag Race)
+#257 She Said "Darlin', Miles is Angry" (Super Expert)
+#264 Love over Time (Super Expert, Final Lap)
+#261 Heaven Shuffle (Finish)
+#262 Damned Souls Blues (After Race)
+#267 Evil-Eyed Angel (Tag Race)
+#265 No Problem, But I Miss You (Ending) (1) <time="4.41">
+#265 No Problem, But I Miss You (Ending) (2) <time="4.41">
+#265 No Problem, But I Miss You (Ending) (3) <time="4.41">
+#266 No Problem, But I Miss You (Ending) (4)
+
+#269 Speaker Test
+
+  [Source]
+  GTI Club c/w Jet Wave & Winding Heat Original Game Soundtrack
+  King Records  KICA-7751  Feb 5, 1997
+
+  [Composed]
+  A Stone Club Band (Toshirou Sakurai)
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

@@ -1,0 +1,25 @@
+﻿$name=gprider
+$version=2
+$default=151
+$songmax=158
+$main
+
+#151 Advertize <time="16">
+#149 Start <time="47">
+#148 Qualify <time="1:01">
+#145 Time Attack (Automatic Transmission) <time="3:15">
+#147 Be Over (Manual Transmission) <time="2:20">
+#150 Jubliant Melody <time="28">
+#158 Theme of joskin <time="7">
+#154 The Perfect Power (Com Play) <time="3:36">
+#156 Joyful Melody <time="6">
+#157 Melody of Chagrin <time="5">
+#144 Game Over <time="6">
+#152 Name Entry <time="42">
+#155 ??? <time="4">
+
+  [Source]
+  Formula -G.S.M. Sega 5-
+  Pony Canyon / Scitron   PCCB-00059  Apr 21, 1991
+
+$end

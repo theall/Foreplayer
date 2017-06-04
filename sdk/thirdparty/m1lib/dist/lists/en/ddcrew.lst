@@ -1,0 +1,18 @@
+$name=ddcrew
+$version=2
+$default=145
+$main
+
+#145 Credit
+#247 BGM 1
+#243 Merry-go-round 1
+#244 Merry-go-round 2
+#248 Boss 1
+#240 BGM 2
+#242 Boss 2
+#241 BGM 3
+#249 Final
+#250 Ending
+
+// List contribution by szk
+$end

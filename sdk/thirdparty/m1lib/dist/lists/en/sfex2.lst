@@ -1,0 +1,42 @@
+﻿$name=sfex2
+$version=2
+$default=009
+$songmax=044
+$fixed_volume=143
+$main
+
+#009 QSound Logo
+
+#020 Street Fighter EX 2
+#018 Select
+#032 Pearl in The Sky
+#033 White Field
+#034 The Infinite Earth
+#035 Lost Sea
+#036 Mahatma Temple with Hymn
+#037 Three Trees
+#038 Crowded Town
+#039 Flash Train
+#040 Fake World
+#041 Crash Power Plant
+#042 Amusementive Crime 2
+#043 More Stronger
+#044 Passage of Lotus
+#023 Ending
+#021 Credits Roll
+#019 Continue
+#016 Stage Clear
+#022 Challenger
+#017 Game Over
+#008 Speaker Test
+
+  [Source]
+  Street Fighter EX 2 / Arika Capcom
+  Pony Canyon / Scitron  PCCB-00322  Jun 17, 1998
+
+  [Sound Composer and Arranger]
+  Takayuki Aihara: #16, #17, #20, #21, #22, #34, #36, #42
+  Shinji Hosoe: #18, #19, #32, #37, #39, #40, #43
+  Ayako Sasou: #23, #33, #35, #38, #41, #44
+
+$end

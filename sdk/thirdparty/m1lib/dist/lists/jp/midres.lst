@@ -1,0 +1,52 @@
+﻿$name=midres
+$version=2
+$default=058
+$main
+
+#058 わきあがれ! パワー (BGM 1)
+#062 初めての難敵 (BOSS 1)
+#090 敵地内武器庫 (INTERMISSION)
+#059 希望から失意、そして大逆転へ (BGM 2)
+#063 森林の中で (BOSS 2)
+#060 ?
+#064 巨大戦艦 (BOSS 3)
+#066 決意 (MONITOR ROOM)
+#061 カオ・カオ・カオ (LAST STAGE)
+#065 キングクリムゾン (FINAL BOSS)
+#067 夜明け (ENDING)
+#068 風の旅 (STAFF ROLL)
+
+-------------------------------------------------
+ [Voice]
+
+#076 [Voice] full auto
+#077 [Voice] 3-way
+#078 [Voice] fire
+#079 [Voice] shot gun
+#080 [Voice] homing missile
+#081 [Voice] nitro
+#082 [Voice] shower
+#083 [Voice] barrier
+#084 [Voice] power up
+#085 [Voice] super power up
+#086 [Voice] take a weapon
+#087 [Voice] hurry up!
+#088 [Voice] woh!
+#089 [Voice] urg!
+#097 [Voice] help
+#098 [Voice] thank you, son.
+#099 [Voice] thank you.
+#100 [Voice] thank you.
+#101 [Voice] thanks a lot.
+#102 [Voice] thank you.
+#103 [Voice] bless you.
+#104 [Voice] ha ha ha hah
+#105 [Voice] ha ha ha ha hah
+
+  ■出典
+  クルードバスター／ミッドナイト・レジスタンス
+  PONY CANYON / SCITRON  PCCB-00039  1990.8.21
+
+// Orignal List by Monyons
+// Update and Translate by Fujix
+$end

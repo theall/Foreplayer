@@ -1,0 +1,49 @@
+﻿$name=alcon
+$version=2
+$default=031
+$main
+
+#031 Credit Inserted
+#025 Game Start + Area 01 to 10
+#021 Area 01 to 10 / Area 51 to 60
+#023 Area 11 to 20 / Area 72 to 80
+#020 Area 21 to 30 / Area 71
+#024 Area 31 to 40 / Area 81
+#022 Area 41 to 50 / Area 61 to 70 / Final boss
+#026 Game Over
+#028 Name Entry (1st to 3rd)
+#027 Name Entry (4th and below)
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX] player extended
+#002 [SFX] 
+#003 [SFX] 
+#004 [SFX] wing
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] shot
+#008 [SFX] 
+#009 [SFX] got a star
+#010 [SFX] power up
+#011 [SFX] side shot
+#012 [SFX] 
+#013 [SFX] secret panel
+#014 [SFX] player missed
+#016 [SFX] 
+#017 [SFX] laser
+#019 [SFX] 
+#029 [SFX] shield
+#030 [SFX] 
+#031 [SFX] credit inserted
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+
+  [Sound Composer]
+  Masahiro Yuge
+
+// List contributed by Hiroshi
+// Info of #027 from BATTEN
+$end

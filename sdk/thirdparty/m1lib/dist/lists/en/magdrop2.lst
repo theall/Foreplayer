@@ -1,0 +1,40 @@
+﻿$name=magdrop2
+$version=2
+$default=127
+$main
+
+#127 Neo Geo Logo
+
+#025 Opening
+#024 We are on! (Title)
+#001 Explanation
+#002 Wavering Mood (Select)
+#003 Before Fight (Prologue)
+#004 Dream of Fool (Fool)
+#018 Holiday of Star (Star)
+#019 Impish Rock'n Roll (Devil)
+#020 Legend of Hero (Chariot)
+#021 Daydream Fly (Priestess)
+#022 Go Bravely (Justice)
+#023 Lonely Battle (Magician)
+#005 Whisper of Godess (World)
+#006 Wild Beast (Strength)
+#007 I'm the Best! (Empress)
+#008 Ambitions of Black Pierrot (Black Crown)
+#016 Challenger (Competition Mode)
+#009 Thinking (Puzzle Mode (JP ver))
+#017 Endless Worker (Endurance Mode)
+#011 Just a Moment (Another Player Joined)
+#012 I Won!
+#013 I Lost!
+#014 Game Over
+#026 Everyone's Wishes (Ending)
+#015 Magical Drop Shuffle (Credits Roll)
+
+  [Soundtrack]
+  Magical Drop 2
+  Pony Canyon / Scitron  PCCB-00217  Jun 21, 1996
+
+// Base List by Min
+// Update & Translation by Fujix
+$end

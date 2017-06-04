@@ -1,0 +1,63 @@
+﻿$name=dyger
+$version=2
+$default=033
+$main
+
+#033 Attract Mode
+#069 [SFX] Coin
+#034 Name Entry <time="9.7">
+#035 Stage 1, 5, 7
+#037 Stage 2, 7
+#036 Stage 3, 7
+#034 Stage 4, 7
+#041 Stage 6, 7
+#040 Stage 7
+#032 Game Over
+
+#038 Unused 1
+#039 Unused 2
+#042 Unused 3
+
+---------------------------------------------------
+ [SFX]
+
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#043 [SFX] <time="4">
+#044 [SFX] <time="4">
+#045 [SFX] <time="4">
+#046 [SFX] <time="4">
+#047 [SFX] <time="4">
+
+  [Sound Composers]
+  Lee Jeong Kyu
+  Kim Hyung Bum
+  Cho Kwang Ho
+
+// List contribution by ZEK.
+$end

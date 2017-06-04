@@ -1,0 +1,29 @@
+﻿$name=hotd
+$version=2
+$default=000
+$main
+
+#000 The House of the Dead (Advertise)
+#001 The First Chapter -Tragedy- (Stage 1)
+#002 The Second Chapter -Revenge- (Stage 2)
+#008 The Third Chapter -Truth- (Stage 3)
+#004 Enemy's (Stage 1 - 3 Boss)
+#014 The Final Chapter -The house of the Dead- (Stage 4)
+#010 Nativity of the Magician (Stage 5 Boss Appearing) <time="21.86">
+#011 Theme of the Magician (Stage 5 Boss)
+#006 Ending Theme
+#005 Stage Clear
+#003 Game Over
+#013 Name Entry
+
+#010 Nativity of the Magician (Full Version)
+#012 Theme of the Magician (alt)
+#007 Unused 1
+#009 Unused 2
+
+  [Sound Composer]
+  Tetsuya Kawauchi
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

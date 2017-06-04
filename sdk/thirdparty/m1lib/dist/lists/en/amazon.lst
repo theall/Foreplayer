@@ -1,0 +1,34 @@
+﻿$name=amazon
+$version=2
+$default=001
+$songmax=059
+$main
+
+#001 Credit Inserted
+#046 Game Start - Soldier Amatelass (Main BGM)
+#049 Soldier Amatelass (Main BGM)
+#047 Restart - Soldier Amatelass (Main BGM)
+#048 Final Start - Soldier Amatelass (Main BGM)
+#053 Theme of the Escapee
+#056 Hell Bird (Monstrous Bird)
+#054 Gorgon Head (Monster 1)
+#055 Bugdarian (Mounster 2)
+#057 Lobster Gunner (Monster 3)
+// #059 Bugdarian (Monster 2)
+#052 Game Clear
+#050 Game Over
+#051 Orange Mountain Hill (Name Entry)
+// #058 Orange Mountain Hill (Name Entry)
+
+#034 [Voice] ya!
+#035 [Voice] Monster
+
+  [Source]
+  Game Sound Nichibutsu / G.S.M. Nichibutsu 1
+  Pony Canyon / Scitron  D28B0004  Sep 21, 1988
+
+  [Sound Composer]
+  Kenji Yoshida
+
+//
+$end

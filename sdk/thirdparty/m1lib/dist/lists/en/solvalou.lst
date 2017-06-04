@@ -1,0 +1,111 @@
+﻿$name=solvalou
+$version=2
+$default=019
+$main
+
+#019 Attraction
+//#020 Attraction
+#001 [Voice]
+#029 Opening (1)
+//#030 Opening (1)
+#028 Opening (2)
+#004 Game Start - Main Ambience #1
+//#006 Game Start
+//#007 Main Ambience #1
+//#010 Main Ambience #1
+//#013 Main Ambience #1
+#135 Main Ambience #2
+//#138 Main Ambience #2
+//#141 Main Ambience #2
+//#144 Main Ambience #2
+//#147 Main Ambience #2
+#120 Ocean Field
+//#123 Ocean Field
+//#126 Ocean Field
+//#129 Ocean Field
+#102 Andor Genesis
+//#105 Andor Genesis
+//#108 Andor Genesis
+//#111 Andor Genesis
+//#114 Andor Genesis
+#046 Game Start - Cosmo Field Ambience #1
+//#048 Game StartT
+//#049 Cosmo Field Ambience #1
+//
+//#084 Cosmo Field Ambience #1
+//#087 Cosmo Field Ambience #1
+//#090 Cosmo Field Ambience #1
+//#093 Cosmo Field Ambience #1
+//#096 Cosmo Field Ambience #1
+#072 Cosmo Field Ambience #2
+//#075 Cosmo Field Ambience #2
+//#078 Cosmo Field Ambience #2
+#164 Ending Theme - Credits Roll
+//#167 Ending Theme - Credits Roll
+//#170 Ending Theme - Credits Roll
+//#173 Ending Theme - Credits Roll
+//#176 Ending Theme - Credits Roll
+#066 Game Over
+#022 Name Entry
+//#025 Name Entry
+//
+//#043
+
+---------------------------------------------------------
+
+#002 [SFX] <time="8">
+#003 [SFX] <time="8">
+#016 [SFX]
+
+#031 [Voice]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX] <time="5">
+#036 [SFX] <time="5">
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#045 [SFX] <time="8">
+
+#052 [SFX] <time="8">
+#053 [SFX] <time="8">
+#054 [SFX] <time="8">
+#055 [SFX] <time="8">
+#056 [SFX] <time="5">
+#057 [SFX]
+#058 [SFX] <time="5">
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+#160 [Voice]
+#161 [Voice]
+#162 [Voice]
+#163 [Voice]
+#257 ??
+ 
+  [Soundtrack]
+  Video Game Graffiti Vol.8
+  Victor Entertainment  VICL-8074  Apr 21, 1993
+
+  [Sound Composer]
+  Hiroyuki Kawada
+
+// List contribution by Min
+$end

@@ -1,0 +1,94 @@
+﻿$name=blkpnthr
+$version=2
+$default=019
+//$songmax=203
+$main
+
+#019 Introduction
+#022 Stage 1
+#004 Stage 2
+#018 Stage 3
+#007 Stage 4
+#008 Sub-Boss
+#009 Boss Stage 1
+#014 Boss Stage 2
+#013 Boss Stage 3
+#003 Boss Stage 4
+#001 Stage Clear
+#021 All Clear
+#020 Name Regist - 1st Place
+#012 Name Regist - 2nd Place
+#015 Continue
+#011 Game Over
+
+#002 ???
+#006 ???
+#010 Ending ?
+#017 ???
+
+//#023
+//#024
+//#025
+//#026
+//#027
+//#028
+//#029
+//#030
+//#031
+-----------------------------------------
+
+#005 [SFX] Boss Destroyed 
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX] Missed!
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#065 [PCM]
+#129 [PCM]
+#130 [PCM]
+#131 [PCM]
+#132 [PCM]
+#133 [PCM]
+#134 [PCM]
+#135 [PCM]
+#167 [PCM]
+#193 [PCM]
+#196 [PCM]
+#197 [PCM]
+#198 [PCM]
+#199 [PCM]
+#200 [PCM]
+#201 [PCM]
+#202 [PCM]
+#203 [PCM]
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

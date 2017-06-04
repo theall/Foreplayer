@@ -1,0 +1,29 @@
+﻿$name=tumblep
+$version=2
+$default=005
+$main
+
+#005 Octopus Navy (USA)
+#016 Come On (Boss)
+#015 Stage Clear
+#004 Opening
+#008 It's Cold! It's Cold! (Antarctica)
+#009 It's Hot! It's Hot! (Brazil)
+#007 Paparapaa (Egypt)
+#018 World Cleared
+#013 Map
+#012 Bon Jour! Mademoiselle (Europe)
+#006 Circus Gorby (Soviet)
+#011 Fight! Primitives (Australia)
+#010 Fujiyama Ichiban (Japan)
+#020 Bonys! Bonus!
+#014 Look! Chernov! (Stratosphere)
+#019 Ending
+
+  [Soundtrack]
+  Wolf Fang, Tumble Pop
+  Pony Canyon / Scitron  PCCB-00084  Mar 21, 1992
+
+// List Contribution by Min
+// Updated by Fujix
+$end

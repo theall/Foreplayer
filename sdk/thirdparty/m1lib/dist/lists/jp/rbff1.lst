@@ -1,0 +1,53 @@
+﻿$name=rbff1
+$version=2
+$default=002
+$main
+
+  ※曲切替えがうまくいかない場合あり
+
+#002 NEO-GEO Logo
+
+#062 Real Bout -餓狼伝説- (オープニングタイトル)
+#088 Real Bout -餓狼伝説-
+#034 ワイワイガヤガヤ (オプション表示)
+#035 Hitchhike (プレイヤーセレクト)
+#075 Hitchhike
+#089 A number of rival leaders (対戦者表示、マップ画面)
+#047 Big Shot! (テリー・ボガード)
+#044 雷波濤 (アンディ・ボガード)
+#041 ワニの味 (東 丈)
+#087 Revange (DEMO1)
+#091 Seoul Town (キム・カッファン)
+#043 イヴォンヌ・ルロールへの幻想よりピアノとハープによる浮遊 (不知火 舞)
+#039 白いフランコ (フランコ・バッシュ)
+#056 You are the winner (勝利者デモ)
+#090 Duck! Duck! Duck! (ダック・キング)
+#038 蜜の味 (ボブ・ウィルソン)
+#040 Kiss Me※ (ブルー・マリー) ※:ハートマーク
+#045 チ!!チ!!チ!!チ!! (ホンフゥ)
+#046 TAKU HATSU (望月 双角)
+#094 皆はまだか (DEMO2)
+#050 パンドラの箱より 第1番 「遭遇」 (秦 崇秀)
+#051 パンドラの箱より 第2番 「迷霧」 (秦 崇雷)
+#049 C62 -シロクニ- (山崎 竜二)
+#092 N・D・R (ビリー・カーン)
+#086 対峙 (DEMO3)
+#048 ギースじゃ!!イ (ギース・ハワード)
+#042 ギースにちゅうして (ギース・ハワード Final)
+#093 露命 (ギース・ハワード特殊試合後)
+#071 帰依 -The Sun Set Sky Final- (ENDING～STAFF ROLL)
+#061 ENGAGE 1 (ネーミング)
+#085 Continue
+#063 GAME OVER
+
+#095 NEO-GEO Logo
+
+  ■出典
+　REAL BOUT 餓狼伝説 / SNK 新世界楽曲雑技団
+　PONY CANYON / SCITRON  PCCB-00203  1996.02.07
+
+　■作曲
+　SHIMIZM, SHA-V
+
+// リスト作成：鉄鋼さん
+$end

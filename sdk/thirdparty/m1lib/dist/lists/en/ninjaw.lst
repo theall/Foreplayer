@@ -1,0 +1,151 @@
+﻿$name=ninjaw
+$version=2
+$default=$5a
+$songmax=$bd
+$main
+
+$5a A.D.1993
+$b8 [Voice] (Prologue)
+$3d [Voice] The Ninja Warriors
+$5b Coin
+$51 Daddy Mulk <time="4:41">
+$52 Are You Lady? <time="3:10">
+$53 Che! <time="2:03">
+$54 Japanese Smile <time="2:00">
+$55 Motherless Children <time="2:50">
+$3c [Voice] (Epilogue)
+$ba Paradox
+$59 Up Stairs
+$57 Game Over
+//
+// $b8 [Voice] (Prologue : Unused in game)
+// "No one could maintain the public order."
+// The evil dictator, Banglar, controlled not only the
+// police, but also the underground world; Drugs, murder,
+// sex. He held the key to everything since he became the
+// president. Mulk, who was the leader of the revolutions,
+// built two assassination machines to kill the president.
+// They were called ....
+
+//
+// $3c [Voice] (Ending Narration)
+// "A revolution broke out, and everything
+// became to an end. The troubled country seemed
+// to be finished by the death of the wicked machines.
+// But peace did not come. Because The Ninja
+// Warriors, are the immortal, murder machines.
+
+-----------------------------------------
+
+$3e [Voice] Aaaghhh!
+$3f [Voice] Aagh
+$40 [Voice] Waaaghhh!
+$41 [Voice] No!
+$42 [Voice] Aah!
+$43 [Voice] Aagh
+$44 [Voice] Waaghhh!
+$45 [Voice] Ah
+$46 [Voice] Oh
+$47 [Voice] Waaghhh
+$48 [Voice] Oh, No.
+$49 [Voice] Oh my god!
+$4a [Voice] I kill you!
+$4b [Voice] Mission Accomplished.
+$4c [Voice] Retreat!
+$4d [Voice] No damn way!"(Man)
+$4e [Voice] No damn way!"(Woman)
+$4f [Voice] Attack!
+$50 [Voice] Please don't kill me.
+$5d [Voice] A
+$5e [Voice] B
+$5f [Voice] C
+$60 [Voice] D
+$61 [Voice] E
+$62 [Voice] F
+$63 [Voice] G
+$64 [Voice] H
+$65 [Voice] I
+$66 [Voice] J
+$67 [Voice] K
+$68 [Voice] L
+$69 [Voice] M
+$6a [Voice] N
+$6b [Voice] O
+$6c [Voice] P
+$6d [Voice] Q
+$6e [Voice] R
+$6f [Voice] S
+$70 [Voice] T
+$71 [Voice] U
+$72 [Voice] V
+$73 [Voice] W
+$74 [Voice] X
+$75 [Voice] Y
+$76 [Voice] Z
+$77 [Voice] ???
+$86 [Voice] Thank you.
+$89 [Voice] Che!
+
+$5c [SFX] Coin (in Play)
+
+$09 [SFX]
+$0a [SFX]
+$0b [SFX]
+$0c [SFX]
+$0d [SFX]
+$0e [SFX]
+$0f [SFX]
+$10 [SFX]
+$11 [SFX]
+$12 [SFX]
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX]
+$1b [SFX]
+$1c [SFX]
+$1d [SFX]
+$1e [SFX]
+$1f [SFX]
+$20 [SFX]
+$21 [SFX]
+$22 [SFX]
+$23 [SFX]
+$24 [SFX]
+$25 [SFX]
+$26 [SFX]
+$27 [SFX]
+$28 [SFX]
+$29 [SFX]
+$2a [SFX]
+$2b [SFX]
+$2c [SFX]
+$2d [SFX]
+$2e [SFX]
+$2f [SFX]
+$30 [SFX]
+$31 [SFX]
+$32 [SFX]
+$33 [SFX]
+$34 [SFX]
+$35 [SFX]
+$36 [SFX]
+$37 [SFX]
+$38 [SFX]
+$39 [SFX]
+$40 [SFX]
+$b9 [SFX]
+$bd [SFX]
+
+  [Sources]
+  The Ninja Warriors -G.S.M. Taito 1-
+  Pony Canyon / Scitron  D28B0001  Jun 21, 1988
+
+  The Ninja Warriors / Taito Zuntata
+  Pony Canyon / Scitron  PCCB-00074  Oct 21, 1991
+
+$end

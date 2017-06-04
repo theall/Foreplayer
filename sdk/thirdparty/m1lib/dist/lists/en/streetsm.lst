@@ -1,0 +1,159 @@
+﻿$name=streetsm
+$version=2
+$default=058
+$main
+
+ SPECIAL SOUNDTRACK (play like is it in-game)
+
+#058 [SFX] Boot Sound <time="4">
+#059 [SFX] (End Boot Sound) <time="1">
+
+#099 [BGM] STREET SMART Title
+#191 [SFX]  Credit Insertion
+#071 [BGM] CITY STREETS (1st Fight) <time="2:23">
+#208 [Voice] K.O. opponent#1 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098 [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083 [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="2">
+#077 [BGM] BACK ALLEY 1 (2nd Fight) <time="1:45">
+#208 [Voice] K.O. opponent#1 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="2">
+#072 [BGM] ROUTE 89 (3rd Fight) <time="1:58">
+#210 [Voice] K.O. opponent#2 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="1">
+#079 [BGM] U.S.A. BEACHSIDE (4th Fight) <time="1:50">
+#208 [Voice] K.O. opponent#1 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="2">
+#092 [BGM] BACK ALLEY 2 (5th Fight) <time="2:05">
+#208 [Voice] K.O. opponent#1 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="2">
+#085 [BGM] LAS VEGAS CASINO (6th Fight) <time="2:03">
+#208 [Voice] K.O. opponent#1 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="2">
+#086 [BGM] PRIVATE CLUB (7th Fight) <time="2:25">
+#208 [Voice] K.O. opponent#1 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#128 [Voice] cheers + "FIGHT!" <time="2">
+#071 [BGM] WHITE HOUSE (8th Fight) <time="2:23">
+#210 [Voice] K.O. opponent#2 <time="2">
+#127   [SFX] SNK HOSPITAL Ambulance <time="5">
+#098   [BGM] Stage Clear (+ cheers) <time="3">
+#220 [Voice] "CONGRATULATIONS!" <time="2">
+#083   [BGM] Champion Ship <time="7">
+#093 [BGM] Ending <time="7">
+#098   [BGM] Enter Your Name <time="18.8">
+#206 [Voice] "HO YEAH!" <time="1.2">
+#096 [BGM] Staff Roll
+
+ -Game BGM-
+#071 [BGM] CITY STREETS (1st Fight) ~ White House (8th Fight)
+#072 [BGM] ROUTE 89 (3rd Fight)
+#074 [BGM] 1P Vs. 2P Music
+#077 [BGM] BACK ALLEY 1 (2nd Fight)
+#079 [BGM] U.S.A. BEACHSIDE (4th Fight)
+#083 [BGM] Champion Ship 
+#085 [BGM] LAS VEGAS CASINO (6th Fight)
+#086 [BGM] PRIVATE CLUB (7th Fight)
+#092 [BGM] BACK ALLEY 2 (5th Fight)
+#093 [BGM] Ending
+#096 [BGM] Staff Roll
+#097 [BGM] Stage Clear ~ Enter Name <time="20">
+#099 [BGM] STREET SMART Title
+#112 [BGM] GAME OVER 
+
+ -Alt. BGM-
+#070 [BGM] CITY STREETS (1st Fight) ~ White House (8th Fight) - wo intro
+#073 [BGM] ROUTE 89 (3rd Fight) - wo intro
+#078 [BGM] BACK ALLEY 1 (2nd Fight) - wo intro
+#082 [BGM] U.S.A. BEACHSIDE (4th Fight) - wo intro
+#084 [BGM] 1P Vs. 2P Music - wo intro
+#091 [BGM] BACK ALLEY 2 (5th Fight) - wo intro
+#098 [BGM] Stage Clear (+ cheers) ~ Enter Your Name <time="20">
+
+---------------------------------------------------
+  [Voice] 
+
+#128 [Voice] cheers + "FIGHT!"
+#136 [Voice] "CONGRATULATIONS!" + cheers
+#137 [Voice] "CONGRATULATIONS!" + cheers (short)
+#206 [Voice] "HO YEAH!"
+#207 [Voice] "FIGHT!"
+#220 [Voice] "CONGRATULATIONS!"
+#208 [Voice] K.O. opponent#1
+#210 [Voice] K.O. opponent#2
+#209 [Voice] K.O. Player
+#218 [Voice] 
+#219 [Voice] 
+
+---------------------------------------------------
+  [SFX] 
+
+#127 [SFX] SNK HOSPITAL Ambulance
+#129 [SFX] Siren
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#191 [SFX]  Credit Insertion
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] cheers
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] car engine
+#217 [SFX] tires
+#221 [SFX] 
+#222 [SFX] cheers
+
+
+  [Composer]
+  Toshikazu Tanaka (Tarkun)
+  
+Note:
+  The "Ending" Track is not fully played in the game, just 10 sec with fade-out.
+	also the "Stage Clear" music is aviable without "cheers".
+  
+// List contribution by Simon B., done in playing the game. 
+it's good to choose "2:30" as default duration in this Game.
+$end

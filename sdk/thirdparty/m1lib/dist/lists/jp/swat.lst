@@ -1,0 +1,38 @@
+﻿$name=swat
+$version=2
+$default=179
+$main
+
+#179 [S.E.] Credit
+#130 Main Theme
+#129 Round Clear
+#133 Main Theme <time="6">
+#178 Alert! <time="2.5">
+#145 [S.E.] ミス <time="2.5">
+#131 Game Over
+#132 Name Entry
+
+---------------------------------------------------
+ [S.E.]
+
+#144 [S.E.] 
+#145 [S.E.] ミス
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.]
+#162 [S.E.]
+#178 [S.E.] Alert!
+#179 [S.E.] Credit
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] 
+#185 [S.E.] 
+#186 [S.E.] 
+#187 [S.E.] 
+
+// List contribution by ZEK.
+$end

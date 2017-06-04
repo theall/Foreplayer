@@ -1,0 +1,148 @@
+﻿$name=ga2
+$version=2
+$default=140
+$main
+
+#140 character select  <time="1:48" fadeout="yes" fadeoutlength="14">
+#129 main theme 1 <time="2:47" fadeout="yes" fadeoutlength="14">
+#135 waterfall  <time="0:29" fadeout="yes" fadeoutlength="14">
+#132 strong attack  <time="2:13" fadeout="yes" fadeoutlength="14">
+#134 children of mischief  <time="1:18" fadeout="yes" fadeoutlength="14">
+#130 a hope for tomorrow <time="2:43" fadeout="yes" fadeoutlength="14">
+#131 The theme of the boss  <time="1:34" fadeout="yes" fadeoutlength="14">
+#139 Map indication
+#133 cave  <time="1:06" fadeout="yes" fadeoutlength="14">
+#137 The forest of the mushroom  <time="1:07" fadeout="yes" fadeoutlength="14">
+#149 Children of season  <time="1:52" fadeout="yes" fadeoutlength="14">
+#136 The dance of the soldier  <time="0:35" fadeout="yes" fadeoutlength="14">
+#138 Bonus side in the town <time="0:53" fadeout="yes" fadeoutlength="14">
+#143 In a fortress <time="2:57" fadeout="yes" fadeoutlength="14">
+#142 On a ship <time="2:11" fadeout="yes" fadeoutlength="14">
+#145 Death Adder1 <time="2:07" fadeout="yes" fadeoutlength="14">
+#146 Death Adder2 <time="1:48" fadeout="yes" fadeoutlength="14">
+#141 Continue
+#148 All Clear
+#147 Ending
+#144 Result <time="1:00" fadeout="yes" fadeoutlength="14">
+
+  ■出典
+  ゴールデンアックス ザ・ミュージック
+  WAVE MASTER  WM-0595~7  2008.02.21
+
+  ■作曲
+  竹内 雅則
+  川村 知之
+
+---------------------------------------------------
+
+  [Voices]
+
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+#174 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#179 [Voice] 
+#183 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#189 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#202 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#210 [Voice] 
+#218 [Voice] 
+#229 [Voice] 
+#232 [Voice] 
+#237 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+#250 [Voice] 
+#253 [Voice] 
+#254 [Voice] 
+
+  [S.E.] 
+  
+#152 [S.E.] 
+#153 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#175 [S.E.] 
+#178 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#184 [S.E.] 
+#187 [S.E.] 
+#188 [S.E.] 
+#190 [S.E.] 
+#193 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#201 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#207 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#216 [S.E.] 
+#217 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] 
+#225 [S.E.] 
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#230 [S.E.] 
+#231 [S.E.] 
+#233 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#238 [S.E.] 
+#245 [S.E.] 
+#246 [S.E.] 
+#247 [S.E.] 
+#248 [S.E.] 
+#249 [S.E.] 
+#251 [S.E.] 
+#252 [S.E.] 
+
+// List contribution by Simon B.
+$end

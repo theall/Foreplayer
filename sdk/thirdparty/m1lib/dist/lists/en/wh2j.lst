@@ -1,0 +1,51 @@
+﻿$namw=wh2j
+$version=2
+$default=002
+$main
+
+    * Track names are textual quotations or 
+       literal translations of originals
+
+#002 Neo Geo Logo
+
+#025 Evil Scripture 1st (Opening)
+#049 Exciter (Player Select)
+#018 Sacred Prayer (1st Day, Ceremony)
+#024 Blue Edge (Theme of USA)
+#047 God's Grace (Tournament Result)
+#016 German Rhapsody (Theme of Germany)
+#048 Arrogance of Mankind (Bonus Stage)
+#012 La Zozobla (Theme of Spain)
+#026 Star Soldier (Theme of Korea)
+#021 The Sports of Kings (Training, VS)
+#006 Gallery of The Valiant (Theme of Training)
+#030 Earthquake (Demonstration before Kidd's Appearance)
+#017 Star Sprung'd Kid (Kidd Appearing)
+#011 Nice Guys of The Great Sea (Theme of Captain Kidd)
+#046 Graduation Day (Open Fight, End)
+#051 World War X (Final Battle, Demo)
+#057 Shooting Script (Theme of Japan)
+#052 Necrotized (Win the Championship in the Super Tournament)
+#050 Angel's Promise (Dark Super Tournament Demo)
+#004 A Man Who Is Hiding in Madness (Theme of Jack)
+#022 The Devil of Kings (Dark VS)
+#054 Holy Fight (Ryofu's Demo)
+#013 Wind in The Eyes - Eyes of Sekitoba (Theme of Ryofu)
+#019 Overlord Descends (Zeus Demo)
+#010 Apocalypse (Theme of Zeus)
+#031 The Card of Thirteen (Zeus Struck Down, 1-A)
+#027 Wailing Angel (Zeus Struck Down, 1-B)
+#029 Fallen from Grace (Zeus Struck Down, 2)
+#014 Mah-Mah Jan (Ending 1)
+#015 Chase around The World (Ending 2)
+#055 If I Could Tell A Lie (Ending, Training)
+#028 Final Ecstasy (End Credits)
+#053 Snuff Out (Game Over)
+
+  [Source]
+  World Heroes 2 Jet / SNK, ADK
+  Pony Canyon / Scitron  PCCB-00148  May 20, 1994
+
+// List Contribution by NK
+// English list by Fuji
+$end

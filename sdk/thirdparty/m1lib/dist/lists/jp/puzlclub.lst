@@ -1,0 +1,74 @@
+﻿$name=puzlclub
+$version=2
+$default=018
+$main
+
+#018 [S.E.] CREDIT
+#019 [S.E.] YOUNG VERSION
+#001 PACMAN STORY BGM 1
+#002 PACMAN STORY BGM 1 SPEED UP !
+#012 ROUND CLEAR <time="2.9">
+#013 BONUS GRAPHIC <time="4.6">
+#003 PACMAN STORY BGM 2
+#004 PACMAN STORY BGM 2 SPEED UP !
+#022 TRY AGAIN ? <time="13.5">
+#012 ROUND CLEAR <time="2.9">
+#013 BONUS GRAPHIC ～ ENDING
+#014 NAME ENTRY
+
+#019 [S.E.] ADULT VERSION
+#005 FLOOR EXERCISE BGM 1
+#006 FLOOR EXERCISE BGM 1 SPEED UP !
+#012 ROUND CLEAR <time="2.9">
+#009 SHUFFLE !!! ～ CHALENG ! <time="10">
+#017 [S.E.] HURRY !!! <time="2.8">
+#010 SHUFFLE !!! ～ CHALENG ! SPEED UP ! <time="10">
+#011 COGRATULATIONS !!! <time="5">
+#013 BONUS GRAPHIC <time="13.1">
+#007 FLOOR EXERCISE BGM 2
+#008 FLOOR EXERCISE BGM 2 SPEED UP !
+#012 ROUND CLEAR <time="2.9">
+#013 BONUS GRAPHIC ～ ENDING
+#014 NAME ENTRY
+
+---------------------------------------------------
+ [S.E.] 
+
+#015 [S.E.] TIME UP !!!
+#016 [S.E.] 
+#017 [S.E.] HURRY !!!
+#018 [S.E.] CREDIT
+#019 [S.E.] SELECT
+#020 [S.E.] 
+#021 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#194 [S.E.] 
+#256 [S.E.] 
+#257 [S.E.] 
+#259 [S.E.] 
+#260 [S.E.] 
+#261 [S.E.] 
+#262 [S.E.] 
+#263 [S.E.] 
+#264 [S.E.] 
+#265 [S.E.] 
+#266 [S.E.] 
+#267 [S.E.] 
+#268 [S.E.] 
+#269 [S.E.] 
+#270 [S.E.] 
+#271 [S.E.] 
+#272 [S.E.] 
+#273 [S.E.] 
+#274 [S.E.] 
+#158 [S.E.] 
+#172 [S.E.] 
+#253 [S.E.] 
+
+  ■作曲
+  桜井 誠一 (Sack Chan), 細江 慎治 (Megaten)
+  佐宗 綾子 (A.Sasou)
+
+// List contribution by ZEK.
+$end

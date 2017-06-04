@@ -1,0 +1,130 @@
+﻿$name=spidman
+$version=2
+$default=165
+$main
+
+#165 [Voice] CREDIT
+#142 CHOOSE YOUR HERO！
+#144 INTRO 1 <time="2">
+#131 DEMO BGM 1
+#137 BGM 1
+#159 INTRO 2 <time="2">
+#130 BGM 2 (OKI_RAP FROM QUARTET)
+#158 INTRO 3 <time="2.1">
+#139 BGM 3
+#144 INTRO 1 <time="2">
+#132 BOSS BGM 1
+#184 CLEAR
+#144 INTRO 1 <time="2">
+#135 DEMO BGM 2
+#129 BGM 4 (FM FUNK FROM QUARTET)
+#138 BGM 5
+#133 BGM 6
+#140 BOSS BGM 2
+#143 ENDING
+#134 GAME OVER
+
+#136 GAME OVER 2
+#141 未使用曲 
+
+---------------------------------------------------
+ [S.E.]
+
+#000 [Command] Sound Stop
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#166 [S.E.] <time="3">
+#167 [S.E.] 
+#168 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#196 [S.E.] <time="5">
+#198 [S.E.] 
+#199 [S.E.] <time="5">
+#200 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#206 [S.E.] 
+#207 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#216 [S.E.] <time="3">
+#217 [S.E.] 
+#218 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] <time="3">
+#222 [S.E.] <time="3">
+#223 [S.E.] 
+#224 [S.E.] 
+#225 [S.E.] 
+#226 [S.E.] 
+#227 [S.E.] <time="3">
+#228 [S.E.] <time="3">
+#229 [S.E.]  
+#232 [S.E.] <time="3">
+#233 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#237 [S.E.] 
+#238 [S.E.] <time="3">
+#239 [S.E.] 
+#240 [S.E.] <time="5">
+#241 [S.E.] <time="13">
+#242 [S.E.] 
+#243 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#153 [Voice] 
+#165 [Voice] CREDIT
+#169 [Voice] 
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#221 [Voice] 
+#230 [Voice] 
+#231 [Voice]
+#244 [Voice] 
+#245 [Voice] 
+#246 [Voice] 
+#248 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#251 [Voice] 
+
+// List contribution by ZEK.
+$end

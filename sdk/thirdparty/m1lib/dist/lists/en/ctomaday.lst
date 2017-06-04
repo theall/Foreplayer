@@ -1,0 +1,70 @@
+﻿$name=ctomaday
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode 1
+#047 Attract Mode 2
+#127 [SFX] Coin
+#042 How to Play
+#034 Stage 1 - Speed Limit 100 kph
+#037 Stage 1 - Boss 
+#034 Stage 2 - Mind your Head.
+#035 Stage 3 - Danger Deep Water. - Caution.
+#038 Stage 2, 3 - Boss
+#035 Stage 4 - Out of Order.
+#036 Stage 5 - No U Turn.
+#039 Stage 5 - Boss 
+#040 Result
+#046 Ending
+#041 Credits
+#045 Name Entry
+#044 Game Over
+
+#048 Unused 1
+#043 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#127 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#201 [Voice] 
+
+// List contribution by ZEK.
+// English list Quality Audit and Updated by Fuj
+$end

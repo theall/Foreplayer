@@ -1,0 +1,21 @@
+﻿$name=hachoo
+$version=2
+$default=009
+$main
+
+#009 ATTRACT DEMO
+#012 TITLE -破兆-
+#001 STAGE 1 SKY -風雲の巻-
+#002 STAGE 2 CLIFFSIDE -妖岩の巻-
+#003 STAGE 3 DESCENDING -邪落の巻-
+#004 STAGE 4 CAVE -地龍の巻-
+#005 STAGE 5 ASCENDING -天龍の巻-
+#006 STAGE 6 TEMPLE -封印の巻-
+#008 ENDING
+#011 GAME OVER
+
+#010 ENDING Ver,2
+#007 未使用曲
+
+// List contribution by ZEK.
+$end

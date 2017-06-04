@@ -1,0 +1,111 @@
+﻿$name=solvalou
+$version=2
+$default=019
+$main
+
+#019 ATTRACTION
+//#020 
+#001 [Voice]
+#029 OPENING (1)
+//#030 OPENING (1)
+#028 OPENING (2)
+#004 GAME START - MAIN AMBIENCE #1
+//#006 GAME START
+//#007 MAIN AMBIENCE #1
+//#010 MAIN AMBIENCE #1
+//#013 MAIN AMBIENCE #1
+#135 MAIN AMBIENCE #2
+//#138 MAIN AMBIENCE #2
+//#141 MAIN AMBIENCE #2
+//#144 MAIN AMBIENCE #2
+//#147 MAIN AMBIENCE #2
+#120 OCEAN FIELD
+//#123 OCEAN FIELD
+//#126 OCEAN FIELD
+//#129 OCEAN FIELD
+#102 ANDOR GENESIS
+//#105 ANDOR GENESIS
+//#108 ANDOR GENESIS
+//#111 ANDOR GENESIS
+//#114 ANDOR GENESIS
+#046 GAME START - COSMO FIELD AMBIENCE #1
+//#048 GAME START
+//#049 COSMO FIELD AMBIENCE #1
+//
+//#084 COSMO FIELD AMBIENCE #1
+//#087 COSMO FIELD AMBIENCE #1
+//#090 COSMO FIELD AMBIENCE #1
+//#093 COSMO FIELD AMBIENCE #1
+//#096 COSMO FIELD AMBIENCE #1
+#072 COSMO FIELD AMBIENCE #2
+//#075 COSMO FIELD AMBIENCE #2
+//#078 COSMO FIELD AMBIENCE #2
+#164 ENDING THEME - STAFF ROLL BGM
+//#167 ENDING THEME - STAFF ROLL BGM
+//#170 ENDING THEME - STAFF ROLL BGM
+//#173 ENDING THEME - STAFF ROLL BGM
+//#176 ENDING THEME - STAFF ROLL BGM
+#066 GAME OVER
+#022 NAME ENTRY
+//#025 NAME ENTRY
+//
+//#043
+
+---------------------------------------------------------
+
+#002 [S.E.] <time="0:8">
+#003 [S.E.] <time="0:8">
+#016 [S.E.]
+
+#031 [Voice]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.] <time="0:5">
+#036 [S.E.] <time="0:5">
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#045 [S.E.] <time="0:8">
+
+#052 [S.E.] <time="0:8">
+#053 [S.E.] <time="0:8">
+#054 [S.E.] <time="0:8">
+#055 [S.E.] <time="0:8">
+#056 [S.E.] <time="0:5">
+#057 [S.E.]
+#058 [S.E.] <time="0:5">
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+#160 [Voice]
+#161 [Voice]
+#162 [Voice]
+#163 [Voice]
+#257 ??
+ 
+  ■出典
+  VIDEO GAME GRAFFITI Vol.8
+  VICTOR ENTERTAINMENT  VICL-8074  1993.04.21
+
+  ■作曲
+  川田 宏行
+
+// リスト作成：みん☆さん
+$end

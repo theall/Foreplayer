@@ -1,0 +1,48 @@
+﻿$name=mystwarr
+$version=2
+$default=276
+$fixed_volume=280
+$main
+
+#276 The Lost Melody (Opening Demo 1)
+#262 "bokura no suteki" - Yahhoo! Version 1 (Opening Demo 2)
+#285 "bokura no suteki" - Yahhoo! Version 2 (Title)
+#274 Let's Challenge! (Difficulty Select)
+#284 Start Demo
+#260 Stay Alart! (Equipment Select)
+#257 Twin Flight (Stage 1 - Sisilia Isle)
+#270 Kiss My Parasol (Stage 1 Boss)
+#265 "bokura no suteki - Clear Version (Stage Clear)
+#258 Sky Swimming (Stage 2 - Ruins)
+#259 Love Love Fan Fan Typhoon (Stage 2 Boss)
+#261 Far Beyond the Sea (Stage 3 - Over the sea)
+#272 Crazy Terpits (Stage 3 Boss)
+#264 Air Corridor (Stage 4 - Air Corridor)
+#289 Balulloon's March - Appearing (Stage 4 Boss A)
+#266 Balulloon's March - Normal (Stage 4 Boss B)
+#277 Balulloon's March - Accelerated (Stage 4 Boss C)
+#275 Dancing Toys (Stage 5 - Wonder Place)
+#271 Wonderful Armor (Wonder Wonderful)
+#283 Intrigue of "Nonsense" the grandee (Emilly Appearing)
+#273 Schizoid Doll (Elekidoll Emilly)
+#287 In Order to See You.. (Stage 6 - The Chase)
+#263 "bokura no suteki" - Instrumental Version 1 (Ending)
+#282 How Amazing! (Name Entry)
+#281 We Surely See You Again! (Game Over)
+#290 "bokura no suteki" - Instrumental Version 2 (Unused)
+#291 "bokura no suteki" - Instrumental Version 3 (Unused)
+#292 Magical Melody (Practice Mode Ending / Credits)
+
+#752 Speaker Check
+
+  [Source]
+  Twin Bee Yahhoo! / Original Game Soundtrack
+  King Records  KICA-7661  Jun 7, 1995
+
+  [Sound Composers]
+  Enzonic Maeda, Sitar Imoo, 118
+
+  [Song]
+  Mariko Kouda
+
+$end

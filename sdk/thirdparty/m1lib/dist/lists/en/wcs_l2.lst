@@ -1,0 +1,399 @@
+$name=wcs_l2
+$version=2
+$default=001
+$songmax=2373
+$main
+
+#00 Sound OFF
+#01 Music: Multiball Main
+#02 Music: Lock Lit Main
+#03 Music: Intro + Norm Main
+#04 Music: Final Draw Lit
+#05 Music: Normal Pre
+#06 Music: Lock Lit Pre
+#07 Music: Multiball Pre
+#11 Music: Extra Ball
+#12 Music: Multiball Goal!
+#21 Music: Normal Main
+#22 Music: Kickoff Norm Main
+#23 Music: Multiball Jackpot
+#24 Music: B-I-G Goal Win
+#25 Music: Striker Award
+#26 Music: Striker Shot Lit
+#27 Music: Ultra Goalie/Ramp
+#29 Music: Shoot Again!
+#31 Music: Ultra Item Full
+#32 Music: EOB Bonus Show 3
+#33 Music: EOB Bonus Flash
+#35 Music: Boston Tea Party
+#36 Music: BTP Complete
+#39 Music: EOB Bonus Show 1
+#40 Music: EOB Bonus Show 2
+#54 Music: Fanfare 1
+#55 Music: Fanfare (Lock Lit)
+#56 Music: Final Draw
+#57 Music: Victory Lap
+#58 Music: Free Kick Hit
+#59 Music: Sup. Free Kick Hit
+#60 Music: Multiball Next Opp
+#61 Music: Buy Ticket
+#62 Music: Penalty Kick
+#64 Music: Replay/Special
+#66 Music: Skill Shot Score
+#67 Music: B-I-G Goal Score
+#68 Music: Super Free Kick
+#70 Music: Multiball Rematch
+#72 Music: Extra Ball Round
+#74 Music: B-I-G Goal Round
+#76 Music: Go For the Goalie!
+#78 Music: Where's Striker?
+#100 SFX: Fan Foghorn
+#101 SFX: Misc 1
+#102 SFX: Misc 2
+#103 VOX: Crowd Cheer 1
+#104 VOX: Crowd Cheer 2
+#105 VOX: Crowd "Awwwwww!"
+#106 VOX: Crowd "Boooooo!"
+#108 SFX: Jet Flies Overhead
+#110 SFX: Referee Whistle
+#111 SFX: Misc 3
+#113 SFX: Firework Whistle
+#114 SFX: Firework Explosion
+#115 SFX: Magna-Goalie
+#117 VOX: Crowd Cheer 3
+#118 SFX: Punch!
+#119 SFX: "Unh!"
+#120 SFX: Boing!
+#124 SFX: Jet Bumper 1
+#125 SFX: Jet Bumper 2
+#126 SFX: Kicker
+#127 VOX: Crowd Encouraging
+#128 SFX: Normal Spinner
+#131 SFX: Misc 4
+#134 SFX: Goal Rollover 1
+#135 SFX: Goal Rollover 2
+#136 SFX: Goal Rollover 3
+#137 SFX: Goal Rollover 4
+#140 SFX: Misc 5
+#141 SFX: Misc 6
+#142 SFX: Misc 7
+#143 SFX: Ball Captured
+#146 SFX: Ticket Lane (Good)
+#147 SFX: Ticket Lane (Bad)
+#149 SFX: Ramp Complete
+#150 SFX: Goal Rollover 5
+#151 SFX: Thunder 1
+#152 SFX: Super Spinner
+#154 VOX: "Moo!"
+#155 SFX: Boom 1
+#156 VOX: Crowd Loop 1
+#157 VOX: Crowd Loop 2
+#160 VOX: Crowd Cheer 1
+#161 VOX: Crowd Cheer 2
+#162 VOX: Crowd "Awwwwww!"
+#163 VOX: Crowd "Boooooo!"
+#164 SFX: Alert Bell
+#165 SFX: Ding!
+#166 SFX: TV Click
+#167 SFX: TV Static
+#168 SFX: Ramp Start
+#170 SFX: "Spwat!"
+#171 VOX: "Gulp!"
+#172 SFX: Striker Throws In
+#173 SFX: Firework Fuse
+#174 SFX: Firework Launch
+#175 SFX: Chalkboard
+#176 SFX: Misc 11
+#177 SFX: Goalie Impact
+#178 SFX: Tweeting Birds
+#187 SFX: Kickout Warning
+#188 "Five!"
+#189 "Four!"
+#190 "Three!"
+#191 "Two!"
+#192 "One!"
+#204 SFX: Outlane Drain
+#300 "Skill!"
+#301 "Speed!"
+#302 "Spirit!"
+#303 "Stamina!"
+#304 "Strength!"
+#305 "Ultra Goalie"
+#306 "Ultra Jets"
+#307 Crowd Cheer + Bells
+#308 "Ultra Ramps"
+#309 "Ultra Spinner"
+#310 "NS, Chicago"
+#311 "NS, Dallas"
+#312 "NS, Boston"
+#313 "NS, New York"
+#314 "NS, New Jersey"
+#315 "NS, Orlando"
+#316 "NS, Washington DC"
+#317 "NS, San Francisco"
+#318 "NS, Detroit"
+#319 "WLI Chicago"
+#320 "WLI Dallas"
+#321 "WLI Boston"
+#322 "WLI New York"
+#323 "WLI New Jersey"
+#324 "WLI Orlando"
+#325 "WLI Washington DC"
+#326 "WLI San Francisco"
+#327 "WLI Detroit"
+#328 "WT Chicago"
+#329 "WT Dallas"
+#330 "WT Boston"
+#331 "WT New York"
+#332 "WT New Jersey"
+#333 "WT Orlando"
+#334 "WT Washington DC"
+#335 "WT San Francisco"
+#336 "WT Detroit"
+#337 "EYSI Chicago"
+#338 "EYSI Dallas"
+#339 "EYSI Boston"
+#340 "EYSI New York"
+#341 "EYSI New Jersey"
+#342 "EYSI Orlando"
+#343 "EYSI Washington DC"
+#344 "EYSI San Francisco"
+#345 "EYSI Detroit"
+#346 "F501 Chicago"
+#347 "F501 Dallas"
+#348 "F501 Boston"
+#349 "F501 New York"
+#350 "F501 New Jersey"
+#351 "F501 Orlando"
+#352 "F501 Washington DC"
+#353 "F501 San Francisco"
+#354 "F501 Detroit"
+#355 "PTLI Chicago"
+#356 "PTLI Dallas"
+#357 "PTLI Boston"
+#358 "PTLI New York"
+#359 "PTLI New Jersey"
+#360 "PTLI Orlando"
+#361 "PTLI Washington DC"
+#362 "PTLI San Francisco"
+#363 "PTLI Detroit"
+#364 "Ultra (everything)"
+#365 "Raiden!"
+#366 "Nice car!"
+#367 "I thought we were..."
+#368 "Stay cool, daddio!"
+#369 "Admiral Biadgi Out"
+#370 VOX: Scream
+#2000 "Hit the goalie!"
+#2001 "Go for the goalie!"
+#2002 "It's the Boston Tea Party."
+#2003 "It's tea time in Boston."
+#2004 "Super Free Kick!"
+#2005 "Go for the extra ball!"
+#2006 "Extra Ball!"
+#2007 "Fifty Million!"
+#2012 "Shoot the goal!"
+#2014 "This team is on the..."
+#2015 "What a save!"
+#2016 "Great save!"
+#2017 "I can't believe it, stop that one!"
+#2018 "This goalie is unbeatable!"
+#2019 "Great hands!"
+#2020 "The guy is a wall!"
+#2021 "Incredible save!"
+#2022 "How did he make that save?"
+#2024 "The shot is good!"
+#2025 "Another goal!"
+#2026 "Goal!"
+#2027 "Goooooaaaaaalllll!!"
+#2028 "I can't believe it went in!"
+#2029 "What an unbelievable.."
+#2030 "He scores!"
+#2031 "He kicks it in!"
+#2032 "What a header!"
+#2033 "It's going in!"
+#2034 "What a move!"
+#2035 "Jackpot!"
+#2036 "He scores a jackpot!"
+#2037 "Great bicycle kick!"
+#2038 "What a pass!"
+#2039 "What a shot!"
+#2040 "What a play!"
+#2041 "Great tackle!"
+#2042 "That was a hard tackle"
+#2043 "He's lined up for a penalty kick."
+#2044 "He's got a free kick!"
+#2045 "Free kick!"
+#2046 "Yellow card!"
+#2047 "It's a red card!"
+#2048 "He's outta there!"
+#2049 "He passes downfield."
+#2050 "Out of bounds."
+#2051 "The corner kick is out in front."
+#2052 "It's kicked back into play."
+#2053 "Ready for corner kick!"
+#2055 "Let's watch the instant replay!"
+#2056 "Let's watch that play again!"
+#2061 "Welcome to WC '94!"
+#2062 "Get ready for the big match!"
+#2063 "The players are taking the field!"
+#2064 "The stadium is ... for the big match."
+#2065 "It's time for the final draw!"
+#2066 "You've qualified for the final draw!"
+#2067 "You made the final draw!"
+#2068 "Welcome to L.A., host of the World Cup Final!"
+#2069 "Congratulations, you made the World Cup Final!"
+#2070 "Defeat Germany for the World Cup!"
+#2071 "The match is tied!"
+#2073 "We're in Overtime!"
+#2074 "You've won the W. Cup!"
+#2075 "A few seconds remain!"
+#2076 "Victory lap!"
+#2077 "The team takes a V.lap"
+#2081 "Germany is ahead by 1"
+#2082 "Germany is ahead by 2"
+#2083 "Germany is ahead by 3"
+#2084 "Germany is ahead by 4"
+#2085 "Germany is ahead by 5"
+#2086 "Germany is ahead by 6"
+#2087 "Germany is ahead by 7"
+#2088 "Germany is ahead by 8"
+#2091 "Germany leads by 1"
+#2092 "Germany leads by 2"
+#2093 "Germany leads by 3"
+#2094 "Germany leads by 4"
+#2095 "Germany leads by 5"
+#2096 "Germany leads by 6"
+#2097 "Germany leads by 7"
+#2098 "Germany leads by 8"
+#2101 "Germany trails by 1"
+#2102 "Germany trails by 2"
+#2103 "Germany trails by 3"
+#2104 "Germany trails by 4"
+#2105 "Germany trails by 5"
+#2106 "Germany trails by 6"
+#2107 "Germany trails by 7"
+#2108 "Germany trails by 8"
+#2111 "Germany is behind by 1"
+#2112 "Germany is behind by 2"
+#2113 "Germany is behind by 3"
+#2114 "Germany is behind by 4"
+#2115 "Germany is behind by 5"
+#2116 "Germany is behind by 6"
+#2117 "Germany is behind by 7"
+#2118 "Germany is behind by 8"
+#2120 "Germany retains the..."
+#2121 "Germany scores!"
+#2122 "Germany scores a goal!"
+#2129 "FM: Germany"
+#2130 "FM: Germany, defend..."
+#2131 "FM: Italy"
+#2132 "FM: Holland"
+#2133 "FM: Sweden"
+#2134 "FM: Austria"
+#2135 "FM: France"
+#2136 "FM: USA"
+#2137 "FM: Canada"
+#2138 "FM: Australia"
+#2139 "FM: Great Britain"
+#2140 "FM: Morocco"
+#2141 "FM: Spain"
+#2142 "FM: Saudi Arabia"
+#2143 "FM: South Korea"
+#2144 "FM: Russia"
+#2149 "YO: Germany"
+#2150 "YO: Germany, defend..."
+#2151 "YO: Italy"
+#2152 "YO: Holland"
+#2153 "YO: Sweden"
+#2154 "YO: Austria"
+#2155 "YO: France"
+#2156 "YO: USA"
+#2157 "YO: Canada"
+#2158 "YO: Australia"
+#2159 "YO: Great Britain"
+#2160 "YO: Morocco"
+#2161 "YO: Spain"
+#2162 "YO: Saudi Arabia"
+#2163 "YO: South Korea"
+#2164 "YO: Russia"
+#2169 "NM: Germany"
+#2170 "NM: Germany, defend..."
+#2171 "NM: Italy"
+#2172 "NM: Holland"
+#2173 "NM: Sweden"
+#2174 "NM: Austria"
+#2175 "NM: France"
+#2176 "NM: USA"
+#2177 "NM: Canada"
+#2178 "NM: Australia"
+#2179 "NM: Great Britain"
+#2180 "NM: Morocco"
+#2181 "NM: Spain"
+#2182 "NM: Saudi Arabia"
+#2183 "NM: South Korea"
+#2184 "NM: Russia"
+#2187 "The crowd is waiting.."
+#2190 "They can't seem to..."
+#2192 "He's set up in front.."
+#2193 "It's a breakaway!"
+#2194 "He's lined up for a..."
+#2195 "Where's he gone now?"
+#2196 "Where's Striker?"
+#2197 "There he is!"
+#2198 "That's not him!"
+#2199 "I was sure that was..."
+#2202 "It's Big Goal Round!"
+#2205 "Extra Ball Round!"
+#2206 "He takes a brutal hit!"
+#2207 "A crushing blow!"
+#2209 "Let's take another..."
+#2211 "Replay!"
+#2212 "It's a match!"
+#2213 "Shoot again!"
+#2214 "Unbelievable play!"
+#2215 "What a remarkable..."
+#2216 "...extra ball on..."
+#2217 "...extra ball by..."
+#2218 "Back and better than.."
+#2219 "What a powerful shot!"
+#2220 "Goooooaaaaallll!!!"
+#2221 "Incredible shot!"
+#2222 "He slams it in!"
+#2223 "There's no stopping..."
+#2224 "He's unstoppable!"
+#2225 "Another unbel. save!"
+#2227 "He blocks another one!"
+#2228 "That was an amazing..."
+#2229 "Special!"
+#2345 "What a save!"
+#2346 "Great save!"
+#2347 "I can't... stopped..."
+#2348 "This goalie is unb..."
+#2349 "Great hands!"
+#2350 "The guy is a wall!"
+#2351 "Incredible save!"
+#2352 "How did he make...?"
+#2353 "The shot is good!"
+#2354 "Another goal!"
+#2355 "Goal!"
+#2356 "Goooooaaaaaalllll!!"
+#2357 "I can't... it went in!"
+#2358 "What an unbelievable.."
+#2359 "He scores!"
+#2360 "He kicks it in!"
+#2361 "What a header!"
+#2363 "What a move!"
+#2364 "Jackpot!"
+#2365 "He scores a jackpot!"
+#2366 "Great bicycle kick!"
+#2367 "What a pass!"
+#2368 "What a shot!"
+#2369 "What a play!"
+#2370 "Goal!" + crowd cheer
+#2371 "Kooowwaaahh!"
+#2372 "Towwaaaaahh!"
+#2373 "Koooooooaahhh!"
+
+// Basic listing by Tafoid, extracted from PinMAME's SOUNDS.DAT
+$end

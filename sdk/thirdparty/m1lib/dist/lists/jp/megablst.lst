@@ -1,0 +1,30 @@
+﻿$name=megablst
+$version=2
+$default=26
+$main
+
+#026 NOTICE
+#025 TITLE BACK
+#020 STORY DEMO - from Fantaisie Impromptu by Chopin
+// ショパン「幻想即興曲」より
+#045 CREDIT
+#017 ROUND SELECT (隠しモード)
+#009 ROUND 1
+#014 ROUND 2
+#011 ROUND 3
+#012 ROUND 4
+#013 ROUND 5
+#010 ROUND 6
+#015 ROUND 7
+#016 ROUND 8 (FINAL ROUND)
+#030 EMERGENCY!!
+#018 BOSS
+#019 ROUND CLEAR
+#023 ENDING - from Ode an die Freude by Beethoven
+// ベートーベン「第九交響曲第4楽章・歓喜の歌」より
+#021 NAME ENTRY
+
+#024 UNUSED
+
+// List contribution by R
+$end

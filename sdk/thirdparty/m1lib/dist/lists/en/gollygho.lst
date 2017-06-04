@@ -1,0 +1,96 @@
+﻿$name=gollygho
+$version=2
+$default=000
+$songmax=730
+$main
+
+#000 Attract Music
+#085 [Voice]
+#087 Credit Inserted
+#010 Introduction
+#005 Main Music
+#015 Win & Lose Music
+#030 Boss
+#040 Ending 
+#020 Name Entry
+
+#035 Not Released on CD
+
+---------------------------------------------------------------
+
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice] <time="5">
+#087 [SFX] Credit Inserted
+#088 [SFX] Rain<time="5">
+#089 [SFX] <time="5">
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX] <time="5">
+#097 [Voice]
+#098 [SFX]
+
+#260 ??
+#266 ??
+
+#288 [SFX]
+#289 [SFX]
+#290 [SFX]
+#291 [SFX]
+#292 [SFX]
+#293 [SFX]
+#294 [SFX]
+#295 [SFX]
+#296 [SFX]
+#297 [SFX]
+#298 [SFX]
+#299 [SFX]
+#300 [SFX]
+#301 [SFX]
+#302 [SFX]
+#303 [SFX]
+#304 [SFX] <time="5">
+#305 [SFX]
+#306 [SFX]
+#307 [SFX]
+
+#632 [SFX]
+#633 [SFX] Shot (L)
+#635 [SFX] Creaking (L)
+#636 [SFX]
+#644 [SFX] Shot (R)
+#659 [SFX] Shot (Both)
+#662 [SFX]
+#663 [Voice]
+#664 [Voice]
+#689 [SFX]
+#690 [SFX]
+#691 [SFX]
+#692 [Voice]
+#693 [Voice]
+#694 [SFX]
+
+#723 [SFX]
+#724 [SFX]
+#725 [SFX]
+#726 [SFX]
+#727 [SFX]
+#728 [SFX]
+#729 [SFX]
+#730 [SFX]
+
+  [Soundtrack]
+  Namco Video Game Graffiti Vol. 9
+  Victor Entertainment  VICL-8089  Sep 22, 1993
+
+// Original List Contribution by Min
+// Update and English Conversion by Fujix
+$end

@@ -1,0 +1,21 @@
+﻿$name=hachoo
+$version=2
+$default=009
+$main
+
+#009 Attract Mode
+#012 Title Screen
+#001 Stage 1 - Sky
+#002 Stage 2 - Cliffside
+#003 Stage 3 - Descending
+#004 Stage 4 - Cave
+#005 Stage 5 - Ascending
+#006 Stage 6 - Temple
+#008 Ending
+#011 Game Over
+
+#010 Ending Ver.2
+#007 Unused
+
+// List contribution by ZEK.
+$end

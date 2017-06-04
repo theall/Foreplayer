@@ -1,0 +1,35 @@
+$name=g_uwnh
+$version=2
+$default=2032088
+$songmax=9999999
+$main
+
+#2032088 d2opn 
+#2036714 d2ena 
+#2037400 d2eb2 
+#2041172 d2syk 
+#2041898 d2jo  
+#2042742 d2ka  
+#2044450 d2ot  
+#2045554 d2pi  
+#2047144 d2el  
+#2048526 d2ar  
+#2049034 d2ep  
+#2050242 d2chu 
+#2053828 d2oil 
+#2055858 d2ind 
+#2058208 d2hi  
+#2059902 d2syu 
+#2060396 d2war 
+#2062344 d2sen 
+#2064384 d2ou  
+#2066052 d2bar 
+#2067548 d2sb  
+#2068460 d2fan 
+#2068778 d2stay
+#2069000 d2vic 
+#2069394 d2ara 
+#2069726 d2lut4
+
+// Basic list contributed by Knurek
+$end

@@ -1,0 +1,132 @@
+﻿$name=kotm
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#037 King of the Monsters (Opening Demo)
+#036 Fated City (Title)
+#035 Select Monster
+#033 Entirely Breaker (Theme of Geon)
+#040 Prayer of Madness (Theme of Woo)
+#043 Wet Dance (Theme of Poison Ghost)
+#038 Pulluted Zone (Stage Clear)
+#046 Pyramid Power (Theme of Rocky)
+#049 Like a Beetle (Theme of Beetle Mania)
+#052 Ugly Hero (Theme of Astro Guy)
+#055 The News (Ending) &lt;1&gt;
+#056 The News (Ending) &lt;2&gt;
+#058 Cry of Lamentation (Credit Roll)
+#060 Once Again (Continue)
+#039 Shout of Losers (Game Over)
+
+#034 Entirely Breaker (Theme of Geon) &lt;w/o intro&gt;
+#041 Prayer of Madness (Theme of Woo) &lt;w/o intro&gt;
+#044 Wet Dance (Theme of Poison Ghost) &lt;w/o intro&gt;
+#047 Pyramid Power (Theme of Rocky) &lt;w/o intro&gt;
+#050 Like a Beetle (Theme of Beetle Mania) &lt;w/o intro&gt;
+#053 Ugly Hero (Theme of Astro Guy) &lt;w/o intro&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+#128 [Voice]
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#127 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#243 [SFX]
+#244 [SFX]
+#245 [SFX]
+#246 [SFX]
+#247 [SFX]
+#248 [SFX]
+#249 [SFX]
+#250 [SFX]
+#251 [SFX]
+#252 [SFX]
+#253 [SFX]
+#254 [SFX]
+
+  [Source]
+  King of the Monsters, Quiz Daisousasen / SNK
+  Pony Canyon / Scitron  PCCB-00072  Sep 21, 1991
+
+// List contribution by NK
+// English List by Fuji.
+$end

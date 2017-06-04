@@ -1,0 +1,39 @@
+﻿$name=vf2
+$version=2
+$default=01
+$main
+
+#01 Enbu Performance - Beginning of New Challenge
+#07 Virtua Fighter 2
+#11 Iron Man of Fist
+#03 Black Cat Moon
+#16 Shun Di the God Hermit
+#17 Star from Hong Kong
+#10 Young Knight
+#18 Fisherman across Seven Sea
+#05 Hagakure Hermetism - Rule without Mercy
+#02 Escape
+#19 Monody of Axmen
+#04 Ride the Tiger
+#08 Emissary from the Dark - Dural
+//#21 Emissary from the Dark - Dural
+#24 Chicago
+#20 Afterimage
+#09 Moment of Eternity (Name Entry)
+#12 Game Over
+#06 Stage Clear
+#15 Kyu
+#14 Dan
+#13 Master
+#22 Jacky (from Virtua Fighter 1)
+#23 Sarah (from Virtua Fighter 1)
+
+  [Source]
+  Virtua Fighter 2 Sound Track
+  Toshiba EMI  TYCY-5410  Feb 22, 1995
+
+  [Sound Composers]
+  Takayuki Nakamura, Takenobu Mitsuyoshi, Akiko Hashimoto
+
+// English List by Fujix
+$end

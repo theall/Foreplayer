@@ -1,0 +1,30 @@
+﻿$name=momoko
+$version=2
+$default=001
+$main
+
+#001 Main Theme (Lum's Love Song)
+#010 [SFX] Warping
+#007 Extra Stage
+#004 Blaze Approaching, Danger!
+#006 Stage Cleared
+#005 Happy Wedding! (All Stage Cleared)
+#008 Name Entry
+
+#002 Unused #1 (Yamato Nadeshiko Shichi-henge)
+#003 Unused #2 (Makka-na Onna-no-ko)
+#011 Unused #3
+#012 Unused #4
+#013 Unused #5
+#015 Unused #6
+
+------------------------------------------------------
+ [SFX]
+
+#009 [SFX]
+#010 [SFX] Warping
+
+** SFX don't play correctly except #009 & #010 **
+
+// List Contribution by a2c-s438
+$end

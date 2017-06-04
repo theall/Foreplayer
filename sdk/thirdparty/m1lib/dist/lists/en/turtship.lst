@@ -1,0 +1,64 @@
+﻿$name=turtship
+$version=2
+$default=065
+$main
+
+#065 [SFX] Warning
+#041 Title Screen
+#088 [SFX] Coin
+#033 Ready
+#042 Stage 1
+#038 Stage 2
+#036 Stage 3
+#035 Continue ? <time="9">
+#039 Stage 4, 8
+#043 Stage 5
+#037 Stage 6
+#040 Stage 7
+#034 Boss BGM
+#036 Ending
+#043 Game Over <time="4">
+
+#044 Unused 1
+#032 Unused 2
+
+---------------------------------------------------
+ [SFX]
+
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#045 [SFX] <time="4">
+#046 [SFX] <time="4">
+#047 [SFX] <time="4">
+
+  [Sound Composers]
+  Lee Jae Kun
+  Lee Jung Kyu
+
+// List contribution by ZEK.
+$end

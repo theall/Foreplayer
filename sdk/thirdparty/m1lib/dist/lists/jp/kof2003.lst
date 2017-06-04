@@ -1,0 +1,60 @@
+﻿$name=kof2003
+$version=1
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#053 2003 (タイトル)
+#073 Beats (HOW TO PLAY & ランキング)
+#054 Select (プレイヤーセレクト)
+#055 Stage Effect 1 (ステージ画面IN～ファイト)
+#042 Splendid Evil (新主人公チーム [Ash / Duolon / Shen])
+#039 Prolongation (新餓狼チーム [Terry / Joe / Griffon])
+#056 Winner (勝利者デモ)
+#045 I'm Hot for You (女性格闘家チーム [King / Mai / Mary])
+#038 Inside Skinny (怒チーム [Leona / Ralf / Clark])
+#035 Fairy (神楽ちづる)
+#057 次なる刺客1 (中間デモ1)
+#043 ESAKA? 03 (KUSANAGI)
+#046 You Feel For ME (女子高生チーム [Athena / Hinako / Malin])
+#047 Seoul Love (韓国チーム [Kim / Chang / Jhun])
+#044 Joyrider (日本チーム [Benimaru / Shingo / Daimon])
+#041 Kyoku-Gen (龍虎チーム [Ryo / Robert / Yuri])
+#074 Great Man (連勝制限勝利)
+#040 Villainous (アウトローチーム [Gato / Billy / Yamazaki)
+#036 KD (K'チーム [K' / Maxima / Whip])
+#033 Cool Jam 2 (八神庵)
+#034 Blaze (草薙京)
+#058 次なる刺客2 (中間デモ2)
+#064 悲運への序曲 (アーデルハイド前デモ)
+#048 Stage Effect 2 (アーデルハイド ステージ画面IN～ファイト)
+#049 革命のエチュード～RII (アーデルハイド)
+#065 哀しみの調べ (アーデルハイド後デモ)
+#059 非情の世界 (神楽ちづる＆神楽マキ前デモ)
+#050 Stage Effect 3 (神楽ちづる＆神楽マキ ステージIN～ファイト)
+#051 Sacredness ～ Fairy (神楽ちづる＆神楽マキ)
+#060 最後の扉 (ムカイ前デモ)
+#061 Stage Effect Boss (ムカイ ステージ画面IN～ファイト)
+#052 Styx (ムカイ)
+#075 KO (ムカイKO)
+#062 終わりなき戦い (ボス後デモ)
+#070 新たなる流れ (八傑衆デモ)
+#066 Serious (マルチエンディング1)
+#067 Presentiment (マルチエンディング2)
+#068 Conclusion (マルチエンディング3)
+#069 Pops Beat (マルチエンディング4)
+#072 Heavens (スタッフロール)
+#071 Continue (コンティニュー)
+#076 Game Over (ゲームオーバー)
+
+  ■出典
+  The King of Fighters 2003 / Original Soundtrack
+  SME / SCITRON  SCDC-00337  2004.03.24
+
+  ■作曲
+  Tate-Norio, Masahiko Hataya
+
+// List Contribution by Thomas "Dark Pulse" Warnica - Feb 11 2007
+// Japanese version by Fuj, Feb 2007
+$end

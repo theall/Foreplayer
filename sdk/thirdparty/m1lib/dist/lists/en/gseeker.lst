@@ -1,0 +1,34 @@
+﻿$name=gseeker
+$version=2
+$default=008
+$songmax=019
+$main
+
+//#000 Signature
+//#000 Credit
+#008 Stand by .. '99 (Fighter Select)
+#004 Grid Seeker (Round 1, 4)
+#011 Northan Base (Round 2)
+#005 D-lagoon (Round 3)
+#009 Air Dancin'! (intro) (Boss A)
+#010 Air Dancin'! (Boss A)
+#015 Stardust (Round 5)
+#012 So High (Round 6)
+#016 Mad Machine (Boss B)
+#013 The Ruins (intro) (Name Entry 1)
+#014 The Ruins (Name Entry 1)
+#017 Thank you for.. (Name Entry 2)
+#006 Grid Seeker -Wings of Darkness- (intro) (Round 7) <time="23.1">
+#007 Grid Seeker -Wings of Darkness- (Round 7)
+#018 Lucifer (Final Boss)
+#019 Grid Seeker -Over There- (Ending)
+
+  [Source]
+   Grid Seeker / Taito
+   Pony Canyon / Scitron  PCCB-00131  Jul 21, 1993
+
+  [Sound Composers]
+   Nakayama-joutouhei, [Wiz.Master] (Norihiro Furukawa)
+
+// List by Raz
+$end

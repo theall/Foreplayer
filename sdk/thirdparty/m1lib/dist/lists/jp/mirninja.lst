@@ -1,0 +1,40 @@
+﻿$name=mirninja
+$version=2
+$default=096
+$songmax=150
+$main
+
+#096 白怒火見参 (Round 1)
+#119 白怒火見参 (Round 1,3)
+#130 危機 (Boss Theme)
+#098 進展 (Round Clear)
+#112 機忍 -サイバーウォーリア- (Round 7)
+#114 輪廻 (Round 6)
+#128 未来忍者外伝 (Round 5)
+#143 慶雲元年 (Round 2,8)
+#120 呪文 (Round 12 前半)
+#125 闇 (Round 4,9)
+#138 迷宮 (Round 11 part1) <time="0:18">
+#139 迷宮 (Round 11 part2) <time="0:13">
+#140 迷宮 (Round 11 part3) <time="0:11">
+#141 迷宮 (Round 11 part4) <time="0:09">
+#142 迷宮 (Round 11 part5) <time="0:06">
+#118 諏訪部の契 (Round 10)
+#149 橡伎 (Round 12 後半)
+#150 橡伎復活 (Round 12 後半)
+#135 大団円 -テーマ- (Staff Roll)
+#100 終幕 (Game Over)
+#102 名乗り-天下- (Name Entry)
+#104 名乗り-天上- (Name Entry 1st Prize)
+
+  ■出典
+  未来忍者 -慶雲機忍外伝- -G.S.M. NAMCO 1-
+  PONY CANYON / SCITRON  D28B0009  1988.12.21
+
+  ■作曲
+  太田 浩一: 96,119
+  中潟 憲雄: 130,128,143,118,135,100,102,104
+  ASTRφN 石井: 98,112,114,120,125,138-142,149,150
+
+// list by 匿名氏
+$end

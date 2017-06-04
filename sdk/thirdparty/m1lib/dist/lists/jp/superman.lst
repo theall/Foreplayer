@@ -1,0 +1,124 @@
+﻿$name=superman
+$version=2
+$default=005
+$main
+
+#005 TITLE DEMO <time="14">
+#025 CREDIT
+#006 MAIN THEME 1 (ROUND 1)
+#008 BOSS BGM 1 (ROUND 1,2,3,4,5)
+#009 MAIN THEME 2 (ROUND 1,2,3,4)
+#010 BOSS BGM 2 (ROUND 1)
+#020 ROUND CLEAR
+#007 MAIN THEME 3 (ROUND 2,3,4)
+#011 BOSS BGM 3 (ROUND 2)
+#012 BOSS BGM 4 (ROUND 3)
+#013 BOSS BGM 5 (ROUND 4)
+#021 TO CONTINUE GAME <time="13">
+#014 ROUND 5 BGM 1
+#015 ROUND 5 BGM 2
+#016 ROUND 5 BGM 3
+#017 ROUND 5 BGM 4
+#018 BOSS BGM 6 (ROUND 5)
+#019 BOSS BGM 7 (ROUND 5)
+#022 ENDING
+#023 NAME ENTLY
+#024 GAME OVER
+
+#244 スピーカーテスト
+
+---------------------------------------------------
+ [S.E.] 
+
+#026 [S.E.] 
+#027 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#108 [S.E.] 
+#109 [S.E.] 
+#110 [S.E.] 
+#111 [S.E.] 
+#112 [S.E.] 
+#114 [S.E.] 
+#028 [S.E.] <time="4">
+#060 [S.E.] <time="4">
+#099 [S.E.] <time="4">
+#243 [S.E.] <time="4">
+#245 [S.E.] <time="4">
+
+---------------------------------------------------
+ [Voice] 
+
+#098 [Voice] 
+
+   ■作曲
+   高木 正彦(MAR.), KAZUYUKI 大縫,
+   相沢 静夫(SPLATTEA.A), 浅野 孝己
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,56 @@
+﻿$name=kinst2
+$version=2
+$default=6001
+$fixed_volume=100
+$main
+
+#6001 Killer Instinct 2 Theme
+#6030 Select Character (High Quality)
+#6002 Maya
+#6003 Maya (loop)
+#6004 Maya (end)
+#6005 Glacius
+#6006 Glacius (loop)
+#6007 Glacius (end)
+#6008 Spinal
+#6009 Spinal (loop)
+#6010 Spinal (end)
+#6011 Jago
+#6012 Jago (loop)
+#6013 Jago (end)
+#6014 Sabrewulf
+#6015 Sabrewulf (loop)
+#6016 Sabrewulf (end)
+#6017 Combo
+#6018 Combo (loop)
+#6019 Combo (end)
+#6020 Orchid
+#6021 Orchid (loop)
+#6022 Orchid (end)
+#6023 Kim Wu
+#6024 Kim Wu (loop)
+#6025 Kim Wu (end)
+#6026 Gargos
+#6027 Gargos (loop)
+#6028 Gargos (end)
+#6031 Fulgore
+#6032 Fulgore (loop)
+#6033 Fulgore (end)
+#6034 Tusk
+#6035 Tusk (loop)
+#6036 Tusk (end)
+#6044 Killer Instinct 2 Medley
+#6045 The Instinct:Endgame (short loop)
+#6037 The Instinct:Endgame (medium loop)
+#6046 The Instinct:Endgame (end)
+#6029 Alt Character Select (Heartbeat)
+#6038 Guitar (loop)
+#6039 Guitar (end)
+#6040 Bass Loop
+#6041 Weather loop SFX
+#6042 Weather Loop 2 SFX
+#6043 Thunder & Lightning SFX
+
+// Figured out by Toby from names from the Killer Instinct 2 CD...
+// List Contribution by Sixtoe
+$end

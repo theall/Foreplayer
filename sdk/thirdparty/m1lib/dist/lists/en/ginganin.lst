@@ -1,0 +1,145 @@
+$name=ginganin
+$version=2
+$default=162
+
+$main
+
+#162 Title
+#161 Demo
+#189 Credit Inserted
+#166 Player Start
+#169 Round 1, 4
+#191 Round 1 Mid Boss
+#180 Round 1 Boss
+#181 Round 1, 4 Clear
+#182 Round 1, 3, 4 Bridge & Round 6 Clear
+#171 Round 2, 5
+#178 Round 2 Bridge
+#185 Eye Catch
+#170 Round 3, 6
+#184 Round 3 (Wasp Zone)
+#173 Round 3 Boss
+#179 Round 3, 6 Brdige
+#172 Round 4 (3-meter-tall Alien Zone)
+#190 Round 4 Boss
+#186 Round 5 Bridge
+#196 Round 6 Mid Boss
+#174 Round 6 Boss
+#187 Round 7
+#195 Round 7 Mid Boss
+#197 Round 7 (Hanagata Zone)
+#175 Round 7 Boss
+#201 Round 7 Bridge
+#176 Round 8
+#163 Ending
+#168 Name Entry
+#188 Hyper Adder
+#164 Miss
+#167 Continue
+#165 Game Over
+
+--------------------------------------------------------
+
+#177 Not on CD?
+#183 Not on CD?
+#193 Not on CD?
+#194 Not on CD?
+#198 Final Part of the Ending Song
+#200 Name Entry (Longer)
+#199 Name Entry End
+
+#192 Sound Stop
+
+--------------------------------------------------------
+
+#129 [voice] "oohtttoto wahaa"
+#130 [voice] "wahaaa"
+#131 [voice] "Jaleco"
+#132 [voice] "hyoee"
+#133 [voice] "tooh"
+#134 [voice] "ite"
+#135 [voice] "achaa"
+#136 [voice] "uuh"
+#137 [voice] "ite"
+#138 [voice] "dohyaa"
+#139 [voice] "tourya"
+#140 [voice] "toryaa"
+#141 [voice] 
+#142 [voice] "tasukete onegai"
+#143 [voice] "Yacchan Suteki"
+#144 [voice] "yattane"
+#145 [voice] "uwa"
+#146 [voice] 
+#147 [voice] "buhii"
+#148 [voice] "Yacchan tasukete"
+#149 [voice] 
+#150 [voice] "hidoi bakani shitoruyo"
+#151 [voice] "mattekureei"
+#152 [voice] 
+#153 [voice] 
+#154 [voice] "kya"
+#155 [voice] "ite"
+#156 [voice] "koramateeei"
+#157 [voice] "yattazee"
+
+--------------------------------------------------------
+
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#033 [SFX]
+#048 [SFX]
+#049 [SFX]
+#054 [SFX]
+#056 [SFX]
+#058 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#065 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#109 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#122 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#158 [SFX] 
+
+  [Source]
+  Legend of Game Music - Premium BOX -
+  Scitron Digital Contents  SCDC-00478  Mar 24, 2005
+
+  [Composer]
+  Yoshinori Kawamoto (DX21 KAWAGEN Y8950)
+
+// List Contribution by Aska-m
+$end

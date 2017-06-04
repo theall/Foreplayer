@@ -1,0 +1,45 @@
+﻿$name=exzisus
+$version=2
+$default=018
+$songmax=047
+$main
+
+#018 Coin <time="5">
+#046 Stage Intro <time="7">
+#036 BGM #1 (Space/Planet Surface)
+#038 Boss Intro/Gold Moai & Mechanical Yeti
+#041 Stage Clear
+#042 BGM #2 (City)
+#047 Boss Intro/Red Scorpion & Violet Salamander
+#044 Enter Your Name
+#045 All Clear/Continue Play?
+#037 Game Over
+
+---------------------------------------------------------------
+ [SFX]
+
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by bcass
+$end

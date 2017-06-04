@@ -1,0 +1,41 @@
+﻿$name=g_son2
+$version=2
+$default=153
+$main
+
+#153 Title Screen
+#130 Emerald Hill Zone
+#154 Sonic/Tails Got Through Act
+#147 Boss
+#142 Chemical Plant Zone
+#135 Aquatic Ruin Zone
+#137 Casino Night Zone
+#134 Hill Top Zone
+#139 Mystic Cave Zone
+#132 Oil Ocean Zone
+#133 Metropolis Zone
+#141 Sky Chase Zone
+#143 Wing Fortress Zone
+#138 Death Egg Zone
+#148 Final Boss
+#149 Ending
+#158 Credits
+#145 Options
+#140 Emerald Hill 2-Player
+#136 Casino Night 2-Player
+#131 Mystic Cave 2-Player
+#146 Special Stage
+#129 2-Player Results
+#144 Hidden Palace Zone (Unused)
+#151 Invincibility
+#150 Super Sonic
+#152 Extra Life
+#159 Drowning
+#155 Game Over
+#156 Continue
+
+ [Sound Composer]
+  Masato Nakamura
+
+// List contribution by Yawackhary.
+$end 

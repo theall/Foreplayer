@@ -1,0 +1,23 @@
+﻿$name=uccops
+$version=2
+$default=$01
+$main
+
+$01 Soldat Choix (セレクト)
+$04 Northern Barramundi (ステージ 1)
+$02 Sarah Sowertty (ステージ 2-1)
+$0b Nasty Loud Quack (ボス)
+$08 Assessment Day (査定)
+$03 Redtailed Cat (ステージ 3)
+$06 Dandy N.D. (ステージ 4)
+$05 Than Hawk Anger (ステージ 5)
+
+  ■出典
+  UNDERCOVER COPS
+  VICTOR ENTERTAINMENT  VICL-5180  1992.12.16
+
+  ■作曲
+  冷牟田 (HIYA!)
+
+// リスト作成：加山。さん
+$end

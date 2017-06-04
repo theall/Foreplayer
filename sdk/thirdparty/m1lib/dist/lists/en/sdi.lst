@@ -1,0 +1,71 @@
+﻿$name=sdi
+$version=2
+$default=144
+$main
+
+#144 Illusion <time="2:40">
+#145 An Imminent War <time="3:00" dummy="this will be ignored.">
+#146 Sky Sun <time="1:30">
+#147 System Down <time="3:52">
+#148 Satellite Attack <time="2:21.5">
+#151 Perfect <time="7">
+#150 We Are Desirous of Peace <time="1:11">
+#152 Blue Moon <time="1:07">
+
+------------------------------------------
+
+#129 [FM] high tom
+#130 [FM] middle tom
+#131 [FM] low tom
+#132 [FM] snare drum
+#133 [FM] high hat cymbal
+#134 [FM] bass drum
+#135 [FM] cymbal
+#136 [FM] snare roll
+
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#170 [SFX]
+#171 [SFX]
+#173 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#189 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+
+  [Source]
+  After Burner - Sega Game Music Vol.3
+  Alfa Records  28XA-109  Oct 10, 1987
+
+  [Sound Composer]
+  Katsuhiro Hayashi
+
+// List Contribution by Hiroshi
+// Updated by baddy
+$end

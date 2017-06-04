@@ -1,0 +1,89 @@
+﻿$name=kuniokun
+$version=2
+$default=143
+$main
+
+#143 Title
+#184 [Voice] ganbattene (Coin)
+#128 Opening - The Nekketsu Stalwart
+#142 Game Introduction - Rescue Hiroshi
+#135 Confrontation / Stage Start
+#129 Platform Scene - Clash with Riki (Stage 1)
+#136 Stage Cleared
+#130 Motorcycle Scene - Groaning V-Type Engine (Stage 2, First Half)
+#131 Hit and Crush the Gang - Yokosuka Shinji (Stage 2, Latter Half)
+#132 Anti-Delinquent Girls - Fighting Misuzu's Gang (Stage 3)
+#133 Theme of 893 (Stage 4-1)
+#141 Overthrow Foreman Sabu (Stage 4-2)
+#139 Fanfare
+#137 Kunio Sent to the Hospital
+#140 Game Over
+#138 Five Victory Record People - Name Entry
+//#138 Theme of Confrontation
+
+#134 Name Entry (Overseas Edition)
+
+-----------------------------------------------------------
+  [Voice]
+
+#176 [Voice] Aah!
+#183 [Voice] namennayo konoyarou
+#185 [Voice] zakenjanee
+#181 [Voice] nametenja neezo
+#182 [Voice] mate konoyarou
+#180 [Voice] orrya
+#184 [Voice] ganbattene
+#187 [Voice] Wah!
+
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#177 [SFX] Motorcycle 1
+#178 [SFX] Motorcycle 2
+#179 [SFX] Water Spray
+#186 [SFX] Motorcycle 3
+
+  [Source]
+  Nekketsu Kouha Kunio-kun Sound Story
+  Apollon  KHY-1013  Mar 05, 1987
+// Released on Cassette
+
+  Kunio-kun Sound Collection - Downtown Nekketsu Monogatari, etc.
+  Apollon  C228-5008  Jun 05, 1989
+// Released on CD
+
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+  [Composition]
+  Kazuo Sawa
+
+// Japanese list by Fuj (based on renegade by NK)
+// Translated to English by Cleveland Rock
+$end

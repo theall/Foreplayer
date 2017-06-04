@@ -1,0 +1,43 @@
+﻿$name=wingwar
+$version=2
+$default=001
+$main
+
+#001 Guns and Wings -Yak 141-
+#013 Pic Up Your Wings
+#016 Pull the Stick
+#006 Fokker Dr.I
+#005 P-38 Lightning
+#012 Victory in the Sky
+#017 To Fly and Fight
+#007 P-51 Mustang
+#002 Mitsubishi A6M Zero
+#024 Challenger
+#019 Pic Up Your Wings [Short]
+#008 Warewolf KA-50
+#016 Aviator's Memories
+#004 AH-64 Apache
+#014 The Stall
+#015 Run Way Girls
+#003 AV-8 Harrier
+#023 Wings High
+#009 Undefined Flying Object
+#021 Show's Over
+#011 Burnstormer
+#020 Keep Up Your Good Fight
+#022 Wings High (No Guitar Version)
+#025 Unknown #1
+#027 Unknown #2
+  
+  [Source]
+  Dynamite Deka vs Wing War Original Soundtrack
+  Wavemaster Inc.  WM-0528  Apr 27th, 2006
+
+  [Sound Composers]
+  Muu
+
+  [Notes]
+  Plays a bit faster than the OST. Emulation error?
+  
+// Base list contributed by Knurek
+$end

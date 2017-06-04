@@ -1,0 +1,32 @@
+﻿$name=darius2
+$version=2
+$default=$1c
+$songmax=$4f
+$main
+
+$1c OPENING
+$1b COIN
+$0a OLGA BREEZE (太陽シーン)
+$0b MUSE VALLY (水星シーン)
+$0c JAMMING (金星シーン)
+$1d WARNING!
+$11 WAR OH! (ボスシーン1)
+$15 ROUND CLEAR
+$0d Cynthia (月シーン)
+$0e Planet Blue (地球シーン)
+$12 BOSS 2 (ボスシーン2)
+$0f To Nari (火星シーン)
+$4f say PAPa (木星シーン)
+$17 ALL CLEAR
+$16 NAME SET
+$18 ENDING #1
+$10 ENDING #2
+
+  ■出典
+  DARIUS II -G.S.M. TAITO 4- / ZUNTATA
+  PONY CANYON / SCITRON  PCCB-00010-1～2  1989.11.21
+
+  ■作曲
+  小倉 久佳 (OGR.)
+
+$end

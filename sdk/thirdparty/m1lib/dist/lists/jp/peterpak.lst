@@ -1,0 +1,84 @@
+﻿$name=peterpak
+$version=2
+$default=019
+$songmax=128
+$fixed_volume=122
+$main
+
+  可能な限りCDの収録順を再現したため
+  同じ曲が2回リクエストされたりします。
+
+#019 Stage 1 Start <time="5.4">
+#021 Stage 1-1 <time="10.1">
+#027 Ladder 1 <time="2.4">
+#028 Stage 1-4 <time="7.3">
+#031 Ladder 2 <time="3.2">
+#029 Stage 1-5 <time="4.9">
+#024 Miss <time="1.8">
+#020 Stage 1 Start 2 <time="4.7">
+#022 Stage 1-2 <time="7.4">
+#032 Ladder 3 <time="3">
+#023 Stage 1-3 <time="7.9">
+#034 Ladder 5 <time="3.1">
+#021 Stage 1-1 <time="10.0">
+#033 Ladder 4 <time="3.18">
+#023 Stage 1-3 <time="7.9">
+#035 Ladder 6 <time="2.37">
+#030 Stage 1-6 <time="7.1">
+#040 Stage 1 Clear <time="5.3">
+#013 Stage 2 <time="1:47">
+#018 Stage 2 Clear
+#009 Stage 3 <time="1:14">
+#012 Stage 3 Clear <time="7">
+
+--------------------------------
+
+#004 test tone <time="10">
+#005 test tone <time="5">
+#016 [S.E.]
+#017 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.] <time="6">
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+
+  ■出典
+  THAT'S ATARI MUSIC -G.S.M. ATARI GAMES 1-
+  PONY CANYON / SCITRON  PCCB-00066  1991.07.21
+
+  THAT'S ATARI MUSIC -G.S.M. ATARI GAMES 1- (LEGEND SERIES)
+  SME / SCITRON  SCDC-00313  2003.12.03
+
+$end

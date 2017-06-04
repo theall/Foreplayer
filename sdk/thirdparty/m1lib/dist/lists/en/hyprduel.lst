@@ -1,0 +1,34 @@
+﻿$name=hyprduel
+$version=2
+$default=0
+//$songmax=026
+$main
+
+#000 Cyber Fleet
+#001 Full Burner
+#002 Hidden Moon
+#003 Cosmo Babylon
+#004 Count Down
+#005 Black Rain
+#006 Night Sweeper
+#007 Bloody Government
+#008 Voiled Kraken
+#009 Cry Bringer
+#010 I-W-A-O
+#011 Phalanx Smasher
+#012 Night Mare
+#013 Hyper Duel
+#014 Stage Clear
+#015 Game Over
+#016 Chr Select
+#017 Negative Energy
+#018 Congratulations
+#019 Omake BGM #1 [Thunder Force III: Venus Fire]
+#020 Omake BGM #2 [Thunder Force III: Hunger Made Them Desperate]
+
+  [Sound Composer]
+  Tsukumo Hyakutaro
+
+// Basic listing by Knurek
+// Omake Songs identified by nZero
+$end

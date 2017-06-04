@@ -1,0 +1,80 @@
+﻿$name=sfight2
+$version=2
+$default=001
+$main
+
+#001 タイトルデモ <time="00:07">
+#004 BGM 1 : アメリカ (ケン)
+#005 BGM 2 : アメリカ (ガイル)
+#007 BGM 3 : ブラジル (ブランカ)
+#003 BGM 4 : スペイン (バルログ)
+#008 Bonus Select : プレイヤーセレクト
+#006 Multi Ball Game BGM : 日本 (リュウ)
+#010 Extra Game BGM : アメリカ (M.バイソン)
+#015 Extra Game Clear
+#001 Clear / Game Over : タイトルデモ <time="00:07">
+
+------------------------------------------------------
+ [S.E.]
+
+#163 [Voice] 波動拳
+#164 [Voice] ready
+#165 [Voice] set
+#166 [Voice] shoot
+#167 [Voice] 竜巻旋風脚
+#168 [Voice] 
+#169 [Voice] 
+#172 [Voice] 
+#173 [Voice] 
+#175 [Voice] fight
+#176 [Voice] 
+#177 [Voice] shoot the ball
+#178 [Voice] select
+#179 [Voice] early
+#180 [Voice] late
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] Super jackpot
+#184 [Voice] Bull's eye
+#185 [Voice] Jackpot
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] double your score
+#190 [Voice] You have come far, now prepare to die
+#194 [Voice] 昇龍拳
+#195 [Voice] Congratulations, you are the new master
+#196 [Voice] Another coin, please
+#198 [Voice] The game has ended, but the challange remains
+#199 [Voice] tiger
+#200 [Voice] tiger uppercut
+#202 [Voice] you lose
+#203 [Voice] 
+#205 [Voice] you win
+#209 [Voice] 
+#210 [Voice] sonicboom
+#224 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+#245 [Voice] 
+#246 [Voice] 
+#248 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#252 [Voice] 
+
+// リスト作成：ひろしさん
+// updated by フジモン
+// updated by MuramuraNight
+$end

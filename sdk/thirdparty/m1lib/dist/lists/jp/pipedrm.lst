@@ -1,0 +1,127 @@
+﻿$name=pipedrm
+$version=2
+$default=032
+$main
+
+#032 TITLE ～ HOW TO PLAY
+#192 [S.E.] CREDIT
+#033 SELECT COURSE & LEVEL
+#034 START
+#224 [S.E.] READY <time="1.7">
+#225 [S.E.] GO ! <time="2">
+#035 COURSE A THEME 
+#138 COURSE A HURRY 
+#039 CLEAR !
+#040 BONUS !
+#045 THE PIPE DREAM SHOW
+#036 COURSE B THEME 
+#139 COURSE B HURRY 
+#042 MISS
+#043 CONTINUE ? <time="22">
+#037 COURSE C THEME 
+#140 COURSE C HURRY 
+#039 CLEAR !
+#047 FOR ALL SQUARES
+#046 ENDING
+#041 GAME OVER
+#044 NAME ENTRY
+
+#038 未使用曲 1
+#051 未使用曲 2
+#052 未使用曲 3
+#053 未使用曲 4
+#136 未使用曲 5
+#128 COURSE A HURRY Ver.2
+#176 COURSE A HURRY Ver.3
+
+---------------------------------------------------
+  [S.E.]
+
+#129 [S.E.] <time="4">
+#132 [S.E.] <time="4">
+#133 [S.E.] <time="5">
+#134 [S.E.] <time="4">
+#135 [S.E.] <time="4">
+#192 [S.E.] CREDIT
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#207 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#216 [S.E.] 
+#217 [S.E.] 
+#218 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] READY
+#225 [S.E.] GO !
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#229 [S.E.] 
+#230 [S.E.] 
+#231 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+
+  ■作曲
+  板村 直樹 (N.Itamura)
+
+  ■効果音
+  K.Okuda
+
+// List contribution by ZEK.
+$end

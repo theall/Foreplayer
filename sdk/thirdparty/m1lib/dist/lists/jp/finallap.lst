@@ -1,0 +1,37 @@
+﻿$name=finallap
+$version=2
+$default=001
+$fixed_volume=178
+$main
+
+#001 エントリー受付
+#259 [S.E.] スタート
+#257 [S.E.] カウントダウン
+#002 BGM A
+#003 BGM B
+#004 エンディング
+
+#258 [S.E.] ラップ
+#260 [S.E.] ???
+
+#256 ステレオテスト
+
+#261 メインパート (エントリー受付)
+#262 メインパート (BGM A)
+#263 メインパート (BGM B)
+#264 メインパート (エンディング)
+
+#017 ドラムパート (エントリー受付)
+#018 ドラムパート (BGM A) 
+#019 ドラムパート (BGM B)
+#020 ドラムパート (エンディング)
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.4 
+  VICTOR ENTERTAINMENT  VDR-5282  1989.03.08
+
+  ■作曲
+  細江 慎治
+
+// List contribution by R
+$end

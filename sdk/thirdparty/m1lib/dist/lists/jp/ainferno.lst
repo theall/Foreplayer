@@ -1,0 +1,48 @@
+﻿$name=ainferno
+$version=2
+$default=009
+$fixed_volume=273
+$main
+
+#009 OPEN (タイトル)
+#010 JU･JU (セレクト)
+#021 #1279 (指令画面)
+#016 FLIGHT (飛行練習)
+#017 FIRE (消火練習)
+#011 BOM (タンカー -未使用曲-)
+#014 RED CITY (ビル街 -未使用曲-)
+#012 VOLCANO (火山島)
+#013 CAMEL LAND (ピラミッド地帯)
+#015 IN FOCUS (メインテーマ)
+#018 CLEAR (ラウンドクリア)
+#020 MORNING (エンディング)
+#022 NA-MA-SU-TE (ネーミング)
+#069 OVER (ゲームオーバー)
+
+-----------------------------------------
+
+#046 [Voice] You're ready for take off, over.
+#047 [Voice] Increase altitude immediately.
+#048 [Voice] Reduce altitude immediately.
+#049 [Voice] Make a right turn, over.
+#050 [Voice] Make a left turn, over.
+#051 [Voice] Go straight ahead, over.
+#056 [Voice] Warning, your time is running up.
+#059 [Voice] Warning.
+#061 [Voice] We'll be arriving on the scene soon, over.
+#062 [Voice] We've spotted the missing person to the rescue, over.
+#064 [Voice] Give up the search, over.
+#065 [Voice] It's burn down completely. It's ensued lost all the crew with it, over.
+#066 [Voice] Danger, danger. Stop the rescue immediately.
+#067 [Voice] It's burn down completely. There's no sign of survivors, over.
+#245 [Voice] Over, over.. <time="0:4">
+#246 [Command] Stop.
+//
+//#023-#045 [S.E.]
+//#074-#097 [S.E.]
+
+  ■出典
+  TAITO DJ STATION -G.S.M. TAITO 5-
+  PONY CANYON / SCITRON  PCCB-00037  1990.08.21
+
+$end

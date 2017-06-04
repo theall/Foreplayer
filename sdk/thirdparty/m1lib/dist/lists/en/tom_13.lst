@@ -1,0 +1,242 @@
+$name=tom_13
+$version=2
+$default=001
+$songmax=818
+$main
+
+#1 Music: Main Game
+#2 Music: Main Prelaunch
+#5 Music: Trunk Escape
+#6 Music: Metamorphosis
+#7 Music: Game Over
+#8 Music: Tiger Saw
+#9 Music: Safe Escape
+#11 Music: Theatre HurryUp
+#12 Music: Grand Finale
+#13 Music: Coll. Bonus pt 1
+#14 Music: Coll. Bonus pt 2
+#15 Music: M.Ball Start
+#16 Music: Main Prelaunch
+#41 Music: Mode Title
+#50 Music: Shot Complete 1
+#51 Music: Th.HurryUp Score
+#52 Music: Basement Select
+#53 SFX: Going to Basement
+#54 Music: Mode Complete 1
+#55 Music: Mode Complete 2
+#56 Music: MAGIC Spelled
+#57 Music: Jackpot Score
+#58 Music: Extra Ball!
+#59 Music: Replay!
+#60 Music: Shot Complete 2
+#61 Music: Spirit Ring
+#62 Music: Special
+#63 Music: Levitate!
+#70 Music: Safe Esc. Hit 1
+#71 Music: Sp.Cards Hit
+#100 SFX: Trunk Magnet 1
+#101 SFX: Saw Startup
+#102 SFX: Saw Sustain
+#103 SFX: Saw Shutdown
+#104 SFX: Boom 1
+#105 SFX: Misc 1
+#107 SFX: Clock Chime
+#108 SFX: Launch Ball
+#109 SFX: Saw Slicing
+#110 SFX: Misc 2
+#111 SFX: Spinner
+#112 SFX: Magna-Save
+#113 SFX: Boom 2
+#114 SFX: Boom 3 + Zap
+#115 SFX: Spot THEATRE
+#116 SFX: Crash 1
+#117 SFX: Trunk Rotating
+#118 SFX: Hocus-Pocus Hit
+#119 SFX: Sp.Ring Capture
+#120 SFX: TrapDoor Kickout
+#121 SFX: Trunk Hit
+#122 SFX: Loop-Ramp Cascade
+#123 SFX: TrapDoor Target
+#124 SFX: Misc 3
+#125 SFX: Thunder
+#126 SFX: Outlane
+#127 SFX: Jet Bumper
+#128 SFX: Captive Ball Hit
+#129 SFX: Bonus X Lane
+#130 SFX: Clock Winding
+#133 SFX: Jackpot Increased
+#134 SFX: Misc 4
+#135 SFX: Ball Locked
+#136 SFX: Misc 5
+#138 SFX: Misc 6
+#142 SFX: Misc 6 + Twinkles
+#143 SFX: Tiger Roaring
+#144 SFX: Phone Ringing
+#145 SFX: Pick Up Phone
+#146 SFX: Shuffling Cards
+#147 SFX: Rattlesnake
+#148 SFX: Birds
+#149 SFX: Misc 7
+#151 VOX: Bonus X Increased
+#152 SFX: Ramp Shot
+#153 SFX: Kickout Warning
+#155 SFX: Misc 8
+#156 SFX: Misc 9
+#157 SFX: Spirit Ring Lit
+#158 SFX: Misc 10
+#159 VOX: "Moo!"
+#199 SFX: Boom 4
+#200 SFX: Illusion Lit
+#201 SFX: Misc 11
+#202 "Move your car!"
+#203 "Here's your hot dog!"
+#204 "Go for Jackpot!"
+#205 "Jackpot is lit!"
+#206 "Billion!"
+#207 SFX: Combo shot
+#300 Music: Jackpot! (2)
+#301 SFX: Musical 1
+#302 SFX: Musical 2
+#400 VOX: Zap! "Vanish!"
+#500 "Extra ball!" (brawl)
+#502 "Seven o'clock."
+#503 "Eight o'clock."
+#504 "Nine o'clock!"
+#505 "Ten o'clock!"
+#506 "Eleven o'clock!"
+#507 "Midnight Madness!"
+#510 "Shoot for the trunk!"
+#511 "Shoot ... trap door."
+#512 "Welcome to the Th..."
+#513 "The Theatre awaits!"
+#515 "Theatre complete!"
+#528 "One o'clock."
+#529 "It's Two o'clock."
+#530 "Three o'clock."
+#531 "Four o'clock."
+#532 "Five o'clock."
+#533 "It's six o'clock."
+#537 "Mystifying!"
+#538 "Magnificent!"
+#539 "Astounding!"
+#540 "Sensational!"
+#541 "Spectacular!"
+#542 "Unbelievable!"
+#543 "Go for the extra ball"
+#544 "Congratulations!"
+#546 "Shoot... center stair"
+#547 "Shoot... right stair"
+#548 "Shoot for the jets"
+#549 "Shoot... left lane"
+#550 "Shoot... right lane"
+#551 "Shoot... captive ball"
+#552 "Shoot... spinner"
+#553 "Make the ball vanish!"
+#554 "Go for the center loop"
+#556 "The rope is breaking!"
+#557 "Hurry up!"
+#558 "You must hurry up!"
+#559 "Hurry up! ..danger!"
+#560 "Look! She's in danger!"
+#564 "Tiger Saw Jackpot!"
+#567 "Shoot... magic trunk!"
+#570 "The first ball is..."
+#571 "The second ball is..."
+#573 "The trap door is open!"
+#574 "You must shoot into..."
+#577 "Excellent!"
+#578 "This ball is full of.."
+#580 "...amazing player!"
+#583 "I knew you could do it"
+#585 "...can't help you now!"
+#586 "Ticket, please."
+#587 "Stay right where you.."
+#588 "Don't give up now!"
+#589 "You must continue!"
+#590 "The basement is full.."
+#591 "Oh no!" (crash oof ow!)
+#592 "Replay!"
+#594 "Careful!"
+#597 "Try to saw the ball..."
+#600 "Tonight's performance"
+#604 "Player 1 is up."
+#605 "Player 2 is up."
+#606 "Player 3 is up."
+#607 "Player 4 is up."
+#608 "Amazing skill!"
+#609 "Time is running out!"
+#610 "Extra ball is lit!"
+#611 "The air pressure is..."
+#612 "Fifty Million!"
+#613 "One-Hundred Million!"
+#700 "Welcome to the Th..."
+#701 "Player"
+#702 "One"
+#703 "Two"
+#704 "Three"
+#705 "Four"
+#706 "Welcome!"
+#708 "...is now closed."
+#711 "It's magic!"
+#723 "Shoot up the ctr stc."
+#724 "Shoot up the rt stc.."
+#725 "Shoot... the spinner!"
+#726 "Shoot for the jets!"
+#727 "Shoot... magic trunk!"
+#728 "Go for the ctr stc..."
+#729 "Go for the rt stc..."
+#730 "Go for the spinner!"
+#731 "Go for the jets!"
+#732 "Escape from the trunk"
+#733 "Shoot into the trap.."
+#735 "Look!"
+#736 "Tiger Saw!"
+#737 "Spirit Cards!"
+#738 "Trunk Escape!"
+#739 "Levitating Woman!"
+#740 "Safe Escape!"
+#741 "The Metamorphosis!"
+#742 "Strait Jacket Escape!"
+#743 "Hat Magic!"
+#744 "Hocus Pocus!"
+#746 "The magic is within.."
+#747 "Vanish!"
+#749 "... the Grand Finale!"
+#750 "Make the Theatre..."
+#751 "You're an outstanding"
+#752 "Welcome back to the.."
+#753 "I am only an illusion"
+#754 "Hurry up!"
+#755 "Vanquish the chains!"
+#756 "You must break free!"
+#759 "I shall give you..."
+#761 "Extra ball is lit!"
+#762 "Go for the extra ball"
+#764 "Go for Multiball!"
+#765 "Lock is lit!"
+#766 "You must concentrate."
+#768 "You are amazing!"
+#769 "Unbelievable!"
+#772 "Keep your cool!"
+#775 "Levitate!"
+#776 "You have the magic!"
+#777 "You must believe in.."
+#778 "Please!  Shoot again!"
+#779 "You can do it!"
+#780 "Here is another ball!"
+#801 VOX: (German)
+#803 VOX: (German)
+#805 VOX: (German)
+#807 VOX: (German)
+#808 VOX: (German)
+#809 VOX: (German)
+#810 VOX: (German)
+#811 VOX: (German)
+#812 VOX: (German)
+#813 VOX: (German)
+#814 VOX: (German)
+#815 VOX: (German)
+#818 VOX: (German)
+
+// Basic listing by Tafoid, extracted from PinMAME's SOUNDS.DAT
+$end

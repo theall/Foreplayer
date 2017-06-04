@@ -1,0 +1,56 @@
+$name=sws92
+$version=2
+$default=2
+$main
+
+$02 Super World Stadium Main BGM 1
+$14 Play Ball
+$05 Super World Stadium Main BGM 2
+$17 Chance BGM
+$11 Time BGM
+$0e Penalty BGM
+$0b Homerun!
+$25 Namco News 1
+$41 Namco News 2
+$1a Super World Stadium Match
+$30 Homerun! -no intro-
+$07 Unknown 01
+$0a Unknown 02
+$08 Unknown 03
+$09 Unknown 04
+$2a Unknown 05
+$2b Unknown 06
+$33 Unknown 07
+$50 Unknown 08
+$52 Unknown 09
+$53 Unknown 10
+$54 Unknown 11
+$55 Unknown 12
+$58 Unknown 13
+$59 Unknown 14
+$5a Unknown 15
+$5b Unknown 16
+$5c Unknown 17
+$5d Unknown 18
+$5e Unknown 19
+$5f Unknown 20
+$60 Unknown 21
+$61 Unknown 22
+$62 Unknown 23
+$63 Unknown 24
+$64 Unknown 25
+$66 Unknown 26
+$69 Unknown 27
+$6a Unknown 28
+$6b Unknown 29
+$6c Unknown 30
+$6e Unknown 31
+$6f Unknown 32
+$70 Unknown 33
+$71 Unknown 34
+$73 Unknown 35
+$75 Unknown 36
+$76 Unknown 37
+
+// English list by Knurek
+$end

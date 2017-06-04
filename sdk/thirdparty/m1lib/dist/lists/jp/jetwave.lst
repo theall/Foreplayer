@@ -1,0 +1,29 @@
+﻿$name=jetwave
+$version=2
+$default=264
+$main
+
+#264 コナミロゴ
+#261 IT'S A HOT (タイトルBGM)
+#262 ARE YOU READY (セレクトBGM)
+#257 JET WAVE (初級ステージBGM)
+#258 THE ADVENTURES (初級ステージBGM～アメリカバージョン～)
+#260 WATER WATER (中級ステージBGM)
+#259 THE RHYTHM (上級ステージBGM)
+#266 WIN (ゴールBGM)
+#268 WIN PART 2 (ゴールBGM～アメリカバージョン～)
+#267 GAME OVER (ゲームオーバーBGM)
+#265 SEA OF JOY (エンディングBGM)
+#263 IT'S A HOT PART 2 (ランキングBGM)
+
+#272 スピーカーテスト
+
+  ■出典
+  GTI CLUB c/w JET WAVE & WINDING HEAT ORIGINAL GAME SOUNDTRACK
+  KING RECORDS  KICA-7751  1997.02.05
+
+  ■作曲
+  泉 陸奥彦
+
+// リスト作成: らま
+$end

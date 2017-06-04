@@ -1,0 +1,29 @@
+﻿$name=spcinv95
+$version=2
+$default=153
+$main
+
+#153 TITLE DEMO
+#190 PLAYER SELECT
+#151 ROUND START DEMO
+#144 ROUND 1 - At the Supermarket
+#156 ROUND 2 - STREET KITCHEN
+#157 ROUND 3 - アイドルの休日 ～I'm happy～
+#148 ROUND 3 - 恋はMAGIC ～Supermanより愛してる～
+#158 ROUND 4 - TIME
+#185 ROUND 5 / BONUS STAGE
+#188 ROUND BOSS
+#189 ENDING
+#159 GAME OVER
+#152 NAME ENTRY
+
+#145 ??
+#149 ??
+
+  ■出典
+  パズルボブル・逆鱗弾 他 -WELCOME TO THE karu LAND-
+  PONY CANYON / SCITRON  PCCB-00196  1995.11.17
+
+// リスト作成：みん☆さん
+// Updated by Fuj.
+$end

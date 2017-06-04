@@ -1,0 +1,35 @@
+﻿$name=pacmania
+$version=2
+$default=256
+$songmax=256
+$main
+
+#256 Coin
+#000 Game Start
+#002 Block Town (World 1)
+#003 Pacman's Park (World 2)
+#007 Sandbox Land (World 3)
+#006 Jungly Steps (World 4)
+#001 Demo 1
+#009 Demo 2
+#011 Demo 3 -US Ver-
+#008 Congratulation (Ending)
+#005 All Clear
+#004 Game Over
+#012 Name Entry -US Ver- (Name Entry / X68000 Ver. Loading BGM)
+
+#010 Speaker Test
+
+  [Sources]
+  Namco Video Game Graffiti Vol.4
+  Victor Entertainment  VDR-5282  Jul 21, 1989
+
+  Pac Mania X68000 Version, Sound Test
+
+  [Sound Composers]
+  Hiroto Tomro (TOM), Yuriko Keino, Junko Ozawa
+
+-----------------------------------------
+ [SFX]
+
+$end

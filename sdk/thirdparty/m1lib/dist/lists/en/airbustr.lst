@@ -1,0 +1,35 @@
+﻿$name=airbustr
+$version=2
+$default=093
+//$songmax=093
+$main
+
+#093 Coin
+#016 Select
+#017 Seaside Front (Round 1 - Urban Area on the Coast)
+#018 Ruins (Round 1)
+#020 Boss
+#021 Clear
+#022 Mechanized Cave (Round 2 - Mechanized Cave)
+#030 Scramble! (Round 3 - Earth - Stratosphere)
+#025 Out Of Gravity (Round 4 - Satellites' Orbit - Escape from Geosphere)
+#031 The Borderline (Round 5 - Outside the Enemy Presidial Planet)
+#026 Death Circus (Round 6 - Inside the Enemy Presidial Planet)
+#039 Final Boss 1
+#045 Final Boss 2
+#042 Ending
+#024 Game Over
+#027 Name Entry
+
+#035 Boss ? (not released on CD)
+#041 Boss ? (not released on CD)
+
+  [Source]
+  Air Buster / Kaneko
+  Pony Canyon / Scitron  PCCB-00025  Apr 21, 1990
+
+  [Sound Composer]
+  Tatsuya Watanabe
+
+// English list adjustment by bcass
+$end

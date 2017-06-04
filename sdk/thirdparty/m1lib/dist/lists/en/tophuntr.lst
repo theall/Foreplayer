@@ -1,0 +1,56 @@
+﻿$name=tophuntr
+$version=2
+$default=002
+$fixed_volume=121
+$main
+
+#002 Neo Geo Logo
+#063 SNK Logo
+
+#033 Pull the Lever of the Slot Machine.. (Title Screen)
+#034 Talala la-la (How to Play)
+#035 This Planet or That Planet? (Stage Select)
+#066 Let's Get Started (Map Preview)
+#036 I Love Forest (Planet of Forest, BGM 1, Main Theme)
+#042 Losts in the Woods (Planet of Forest, BGM 2)
+#040 Fresh Guy (Planet of Forest, BGM 3)
+#074 Elite Solider, Forest (Planet of Forest, Mid Boss)
+#064 Ease.. (Area Completed)
+#044 The Sly (Planet of Forest, Boss)
+#065 Ukky, Lucky (Stage Cleared)
+#067 Go for the Perfect Game! (Bonus Stage)
+#045 Cause the Wind (Planet of Wind, BGM 1, Main Theme)
+#046 Ignite the Storm (Planet of Wind, BGM 2)
+#047 Funny and Ropy Enemy (Planet of Wind, BGM 3)
+#075 Elite Solider, Wind (Planet of Forest, Mid Boss)
+#048 The Big Man (Planet of Wind, Boss)
+#049 It's Getting Hot (Planet of Fire, BGM 1, Main Theme)
+#050 Where's a Monster? (Planet of Fire, BGM 2)
+#051 Happy Bat (Planet of Fire, BGM 3)
+#076 Fire, Fire, Fire (Planet of Fire, Mid Boss)
+#052 Fussy Kid (Planet of Fire, Boss)
+#053 Sha-la-la (Planet of Fire, Theme)
+#054 Make It Frozen (Planet of Ice, BGM 2)
+#055 Elfin Snowman (Planet of Ice, BGM 3)
+#077 I Hate the Cold (Planet of Ice, Mid Boss)
+#056 Ohohoho Misty (Planet of Ice, Boss)
+#058 Tatatata, Tata, Tataa (Space Battleship Stage Inro)
+#057 Go! Captain Clapton (Space Battleship Stage Theme)
+#059 Here It Comes (Space Battleship Stage, Boss Intro Demo)
+#060 D, D, Dragon!! (Final Boss Dragon, "Captain Clapton")
+#068 Congrats!! (Completed)
+#069 Come to See Me in a Dream (Ending) <time="1:34">
+#062 Hardy Har Har (Game Over)
+
+#037 I Love Forest (Planet of Forest, BGM 1, Main Theme) &lt;w/o intro&gt;
+#073 Go! Captain Clapton (Space Battleship Stage Theme) &lt;w/o intro&gt;
+#061 D, D, Dragon!! (Final Boss Dragon, "Captain Clapton") &lt;w/o intro&gt;
+#069 Come to See Me in a Dream (Ending) &lt;loop version&gt;
+
+  [Source]
+  Top Hunter / SNK New World Orchestra
+  Pony Canyon / Scitron  PCCB-00157  July 21, 1994
+
+// List Contributeion by NK
+// English list by Fujix
+$end

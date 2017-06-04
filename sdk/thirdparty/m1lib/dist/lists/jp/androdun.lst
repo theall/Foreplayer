@@ -1,0 +1,102 @@
+﻿$name=androdun
+$version=2
+$default=002
+$fixed_volume=239
+$main
+
+#002 Neo Geo Logo
+#047 Title
+#048 Take Off
+#034 Stage 1 -The Moon-
+#044 Boss 1 (Stage 1, 5)
+#049 Stage Clear
+#035 Stage 2 -Mechanized Unit-
+#043 Boss 2 (Stage 2, 4)
+#037 Stage 3 -Alien-
+#045 Boss 3 (Stage 3, 6)
+#036 Stage 4 -Caven-
+#038 Stage 5 -Meteorite-
+#040 Stage 6 -Secret Base-
+#041 Stage 7 -Core-
+#046 Boss 4 (Stage 7)
+#042 Escape
+#033 Credits
+#050 Game Over
+#051 Name Entry
+#039 Unused
+
+-----------------------------------------------------------
+ [S.E.]
+
+#129 [S.E.]
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#192 [S.E.]
+#193 [S.E.]
+#194 [S.E.]
+#195 [S.E.]
+#196 [S.E.]
+#197 [S.E.]
+#198 [S.E.]
+#199 [S.E.]
+#200 [S.E.]
+#201 [S.E.]
+#202 [S.E.]
+#203 [S.E.]
+#204 [S.E.]
+#205 [S.E.]
+#206 [S.E.]
+#207 [S.E.]
+#208 [S.E.]
+#209 [S.E.]
+#210 [S.E.]
+#211 [S.E.]
+#212 [S.E.]
+#213 [S.E.]
+#214 [S.E.]
+#215 [S.E.]
+#216 [S.E.]
+#217 [S.E.]
+#218 [S.E.]
+#219 [S.E.]
+#220 [S.E.]
+#221 [S.E.]
+#222 [S.E.]
+#223 [S.E.]
+#224 [S.E.]
+#225 [S.E.]
+#226 [S.E.]
+#227 [S.E.]
+#228 [S.E.]
+#229 [S.E.]
+#230 [S.E.]
+#231 [S.E.]
+#232 [S.E.]
+#233 [S.E.]
+#234 [S.E.]
+#235 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+#238 [S.E.]
+
+  ■作曲
+  神尾 憲一
+
+// List contributed by NK
+$end

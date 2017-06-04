@@ -1,0 +1,133 @@
+﻿$name=vr
+$version=2
+$default=067
+$main
+ 
+#067 Waiting Your Entry
+#006 Course Select <time="1:23">
+#001 Beginner
+#013 Medium
+#014 Expert
+#097 Extend Time - 1
+#010 Best Lap - 2
+#007 Extend Time - 2
+#009 Best Lap - 3
+#004 Extend Time - 3
+//same song as #078
+#096 Best Lap - 4
+#085 Extend Time - 4
+#015 Best Lap - 5
+#066 Extend Time - 5
+#080 Pit Out
+#003 Pit In
+#005 Goal
+#002 Game Over
+#011 Name Entry
+#012 Congratulations - 1
+//not released on CD
+#008 Congratulations - 2
+
+----------------------------------------------------------------
+ [Voice]
+ 
+#073 [Voice] Virtua Racing
+#077 [Voice] Adjust seat position.
+#090 [Voice] Adjust seat position." (louder)
+#091 [Voice] Select course by wheel and step on the gas pedal.
+#092 [Voice] To play manual 7-speed, holding start button, step to start.
+#094 [Voice] Waiting for challengers.
+#095 [Voice] Waiting your entry.
+#100 [Voice] Up to 1 racer wanted.
+#101 [Voice] Up to 2 racers wanted.
+#102 [Voice] Up to 3 racers wanted.
+#103 [Voice] Up to 4 racers wanted.
+#104 [Voice] Up to 5 racers wanted.
+#105 [Voice] Up to 6 racers wanted.
+#106 [Voice] Up to 7 racers wanted.
+#107 [Voice] Up to 8 racers wanted.
+#093 [Voice] Race against other players.
+#035 [Voice] Good luck!
+#043 [Voice] cheer 1
+#081 [Voice] 3" <time="1">
+#082 [Voice] 2" <time="1">
+#083 [Voice] 1" <time="1">
+#084 [Voice] Go!
+#034 [Voice] Hurry up!
+#038 [Voice] Final lap!
+#037 [Voice] Go!
+#023 [Voice] cheer 2
+#036 [Voice] You're a real winner.
+#039 [Voice] Congratulations!
+#088 [Voice] "Tasha no entry wo uketsukete imasu. Shibaraku omachi kudasai."
+#089 [Voice] "Entry wo uketsukechuu desu."
+#108 [Voice] "Hitori made sanka dekimasu."
+#109 [Voice] "Futari made sanka dekimasu."
+#110 [Voice] "Sannin made sanka dekimasu."
+#111 [Voice] "Yonin made sanka dekimasu."
+#112 [Voice] "Gonin made sanka dekimasu."
+#113 [Voice] "Rokunin made sanka dekimasu."
+#114 [Voice] "Shichinin made sanka dekimasu."
+#115 [Voice] "Hachinin made sanka dekimasu."
+#087 [Voice] "Aite no kuruma to taisen dekimasu."
+#075 [Voice] "Button de seat wo chousei site kudasai."
+#071 [Voice] "Course wo erande accel wo funde kudasai."
+#079 [Voice] "Start button wo oshinagara accel wo fumu to manual nana-soku ni narimasu."
+#035 [Voice] Good luck!
+ 
+ [SFX]
+ 
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#072 [SFX]
+#074 [SFX]
+#076 [SFX]
+#086 [SFX]
+
+  [Source]
+  Virtua Racing & Out Runners / B-univ
+  Toshiba EMI  TYCY-5365, 5366  Dec 15, 1993
+
+// List Contribution by NK
+$end

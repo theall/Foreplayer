@@ -1,0 +1,110 @@
+﻿$name=blstroid
+$version=2
+$default=020
+$fixed_volume=163
+$main
+
+#020 Attract Mode <time="0:58">
+#086 [S.E.] Coin Inserted <time="0:05">
+#017 Warp
+#010 Main Theme
+#011 Galaxy 1
+#012 Galaxy 2
+#013 Galaxy 3
+#014 Galaxy 4
+#024 Mukor's Theme
+#022 Name Entry <time="0:38">
+
+#004 Music Chip Test <time="0:10">
+
+-----------------------------------------------------------
+ [Voice]
+
+#107 [Voice] Mukor controls this galaxy.
+#108 [Voice] Shoot me if you dare, Earthscum!
+#109 [Voice] Now to dispose the Muke.
+#110 [Voice] We'll fight again, Earthslime!
+#111 [Voice] Hahahahaa!
+#112 [Voice] You're Earthscum.
+#113 [Voice] Mmm... Earthslime is weak.
+#114 [Voice] Die, purely earthmen!
+#115 [Voice] No earthslime can destroy Mukor.
+#116 [Voice] I'll destroy you yet.
+#117 [Voice] Noooo...
+#118 [Voice] Gyaaa...
+#119 [Voice] Argh...
+#120 [Voice] Urgh...
+#121 [Voice] Orgh...
+#122 [Voice] Heee...
+#123 [Voice] Aa...
+
+-----------------------------------------------------------
+ [S.E.]
+
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#037 [S.E.]
+#039 [S.E.]
+#041 [S.E.]
+#043 [S.E.]
+#045 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#068 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#075 [S.E.]
+#077 [S.E.]
+#079 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#084 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+
+// List contribution by NK
+$end

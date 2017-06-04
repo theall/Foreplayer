@@ -1,0 +1,78 @@
+﻿$name=toutrun
+$version=2
+$default=145
+$songmax=151
+$main
+
+#145 VIVACIOUS (Opening) <time="46">
+#150 Shake the Street (Music 1) <time="03:15">
+#147 A Huge Pile of Parts (Equipment Select) <time="36">
+#144 Rush a Difficulty (Music 2) <time="03:24">
+#149 Who are You (Music 3) <time="04:27">
+#146 Keep Your Heart (Music 4) <time="04:00">
+#151 Checkered Flag (Ending)
+#148 Easy going (Name Entry)
+
+-----------------------------------------
+
+#129 [SFX] Explosion
+#130 [SFX]
+#131 [SFX] Break
+#132 [SFX] Break
+#133 [SFX]
+#134 [SFX]
+#135 [SFX] Siren
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#152 [SFX] Signal (Ready)
+#153 [SFX] Signal (Start)
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+
+#168 [Voice] Check point!
+#169 [Voice] Very good!
+#170 [Voice] Excellent!
+#171 [Voice] Challenge again
+#172 [Voice] Welcome to the car
+#173 [Voice] Congratulations!
+#174 [Voice] Ouch!
+#175 [Voice] Special turbo
+#176 [Voice] High glip tire
+#177 [Voice] Get ready?
+#178 [Voice] Good luck
+#179 [Voice] High power engine
+#180 [Voice] We set your car.
+#181 [Voice] Arrested the red car. Roger.
+#182 [Voice] Ouch!
+#183 [Voice] Yeoow!
+#188 [Voice] Automatic
+#189 [Voice] Manual
+#190 [Voice] All right
+#191 [Voice] Select transmission
+#192 [Voice] All right
+#193 [Voice] Take a hike, pal!
+#194 [Voice] Ugh!
+#195 [Voice] Ugh!
+
+  [Source]
+  Super Sonic Team -G.S.M. Sega 3-
+  Pony Canyon / Scitron  PCCB-00009  Oct 21, 1989
+
+  [Sound Composer]
+  Yasuhiro Takagi (YAS, Kerotan)
+  Hiroshi Kawaguchi (Hiro)
+
+// Composers information from Cratch
+$end

@@ -1,0 +1,30 @@
+﻿$name=g_fw
+$version=2
+$default=130
+$songmax=255
+$main
+
+#130 Opening Theme
+#131 Dust World 1 [Round 1] <time="3:34" fadeout="yes" fadeoutlength="10">
+#132 Dust World 2 [Round 2] <time="3:31" fadeout="yes" fadeoutlength="10">
+#140 Mid-Boss A (Outside) <time="0:46" fadeout="yes" fadeoutlength="10">
+#133 Dust World 3 [Round 3] <time="3:52" fadeout="yes" fadeoutlength="10">
+#142 Boss Theme <time="1:01" fadeout="yes" fadeoutlength="10">
+#134 Pyramid World 1 [Round 4] <time="5:19" fadeout="yes" fadeoutlength="10">
+#135 Pyramid World 2 [Round 5] <time="5:42" fadeout="yes" fadeoutlength="10">
+#141 Mid-Boss B (Inside) <time="1:30" fadeout="yes" fadeoutlength="10">
+#146 Shoppin' <time="0:55" fadeout="yes" fadeoutlength="10">
+#137 Etherous World 1 [Round 7] <time="4:34" fadeout="yes" fadeoutlength="10">
+#139 Etherous World 3 [Round 9] <time="3:48" fadeout="yes" fadeoutlength="10">
+#143 Final Boss <time="1:57" fadeout="yes" fadeoutlength="10">
+#144 Round Clear
+#148 Ending Theme
+#145 Staff Roll
+#147 Game Over
+
+  [Sound Composer]
+  Tamayo Kawamoto, Yoshihiro Sakaguchi, Izuho Takeuchi
+
+// M1 list contributed by Knurek
+// Tagging data from Project 2612
+$end

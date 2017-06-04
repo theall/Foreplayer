@@ -1,0 +1,41 @@
+﻿$name=salmndr2
+$version=2
+$default=268
+$fixed_volume=499
+$main
+
+#268 Theme of Salamander 2 (Title)
+#257 Silvery Wings Again (Stage 1)
+#258 Sensation (Stage 2)
+#259 All is Vanity (Stage 3)
+#260 Serious! Serious! Serious! (Stage 4)
+#261 Speed (Stage 5)
+#262 Dear Blue (Stage 6)
+#277 Theme of Gorem (Stage 1 - Boss)
+#271 Theme of Mechanical Boss (Stage 2, 4, 6 - Boss)
+#272 Theme of Living Body Boss (Stage 3, 5 - Boss)
+#275 Plelude of the Last Battle (Final Stage)
+#278 Giga's Rage (Final Boss)
+#269 Biginning from the Endless (Ending)
+#257 Power of Anger - Maeda Version (Stage 1 - 2nd Round)
+#260 Last Exit - Maeda Version (Stage 4 - 2nd Round)
+#261 Planet Ratis - Maeda Version (Stage 5 - 2nd Round)
+#266 What's Your Name? (Name Entry)
+#267 And Then.. (Game Over)
+#274 No Future (Unused 1)
+#281 Fire Tripper (Unused 2)
+#280 Nervous Break Down (Unused 3)
+#279 Ending - AM Show Version (Unused 4)
+#270 Speaker Check
+
+   [Source]
+   Salamander 2 / Orignal Game Soundtrack
+   King Records  KICA-7695  April 5, 1996
+
+   [Note]
+   Please play #269 to play 2nd round tracks.
+   Play #267 to disable it.
+
+// English list by Fujix
+// English list adjustment by bcass
+$end

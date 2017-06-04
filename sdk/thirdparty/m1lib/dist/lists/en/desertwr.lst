@@ -1,0 +1,34 @@
+﻿$name=desertwr
+$version=2
+$default=$06
+$main
+
+$06 Attract Mode
+$80 Credit Inserted
+$14 Awaiting Start
+$01 Difficulty Select
+$02 Mission Briefing
+$08 Normal Flight 1
+$09 Normal Flight 2
+$0a Normal Flight 3
+$0b Normal Flight 4
+$0c Final Stage Boss
+$0d Heliport 1
+$0e Heliport 2
+$0f Heliport 3
+$10 Heliport 4
+$11 Heliport 5
+$12 Heliport 6
+$13 Heliport 7
+$03 Stage Clear
+$15 Ending
+$16 Bad Ending
+$04 Name Entry
+$05 Game Over
+
+  [Sound Composer]
+  Manabu Namiki (Santaruru)
+
+// List Contribution by Kayama
+// English list by Fujimon
+$end

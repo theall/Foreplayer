@@ -1,0 +1,93 @@
+﻿$name=tdragon2
+$version=2
+$default=2
+$main
+
+#176 [SFX] Credit Inserted
+#002 Ready For The Battle (Introduction)
+#003 Fly To Live I (Stage 1, Stage 8, Credit)
+#005 Live To Fly I (Stage 2, Stage 6)
+#007 Impatience #3 (Boss)
+#017 Fly To Live II (Stage 3)
+#016 Live To Fly II (Stage 4)
+#004 Fly To Live w/o Melody (Stage 5)
+#006 Live To Fly w/o Melody (Stage 7)
+#009 Marginal Attack (Final Boss)
+#011 Epitaph (Prologue)
+#012 Day Dream (Name Entry)
+#186 Over (Game Over)
+
+------------------------------------------------------
+  [SFX]
+
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+
+  [Voice]
+
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+
+  [Cmoposed by]
+  Manabu Namiki
+
+// Original contribution by Gol Gol
+// English list by Fuj
+$end

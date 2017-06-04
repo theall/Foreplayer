@@ -1,0 +1,49 @@
+﻿$name=lifefrce
+$version=2
+$default=064
+$main
+
+#064 Coin
+#070 Power of Anger (Stage 1)
+#073 Fly High (Stage 2)
+#086 Planet RATIS (Stage 3)
+#067 Starfield (Stage 4)
+#066 Burn the Wind (Stage 5)
+#092 Destroy Them All (Stage 6-1)
+#076 Aircraft Carrier (Gradius Boss)
+#080 Destroy Them All -Type 2- (Stage 6-2)
+#085 Poison of Snake (Boss)
+#071 Peace Again (Credits Roll)
+#087 Crystal Forever (Game Over)
+
+#072 Thunderbolt (Life Force(J) Stage 2) (Unused 01)
+#094 Slash Fighter (Life Force(J) Stage 4) (Unused 02)
+#075 Combat (Life Force(J) Stage 5) (Unused 03)
+#078 Unused 04 (X68000 Version, Loading Music)
+#065 Unused 05
+#068 Unused 06
+#069 Unused 07
+#074 Unused 08
+#077 Unused 09
+#079 Unused 10
+#081 Unused 11
+#082 Unused 12
+#083 Unused 13
+#084 Unused 14
+#088 Unused 15
+#089 Unused 16
+#090 Unused 17
+#091 Unused 18
+#093 Unused 19
+
+  [OST]
+  Original Sound of Gradius & Salamander - Battle Music Collection
+  Apolon  BY-305202  Dec 11, 1987
+
+  Salamander -Again- / Konami Kukeiha Club
+  King Records  KICA-7601  May 25, 1992
+
+  Salamnder Arcade Soundtrack
+  Sony Music Entertainmnet  KOLA-030  Apr 9, 2003
+
+$end

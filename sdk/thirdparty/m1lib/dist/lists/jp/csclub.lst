@@ -1,0 +1,49 @@
+﻿$name=csclub
+$version=2
+$default=038
+$fixed_volume=716
+$main
+
+#038 QSound Logo
+#001 カプコン・スポーツ・クラブのテーマ
+#003 Welcome To C.S.C.
+#007 Team Select -Soccer-
+#008 Soccer Tournament
+#009 Football Samba
+#010 海のサンバ
+#011 今日のスーパーゴール
+#012 Football Remix '97
+#013 Winner's Demo -Soccer-
+#014 Loser's Demo -Soccer-
+#017 Player Select -Tennis-
+#018 Tennis Tournament
+#019 風の草原で
+#020 荒野の対面
+#021 海へ行こうよ
+#022 Dubb Bossa
+#023 Winner's Demo -Tennis-
+#024 Loser's Demo -Tennis-
+#027 Team Select -Basketball-
+#028 Basketball Tournament
+#029 Dunk The Bomb
+#030 桟橋のレゲエ野郎
+#031 Altimeter
+#032 奴等は違う
+#033 Winner's Demo -Basketball-
+#034 Loser's Demo -Basketball-
+#004 コンティニュー
+#005 ゲームオーバー
+#006 プレイヤー乱入
+#002 Super Player
+#035 いつまでも
+#036 メロディー
+#037 カプコン・スポーツ・クラブのテーマ (reprise)
+
+#039 QSound Logo 2
+
+  ■出典
+  ポケットファイターリミックス / カプコン・スポーツ・クラブ
+  SULEPUTER  CFCL-0002  1998.09.18
+
+// List Contribution by NK
+$end

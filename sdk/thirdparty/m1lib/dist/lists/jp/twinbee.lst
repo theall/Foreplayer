@@ -1,0 +1,51 @@
+﻿$name=twinbee
+$version=2
+$default=129
+$songmax=256
+$main
+
+#129 Credit
+#130 Start - Main BGM Lv.0
+#132 Boss BGM A Lv.0 <time="0:45">
+#131 Next Stage
+#133 Player Extend (BGM Lv. Change to 1) <time="2.0">
+#140 Main BGM Lv.1
+#128 Power Up (BGM Lv. Change to 2) <time="3.3">
+#138 Main BGM Lv.2
+#137 Boss BGM A Lv.1
+#142 Boss BGM B Lv.2
+#139 Game Over
+#135 Ranking (2位以下)
+#143 Ranking (1位)
+
+
+#134 Main BGM Lv.0
+#136 Name Input ～ Name Entry 時間切れ警告
+#141 Boss BGM B Lv.0 & 1 (with Fade Out)
+
+-----------------------------------------
+ [S.E.]
+
+#065 [S.E.] Shot
+#066 [S.E.] Bomb
+#067 [S.E.] Twin Shot
+#070 [S.E.] Bell
+#071 [S.E.] Bell
+#076 [S.E.] 救急車と合体
+#077 [S.E.] 腕取れ
+#078 [S.E.] ボス破壊
+#087 [S.E.] 地上物GET
+#088 [S.E.] 黄色ベルGET
+#089 [S.E.] ボスズーム上昇
+#090 [S.E.] 再スタート
+#091 [S.E.] 救急車
+#092 [S.E.] 救急車
+#096 [S.E.] 合体攻撃(縦1)
+#097 [S.E.] 合体攻撃(縦2)
+#098 [S.E.] 地上星GET
+
+  ■出典
+  KONAMI GAME MUSIC Vol.1
+  ALFA RECORDS  28XA-85  1986.06.25
+
+$end

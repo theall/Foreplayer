@@ -1,0 +1,91 @@
+﻿$name=fantzone
+$version=2
+$default=142
+$songmax=256
+$fixed_volume=245
+$main
+
+#142 Credit Inserted <time="2">
+#155 Opa-Opa! (Stage 1) <time="2:28" fadeout="yes" fadeoutlength="10">
+#160 Shop <time="57" fadeout="yes" fadeoutlength="10">
+#196 Keep on the Beat (Stage 2) <time="1:15" fadeout="yes" fadeoutlength="10">
+#191 Saari (Stage 3) <time="1:16" fadeout="yes" fadeoutlength="10">
+#193 Prome (Stage 4) <time="1:28" fadeout="yes" fadeoutlength="10">
+#153 Round Up <time="4.08">
+#195 Hot Snow (Stage 5, US version) <time="1:47" fadeout="yes" fadeoutlength="10">
+#192 Don't Stop (Stage 6) <time="1:04" fadeout="yes" fadeoutlength="10">
+#194 Dreaming Tomorrow (Stage 7) <time="1:29" fadeout="yes" fadeoutlength="10">
+#145 Boss <time="1:30" fadeout="yes" fadeoutlength="10">
+#188 Ya-Da-Yo (Stage 8) <time="1:40" fadeout="yes" fadeoutlength="10">
+#143 Victory Way (Ending) <time="1:08" fadeout="no">
+#154 Game Over
+
+#185 Opa-Opa! (Restart)
+#189 Ya-Da-Yo (Restart)
+#144 Victory Way (Name Entry)
+
+------------------------------------------
+
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#183 [SFX]
+#187 [SFX]
+#190 [SFX]
+
+#173 [FM] Bass Drum
+#174 [FM] Snare Drum 1
+#175 [FM] High Tom
+#176 [FM] Mid Tom
+#177 [FM] Low Tom
+#178 [FM] Closed Highhat
+#179 [FM] Cow Bell 1
+#180 [FM] Cow Bell 2
+#181 [FM] Whistle 1 <time="4">
+#182 [FM] Whistle 2 <time="4">
+#184 [FM] Snare Drum 2
+#186 [FM] Closed Highhat
+
+  [Source]
+  Sega Game Music Vol.2
+  Alfa Records  28XA-108  Feb 25, 1987
+
+  Sega Game Music Vol.2 (Legend Series)
+  SME / Scitron  SCDC-00052  Oct 18, 2000
+
+// Track duration by Simon B.
+// Adding fadeout settings and adjusted by Fuj
+$end

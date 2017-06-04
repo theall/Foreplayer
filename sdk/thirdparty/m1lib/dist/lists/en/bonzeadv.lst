@@ -1,0 +1,112 @@
+﻿$name=bonzeadv
+$version=2
+$default=023
+$main
+
+#023 Credit Inserted
+#015 Story <time="7">
+#088 Hell Map Preview <time="6">
+#009 Round 1: Dilapidated Backyard Cemetry
+#022 Invincible <time="12">
+#016 Round Clear
+#014 Welcome to the Underworld <time="8">
+#010 Round 2: The Dead-or-Alive River 
+#011 Round 3: Burning Inferno
+#041 [Voice] Shouts of the Deads <time="5.2">
+#013 Boss
+#086 Round 4: Bloody Pond <time="8">
+#021 Continue? <time="18">
+#010 Round 5: Glacier Trap
+#011 Round 6: Lose-Your-Way Maze
+#012 Round 7: Emma's Lair
+
+#068 [SFX] Emma appearing <time="2.6">
+#013 Emma's Hall <time="13.94">
+#072 [SFX] Transforming
+#013 Dragon and Foo
+#075 [Voice] Last agony <time="9">
+#018 Ending
+#020 Game Over
+#019 Name Entry
+#088 The End <time="6">
+
+---------------------------------------------------
+  [SFX]
+
+#024 [SFX] Jump
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#072 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#041 [Voice] <time="5.2">
+#054 [Voice] 
+#071 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+
+  [Sound Composer]
+  Hisayoshi Ogura (OGR.)
+  
+// List contribution by ZEK.
+// English list by Fuj
+$end

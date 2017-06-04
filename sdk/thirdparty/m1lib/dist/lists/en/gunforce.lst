@@ -1,0 +1,25 @@
+﻿$name=gunforce
+$version=2
+$default=002
+$main
+
+#002 Mission 1
+#010 Mission 2
+#007 Mission 3
+#006 Intermission
+#008 Mission 4
+#009 Mission 5
+#003 Mission 6
+#004 Boss Battle
+#011 Escape -- Ending
+#001 Name Entry
+
+#005 Unused
+
+------------------------------------------------------
+ [SFX]
+
+** Sorry, SFXs can't play **
+
+// List Contribution by a2c-s438
+$end

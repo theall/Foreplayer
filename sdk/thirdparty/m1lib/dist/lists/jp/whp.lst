@@ -1,0 +1,61 @@
+﻿$name=whp
+$version=2
+$default=002
+$fixed_volume=143
+$main
+
+#002 NEO-GEO Logo
+#025 ADK Logo
+#058 WHEN I FIRED THE FIRST GUN! (オープニング)
+#017 HOW TO WIN (操作方法)
+#026 SELECT HEROES (プレイヤーセレクト)
+#027 VS
+#033 地獄の炎刃 (地球創世記)
+#028 勝利者デモ
+#022 I・Z・A (乱入)
+#036 鳥獣三軍 (ジュラ紀)
+#032 聖なる氷塊 (氷河期)
+#050 マンモスでゴー (石器時代)
+#009 SIRIUS RIZING (巨石文明)
+#007 TED (中世暗黒時代)
+#014 HALO IN ASIA (元禄時代)
+#004 THE FOREIGNER～KITTEN EXPRESS (産業革命)
+#012 SYMPHONY OF EVIL #2 (世界大戦)
+#013 BIG CITY (現代)
+#019 GO TO FRONT (未使用曲)
+#059 WE MUST TAKE OUR CHANCES! (ゼウス登場デモ)
+#006 ZEUS 作品8 APPASSIONATO (時空暗黒城)
+#018 SHIVER WITH FRIGHT (NEO-DIO登場デモ)
+#037 MURDER -D- ACT2 (最終決戦)
+#051 ODE TO THE EVENING (服部半蔵 エンディング)
+#038 おサルでおマヌな赤忍者 (風魔小太郎 エンディング)
+#055 仕上げの一筆 (金龍 エンディング) 1
+#056 仕上げの一筆 (金龍 エンディング) 2
+#054 LET'S SUN OURSELVES (ジャンヌ・ダルク エンディング)
+#021 世界のおなごたちへ (ジンギスカン エンディング)
+#053 狂気の世界から逃れろ (マッスルパワー エンディング)
+#042 がんばれぼくらのブロッケン (ブロッケン エンディング)
+#034 愛の回転木馬 (ラスプーチン エンディング)
+#024 兄貴 (シュラ・ナイ・カノム・トム エンディング)
+#040 パパ大よろこび (エリック・ザ・バイキング エンディング) 1
+#041 パパ大よろこび (エリック・ザ・バイキング エンディング) 2
+#057 浮かれ騒ぐ奴 (マッドマン エンディング)
+#052 普遍の真実を求めて (ジョニー・マキシマム エンディング)
+#015 LET DROP THE CURTAIN (出雲良子 エンディング) 1
+#049 LET DROP THE CURTAIN (出雲良子 エンディング) 2
+#020 YAROW DOMO (キャプテン・キッド エンディング)
+#035 猟人の夜 (ジャック・ザ・リッパー エンディング)
+#043 裏切りの英雄 (呂布奉先 エンディング)
+#008 頂好 (孫悟空 エンディング)
+#039 暗黒の野望 (NEO-DIO エンディング)
+#048 LOVE FOREVER (スタッフロール)
+#016 まだまだこれから (コンティニュー)
+#010 GAME OVER
+#011 RANKING
+
+  ■出典
+  ワールドヒーローズパーフェクト / SNK・ADK
+  PONY CANYON / SCITRON  PCCB-00185  1995.07.21
+
+// List Contribution by NK
+$end

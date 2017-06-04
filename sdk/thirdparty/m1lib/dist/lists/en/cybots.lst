@@ -1,0 +1,67 @@
+﻿$name=cybots
+$version=2
+$default=045
+$fixed_volume=305
+$songmax=1024
+$main
+
+#045 QSound Logo
+
+#001 Opening Title
+#049 Robot Demo 1
+#051 Robot Demo 2
+#010 Ranking Table
+#002 Player Select
+#003 Story Demo 1
+#011 VS.
+#018 Megalopolis
+#019 Machine Arena
+#047 Story Demo 2
+#029 Theme of Gaits
+#013 Winning Theme 1
+#005 Story Demo 3
+#020 Power Station
+#021 Colonial Satelite
+#027 Volcano
+#014 Continue
+#053 Story Demo 4
+#052 Story Demo 5
+#030 Theme of Super 8
+#008 Story Demo 6
+#016 You Face A New Opponent
+#004 Story Demo 7
+#026 Airport
+#022 Secret HQ
+#024 Underwater 1
+#025 Underwater 2
+#006 Story Demo 8
+#031 Theme of Helion
+#012 Winning Theme 2
+#007 Story Demo 9
+#023 Space Fleet
+#028 Doomsday Weapon
+#009 Story Demo 10
+#050 Theme of Warlock 1
+#058 Theme of Warlock 2
+#040 Mary's Ending
+#037 Bao and Mao's Ending 1
+#043 Bao and Mao's Ending 2
+#036 Gawaine's Ending 1
+#042 Gawaine's Ending 2
+#035 Arieta's Ending 1
+#041 Arieta's Ending 2
+#039 Santana's Ending
+#032 Jin's Ending 1
+#038 Jin's Ending 2
+#054 Cast's Ending
+#044 Credits Roll
+#055 Powered Gear, High Score Ranking
+#017 Name Entry (Unused)
+#015 Game Over
+#057 Mary's Ending (Unused)
+
+  [Source]
+  Cyberbots / Arcade Game Track
+  SME  SRCL-3274, 3275  Aug 2,1995
+
+$end

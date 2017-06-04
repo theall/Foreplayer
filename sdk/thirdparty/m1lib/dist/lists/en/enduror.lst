@@ -1,0 +1,28 @@
+﻿$name=enduror
+$version=2
+$default=131
+$songmax=183
+$main
+
+#131 Opening
+#129 Main Theme
+#130 Name Entry 1
+#133 Name Entry 2
+#132 BGM #1
+
+-----------------------------------------
+
+#161 [Voice] Check Point!
+#162 [Voice] Congratulation
+#168 [Voice] Get Ready?
+#169 [Voice] Go!
+//#139-#183 [SFX]
+
+  [Source]
+  Sega Game Music Vol.2 / G.M.O.
+  Alfa Records  28XA-108  Feb 25, 1987
+
+  [Sound Composer]
+  Hiroshi Kawaguchi (Hiro)
+
+$end

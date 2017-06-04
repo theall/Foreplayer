@@ -1,0 +1,32 @@
+﻿$name=ironhors
+$version=2
+$default=74
+$main
+
+#74 Demo <time="53" fadeout="yes" fadeoutlength="10">
+#78 [SFX] Credit Inserted <time="2">
+#69 Start <time="7">
+#66 BGM 1
+#76 Boss
+#65 Stage - Stage Demo <time="13">
+#68 BGM 2
+#75 BGM 3
+#79 BGM 4
+#77 BGM 5
+#71 BGM 6
+#67 Completed <time="7">
+#70 Game Over <time="8.5">
+#80 Dixie Break Down (Ranking) <time="1:15" fadeout="yes" fadeoutlength="15">
+
+#72 Not on CD
+#73 [SFX] Player Killed
+
+  [Source]
+  Konami Game Music Vol.2
+  Alfa Records  ALC-22904  Sep 25, 1986
+
+  Konami Game Music Vol.2 (Legend Series)
+  SME / Scitron  SCDC-00060  Jan 11, 2001
+
+// lst by Fuj
+$end

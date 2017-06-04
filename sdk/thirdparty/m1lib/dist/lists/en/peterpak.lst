@@ -1,0 +1,81 @@
+﻿$name=peterpak
+$version=2
+$default=019
+$songmax=128
+$fixed_volume=122
+$main
+
+#019 Stage 1 Start <time="5.4">
+#021 Stage 1-1 <time="10.1">
+#027 Ladder 1 <time="2.4">
+#028 Stage 1-4 <time="7.3">
+#031 Ladder 2 <time="3.2">
+#029 Stage 1-5 <time="4.9">
+#024 Caught by Enemy <time="1.8">
+#020 Stage 1 Start 2 <time="4.7">
+#022 Stage 1-2 <time="7.4">
+#032 Ladder 3 <time="3">
+#023 Stage 1-3 <time="7.9">
+#034 Ladder 5 <time="3.1">
+#021 Stage 1-1 <time="10.0">
+#033 Ladder 4 <time="3.18">
+#023 Stage 1-3 <time="7.9">
+#035 Ladder 6 <time="2.37">
+#030 Stage 1-6 <time="7.1">
+#040 Stage 1 Clear <time="5.3">
+#013 Stage 2 <time="1:47">
+#018 Stage 2 Clear
+#009 Stage 3 <time="1:14">
+#012 Stage 3 Clear <time="7">
+
+--------------------------------
+
+#004 test tone <time="10">
+#005 test tone <time="5">
+#016 [SFX]
+#017 [SFX]
+#025 [SFX]
+#026 [SFX]
+#038 [SFX]
+#039 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX] <time="6">
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+
+  [Source]
+  That's Atari Music -G.S.M. Atari Games 1-
+  Pony Canyon / Scitron  PCCB-00066  Jul 21, 1991
+
+  That's Atari Music -G.S.M. Atari Games 1- (Legend Series)
+  SME / Scitron  SCDC-00313  Dec 3, 2003
+
+$end

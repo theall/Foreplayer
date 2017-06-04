@@ -1,0 +1,135 @@
+﻿$name=alpham2
+$version=2
+$default=$02
+//$songmax=$50
+$fixed_volume=197
+$main
+
+$02 NEO-GEO Logo
+$3b ASO II TITLE #1
+$3d ASO II TITLE #2
+$30 THE SPACE FLIGHT (AREA 1)
+$41 SEVERE FIGHT (BOSS 1)
+$3c CLEAR
+$50 ぼくの飛行機 (SHOP)
+$32 THE BIG BATTLESHIP (AREA 2 戦艦上)
+$3a SONIC BARRIER (AREA 2 戦艦内部)
+$42 MASSACRE (BOSS 2)
+$2e MACROCOSM SPACE (AREA 3)
+$40 STOICISM (BOSS 3)
+$2d WARP ZONE (AREA 4)
+$36 PLANET OF WATER (AREA 5)
+$37 亜空間 (AREA 6)
+$33 THE FINAL ZONE (LAST BOSS)
+$31 LAUGH (ENDING)
+#063 GAME OVER (CD未収録)
+#062 RANKING (CD未収録)
+
+#041 THE SPACE FLIGHT (AREA 1) &lt;w/o intro&gt;
+#040 THE SPACE FLIGHT (AREA 1) &lt;mix 1&gt;
+#044 THE SPACE FLIGHT (AREA 1) &lt;mix 2&gt;
+#042 THE SPACE FLIGHT (AREA 1) &lt;mix 3&gt;
+#057 SONIC BARRIER (AREA 2 戦艦内部) &lt;w/o intro&gt;
+#056 亜空間 (AREA 6) &lt;w/o intro&gt;
+#052 THE FINAL ZONE (LAST BOSS) &lt;w/o intro&gt;
+#049 LAUGH (ENDING) &lt;w/o intro&gt;
+
+------------------------------------------------
+ [Voice]
+
+#242 [Voice]
+#243 [Voice]
+#244 [Voice]
+#245 [Voice]
+#246 [Voice]
+#247 [Voice]
+#248 [Voice]
+#249 [Voice]
+#250 [Voice]
+#251 [Voice]
+#252 [Voice]
+
+------------------------------------------------
+ [S.E.]
+
+#033 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#047 [S.E.]
+#097 [S.E.]
+#099 [S.E.]
+#103 [S.E.]
+#106 [S.E.]
+#111 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#122 [S.E.]
+#124 [S.E.]
+#125 [S.E.]
+#126 [S.E.]
+#127 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#192 [S.E.]
+#193 [S.E.]
+#194 [S.E.]
+#195 [S.E.]
+#196 [S.E.]
+#197 [S.E.]
+#198 [S.E.]
+#199 [S.E.]
+#200 [S.E.]
+#201 [S.E.]
+#202 [S.E.]
+#203 [S.E.]
+#204 [S.E.]
+#205 [S.E.]
+#206 [S.E.]
+#207 [S.E.]
+#208 [S.E.]
+#209 [S.E.]
+#210 [S.E.]
+#212 [S.E.]
+#213 [S.E.]
+#214 [S.E.]
+#215 [S.E.]
+#216 [S.E.]
+#217 [S.E.]
+#218 [S.E.]
+#219 [S.E.]
+#220 [S.E.]
+#221 [S.E.]
+#222 [S.E.]
+#223 [S.E.]
+#224 [S.E.]
+#225 [S.E.]
+#226 [S.E.]
+#227 [S.E.]
+#228 [S.E.]
+#229 [S.E.]
+#230 [S.E.]
+#231 [S.E.]
+#232 [S.E.]
+#233 [S.E.]
+#234 [S.E.]
+#235 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+#238 [S.E.]
+#239 [S.E.]
+#240 [S.E.]
+#253 [S.E.]
+#254 [S.E.]
+#255 [S.E.]
+
+  ■出典
+  ASO II / SNK
+  PONY CANYON / SCITRON  PCCB-00062  1991.05.21
+
+// List Updated by NK
+$end

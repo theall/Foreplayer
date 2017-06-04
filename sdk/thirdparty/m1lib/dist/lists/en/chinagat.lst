@@ -1,0 +1,115 @@
+﻿$name=chinagat
+$version=2
+$default=032
+$main
+
+#032 Credit
+#013 Mission 1 Part I
+#004 Boss 1
+#014 Stage Clear
+#006 Mission 1 Part II
+#010 Boss 2
+#002 Mission 2 Part I
+#011 Boss 3
+#003 Mission 2 Part II
+#004 Mission 3
+#011 Last Boss
+#005 Ending
+#009 Name Entry
+#007 Game Over
+
+#001 Unused 1
+#008 Unused 2
+#012 Unused 3
+
+-----------------------------------------------------------
+ [Voice]
+
+#070 [Voice]
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#074 [Voice]
+#075 [Voice]
+#076 [Voice]
+#077 [Voice]
+#078 [Voice]
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#094 [Voice]
+#095 [Voice]
+#096 [Voice]
+#097 [Voice]
+#098 [Voice]
+#100 [Voice]
+#101 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#099 [SFX]
+#102 [SFX]
+
+// English List Contributed by NK
+$end

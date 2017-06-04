@@ -1,0 +1,146 @@
+﻿$name=darkseal2
+$version=2
+$default=022
+$songmax=123
+$main
+
+#022 Machinations (Demo)
+#077 Coin
+#012 Knights of the Light (Select)
+#018 Tragedy of Herude (Introduction)
+#007 Invasion - Dark Legion (BGM 1)
+#008 Pursuit - Wing of Death (Boss 1)
+#009 Repulse (Clear)
+#020 Prelude to War (Intermission 1)
+#010 Chase (BGM 2)
+#013 Battle Royal (Boss 2)
+#021 Mouth of the Dungeon (Intermission 2)
+#011 Assault (BGM 3)
+#014 Gate of Dragon (Theme of Zenon) (Boss 3)
+#017 Emergence - Floating Castle (Intermission 3)
+#015 Floating Fortress Pendemonium (BGM 4)
+#019 Pray (Game Over)
+#023 Rise and Fall, Light and Dark (Epilogue)
+#016 Rise and Fall, Light and Dark -Part B- (Ending Sequence)
+
+#024 ???
+#004 Sound Check (R)
+#005 Sound Check (L)
+#006 Sound Check (Both)
+
+-----------------------------------------------------
+ [SFX]
+
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#030 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#075 [SFX]
+#076 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#116 [SFX]
+#120 [SFX]
+
+-----------------------------------------------------
+ [Voice]
+
+#029 [Voice]
+#031 [Voice]
+#032 [Voice]
+#033 [Voice]
+#034 [Voice]
+#042 [Voice]
+#047 [Voice]
+#052 [Voice]
+#053 [Voice]
+#066 [Voice]
+#073 [Voice]
+#074 [Voice]
+#078 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#094 [Voice]
+#095 [Voice]
+#096 [Voice]
+#097 [Voice]
+#098 [Voice]
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#102 [Voice]
+#103 [Voice]
+#104 [Voice]
+#105 [Voice]
+#106 [Voice]
+#107 [Voice]
+#108 [Voice]
+#109 [Voice]
+#110 [Voice]
+#111 [Voice]
+#112 [Voice]
+#113 [Voice]
+#114 [Voice]
+#115 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+
+  [Source]
+  Dark Seal II / Data East Gamadelic
+  Pony Canyon / Scitron  PCCB-00129  Sep 17, 1993
+
+  [Sound Composer]
+  Tatsuya Kiuchi
+
+// List contribution by R
+// English list by Fuj
+$end

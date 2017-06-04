@@ -1,0 +1,43 @@
+﻿$name=rotd
+$version=2
+$default=002
+$main
+
+#002 NEO GEO Logo
+#056 Rage Of The Dragons (オープニング)
+#042 Come on! (プレイヤーセレクト)
+#043 Confrontation (VS画面)
+#044 All Over The Place (ステージ紹介)
+#033 Cheer Up! (ペペ & プパステージ)
+#036 Exorcism (エリアス & アリスステージ)
+#034 Funky Togetherness (ジョーンズ & カンステージ)
+#035 Dragons Blues (ジミー & ソニアステージ)
+#045 You Win! (勝敗デモ)
+#037 Beat Out (ラデル & アニ－ステージ)
+#039 Violent Death (オニ & カサンドラステージ)
+#040 Splendid String From China (ビリー & リンステージ)
+#047 Heavy Fellow (アブボ登場デモ)
+#038 Exclamation (アブボステージ)
+#058 An Underdog (アブボ負けデモ)
+#048 Yohan Demo (ヨハン登場デモ)
+#041 Statelessness (ヨハンステージ)
+#049 In The Result (エンディングその他)
+#050 Become Lively (エンディングコメディ)
+#051 Sad To Say (エンディング悲しい)
+#052 Since Then (エンディングシリアス1)
+#053 Several Minds (エンディングシリアス2)
+#057 Glorious Heart (スタッフロール)
+#054 Challenger (途中参加画面)
+#046 Don't Stop! (コンティニュー)
+#055 GameOver (ゲームオーバー)
+
+  ■出典
+  RAGE OF THE DRAGONS
+  オリジナルアレンジハイクオリティバージョン
+  NOISE FACTORY  NF-0001  2002.09.13
+
+  ■作曲
+  田中 敬一 (でんちゅう)
+
+// List Contribution by GolGol
+$end

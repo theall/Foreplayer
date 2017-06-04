@@ -1,0 +1,70 @@
+﻿$name=horekid
+$version=2
+$default=014
+$main
+
+#014 Credit Inserted <time="2.5">
+#046 Game Start <time="15">
+#052 Booby Samba (Modern Times) (Round 1, 8, 13, 15, 26)
+#055 Round Clear <time="5.8">
+#059 Bonus <time="4.6">
+#056 Break Time <time="9.2">
+#049 Funny Dragon (Primitive Age) (Round 2, 10, 12, 19, 22, 27)
+#050 Booby Castle Town (Edo Priod) (Round 3, 6, 7, 16, 18, 20, 23, 29)
+#051 Booby March (World War) (Round 4, 9, 11, 21, 25, 30)
+#053 Wild Street (Future) (Round 5, 14, 17, 24, 28, 31)
+#038 [Voice] Hahaha <time="2.3">
+#054 Evil Dante (Round 32)
+#058 Boobie-Woogie (Game Over, Name Entry)
+
+#047 Booby Kids (restart) <time="5.4">
+#048 Booby Kids (last player) <time="4.6">
+#057 Booby Kids (Game Over) <time="4.6">
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] Walk 1 <time="1.5">
+#002 [SFX] Walk 2 <time="1.5">
+#031 [SFX] Dig 1 <time="3">
+#035 [SFX] Dig 2 <time="3">
+#032 [SFX] Dig 3 <time="3">
+#003 [SFX] Fall into a pit <time="3">
+#005 [SFX] Going in a warp hole <time="3">
+#006 [SFX] Going out from a warp hole <time="3">
+#033 [SFX] Trap <time="3">
+#034 [SFX] Sink <time="3">
+#009 [SFX] Jump <time="3">
+#020 [SFX] Caught by an enemy <time="3">
+#007 [SFX] Rise <time="3.5">
+#008 [SFX] Item, Key <time="3">
+#014 [SFX] Coin, Extend <time="3">
+#015 [SFX] Rest 30 sec<time="3">
+#016 [SFX] Door <time="3">
+#036 [SFX] Dynamite <time="3">
+#017 [SFX] Yoyo <time="3">
+#037 [SFX] Yoyo attack <time="3">
+#019 [SFX] Freezing beam <time="3">
+#043 [SFX] Freezing <time="3">
+#012 [SFX] Kick ice <time="3">
+#041 [SFX] Break ice <time="3">
+#004 [SFX] Flame gun <time="3">
+#042 [SFX] Buring <time="3">
+#010 [SFX] Killed an enemy <time="3">
+#011 [SFX] Attack by Dante <time="3">
+#040 [SFX] Flame by Dante <time="3">
+#039 [SFX] Dante disappearing <time="3">
+
+#018 [SFX] ?<time="3">
+#013 [SFX] ?<time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#038 [Voice] <time="3">
+
+  [Sound Composers]
+  Kenji Yoshida, Hiroshi Funaba
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,23 @@
+﻿$name=airduel
+$version=2
+$default=13
+$fixed_volume=100
+$main
+
+#013 [SFX] Title
+#012 Credit Inserted / Airplane Select
+#002 Mission 1, 8
+#009 Boss Theme
+#016 Mission Clear
+#005 Mission 2, 9
+#004 Mission 3, 10
+#003 Mission 4, 11
+#006 Mission 5, 12
+#007 Mission 6, 13
+#008 Mission 7, 14 (Final Mission)
+#014 Ending Theme
+#010 Game Over
+#011 Score Ranking
+
+// List contribution by R
+$end

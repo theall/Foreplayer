@@ -1,0 +1,146 @@
+﻿$name=s1945p
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+#032 Attract Mode <time="1:51" fadeout="yes" fadeoutlength="10">
+#127 Credit
+#033 Fighter Select <time="1:05" fadeout="yes" fadeoutlength="10">
+#106 [S.E.] Fighter Selected <time="1">
+#128 [S.E.] Briefing <time="1.5">
+#034 Mission 1 <time="2:56" fadeout="yes" fadeoutlength="10">
+#043 Bosses 1, 3 <time="1:09" fadeout="yes" fadeoutlength="10">
+#046 Mission Clear <time="2.8">
+#128 [S.E.] Briefing <time="1.5">
+#035 Mission 2 <time="1:52" fadeout="yes" fadeoutlength="10">
+#042 Bosses 2, 4 <time="1:15" fadeout="yes" fadeoutlength="10">
+#036 Mission 3 <time="1:30" fadeout="yes" fadeoutlength="10">
+#037 Mission 4 <time="1:33" fadeout="yes" fadeoutlength="10">
+#038 Mission 5 <time="2:12" fadeout="yes" fadeoutlength="10">
+#044 Bosses 5, 6, 7 <time="1:31" fadeout="yes" fadeoutlength="10">
+#039 Mission 6 <time="1:30" fadeout="yes" fadeoutlength="10">
+#040 Mission 7 <time="0:54" fadeout="yes" fadeoutlength="10">
+#041 Mission 8 <time="1:57" fadeout="yes" fadeoutlength="10">
+#045 Last Boss <time="1:19" fadeout="yes" fadeoutlength="10">
+#048 End Report <time="2:22" fadeout="yes" fadeoutlength="10">
+#047 Ranking <time="0:52" fadeout="yes" fadeoutlength="10">
+
+  [S.E.]
+
+#049 [S.E.] Neo Geo Logo
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] Extend
+#106 [S.E.] Fighter Selected
+#107 [S.E.] 
+#108 [S.E.] 
+#109 [S.E.] 
+#110 [S.E.] 
+#111 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] 
+#117 [S.E.] 
+#118 [S.E.] 
+#119 [S.E.] 
+#120 [S.E.] 
+#121 [S.E.] 
+#122 [S.E.] 
+#123 [S.E.] 
+#124 [S.E.] Credit
+#125 [S.E.] 
+#126 [S.E.] 
+#127 [S.E.] Credit
+#128 [S.E.] Brefing
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+
+  ■作曲
+  泉谷 雅樹
+
+// List contribution by Simon B., done in playing the game.
+$end

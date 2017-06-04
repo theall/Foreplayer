@@ -1,0 +1,39 @@
+﻿$name=metrocrs
+$version=2
+$default=0
+$main
+
+#00 Credit Inserted <time="1.32">
+#01 BGM Intro <time="2.68">
+#02 BGM <time="47.55">
+#03 Round Clear Music <time="2.67">
+#04 Counting Remaining Time <time="2.67">
+#04 Counting Remaining Time <time="2.67">
+#01 BGM Intro <time="2.68">
+#02 BGM <time="50.22">
+#05 Time Out Music <time="2.67">
+#07 32 Rounds Cleared <time="10.63">
+#06 Game Over <time="5">
+#08 Name Entry
+
+#09 [SFX] Collide with an obstacle
+#10 [SFX] Kick or squash an alminium can
+#11 [SFX] Jump
+#12 [SFX] Start
+#13 [SFX] Ran over
+#14 [SFX] Count down
+#15 [SFX] Tire
+#16 [SFX] Mine
+#17 [SFX] Jump on a spring board
+
+  [Source]
+  The Return of Video Game Music
+  Alfa Records  ACL-22004  Jun 25, 1985
+
+  Namco Video Game Music Program
+  Dempa
+
+  [Sound Composer]
+  Nobuyuki Oonogi
+
+$end

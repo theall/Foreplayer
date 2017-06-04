@@ -1,0 +1,42 @@
+﻿$name=winrun
+$version=2
+$default=5
+$main
+
+　* This ROM set is Winning Run Suguza GP
+
+#005 Coin
+#032 Entry (paid)
+#016 Practice Start
+#048 Grand Prix Start
+#035 Entry (not paid)
+#096 Result
+#064 Winning Run
+//#067 Winning Run (from middle)
+//#070 Winning Run (no intro)
+#080 Game Over
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX] Stereo Check
+#002 [SFX] Start
+#003 [SFX]
+#004 [SFX]
+#005 [SFX] Credit
+#006 [SFX]
+#007 [SFX]
+#008 [SFX] Transmission Select
+#112 [SFX]
+#257 [SFX] Stereo Check
+#258 [SFX]
+
+  [Source]
+  Final Lap 2 -G.S.M. Namco 3-
+  Pony Canyon / Scitron  PCCB-00040  Sep 21, 1990
+
+　[Composer]
+　Hiroyuki Kawada
+
+// Original List Contribution by Llama
+$end

@@ -1,0 +1,89 @@
+﻿$name=lwings
+$version=2
+$default=$25
+$songmax=$57
+$main
+
+$25 CREDIT <time="0:03">
+$37 START DEMO <time="0:05">
+$20 GAME START <time="0:09">
+$2b AREA 1
+$2c AREA 2
+$2d AREA 3
+$2e AREA 4
+$2f AREA 5
+$30 BONUS AREA
+$31 UNDERGROUND
+$32 SANCTUARY
+$33 UNDERGROUND BOSS
+$34 AREA BOSS
+$35 SANCTUARY BOSS
+$21 AREA CLEAR 1
+$22 AREA CLEAR 2
+$27 RANKING 1
+$28 RANKING 2
+$29 RANKING DISPLAY 1
+$2a RANKING DISPLAY 2
+$36 CONTINUE
+$26 GAME OVER
+
+$23 SCREEN CHANGE
+$24 EXTEND
+
+-----------------------------------------
+ [S.E.]
+
+$01 [S.E.]
+$02 [S.E.]
+$03 [S.E.]
+$04 [S.E.]
+$05 [S.E.]
+$06 [S.E.]
+$07 [S.E.]
+$08 [S.E.]
+$09 [S.E.]
+$0a [S.E.]
+$0b [S.E.]
+$0c [S.E.]
+$0d [S.E.]
+$0e [S.E.]
+$0f [S.E.]
+$10 [S.E.]
+$11 [S.E.]
+$12 [S.E.]
+$13 [S.E.]
+$14 [S.E.]
+$15 [S.E.]
+$16 [S.E.]
+$17 [S.E.]
+$41 [S.E.]
+$42 [S.E.]
+$43 [S.E.]
+$44 [S.E.]
+$45 [S.E.]
+$46 [S.E.]
+$47 [S.E.]
+$48 [S.E.]
+$49 [S.E.]
+$4a [S.E.]
+$4b [S.E.]
+$4c [S.E.]
+$4d [S.E.]
+$4e [S.E.]
+$4f [S.E.]
+$50 [S.E.]
+$51 [S.E.]
+$52 [S.E.]
+$53 [S.E.]
+$54 [S.E.]
+$55 [S.E.]
+$56 [S.E.]
+$57 [S.E.]
+
+//■出典
+//  あうあう氏製作のMDX全曲集より
+//
+  ■作曲
+  川本 圭代
+
+$end

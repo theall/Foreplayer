@@ -1,0 +1,159 @@
+﻿$name= captcomm
+$version=2
+$default= 192
+$songmax= 192
+$main
+
+#192 CREDIT <time="0:03">
+#128 GAME START <time="0:07">
+#142 PLAYER SELECT <time="0:18">
+#129 STAGE 1 (City) <time="1:54">
+#147 BOSS 1 (ドルグ) <time="0:27">
+#130 STAGE 2 (Museum) <time="1:54">
+#148 BOSS 2 (シュトルムJr.) <time="1:05">
+#131 STAGE 3 (Ninja House) <time="1:56">
+#149 BOSS 3 (ヤマト) <time="0:28">
+#132 STAGE 4-1 (Circus Camp) <time="1:36">
+#156 STAGE 4-2 (闘技場) <time="0:22">
+#150 BOSS 4 (モンスター) <time="1:42">
+#133 STAGE 5 (Sea Port) <time="2:03">
+#151 BOSS 5 (Dr.T.ウォーター) <time="0:42">
+#134 STAGE 6 (Aquarium) <time="2:08">
+#152 BOSS 6 (シュトルム&ドラッグ) <time="0:25">
+#135 STAGE 7 (Under Ground Base) <time="1:55">
+#153 BOSS 7 (ブラッド) <time="1:30">
+#136 STAGE 8 (Enemy's Space Ship) <time="2:06">
+#154 BOSS 8 (ドッペルゲンガー) <time="1:23">
+#137 STAGE 9 (Callisto) <time="1:36">
+#155 最終BOSSの部屋 <time="0:47">
+#157 最終BOSS (ジェノサイド) <time="0:44">
+#138 STAGE CLEAR
+#143 ENDING <time="0:20">
+#158 STAFF ROLL <time="1:30">
+#139 CONTINUE <time="0:21">
+#140 GAME OVER <time="0:08">
+#141 NAMING <time="0:21">
+
+-----------------------------------------------------------
+ [Voice]
+
+#062 [Voice] Captain Commando
+#033 [Voice] Jennety
+#087 [Voice] Mack The Knife (海外版Jennety)
+#078 [Voice] Sho
+#097 [Voice] Ginzu The Ninja (海外版Sho)
+#085 [Voice] Hoover
+#098 [Voice] Baby Head (海外版Hoover)
+#012 [Voice]
+#013 [Voice]
+#014 [Voice]
+#015 [Voice]
+#042 [Voice]
+#043 [Voice]
+#067 [Voice]
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#075 [Voice]
+#076 [Voice]
+#077 [Voice]
+#081 [Voice]
+#083 [Voice]
+#084 [Voice]
+#086 [Voice]
+#088 [Voice]
+#091 [Voice]
+#092 [Voice]
+#096 [Voice]
+#100 [Voice]
+#104 [Voice]
+#105 [Voice]
+#032 [Voice] Commando (Credit)
+#082 [Voice] 歓声
+
+-----------------------------------------------------------
+ [S.E.]
+
+#000 [S.E.]
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#063 [S.E.]
+#066 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#074 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#090 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#099 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#159 [S.E.]
+#089 [S.E.]
+
+  ■出典
+  CAPTAIN COMMANDO -G.S.M. CAPCOM 5- / ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00083  1992.03.21
+
+// List Contributed by BLADE
+// Updated by NK
+// Fix info by Cratch
+$end

@@ -1,0 +1,69 @@
+﻿$name=choplift
+$version=2
+$default=157
+$main
+
+#171 [SFX] Title Demo <time="3">
+#157 Mission Start
+#129 Mission 1
+#163 Mission 2
+#132 Mission 3
+#165 Mission 4
+#162 Mission Completed
+#160 Perfect Bonus
+#158 Game Over
+#166 Name Entry
+
+#169 Unused 1
+#168 Unused 2
+#164 Unused 3
+#161 Unused 4
+#159 Unused 5
+
+---------------------------------------------------
+  [SFX]
+
+#130 [SFX] Helicopter <time="5">
+#133 [SFX]
+#134 [SFX]
+#134 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX] 
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX] 
+#147 [SFX]
+#148 [SFX] 
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX]
+#167 [SFX]
+#170 [SFX]
+#171 [SFX] Helicopter 2 <time="5">
+
+---------------------------------------------------
+
+ [Voice] 
+
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+
+// List contribution by ZEK.
+$end

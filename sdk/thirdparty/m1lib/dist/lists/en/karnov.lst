@@ -1,0 +1,20 @@
+﻿$name=karnov
+$version=2
+$default=$25
+$songmax=$28
+$fixed_volume=153
+$main
+
+$25 Karnov Theme
+$28 Player Out
+$22 Clear
+$23 Hurry up! Karnov
+$26 All Cleared
+$24 Name Entry
+$27 Game Over
+
+  [Source]
+  Data East Game Music / G.M.O.
+  Alfa Records  28XA-205  May 10, 1988
+
+$end

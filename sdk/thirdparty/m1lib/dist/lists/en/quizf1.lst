@@ -1,0 +1,36 @@
+﻿$name=quizf1
+$version=2
+$default=015
+$main
+
+#015 Title Screen
+#001 Team Select
+#015 Intro
+#009 World Map Preview <time="5">
+#014 Qualification Quiz
+#002 Genre Select
+#010 On Your Grid <time="7.3">
+#004 Main Theme 1 (South Africa, Monaco, Belgium, Italy)
+#003 Main Theme 2 (Mexico, San Marino, Canada, Germany, Japan, Australia)
+#010 Bonus Game <time="12.9">
+#016 Bonus Game Start !
+#012 Bonus Game End
+#005 Main Theme 3 (Brazil, Hungary, Portugal)
+#006 Main Theme 4 (Spain, U.K)
+#013 Clear
+#001 Finish / Result
+#007 Ending
+#011 Game Over
+
+---------------------------------------------------
+ [SFX] 
+
+#008 [SFX] <time="12">
+#017 [SFX] <time="4">
+
+  [Sound Composer]
+  Hiyamuta (Hiya)
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

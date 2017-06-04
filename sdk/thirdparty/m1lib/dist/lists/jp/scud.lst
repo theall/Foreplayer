@@ -1,0 +1,29 @@
+﻿$name=scud
+$version=2
+$default=06
+$main
+
+?? Advertize <time="1:05">
+#06 Stage Select <time="0:37">
+#03 Groovin' Daylight (初級・昼)<time="3:32">
+#02 Flight in the Dark (初級・夜)<time="2:44">
+#01 Ancient Voice (中級)<time="2:39">
+#05 Breeze of the Middle Ages (上級)<time="3:02">
+#04 Merry Maze (未使用)<time="3:09">
+#08 Goal <time="0:38">
+#07 Name Entry <time="1:04">
+#09 Ending <time="1:28">
+
+　※Merry Mazeは「スカッドレース プラス」で超初級に採用
+
+  ■出典
+  スカッド・レース Sound Tracks
+  TOSHIBA EMI  TYCY-5541  1997.02.19
+
+  ■作曲
+  宮本 英明：Advertize, 06, 02, 01, 09
+  大堀 薫：03, 05, 04
+  伊藤 二三雄：08, 07
+
+// List by Fuj
+$end

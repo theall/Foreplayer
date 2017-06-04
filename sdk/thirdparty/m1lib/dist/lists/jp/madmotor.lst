@@ -1,0 +1,100 @@
+﻿$name=madmotor
+$version=2
+$default=017
+$main
+
+#017 [S.E.] CREDIT
+#007 STAGE 1, 3, 5 (CENTRAL PARK, CITY ISLAND, RIVER SIDE)
+#006 POWER !!
+#014 BOSS BGM 1 (STAGE 1)
+#008 CLEAR !
+#005 STAGE 2, 4, 6 (A RAVINE, DESERT, CONY ISLAND)
+#010 BOSS BGM 2 (STAGE 2)
+#009 BOSS BGM 3 (STAGE 3, 5)
+#011 BOSS BGM 4 (STAGE 6)
+#013 ENDING (?)
+#012 GAME OVER
+
+---------------------------------------------------
+  [S.E.]
+
+#017 [S.E.] CREDIT
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+
+// List contribution by ZEK.
+$end

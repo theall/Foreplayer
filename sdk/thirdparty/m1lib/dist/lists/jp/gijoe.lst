@@ -1,0 +1,41 @@
+﻿$name=gijoe
+$version=2
+$default=$e2
+$songmax=229
+$main
+
+$e2 We Are G.I.JOES (タイトルデモBGM)
+$db (Charactor Select)
+#203 [Voice] mission1
+$d6 Map Out A Plan Of Operations I (スタートデモBGM)
+#021 [Voice] (DUKE) YO! JOE!
+$d0 (基地前 -Stage 1-)
+$d8 (Boss A)
+$d1 Go To The Airport! (2ステージBGM)
+$d2 Shooting Small Flies (3ステージBGM)
+$d9 (Boss B)
+#221 (eye catch)
+#204 [Voice] mission2
+$d7 (Stage 4 -Opening-)
+$d3 (ジャングル -Stage 4-)
+#199 [Voice] COooBRAaaaaa!
+$d4 (地下秘密基地入口 -Stage 5-)
+$d5 (地下秘密基地通路 -Stage 6-)
+$e1 (Boss C)
+$da (Stage 7 -Opening-)
+#205 [Voice] The Final Battle
+$e0 Dash Toward The Final Battle! (7ステージBGM)
+$e4 (Boss D)
+$dc (Ending)
+$e5 (Name Entry)
+$de (Game Over)
+$df (未使用曲)
+$e3 スピーカーテスト
+// $e6 (基地前 -Stage 1-)
+
+  ■出典
+  KONAMI ALL STARS 1993
+  KING RECORDS  KICA-9016～9018  1992.12.21
+
+// 5曲のみ参考。間違ってるかもしれません。
+$end

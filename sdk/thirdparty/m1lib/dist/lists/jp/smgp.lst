@@ -1,0 +1,24 @@
+$name=smgp
+$version=2
+$default=134
+$main
+
+#134 F1テーマ
+#144 クレジット
+#129 アドバタイズ時BGM
+#133 予選通過
+#131 ファンファーレ
+#132 セカンドレース
+#136 表彰
+#130 ネームエントリー
+#135 ゲームオーバー
+
+  ■出典
+  SUPER SONIC TEAM -G.S.M. SEGA 3-
+  PONY CANYON/SCITRON   PCCB-00009  1989.10.21
+
+  ■作曲
+  並木 晃一
+
+// List contribution by szk
+$end

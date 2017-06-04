@@ -1,0 +1,39 @@
+﻿$name=docastle
+$version=2
+$default=016
+$main
+
+#016 Start <time="4">
+#002 Main Theme
+#021 Gate Opened <time="4">
+#001 Extra Chance <time="17.3">
+#009 Extra <time="10">
+#010 Clear
+#014 [SFX] Diamond Appearing <time="5">
+#015 Diamond BGM
+#012 Miss
+#003 Game Over
+#017 Ranking Table
+
+---------------------------------------------------
+ [SFX] 
+
+#004 [SFX] Hammer
+#005 [SFX] On the stairs
+#006 [SFX] Death's head block
+#007 [SFX] Key on the hole <time="5">
+#008 [SFX] Key block
+#013 [SFX] Enemy squashed
+#014 [SFX] Diamond appearing <time="5">
+#016 [SFX] Start
+#018 [SFX] Enemies become blue
+#019 [SFX] Flipped an enemy
+#020 [SFX] Player moving <time="5">
+#021 [SFX] Gate opening <time="5">
+#022 [SFX] 
+#023 [SFX] Falling
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+// English list by Fuj
+$end

@@ -1,0 +1,67 @@
+﻿$name=gunbird
+$version=2
+$default=040
+$songmax=164
+$fixed_volume=107
+$main
+
+#040 Backstar's Fortress (Title / Castle)
+#158 Coin (Credit Inserted)
+#033 Discover the Dream (Character Select)
+#041 Pointed Square (Jungle)
+#042 Trick Trump Train (Town)
+#043 Shot in the Underground (Coal Mine)
+#048 Unknown Objects (Ruin)
+#049 Mistery Circle (Shrine)
+#062 Aqua Blue (Ocean)
+#050 The Trap -From the Ancient- (Final)
+#056 Chase The Case (Boss A)
+#057 High Energy (Boss B)
+#058 Reborn (Boss C -vs Majin-)
+#034 We Did It (Stage Clear)
+#059 The End of Gunbird A (Ending A)
+#060 The End of Gunbird B (Ending B)
+#061 The End of Gunbird C (Ending C)
+#032 The End of Gunbird D (Ending D)
+#035 Dreamin' Again (Name Regist)
+
+-----------------------------------------
+
+#064 [Voice] "Marion hasshin!"
+#065 [Voice] "omatase arune!"
+#066 [Voice] "Valnus hasshin!"
+#067 [Voice] "jijii kenzan!"
+#068 [Voice] Let's Go!
+#077 [Voice] "midareuchi dei!"
+#080 [Voice] "bunshiin"
+#082 [Voice] "kuraiyagare"
+#084 [Voice] "pawaa aappu"
+#085 [Voice] "pawaa aappu"
+#086 [Voice] "pawaa appu nari"
+#087 [Voice] "pawaa appu dei"
+#088 [Voice] "pawaa appu da"
+#089 [Voice] "oomouke"
+#090 [Voice] "manzoku aru"
+#091 [Voice] "hahhahhaha"
+#092 [Voice] "jijii kangeki"
+#093 [Voice] "iizo"
+#132 [Voice] "ittekooi"
+#133 [Voice] "yaa"
+#134 [Voice] "roketto paanchi"
+#136 [Voice] "hassha"
+#142 [Voice] "wind shaver"
+#144 [Voice] "valnus baster"
+#146 [Voice] "bomber"
+#161 [Voice] "waa"
+#162 [Voice] "aaa"
+#163 [Voice] "waaa"
+#164 [Voice] "aaaa"
+
+  [Source]
+  Gun Bird 2 / Gun Bird
+  Pony Canyon / Scitron  SGCD-0003  Dec 4, 1998
+
+  [Sound Composer]
+  Masaki Izumiya
+
+$end

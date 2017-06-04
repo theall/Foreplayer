@@ -1,0 +1,63 @@
+﻿$name=skytargt
+$version=2
+$default=016
+$main
+
+#016 Advertise
+#005 Select Your Wing
+#001 Archipelago (Mission 1)
+#002 戦闘武装爆撃機: DD-B-48 "ハルベルト" (Mission 1 Boss)
+#015 Intermission
+#007 Clouds (Mission 2, 6c)
+#014 全翼形式重爆撃機: DD-B-51 "タルワール" (Mission 2, 6c Boss)
+#019 Jungle (Mission 3a)
+#020 装甲戦闘飛行船: DD-AS-3 "フランベルジュ" (Mission 3a Boss)
+#022 City (Mission 3b, 6a)
+// 原曲: After Burner (rev. A)
+#032 装甲戦闘ヘリコプター: DD-AH-12 "ヴァジュラ" (Mission 3b, 6a Boss)
+#025 High Altitude (Mission 4)
+#038 長距離戦術弾道ミサイル: DD-LSBM-1 "セプター" (Mission 4 Boss)
+// not SLBM
+#000 Canyon (Mission 5a, 6d)
+#008 重武装地上戦艦: DD-GBS-22 "ハースニール" Level 1 (Mission 5a, 6d Boss)
+#009 重武装地上戦艦: DD-GBS-22 "ハースニール" Level 2 (Mission 5a, 6d Boss)
+#017 Ice Floes (Mission 5b)
+#018 武装戦略爆撃機: DD-B-111 "グングニル" (Mission 5b Boss)
+#030 Desert (Mission 6b)
+#031 ホバークラフト戦艦: DD-HBS-6 "クレイモア" (Mission 6b Boss)
+#028 Fortress (Final Mission)
+#037 戦闘空母ヘリコプター: DD-BCH-111 "ブリガンダイン" (Final Mission Boss 1)
+#029 最新鋭戦闘/攻撃機: XF/A-49 "ホワイトソード" (Final Mission Boss 2)
+#035 End Credits
+#021 Name Entry
+// #027も同様
+#036 Ace Pilots (Ranking Display)
+#012 Game Over
+
+#024 Advertise &lt;ver 2&gt;
+#034 Advertise &lt;ver 2, short&gt;
+#023 Advertise &lt;ver 3&gt;
+#033 Advertise &lt;ver 3, short&gt;
+#026 High Altitude (Mission 4) &lt;ver 2&gt;
+#013 Game Over &lt;ver 2&gt;
+#003 Unused 1
+#004 Unused 2
+#006 Unused 3
+#010 Unused 4
+#011 Unused 5
+
+  ■出典
+  スカイターゲット  サターン版
+  SEGA  GS-9103  1997.04.25
+
+  スカイターゲット  PC版
+  SEGA  HCJ-0115  1997.08.14
+
+  ■サウンドトラック
+  セガコン -THE BEST OF SEGA GAME MUSIC- VOL.1
+  SME / Visual Works  SVWC-7092～4  2001.10.24
+    &lt;"Advertise"収録&gt;
+
+// (DD=Deldine [デルダイン社])
+// List contribution by NK
+$end

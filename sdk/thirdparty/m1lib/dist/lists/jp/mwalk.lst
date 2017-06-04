@@ -1,0 +1,118 @@
+﻿$name=mwalk
+$version=2
+$default=133
+$songmax=253
+$main
+ 
+#133 Title (1) <time="0:03">
+#134 Title (2) <time="0:01.2">
+#135 Title (3) <time="0:05">
+#136 [Voice] "MoonWalker"<time="0:03">
+#129 "Bad" (Round 1) <time="1:21">
+#130 "Smooth Criminal" (Round 2) <time="1:12">
+#139 Round 2 Boss
+#132 "Beat It" (Round 3) <time="1:04">
+//(邦題「今夜はビート・イット」)
+#138 "Another Part of Me" (Round 4) <time="1:10">
+#131 Round 4 Boss
+#129 "Bad" -Reprise- (Round 5) <time="1:21">
+#142 Round 5 Boss
+#137 "Billie Jean" (Ending) <time="1:28">
+ 
+#140 (unused)
+#170 "Bad" (intro I)
+#141 "Bad" (intro II)
+#247 Game Over
+#250 Dance Magic I
+#251 Dance Magic I (short version)
+#245 Dance Magic II
+#246 Dance Magic II (short version)
+#176 Dance Magic III
+#177 Dance Magic III (short version)
+#252 Dance Magic IV
+#253 Dance Magic IV (short version)
+ 
+ [Voice]
+#192 [Voice]
+#193 [Voice]
+#194 [Voice]
+#195 [Voice]
+#196 [Voice]
+#197 [Voice]
+#198 [Voice]
+#199 [Voice]
+#200 [Voice]
+#201 [Voice]
+#202 [Voice]
+#178 [Voice]
+#179 [Voice]
+#180 [Voice]
+#203 [Voice]
+#205 [Voice]
+#206 [Voice]
+#171 [Voice]
+#172 [Voice]
+#173 [Voice]
+#174 [Voice]
+#175 [Voice]
+#207 [Voice]
+#208 [Voice]
+#209 [Voice]
+#210 [Voice]
+#211 [Voice]
+#214 [Voice]
+#213 [Voice]
+#219 [Voice]
+#220 [Voice]
+#222 [Voice]
+ 
+ [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+#159 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#166 [S.E.]
+#167 [S.E.]
+#168 [S.E.]
+#169 [S.E.]
+#181 [S.E.]
+#182 [S.E.]
+#183 [S.E.]
+#184 [S.E.]
+#185 [S.E.]
+#186 [S.E.]
+#187 [S.E.]
+#188 [S.E.]
+#189 [S.E.]
+#190 [S.E.]
+#191 [S.E.]
+#215 [S.E.]
+#216 [S.E.]
+#217 [S.E.]
+#218 [S.E.]
+#227 [S.E.]
+#233 [S.E.]
+#236 [S.E.]
+#242 [S.E.]
+#248 [S.E.]
+#249 [S.E.]
+
+// リスト作成：NKさん
+// Updated by CrashTest
+$end

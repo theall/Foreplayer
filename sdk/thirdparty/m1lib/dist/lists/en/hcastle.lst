@@ -1,0 +1,98 @@
+﻿$name=hcastle
+$version=2
+$default=$63
+$songmax=$63
+$main
+
+$63 Dracula Arised (Title)
+$45 Credit
+$56 Buskined Wedding March (Introduction)
+$52 Cross Your Heart (Stage 1 - Graveyard)
+$55 The Revived Devil (Boss)
+$59 Battle Again (Clear)
+$54 Lullaby of Devils (Stage 2 - Grotto)
+$61 No Return (Intermission)
+$53 Bloody Tears (Stage 3 - Castle 1F)
+$57 Basement Melody (Stage 4 - Basement)
+$5a Beats of the Clock Tower (Stage 5 - Clock Tower)
+$5b Hardly Wait Till Night (Stage 6 - Bridge)
+$5c Dracula's Room (Final Boss 1)
+$5d Final Battle (Final Boss 2)
+$5e Breakdown of the Haunted Castle (Ending)
+$51 Never Ends (Game Over)
+$50 Lullaby for Devils (Ranking)
+$62 ???
+
+-----------------------------------------------------------------
+
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX] 
+#028 [SFX]
+#029 [SFX]
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX]
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX]
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#073 [SFX] 
+
+#000 [Command] Sound Stop
+
+  [Soundtracks]
+  Konami Game Music Collection Vol.1
+  King Records  K30X7705  Aug 5, 1988
+
+  Konami Game Music Collection Vol.1 (Reprinted)
+  King Records  KCIA-2309  May 21, 1993
+
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List Updated by R
+$end

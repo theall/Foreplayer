@@ -1,0 +1,316 @@
+﻿$name=sfa
+$version=2
+$default=034
+$songmax=734
+$fixed_volume=256
+$main
+
+#034 QSound Logo
+//Main QSound
+
+#013 Opening Demo <time="24.5">
+#244 [Voice] Street Fighter Alpha <time="4">
+#014 Player Select <time="54">
+#015 VS.
+#001 Ryu: Stage <time="1:53">
+#021 Ryu: Ending <time="1:05">
+#009 Charlie (Nash): Stage <time="1:57">
+#029 Charlie (Nash): Ending <time="1:12">
+#003 Chun-Li: Stage <time="1:54">
+#023 Chun-Li: Ending
+#006 Adon: Stage <time="2:10">
+#026 Adon: Ending <time="1:00">
+#008 Guy: Stage <time="2:45">
+// from Final Fight (Round 1-1)
+#028 Guy: Ending <time="1:01">
+#011 Akuma (Gouki): Stage <time="1:54">
+#031 Akuma (Gouki): Ending <time="1:24">
+#016 Stage End
+#017 Continue <time="37">
+#018 Here Comes A New Challenger
+#002 Ken: Stage <time="2:07">
+#022 Ken: Ending <time="1:31">
+#005 Sodom: Stage <time="2:30">
+// from Final Fight (Round 1-2, 2-1)
+#025 Sodom: Ending <time="1:38">
+// from Final Fight (Continue)
+#010 Rose: Stage <time="1:36">
+#030 Rose: Ending <time="1:01">
+#007 Birdie: Stage <time="1:44">
+#027 Birdie: Ending <time="1:05">
+#004 Sagat: Stage <time="2:59">
+#024 Sagat: Ending <time="1:14">
+#012 M. Bison: Stage <time="2:11">
+#032 M. Bison: Ending <time="1:05">
+#050 Dan: Stage <time="3:00">
+#051 Dan: Ending <time="44">
+#033 Credits Roll 1 <time="2:52">
+#049 Credits Roll 2 <time="2:00">
+#019 Game Over
+#020 Ranking Display 1
+#036 Ranking Display 2
+#052 Itoshisato Setsunasato Kokorozuyosato / Ryoko Shinohara with T. Komuro (Dramatic Battle BGM)
+// (Epic/Sony Records  ESDB-3495  1994.07.21)
+
+#035 QSound Logo 2
+//Sub-QSound
+
+----------------------------------------------------------
+ [Voice]
+
+#224 [Voice] Round
+#225 [Voice] One
+#226 [Voice] Two
+#227 [Voice] Three
+#228 [Voice] Four
+#229 [Voice] Five
+#230 [Voice] Six
+#231 [Voice] Seven
+#232 [Voice] Eight
+#233 [Voice] Nine
+#234 [Voice] Final
+#235 [Voice] Fight
+#236 [Voice] K.O
+#237 [Voice] You
+#238 [Voice] Win
+#239 [Voice] Lose
+#240 [Voice] Perfect
+#241 [Voice] Draw
+#242 [Voice] Time over
+#243 [Voice] Street Fighter Zero
+#244 [Voice] Street Fighter Alpha
+#245 [Voice] Zero
+#246 [Voice] Alpha
+
+  Ryu
+#608 [Voice] Hadouken
+#609 [Voice] Shouryuuken
+#610 [Voice] Tasumaki senpuukyaku
+#611 [Voice] Shinkuu
+#612 [Voice] 
+#613 [Voice] 
+#614 [Voice] 
+#615 [Voice] 
+#616 [Voice] 
+
+  Ken
+#617 [Voice] Hadouken
+#618 [Voice] Shouryuuken
+#619 [Voice] Tatsumaki senpuukyaku
+#620 [Voice] Ikuze!
+#621 [Voice] Shinryuuken
+#622 [Voice] Shouryuu reppa
+#623 [Voice] Yattaze!
+#624 [Voice] 
+#625 [Voice] 
+#626 [Voice] 
+#627 [Voice] 
+
+  Guy
+#628 [Voice] 
+#629 [Voice] 
+#630 [Voice] Iza!
+#631 [Voice] 
+#632 [Voice] 
+#633 [Voice] 
+#634 [Voice] Hissatsu!
+#635 [Voice] Warukuomouna..
+#636 [Voice] Korezo bushinryuu
+#638 [Voice] 
+#639 [Voice] 
+
+  Charlie (Nash)
+#640 [Voice] Sonic break
+#641 [Voice] Sonic boom
+#642 [Voice] Somersault
+#643 [Voice] 
+#644 [Voice] 
+#645 [Voice] 
+#646 [Voice] Too easy
+#647 [Voice] 
+#648 [Voice] 
+
+  Sagat
+#649 [Voice] Tiger
+#650 [Voice] Tiger..
+#651 [Voice] Tiger crash
+#652 [Voice] Tiger blow
+#653 [Voice] Genocide
+#654 [Voice] Raid
+#655 [Voice] 
+#656 [Voice] 
+#657 [Voice] 
+#658 [Voice] 
+#659 [Voice] 
+
+  Chun-Li
+#660 [Voice] Senretsukyaku
+#661 [Voice] Kikoushou
+#662 [Voice] Kikouken
+#663 [Voice] Tenshoukyaku
+#664 [Voice] Hazan
+#665 [Voice] 
+#666 [Voice] 
+#667 [Voice] 
+#668 [Voice] 
+#669 [Voice] 
+#670 [Voice] Gomenne
+#671 [Voice] 
+#672 [Voice] Yatta!
+#673 [Voice] 
+
+  Rose
+#674 [Voice] Soul spark
+#675 [Voice] Soul threw
+#676 [Voice] Reflect
+#677 [Voice] 
+#678 [Voice] 
+#679 [Voice] 
+#680 [Voice] 
+#681 [Voice] Soreja dame
+#682 [Voice] Madamadane
+#683 [Voice] Yarujanai
+#684 [Voice] 
+
+  Adon
+#685 [Voice] Jaguar
+#686 [Voice] Jaguar kick
+#687 [Voice] Jaguar tooth
+#688 [Voice] 
+#689 [Voice] 
+#690 [Voice] 
+#691 [Voice] 
+#692 [Voice] 
+#693 [Voice] Yes!
+#694 [Voice] 
+#695 [Voice] 
+
+  Sodom
+#696 [Voice] Butsumetsu
+#697 [Voice] Tenchuusatsu
+#698 [Voice] 
+#699 [Voice] 
+#700 [Voice] 
+#701 [Voice] 
+#702 [Voice] Appare!
+#703 [Voice] 
+#704 [Voice] Nukattaa
+
+  M. Bison
+#707 [Voice] Psycho crasher
+#708 [Voice] 
+#709 [Voice] 
+#710 [Voice] 
+#711 [Voice] 
+#712 [Voice] Ha.. nuruiwa
+#714 [Voice] 
+#715 [Voice] 
+
+  Akuma (Gouki)
+#716 [Voice] 
+#717 [Voice] 
+#718 [Voice] 
+#719 [Voice] 
+#720 [Voice] Messatsu
+#721 [Voice] 
+#722 [Voice] 
+
+  Birdie
+#723 [Voice] Bull head
+#724 [Voice] Bull horn
+#725 [Voice] 
+#726 [Voice] 
+#727 [Voice] Go!
+#728 [Voice] To heaven!
+#729 [Voice] I'm No.1!
+#731 [Voice] 
+#732 [Voice] You
+#733 [Voice] Hey
+#734 [Voice] 
+
+----------------------------------------------------------
+ [SFX]
+
+#247 [SFX]
+#248 [SFX]
+#249 [SFX]
+#250 [SFX]
+#251 [SFX]
+#253 [SFX]
+#254 [SFX]
+#256 [SFX]
+#257 [SFX]
+#258 [SFX]
+#259 [SFX]
+#260 [SFX]
+#261 [SFX]
+#262 [SFX]
+#263 [SFX]
+#264 [SFX]
+#265 [SFX]
+#266 [SFX]
+#267 [SFX]
+#268 [SFX]
+#269 [SFX]
+#270 [SFX]
+#271 [SFX]
+#272 [SFX]
+#273 [SFX]
+#274 [SFX]
+#275 [SFX]
+#276 [SFX]
+#277 [SFX]
+#278 [SFX]
+#279 [SFX]
+#280 [SFX]
+#281 [SFX]
+#284 [SFX]
+#285 [SFX]
+#286 [SFX]
+#287 [SFX]
+#288 [SFX]
+#289 [SFX]
+#290 [SFX]
+#291 [SFX]
+#292 [SFX]
+#293 [SFX]
+#294 [SFX]
+#295 [SFX]
+#296 [SFX]
+#297 [SFX]
+#298 [SFX]
+#299 [SFX]
+#300 [SFX]
+#301 [SFX]
+#302 [SFX]
+#303 [SFX]
+#304 [SFX]
+#305 [SFX]
+#306 [SFX]
+#307 [SFX]
+#312 [SFX]
+#313 [SFX]
+#318 [SFX]
+#319 [SFX]
+#320 [SFX]
+#321 [SFX]
+#506 [SFX]
+#515 [SFX]
+#520 [SFX]
+#529 [SFX]
+#538 [SFX]
+#539 [SFX]
+#556 [SFX]
+#562 [SFX]
+#564 [SFX]
+#565 [SFX]
+#568 [SFX]
+#569 [SFX]
+
+  [Source]
+  Street Fighter Zero Arcade Game Track
+  Sony Records  SRCL-3297  Aug 21, 1995
+
+// List contribution by NK
+$end
+

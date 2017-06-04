@@ -1,0 +1,52 @@
+﻿$name=rbff1
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#062 Real Bout - Fatal Fury (Opening: English)
+#034 Jabber Away (Options)
+#035 Hitchhike (Player Select)
+#089 A Number of Rival Leaders (Map Preview)
+#047 Big Shot! (Terry Bogard)
+#044 Thunder Wave (Andy Bogard)
+#041 Taste of Alligator (Joe Higashi)
+#087 Revange (Demo 1)
+#091 Seoul Town (Kim Kaph Wan)
+#043 Floatage for Piano and Harp from Fantasia to Yvonne Lelord (Mai Shiranui)
+#039 White Franco (Franco Bash)
+#056 You Are The Winner (Victory)
+#090 Duck! Duck! Duck! (Duck King)
+#038 Taste of Honey (Bob Wilson)
+#040 Kiss Me (Blue Marry)
+#045 Tch! Tch! Tch! Tch! (Hon Fu)
+#046 Taku Hatsu (Sokaku Mochizuki)
+#094 Has Everybody Arrived Yet? (Demo 2)
+#050 No.1 from Pandora's Box; Encounter (Jin Chonshu)
+#051 No.2 from Pandora's Box; Deep Fog (Jin Chonrei)
+#049 C62 (Ryuji Yamazaki)
+#092 N.D.R (Billy Kane)
+#086 Face to Face (Demo 3)
+#048 Here's Geese! (Geese Howard)
+#042 Kiss Geese (Geese Howard, Final)
+#093 Keep Body and Soul (After the Special Match with Geese)
+#071 Believer -The Sun Set Sky Final- (Ending / Credits Roll)
+#061 Engage 1 (Name Entry)
+#085 Continue
+#063 Game Over
+
+#095 Neo Geo Logo
+#088 Real Bout - Garou Densetsu (Opening: Japanese)
+#075 Hitchhike
+
+  [Source]
+  Real Bout Garou Densetsu / SNK
+  Pony Canyon / Scitron  PCCB-00203  Feb 7, 1996
+
+  [Sound Composer]
+  Shimizm, SHA-V
+
+// List contribution by Tekkou
+// English list by Fuji
+$end

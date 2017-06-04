@@ -1,0 +1,30 @@
+﻿$name=dangar
+$version=2
+$default=046
+$songmax=059
+$main
+
+#046 GAME START～スカイ・クレーパー
+#049 スカイ・クレーパー
+#047 再START～スカイ・クレーパー
+#048 LAST START～スカイ・クレーパー
+#057 WARP音
+#050 ブルー・パラドックス (異次元のテーマ)
+#055 再START～ブルー・パラドクス
+#056 LAST START～ブルー・パラドクス
+#058 バドー (小型ボス)
+#053 ズール (中型ボス)
+#059 ガルス (中型ボス)
+#054 ノイド (大型ボス)
+#051 GAME OVER
+#052 CD未収録曲 (Name Entry)
+
+  ■出典
+  GAME SOUND NICHIBUTSU -G.S.M. Nichibutsu 1-
+  PONY CANYON / SCITRON  D28B0004  1988.09.21
+
+  ■作曲
+  吉田 健志
+
+//
+$end

@@ -1,0 +1,37 @@
+﻿$name=mslug4
+$version=2
+$default=002
+$songmax=255
+$main
+
+#002 Neo Geo Logo
+
+#050 Declare War (Opening Demo) <time="24">
+#036 The Military System (Operation Explanation, Ranking) <time="52">
+#039 Choose a Person (Player Select) <time="20">
+#033 Let's Run Through (Stage 1 "City") <time="3:11">
+#034 Show Spirit (Stage 2 "National Border") <time="3:24">
+#035 Snowy Road (Stage 3 "Snowy Mountain") <time="2:25">
+#040 Cadaverous (Stage 4 "Haunted House") <time="3:35">
+#041 Go Ahead! (Stage 5 "Freighter") <time="3:16">
+#051 Secret Place! (Stage 6 "Final") <time="3:12">
+#042 The Scene of a Hard Battle (Boss 1) <time="3:21">
+#043 Furiously (Boss 2) <time="3:08">
+#045 Uncanny Laugh (Final Boss First Half) <time="48">
+#044 Final Madness (Final Boss Second Half) <time="2:42">
+#046 Escape (Demo After Defeating the Final Boss) <time="36">
+#047 Good Ending (Good Ending) <time="39">
+#048 Bad Ending (Bad Ending) <time="45">
+#049 End to the War (Staff Roll) <time="2:15">
+#038 Gravestone (Game Over) <time="10">
+#037 Carry Out (Stage Clear) <time="10">
+
+  [Source]
+  Metal Slug Complete Sound Box
+  Happinet Corporation  SCDC-00546  Sep 6th, 2006
+
+  [Sound Composers]
+  Toshikazu Tanaka
+
+// Base list contributed by Knurek
+$end

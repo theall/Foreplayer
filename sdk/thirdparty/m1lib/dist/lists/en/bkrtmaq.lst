@@ -1,0 +1,36 @@
+$name=bkrtmaq
+$version=2
+$default=$40
+$main
+
+#064 Coin Sound
+#019 Ma-Q Daibouken
+#002 Find the Coronet!
+#009 Mysterious Natives
+#024 Cleared
+#011 What Picture?
+#004 Three Gems
+#013 Bakuretsu 1-minute Battle
+#007 Stage Completed
+#096 Over the Volcano
+#026 Samba with Elephants
+#017 Chased by Xylocopinae
+#098 At Sunbaked Desert
+#028 V.S. the Archenemy 1
+#021 V.S. the Archenemy 2
+#100 Closing Credits
+#030 Today's Lucky Animal
+
+#015 (not on CD)
+#073 (not on CD)
+
+  [Source]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097  Dec 16, 1993
+
+  [Composed and Arranged]
+  Ayako Sasou
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

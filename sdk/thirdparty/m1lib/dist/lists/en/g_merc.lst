@@ -1,0 +1,47 @@
+﻿$name=g_merc
+$version=2
+$default=146
+$songmax=255
+$main
+
+#146 Arcade Mode: Credit
+#129 Arcade Mode: Opening Theme
+#130 Arcade Mode: Mission 1 <time="1:33" fadeout="yes" fadeoutlength="10">
+#136 Arcade Mode: Boss 1 <time="0:32" fadeout="yes" fadeoutlength="10">
+#142 Arcade Mode: Round Clear
+#131 Arcade Mode: Mission 2 <time="2:01" fadeout="yes" fadeoutlength="10">
+#137 Arcade Mode: Boss 2 <time="0:26" fadeout="yes" fadeoutlength="10">
+#132 Arcade Mode: Mission 3 <time="1:52" fadeout="yes" fadeoutlength="10">
+#133 Arcade Mode: Mission 4 <time="1:33" fadeout="yes" fadeoutlength="10">
+#134 Arcade Mode: Mission 5 <time="1:20" fadeout="yes" fadeoutlength="10">
+#139 Arcade Mode: Boss 4 <time="0:54" fadeout="yes" fadeoutlength="10">
+#135 Arcade Mode: Mission 6 <time="1:17" fadeout="yes" fadeoutlength="10">
+#138 Arcade Mode: Boss 3 & Final Mission <time="0:30" fadeout="yes" fadeoutlength="10">
+#140 Arcade Mode: Ending Theme
+#141 Arcade Mode: Staff Roll
+#144 Arcade Mode: Ranking
+#145 Arcade Mode: Ranking Display
+#143 Arcade Mode: Game Over
+#147 Original Mode: Mission 1 <time="1:17" fadeout="yes" fadeoutlength="10">
+#157 Original Mode: Boss 1 <time="0:29" fadeout="yes" fadeoutlength="10">
+#159 Original Mode: Round Clear
+#148 Original Mode: Mission 2 <time="1:44" fadeout="yes" fadeoutlength="10">
+#155 Original Mode: Shop <time="0:37" fadeout="yes" fadeoutlength="10">
+#149 Original Mode: Mission 3 <time="1:19" fadeout="yes" fadeoutlength="10">
+#150 Original Mode: Mission 4 <time="1:49" fadeout="yes" fadeoutlength="10">
+#151 Original Mode: Mission 5 <time="1:38" fadeout="yes" fadeoutlength="10">
+#158 Original Mode: Boss 2 <time="0:37" fadeout="yes" fadeoutlength="10">
+#152 Original Mode: Mission 6 <time="1:24" fadeout="yes" fadeoutlength="10">
+#153 Original Mode: Mission 7 <time="1:31" fadeout="yes" fadeoutlength="10">
+#154 Original Mode: Mission 8 <time="1:31" fadeout="yes" fadeoutlength="10">
+#162 Original Mode: Final Mission <time="0:41" fadeout="yes" fadeoutlength="10">
+#156 Original Mode: Ending Theme
+#161 Original Mode: Staff Roll
+#160 Original Mode: Game Over
+
+  [Sound Composer]
+  Manami Matsumae
+
+// M1 list contributed by Knurek
+// Tagging data from Project 2612
+$end

@@ -1,0 +1,108 @@
+﻿$name=msword
+$version=2
+$default=000
+$songmax=086
+$main
+
+#000 Opening Demo <time="17">
+#028 Credit <time="3">
+#001 Departure (Start Point Select) <time="10">
+//In SNES version, you can listen to this tune.
+#002 Road to the Tower (Round 1) <time="2:14.6">
+#003 The Dragon's Tower 1 (Round 2) <time="1:36.5">
+#015 The Dragon's Tower 2 (Scroll A Group) <time="1:16.4">
+#013 The Flame Floor (Fire Stage) <time="55.5">
+#022 Boss Demo
+#008 Red Dragon (Round 2 Boss) <time="53.5">
+#023 Round Clear <time="8">
+#017 Bonus <time="11">
+#004 The Dragon's Tower 3 (Round 3) <time="2:32.2">
+#014 The Water Floor (Water Stage) <time="1:00">
+#009 Mage Quimyra (Round 3 Boss) <time="1:02.1">
+#005 The Dragon's Tower 4 (Round 4) <time="1:43.4">
+#010 King Crawler (Round 4 Boss) <time="1:11.7">
+#006 The Dragon's Tower 5 (Round 5) <time="59">
+#011 Double Dragon (Round 5 Boss) <time="35.5">
+#007 The Dragon's Tower 6 (Round 6) <time="1:13.5">
+#016 The Final Floor (50th Floor) <time="59.6">
+#012 Drokmar's End 1 <time="49.3">
+#000 Drokmar's End 2 <time="17">
+#043 [Voice] (Drokmar's End)
+#027 Final Round Clear
+#018 End Demo (Safe Return)
+#020 Game Over
+#019 Ranking Display
+#021 unused
+//not released on CD
+
+  [Source]
+  Street Fighter II -G.S.M. Capcom 4- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00056  Mar 21, 1991
+
+-------------------------------------------------------------------
+
+ [Voice]
+
+#042 [Voice]
+#043 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#078 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+
+ [SFX]
+
+#026 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#086 [SFX]
+
+// List Contribution by NK
+$end

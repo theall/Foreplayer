@@ -1,0 +1,96 @@
+﻿$name=burningf
+$version=2
+$default=002
+$fixed_volume=278
+$main
+
+#002 Neo Geo Logo
+
+#042 Title
+#041 Player Select <time="31">
+#033 Stage 1 - Main Street <time="2:06.7">
+#045 Bar <time="29.6">
+#039 Sub-Boss (Stage 1-Truck, 2-Tom Anderson & Azusa Heike, 3-Gary Powell) <time="41.5">
+#044 Boss (Stage 1-Yujiro Heike, 2&4-Marshall) <time="1:18.6">
+#036 Stage Clear
+#034 Stage 2 - Shopping Center I <time="2:23.8">
+#035 Shop <time="37.2">
+#053 Stage 2 - Shopping Center II <time="1:20.8">
+#043 Stage 2 - Shopping Center III <time="2:05.6">
+#046 Stage 3 - Downtown I <time="2:04.4">
+#050 Stage 3 - Downtown II <time="1:32.2">
+#054 Boss (Stage 3-Nitou Ryuji) <time="52.2">
+#056 Stage 4 - South Bay Area <time="1:49.7">
+#063 Warehouse <time="37.1">
+#060 Stage 5 - Sea Area <time="2:32.1">
+#059 Boss (Stage 5-Casterora) <time="2:41.4">
+#070 Final Stage Clear
+#061 Credits Roll
+#037 Name Entry <time="37.2">
+#048 Game Over
+#038 Unused
+
+----------------------------------------------------------------------------------------
+ [Voice]  Note: Missing some other Voices.
+
+#254 [Voice]
+#255 [Voice]
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#096 [SFX]
+#097 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#127 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#212 [SFX]
+#213 [SFX]
+#215 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#243 [SFX]
+#244 [SFX]
+#245 [SFX]
+#246 [SFX]
+#247 [SFX]
+#248 [SFX]
+#249 [SFX]
+#250 [SFX]
+#251 [SFX]
+#252 [SFX]
+#253 [SFX]
+
+// List contributed by NK
+// English list by NK
+$end

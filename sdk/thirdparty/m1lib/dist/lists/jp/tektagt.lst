@@ -1,0 +1,39 @@
+﻿$name=tektagt
+$version=2
+$default=$022
+//$songmax=$fff
+$main
+
+$022 Attract
+$020 Character Select
+$017 Jin Stage BGM
+$011 Paul Stage BGM
+$014 King Stage BGM
+$010 Xiaoyu Stage BGM
+$01b School Stage BGM
+$01e Law Stage BGM
+$015 Nina Stage BGM
+$019 Hwoarang Stage BGM
+$016 Yoshimitsu Stage BGM
+$018 Eddy Stage BGM
+$013 Lei Stage BGM
+$01c Ogre Stage BGM
+$01a Middle Boss BGM
+$012 Last Boss BGM
+$021 Staff Roll
+$01d continue
+$01f Name Entry
+$110 Jingle 1 (Rannyuu)
+$130 Jingle 2 (Join)
+
+//  [S.E.]
+
+  ■出典
+  鉄拳TAGトーナメント オリジナルサウンドトラック
+  BANDAI MUSIC ENTERTAINMENT  APCG-4046  1999.09.21
+
+  ■作曲・編曲
+  三宅優, 岡部啓一, 遠山明考, 佐野信義, 濱本理央
+
+// List : Ayaya
+$end

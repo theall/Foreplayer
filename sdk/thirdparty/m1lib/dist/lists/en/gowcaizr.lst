@@ -1,0 +1,107 @@
+$name=gowcaizr
+$version=2
+$default=002
+$main
+
+#002 Neo-Geo Logo
+#033 Ai Gowcaizer (Opening)
+#057 Ai Gowcaizer (Title)
+#035 Kaiser Beat (Player Select)
+#038 Zen Kaisen Shi Gowcaizer (Gowcaizer Theme)
+#050 Kachi Mashi ta... (Win Demo)
+#039 Come On Baby! Teka (Captain Atlantis Theme)
+#040 Gekkou Kitan (Fudomaru Theme)
+#037 Psycho Eyes (Hellstinger Theme)
+#045 Kuzureru Suna (Shikou Kyousuke Theme)
+#046 Makeru na Henshin Banchou Braider (Braider Theme)
+#052 Yuusha no Senaka (Chuukan Demo)
+#044 Watashi ga Aite da (Rannyuu Mode)
+#041 Ten Hare Musume Daibouken (Karin Theme) 
+#047 Haato Jakku ni Koi o Shite (Shaia Theme)
+#043 Kenka Enbu (Shin Ryuu Theme)
+#048 Factory Marion (Marion Theme)
+#042 W. Jungle (Platonic Twins Theme)
+#049 Kengorythm (Last Boss Fight Theme)
+#051 Kinkonkankon (Ending 1)
+#055 Choujin he no Michi (Ending 2)
+#053 Yabou (Ending 3)
+#034 Yappari Aitte sa... (Staff Roll)
+#056 Honoo no 10 Count (Continue)
+#054 Tate! Tatsun da Goo (Game Over)
+#036 Unknown
+
+-----------------------------------------------------------
+ [Voice]  
+
+#241 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#127 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#242 [SFX]
+
+  [Source]
+  Choujin Gakuen Gowcaizer
+  Pony Canyon / Scitron  PCCB-00176  1995.06.21
+
+// List Contribution by NK
+// English list by Knurek
+$end

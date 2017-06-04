@@ -1,0 +1,32 @@
+﻿$name=lresort
+$version=2
+$default=002
+$fixed_volume=185
+$main
+
+#002 NEO-GEO Logo
+#055 LAST RESORT TITLE (タイトル)
+#044 JACK TO THE METRO (ステージ 1)
+#064 VICE (ボス 1)
+#069 STAGE CLEAR
+#043 THE RUINS OF METRO (ステージ 2)
+#037 TYRANNICAL (ボス 2)
+#050 SONAR (ステージ 3)
+#065 COLD MACHINE (ボス 3)
+#051 THE MELTING POINT (ステージ 4)
+#066 DUSKY (ボス 4)
+#052 DON'T TOUCH ME BABY (ステージ 5-1)
+#067 FEAR (ステージ 5-2)
+#068 LEGEND OF KING (ボス 5)
+#070 LAST STAGE CLEAR ～ THE SUNSET SKY PART II (エンディング)
+#054 CONTINUE
+#057 GAME OVER
+#085 FLOWER DANCING (ランキング)
+#053 THE SUNSET SKY PART II -short version- (エンディング)
+
+  ■出典
+  餓狼伝説・ラストリゾート / SNK
+  PONY CANYON / SCITRON  PCCB-00087  1992.5.21
+
+// List contribution by Razさん
+$end

@@ -1,0 +1,40 @@
+﻿$name=douni
+$version=2
+$default=016
+$main
+
+#016 Start <time="4">
+#002 Main Theme
+#021 Gate Opened <time="4">
+#001 Extra Chance <time="17.3">
+#009 Extra <time="10">
+#010 Clear
+#012 Miss
+#003 Game Over
+#017 Ranking Table
+
+---------------------------------------------------
+ [SFX] 
+
+#004 [SFX] Hammering
+#005 [SFX] Moving on stairs
+#006 [SFX] Death's Head blocked
+#007 [SFX] Key on the hole <time="5">
+#008 [SFX] Key blocked
+#013 [SFX] Squashed an enemy
+#016 [SFX] Start
+#018 [SFX] Enemies changing to blue
+#019 [SFX] Slapped an enemy
+#020 [SFX] Player moving <time="5">
+#021 [SFX] Gate opened <time="5">
+#022 [SFX] 
+#023 [SFX] Falling down
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+// English list by Fuj
+$end

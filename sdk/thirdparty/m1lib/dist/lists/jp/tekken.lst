@@ -1,0 +1,151 @@
+﻿$name=tekken
+$version=2
+$default=321
+$songmax=335
+$main
+
+#321 DEMO BGM
+#102 CHARACTER SELECT BGM
+#108 WINDERMERE, U.K.
+#105 マリンスタジアム, 日本
+#099 KING GEORGE ISLAND, ANTARCTICA
+#112 ACROPOLIS, GREECE
+#115 京都, 日本
+#279 MONUMENT VALLEY, U.S.A.
+#329 四川省, 中華人民共和国
+#127 VENEZIA, ITALY
+#124 FIJI, PHILIPPINES
+#121 ANGKOR VAT, CAMBODIA
+#118 CHICAGO, U.S.A.
+#182 STAFF ROLL
+#189 NAME ENTRY
+
+#333 UNUSED ?
+
+#001 STEREO CHECK
+
+//#103 CHARACTER SELECT (2)
+//#104 CHARACTER SELECT (3)
+//#100 KING GEORGE ISLAND, ANTARCTICA (2)
+//#101 KING GEORGE ISLAND, ANTARCTICA (3)
+//#109 WINDERMERE, U.K. (2)
+//#110 WINDERMERE, U.K. (3)
+//#106 マリンスタジアム, 日本 (2)
+//#107 マリンスタジアム, 日本 (3)
+//#113 ACROPOLIS, GREECE (2)
+//#114 ACROPOLIS, GREECE (3)
+//#116 京都, 日本 (2)
+//#117 京都, 日本 (3)
+//#278 MONUMENT VALLEY, U.S.A (2)
+//#280 MONUMENT VALLEY, U.S.A (3)
+//#330 四川省, 中華人民共和国 (2)
+//#331 四川省, 中華人民共和国 (3)
+//#332 四川省, 中華人民共和国 (4)
+//#128 VENEZIA, ITALY (2)
+//#129 VENEZIA, ITALY (3)
+//#125 FIJI, PHILIPPINES (2)
+//#126 FIJI, PHILIPPINES (3)
+//#122 ANGKOR VAT, CAMBODIA (2)
+//#123 ANGKOR VAT, CAMBODIA (3)
+//#119 CHICAGO, U.S.A. (2)
+//#120 CHICAGO, U.S.A. (3)
+//#183 STAFF ROLL (2)
+//#184 STAFF ROLL (3)
+//#191 RESULT (2)
+//#334 UNUSED ? (2)
+//#335 UNUSED ? (3)
+
+
+#000 [Voice] Good morning
+#259 [Voice] Great!
+#260 [Voice] Continue?
+#261 [Voice] One
+#265 [Voice] Final Round
+#266 [Voice] Fight
+#267 [Voice] You Win
+#268 [Voice] You Lose
+#269 [Voice] Draw
+#270 [Voice] Double K.O.
+#271 [Voice] Game Over
+#272 [Voice] Perfect!
+#276 [Voice] Time Up
+#277 [Voice] K.O.
+#262 [Voice] Round 1
+#263 [Voice] Round 2
+#264 [Voice] Round 3
+#176 [Voice] Round 4
+#177 [Voice] Round 5
+#178 [Voice] Round 6
+#179 [Voice] Round 7
+#180 [Voice] Round 8
+#181 [Voice] Round 9
+#258 [Voice] Kazuya Mishima Wins
+#309 [Voice] Kazuya Mishima
+#310 [Voice] Paul Phoenix
+#311 [Voice] King
+#312 [Voice] Nina Williams
+#313 [Voice] Lee Chaolan
+#314 [Voice] Jack
+#315 [Voice] Michelle Chang
+#316 [Voice] Wang Jinrey
+#317 [Voice] Law
+#318 [Voice] Yoshimitsu
+#319 [Voice] Wild Card
+#320 [Voice] Heihachi Mishima
+
+#003 [S.E.] Punch 1
+#005 [S.E.] Punch 2
+#007 [S.E.] Punch 3
+#009 [S.E.] Punch 4
+#011 [S.E.] Kick 1
+#012 [S.E.] Kick 2
+#014 [S.E.] Kick 3
+#015 [S.E.] Whoosh 1
+#019 [S.E.] Whoosh 2
+#023 [S.E.] Whoosh 3
+#025 [S.E.] Whoosh 4
+#027 [S.E.] Block
+#028 [S.E.] Ground 1
+#030 [S.E.] Ground 2
+#032 [S.E.] Bone 1
+#034 [S.E.] Whoosh 5
+#036 [S.E.] Jump 1
+#038 [S.E.] Jump 2
+#042 [S.E.] Punch 5
+#043 [S.E.] Punch 6
+#044 [S.E.] Laser
+#045 [S.E.] Ground 3
+#047 [S.E.] Ground 4
+#049 [S.E.] Punch 7
+#051 [S.E.] Jack ground
+#053 [S.E.] Jack whoosh (P. Jack)
+#055 [S.E.] Jack punch (Tekken 3...)
+#057 [S.E.] Jack punch
+#059 [S.E.] Whoosh 6
+#060 [S.E.] Jack step (Tekken 3...)
+#062 [S.E.] Jack kick
+#065 [S.E.] Start (Tekken 3...)
+#066 [S.E.] Sword
+#067 [S.E.] Crack 1
+#195 [S.E.] Enter Initials
+#257 [S.E.] Start
+#273 [S.E.] Cursor
+#274 [S.E.] A New Challenger Enters!!
+#284 [S.E.] Jack motor
+#286 [S.E.] Jack step
+
+  ■出典
+  鉄拳 / NAMCO GAME SOUND EXPRESS VOL.17
+  VICTOR ENTERTAINMENT  VICL-15039  1995.03.24
+
+  ■作曲
+  高柳 佳恵, 荒川 美恵
+
+  ■編曲
+  高柳 佳恵, 荒川 美恵, 佐野 信義, 細江 慎治, 相原 隆行
+
+// List Contribution by Ryu7x
+// Updated by Heihachi_73
+// Updated by Fujix
+// Updated by Ayaya
+$end

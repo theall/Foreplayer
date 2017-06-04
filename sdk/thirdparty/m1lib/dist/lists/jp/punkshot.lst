@@ -1,0 +1,27 @@
+﻿$name=punkshot
+$version=2
+$default=$88
+$songmax=$8e
+$main
+
+$88 Title～punkshot～ (タイトルデモ)
+$85 Do play a game! (セレクトデモ)
+$8a "Do it"～the slams～ (スタートBGM～スラム街BGM)
+$84 In the Park (公園BGM)
+$81 A wharf (波止場BGM)
+$89 Way to gooooo... (中間デモ)
+$86 Play, again? ～continue～ (コンティニュー)
+$8e Go baby! (エンドデモ1)
+$8d You punks are soo baad! (エンドデモ2)
+$83 RANKING! (ランキング)
+$82 It's over～GAME SET～ (ゲームオーバー)
+
+$80 "Do it"～the slams～ -no intro- (スラム街BGM -no intro-)
+$8c "Do it"～In the Park～ (スタートBGM～公園BGM)
+$8b "Do it"～A wharf～ (スタートBGM～波止場BGM)
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.3
+  KING RECORDS  KICA-7502  1991.05.05
+
+$end

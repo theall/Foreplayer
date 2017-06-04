@@ -1,0 +1,316 @@
+﻿$name=ij_l7
+$version=1
+$default=01
+$main
+
+$0000 All sound off
+$0001 Raider's March music (Eternal Life multiball / Game Over) (looping)
+$0002 Shooter Groove (looping) (first sounds of Indy Theme)
+$0003 Indy Theme (Main Play) (looping)
+$0004 End of ball music #1 with soft drum rolls (looping)
+$0005 Streets of Cairo music (looping)
+$0006 Soft drum rolls (looping)
+$0007 Multiball music (looping)
+$0008 Jackpot Lit (looping)
+$0009 Continue / Superball chose music (looping)
+$000A Well of Souls music (looping)
+$000B Rope bridge music (looping)
+$000C Escape in the Mine Cart  (looping)
+$000D Get the tank music (looping)
+$000E Get the Idol music (looping)
+$000F Castle gruenwald music (looping)
+$0010 Raven bar music (looping)
+$0011 ? three challenges (looping)
+$0012 ? Start of game music, Indy Theme (looping)
+$0013 Mine cart music (looping)
+$0014 Get 2-Ball multi ball (looping)
+$0015 Steal the stones music (looping)
+$0016 Hurry up music (looping)
+$0017 Choose Wisely music (looping)
+$0018 ? 2-Ball multi ball (looping)
+$0019 ? Totem multiball music (looping)
+$001A Fun jingle and frog quark
+$003C ? Plane flight (ramp?)
+$003D ? dull woosh (movement?)
+$003E ? dull woosh (movement?)
+$003F ? Wood crash (Mine Cart?)
+$0040 Elephant
+$0041 ? Plane/car (ramps?)
+$0042 ? Plane flight (ramps?)
+$0043 ? Plane shooting (too fast)
+$0044 ? Gun shot (gun trigger?)
+$0045 Swordsman Laughter
+$0046 ? Grail switch
+$0047 ? Grail switch
+$0048 ? Grail switch
+$0049 Mine cart sound (looping)
+$004A Mine cart turn sound
+$004B ? tone
+$004C ? hit sound (jet bumper?)
+$004D ? gun shot
+$004E Gun sound
+$004F ? Indy/Shorty Falling cries
+$0050 ? River boat snow slide
+$0051 ? Explosion/Crash
+$0052 ? Gun miss #1
+$0053 ? Gun miss #2
+$0054 Gun sound
+$0055 Swallow-prior to burp effect
+$0056 Mola Ram "You dare not do that?"
+$0057 Snake
+$0058 Marion "Indiana Jones. Always knew someday you'd come walking back through my door"
+$0059 Sallah "Holy smoke my friend, I'm ... I'm so please you're not dead"
+$005A Willie "I hate the water, and I hate YOU!"
+$005B Shorty "I keep telling you, you listen me more, you live longer"
+$005C Henry "Junior? It is you, Junior!"
+$0060 Horse ride
+$0061 ? Motorcycle/car #1
+$0062 Motorcycle #2
+$0063 Truck #1
+$0064 Ball lock sound effect 3
+$0065 Ball lock sound effect 4
+$0067 Ball lock sound effect 2
+$0068 Monkey brian music (looping)
+$0069 Thunder
+$006A Fanfare (prior to burp)
+$006B Monkey scream
+$006C Monkey scream
+$006D Monkey sound (attract random sound with flipper buttons)
+$006E BURP!
+$0070 ? slurping (prior to burp)
+$0071 ? explosion
+$0072 Walter Donovan "Eternal life, Dr. Jones"
+$0073 Lip smack #2 (prior to burp)
+$0074 Lip smack #3 (prior to burp?)
+$0076 Slash
+$0077 Slash
+$0078 Slash
+$0079 Slash
+$007A ? "Uuuh"
+$007B Gun sound
+$007C ? Gun sound
+$007D Gun sound
+$007E ? Arrow flying and hitting dowel
+$007F ? Ball lock sound effect 5
+$0082 Indy "Where's my father?"
+$0084 ? (blood curdling) scream. ? Lossing choose wisely
+$0085 Belloq "We can at least behave like civilised people" (Tilt)
+$0086 Indy "Aahhhhh" Indy falling into pit (path of adventure)
+$0087 Satipo "There's nothing to fear here"
+$0088 Empty gun (during attract mode, trigger pulled)
+$0089 Sallah "Carefully, carefully!" (Tilt warning)
+$008A Sallah "Asps, very dangerous. You go first"
+$008B Sallah "Cairo, city of the living"
+$008C Indy "That's what scares me"
+$008D Sallah (scared) "Ahhhha"
+$008E Sallah "They have 'em" (in the belly of that steel beast)
+$008F Machine gun sound
+$0090 Gun sound
+$0091 Marion "See you tomorrow Indiana Jones!" (Game Over)
+$0092 Marion "At least you haven't forgotten how to show a lady a good time!"
+$0093 tone (step?)
+$0094 tone (step?)
+$0095 tone (step?)
+$0096 tone (step?)
+$0097 tone (step?)
+$0098 tone (step?)
+$0099 tone (step?)
+$009B Henry "You call this archaeology?"
+$009C Marcus "You're meddling with powers you can not possibly comprehend"
+$009D Grail Knight "You must choose"
+$009E Grail Knight "but choose wisely"
+$009F Grail Knight "You have choosen... poorly"
+$00A0 Grail Knight "You have choosen... wisely" with fanfare
+$00A1 Plane flight
+$00A2 Indy "What a vivid imagination"
+$00A3 Mola Ram Laughter
+$00A4 MachineGun sound
+$00A5 ? shoot
+$00A6 Sallah "Get the extra ball"
+$00A8 Chewing
+$00AA Thunder far away
+$00AB Sallah "Jackpot" with flourish
+$00AC Sallah "Quick Indy"
+$00AD Sallah "Super Jackpot" with flourish
+$00AE Sallah "Double Jackpot" with flourish
+$00AF Sallah "Triple Jackpot" with flourish
+$00B0 Sallah "Hit the Jackpot"
+$00B1 Sallah "Get the Super Jackpot"
+$00B2 Sallah "Great shot"
+$00B3 Sallah "Incredible"
+$00B4 Sallah "Your price is doubled"
+$00B5 Sallah "Your price is tripled"
+$00B6 Sallah "Take the path of adventure, Indy"
+$00B7 Sallah "Well done my friend"
+$00B8 Sallah "Excellent"
+$00B9 ? Tone
+$00BA ? tone
+$00BB ? Tone Woohoo Bang
+$00BC Sallah (They have 'em) "in the belly of that steel beast"
+$00C2 Whip sound
+$00C5 Whip smack
+$00CA Indy "Give me the whip" (too fast)
+$00CB Satipo "No time to argue"
+$00CC Satipo "Throw me the idol, I throw you the whip"
+$00CD Satipo "Adios senior"
+$00CE Some Indian "Ah, chilled monkey brains"
+$00CF ? Tone (Totem mulitball?)
+$00D0 ? HiHat, snake
+$00D1 Col. Vogel "And this is how we say good bye in Germany" (outlane drain)
+$00D2 Indy "I came here to save you!"
+$00D4 Henry "And who is gonna come to save you"
+$00D5 Henry "Junior"
+$00D6 Indy "Come on Dad"
+$00D8 Sallah "The Cross of Coronado"
+$00D9 Sallah "The Diamond of Shanghai"
+$00DA Sallah "The Fish of Tayles"
+$00DB Indy "I told you..."
+$00DC Indy "...don't call me Junior"
+$00DD Indy "Mola Ram" (prepare to me Kali)
+$00DE Indy (Mola Ram) "prepare to meet Kali"
+$00DF ? Tone woosh
+$00E0 ? Tone
+$00E1 ? Explosion 1-Drop-Target
+$00E2 Sallah "The Idol of the Incas"
+$00E3 Sallah "The Remains of Nurhachi"
+$00E4 Col. Musgrove "We have top men working on it right now"
+$00E5 Col. Musgrove "Top Men"
+$00E6 Indy "Don't touch anything" ("Eternal Life" ballsaver)
+$00E9 Willie/Shorty "Come on Indy"
+$00EA Ramp Not lit #1 (plane not starting)
+$00EB Ramp Not lit #2 (plane not starting)
+$00EE Bad fanfare (TILT)
+$00EF ? Phew
+$00F0 ? Door lock
+$00F1 ? Tone woosh
+$00F2 ?
+$00F3 ? Düddel dü dü (Return lanes)
+$00F4 Indy "Who?"
+$00F5 Indy "Don't touch anything" (same as 00E6) with electricity sound (Eternal Life)
+$00F6 Henry/Indy "I should have mailed it to the Marx Brothers" "Would you take it easy"
+$00F7 Tusch (rolling over light on PoA)
+$00F8 Tusch (rolling over light on PoA)
+$00F9 Tusch (rolling over light on PoA)
+$00FB ? Explosion (1-Drop-Target)
+$00FC Henry "The Breath of God"
+$00FD Henry "The Word of God"
+$00FE Henry "The Path of God"
+$00FF Explosion (maximum x, captive  ball full-hit)
+$0100 Explosion (maximum x, captive  ball full-hit)
+$0101 Streets of cairo no marion, pitch up
+$0102 Streets of cairo no marion, pitch down
+$0103 Shorty "You cheat Dr. Jones"
+$0104 Indy/Col. Musgrove "We have top men working on it right now" "Who?" "Top Men" (Match sequence)
+$0105 ? Roll effect
+$0106 Muffled gun sound effect
+$0107 ? Big hit
+$0108 ? Indy/Shorty Falling cries (same as 004F) with sound before
+$0109 No credits sound effect (played after 006B monkey sound)
+$010A Hit
+$010B Hit
+$010C Gun sound (Raven Bar)
+$010D Gun sound (Raven Bar)
+$010E Frog quark
+$012C Rope bridge (Ramp triggered)
+$012D ? Dramatic music (mine cart)
+$012E ? Fall music (mine cart)
+$012F ? Start adventure / DCS Sound System Jingle
+$0130 Fanfare (after a mode has finished)
+$0131 ? Down tune
+$0132 Sallah "Extra Ball!" with fanfare
+$0133 Fanfare (PoA)
+$0134 Fanfare (PoA) with ending tune
+$0136 Lock animation music (Multiball sound effect 1)
+$0137 Fanfare (PoA)
+$0138 ? Fanfare (Hand of Fate)
+$0139 Sallah "Collect everything" (Eternal Life Multiball)
+$013A Sallah "Billion" with fanfare (Eternal Life Multiball completed)
+$015E Fanfare (after completing an I-N-D-Y friend)
+$015F Sallah "Incredible" with fanfare
+$0160 Sallah "Well done my friend" with fanfare
+$0161 Sallah "Excellent" with fanfare
+$0162 Bonus multiplier got with whip
+$0163 Extra ball sound alert (usually x4)
+$0164 INDY rollover lit
+$0165 INDY rollover not-lit
+$0166 Hand of Fate #1
+$0167 Hand of Fate #2
+$0168 ? Tone (poa)
+$0169 ? Tone
+$016A ? Tone
+$016B ? Tone
+$016C ? Tone
+$016D ? Tone down (Outlane drain)
+$016E Extra ball sound alert (usually x4)
+$016F Fall down music
+$0170 ? Got Jackpot music
+$0171 ? Wish sound up
+$0172 ? Wish sound down
+$0173 Fanfare (Poa?)
+$0174 Fanfare (Bonus?)
+$0175 Fanfare (prior to mini playfield mode start)
+$0176 Dramatic fanfare (Tank)
+$0177 Get the Tank background music
+$0178 Narrow escape sound effect
+$0179 ? Tone
+$0191 Fanare ? PoA got light
+$0192 Fanare ? PoA got light
+$0193 Fanare ? PoA got light
+$0194 Fanare ? PoA got light
+$0195 Fanare ? PoA got light
+$0196 Fanare ? PoA got light
+$0197 Fanare ? PoA got light
+$0198 Fanare ? PoA got light
+$01A2 ? Fanfare End of Ball
+$01A4 ? Fanfare End of Ball
+$01A6 ? Fanfare End of Ball
+$01A8 ? Fanfare End of Ball
+$01AA ? Fanfare End of Ball
+$01AC ? Fanfare End of Ball
+$01AE ? Fanfare End of Ball
+$01B0 ? Fanfare End of Ball
+$01B2 ? Fanfare End of Ball
+$01B4 ? Fanfare End of Ball
+$01B6 ? Fanfare End of Ball
+$01B8 ? Fanfare End of Ball
+$01B9 ? Fanfare End of Ball (end)
+$01BA Multiball start music
+$01BB Multiball start dramatic jackpot chance (ramp opto)
+$01BD Match Sequence Music (looping)
+$01BE Match Sequence Music (looping)
+$01C0 ? Fanfare loosing (No Match)
+$01C2 ? Fanfare End of Ball (end) with whip (Match!)
+$021C Horse ride (Get the tank/loop)
+$021D Gun sound with riccocet (ADV ENT URE) targets
+$021E Eternal life (ball saved)
+$021F ? Tone
+$0220 ? Explosion (1-Drop-Target)
+$0221 Whip sound (Replay)
+$0222 Whip smack (Replay)
+$0224 ? Gun sound
+$0225 Airplane crash and explosion
+$0227 Exhausted breathing (rope bridge)
+$0228 Indy "Oh Sh**" (Streets of Cairo?)
+$022A Mola Ram "The stones are mine!"
+$022B Chewing tone (Monkey brains)
+$022C Toht "Shut them both"
+$022D Plane flies by
+$022E Marion "My Medaillon"
+$022F Indy "Snakes - Why did it have to be snakes"
+$03D4 Menu System Plus (next)
+$03D5 Menu System Minus (prev)
+$03D6 Abort Beep
+$03D7 Confirm Beep
+$03D8 Warning Beep
+$03D9 Menu Select C
+$03DA Menu Select D (Menu System Entry)
+$03DB Menu System Enter
+$03DC Menu System Escape
+$03DD Test report swish sound
+$03E3 Stop sound
+$05FF (Last checked value)
+
+[Music and Sounds] 
+Chris Granner, Rich Karstens
+
+$end

@@ -1,0 +1,59 @@
+﻿$name=gondo
+$version=2
+$default=266
+$fixed_volume=203
+$main
+
+#266 [S.E.] CREDIT
+#036 GAME START ～ GONDOMANIA (MAIN THEME, US)
+#038 BOSS THEME
+#289 [S.E.] GATE OPEN
+#039 ENDING
+#040 NAMING
+
+#037 GONDOMANIA (MAIN THEME, US)
+
+---------------------------------------------
+  [S.E.]
+
+#260 [S.E.] 
+#261 [S.E.]
+#262 [S.E.]
+#263 [S.E.] PLAYER OUT
+#264 [S.E.]
+#265 [S.E.] GET COIN
+#266 [S.E.] CREDIT
+#267 [S.E.]
+#268 [S.E.]
+#269 [S.E.]
+#270 [S.E.]
+#271 [S.E.]
+#272 [S.E.]
+#273 [S.E.]
+#274 [S.E.]
+#275 [S.E.]
+#276 [S.E.]
+#277 [S.E.]
+#278 [S.E.]
+#279 [S.E.]
+#280 [S.E.]
+#281 [S.E.]
+#282 [S.E.]
+#283 [S.E.]
+#284 [S.E.]
+#285 [S.E.]
+#286 [S.E.]
+#287 [S.E.]
+#289 [S.E.] GATE OPEN
+#290 [S.E.]
+
+  ■出典
+  DECO HISTORY SCENE I / DATA EAST GAME MUSIC SCENE ONE 
+  POLYSTAR / DATAM  H25X-20008  1988.09.25
+
+  ■作曲
+  A.HARA
+
+※魔境戦士(国内版)はメインテーマが違います。
+// List contribution by R
+$end

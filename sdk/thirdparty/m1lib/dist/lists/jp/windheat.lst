@@ -1,0 +1,28 @@
+﻿$name=windheat
+$version=2
+$default=267
+$main
+
+#267 コナミロゴ
+#258 CHECK THE BEAT (タイトルBGM)
+#259 WINDING BEAT (セレクトBGM)
+#260 DANCE! (初級コースBGM)
+#261 YO! MAN! (中級コースBGM)
+#262 ONE,TWO,THREE,FOUR (上級コースBGM)
+#264 SPEED (ゴールBGM)
+#265 GAME OVER (ゲームオーバーBGM)
+#266 TWILIGHT (エンディングBGM)
+#263 BLACK HEAT (ランキングBGM)
+
+#257 スピーカーテスト
+
+  ■出典
+  GTI CLUB c/w JET WAVE & WINDING HEAT ORIGINAL GAME SOUNDTRACK
+  KING RECORDS  KICA-7751  1997.02.05
+
+  ■作曲
+  泉 陸奥彦
+
+// リスト作成: らま
+// なぜかリストの1曲目がスキップされてしまいます。
+$end

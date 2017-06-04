@@ -1,0 +1,120 @@
+﻿$name=ryujin
+$version=2
+$default=003
+$main
+
+#003 Demonstration
+#220 [SFX] Title 1 <time="1.3">
+#221 [SFX] Title 2
+#232 [Voice] Credit Inserted
+#024 Player Select <time="20">
+#002 Stage 1
+#013 Stage 2
+#004 Stage 3
+#011 BOSS 1 (Stage 1, 4, 6)
+#006 Stage Clear <time="4.5">
+#030 Next Stage
+#015 Stage 4
+#014 Stage 5 (Stage 2 Part 2)
+#023 Stage 6
+#001 Boss 2 (Stage 1, 2, 3, 4, 5, 6)
+#006 Congratulations <time="4.5">
+#025 Ending
+#022 Game Over
+
+#026 Unused 1
+#031 Unused 2
+#021 Unused 3
+
+---------------------------------------------------
+ [SFX] 
+
+#027 [SFX] <time="3">
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] <time="3">
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#198 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#228 [SFX] 
+#229 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#240 [SFX] 
+#242 [SFX] 
+#244 [SFX] 
+#245 [SFX] 
+#246 [SFX] 
+#247 [SFX] 
+#248 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#226 [Voice] 
+#227 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#243 [Voice] 
+
+  [Sound Composer]
+  H.Tsuda, T.Inohawa
+
+// List contribution by ZEK.
+$end

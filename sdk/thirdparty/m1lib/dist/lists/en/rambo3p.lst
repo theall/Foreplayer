@@ -1,0 +1,67 @@
+﻿$name=rambo3p
+$version=2
+$default=005
+$main
+
+#005 Title (1) <time="20.5">
+#031 Title (2) <time="2.5">
+#036 Title (3)
+#014 Credit
+#006 Introduction
+#063 Escape from a Base (Scene 1)
+#010 Enemy's Area
+#012 Enemies were Cleared!
+#007 Shooting-Battle (Scene 2)
+#009 Chase (Scene 3)
+#008 Fire in the Dark (Scene 4)
+#011 All-out Attack (Scene 5)
+#013 Ending
+#016 Game Over
+#015 Name Entry
+
+-----------------------------------------------------------
+ [Voice]
+
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#043 [SFX]
+#049 [SFX]
+#050 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#062 [SFX]
+#064 [SFX]
+
+// List contributed by NK
+$end

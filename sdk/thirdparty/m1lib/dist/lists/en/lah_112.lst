@@ -1,0 +1,234 @@
+﻿$name=lah_112
+$version=2
+$default=001
+$main
+
+#001 Jack and the Ripper / Michael Kamen and The Los Angeles Rock And Roll Ensemble Featuring Buckethead
+#002 Big Gun (w/o intro) / AC/DC
+#006 Big Gun (loop) / AC/DC
+// same as #007
+#005 Angry Again / Megadeth
+#004 Real World (loop) / Queensryche
+#010 Real World (loop ver 2) / Queensryche
+#028 Real World (loop ver 3) / Queensryche
+// same as #245
+#016 Real World (chorus) / Queensryche
+// same as #017
+#012 Serenade in G Major, K. 525 "Eine Kleine Nachtmusik": 1. Allegro / Wolfgang Amadeus Mozart
+#003 Untitled 1
+// same as #022
+#008 Untitled 2
+#009 Untitled 3
+#011 Untitled 4
+// same as #018
+#013 Untitled 5
+#014 Untitled 6
+#020 Untitled 7
+#026 Untitled 8
+// same as #244
+#030 Untitled 9
+// same as #246
+#048 Untitled 10
+// same as #248
+#050 Untitled 11
+// same as #249
+#052 Untitled 12
+// same as #250
+#054 Untitled 13
+// same as #251
+#056 Untitled 14
+// same as #252
+#058 Untitled 15
+// same as #253
+#062 Untitled 16
+// same as #247
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#254 [SFX]
+
+  [Reference]
+  Last Action Hero: Music from the Original Motion Picture [Soundtrack]
+  Jul 08, 1993
+
+// List contribution by NK
+$end

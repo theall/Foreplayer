@@ -1,0 +1,46 @@
+﻿$name=turtles
+$version=2
+$default=020
+$main
+
+#020 Opening Demo
+#010 BGM 1 (Oyagameno Senakani - Japanese Comedic Song)
+#036 BGM 2 (Ai Ai - Japanese Children's Song)
+#045 BGM 3 (Minamino Shimano Hame Hame Daiou - Japanese Children's Song)
+#048 BGM 4 (Oumawa Hashiru - JP Children's Song)
+#051 BGM 5 (?)
+#054 BGM 6 (Omocha no Cha Cha Cha - JP Children's Song)
+#057 BGM 7 (Yankee Doodle)
+#060 BGM 8 (Kamome no Suihei-san  - JP Children's Song)
+#016 Stage Clear
+#008 Intermission 1 (Mary Had a Little Lamb)
+#030 Intermission 2 (Osaruno Kagoya - JP Children's Song)
+#032 Intermission 3 (Ten Little Indians)
+#042 Intermission 4 (?)
+
+#014 Unused (Yoakeno Michi - From Anime "A Dog of Flanders")
+#022 Unused (?)
+#011 Cantus of #10
+#017 Cantus of #16
+#033 Cantus of #32
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX] Found child turtles
+#002 [SFX] Enemy freezed
+#003 [SFX] Placed a bomb
+#004 [SFX] Miss
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] Extended
+#028 [SFX] Got a bomb
+#039 [SFX] Child turtles go home
+#040 [SFX] 
+#041 [SFX] 
+
+// List contributed by Hiroshi
+// English list by Fuj
+// Song name info by sedn (#32)
+// Song name info by Peter (#10)
+$end

@@ -1,0 +1,122 @@
+﻿$name=shadfrce
+$version=2
+$default=002
+$main
+
+#002 Title
+#004 Player Select
+#013 Construction Site
+#015 Boss 1 (Oni, Amoeba, Mars)
+#022 Intermission
+#009 Secret Forest
+#010 Weapons Factory
+#007 Scientific Laboratory
+#012 Teaser's Sanctuary
+#001 In Lucifer's Body
+#016 Boss 2 (Lucifer, Bio Mother)
+#017 Ending
+#008 Credits Roll
+#020 Game Over
+
+#003 Unused 1
+#005 Unused 2
+#006 Unused 3
+#011 Unused 4
+#019 Unused 5
+#023 Unused 6
+#014 Unused 7
+#018 Unused 8
+#124 Unused 9
+// Original Piece : Wedding March (Mendelssohn)
+#127 Unused 10
+
+-----------------------------------------------------------
+ [Voice]
+
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#108 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#027 [SFX] Credit
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+
+// List contributed by NK
+$end

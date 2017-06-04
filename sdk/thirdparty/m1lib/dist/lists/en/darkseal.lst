@@ -1,0 +1,115 @@
+﻿$name=darkseal
+$version=2
+$default=$04
+$songmax=$65
+$main
+
+$04 Legend (Introduction)
+$0d The Second Coming of the Hero (Select)
+$0e Audience with the King (King's Message)
+$05 Rise and Fall, Light and Dark (Theme) (Stage 1, 3)
+$0a Fierce Fight (Stage 1, 3 Boss)
+$0f Accomplished (Stage Clear)
+$06 Invasion of Evil Army (Stage 2 / Opening)
+$0b Life or Death Crisis (Stage 2 Boss)
+$08 Threat of Darkness (Stage 4)
+$0c Mystery (Transform)
+$09 Decisive Battle (Stage 5)
+$11 Dark Seal, New Beginning (Ending)
+$10 Ambition (Theme of Dark Knight)
+
+-----------------------------------------
+
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX]
+$1b [SFX]
+$1c [SFX]
+$1d [SFX]
+$1e [SFX]
+$1f [SFX]
+$20 [SFX]
+$21 [SFX]
+$22 [SFX]
+$23 [SFX]
+$24 [SFX]
+$25 [SFX]
+$26 [SFX]
+$27 [SFX]
+$28 [SFX]
+$29 [SFX]
+$2a [SFX]
+$2b [SFX]
+$2c [SFX]
+$2d [SFX]
+$2e [SFX]
+$2f [SFX]
+$30 [SFX]
+$31 [SFX]
+$32 [SFX]
+$33 [SFX]
+$34 [SFX]
+$35 [SFX]
+$36 [SFX]
+$37 [SFX]
+$38 [SFX]
+$39 [SFX]
+$3a [SFX]
+$3b [SFX]
+$3c [SFX]
+$3d [SFX]
+$3e [SFX]
+$3f [SFX]
+$40 [SFX]
+$41 [SFX]
+$42 [SFX]
+$43 [SFX]
+$44 [SFX]
+$45 [SFX]
+$46 [SFX]
+$47 [Voice] I'm the knight.
+$48 [Voice]
+$49 [Voice]
+$4a [Voice]
+$4b [Voice] I'm the wizard.
+$4c [Voice]
+$4d [Voice]
+$4e [Voice]
+$4f [Voice] I am the bard.
+$50 [Voice]
+$51 [Voice]
+$52 [Voice] Power
+$53 [Voice] I amu ninja.
+$54 [Voice]
+$55 [Voice]
+$56 [Voice]
+$57 [Voice]
+$58 [Voice]
+$59 [SFX]
+$5a [SFX]
+$5b [SFX]
+$5c [SFX]
+$5d [SFX]
+$5e [SFX]
+$5f [SFX]
+$60 [SFX]
+$61 [SFX]
+$62 [SFX]
+$63 [SFX]
+$64 [SFX]
+$65 [SFX]
+
+  [Source]
+  Dark Seal / Data East
+  Pony Canyon / Scitron  PCCB-00048  Dec 15, 1990
+
+  [Sound Composers]
+  Hiroaki Yoshida (MARO), Tatsuya Kiuchi (Mr. K), Kenji Mori
+
+// English List by Fujix
+$end

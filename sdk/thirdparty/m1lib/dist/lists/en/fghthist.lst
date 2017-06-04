@@ -1,0 +1,172 @@
+﻿$name=fghthist
+$version=2
+$default=007
+$main
+
+#007 Challenge
+#008 Ray's Theme
+#019 Hurry Up! Ray!!
+#022 Dialogue
+#009 Feilin's Theme
+#020 Hurry Up! Feilin!!
+#010 Ryoko's Theme
+#021 Hurry Up! Ryoko!!
+#011 Matlok's Theme
+#023 Hurry Up! Matlok!!
+#012 Samchay's Theme
+#025 Hurry Up! Samchay!!
+#013 Lee's Theme
+#026 Hurry Up! Lee!!
+#014 Mizoguchi's Theme
+#027 Hurry Up! Mizoguchi!!
+#015 Jean's Theme
+#028 Hurry Up! Jean!!
+#016 Marstorius' Theme
+#029 Hurry Up! Marstorius!!
+#017 Clown's Theme
+#030 Hurry Up! Clown!!
+#018 Kalnov's Theme
+#031 Hurry Up! Kalnov!!
+#006 Epilogue
+#024 Game Over
+
+
+-----------------------------------------------------------
+
+#004 ?
+#005 ?
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [Voice]
+#037 [Voice]
+#038 [SFX]
+#039 [Voice]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [Voice]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#051 [Voice]
+#052 [Voice]
+#054 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#059 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#063 [Voice]
+#064 [Voice]
+#065 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#069 [Voice]
+#070 [Voice]
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#074 [Voice]
+#075 [Voice]
+#076 [Voice]
+#077 [Voice]
+#078 [Voice]
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#094 [Voice]
+#095 [Voice]
+#096 [Voice]
+#097 [Voice]
+#098 [Voice]
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#102 [Voice]
+#103 [Voice]
+#104 [Voice]
+#105 [Voice]
+#106 [Voice]
+#107 [Voice]
+#108 [Voice]
+#109 [Voice]
+#110 [Voice]
+#111 [Voice]
+#112 [Voice]
+#113 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#120 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+#124 [SFX]
+#125 [Voice]
+#126 [Voice]
+#127 [Voice]
+#128 [Voice]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+#143 [Voice]
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#154 [SFX]
+#155 [Voice]
+#156 [SFX]
+#157 [Voice]
+#158 [SFX]
+#159 [Voice]
+
+  [Soundtrack]
+  Fighter's History / Data East Gamadelic
+  Pony Canyon / Scitron  PCCB-00123  Jun 18, 1993
+
+// List Contribution by Min
+// fix by anonymous
+$end

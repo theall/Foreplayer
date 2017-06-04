@@ -1,0 +1,28 @@
+﻿$name=mrviking
+$version=2
+$default=130
+$songmax=149
+$main
+
+#130 Start - Main BGM
+#129 Main BGM
+#136 Round Clear
+#147 Explosion - Round Clear
+#132 Miss!
+#131 Name Entry
+
+-----------------------------------------
+ [SFX]
+
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#140 [SFX]
+#141 [SFX]
+#143 [SFX]
+#144 [SFX]
+#146 [SFX]
+#148 [SFX]
+#149 [SFX]
+
+$end

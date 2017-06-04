@@ -1,0 +1,210 @@
+﻿$name=mpangj
+$version=2
+$default=000
+$fixed_volume=181
+$main
+
+#000 Title Screen <time="17.9">
+#115 [Voice] Mighty Pang!
+#013 Ranking Table (Demo) <time="53.4">
+#129 [Voice] Thank You (Credit Inserted)
+#014 Mode Select
+#120 [Voice] OK !
+#030 Tour Mode Start !
+#022 Himeji Castle, Himalaya (Stage 1-3, 13-15)
+#015 Chinese Wall (Stage 4-6)
+#023 Ayers Rock (Stage 7-9)
+#027 Caught in a Typhoon !
+#016 Angkor Wat (Stage 10-12)
+#007 Hurry Up ! (20 sec.) <time="12">
+#002 Hurry Up ! (8 sec.) 
+#005 Continue ? <time="14.8">
+#009 Asia Region Cleared 
+#010 Going to the Next Region
+
+#017 Kremlin (Stage 16-18)
+#023 Arctic Circle, Big Ben (Stage 19-24)
+#009 Northern Sea Region Cleared
+#010 Going to the Next Region
+
+#018 Kilimanjaro, Sahara Desert (Stage 16-18, 22-24)
+#019 Abu Simbel (Stage 19-21)
+#009 Africa Region Cleared
+#010 Going to the Next Region
+
+#020 Santorini Island, Colosseo (Stage 25-30)
+#021 Neuschwanstein Castle, Amsterdam (Stage 31-36)
+#022 Mont St. Michelle (Stage 37-39)
+#009 Europe Region Cleared
+#010 Going to the Next Region
+
+#026 Amazon, Angel's Fall, Mayan Ruins (Stage 40-48)
+#009 Sounth America Region Cleared
+#010 Going to the Next Region
+
+#024 Monument Valley (Stage 49-51)
+#022 Quebec (Stage 52-54)
+#025 Statue of Liverty (Stage 55-57)
+#010 North America Region Cleared (All Region Cleared)
+#011 Ending - Credits
+#004 Name Entry
+#003 Game Over
+
+
+#014 Panic Mode <time="10">
+#049 [SFX] Selected
+#022 Level 1-5, 41-55, 61-65, 91-95 (Himaraya, Himeji Castle)
+#023 Level 6-10, 16-20, 26-30, 71-75, 96-99 (Ayers Rock)
+#016 Level 11-15, 21-25, 31-35, 66-70, 81-85 (Angkor Wat)
+#015 Level 36-40, 56-60, 76-80, 86-90 (Chinese Wall)
+#010 Cleared All Levels
+#012 Ending - Credits
+#004 Name Entry
+#003 Game Over
+
+
+#014 Expert Mode <time="10">
+#049 [SFX] Selected
+#016 Stage 1, 2, 3 (Angkor Wat)
+#023 Stage 4, 5, 6 (Ayers Rock)
+#015 Stage 7, 8, 9 (Chinese Wall)
+#022 Stage 10 (Himeji Castle)
+#010 Cleared
+#011 Ending - Credits
+#004 Name Entry
+#003 Game Over
+
+#001 Unused 1
+#006 Unused 2
+#008 Unused 3
+#028 Unused 4
+#029 Unused 5
+#031 Unused 6
+
+---------------------------------------------------
+ [SFX] 
+
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] Mighty Pang
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] OK
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] Thank you
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+
+  [Sound Composer] 
+  Takafumi Wada
+
+  [SFX Designer]
+  Yoko Mizumoto
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

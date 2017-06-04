@@ -1,0 +1,19 @@
+﻿$name=mainevt
+$version=2
+$default=$a3
+$songmax=$ff
+$main
+
+$a3 The Main Event (Attract mode / Ranking)
+$15 Coin
+$a4 Who is The Strongest? (Selection)
+$1e Exciter! (Stage clear)
+$a5 You Shall Smart for This! (Game over)
+
+$a6 ???
+
+  [Source]
+  Konami Game Music Collection Vol.0
+  King Records  276A-7708  Jul 21, 1989
+
+$end

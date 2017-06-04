@@ -1,0 +1,100 @@
+﻿$name=astyanax
+$version=2
+$default=052
+$fixed_volume=100
+$main
+
+#052 [SFX] Credit Inserted
+#049 [SFX] Thunder
+#057 Stage 1 - In the Forest
+#054 Stage 1 - Boss
+#066 Stage Clear <time="4.8">
+#058 Stage 2 - In the Cave
+#060 Stage 2 - Boss
+#066 Stage Clear <time="4.8">
+#059 Stage 3 - On the Lake
+#011 [Voice] Don't you give up playing the game ? <time="3.7">
+#010 [Voice] Hahahaha <time="3">
+#067 Continue <time="15.2">
+#055 Stage 3 - Boss
+#066 Stage Clear <time="4.8">
+#063 Stage 4 - On the Lift
+#056 Stage 4 - In the Gate <time="8.5">
+#061 Stage 5 - In the Castle
+#056 Stage 5 - Boss
+#006 [Voice] <time="2.5">
+#062 Last Stage
+#053 Last Boss
+#038 [SFX] Flash <time="2">
+#026 [SFX] Tower breaking down<time="4.7">
+#065 Ending
+#064 Name Entry
+#068 Game Over
+
+---------------------------------------------------
+ [SFX] 
+
+#012 [SFX] 
+#013 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#001 [Voice] 
+#002 [Voice] 
+#003 [Voice] 
+#004 [Voice] 
+#005 [Voice] 
+#006 [Voice] 
+#007 [Voice] 
+#008 [Voice] 
+#009 [Voice] 
+#010 [Voice] 
+#011 [Voice] 
+#014 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+
+  [Sound Composer]
+  Kiyoshi Yokoyama
+
+// List contribution by ZEK.
+$end

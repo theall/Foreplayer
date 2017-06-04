@@ -1,0 +1,35 @@
+﻿$name=cybrcycc
+$version=2
+$default=265
+$main
+
+#265 Demo
+#256 Entry
+#259 Rough Rider
+#260 Mighty Sight
+#262 Bahama
+//??? Sweeper
+#258 Game Over
+#268 Hi-Side
+#257 Tag and Rag
+#261 Get a Law
+#263 wind ride kids
+#264 Superior
+#267 Peggy the Poo
+#266 Naughty Seven
+
+#003 Stereo Check
+
+  ■出典
+  CYBER CYCLES / NAMCO GAME SOUND EXPRESS Vol.23
+  VICTOR ENTERTAINMENT  VICL-15047  1995.10.21
+
+  ■作曲
+  YURI MIKADO: #265, #259, #260, #267  
+  佐宗 綾子: #256, #258, #257, #261, #264, #266
+  佐野 信義: #262
+  相原 隆行: #257
+  細江 慎治: #263
+
+// List by Fuj
+$end

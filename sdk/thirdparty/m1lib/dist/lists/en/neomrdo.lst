@@ -1,0 +1,67 @@
+﻿$name=neomrdo
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#039 Attract Mode
+#068 Ranking Table
+#127 Coin
+#047 How to Play
+#041 Main Theme
+#075 Continue ? <time="19">
+#067 Extra Mode
+#073 Round Clear
+#037 Extra Stage
+#073 Stage Clear
+#035 Intermission
+#057 Boss BGM 
+#072 Congratulations
+#070 Game Over
+#071 Name Entry
+
+#036 Unused 1
+#038 Unused 2
+#069 Unused 3
+#074 Unused 4
+
+---------------------------------------------------
+  [SFX]
+
+#127 [SFX] 
+#128 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#217 [Voice] 
+
+// List contribution by ZEK.
+// English list QA and updated by Fuj
+$end

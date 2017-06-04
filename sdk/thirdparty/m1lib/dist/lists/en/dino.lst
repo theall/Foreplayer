@@ -1,0 +1,160 @@
+﻿$name=dino
+$version=2
+$default=036
+$songmax=261
+$fixed_volume=246
+$main
+  
+#036 Demonstration <time="36">
+#037 Title <time="7">
+#000 Player Select <time="29">
+#001 Introduction <time="1:06">
+#038 Overture <time="7">
+#002 Cadillacs - The Four Heroes and Heroine (Stage 1-1) <time="3:01.5">
+#003 Trap in the Silence (Stage 1-2, 2-3, 6-1) <time="1:53">
+#004 Chase (Stage 1-3, 7-1) <time="1:50">
+#032 Boss 1 & 2, Intro <time="10">
+#014 Boss 1 (Stage 1, 5) <time="1:30">
+#024 Stage Clear
+#022 Intermission <time="28">
+#005 Forest of the Poachers (Stage 2-1, 6-2) <time="3:05">
+#006 Premitive World (Stage 2-2, 6-3) <time="1:24">
+#015 Boss 2 (Stage 2, 6, 8) <time="1:37">
+#007 Scud (Stage 3-A) <time="2:04.7">
+#008 Like the Wind (Stage 3-B, 7-2) <time="1:35.5">
+#033 Boss 3, intro <time="14">
+#016 Boss 3 (Stage 3) <time="1:01">
+#009 Stolen Fortress (Stage 4-1, 8-2) <time="2:19">
+#010 Random Fire, Battle Royal (Stage 4-2, 5-2) <time="2:21">
+#011 Ambush (Stage 4-3, 7-3) <time="1:31">
+#035 Boss 4, intro <time="28">
+#017 Boss 4 (Stage 4, 7) <time="1:37">
+#023 Wildness with Dinosaurs (Stage 5-1) <time="2:29.4">
+#019 Intermission (Stage 5) <time="29">
+#020 Intermission (Stage 6)
+#021 Intermission (Stage 7, 8) <time="21">
+#012 Identity of the Evil (Stage 8-1) <time="2:58">
+#013 Madness in the Underground (Stage 8-3) <time="1:53">
+#034 Final Boss, intro <time="37">
+#018 Final Boss <time="1:48">
+#025 Return (Ending 1) <time="1:49">
+#026 Ending 2 <time="2:48">
+#030 Time Out
+#027 Continue 1 <time="39">
+#028 Continue 2 <time="26">
+#029 Game Over
+#031 Name Entry <time="37">
+
+-----------------------------------------------------------
+  [Voice]
+
+#044 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#064 [Voice]
+#065 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#069 [Voice]
+#070 [Voice]
+#071 [Voice]
+#072 [Voice]
+#075 [Voice]
+#076 [Voice]
+#077 [Voice]
+#078 [Voice]
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#121 [Voice]
+#124 [Voice]
+#125 [Voice]
+
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#063 [SFX]
+#073 [SFX]
+#074 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX] <time="5">
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#122 [SFX]
+#123 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX] <time="5">
+#133 [SFX] <time="5">
+#134 [SFX] <time="5">
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+  
+  [Source]
+  Tenchi o kurau II - Sekiheki no tatakai -G.S.M. Capcom 7- / Alfh Lyra
+  Pony Canyon / Scitron   PCCB-00133  Aug 20, 1993
+
+// List Contributed by NK
+// English list by Fuji.
+$end

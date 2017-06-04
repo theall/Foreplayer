@@ -1,0 +1,72 @@
+﻿$name=bangbead
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#033 Attract Mode 1
+#034 Attract Mode 2
+#035 How to Play
+#036 Player Select
+#059 VS Theme
+#039 Theme 1 (Mr.Justice - Round 1) 
+#038 Theme 1 (Mr.Justice - Round 2) 
+#037 Theme 1 (Mr.Justice - Round 3) 
+#055 Challenger Appeared
+#042 Theme 2 (Chinta, Siren - Round 1)
+#041 Theme 2 (Chinta, Siren - Round 2)
+#040 Theme 2 (Chinta, Siren - Round 3)
+#056 Win & Lose
+#045 Theme 3 (Hiromu, Bloody Wolf - Round 1)
+#044 Theme 3 (Hiromu, Bloody Wolf - Round 2)
+#043 Theme 3 (Hiromu, Bloody Wolf - Round 3)
+#050 Continue ?
+#048 Theme 4 (Simon, Surya - Round 1)
+#047 Theme 4 (Simon, Surya - Round 2)
+#046 Theme 4 (Simon, Surya - Round 3)
+#051 Completed
+#052 Ending (Chinta)
+#053 Credits
+#049 Name Entry
+#058 Game Over
+
+#054 Unused Music 1
+#057 Unused Music 2
+
+---------------------------------------------------
+  [SFX] 
+
+#095 [SFX] NEO-GEO Logo
+
+#127 [SFX] 
+
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX]  <time="4.1">
+#225 [SFX]  <time="4.0">
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#229 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+#232 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+
+  [Composers]
+  Visco Sound Team
+
+// List contribution by ZEK.
+// Updated by Yamasan
+// English list Q/A and updated by Fujix
+// SFX added by Simon B.
+$end

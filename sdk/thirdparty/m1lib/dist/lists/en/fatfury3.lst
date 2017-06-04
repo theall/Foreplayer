@@ -1,0 +1,51 @@
+$name=fatfury3
+$version=2
+$default=$02
+//$songmax=$4c
+$main
+
+$02 Neo-Geo Logo
+$21 "Garou Densetsu 3" (Opening Title)
+$22 Clamor in the Crowd (Option Display)
+$23 Hitchhike (Player Select 1)
+$4b Freemason (Player Select 2)
+$24 A Ten Thousand Mile Journey for a Good Challenge (Fighter Select, Map, Winner Demo)
+$25 Engage 2 (VS Display)
+$27 White Franco (Franco Bash Stage)
+$28 Kiss Me <3 (Blue Mary Stage)
+$26 A Taste of Honey (Bob Wilson Stage)
+$29 A Taste of Crocodile (Joe Higashi Stage)
+$4a Engage 3 (Yamazaki Act 1)
+$2b Floating on a Harp and Piano Fantasy for Yvonne Lelord (Mai Shiranui Stage)
+$2c Thunderous Waves (Andy Bogard Stage)
+$2d Chi!! Chi!! Chi!! Chi!! (Hon Fu Stage)
+$2e Taku-Hatsu (Sokaku Mochizuki Stage)
+$2f Big Shot! (Terry Bogard Stage)
+$45 Geese the Raccoon (Before the Geese Special Match)
+$30 It's Geese!! (Geese Howard Stage 1)
+$2a Kissed by Geese (Geese Howard Stage 2)
+$46 Transient Life (After the Geese Special Match)
+$41 Come On! (Accident ~ Before the Yamazaki Match)
+$42 Come On! #2 (Before the Yamazaki Match)
+$31 C62 -Shirokuni- (Ryuji Yamazaki Stage)
+$43 You're a Hundred Years Early! (After the Yamazaki Match)
+$44 Jewel of Light (? Entry)
+$37 No.1 from Pandora's Box "Encounter" (Before Match Demo)
+$32 No.1 from Pandora's Box "Encounter" (? Stage)
+$36 No.2 from Pandora's Box "Lost in the Fog" (Before Match Demo)
+$33 No.2 from Pandora's Box "Lost in the Fog" (?? Stage)
+$47 The Sunset Sky Part V (Ending ~ Staff Roll)
+$4c Game Over 2 (For Ending)
+$3a Splash (Bad Ending)
+$3d Engage 1 (Naming)
+$3b Continue
+$3f Game Over
+
+-----------------------------------------
+ [SFX]
+
+  [Source]
+  Garou Densetsu 3 / Neo Geo Music Performance Group
+  Pony Canyon / Scitron  PCCB-00179  1995.04.21
+
+$end

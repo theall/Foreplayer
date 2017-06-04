@@ -1,0 +1,123 @@
+﻿$name=ddragon3
+$version=2
+$default=001
+$songmax=205
+$main
+
+#001 Rosetta Stone
+#026 Dragon, to the World
+#002 In America
+#005 Weapon Shop
+#003 New Black Warriors
+#004 Theme of Jim
+#025 The road to Sousetsuken
+#009 In China
+#011 Taijiquan Dojo
+#010 Theme of Lee
+#006 In Japan
+#008 Weapon Shop 2
+#007 Theme of Ranzou
+#012 In Italy
+#013 Theme of Giuliano
+#014 In Egypt - Damnatory Forest
+#015 Enter the Dragon
+#022 Shop in the Ruins
+#016 Goblin
+#018 Roppe the Rock Man
+#019 Trap by Hiruko
+#020 Monsters Arise from 20,000 Years Ago
+#021 Theme of Cleopatra
+#027 To Children in the World
+#024 Game Over
+  
+#030 In China (W/O Intro)
+#029 In Japan (W/O Intro)
+#017 (Unused)
+#023 (Unused)
+
+  [Source]
+  Double Dragon 3 / The Conbatribes
+  Pony Canyon / Scitron  PCCB-00065  Jun 21, 1991
+
+-----------------------------------------------
+  
+#163 [Voice]
+#164 [Voice]
+#165 [Voice]
+#166 [Voice]
+#168 [Voice]
+#169 [Voice]
+#170 [Voice]
+#171 [Voice]
+#173 [Voice]
+#177 [Voice]
+#178 [Voice]
+#179 [Voice]
+#180 [Voice]
+#181 [Voice]
+#182 [Voice]
+#183 [Voice]
+#184 [Voice]
+#185 [Voice]
+#186 [Voice]
+#187 [Voice]
+#188 [Voice]
+#189 [Voice]
+#190 [Voice]
+#191 [Voice]
+#192 [Voice]
+#193 [Voice]
+#194 [Voice]
+#195 [Voice]
+#196 [Voice]
+#197 [Voice]
+#198 [Voice]
+#199 [Voice]
+#200 [Voice]
+#201 [Voice]
+#202 [Voice]
+#203 [Voice]
+  
+  
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#167 [SFX]
+#172 [SFX]
+#174 [SFX]
+#176 [SFX]
+#204 [SFX]
+#205 [SFX]
+  
+$end

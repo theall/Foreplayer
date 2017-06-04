@@ -1,0 +1,62 @@
+﻿$name=raiden2
+$version=2
+$default= 001
+$songmax= 078
+$main
+
+#001 Coin <time="1.5">
+#012 Level 1 <time="4:20">
+#026 Boss <time="1:57">
+#024 Clear <time="10">
+#016 Level 2,8 <time="2:51">
+#004 Level 3 <time="3:16">
+#006 Level 4 <time="2:48">
+#014 Level 5 <time="3:04">
+#008 Level 6 <time="2:44">
+#018 Level 7 <time="2:24">
+#028 All Clear
+#090 Name Entry <time="1:03">
+#020 Unused <time="39">
+
+
+#030 [SFX] <time="2">
+#032 [SFX] <time="2">
+#033 [SFX] <time="3">
+#037 [SFX] <time="3">
+#038 [SFX] <time="2">
+#039 [SFX] <time="2">
+#040 [SFX] <time="2">
+#041 [SFX] <time="2">
+#042 [SFX] <time="1">
+#043 [SFX] <time="1">
+#044 [SFX] <time="2">
+#045 [SFX] <time="2">
+#046 [SFX] <time="3">
+#047 [SFX] <time="3">
+#052 [SFX] <time="2">
+#055 [SFX] <time="2">
+#057 [SFX] <time="3">
+#058 [SFX] <time="3">
+#059 [SFX] <time="3">
+#060 [SFX] <time="3">
+#062 [SFX] <time="3">
+#063 [SFX] <time="3">
+#065 [SFX] <time="3">
+#066 [SFX] <time="3">
+#067 [SFX] <time="3">
+#069 [SFX] <time="3">
+#071 [SFX] <time="3">
+#073 [SFX] <time="3">
+#075 [SFX] <time="3">
+#076 [SFX] <time="2">
+#078 [SFX] <time="3">
+
+  [Source]
+  Raiden II / Seibu Kaihatsu
+  Pony Canyon / Scitron  PCCB-00150  Mar 18, 1994
+
+  [Sound Composer]
+  Gou Satou
+
+// List Contribution by BLADE
+$end

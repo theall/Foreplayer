@@ -1,0 +1,34 @@
+﻿$name=nebulray
+$version=2
+$default=4
+$main
+
+#004 Overture
+#124 Coin 
+#016 Exeo
+#003 Evergrenes
+#009 Lost-Marinarc
+#025 Sandvurn [Multi Looper]
+#007 RayMax
+#012 Survive
+#029 Stream Drive
+#020 Enemies-Space-Fortress Entrance
+#030 Enemies-Space-Fortress Attack
+#031 Final-Enemy
+#022 Return to Mother-Ship
+#018 Failure
+#014 everlasting...
+
+#001 Stereo check
+#002 Unused
+
+  [Source]
+  Nebulasray / Namco Game Sound Express Vol.13
+  Victor Entertainment  VICL-15027  Jul 21, 1994
+
+  [Music Composers]
+  Masahiro Fukuzawa (Charly): 04, 16, 03, 09, 07, 12, 18
+  Takayuki Ishikawa (Ishikaban): 29, 20, 30, 31, 22, 14
+
+// List contribution by Kayama
+$end

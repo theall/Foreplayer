@@ -1,0 +1,46 @@
+$name=aof
+$version=2
+$default=$02
+//$songmax=$47
+$main
+
+$02 Neo-Geo Logo
+$29 Ryukoh-no Theme
+$3a 200yen Arigatou
+$2b Dono ko-ga hoshii, Ano ko-ga hoshii
+$46 Youkoso Todo-no Kan-e
+$21 ART OF FIGHT
+$30 Oyou(?) Nihon-e Kaeritai
+$2e Yuri-chan mattoiteya
+$22 Mamemamemaame
+$31 Furyou-nimo mentsu-ga arunda
+$23 Chuugoku Ryoujin
+$32 Yappari *-niwa kattennou
+$24 Michaiya,
+$33 Futsu-ni mamoritai
+$2d Bonus Game
+$40 Haowken Practice
+$38 Tatake! Tatake! #1
+$39 Tatake! Tatake! #2
+$42 Tatake! Tatake! #3
+$44 Tatake! Tatake! #4
+$47 Youkoso Downtown-e
+$25 Gottsuuee Kanji
+$34 Gottsuu Yokattaaa
+$26 Koukuu Bokaan!
+$35 Koukuu Dokkaan!!
+$27 Koba-no Blue Moon
+$36 Tatakatteke-ga nashi
+$2c Atochotto
+$28 The Tengu Show
+$37 Dekinune
+$2a Sono hito-wa watashitachi-no kodomo kana?
+$2f Nee Mou Ikkai Shiyo
+
+$41 Unused
+
+  [Source]
+  Art of Fighting / Ryuuko no Ken - Neo Sound Orchestra
+  Pony Canyon / Scitron  PCCB-00101  1991.11.20
+
+$end

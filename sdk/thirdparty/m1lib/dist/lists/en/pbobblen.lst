@@ -1,0 +1,77 @@
+﻿$name=pbobblen
+$version=2
+$default=095
+$main
+
+#095 Neo Geo Logo
+
+#041 Title Screen
+#205 [Voice] Ready? <time="2">
+#206 [Voice] Go! <time="1">
+#033 Let's Go to Pao Pao Island! (BGM1)
+#036 Forest in April (BGM2)
+#035 Cleared
+#038 Continue
+#039 Ending
+#034 Game Over
+
+#040 Ending (w/o intro)
+
+#049 ???
+#050 ???
+#051 ???
+#052 ???
+#053 ???
+#054 ???
+
+-------------------------------------------------
+
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#127 [SFX] Credit
+#129 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#241 [SFX]
+
+  [Source]
+  Pubzzle Bobble Variety / Zuntata
+  Zuntata Records  ZTTL-0009  Mar 28, 1997
+
+  [Sound Composer]
+  Kazuko Umino
+
+// List Contribution by M
+$end

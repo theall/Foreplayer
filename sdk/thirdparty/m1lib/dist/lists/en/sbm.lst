@@ -1,0 +1,51 @@
+﻿$name=sbm
+$version=2
+$default=30
+$songmax=50
+$main
+
+#030 Theme of Super Sonic Blast Man (Attract mode)
+#031 Target Select
+#033 Successful
+#034 Failure
+#036 Result
+#032 Unused 1
+#035 Unused 2
+
+#037 [Voice] chikyu no heiwa wo mamorutame, haruka hoshi no kanata kara yattekita seigino Hero, sonona mo <time="6.7">
+#038 [Voice] suupaa sonikku burasutoman
+#039 [Voice] daga, Hero ni kyuusoku wa nai <time="3">
+#040 [Voice] tatakae! ai to seigi no tameni! 
+#041 [Voice] watashi no punch wo uketemiro!
+#042 [Voice] 
+#043 [Voice] kyaa, tasuketee
+#044 [Voice] arigatou, suupaasonikkuburasutoman
+#045 [Voice] 
+#046 [Voice]
+#047 [SFX] 
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+
+#009 [Voice]
+#010 [Voice]
+#011 [SFX]
+#012 [SFX] 
+#013 [SFX]
+#014 [SFX] 
+#015 [SFX] <time="4">
+#016 [SFX]
+#017 [SFX] <time="4">
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+
+$end

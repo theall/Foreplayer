@@ -1,0 +1,36 @@
+﻿$name=wndrmomo
+$version=2
+$default=14
+$songmax=15
+$fixed_volume=100
+$main
+
+#014 ゲームスタート
+#010 幕開けA～メインテーマ
+#015 変身！
+#003 変身後テーマ
+#008 ステージクリア
+#005 幕開けB～メインテーマ 
+#015 変身！
+#003 変身後テーマ
+#004 女学生救出
+#001 エンディング
+#002 ゲームオーバー
+#009 ネームレジスト
+
+#006 メインテーマ
+#013 未使用 (メインテーマ ver.2)
+#012 未使用
+
+  ■出典
+  NAMCO GAME MUSIC vol.2
+  ALFA RECORDS  28XA-171 1987.08.25
+
+  NAMCO GAME MUSIC vol.2 (LEGEND SERIES)
+  SME / SCITRON  SCDC-00234  2003.04.23
+
+  NAMCO ARCADE 80'S
+  SME / SCITRON  SCDC-00272  2003.05.21
+
+// List contribution by R
+$end

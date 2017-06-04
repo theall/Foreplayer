@@ -1,0 +1,51 @@
+﻿$name=marble
+$version=2
+$default=65
+$main
+#65 [SFX] Coin Inserted
+#08 Level 1
+#47 Player 1 reaches goal
+#48 Player 2 reaches goal
+#28 Level 2 Preview
+#10 Level 2
+#29 Level 3 Preview
+#12 Level 3
+#14 Level 4 Part 1
+#16 Level 4 Part 2
+#20 Level 5 (Silly Race) Part 1
+#22 Level 5 (Silly Race) Part 2
+#30 Level 6 Preview
+#24 Level 6 (Ultimate Race)
+#26 High Score Entry
+#63 Game Over
+#27 Congratulations
+
+#49 [SFX] Beginner Level slope helper
+#50 [SFX] Collision with Black Marble
+#51 [SFX] Marble Muncher
+#52 [SFX] Collision with wall
+#53 [SFX] Tunnel
+#54 [SFX] Silly Tunnel
+#56 [SFX] Marble falls apart
+#57 [SFX] Marble is dazed
+#60 [SFX] Marble materializes
+#61 [SFX] Marble materializes (full)
+#62 [SFX] Marble hit by Silly Bird
+#66 [SFX] Collision with Guard Rail
+#67 [SFX] Slippery surface
+#69 [SFX] Marble falls off a ledge
+#71 [SFX] Vacuum Cleaner 1
+#73 [SFX] Vacuum Cleaner 2
+#75 [SFX] Vacuum Cleaner 3
+#77 [SFX] Vacuum Cleaner 4
+#79 [SFX] Vacuum Cleaner 5
+#81 [SFX] Vacuum Cleaner 6
+#4 Music Chip Test
+#5 POKEY Chip Test
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contributed by R. Belmont
+$end

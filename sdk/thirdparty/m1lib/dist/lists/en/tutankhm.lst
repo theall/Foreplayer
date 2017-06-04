@@ -1,0 +1,51 @@
+﻿$name=tutankhm
+$version=2
+$default=005
+$main
+
+#005 Credit Inserted
+#011 Game Start
+#029 Gate Open
+#004 Stage Clear
+#037 4th Stage Clear (Round Clear)
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX] Got a key
+#002 [SFX] Got a trasure box
+#003 [SFX] Got a ring
+#007 [SFX] 
+#009 [SFX] Shot
+#010 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#015 [SFX] Warp gate
+#016 [SFX] 
+#018 [SFX] Player extended
+#021 [SFX] Killed enemy
+#027 [SFX] Player walking #1
+#028 [SFX] Player walking #2
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#044 [SFX] Counting clear bonus
+#065 [SFX] 
+#071 [SFX] Game Over
+#073 [SFX] 
+#074 [SFX] Enemy apprearing
+#076 [SFX] Bomb
+#077 [SFX] Players killed
+#082 [SFX] 
+
+-----------------------------------------------------------
+
+#069 Credit Inseted (faster)
+#075 Game Start (faster)
+#093 Gate Open (faster)
+#068 Stage Clear (faster)
+#067 Got a ring (faster)
+#101 4th Stage Clear (faster)
+
+// List contributed by Hiroshi
+$end

@@ -1,0 +1,38 @@
+﻿$name=cadash
+$version=2
+$default=03
+$main
+
+#003 Prologue "Forefeel"
+#026 Credit
+#004 Guided by a Conductor.. (Name Select)
+#005 Door between Ordinary and Disordinary (Town and Village Scene)
+#009 Beginning of the Battle (Rocks Scene)
+#014 Relentless Attack (Boss)
+#018 Level Up
+#023 Morning Has Come
+#010 Bellville Vibraphone (Bricks and Water Scene)
+#021 Got an Item
+#024 Underground Cave
+#006 Shaded Figure (Forest Scene)
+#011 Suck the Lifebood to Live (Plants Scene)
+#012 Where are you skating to? (Ice Scene)
+#008 Kids are afraid of thunder (Thunderstrom Scene)
+#013 Chortle with Insanity (Skelton and Flame Scene)
+#022 Whistle
+#015 Infltration (Castle of Baarogue)
+#016 Last Drop of Blood (Fight against Baarogue)
+#017 Fanfare
+#019 Ending
+#025 Game Over
+#007 Footprints (Snow Scene) (unused)
+#020 Winter to Spring (unused)
+
+  [Source]
+  Camel Try / Cadash
+  Pony Canyon / Scitron  PCCB-00043  Oct 21, 1990
+
+// Original list by monyons
+// Update and English translation by Fujix
+// Updated by Cratch
+$end

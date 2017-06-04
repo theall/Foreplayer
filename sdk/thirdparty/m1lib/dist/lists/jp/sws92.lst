@@ -1,0 +1,61 @@
+$name=sws92
+$version=2
+$default=26
+$main
+
+#026 Super World Stadium Match
+#020 Play Ball
+
+#002 Super World Stadium Main BGM 1
+#042 End of Inning 1
+#005 Super World Stadium Main BGM 2
+#043 End of Inning 2
+#008 Time-out
+#009 Runner at Base
+#051 Game!
+#037 Namco Sports - Game Over 1
+#065 Namco Sports - Game Over 2
+
+#007 Homerun 1
+#010 Homerun 2
+#011 Homerun 3
+
+#023 BGM 1
+#080 BGM 2
+#082 BGM 3
+#083 BGM 4
+#084 BGM 5
+#085 BGM 6
+#088 BGM 7
+#089 BGM 8
+#090 BGM 9
+#091 BGM 10
+#092 BGM 11
+#093 BGM 12
+#094 BGM 13
+#095 BGM 14
+#096 BGM 15
+#097 BGM 16
+#098 BGM 17
+#099 BGM 18
+#100 BGM 19
+#102 BGM 20
+#105 BGM 21
+#106 BGM 22
+#107 BGM 23
+#108 BGM 24
+#110 BGM 25
+#111 BGM 26
+#112 BGM 27
+#113 BGM 28
+#115 BGM 29
+#117 BGM 30
+#118 BGM 31
+
+#014 unknown 1
+#017 unknown 2
+#048 unknown 3
+
+// English list by Knurek
+// Song name fixes and rearrangement by Fujix
+$end

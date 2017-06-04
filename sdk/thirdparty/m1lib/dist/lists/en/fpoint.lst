@@ -1,0 +1,45 @@
+﻿$name=fpoint
+$version=2
+$default=176
+$main
+
+#176 [SFX] Credit
+#145 Main Theme (Level 0)
+#146 Main Theme (Level 1)
+#147 Main Theme (Level 2)
+#148 Main Theme (Level 3)
+#149 Main Theme (Level 4)
+#151 Round Cleared
+#150 Pinch Theme
+#181 [SFX] Deadlock
+#152 Game Over
+#153 All Round Cleared / Name Entry
+
+#144 Unused
+
+------------------------------------------------------
+ [SFX]
+
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#176 [SFX] Credit
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX] Deadlock
+#182 [SFX]
+#183 [SFX]
+
+// List Contribution by a2c-s438
+$end

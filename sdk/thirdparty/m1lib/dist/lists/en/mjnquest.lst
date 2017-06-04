@@ -1,0 +1,54 @@
+$name=mjnquest
+$version=2
+$default=041
+$main
+
+#041 Title Theme
+#023 Opening Theme 1 ~Shiawase no Jidai~
+#024 Opening Theme 2 ~Fukkatsu! Jaaku no Haou~
+#009 Ryuuko Theme ~Heigen wo Iku~
+#005 Joou Heika no Ma ~Oukyuu no Warutsu~
+#006 Furi Tenisu Kouen no Joukamachi
+#007 Nonki de Genki na Mura no Min
+#008 Shinden no Aru Machi ~Norowa Re Shi Hitobito~
+#010 Setsugen wo Iku
+#040 Hokkai wo Tobu ~Hishou, Kiyoshi Suzume shi~
+#013 Seichi, Suzume Ryuu no Hoko ra
+#015 Ma Theme ~Tenkuu ni Ukabu Yougan Jou~
+#016 Kessen!! ~Shouri ha Ware ni~
+#011 Kyoufu no Dungeon
+#012 Suukantsu no Tou ~Otakara Ippai, Teki Ippai~
+#034 Monster ga Araware ta!!
+#037 Mahou no wo Erabe! ~Youkoso! Hinomaru ya he~
+#025 Techno Wars
+#026 Formula Battle
+#027 Kung-fu Fight
+#014 Suzume Ryuu no Shiren
+#028 Battle Crisis
+#029 Teki no Riichi Theme
+#030 Ryuuko Theme ~Dou da~
+#031 Teki no Shouri Theme
+#032 Ryuuko no Shouri Theme
+#033 Nagare Kyoku Theme
+#035 Ryuuko no Datsui ~Hidooi~
+#036 Teki no Datsui ~An Make Chatta~
+#017 Raichin he Irasshai
+#019 Henshin! Suzume Maou Kokushii!!
+#020 Level Up
+#021 Nakama ga Dekita
+#022 Otakara wo Ire ta!!
+#038 Continue
+#042 Ending ~Mou hitotsu no Mahjogn Quest~
+#039 Game Over
+
+#018 Not on CD #1
+#043 Not on CD #2
+
+  [Source]
+  All Sounds Of Mahjong Quest
+  Polystar  PSCX-1033  1991.09.25
+
+// List by Min-san
+// English list by Knurek
+// Fixed by mathalie
+$end

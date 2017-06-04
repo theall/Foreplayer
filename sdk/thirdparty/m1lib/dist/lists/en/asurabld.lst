@@ -1,0 +1,68 @@
+﻿$name=asurabld
+$version=2
+$default=039
+$main
+
+#039 Opening
+#014 Ranking Table
+#000 Character Select
+#001 Introduciton
+#002 Win
+#012 Player Joined
+#024 Theme of Yashaou
+#022 Theme of Goat
+#017 Theme of Lightning
+#021 Theme of Footee
+#019 Theme of Zam-B
+#025 Theme of Rosemary
+#020 Theme of Alice
+#023 Theme of Taros
+#030 Floating Castle (Upper Side)
+#027 Foughten Field (Dusk)
+#028 Floating Castle (Lower Side)
+#003 Chinese
+#004 Dungeon
+#006 Tower
+#009 Foughten Field (Night)
+#005 Doppelgenger
+#018 Theme of Curfew
+#016 Boss Appears / Theme
+#008 Inside of the Castle (Final)
+#041 Boss Disappering Demo
+#035 Ending (Successful)
+#038 Ending (Happy)
+#037 Ending (Sad)
+#034 Ending (Misterious)
+#036 Ending (Chinese)
+#010 Continue
+#011 Game Over
+
+ (Extra Tracks)
+
+#007 Old Tower
+#029 Pub
+#031 Old Doppelgenger
+
+#032 Unused 1
+#013 Unused 2
+#015 Unused 3
+#026 Unused 4 
+#040 Boss Dispappearing (alt)
+#033 Ranking Table (alt)
+
+---------------------------------------------------
+  [SFX]
+
+ 042 to 510 
+ * Set 042 for the default track to play them properly 
+
+  [OST]
+  Asura Blade Original Soundtrack
+  Bandai Music  APCG-4040  Nov 21, 1998
+
+  [Sound Composition]
+  Akihiro Nishida
+
+// List contribution by ZEK.
+// English list translation and QA by Fujix
+$end

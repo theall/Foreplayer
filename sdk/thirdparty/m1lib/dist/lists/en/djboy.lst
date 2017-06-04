@@ -1,0 +1,125 @@
+﻿$name=djboy
+$version=2
+$default=29
+$main
+
+#029 [Voice] Credit Insertion
+#065 Disc Jockey (alt intro 1)
+#058 Round 1.A
+#050 Round 1.B ~ Boss 4
+#067 Boss 1
+#073 Round Clear
+#079 Dancing!
+#055 Round 2.A
+#051 Round 2.B
+#061 Boss 2
+#077 Round Clear (alt)
+#059 Round 3
+#071 Boss 3
+#069 Round Clear (Cheers)
+#052 Round 4
+#057 Boss 4
+#054 Round 5
+#072 Boss 5
+#048 Ending (Credits)
+#070 Game Over
+
+#063 Disc Jockey (alt intro 2)
+#062 Disc Jockey (alt intro 3)
+#064 Disc Jockey (alt intro 4)
+#066 Disc Jockey (alt intro 5)
+
+#053 Unused (Sound #053) <time="49.5">
+#056 Unused (Sound #056) <time="28">
+#060 Unused (Sound #060) <time="53">
+#068 Unused (Sound #068) <time="28.3">
+#075 Unused (Sound #075) <time="6">
+#078 Unused (Sound #078) <time="56">
+
+  [SFX]
+
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX] <time="8">
+#020 [SFX]
+#021 [SFX]
+#022 [SFX] <time="7">
+#023 [SFX] <time="11">
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#031 [SFX]
+#032 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX] <time="7">
+#045 [SFX] <time="10">
+#046 [SFX]
+#047 [SFX]
+#074 [SFX]
+#097 [SFX]
+#098 [SFX]
+#103 [SFX]
+#106 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#124 [SFX]
+#125 [SFX]
+
+  [Voice]
+
+#029 [Voice] Credit Insertion
+#076 [Voice]
+#080 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice] (cheers)
+#086 [Voice]
+#087 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#094 [Voice]
+#096 [Voice]
+#099 [Voice]
+#101 [Voice]
+#104 [Voice] (cheers)
+#107 [Voice] (speech)
+#108 [Voice] (speech)
+#109 [Voice] (speech)
+#110 [Voice] Title Screen (speech)
+#111 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+
+  [Composers]
+  Tatsuya Watanabe
+  S. Aizu
+
+ There is some bugs,
+ particulary on the Voices which are well played 1/10 times
+ and the Speech Voices can't be played.
+ with M1+foobar, all works.
+
+// List contribution by Simon B., done in playing the game.
+$end

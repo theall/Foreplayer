@@ -1,0 +1,24 @@
+﻿$name=mia
+$version=2
+$default=128
+//$songmax=254
+$fixed_volume=256
+$main
+
+#128 Introduciton
+#132 Stage Start
+#131 Main BGM
+#129 Fortress
+#134 Stage Clear
+#136 Rescue Prisoners
+#135 Lead Prisoners
+#130 Completed Rescure Prisoners
+#137 Ending
+#133 Game Over
+
+#254 Sound Fade Out
+
+-----------------------------------------
+ [SFX]
+
+$end

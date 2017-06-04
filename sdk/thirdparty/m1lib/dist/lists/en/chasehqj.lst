@@ -1,0 +1,126 @@
+﻿$name=chasehq
+$version=2
+$default=84
+$main
+
+#084 Credit Inserted
+#112 Round Start
+#113 Los Angeles
+#114 Idaho
+#124 Count Down
+#115 Washington
+#116 Chicago
+#117 New York
+#118 This is Chase H.Q.! (Main Theme)
+#119 Arrest (Round Clear)
+#120 Perfect Chaser
+#121 My Name & Your Name (Name Entry)
+
+#122 Not on CD
+#123 This is Chase H.Q.! (Attract Mode)
+
+------------------------------------------------------
+ [Voice]
+
+#009 [Voice] 
+#010 [Voice] 
+#011 [Voice] 
+#012 [Voice] 
+#013 [Voice] 
+#014 [Voice] 
+#015 [Voice] 
+#016 [Voice] 
+#017 [Voice] 
+//#018 [Voice] 
+//#019 [Voice] 
+//#020 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+//#023 [Voice] 
+#024 [Voice] 
+#025 [Voice] 
+#027 [Voice] 
+#028 [Voice] 
+//#029 [Voice] 
+#032 [Voice] 
+#033 [Voice] 
+#043 [Voice] 
+#044 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+//#047 [Voice] 
+//#048 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+
+#051 [Voice] 
+#052 [Voice] 
+//#053 [Voice] 
+//#054 [Voice] 
+
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+
+ [SFX]
+
+#084 [SFX] 
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX] <time="5">
+#093 [SFX]
+#094 [SFX] <time="5">
+#095 [SFX] <time="5">
+#096 [SFX] <time="5">
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#103 [SFX] 
+#105 [SFX]
+#107 [SFX] 
+#108 [SFX]
+#110 [SFX]
+
+#130 [SFX]
+#147 [SFX]
+#151 [SFX]
+#152 [SFX] <time="5">
+
+  [Source]
+  Syvalion -G.S.M. Taito 3- / Zuntata Sound Team
+  Pony Canyon / Scitron   D28B0014  Mar 21, 1989
+
+  [Sound Composer]
+  Takami Asano (Godiego)
+
+// List Contribution by Hiroshi
+// Updated by Fujix
+$end

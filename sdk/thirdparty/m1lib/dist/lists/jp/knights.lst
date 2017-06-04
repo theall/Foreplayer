@@ -1,0 +1,129 @@
+﻿$name=knights
+$version=2
+$default=000
+//$songmax=116
+$main
+
+#000 DEMO <time="1:58">
+#099 CREDIT <time="0:02">
+#026 PLAYER SELECT <time="0:31">
+#027 MINI MAP
+#001 ROUND 1 (村) <time="2:03">
+#013 ROUND 1 BOSS <time="0:43">
+#011 ROUND CLEAR
+#002 ROUND 2 (戦場) <time="2:16">
+#014 ROUND 2 BOSS <time="0:30">
+#003 ROUND 3 (城) <time="2:13">
+#015 ROUND 3 BOSS <time="0:32">
+#012 ROUND 3 CLEAR
+#004 ROUND 4-1 (騎士祭) <time="1:19">
+#029 中間地点
+#005 ROUND 4-2 (海岸線) <time="0:54">
+#006 ROUND 5 (海岸線) <time="1:48">
+#016 ROUND 5 BOSS <time="0:38">
+#007 ROUND 6-1 (城下町) <time="1:42">
+#008 ROUND 6-2 (洞窟) <time="1:19">
+#017 ROUND 6 BOSS <time="1:01">
+#009 ROUND 7 (城) <time="2:22">
+#019 ROUND 7 BOSS 1 <time="0:41">
+#018 ROUND 7 BOSS 2 <time="1:01">
+#030 CLEAR
+#020 LAST STAGE CLEAR
+#010 ROUND 8 <time="1:17">
+#024 ENDING <time="1:10">
+#022 STAFF ROLL <time="1:45">
+#023 CONTINUE <time="0:37">
+#025 GAME OVER
+#028 RANKING <time="0:27">
+
+-----------------------------------------------------------
+ [Voice]
+
+#032 [Voice]
+#033 [Voice]
+#034 [Voice]
+#035 [Voice]
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#096 [Voice]
+#116 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#045 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.] Credit
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#115 [S.E.]
+
+  ■出典
+  VARTH -G.S.M. CAPCOM 6- / ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00110  1993.02.19
+
+// List Contribution by NK
+$end

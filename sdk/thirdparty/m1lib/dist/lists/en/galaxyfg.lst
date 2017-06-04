@@ -1,0 +1,57 @@
+﻿$name=galaxyfg
+$version=2
+$default=095
+$fixed_volume=168
+$main
+
+    * Track names are textual quotations or 
+       literal translations of originals
+
+#095 Neo Geo Logo
+
+#035 Galaxy Fight (Title)
+#036 Here We Go! (Character Select)
+#055 Rolf's Intro
+#056 Power Of Fire (Rolf: Planet Air Rass)
+#060 Kazuma's Intro
+#061 Yami-Kagura (Kazuma: Planet Air Rass)
+#045 Juri's Intro
+#046 Eternal Beauty Forever (Juri: Planet Lezaar)
+#042 Roomi's Intro
+#043 Are You Listening? (Roomi: Planet Lutecia)
+#053 Gunter's Intro
+#054 Ancient Wrath (Gunter: Planet Guljeff)
+#038 Alvan's Intro
+#039 Ba-Rock (Alvan: Planet Rozalis)
+#040 Golden Done's Intro
+#041 Ethereal Dance (Golden Done: Planet Mani)
+#051 Musafar's Intro
+#052 Strong of Bring The Noise (Musafar: Planet Fakir)
+#034 Bloody Street (Matchup: Planet Verazques)
+#048 Jacob's Intro
+#049 Trip! Trip! Trip! (Jacob: Planet Lutecia)
+#058 Feldenkrais' Intro
+#059 Pressure Drop (Feldenkrais' Stage)
+#062 Loewe's Intro
+#063 You Will Not A Mysterious Hermit (Loewe's Stage)
+#065 What the hell are you doing? (Continue)
+#067 Full of Fight (Rolf, Musafar: Ending)
+#071 Bloody Sabbath Day (Kazuma, Juri, Golden Done: Ending)
+#069 Good Fortune! (Gunter, Alvan: Ending)
+#073 Star Puncher (Roomi: Ending)
+#074 The End of Fights (Credits)
+
+#066 Game Over
+
+  [Source]
+  Galaxy Fight
+  Pony Canyon / Scitron  PCCB-00177  Mar 17, 1995
+
+  [Sound Composers]
+  Masato Araikawa (Mutec)
+  Takayuki Sasaki (Mutec)
+
+// list composed by huntingforce
+// English list by Fuji
+// List fixed by Ayaya
+$end

@@ -1,0 +1,74 @@
+﻿$name=1943
+$version=2
+$default=018
+//$songmax=050
+$main
+
+#018 Credit Inserted <time="1.5">
+#032 Air Battle A (Round 1, 2, 7, 10, 13, 16) <time="1:28.9">
+#033 Antiship Battle A (Round 1-Tone, 2-Kaga, 7-Ise, 10-Mutsu, 13-Souryu) <time="1:30.2">
+#042 Ayako (Round 3, 9) <time="54.9">
+#043 Mission Completed I (Hit Ratio Result 1) <time="8">
+#039 Refuel (Counting Bonus Points) <time="10.5">
+#034 Air Battle B (Round 3, 4, 8, 14) <time="1:17.4">
+#035 Antiship Battle B (Round 4-Fuso, 8-Hiryu) <time="1:27.3">
+#045 Failed in the Attack (Hit Ratio Result 2)  <time="8">
+#036 Air Battle C (Round 5, 9, 12, 15) <time="1:27">
+#037 Antiship Battle C (Round 5-Akagi, 12-Yamashiro, 15-Nagato, 16-Yamato) <time="1:43.1">
+#041 Daihiryu (Round 6, 11) <time="1:01.5">
+#044 Mission Completed II (Hit Ratio Result 3) <time="8.5">
+#048 Air Battle D (Round 6, 11) <time="1:37.8">
+#049 Final Ayako (Round 14) <time="49.3">
+#040 Final Stage Cleared <time="53">
+#050 Star-spangled Banner <time="24">
+#047 Credits Roll <time="48">
+#020 Continue <time="13">
+#000 [Command] Sound Stop <time="1">
+#046 Game Over <time="8">
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+
+  [Source]
+  Capcom Game Music Vol.3
+  Alfa Records  28XA-204  Apr 20, 1988
+
+  Capcom Game Music Vol.3 (Legend Series)
+  SME / Scitron  SCDC-00198  Jul 24, 2002
+
+  [Sound Composer]
+  Jungle Kumi
+
+// List updated by NK
+// English List by Fuj
+$end

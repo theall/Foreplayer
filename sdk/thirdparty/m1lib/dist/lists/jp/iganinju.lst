@@ -1,0 +1,58 @@
+﻿$name=iganinju
+$version=2
+$default=004
+$fixed_volume=130
+$main
+
+#004 TITLE DEMO / ROUND 3 (GREECE)
+#083 [S.E.] CREDIT <time="0:03">
+#001 MAP
+#002 ROUND 1 (AMERICA)
+#003 LAO-TSE (WEAPON VERSION-UP)
+#008 ROUND CLEAR
+#005 ROUND 2 (SOUTH AFRICA)
+#007 ROUND 2 BOSS (TOTEM POLE)
+#004 ROUND 3 (GREECE) / TITLE DEMO
+#012 ROUND 3 BOSS (CENTAURUS)
+#011 ROUND 4 (INDIA)
+#006 ROUND 4 BOSS (ASURA)
+#013 ROUND 5 (JAPAN 1)
+#009 ROUND 6 (JAPAN 2)
+#016 LAST BOSS
+#015 ENDING
+#010 GAME OVER ～ NAME ENTRY
+
+#014 ???
+#017 ???
+
+-----------------------------------------------------
+ [S.E.]
+
+#048 [S.E.] KATANA
+#049 [S.E.]  
+#050 [S.E.] KUSARI-GAMA 
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.] CREDIT
+#084 [S.E.]
+#085 [S.E.] 
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.] KUNAI
+#089 [S.E.]
+
+-----------------------------------------------------
+ [Voice]
+
+#067 [Voice] NINJUTSU
+#068 [Voice] KAZAN DAMAGE
+#069 [Voice] KAZAN OUT 
+#072 [Voice] ENEMY DEATH
+
+// List contribution by R
+$end

@@ -1,0 +1,103 @@
+﻿$name=gladiatr
+$version=2
+$default=129
+$main
+
+#129 [SFX] Credit
+#135 Main Theme
+#131 Boss Battle #1
+#132 Boss Battle #2
+#133 Boss Battle #3
+#134 Final Boss Battle
+#136 Defeated Boss
+#138 Round Cleared
+#137 Missed
+#139 Name Entry
+#140 Continue
+
+#130 Unused #1
+#141 Unused #2
+
+------------------------------------------------------
+ [SFX]
+
+#129 [SFX] Credit
+#143 [SFX] Setup
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX] Player Extended
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+
+// List Contribution by a2c-s438
+$end

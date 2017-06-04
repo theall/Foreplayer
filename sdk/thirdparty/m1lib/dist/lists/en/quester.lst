@@ -1,0 +1,40 @@
+﻿$name=questar
+$version=2
+$default=06
+$songmax=30
+$fixed_volume=104
+$main
+
+#06 Opening
+//#14 Opening
+#10 Round Start
+#17 Bonus Stage
+#21 Ending
+#11 Game Over
+#15 Name Entry
+#12 Name Entry (End)
+
+#13 Unused?
+
+
+#01 [SFX]
+#02 [SFX]
+#03 [SFX]
+#04 [SFX]
+#05 [SFX]
+#07 [SFX]
+#08 [SFX]
+#09 [SFX]
+#16 [SFX]
+#18 [SFX]
+#19 [SFX]
+#20 [SFX]
+
+  [Source]
+  Namco Video Game Graffiti Vol.4
+  Victor Entertainment  VDR-5282  Mar 8, 1989
+
+  [Sound Composer]
+  Shinji Hosoe (Megaten)
+
+$end

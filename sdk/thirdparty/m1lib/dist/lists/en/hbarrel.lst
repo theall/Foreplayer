@@ -1,0 +1,18 @@
+﻿$name=hbarrel
+$version=2
+$default=$2b
+$songmax=$30
+$main
+
+$2b Descent (Start - Unused)
+$2c Heavy Barrel Theme (Field BGM)
+$2f Impact (Boss BGM)
+$2d Wipeout the enemy base (Base BGM)
+$2e Epilogue (Final Stage BGM)
+$30 Flight (Ending)
+
+  [Source]
+  Data East Game Music / G.M.O.
+  Alfa Records  28XA-205  May 10, 1988
+
+$end

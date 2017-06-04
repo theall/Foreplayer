@@ -1,0 +1,133 @@
+﻿$name=nemo
+$version=2
+$default=000
+$songmax=119
+$main
+
+#000 Title Demo
+#030 Credit <time="2">
+#003 Stage 1 - King Morpheus <time="1:32">
+#010 Stage 1 Boss <time="52">
+#022 Stage Clear
+#001 Stage 2 - Slumber Land <time="1:46">
+#028 Stage 2 Boss <time="43">
+#005 Stage 3 - Big Balloon <time="2:15">
+#012 Stage 3 Boss <time="48">
+#006 Stage 4 - Police Station I <time="1:50">
+#101 Stage 4 - Police Station II <time="30">
+#013 Stage 4 Boss <time="56">
+#020 Stage 5 Start Demo <time="34">
+#007 Stage 5 - Nightmare Land I <time="59">
+#110 Stage 5 - Nightmare Land II <time="1:09">
+#014 Stage 5 Boss <time="38">
+#008 Stage 6 - Nightmare Castle <time="1:47">
+#015 Stage 6 Boss <time="46">
+#009 Stage 7 - Nightmare King <time="1:35.6">
+#016 Stage 7 Boss <time="1:48">
+#093 Ending - Credits Roll <time="2:06.6">
+#092 Ending (Without Continue Game) <time="51">
+#025 Name Entry <time="43">
+#024 Game Over
+
+#002 (unused) <time="2:14">
+#004 (unused) <time="1:40">
+#011 (unused) <time="41">
+#017 (unused) <time="28">
+#018 (unused) <time="27.5">
+#019 (unused) <time="40.5">
+#021 (unused) <time="45">
+#023 (unused) <time="43">
+#027 (unused) <time="51">
+#029 (unused) <time="55">
+#111 (unused) <time="43">
+#100 (unused)
+
+ [Voice]
+
+#088 [Voice]
+#089 [Voice]
+#119 [Voice]
+
+ [SFX]
+
+#026 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#090 [SFX]
+#091 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+
+// List Contribution by NK
+$end

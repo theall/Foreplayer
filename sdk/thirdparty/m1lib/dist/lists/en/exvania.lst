@@ -1,0 +1,31 @@
+$name=exvania
+$version=2
+$default=$69
+$main
+
+#105 Opening
+#071 Awaiting Other Player
+#107 Start (not on CD)
+#065 Game BGM 1
+#073 Warning BGM
+#079 Draw or Loss
+#067 Game BGM 2 (not on CD)
+#077 Win-loss Standings
+#099 Music of the Boss Dragon
+#069 Conitinue
+#097 Game Over
+#101 Music of the Final Boss Elinjus
+#075 Win
+#103 Ending (not on CD)
+#109 Credits (not on CD)
+
+  [Source]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097  Dec 16, 1993
+
+  [Composed and Arranged]
+  Yoshie Arakawa
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

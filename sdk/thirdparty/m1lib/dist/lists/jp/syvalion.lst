@@ -1,0 +1,89 @@
+﻿$name=syvalion
+$version=2
+$default=050
+$main
+
+#050 Title <time="5">
+#069 Credit <time="3">
+#071 Stand-bye! (Story 1)
+#056 Main Theme
+#063 Boss 1
+#057 Universe (Theme 2)
+#064 Boss 2
+#072 Next Area (Story 2)
+#058 Fire! Fire! Fire! (Theme 3)
+#065 Boss 3
+#060 ___ so easy (Theme 5)
+#039 [S.E.] Warning <time="5.50">
+#068 Hurry
+#059 Larful (Theme 4)
+#066 Boss 4
+#073 Contact (Story 3)
+#062 Ja Fraew (Theme 7)
+#061 Confusion (Theme 6)
+#067 Boss 5
+#070 Beginning of the end (Ending)
+#074 See you again (Name Entry)
+
+#076 Boss5 (イントロ無し)
+
+------------------------------------------------------
+ [S.E.]
+
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+
+  ■出典
+  SYVALION -G.S.M. TAITO 3- / ZUNTATA TAITO SOUND TEAM
+  PONY CANYON / SCITRON  D28B0014  1989.3.21
+
+  ■作曲
+  Yack (ZUNTATA)
+
+// List Contribution by Hiroshi, Monyonss
+$end

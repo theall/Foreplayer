@@ -1,0 +1,46 @@
+﻿$name=benberob
+$version=2
+$default=012
+$main
+
+#012 [SFX] Credit
+#025 Start
+#029 Main Theme #1
+#037 Main Theme #2
+#023 Rescue Failed (Time's Up)
+#027 Hurry Up!
+#028 Missed
+#022 Rescue Succeeded (Round Clear)
+#026 Game Over
+
+------------------------------------------------------
+ [SFX]
+
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX] Credit
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX] Player Extended
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#024 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX] Spy Appears (From "Elevator Action")
+#035 [SFX]
+#036 [SFX]
+
+// List Contribution by a2c-s438
+$end

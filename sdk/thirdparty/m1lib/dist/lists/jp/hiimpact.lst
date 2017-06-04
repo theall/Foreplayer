@@ -1,0 +1,175 @@
+﻿$name=hiimpact
+$version=2
+$default=194
+$main
+
+#194 ATTRACT DEMO <time="18">
+#151 [S.E.] CREDIT <time="5.5">
+#002 SELECT YOUR TEAMS <time="25">
+#199 KICK OFF
+#007 FORMATION CHENGE <time="10">
+#003 MAIN THEME 1
+#012 END OF QUARTER <time="5">
+#198 HALF TIME <time="30.7">
+#199 KICK OFF <time="20">
+#192 TURNOVER <time="5">
+#007 FORMATION CHENGE <time="15">
+#006 MAIN THEME 2
+#009 TOUCHDOWN <time="10">
+#011 EXTRA POINT ATTEMPT <time="10">
+#013 IT'S GOOD <time="5">
+#001 FINAL SCORE
+#008 YOUR POINTS <time="13">
+#193 NAME ENTRY
+
+#223 MAIN THEME 1 Ver.2
+#004 MAIN THEME 1 Ver.3
+#005 MAIN THEME 1 Ver.4
+#195 FORMATION CHENGE Ver.2
+#196 FORMATION CHENGE Ver.3
+#197 FORMATION CHENGE Ver.3
+#202 未使用曲 1
+#203 未使用曲 1 Ver.2
+#204 未使用曲 1 Ver.3
+#205 未使用曲 1 Ver.4
+#206 未使用曲 2 
+#207 未使用曲 2 Ver.2
+#208 未使用曲 2 Ver.3
+#209 未使用曲 2 Ver.4
+#210 未使用曲 2 Ver.5
+#201 未使用曲 3 
+#010 未使用曲 4 <time="7">
+#014 未使用曲 5 <time="7">
+#200 未使用曲 6 <time="5">
+
+---------------------------------------------------
+  [S.E.]
+
+#128 [S.E.] <time="3">
+#129 [S.E.] <time="3">
+#130 [S.E.] <time="3">
+#131 [S.E.] <time="3">
+#132 [S.E.] <time="3">
+#133 [S.E.] <time="3">
+#134 [S.E.] <time="3">
+#135 [S.E.] <time="5">
+#136 [S.E.] <time="5">
+#137 [S.E.] <time="3">
+#138 [S.E.] <time="3">
+#139 [S.E.] <time="3">
+#140 [S.E.] <time="3">
+#141 [S.E.] <time="3">
+#142 [S.E.] <time="3">
+#143 [S.E.] <time="3">
+#144 [S.E.] <time="3">
+#145 [S.E.] <time="3">
+#146 [S.E.] <time="3">
+#147 [S.E.] <time="3">
+#148 [S.E.] <time="3">
+#149 [S.E.] <time="3">
+#150 [S.E.] <time="3">
+#151 [S.E.] CREDIT <time="5">
+#152 [S.E.] <time="3">
+#153 [S.E.] <time="3">
+#154 [S.E.] <time="3">
+#155 [S.E.] <time="3">
+#156 [S.E.] <time="3">
+#157 [S.E.] <time="3">
+#158 [S.E.] <time="3">
+#159 [S.E.] <time="3">
+#160 [S.E.] <time="5">
+#161 [S.E.] <time="3">
+#162 [S.E.] <time="3">
+#163 [S.E.] <time="3">
+#164 [S.E.] <time="3">
+#165 [S.E.] <time="3">
+#166 [S.E.] <time="3">
+#167 [S.E.] <time="3">
+#168 [S.E.] <time="3">
+#169 [S.E.] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#017 [Voice] <time="3">
+#018 [Voice] <time="3">
+#019 [Voice] <time="3">
+#020 [Voice] <time="3">
+#021 [Voice] <time="3">
+#022 [Voice] <time="3">
+#023 [Voice] <time="3">
+#024 [Voice] <time="3">
+#025 [Voice] <time="3">
+#026 [Voice] <time="3">
+#027 [Voice] <time="3">
+#028 [Voice] <time="3">
+#029 [Voice] <time="3">
+#030 [Voice] <time="3">
+#031 [Voice] <time="3">
+#048 [Voice] <time="5">
+#049 [Voice] <time="5">
+#050 [Voice] <time="3">
+#051 [Voice] <time="4">
+#052 [Voice] <time="3">
+#053 [Voice] <time="4">
+#054 [Voice] <time="3">
+#055 [Voice] <time="3">
+#056 [Voice] <time="3"> 
+#057 [Voice] <time="3">
+#058 [Voice] <time="3">
+#059 [Voice] <time="3"> 
+#060 [Voice] <time="3">
+#061 [Voice] <time="5">
+#062 [Voice] <time="3">
+#063 [Voice] <time="3">
+#064 [Voice] <time="3">
+#065 [Voice] <time="3">
+#066 [Voice] <time="3">
+#067 [Voice] <time="3">
+#068 [Voice] <time="3">
+#069 [Voice] <time="4">
+#070 [Voice] <time="3">
+#071 [Voice] <time="3">
+#072 [Voice] <time="3">
+#073 [Voice] <time="3">
+#074 [Voice] <time="3">
+#075 [Voice] <time="3">
+#076 [Voice] <time="3">
+#077 [Voice] <time="3">
+#078 [Voice] <time="3">
+#081 [Voice] <time="3">
+#082 [Voice] <time="3">
+#083 [Voice] <time="3">
+#084 [Voice] <time="3">
+#085 [Voice] <time="3">
+#086 [Voice] <time="3">
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#089 [Voice] <time="3"> 
+#090 [Voice] <time="4">
+#091 [Voice] <time="3">
+#092 [Voice] <time="3">
+#093 [Voice] <time="3">
+#094 [Voice] <time="3">
+#095 [Voice] <time="3">
+#121 [Voice] <time="3">
+#122 [Voice] <time="3">
+#123 [Voice] <time="3">
+#124 [Voice] <time="3">
+#125 [Voice] <time="3">
+#176 [Voice] <time="3">
+#177 [Voice] <time="3">
+#178 [Voice] <time="3">
+#179 [Voice] <time="3">
+#180 [Voice] <time="3">
+#181 [Voice] <time="3">
+#182 [Voice] <time="3">
+#183 [Voice] <time="3">
+#184 [Voice] <time="3">
+#185 [Voice] <time="3">
+#186 [Voice] <time="3">
+#187 [Voice] <time="3">
+#188 [Voice] <time="3">
+
+// List contribution by ZEK.
+$end

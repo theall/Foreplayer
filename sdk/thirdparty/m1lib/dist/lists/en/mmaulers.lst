@@ -1,0 +1,79 @@
+﻿$name=mmaulers
+$version=2
+$default=225
+$songmax=255
+$main
+
+#225 Kyuukyoku Sentai Dadandarn (Demo 1) <time="48">
+#024 [Voice] kyuukyoku sentai Dadandarn <time="3">
+#071 [SFX]
+#224 Happy Droppers' Rhapsody (Demo 2)
+#227 Evil Huge Battleship Appears! (Introduction)
+#226 Emergency Call-out! (Select)
+#208 Fight! Dadandarn (Stage 1)
+#209 Pulsebeats of Nightmare (Cellulous Stage)
+#210 Dreadful! Brain Gholem (Boss)
+#211 Evil Personified, Kentauros (Ruin Stage)
+#214 Fuuraiki the Thunder Genie (Oriental Palatial Stage)
+#229 Victory Dance (Clear)
+#215 Beyond the Jungle (Jungle Stage)
+#216 Awaken Giant (Boss)
+#212 Cave of the Evil Dragon (Cave Stage)
+#213 Bring Back the Blue Sea! (Seabed Stage)
+#218 Chin de Arc Junk (Battleship, Boss Dakker)
+#220 Ultimate Romancer (Inside the Battleship)
+#221 Daba Daba Uhhohho (Battleship, Boss Mech-Gorilla)
+#223 Honapochamonamuuru Hanapechamon'naare (Last Boss)
+#230 Our Heroes, Dadandarn (Credits)
+#231 Game Over
+
+-----------------------------------------------------------
+
+#016 [Voice] tatakae! seigi no yuusha, dadandarn
+#017 [Voice] akai senritsu! semarikuru mano gankou
+#018 [Voice] kamika? akumaka? seichini hisomu nazono kage
+#019 [Voice] kurayamino wana! chiteikoni nemuru kodaigenjuu
+#020 [Voice] makaino kyoufu! osoikuru, kyoui no seimeitai
+#021 [Voice] todoroku raimei! arashiwo yobu, jigoku no kishin
+#022 [Voice] Gingai daihikyou! osorubeshi, noroino kyoshin
+#023 [Voice] chijousaidaino Battle! chikyuuno heiwawo torimodose!
+#024 [Voice] kyuukyoku sentai dadandarn
+#025 [Voice] shokun, kinkyuu shutsudouja
+#026 [Voice] chikyuuno heiwawo mamorunoja, ikee. Roger
+#027 [Voice] shokun, iyoiyo kessenno tokigakita. kanarazu heiwawo torimodosunoja, ikee. Roger.
+#028 [Voice] Kotetsu
+#029 [Voice] Ann
+#030 [Voice] Eagle
+#048 [Voice] icchoagari
+#049 [Voice] ikkenrakuchaku
+#050 [Voice] yahooo
+#051 [Voice] zekkouchou
+#052 [Voice] yattazeee
+#053 [Voice] hahahahaha
+#054 [Voice] 
+#187 [PCM] Sound before the final boss.
+#189 [Voice] aaaan
+#190 [Voice] mai neemu izu mistaa Chin! honja ikkimasuyoo
+#191 [Voice] aita!
+#192 [Voice] hiii
+#193 [Voice] otasukee
+#194 [Voice] hoohohoho
+#195 [Voice] waiwa garuga ya! hineritsubushitarudee!
+#196 [Voice] guee
+#197 [Voice] hongee
+#198 [Voice] kan'nin shitee
+#199 [Voice] guwaaahahhahha
+#200 [Voice] onore onore dadandarn me! kono happy sama ni kateruto omotterunokai? hoohhohhoho
+#201 [Voice] saa, ikuwayo
+#202 [Voice] korekaraga honbandayo
+#203 [Voice] hii
+#204 [Voice] aaan
+#205 [Voice] kyaaa
+#206 [Voice] kuyashii
+#207 [Voice] hooohohhoho
+
+  [Source]
+  Kyuukyoku Sentai Dadandarn
+  King Records  KICA-7627  Jan 1, 1994
+
+$end

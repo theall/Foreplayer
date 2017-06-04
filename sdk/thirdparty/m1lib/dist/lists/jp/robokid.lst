@@ -1,0 +1,27 @@
+﻿$name=robokid
+$version=2
+$default=$0B
+$main
+
+#011 クレジット
+#018 メインテーマ (BGM A)
+#040 ゴール
+#076 エリアクリア
+#048 BGM B
+#044 BGM C
+#077 ボス
+#038 BGM D
+#037 BGM E
+#020 エンディング
+#029 ネーム
+#046 未使用曲 (BGM E)
+
+  ■出典
+  OMEGA FIGHTER・ATOMIC ROBO-KID / UPL
+  PONY CANYON / SCITRON  PCCB-00038  1990.08.21
+
+  ■作曲
+  メカノアソシエイツ
+
+// リスト作成: らま
+$end

@@ -1,0 +1,117 @@
+﻿$name=willow
+$version=2
+$default=059
+$main
+
+#059 Credit
+#018 Map
+#019 Stage 1 - Crossroad <time="1:32">
+#027 Shop <time="43">
+#000 Stage 1 - Crossroad (w/o Intro) <time="41">
+#001 Stage 1 - Boss <time="1:19">
+#016 Stage Clear
+#002 Stage 2 - Cherlindrea's Forest I <time="53">
+#003 Stage 2 - Cherlindrea's Forest II <time="2:06">
+#004 Stage 3 - Fin Raziel's Island I <time="47">
+#005 Stage 3 - Fin Raziel's Island II <time="1:32.7">
+#006 Stage 3 - Boss <time="58">
+#007 Stage 4 - Sorsha's Camp I <time="1:31">
+#009 Stage 4 - Sorsha's Camp II <time="1:22">
+#008 Stage 4 - Sorsha's Camp III <time="1:02">
+#010 Stage 5 - Tir Asleen Castle <time="1:36">
+#011 Stage 5 - Boss <time="1:01.5">
+#012 Stage 6 - Nockmaar Castle I <time="1:46">
+#014 Stage 6 - Boss 1 <time="1:20">
+#013 Stage 6 - Nockmaar Castle II <time="1:50">
+#015 Stage 6 - Boss 2 <time="1:09">
+#029 Ending - Credits Roll <time="1:42">
+#024 Name Entry <time="36">
+#022 Ranking <time="1:24">
+#021 Continue
+#020 Game Over
+
+#026 Stage Clear (Different Version)
+
+---------------------------------------------------
+  [Voice & SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+
+#128 [Voice] Willow
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+#143 [SFX]
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+#160 [SFX]
+#161 [SFX]
+#162 [Voice]
+#163 [Voice]
+#165 [Voice]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+
+// List Contribution by NK
+$end

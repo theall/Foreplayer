@@ -1,0 +1,58 @@
+﻿$name=gondo
+$version=2
+$default=266
+$fixed_volume=203
+$main
+
+#266 Credit Inserted
+#036 Game Start - Gondomania (Main Theme, US Version)
+#038 Boss Theme
+#289 [SFX] Gate Open
+#039 Ending
+#040 Name Entry
+
+#037 Gondomania (Main Theme, US Version)
+
+---------------------------------------------
+  [SFX]
+
+#260 [SFX]
+#261 [SFX]
+#262 [SFX]
+#263 [SFX]
+#264 [SFX]
+#265 [SFX]
+#266 [SFX]
+#267 [SFX]
+#268 [SFX]
+#269 [SFX]
+#270 [SFX]
+#271 [SFX]
+#272 [SFX]
+#273 [SFX]
+#274 [SFX]
+#275 [SFX]
+#276 [SFX]
+#277 [SFX]
+#278 [SFX]
+#279 [SFX]
+#280 [SFX]
+#281 [SFX]
+#282 [SFX]
+#283 [SFX]
+#284 [SFX]
+#285 [SFX]
+#286 [SFX]
+#287 [SFX]
+#289 [SFX]
+#290 [SFX]
+
+  [Soundtrack]
+  Deco History Scene I / Data East Game Music Scene One
+  Polystar / Datam  H25X-20008  Sep 25, 1988
+
+  [Sound Composer]
+  A. Hara
+
+// List contribution by R
+$end

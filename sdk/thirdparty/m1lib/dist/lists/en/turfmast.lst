@@ -1,0 +1,35 @@
+$name=turfmast
+$version=2
+$default=002
+//$fixed_volume=150
+$main
+
+#002 Neo Geo Logo
+#051 NAZCA Logo
+#048 Title
+#015 Coin Inserted
+#050 Game Explanation, Course Selection, Result Screen & Staff Roll <time="0:26.70">
+#042 Game & Character Selection <time="1:18.50">
+#043 Game Start
+#039 Course Info <time="00:29.60">
+
+#034 Fujiyama Oriental Golf Club, Japan <time="3:17.17">
+#046 Birdie!!
+#036 Grand Canyon Golf Course, U.S.A. <time="3:38.97">
+#044 Par
+#035 BADEN National Golf Course, Germany <time="3:10.05">
+#049 Albatross & Eagle
+#037 Blue Lagoon Golf Course, Australia <time="3:07.75">
+#047 Hole-In-One, Competition Record Update, Closest to the Pin Record Update
+#045 Bogey
+#040 Game Over
+#038 Here comes a New Challenger
+
+#041 Game & Character Selection (Background Track)
+
+  [Composed by]
+  HIYA
+
+// List Contribution by Aska-m
+// English translation by AkumuHau
+$end

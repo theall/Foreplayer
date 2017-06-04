@@ -1,0 +1,23 @@
+﻿$name=radm
+$version=2
+$default=131
+$songmax=135
+$fixed_volume=202
+$main
+
+#131 アドバタイズ
+#129 Soup Up (BGM 1)
+#130 Gang Bang (BGM 2)
+#133 Fall Head Over Heal (BGM 3)
+#132 Submission & Domination (BGM 4)
+#135 完走ファンファーレ
+#134 ネームエントリー
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  Formula -G.S.M. SEGA 5-
+  PONY CANYON / SCITRON  PCCB-00059  1991.04.21
+
+$end

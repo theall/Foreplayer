@@ -1,0 +1,484 @@
+﻿$name=sttng_l7
+$version=2
+$default=1
+$main
+
+#01 Music
+#02 Music
+#03 Music
+#04 Music
+#05 Music
+#06 Music
+#07 Music
+#08 Music
+#09 Music
+#10 Music
+#11 Music
+#12 Music
+#13 Music
+#14 Music
+#15 Music
+#16 Music
+#17 Music
+#18 Music
+#19 Music
+#20 Music
+#21 Music
+#22 Music
+#23 Music
+#24 Music
+#25 Music
+#26 Music
+#27 Music
+#28 Music
+#29 Music
+#30 Music
+#31 Music
+#32 Music
+#33 Music
+#34 Music
+#35 Music
+#40 Music
+#41 Music
+#42 Music
+
+
+#170 [Voice] Beverly Crusher - "Welcome Aboard"
+#171 [Voice] Beverly Crusher - "Shoot Again"
+#172 [Voice] Beverly Crusher - "We have all gone back in time"
+#173 [Voice] Beverly Crusher - "Captain, we have heavy casualties on all decks"
+#174 [Voice] Beverly Crusher - "We have heavy casualties on all decks"
+#175 [Voice] Beverly Crusher - "Congratulations"
+#176 [Voice] Beverly Crusher - "Excellent shot"
+#177 [Voice] Beverly Crusher - "What is happening to us?"
+#650 [Voice] Cardassian - "Leave this territory now, or be destroyed"
+#651 [Voice] Cardassian - "Here is your settlement, Picard!"
+#600 [Voice] Computer - "The Probe has discovered an advance in rank"
+#601 [Voice] Computer - "The Probe has discovered a lit extra ball"
+#602 [Voice] Computer - "The Probe has discovered return lanes are lit"
+#603 [Voice] Computer - "The Probe has discovered that the spinner value has doubled"
+#604 [Voice] Computer - "Holodeck Program Ready"
+#605 [Voice] Computer - "Hurry-up Activated"
+#606 [Voice] Computer - "Program Initiated"
+#607 [Voice] Computer - "Program Terminated"
+#608 [Voice] Computer - "Search Complete"
+#609 [Voice] Computer - "Search for Dilithium Crystals"
+#610 [Voice] Computer - "Search for Isolinear Chips"
+#611 [Voice] Computer - "Search for Duranium Spheres"
+#612 [Voice] Computer - "Search for The Singing Stone"
+#613 [Voice] Computer - "Dilithium Crystals have been collected"
+#614 [Voice] Computer - "Isolinear Chips have been collected"
+#615 [Voice] Computer - "Duranium Spheres have been collected"
+#616 [Voice] Computer - "The Singing Stone has been collected"
+#617 [Voice] Computer - "Replicating Duranium Spheres"
+#618 [Voice] Computer - "Replication Complete"
+#621 [Voice] Computer - "Initiate Simulation"
+#622 [Voice] Computer - "Simulation Complete"
+#623 [Voice] Computer - "Shoot for flashing emblems"
+#624 [Voice] Computer - "Evacuate all personnel"
+#625 [Voice] Computer - "Board the shuttle as quickly as possible"
+#629 [Voice] Computer - "The Gamma Quadrant"
+#631 [Voice] Computer - "Increasing Warp"
+#100 [Voice] Data - "Aye, Sir"
+#101 [Voice] Data - "We can destroy the asteroids in our path, Sir"
+#102 [Voice] Data - "Unknown, Captain"
+#103 [Voice] Data - "The Kickback is ready"
+#104 [Voice] Data - "Damage coming in from all decks"
+#105 [Voice] Data - "Had you propelled the ball from the proper trajectory, you would have been rewarded"
+#106 [Voice] Data - "Course laid in, Sir"
+#108 [Voice] Data - "The probe has discovered big points, Sir"
+#109 [Voice] Data - "The probe has discovered a bonus multiplier, Sir"
+#110 [Voice] Data - "The probe has discovered kickback is lit, Sir"
+#111 [Voice] Data - "The probe has discovered lock is lit, Sir"
+#112 [Voice] Data - "The probe has discovered multipliers are held, Sir"
+#113 [Voice] Data - "The probe has discovered nothing, Sir"
+#114 [Voice] Data - "The probe has discovered a replay, Sir"
+#115 [Voice] Data - "The probe has discovered a special, Sir" 
+#116 [Voice] Data - "The probe has discovered an asteroid field directly ahead"
+#117 [Voice] Data - "The probe has discovered an extra ball, Sir"
+#118 [Voice] Data - "Readings indicate big points, Sir"
+#119 [Voice] Data - "Readings indicate a bonus multiplier, Sir"
+#120 [Voice] Data - "Readings indicate kickback is lit, Sir"
+#121 [Voice] Data - "Readings indicate lock is lit, Sir"
+#122 [Voice] Data - "Readings indicate multipliers are held, Sir"
+#123 [Voice] Data - "Readings indicate nothing, Sir"
+#124 [Voice] Data - "Readings indicate a replay, Sir"
+#125 [Voice] Data - "Readings indicate a special, Sir"
+#126 [Voice] Data - "Readings indicate an asteroid field directly ahead"
+#127 [Voice] Data - "Readings indicate an extra ball, Sir"
+#150 [Voice] Deanna Troi - "I believe you want to continue"
+#151 [Voice] Deanna Troi - "I believe they are hiding something"
+#152 [Voice] Deanna Troi - "Captain, I believe they have evil intentions"
+#153 [Voice] Deanna Troi - "Captain, something strange is happening"
+#154 [Voice] Deanna Troi - "Welcome Aboard"
+#155 [Voice] Deanna Troi - "Here is another chance"
+#156 [Voice] Deanna Troi - "I'm sensing a lit extra ball"
+#157 [Voice] Deanna Troi - "I'm sensing they have evil intentions"
+#158 [Voice] Deanna Troi - "I'm sensing you want to continue"
+#159 [Voice] Deanna Troi - "I'm sensing they are hiding something"
+#160 [Voice] Deanna Troi - "I believe they have evil intentions"
+#653 [Voice] Ferengi - "Captain, our ship is disabled.  We need Duranium Spheres."
+#654 [Voice] Ferengi - "Thank you!"
+#655 [Voice] Ferengi - "Most Gracious, Captain!"
+#656 [Voice] Ferengi - "More Please!"
+#657 [Voice] Ferengi - "We need them, Now!"
+#200 [Voice] Geordi La Forge - "Captain, the computer is malfunctioning"
+#201 [Voice] Geordi La Forge - "About three hours"
+#202 [Voice] Geordi La Forge - "Shields will fail in twenty seconds" 
+#203 [Voice] Geordi La Forge - "Shields will fail in fifteen seconds"
+#204 [Voice] Geordi La Forge - "Ten"
+#205 [Voice] Geordi La Forge - "Nine"
+#206 [Voice] Geordi La Forge - "Eight"
+#207 [Voice] Geordi La Forge - "Seven"
+#208 [Voice] Geordi La Forge - "Six"
+#209 [Voice] Geordi La Forge - "Five"
+#210 [Voice] Geordi La Forge - "Four"
+#211 [Voice] Geordi La Forge - "Three"
+#212 [Voice] Geordi La Forge - "Two"
+#213 [Voice] Geordi La Forge - "One"
+#214 [Voice] Geordi La Forge - "All Shields are down!"
+#215 [Voice] Geordi La Forge - "Warp Drive failure in twenty seconds"
+#216 [Voice] Geordi La Forge - "Warp Drive failure in fifteen seconds"
+#217 [Voice] Geordi La Forge - "La Forge here.."
+#350 [Voice] Jean-Luc Picard - "What do you want now, Q?"
+#351 [Voice] Jean-Luc Picard - "Report to the transporter room"
+#352 [Voice] Jean-Luc Picard - "Steady as she goes"
+#353 [Voice] Jean-Luc Picard - "What are you sensing?"
+#354 [Voice] Jean-Luc Picard - "Thank you Counselor"
+#355 [Voice] Jean-Luc Picard - "Thank you Mr. Data!"
+#356 [Voice] Jean-Luc Picard - "Engage Tractor Beam"
+#357 [Voice] Jean-Luc Picard - "What the devil..!"
+#358 [Voice] Jean-Luc Picard - "What is our exact location?"
+#359 [Voice] Jean-Luc Picard - "Good Luck"
+#360 [Voice] Jean-Luc Picard - "Fire a warning shot"
+#361 [Voice] Jean-Luc Picard - "Beyond Belief"
+#362 [Voice] Jean-Luc Picard - "Brilliant"
+#363 [Voice] Jean-Luc Picard - "Fantastic"
+#364 [Voice] Jean-Luc Picard - "Let's be diplomatic about this"
+#365 [Voice] Jean-Luc Picard - "Shall we Negotiate?"
+#366 [Voice] Jean-Luc Picard - "Let's attempt a peaceful settlement"
+#367 [Voice] Jean-Luc Picard - "What are your terms"
+#368 [Voice] Jean-Luc Picard - "Engineering"
+#369 [Voice] Jean-Luc Picard - "Engineering, this is the Bridge"
+#370 [Voice] Jean-Luc Picard - "This is Federation Territory"
+#371 [Voice] Jean-Luc Picard - "Hail the ship"
+#372 [Voice] Jean-Luc Picard - "Open a channel"
+#373 [Voice] Jean-Luc Picard - "This is Captain Jean-Luc Picard of the Federation Starship Enterprise"
+#374 [Voice] Jean-Luc Picard - "Space.. the Final Frontier.  These are the Voyages of the Starship Enterprise.  It's continuing mission: to explore strange new worlds; to seek out new life and new civilizations.. to boldly go where no one has gone before."
+#375 [Voice] Jean-Luc Picard - "Captain's Log: Supplemental.  The crew performed admirably in dispatching the Borg threat"
+#379 [Voice] Jean-Luc Picard - "Computer.."
+#380 [Voice] Jean-Luc Picard - "Computer, What is our exact location?"
+#500 [Voice] Jean-Luc Picard - "Welcome the the Enterprise"
+#501 [Voice] Jean-Luc Picard - "Come!"
+#502 [Voice] Jean-Luc Picard - "Engage!"
+#503 [Voice] Jean-Luc Picard - "On-Screen"
+#504 [Voice] Jean-Luc Picard - "Magnify"
+#505 [Voice] Jean-Luc Picard - "Make it so"
+#506 [Voice] Jean-Luc Picard - "Launch a Probe
+#507 [Voice] Jean-Luc Picard - "Launch a Class 1 Probe"
+#508 [Voice] Jean-Luc Picard - "Increase Speed to Warp 9.9"
+#510 [Voice] Jean-Luc Picard - "Fire all Weapons"
+#511 [Voice] Jean-Luc Picard - "Fire Phasers"
+#512 [Voice] Jean-Luc Picard - "Fire when ready!"
+#513 [Voice] Jean-Luc Picard - "Commence Firing!"
+#514 [Voice] Jean-Luc Picard - "All Hands.. Battlestations!
+#515 [Voice] Jean-Luc Picard - "Fire Photon Torpedoes"
+#516 [Voice] Jean-Luc Picard - "Phasers at Ready"
+#518 [Voice] Jean-Luc Picard - "Red Alert!"
+#519 [Voice] Jean-Luc Picard - "We will never surrender"
+#520 [Voice] Jean-Luc Picard - "Damage Report"
+#521 [Voice] Jean-Luc Picard - "Prepare for maximum acceleration"
+#522 [Voice] Jean-Luc Picard - "Sent to Starfleet:  We have engaged the Borg"
+#523 [Voice] Jean-Luc Picard - "All hand , prepare for multi-ball"
+#524 [Voice] Jean-Luc Picard - "Get the Jackpot"
+#525 [Voice] Jean-Luc Picard - "Get the Super Jackpot"
+#526 [Voice] Jean-Luc Picard - "Get the Extra Ball"
+#527 [Voice] Jean-Luc Picard - "Get off my Bridge"
+#528 [Voice] Jean-Luc Picard - "Get off my Ship"
+#529 [Voice] Jean-Luc Picard - "How long for repairs?"
+#530 [Voice] Jean-Luc Picard - "I need it in twenty seconds"
+#531 [Voice] Jean-Luc Picard - "Evasive Maneuvers"
+#532 [Voice] Jean-Luc Picard - "You must withdraw from this sector!"
+#533 [Voice] Jean-Luc Picard - "Nicely Done!"
+#534 [Voice] Jean-Luc Picard - "Now!"
+#535 [Voice] Jean-Luc Picard - "Q, what are you doing here?"
+#536 [Voice] Jean-Luc Picard - "Stop it, Q!"
+#537 [Voice] Jean-Luc Picard - "You again, Q!"
+#539 [Voice] Jean-Luc Picard - "Space.. The Final Frontier"
+#540 [Voice] Jean-Luc Picard - "The Final Frontier"
+#541 [Voice] Jean-Luc Picard - "Suggestions"
+#542 [Voice] Jean-Luc Picard - "Well done"
+#543 [Voice] Jean-Luc Picard - "Congratulations"
+#544 [Voice] Jean-Luc Picard - "Excellent Shot"
+#545 [Voice] Jean-Luc Picard - "Congratulations, Ensign"
+#546 [Voice] Jean-Luc Picard - "Congratulations, Lieutenant"
+#547 [Voice] Jean-Luc Picard - "Congratulations, Lieutenant Commander"
+#548 [Voice] Jean-Luc Picard - "Congratulations, Commander"
+#549 [Voice] Jean-Luc Picard - "Congratulations, Captain
+#550 [Voice] Jean-Luc Picard - "Excellent Shot, Ensign"
+#551 [Voice] Jean-Luc Picard - "Excellent Shot, Lieutenant"
+#552 [Voice] Jean-Luc Picard - "Excellent Shot, Lieutenant Commander"
+#553 [Voice] Jean-Luc Picard - "Excellent Shot, Commander"
+#554 [Voice] Jean-Luc Picard - "Excellent Shot, Captain"
+#555 [Voice] Jean-Luc Picard - "Player One"
+#556 [Voice] Jean-Luc Picard - "Player Two"
+#557 [Voice] Jean-Luc Picard - "Player Three"
+#558 [Voice] Jean-Luc Picard - "Player Four"
+#559 [Voice] Jean-Luc Picard - "Pursue at Maximum Warp!"
+#560 [Voice] Jean-Luc Picard - "Stop this senseless destruction"
+#561 [Voice] Jean-Luc Picard - "Counselor Troi.."
+#562 [Voice] Jean-Luc Picard - "Mr. Worf.."
+#563 [Voice] Jean-Luc Picard - "Good Luck"
+#564 [Voice] Jean-Luc Picard - "Well Done, Ensign 
+#565 [Voice] Jean-Luc Picard - "Well Done, Lieutenant"
+#566 [Voice] Jean-Luc Picard - "Well Done, Lieutenant Commander"
+#567 [Voice] Jean-Luc Picard - "Well Done, Commander"
+#568 [Voice] Jean-Luc Picard - "Well Done, Captain"
+#230 [Voice] Q - "Bonjour, Mon Capitan"
+#231 [Voice] Q - "Let's see how you deal with this.."
+#232 [Voice] Q - "Human"
+#233 [Voice] Q - "*Laughing*"
+#234 [Voice] Q - "Some day, you'll learn to play pinball"
+#235 [Voice] Q - "Let's play a little game"
+#236 [Voice] Q - ".. and you were doing SO well"
+#237 [Voice] Q - "Here's your ball back"
+#238 [Voice] Q - "O.K.  That's enough"
+#239 [Voice] Q - "Lose something?"
+#240 [Voice] Q - "That will never do"
+#241 [Voice] Q - "Not bad, not bad at all"
+#242 [Voice] Q - "What a pity"
+#243 [Voice] Q - "Temper, Temper Mon Capitan"
+#244 [Voice] Q - "Tooo bad.."
+#245 [Voice] Q - "That was TOO easy"
+#246 [Voice] Q - "I want to play!"
+#247 [Voice] Q - "Is that the best you can do?"
+#248 [Voice] Q - "Congradulations"
+#249 [Voice] Q - "Looking for the ball?"
+#250 [Voice] Q - "Is there a John Luck Pickard here?"
+#652 [Voice] Romulan - "We are conducting military exercises.  You would be wise to change course immediately"
+#450 [Voice] The Borg - "You will be Assimilated!"
+#452 [Voice] The Borg - "Freedom is Irrelevant!"
+#453 [Voice] The Borg - "Pinball is Irrelevant!"
+#454 [Voice] The Borg - "Resistance is Futile!"
+#455 [Voice] The Borg - "If you do not surrender, we will destroy your ship!"
+#460 [Voice] Starfleet - "Enterprise, The Borg have entered Federation Space.  Intercept immediately.  Good Luck!
+#461 [Voice] Starfleet - "Enterprise, The Borg have entered Federation Space.  Intercept immediately.  Admiral Biagi out"
+#251 [Voice] William Riker - "Five to beam up"
+#252 [Voice] William Riker - "Battlestations!"
+#253 [Voice] William Riker - "Feeling Lucky?"
+#254 [Voice] William Riker - "Better Luck next time"
+#255 [Voice] William Riker - "Hold on tight, this could get rough"
+#257 [Voice] William Riker - "Q, we don't have time for your games"
+#258 [Voice] William Riker - "Red Alert"
+#259 [Voice] William Riker - "Shields Up"
+#260 [Voice] William Riker - "Report to the Bridge"
+#261 [Voice] William Riker - "Energize"
+#262 [Voice] William Riker - "You Win"
+#263 [Voice] William Riker - "The Picard Maneuver, nicely done"
+#264 [Voice] William Riker - "Nicely Done"
+#265 [Voice] William Riker - "Set coordinates for the Alpha Quadrant"
+#266 [Voice] William Riker - "Set coordinates for the Beta Quadrant"
+#267 [Voice] William Riker - "Set coordinates for the Gamma Quadrant"
+#268 [Voice] William Riker - "Set coordinates for the Delta Quadrant
+#269 [Voice] William Riker - "Alpha Quadrant"
+#270 [Voice] William Riker - "Beta Quadrant"
+#271 [Voice] William Riker - "Gamma Quadrant"
+#272 [Voice] William Riker - "Delta Quadrant"
+#273 [Voice] William Riker - "Here we go again.."
+#300 [Voice] Worf - "Aye, Captain"
+#301 [Voice] Worf - "A direct hit, Sir"
+#302 [Voice] Worf - "Don't Move!"
+#303 [Voice] Worf - "One Million"
+#304 [Voice] Worf - "Two Million"
+#305 [Voice] Worf - "Three Million"
+#306 [Voice] Worf - "Four Million"
+#307 [Voice] Worf - "Five Million"
+#308 [Voice] Worf - "Six Million"
+#309 [Voice] Worf - "Seven Million"
+#310 [Voice] Worf - "Eight Million"
+#311 [Voice] Worf - "Nine Million"
+#312 [Voice] Worf - "Ten Million"
+#313 [Voice] Worf - "Twenty Million"
+#314 [Voice] Worf - "Thirty Million"
+#315 [Voice] Worf - "Fourty Million"
+#316 [Voice] Worf - "Fifty Million"
+#317 [Voice] Worf - "Jackpot"
+#318 [Voice] Worf - "Super Jackpot"
+#319 [Voice] Worf - "Extra Ball"
+#320 [Voice] Worf - "Jackpot ready, Sir"
+#321 [Voice] Worf - "I can no longer measure our velocity"
+#322 [Voice] Worf - "Sir, a strange object is dead ahead"
+#323 [Voice] Worf - "Warp 9.1"
+#324 [Voice] Worf - "Warp 9.2"
+#325 [Voice] Worf - "Warp 9.3"
+#326 [Voice] Worf - "Warp 9.4"
+#327 [Voice] Worf - "Warp 9.5"
+#328 [Voice] Worf - "Warp 9.6"
+#329 [Voice] Worf - "Warp 9.7"
+#330 [Voice] Worf - "Warp 9.8"
+#331 [Voice] Worf - "Warp 9.9"
+#332 [Voice] Worf - "You are an honorable player"
+#333 [Voice] Worf - "You are without honor"
+#334 [Voice] Worf - "The Shields are at maximum"
+#335 [Voice] Worf - "The Shields are at full power"
+#336 [Voice] Worf - "The Shields are at fifty percent"
+#338 [Voice] Worf - "Damage to the shields, Sir"
+#339 [Voice] Worf - "Excellent"
+#340 [Voice] Worf - "Sensors are picking up a ship on an intercept course
+#341 [Voice] Worf - "Sensors are picking up a Cardassian Ship"
+#342 [Voice] Worf - "Sensors are picking up a Romulan Warbird"
+#343 [Voice] Worf - "Sensors are picking up a Ferengi Freighter"
+#345 [Voice] Worf - "Sensors are picking up a Cardassian Ship, in the neutral zone"
+#346 [Voice] Worf - "Sensors are picking up a Romulan Warbird in the neutral zone"
+#347 [Voice] Worf - "Sensors are picking up a Ferengi Freighter in the nuetral zone"
+#348 [Voice] Worf - "Sensors are picking up a distortion in the space-time continuum
+#349 [Voice] Worf - "Sir, the viewscreen is malfunctioning"
+#400 [Voice] Worf - "Cruising at Warp Factor Two"
+#401 [Voice] Worf - "Cruising at Warp Factor Three"
+#402 [Voice] Worf - "Cruising at Warp Factor Four"
+#403 [Voice] Worf - "Cruising at Warp Factor Five"
+#404 [Voice] Worf - "Cruising at Warp Factor Six"
+#405 [Voice] Worf - "Cruising at Warp Factor Seven"
+#406 [Voice] Worf - "Cruising at Warp Factor Eight"
+#407 [Voice] Worf - "Cruising at Warp Factor Nine"
+#408 [Voice] Worf - "Warp Factor Two"
+#409 [Voice] Worf - "Warp Factor Three"
+#410 [Voice] Worf - "Warp Factor Four"
+#411 [Voice] Worf - "Warp Factor Five"
+#412 [Voice] Worf - "Warp Factor Six"
+#413 [Voice] Worf - "Warp Factor Seven"
+#414 [Voice] Worf - "Warp Factor Eight"
+#415 [Voice] Worf - "Warp Factor Nine"
+#416 [Voice] Worf - "Warp Two"
+#417 [Voice] Worf - "Warp Three"
+#418 [Voice] Worf - "Warp Four"
+#419 [Voice] Worf - "Warp Five"
+#420 [Voice] Worf - "Warp Six"
+#421 [Voice] Worf - "Warp Seven"
+#422 [Voice] Worf - "Warp Eight"
+#423 [Voice] Worf - "Warp Nine"
+#424 [Voice] Worf - "Sir, The Borg are hailing us"
+#425 [Voice] Worf - "Sir, The Ferengi are hailing us"
+#426 [Voice] Worf - "Sir, the Romulans are hailing us"
+#427 [Voice] Worf - "Sir, the Cardassians are hailing us"
+#428 [Voice] Worf - "Sensors are picking up a Klingon Bird of Prey"
+#429 [Voice] Worf - "The Borg are warping out, Sir"
+#430 [Voice] Worf - "The Romulans are warping out, Sir"
+#431 [Voice] Worf - "The Cardassians are warping out, Sir"
+
+
+#980 [S.E.]
+#981 [S.E.]
+#982 [S.E.]
+#983 [S.E.]
+#984 [S.E.]
+#985 [S.E.]
+#986 [S.E.]
+#987 [S.E.]
+#988 [S.E.]
+#989 [S.E.]
+#1000 [S.E.]
+#1001 [S.E.]
+#1002 [S.E.]
+#1003 [S.E.]
+#1004 [S.E.]
+#1005 [S.E.]
+#1006 [S.E.]
+#1007 [S.E.]
+#1008 [S.E.]
+#1009 [S.E.]
+#1010 [S.E.]
+#1011 [S.E.]
+#1012 [S.E.]
+#1013 [S.E.]
+#1014 [S.E.]
+#1015 [S.E.]
+#1016 [S.E.]
+#1017 [S.E.]
+#1018 [S.E.]
+#1019 [S.E.]
+#1020 [S.E.]
+#1021 [S.E.]
+#1022 [S.E.]
+#1023 [S.E.]
+#1024 [S.E.]
+#1025 [S.E.]
+#1026 [S.E.]
+#1027 [S.E.]
+#1028 [S.E.]
+#1029 [S.E.]
+#1030 [S.E.]
+#1031 [S.E.]
+#1032 [S.E.]
+#1033 [S.E.]
+#1034 [S.E.]
+#1035 [S.E.]
+#1036 [S.E.] - continuous
+#1037 [S.E.]
+#1038 [S.E.]
+#1039 [S.E.]
+#1040 [S.E.]
+#1041 [S.E.]
+#1042 [S.E.]
+#1043 [S.E.]
+#1044 [S.E.] + Worf - "Extra Ball"
+#1045 [S.E.]
+#1046 [S.E.]
+#1047 [S.E.]
+#1048 [S.E.]
+#1049 [S.E.]
+#1052 [S.E.]
+#1053 [S.E.]
+#1056 [S.E.]
+#1057 [S.E.]
+#1058 [S.E.]
+#1059 [S.E.]
+#1061 [S.E.]
+#1062 [S.E.]
+#1063 [S.E.]
+#1064 [S.E.]
+#1065 [S.E.]
+#1066 [S.E.]
+#1067 [S.E.]
+#1068 [S.E.]
+#1069 [S.E.]
+#1070 [S.E.]
+#1071 [S.E.]
+#1072 [S.E.]
+#1073 [S.E.]
+#1074 [S.E.]
+#1075 [S.E.]
+#1084 [S.E.]
+#1085 [S.E.]
+#1086 [S.E.]
+#1087 [S.E.]
+#1088 [S.E.]
+#1089 [S.E.]
+#1090 [S.E.]
+#1091 [S.E.]
+#1092 [S.E.]
+#1093 [S.E.]
+#1094 [S.E.]
+#1095 [S.E.]
+#1097 [S.E.]
+#1098 [S.E.]
+#1099 [S.E.]
+#1100 [S.E.]
+#1101 [S.E.]
+#1102 [S.E.]
+#1103 [S.E.]
+#1104 [S.E.]
+#1105 [S.E.]
+#1106 [S.E.] + Data - "Readings indicate a replay, Sir"
+#1107 [S.E.] + Data - "Readings indicate a special, Sir"
+#1108 [S.E.]
+#1109 [S.E.]
+#1110 [S.E.]
+#1111 [S.E.]
+#1112 [S.E.]
+#1120 [S.E.]
+#1122 [S.E.]
+#1123 [S.E.]
+
+// Basic Listing by Tafoid
+$end

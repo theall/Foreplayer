@@ -1,0 +1,21 @@
+﻿$name=hbarrel
+$version=2
+$default=$2b
+$songmax=$30
+$main
+
+$2b 降下 (スタート - Unused)
+$2c ヘビー・バレル・テーマ (屋外BGM)
+$2f 激突 (ボスBGM)
+$2d 壊滅敵基地 (基地BGM)
+$2e 結末 (最終面BGM)
+$30 飛翔 (エンディング)
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  DATA EAST GAME MUSIC / G.M.O.
+  ALFA RECORDS  28XA-205  1988.05.10
+
+$end

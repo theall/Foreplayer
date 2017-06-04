@@ -1,0 +1,119 @@
+﻿$name=1941
+$version=2
+$default=150
+//$songmax=171
+$main
+
+#150 Credit Inserted <time="2">
+#074 Opening <time="21.56">
+#064 Stage 1 <time="1:47.38">
+#066 Boss 1 <time="1:43.8">
+#067 Stage CLEAR <time="8">
+#065 Stage 2 <time="1:27.77">
+#072 Boss 2 <time="1:13.1">
+#068 Stage 3 <time="1:32.35">
+#073 Boss 3 <time="1:36.9">
+#069 Stage 4 <time="1:51.45">
+#077 Boss 4 <time="1:04.2">
+#070 Stage 5 <time="59.3">
+#088 Boss 5 <time="1:37.5">
+#071 Stage 6-A <time="56.4">
+#066 Mid Boss A <time="52.6">
+#079 Stage 6-B <time="1:33.45">
+#081 Stage 6-C <time="1:11.8">
+#078 Mid Boss B <time="48.5">
+#080 Stage 6-D <time="46.3">
+#082 Boss 6-A <time="1:09.2">
+#083 Boss 6-B (Last Boss) <time="59.6">
+#086 Last Stage Clear <time="7">
+#075 Ending <time="1:43">
+#087 Credits Roll <time="52">
+#085 Ranking <time="48.9">
+#084 Continue <time="24.7">
+#076 Game Over <time="4.5">
+#089 Unused <time="1:16.95">
+
+-----------------------------------------------------------
+  [SFX]
+
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX] <time="3">
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX] <time="3">
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX] Credit
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+
+  [Source]
+  Final Fight -G.S.M. Capcom 3- / Alfh Lyra Wa Lyra
+  Pony Canyon / Scitron  PCCB-00030  May 21, 1990
+
+// List Contributed by NK
+$end

@@ -1,0 +1,37 @@
+﻿$name=uccopsj
+$version=2
+$default=$13
+$main
+//
+//Title : UNDERCOVER COPS
+//Copyright : (c)Irem 1992
+//System : M92
+//Sound CPU : V30
+//Sound Chip : YM2151, GA20
+//Composer : 冷牟田(HIYA!)
+
+$13 Tell A Motion (タイトルバック)
+$01 Soldat Choix (セレクト)
+$04 Northern Barramundi (ステージ 1)
+$02 Sarah Sowertty (ステージ 2-1)
+$16 Chaca Chaca Move Ya (ステージ 2-2)
+$0b Nasty Loud Quack (ボス)
+$12 Even Homer Sometimes Nods (ゲームオーバー)
+$08 Assessment Day (査定)
+$14 Harder Order (ステージスタート)
+$03 Redtailed Cat (ステージ 3)
+$06 Dandy N.D. (ステージ 4)
+$05 Than Hawk Anger (ステージ 5-1)
+$17 Indifferent Zero Other (ステージ 5-4 BLACKのテーマ)
+$15 Laugh And Grow Fat (ステージクリア)
+$11 An-non TO・KI・ME・KI Street
+
+  ■出典
+  UNDERCOVER COPS
+  VICTOR ENTERTAINMENT  VICL-5180  1992.12.16
+
+  ■作曲
+  冷牟田 (HIYA!)
+
+// リスト作成：加山。さん
+$end

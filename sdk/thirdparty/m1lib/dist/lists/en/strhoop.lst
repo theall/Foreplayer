@@ -1,0 +1,29 @@
+﻿$name=strhoop
+$version=2
+$default=127
+$fixed_volume=100
+$main
+
+#127 Neo Geo Logo
+
+#006 Break Down (Team Select)
+#001 Funky Beat (Beach)
+#008 Fine (Stage Clear)
+#002 Just 3 on 3 (Park)
+#003 Yo! What's Up? (Slam)
+#004 Friday Brother (Club)
+#005 Body's Power (Meet)
+#007 Brush Up (Continue)
+#010 Over (Game Over)
+#009 Magic Time (Ending)
+#011 Hoop King (Name Entry)
+
+  [Source]
+  Dunk Dream, Gun Hard
+  Pony Canyon / Scitron  PCCB-00173  Jan 20, 1995
+
+  [Sound Composer]
+  Tatsuya Kiuchi
+
+// Original List from Amuse
+$end

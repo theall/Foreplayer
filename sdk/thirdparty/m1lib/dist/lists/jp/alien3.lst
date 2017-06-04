@@ -1,0 +1,41 @@
+﻿$name=alien3
+$version=2
+$default=023
+$main
+
+#023 STORY DEMO
+#021 ADVERTISE DEMO
+#000 START <time="15.8">
+#001 DEMO <time="15.6">
+#028 MAP PREVIEW <time="5">
+#002 STAGE 1 -Inside of the space ship "SULACO"-
+#011 FACE-HUGGER
+#012 SUPER FACE-HUGGER
+#017 STAGE CLEAR! <time="4">
+#018 COLONIAL MARINE RANKING
+#003 STAGE 2 -FIORINA "FURY" 161 part 1-
+#013 IRON TORTOISE
+#004 STAGE 2 -FIORINA "FURY" 161 part 2-
+#026 ALIEN
+#005 STAGE 3 -Prison-
+#006 ELEVATOR <time="18">
+#007 LEVEL 1
+#008 LEVEL 2
+#014 SUPER DOGBURSTER
+#009 STAGE 4 -Tunnel-
+#019 CONTINUE ?
+#013 ALIEN
+#010 STAGE 5 -Blast furnace-
+#024 ALIEN
+#027 STAGE 6 -Final struggle-
+#014 AN UNIDENTFIED MAN
+#025 ENDING
+#023 NAME ENTRY
+
+#015 未使用曲 1
+#016 未使用曲 2
+#020 未使用曲 3
+#022 未使用曲 4
+
+// List contribution by ZEK.
+$end

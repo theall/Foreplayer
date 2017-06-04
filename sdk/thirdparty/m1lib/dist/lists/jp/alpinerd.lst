@@ -1,0 +1,138 @@
+﻿$name=alpinerd
+$version=2
+$default=124
+$main
+
+#124 Opening Attract (Static Version) <time="15.5">
+#009 [S.E.] <time="1.9">
+#011 Title Call
+#140 Opening Attract (Dynamic Version) <time="20">
+#009 [S.E.] <time="1.9">
+#011 Title Call
+#096 Over The View
+#108 Endless Season
+#121 Give It Together
+#099 Alpine Wind (Theme Of Alpine Racer)
+#105 Extreme Slope
+#118 Never Break Away
+#112 Invisible Destination
+#115 Jingle Of Time Out
+#102 Jingle Of Goal
+#133 Presentation Ceremony (w/o intro)
+#137 Replay
+#128 Snowbound Landscape (Alpine Racer Ending Theme)
+
+#001 Sound Test
+
+-------------------------------------------------
+ [Voice & S.E.]
+
+#003 [S.E.] <time="5">
+#004 [S.E.] 
+#006 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [Voice] Alpine Racer
+#011 [Voice] Alpine Racer
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] 
+#016 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#021 [S.E.] 
+#023 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+//#032 [S.E.] <time="5">
+//#034 [S.E.] <time="20">
+//#036 [S.E.] <time="5">
+//#037 [S.E.] <time="5">
+//#038 [S.E.] <time="5">
+//#040 [S.E.] <time="5">
+//#041 [S.E.] <time="5">
+//#042 [S.E.] <time="5">
+//#043 [S.E.] <time="5">
+#044 [S.E.] <time="6">
+#048 [S.E.] 
+#049 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] <time="7">
+#061 [S.E.] <time="6">
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] <time="5">
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] <time="5">
+#081 [S.E.] <time="5">
+#082 [S.E.] <time="5">
+#083 [S.E.] <time="5">
+#084 [S.E.] <time="5">
+#085 [S.E.] <time="5">
+#086 [S.E.] <time="5">
+
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#171 [Voice] 
+
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+
+  ■出典
+  ALPINE RACER / NAMCO GAME SOUND EXPRESS Vol.25
+  VICTOR ENTERTAINMENT  VICL-15049  1995.11.22
+
+  ■作・編曲
+  石川 隆之
+
+// List by Fuj
+$end

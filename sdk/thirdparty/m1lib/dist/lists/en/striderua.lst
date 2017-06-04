@@ -1,0 +1,168 @@
+﻿$name=striderua
+$version=2
+$default=$14
+$fixed_volume=292
+$main
+
+$14 Credit <time="3">
+$9b [Voice] Ahahaha (intro)
+$11 Range of Defense (Stage 1 Introduction) <time="5.9">
+$00 Knock Over! (Stage 1 BGM 1) <time="55">
+$04 Blow (Mid Boss) <time="20">
+$01 Insensate Cathedral (Stage 1 BGM 2) <time="35">
+$02 Wild Beast (Stage 1 BGM 3) <time="27">
+$03 Bullets Corridor (Stage 1 BGM 4) <time="15">
+$05 Ouroboros -Iron Reign- (Big Boss) <time="27">
+$12 Stage 2 Introduction <time="9">
+$06 Siberian Mine Shaft (Big Boss: Kong) <time="14">
+$07 Driving Wheel (Stage 2 BGM 1) <time="38">
+$08 Dash Away (Stage 2 BGM 2) <time="39">
+$09 Cloud Sea (Stage 2 BGM 3) <time="38">
+$10 Fuujin (Big Boss: Sky) <time="25">
+$0f Stage Clear <time="6">
+$13 Stage 3 Introduction <time="11">
+$0a Ring (Start 1) <time="7">
+$16 Beset (Start 2) <time="4">
+$0b Valley and River (Stage 3 BGM 1) <time="46">
+$0c Bark (Stage 3 BGM 2) <time="53">
+$0d The Devil in Africa (Big Boss) <time="16">
+
+    Songs only in this set
+$18 Short Spin (Stage 4 BGM 1) <time="1:04">
+$19 Reverse Minor G (Stage 4 BGM 2) <time="32">
+$1a Seize! (Big Boss) <time="19">
+$1f Stage 5 Introduction <time="10">
+$1b Hiryu (Stage 5 BGM 1) <time="36">
+$1c Speed of Countercharge (Stage 5 BGM 2) <time="28">
+$1d The Dark Lord, Grand Master (Big Boss) <time="50">
+$20 Clear <time="11">
+//$21 And Then.. (Ending)
+
+$22 Ranking <time="34">
+$0e Game Over <time="8">
+$15 Continue <time="12">
+
+$17 Ring (Start 1) alt.
+
+-----------------------------------------------------------
+ [Voice]
+
+$81 [Voice] Hiryu: Haa !
+$82 [Voice] Hiryu: Yaa !
+$83 [Voice] Hiryu: Ha !
+$84 [Voice] Hiryu: Ya !
+$85 [Voice] Hiryu: Ha !
+$90 [Voice] Hiryu: kisamarano oyadamanotokoroe tsureteittemoraouka
+$92 [Voice] Hiryu: kisamarani sonnna ganguwa hitsuyounai
+$86 [Voice] Crowd
+$87 [Voice] mmm
+$88 [Voice]
+$89 [Voice]
+$8a [Voice]
+$8b [Voice] uhaaaaa
+$8e [Voice] I got you
+$8d [Voice] Master: mmm, it's strider Hiryu ! He will never leave Eurasia alive !
+$8f [Voice] Master: You dare fight me ?
+$99 [Voice] Master: Call me hiryu !
+$9a [Voice] Master: All sons of all god ! Die !
+$91 [Voice] Women: [chinese]
+$93 [Voice] Jungle guys: ?
+$94 [Voice] Jungle guys: ?
+$95 [Voice] woman screaming
+$96 [Voice] ?
+$97 [Voice] ?
+$8c [Voice] [russian]
+$98 [Voice] [russian]
+
+$9c [Voice] Wolf hawl
+
+-----------------------------------------------------------
+ [SFX]
+
+$30 [SFX]
+$31 [SFX]
+$32 [SFX]
+$33 [SFX]
+$34 [SFX]
+$35 [SFX]
+$36 [SFX]
+$37 [SFX]
+$38 [SFX]
+$39 [SFX]
+$3a [SFX]
+$3b [SFX]
+$3c [SFX]
+$3d [SFX]
+$3e [SFX]
+$3f [SFX]
+$40 [SFX]
+$41 [SFX]
+$42 [SFX]
+$43 [SFX]
+$44 [SFX]
+$45 [SFX]
+$46 [SFX]
+$47 [SFX]
+$48 [SFX]
+$49 [SFX]
+$4a [SFX]
+$4b [SFX]
+$4c [SFX]
+$4d [SFX]
+$4e [SFX]
+$4f [SFX]
+$50 [SFX]
+$51 [SFX]
+$52 [SFX]
+$53 [SFX]
+$54 [SFX]
+$55 [SFX]
+$56 [SFX]
+$57 [SFX]
+$58 [SFX]
+$59 [SFX]
+$5a [SFX]
+$5b [SFX]
+$5c [SFX]
+$5d [SFX]
+$5e [SFX]
+$5f [SFX]
+$60 [SFX]
+$61 [SFX]
+$62 [SFX]
+$63 [SFX]
+$64 [SFX]
+$65 [SFX]
+$66 [SFX]
+$67 [SFX]
+$68 [SFX]
+$69 [SFX]
+$6a [SFX]
+$6b [SFX]
+$6c [SFX]
+$6d [SFX]
+$6e [SFX]
+$6f [SFX]
+$70 [SFX]
+$71 [SFX]
+$72 [SFX]
+$73 [SFX]
+$74 [SFX]
+$75 [SFX]
+$76 [SFX]
+$77 [SFX]
+
+  [Source]
+  Strider Hiryu -G.S.M. CAPCOM 2- / Alfh Lyra Wa Lyra
+  Pony Canyon / Scitron  D25B1001  May 21, 1989
+
+  Game Music Best of the Year 1989
+  Pony Canyon / Scitron  PCCB-00022  Mar 21, 1990
+
+  Strider Hiryu 2 Original Soundtrack (Initial Distribution)
+  Suleputer  CPCA-1035  Jan 21, 2000
+
+// List Contribution by NK
+// English list by Fuji.
+// Voices by CrashTest
+$end

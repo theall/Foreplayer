@@ -1,0 +1,59 @@
+﻿$name=kof2003
+$version=1
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#053 2003 (Title)
+#073 Beats (HOW TO PLAY & Ranking)
+#054 Select (Player Select)
+#055 Stage Effect 1 (Stage Screen IN ~ Fight)
+#042 Splendid Evil (New Main Character Team [Ash / Duolon / Shen])
+#039 Prolongation (Shin Garou Team 1 [Terry / Joe / Griffon])
+#056 Winner (Winner Demo)
+#045 I'm Hot for You (Female Fighters Team 1 [King / Mai / Mary])
+#038 Inside Skinny (Ikari Team [Leona / Ralf / Clark])
+#035 Fairy (Chizuru Kagura)
+#057 The Next Assassin 1 (Intermission Demo 1)
+#043 ESAKA? 03 (KUSANAGI)
+#046 You Feel For ME (Female Fighters Team 2 [Athena / Hinako / Malin])
+#047 Seoul Love (Kim Team [Kim / Chang / Jhun])
+#044 Joyrider (Japan Team [Benimaru / Shingo / Daimon])
+#041 Kyoku-Gen (Art of Fighting Team [Ryo / Robert / Yuri])
+#074 Great Man (Series of Victories)
+#040 Villainous (Shin Garou Team 2 [Gato / Billy / Yamazaki)
+#036 KD (K' Team [K' / Maxima / Whip])
+#033 Cool Jam 2 (Iori)
+#034 Blaze (Kyo)
+#058 The Next Assassin 2 (Intermission Demo 2)
+#064 Overture to Misfortune (Intermission Demo 3B [Before Adelheid])
+#048 Stage Effect 2 (Mid Boss - Adelheid Stage Screen IN ~ Fight)
+#049 Revolutionary Etude ~ RII (Mid Boss 4 [Adelheid Ver])
+#065 Inspection of Sadness (After Adelheid Demo)
+#059 Heartless World (Intermission Demo 3A [Before Chizuru / Maki])
+#050 Stage Effect 3 (Mid Boss - Chizuru / Maki Stage Screen IN ~ Fight)
+#051 Sacredness ~ Fairy (Mid Boss 2 [Chizuru Kagura / Maki Ver])
+#060 The Last Door (Before Boss Demo)
+#061 Stage Effect Boss (Boss Stage Screen IN ~ Fight)
+#052 Styx (Mukai)
+#075 KO (Final Character KO)
+#062 Unending Battle (After Boss Demo)
+#070 New Current (Eight Great Ones Demo)
+#066 Serious (Multi Ending 1)
+#067 Presentiment (Multi Ending 2)
+#068 Conclusion (Multi Ending 3)
+#069 Pops Beat (Multi Ending 4)
+#072 Heavens (Staff Roll)
+#071 Continue (Continue)
+#076 Game Over (Game Over)
+
+  [Source]
+  The King of Fighters 2003
+  Scitron / SNK Playmore  SCDC-00337  Mar 24, 2004
+
+  [Composers]
+  Tate-Norio, Masahiko Hataya
+
+// List Contribution by Thomas "Dark Pulse" Warnica - Feb 11 2007
+$end

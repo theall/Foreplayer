@@ -1,0 +1,30 @@
+﻿$name=luckywld
+$version=2
+$default=007
+$main
+
+#007 Intro A
+#003 Game BGM A (Stage 1, 4)
+#015 Boss BGM
+#004 Pink Cat's Garage
+#009 Intro B
+#013 Game BGM B (Stage 2, 5)
+#021 Intro C
+#027 Game BGM C (Stage 3, 6)
+#019 Intro D
+#029 Big Cigar
+#017 Pink Cat's Garage (No Bonus)
+#023 Clear
+#011 Ride on Tonight (Ending)
+#025 Name Entry
+
+  [Soundtrack]
+  Video Game Graffiti Vol.9
+  Victor Entertainment  VICL-8089  Sep 22, 1993
+
+  [Sound Composer]
+  Etsuo Ishii
+
+// Original List Contribution by Min
+// Updated by Fujix
+$end

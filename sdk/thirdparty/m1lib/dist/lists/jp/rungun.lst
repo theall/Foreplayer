@@ -1,0 +1,39 @@
+﻿$name=rungun
+$version=2
+$default=$e2
+$songmax=$ff
+$main
+
+$e2 SLAM DUNK (オープニング)
+$dd LET' PLAY (モードセレクト)
+$d9 GO CHALLENGE (チームセレクト)
+$db TV BROADCAST (スタートデモ)
+$d1 L.A. (試合中BGM 1)
+$d2 BOSTON (試合中BGM 2)
+$d3 CHALOTTE (試合中BGM 3)
+$d4 PHOENIX (試合中BGM 4)
+$d5 ORLAND (試合中BGM 5)
+$d6 CHICAGO (試合中BGM 6)
+$d7 CLEVELAND (試合中BGM 7)
+$d8 DETROIT (試合中BGM 8)
+$da COACHING TIPS (コーチングティップス)
+$e8 HALF TIME SHOW -intro- (チアガールBGMイントロ)
+$e1 HALF TIME SHOW (チアガールBGM)
+$e0 WINNER (勝敗デモ)
+$df LOSER (負けデモ)
+$e4 FINAL1 (決勝戦BGM 1)
+$e5 FINAL2 (決勝戦BGM 2)
+$e6 FINAL3 (決勝戦BGM 3)
+$e7 FINAL4 (決勝戦BGM 4)
+$e9 FANFARE (エンディング1)
+$ea CHAMPION (エンディング2)
+$eb GLORIOUS VICTORY (スタッフロール)
+$de CONTINUE (コンティニュー)
+$dc GAME OVER (ゲームオーバー)
+$ed スピーカーテスト
+
+  ■出典
+  コナミ・アミューズメントサウンズ '94 - 春
+  KING RECORDS  KICA-7631～7632  1994.02.23
+
+$end

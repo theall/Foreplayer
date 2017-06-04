@@ -1,0 +1,36 @@
+﻿$name=dariusg
+$version=2
+$default=078
+$songmax=256
+$main
+
+#078 Title
+#082 VISIONNERZ ～幻視人～
+#067 Burst Out
+#075 INDUCTION
+#069 E･E･G
+#076 AXON
+#066 投影
+#068 FAKE
+#072 Singing in the BRAIN
+#071 Tranquilizers
+#073 SELF
+#065 Refrain
+#077 name
+#070 end titles
+#074 Over
+
+$53 VISIONNERZ ～幻視人～ -ver.2-
+$4a INDUCTION -intro-
+$4f Over #1
+$50 Over #2
+$51 Over #3
+
+  ■出典
+  ダライアス外伝 / TAITO ZUNTATA
+  PONY CANYON / SCITRON  PCCB-00166  1994.11.18
+
+  ■作曲
+  小倉 久佳 (OGR.)
+
+$end

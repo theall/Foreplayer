@@ -1,0 +1,37 @@
+﻿$name=superspy
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#042 The Super Spy (Title)
+#037 Code "X" (Area 1)
+#035 Blot (Small Boss 1)
+#061 Escapism (Intermission)
+#043 Bend the Rule (Area 2-1)
+#057 Make a Bet (Small Boss 2）
+#045 Vixen (Mid Boss)
+#040 Imputation (Boss)
+#060 On the Rove (Area 2-2）
+#047 Chief Tain (Final Boss)
+#050 New World (Ending)
+#041 (unused)
+#048 (unused)
+#063 (unused)
+
+#058 Code "X" (Area 1) - w/o intro
+#062 Blot (Mid Boss 1) - w/o intro
+#039 Imputation (Boss) - w/o intro
+#059 Bend the Rule (Area2-1) - w/o intro
+#046 Chief Tain (Final Boss) - w/o intro
+#049 New World (Ending) - w/o intro
+
+  [Source]
+  The Super Spy, Ninja Combat / SNK
+  Pony Canyon / Scitron  PCCB-00046  Nov 21, 1990
+
+  [Sound Composer]
+  Masahiko Hataya (PAPAYA)
+
+$end

@@ -1,0 +1,64 @@
+﻿$name=elvactr
+$version=2
+$default=469
+$main
+
+ &lt; Prologue &gt;
+#044 Rush Action
+
+ &lt; Episode I - Steal - Encounter - &gt;
+//Red After Image
+#454 D.E.F (Misson Start 1, 2, 4)
+#455 D.E.F (Game Start)
+#463 Red After Image (1) (Mission 1-1)
+#450 Red After Image (2) (Mission 1-2)
+//Cross the Breeze
+#465 System Down (1) (Mission 2-1, 2-2)
+#461 System Down (2) (Mission 2-3)
+#458 Message from 1998 (Mission Complete BGM 2)
+
+ &lt; Episode II - Contact - &gt;
+//Colours of Nights
+#462 Feedback Romance (1) (Mission 3-1)
+#464 Feedback Romance (2) (Mission 3-2)
+#451 Colours of Nights (Mission 3-3)
+
+&lt; Episode III - Rush & Silence - &gt;
+//Under the Cack
+#457 Side by Side (1) (Mission Start BGM 3, Fin)
+#467 Side by Side (2) (Mission 4-1)
+#466 Side by Side (3) (Mission 4-2)
+//Crimson Line
+#456 I Can Only Think in Job (1) (Mission Start 5)
+#453 I Can Only Think in Job (2) (Mission Complete)
+#452 I Can Only Think in Job (3) (Mission 3-4)
+#468 I Can Only Think in Job (4) (Mission 5-1)
+#471 Break Beat (Mission 5-2)
+
+ &lt; Episode IV - Plunge - Assault - &gt;
+//Vermilion Sun
+#472 Blow Up (Final Mission 1)
+#473 "Red Suit" (Final Mission 2)
+#474 "Red Suit" (Final Mission 3)
+
+ &lt; Epilogue &gt;
+#475 Missing Link (Ending)
+#459 Pre Production (1)
+#460 Pre Production(2) (Name Entry)
+// Pre Production (3)
+
+ &lt; Extra Message &gt;
+#449 Elevator Actoin '95
+
+#470 (Not Released on CD)
+
+  [Soundtrack]
+  Elevator Action - Returns - / Taito Zuntata
+  Pony Cayon / Scitron  PCCB-00186  Jul 21, 1995
+
+  [Sound Composer]
+  Yasuhisa Watanabe (Yack.)
+
+// Base List by Min
+// Update and Translation by Fujix
+$end

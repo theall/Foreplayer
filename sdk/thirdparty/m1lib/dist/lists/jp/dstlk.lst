@@ -1,0 +1,131 @@
+﻿$name=dstlk
+$version=2
+$default=043
+$songmax=690
+$fixed_volume=260
+$main
+
+#043 QSound Logo
+#000 Opening～Title
+#001 Player Select 1
+#003 Player Select 2
+#002 VS.
+#005 Ranking Display
+#008 DEMITRI Stage (Romania)
+#020 DEMITRI Winning
+#045 DEMITRI Ending 1
+#032 DEMITRI Ending 2
+#009 GALLON Stage (England)
+#021 GALLON Winning
+#033 GALLON Ending
+#011 ZABEL Stage (Australia)
+#023 ZABEL Winning
+#035 ZABEL Ending
+#004 途中参加
+#010 VICTOR Stage (Germany)
+#022 VICTOR Winning
+#034 VICTOR Ending
+#016 AULBATH Stage (Brazil)
+#028 AULBATH Winning
+#040 AULBATH Ending
+#013 ANAKARIS Stage (Egypt)
+#025 ANAKARIS Winning
+#037 ANAKARIS Ending
+#018 PHOBOS Stage (Mexico)
+#030 PHOBOS Winning
+#006 Continue
+#014 FELICIA Stage (U.S.A.)
+#026 FELICIA Winning
+#038 FELICIA Ending
+#015 BISHAMON Stage (Japan)
+#027 BISHAMON Winning
+#039 BISHAMON Ending
+#012 MORRIGAN Stage (Scotland)
+#024 MORRIGAN Winning
+#036 MORRIGAN Ending
+#017 SASQUATCH Stage (Canada)
+#029 SASQUATCH Winning
+#041 SASQUATCH Ending
+#019 PYRON Stage (Hellstorm)
+#031 PYRON Winning
+#007 Game Over
+#042 Staff Roll 1
+#046 Staff Roll 2
+#047 Staff Roll 2 (音声付き)
+
+#044 QSound Logo Sub
+
+-----------------------------------------
+ [Voice]
+
+#272 [Voice]
+#273 [Voice]
+#276 [Voice]
+#277 [Voice]
+#279 [Voice]
+#280 [Voice]
+#281 [Voice]
+#285 [Voice]
+#287 [Voice]
+#289 [Voice]
+#290 [Voice]
+#291 [Voice]
+#292 [Voice]
+#293 [Voice]
+#294 [Voice]
+#295 [Voice]
+#298 [Voice]
+#299 [Voice]
+#300 [Voice]
+#301 [Voice]
+#308 [Voice]
+#309 [Voice]
+#310 [Voice]
+#311 [Voice]
+#312 [Voice]
+#314 [Voice]
+#315 [Voice]
+#317 [Voice]
+#318 [Voice]
+#319 [Voice]
+#320 [Voice]
+#321 [Voice]
+#322 [Voice]
+#324 [Voice]
+#325 [Voice]
+#329 [Voice]
+#330 [Voice]
+#331 [Voice]
+#332 [Voice]
+#334 [Voice]
+#335 [Voice]
+#336 [Voice]
+#337 [Voice]
+#338 [Voice]
+#339 [Voice]
+#340 [Voice]
+#341 [Voice]
+#342 [Voice]
+#343 [Voice]
+#344 [Voice]
+#345 [Voice]
+#346 [Voice]
+#347 [Voice]
+#348 [Voice]
+#349 [Voice]
+#350 [Voice]
+#351 [Voice]
+#352 [Voice]
+#353 [Voice]
+#354 [Voice]
+#355 [Voice]
+#356 [Voice]
+#357 [Voice]
+
+  ■出典
+  VAMPIRE - The Night Warriors / Arcade Game Track
+  SME  SRCL2969  1994.9.7
+
+// リスト作成：ひろしさん
+// 更新：NKさん
+$end

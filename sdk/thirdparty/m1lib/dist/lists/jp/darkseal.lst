@@ -1,0 +1,116 @@
+﻿$name=darkseal
+$version=2
+$default=$04
+$songmax=$65
+$main
+
+$04 伝説 (Story Demo)
+$0d 勇者再臨 (Select / Player紹介)
+$0e 王の謁見 (王様のメッセージ)
+$05 興亡・光と闇(テーマ) (Stage 1,3)
+//$07 興亡・光と闇(テーマ) (Stage 1,3)
+$0a 激闘 (Stage 1,3 Boss)
+$0f 完遂 (Stage Clear)
+$06 魔軍侵攻 (Stage 2 / Opening Demo)
+$0b 死線 (Stage 2 Boss)
+$08 闇の脅威 (Stage 4)
+$0c 神秘 (変身・宝箱)
+$09 決戦 (Stage 5)
+$11 封印・新たなる旅立ち (Ending)
+$10 野望(ダークナイトのテーマ)
+
+-----------------------------------------
+ [S.E.]
+
+$13 [S.E.]
+$14 [S.E.]
+$15 [S.E.]
+$16 [S.E.]
+$17 [S.E.]
+$18 [S.E.]
+$19 [S.E.]
+$1a [S.E.]
+$1b [S.E.]
+$1c [S.E.]
+$1d [S.E.]
+$1e [S.E.]
+$1f [S.E.]
+$20 [S.E.]
+$21 [S.E.]
+$22 [S.E.]
+$23 [S.E.]
+$24 [S.E.]
+$25 [S.E.]
+$26 [S.E.]
+$27 [S.E.]
+$28 [S.E.]
+$29 [S.E.]
+$2a [S.E.]
+$2b [S.E.]
+$2c [S.E.]
+$2d [S.E.]
+$2e [S.E.]
+$2f [S.E.]
+$30 [S.E.]
+$31 [S.E.]
+$32 [S.E.]
+$33 [S.E.]
+$34 [S.E.]
+$35 [S.E.]
+$36 [S.E.]
+$37 [S.E.]
+$38 [S.E.]
+$39 [S.E.]
+$3a [S.E.]
+$3b [S.E.]
+$3c [S.E.]
+$3d [S.E.]
+$3e [S.E.]
+$3f [S.E.]
+$40 [S.E.]
+$41 [S.E.]
+$42 [S.E.]
+$43 [S.E.]
+$44 [S.E.]
+$45 [S.E.]
+$46 [S.E.]
+$47 [S.E.] I'm the knight.
+$48 [S.E.]
+$49 [S.E.]
+$4a [S.E.]
+$4b [S.E.] I'm the wizard.
+$4c [S.E.]
+$4d [S.E.]
+$4e [S.E.]
+$4f [S.E.] I am the bard.
+$50 [S.E.]
+$51 [S.E.]
+$52 [S.E.] Power
+$53 [S.E.] I am ninja.
+$54 [S.E.]
+$55 [S.E.]
+$56 [S.E.]
+$57 [S.E.]
+$58 [S.E.]
+$59 [S.E.]
+$5a [S.E.]
+$5b [S.E.]
+$5c [S.E.]
+$5d [S.E.]
+$5e [S.E.]
+$5f [S.E.]
+$60 [S.E.]
+$61 [S.E.]
+$62 [S.E.]
+$63 [S.E.]
+$64 [S.E.]
+$65 [S.E.]
+
+  ■出典
+  DARK SEAL / DATA EAST
+  PONY CANYON / SCITRON  PCCB-00048  1990.12.15
+
+  ■作曲
+  吉田 博昭 (MARO), 木内 達也 (Mr☆K), 森 憲治
+
+$end

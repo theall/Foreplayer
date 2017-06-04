@@ -1,0 +1,27 @@
+﻿$name=starjack
+$version=2
+$default=147
+$songmax=149
+$main
+
+#147 START
+#132 BGM 1 -SPACE-
+#133 BGM 1a -PLANET-
+#136 BGM 2 -FORTRESS-
+#138 BGM 2a -FORTRESS-
+#149 WARP
+#137 BGM 3 -ESCAPE-
+#148 CLEAR
+#130 NAME RESIST
+
+-----------------------------------------
+ [S.E.]
+
+#134 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.] EXTEND
+#144 [S.E.]
+
+$end

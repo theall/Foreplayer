@@ -1,0 +1,108 @@
+﻿$name=selfeena
+$version=2
+$default=133
+$main
+
+#133 [SFX] Coin <time="2">
+#005 Start ! <time="4">
+#001 BGM 1 (Stage 1 to 3, 39 to 43)
+#005 Stage Clear 1
+#003 BGM 2 (Stage 4 to 8, 24 to 28, 44 to 48)
+#006 BGM 3 (Stage 14 to 18, 34 to 38)
+#007 Stage Clear 2
+#014 Bonus Game
+#004 BGM 4 (Stage 9 to 13, 19 to 23, 29 to 33, 49)
+#013 Last Boss (Stage 50)
+#023 Ending
+#011 Name Entry
+#002 Game Over
+
+#008 Unused Music 1
+#012 Unused Music 2
+#021 Unused Music 3
+#022 Unused Music 4
+
+#015 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX]  
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#156 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#189 [SFX] 
+#190 [SFX] 
+#191 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#151 [SFX] <time="5">
+#152 [SFX] <time="5">
+#153 [SFX] <time="5">
+#154 [SFX] <time="5">
+#155 [SFX] <time="5">
+
+---------------------------------------------------
+ [Voice] 
+
+#140 [Voice]
+#157 [Voice] 
+#158 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#194 [Voice] 
+
+  [Sound Composer]
+  Tsuda
+
+// List contribution by ZEK.
+$end

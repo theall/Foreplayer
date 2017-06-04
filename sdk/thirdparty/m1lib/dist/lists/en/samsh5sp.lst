@@ -1,0 +1,41 @@
+﻿$name=samsh5sp
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+#033 Opening Demo
+#035 Character Select
+#038 VS screen
+#037 Ready
+#043 Gairyu-jima Stage
+#064 Set
+#044 Shogun (Yoshitora Tokugawa)
+#052 Nihonbashi Stage
+#047 Ceremonial (Liu Yunfei)
+#054 Rocks Stage
+#045 AYAHABERU (Mina Majikina)
+#053 Kuroko Doujou Stage
+#046 Sado Stage
+#039 Yumeji Appears (Boss Intro)
+#055 Amakusa-jou Stage
+#056 Zankurou Stage
+#050 MASURAOYO (Kyougoku Hiwanokami Gaou)
+#051 Mizuki Stage
+#040 Fatal Esoterica
+#034 Credit
+#041 Reproduction Necessitated (Continue)
+#042 Last Curtain (Game Over)
+
+#068 Opening Demo with Voice
+#048 Western Origin (Dejima Stage)
+#049 Yomigahara (Kurokouchi Yumeji)
+#036 ?
+#057 ?
+#065 ?
+#066 ?
+#067 ?
+
+// List Contribution by GolGol
+// English list by Fuj
+$end

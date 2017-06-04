@@ -1,0 +1,24 @@
+﻿$name=pacapp
+$version=2
+$default=8
+$main
+
+　※暫定リスト
+
+#008 Cool Dancing (70’Disco)
+#009 Escape (Pop Drop Out Rock)
+#010 SUN-J99Mix (Jazz Groove)
+#011 Lips XTC (Human Dance)
+#012 Blue Noise (Rave More First Techno)
+#013 XL Techno (Acoustic Rave Techno)
+
+　（以下鳴り方が怪しいため推測）
+
+#113 ゲームオーバー
+#115 コンティニュー
+#120 ？
+#122 ステージセレクト
+#124 ネームエントリー
+
+// List Contribution by 罰帝
+$end

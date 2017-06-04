@@ -1,0 +1,136 @@
+﻿$name=kodj
+$version=2
+$default=023
+$songmax=126
+$main
+
+ * "kodj","kodu"には 'TITLE'と'OPENING DEMO'の曲がある
+
+#023 TITLE
+#031 OPENING DEMO
+#026 CREDIT
+#012 PLAYER SELECT <time="0:40">
+#011 BGM 1 (STAGE 1, 6-B, 16) <time="1:21">
+#006 BOSS BGM 1 (STAGE 1-ORC KING, 2-MINOTAUR, 7-GIANT SPIDER, 8-DRAGON RIDER, 15-CYCLOPS II) <time="0:57">
+#021 STAGE CLEAR
+#019 TREASURE BOX <time="0:30">
+#013 WORLD MAP
+#002 BGM 2 (STAGE 2, 9) <time="1:07">
+#003 BGM 3 (STAGE 3, 6-A, 13) <time="1:30">
+#004 BGM 4 (STAGE 4, 14) <time="1:13">
+#009 BGM 5 (STAGE 5, 11) <time="1:08">
+#010 BGM 6 (STAGE 6-C) <time="0:50">
+#000 BGM 7 (STAGE 7, 10, 15) <time="0:53">
+#001 BGM 8 (STAGE 8, 12) <time="1:32">
+#015 DEMO 1 (WISE TREE)
+#016 DEMO 2 (DARK WIZARD)
+#005 BOSS BGM 2 (STAGE 4-HYDRA, 9-BLACK KNIGHT, 12-ROYAL KNIGHTS) <time="1:00">
+#007 BOSS BGM 3 (STAGE 3-WYVERN I, 6-CYCLOPS I, 14-WYVERN II) <time="0:43">
+#008 BOSS BGM 4 (STAGE 11-GREAT DRAGONIAN, 13-DARK WIZARD) <time="0:53">
+#077 BOSS BGM 5 (STAGE 16-RED DRAGON)
+#020 ALL STAGE CLEAR
+#018 ENDING <time="1:17">
+#022 STAFF ROLL <time="1:12">
+ 
+#014 (unused)
+#017 (unused)
+#046 (unused?)
+
+---------------------------------------------------------
+ [Voice]
+
+#048 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#059 [Voice]
+#064 [Voice]
+#097 [Voice]
+#108 [Voice]
+#110 [Voice]
+#112 [Voice]
+#123 [Voice]
+
+ [S.E.]
+
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#047 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#073 [S.E.]
+#075 [S.E.]
+#078 [S.E.]
+#080 [S.E.]
+#082 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#111 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#126 [S.E.]
+
+  ■出典
+  キャプテンコマンドー -G.S.M. CAPCOM 5- / ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00083  1992.03.21
+
+// リスト作成：NKさん
+$end

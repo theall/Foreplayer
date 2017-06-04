@@ -1,0 +1,37 @@
+﻿$name=rohga
+$version=2
+$default=007
+//$songmax=024
+$fixed_volume=100
+$main
+
+#007 PROLOGUE (ATTRACT DEMO)
+#008 IN THE GARAGE -'鋼の胎動' (SCENE 1)
+#009 WOLF FANG -'狼牙' (BGM 1)
+#016 CRUEL SLASHER -'追撃' (BOSS 1)
+#018 MISSION CLEAR
+#010 CROSS FIRE -'制圧' (BGM 2)
+#023 BRIEFING -'作戦' (SCENE 2)
+#011 STORMY BLADE -'強襲' (BGM 3)
+#012 MIDNIGHT CHASER -'突破' (BGM 4)
+#013 LENGTH FINDER -'捕捉' (BGM 5)
+#014 STREAM OF DEEPBLUE -'索敵' (BGM 6)
+#017 SLAUGHTER MACHINE -'破壊' (BOSS 2)
+#015 MECHANIZED BEAST -'鋼の牙' (BGM 7)
+#020 REQUIEM -'名も無き英雄達へ' (ENDING 1)
+#021 HEROIC VERSE -'英雄達の帰還' (ENDING 2)
+#024 DEATH CLOW (CONTINUE)
+#019 DEAD LOCK (GAME OVER)
+#022 GREATEST KNIGHTS (NAMING)
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  WOLF FANG / TUMBLE POP
+  PONY CANYON / SCITRON  PCCB-00084  1992.03.21
+
+  ■作曲
+  竹本 晃, 吉田博昭
+
+$end

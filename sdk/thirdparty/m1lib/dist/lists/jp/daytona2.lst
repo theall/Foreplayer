@@ -1,0 +1,36 @@
+﻿$name=daytona2
+$default=$02
+$version=2
+$main
+
+$02 SLING SHOT
+$03 I CAN DO IT
+$04 SKYSCRAPER SEQUENCE
+$09 TIPS TO WIN
+$0A SELECTOR
+$0C BEGINNER ENDING
+$0D ADVANCED ENDING
+$0E EXPERT ENDING
+$0B NAME ENTRY
+
+$0F (BEGINNER COURSE GOAL)
+$10 (ADVANCED COURSE GOAL)
+$11 (EXPERT COURSE GOAL)
+
+$05 BATTLE ON THE EDGE
+$06 SLING SHOT
+$07 I CAN DO IT
+$08 SKYSCRAPER SEQUENCE
+
+  ■出典
+  DAYTONA USA 2 BATTLE ON THE EDGE SOUND TRACKS
+  PONY CANYON / Marvelous Entertainment inc.  MJCA-00025  1998.07.17
+
+  ■Vocal
+  Dennis St. James: #02, #03, #04
+  光吉 猛修: #05, #06, #07, #08
+
+  ※一部の曲不明（BATTLE ON THE EDGEの Dennis ヴァージョンなど）
+
+// Original list contribution by Mikasen
+$end

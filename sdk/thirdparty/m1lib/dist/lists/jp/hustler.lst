@@ -1,0 +1,30 @@
+﻿$name=hustler
+$version=2
+$default=006
+$main
+
+#006 [S.E.] クレジット
+#009 Game Start
+#001 [S.E.] Pocket In
+#012 Clear
+#002 [S.E.] Miss
+#008 Ranking
+
+---------------------------------------------------
+  [S.E.]
+
+#001 [S.E.] ポケット イン
+#002 [S.E.] ミス
+#005 [S.E.]
+#004 [S.E.]
+#006 [S.E.] クレジット
+#007 [S.E.]
+#014 [S.E.] ハリーアップ
+#003 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#048 [S.E.]
+#080 [S.E.]
+
+// List contribution by ZEK.
+$end

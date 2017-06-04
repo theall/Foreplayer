@@ -1,0 +1,41 @@
+﻿$name=rompers
+$version=2
+$default=256
+$songmax=256
+$main
+
+#256 コイン音 <time="0:02">
+#000 オープニング
+#005 サンバ！
+#019 サンバ！ (Hurry Up)
+#017 ステージクリア
+#006 Old-Fashioned Music
+#020 Old-Fashioned Music (Hurry Up)
+#007 くも、くも
+#022 くも、くも (Hurry Up)
+#008 ワルツ
+#021 ワルツ (Hurry Up)
+#010 The Rompers Show
+#009 どっでぃどっでぃどー
+#024 どっでぃどっでぃどー (Hurry Up)
+#012 Thundre's
+#023 Thunder's (Hurry Up)
+#015 グレリンのテーマ
+#025 やっつけファンファーレ
+#004 スタッフロール
+#016 コンティニュー？ #1
+#013 コンティニュー？ #2
+#011 ゲームオーバー
+
+#002 ??? 1
+#003 ??? 2
+#014 ??? 3
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.6
+  VICTOR ENTERTAINMENT  VDR-5301  1989.10.04
+
+  ■作曲
+  高柳 佳恵, 野口 和雄 (#012,#023)
+
+$end

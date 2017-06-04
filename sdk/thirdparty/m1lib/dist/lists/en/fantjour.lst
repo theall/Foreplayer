@@ -1,0 +1,115 @@
+﻿$name=fantjour
+$version=2
+$default=258
+$fixed_volume=201
+$main
+
+#258 "Those were the days.." (Opening)
+	from	Prelude of Legend / Gradius III
+#300 Showtime in Parodius (Title)
+#513 Credit Inserted
+#259 Let's go together. (Select)
+	from	Sleeping Beauty / Peter Ilyich Tchaikovsky
+#260 Theme of Vic Viper & Lord British
+	from	Beginning of History / Gradius
+		Theme of Vic Viper / Parodius Da!
+#261 Theme of Takosuke & Belial
+	from	Theme of Tako / Parodius Da!
+#262 Theme of TwinBee & WinBee
+	from	Game Start Music / Twin Bee
+		Theme of TwinBee / Parodius Da!
+#263 Theme of Pentarou & Ohana-chan
+	from	Start / Antarctic Adventure
+		Theme of Pentarou / Parodius Da!
+#264 Theme of Hikaru-chan & Akane-chan
+	from	First Attack / Thunder Cross
+#265 Theme of Manbou & Samba
+#266 Theme of Michael & Gabrielle
+#267 Theme of Koitsu & Aitsu
+#268 In the Crane Game (Stage 1 BGM)
+	from	In the Mood / Joe Garland
+#269 Panda the Dancing (Stage 1 Boss)
+	from	Carmen Toreador Song / Georges Bizet
+#270 Cat Battleship Forever (Stage 2 BGM)
+#293 Cat Battleship Forever (Stage 2 BGM) resume
+//#294 Cat Battleship Forever (Stage 2 BGM) resume
+	from	Stars and Stripes Forever / John Philip Sousa
+#271 I am Eliza. (Stage 2 Boss)
+#272 Candy Race (Stage 3 BGM)
+//#273 Candy Race (Stage 3 BGM)
+//#280 Candy Race (Stage 3 BGM)
+//#290 Candy Race (Stage 3 BGM)
+	from	Tritsch-Tratsch Polka / Johann Strauss
+#274 Cooking Mambo (Stage 3 Boss)
+	from	Mambo No. 5 / Damaso Perez Prado
+#276 Run! Run! and Run! (Stage 4 BGM)
+	from	William Tell Overture / Gioacchino Rossini
+#277 Lick my Foot! (Stage 4 & Final Boss)
+//#283 Lick my Foot! (Stage 4 & Final Boss)
+	from	Gradius / Aircraft Carrier
+#278 Space Hit Parade (Stage 5 BGM)
+	from	Yankee Doodle
+		Ej Lucka, Lucka / Czech Folk Song
+		Mary Had a Little Lamb
+		Circus Song (Chopsticks)
+		London Bridge
+		Picnic
+
+#279 Capsule Monster "Cappuccino" (Stage 5 Boss)
+	from	Piano Sonata K.331, 3rd: Rondo Alla Turca / Amadeus Mozart
+#284 Nanimite Haneru? (Stage 6 BGM)
+	from	Juugoya Otsukisan / Nagayo Motoori
+		Kagome Kagome / Japanese Children's Song
+		Sakura Sakura / Japanese Children's Song
+		Oedo Nihonbashi / Japanese Folk Song
+		Touryanse / Japanese Children's Song
+		Hanayome Ningyou / Haseo Sugiyama
+
+#285 Ah, Kaguya Hime (Stage 6 Boss)
+	from	 Zuizui Zukkorobashi / Japanese Children's Song
+#298 "wakkarimasheen" (Stage 6 Boss End)
+#286 The Brother Ship Goes Yet Again (Moai Ship Stage)
+	from	Die Walkure / Richard Wagner
+		The Old Stone Age / Gradius II
+#287 Love ... of Yoshiko and Yoshio (Moai Ship Boss)
+	from	Sarasate / Zigeunerweisen
+		Symphony No.25 in G minor, K.183; 1st movement / Wolfgang Amadeus Mozart
+#282 Paro Paro Dancing! (Stage 7 BGM)
+	from	Symphony No.9 in E minor, "From The New World" / Antonin Dvorak
+#281 Rika on the Beat (Stage 7 Chichibinta Rika BGM)
+	from	The Final Enemy / Gradius II
+		Theme of Chichibinta Rika / Parodius Da!
+#301 Hello, Past Glory (End Demo)
+#303 Love Farewell (Ending)
+	from	Farewell / Gradius II
+#304 Memory of Shooting (Special Stage BGM)
+	from	Main BGM Lv 2 / TwinBee
+		Power of Anger / Salamander
+		Command 770 / A-Jax
+		Aqua Illusion / Gradius III
+		Skywalker / Thunder Cross
+		Burning Heat / Gradius II
+
+#289 Theme of Pentarou X (Special Stage Boss)
+	from	Flight of the Bumblebee / Nikolai Rimsky-Korsakov
+#295 Gokujou Game Over Da!
+#296 Gokujou Continue Da!
+#292 Gokujou Ranking Da!
+	from	The Nutcracker Suite, Op. 71a / Peter Ilyich Tchaikovsky
+#297 See You Again! (Game Over)
+	from	Game Over / Gradius II
+#288 Unused 1
+#306 Unused 2
+#305 Unused 3
+#307 Unused 4
+	from	Habanera from Carmen / Georges Bizet
+
+#257 Stereo Test
+
+  [Source]
+  Gokujou Parodius
+  King Records  KICA-7641  Jul 5, 1994
+
+// Original list from Amuse
+// English paraphrased by Fujix ;)
+$end

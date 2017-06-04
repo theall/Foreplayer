@@ -1,0 +1,70 @@
+﻿$name=hharry
+$version=2
+$default=008
+$main
+
+#008 TITLE SCREEN <time="9">
+#129 [S.E.] CREDIT <time="3">
+#012 INTRODUCTION <time="18">
+#001 NEEDLESS MARKUP MAUL (STAGE 1)
+#002 RUSTY NAIL DEVELOPMENT PROJECT (STAGE 2)
+#004 DOCK OF THE BAY (STAGE 3)
+#013 MISS <time="5">
+#007 CONTINUE <time="12">
+#003 RUSTY NAIL CONSTRUCTION SITE (STAGE 4)
+#005 RUSTY NAIL UNDERGROUND WATERWORKS (STAGE 5)
+#006 RUSTY NAIL HEADQUARTERS (STAGE 6)
+#009 BOSS BGM 
+#011 STAGE CLEAR <time="3.8">
+#016 ENDING 1
+#015 ENDING 2
+#014 GAME OVER <time="5">
+#010 NAME ENTRY
+
+---------------------------------------------------
+ [S.E.] 
+
+#129 [S.E.] <time="3">
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#018 [S.E.] 
+#017 [S.E.] <time="12">
+#019 [S.E.] <time="12">
+#021 [S.E.] <time="5">
+#022 [S.E.] <time="3">
+#023 [S.E.] <time="5">
+#024 [S.E.] <time="3">
+
+---------------------------------------------------
+ [Voice] 
+
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+
+  ■作曲
+  冷牟田 (Gangy Hiya)
+
+// List contribution by ZEK.
+$end

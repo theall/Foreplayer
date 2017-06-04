@@ -1,0 +1,60 @@
+﻿$name=afighter
+$version=2
+$default=175
+$fixed_volume=338
+$main
+
+#175 Motorcycle BGM
+#172 Chopper BGM
+#170 Boat BGM
+#176 Buggy BGM
+#171 Super Car BGM
+#169 Changing Machine
+#174 Last Boss Appearing
+#177 Ending
+#173 Name Entry
+#168 Game Over
+
+
+#136 [SFX] <time="3">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="3">
+#140 [SFX] <time="3">
+#142 [SFX] 
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+
+#129 [FM] High Tom
+#130 [FM] Mid Tom
+#131 [FM] Low Tom
+#132 [FM] Snare Drum
+#133 [FM] Closed High Hat
+#134 [FM] Bass Drum
+#135 [FM] Bass Drum
+#166 [FM] Snare Drum 2
+#167 [FM] 
+
+// List contribution by R
+$end

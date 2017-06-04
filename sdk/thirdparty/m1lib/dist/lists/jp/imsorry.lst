@@ -1,0 +1,35 @@
+﻿$name=imsorry
+$version=2
+$default=184
+$songmax=185
+$main
+
+#184 Title Back
+#179 Start ～ BGM 1
+#180 BGM 1
+#182 Mission Clear
+#185 BGM 2
+#181 Miss
+#163 Game Over
+#129 Name Entry (村田英雄「王将」[作曲:船村徹]より)
+
+-----------------------------------------
+ [S.E.]
+
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#176 [S.E.]
+#177 [S.E.]
+#178 [S.E.]
+#183 [S.E.]
+
+$end

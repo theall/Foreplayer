@@ -1,0 +1,99 @@
+﻿$name=starblad
+$version=2
+$default=$2e
+$fixed_volume=227
+$main
+
+#046 Prologue to STARBLADE (OPENING DEMO)
+#091 Engage in Single Combat (VS.COMANDER BATTLE)
+#088 The Theme of STARBLADE (ALL CLEAR - STAFFROLL)
+#094 Blue Flight (NAME ENTRY)
+#014 The Theme of STARBLADE -Type 2- <time="2:26">
+
+-----------------------------------------------------------
+ [Voice]
+
+#040 [Voice] (Prologue)
+#048 [Voice] Warp mode set
+#049 [Voice] Enemy fleet has warped towards Red Eye. Pursue and engage Red Eye.
+#050 [Voice] Geosword warp point is located. co-ordinates set at W7-26.
+#051 [Voice] Entering enemy's defence line
+#052 [Voice] Broke through the asteroids belt. Ready to engage the enemy.
+#053 [Voice] Located enemy flagship commander.
+#054 [Voice] Broke through the enemies last defences, and are going to descend to Red Eye now.
+#055 [Voice] Red Eye is shielded by special energy shields. There are enemy access passages through the shields.
+#056 [Voice] We have located a passage, and are headed for Octopus.
+#057 [Voice] Locate the target approach vector on Red Eye surface. Shift to surface navigation mode.
+#058 [Voice] Arrived at Octopus.
+#059 [Voice] Penetrate Red Eye surface defences. Target Power Stone is in the central energy chamber.
+#060 [Voice] Destroy Power Stone.
+#061 [Voice] Verify Octopus' energy source has decreased and stopped.
+#062 [Voice] Mission accomplished, return to base now.
+#063 [Voice] Sensors indicate large scale warp reaction at twelve o'clock.
+#064 [Voice] ? surviving enemy fighters.
+#065 [Voice] Find the Iceberg's control centre.
+#066 [Voice] The weak points appear to be in the projections that stick out of the centre.
+#067 [Voice] Destroy all the projections.
+#068 [Voice] Warning
+#069 [Voice] Danger, shield's low, Danger, shield's low
+#070 [Voice] We are under attack, enegy to shields decreasing.
+#071 [Voice] This is mother ship, this is mother ship. We are under attack, impossible to navigate, team starblade pursue and engage fighters.
+#072 [Voice] Take the right one GeoSword, I'll take the left one, over.
+#073 [Voice] Roger, out.
+#074 [Voice] Attack the starboard Geosword, I'll take the port, over.
+#075 [Voice] Attack the port Geosword, I'll take the starboard, over.
+#076 [Voice] Making a quick turn.
+#077 [Voice] Making a rapid descend.
+#078 [Voice] Making a steep rise.
+#079 [Voice] Navigating the ravine in order to avoid rader detection.
+#080 [Voice] Penetrating the outer defences of Octopus.
+#081 [Voice] Red alert, red alert, penetrate the giant battleship, over.
+#082 [Voice] Destroy the control center geosword, we'll intercept the fighters, over.
+#083 [Voice] All wings ships launch, over.
+#084 [Voice] Destroy the control centre, Geosword. We'll cover you, over.
+#085 [Voice] This is team leader, this is team leader. We accomplished the mission and return to base now. Nice work gentlemen, over.
+#086 [Voice] Geosword, come in, Geosword. This is team leader, this is team leader.
+#087 [Voice] This is team leader, this is team leader.
+
+-----------------------------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.] <time="0:20">
+#013 [S.E.]
+#017 [S.E.] <time="0:23">
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.] <time="0:08">
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.] <time="0:4">
+#032 [S.E.]
+#039 [S.E.] <time="0:12">
+
+  ■出典
+  STARBLADE & GALAXIAN^3 -PROJECT DRAGOON-
+  NAMCO GAME SOUND EXPRESS Vol.06
+  VICTOR ENTERTAINMENT  VICL-15009  1992.03.21
+
+  ■作曲
+  細江 慎治(めがてん)
+
+// Transcription by Toby.
+$end

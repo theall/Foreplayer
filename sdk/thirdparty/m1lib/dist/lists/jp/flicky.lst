@@ -1,0 +1,28 @@
+﻿$name=flicky
+$version=2
+$default=130
+//$songmax=147
+$main
+
+#130 ROUND START～MAIN BGM
+#142 ROUND CLEAR
+#129 BONUS ROUND
+#134 PLAYER OUT
+#135 GAME OVER
+#131 NAME ENTRY
+
+-----------------------------------------
+ [S.E.]
+
+#132 [S.E.]
+#133 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#147 [S.E.]
+
+$end

@@ -1,0 +1,46 @@
+﻿$name=bombjack
+$version=2
+$default=016
+$fixed_volume=108
+$main
+
+#016 Credit Inserted <time="1">
+#032 Title <time="9">
+#035 BGM 1 <time="35.2">
+#040 Got a Special Coin <time="10">
+#035 BGM 1 <time="49.5">
+#037 Clear <time="4">
+#034 BGM 2 <time="23.9">
+#027 Power Ball Appearing <time="3">
+#026 Got a Power Ball  <time="6">
+#034 BGM 2 <time="55.50">
+#043 Special Bonus <time="16">
+#036 BGM 3 <time="44.5">
+#039 Touched an Enemy <time="3.5">
+#038 Game Over <time="4">
+#041 Name Entry 1 <time="13.6">
+#042 Name Entry 2 <time="25">
+#046 Not on CD
+
+-----------------------------------------------------------
+
+#017 [SFX] <time="2">
+#019 [SFX] <time="4">
+#020 [SFX] <time="2">
+#021 [SFX] <time="2">
+#022 [SFX] <time="3">
+#023 [SFX] <time="2">
+#024 [SFX] <time="2">
+#025 [SFX] <time="2">
+#029 [SFX] <time="2">
+#030 [SFX] <time="2">
+#031 [SFX] <time="2">
+#044 [SFX] <time="3">
+#045 [SFX] <time="2">
+
+  [OST]
+  Tecmo Game Music
+  Alfa Records  28XA-95  Sep 25, 1986
+
+// List Contribution by Min
+$end

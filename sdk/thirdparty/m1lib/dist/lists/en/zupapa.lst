@@ -1,0 +1,140 @@
+﻿$name=zupapa
+$version=2
+$default=002
+$main
+
+#002 [SFX] NEO-GEO Logo
+#127 [SFX] COIN Insertion
+#058 ZuPaPa! Title 
+#056 WORLD SELECT
+#034 "Circus" WORLD
+#050 UFO Catcher BOSS
+#038 WORLD CLEAR
+#046 "Japan" WORLD
+#047 Kabuki BOSS
+#036 "Jungle" WORLD
+#037 Carrion Plant BOSS
+#057 BONUS GAME
+#044 "Nightmare" WORLD
+#045 Vampire BOSS
+#041 "Toy" WORLD
+#042 Teddy Bear BOSS
+#033 "Dino" WORLD
+#043 Big Mammoth BOSS
+#051 "Sci-fi" WORLD
+#052 Alien Cyclop BOSS
+#039 "Dragon" WORLD
+#040 Dark Wizard BOSS
+#053 "Virtual" WORLD
+#054 Mutant ZuPaPa BOSS
+#059 Ending (All Clear)
+#062 [SFX] Cheers
+#060 Staff Credits
+#055 GAME OVER
+
+#061 Staff Credits w/o intro.
+
+#003 Music Stop
+
+
+  [SFX] 
+---------------------------------------------------
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+
+#238 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+
+
+  [SFX] 
+---------------------------------------------------
+#062 [SFX] Cheers
+
+#095 [SFX] NEO-GEO Logo
+
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] COIN Insertion
+
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+
+  [Composers]
+  unknown
+
+// List contribution by Simon B., done in playing the game.
+$end

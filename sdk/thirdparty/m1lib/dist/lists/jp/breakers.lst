@@ -1,0 +1,95 @@
+﻿$name=breakers
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#033 ATTRACT DEMO
+#127 [S.E.] CREDIT
+#034 HOW TO PLAY <time="20">
+#035 CHARACTER SELECT <time="20">
+#036 VS TEHEME
+#040 SHO
+#046 PIELLE
+#039 HERE COMES A CHALLENGER !
+#042 CONDOR
+#044 RILA
+#050 CONTINUE ? <time="20">
+#043 TIA
+#045 ALSION III
+#037 YOU WIN
+#038 WINNER
+#047 MAHERL
+#041 DAO-LONG
+#037 YOU WIN
+#048 BAI-FU
+#049 ENDING
+#051 GAME OVER
+
+---------------------------------------------------
+  [S.E.]
+
+#127 [S.E.] CREDIT
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#209 [S.E.] 
+#218 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] 
+#225 [S.E.] 
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#230 [S.E.] 
+#231 [S.E.] 
+#232 [S.E.] 
+#233 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#237 [S.E.] 
+#238 [S.E.] 
+#239 [S.E.] 
+#240 [S.E.] 
+#241 [S.E.] 
+#242 [S.E.] 
+#243 [S.E.] 
+#244 [S.E.] 
+#245 [S.E.] 
+#246 [S.E.] 
+#247 [S.E.] 
+#248 [S.E.] 
+#249 [S.E.] 
+#250 [S.E.] 
+#251 [S.E.] 
+#252 [S.E.] 
+#253 [S.E.] 
+#254 [S.E.] 
+
+  ■作曲
+  神尾 憲一
+
+  ■効果音
+  Yoshikazu Egawa (Light Link Music)
+
+// List contribution by ZEK.
+$end

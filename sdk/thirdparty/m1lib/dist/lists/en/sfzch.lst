@@ -1,0 +1,165 @@
+﻿$name=sfzch
+$version=2
+$default=013
+$main
+
+#013 Opening Demo <time="26">
+#014 Player Select <time="54">
+#015 VS.
+#001 Ryu: Stage <time="1:53">
+#021 Ryu: Ending <time="1:05">
+#009 Charlie (Nash): Stage <time="1:57">
+#029 Charlie (Nash): Ending <time="1:12">
+#003 Chun-Li: Stage <time="1:54">
+#023 Chun-Li: Ending
+#006 Adon: Stage <time="2:10">
+#026 Adon: Ending <time="1:00">
+#008 Guy: Stage <time="2:45">
+// from Final Fight (Round 1-1)
+#028 Guy: Ending <time="1:01">
+#011 Akuma (Gouki): Stage <time="1:54">
+#031 Akuma (Gouki): Ending <time="1:24">
+#016 Stage End
+#017 Continue <time="37">
+#018 Here Comes The New Challenger
+#002 Ken: Stage <time="2:07">
+#022 Ken: Ending <time="1:31">
+#005 Sodom: Stage <time="2:30">
+// from Final Fight (Round 1-2, 2-1)
+#025 Sodom: Ending <time="1:38">
+// from Final Fight (Continue)
+#010 Rose: Stage <time="1:36">
+#030 Rose: Ending <time="1:01">
+#007 Birdie: Stage <time="1:44">
+#027 Birdie: Ending <time="1:05">
+#004 Sagat: Stage <time="2:59">
+#024 Sagat: Ending <time="1:14">
+#012 M. Bison: Stage <time="2:11">
+#032 M. Bison: Ending <time="1:05">
+#040 Dan: Stage <time="3:00">
+#041 Dan: Ending <time="44">
+#033 Credits Roll <time="2:52">
+#019 Game Over
+#020 Ranking Display
+
+----------------------------------------------------------
+ [Voice]
+
+#048 [Voice] Round
+#049 [Voice] 1
+#050 [Voice] 2
+#051 [Voice] 3
+#052 [Voice] 4
+#053 [Voice] 5
+#054 [Voice] Final
+#055 [Voice] Fight
+#056 [Voice] K.O.
+
+  Ryu
+#305 [Voice] ShouRyuuKen
+#307 [Voice] Shinkuu
+#309 [Voice] 
+#336 [Voice] 
+
+  Ken
+#311 [Voice] HadouKen
+#313 [Voice] Tatsumaki Senpuukyaku
+#315 [Voice] ShinRyuuKen
+#317 [Voice] 
+#351 [Voice] 
+
+  Guy
+#319 [Voice] 
+#323 [Voice] 
+
+  Charlie (Nash)
+#325 [Voice] 
+#327 [Voice] 
+#329 [Voice] 
+#081 [Voice] 
+
+  Sagat
+#331 [Voice] 
+#333 [Voice] 
+#335 [Voice] 
+#342 [Voice] 
+
+  Chun-Li
+#337 [Voice] 
+#377 [Voice] 
+#339 [Voice] 
+#341 [Voice] 
+#343 [Voice] 
+#345 [Voice] 
+#347 [Voice] 
+#340 [Voice] 
+#299 [Voice] 
+
+  Rose
+#353 [Voice] 
+#085 [Voice] 
+
+  Adon
+#355 [Voice] 
+#357 [Voice] 
+#083 [Voice] 
+#301 [Voice] 
+
+  Sodom
+#361 [Voice] 
+#363 [Voice] 
+#359 [Voice] 
+
+  M. Bison
+#365 [Voice] 
+#367 [Voice] 
+#369 [Voice] 
+#381 [Voice] 
+
+  Akuma (Gouki)
+#371 [Voice] 
+#297 [Voice] 
+
+  Birdie
+#373 [Voice] 
+#375 [Voice] 
+#338 [Voice] 
+#303 [Voice] 
+
+  Dan 
+#379 [Voice]
+
+----------------------------------------------------------
+ [SFX]
+
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#097 [SFX]
+#257 [SFX]
+#259 [SFX]
+#261 [SFX]
+#263 [SFX]
+#265 [SFX]
+#267 [SFX]
+#269 [SFX]
+#271 [SFX]
+#273 [SFX]
+#275 [SFX]
+#277 [SFX]
+#279 [SFX]
+#281 [SFX]
+#283 [SFX]
+#285 [SFX]
+#287 [SFX]
+
+// List Contribution by NK
+$end

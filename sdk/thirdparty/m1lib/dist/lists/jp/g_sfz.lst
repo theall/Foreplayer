@@ -1,0 +1,35 @@
+﻿$name=g_sfz
+$version=2
+$default=61958
+$songmax=65536
+$main
+
+$f206 Opening
+$f101 Picnic
+$f205 Mango!
+$f203 Water Melody 
+$f204 Good Evening!
+$f202 Fancy Promenard
+$f108 Vilily
+$f102 Fresh Melon
+$f103 Shop
+$f105 Boss
+$f106 Stage Clear
+$f201 Ya-Da-Ne
+$f104 Game Over
+$f207 Recollection
+$f107 Staff Roll
+$f006 Opa! Opa!
+$f00a Keep on the Beat
+$f00b Saari
+$f002 Prome
+$f004 Hot Snow
+$f009 Dreaming Tomorrow
+$f00c Don't Stop
+$f005 Shop (Old)
+$f001 Boss (Old)
+$f008 Stage Clear (Old)
+$f003 Game Over (Old)
+
+// Basic list contributed by Knurek
+$end

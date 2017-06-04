@@ -1,0 +1,67 @@
+﻿$name=wndrplnt
+$version=2
+$default=$32
+$songmax=$32
+$fixed_volume=117
+$main
+
+$32 Opening
+$28 Wonder Flight
+$2c Boss Theme
+$29 Wonder Attack
+$2b Shop
+$2e Pattern Clear
+$2a Secret Fighter
+$2d Garla
+$31 Ending
+$30 Name Entry
+$2f Game Over
+
+-----------------------------------------
+ [SFX]
+
+$04 [SFX]
+$05 [SFX]
+$06 [SFX]
+$07 [SFX]
+$08 [SFX]
+$09 [SFX]
+$0a [SFX]
+$0b [SFX]
+$0c [SFX]
+$0d [SFX]
+$0e [SFX]
+$0f [SFX]
+$10 [SFX]
+$11 [SFX]
+$12 [SFX]
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX]
+$1b [SFX]
+$1c [SFX]
+$1d [SFX]
+$1e [SFX]
+$1f [SFX]
+$20 [SFX]
+$21 [SFX]
+$22 [SFX]
+$23 [SFX]
+$24 [SFX]
+$26 [SFX]
+$27 [SFX]
+
+  [Source]
+  Data East Game Music / G.M.O.
+  Alfa Records  28XA-205  May 10, 1988
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

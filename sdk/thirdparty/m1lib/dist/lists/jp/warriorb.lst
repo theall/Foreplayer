@@ -1,0 +1,30 @@
+﻿$name=warriorb
+$version=2
+$default=$b9
+//$songmax=$df
+$main
+
+$b9 INTRODUCTION 1
+$ba INTRODUCTION 2
+$bb PLAYER SELECT
+$c7 Close your Eyes
+$b1 Rising
+$b2 Evils-foot step
+$c9 ROUND CLEAR
+$c3 Spiral life
+$ce Evils-silence
+$ca STAGE DEMO
+$bc MAP
+$bd BREATH
+$53 Evils-nightmare
+$bf Voice of siren
+$cc search one’s memory
+
+  ■出典
+  nouvelle vague -G.S.M. TAITO 7-
+  PONY CANYON / SCITRON  PCCB-00086  1992.05.21
+
+  ■作曲
+  高木正彦 (Mar.)
+
+$end

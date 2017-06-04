@@ -1,0 +1,197 @@
+﻿$name=shimpact
+$version=2
+$default=031
+$main
+
+#031 TITLE SCREEN
+#020 HEY ! <time="5">
+#019 ATTRACT <time="10">
+#002 ATTRACT MODE
+#014 WIN FOOTBALL CARDS
+#169 [S.E.] CREDIT <time="3">
+#001 SELECT TEAM
+#007 FORMATION THEME 1
+#003 MAIN THEME 1
+#011 TOUCHDOWN
+#023 YOU WON A FOOTBALL CARD
+#013 EXTRA POINT ATTEMPT
+#193 IT'S GOOD
+#192 KICKOFF
+#028 END OF FIRST QUARTER <time="15">
+#008 FORMATION THEME 2
+#004 MAIN THEME 2
+#195 TURNOVER
+#148 [S.E.] FIGHT <time="3">
+#196 FIGTH THEME
+#014 WIN
+#028 HALFTIME <time="15">
+#009 FORMATION THEME 3
+#005 MAIN THEME 3
+#012 NEW WORLD RECORD
+#028 END OF THIRD QUARTER <time="15">
+#010 FORMATION THEME 4
+#006 MAIN THEME 4
+#027 HE BLEW IT (?) <time="3.5">
+#025 THIS GAME IS OVER
+
+#199 FORMATION THEME 4
+#200 FORMATION THEME 5
+#201 FORMATION THEME 6
+#202 FORMATION THEME 7
+#194 TITLE SCREEN THEME 2
+#197 TITLE SCREEN THEME 3
+#198 TITLE SCREEN THEME 4
+#240 TITLE SCREEN THEME 5
+#022 THIS GAME IS OVER w/o intro
+
+#203 未使用曲 1
+#204 未使用曲 1 Ver.2
+#205 未使用曲 2 
+#206 未使用曲 3 
+#207 未使用曲 4 
+#024 未使用曲 5
+#026 未使用曲 6
+#029 未使用曲 7
+#021 未使用曲 8
+#030 未使用曲 9
+#018 未使用曲 10
+#016 未使用曲 11
+
+---------------------------------------------------
+  [S.E.]
+
+#017 [S.E.] <time="5">
+#051 [S.E.] <time="3">
+#128 [S.E.] <time="3">
+#129 [S.E.] <time="3">
+#130 [S.E.] <time="3">
+#131 [S.E.] <time="3">
+#132 [S.E.] <time="3">
+#133 [S.E.] <time="3">
+#134 [S.E.] <time="3">
+#135 [S.E.] <time="3">
+#136 [S.E.] <time="3">
+#137 [S.E.] <time="3">
+#138 [S.E.] <time="3">
+#142 [S.E.] <time="3">
+#143 [S.E.] <time="3">
+#144 [S.E.] <time="3">
+#145 [S.E.] <time="3">
+#146 [S.E.] <time="3">
+#148 [S.E.] FIGHT <time="3">
+#149 [S.E.] <time="3">
+#150 [S.E.] <time="3">
+#151 [S.E.] <time="3">
+#152 [S.E.] <time="3">
+#153 [S.E.] <time="5">
+#154 [S.E.] <time="3">
+#155 [S.E.] <time="3">
+#156 [S.E.] <time="3">
+#157 [S.E.] <time="3">
+#160 [S.E.] <time="3">
+#161 [S.E.] <time="3">
+#162 [S.E.] <time="3">
+#163 [S.E.] <time="3">
+#167 [S.E.] <time="3">
+#169 [S.E.] CREDITS <time="3">
+#170 [S.E.] <time="3">
+#224 [S.E.] <time="3">
+#225 [S.E.] <time="3">
+#226 [S.E.] <time="3">
+#227 [S.E.] <time="3">
+#228 [S.E.] <time="3">
+#231 [S.E.] <time="3">
+#232 [S.E.] <time="3">
+#233 [S.E.] <time="3">
+#234 [S.E.] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#048 [Voice] <time="3">
+#049 [Voice] <time="3">
+#050 [Voice] <time="3">
+#052 [Voice] <time="3">
+#053 [Voice] <time="3">
+#054 [Voice] <time="3">
+#055 [Voice] <time="3">
+#056 [Voice] <time="3">
+#057 [Voice] <time="3">
+#058 [Voice] <time="3">
+#059 [Voice] <time="3">
+#060 [Voice] <time="3">
+#061 [Voice] <time="3">
+#062 [Voice] <time="3">
+#063 [Voice] <time="3">
+#064 [Voice] <time="3">
+#065 [Voice] <time="3">
+#066 [Voice] <time="3">
+#067 [Voice] <time="3">
+#068 [Voice] <time="3">
+#069 [Voice] <time="3">
+#070 [Voice] <time="3">
+#071 [Voice] <time="3">
+#072 [Voice] <time="3">
+#073 [Voice] <time="3">
+#074 [Voice] <time="3">
+#075 [Voice] <time="3">
+#076 [Voice] <time="3">
+#077 [Voice] <time="3">
+#078 [Voice] <time="3">
+#079 [Voice] <time="3">
+#080 [Voice] <time="3">
+#081 [Voice] <time="3">
+#082 [Voice] <time="3">
+#083 [Voice] <time="3">
+#084 [Voice] <time="3">
+#085 [Voice] <time="3">
+#086 [Voice] <time="3">
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#089 [Voice] <time="3">
+#090 [Voice] <time="3">
+#091 [Voice] <time="3">
+#092 [Voice] <time="3">
+#093 [Voice] <time="3">
+#094 [Voice] <time="3">
+#095 [Voice] <time="3">
+#176 [Voice] <time="3">
+#177 [Voice] <time="3">
+#178 [Voice] <time="3">
+#179 [Voice] <time="3">
+#180 [Voice] <time="3">
+#181 [Voice] <time="3">
+#182 [Voice] <time="3">
+#183 [Voice] <time="3">
+#184 [Voice] <time="3">
+#185 [Voice] <time="3">
+#186 [Voice] <time="3">
+#187 [Voice] <time="3">
+#188 [Voice] <time="3">
+#189 [Voice] <time="3">
+#190 [Voice] <time="3">
+#191 [Voice] <time="3">
+#208 [Voice] <time="3">
+#209 [Voice] <time="3">
+#210 [Voice] <time="3">
+#211 [Voice] <time="3">
+#212 [Voice] <time="3">
+#213 [Voice] <time="3">
+#214 [Voice] <time="3">
+#215 [Voice] <time="3">
+#216 [Voice] <time="3">
+#217 [Voice] <time="3">
+#218 [Voice] <time="3">
+#219 [Voice] <time="3">
+#220 [Voice] <time="3">
+#221 [Voice] <time="3">
+#222 [Voice] <time="3">
+#223 [Voice] <time="3">
+#235 [Voice] <time="3">
+#236 [Voice] <time="3">
+#237 [Voice] <time="3">
+#238 [Voice] <time="3">
+#239 [Voice] <time="3">
+
+// List contribution by ZEK.
+$end

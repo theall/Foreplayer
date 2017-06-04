@@ -1,0 +1,84 @@
+﻿$name=kozure
+$version=2
+$default=01
+//$songmax=63
+$main
+
+  *Note: Some samples are not played.
+
+#01 Credit Inserted <time="2">
+#59 Introduction <time="20">
+#46 Game Start - BGM 1 (Main Theme) <time="01:26">
+#49 BGM 2 (Invincibility) <time="19">
+#48 BGM 1 (Main Theme) <time="01:23">
+#51 Boss <time="01:03">
+#53 Round Clear <time="10">
+#56 Bonus Game <time="24">
+#50 Dead <time="4">
+#47 Final Start - BGM 1 <time="01:26">
+#52 Final Boss <time="46">
+#57 Round Clear - Final Round Clear - Ending <time="32">
+#58 Credits Roll - BGM 1 <time="49.36">
+#54 Game Over <time="6">
+#55 Name Entry <time="01:05">
+
+-----------------------------------------------------------
+  [Voice]
+
+#35 [Voice] <time="2">
+#37 [Voice] <time="2">
+#40 [Voice] <time="2">
+#41 [Voice] *<time="2">
+#43 [Voice] *<time="2">
+#44 [Voice] *<time="2">
+
+-----------------------------------------------------------
+  [SFX]
+
+#01 [SFX] <time="2">
+#02 [SFX] <time="2">
+#03 [SFX] <time="2">
+#04 [SFX] <time="2">
+#05 [SFX] <time="4">
+#06 [SFX] <time="2">
+#07 [SFX] <time="2">
+#08 [SFX] <time="2">
+#09 [SFX] <time="2">
+#10 [SFX] <time="2">
+#11 [SFX] <time="2">
+#12 [SFX] <time="2">
+#13 [SFX] <time="2">
+#14 [SFX] <time="2">
+#15 [SFX] <time="2">
+#16 [SFX] <time="2">
+#17 [SFX] <time="2">
+#18 [SFX] <time="3">
+//#21 [SFX]
+//#22 [SFX] <time="2">
+//#24 [SFX] <time="2">
+//#25 [SFX] <time="4">
+//#26 [SFX] <time="2">
+#31 [SFX] <time="2">
+#32 [SFX] <time="2">
+#33 [SFX] <time="2">
+#34 [SFX] <time="2">
+#36 [SFX] <time="2">
+#38 [SFX] * <time="2">
+#39 [SFX] * <time="2">
+#42 [SFX] * <time="2">
+//#45 No Sound ?
+//#60 No Sound ?
+//#61 No Sound ?
+//#62 No Sound ?
+//#63 No Sound ?
+
+  [Source]
+  Mahjong Sound Graffiti -G.S.M. Nichibutsu 2-
+  Pony Canyon / Scitron  PCCB-00051  1991.01.21
+
+  [Sound Composer]
+  Kenji Yoshida
+
+// List Contribution by Cratch
+// English List by Fujix
+$end

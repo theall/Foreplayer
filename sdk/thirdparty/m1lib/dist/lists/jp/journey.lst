@@ -1,0 +1,46 @@
+﻿$name=journey
+$version=2
+$default=$0b
+$songmax=$34
+$main
+
+$0b Don't Stop Believin' [from Escape] (Steve Perry theme)
+$0c Chain Reaction [from Frontiers] (Neil Schon theme)
+$0d Still They Ride [from Escape] (Ross Valory theme)
+$0e Wheel in the Sky [from Infinity] (Steve Smith theme)
+$10 Stone in Love [from Escape] (Jonathan Cain theme)
+$0f Lights [from Infinity] (Intro and stage select)
+$11 Lose player
+$29 Stage clear
+
+$07 [S.E.] Channel test
+$08 [S.E.] Tilt  <time="4">
+$09 [S.E.] Coin
+$0a [S.E.] Extra player
+$12 [S.E.] Boom
+$13 [S.E.] Player falling
+$14 [S.E.] Player splat
+$15 [S.E.] Steve Smith bounces off a drum
+$2a [S.E.] Gate explosion
+$16 [S.E.] Drum shoot high
+$17 [S.E.] Drum shoot low
+$18 [S.E.] Platform telescope up
+$19 [S.E.] Ross Valory jumps
+$1a [S.E.] Bass shoot
+$1b [S.E.] Record explode
+$1c [S.E.] Jonathan Cain jumps
+$2b [S.E.] Groupoid bounce
+$1e [S.E.] Piano shoot high
+$1f [S.E.] Piano shoot low
+$20 [S.E.] Jetpack thrust <time="4">
+$22 [S.E.] Guitar shoot
+$23 [S.E.] Mini-Scarab blown up
+$24 [S.E.] Microphone get
+$25 [S.E.] Microphone shoot
+$26 [S.E.] Scarab launch
+$27 [S.E.] Scarab flight into head <time="4">
+
+// List contribution by ZEK.
+// Updated by R. Belmont
+// Yet Another Updated by wildcat
+$end

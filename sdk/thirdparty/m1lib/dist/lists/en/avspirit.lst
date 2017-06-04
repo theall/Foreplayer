@@ -1,0 +1,53 @@
+﻿$name=avspirit
+$version=2
+$default=017
+$main
+
+#017 [SFX] COIN Insertion
+#001 MAIN BGM <time="2:11" fadeout="yes" fadeoutlength="10">
+#002 BOSS BGM <time="1:07" fadeout="yes" fadeoutlength="10">
+#003 KICHI <time="2:09" fadeout="yes" fadeoutlength="10">
+#004 GUESUIDO <time="1:34" fadeout="yes" fadeoutlength="10">
+#005 WARNNING <time="51" fadeout="yes" fadeoutlength="10">
+#006 LAST BOSS BGM <time="1:57" fadeout="yes" fadeoutlength="10">
+#007 STAGE CLEAR
+#008 TRICK ROOM <time="49" fadeout="yes" fadeoutlength="10">
+#009 KNAOJYO <time="50" fadeout="yes" fadeoutlength="10">
+#010 CONTINUE
+#011 ENDING
+#012 NAME REGIST.<time="1:18" fadeout="yes" fadeoutlength="10">
+
+  [SFX]
+
+#016 [SFX]
+#017 [SFX] COIN Insertion
+#018 [SFX]
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX]
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+
+  [Sound Composers]
+  Studio O. K.
+
+  [Sound Producer]
+  Tykoon Mori
+ 
+// List contribution by Simon B., with the help of the PCB Sound-Test.
+$end

@@ -1,0 +1,88 @@
+﻿$name=lwings
+$version=2
+$default=$25
+$songmax=$57
+$main
+
+$25 Credit <time="3">
+$37 Start Demo <time="5">
+$20 Game Start <time="9">
+$2b Area 1
+$2c Area 2
+$2d Area 3
+$2e Area 4
+$2f Area 5
+$34 Area Boss
+$21 Area Clear 1
+$22 Area Clear 2
+$30 Bonus Area
+$31 Underground
+$33 Underground Boss
+$32 Sanctuary
+$35 Sanctuary Boss
+$23 Screen Change
+$24 Extend
+$27 Ranking 1
+$28 Ranking 2
+$29 Ranking Display 1
+$2a Ranking Display 2
+$36 Continue
+$26 Game Over
+
+-----------------------------------------
+ [SFX]
+
+$01 [SFX]
+$02 [SFX]
+$03 [SFX]
+$04 [SFX]
+$05 [SFX]
+$06 [SFX]
+$07 [SFX]
+$08 [SFX]
+$09 [SFX]
+$0a [SFX]
+$0b [SFX]
+$0c [SFX]
+$0d [SFX]
+$0e [SFX]
+$0f [SFX]
+$10 [SFX]
+$11 [SFX]
+$12 [SFX]
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$41 [SFX]
+$42 [SFX]
+$43 [SFX]
+$44 [SFX]
+$45 [SFX]
+$46 [SFX]
+$47 [SFX]
+$48 [SFX]
+$49 [SFX]
+$4a [SFX]
+$4b [SFX]
+$4c [SFX]
+$4d [SFX]
+$4e [SFX]
+$4f [SFX]
+$50 [SFX]
+$51 [SFX]
+$52 [SFX]
+$53 [SFX]
+$54 [SFX]
+$55 [SFX]
+$56 [SFX]
+$57 [SFX]
+
+// [Source]
+//  MDX Collection by Auau.
+//
+  [Sound Composer]
+  Tamayo Kawamoto
+
+$end

@@ -1,0 +1,66 @@
+﻿$name=cybots
+$version=2
+$default=045
+$fixed_volume=305
+$main
+
+#045 Q SOUND Logo
+#001 Opening-Title
+#049 Robot Demo 1
+#051 Robot Demo 2
+#010 Ranking Display
+#002 Player Select
+#003 Story Demo 1
+#011 VS.
+#018 MEGALOPOLIS
+#019 MACHINE ARENA
+#047 Story Demo 2
+#029 GAITS Theme
+#013 Winning Theme 1
+#005 Story Demo 3
+#020 POWER STATION
+#021 COLONIAL SATELITE
+#027 VOLCANO
+#014 Continue
+#053 Story Demo 4
+#052 Story Demo 5
+#030 SUPER 8 Theme
+#008 Story Demo 6
+#016 YOU FACE A NEW OPPONENT
+#004 Story Demo 7
+#026 AIRPORT
+#022 SECRET HQ
+#024 UNDERWATER 1
+#025 UNDERWATER 2
+#006 Story Demo 8
+#031 HELION Theme
+#012 Winning Theme 2
+#007 Story Demo 9
+#023 SPACE FLEET
+#028 DOOMSDAY WEAPON
+#009 Story Demo 10
+#050 WARLOCK THEME 1
+#058 WARLOCK THEME 2
+#040 MARY ENDING
+#037 BAO and MAO ENDING 1
+#043 BAO and MAO ENDING 2
+#036 GAWAINE ENDING 1
+#042 GAWAINE ENDING 2
+#035 ARIETA ENDING 1
+#041 ARIETA ENDING 2
+#039 SANTANA ENDING
+#032 JIN ENDING 1
+#038 JIN ENDING 2
+#054 Cast Ending
+#044 Staff Roll
+#055 POWERED GEAR Hi-Score Ranking
+#017 Naming （未使用）
+#015 Game Over
+#057 MARY ENDING' （未使用）
+
+  ■出典
+  サイバーボッツ/アーケード ゲームトラック
+  SME  SRCL 3274, 3275  1995.08.02
+
+// List by Razさん
+$end

@@ -1,0 +1,36 @@
+﻿$name=srallyc
+$version=2
+$default=002
+$main
+
+#002 Power Games (Attract Mode) <time="58">
+#003 Judgement (Car Select) <time="36">
+#011 Conditioned Reflex <time="3:38">
+#008 Desert Land <time="2:15">
+#001 Getting Muddy <time="1:32">
+#010 My Dear Friend, Rally <time="1:32">
+#014 Reckless Running <time="2:40">
+#005 Ignition (Stage Complete) <time="3:18">
+#004 End Road of Monaco <time="9">
+#009 Fanfare <time="9">
+#012 Game Over Yeah! <time="7">
+#006 Around a Letter (Enter Name) <time="56">
+#017 Welcome to Sega Rally (Awaiting Challengers)<time="1:06">
+#013 Put Up a Sign (Title Screen) <time="9">
+
+#007 My Dear Friend, Rally (Short) <time="48">
+#015 Conditioned Reflex (Short) <time="58">
+#016 Getting Muddy (Loop)
+
+  [Source]
+  Figured out from Sega Rally Championship (PC version)
+
+  Competition / Sega Rally Championship Complete
+  Toshiba EMI  TYCY-5484  Feb 7, 1996
+
+  Sega Racing Best
+  Marvelous Entertainment (MMV)  MJCA-00043  Mar 3, 1999
+
+// List contribution by Toby
+// List Contribution by NK
+$end

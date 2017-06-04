@@ -1,0 +1,190 @@
+﻿$name=wecleman
+$version=2
+$default=194
+$fixed_volume=334
+$main
+
+#194 [Voice] CREDIT
+#001 HELLO ANGEL (TITLE)
+#014 STARTING GRID <time="7">
+#005 HIGHWAY KILLER (FIRST LAP)
+#002 SHOUTING! (LAPS 2)
+#008 A LITTLE DEVIL (RANKING / LOW SCORE)
+#004 CRAZY SPEEDER (LAPS 3)
+#003 GARAXIAN EXPRESS (LAPS 4)
+#012 IN MY DREAM (ENDING)
+#011 TIME HAS COME (ARRIVAL DISTANCE)
+#009 WINNING RUNNER (RANKING / RANK-IN)
+
+#017 HIGHWAY KILLER (W/O INTRO)
+#019 SHOUTING! (W/O INTRO)
+#018 CRAZY SPEEDER (W/O INTRO)
+
+#021 CRAZY SPEEDER (ONE SIDE-CHANNEL)
+#020 GARAXIAN EXPRESS (ONE SIDE-CHANNEL)
+
+#006 UNUSED 1 (RETIRED ? / released on CD)
+#007 UNUSED 2
+#013 UNUSED 3
+
+-------------------------------------------------------------
+ [S.E.]
+
+#010 [S.E.] <time="3.8">
+#014 [S.E.] STARTING GRID
+#033 [S.E.] (CREDIT ? /released on CD)
+#034 [S.E.] TIME EXTEND
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+
+#059 [S.E.] AXEL (LOW) ～
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#123 [S.E.]
+#124 [S.E.]
+#125 [S.E.]
+#126 [S.E.]
+#127 [S.E.]
+#128 [S.E.] AXEL (HIGH)
+
+#131 [S.E.] EXHAUST
+#132 [S.E.] 
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#200 [S.E.] CONT DOWN (STARTING GRID)
+#201 [S.E.]
+#202 [S.E.]
+#204 [S.E.]
+#205 [S.E.]
+#206 [S.E.]
+#207 [S.E.]
+#208 [S.E.]
+#209 [S.E.]
+#210 [S.E.]
+
+-------------------------------------------------------------
+
+ [Voice]
+
+#133 [Voice]
+#134 [Voice] (STARTING GRID)
+#135 [Voice]
+#136 [Voice]
+#137 [Voice] 
+#138 [Voice] (RETIRED PIT)
+#139 [Voice]
+#140 [Voice] CHECKER FLAG
+#141 [Voice] THREE !
+#142 [Voice] TWO !
+#143 [Voice] ONE !
+#152 [Voice] (ENDING)
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#192 [Voice]
+#193 [Voice]
+#194 [Voice] CREDIT
+#196 [Voice]
+#197 [Voice] A SHOUT OF JOY(ENDING)
+#198 [Voice]
+#199 [Voice] TIME EXTEND?
+#211 [Voice]
+#212 [Voice]
+#213 [Voice]
+#214 [Voice]
+#215 [Voice]
+#216 [Voice]
+
+  ■出典
+  Original Sound of WEC Le Mans 24 - Arcade Version -
+  アポロン  BY12-5027  1987.08.21
+
+  KONAMIC GAME FREAKS / コナミ矩形波倶楽部
+  ALFA RECORDS  28XA-135  1987.03.25
+
+// オリジナルリスト：みん☆さん
+// 更新：Fujix
+// 追加：Rさん
+$end

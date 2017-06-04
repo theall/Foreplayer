@@ -1,0 +1,386 @@
+﻿$name=ddsom
+$version=2
+$default=001
+$fixed_volume=403
+$main
+
+#001 ファンファーレ (コイン投入)
+#078 [Voice] Welcome to the D&D world (コイン投入時)
+#076 [Voice] Dungeons & Dragons (スタート時) 
+#002 決断の時 (プレイヤーセレクト)
+#042 プロローグ (ステージ 1)
+#008 旅立ち (ステージ 1)
+#003 冒険の書 (ステージ 2)
+#014 トリンタン村の戦い (ステージ 2, 5-A)
+#032 厄災の始まり
+#004 鬨の声
+#043 使命 (デモ 1)
+#017 べスビア川を下れ (ステージ 3-B)
+#019 奇襲 (ステージ 3-B, デモ 3)
+#020 精霊～テーマ～ (ステージ 3-B)
+#012 累卵の危うきにありて (ステージ 3-B)
+#013 重戦車ジャガーノート (ステージ 3-A)
+#038 安堵
+#009 激戦シャドーエルフ (ステージ 4)
+#036 宿敵 テルアリン (ステージ 4)
+#045 運命の輪 テルエレロン (ステージ 4, 10)
+#026 静寂 (ステージ 4, デモ 3)
+#021 腐海に眠るもの (ステージ 5-B)
+#011 屍と財宝 (隠し部屋)
+#034 闇に潜む眼光 (ステージ 10)
+#039 異郷の人々 (ステージ 4)
+#015 木々のかけ橋 (ステージ 5-C, 8-B)
+#022 暗き御座の冥王のもとへ (デモ 2, ステージ 7)
+#010 至難の獄 (ステージ 6, 10)
+#023 迷いの森 (ステージ 8-A)
+#024 幻惑の森 (ステージ 8-A)
+#027 過ぎ越しの宴 (ステージ 8-B)
+#040 癒しの音色
+#025 神秘の石 (ステージ 4, デモ 3)
+#028 ロストワールド (ステージ 9-A, 9-B, 9-C)
+#049 飛翔のパラテウム (デモ 4, ステージ 10)
+#016 螺旋状の戦い (ステージ 10)
+#006 悪夢の正体 (ステージ 6, 10)
+#035 最終決戦 (ステージ 6, デモ 3, ステージ 10)
+#051 エピローグ (ステージ 10)
+#005 我に加護を～死の中の初子～
+
+#058 QSound Logo (main)
+#059 QSound Logo (sub)
+
+
+#061 [S.E.] 
+#062 [S.E.] <time="4">
+#063 [S.E.] 
+#077 [S.E.] 
+#095 [S.E.] 
+#125 [S.E.] 
+#138 [S.E.] 
+#140 [S.E.] <time="4">
+#141 [S.E.]  
+#142 [S.E.] 
+#143 [S.E.] <time="6">
+#144 [S.E.] <time="6">
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] <time="6"> 
+#156 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.]
+#170 [S.E.] 
+#248 [S.E.] <time="4">
+#252 [S.E.] 
+#254 [S.E.] 
+#255 [S.E.] 
+#256 [S.E.] 
+#257 [S.E.] 
+#258 [S.E.] 
+#258 [S.E.] 
+#260 [S.E.] 
+#261 [S.E.] 
+#262 [S.E.] 
+#263 [S.E.] 
+#264 [S.E.] 
+#265 [S.E.] 
+#266 [S.E.] 
+#267 [S.E.] 
+#268 [S.E.] 
+#269 [S.E.] 
+#270 [S.E.] 
+#271 [S.E.] 
+#272 [S.E.] 
+#273 [S.E.] 
+#274 [S.E.] 
+#275 [S.E.] 
+#276 [S.E.] 
+#277 [S.E.] 
+#278 [S.E.] 
+#279 [S.E.] 
+#280 [S.E.] 
+#281 [S.E.] 
+#282 [S.E.] 
+#283 [S.E.] 
+#284 [S.E.] 
+#285 [S.E.] 
+#286 [S.E.] 
+#287 [S.E.] 
+#288 [S.E.] 
+#289 [S.E.] 
+#290 [S.E.] 
+#291 [S.E.] 
+#292 [S.E.] 
+#293 [S.E.] 
+#294 [S.E.] 
+#295 [S.E.] 
+#296 [S.E.] 
+#297 [S.E.] 
+#298 [S.E.] 
+#299 [S.E.] 
+#300 [S.E.] 
+#301 [S.E.] 
+#302 [S.E.] 
+#303 [S.E.] 
+#304 [S.E.] 
+#305 [S.E.] 
+#306 [S.E.] 
+#307 [S.E.] 
+#308 [S.E.] 
+#309 [S.E.] 
+#310 [S.E.] 
+#311 [S.E.] 
+#312 [S.E.] 
+#313 [S.E.] 
+#314 [S.E.] 
+#315 [S.E.] 
+#316 [S.E.] 
+#317 [S.E.] 
+#318 [S.E.] 
+#319 [S.E.] 
+#320 [S.E.] 
+#321 [S.E.] 
+#322 [S.E.] 
+#323 [S.E.] 
+#324 [S.E.] 
+#325 [S.E.] 
+#326 [S.E.] 
+#327 [S.E.] 
+#328 [S.E.] 
+#329 [S.E.] 
+#330 [S.E.] 
+#331 [S.E.] 
+#332 [S.E.] 
+#333 [S.E.] 
+#334 [S.E.] 
+#335 [S.E.] 
+#352 [S.E.] 
+#353 [S.E.] 
+#354 [S.E.] 
+#355 [S.E.] 
+#356 [S.E.] 
+#357 [S.E.] 
+#358 [S.E.] 
+#359 [S.E.] 
+#360 [S.E.] 
+#361 [S.E.] 
+#362 [S.E.] 
+#363 [S.E.] 
+#364 [S.E.] 
+#366 [S.E.] 
+#367 [S.E.] 
+#368 [S.E.] 
+#369 [S.E.] 
+#370 [S.E.] 
+#371 [S.E.] 
+#372 [S.E.] 
+#373 [S.E.] 
+#374 [S.E.] 
+#375 [S.E.] 
+#376 [S.E.] 
+#377 [S.E.] 
+#378 [S.E.] 
+#379 [S.E.] 
+#380 [S.E.] 
+#381 [S.E.] 
+#382 [S.E.] 
+#383 [S.E.] 
+#384 [S.E.] 
+#385 [S.E.] 
+#386 [S.E.] 
+#387 [S.E.] 
+#388 [S.E.] 
+#389 [S.E.] 
+#390 [S.E.] 
+#391 [S.E.] 
+#392 [S.E.] <time="4">
+#393 [S.E.] 
+#394 [S.E.] 
+#395 [S.E.] 
+#396 [S.E.] 
+#397 [S.E.] 
+#398 [S.E.] 
+#399 [S.E.] 
+#400 [S.E.] 
+#401 [S.E.] 
+#402 [S.E.] 
+#403 [S.E.] 
+#405 [S.E.] 
+#406 [S.E.] 
+
+
+#060 [Voice] 咆哮
+#064 [Voice] 断末魔
+#065 [Voice] Welcome!
+#066 [Voice] (複数) Help!
+#067 [Voice] (男性) Thank you
+#068 [Voice] (子供) Help!
+#069 [Voice] (大人) Help!
+#070 [Voice] (老人) Help!
+#071 [Voice] (女性) Help!
+#072 [Voice] (女性) Welcome
+#073 [Voice] (男性) Welcome
+#074 [Voice] (女性 2) Welcome
+#075 [Voice] (女性) Thank you
+#076 [Voice] Dungeons & Dragons
+#078 [Voice] Welcome the D&D World
+#080 [Voice] (Cleric) Hold Persons
+#081 [Voice] (Cleric) Continual Light
+#082 [Voice] (Cleric) Striking
+#083 [Voice] (Cleric) Cure Serious Wounds
+#084 [Voice] (Cleric) Stick to Snakes
+#085 [Voice] (Cleric) Cure Critical Wounds
+#086 [Voice] (Cleric) Bless
+#087 [Voice] (Cleric) Insect Plague
+#088 [Voice] (Cleric) Holy Word
+#089 [Voice] (Cleric) Earthquake
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#096 [Voice] (Elf) Magic Missle
+#097 [Voice] (Elf) Fireball
+#098 [Voice] (Elf) Lightning Bolt
+#099 [Voice] (Elf) Icestorm
+#100 [Voice] (Elf) Invisibility
+#101 [Voice] (Elf) Haste
+#102 [Voice] (Elf) Polymorph Others
+#103 [Voice] (Elf) Conjure Elemental
+#104 [Voice] (Lich) 
+#105 [Voice] (Lich) 
+#106 [Voice] (Lich) 
+#107 [Voice] (Lich) グァァァ…
+#108 [Voice] (Lich) Fireball
+#109 [Voice] (Lich) Lightning Bolt
+#110 [Voice] (Lich) Teleport
+#111 [Voice] (Lich) 
+#112 [Voice] (Magic User) Magic Missile
+#113 [Voice] (Magic User) Fireball
+#114 [Voice] (Magic User) Lightning Bolt
+#115 [Voice] (Magic User) Icestorm
+#116 [Voice] (Magic User) Conjure Elemental
+#117 [Voice] (Magic User) Cloud Kill
+#118 [Voice] (Magic User) Reverse Gravity
+#119 [Voice] (Magic User) Meteor Swarm
+#120 [Voice] (Magic User) Power Word Kill
+#121 [Voice] (Magic User) Flesh to Stone
+#122 [Voice] (Magic User) Wall of Fire
+#123 [Voice] (Magic User) Projected Image
+#124 [Voice] 
+#128 [Voice] フンッ
+#129 [Voice] タァッ
+#130 [Voice] ウワァッ
+#131 [Voice] オワァァァ…
+#132 [Voice] (Tel'Arin) Fireball
+#133 [Voice] (Tel'Arin) Lightning Bolt
+#134 [Voice] (Tel'Arin)
+#135 [Voice] (Tel'Arin) Teleport
+#136 [Voice] (Tel'Arin) ワァ～ハッハッハ…
+#137 [Voice] ッフハッハッハ…
+#139 [Voice] ッフッハッハハハ…
+#152 [Voice] 
+#157 [Voice] 
+
+#160 [Voice] (Fighter) タァッ！ 
+#161 [Voice] (Fighter) トルゥァ！ 
+#162 [Voice] (Fighter) ディヤァ！ 
+#163 [Voice] (Fighter) オウッ 
+#164 [Voice] (Fighter) ウワァァァ… 
+#165 [Voice] (Fighter) まだまだぁ… 
+#166 [Voice] (Fighter) ちくしょ～ 
+#167 [Voice] (Fighter)  
+#168 [Voice] (Fighter) やってやらぁ～！ 
+#169 [Voice] (Fighter) うぉぉぉぅ！！
+
+#171 [Voice] (Dwarf) フンッ
+#172 [Voice] (Dwarf) ンリャ～！
+#173 [Voice] (Dwarf) イヤァァァァ！
+#174 [Voice] (Dwarf) ウリャ～！
+#175 [Voice] (Dwarf) ドヤァァ～！
+#176 [Voice] (Dwarf) 
+#177 [Voice] (Dwarf) 
+#178 [Voice] (Dwarf) 
+#179 [Voice] (Dwarf) これでどうじゃぁぁ！
+#180 [Voice] (Dwarf) ウォォォォォ
+
+#182 [Voice] (Thief) イヤッ！
+#183 [Voice] (Thief) トリャァ！
+#184 [Voice] (Thief) テヤァ！
+#185 [Voice] (Thief) ハッ！
+#186 [Voice] (Thief) トォ！
+#187 [Voice] (Thief) ウラァ！
+#188 [Voice] (Thief) タァァァ！
+#189 [Voice] (Thief) イヤッ！
+#190 [Voice] (Thief) ハゥッ
+#191 [Voice] (Thief) ヌァァァ…
+#192 [Voice] (Thief) な～めんじゃないよ！
+#193 [Voice] (Thief) よくもやったね
+#194 [Voice] (Thief) 
+#195 [Voice] (Thief) ハッ！
+#196 [Voice] (Thief) いくわよっ
+#197 [Voice] (Thief) ヤァァァ！！
+#198 [Voice] (Thief) 
+#199 [Voice] (Thief) 
+
+#201 [Voice] (Cleric) ハンッ
+#202 [Voice] (Cleric) ハー！
+#203 [Voice] (Cleric) ハンンッ
+#204 [Voice] (Cleric) イヤァッ
+#205 [Voice] (Cleric) ター！
+#206 [Voice] (Cleric) ゲッ
+#207 [Voice] (Cleric) ゴァァ
+#208 [Voice] (Cleric) おのれぃ
+#209 [Voice] (Cleric) やられはせんっ！
+#210 [Voice] (Cleric) 
+#211 [Voice] (Cleric) 我に加護を！
+#212 [Voice] (Cleric) オォォォゥ
+#213 [Voice] (Cleric) 神よ
+#214 [Voice] (Cleric)
+
+#217 [Voice] (Elf) ハッ！
+#218 [Voice] (Elf) ハァァ！
+#219 [Voice] (Elf) イヤァァア
+#220 [Voice] (Elf) タァッ！
+#221 [Voice] (Elf) へアァッ！
+#222 [Voice] (Elf) アフッ
+#223 [Voice] (Elf) エァァ～
+#224 [Voice] (Elf) まだまだ
+#225 [Voice] (Elf) これからよっ！
+#227 [Voice] (Elf) 
+#228 [Voice] (Elf) 当たれぇぇ！
+#229 [Voice] (Elf) Feel my power!
+#230 [Voice] (Elf) 
+#231 [Voice] (Elf) オァァァァ…
+#232 [Voice] (Elf) ハァァァァッ！
+#233 [Voice] (Elf) 精霊たちよ！
+#234 [Voice] (Elf) 精霊たちよ…力を貸して！
+
+#235 [Voice] (Magic User) フンッ
+#236 [Voice] (Magic User) テァッ！
+#237 [Voice] (Magic User) ウウォッ
+#238 [Voice] (Magic User) ヌァァッ
+#239 [Voice] (Magic User) 貴様ぁ！
+#240 [Voice] (Magic User) この雑魚がっ！
+#241 [Voice] (Magic User) You!
+#242 [Voice] (Magic User) 
+#243 [Voice] (Magic User) 覚悟しなぁ！
+#244 [Voice] (Magic User) Prepare yourself!
+#245 [Voice] (Magic User) おぉぉぉぅ！
+#246 [Voice] (Magic User) ハァァァ～
+#247 [Voice] (Magic User) 精霊たちよ！
+
+  ■出典
+  Dungeons & Dragons SHADOW OVER MYSTARA
+  VICTOR ENTERTAINMENT  VICL-2169  1996.05.22
+
+  ■作曲
+  甲田 雅人
+
+// List contribution by R
+// Updated by Fuj
+$end

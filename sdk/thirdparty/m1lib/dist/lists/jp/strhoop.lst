@@ -1,0 +1,29 @@
+﻿$name=strhoop
+$version=2
+$default=127
+$fixed_volume=100
+$main
+
+#127 Neo-Geo Logo
+
+#006 Break Down (Team Select)
+#001 Funky Beat (ビーチ)
+#008 Fine (Stage Clear)
+#002 Just 3 on 3 (公園)
+#003 Yo! What's Up? (スラム)
+#004 Friday Brother (クラブ)
+#005 Body's Power (大会)
+#007 Brush Up (Continue)
+#010 Over (Game Over)
+#009 Magic Time (Ending)
+#011 Hoop King (Name Entry)
+
+  ■出典
+  ダンクドリーム・ガンハード
+  PONY CANYON / SCITRON  PCCB-00173  1995.01.20
+
+  ■作曲
+  木内 達也 (MR☆K)
+
+// Original List from Amuse
+$end

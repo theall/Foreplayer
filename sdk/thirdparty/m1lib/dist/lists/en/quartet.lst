@@ -1,0 +1,139 @@
+﻿$name=quartet
+$version=2
+$default=$ab
+$main
+
+#171 Miami Samba Machine <time="13">
+#173 Quartet Theme <time="2:56">
+#150 FM Funk <time="2:17">
+#161 Sky <time="2:09">
+#172 OKI_RAP <time="2:01">
+#162 Stage Clear <time="8">
+#159 Game Over <time="6">
+
+#149 FM Piano Test <time="16">
+#164 RAP Test <time="2:22">
+
+-------------------------------------------
+  [Voice]
+
+$001 [Voice] Five, Four, Three, Two, One
+$002 [Voice] Ready
+$003 [Voice] Start
+$004 [Voice] Game Over
+$005 [Voice] Thank you
+$006 [Voice] To.ki.o
+$007 [Voice] Japan
+$009 [Voice] Excited
+$00A [Voice] Game
+$00B [Voice] Qartet
+$00C [Voice] Sega
+$00D [Voice] Come on
+$00E [Voice] Tonight
+$00F [Voice] Let's try
+$011 [Voice] Oh!
+$012 [Voice] Yeah!
+$013 [Voice] Great
+$014 [Voice] World
+$015 [Voice] Go
+$016 [Voice] Edgar
+$017 [Voice] Mary
+$019 [Voice] Joe
+$01A [Voice] Lee
+$01B [Voice] Attack!
+$01C [Voice] Left
+$01D [Voice] Right
+$01E [Voice] Destroy the boss!
+$01F [Voice] Only a key opens the door
+$020 [Voice] Open the door
+$021 [Voice] Ouch!
+$022 [Voice] Ohhh!
+$03C [Voice] Ouch!
+
+#035 [Voice]
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#057 [Voice]
+#058 [Voice]
+
+#053 [SFX] 
+$081 [SFX] Power-up
+$082 [SFX] Pleyer appeared
+$083 [SFX] 
+$084 [SFX] 
+$085 [SFX] Credit Inserted
+$086 [SFX] Player 3 Shot (3)
+$087 [SFX] 
+$088 [SFX] 
+$089 [SFX] 
+$08A [SFX] 
+$08B [SFX] 
+$08C [SFX] 
+$08D [SFX] Jump
+$08E [SFX] 
+$08F [SFX] 
+$090 [SFX] 
+$092 [SFX] Player 2 Shot (1),(2)
+$093 [SFX] Player 1 Shot (4)
+$094 [SFX] Player 4 Shot (3)
+$097 [SFX] Door opened
+$098 [SFX] Player 2 Shot (3)
+$099 [SFX] Player 4 Shot (4)
+$09A [SFX] Damaged (1)
+$09B [SFX] Damaged (2)
+$09C [SFX] Warning
+$09D [SFX] Power ball
+$09E [SFX] Got a Key
+$0A0 [SFX] Dingle
+$0A3 [SFX] 
+$0A5 [SFX] Player 3 Shot (1),(2)
+$0A6 [SFX] Player 1 Shot (3)
+$0A7 [SFX] Thunder
+$0A8 [SFX] Trampoline
+$0AE [SFX] Player 3 Shot (4)
+$0AF [SFX] Player 4 Shot (1)
+$0B0 [SFX] Player 1 Shot (1),(2)
+$0B1 [SFX] Player 2 Shot (4)
+$0B2 [SFX] Player 4 Shot (2)
+
+#061 [PCM] Hand clap
+#169 [SFX] Whistle (high tone)
+#170 [SFX] Whistle (low tone)
+#136 [SFX] FM high tom
+#142 [SFX] FM middle tom
+#143 [SFX] FM low tom
+#137 [SFX] FM snare drum
+#144 [SFX] FM bass drum
+
+  [Source]
+  Arcade Sound 80's Promotional Sampler
+  SME / Scitron  SCDC-10008  Oct, 2002 (not for sale)
+
+  Sega Game Music Vol. 2
+  Alfa Records  28XA-108  Feb 25, 1987
+
+  Sega Game Music Vol. 2 (Legend Series)
+  SME / Scitron  SCDC-00052  Oct 18, 2000
+
+  [Sound Composer]
+  Katsuhiro Hayashi (Funkey K.H)
+
+// List Contribution by Monyons
+// English List by Fujix
+// Additional infos and updated by Buddy
+$end

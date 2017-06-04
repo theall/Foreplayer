@@ -1,0 +1,68 @@
+﻿$name=rackemup
+$version=2
+$default=012
+$main
+
+#012 [S.E.] TITLE
+#139 CREDIT <time="5">
+#022 [S.E.] GAME SELECT
+#131 MAIN THEME 1
+#130 MAIN THEME 2
+#132 MAIN THEME 3
+#128 MAIN THEME 4
+#129 MAIN THEME 5
+#133 MAIN THEME 6
+#135 PLAYER 1 WIN
+#137 NEXT GAME
+#136 GAME OVER ～ CONTINUE
+#140 NAME ENTRY
+
+#134 未使用曲
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] 
+#002 [S.E.] 
+#003 [S.E.] 
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] TITLE
+#013 [S.E.] 
+#014 [S.E.] 
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] GAME SLECT
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#138 [S.E.] <time="5">
+#254 [S.E.] 
+
+// List contribution by ZEK.
+$end

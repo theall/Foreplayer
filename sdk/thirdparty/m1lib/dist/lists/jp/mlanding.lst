@@ -1,0 +1,22 @@
+$name=mlanding
+$version=2
+$default=06
+$main
+
+#006 Demo
+#005 Select
+#007 Start
+#008 着陸成功
+#009 Name Regist(最終面クリア)
+#010 着陸失敗
+#011 Game Over
+
+  ■出典
+  究極タイガー -G.S.M. TAITO 2-
+  PONY CANYON / SCITRON  D28B0008  1988.11.21
+
+  ■作曲
+  相沢 静夫 (ZUNTATA)
+
+// List contribution by らま
+$end

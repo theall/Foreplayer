@@ -1,0 +1,188 @@
+﻿$name=jpark
+$version=2
+$default=018
+$main
+
+#018 GOOD LUCK!! <time="0:12">
+#006 AREA-1 START <time="0:21.4">
+#007 SHOOT AT THE HEAD！ <time="0:29">
+#000 AREA-1 CAVE 1 <time="0:23.3">
+#005 ESCAPE <time="3.8">
+#001 AREA-1 GRASSY PLAIN <time="0:19.4">
+#013 AREA-1 TRIKERATOPS <time="0:23.2">
+#005 ESCAPE <time="3.8">
+#013 AREA-1 TRIKERATOPS <time="0:23.2">
+#005 ESCAPE <time="3.8">
+#012 AREA-1 JUNGLE 1 <time="0:27.4">
+#008 AREA-1 PTERANODON <time="0:50.5">
+#012 AREA-1 JUNGLE 2 <time="01:09">
+#011 AREA-2 JUNGLE 3 <time="0:41.7">
+#015 AREA-2 RIVER <time="01:08">
+#011 AREA-2 BRACHIOSAURUS <time="9">
+#008 AREA-2 T-REX <time="01:03.02">
+#005 ESCAPE <time="0:11">
+#000 AREA-3 CAVE 2 <time="0:59">
+#014 AREA-3 VOLCANIC <time="01:13.1">
+#010 AREA-3 DROP FALL <time="0:21">
+#007 AREA-3 CAVE 3 <time="0:42.5">
+#000 AREA-4 VISITER CENTER <time="0:46.4">
+#016 ESCAPE FROM JURASSIC PARK <time="01:53.6">
+#017 ENDING <time="0:43">
+#002 STAFF ROLL <time="01:00">
+#004 GAME OVER <time="5">
+
+#019 CONTINUE <time="0:24">
+#009 CONTINUE LONG VER
+
+---------------------------------------------------
+ [S.E.] 
+
+#003 [S.E.] <time="3">
+#083 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] <time="5">
+#112 [S.E.] 
+#115 [S.E.] 
+#124 [S.E.] 
+#130 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#136 [S.E.] 
+#138 [S.E.] 
+#140 [S.E.] 
+#142 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#153 [S.E.] 
+#155 [S.E.] 
+#157 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#169 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#175 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] 
+#185 [S.E.] 
+#186 [S.E.] 
+#189 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#199 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] <time="5">
+#204 [S.E.] 
+#205 [S.E.] 
+#207 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#216 [S.E.] 
+#217 [S.E.] 
+#218 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#131 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#137 [Voice] 
+#139 [Voice] 
+#141 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#147 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#154 [Voice] 
+#156 [Voice] 
+#158 [Voice] 
+#200 [Voice] 
+#206 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+#234 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+
+  ■作曲
+  SAEKO SASAKI
+  MAKI MORROW
+
+// List contribution by ZEK.
+$end

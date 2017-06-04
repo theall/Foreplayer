@@ -1,0 +1,22 @@
+﻿$name=msisaac
+$version=2
+$default=027
+$main
+
+#027 Demo (Captain Neo)
+#022 [SFX] Credit Inserted
+#034 Main Music
+#035 Enemy
+#048 Game Over
+#036 High Score list
+#040 End Credit
+
+  [Source]
+  Legend of Game Music ~Premium Box~
+  Scitron  SCDC-00410~7  March 24, 2005
+
+  [Composers]
+  Hisayoshi Ogura, Tadashi Kimijima
+
+// Original List contribution by GolGol
+$end

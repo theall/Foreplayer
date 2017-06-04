@@ -1,0 +1,38 @@
+﻿$name=vcop2
+$version=2
+$default=022
+$main
+
+#022 Go Ahead
+#014 Stage Select
+#004 Break Out
+#001 Big Chase
+#003 Escape
+#017 High Pressure
+#002 Look Out
+#012 Save the Mayor
+#019 The Dance of Dead
+#005 Crisis
+#009 Railline Shootout
+#016 Trap
+#020 Dead Angle
+#021 Revenge of Fang
+#023 Ending - Intermission
+#010 Name Entry
+#006 Game Over
+#018 Ending 2 - So Long! (Unused)
+#013 Game Over 2 (Unused)
+#007 Unknown #1
+#008 Unknown #2 
+#011 Unknown #3
+#015 Unknown #4
+  
+  [Source]
+  Virtua Cop / Sound Tracks
+  Toshiba EMI  TYCY-5478 - 5479  Jan 24, 1996
+
+  [Sound Composers]
+  Kentarou Koyama, Hideaki Miyamoto
+  
+// Base list contributed by Knurek
+$end

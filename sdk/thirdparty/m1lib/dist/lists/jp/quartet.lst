@@ -1,0 +1,140 @@
+﻿$name=quartet
+$version=2
+$default=171
+$songmax=255
+$main
+// ボイスの発生に際して、CPU処理が激しく重くなるため、
+// 指定時間で演奏が終わらない場合があると思われます。
+// 172の「OKI_RAP」、164の「RAP Test」の時間指定は、
+// サントラからの逆算で入力しましたのでご了承下さい。
+
+#171 Miami Samba Machine <time="0:13">
+#173 Quartet Theme <time="2:56">
+#150 FM Funk <time="2:17">
+#161 Sky <time="2:09">
+#172 OKI_RAP <time="2:01">
+#162 STAGE CLEAR <time="0:08">
+#159 GAME OVER <time="0:06">
+
+#149 FM Piano Test <time="0:16">
+#164 RAP Test <time="2:22">
+
+-------------------------------------------
+ [Voice]
+
+$001 [Voice] Five, Four, Three, Two, One
+$002 [Voice] Ready
+$003 [Voice] Start
+$004 [Voice] Game Over
+$005 [Voice] Thank you
+$006 [Voice] To.ki.o
+$007 [Voice] Japan
+$009 [Voice] Excited
+$00A [Voice] Game
+$00B [Voice] Qartet
+$00C [Voice] Sega
+$00D [Voice] Come on
+$00E [Voice] Tonight
+$00F [Voice] Let's try
+$011 [Voice] Oh!
+$012 [Voice] Yeah!
+$013 [Voice] Great
+$014 [Voice] World
+$015 [Voice] Go
+$016 [Voice] Edgar
+$017 [Voice] Mary
+$019 [Voice] Joe
+$01A [Voice] Lee
+$01B [Voice] Attack!
+$01C [Voice] Left
+$01D [Voice] Right
+$01E [Voice] Destroy the boss!
+$01F [Voice] Only a key opens the door
+$020 [Voice] Open the door
+$021 [Voice] Ouch!
+$022 [Voice] Ohhh!
+$03C [Voice] Ouch!
+
+#035 [Voice] いったんらんかい
+#036 [Voice] われ～
+#037 [Voice] がんゆうて
+#038 [Voice] てやんでい！
+#039 [Voice] こんの野郎！
+#040 [Voice] どいたぃ！
+#041 [Voice] うっ！
+#042 [Voice] わー！
+#043 [Voice] 痛っ！
+#044 [Voice] た～！
+#045 [Voice] あぁ～ん
+#046 [Voice] あん！
+#047 [Voice] いやぁん
+#048 [Voice] マリちゃん難しくてわかんなぁい
+#049 [Voice] こぉりゃぁいいでしょう
+#050 [Voice] 人間、丸くならなくちゃね
+#051 [Voice] ちょっとちょっとお客さん！
+#052 [Voice] いぃっひ、こりゃまいった
+#057 [Voice] はー！
+#058 [Voice] なーはーっ！
+
+#053 [S.E.] 
+$081 [S.E.] パワーアップアイテム獲得
+$082 [S.E.] プレイヤー出現
+$083 [S.E.] 
+$084 [S.E.] 
+$085 [S.E.] コイン投入
+$086 [S.E.] 3Pショット音(3)
+$087 [S.E.] 
+$088 [S.E.] 
+$089 [S.E.] 
+$08A [S.E.] 
+$08B [S.E.] 
+$08C [S.E.] 
+$08D [S.E.] ジャンプ音
+$08E [S.E.] 
+$08F [S.E.] 
+$090 [S.E.] 
+$092 [S.E.] 2Pショット音(1),(2)
+$093 [S.E.] 1Pショット音(4)
+$094 [S.E.] 4Pショット音(3)
+$097 [S.E.] ドアが開く
+$098 [S.E.] 2Pショット音(3)
+$099 [S.E.] 4Pショット音(4)
+$09A [S.E.] ダメージ音(1)
+$09B [S.E.] ダメージ音(2)
+$09C [S.E.] 警告音
+$09D [S.E.] パワーボール獲得音
+$09E [S.E.] カギ獲得音
+$0A0 [S.E.] しびれる音
+$0A3 [S.E.] アイテムが外れる音
+$0A5 [S.E.] 3Pショット音(1)､(2)
+$0A6 [S.E.] 1Pショット音(3)
+$0A7 [S.E.] カミナリ音
+$0A8 [S.E.] トランポリン
+$0AE [S.E.] 3Pショット音(4)
+$0AF [S.E.] 4Pショット音(1)
+$0B0 [S.E.] 1Pショット音(1),(2)
+$0B1 [S.E.] 2Pショット音(4)
+$0B2 [S.E.] 4Pショット音(2)
+
+#169 [S.E.] whistle (high tone)
+#170 [S.E.] whistle (low tone)
+#061 [S.E.] hand clap
+#136 [S.E.] one shot FM drum (high tom)
+#142 [S.E.] one shot FM drum (middle tom)
+#143 [S.E.] one shot FM drum (low tom)
+#137 [S.E.] one shot FM drum (snare)
+#144 [S.E.] one shot FM drum (bass)
+
+  ■出典
+　ARCADE SOUND 80's PROMOTIONAL SAMPLER
+　SME / SCITRON  SCDC-10008  2002.10
+
+  セガ・ゲーム・ミュージック VOL.2
+  ALFA RECORDS  28XA-108  1987.02.25
+
+  ■作曲
+　林 克洋 (Funkey K.H)
+
+// リスト投稿：Monyonsさん
+// リスト更新：罰帝さん
+$end

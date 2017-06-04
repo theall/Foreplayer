@@ -1,0 +1,21 @@
+﻿$name=konamigt
+$version=2
+$default=34
+$songmax=$86
+$main
+
+#034 Credit Inserted <time="1">
+#128 Start
+#129 Check Point
+#130 Game Over
+#131 All Clear
+#132 Ranking #1
+#133 Ranking #2
+#134 Ranking #3
+
+  [Source]
+  Konami Game Music Vol.2
+  Alfa Records  28XA-86  Sep 10, 1986
+
+// $01-#079 sfx
+$end

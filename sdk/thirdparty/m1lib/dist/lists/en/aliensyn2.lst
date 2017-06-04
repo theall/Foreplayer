@@ -1,0 +1,106 @@
+﻿$name=aliensyn2
+$version=2
+$default=180
+$songmax=222
+$main
+
+#180 Coin
+#178 Title
+#181 Round Display
+#142 Dooms Day (Main BGM)
+#218 Killer Instinct (Boss BGM)
+#197 Ending
+#222 Name Entry
+
+#139 Not Released on CD 1
+#140 Not Released on CD 2
+#141 Not Released on CD 3
+#143 Not Released on CD 4
+#176 Not Released on CD 5
+#177 Not Released on CD 6
+#182 Not Released on CD 7
+#183 Not Released on CD 8
+
+-----------------------------------------
+ [SFX]
+
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#179 [SFX]
+#180 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+
+  [Source]
+  After Burner / Sega Game Music Vol.3
+  Alfa Records  28XA-109  Oct 10, 1987
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

@@ -1,0 +1,41 @@
+﻿$name=wmatch
+$version=2
+$default=144
+$fixed_volume=196
+$main
+
+#144 Ready！
+#130 [S.E.] ピッー！ <time="2">
+#131 [S.E.] バンッ！ <time="1.5">
+#132 [S.E.] 着水 <time="2.5">
+#138 Swimming
+#139 Canoe
+#129 [S.E.] 歓声 <time="4">
+#145 Goal
+#143 Record <time="6">
+#144 Ready!
+#130 [S.E.] ピッー！ <time="2">
+#131 [S.E.] バンッ！ <time="1.5">
+#141 Rowing
+#140 Swimming Ver.2
+#129 [S.E.] 歓声 <time="4">
+#145 Goal
+#146 Game Over
+#142 Ranking List
+
+#143 Record
+
+---------------------------------------------------
+ [S.E.]
+
+#129 [S.E.] 歓声
+#130 [S.E.] ピッー！
+#131 [S.E.] バンッ！
+#132 [S.E.] 着水・落石
+#133 [S.E.] カヌーの転覆
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] スコア加算 <time="5">
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,41 @@
+﻿$name=boogwing
+$version=2
+$default=7
+$main
+
+#007 Attract Mode / Stage Select
+#084 Credit Inserted <time="1">
+#123 [Voice] The Great Ragtime Show! <time="3.5">
+#108 [SFX] Cheers <time="5">
+#013 Stage 1 / Boss in Detroit Rock City
+#018 Stage Cleared
+
+#008 Konky Island 1
+#014 Parade
+#009 Konky Island 2
+#010 Konky Island 3
+#020 Konky Island - Boss
+
+#011 Transporter
+#015 Enemy Ship
+
+#023 Inperial Science Museum
+#012 Boss Theme (Trojan Horse / Crazy Santa)
+
+#025 Merry Merry Christmas
+#017 Continue?
+
+#019 Detroit Rock City
+
+#022 Final Stage - Intro
+#021 Final Stage - Castle
+
+#024 End Credits
+#016 Game Over
+
+// S.Es are #26 to #123
+  [Sound Composers]
+  Tatsuya Kiuchi, Tomoyoshi Satou, Seilah
+
+// List by Fujimon.
+$end

@@ -1,0 +1,22 @@
+﻿$name=hotdogst
+$version=2
+$default=001
+$main
+
+#001 Opening Demo
+#015 Title
+#002 Stage 1
+#011 Boss 1 (Stage 1, 3)
+#010 Stage Clear
+#003 Stage 2
+#012 Boss 2 (Stage 2, 4)
+#004 Stage 3
+#005 Stage 4
+#006 Stage 5
+#013 Boss 3 (Stage 5)
+#007 Ending
+#014 Score Ranking
+#009 Game Over
+
+// List Contribution by NK
+$end

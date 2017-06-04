@@ -1,0 +1,61 @@
+﻿$name=mstadium
+$version=2
+$default=020
+$main
+
+#020 Credit Inserted
+#129 Team Select
+#131 BGM 1
+#132 BGM 2
+#133 BGM 3
+#015 Score <time="10">
+#134 Game Set
+#130 Game Over
+#128 Name Entry
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] 
+#002 [SFX] 
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#014 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#010 [Voice] Take your base
+#011 [Voice] Oh, it's an air.
+#012 [Voice] Double play
+#013 [Voice] Cheer <time="5">
+#018 [Voice] Bottom of the ninth
+#019 [Voice] Play ball
+#026 [Voice] 
+#027 [Voice] Ball
+#028 [Voice] Ball four, take your base
+#029 [Voice] Take your base
+#030 [Voice] Strike!
+#031 [Voice] Strike three, you're out.
+#032 [Voice] Foul ball
+#033 [Voice] Safe
+#034 [Voice] Out
+#035 [Voice] You're out.
+#036 [Voice] Home run! <time="8">
+#037 [Voice] We're going into an extra inning.
+#038 [Voice] Time.
+
+// List contribution by ZEK.
+$end

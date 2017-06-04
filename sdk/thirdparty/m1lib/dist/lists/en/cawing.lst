@@ -1,0 +1,106 @@
+﻿$name=cawing
+$version=2
+$default=000
+$songmax=090
+$main
+
+#000 Credit <time="5">
+#001 Player Select <time="27.7">
+#002 Operations & Weapon Select <time="37.7">
+#003 Takeoff <time="26.7">
+#007 Mission 1 Regain the Capital - Win Control of the Air <time="1:27.5">
+#017 Boss 1 (Mission 1, 8-1) <time="55.1">
+#005 Mission Completed - Landing <time="27">
+#008 Mission 2 Regain the Capital - Destroy the Enemy Occupation Forces <time="1:59">
+#018 Boss 2 (Mission 2, 7, 8-2) <time="1:26.8">
+#009 Mission 3 Block the Enemy Landing Party <time="1:54.5">
+#019 Boss 3 (Mission 3, 6, 10-1) <time="1:07.7">
+#010 Mission 4 Raid the Dockyard <time="1:47.3">
+#020 Boss 4 (Mission 4) <time="30.9">
+#011 Mission 5 Attack the Experimental Weapon Testing Area 1 (Aerial Combat) <time="1:26.2">
+#030 Boss 5 (Mission 5, 9) <time="45.8">
+#012 Mission 6 Attack the Experimental Weapon Testing Area 2 (Ground Attack) <time="1:44.4">
+#013 Mission 7 Attack the Enemy Bomber Squadron <time="1:22.2">
+#014 Mission 8 Destroy the Weapon Depot in the Desert <time="1:55.5">
+#015 Mission 9 Assault the Enemy Secret Base <time="1:50.6">
+#016 Mission 10 Stratosphere <time="2:36.8">
+#029 Boss 6 (Mission 10-2) <time="1:09.3">
+#027 Ending 1 <time="2:59">
+#006 Ending 2 <time="1:35.5">
+#024 Game Over
+
+-------------------------------------------------------------------
+
+#025 unused 1 <time="1:42.6">
+#023 unused 2 <time="1:47.9">
+#026 unused 3 <time="2:14.7">
+#021 unused 4 <time="25.7">
+#028 unused 5 <time="40">
+#022 unused 6 <time="1:12.4">
+
+ [SFX]
+
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+
+  [Source]
+  Street Fighter II -G.S.M. Capcom 4- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00056  Mar 21, 1991
+
+// List Contribution by NK
+$end

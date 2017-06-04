@@ -1,0 +1,30 @@
+﻿$name=hustler
+$version=2
+$default=006
+$main
+
+#006 Credit Inserted
+#009 Game Start
+#001 [SFX] Pocket
+#012 Clear
+#002 [SFX] Miss shot
+#008 Ranking
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] Pocket
+#002 [SFX] Miss
+#005 [SFX]
+#004 [SFX]
+#006 [SFX] Credit Inserted
+#007 [SFX]
+#014 [SFX] Hurry up
+#003 [SFX]
+#018 [SFX]
+#019 [SFX]
+#048 [SFX]
+#080 [SFX]
+
+// List contribution by ZEK.
+$end

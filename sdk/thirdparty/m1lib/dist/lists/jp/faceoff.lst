@@ -1,0 +1,45 @@
+﻿$name=faceoff
+$version=2
+$default=004
+//$songmax=015
+$fixed_volume=147
+$main
+
+#004 セレクト
+#006 1stスタート
+#001 メインBGM
+#009 2ndスタート
+#010 3rdスタート
+#012 Finalスタート
+#002 負けBGM
+#003 勝ちBGM
+#005 ゴール
+#007 ゲームセット
+#008 エンディング (胴上げ)
+
+#000 Sound Test from ドルアーガ
+//#013 Sound Test from ドルアーガ
+//#014 Sound Test from ドルアーガ
+//#015 Sound Test from ドルアーガ
+
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.6
+  VICTOR ENTERTAINMENT  VDR-5301  1989.10.04
+
+  ■作曲
+  川元 義徳, 野口 和雄
+
+$end

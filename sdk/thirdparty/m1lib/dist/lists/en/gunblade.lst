@@ -1,0 +1,37 @@
+﻿$name=gunblade
+$version=2
+$default=15
+$main
+
+#015 Opening
+
+#006 Title 1
+#007 Title 2
+
+#004 Select 1
+#008 Select 2
+
+#000 BGM 1
+#001 BGM 2
+#009 BGM 3
+#012 BGM 4
+#021 BGM 5
+#022 BGM 6
+
+#002 Boss 1
+#003 Boss 2
+#013 Boss 3
+#014 Boss 4
+
+#005 Stage Clear
+#018 Clear Short
+#019 Clear Long
+
+#010 Ending 1
+#011 Ending 2
+
+#016 Jingle 1 
+#017 Jungle 2
+#020 Jingle 3
+
+$end

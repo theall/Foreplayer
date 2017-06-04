@@ -1,0 +1,56 @@
+﻿$name=chplft
+$version=2
+$default=016
+$main
+
+#016 Credit Inserted
+#011 Ready <time="6.6">
+#001 Start <time="3.7">
+#002 Main Theme
+#004 Time Stop <time="10.5">
+#005 Endless Play Stopper <time="26">
+#008 Miss <time="3">
+#001 Start <time="3.7">
+#003 Shield <time="12.9">
+#006 Boss <time="40.8">
+#007 Clear <time="5">
+#009 Game Over <time="4">
+#010 All Cleared, Name Entry
+
+#012 Clear (Long Ver.) <time="01:10.8">
+#040 Start (Ver.2) <time="9.2">
+#042 Main Theme (Ver.2)
+#041 Main Theme (Ver.3)
+
+#043 Unused 1
+#039 Unused 2
+#038 Unused 3 <time="9.3">
+#037 Unused 4
+
+---------------------------------------------------
+  [SFX]
+
+#016 [SFX] Credit Inserted
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#029 [SFX] <time="5">
+
+// List contribution by ZEK.
+$end

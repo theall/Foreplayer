@@ -1,0 +1,58 @@
+﻿$name=twincobr
+$version=2
+$default=037
+$songmax=037
+$fixed_volume=161
+$main
+
+#037 Credit <time="2">
+#019 Challenge (Opening Theme) ～ Break A Leg! (BGM 1, 6)
+#021 Break A Leg! (BGM 1, 6)
+#022 Over The Sea (BGM 2, 7)
+#001 Extend Play <time="2">
+#023 Good Figure (BGM 3, 8)
+#024 Tsugaru (BGM 4, 9)
+#034 Next Dream (Continue Theme)
+#025 Our Life (BGM 5, 10)
+#015 I'm Victor (Landing Theme)
+#031 Affection (Name Storage)
+#020 The End (Game Over)
+
+#026 [S.E.] ～ Break A Leg! (BGM 1, 6)
+#027 [S.E.] ～ Over The Sea (BGM 2, 7)
+#028 [S.E.] ～ Good Figure (BGM 3, 8)
+#029 [S.E.] ～ Tsugaru (BGM 4, 9)
+#030 [S.E.] ～ Our Life (BGM 5, 10)
+
+-----------------------------------------
+ [S.E.]
+
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+
+  ■出典
+  究極TIGER -G.S.M. TAITO 2-
+  PONY CANYON / SCITRON  D28B0008  1988.11.21
+
+  ■作曲
+  上村 達也, 弓削 雅稔
+
+$end

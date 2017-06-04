@@ -1,0 +1,88 @@
+﻿$name=sfight2
+$version=2
+$default=001
+$main
+
+#001 Attract Mode <time="00:07">
+#003 Spain (Vega)
+#004 USA (Ken)
+#005 USA (Guile)
+#006 Japan (Ryuu)
+#007 Brazil (Branka)
+#008 Player Select
+#010 USA (Balrog)
+
+#004 Music 1 - US (Ken)
+#005 Music 2 - US (Gile)
+#007 Music 3 - Brazil (Branka)
+#003 Music 4 - Spain (Vega)
+#008 Bonus Select
+#006 Multi Ball Game
+#010 Extra Game - US (Balrog)
+#015 Extra Game Completed
+#001 Clear / Game Over <time="00:07">
+
+------------------------------------------------------
+ [SFX]
+
+#163 [Voice] Hadouken
+#164 [Voice] ready
+#165 [Voice] set
+#166 [Voice] shoot
+#167 [Voice] Tatsumaki-senpuukyaku
+#168 [Voice] 
+#169 [Voice] 
+#172 [Voice] 
+#173 [Voice] 
+#175 [Voice] fight
+#176 [Voice] 
+#177 [Voice] shoot the ball
+#178 [Voice] select
+#179 [Voice] early
+#180 [Voice] late
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] Super jackpot
+#184 [Voice] Bull's eye
+#185 [Voice] Jackpot
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] double your score
+#190 [Voice] You have come far, now prepare to die
+#194 [Voice] Shouryuu-ken
+#195 [Voice] Congratulations, you are the new master
+#196 [Voice] Another coin, please
+#198 [Voice] The game has ended, but the challange remains
+#199 [Voice] tiger
+#200 [Voice] tiger uppercut
+#202 [Voice] you lose
+#203 [Voice] 
+#205 [Voice] you win
+#209 [Voice] 
+#210 [Voice] sonicboom
+#224 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+#245 [Voice] 
+#246 [Voice] 
+#248 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#252 [Voice] 
+
+// List Composed by Hiroshi
+// English translation by Fujimon
+// Addtional lists by MuramuraNight
+$end

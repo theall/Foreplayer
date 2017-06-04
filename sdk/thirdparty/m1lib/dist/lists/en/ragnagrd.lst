@@ -1,0 +1,39 @@
+﻿$name=ragnagrd
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#051 Fighting God (Opening)
+#036 General (Character Select) &lt;1&gt; <time="1.5">
+#037 General (Character Select) &lt;2&gt;
+#046 Dark Fire (Susanoo)
+#049 Castle in Fire (Gokuu)
+#048 Ship in the Blue Sky (Benten)
+#047 Dancing Fuuraijin (Chichi-Nene)
+#045 Spiritual Tombstone (Igret)
+#033 Honor of Demon (Syuten-dozi)
+#044 Water Garden (Seena)
+#040 Amorous Codger (Biten)
+#042 Mafuuin (Behemoth)
+#035 Glamorous Feast (Iris)
+#041 Take a Break (Victory)
+#052 Trial (Arc Orion, intro)
+#050 Tree of Spirit (Arc Orion)
+#053 Evolution (Arc Orion, end)
+#043 Castle of the Different World (Lucifer)
+#054 Happy End..? (Ending 1)
+#055 Whobbling Ending (Ending 2)
+#056 Are You Kidding? (Ending 3)
+#057 All Star Cast (Staff Credits)
+#038 Fighting God Again (Continue)
+#039 Breakdown (Game Over)
+
+  [OST]
+  Shinouken / Saurus
+  Pony Canyon / Scitron  PCCB-00208  1996.03.21
+
+// List Contribution by NK
+// English list by Fuj
+$end

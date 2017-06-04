@@ -1,0 +1,71 @@
+﻿$name=mx5000
+$version=2
+$default=128
+$main
+
+#128 Counter Attack (Stage 1)
+#130 Counter Blow (Stage 2)
+#132 Counter Charge (Stage 3)
+#137 Counter Work (Boss) 
+#140 Clear 
+#134 Counter Mine (Stage 4) 
+#136 Counter Force (Stage 5) 
+#138 Counter Sign (Last Boss Intro) ～ Last-Ditch Registance (Last Boss)
+#143 Peace Sign (2 Loop Clear: Ending) 
+#142 Ranking 
+#141 Game Over 
+
+#129 Counter Attack (w/o intro) 
+#131 Counter Blow (w/o intro)
+#133 Counter Charge (w/o intro)
+#135 Counter Mine (w/o intro) 
+#139 Last-Ditch Registance (Last Boss) 
+
+----------------------------------------------------------------------------
+ [PCM]
+
+#064 [PCM] Bass Drum
+#065 [PCM] Snare Drum
+#066 [PCM] Close High Hat
+#067 [PCM] Open High Hat
+#068 [PCM] Hi Tom
+#069 [PCM] Mid Tom
+#070 [PCM] Low Tom
+#071 [PCM] Bass Drum 2
+#072 [PCM] Open High Hat + Bass Drum
+#073 [PCM] Crash Cymbal
+
+----------------------------------------------------------------------------
+ [Voice]
+
+#074 [Voice] 
+#075 [Voice]
+#076 [Voice]
+#078 [Voice]
+#081 [Voice]
+#088 [Voice]
+----------------------------------------------------------------------------
+ [S.E.]
+
+#077 [S.E.] 
+#079 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#092 [S.E.]
+#097 [S.E.] 
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION vol.0
+  KING RECORDS  276A-7708  1989.07.21 
+
+  ■トリビア
+  コナミ初のPCM音源使用作品
+
+// List contribution by R
+$end

@@ -1,0 +1,20 @@
+$name=extrmatn
+$version=2
+$default=5
+$main
+
+#05 Round 1, 5
+#06 Round 2, 6
+#07 Round 3, 7
+#08 Round 4, 8
+#09 Round Boss
+#10 Final Boss
+#11 Name Entry
+#12 Staff Roll
+#13 Round Clear
+#14 Game Over
+#15 Credit
+#16 - [SFX]
+
+// List by MuramuraNight
+$end

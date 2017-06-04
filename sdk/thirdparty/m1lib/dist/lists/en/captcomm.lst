@@ -1,0 +1,159 @@
+﻿$name=captcomm
+$version=2
+$default= 192
+$songmax= 192
+$main
+
+#192 Credit Inserted <time="3">
+#128 Game Start <time="7">
+#142 Player Select <time="18">
+#129 Stage 1 (City) <time="1:54">
+#147 Boss 1 (Dolg) <time="27">
+#130 Stage 2 (Museum) <time="1:54">
+#148 Boss 2 (Shtrom Jr.) <time="1:05">
+#131 Stage 3 (Ninja House) <time="1:56">
+#149 Boss 3 (Yamato) <time="28">
+#132 Stage 4-1 (Circus Camp) <time="1:36">
+#156 Stage 4-2 (Colossem) <time="22">
+#150 Boss 4 (Monster) <time="1:42">
+#133 Stage 5 (Sea Port) <time="2:03">
+#151 Boss 5 (Dr. T.Water) <time="42">
+#134 Stage 6 (Aquarium) <time="2:08">
+#152 Boss 6 (Shtrom & Druk) <time="25">
+#135 Stage 7 (Under Ground Base) <time="1:55">
+#153 Boss 7 (Blood) <time="1:30">
+#136 Stage 8 (Enemy's Space Ship) <time="2:06">
+#154 Boss 8 (Doppelganger) <time="1:23">
+#137 Stage 9 (Callisto) <time="1:36">
+#155 Room of Final Boss <time="47">
+#157 Final Boss (Genocide) <time="44">
+#138 Stage Clear
+#143 Ending <time="20">
+#158 Credits Roll <time="1:30">
+#139 Continue <time="21">
+#140 Game Over <time="8">
+#141 Name Entry <time="21">
+
+-----------------------------------------------------------
+  [Voice]
+
+#062 [Voice]
+#033 [Voice]
+#087 [Voice]
+#078 [Voice]
+#097 [Voice] 
+#085 [Voice] 
+#098 [Voice] 
+#012 [Voice]
+#013 [Voice]
+#014 [Voice]
+#015 [Voice]
+#042 [Voice]
+#043 [Voice]
+#067 [Voice]
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#075 [Voice]
+#076 [Voice]
+#077 [Voice]
+#081 [Voice]
+#083 [Voice]
+#084 [Voice]
+#086 [Voice]
+#088 [Voice]
+#091 [Voice]
+#092 [Voice]
+#096 [Voice]
+#100 [Voice]
+#104 [Voice]
+#105 [Voice]
+#032 [Voice] 
+#082 [Voice] 
+
+-----------------------------------------------------------
+  [SFX]
+
+#000 [SFX]
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#044 [SFX]
+#045 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#063 [SFX]
+#066 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#074 [SFX]
+#079 [SFX]
+#080 [SFX]
+#090 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#099 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#159 [SFX]
+#089 [SFX]
+
+  [Source]
+  Captain Commando -G.S.M. Capcom 5- / Alfh Lyla
+  Pony Canyon / Scitron  PCCB-00083  Mar 21, 1992
+
+// List Contribution by BLADE
+// English List by Fujix
+// Updated by NK
+$end

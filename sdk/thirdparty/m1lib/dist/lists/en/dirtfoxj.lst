@@ -1,0 +1,28 @@
+﻿$name=dirtfoxj
+$version=2
+$default=272
+$main
+
+#272 Credit Inserted <time="2">
+#017 Awaiting Entry <time="18">
+#273 [SFX] Count 1 <time="1.1">
+#273 [SFX] Count 1 <time="1.1">
+#273 [SFX] Count 1 <time="1.1">
+#274 [SFX] Count 2 <time="2">
+#031 Running Up! (Solo I) <time="5:58">
+#019 Solo Ranking <time="17">
+#032 Running Up! (Solo II) <time="6:05">
+#018 Top Fox <time="55">
+
+#033 Running Up! (Solo A - Not released on CD)
+#004 ??? (Not released on CD)
+#281 Test Tone
+
+  [Source]
+  Dirtfox / Namco
+  Pony Canyon / Scitron  PCCB-00013  Nov 21, 1989
+
+  [Sound Composer]
+  Shinji Hosoe
+
+$end

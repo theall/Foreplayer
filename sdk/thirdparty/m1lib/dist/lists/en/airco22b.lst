@@ -1,0 +1,48 @@
+﻿$name=airco22b
+$version=2
+$default=79
+$main
+
+#079 Air Combat 22
+#310 Bomb the Start! (1) <time="1.1">
+#310 Bomb the Start! (2) <time="1.1">
+#006 Bomb the Start! (3)
+
+#075 The Sky Waits for You (Mode Select)
+#062 Air Combat Anthem (Take Off!)
+#048 If the Sky is Bumin' Out! (Air Combat22 Theme)
+#054 Easy Way, Easy Go
+#339 Among a Strain
+#056 Get'em Down!
+#071 Get Your Check (Round Clear!)
+#077 Surrender Me
+#336 Compose Oneself
+#065 Armed Up!
+#058 After the Fight (Beginner's Mode Ending)
+#170 Spread Your Wings
+#253 Aerial Dance
+#050 The Big Sky
+#277 We Will Lock You
+//#280 We Will Lock You w/o intro
+#069 You're a Loser (Game Over)
+#084 Above the Sky, Below the Sea
+#096 Into the Twilight (Expert's Mode Ending)
+
+#067 ??
+#082 ??
+#087 ??
+#090 ??
+//#105 Surrender Me
+//#256 Aerial Dance
+
+#001 Sound Test
+
+  [OST]
+  Air Combat 22 / Namco Game Sound Express Vol.18
+  Victor Entertainment  VICL-15040  May 25, 1995
+
+  [Sound Composers]
+  Kazuhiro Nakamura, Hiroyuki Kawada, Keiichi Okabe
+
+// List by Fujix
+$end

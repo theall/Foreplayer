@@ -1,0 +1,41 @@
+﻿$name=magdrop2
+$version=2
+$default=127
+$main
+
+#127 NeoGeo Logo
+
+#025 はじまりの予感 (オープニング)
+#024 はじまるよ (タイトル)
+#001 EXPLANATION～操作説明 (操作説明)
+#002 ゆれる気持ち (セレクト)
+#003 BEFORE FIGHT (ゲーム前演出)
+#004 フールの夢 (フールBGM)
+#018 スターの休日 (スターBGM)
+#019 いたずらロックンロール (デビルBGM)
+#020 英雄伝説 (チャリオットBGM)
+#021 空想旅行 (プリエステスBGM)
+#022 勇気を出して (ジャスティスBGM)
+#023 LONELY BATTLE (マジシャンBGM)
+#005 女神のささやき (ワールドBGM)
+#006 WILD BEAST (ストレングスBGM)
+#007 私は最高！ (エンプレスBGM)
+#008 ブラックピエロの野望 (ブラッククラウンBGM)
+#016 CHALLENGER (対戦モードBGM)
+#009 THINKING (ひらめきモードBGM)
+#017 ENDLESS WORKER (ひたすらモードBGM)
+#011 JUST A MOMENT (乱入)
+#012 勝った！ (勝ち)
+#013 負けちゃった (負け)
+#014 ゲームオーバー
+#026 みんなのねがい (エンディング)
+#015 MAGICAL DROP SHUFFLE (スタッフロール)
+
+  ■出典
+  マジカルドロップ2
+  PONY CANYON / SCITRON   PCCB-00217  1996.6.21
+
+// Last modified:June 28,2003
+// 基本リスト作成：みん☆さん
+// 更新：Fujix
+$end

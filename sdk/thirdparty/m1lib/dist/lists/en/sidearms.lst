@@ -1,0 +1,70 @@
+﻿$name=sidearms
+$version=2
+$default=94
+$songmax=94
+$main
+
+#094 Credit Inserted
+#032 Opening Demo
+#033 Round 1
+#050 Battleship A
+#042 Round Clear
+#034 Round 2
+#051 Battleship B
+#035 Round 3
+#052 Battleship C
+#036 Round 4
+#053 Large Battleship
+#037 Round 5
+#038 Round 6
+#039 Round 7
+#040 Round 8
+#041 Round 9
+#054 Final Battleship (Bahamut Centipede)
+#044 Ending
+#046 Game Over
+
+#056 Test Music
+----------------------------------------------------------
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#087 [SFX]
+#088 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX] Credit Inserted
+
+  [Sources]
+  Capcom Game Music Vol.2
+  Alfa Records  28XA-203  Mar 25, 1988
+
+  Capcom Game Music Vol.2 (Legend Series)
+  SME / Scitron  SCDC-00195  Jul 24, 2002
+
+  Capcom Music Generation -Limited Edition- ~Ales no Tsubasa~
+  Suleputer  CPDA-1019  May 4, 2002
+
+// List contribution by R
+// List contribution by Min
+$end

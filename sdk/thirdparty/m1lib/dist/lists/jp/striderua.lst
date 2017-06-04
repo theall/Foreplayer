@@ -1,0 +1,183 @@
+﻿$name=striderua
+$version=2
+$default=$14
+$fixed_volume=292
+$main
+
+$14 Credit <time="0:03">
+$11 防衛圏[ライン] (1 Stage Demo) <time="0:05.9">
+$00 踏み込め! (1 Stage BGM 1) <time="1:48.25">
+$04 一撃 (中敵) <time="0:36.3">
+$01 非情の大伽藍[モスク] (1 Stage BGM 2) <time="1:09.7">
+$02 野獣 (1 Stage BGM 3) <time="0:49.3">
+$03 銃弾回廊 (1 Stage BGM 4) <time="0:13.4">
+$05 ウロボロス -鉄の統治- (大敵) <time="0:51.6">
+$12 2 Stage Demo <time="0:10">
+//$8c [Voice] <time="0:04.5">
+//$8d [Voice] <time="0:07">
+//$8e [Voice] <time="0:01.5">
+$06 シベリア坑道 (大敵 -コング-) <time="0:36.2">
+$07 動輪 (2 Stage BGM 1) <time="0:49.3">
+$08 大走破 (2 Stage BGM 2) <time="1:11.7">
+$09 雲塊 (2 Stage BGM 3) <time="0:55.6">
+$10 風陣 (大敵 -空-) <time="0:46.9">
+$0f Stage Clear <time="0:08">
+$13 3 Stage Demo ※ <time="0:11.5">
+//$8f [Voice] <time="0:03.3">
+//$9b [Voice] <time="0:06">
+$0a ひびき (Start 1) <time="0:06">
+$16 包囲 (Start 2) <time="0:04">
+$0b 谷と河 (3 Stage BGM 1) <time="1:35.5">
+$0c 吠える (3 Stage BGM 2) <time="1:03.8">
+$0d アフリカの魔王 (大敵) <time="0:23.7">
+$1e 4 Stage Demo ※ <time="0:21">
+//$90 [Voice] <time="0:03">
+//$91 [Voice] <time="0:05">
+//$92 [Voice] <time="0:03">
+$18 ショート・スピン (4 Stage BGM 1) <time="1:03.6">
+$19 逆転マイナーG (4 Stage BGM 2) <time="1:16">
+$1a 奪取! (大敵) <time="0:53.8">
+$1f 5 Stage Demo ※ <time="0:12">
+//$96 [Voice] <time="0:04">
+//$97 [Voice] <time="0:05.5">
+//$98 [Voice] <time="0:08.5">
+//$99 [Voice] <time="0:03.5">
+$1b 飛竜 (5 Stage BGM 1) <time="1:11.8">
+$1c 逆襲の速力[テーマ] (5 Stage BGM 2) <time="0:53.6">
+$1d 冥王[グランドマスター] (大敵) <time="0:49.1">
+$20 最終クリア ※ <time="0:11">
+$21 さらに… (Ending) ※ <time="0:54.1">
+$22 Ranking ※ <time="0:34">
+$0e Game Over <time="0:08.5">
+$15 Continue <time="0:13.5">
+
+$17 ひびき (Start 1) &lt;ver 2&gt;
+
+ ※ サントラのものとは異なる曲 (出荷ver.通りの曲)
+
+-----------------------------------------------------------
+ [Voice]
+
+$81 [Voice] 飛竜: Taa!
+$82 [Voice] 飛竜: Yaa!
+$83 [Voice] 飛竜: Ta!
+$84 [Voice] 飛竜: Ya!
+$85 [Voice] 飛竜: Ha!
+$90 [Voice] 飛竜: 貴様らの親玉のところへ連れて行ってもらおうか。
+$92 [Voice] 飛竜: 貴様らにそんな玩具は必要ない。
+$86 [Voice] (crowd)
+$87 [Voice] Mmm!
+$88 [Voice] Mmmmmm!
+$89 [Voice]
+$8a [Voice]
+$8b [Voice] Uhaaaaa...
+$8e [Voice] I got you!
+$8d [Voice] グランドマスター: Mmm, it's Strider Hiryu! He will never leave Eurasia alive!
+$8f [Voice] グランドマスター: You dare fight me?
+$99 [Voice] グランドマスター: Come, Hiryu!
+$9a [Voice] グランドマスター: All sons of all gods, die!
+$91 [Voice] 中国娘 東風: ????只要空中戦舰Ballog。世界、這是我們的
+$93 [Voice] (アマゾネス)
+$94 [Voice] (アマゾネス)
+$95 [Voice] (アマゾネス)
+$96 [Voice] ?
+$97 [Voice] ?
+$8c [Voice] (russian)
+$98 [Voice] (russian)
+$9c [Voice] (wolf hawl)
+
+-----------------------------------------------------------
+ [S.E.]
+
+$30 [S.E.]
+$31 [S.E.]
+$32 [S.E.]
+$33 [S.E.]
+$34 [S.E.]
+$35 [S.E.]
+$36 [S.E.]
+$37 [S.E.]
+$38 [S.E.]
+$39 [S.E.]
+$3a [S.E.]
+$3b [S.E.]
+$3c [S.E.]
+$3d [S.E.]
+$3e [S.E.]
+$3f [S.E.]
+$40 [S.E.]
+$41 [S.E.]
+$42 [S.E.]
+$43 [S.E.]
+$44 [S.E.]
+$45 [S.E.]
+$46 [S.E.]
+$47 [S.E.]
+$48 [S.E.]
+$49 [S.E.]
+$4a [S.E.]
+$4b [S.E.]
+$4c [S.E.]
+$4d [S.E.]
+$4e [S.E.]
+$4f [S.E.]
+$50 [S.E.]
+$51 [S.E.]
+$52 [S.E.]
+$53 [S.E.]
+$54 [S.E.]
+$55 [S.E.]
+$56 [S.E.]
+$57 [S.E.]
+$58 [S.E.]
+$59 [S.E.]
+$5a [S.E.]
+$5b [S.E.]
+$5c [S.E.]
+$5d [S.E.]
+$5e [S.E.]
+$5f [S.E.]
+$60 [S.E.]
+$61 [S.E.]
+$62 [S.E.]
+$63 [S.E.]
+$64 [S.E.]
+$65 [S.E.]
+$66 [S.E.]
+$67 [S.E.]
+$68 [S.E.]
+$69 [S.E.]
+$6a [S.E.]
+$6b [S.E.]
+$6c [S.E.]
+$6d [S.E.]
+$6e [S.E.]
+$6f [S.E.]
+$70 [S.E.]
+$71 [S.E.]
+$72 [S.E.]
+$73 [S.E.]
+$74 [S.E.]
+$75 [S.E.]
+$76 [S.E.]
+$77 [S.E.]
+
+  ■出典
+  ストライダー飛竜 -G.S.M. CAPCOM 2- / アルフ ライラ ワ ライラ
+  PONY CANYON / SCITRON  D25B1001  1989.05.21
+
+  ゲームミュージック ベスト・オブ・ザ・イヤー 1989
+  PONY CANYON / SCITRON  PCCB-00022  1990.03.21
+
+  ストライダー飛竜2 オリジナル・サウンドトラック
+  SULEPUTER  CPCA-1035  2000.01.21
+    &lt;初回特典シングルCDに収録&gt;
+
+  ■作曲
+  民谷 淳子 (Gon)
+
+// (曲名の[]内は漢字のルビ)
+// List contribution by NK
+// Voice addition by CrashTest
+// Updated by NK
+$end

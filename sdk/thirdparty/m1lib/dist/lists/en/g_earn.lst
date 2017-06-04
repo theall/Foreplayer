@@ -1,0 +1,30 @@
+﻿$name=g_earn
+$version=2
+$default=$0e
+$songmax=255
+$main
+
+$0e Opening Theme <time="2:40" fadeout="yes" fadeoutlength="10">
+$07 Stage 1 <time="1:56" fadeout="yes" fadeoutlength="10">
+$09 Fight! <time="0:54" fadeout="yes" fadeoutlength="10">
+$0d Stage Clear <time="0:07" fadeout="yes" fadeoutlength="2">
+$04 Stage 2 <time="2:01" fadeout="yes" fadeoutlength="10">
+$02 Stage 3 <time="2:15" fadeout="yes" fadeoutlength="10">
+$0a Stage 4 <time="1:23" fadeout="yes" fadeoutlength="10">
+$05 Stage 5 <time="2:45" fadeout="yes" fadeoutlength="10">
+$03 Stage 6 <time="2:24" fadeout="yes" fadeoutlength="10">
+$08 Stage 7 <time="1:19" fadeout="yes" fadeoutlength="10">
+$0c Stage 8 <time="0:35" fadeout="yes" fadeoutlength="10">
+$01 Stage 9 <time="2:04" fadeout="yes" fadeoutlength="10">
+$06 Final Stage <time="1:50" fadeout="yes" fadeoutlength="10">
+$0b Last Battle <time="2:49" fadeout="yes" fadeoutlength="10">
+$0f Ending Theme <time="3:17" fadeout="yes" fadeoutlength="10">
+$10 Continue <time="0:19" fadeout="yes" fadeoutlength="2">
+$11 Game Over <time="0:19" fadeout="yes" fadeoutlength="2">
+
+  [Sound Composer]
+  Motoi Sakuraba
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

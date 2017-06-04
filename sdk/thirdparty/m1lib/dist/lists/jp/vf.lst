@@ -1,0 +1,30 @@
+﻿$name=vf
+$version=2
+$default=018
+$fixed_volume=140
+$main
+
+#018 SEGA Logo
+#019 Advertize (オープニングデモ)
+#001 Game start (プレイヤーセレクト)
+#015 JACKY (ジャッキー ステージ)
+#003 JEFFRY (ジェフリー ステージ)
+#016 SARAH (サラ ステージ)
+#010 KAGE (影 ステージ)
+#009 PAI (パイ ステージ)
+#014 WOLF (ウルフ ステージ)
+#005 LAU (ラウ ステージ)
+#004 AKIRA (アキラ ステージ)
+#013 DURAL (デュラル ステージ)
+#007 Win (勝利)
+#008 Lose (敗北)
+#002 Continue (コンティニュー)
+#006 Ending (スタッフロール)
+#011 Name entry (ネームエントリー)
+
+  ■出典
+  Virtua Fighter "最強の戦士" / B-univ
+  TOSHIBA EMI  TYCY-5386  1994.03.23
+
+// English list adjustment by bcass
+$end

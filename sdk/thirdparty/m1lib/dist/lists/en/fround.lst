@@ -1,0 +1,32 @@
+﻿$name=fround
+$version=2
+$default=$6e
+$songmax=$6f
+$fixed_volume=331
+$main
+
+$6e Hard Blow (Attract)
+$68 Let's Do It (Title logo)
+$69 Cross Counter (Credit)
+$62 Powermeter (Power Distribution)
+$61 Introsuction (Introduction)
+$66 Hard Puncher (Stage 1, 5)
+$67 You Can't Get Him (Continue)
+$6a Kill Him (Stage 2, 4, 6)
+$63 Power Up (Training)
+$6b Don't Quail (Stage 3, 7)
+$6f Judgement (Judgement)
+$64 Lost Game (Game over)
+$60 Ranking
+$6c The Final Round (Stage 8)
+$65 You Got Him (Winner)
+$6d You Are Perfect! (Ending)
+
+$1a Cross Counter -with SFX-
+
+  [Source]
+  Konami Game Music Collection Vol.0
+  King Records  276A-7708  Jul 21, 1989
+
+// English list adjustment by bcass
+$end

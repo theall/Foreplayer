@@ -1,0 +1,71 @@
+﻿$name=kidniki
+$version=2
+$default=024
+$main
+
+#024 Chirin (1) <time="4.30">
+#025 Chirin (2)
+#016 Start - BGM 1
+#019 Start - BGM 2
+#026 Start - Boss BGM
+#020 Clear (CD未収録)
+#021 Game Over (CD未収録)
+#022 Ending
+#023 Name Entry
+//#017 BGM 1
+//#018 Boss BGM
+
+-----------------------------------------------------------
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.] <time="05">
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.] <time="05">
+#044 [S.E.] <time="05">
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.] <time="05">
+#048 [S.E.]
+#049 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#064 [S.E.] <time="05">
+#065 [S.E.] <time="05">
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [PCM]
+#138 [PCM]
+#139 [S.E.]
+#140 [S.E.]
+#141 [PCM]
+#142 [Voice]
+
+  ■出典
+  R-TYPE / IREM GAME MUSIC
+  ALFA RECORDS  28XA-199  1988.01.25
+
+// リスト作成：みん☆さん
+$end

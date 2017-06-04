@@ -1,0 +1,44 @@
+﻿$name=matrim
+$version=2
+$default=058
+$main
+
+#058 Matrimelee (Opening Demo)
+#044 Mijicon Rock (Start Screen)
+#049 Haiii! (Player Select)
+#050 Face Off! (VS Screen)
+#037 Vernal Fighters
+#036 Let's Go! Onmyouji
+#034 Tiny Happiness
+#045 Tokimeki Overclock
+#035 1000lb
+#033 OUR SECRETS
+#047 Kanenaijaa the Poor Fighter
+#038 How Jolly the Internet is!
+#046 Secret Affair "Gouketsuji"
+#057 Rakugao! (Result)
+#051 Kick the Door! (In front of the waiting room)
+#039 Delight! (Waiting Room Battle 1)
+#040 Anger! (Waiting Room Battle 2)
+#041 Sorrow! (Waiting Room Battle 3)
+#042 Heavy! (Waiting Room Battle 4)
+#048 Sissy Coming out demo
+#043 Matrimelee March (Final Boss Stage)
+#055 Respective Matrimelees (Ending)
+#059 Matrimelee Unplugged Medley (Credits)
+#056 I'll f--k ya up! (Join)
+#052 D'ya continue!? (Continue)
+#053 It's Over! (Normal Game Over)
+#054 All Over! (Completed, Game Over)
+#060 Voice Maniacs (Credits for Korea)
+
+  [Source]
+  Shin Gouketsuji Ichizoku Toukon - Matrimelee - / Original Soundtrack
+  Noise Factory 2003
+
+  [Composer]
+  Kei'ichi Tanaka
+
+// list by Fujimon
+// Translation by Fujimon
+$end

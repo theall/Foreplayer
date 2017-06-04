@@ -1,0 +1,29 @@
+﻿$name=galastrm
+$version=2
+$default=001
+$main
+
+#001 祖国 (opening)
+#008 PROTMIND (STAGE 1,STAGE 5 AREA17-19)
+#132 ACROBAT (STAGE 2)
+#002 回路 (STAGE 3)
+#003 DNA CITY (STAGE 4)
+#035 電脳皇帝 (STAGE 5 AREA20)
+#009 for ALL STAFF (ending)
+#010 帰還 (name registration)
+#011 GAME OVER
+
+---
+#004 ACROBAT -intro- (STAGE 2) <time="12.5">
+#005 ACROBAT -introなし- (STAGE 2)
+---
+
+  ■出典
+  Nouvelle Vague -G.S.M. TAITO 7- / ZUNTATA
+  PONY CANYON / SCITRON PCCB-00086 1992.05.21
+
+  ■作曲
+  小倉 久佳 (OGR)
+
+// リスト作成: xfa27
+$end

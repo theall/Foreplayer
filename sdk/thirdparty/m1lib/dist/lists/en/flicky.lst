@@ -1,0 +1,33 @@
+﻿$name=flicky
+$version=2
+$default=130
+//$songmax=147
+$main
+
+#130 Round Start / Main BGM
+#142 Round Clear
+#129 Bonus Round
+#134 Player Out
+#135 Game Over
+#131 Name Entry
+
+-----------------------------------------
+ [SFX]
+
+#132 [SFX]
+#133 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#147 [SFX]
+
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

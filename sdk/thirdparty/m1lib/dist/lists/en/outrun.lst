@@ -1,0 +1,41 @@
+﻿$name=outrun
+$version=2
+$default=133
+$main
+
+#133 Magical Sound Shower <time="5:57" fadeout="yes" fadeoutlength="10">
+#129 Passing Breeze <time="5:47" fadeout="yes" fadeoutlength="10">
+#130 Splash Wave <time="5:45" fadeout="yes" fadeoutlength="10">
+#164 [SFX] Surf <time="7">
+#165 Last Wave <time="1:26">
+
+---------------------------------------
+
+#000 [Command] Sound Stop
+
+#132 [SFX] Credit Inserted
+#134 [SFX] Check Point
+#138 [SFX] Skid <time="5">
+#000 [Command] Sound Stop <time="1">
+#141 [SFX] Cheers <time="5">
+#000 [Command] Sound Stop <time="1">
+#143 [SFX] Crash 1
+#144 [SFX] Rebound
+#146 [SFX] Crash 2
+#148 [SFX] Signal 1
+#149 [SFX] Signal 2
+#150 [SFX] <time="5">
+#000 [Command] Sound Stop <time="1">
+#153 [SFX]
+#154 [SFX] Tuning Radio
+#155 [SFX] Pi Pi
+#157 [Voice] Check Point
+#158 [Voice] Congratulations
+#159 [Voice] Get Ready?
+
+  [Source]
+  Sega Taikan Game Special
+  Alfa Records  28XA-198  Dec 21, 1987
+
+// English list adjustment by bcass
+$end

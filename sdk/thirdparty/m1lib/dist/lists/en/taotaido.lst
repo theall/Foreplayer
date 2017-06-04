@@ -1,0 +1,41 @@
+﻿$name=taotaido
+$version=2
+$default=031
+$main
+
+#031 Warning <time="6">
+#026 Opening Demo <time="24">
+#027 Title
+#045 Player Select
+#032 VS. <time="4.5">
+#016 Stage 1
+#029 Win <time="7">
+#044 Demo 1 <time="8">
+#018 Stage 2
+#019 Stage 3
+#017 Stage 4
+#020 Stage 5
+#021 Stage 6
+#028 Demo 2
+#022 Stage 7
+#023 Stage 8
+#033 Ending
+#030 Game Over
+
+#024 Unused 1
+#025 Unused 2
+#034 Unused 3
+#035 Unused 4
+#036 Unused 5
+#037 Unused 6
+#038 Unused 7
+#039 Unused 8
+#040 Unused 9
+#041 Unused 10
+#042 Unused 11
+#043 Unused 12
+#046 Unused 13
+#047 Unused 14
+
+// List Contribution by NK
+$end

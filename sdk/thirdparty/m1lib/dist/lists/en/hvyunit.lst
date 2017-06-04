@@ -1,0 +1,36 @@
+﻿$name=hvyunit
+$version=2
+$default=021
+$songmax=256
+//$fixed_volume=245
+$main
+
+#021 Start <time="4.51">
+#022 Round 1-1
+#023 Round 1-2
+#026 Round 1 Boss
+#027 Round Clear
+#069 Round 2-1
+#070 Round 2-2
+#071 Round 2 Boss
+#074 Round 3-1
+#024 Round 3-2
+#076 Round 3 Boss
+#115 Round 4
+#108 Round 4 Boss
+#100 Round 5
+#109 Round 5 Boss
+#110 Final Boss
+#072 End Credit
+#028 Game Over
+
+#098 Unused 01
+#099 Unused 02
+#112 Unused 03
+#116 Unused 04
+#123 Unused 05
+#127 Unused 06
+
+------------------------------------------
+
+$end

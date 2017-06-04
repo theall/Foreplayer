@@ -1,0 +1,22 @@
+$name=pacapp
+$version=2
+$default=8
+$main
+
+ Preliminary list
+
+#008 Cool Dancing (70' Disco)
+#009 Escape (Pop Drop Out Rock)
+#010 SUN-J99Mix (Jazz Groove)
+#011 Lips XTC (Human Dance)
+#012 Blue Noise (Rave More First Techno)
+#013 XL Techno (Acoustic Rave Techno)
+
+#113 Game Over
+#115 Continue
+#120 ?
+#122 Stage Selection
+#124 Name Entry
+
+// List Contribution by batsutei
+$end

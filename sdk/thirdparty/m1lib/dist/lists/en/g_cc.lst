@@ -1,0 +1,39 @@
+﻿$name=g_cc
+$version=2
+$default=039
+$songmax=255
+$main
+
+#039 Opening Theme <time="4:08" fadeout="yes" fadeoutlength="10">
+#036 Data Select <time="0:36" fadeout="yes" fadeoutlength="10">
+#001 Town <time="2:01" fadeout="yes" fadeoutlength="10">
+#003 Soleil Plaza <time="1:57" fadeout="yes" fadeoutlength="10">
+#035 Fortuneteller <time="2:14" fadeout="yes" fadeoutlength="10">
+#008 Overworld Map <time="2:20" fadeout="yes" fadeoutlength="10">
+#007 Rafflesia Training Grounds <time="2:51" fadeout="yes" fadeoutlength="10">
+#011 Monster Area <time="2:17" fadeout="yes" fadeoutlength="10">
+#006 Dahlia Valley <time="2:03" fadeout="yes" fadeoutlength="10">
+#009 Battle 1 <time="2:30" fadeout="yes" fadeoutlength="10">
+#004 Anemone Beach <time="1:42" fadeout="yes" fadeoutlength="10">
+#010 Animal Town <time="1:32" fadeout="yes" fadeoutlength="10">
+#034 Water Lily <time="2:23" fadeout="yes" fadeoutlength="10">
+#017 Burn Daisy <time="2:07" fadeout="yes" fadeoutlength="10">
+#002 Battle 2 <time="4:00" fadeout="yes" fadeoutlength="10">
+#013 Camellia Desert <time="2:16" fadeout="yes" fadeoutlength="10">
+#016 Tower of Babel <time="2:01" fadeout="yes" fadeoutlength="10">
+#012 Castle Freesia <time="2:21" fadeout="yes" fadeoutlength="10">
+#005 Root Temple <time="2:05" fadeout="yes" fadeoutlength="10">
+#033 Battle 3 <time="5:55" fadeout="yes" fadeoutlength="10">
+#015 Place of Peace <time="1:46" fadeout="yes" fadeoutlength="10">
+#038 Desert Palace <time="2:39" fadeout="yes" fadeoutlength="10">
+#014 Mother Monster <time="1:59" fadeout="yes" fadeoutlength="10">
+#041 Dark Night <time="3:48" fadeout="yes" fadeoutlength="10">
+#040 Ending Theme
+#037 Game Over
+
+  [Sound Composer]
+  Motokazu Shinoda, Noriyuki Iwadare
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

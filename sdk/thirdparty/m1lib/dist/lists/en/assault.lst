@@ -1,0 +1,28 @@
+﻿$name=assault
+$version=2
+$default=275
+$fixed_volume=196
+$main
+
+#275 Opening (Title Demo - Unused, Game Select in Assault Plus)
+#018 BGM 1 (Stage A)
+#019 BGM 2 (Stage B)
+#034 Lift-down (Stage Demo 1)
+#023 BGM 3 (Stage C)
+#024 BGM 4 (Stage D)
+#033 Lift-up (Stage Demo 2)
+#038 Ending
+#035 Name 1 (Name Entry A)
+#032 Name 2 (Name Entry B)
+#014 Unused 1
+#016 Unused 2
+#288 Speaker Check
+
+  [Source]
+  Namco Video Game Graffiti Vol.3
+  Victor Entertainment  VDR-5278   Dec 16, 1988
+
+  [Sound Composers]
+  Shinji Hosoe / Kazuo Noguchi
+
+$end

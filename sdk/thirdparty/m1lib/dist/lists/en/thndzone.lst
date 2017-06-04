@@ -1,0 +1,32 @@
+﻿$name=thndzone
+$version=2
+$default=$07
+$songmax=$ff
+$main
+
+$07 It's a Showtime, Let's Have Some Fun!
+$08 Operation Thunder Zone
+$11 Leave It to Me!
+$0f That's the Way It Should Be!
+$09 Deep Friendship
+$0d I am No.1
+$0a Midnight Dancer
+$10 This is Bad!
+$0e Shoot 'em Up!
+$0b Dangerous Afternoon
+$0c Go at Full Charge!
+$12 Cry in the Hell!
+$14 And Then, the Men Become Fish..
+$13 It's a Showtime, The Gig's Up!
+
+$15 And Then, the Men Become Fish.. w/o intro
+
+  [Source]
+  Thunder Zone / Data East / Gama Delic
+  Pony Canyon / Scitron  PCCB-00068  Aug 21, 1991
+
+  [Sound Composer]
+  Akira Takemoto (Raika), Akihiro Yoshida (Maro)
+
+// English list by Fuj
+$end

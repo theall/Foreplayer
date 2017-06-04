@@ -1,0 +1,29 @@
+﻿$name=dbz
+$version=2
+$default=009
+$main
+
+#009 プレイヤーセレクト <time="1:18" fadeout="yes" fadeoutlength="10">
+#001 VS 孫悟空 (天下一武道会会場)
+#012 勝利
+#014 デモ
+#002 VS ベジータ (ドクター・ゲロの研究所)
+#003 VS 孫悟飯 (カメハウス)
+#004 VS ピッコロ (Kami's Lookout)
+#005 VS リクーム (ナメック村)
+#007 VS ギニュー隊長 (宇宙船内)
+#009 VS ギニュー隊長 (宇宙船外)
+#006 VS バータ (ナメック星)
+#008 VS フリーザ (ナメック星)
+#016 エンディング
+#011 スタッフロール
+#013 負け
+
+#015 不明 1 (alt. Ending?)
+#010 不明 2 (BGM)
+
+  ■作曲
+  Yoshiko Yamaguchi
+
+// List contribution by Simon B., done in playing the game.
+$end

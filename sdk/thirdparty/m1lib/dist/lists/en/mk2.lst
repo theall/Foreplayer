@@ -1,0 +1,54 @@
+﻿$name=Mortal Kombat II
+$version=2
+$default=01
+$main
+
+#001 The Battlefield
+#002 The Battlefield (loop)
+#003 The Battlefield (Finish Them)
+#004 The Battlefield (end)
+#005 The Screaming Forest
+#006 The Screaming Forest (loop)
+#007 The Screaming Forest (Finish Them)
+#008 The Screaming Forest (end)
+#009 The Armory
+#010 The Armory (loop)
+#011 The Armory (Finish Them)
+#012 The Armory (end)
+#013 Air Kombat
+#014 Air Kombat (loop)
+#015 Air Kombat (Finish Them)
+#016 Air Kombat (end)
+#017 The Portal
+#018 The Portal (loop)
+#019 The Portal (Finish Them)
+#020 The Portal (end)
+#021 The Dead Pool
+#022 The Dead Pool (loop)
+#023 The Dead Pool (Finish Them)
+#024 The Dead Pool (end)
+#025 Wdylma
+#026 Wdylma (loop)
+#027 Wdylma (Finish Them)
+#028 Wdylma (end)
+#052 Finish
+#053 Finish 2
+#058 Angel Sounds
+#059 Dance
+#060 Taa daa?
+#062 Friendship
+#063 Bability
+#051 Drum Loop
+#054 Drum Loop 2
+#055 Drum Loop 2 Finish
+#056 Mellow Loop
+#066 Mellow Loop 2
+#057 Intro Loop
+#061 Intro Loop 2 (medium)
+#064 Intro Loop 3 (long)
+#065 Loop
+
+// By Toby from www.system16.com
+// Track names from the Mortal Kombat II Promo CD.
+$end
+

@@ -1,0 +1,29 @@
+﻿$name=opengolf
+$version=2
+$default=$101
+$main
+
+$101 Title
+$117 Title with Title Call
+$102 Mode Select
+$109 Hole Introduction
+$105 Score Board
+$108 Contest
+$10a Contest Hole Introduction
+$10c Contest Clear(?)
+$103 Hole Out - Good Result
+$104 Hole Out - Bad Result
+$115 Match Game Result
+$10e Front Nine Finished
+$111 Credits
+$110 Name Entry
+$113 Ranking
+$10f Game Over
+
+$112 Unknown
+$11f Speaker Test
+
+// Hoot list by Saitou
+// M1 list by Knurek
+// Fixed by Fuj
+$end

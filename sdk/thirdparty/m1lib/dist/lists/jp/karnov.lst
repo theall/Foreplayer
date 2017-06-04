@@ -1,0 +1,20 @@
+﻿$name=karnov
+$version=2
+$default=$25
+$songmax=$28
+$fixed_volume=153
+$main
+
+$25 カルノフ・テーマ
+$28 プレイヤー・アウト
+$22 クリア
+$23 急げ！カルノフ
+$26 オール・クリア
+$24 ネーミング
+$27 ゲーム・オーバー
+
+  ■出典
+  DATA EAST GAME MUSIC / G.M.O.
+  ALFA RECORDS  28XA-205  1988.05.10
+
+$end

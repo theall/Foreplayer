@@ -1,0 +1,72 @@
+﻿$name=sutapper
+$version=2
+$default=009
+$main
+
+#009 Coin
+#042 Get Ready to Serve
+#012 Oh Suzanna (Level 1, 2, 3)
+#034 Sports (Level 4, 5)
+#035 Punk (Level 6, 7, 8, 9)
+#036 Space (Level 10, 11, 12, 13)
+#011 Song 1 (Bonus Stage)
+#046 Song 2 (Dancing Girls)
+#042 You Win
+#047 Shrug
+#041 You Lose
+#007 Unused
+
+-----------------------------------------------------------
+ [S.E.]
+
+#010 [S.E.] bonus man
+#013 [S.E.] zip up
+#014 [S.E.] zip down
+#015 [S.E.] step 1
+#016 [S.E.] step 2
+#018 [S.E.] throw mug
+#019 [S.E.] collect tip
+#020 [S.E.] toss mug
+#021 [S.E.] guzzle
+#022 [S.E.] tip appear
+#023 [S.E.] grab mug
+#024 [S.E.] slide
+#025 [S.E.] out door 1
+#026 [S.E.] mug fall
+#027 [S.E.] mug break
+#028 [S.E.] pound
+#029 [S.E.] pop on
+#030 [S.E.] out door 2
+#033 [S.E.] thud
+#037 [S.E.] shake can
+#038 [S.E.] mix cans
+#039 [S.E.] pop top
+#040 [S.E.] woosh
+#043 [S.E.] drip
+#044 [S.E.] flash can
+#045 [S.E.] tick toc
+#048 [S.E.] full mug
+#049 [S.E.] laughing
+#050 [S.E.] ouch
+#051 [S.E.] hit floor
+#052 [S.E.] hit foot
+#053 [S.E.] duck fall
+#054 [S.E.] mug up
+#055 [S.E.] duck hit
+#056 [S.E.] fill 1
+#057 [S.E.] fill 2
+
+ etc.
+#008 [S.E.]
+#017 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+
+// List contributed by NK
+$end

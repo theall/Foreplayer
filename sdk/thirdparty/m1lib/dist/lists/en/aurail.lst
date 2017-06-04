@@ -1,0 +1,182 @@
+﻿$name=aurail
+$version=2
+$default=026
+$main
+
+#026 Credit Inserted
+#076 Start Demo <time="27">
+#013 Get Ready ! <time="04">
+#002 BGM 1 (Round 1, 3)
+#071 3D Stage BGM 1 (Round 2, 5, 8, 11, 14, 15)
+#007 3D Stage BGM 2 (Round 2, 5, 8, 11, 14, 15)
+#110 Round Clear 1 (Round 1, 2, 4, 5, 7, 10, 11, 13) <time="05">
+#006 BGM 2 (Round 4, 6)
+#012 BOSS BGM 1 (Round 3, 6, 12)
+#015 Round Clear 1 (Round 3, 6, 9, 12) <time="06">
+#004 BGM 3 (Round 7, 9)
+#009 BOSS BGM 2 (Round 9, 16)
+#005 BGM 4 (Round 10, 12)
+#003 BGM 5 (Round 13, 15, 16)
+#065 Round 16 Clear Demo <time="12.9">
+#014 BGM 6 (Round 17)
+#079 BOSS BGM 3 (Round 17)
+#037 Ending
+#001 Credits Roll
+#011 Name Entry
+#010 Game Over
+
+#008 3D Stage BGM 1 Ver. 2
+
+#066 Unused 1
+#068 Unused 2
+#069 Unused 3
+#070 Unused 4
+#111 Unused 5
+
+#127 Speaker Test
+
+---------------------------------------------------
+  [SFX]
+
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#038 [SFX]
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+
+---------------------------------------------------
+  [Voice] 
+
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+
+---------------------------------------------------
+
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX]
+#146 [SFX]
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#198 [SFX] 
+
+  [Sound Composer]
+  Shin'ichi Sakamoto
+
+// List contribution by ZEK.
+$end

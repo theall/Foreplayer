@@ -1,0 +1,51 @@
+﻿$name=gulfwar2
+$version=2
+$default=037
+$main
+
+#037 Credit
+#019 BGM 1
+#022 BGM 2
+#023 BGM 3
+#024 BGM 4
+#025 BGM 5
+#021 BGM 6
+#015 Landing Theme
+#031 Name Storage
+#020 Game Over
+#034 Unused
+//「究極タイガー」の "Next Dream (Continue Theme)"
+
+#027 [S.E.] ～ BGM 2
+#028 [S.E.] ～ BGM 3
+#029 [S.E.] ～ BGM 4
+#030 [S.E.] ～ BGM 5
+#026 [S.E.] ～ BGM 6
+
+-----------------------------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+
+// List Contribution by NK
+$end

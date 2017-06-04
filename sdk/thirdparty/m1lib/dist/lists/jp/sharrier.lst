@@ -1,0 +1,101 @@
+﻿$name=sharrier
+$version=2
+$default=231
+$songmax=252
+$main
+
+#231 COIN
+#173 THEME <time="4:06.7">
+#176 THEME (Short Version)
+#165 SQUILLA
+#166 IDA
+#170 GODARNI
+#178 WIWI JUMBO
+#184 BATTLE FIELD (Bonus Stage) <time="1:18.8">
+#171 SYURA
+#164 VALDA
+#163 STANRAY
+#183 LAKE SIDE MEMORY (Ending)
+#185 WINNER'S SONG (Name Entry)
+
+#174 THEME #2
+#175 THEME #3
+#177 THEME #4
+
+-----------------------------------------
+
+#129 [Voice] Welcome to the Fantasy Zone, get ready!
+#130 [Voice] Get ready!
+#134 [Voice] You're doing great!
+#135 [Voice] Aaaaa!
+#137 [Voice] Ouch!
+
+#160 [S.E.] 敵破壊1
+#162 [S.E.] 敵破壊2
+#167 [S.E.] 1UP
+#179 [S.E.]
+#180 [S.E.] SHOT 1
+#181 [S.E.] SHOT 2
+#182 [S.E.] 自弾跳ね返り
+#190 [S.E.] 敵弾1
+#191 [S.E.] ドム出現音1
+#192 [S.E.] ルーパー出現音
+#193 [S.E.] ビンズビーン出現音
+#194 [S.E.] トモス出現音1
+#195 [S.E.] トモス出現音2
+#196 [S.E.] トモス出現音3
+#197 [S.E.]
+#198 [S.E.]
+#199 [S.E.]
+#200 [S.E.]
+#201 [S.E.]
+#202 [S.E.]
+#203 [S.E.]
+#205 [S.E.]
+#206 [S.E.] ムカデンス出現音
+#207 [S.E.] パーコーメン出現音
+#208 [S.E.] 敵弾2
+#209 [S.E.]
+#212 [S.E.] 曲(WIWI JUMBO) 断片1
+#213 [S.E.] 曲(WIWI JUMBO) 断片2
+#214 [S.E.] 曲(WIWI JUMBO) 断片3
+#215 [S.E.] 曲(WIWI JUMBO) 断片4
+#216 [S.E.]
+#217 [S.E.]
+#218 [S.E.]
+#219 [S.E.]
+#220 [S.E.]
+#221 [S.E.]
+#222 [S.E.]
+#223 [S.E.]
+#224 [S.E.]
+#228 [S.E.] ドム出現音2
+#229 [S.E.] ジェット機出現音1
+#230 [S.E.] ジェット機出現音2
+#232 [S.E.] カナリー出現音
+#233 [S.E.]
+#234 [S.E.] ボーナスステージ木破壊数カウント
+#235 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+#238 [S.E.]
+#239 [S.E.]
+#240 [S.E.]
+#241 [S.E.]
+#242 [S.E.]
+#243 [S.E.]
+#244 [S.E.]
+#245 [S.E.]
+#246 [S.E.]
+#247 [S.E.]
+#248 [S.E.]
+#249 [S.E.]
+#250 [S.E.]
+#251 [S.E.]
+#252 [S.E.]
+
+  ■出典
+  セガ体感ゲーム・スペシャル
+  ALFA RECORDS  28XA-198  1987.12.21
+
+$end

@@ -1,0 +1,46 @@
+﻿$namw=wh2j
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#025 悪の教典 第1 (オープニング)
+#049 エキサイター (プレイヤーセレクト)
+#018 聖なる祈り (初日セレモニー)
+#024 BLUE EDGE (USAのテーマ)
+#047 GOD'S GRACE (大会結果デモ)
+#016 GERMAN RHAPSODY (ドイツのテーマ)
+#048 人類の傲り (ボーナスステージ)
+#012 LA ZOZOBLA (スペインのテーマ)
+#026 STAR SOLDIER (韓国のテーマ)
+#021 THE SPORTS OF KINGS (修業VS)
+#006 勇者の回廊 (修業のテーマ)
+#030 EARTHQUAKE (キッド登場前デモ)
+#017 STAR SPRUNG'D KID (キッド登場デモ)
+#011 大きな海のナイスガイ (キャプテン・キッドのテーマ)
+#046 GRADUATION DAY (野試合終了デモ)
+#051 WORLD WAR X (決勝デモ)
+#057 SHOOTING SCRIPT (日本のテーマ)
+#052 NECROTIZED (超武会優勝デモ)
+#050 天使の約束 (暗黒超武会デモ)
+#004 狂気に潜む者 (ジャックのテーマ)
+#022 THE DEVIL OF KINGS (暗黒VS)
+#054 聖なる戦い (リョフ出陣デモ)
+#013 瞳の中の風 -EYES OF SEKITOBA- (リョフのテーマ)
+#019 天帝降臨 (ゼウス登場デモ)
+#010 天地晦冥 (ゼウスのテーマ)
+#031 THE CARD OF THIRTEEN (ゼウスやられ1-A)
+#027 嘆きの天使 (ゼウスやられ1-B)
+#029 天帝堕つ (ゼウスやられ2)
+#014 MAH-MAH JAN (エンディング1)
+#015 世界一周追いかけっこの旅 (エンディング2)
+#055 嘘がつけたなら (修業エンディング)
+#028 FINAL ECSTASY (スタッフロール)
+#053 SNUFF OUT (ゲームオーバー)
+
+  ■出典
+  ワールドヒーローズ2 JET / SNK・ADK
+  PONY CANYON / SCITRON  PCCB-00148  1994.05.20
+
+// List Contribution by NK
+$end

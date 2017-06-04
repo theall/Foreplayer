@@ -1,0 +1,45 @@
+﻿$name=19xx
+$version=2
+$default=030
+$fixed_volume=122
+$main
+
+#030 QSound Logo
+
+#008 Opening
+#009 Player select
+#010 Map display
+#001 A bit of blue sky between the clouds (Mission 1)
+#017 Ayako Kai (Target 1)
+#002 The red naval port (Mission 2)
+#018 Rai Mei (Target 2)
+#003 Dance of green gnome (Mission 3)
+#025 (Mission 3-2 BGM)
+#019 Carbert Wagen (Target 3)
+#004 Silver ice sheet (Mission 4)
+#020 Grantz (Target 4)
+#005 City light in the black strait (Mission 5)
+#024 (Mission 5-2 BGM)
+#021 Sancho Pedro (Target 5)
+#006 Glayish tornado (Mission 6)
+#022 Outer Limits (Target 6)
+#007 The last ditch fight (Mission 7)
+#023 Black Noise (Target 7)
+#011 Mission Clear
+#015 Ending
+#012 Game over
+#013 Score ranking
+
+#529 19-XX
+#532 from 1942 credit sound
+#533 from 1942 BGM
+$213 1942 BGM remixed
+
+  [Source]
+  Capcom Game Soundtrack / 19XX -The War Against Destiny-
+  Victor Entertainment  VICL-2168  Apr 3, 1996
+
+-----------------------------------------
+ [SFX]
+
+$end

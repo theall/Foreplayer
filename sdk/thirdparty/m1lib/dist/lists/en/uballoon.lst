@@ -1,0 +1,78 @@
+﻿$name=uballoon
+$version=2
+$default=208
+$main
+
+#019 Credit Inserted <time="3">
+#208 Opening Demo (Phantom of the Opera)
+#205 Story 1 (Clarinet Polka - Polish Folk Song)
+#198 Story 1 Boss (Hungarian Dance No. 5 - Johannes Brahms)
+#192 Stage Clear
+#203 Demo (Blue Danube - Johann Strauss)
+#206 Story 2 (Pipeline - The Ventures)
+#198 Treasure Hunting (Hungarian Dance No. 5 - Johannes Brahms)
+#192 Congratulations <time="11.8">
+#196 Story 2 Boss (Tequila - Chuk Rio)
+#197 Story 3 (Eine Kleine Nachtmusik - W.A. Mozart)
+#201 Story 3 Boss
+#199 Story 4 (William Tell Overture - Gioacchino Rossini)
+#204 Continue?
+#194 Story 4 Boss (Carmen Toreador Song - Georges Bizet)
+#207 Story 5 (Popcorn - Gershon Kingsley)
+#198 Story 5 Boss (Hungarian Dance No. 5 - Johannes Brahms)
+#195 Story 6 
+#202 Bonus (BWV 772, Invention #1 - J.S. Bach)
+#196 Story 6 Boss (Tequila - Chuk Rio)
+#193 Story 7 (Bolero - Maurice Ravel)
+#201 Story 7 Boss
+#205 Story 8 (Clarinet Polka - Polish Folk Song)
+#194 Story 8 Boss (Toreador Song - George Bizet)
+#192 Ending
+#209 Name Entry
+#200 Game Over (Hungarian Dance No. 5 Ending - Johannes Brahms)  <time="6">
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] <time="3">
+#002 [SFX] <time="3">
+#003 [SFX] <time="3">
+#005 [SFX] <time="3">
+#006 [SFX] <time="3">
+#007 [SFX] <time="3">
+#008 [SFX] <time="3">
+#009 [SFX] <time="3">
+#010 [SFX] <time="3">
+#012 [SFX] <time="3">
+#013 [SFX] <time="3">
+#014 [SFX] <time="3">
+#015 [SFX] <time="3">
+#016 [SFX] <time="3">
+#017 [SFX] <time="3">
+#018 [SFX] <time="3">
+#019 [SFX] <time="3">
+#020 [SFX] <time="3">
+#021 [SFX] <time="3">
+#022 [SFX] <time="3">
+#024 [SFX] <time="3">
+#025 [SFX] <time="3">
+#026 [SFX] <time="3">
+#029 [SFX] <time="3">
+#030 [SFX] <time="3">
+#031 [SFX] <time="3">
+#032 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice] 
+
+#004 [Voice] <time="3">
+#011 [Voice] <time="3">
+#023 [Voice] <time="5">
+#027 [Voice] <time="3">
+#028 [Voice] <time="3">
+#033 [Voice] <time="3">
+#034 [Voice] <time="3">
+
+// List contribution by ZEK.
+// Updated with informations from offcial M1 message board.
+$end

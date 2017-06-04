@@ -1,0 +1,20 @@
+$name=g_kgk
+$version=2
+$default=61592
+$songmax=9999999
+$main
+
+$F098 Driver Init
+$0001 BGM 1
+$0002 BGM 2
+$0003 BGM 3
+$0004 BGM 4
+$0005 BGM 5
+$0006 BGM 6
+$0007 BGM 7
+$0008 BGM 8
+$000a BGM 10
+$000b BGM 11
+
+// Basic list contributed by Knurek
+$end

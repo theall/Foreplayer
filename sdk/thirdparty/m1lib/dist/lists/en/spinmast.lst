@@ -1,0 +1,136 @@
+﻿$name=spinmast
+$version=2
+$default=095
+$fixed_volume=185
+$main
+
+#095 Neo Geo Logo
+
+#156 [Voice] Spinmaster
+#042 Here It Comes (Opening)
+#034 Got to Go! (Theme of America)
+#035 I'm Strong! (Boss 1)
+#036 Relieved (Clear)
+#040 Coffee Break (Intermission)
+#039 It's Hot to Melt (Theme of Egypt 1)
+#064 Let's Go by Trolley (Theme of Egypt 2)
+#037 Ni Hao China (Theme of China 1)
+#038 The Stream of 3000 Year Chinse History (Theme of China 2)
+#048 Jungle King *** (Theme of Amazon)
+#065 It's Dark, Narrow and Scary! (Theme of Amazon 2)
+#046 I'll Mess Up You (Boss 2)
+#043 Song of Hercules (Theme of Greek 1)
+#044 We're Going Up (Theme of Greek 2)
+#047 Sayonara (Ending)
+#045 Staff Guys (Credits)
+#041 I'm Missing You (Game Over)
+
+---------------------------------------------------
+ [SFX]
+
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#127 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#229 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+#232 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#240 [SFX] 
+
+---------------------------------------------------
+ [Voice]
+
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [Voice] Miracle Adventure
+#156 [Voice] Spinmaster
+#157 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+
+  [Sound Composers]
+  Oww Furukawa, Tomoyoshi Satou, Seilah
+
+  [Source]
+  Miracle Adventure. Tatakae Genshijin 3 / Data East
+  Pony Canyon / Scitron  PCCB-00146  Feb 18, 1994
+
+// List contribution by ZEK.
+// English list translation by Fuj
+$end

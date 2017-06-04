@@ -1,0 +1,58 @@
+﻿$name=truxton
+$version=2
+$default=039
+$songmax=039
+$fixed_volume=112
+$main
+
+#039 COIN
+#028 BRAVE MAN (TAKE OFF) <time="0:15.82">
+#001 FAR AWAY (STAGE 1)
+#002 SALLY (STAGE 2)
+#005 HOPE (STAGE 3)
+#004 FRIEND (STAGE 4)
+#003 UNKNOWN (STAGE 5)
+#006 CRISIS (BOSS)
+#029 RECOLLECTION (GAME OVER)
+#030 DOWN FALL (RANKING)
+#033 AGAIN (CONTINUE)
+
+-----------------------------------------
+ [S.E.]
+
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+
+  ■出典
+  TOAPLAN GAME MUSIC SCENE ONE / TATSUJIN
+  POLYSTAR  H24X-10005  1989.06.25
+
+  ■作曲
+  弓削 雅稔
+
+$end

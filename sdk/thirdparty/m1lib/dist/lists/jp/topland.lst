@@ -1,0 +1,106 @@
+﻿$name=topland
+$version=2
+$default=01
+$main
+
+#001 タイトルデモ
+#019 クレジット
+#002 ハンドル位置合わせ
+#005 東京国際空港
+#011 Main Theme 1 (練習・小型機)
+#018 成功 & 結果
+#003 大阪国際空港
+#004 福岡国際空港
+#006 サンフランシスコ国際空港
+#012 Main Theme 2 (中型機)
+#009 ドゴール空港
+#007 リオデジャネイロ国際空港
+#008 シドニー国際空港
+#013 Main Theme 3 (大型機)
+#010 ダレス国際空港
+#014 着陸失敗
+#015 失敗 & 結果
+#020 Staff Roll
+#017 Name Entry
+#016 Game Over
+
+-----------------------------------------------------
+
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.] 客室チャイム
+#025 [S.E.] ストラトリバーサー
+#026 [S.E.] 接地
+#027 [Voice] Thank you.
+#029 [Voice] 大阪国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at OSAKA international airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#030 [Voice] 福岡国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at FUKUOKA international airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#031 [Voice] 東京国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at TOKYO international airport.
+//Please remain seated until the plane has come to complete stop. Thank you.
+#032 [Voice] サンフランシスコ国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at SAN FRANCISCO international airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#033 [Voice] ドゴール空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at DE GAULLE airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#034 [Voice] ダレス国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at DULLES international airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#035 [Voice] リオデジャネイロ国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at RIO DE JANEIRO international airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#036 [Voice] シドニー国際空港着陸アナウンス
+//Ladies & gentlemen, thank you very much for flying with JT2-610.
+//We have just landed at SYDNEY international airport.
+//Please remain seated until the plane has come to a complete stop. Thank you.
+#038 [Voice] Roger.
+#039 [Voice] This is control-tower. JT2-610, ten kilometers to touch-down. Over.
+#040 [Voice] This is control-tower. JT2-610, eight thousand meters to touch-down. Over.
+#041 [Voice] This is control-tower. JT2-610, six thousand meters to touch-down. Over.
+#042 [Voice] This is control-tower. JT2-610, four thousand meters to touch-down. Over.
+#043 [Voice] Two thousand meters to touch-down. Over.
+#045 [Voice] Emergency, pull up, pull up!
+#046 [Voice] Emergency, decreace altitude, decreace altitude!
+#047 [Voice] Emergency, right turn, right turn!
+#048 [Voice] Emergency, left turn, left turn!
+#049 [Voice] Emergency, throttle down, throttle down!
+#050 [Voice] Course out.
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#230 ドラムだけ
+#241 オケヒ (ADPCM-B)
+#242 PSG
+#243 FM
+#244 SOUND CHECK ???
+#245 
+#246 
+#247 SE等のメドレー?
+#248 SE等のメドレー?
+
+  ■出典
+  究極タイガー -G.S.M. TAITO 2-
+  PONY CANYON / SCITRON  D28B0008  1988.11.21
+
+  ■作曲
+  ZUNTATA
+
+// Original List from Amuse
+// List by Fuj
+// Updated by x68030
+$end

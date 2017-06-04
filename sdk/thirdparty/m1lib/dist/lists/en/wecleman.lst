@@ -1,0 +1,117 @@
+﻿$name=wecleman
+$version=2
+$default=194
+$fixed_volume=334
+$main
+
+#194 [Voice] (Credit Inserted)
+#001 Hello Angel (Title)
+#014 Starting Grid <time="7">
+#005 Highway Killer (Lap 1)
+#002 Shouting! (Lap 2)
+#008 A Little Devil (Ranking / Low)
+#004 Crazy Speeder (Lap 3)
+#003 Garaxian Express (Lap 4)
+#012 In My Dream (Ending)
+#011 Time Has Come (Arrival Distance)
+#009 Winning Runner (Ranking / High)
+
+#017 Highway Killer (w/o intro)
+#019 Shouting! (w/o intro)
+#018 Crazy Speeder (w/o intro)
+
+#021 Crazy Speeder (one side-channel)
+#020 Garaxian Express (one side-channel)
+
+#006 Unused 1 (Retired? / released on CD)
+#007 Unused 2
+#013 Unused 3
+
+-------------------------------------------------------------
+  [SFX]
+
+#010 [SFX] <time="3.8">
+#014 [SFX] Starting Grid
+#033 [SFX] 
+#034 [SFX] Time Extension EXTEND
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+
+ #059 - #128: Rev (low to high)
+
+#131 [SFX] Exhaust
+#132 [SFX] 
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#200 [SFX] Count Down (Starting Grid)
+#201 [SFX]
+#202 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+
+#133 [Voice]
+#134 [Voice] (Starting Grid)
+#135 [Voice]
+#136 [Voice]
+#137 [Voice] 
+#138 [Voice] (Retired)
+#139 [Voice]
+#140 [Voice] Checkered Flag
+#141 [Voice] Three !
+#142 [Voice] Two !
+#143 [Voice] One !
+#152 [Voice] (Ending)
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#192 [Voice]
+#193 [Voice]
+#194 [Voice] Credit Inserted
+#196 [Voice]
+#197 [Voice] A Shout of Joy (Ending)
+#198 [Voice]
+#199 [Voice] Time Extension
+#211 [Voice]
+#212 [Voice]
+#213 [Voice]
+#214 [Voice]
+#215 [Voice]
+#216 [Voice]
+
+  [Soundtracks]
+  Original Sound of WEC Le Mans 24 - Arcade Version -
+  Apolon  BY12-5027  Aug 21, 1987
+
+  Konamic Game Freaks / Konami Kukeiha Club
+  Alfa Records / G.M.O.  28XA-135  Mar 25, 1987
+
+// Original List by Min
+// Updated by Fujix
+// Re-updated by R
+$end

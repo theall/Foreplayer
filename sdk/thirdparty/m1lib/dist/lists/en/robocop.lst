@@ -1,0 +1,92 @@
+﻿$name=robocop
+$version=2
+$default=049
+$main
+
+#049 Suggestion (Title)
+#050 Prologue (Opening)
+#048 [SFX] level start noise
+#052 Main Theme (BGM 1)
+#059 Winner (Clear)
+#056 Crisis (Boss 1)
+//#051 Main Theme (BGM 1) w/o intro A
+//#054 Main Theme (BGM 1) w/o intro B
+#053 Crime Field (BGM 2)
+#058 Trial Shooting (Bonus)
+#055 Last Battle (BGM 3)
+#057 Last Theme (Boss 2)
+#060 Dead End (Game Over)
+#061 Epilogue (Name Entry)
+
+-----------------------------------------------------------
+
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX] Grenade falling
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX] bip bip
+#048 [SFX]
+
+#062 [PCM] Robocop dying
+#063 [PCM]
+#064 [PCM] Car skid noise
+#065 [Voice] Serve the public trust. Protect the Innocent. Uphold the law.
+#066 [SFX]
+#067 [SFX] Boss on fire
+#068 [Voice] (Boss) ????
+#069 [Voice] Gordon
+#070 [Voice] Robocop
+#071 [Voice] Woman's yell
+#072 [Voice]
+#073 [Voice] Robocop hit
+#074 [PCM]
+#075 [Voice] Murphy
+#076 [Voice] Thank you for your cooperation
+#077 [Voice] You are under arrest
+#078 [Voice] (Boss) ????
+#079 [Voice] Thank you
+
+  [Soundtrack]
+  Game Sound Deco -G.S.M. Data East 1-
+  Pony Canyon / Scitron  D25B1002  Jun 21, 1989
+
+// List Contribution by Min
+// Voice by CrashTest
+$end

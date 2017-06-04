@@ -1,0 +1,55 @@
+﻿$name=blockout
+$version=2
+$default=008
+$main
+
+#008 Title
+#048 [Voice] I am a block master... And I dare you to defeat me at block out... Challenge me... <time="0:13">
+#032 Coin Inserted <time="0:03">
+#003 Round Select
+#019 [Voice] Challenge me... <time="0:03">
+#007 BGM 1
+#002 Round Clear
+#050 [Voice] You are a worthy opponent... But I won't lose the next game... <time="0:09">
+#009 BGM 2
+#013 BGM 3
+#011 BGM 4
+#012 BGM 5
+#014 BGM 6
+#005 You Lost
+#004 Name Entry
+#049 [Voice] I warned you nobody beats me...
+
+#006 BGM 1 &lt;simple style&gt;
+#010 BGM 4 &lt;simple style&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+#016 [Voice] I am a block master... <time="0:04">
+#017 [Voice] And I dare you <time="0:02">
+#018 [Voice] to defeat me at block out... <time="0:04">
+#019 [Voice] Challenge me...
+#021 [Voice] I warned you <time="0:02">
+#022 [Voice] nobody beats me...
+#023 [Voice] You are a worthy opponent... <time="0:04">
+#024 [Voice] But I won't lose the next game...
+#051 [Voice] Block out...
+
+-----------------------------------------------------------
+ [S.E.]
+
+#020 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#052 [S.E.]
+
+// List Contribution by NK
+$end

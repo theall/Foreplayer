@@ -1,0 +1,96 @@
+﻿$name=riotcity
+$version=2
+$default=008
+$main
+
+#008 Introduction <time="40">
+#021 Title <time="3.5">
+#042 Credit <time="3">
+#010 Opening <time="3.5">
+#001 Round 1 Part I <time="2:12.1">
+#003 Round 1 Part II <time="1:09.5">
+#004 Round 1 Part III <time="2:00.9">
+#011 Round Clear <time="4">
+#005 Round 2 Part I <time="1:47.2">
+#018 Round 2 Part II <time="2:13.7">
+#020 Round 2 Part III <time="58.5">
+#006 Round 2 Part IV <time="1:50.2">
+#004 Round 3 Part I <time="1:02.4">
+#009 Round 3 Part II <time="54.6">
+#006 Round 3 Part III <time="1:03.4">
+#003 Round 4 Part I <time="38.4">
+#005 Round 4 Part II <time="45.8">
+#007 Round 4 Part III <time="1:18">
+#009 Round 4 Part IV <time="31.2">
+#014 Final Round Start Demo <time="33">
+#002 Round 5 Part I <time="2:13.3">
+#004 Round 5 Part II <time="1:02.4">
+#019 Round 5 Part III <time="1:33.6">
+#017 Ending <time="1:37">
+#015 Continue <time="23.4">
+#013 Game Over <time="5">
+
+#012 Unused 1 <time="5">
+#016 Unused 2 <time="3">
+#022 Unused 3 <time="12">
+
+-----------------------------------------------------------
+ [Voice]
+
+#021 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#067 [Voice]
+#069 [Voice]
+#073 [Voice]
+#077 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#079 [SFX]
+#095 [SFX]
+
+// List Contribution by NK
+$end

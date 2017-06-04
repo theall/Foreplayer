@@ -1,0 +1,59 @@
+﻿$name=arkretrn
+$version=2
+$default=055
+$main
+
+  [BGM]
+  
+#055 [BGM] Attract Mode
+#022 [SE] Credit Insertion
+#057 [BGM] Game Start
+#058 [BGM] BGM #1 (ROUND 1～9)
+#073 [BGM] Game Start ROUND 10,19,28,37,46
+#059 [BGM] BGM #2 (ROUND 10～18)
+#060 [BGM] BGM #3 (ROUND 19～27)
+#062 [BGM] BGM #4 (ROUND 37～46)
+#071 [BGM] Ending
+#070 [BGM] ENTER YOUR NAME
+#072 [BGM] GAME OVER
+#056 [BGM] unused #1
+#063 [BGM] unused #2
+#065 [BGM] unused #3
+#066 [BGM] unused #4
+#067 [BGM] unused #5
+#068 [BGM] unused #6
+#069 [BGM] unused #7
+
+---------------------------------------------------
+  [SE] 
+  
+#010 [SE] 
+#013 [SE] 
+#014 [SE] 
+#015 [SE] 
+#016 [SE] 
+#017 [SE] 
+#018 [SE] 
+#020 [SE] 
+#021 [SE] time
+#022 [SE] Credit Insertion
+#032 [SE] 
+#035 [SE] 
+#036 [SE] 
+#037 [SE] 
+#040 [SE] 
+#047 [SE] 
+#048 [SE] 
+#049 [SE] time
+#050 [SE] time
+#051 [SE] time
+#052 [SE] time
+#053 [SE] time
+
+
+  ■作曲
+  渡部 恭久 (Yack.)
+  Ishikawa Babio (ばび～)
+
+// List contribution by Simon B., done in playing the game.
+$end

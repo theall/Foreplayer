@@ -1,0 +1,28 @@
+﻿$name=finalap2
+$version=2
+$default=$02
+//$songmax=$103
+$main
+
+$02 Attract (Unused)
+$01 Circuit Selection
+$04 Ending A
+$03 Ending B
+
+$100 Speaker Test
+
+  [Source]
+  Final Lap 2 -G.S.M. Namco 3-
+  Pony Canyon / Scitron   PCCB-00040  Sep 21, 1990
+
+  [Sound Composer]
+  Shinji Hosoe
+
+-----------------------------------------
+ [SFX]
+
+//$101 [SFX]
+//$102 [SFX]
+//$103 [SFX]
+//
+$end

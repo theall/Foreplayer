@@ -1,0 +1,51 @@
+﻿$name=twinbee
+$version=2
+$default=129
+$songmax=143
+$main
+
+#129 Credit
+#130 Start - Main BGM Lv.0
+#132 Boss BGM A Lv.0 (with Fade Out) <time="0:45">
+#131 Next Stage
+#133 Player Extend - BGM Lv. Change to 1
+#128 Power Up - BGM Lv. Change to 2
+#137 Boss BGM A Lv.1
+#142 Boss BGM B Lv.2
+#139 Game Over
+#135 Name Entry (Below 2nd)
+#143 Name Entry (1st place)
+
+
+#134 Main BGM Lv.0
+#140 Main BGM Lv.1
+#138 Main BGM Lv.2 (Power-up)
+#136 Name Input - Name Entry Time out warning
+#141 Boss BGM B Lv.0 & 1 (with Fade Out)
+
+-----------------------------------------
+ [SFX]
+
+#065 [SFX] Shot
+#066 [SFX] Bomb
+#067 [SFX] Twin Shot
+#070 [SFX] Bell
+#071 [SFX] Bell
+#076 [SFX] Ambulance
+#077 [SFX] Got a shot
+#078 [SFX] Destroyed a boss
+#087 [SFX] Picked up a ground item
+#088 [SFX] Got a yellow bell
+#089 [SFX] Boss zoomed
+#090 [SFX] Restart
+#091 [SFX] Ambulance
+#092 [SFX] Ambulance
+#096 [SFX] United attack (vertical 1)
+#097 [SFX] United attack (vertical 2)
+#098 [SFX] Got a star
+
+  [Source]
+  Konami Game Music Vol.1
+  Alfa Records  28XA-85  Jun 25, 1986
+
+$end

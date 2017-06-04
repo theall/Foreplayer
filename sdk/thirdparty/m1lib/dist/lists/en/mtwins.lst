@@ -1,0 +1,129 @@
+﻿$name=mtwins
+$default=095
+$songmax=117
+$main
+
+#095 [Voice] (Credit Inserted) <0:02>
+#000 Name + Round Select <0:21>
+#002 New Journey (Round 1) <1:57>
+#013 Theme of Boss <0:48>
+#028 Round Clear
+#014 Theme of Lord <0:23>
+#003 In the Sky.. (Round 2) <1:54>
+#030 Typhoon Kid <1:23>
+#016 Bonus Stage <0:57>
+#112 Perfect <0:03>
+#004 In the Sea.. (Round 3) <2:16>
+#005 Dragon Blue Eyes (Demo 1) <0:28>
+#027 Seacret Door (Domo 2) <0:16>
+#006 Found Out the Monster Castle!! (Round 4-1) <1:52>
+#007 Start Invasion (Round 4-2) <1:43>
+#008 Scary Dungeon (Round 4-3) <1:26>
+#009 High Tower (Round 4-4) <1:26>
+#010 Time to Fight! (Round 4-5) <2:21>
+#015 Theme of Great Satan <2:03>
+#011 Escape (Round 5-1) <1:51>
+#012 For Home (Round 5-2) <1:30>
+#094 Great Victory! (Completed)
+#023 And to the Paradise (Ending 1) <1:00>
+#024 And to the Paradise (Ending 2) <1:16>
+#031 Credits <1:56>
+#001 Chiki Chiki Boys (Main Theme) <2:17>
+#019 Ranking (1st) <0:42>
+#020 Ranking (below 2nd) <1:00>
+#017 Game Over
+
+------------------------------------------------------
+ [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#095 [Voice] Ganbattene
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [Voice]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#113 [SFX]
+#114 [Voice]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+
+  [Source]
+  Street Fighter II -G.S.M. Capcom 4- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00056  Mar 21, 1991
+
+// List contribution: NK
+$end

@@ -1,0 +1,51 @@
+﻿$name=svcpcb
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#049 Wind of Death Fight (Title)
+#042 Select (Player Select)
+#043 Sign (Normal Stage, Intro)
+#047 Fate (Fate Scene)
+#033 Ruined Town (Ruined Factory Stage)
+#037 Void (Void Station Stage)
+#034 Church Groove (Church Stage)
+#036 Sai (Forest Stage)
+#035 Sacred Ground (Shrine Stage)
+#038 From the Country No One Know About (Ancient Stage)
+#064 Unexpected Fight (Interrupt)
+#048 Win SVC (Win Demo)
+#044 Darkness (Boss Stage Intro)
+#039 Final Fight (Boss)
+#059 KO (KO)
+#063 Ascension (After Boss Stage)
+#045 Prelude (Heaven Stage Intro)
+#040 Poem of SVC Heaven (Heaven Stage)
+#046 Prelude (Hell Stage Intro)
+#041 Poem of SVC Hell (Hell Stage)
+#051 Run to the dark (Ending A)
+#052 It's so Cool! (Ending B)
+#053 Break (Ending C)
+#054 Heyeyey! (Ending D)
+#055 Silence (Ending E)
+#056 Preparedness (Ending F)
+#057 Far out (Ending G)
+#050 Endless Journey (Bad Ending)
+#060 Left Bank (Credit)
+#061 Countdown to the Defeat (Continue)
+#062 G_Over (Game Over)
+
+#058 ?
+
+  [Source]
+  SNK vs. Capcom SVC Chaos Original Soundtrack
+  Suleputer  CPCA-1081  Nov 6, 2003
+
+  [Composers]
+  Tate-Norio, Masahiko Hataya, Yasumasa Yamada
+
+// List Contribution by GolGol
+// English list by Fuj
+$end

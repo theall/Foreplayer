@@ -1,0 +1,31 @@
+﻿$name=wjammers
+$version=2
+$default=002
+$songmax=188
+$fixed_volume=254
+$main
+
+#002 Get Ready! (Select)
+#003 Go for Broke! (Start)
+#016 Shoot!! (Tiled Court)
+#004 Game Set
+#011 Next Round
+#017 Windjammers (Lawn Court)
+#009 Draw Game
+#015 Flying Power Disc (Beach)
+#010 Lost
+#013 Continue?
+#028 Hurry! (Dog Distance & Disc Bowling)
+#020 Reach for the Top (Ranking, Continue)
+#019 You Got a Power (Concrete Court)
+#018 Break Point Champs (Stadium)
+#027 The Winner (Ending)
+#014 Game Over
+
+  [Source]
+  Fighters History Dynamite & Flying Power Disc
+  Pony Canyon / Scitron  PCCB-00149  Mar 18, 1994
+
+// List contribution by cyada
+// English list by Fuj
+$end

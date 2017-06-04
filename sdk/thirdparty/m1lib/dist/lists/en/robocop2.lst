@@ -1,0 +1,137 @@
+﻿$name=robocop2
+$version=2
+$default=110
+$main
+
+#110 [Voice] Robocop
+#004 Story (JP ver.)
+#005 Sector 1, 2
+#013 Boss BGM 1 (Sector 1, 2, 4)
+#006 Bonus Stage
+#019 Demo BGM 
+#008 Sector 3
+#014 Boss BGM 2 (Sector 3)
+#010 Sector 4
+#011 Sector 5
+#015 Boss BGM 3 (Sector 5)
+#012 Final Battle
+#016 Clear
+#018 Ending
+#017 Game Over
+
+#009 Unused 1
+#021 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] <time="8">
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] <time="8"> 
+#053 [SFX] 
+#054 [SFX] <time="5">
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] <time="8">
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#109 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#126 [SFX] <time="5">
+
+---------------------------------------------------
+  [Voice]
+
+#082 [Voice] You're under arrest.
+#083 [Voice] Thank you for your cooperation.
+#084 [Voice] Don't move, creep.
+#085 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice]
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#110 [Voice] Robocop
+#111 [Voice] 
+#118 [Voice] 
+
+  [Sound Composers]
+  Tatsuya Kiuchi (Tatsuya Kiwch)
+  Tomoyoshi Satou (Tom Tom Sato)
+
+// List contribution by ZEK.
+$end

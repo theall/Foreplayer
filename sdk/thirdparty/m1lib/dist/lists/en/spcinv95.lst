@@ -1,0 +1,29 @@
+﻿$name=spcinv95
+$version=2
+$default=153
+$main
+
+#153 Title Demo
+#190 Player Select
+#151 Round Start Demo
+#144 Round 1 - At the Supermarket
+#156 Round 2 - Street Kitchen
+#157 Round 3 - A Hokiday of Idol - I'm happy
+#148 Round 3 - Love is Magic - Love you more than Superman
+#158 Round 4 - Time
+#185 Round 5 / Bonus Stage
+#188 Round Boss
+#189 Ending
+#159 Game Over
+#152 Nane Entry
+
+#145 ??
+#149 ??
+
+  [Soundtrack]
+  Puzzle Bobble, Gekirindan -Welcome to the karu Land-
+  Pony Canyon / Scitron  PCCB-00196  Nov 17, 1995
+
+// List contribution by Min
+// English list by Fujix
+$end

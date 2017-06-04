@@ -1,0 +1,198 @@
+﻿$name=shimpact
+$version=2
+$default=031
+$main
+
+#031 Title Screen
+#020 Hey ! <time="5">
+#019 Attract <time="10">
+#002 Attract Mode
+#014 Win Football Cards
+#169 [SFX] Coin <time="3">
+#001 Team Selection
+#007 Formation Theme 1
+#003 Main Theme 1
+#011 Touchdown
+#023 You Won a Football Card
+#013 Extra Point Attempt
+#193 It's Good
+#192 Kickoff
+#028 End of the 1st Quarter <time="15">
+#008 Formation Theme 2
+#004 Main Theme 2
+#195 Turnover
+#148 [SFX] Fight <time="3">
+#196 Fight Theme
+#014 Win 
+#028 Halftime <time="15">
+#009 Formation Theme 3
+#005 Main Theme 3
+#012 New World Record
+#028 End of the 3rd Quarter <time="15">
+#010 Formation Theme 4
+#006 Main Theme 4
+#027 He Blew It (?) <time="3.5">
+#025 Game Over
+
+//#199 Formation Theme 4
+//#200 Formation Theme 5
+//#201 Formation Theme 6
+//#202 Formation Theme 7
+//#194 Title Screen Theme 2
+//#197 Title Screen Theme 3
+//#198 Title Screen Theme 4
+//#240 Title Screen Theme 5
+//#022 Game Over w/o intro
+//
+#203 Unused 1
+#204 Unused 1 alt
+#205 Unused 2
+#206 Unused 3
+#207 Unused 4
+#024 Unused 5
+#026 Unused 6
+#029 Unused 7
+#021 Unused 8
+#030 Unused 9
+#018 Unused 10
+#016 Unused 11
+
+---------------------------------------------------
+  [SFX]
+
+#017 [SFX] <time="5">
+#051 [SFX] <time="3">
+#128 [SFX] <time="3">
+#129 [SFX] <time="3">
+#130 [SFX] <time="3">
+#131 [SFX] <time="3">
+#132 [SFX] <time="3">
+#133 [SFX] <time="3">
+#134 [SFX] <time="3">
+#135 [SFX] <time="3">
+#136 [SFX] <time="3">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#142 [SFX] <time="3">
+#143 [SFX] <time="3">
+#144 [SFX] <time="3">
+#145 [SFX] <time="3">
+#146 [SFX] <time="3">
+#148 [SFX] <time="3">
+#149 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="3">
+#152 [SFX] <time="3">
+#153 [SFX] <time="5">
+#154 [SFX] <time="3">
+#155 [SFX] <time="3">
+#156 [SFX] <time="3">
+#157 [SFX] <time="3">
+#160 [SFX] <time="3">
+#161 [SFX] <time="3">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#167 [SFX] <time="3">
+#169 [SFX] <time="3">
+#170 [SFX] <time="3">
+#224 [SFX] <time="3">
+#225 [SFX] <time="3">
+#226 [SFX] <time="3">
+#227 [SFX] <time="3">
+#228 [SFX] <time="3">
+#231 [SFX] <time="3">
+#232 [SFX] <time="3">
+#233 [SFX] <time="3">
+#234 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#048 [Voice] <time="3">
+#049 [Voice] <time="3">
+#050 [Voice] <time="3">
+#052 [Voice] <time="3">
+#053 [Voice] <time="3">
+#054 [Voice] <time="3">
+#055 [Voice] <time="3">
+#056 [Voice] <time="3">
+#057 [Voice] <time="3">
+#058 [Voice] <time="3">
+#059 [Voice] <time="3">
+#060 [Voice] <time="3">
+#061 [Voice] <time="3">
+#062 [Voice] <time="3">
+#063 [Voice] <time="3">
+#064 [Voice] <time="3">
+#065 [Voice] <time="3">
+#066 [Voice] <time="3">
+#067 [Voice] <time="3">
+#068 [Voice] <time="3">
+#069 [Voice] <time="3">
+#070 [Voice] <time="3">
+#071 [Voice] <time="3">
+#072 [Voice] <time="3">
+#073 [Voice] <time="3">
+#074 [Voice] <time="3">
+#075 [Voice] <time="3">
+#076 [Voice] <time="3">
+#077 [Voice] <time="3">
+#078 [Voice] <time="3">
+#079 [Voice] <time="3">
+#080 [Voice] <time="3">
+#081 [Voice] <time="3">
+#082 [Voice] <time="3">
+#083 [Voice] <time="3">
+#084 [Voice] <time="3">
+#085 [Voice] <time="3">
+#086 [Voice] <time="3">
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#089 [Voice] <time="3">
+#090 [Voice] <time="3">
+#091 [Voice] <time="3">
+#092 [Voice] <time="3">
+#093 [Voice] <time="3">
+#094 [Voice] <time="3">
+#095 [Voice] <time="3">
+#176 [Voice] <time="3">
+#177 [Voice] <time="3">
+#178 [Voice] <time="3">
+#179 [Voice] <time="3">
+#180 [Voice] <time="3">
+#181 [Voice] <time="3">
+#182 [Voice] <time="3">
+#183 [Voice] <time="3">
+#184 [Voice] <time="3">
+#185 [Voice] <time="3">
+#186 [Voice] <time="3">
+#187 [Voice] <time="3">
+#188 [Voice] <time="3">
+#189 [Voice] <time="3">
+#190 [Voice] <time="3">
+#191 [Voice] <time="3">
+#208 [Voice] <time="3">
+#209 [Voice] <time="3">
+#210 [Voice] <time="3">
+#211 [Voice] <time="3">
+#212 [Voice] <time="3">
+#213 [Voice] <time="3">
+#214 [Voice] <time="3">
+#215 [Voice] <time="3">
+#216 [Voice] <time="3">
+#217 [Voice] <time="3">
+#218 [Voice] <time="3">
+#219 [Voice] <time="3">
+#220 [Voice] <time="3">
+#221 [Voice] <time="3">
+#222 [Voice] <time="3">
+#223 [Voice] <time="3">
+#235 [Voice] <time="3">
+#236 [Voice] <time="3">
+#237 [Voice] <time="3">
+#238 [Voice] <time="3">
+#239 [Voice] <time="3">
+
+// List contribution by ZEK.
+// English list QC by Fuj
+$end

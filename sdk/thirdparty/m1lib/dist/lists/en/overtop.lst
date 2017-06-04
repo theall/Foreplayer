@@ -1,0 +1,33 @@
+﻿$name=overtop
+$version=2
+$default=002
+$fixed_volume=153
+$main
+
+#002 Neo Geo Logo
+
+#051 Emergency of the Road (Opening)
+#048 Hold On (How to Play - Select)
+#010 Rotterdam? (BGM 1)
+#011 Rotter Dam Dam Dam (BGM 2)
+#004 Drive or Die (BGM 3)
+#005 Music of the Wind (BGM 4)
+#006 Crazy Kids (BGM 5)
+#007 Operation Desert Sandstorm (BGM 6)
+#032 No More Tears (BGM 7)
+#050 Natural Conclusion (Finish)
+#049 Successful Conclusion
+#012 No Pain (Credit Roll)
+#013 Over Now (Game Over)
+#052 You're the Champ (Name Entry)
+
+#016 Unused 1
+#017 Unused 2
+
+  [Source]
+  Over Top oshidashi Gin Tric / ADK Sound Factory
+  Pony Canyon / Scitron  PCCB-00206  Feb 21, 1996
+
+// List Contribution by NK
+// English list by Fujix
+$end

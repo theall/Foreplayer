@@ -1,0 +1,73 @@
+﻿$name=kabukiz
+$version=2
+$default=051
+$main
+
+#051 Intro -- Main Theme #1 (Round 1,3)
+#050 Intro -- Main Theme #2 (Round 2)
+#047 Mid-Boss Battle #1 (Round 2)
+#046 Mid-Boss Battle #2 (Round 3)
+#049 Intro -- Main Theme #3 (Round 4,5)
+#041 Boss Battle
+#037 Round Cleared
+#044 Game Over
+#042 Name Entry (Main Theme #1, No Intro)
+
+#052 Main Theme #2 (No Intro)
+#053 Main Theme #2 (No Intro, Alternative)
+#058 Main Theme #3 (No Intro)
+#055 Unused
+
+------------------------------------------------------
+ [SFX]
+
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#019 [SFX] Got Item
+#020 [SFX] Warping
+#021 [SFX]
+#024 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX] Swords Crossing
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#067 [SFX] Player Damaged
+#069 [SFX] Enemy's Buzzing
+#072 [SFX]
+#073 [SFX]
+#074 [SFX] Enemy Damaged
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#130 [SFX]
+#131 [SFX]
+#134 [SFX]
+#135 [SFX]
+#139 [SFX]
+#140 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+
+// List Contribution by a2c-s438
+$end

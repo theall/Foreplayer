@@ -1,0 +1,46 @@
+﻿$name=samsho
+$version=2
+$default=002
+$fixed_volume=127
+$main
+
+#002 Neo Geo Logo
+
+#039 Static and Dynamic (Title)
+#053 Static and Dynamic -Short Edit- (Title)
+#045 Twelve Swordsmen (Player Select)
+#049 Wanderings (Map)
+#033 Masculine Song -Sun- (Haohmaru)
+#034 Masculine Song -Moon- (Ukyo Tachibana) <time="10:00">
+#086 Drum Roll 1 (Amakusa Demo)
+#036 Bamboo Thicket (Jubei Yagyu)
+#065 Shadow (Hanzo Hattori)
+#087 Ominous Feeling (Four Wins Demo)
+#064 Tunny (Galford)
+#066 Banquet of Nature (Nakoruru)
+#067 Barbarian (Tam Tam)
+#041 Hard Work (Bonus Stage)
+#069 Foreign Lady (Charlotte)
+#035 Ogre (Gen-an Shiranui)
+#068 Comma-Shaped Bead (Kyoshiro Senryo)
+#040 Earth (Earthquake)
+#037 Wan-Fu (Wan-Fu)
+#044 Conclusion (Winning Demo)
+#047 Drum Roll 2 (Final Demo)
+#042 Heartbeat (Amakusa Shiro Tokisada 1)
+#085 Blaze (Transformation)
+#038 Darkness (Amakusa Shiro Tokisada 2)
+#081 Shout (Ending 1)
+#082 Peace (Ending 2)
+#070 Revolutionary Lady (Charlotte Ending)
+#080 Festival Music (Credits Roll)
+#083 Encore (Continue)
+#084 Curtain Fall (Game Over)
+
+  [Source]
+  Samurai Spirits / SNK
+  Pony Canyon / Scitron  PCCB-00135  Sep 17, 1993
+
+// List Contribution by NK
+// English List by NK
+$end

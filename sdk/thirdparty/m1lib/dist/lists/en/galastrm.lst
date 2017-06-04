@@ -1,0 +1,29 @@
+﻿$name=galastrm
+$version=2
+$default=001
+$main
+
+#001 Homeland (Opening)
+#008 Protmind (Stage 1,stage 5 Area 17-19)
+#132 Acrobat (Stage 2)
+#002 Circuit (Stage 3)
+#003 DNA City (Stage 4)
+#035 Cyberceaser (Stage 5 Area 20)
+#009 For All Staff (Ending)
+#010 Return Home (Name Registration)
+#011 Game Over
+
+---
+#004 Acrobat -intro- (Stage 2) <time="12.5">
+#005 Acrobat w/o intro (Stage 2)
+---
+
+  [Souce]
+  Nouvelle Vague -G.S.M. Taito 7- / Zuntata
+  Pony Canyon / Scitron  PCCB-00086  May 21, 1992
+
+  [Composer]
+  Hisayoshi Ogura (OGR)
+
+// List Contribution by xfa27
+$end

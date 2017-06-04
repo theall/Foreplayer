@@ -1,0 +1,70 @@
+﻿$name=hharry
+$version=2
+$default=008
+$main
+
+#008 Title Screen <time="9">
+#129 Coin <time="3">
+#012 Introduciton <time="18">
+#001 Needless Markup Maul (Stage 1)
+#002 Rusty Nail Development Project (Stage 2)
+#004 Dock of the Bay (Stage 3)
+#013 Miss <time="5">
+#007 Continue <time="12">
+#003 Rusty Nail Construction Site (Stage 4)
+#005 Rusty Nail Underground Waterworks (Stage 5)
+#006 Rusty Nail Headquarters (Stage 6)
+#009 Boss BGM 
+#011 Stage Clear <time="3.8">
+#016 Ending 1
+#015 Ending 2
+#014 Game Over <time="5">
+#010 Name Entry
+
+---------------------------------------------------
+ [SFX] 
+
+#129 [SFX] <time="3">
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#018 [SFX] 
+#017 [SFX] <time="12">
+#019 [SFX] <time="12">
+#021 [SFX] <time="5">
+#022 [SFX] <time="3">
+#023 [SFX] <time="5">
+#024 [SFX] <time="3">
+
+---------------------------------------------------
+ [Voice] 
+
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+
+  [Sound Composer]
+  Hiyamuta (Gangy Hiya)
+
+// List contribution by ZEK.
+$end

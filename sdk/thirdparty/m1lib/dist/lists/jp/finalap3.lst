@@ -1,0 +1,45 @@
+﻿$name=finalap3
+$version=2
+$default=005
+//$songmax=259
+$main
+
+#005 INTRODUCTION (ATTRACT DEMO)
+#001 AROUND THE EUROPE (ENTRY)
+#003 BATTLE IS OVER (ENDING 1)
+#004 AFTER (ENDING 2)
+//#000 DRIVERS (UNUSED)
+
+#002 AROUND THE EUROPE #2 (ENTRY #2)
+#256 SPEAKER CHECK
+
+// 「AROUND *THE* EUROPE」は原文ママ
+-----------------------------------------
+ [S.E.]
+
+#015 [Voice] England
+#016 [Voice] France
+#017 [Voice] San Marino
+#018 [Voice] Spain
+#019 [Voice] Go!
+#020 [Voice] 5 Laps to go
+#021 [Voice] 4 Laps to go
+#022 [Voice] 3 Laps to go
+#023 [Voice] 2 Laps to go
+#024 [Voice] Final Lap!
+#025 [Voice] Finish!
+#026 [Voice] Congratulations
+
+#000 [S.E.] Engine Sound <time="0:05">
+#257 [S.E.] Time tones
+#258 [S.E.] Extended
+#259 Start
+
+  ■出典
+  NAMCO VIDEO GRAFFITI Vol.8
+  VICTOR ENTERTAINMENT  VICL-8074  1993.04.21
+
+  ■作曲
+  福澤 正洋 (Charly)
+
+$end

@@ -1,0 +1,142 @@
+﻿$name=nbajamte
+$version=2
+$default=012
+$main
+
+#012 Attract Mode
+#164 [SFX] Coin <time="2.5">
+#182 [Voice] Show Time ! <time="2.5">
+#001 Intro / Team Select
+#002 1st Quarter
+#010 End of the 1st / 3rd Quarter
+#006 2nd Quarter
+#004 End of the 2nd Quarter
+#007 3rd Quarter
+#174 Score <time="4.4">
+#175 Score <time="4">
+#008 4th Quarter
+#003 Win / Final Game Stats
+#009 Game Over
+
+#013 Unused 1
+#011 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#192 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#016 [Voice] <time="3">
+#017 [Voice] <time="3">
+#018 [Voice] <time="3">
+#021 [Voice] <time="3">
+#033 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#037 [Voice] 
+#038 [Voice] 
+#061 [Voice] 
+#075 [Voice] 
+#079 [Voice] 
+#081 [Voice] 
+#088 [Voice] 
+#090 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#224 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+
+// List contribution by ZEK.
+// English list QC, fix and update by Fuj
+$end

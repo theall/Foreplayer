@@ -1,0 +1,137 @@
+﻿$name=alpinerd
+$version=2
+$default=124
+$main
+
+#124 Opening Attract (Static Version) <time="0:15.5">
+#009 [SFX] <time="1.9">
+#011 Title Call
+#140 Opening Attract (Dynamic Version) <time="20">
+#009 [SFX] <time="1.9">
+#011 Title Call
+#096 Over the View
+#108 Endless Season
+#121 Give It Together
+#099 Alpine Wind (Theme Of Alpine Racer)
+#105 Extreme Slope
+#118 Never Break Away
+#112 Invisible Destination
+#115 Jingle of Time Out
+#102 Jingle of Goal
+#133 Presentation Ceremony (w/o intro)
+#137 Replay
+#128 Snowbound Landscape (Alpine Racer Ending Theme)
+
+#001 Sound Test
+
+-------------------------------------------------
+  [Voice & SFX]
+
+#003 [SFX] <time="5">
+#004 [SFX] 
+#006 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [Voice] Alpine Racer
+#011 [Voice] Alpine Racer
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#016 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#021 [SFX] 
+#023 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+//#032 [SFX] <time="5">
+//#034 [SFX] <time="20">
+//#036 [SFX] <time="5">
+//#037 [SFX] <time="5">
+//#038 [SFX] <time="5">
+//#040 [SFX] <time="5">
+//#041 [SFX] <time="5">
+//#042 [SFX] <time="5">
+//#043 [SFX] <time="5">
+#044 [SFX] <time="6">
+#048 [SFX] 
+#049 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#058 [SFX] 
+#059 [SFX] <time="7">
+#061 [SFX] <time="6">
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] <time="5">
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] <time="5">
+#081 [SFX] <time="5">
+#082 [SFX] <time="5">
+#083 [SFX] <time="5">
+#084 [SFX] <time="5">
+#085 [SFX] <time="5">
+#086 [SFX] <time="5">
+
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#171 [Voice] 
+
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+
+  [Source]
+  Alpine Racer / Namco Game Sound Express Vol.25
+  Victor Entertainment  VICL-15049  Nov 22, 1995
+
+  [Sound Composer / Adapter]
+  Takayuki Ishikawa
+
+$end

@@ -1,0 +1,31 @@
+﻿$name=masterw
+$version=2
+$default=005
+//$songmax=020
+$main
+
+#005 COIN
+#007 脱走 (ACT.1 - RUN AWAY)
+#008 状況説明 (ACT.1)
+#009 BGM 1 (ACT.2 - BATTLE)
+#010 BOSS 1 ケルベロス (ACT.2)
+#011 BGM 2 (ACT.3 - DISTORTION, ACT.4 - WIPE OUT)
+#014 BOSS 2 アテナ (ACT.3,4)
+#013 BGM 3 (ACT.5-1 - CRY)
+#015 BGM 4 (ACT.5-2, ACT.6 - IMPLOSION)
+#016 BOSS 3 ゼウス (ACT.5,6)
+#017 N (LAST BOSS)
+#018 BAD END
+#019 ENDING (GOOD END)
+#020 NAME (NAME ENTRY)
+
+#012 BOSS ポセイドン (Unused)
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  TAITO DJ STATION -G.S.M. TAITO 5-
+  PONY CANYON / SCITRON  PCCB-00037  1990.08.21
+
+$end

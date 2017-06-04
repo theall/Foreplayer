@@ -1,0 +1,107 @@
+﻿$name=bodyslam
+$version=2
+$default=136
+$main
+
+#001 [Voice] 17 <time="2">
+#136 Credit Inserted <time="2.5">
+#162 Team Select <time="34">
+#167 [SFX] Gong <time="2.7">
+#135 Round 1
+#158 Round 2
+#159 Round 3
+#160 Game Over <time="8">
+#166 Name Entry <time="9">
+
+#163 Team Select (Long Ver)
+#161 Unused <time="13">
+
+---------------------------------------------------
+ [SFX]
+
+#136 [SFX] Credit <time="3">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="3">
+#140 [SFX] <time="3">
+#141 [SFX] <time="3">
+#142 [SFX] <time="3"> 
+#143 [SFX] <time="3">
+#144 [SFX] <time="5">
+#146 [SFX] <time="3"> 
+#147 [SFX] <time="3">
+#148 [SFX] <time="3"> 
+#149 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="3">
+#152 [SFX] <time="3"> 
+#153 [SFX] <time="3"> 
+#154 [SFX] <time="3"> 
+#155 [SFX] <time="3"> 
+#156 [SFX] <time="3">
+#157 [SFX] <time="3"> 
+#167 [SFX] <time="3"> 
+#168 [SFX] <time="3"> 
+#008 [SFX] <time="6">
+#031 [SFX] <time="6">
+
+---------------------------------------------------
+ [Voice]
+
+#032 [Voice]  <time="2">
+#010 [Voice]  <time="3">
+#012 [Voice]  <time="3">
+#013 [Voice]  <time="3">
+#018 [Voice]  <time="3">
+#019 [Voice]  <time="3">
+#020 [Voice]  <time="2">
+#021 [Voice]  <time="2">
+#025 [Voice]  <time="3">
+#026 [Voice]  <time="3">
+#034 [Voice]  <time="3"> 
+#035 [Voice]  <time="3">
+#039 [Voice]  <time="2.5">
+#049 [Voice]  <time="2.5">
+#050 [Voice]  <time="2.5">
+#051 [Voice]  <time="2.5">
+#052 [Voice]  <time="2.5">
+#053 [Voice]  <time="2.5">
+#054 [Voice]  <time="2.5">
+#005 [Voice] 1 <time="1.5">
+#006 [Voice] 2 <time="1.5">
+#007 [Voice] 3 <time="1.5">
+#164 [Voice]  <time="5">
+#165 [Voice]  <time="5">
+#014 [Voice] 1 <time="1.5">
+#015 [Voice] 2 <time="1.5">
+#016 [Voice] 3 <time="1.5">
+#022 [Voice] 4 <time="1.5">
+#023 [Voice] 5 <time="1.5">
+#009 [Voice] 6 <time="1.5">
+#024 [Voice] 7 <time="1.5">
+#017 [Voice] 8 <time="1.5">
+#041 [Voice] 9 <time="1.5">
+#042 [Voice] 10 <time="1.8">
+#043 [Voice] 11 <time="1.8">
+#044 [Voice] 12 <time="1.8">
+#045 [Voice] 13 <time="1.8">
+#046 [Voice] 14 <time="1.8">
+#047 [Voice] 15 <time="1.8">
+#048 [Voice] 16 <time="1.8">
+#001 [Voice] 17 <time="1.8">
+#002 [Voice] 18 <time="1.8">
+#003 [Voice] 19 <time="1.8">
+#004 [Voice] 20 <time="1.8">
+#011 [Voice] <time="2">
+
+---------------------------------------------------
+
+#129 [FM] High Tom <time="3">
+#130 [FM] Mid Tom <time="3">
+#131 [FM] Low Tom <time="3">
+#132 [FM] Snare Drum <time="3">
+#133 [FM] <time="3">
+#134 [FM] Bass Drum <time="3">
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,59 @@
+﻿$name=daytonau
+$version=2
+$default=008
+$main
+
+#008 Let's Go Away (Advertisement) (アドヴァタイズ)
+#043 Awaiting Other Challengers
+#001 Start Your Engines (セレクト)
+#007 The King of Speed (初級コース)
+#004 Let's Go Away (中級コース)
+#009 Sky High (上級コース)
+#014 Pounding Pavement (エキストラソング)
+#006 Breakdown (初級ゴール)
+#003 Bitchin' (中級ゴール)
+#010 Check It Out! (上級ゴール)
+#017 Sweat (エキストラゴール)
+#012 Rolling Start (初級エンディング)
+#011 Dreaming of DAYTONA USA (中級エンディング)
+#013 Could You Fly? (上級エンディング)
+#018 Pounding Pavement (reprise) (エキストラエンディング)
+#002 G.A.M.E.O.V.E.R (ゲームオーバー)
+#005 David Goes to Victory Lane (ネームエントリー)
+
+#016 A.B (ネームエントリー おまけ)
+#019 EXN (ネームエントリー おまけ)
+#020 G.F (ネームエントリー おまけ)
+#021 GLC (ネームエントリー おまけ)
+#022 GPR (ネームエントリー おまけ)
+#023 H.O (ネームエントリー おまけ)
+#024 ORS (ネームエントリー おまけ)
+#025 O.R (ネームエントリー おまけ)
+#026 P.D (ネームエントリー おまけ)
+#027 R.M (ネームエントリー おまけ)
+#028 S.C (ネームエントリー おまけ)
+#029 S.F (ネームエントリー おまけ)
+#030 S.H (ネームエントリー おまけ)
+#032 SMG (ネームエントリー おまけ)
+#033 TOR (ネームエントリー おまけ)
+#034 V.F (ネームエントリー おまけ)
+#035 V.R (ネームエントリー おまけ)
+#036 SHO (ネームエントリー おまけ)
+#037 VMO (ネームエントリー おまけ)
+#039 E.R (ネームエントリー おまけ)
+#040 T.B (ネームエントリー おまけ)
+#041 QTT (ネームエントリー おまけ)
+#042 SDI (ネームエントリー おまけ)
+#038 F.Z (ネームエントリー おまけ, CD未収録)
+#043 CD未収録曲 2
+#044 CD未収録曲 3
+#045 CD未収録曲 4
+#046 CD未収録曲 5
+#047 CD未収録曲 6
+
+  ■出典
+  DAYTONA USA / B-univ
+  TOSHIBA EMI  TYCY-5392  1994.05.25
+
+// List adjustment by Toby
+$end

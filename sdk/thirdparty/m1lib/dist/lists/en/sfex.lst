@@ -1,0 +1,40 @@
+﻿$name=sfex
+$version=2
+$default=016
+$fixed_volume=351
+$main
+
+#016 QSound Logo
+
+#001 Street Fighter EX
+#017 Character Select
+#002 Rising Dragoon
+#003 Guardian of Light
+#004 Pyrrhic Song
+#005 Cold Pipe
+#006 Strange Sunset
+#007 Sakura in Full Bloom
+#008 Under Tube
+#009 Arabessque
+#010 Garnet Sky
+#011 Amusementive Crime
+#012 Irreconcilably
+#013 Stronger
+#014 God Hands
+#018 New Challenger
+#019 Stage Clear
+#022 Credits
+#021 Continue
+#020 Game Over
+#015 ???
+
+  [Source]
+  Street Fighter EX / Arika Capcom
+  Pony Canyon / Scitron  PCCB-00241  Feb 21, 1997
+
+  [Sound Composer]
+  Takayuki Aihara: #01, #02, #09, #11, #12, #14, #19, #20
+  Ayako Sasou: #03, #05, #06, #10, #17, #18, #22
+  Shinji Hosoe: #04, #07, #08, #13, #21
+
+$end

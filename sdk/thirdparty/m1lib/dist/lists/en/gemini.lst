@@ -1,0 +1,27 @@
+﻿$name=gemini
+$version=2
+$default=001
+//$songmax=053
+$fixed_volume=127
+$main
+
+#001 Stage 1 <time="1:58">
+#008 Stage 1 Boss
+#002 Stage 2 <time="1:40">
+#009 Stage 2 Boss
+#003 Stage 3 <time="2:55">
+#004 Stage 4 <time="2:40">
+#010 Stage 4 Boss
+#005 Stage 5 <time="1:06">
+#011 Stage 5 Boss
+#006 Stage 6 <time="3:08">
+#012 Stage 6 Boss
+#007 Stage 7 <time="3:30">
+#013 Stage 7 Boss
+#014 Stage Clear 1
+#015 Stage Clear 2
+#052 Name Entry
+#053 Ending - Credits Roll
+
+// List Contribution by Watabou@Chourou
+$end

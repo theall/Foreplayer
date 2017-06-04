@@ -1,0 +1,40 @@
+﻿$name=dangseed
+$version=2
+$default=$100
+$fixed_volume=184
+$main
+
+$100 COIN
+$0f DEPARTURE
+$02 1ST TUBE (Stage 1)
+$09 TRIPLE-EYE (Boss 1)
+$03 2ND TUBE (Stage 2)
+$0d STRIKE-ANTS (Boss 2)
+$04 3RD TUBE (Stage 3)
+$0a ROLLER-SNAIL (Boss 3)
+$05 4TH TUBE (Stage 4)
+$0c HUNTER-MOTH (Boss 4)
+$00 UNITE (Breakaway from the surface of the moon)
+$01 MARS (Stage 5)
+$0b MULTI-SQUID (Boss 5)
+$12 JUPITER (Stage 6)
+$10 SHARK-MOUTH (Boss 6)
+$08 URANUS (Stage 7)
+$11 TWIN-CLAW (Boss 7)
+$00 MOTHER SHIP
+$14 DANGER-SEED (Last Boss)
+$00 ENDING
+$0e GAME OVER
+$06 NAME ENTRY
+$07 COUNT DOWN
+
+$13 Speaker Check
+
+  [Source]
+  Final Lap 2 -G.S.M. Namco 3-
+  Pony Canyon / Scitron   PCCB-00040  Sep 21, 1990
+
+  [Sound Composer]
+  NAUN
+
+$end

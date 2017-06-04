@@ -1,0 +1,67 @@
+﻿$name=tmnt2
+$version=2
+$default=63
+$fixed_volume=121
+$main
+
+#063 Theme from "Pizza Power"
+
+	Growing up in a glass bowl
+	With chameleons, lizards and tadpoles
+	It hardly enters your mind
+	That there's something better than this
+	A lettuce leaf and a carrot
+	Maybe a seed from the parrot
+	Believe me when I tell you
+	The word gourmet just don't exist
+
+	But pizza power
+	A flying saucer food delight
+	Pizza power
+	That's what makes us feel alright 
+
+#153 Select
+#143 Bad News
+#128 Turtle Swing (Scene 1)
+#129 Alleycat Blues (Scene 2)
+#130 Sewer Surfin' (Scene 3)
+#140 Demonstration
+#131 Prehistoric Turtlesaurus (B.C. 250000000)
+#132 Skull and Crossbones (A.D. 1539)
+#133 Bury My Shell at Wounded Knee (A.D. 1885)
+#134 Night Riders (A.D. 2020)
+#135 Star Base (A.D. 2100)
+#136 Final Shell Shock (A.D. 1991 - Technodrome) - intro <time="8">
+//#149 same above
+#150 Final Shell Shock (A.D. 1991 - Technodrome)
+#139 Clear
+//#138 Clear
+#147 Game Over
+#146 Continue
+#137 Battle (Boss)
+#144 Good News
+#145 Credits
+#142 Name Entry
+#141 Warp
+
+#151 Unused?
+#152 Sound Test
+
+-----------------------------------------
+
+#160 [Voice] Pizzaaa power!
+#161 [Voice] Pizza time.
+#162 [Voice] Oh, shell-shock.
+#163 [Voice]
+#164 [Voice]
+
+ Voices to #207
+
+  [Sources]
+  Konami All Stars 1993
+  King Records  KICA-9016-9018  Dec 21, 1992
+
+  SNES T.M.N.T: Turtles in Time
+  Sound Test Mode
+
+$end

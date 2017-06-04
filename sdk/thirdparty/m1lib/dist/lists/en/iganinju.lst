@@ -1,0 +1,58 @@
+﻿$name=iganinju
+$version=2
+$default=004
+$fixed_volume=130
+$main
+
+#004 Title Demo / Round 3 (Greece)
+#083 Credit Inserted <time="3">
+#001 Map Preview
+#002 Round 1 (America)
+#003 Lao-Tse (Weapon Power Up)
+#008 Round Clear
+#005 Round 2 (South Africa)
+#007 Round 2 Boss (Totem Pole)
+#004 Round 3 (Greece) / Title Demo
+#012 Round 3 Boss (Centaur)
+#011 Round 4 (India)
+#006 Round 4 BosS (Asura)
+#013 Round 5 (Japan 1)
+#009 Round 6 (Japan 2)
+#016 Last Boss
+#015 Ending
+#010 Game Over / Name Entry
+
+#014 ???
+#017 ???
+
+-----------------------------------------------------
+  [SFX]
+
+#048 [SFX] Katana
+#049 [SFX]  
+#050 [SFX] Kusari-gama 
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX] Credit Inserted
+#084 [SFX]
+#085 [SFX] 
+#086 [SFX]
+#087 [SFX]
+#088 [SFX] Kunai
+#089 [SFX]
+
+-----------------------------------------------------
+  [Voice]
+
+#067 [Voice] Ninjutsu
+#068 [Voice] Kazan Damaged
+#069 [Voice] Kazan Killed
+#072 [Voice] Enemy Killed
+
+// List contribution by R
+$end

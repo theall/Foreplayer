@@ -1,0 +1,26 @@
+$name=segawski
+$version=2
+$default=9
+$main
+
+#009 Advertising BGM A <time="1:03">
+#003 Advertising BGM B
+#004 Select
+#000 Beginner Course
+#001 Advanced Course
+#013 Expert Course
+#005 Expert Course (Rejected Version)
+#002 Time Up
+#006 Bad Goal
+#007 Good Goal
+#008 Continue
+#012 Ending
+#010 Game Over
+#011 Name Entry
+
+  [Source]
+  Motor Raid & Sega Water Ski
+  Marvelous Entertainment (MMV)  MJCA-00010  Nov 17, 1997
+
+// List by Fujix
+$end

@@ -1,0 +1,102 @@
+﻿$name=mslug3
+$version=2
+$default=002
+$songmax=255
+$main
+
+#002 Neo Geo Logo
+#000 [Command] Bank Switcher (Music) <time="1">
+#033 The Military System (How to Play, All Missions Complete) <time="57">
+#035 Barraks (Player Select) <time="44">
+#037 Fang in the Blue Sea (Dr. Morrow's Island) (Mission 1-1) <time="2:17">
+#038 Marine Diver (Mission 1-2) <time="1:43">
+#039 The Unknown World (Mission 1-3, 4-5, 5-5) <time="2:22">
+#036 Steel Beast 6Beets (Boss Theme A) <time="2:15">
+#040 Midnight Divagation (Mission 2-1 )<time="2:20">
+#041 Devil's Snowhole (Mission 2-2) <time="1:55">
+#051 Metamorphosis (Boss Theme B) <time="1:54">
+#053 Shallow Sea (Mission 3-1) <time="1:39">
+#042 Under the Hard Sea (Mission 3-3) <time="2:34">
+#047 Assault Theme (Mission 5-2) <time="2:33">
+#055 The Secret Factory (Mission 3-2) <time="2:19">
+#043 Desert (Mission 4-1) <time="1:48">
+#044 Pyramid (Mission 4-2) <time="1:31">
+#049 The Cenotaph (Mission 4-3) <time="2:00">
+#054 Japanese Soldiers (Mission 4-4) <time="1:52">
+#045 To the Sky (Mission 5-1)  <time="2:10">
+#003 [Command: Sound Stop] <time="0.5">
+#030 [Command: Bank Switcher (SE & Voice) ] <time="0.5">
+#206 The Kidnapping (Mission 5, Intermission) <time="34">
+#003 [Command: Sound Stop] <time="0.5">
+#000 [Command] Bank Switcher (Music) <time="0.5">
+#046 Into Space (Mission 5-3) <time="2:25">
+#050 Kiss in the Dark (Mission 5-4) <time="1:40">
+#052 First Contact (Mission 5-6) <time="1:49">
+#056 Bioinformatics (Mission 5-7) <time="2:08">
+#057 Escape (Mission 5-8) <time="2:15">
+#048 Final Attack (Final Boss) <time="2:31">
+#058 End Title Again (Ending) <time="2:29">
+#034 Grave Stone (Game Over) <time="10">
+#032 Carry Out (Mission Complete) <time="8">
+
+--------------------------------------------------
+
+#030 [Command: Bank Switcher (SFX & Voice) ] <time="1">
+#036 [Voice] Okay
+#044 [Voice] Flame shot
+#045 [Voice] Heavy machine gun
+#046 [Voice] Rocket launcher
+#047 [Voice] Shot gun
+#048 [Voice] Lazer gun
+#049 [Voice] Mission 1 start
+#050 [Voice] Mission 2 start
+#051 [Voice] Mission 3 start
+#052 [Voice] Mission 4 start
+#053 [Voice] Mission 5 start
+#055 [Voice] Mission complete
+#057 [Voice] ha! (Aikawa Rumi)
+#058 [Voice] Thank you. (Priosoner)
+#059 [Voice] hoi (Fighting priosoner)
+#060 [Voice] C'mon, boy
+#061 [Voice] Go home to your mammy
+#062 [Voice] ??
+#063 [Voice] aahahahaha
+#064 [Voice] See you in hell
+#065 [Voice] hahahaha (Morden)
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#069 [Voice] cheers
+#070 [Voice] belch
+#073 [Voice] Marco
+#074 [Voice] Tarma
+#075 [Voice] Fio
+#076 [Voice] Eri
+#078 [Voice]
+#080 [Voice] You're great
+#081 [Voice] Mission all over
+#083 [Voice] Oh, big
+#084 [Voice] Armor piercer
+#085 [Voice] Stone
+#086 [Voice] Fire bomb
+#087 [Voice] Grenade
+#088 [Voice] Enemy chaser
+#089 [Voice] Super grenade
+#090 [Voice] Iron lizard
+#091 [Voice] Drop shot
+#092 [Voice] Mobile satellite
+#093 [Voice] Thunder cloud
+#098 [Voice] Bow
+#099 [Voice] Ki-yi
+
+#000 [Command: Bank Switcher (Music) ]<time="1">
+
+  [Source]
+  Metal Slug 3 Original Soundtrack
+  Noisefactory  NF-0002  Jan 31, 2003
+
+  [Sound Composers]
+  HIYA!, Bero_oh, HORI_HORI, Q_JIROU, Maitaro
+
+// Base list contributed by Tekkou
+$end

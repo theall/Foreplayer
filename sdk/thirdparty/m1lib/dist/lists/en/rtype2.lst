@@ -1,0 +1,106 @@
+﻿$name=rtype2
+$version=2
+$default=038
+$songmax=157
+$main
+
+#038 Coin <time="2">
+#001 R-9 to the Front (Start) <time="6.45">
+#002 Counter Attack (Stage 1) <time="26">
+#004 Boss Theme <time="42">
+#012 Stage Clear <time="9">
+#009 Water Splash (Stage 2) <time="1:33">
+#010 Metal Crusher (Stage 3) <time="35">
+#008 Slip Slidin' Away (Stage 4) <time="25">
+#003 Dead End (Stage 5) <time="40">
+#011 Baiyo (Stage 6) <time="34">
+#000 Escape from Empire (All Clear) <time="18">
+#005 10 Seconds Blast (Continue) <time="10">
+#014 Nameless Soldiers (Name Entry) <time="40">
+#013 Game Over <time="6">
+
+#006 Unused 1 <time="12">
+#007 Unused 2 <time="30">
+#015 Unused 3 <time="31">
+
+-----------------------------------------
+  [SFX]
+
+#040 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#048 [SFX]
+#049 [SFX]
+#052 [SFX]
+#053 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#059 [SFX]
+#061 [SFX]
+#063 [SFX]
+#064 [SFX]
+#066 [SFX]
+#068 [SFX]
+#069 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#096 [SFX]
+#097 [SFX]
+#099 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#116 [SFX]
+#117 [SFX]
+#123 [SFX]
+#124 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#137 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#157 [SFX]
+
+  [Source]
+  R-Type II -G.S.M. Irem 2-
+  Pony Canyon / Scitron  PCCB-00017  Jan 21, 1990
+
+// English list adjustment by bcass
+// Updated by CrashTest
+$end

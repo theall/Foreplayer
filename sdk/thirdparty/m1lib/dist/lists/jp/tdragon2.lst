@@ -1,0 +1,92 @@
+﻿$name=tdragon2
+$version=2
+$default=176
+$main
+
+#176 [S.E.] クレジット
+#002 Ready For The Battle (コイン投入後)
+#003 Fly To Live I (1面、8面、スタッフロール)
+#005 Live To Fly I (2面、6面)
+#007 Impatience #3 (ボス)
+#017 Fly To Live II (3面)
+#016 Live To Fly II (4面)
+#004 Fly To Live メロディー無し (5面)
+#006 Live To Fly メロディー無し (7面)
+#009 Marginal Attack (最終ボス)
+#011 Epitaph (エンディング)
+#012 Day Dream (ネームエントリー)
+#186 Over (ゲームオーバー)
+
+------------------------------------------------------
+  [S.E.]
+
+#128 [S.E.] 
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] 
+#185 [S.E.] 
+
+  [Voice]
+
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+
+  ■作曲
+  並木 学
+
+// リスト作成: ゴルゴル
+$end

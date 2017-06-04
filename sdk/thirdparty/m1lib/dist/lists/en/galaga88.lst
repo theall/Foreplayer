@@ -1,0 +1,70 @@
+﻿$name=galaga88
+$version=2
+$default=02
+$fixed_volume=104
+$main
+
+#002 Opening Theme
+#024 Scroll Stage BGM
+//#025 Warp Out / Bonus Stage
+#023 Bonus Stage Start
+#007 Galactic Dancing #1 (Waltz)
+#008 Galactic Dancing #2 (Tango)
+#003 Galactic Dancing #3 (Big Band Jazz)
+#014 Galactic Dancing #4 (Salsa)
+#028 Galactic Dancing #5 (March)
+#017 Bonus Stage Clear (Perfect)
+//#032 Warp / Ending
+#033 Ending
+#031 Name Entry
+#006 Game Over
+#001 Speaker Check
+#016 Fighter Captured
+
+
+#010 [SFX] Warp 1
+#011 [SFX] Warp 2
+#012 [SFX] Warp 3
+#013 [SFX] Warp 4
+#018 [SFX] Unite
+#019 [SFX] Regain, Approaching
+#020 [SFX] Regain, Spinning
+#021 [SFX] 
+#022 [SFX] 
+#026 [SFX]
+#027 [SFX]
+#034 [SFX]
+#256 [SFX] Credit Inserted
+#257 [SFX]
+#258 [SFX]
+#259 [SFX]
+#260 [SFX]
+#261 [SFX]
+#262 [SFX]
+#263 [SFX] Extend
+#264 [SFX]
+#265 [SFX] Capturing Beam 1
+#266 [SFX] Capturing Beam 2
+#267 [SFX]
+#268 [SFX]
+#269 [SFX]
+#270 [SFX]
+#271 [SFX]
+#272 [SFX]
+#273 [SFX] Counting Bonus Points
+#274 [SFX] 
+#275 [SFX] Enemy splits
+#276 [SFX] Enemy comes flying (L-R)
+#277 [SFX] Enemy comes flying (R-L)
+#278 [SFX]
+#279 [SFX]
+#280 [SFX]
+#281 [SFX]
+
+  [Sound Composer]
+  Hiroyuki Kawada
+
+// Original list from Amuse
+// Updated and English list translation by Fujix
+// Updated by KC
+$end

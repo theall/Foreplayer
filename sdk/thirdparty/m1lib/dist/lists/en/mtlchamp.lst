@@ -1,0 +1,136 @@
+﻿$name=mtlchamp
+$version=2
+$default=218
+$fixed_volume=344
+$main
+
+#218 Theme of Martial Champion (Title Screen)
+#222 Braves (Player Select)
+#234 Dora Ippatsu ! (Tournament)
+#220 Fight ! (vs)
+#212 Kinkakuji Temple at Dusk (Kinkakuji Temple)
+#216 At the White House (The White House)
+#210 Kabuki Frenzy (Kabuki)
+#235 Spirit of Africa (Africa)
+#215 Paris in the Dark (Paris)
+#214 Arabic Wind (Mosque)
+#213 Battle Royal on the Ship (Aircraft Carrier)
+#211 Scenic Beauty (Guilin)
+#208 Legendary Ancient Site (China, Underground Site)
+#209 Lofty Pyramids (Egypt)
+#217 The Hottest Fight (Final Round)
+#224 Challenger Appeared !
+#238 Rival of Fate (Boss)
+#221 Finish ! (Result)
+
+#192 Jin - Ending
+#193 Racheal - Ending
+#194 Zen - Ending
+#198 Mahambah - Ending
+#197 Goldor - Ending
+#199 Avu - Ending
+#201 Bobby - Ending
+#195 Hoi - Ending
+#196 Chaos - Ending
+#200 TiTi - Ending
+
+#219 Practice Makes Perfect ! (Continue)
+#223 The End (Game Over)
+#202 Victorious Forever (Credits Roll)
+
+#229 Kinkakuji Temple at Dusk (Kinkakuji Temple) w/o intro
+#233 At the White House (The White House) w/o intro
+#227 Kabuki Frenzy (Kabuki) w/o intro
+#236 Spirit of Africa (Africa) w/o intro
+#232 Paris in the Dark (Paris) w/o intro
+#231 Arabic Wind (Mosque) w/o intro
+#230 Battle Royal on the Ship (Aircraft Carrier) w/o intro
+#228 Scenic Beauty (Guilin) w/o intro
+#225 Legendary Ancient Site (China, Underground Site) w/o intro
+#226 Lofty Pyramids (Egypt) w/o intro
+#203 Rival of Fate (Boss) w/o intro
+
+#237 Speaker Test (not on CD)
+
+
+#258 [SFX] 
+#259 [SFX] 
+#260 [SFX] 
+#262 [SFX] 
+#263 [SFX] 
+#264 [SFX] 
+#320 [SFX] 
+#321 [SFX] 
+#322 [SFX] 
+#323 [SFX] 
+#324 [SFX] 
+#325 [SFX] 
+#326 [SFX] 
+#327 [SFX] 
+#328 [SFX] 
+#329 [SFX] 
+#330 [SFX] 
+#331 [SFX] 
+#332 [SFX] 
+#333 [SFX] 
+#334 [SFX] 
+#335 [SFX] 
+#336 [SFX] 
+#337 [SFX] 
+#338 [SFX] 
+#339 [SFX] 
+#340 [SFX] 
+#351 [SFX] 
+#352 [SFX] 
+#353 [SFX] 
+#354 [SFX] 
+#355 [SFX] 
+#356 [SFX] 
+#357 [SFX] 
+#358 [SFX] 
+#359 [SFX] 
+#360 [SFX] 
+#361 [SFX] 
+#362 [SFX] 
+#363 [SFX] 
+
+
+#288 [Voice] Round One
+#289 [Voice] Round Two
+#290 [Voice] Round Three
+#291 [Voice] Final Round
+#292 [Voice] Fight
+#293 [Voice] Draw
+#294 [Voice] Double Knock Out 
+#295 [Voice] Match One
+#296 [Voice] Win
+#297 [Voice] The Semi-Final
+#298 [Voice] The Final
+#300 [Voice] Here Comes a New Challenger
+#301 [Voice] Another Challenger Broke into the Semi-Final !
+#302 [Voice] Another Challenger Broke into the Final !
+#303 [Voice] Martial Champion
+#304 [Voice] Zero
+#305 [Voice] One
+#306 [Voice] Two
+#307 [Voice] Three
+#308 [Voice] Four
+#309 [Voice] Five
+#310 [Voice] Six
+#311 [Voice] Seven
+#312 [Voice] Eight
+#313 [Voice] Nine
+
+  [Source]
+  Konami Amusement Sounds '93 - Autumn
+  King Records  KICA-7620, 7621  Oct 21, 1993
+
+  [Sound Composer]
+  Deep Sleeve Sugisawa
+
+  [Trivia]
+  Codename was Yie Ar Kung-Fu II
+
+// List contribution by R
+// English list by Fuji
+$end

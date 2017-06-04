@@ -1,0 +1,37 @@
+﻿$name=kickridr
+$version=2
+$default=012
+$main
+
+#012 [SFX] Ready <time="4">
+#013 [SFX] Go ! <time="3">
+#025 Theme 1
+#015 Goal
+#027 Passng Bonus <time="27.7">
+#029 Game Over <time="4">
+#028 Ranking Table
+
+---------------------------------------------------
+ [SFX]
+
+#001 [SFX] Engine 1 <time="3">
+#002 [SFX] Engine 2 <time="4">
+#003 [SFX] Engine 3 <time="3">
+#004 [SFX] Engine 4 <time="4">
+#006 [SFX] Bomb Car <time="3">
+#007 [SFX] Drum Can Car <time="3">
+#008 [SFX] Bomb
+#010 [SFX] 
+#011 [SFX] Crash
+#012 [SFX] Get Set
+#013 [SFX] Signal
+#014 [SFX] Time
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#021 [SFX] <time="3">
+#029 [SFX] Game Over
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+$end

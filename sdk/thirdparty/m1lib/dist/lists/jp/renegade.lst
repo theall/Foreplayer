@@ -1,0 +1,81 @@
+﻿$name=renegade
+$version=2
+$default=176
+$main
+
+#176 [Voice] "Good luck, kid!" (Credit)
+#135 Showdown
+#129 Mission 1
+#136 Mission Complete
+#130 Mission 2 Part 1
+#131 Mission 2 Part 2
+#132 Mission 3
+#133 Mission 4 Part 1
+#141 Mission 4 Part 2
+#139 Ending
+#137 Defeat
+#140 Game Over
+#134 Name Entry
+
+-----------------------------------------------------------
+ [Voice]  ※海外版
+
+#176 [Voice] Good luck, kid! (Credit)
+#183 [Voice] Get lost, punk! (1面ボス Jack)
+#185 [Voice] Beat it, scum! (2面ボス Joel)
+#181 [Voice] Giving up already? (3面ボス Kim)
+#182 [Voice] Get outta town! (4面ボス Sabu)
+#180 [Voice] Hummn! (主人公 Mr. K)
+#184 [Voice] Aahhh... (女)
+#187 [Voice] Wahhh... (男)
+
+-----------------------------------------------------------
+ [S.E.]
+
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+#159 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#166 [S.E.]
+#167 [S.E.]
+#168 [S.E.]
+#169 [S.E.]
+#170 [S.E.]
+#171 [S.E.]
+#172 [S.E.]
+#173 [S.E.]
+#174 [S.E.]
+#175 [S.E.]
+#177 [S.E.] バイク1
+#178 [S.E.] バイク2
+#179 [S.E.] 水しぶき
+#186 [S.E.] バイク3
+
+  ■出典
+  熱血硬派くにおくん サウンド・ストーリー
+  アポロン  KHY-1013  1987.03.05
+
+  くにおくん サウンド・コレクション～ダウンタウン熱血物語、他
+  アポロン  C228-5008  1989.06.05
+
+  ■作曲
+  澤 和雄
+
+// List contributed by NK, 斎藤
+// Updated by Fuj
+$end

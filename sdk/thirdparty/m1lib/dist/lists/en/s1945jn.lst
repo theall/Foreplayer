@@ -1,0 +1,27 @@
+﻿$name=s1945jn
+$version=2
+$default=048
+$songmax=065
+$main
+
+#048 In the Name of Strikers (Title)
+#045 Strikers Scramble (Fighter Selection -YM2610 version-)
+#033 Rising Sun (Japanese Stage)
+#042 Devil in the Steel (Boss 1)
+#046 Mission Over (Stage Clear)
+#034 Shadow of Reich (German Stage)
+#035 Twin Mustang (American Stage -YM2610 version-)
+#036 White Hell (Russian Stage)
+#043 Deadline (Boss 2)
+#037 Triebflugel (Base -YM2610 version-)
+#038 Stratesphere Flight (Space)
+#039 Strange Moon (Moon)
+#040 Decisive Battle (Final Stage)
+#044 Caught in Fire (Final Boss)
+#047 Battle Report (Ranking)
+
+  [Source]
+  Strikers 1945 II, Strikers 1945
+  Pony Canyon / Scitron   SGCD-0001  Dec 20, 1997
+
+$end

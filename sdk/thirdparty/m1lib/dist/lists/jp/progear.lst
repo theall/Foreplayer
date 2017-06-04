@@ -1,0 +1,33 @@
+﻿$name=progear
+$version=2
+$default=014
+$songmax=256
+$fixed_volume=226
+$main
+
+#014 QSound Logo
+
+#003 子供たちの誓い (Player Select)
+#004 蒼き空へ (Stage 1)
+#005 白い惨劇 (Stage 2)
+#006 紅の帝都 (Stage 3)
+#007 琥珀色の遺跡 (Stage 4)
+#008 暗黒の城 (Stage 5)
+#002 元老院 (Boss Stage)
+#009 血塗られた成功 (Stage Clear)
+#012 老若戦争 (Last Boss Stage)
+#010 大人への階段 (Ending 1)
+#011 勇者たちに… (Ending 2)
+#013 思い出のオルゴール (Name Entry)
+
+------------------------------------------------------
+
+  ■出典
+  プロギアの嵐 オリジナル サウンドトラック
+  SULEPUTER  CPCA-1075  2003.09.26
+
+  ■作曲
+  井上 淳哉
+
+// List by tosh
+$end

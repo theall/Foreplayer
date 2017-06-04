@@ -1,0 +1,71 @@
+﻿$name=tail2nos
+$version=2
+$default=017
+$main
+
+#017 Attract Mode
+#074 [Voice] Coin
+#018 Machine & Course Select
+#019 Course Preview
+#021 Time Attack
+#020 Starting Grid
+#022 British GP 
+#007 Japanese GP
+#016 Coffee Break
+#008 U.S.A GP
+#025 Monaco GP
+#026 Finish !
+#013 Ending
+#027 Game Over
+
+#012 Unused 1
+#014 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#015 [SFX] <time="5">
+#031 [SFX] <time="5">
+#071 [SFX] 
+#072 [SFX] <time="3">
+#073 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#074 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#106 [Voice] 
+
+  [Sound Composer]
+  Naoki Itamura (Gekko Itamura)
+
+// List contribution by ZEK.
+$end

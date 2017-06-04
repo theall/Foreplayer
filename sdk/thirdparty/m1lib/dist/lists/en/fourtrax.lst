@@ -1,0 +1,48 @@
+﻿$name=fourtrax
+$version=2
+$default=$01
+//$songmax=$207
+$main
+
+$01 Credit - Awaiting Entry
+$02 Entry Closed
+$03 Finish B
+$14 Finish A (+ Name Entry)
+$0c Finish C
+
+$20 Awaiting Entry
+$2e Finish B #2
+$23 ??? 1
+$24 ??? 2
+$27 ??? 3
+$29 ??? 4
+
+$00 Speaker Test
+
+-----------------------------------------
+ [SFX]
+
+$10 [SFX]
+$11 [SFX]
+$12 [SFX]
+$13 [SFX] "Go!"
+$15 [SFX] "Congratulation"
+$16 [SFX] Cheers
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX] "Three"
+$1b [SFX] "Two"
+$1c [SFX] "One"
+$26 [SFX]
+$2d [SFX] Cheers
+//$207 [SFX]
+
+  [Source]
+  Final Lap 2 -G.S.M. Namco 3-
+  Pony Canyon / Scitron   PCCB-00040  Sep 21, 1990
+
+  [Sound Composer]
+  Junko Ozawa, Yoshie Takayanagi
+
+$end

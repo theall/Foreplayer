@@ -1,0 +1,85 @@
+﻿$name=bbmanw
+$version=2
+$default=059
+$main
+
+#059 [S.E.] CREDIT
+#011 GAME MODE SELECT <time="12">
+#060 [S.E.] NORMAL GAME
+#017 STORY DEMO 1
+#028 WORLD MAP
+#009 GAME START
+#022 AREA 1, 4
+#012 CONTINUE <time="12">
+#029 BONUS STAGE
+#010 TIME OUT !!
+#001 AREA 2, 5
+#024 BOSS BGM 1
+#015 AREA 3, 6
+#030 BOSS BGM 2
+#020 AREA CLEAR
+#019 ENDING
+#014 GAME OVER
+#013 NAME ENTRY
+
+#060 [S.E.] VS SUPER GAME
+#027 AWAITING CHALLENGER <time="6.8">
+#018 STORY DEMO 2 <time="9.3">
+#009 GAME START
+#025 BGM 1
+#008 DRAW & LOSE
+#003 BGM 2
+#007 YOU ARE THE CHAMPION !
+#026 BGM 3
+#021 CONGRATULATIONS !
+#013 NAME ENTRY
+
+---------------------------------------------------
+ [S.E.] 
+
+#059 [S.E.] CREDIT
+#060 [S.E.] 
+#061 [S.E.] 
+#069 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] <time="5">
+#117 [S.E.] 
+#118 [S.E.] 
+#119 [S.E.] 
+#120 [S.E.] 
+#121 [S.E.] 
+
+  ■作曲
+  御守 都子
+
+// List contribution by ZEK.
+$end

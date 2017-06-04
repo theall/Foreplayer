@@ -1,0 +1,44 @@
+﻿$name=dunkshot
+$version=2
+$default=154
+//$songmax=163
+$main
+
+#154 Team Select
+#159 Beat Away
+#160 Toast!
+#161 Hide & Seak
+#156 Winning Ceremony
+#162 One On One
+#163 The Fight
+#158 Winning Song
+#157 Ranking
+#155 Game Over (Not released on CD)
+
+-----------------------------------------
+  [SFX]
+
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+
+  [Source]
+  After Burner / Sega Game Music Vol.3
+  Alfa Records  28XA-109  Oct 10, 1987
+
+$end

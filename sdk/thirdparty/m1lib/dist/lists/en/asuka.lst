@@ -1,0 +1,48 @@
+﻿$name=asuka
+$version=2
+$default=019
+$main
+
+#019 Credit Inserted
+#007 Round 1 - Current City
+#015 Boss
+#006 Boss Destroyed <time="06">
+#014 Bonus Stage - Warp Space
+#011 Round 2 - Primitive Age
+#010 Round 3 - Early Egypt
+#014 Round 4 - World War II
+#007 Ending
+
+#012 Unused 1
+#013 Unused 2
+#009 Unused 3
+#008 Unused 4
+#004 Unused 5
+#005 Unused 6
+
+---------------------------------------------------
+  [SFX]
+
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+
+#016 [SFX] <time="20">
+#017 [SFX] 
+#018 [SFX] 
+
+// List contribution by ZEK.
+$end

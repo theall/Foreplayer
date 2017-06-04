@@ -1,0 +1,21 @@
+$name=halleys
+$version=2
+$default=024
+$main
+
+#024 Credit Inserted
+#004 Main Theme "Ed1986"
+#009 Middle Boss
+#006 Approaching the Comet "Contact"
+#007 Inside the Comet "Mechanical Brains"
+#008 Name Entry
+
+  [Source]
+  Taito Game Music
+  Alfa Records  28XA-110  Jan 25, 1987
+
+  [Composer]
+  Hisayoshi Ogura
+
+// List contribution by szk
+$end

@@ -1,0 +1,34 @@
+﻿$name=srally2
+$version=2
+$default=02
+$main
+
+#02 Go Go! SEGA RALLY (アドバタイズ)<time="2:00">
+#11 IGNITION '98 ...4 select (ネームエントリー～ゲームスタート)<time="1:06">
+#10 Soul On Desert (初級: DESERT ステージ)<time="2:40">
+#03 Euro Fight!! (中級: MOUNTAIN ステージ)<time="1:41">
+#05 Searchin' For My Dreams (上級: SNOWY ステージ)<time="3:10">
+#01 Go Go! SEGA RALLY &lt;Instrumental Mix&gt; (超上級: RIVIERA ステージ)<time="2:02">
+#04 Insert Jungle (ステージクリア)<time="1:09">
+#14 MNF?<time="1:37">
+#06 Night Groovin'<time="1:57">
+#07 ESTRADA NOVA<time="1:45">
+#12 IGNITION '98 ...in the groove<time="2:27">
+#08 Route246 (エンディング)<time="1:04">
+#09 Big Sur (ランキング)<time="0:33">
+
+#13 Game Over
+
+  ■出典
+  セガラリーチャンピオンシップ2 オリジナルサウンドトラック
+  Marvelous Entertainment (MMV)  MJCA-00017  1998.04.01
+
+  ■作曲
+  冬野竜彦 [prime direction] : 01, 02, 03, 04, 06, 14
+  瀬上　純 [SEGA] : 10, (11, 12 Produced & Arranged)
+  LOW DOGS [prime direction] : 05, 07
+  山本哲也 [prime direction] : 08
+  飯野賢治 [WARP] : 09
+  光吉猛修 [SEGA] : (11, 12 Composed)
+
+$end

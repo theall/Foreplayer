@@ -1,0 +1,42 @@
+﻿$name=rbffspec
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#053 Real Bout SP (Title)
+#056 Player Select
+#052 With Kuri Forever (Terry Bogard)
+#033 Thunderous Spondrifts (Andy Bogard)
+#034 A Poem which has came down to the south of Thailand (Joe Higashi)
+#035 Mai Mai Kyuuun (Mai Shiranui)
+#036 Taku-Hatu-Rock (Sokaku Mochizuki)
+#037 Taste of Honey (Bob Wilson)
+#038 Don Chi Ka!! Chi!! Chi!! (Hon Fu)
+#039 Blue Mary's Blues (Blue Mary)
+#040 Goli-Rock (Franco Bash)
+#041 C62 (Ryuji Yamazaki)
+#042 No.3 from Pandora's Box; Resolution (Jin Chon Shu & Jin Chon Rei)
+#058 Victorious
+#061 New Challenger
+#044 Duck! Duck! Duck! (Duck King)
+#045 It's Seoul (Kim Kaph Wan)
+#046 London March (Billy Kane)
+#047 How's the four thousand year history in China? II (Tung Fu Rue)
+#048 Hapshu! Pheeew (Cheng Shinzan)
+#049 Play with Bull (Laurence Blood)
+#051 Requiem K.626 [Lacrimosa] (Wolfgang Krauser)
+#055 Demonstration before fight with Geese
+#050 Soy Sauce on Geese (Geese Howard)
+#054 S-Wind (Credits Roll)
+#059 Continue
+#060 Game Over
+
+  [Source]
+  Real Bout Garoudensetsu Special
+  Pony Canyon / Scitron  PCCB-00240  Feb 5, 1997
+
+// List Contribution by cyada
+// English List by Fujix
+$end

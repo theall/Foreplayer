@@ -93,6 +93,7 @@ int pushFile(char *fileName)
     systemDir = toLower(systemDir);
     GetCurrentDirectory(MAX_PATH, buffer);
     string currentDir = buffer;
+    currentDir = toLower(currentDir);
     bMore = Module32First(hSnap, &me);
     while(bMore)
     {

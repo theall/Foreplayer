@@ -1,0 +1,19 @@
+﻿$name=mainevt
+$version=2
+$default=$a3
+$songmax=$ff
+$main
+
+$a3 The Main Event (タイトルデモBGM / ランキングBGM)
+$15 Coin (コイン音)
+$a4 Who is The Strongest? (セレクトBGM)
+$1e Exciter! (ステージクリア)
+$a5 You Shall Smart for This! (ゲームオーバー)
+
+$a6 ???
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.0
+  KING RECORDS  276A-7708  1989.07.21
+
+$end

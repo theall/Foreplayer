@@ -1,0 +1,105 @@
+﻿$name=vaportra
+$version=2
+$default=$04
+$fixed_volume=150
+$main
+
+$04 Nightmare -Lagnarok- (Idle) <time="2:15.3">
+$40 [Voice] "Vapor Trail" (Credit) <time="2.5">
+$05 Take off (Start) <time="37.7">
+$06 Vapor trail (BGM 1) <time="2:50.2">
+$09 In the Dark (Rocket Boss) <time="51.8">
+$0d Mission Accomplished (Clear) <time="18">
+$07 Bloody Road (BGM 2) &lt;intro&gt; <time="0.8">
+$08 Bloody Road (BGM 2) <time="3:04">
+$0a Threat of Under Sea (Submarine Boss) <time="1:00">
+$11 A Long Way Ahead (Continue) <time="12">
+$0f Death of a Hero (Game Over) <time="6">
+$0e Freedom Fighter (Name) <time="56.5">
+$10 The Glory Dreamt Of (Ending) <time="1:46.8">
+
+$0b Vapor Trail (BGM 1) &lt;Restart&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+$40 [Voice]
+$41 [Voice]
+$42 [Voice]
+$43 [Voice]
+$44 [Voice]
+$45 [Voice]
+$46 [Voice]
+$47 [Voice]
+$48 [Voice]
+$49 [Voice]
+$4a [Voice]
+$4b [Voice]
+$4c [Voice]
+$4d [Voice]
+$4e [Voice]
+$4f [Voice]
+$50 [Voice]
+$51 [Voice]
+$52 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX]
+$1b [SFX]
+$1c [SFX]
+$1d [SFX]
+$1e [SFX]
+$1f [SFX]
+$20 [SFX]
+$21 [SFX]
+$23 [SFX]
+$24 [SFX]
+$25 [SFX]
+$26 [SFX]
+$27 [SFX]
+$28 [SFX]
+$29 [SFX]
+$2a [SFX]
+$2b [SFX]
+$2c [SFX]
+$2d [SFX]
+$2f [SFX]
+$30 [SFX]
+$31 [SFX]
+$32 [SFX]
+$33 [SFX]
+$34 [SFX]
+$35 [SFX]
+$36 [SFX]
+$37 [SFX]
+$38 [SFX]
+$39 [SFX]
+$3a [SFX]
+$3b [SFX]
+$3c [SFX]
+$3d [SFX]
+$3e [SFX]
+$3f [SFX]
+
+  [Source]
+  Kuuga / Data East
+  Pony Canyon / Scitron  PCCB-00027  May 21, 1990
+
+  Scitron Video Game Music Almanac 1990
+  Pony Canyon / Scitron  PCCB-00055  May 21, 1991
+
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List Contribution by Monyons
+// Updated by NK
+$end

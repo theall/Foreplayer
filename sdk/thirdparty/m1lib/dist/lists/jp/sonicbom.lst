@@ -1,0 +1,22 @@
+$name=sonicbom
+$version=2
+$default=163
+$main
+
+#163 クレジット
+#167 ステージ1・4BGM
+#168 ボスBGM
+#169 ステージクリア
+#171 ステージ2・6BGM
+#170 ステージ3・5BGM
+#172 ネームレジスト
+
+  ■出典
+  SEGA ARCADE 80'S VOL.1
+  SME SCITRON  SCDC-00245  2003.2.19
+
+  ■作曲
+  林 克洋
+
+// List contribution by szk
+$end

@@ -1,0 +1,46 @@
+﻿$name=twincobr
+$version=2
+$default=024
+$songmax=024
+$fixed_volume=109
+$main
+
+#024 Credit Inserted
+#019 First Mission (Opening Theme) <time="12">
+#014 Take Off <time="5">
+#001 Look Out (Normal BGM)
+#002 Fire! (Support Heli)
+#018 Oasis (Stage Clear) <time="4.5">
+#021 I Am The Tiger (Name Entry: 1st to 3rd) <time="1:01">
+#022 Hero (Name Entry: 4th to 10th) <time="1:01">
+#023 Win (Name Entry: End) <time="3">
+#020 Close (Game Over)
+
+-------------------------------------------------------------------
+  [SFX]
+
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+
+  [Source]
+  Kyukyoku Tiger -G.S.M. Taito 2-
+  Pony Canyon / Scitron  D28B0008  Nov 21, 1988
+
+  [Music Composer]
+  Tatsuya Uemura
+
+// List by Fujix
+$end

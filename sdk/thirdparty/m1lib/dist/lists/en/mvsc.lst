@@ -1,0 +1,163 @@
+﻿$name=mvsc
+$version=2
+$default=$007
+$songmax=$45f
+$fixed_volume=293
+$main
+
+$007 QSound Logo
+
+$001 Opening
+$002 Player Select
+$004 VS.
+$00d Theme of War Machine
+$00e Theme of Captain America
+$00f Theme of Hulk
+$006 Hurry Up
+$005 Win
+$010 Theme of Wolverine
+$011 Theme of Gambit
+$013 Theme of Spider-Man
+$012 Theme of Venom
+$003 Here Comes a New Challenger
+$02f Ranking
+$01e Variable Cross
+$015 Theme of Ryu
+$016 Theme of Captain Commando
+$017 Theme of Chun-Li
+$018 Theme of Jin
+$019 Theme of Zangief
+$009 Continue
+$00a Game Over
+$01a Theme of Strider Hiryu
+$01b Theme of Morrigan
+$01c Theme of Rockman
+$014 Theme of Roll
+$02d Theme of Secret Character
+$00b Boss Introduction
+$00c Theme of Onslaught I
+$02e Theme of Onslaught II
+$020 Ending - After the Battle -
+$021 Ending - Peace -
+$022 Ending - Tension -
+$023 Ending - Grief -
+$024 Ending - Gambit -
+$025 Ending - Venom -
+$026 Ending - Roll 1 -
+$027 Ending - Roll 2 -
+$028 Ending - Ryu -
+$029 Ending - Strider Hiryu -
+$02a Ending - Morrigan -
+$02b Ending - Rock-Man 1 -
+$02c Ending - Rock-Man 2 -
+$01d Ending
+
+$01f Theme of Roll (Instrumental Version)
+
+-------------------------------------
+
+$30 [Voice] Let's go party!
+$40 [Voice] Ready
+$41 [Voice] Fight!
+$42 [Voice] K.O.
+$43 [Voice] Win
+$44 [Voice] Lose
+$45 [Voice] Perfect
+$46 [Voice] Double K.O.
+$47 [Voice] Draw game
+$48 [Voice] Time over
+$49 [Voice] Game over
+$4a [Voice] Select your hero
+$4c [Voice] First attack
+$4d [Voice] Tech hit
+$4e [Voice] Good
+$4f [Voice] Very good
+$50 [Voice] Marvelous
+$51 [Voice] Aerial rave
+$52 [Voice] Air combo
+$53 [Voice] Hurry up!
+$54 [Voice] Danger
+$55 [Voice] Variable cross
+$56 [Voice] Duo team attack
+$57 [Voice] Hyper combo, finish
+$58 [Voice] Variable combination, finish
+$59 [Voice] Crossover combination, finish
+$5a [Voice] Variable cross, finish
+$5b [Voice] Duo team attack, finish
+$5e [Voice] Counter
+$5f [Voice] Level 1
+$60 [Voice] Level 2
+$61 [Voice] Maximum level
+$62 [Voice] Marvel Versus Capcom
+$64 [Voice] Here comes a new challenger
+$65 [Voice] Capcom presents
+$66 [Voice] Thank you for playing
+$67 [Voice] Coming soon
+$68 [Voice] Ten
+$69 [Voice] Nine
+$6a [Voice] Eight
+$6b [Voice] Seven
+$6c [Voice] Six
+$6d [Voice] Five
+$6e [Voice] Four
+$6f [Voice] Three
+$70 [Voice] Two
+$71 [Voice] One
+$72 [Voice] Zero
+
+$80 [Voice] 
+$81 [Voice] War Machine
+$82 [Voice] Captain America
+$83 [Voice] Hulk
+$84 [Voice] Wolverine
+$85 [Voice] Spider-Man
+$86 [Voice] Gambit
+$87 [Voice] Venom
+$88 [Voice] Ryu
+$89 [Voice] Captain Commando
+$8a [Voice] Chun-Li
+$8b [Voice] Chun-Li
+$8d [Voice] Jin
+$8e [Voice] Zangief
+$8f [Voice] Zangief
+$90 [Voice] Strider Hiryu
+$92 [Voice] Morrigan
+$93 [Voice] Rock Man
+$94 [Voice] Mega Man
+$95 [Voice] Juggernaut
+$96 [Voice] Magneto
+$97 [Voice] Psylocke
+$98 [Voice] Cyclops
+$99 [Voice] Colossus
+$9b [Voice] Thor
+$9c [Voice] Rogue
+$9d [Voice] Storm
+$9e [Voice] Ice Man
+$9f [Voice] U.S. Agent
+$a0 [Voice] Jubilee
+$a2 [Voice] Lou
+$a3 [Voice] Arthur
+$a4 [Voice] Ton Pooh
+$a5 [Voice] Unknown soldier
+$a7 [Voice] Saki
+$a8 [Voice] Miechele Heart
+$a9 [Voice] Lou
+$ab [Voice] Devilot
+$ac [Voice] Pure & Fur
+$ae [Voice] Anita
+$af [Voice] 
+$b0 [Voice] Wonderful
+$b1 [Voice] Great
+$b2 [Voice] Fantastic
+$b3 [Voice] Infinity
+
+ 0x100 - SFX
+
+  [Source]
+  Marvel Vs. Capcom - Crash of Super Heroes - OST
+  Suleputer  CPCA-1005  Mar 21, 1998
+
+// Base list contribution by Monyons
+// List edit by Fujix
+// Adjusted by NK
+$end

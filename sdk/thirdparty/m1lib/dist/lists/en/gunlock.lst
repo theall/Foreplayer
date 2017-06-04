@@ -1,0 +1,34 @@
+﻿$name=gunlock
+$version=2
+$default=092
+
+$main
+
+#092 The First Report (Attract Demo)
+#093 On Standby (Starting Demo) <time="20">
+#094 Penetration (Round 1)
+#095 G (Round 2)
+#102 Aggresiveness (Boss A) : Experiment 1
+#096 Vision (Round 3)
+#097 Cracking! (Round 4)
+#098 Into Darkness (Round 5)
+#099 Mobius (Round 6)
+#104 Atrocity (Boss C) : Experiment 3
+#101 The Plot Thickens (route to Round 7)
+#100 Quartz (Round 7)
+#105 The Fates (Last boss 1)
+#106 Doomsday (Last boss 2)
+#109 Q.E.P.D. (Sp.) que en paz descanse (ending)
+#108 KP-4 (Name Rntry)
+#107 Reason for it (Game Over)
+
+  [Source]
+  Rayforce / Taito Zuntata
+  Pony Canyon / Scitron  PCCB-00153  Apr 21, 1994
+
+  [Sound Composer]
+  Tamayo Kawamoto (Zuntata)
+
+// Original List Contributed by J
+// Updated for new core by Fuj
+$end

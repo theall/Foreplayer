@@ -1,0 +1,39 @@
+﻿$name=mslug2
+$version=2
+$default=002
+$songmax=255
+$main
+
+#002 Neo Geo Logo [Resets Current Sound Bank]
+#030 [Command] Bank Switcher (sfx)  <time="1">
+#229 [Voice] "Metal Slug 2" <time="4">
+#000 [Command] Bank Switcher (Music) <time="1">
+#046 The Military System (How to Play, All Missions Complete)
+#048 Barracks (Player Select)
+#033 Judgment (Mission 1-1)
+#044 Steel Beast 6Beets (Boss Theme A)
+#034 Prehistoric Site (Mission 2-1, 2-2)
+#035 The Cenotaph (Mission 2-3)
+#039 First Contact (Boss Theme B, Mission 6-2)
+#036 Livin' on the Deck (Mission 3-1)
+#040 Assault Theme (Boss Theme C, Mission 6-1)
+#037 Back to the China (Mission 4-1)
+#038 New Godokin Street (Mission 5-1)
+#042 Kiss in the Dark (Mission 5-2)
+#043 Metamorphosis (Mission 5-3)
+#045 Gravestone (Game Over)
+#041 Final Attack (Mission 6-3 / Final Boss Theme)
+#047 End Title Again (Ending)
+#032 Carry Out (Mission Complete)
+
+  Note: Call #000 or #030 to switch sound banck between SFX and music.
+--------------------------------------------------
+
+#000 [Command : Bank Switcher (Music) ]<time="1">
+#030 [Command : Bank Switcher (SFX) ] <time="1">
+
+  [Source]
+  Metal Slug 2 Original Sound Tracks
+  Pony Canyon / Scitron  PCCB-00311  Apr 17, 1998
+
+$end

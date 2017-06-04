@@ -1,0 +1,170 @@
+﻿$name=narc
+$version=2
+$default=073
+$main
+
+#073 [Voice] (Credit Inserted) <time="2.8">
+#010 Level Select <time="18.5">
+#002 Theme 1 
+#004 Escape (Home)
+#140 [SFX] Escape <time="2.9">
+#131 Rex (Island Clear) <time="4">
+#009 Coffee Brake (Trog's Cave) <time="33">
+#007 Theme 2 
+#193 [SFX] Metamorphose <time="2.8">
+#013 Dinos
+#192 [SFX] Metamorphose <time="3">
+#061 [Voice] (Falling) <time="4">
+#180 [SFX] Warp Bouns <time="5.3">
+#181 [SFX] Warp ！<time="2.7">
+#185 [SFX] Wow <time="3">
+#014 Bonus Stage <time="15">
+#011 Time Is Up ! <time="3">
+#140 [SFX] Escape <time="3">
+#014 Theme 3 
+#150 [SFX] Escape <time="3.8">
+#193 [SFX] You Did It ! <time="2.8">
+#013 Congratulations ! <time="16.4">
+#053 [Voice] Special Bonus <time="2">
+#005 End Game <time="19.9">
+#131 The Winner ! <time="4">
+#009 Credits <time="33">
+#001 Game Over <time="6">
+
+#132 Swen (Island Clear) <time="4">
+#133 Spike (Island Clear) <time="4">
+#134 Bloop (Island Clear) <time="4.5">
+#008 Theme 1 Ver.2
+#006 Theme 1 Ver.3
+#012 Unused <time="4">
+
+---------------------------------------------------
+  [SFX]
+
+#030 [SFX] <time="3">
+#071 [SFX] <time="3">
+#080 [SFX] <time="3">
+#081 [SFX] <time="3">
+#093 [SFX] <time="3">
+#094 [SFX] <time="3">
+#095 [SFX] <time="3">
+#122 [SFX] <time="3">
+#124 [SFX] <time="3">
+#125 [SFX] <time="3">
+#130 [SFX] <time="3">
+#135 [SFX] <time="3">
+#136 [SFX] <time="3">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="3">
+#140 [SFX] Escape 2 <time="3">
+#141 [SFX] <time="3">
+#142 [SFX] <time="3">
+#143 [SFX] <time="3">
+#144 [SFX] <time="3">
+#145 [SFX] <time="3">
+#146 [SFX] <time="3">
+#147 [SFX] <time="3">
+#148 [SFX] <time="3">
+#149 [SFX] <time="3">
+#150 [SFX] Escape 3 <time="4">
+#151 [SFX] <time="3">
+#152 [SFX] <time="3">
+#153 [SFX] <time="3">
+#154 [SFX] <time="3">
+#155 [SFX] <time="3">
+#156 [SFX] <time="3">
+#157 [SFX] <time="3">
+#158 [SFX] <time="3">
+#159 [SFX] <time="3">
+#160 [SFX] <time="3">
+#161 [SFX] <time="3">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#164 [SFX] <time="3">
+#165 [SFX] <time="3">
+#166 [SFX] <time="3">
+#167 [SFX] <time="3">
+#168 [SFX] <time="3">
+#169 [SFX] <time="3">
+#170 [SFX] <time="3">
+#171 [SFX] <time="3">
+#172 [SFX] <time="3">
+#173 [SFX] <time="3">
+#174 [SFX] <time="3">
+#175 [SFX] <time="3">
+#176 [SFX] <time="3">
+#177 [SFX] <time="3">
+#178 [SFX] <time="3">
+#179 [SFX] <time="3">
+#180 [SFX] Warp Bouns <time="8">
+#181 [SFX] Warp !<time="3">
+#182 [SFX] <time="3">
+#183 [SFX] <time="3">
+#184 [SFX] <time="3">
+#185 [SFX] Wow <time="3">
+#186 [SFX] <time="3">
+#187 [SFX] <time="3">
+#188 [SFX] <time="3">
+#189 [SFX] <time="3">
+#191 [SFX] <time="3">
+#192 [SFX] Metamol 1<time="3">
+#193 [SFX] Metamol 2<time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#024 [Voice] <time="3">
+#025 [Voice] <time="3">
+#027 [Voice] <time="3">
+#028 [Voice] <time="3">
+#029 [Voice] <time="3">
+#048 [Voice] <time="3">
+#049 [Voice] <time="3">
+#050 [Voice] <time="3">
+#051 [Voice] <time="3">
+#052 [Voice] <time="3">
+#053 [Voice] <time="3">
+#054 [Voice] <time="5">
+#055 [Voice] <time="3">
+#056 [Voice] <time="3">
+#057 [Voice] <time="3">
+#058 [Voice] <time="3">
+#059 [Voice] <time="3">
+#060 [Voice] <time="3">
+#061 [Voice] <time="5">
+#062 [Voice] <time="3">
+#063 [Voice] <time="3">
+#064 [Voice] <time="3">
+#065 [Voice] <time="5">
+#066 [Voice] <time="3">
+#067 [Voice] <time="3">
+#068 [Voice] <time="3">
+#069 [Voice] <time="3">
+#070 [Voice] <time="3">
+#072 [Voice] <time="5">
+#073 [Voice] <time="3">
+#074 [Voice] <time="3">
+#076 [Voice] <time="3">
+#077 [Voice] <time="3">
+#078 [Voice] <time="3">
+#079 [Voice] <time="3">
+#082 [Voice] <time="5">
+#083 [Voice] <time="7">
+#084 [Voice] <time="3">
+#085 [Voice] <time="3">
+#086 [Voice] <time="3">
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#089 [Voice] <time="3">
+#090 [Voice] <time="3">
+#091 [Voice] <time="3">
+#092 [Voice] <time="3">
+#190 [Voice] <time="3">
+
+  [Sound Composer]
+  Chris Granner
+
+// List contribution by ZEK.
+// English list QC by Fuj
+$end

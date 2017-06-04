@@ -1,0 +1,148 @@
+﻿$name=tekken
+$version=2
+$default=321
+$songmax=335
+$main
+
+#321 Attact Mode
+#102 Character Select
+#108 Windermere, U.K.
+#105 Marin Stadium, Japan
+#099 King George Island, Antarctica
+#112 Acropolis, Greece
+#115 Kyoto, Japan
+#278 Monument Valley, U.S.A
+#329 Szechwan, China
+#127 Venezia, Italy
+#124 Fiji, Philippines
+#121 Angkor Vat, Cambodia
+#118 Chicago, U.S.A.
+#182 Credits
+#189 Name Entry
+
+#333 Unused ?
+
+#001 Stereo Check
+
+//#109 Windermere (2)
+//#110 Windermere (3)
+//#106 Marine Stadium (2)
+//#107 Marine Stadium (3)
+//#113 Acropolis (2)
+//#114 Acropolis (3)
+//#116 Kyoto (2)
+//#117 Kyoto (3)
+//#279 Monument Valley (2)
+//#280 Monument Valley (3)
+//#330 Szechwan (2)
+//#331 Szechwan (3)
+//#332 Szechwan (4)
+//#128 Venezia (2)
+//#129 Venezia (3)
+//#125 Fiji (2)
+//#126 Fiji (3)
+//#122 Angkor Wat (2)
+//#123 Angkor Wat (3)
+//#119 Chicago (2)
+//#120 Chicago (3)
+//#183 Staff Roll (2)
+//#184 Staff Roll (3)
+//#191 Result (2)
+//#334 Unused ? (2)
+//#335 Unused ? (3)
+
+
+#000 [Voice] Good morning
+#259 [Voice] Great!
+#260 [Voice] Continue?
+#261 [Voice] One
+#265 [Voice] Final Round
+#266 [Voice] Fight
+#267 [Voice] You Win
+#268 [Voice] You Lose
+#269 [Voice] Draw
+#270 [Voice] Double K.O.
+#271 [Voice] Game Over
+#272 [Voice] Perfect!
+#276 [Voice] Time Up
+#277 [Voice] K.O.
+#262 [Voice] Round 1
+#263 [Voice] Round 2
+#264 [Voice] Round 3
+#176 [Voice] Round 4
+#177 [Voice] Round 5
+#178 [Voice] Round 6
+#179 [Voice] Round 7
+#180 [Voice] Round 8
+#181 [Voice] Round 9
+#258 [Voice] Kazuya Mishima Wins
+#309 [Voice] Kazuya Mishima
+#310 [Voice] Paul Phoenix
+#311 [Voice] King
+#312 [Voice] Nina Williams
+#313 [Voice] Lee Chaolan
+#314 [Voice] Jack
+#315 [Voice] Michelle Chang
+#316 [Voice] Wang Jinrey
+#317 [Voice] Law
+#318 [Voice] Yoshimitsu
+#319 [Voice] Wild Card
+#320 [Voice] Heihachi Mishima
+
+#003 [SFX] Punch 1
+#005 [SFX] Punch 2
+#007 [SFX] Punch 3
+#009 [SFX] Punch 4
+#011 [SFX] Kick 1
+#012 [SFX] Kick 2
+#014 [SFX] Kick 3
+#015 [SFX] Whoosh 1
+#019 [SFX] Whoosh 2
+#023 [SFX] Whoosh 3
+#025 [SFX] Whoosh 4
+#027 [SFX] Block
+#028 [SFX] Ground 1
+#030 [SFX] Ground 2
+#032 [SFX] Bone 1
+#034 [SFX] Whoosh 5
+#036 [SFX] Jump 1
+#038 [SFX] Jump 2
+#042 [SFX] Punch 5
+#043 [SFX] Punch 6
+#044 [SFX] Laser
+#045 [SFX] Ground 3
+#047 [SFX] Ground 4
+#049 [SFX] Punch 7
+#051 [SFX] Jack ground
+#053 [SFX] Jack whoosh (P. Jack)
+#055 [SFX] Jack punch (Tekken 3...)
+#057 [SFX] Jack punch
+#059 [SFX] Whoosh 6
+#060 [SFX] Jack step (Tekken 3...)
+#062 [SFX] Jack kick
+#065 [SFX] Start (Tekken 3...)
+#066 [SFX] Sword
+#067 [SFX] Crack 1
+#195 [SFX] Enter Initials
+#257 [SFX] Start
+#273 [SFX] Cursor
+#274 [SFX] A New Challenger Enters!!
+#284 [SFX] Jack motor
+#286 [SFX] Jack step
+
+  [Source]
+  Tekken / Namco Game Sound Express Vol.17
+  Victor Entertainment  VICL-15039  Mar 24, 1995
+
+  [Sound Composers]
+  Yoshie Takanayagi, Yoshie Arakawa
+
+  [Sound Adaptesr]
+  Yoshie Takayanagi, Yoshie Arakawa, Nobuyoshi Sano
+  Shinji Hosoe, Takayuki Aihara
+
+// List Contribution by Ryu7x
+// Updated by Heihachi_73
+// Updated by Fujix
+// Updated by Ayaya
+$end

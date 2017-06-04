@@ -1,0 +1,44 @@
+﻿$name=yesnoj
+$version=2
+$default=010
+$main
+
+#010 Credit Inserted <time="3.2">
+#011 Questions 1
+#017 Love Diagnosis
+#018 Marriage Diagnosis
+#019 Sex Diagnosis
+#020 Special Diagnosis
+#013 Point Game Start <time="3.4">
+#012 Point Game
+#014 Point Game End
+#034 Questions 2
+#037 Diagnosis of Couple's Love
+#038 Diagnosis of Friendship between Men
+#039 Diagnosis of Friendship between Women
+#036 Questions 3
+#016 Result
+#015 Finish
+
+#035 Question 2 (Ver.2)
+
+---------------------------------------------------
+ [SFX] 
+
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] Invader walking
+#024 [SFX] Invader walking
+#025 [SFX] Invader walking
+#026 [SFX] Invader walking
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#040 [SFX] 
+#033 [SFX] <time="5">
+
+// List contribution by ZEK.
+$end

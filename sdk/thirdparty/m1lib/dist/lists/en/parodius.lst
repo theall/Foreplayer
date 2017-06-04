@@ -1,0 +1,72 @@
+﻿$name=parodius
+$version=2
+$default=$9a
+$fixed_volume=193
+$main
+
+$9a From Myth to Comedy (Opening)
+	    from	Gradius II
+$9b Parodius Dance (Title)
+$6b Credit
+$b4 Hello, Paro-chan (Select)
+$94 Theme of Vic Viper (Aerial Battle 1)
+	    from	Gradius
+$95 Theme of Octopus (Aerial Battle 2)
+$88 Theme of TwinBee (Aerial Battle 3)
+	    from	TwinBee
+$96 Theme of Pentarou (Aerial Battle 4)
+	    from	Antarctic Adventure
+$80 Island of Pirates (Stage 1)
+	    from	Thunder and Lighting
+$89 Crisis 4th Movement (Stage 1 Crucial Part)
+	    from	Symphony No.9 4th Movement / Beethoven
+$8d Boss BGM Da! (Stage 1 Boss)
+	    from	The Flight of the Bumble Bee / R. Korsakov
+$81 Even the Patience of a Pierrot Has Limits (Stage 2-1)
+	    from	Op.71a the Nutcracker / P. Tchaikovsky
+$8a Theme of Chichibinta Rika (Stage 2-2)
+	    from	Gradius III
+$91 Theme of Eagle Satake (Stage 2 Boss)
+	    from	Graidus II
+$84 Labyrinth (Stage 3 BGM)
+	    from	Op.71a the Nutcracker / P. Tchaikovsky
+		William Tell Overture / G. Rossini
+$8b Theme of Hot Lips (Stage 3 Boss)
+	    from	Orphée aux Enfers / J. Offenbach
+$87 Oh! Japanism (Stage 4)
+	    from	Danse du Sabre / A.I. Khachaturian 
+$90 Theme of Butashio (Stage 4 Boss)
+$93 Space Battleship Moai (Stage 5)
+	    from	L'Arisienne suite No.2/ G. Bizet, Gradius II
+$98 Let's Get Fever with Gunkan March (Stage 6)
+	    from	Gunkan March / Japanese Martial Song
+$8e Theme of Neon Core (Stage 6 Boss)
+	    from	Gradius
+$82 Beautiful Gals (Stage 7)
+	    from	Op.71a the Nutcracker Valse des Fleurs / P. Tchaikovsky
+$83 Mottomo Kita no Kunikara '90 (Stage 8)
+	    from	Violine Konzert e moll / F. Mendelssohn
+		Unter dem Doppeladler / J. F. Wagner
+$85 Night of the Living Dead (Stage 9)
+	    from	Peer Gynt Suite / E. Grieg
+		Swan Lake / P. Tchaikovsky
+$8f Theme of Yoshiwara Dayuu (Stage 9 Boss)
+	    from	William Tell Overture / G. Rossini
+$86 Theme of the Octopus Fortress (Stage 10)
+	    from	Gradius
+$9c Theme of Golgoda Tako (Stage 10 Boss)
+	    from	Gradius
+$8c Ending Da! (Ending)
+$97 Continue Da! (Continue)
+$99 Ranking Da! (Ranking)
+$92 Boss Out Da! (Boss Out)
+$b2 Player Out Da! (Player Out)
+$b3 Game Over! (Game Over)
+	    from	Parodius MSX Version
+
+  [Source]
+  Parodius Da! -shinwa kara owarai e- / Original Game Soundtrack
+  King Records  KICA-1011  Jul 21, 1990
+
+// English list translation by Fujix
+$end

@@ -1,0 +1,61 @@
+﻿$name=p47
+$version=2
+$default=024
+$fixed_volume=100
+$main
+
+#024 Title (1) <time="0:01.8">
+#032 Title (2) <time="0:06">
+#015 Coin Inserted <time="0:02.5">
+#006 Area 1 <time="1:31.2">
+#005 Boss 1, 5 <time="1:03.5">
+#004 Area 2 <time="2:06.5">
+#002 Boss 2 <time="1:13.4">
+// same as #033
+#008 Area 3, 7 <time="2:04.3">
+// same as #012
+#031 Boss 3 <time="1:03.45">
+#010 Area 4, 8 <time="0:59.1">
+#011 Theme of Bismarck (Boss 4, 8) <time="2:19.8">
+// same as #030
+#029 Bismarck Exploded <time="0:14">
+#013 Area 5 <time="2:05.3">
+#009 Area 6 <time="1:39.7">
+#034 Boss 6 <time="0:58.3">
+#035 Boss 7 <time="0:49.5">
+#019 Got Shot <time="0:03">
+#001 Ranking <time="0:24.5">
+#007 Game Over <time="0:06">
+
+#003 Area 2 (Alt.)
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#032 [SFX]
+
+  [Source]
+  Game Sound Jaleco  -G.S.M. Jaleco 1-
+  Pony Canyon / Scitron  D28B0003  Aug 21, 1988
+
+  [Sound Composer]
+  Shizuyoshi Okamura
+
+// List contributed and updated by NK
+$end

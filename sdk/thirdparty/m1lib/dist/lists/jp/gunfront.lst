@@ -1,0 +1,113 @@
+﻿$name=gunfront
+$version=2
+$default=052
+$fixed_volume=500
+$main
+
+#079 [Voice] それは <time="1.1">
+#080 [Voice] まだ <time="1.3">
+#081 [Voice] 僕が幼かった頃 <time="3">
+#082 [Voice] 僕達は <time="1.5">
+#083 [Voice] 待っていたんだ <time="0:03">
+#085 [S.E.] <time="13">
+
+#052 …僕たちは、 (Title Demo)
+#061 ～Coin <time="4">
+#009 [S.E.] Take Off <time="5">
+#055 砂漠の山嵐 (BGM 1)
+#059 Welcome to Heaven (Boss)
+#062 In the sky (BGM 5&6)
+#056 KA･RA･ME･TE (BGM 3)
+#066 MOAI (Bad End)
+#038 [S.E.] 風 <time="4">
+#058 荒野へ (BGM 4)
+#063 ユンファオ (BGM 7)
+#064 Maspy (Last Boss)
+#062 雲上 雲上 (Happy Ending -前半-)
+#065 雲上 雲上 (Happy Ending -後半-)
+#067 Unprost (Name Regist)
+
+#057 KA･RA･ME･TE (BGM 3 Ver.2) - w/o intro
+
+-----------------------------------------
+ [S.E.]
+
+#010 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] 
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] <time="5">
+#027 [S.E.] <time="10">
+#028 [S.E.] <time="5"> 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] <time="10"> 
+#034 [S.E.]
+#035 [S.E.] <time="10">  
+#036 [S.E.] 
+#037 [S.E.] 
+#039 [S.E.] <time="10">  
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] Title 
+#043 [S.E.] <time="10">  
+#044 [S.E.] 
+#045 [S.E.] <time="7">  
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#054 [S.E.] 
+#060 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] <time="5">  
+#076 [S.E.] <time="5">  
+#078 [S.E.] 
+#084 [S.E.] <time="5">  
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#090 [S.E.] <time="5">   
+#091 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+
+#241 [PSG] Test Tone <time="3">
+#242 [FM] Test Tone 
+#243 [PCM] Test Tone
+#245 [PSG] Test Tone
+#246 [PSG] Test Tone <time="5">
+
+  ■出典
+  ルナーク・ガンフロンティア / TAITO
+  PONY CANYON / SCITRON  PCCB-00060  1991.04.21
+
+  サイトロン ビデオゲームミュージック年鑑1991
+  PONY CANYON / SCITRON　PCCB-00055　1992.02.21
+
+  ■作曲
+  福森 秀俊 (PU-CHIN), 渡辺 恭久 (Yack.)
+
+// List updated by ZEK.
+$end

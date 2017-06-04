@@ -1,0 +1,40 @@
+﻿$name=mirninja
+$version=2
+$default=096
+$songmax=150
+$main
+
+#096 SHIRANUI kenzan (Round 1)
+#119 SHIRANUI kenzan (Round 1, 3)
+#130 kiki (Boss Theme)
+#098 shinten (Round Clear)
+#112 KININ -Cyber Warrior- (Round 7)
+#114 rinne (Round 6)
+#128 MIRAININJA gaiden (Round 5)
+#143 keiun gannen (Round 2,8)
+#120 jumon (Round 12 part1)
+#125 yami (Round 4,9)
+#138 meikyuu (Round 11 part1) <time="18">
+#139 meikyuu (Round 11 part2) <time="13">
+#140 meikyuu (Round 11 part3) <time="11">
+#141 meikyuu (Round 11 part4) <time="9">
+#142 meikyuu (Round 11 part5) <time="6">
+#118 SUWABE no chigiri (Round 10)
+#149 SHOUKI (Round 12 part 2-1)
+#150 SHOUKI hukkatsu (Round 12 part 2-2)
+#135 daidanen -Theme- (End Roll)
+#100 shuumaku (Game Over)
+#102 nanori -tenka- (Name Entry)
+#104 nanori -tenjou- (Name Entry : 1st Place)
+
+  [Source]
+  Mirai Ninja - Keiun Kinin Gaiden -G.S.M. Namco 1-
+  Pony Canyon / Scitron  D28B0009  Dec 21, 1988
+
+  [Sound Composers]
+  Kouichi Ohta (96, 119)
+  Norio Nakagata (130, 128, 143, 118, 135, 100, 102, 104)
+  Astron Ishii (98, 112, 114, 120, 125, 138-142, 149, 150)
+
+// List by anonymous contributer.
+$end

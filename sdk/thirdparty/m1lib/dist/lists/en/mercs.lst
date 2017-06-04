@@ -1,0 +1,100 @@
+﻿$name=mercs
+$version=2
+$default=000
+$songmax=089
+$main
+
+#000 Credit
+#001 Introduction
+#002 Mission 1 (Initiate Operation) <time="1:44">
+#008 Boss 1 <time="28">
+#014 Round Clear
+#003 Mission 2 (Break Enemy Tank Line) <time="1:56">
+#009 Boss 2 <time="38">
+#004 Mission 3 (Neutralize the Special Attack Unit) <time="1:48">
+#015 Boss 3 <time="38">
+#005 Mission 4 (Penetrate Mountain) <time="1:25">
+#009 Boss 4 <time="31">
+#006 Mission 5 (Destroy Enemy Supply Line) <time="1:17">
+#016 Boss 5 <time="49">
+#007 Mission 6 (Attack R Country's Air Base) <time="1:13">
+#008 Boss 6 <time="28">
+#015 Final Mission <time="28">
+#017 Ending
+#011 Credits Roll <time="2:13">
+#010 Ranking
+#012 Ranking Display
+#013 Game Over
+
+-----------------------------------------------------------
+ [Voice]
+
+#051 [Voice]
+#053 [Voice]
+#054 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#052 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+
+  [Source]
+  Final Fight -G.S.M. Capcom 3- / Alfh Lyra Wa Lyra
+  Pony Canyon / Scitron  PCCB-00030  May 21, 1990
+
+// List Contribution by NK
+// English List by Fujix
+$end

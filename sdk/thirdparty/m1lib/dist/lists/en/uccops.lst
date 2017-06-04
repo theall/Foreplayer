@@ -1,0 +1,24 @@
+﻿$name=uccops
+$version=2
+$default=$01
+$main
+
+$01 Soldat Choix (Select)
+$04 Northern Barramundi (Stage 1)
+$02 Sarah Sowertty (Stage 2-1)
+$0b Nasty Loud Quack (Boss)
+$08 Assessment Day
+$03 Redtailed Cat (Stage 3)
+$06 Dandy N.D. (Stage 4)
+$05 Than Hawk Anger (Stage 5)
+
+  [Source]
+  Undercover Cops
+  Victor Entertainment  VICL-5180  Dec 16, 1992
+
+  [Sound Composer]
+  Hiyamuta (HIYA!)
+
+// List Contribution by Kayama
+// English list by Fujimon
+$end

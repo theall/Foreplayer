@@ -1,0 +1,103 @@
+﻿$name=slapshot
+$version=2
+$default=008
+$main
+
+#008 DEMO <time="11">
+#010 TITLE <time="7">
+#242 [S.E.] CREDIT <time="2">
+#015 PLAYER SELECT
+#009 SPACE SHUTTLE
+#011 VS
+#003 U.S.A
+#001 JAPAN
+#005 BRAZIL
+#006 CHINA
+#002 GERMANY
+#004 ENGLAND
+#014 WIN
+#013 ENDING
+#018 NAME ENTRY
+#007 GAME OVER
+
+#012 CONTINUE ?
+#016 未使用曲 1
+#017 未使用曲 2
+
+---------------------------------------------------
+ [S.E.] 
+
+#129 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#216 [S.E.] 
+#217 [S.E.] 
+#218 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] 
+#225 [S.E.] 
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#229 [S.E.] 
+#230 [S.E.] 
+#231 [S.E.] 
+#232 [S.E.] 
+#233 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#237 [S.E.] 
+#238 [S.E.] 
+#239 [S.E.] 
+#240 [S.E.] 
+#241 [S.E.] 
+#242 [S.E.] CREDIT
+#243 [S.E.] 
+#244 [S.E.] 
+#245 [S.E.] 
+#246 [S.E.] 
+#247 [S.E.] 
+#248 [S.E.] 
+#249 [S.E.] 
+#250 [S.E.] 
+#251 [S.E.] 
+#252 [S.E.] 
+#253 [S.E.] 
+#254 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+
+  ■作曲
+  H.Kudoh
+
+// List contribution by ZEK.
+$end

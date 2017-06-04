@@ -1,0 +1,58 @@
+﻿$name=sfex2p
+$version=2
+$default=009
+$fixed_volume=131
+$main
+
+#009 Q Sound Logo
+#052 Attract (EX2 plus Opening) <time="0:35">
+#018 Select
+#039 Flash Train
+#037 Three Tree
+#040 Fake World
+#032 Pearl in The Sky
+#033 White Field
+#035 Lost Sea
+#053 Phantom Bomb
+#038 Crowded Town
+#045 Green Shower
+#041 Crash Power Plant
+#047 Frozen Mist
+#036 Mahatma Temple with Hymn
+#048 Digital Ignition
+#034 The Infinite Earth
+#046 Irene
+#050 Before Moon
+#042 Amusementive Crime 2
+#044 Passage of Lotus
+#043 More Stronger
+#049 The Battle of The Flame
+#054 The Battle of The Flame 2
+#023 Regenerate (Ending)
+#021 Staff Roll
+#051 Bonus Game
+#016 Stage Clear
+#022 Challenger
+#019 Continue
+#017 Game Over
+
+#020 Street Fighter EX2 (EX2 Opening -Unused-)
+#008 スピーカーテスト
+//
+//#000
+//#004
+//#005
+//#006
+//#007
+
+  ■出典
+  STREET FIGHTER EX2plus / ARIKA CAPCOM
+  SULEPUTER  CPCA-1038  2000.02.19
+
+  STREET FIGHTER EX2plus / Play Station
+  CAPCOM  SLPS-02508  1999.12.22
+
+  ■作曲
+  細江 慎治, 佐宗 綾子, 相原 隆行, 渡部 恭久 (Yack.)
+
+$end

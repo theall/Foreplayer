@@ -1,0 +1,39 @@
+﻿$name=tektagt
+$version=2
+$default=$022
+//$songmax=$fff
+$main
+
+$022 Attract
+$020 Character Select
+$017 Jin Stage BGM
+$011 Paul Stage BGM
+$014 King Stage BGM
+$010 Xiaoyu Stage BGM
+$01b School Stage BGM
+$01e Law Stage BGM
+$015 Nina Stage BGM
+$019 Hwoarang Stage BGM
+$016 Yoshimitsu Stage BGM
+$018 Eddy Stage BGM
+$013 Lei Stage BGM
+$01c Ogre Stage BGM
+$01a Middle Boss BGM
+$012 Last Boss BGM
+$021 End Credit
+$01d Continue
+$01f Name Entry
+$110 Jingle 1 (Join)
+$130 Jingle 2 (Join)
+
+
+  [Source]
+  Tekken Tag Tournament Original Sound Track
+  Bandai Music Entertainment  APCG-4046  Sep 21, 1999
+
+  [Composition & Adaptation]
+  Yuu Miyake, Kei'ichi Okabe, Akitaka Touyama
+  Nobuyoshi Sano, Rio Hamamoto
+
+// List : Ayaya
+$end

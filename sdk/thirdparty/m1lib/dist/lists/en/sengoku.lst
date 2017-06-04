@@ -1,0 +1,49 @@
+﻿$name=sengoku
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#058 Introduction
+#036 Wild Beat
+#039 Right Hand and Clutches
+#037 Hitoyogiri
+#038 Mugen Noh 1
+#053 Mandala
+#046 Prajna
+#040 Mundanity
+#041 War Drum
+#042 Mugen Noh 2
+#035 Present World
+#051 Tachikaze
+#043 Kickoff Rally
+#072 Desolation
+#073 Demon's Dance
+#070 Evil Personifed
+#045 Shinki
+#076 Acheron
+#047 Ketsubon
+#075 Big Castle
+#074 Dark Spirit
+#071 Yaiba
+#077 Up and Down
+#085 Ascension
+#081 Shiten
+#078 Demon
+#079 Ashura
+#084 Demise
+#083 Closing Chapter
+#057 The End
+
+#058 Introduction (Console Version)
+#043 Kickoff Rally (Console Version)
+#033 Unused
+
+  [Source]
+  Cross Sword, Sengoku Denshou / Alpha Denshi, SNK
+  Pony Canyon / Scitron  PCCB-00076  Nov 21, 1991
+
+// List Contribution by NK
+// English paraphrased by Fuji (Help!!)
+$end

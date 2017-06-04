@@ -1,0 +1,14 @@
+﻿$name=spcinvdj
+$version=2
+$default=003
+$main
+
+  * Preliminary list
+
+#003 Title
+#004 Play Mode Select
+#005 VS Game Mode
+#006 Win !
+
+// List contribution by ZEK.
+$end

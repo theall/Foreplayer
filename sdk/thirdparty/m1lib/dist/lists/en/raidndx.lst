@@ -1,0 +1,51 @@
+﻿$name= raidndx
+$version=2
+$default= 098
+$songmax= 099
+$main
+
+#098 Course Select
+#010 Gallantry, Part 1
+	(Mission Alpha Section 1)
+#092 Gallantry, Part 2
+	(Mission Alpha Section 1; Mission Bravo Level 1; Mission Charlie Level 1)
+#026 Boss
+	(Mission Alpha/Bravo/Charlie Level Boss)
+#024 Clear
+#016 Level 2, 8
+	(Mission Alpha Section 2; Mission Bravo Level 2; Mission Charlie Level 2 and 8)
+#094 Fighting Thunder
+	(Mission Alpha Section 3; Mission Charlie Level 5)
+#004 Level 3
+	(Mission Bravo Level 3)
+#088 Rough and Tumble
+	(Mission Bravo Level 4; Mission Charlie Level 3)
+#014 Level 5
+	(Mission Bravo Level 5; Mission Charlie Level 4)
+#006 Level 4
+	(Mission Charlie Level 6)
+#018 Level 7
+	(Mission Charlie Level 7)
+#008 Level 6
+	(Mission Charlie Level 9)
+#022 Go To Blazes!
+	(Mission Charlie Level 9 Boss (Final Boss))
+#028 All Clear
+#020 Ranking Screen
+#090 Name Entry
+#096 Unused Track
+
+  [Sound Composer]
+  Akira "Go Sato" Satoh
+
+// Soundtrack is a composite of Raiden II and 
+// arrangements of Raiden Densetsu for the
+// Raiden II sound hardware.  Includes new songs
+// on tracks 20 and 98.
+// --
+// In the Japanese version, Missions Alpha, Bravo, 
+// and Charlie are called Training, Novice, and 
+// Expert, respectively.
+//
+// List Contribution by nZero
+$end

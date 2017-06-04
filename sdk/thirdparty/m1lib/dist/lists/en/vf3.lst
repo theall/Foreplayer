@@ -1,0 +1,88 @@
+$name=vf3
+$version=2
+$default=27
+$main
+
+ * Play @ 44100Hz for correct speed
+
+#027 Rowdy
+#008 Virtua Fighter 3
+#026 Next Challenger
+#001 Keen Head (Jacky in the Building)
+#024 Tedium (Lion in the Library)
+#004 Mai (Aoi in the Show)
+#006 Coral Groove (Jeffry in the Sea)
+#003 Underground (Sarah in the Subway)
+#025 Gostroptosis (in the Cave)
+#018 Hiding (Kage-Maru in the Castle)
+#009 Open The Deadgate (Pai on the Roof)
+#010 Drunkman in Hong Kong (Shun on the Loft)
+#005 Raging Wind (Lau in the Great Wall)
+#012 Ancient times (Wolf in the Desert)
+#017 On The Circle (Taka-Arashi on the Ring)
+#013 The Hall (Akira in the Bomboo Grove)
+#032 Tender Steel (Dural)
+#029 After image 2
+#030 Tell me your memories
+#011 Game over
+#007 Stage Clear
+#020 Try to Next Level
+#033 Modesty (Extra Stage)
+#021 Inpudence (Extra Stage)
+#002 The Killer Mantis (Extra Stage)
+#016 Blandish Fist (Extra Stage)
+#031 Persevering (Extra Stage)
+#014 Cool Bell (Extra Stage)
+#015 Tears of Falling (Extra Stage)
+#023 For You...
+
+#019 Not on CD
+#022 Not on CD
+#028 Not on CD
+
+-----------------------------------------------------------
+
+#256 [Voice] One
+#257 [Voice] Two
+#258 [Voice] Three
+#259 [Voice] Four
+#260 [Voice] Five
+#261 [Voice] Six
+#262 [Voice] Seven
+#263 [Voice] Eight
+#264 [Voice] Nine
+#265 [Voice] Congratulations
+#266 [Voice] Draw
+#267 [Voice] Excellent
+#268 [Voice] Fight
+#269 [Voice] Game Over
+#270 [Voice] Go!
+#271 [Voice] K.O.
+#272 [Voice] New Challenger
+#273 [Voice] Ready
+#274 [Voice] Out of the Ring
+#275 [Voice] Sudden Death
+#276 [Voice] Time's Up
+#277 [Voice] Ring Out
+#278 [Voice] Time Over
+
+  [Source]
+  Virtua Fighter 3; Sound Tracks
+  Toshiba EMI  TYCY-5522  Oct 23, 1996
+
+  Virtua Fighter 3tb (Dreamcast Version)
+  Sega  HDR-0002
+  
+  Sound test menu in VF3 in MAME
+
+  [Composed by]
+  Takenobu Mistuyoshi:	#27, #26, #01, #06, #09, #05, #12,
+			#17, #13, #32, #29, #30, #20, #16,
+			#14, #15, #23
+  SEGA Sound Team: 	#08, #04, #03, #18, #10, #11, #07, #02
+  Fujio Itou: 		#24, #25, #33, #21, #31
+
+// List contribution by Hiroshi
+// Additional list by R. Belmont
+// Updated with soundtrack by Fuj
+$end

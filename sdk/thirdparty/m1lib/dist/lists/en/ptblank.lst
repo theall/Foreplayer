@@ -1,0 +1,187 @@
+﻿$name=ptblank
+$version=2
+$default=003
+$main
+
+  * Music for William Teru are missing
+
+#003 [SFX] Credit Inserted
+#008 Theme of Gun Bullet
+#009 Chala Chala
+#197 Pleasure Hall of Fame Part 1 (Theme of Oyaji)
+#160 Pleasure Hall of Fame Part 2 (Oyaji vs. Piranha)
+#161 Pleasure Hall of Fame Part 3 (Oyaji vs. Bees)
+#162 Pleasure Hall of Fame Part 4 (Oyaji vs. Volcano)
+#163 Pleasure Hall of Fame Part 5 (Time Attack)
+#164 Pleasure Hall of Fame Part 6 (Oyaji vs. Ducks)
+#165 Pleasure Hall of Fame Part 7 (Cuckoo Clock at 3 O'clock)
+#194 O.Ya.Ji on Stage
+#193 Bonus Shooter
+#005 Fanfare 1
+#006 Fanfare 2
+#007 Fanfare 3
+#009 Chala Chala
+#062 [SFX] 
+#192 Theme of Intrasquad Ninja Battle
+#200 Theme of Payday the 13th
+#204 Theme of China 3000 Years
+#196 Theme of Somebody on Some Island
+#195 Theme of William "Teru" <time="0:08.30">
+????  (Failure)
+#154 [Voice] 
+#195 Theme of William "Teru" <time="0:08.30">
+????  (Successful)
+#153 [Voice] 
+#198 Theme of Sniper SS
+#199 Theme of Detective beyond Glass
+#172 Theme of Oyaji Tank Battalion Bottom Operation
+#173 Theme of Guns Castle (1)
+#207 Theme of Guns Castle (2)
+#169 Super Gorgeous Fanfare
+#170 Congratulations BGM
+#010 Theme of Final Result
+#004 Volley of 5 Ammos (Very Hard)
+#012 Volley of 5 Ammos (New Challenger)
+#013 Volley of 5 Ammos (Good Boy)
+#014 Volley of 5 Ammos (Regular Boy)
+#015 Volley of 5 Ammos (Bad Boy)
+#171 Real Gun Bullet
+#202 Curtain Call
+
+#011 Game Over
+#001 (stereo check)
+#226 (unused?)
+
+------------------------------------------------------
+  [SFX]
+
+#002 [SFX] 
+#003 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#022 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#051 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#115 [SFX] 
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#125 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+
+  [Voices]
+
+#037 [Voice] 
+#045 [Voice] 
+#075 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+
+  [Source]
+  Gun Bullet / Namco Game Sound Express Vol.22
+  Victor Entertainment  VICL-15046  Sep 21, 1995
+
+  [Composed by]
+  Takayuki Aihara, Takayuki Ishikawa, Hiroto Sasaki
+
+// Original contribution by Gol Gol
+// English list by Fuj
+$end

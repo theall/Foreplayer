@@ -1,0 +1,226 @@
+﻿$name=pspikes2
+$version=2
+$default=032
+$main
+
+#032 Neo Geo Logo
+#033 [Voice] Video System
+
+#034 Attract Mode
+#064 [SFX] Coin
+#035 League Select
+
+#066 [SFX] Hyper League
+#039 Game Start
+#048 Theme 1 (1st and 2nd Match)
+#036 Challenger Appeared
+#051 Theme 2 (3rd and 4th Match)
+#045 Continue ?
+#054 Theme 3 (Final Match)
+#042 You Won
+#057 Congratulations !
+#058 Credits
+
+#066 [SFX] World Men 
+#038 Game Start
+#046 Theme 1 (1st and 2nd Match)
+#049 Theme 2 (3rd and 4th Match)
+#043 Continue ?
+#052 Theme 3 (Final Match)
+#040 You Won
+#055 Congratulations !
+#058 Credits
+
+#066 [SFX] World Women 
+#038 Game Start
+#046 Theme 1 (1st and 2nd Match)
+#050 Theme 2 (3rd and 4th Match)
+#044 Continue ?
+#053 Theme 3 (Final Match)
+#041 You Won
+#056 Congratulations !
+#058 Credits
+
+#059 Unused 1
+#060 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#032 [SFX] Neo Geo Logo
+#064 [SFX] Coin
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] <time="3">
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#073 [Voice] <time="5">
+#074 [Voice] 
+#075 [Voice] <time="5"> 
+#076 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#171 [Voice] 
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+
+  [Sound Composer]
+  Soushi Hosoi (HOSO_Q)
+
+  [Sound FXs]
+  Norie
+
+  [Main Sound Programmer]
+  M.Yamana
+
+  [Sub Sound Programmer]
+  H.Soyama
+
+// List contribution by ZEK.
+// Checked by Fuj
+$end

@@ -1,0 +1,32 @@
+$name=argus
+$version=2
+$default=035
+$main
+
+#035 DEMO
+#014 COIN
+#012 START
+#013 BGM1
+#047 STAGE CLEAR
+#011 LANDING
+#025 LANDING成功
+#033 BGM2
+#023 EXTEND
+#045 攻防戦
+#028 GAME OVER
+#036 HISCORE 1位
+#016 HISCORE 2位～
+#039 RANKING
+
+#022 ???
+#042 ???
+
+  ■出典
+  ゲームサウンド・ジャレコ -G.S.M. JALECO 1-
+  PONYCANYON/SCITRON  D28B0003  1988.8.21
+
+  ■作曲
+  坂本 慎一
+
+// List by szk
+$end

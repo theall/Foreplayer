@@ -1,0 +1,185 @@
+﻿$name=lockloadu
+$version=2
+$default=007
+$main
+
+#007 Terrorism (Demo)
+#012 Double Magnum (Start)
+#008 Sighting (Game Select)
+#009 Preparing for Battle (Stage Select)
+#019 Know Your Job (Story)
+#013 Gunhard (Theme of Gunhard)
+#042 Change Magazine (Scene Clear)
+#014 Dead Line (BGM 2)
+#015 Heart of the Moment (BGM 3)
+#017 Maximum Load (BOSS 1)
+#020 Safe Way Back (Stage Clear)
+#016 Hydra Shock (BGM 4)
+#018 Crazy Rockn' Roll (BOSS 2)
+#033 All Clear (Game Clear)
+#021 Last Resort (Roll)
+#010 Shake Up! (Continue)
+#011 Take Fire!! (Game Over)
+
+(Gun Club Mode)
+#022 Super Event (Gun Club Theme)
+#023 Shooter on the Line.. (Start)
+#024 Point Blank (BGM 1)
+#043 Stop It ! (Stop)
+#026 Result (Stage Clear)
+#025 10x (BGM 2)
+#027 Sorry (Failed)
+#028 Grand Master (Ending)
+
+(Score Game Mode)
+#029 Killing House (Score Game Theme)
+#030 Ready for Action (Start)
+#031 Shooting Line (BGM 1)
+#032 Tactical (BGM 2)
+
+(Win-Lose Game Mode)
+#034 Wonderland (Win-Lose Game Theme)
+#035 Enjoy! (Start)
+#036 Panel Attack (Game 1)
+#037 Cockroach Busters (Game 2)
+#038 Animal Slot (Game 3)
+#039 Concentration (Game 4)
+#040 Save the Earth (Game 5)
+#041 End Happily (Ending)
+
+---------------------------------------------------
+  [SFX]
+
+#044 [SFX] 
+#045 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#070 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#125 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#153 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#159 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#004 [Voice] 
+#005 [Voice] 
+#006 [Voice] 
+#046 [Voice] 
+#058 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#071 [Voice] 
+#083 [Voice] 
+#086 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#126 [Voice] 
+#137 [Voice] 
+#142 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#152 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#158 [Voice] 
+
+  [Source]
+  Dunk Dream, Gun Hard / Data East
+  Pony Canyon / Scitron  PCCB-00173  Jan 20, 1995
+
+  [Sounc Composer]
+  Hiroaki Yoshida (Maro)
+
+// List contribution by ZEK.
+$end

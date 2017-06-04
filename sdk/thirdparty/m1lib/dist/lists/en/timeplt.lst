@@ -1,0 +1,48 @@
+﻿$name=timeplt
+$version=2
+$default=26
+$main
+
+#26 Game Start
+#27 Name Entry
+
+#28 Name Entry (Part 1)
+#29 Name Entry (Part 2)
+#30 Name Entry (Part 3)
+#32 Name Entry (Part 4)
+
+------------------------------------------------------
+
+#01 [SFX]
+#02 [SFX]
+#03 [SFX]
+#04 [SFX]
+#05 [SFX]
+#06 [SFX] <time="3.0">
+#07 [SFX]
+#08 [SFX]
+#09 [SFX]
+#10 [SFX]
+#17 [SFX]
+#18 [SFX]
+#19 [SFX]
+#20 [SFX]
+#21 [SFX]
+#22 [SFX]
+#11 [SFX] Formation
+#12 [SFX] Zep <time="3.0">
+#13 [SFX] Propeller plane <time="3.0">
+#14 [SFX] Helicopter <time="3.0">
+#15 [SFX] Fighter <time="3.0">
+#16 [SFX] UFO <time="3.0">
+#23 [SFX] Extend
+#24 [SFX] Warp
+#25 [SFX] Time slip
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box -
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by Neo Techno Bou on 2003-12-27
+// Updated by R
+$end

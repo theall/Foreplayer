@@ -1,0 +1,32 @@
+﻿$name=gticlub
+$version=2
+$default=268
+$main
+
+#268 コナミロゴ
+#259 BEAT BOMB (タイトルBGM)
+#260 BEAT "LOOP" BOMB (セレクトBGM)
+#263 HYBRID NOTES (初級・上級レースBGM)
+#258 "3-4-5" (初級・上級レースファイナルラップ、鬼ごっこレースBGM)
+#257 SHE SAID "DARLIN', MILES IS ANGRY" (超上級レースBGM)
+#264 LOVE OVER TIME (超上級レースファイナルラップBGM)
+#261 HEAVEN SHUFFLE (ゴールBGM)
+#262 DAMNED SOULS BLUES (レースオーバーBGM)
+#267 EVIL-EYED ANGEL (鬼ごっこレースBGM)
+#265 NO PROBLEM, BUT I MISS YOU (エンディングBGM)<time="4.41">
+#265 ↓<time="4.41">
+#265 ↓<time="4.41">
+#266 ↓
+
+#269 スピーカーテスト
+
+  ■出典
+  GTI CLUB c/w JET WAVE & WINDING HEAT ORIGINAL GAME SOUNDTRACK
+  KING RECORDS  KICA-7751  1997.02.05
+
+  ■作曲
+  A Stone Club Band (桜井 敏郎)
+
+// リスト作成: らま
+// GTIクラブは、サントラと聞き比べると音程がずいぶん高いですね。
+$end

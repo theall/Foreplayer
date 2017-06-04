@@ -1,0 +1,127 @@
+﻿$name=madgear
+$version=2
+$default=035
+$fixed_volume=144
+$main
+
+#035 Credit <time="0:02">
+#018 Car Select <time="0:23.9">
+#001 Capital (Stage 1) <time="2:35.5">
+#010 Stage Clear <time="0:37.9">
+#004 Net Wood Forest (Stage 2) <time="1:46.5">
+#003 Coral Sea (Stage 3) <time="1:47.7">
+#002 Big Cave Tunnel (Stage 4) <time="1:42.7">
+#005 Ruins Desert (Stage 5) <time="1:39.4">
+#014 Million Valley (Stage 6) <time="1:29.35">
+#007 Thunder Road (Stage 7) <time="1:56.7">
+#006 Marine Snow Pipe Way (Stage 8) <time="1:11.8">
+#015 Sky City (Stage 9) & Attract Mode <time="2:33.2">
+#016 Ending <time="1:10">
+#013 Name Entry (1～3位) <time="0:49.7">
+#011 Name Entry (4位以下) <time="0:45.1">
+#008 Game Over <time="0:03.5">
+#009 Result <time="0:03.5">
+#012 Continue <time="0:12">
+#017 Unused <time="0:05.5">
+
+-----------------------------------------------------------
+ [Voice]
+
+#129 [Voice] Hello there. I'm ... another leading computer type ... mounted on your Storm 11 vehicle. You can call me ... Let's go!
+// 詳細不明
+#130 [Voice] Oh my creator.
+#131 [Voice] Let's go!
+#132 [Voice] We've come halfway already. Let's keep on going.
+#133 [Voice] Nice run! You can handle this vehicle real well. Let's keep going the same way!
+#134 [Voice] That was close! Next time be more careful. I can't keep up this way!
+#135 [Voice] We're running out of energy!
+#136 [Voice] I'm sorry to say, but we've run out of energy.
+#137 [Voice] We made it! I'm very glad that I was with you.
+#138 [Voice] I will keep this memory deep into my RAM and I'll never forget this.
+#139 [Voice] I hope to see you again... Good luck... Goodbye!
+#140 [Voice] Energy
+#141 [Voice] Barrier
+#142 [Voice] Oh no! Stop!!!
+
+-----------------------------------------------------------
+ [S.E.]
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+
+  ■作曲
+  Ogeretsukun (Ogeretu･Kun, Ogeretsu Kun)
+
+// List contribution by NK
+$end

@@ -1,0 +1,59 @@
+﻿$name=tkmmpzdm
+$version=2
+$default=1537
+$songmax=1550
+$main
+
+#1550 [Voice] ohayou gozaimasu! kyou mo ichi nichi yoroshiku onegai shi masu! (Startup Demo)
+
+#1537 Tokimeki (Opening Title)
+#1343 [Voice] tokimeki memorial <time="0:02">
+#1539 [Voice] taisen puzzle dama
+#268 Which Girl Will You Chose? (Character Select)
+#297 At the Foot of the Legendary Tree (Legendary Tree Explanation Demo)
+#281 Fun! Fun! Summer Vacation (Map Movement)
+#298 Rival of Love (Pre-Battle Contention)
+#269 Time Reflected in Your Eyes (Battle Mode Stage)
+#270 More! More! Tokimeki (Confession Mode Stage)
+#285 One More Breath (In the Lead)
+#273 Step Up (Winning Clear)
+#271 Love Lesson (Practice Mode Stage)
+#272 Your Short Sleeves (Endurance Mode Stage)
+#284 Please, Stop! (Danger)
+#275 Lost Love (Losing Clear)
+#274 Attack Once More (Continue)
+#262 Just a Few Memories... (Shiori Fujisaki's Theme)
+#266 Aim! For the Goal of Love! (Yumi Saotome's Theme)
+#264 I Want to Gaze at You (Nozomi Kiyokawa's Theme)
+#257 Teenage (Saki Nijino's Theme)
+#258 That Shop on the Way to School (Megumi Mikihara's Theme)
+#260 Baby Bird in a Basket (Yukari Koshiki's Theme)
+#259 A Sonata for You (Mio Kisaragi's Theme)
+#267 More Than Anyone Else in the World (Yuna Himoo's Theme)
+#261 Jumping Smile (Yuuko Asahina's Theme)
+#263 Temptation in Your Eyes (Mira Kagami's Theme)
+#265 Boy Friends (Ayako Saotome's Theme)
+#282 Check, It's a Check! (Yoshio Saotome's Theme)
+#286 Omakase Network (Yoshio's Stage)
+#283 High Class Pedigree (Rei Ijuuin's Theme)
+#287 Fight! (Ijuuin's Stage)
+#277 Confession (Arrival at the Legendary Tree)
+#288 Carrying My Feelinds Onward (Final Stage)
+#276 Goal of Love (All Clear)
+#278 When We're Together (Happy Ending)
+#279 Poem of the Effeminate Losers (Bad Ending)
+#280 An Album with a Single Page (Endurance Level Battle Data Display Demo)
+
+#299 Sound Scale Check
+
+----------------------------------------------------
+
+  [Source]
+  Tokimeki Memorial Competition Puzzle Ball Original Game Soundtrack
+  Konami Kukeiha Club
+  KING RECORDS  KICA-7699  1996.04.24
+ 
+// List by NextSTEP
+// English list by Knurek
+// Voices from Amuse
+$end

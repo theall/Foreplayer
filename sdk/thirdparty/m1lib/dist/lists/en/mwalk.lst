@@ -1,0 +1,120 @@
+﻿$name=mwalk
+$version=2
+$default=133
+$songmax=253
+$main
+ 
+#133 Title (1) <time="3">
+#134 Title (2) <time="1.2">
+#135 Title (3) <time="5">
+#136 [Voice] "MoonWalker" <time="3">
+#129 "Bad" (Round 1) <time="1:21">
+#130 "Smooth Criminal" (Round 2) <time="1:12">
+#139 Round 2 Boss
+#132 "Beat It" (Round 3) <time="1:04">
+#138 "Another Part of Me" (Round 4) <time="1:10">
+#131 Round 4 Boss
+#129 "Bad" -Reprise- (Round 5) <time="1:21">
+#142 Round 5 Boss
+#137 "Billie Jean" (Ending) <time="1:28">
+ 
+#140 (unused)
+#170 "Bad" (intro I)
+#141 "Bad" (intro II)
+#247 Game Over
+#250 Dance Magic I
+#251 Dance Magic I (short version)
+#245 Dance Magic II
+#246 Dance Magic II (short version)
+#176 Dance Magic III
+#177 Dance Magic III (short version)
+#252 Dance Magic IV
+#253 Dance Magic IV (short version)
+
+ 
+ [Voices]
+
+#192 [Voice]
+#193 [Voice] Uh
+#194 [Voice] Wow
+#195 [Voice] Uh
+#196 [Voice] Uuuuuh
+#197 [Voice]
+#198 [Voice] Sha
+#199 [Voice] Sho
+#200 [Voice] Waw
+#201 [Voice]
+#202 [Voice] Wohoou (Credit)
+#178 [Voice] Mikael !
+#179 [Voice] Help Me !
+#180 [Voice] Mikael !
+#203 [Voice] Mikael !
+#205 [Voice] Mikael !
+#206 [Voice] Hihihihihihi
+#171 [Voice]
+#172 [Voice]
+#173 [Voice]
+#174 [Voice]
+#175 [Voice] ???
+#207 [Voice] I Shall Return
+#208 [Voice] Ya'll Never Catch Me
+#209 [Voice] I Love You Mikael, To Death
+#210 [Voice] Move ! Move It !
+#211 [Voice] Dog
+#214 [Voice] Dog
+#213 [Voice]
+#219 [Voice]
+#220 [Voice] Monkey
+#222 [Voice]
+ 
+ [SFX]
+
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX] Glass Broken
+#218 [SFX] Car Skid
+#227 [SFX]
+#233 [SFX] Robot Transformation
+#236 [SFX]
+#242 [SFX]
+#248 [SFX]
+#249 [SFX]
+
+// List Contributed by NK
+// Updated by CrashTest
+$end

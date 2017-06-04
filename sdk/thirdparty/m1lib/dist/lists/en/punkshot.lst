@@ -1,0 +1,27 @@
+﻿$name=punkshot
+$version=2
+$default=$88
+$songmax=$8e
+$main
+
+$88 Title -Punkshot- (Attract)
+$85 Do play a game! (Slection)
+$8a "Do it" -The slams- (Start)
+$84 In the park
+$81 A wharf
+$89 Way to gooooo.. (Intermission)
+$86 Play, again? -Continue-
+$8e Go baby! (End Credits 1)
+$8d You punks are soo baad! (End Credits 2)
+$83 Ranking!
+$82 It's over -Game Set-
+
+$80 "Do it" -The slams- -w/o intro-
+$8c "Do it" -In the Park-
+$8b "Do it" -A wharf-
+
+  [Source]
+  Konami Game Music Collection Vol.3
+  King Records  KICA-7502  May 5, 1991
+
+$end

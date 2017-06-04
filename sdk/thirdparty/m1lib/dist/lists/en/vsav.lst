@@ -1,0 +1,103 @@
+﻿$name=vsav
+$version=2
+$default=087
+$fixed_volume=295
+$main
+
+#085 Q Sound Logo Main
+#087 Dirty Beret
+
+  Red Side (Disc 1)
+
+#001 Opening Title <time="41">
+#008 Ranking Display <time="7">
+#002 Player Select (1) <time="48">
+#003 Player Select (2) <time="47">
+#005 VS. <time="8">
+#009 Feast of the Damned (Demitri's Theme) <time="1:53">
+#022 Demitri: Winning Theme <time="32">
+#038 Demitri: Ending Theme (1) <time="19">
+#054 Demitri: Ending Theme (2) <time="43">
+#015 Vanity Paradise (Lei-Lei's Theme) <time="2:30">
+#034 Lei-Lei: Winning Theme <time="26">
+#050 Lei-Lei: Ending Theme (1) <time="1:13">
+#066 Lei-Lei: Ending Theme (2) <time="1:13">
+#070 Story Demo (1) <time="24">
+#018 Green Scream (Aulbath and Susquatch's Theme) <time="2:54">
+#030 Aulbath: Winning Theme <time="25">
+#046 Aulbath: Ending Theme (1) <time="52">
+#062 Aulbath: Ending Theme (2) <time="54">
+#031 Susquatch: Winning Theme <time="29">
+#047 Susquatch: Ending Theme (1) <time="1:32">
+#063 Susquatch: Ending Theme (2) <time="40">
+#011 Tower of Arrogance (Felicia's Theme) <time="2:28">
+#028 Felicia: Winning Theme <time="25">
+#044 Felicia: Ending Theme (1) <time="1:00">
+#060 Felicia: Ending Theme (2) <time="32">
+#014 Abaraya (1) (Bishamon's Theme) <time="3:03">
+#078 Story Demo (2) (Oboro Bishamon's Demo) <time="38">
+#079 Abaraya (2) (Oboro Bishamon's Theme) <time="2:14">
+#029 Bishamon: Winning Theme <time="28">
+#045 Bishamon: Ending Theme (1) <time="55">
+#061 Bishamon: Ending Theme (2) <time="53">
+#016 War Agony (Lilith's Theme) <time="2:33">
+#035 Lilith: Winning Theme <time="24">
+#051 Lilith: Ending Theme (1) <time="1:31">
+#067 Lilith: Ending Theme (2) <time="50">
+#021 Bulleta: Winning Theme <time="25">
+#037 Bulleta: Ending Theme (1) <time="57">
+#053 Bulleta: Ending Theme (2) <time="36">
+
+  Black side (Disc 2)
+
+#013 Deserted Chateau (Morrigan's Theme) <time="2:10">
+#026 Morrigan: Winning Theme <time="22">
+#042 Morrigan: Ending Theme (1) <time="1:13">
+#058 Morrigan: Ending Theme (2) <time="1:02">
+#010 Concrete Cave (Bulleta and Gallon's Theme) <time="2:07">
+#023 Gallon: Winning Theme (1) <time="24">
+#082 Gallon: Winning Theme (2) (Dark Gallon: Winning Theme?) <time="29">
+#039 Gallon: Ending Theme (1) <time="35">
+#055 Gallon: Ending Theme (2) <time="50">
+#004 Here Comes a New Challenger <time="5">
+#017 Forever Torment (Vitor and Zabel's Theme) <time="3:11">
+#025 Zabel: Winning Theme <time="26">
+#041 Zabel: Ending Theme (1) <time="1:01">
+#057 Zabel: Ending Theme (2) <time="26">
+#024 Victor: Winning Theme <time="24">
+#040 Victor: Ending Theme (1) <time="1:03">
+#056 Victor: Ending Theme (2) <time="59">
+#012 Red Thirst (Anakaris' Theme) <time="3:11">
+#027 Anakaris: Winning Theme <time="22">
+#043 Anakaris: Ending Theme (1) <time="58">
+#059 Anakaris: Ending Theme (2) <time="25">
+#019 Iron Horse, Iron Terror (Q-Bee's Theme) <time="2:26">
+#033 Q-Bee Winning Theme <time="21">
+#049 Q-Bee Ending Theme <time="47">
+#071 Story Demo (3) (Last Boss's Demo) <time="26">
+#020 Fetus of God (Jedah's Theme) <time="2:58">
+#036 Jedah: Winning Theme <time="23">
+#052 Jedah: Ending Theme (1) <time="43">
+#068 Jedah: Ending Theme (2) <time="34">
+#080 Shadow: Winning Theme <time="26">
+#081 Shadow: Ending Theme <time="2:13">
+#006 Continue <time="30">
+#007 Game Over <time="6">
+#069 Credits Roll <time="1:59">
+#083 Special Ending (1) <time="24">
+#084 Special Ending (2) <time="32">
+
+#086 Q Sound Logo Sub
+
+  [Soundtrack]
+  Capcom Game Soundtrack / Vampire Savior
+  Victor Entertainment  VICL-60098, 60099  Aug 21, 1997
+
+  [Sound Composers]
+  Takayuki Iwai, Masato Kouda
+  
+  [Sound Designer]
+  Takeshi Kitamura
+
+// List Contribution by Tekkou
+$end

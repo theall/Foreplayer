@@ -1,0 +1,64 @@
+﻿$name=metlhawk
+$version=2
+$default=$0d
+$fixed_volume=418
+$main
+
+$0d Map Mode A
+$03 Game BGM 1
+$23 Game BGM 2
+$2a Map Mode B
+$25 Game BGM 3
+$27 Game BGM 4
+$28 Game BGM 5
+$0e Round Clear
+$06 Ending
+$2b Name [A]
+$2c Name [B]
+$11 Name [C]
+$2e Name [D]
+
+-----------------------------------------
+ [SFX]
+
+$42 [Voice] "shouri Point hyouji"
+$43 [Voice] "Time hyouji"
+$41 [Voice] "Metal Hawk hasshin!"
+$44 [Voice] "mokuhyou chiten Rader hyouji"
+$45 [Voice] "mokuhyou sekkin"
+$46 [Voice] "mokuhyou kakunin"
+$47 [Voice] "kougeki seyo!"
+$48 [Voice] "mokuyou hakai"
+$49 [Voice] "sakusen shuuryou"
+$4a [Voice] "kikan seyo"
+$4b [Voice] "Engine hidan!"
+$4c [Voice] "nenryou Tank hidan!"
+$4d [Voice] "dasshutsu seyo!"
+$4e [Voice] "joushou seyo"
+$4f [Voice] "kakou seyo"
+$40 [Voice] Count down to Time up!
+$30 [Voice] '60
+$31 [Voice] '50
+$32 [Voice] '40
+$33 [Voice] '30
+$34 [Voice] '20
+$35 [Voice] '10
+$36 [Voice] '9
+$37 [Voice] '8
+$38 [Voice] '7
+$39 [Voice] '6
+$3a [Voice] '5
+$3b [Voice] '4
+$3c [Voice] '3
+$3d [Voice] '2
+$3e [Voice] '1
+$3f [Voice] '0
+
+  [Source]
+  Winning Run -G.S.M. Namco 2-
+  Pony Canyon / Scitron  D24B1003  Jul 21, 1989
+
+  [Sound Composer]
+  Shinji Hosoe, Kazuo Noguchi
+
+$end

@@ -1,0 +1,53 @@
+﻿$name=boxyboy
+$version=2
+$default=23
+$main
+
+#023 Coin Inserted
+#033 World Select
+#001 First After-school Job
+#002 First After-school Job (faster)
+#003 Time is Money!
+#004 Time is Money! (faster)
+#012 Completed!
+#031 Best Step
+#005 Push Crates!
+#006 Push Crates! (faster)
+#017 Roll Barrels
+#018 Roll Barrels (faster)
+#028 Dozy Katasuke (unused)
+//#029 Dozy Katasuke (unused)
+#009 Job in Future City
+#010 Job in Future City (faster)
+#011 Time Out..
+#013 Name Entry
+#027 Ending
+
+#014 Not on CD 1
+#016 Not on CD 2
+#020 Not on CD 3
+#032 Not on CD 4
+#034 Not on CD 5
+#035 Not on CD 6
+#036 Not on CD 7
+#037 Not on CD 8
+
+-------------------------------------------------------------
+#015 [SFX]
+#019 [SFX]
+#021 [SFX]
+#022 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+
+  [Soundtrack]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097  Dec 16, 1993
+
+  [Sound Composer / Adapter]
+  Ayako Sasou
+
+// List Contribution by Anonymous
+// English List by Fujix
+$end

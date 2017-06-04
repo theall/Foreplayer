@@ -1,0 +1,60 @@
+$name=welltris
+$version=2
+$default=032
+$main
+
+#032 Title Screen
+#033 Demo Sound
+#128 [SFX] Credit
+#039 Lesson
+#035 Main Theme
+#148 Game Over
+#036 Name Entry
+#034 Ranking
+
+#037 Demo Sound Ver.2
+
+---------------------------------------------------
+  [SFX]
+
+#128 [SFX] Credit
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] Game Over
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#129 [Voice] 
+#161 [Voice] 
+
+// List contribution by ZEK.
+$end

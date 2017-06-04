@@ -1,0 +1,106 @@
+﻿$name=rollerg
+$version=2
+$default=128
+$main
+
+#128 Title BGM 
+#013 [S.E.] Credit
+#135 Team Select & Map
+#130 L.A.
+#139 Las Vegas
+#133 Leaders Fight
+#141 Dallas
+#140 Chicago
+#137 Championship Game
+#142 New York
+#132 Winner
+#136 Victory
+#131 Game Over ～ Name Entry
+
+#129 Title BGM - w/o intro
+#134 未使用曲 1
+#138 未使用曲 2
+
+---------------------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#011 [S.E.] <time="3">
+#012 [S.E.] <time="3">
+#013 [S.E.] Credit
+#014 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#168 [S.E.] 
+#171 [S.E.] <time="3">
+#173 [S.E.] 
+#186 [S.E.] 
+#187 [S.E.] 
+#188 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#208 [S.E.] <00:03>
+
+---------------------------------------------------
+ [Voice] 
+
+#003 [Voice]
+#167 [Voice] 
+#169 [Voice] <time="5">
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#189 [Voice] 
+#190 [Voice]
+#191 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] <time="3">
+
+// List contribution by ZEK.
+// Correction and updated by Richter X
+$end

@@ -1,0 +1,36 @@
+﻿$name=xevi3dg
+$version=2
+$default=$015
+$main
+
+$015 Credit Inserted
+$082 Area 1
+$083 Boss 1
+$084 Area 2
+$085 Boss 2
+$086 Area 3
+$087 Boss 3
+$088 Area 4
+$089 Boss 4
+$08a Area 5
+$08b Boss 5
+$08c Area 6
+$08d Boss 6
+$08e Area 7
+$08f Boss 7
+$081 Continue?
+$0b0 Stage Clear
+$0b2 Ending Movie
+$0b1 Name Entry
+
+$001 Stereo Check
+
+  [Source]
+  Xevious 3D/G PCB (System11)
+
+  [Sound Composers]
+  Ayako Sasou (aya), Shinji Hosoe (Megaten)
+  Nobuyoshi Sano (sanodg), Hiroto Sasaki (saman)
+
+// List contribution by Kayama
+$end

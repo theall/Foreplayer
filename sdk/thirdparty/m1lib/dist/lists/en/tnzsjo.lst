@@ -1,0 +1,67 @@
+﻿$name=tnzso
+$version=2
+$default=014
+$main
+
+#014 Coin
+#005 Opening - Main Theme
+#006 Main Theme
+#010 Hurry Up (1)
+#059 Hurry Up (2)
+#049 Book of Death
+#057 Clock
+#012 Power Up BGM
+#013 Extend
+#016 Round Clear
+#007 Boss BGM
+#017 Player Dead
+#056 Entrance of Heaven
+#008 Heaven BGM
+#009 Ending
+#011 Name Register
+#015 Game Over
+
+-----------------------------------------------------------
+
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#058 [SFX]
+
+// List contribution by Min
+// this list was previously for tnzsj (renamed in MAME).
+$end

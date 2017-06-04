@@ -1,0 +1,34 @@
+﻿$name=stcc
+$version=2
+$default=001
+$fixed_volume=113
+$main
+
+#001 So High - Channel X - Avex
+#002 Don't Drop Me - Ann Sinclair - Avex
+#003 Are u Wake up - Starr Gazer - Avex
+#004 Condition RED / Stream - Sei Matsumura - Sega Sound
+#005 Target - Hiro - Sega Sound
+#006 Loose Control - Hiro - Sega Sound
+#007 Intence / Ebizo - Ebizoo -Trance
+#008 Higher Streamer / Wind - Sei Matsumura - Sega Sound
+#009 Sonic Drive / Arai - Ryo Araki - Trance
+#010 Brave Nu Charge - Yoji Biomehanika - Trance
+#011 Inductee - Hidenori Shoji - Sega Sound
+#012 Cool Tropics / Jungle - Yohsuke Takeda - Sega Sound
+#013 Interlude 1
+#014 Rising High - Yuki Kubo - Trance
+#015 Interlude 2
+#016 Interlude 3
+#017 Game Over
+
+  [OST]
+  Sega Touring Car Championship
+  Marvelous Entertainment (MMV)  MJCA-00002 / MJCA-10002  Oct 17, 1997
+
+  Sega Racing Best
+  Marvelous Entertainment (MMV)  MJCA-00043  Mar 3, 1999
+
+// List contribution by Toby
+// Updated by NK
+$end

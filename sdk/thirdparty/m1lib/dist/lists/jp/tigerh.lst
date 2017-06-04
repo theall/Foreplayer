@@ -1,0 +1,46 @@
+﻿$name=twincobr
+$version=2
+$default=024
+$songmax=024
+$fixed_volume=109
+$main
+
+#024 Credit
+#019 First Mission (Opening Theme) <time="12">
+#014 Take Off <time="5">
+#001 Look Out (Normal BGM)
+#002 Fire! (Option Heli Time)
+#018 Oasis (Congratulation) <time="4.5">
+#021 I Am The Tiger (Name Storage 1st～3rd) <time="1:01">
+#022 Hero (Name Storage 4th～10th) <time="1:01">
+#023 Win (Name Storage End) <time="3">
+#020 Close (Game Over)
+
+-----------------------------------------
+ [S.E.]
+
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+
+  ■出典
+  究極TIGER -G.S.M. TAITO 2-
+  PONY CANYON / SCITRON  D28B0008  1988.11.21
+
+  ■作曲
+  上村 達也
+
+// List by Fuj
+$end

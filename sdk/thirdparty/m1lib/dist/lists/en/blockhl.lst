@@ -1,0 +1,38 @@
+﻿$name=blockhl
+$version=2
+$default=138
+$main
+
+ &lt;Quarth&gt;
+
+$08a The Marauding Block (Demo) <time="15">
+$08b Title
+$089 The Theme from Quarth (BGM 1)
+$086 The Menace of the Block (BGM 2, Qarth Mix)
+$08e The Closing Game in the Universe (BGM 3)
+$08d Pattern Clear
+$08f Beyond the Terminus (Ending)
+$08c Game Over
+$087 Ranking
+
+ &lt;Block Hole&gt;
+
+$091 The Prologue of "The Block Hole" (Title)
+$090 The Theme from "Block Hole" (BGM 1)
+$092 The Menace of the Block (BGM 2, Block Hole Mix)
+
+  [Source]
+  Konami Game Music Collection Vol.2
+  King Records  KICA-1016  Aug 21, 1990
+
+  [Sound Composer]
+  Kazuo Hanzawa (P. Hanzawa)
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by Monyons
+// Update by Fujix
+// Addition by Ayaya
+$end

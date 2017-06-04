@@ -1,0 +1,38 @@
+﻿$name=gaplus
+$version=2
+$default=0
+$songmax=25
+$main
+
+#00 Game Start Music
+#01 Missle Shot
+#02 Bonus Stage Start Music
+#03 Name Entry (1st)
+#04 Name Entry (2nd - 5th)
+#05 Round Start Music
+#06 Lucky or Bye-Bye Sound
+#07 Hyper Missle Shot
+#08 Point Counting in Bonus Round
+#09 Background Sound
+#10 Alien Bounced
+#11 Alien Explosion
+#12 Alien Flying 1
+#13 Alien Flying 2
+#14 Queen Flying
+#15 Star Flash Sound
+#16 Blaster Head or Fighter Parts Spinning
+#17 Phalanx Beam Sound
+#18 Cyclone Beam Sound
+#19 Blaster Head Loaded
+#20 Game Over Music
+#21 Extend Music
+#22 Credit Sound
+#23 Point Counting
+#24 Stars Reflow Sound
+#25 Special Flag Appeared
+
+  [Source]
+  Namco Video Game Music Program Collection
+  Dempa
+
+$end

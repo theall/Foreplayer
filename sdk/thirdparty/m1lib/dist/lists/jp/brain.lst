@@ -1,0 +1,52 @@
+﻿$name=brain
+$version=2
+$default=129
+$main
+
+#129 CREDIT
+#163 BGM 1
+#182 BOSS 1
+#180 ROUND CLEAR
+#164 BGM 2
+#183 BOSS 2
+#192 BGM 3
+#184 BOSS 3
+#162 ENDING
+#137 MISS 1
+#144 MISS 2
+#185 GAME OVER
+#165 NAME ENTRY
+#166 UNUSED
+
+------------------------
+ [S.E.]
+
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#136 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#167 [S.E.]
+#168 [S.E.]
+#169 [S.E.]
+#176 [S.E.]
+#177 [S.E.]
+#178 [S.E.]
+#179 [S.E.]
+#181 [S.E.]
+
+// List contributed by NK
+$end

@@ -1,0 +1,82 @@
+﻿$name=ddragon2
+$version=2
+$default=001
+$songmax=089
+$main
+  
+#001 Title
+#002 Mission 1
+#007 Mission 1 Boss
+#011 Mission Clear
+#013 Intermission
+#003 Mission 2
+#008 Mission 2 Boss
+#004 Mission 3
+#009 Mission 3 Boss
+#006 Mission 4
+#010 Mission 4 Boss 1
+#088 Mission 4 Boss 2 Part I
+#089 Mission 4 Boss 2 Part II
+#012 Ending
+  
+#005 (unused)
+#014 (unused)
+#015 (unused)
+  
+------------------------------------
+  
+#085 (all)
+  
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#059 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#063 [Voice]
+#064 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#071 [Voice]
+#073 [Voice]
+  
+#016 [SFX]
+#017 [SFX]
+#019 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#039 [SFX]
+#040 [SFX]
+#042 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#048 [SFX]
+#069 [SFX]
+#070 [SFX]
+#075 [SFX]
+#076 [SFX]
+#078 [SFX]
+#079 [SFX]
+  
+$end

@@ -1,0 +1,130 @@
+﻿$name=spidey
+$version=2
+$default=165
+$main
+
+#165 Credit Inserted
+#142 Choose Your Hero
+#144 Intro 1 <time="2">
+#131 DEMO 1
+#137 BGM 1
+#159 Intro 2 <time="2">
+#130 BGM 2 from Oki_Rap / Quartet
+#158 Intro 3 <time="2.1">
+#139 BGM 3
+#144 Intro 1 <time="2">
+#132 Boss 1
+#184 Clear
+#144 Intro 1 <time="2">
+#135 Demo 2
+#129 BGM 4 from FM Funk / Quartet
+#138 BGM 5
+#133 BGM 6
+#140 Boss 2
+#143 Ending
+#134 Game Over 1
+
+#136 Game Over 2
+#141 Unused
+
+---------------------------------------------------
+ [SFX] 
+
+#000 [Command] Sound Stop
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#166 [SFX] <time="3">
+#167 [SFX] 
+#168 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#196 [SFX] <time="5">
+#198 [SFX] 
+#199 [SFX] <time="5">
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] <time="3">
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] <time="3">
+#222 [SFX] <time="3">
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] <time="3">
+#228 [SFX] <time="3">
+#229 [SFX]  
+#232 [SFX] <time="3">
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] <time="3">
+#239 [SFX] 
+#240 [SFX] <time="5">
+#241 [SFX] <time="13">
+#242 [SFX] 
+#243 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#153 [Voice] 
+#165 [Voice] 
+#169 [Voice] 
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#221 [Voice] 
+#230 [Voice] 
+#231 [Voice]
+#244 [Voice] 
+#245 [Voice] 
+#246 [Voice] 
+#248 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#251 [Voice] 
+
+// List contribution by ZEK.
+$end

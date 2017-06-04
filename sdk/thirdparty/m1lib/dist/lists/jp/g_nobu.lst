@@ -1,0 +1,18 @@
+$name=g_nobu
+$version=2
+$default=508104
+$songmax=9999999
+$main
+
+#508104 mnzopen4
+#508666 mnzmain2
+#509066 mnzhex3 
+#509788 mnzunify
+#510262 mnzsucc2
+#510550 mnzfail2
+#510760 mnzwin2 
+#511014 mnzlose2
+#511236 mnzdead3
+
+// Basic list contributed by Knurek
+$end

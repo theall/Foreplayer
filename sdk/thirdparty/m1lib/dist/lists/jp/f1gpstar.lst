@@ -1,0 +1,15 @@
+﻿$name=f1gpstar
+$version=2
+$default=002
+$main
+
+#002 PUSH START BUTTON ～ SELECT CORSE
+#001 GOAL THEME (T-SQUARE 「TRUTH」)
+#004 NAME ENTRY
+#005 GAME OVER
+
+#003 未使用曲
+
+// 作曲者の頭文字は「Ｔ」。多和田氏？
+// List contribution by ZEK.
+$end

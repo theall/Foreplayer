@@ -1,0 +1,45 @@
+﻿$name=kick
+$version=2
+$default=015
+//$fixed_volume=148
+$main
+
+#015 [S.E.] Coin Inserted
+#046 Music 1
+#038 Music 2
+#040 Music 3
+#042 Music 4
+#044 Music 5
+#033 Music 6
+#034 Music 7
+#032 Music 8
+#039 Pop Tune
+#031 Missed Catch
+#016 Amen (Game Over)
+#048 Music 4 (Short)
+
+#024 Test Tone
+
+-----------------------------------------------------------
+ [S.E.]
+
+#004 [S.E.] pedal click
+#005 [S.E.] balloon pop
+#006 [S.E.] balloon bounce
+#007 [S.E.] falling balloon
+#009 [S.E.] balloon explosion
+#013 [S.E.] whistle
+#014 [S.E.] fall down
+#015 [S.E.] coin inserted
+#017 [S.E.] bomb fuse
+#020 [S.E.] balloon caught
+#021 [S.E.] extra cycle
+#022 [S.E.] tilt
+#023 [S.E.] balloon gulp
+#025 [S.E.] ???
+#026 [S.E.] pacman bonus
+#027 [S.E.] pacman fall
+#029 [S.E.] yumyum
+
+// List contribution by NK
+$end

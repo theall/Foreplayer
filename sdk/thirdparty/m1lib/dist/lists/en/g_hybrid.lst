@@ -1,0 +1,38 @@
+﻿$name=g_hybrid
+$version=2
+$default=129
+$songmax=255
+$main
+
+$81 Opening Theme ~ Title <time="3:00" fadeout="yes" fadeoutlength="10">
+$85 Prologue <time="0:30" fadeout="yes" fadeoutlength="10">
+$86 Combat Scenario <time="1:10" fadeout="yes" fadeoutlength="10">
+$82 Tactics Preparation <time="1:28" fadeout="yes" fadeoutlength="10">
+$84 Turn Start
+$87 Earth ~ Sukarabe Fight BGM 1 <time="2:08" fadeout="yes" fadeoutlength="10">
+$8d Earth ~ Sukarabe Fight BGM 2 <time="2:28" fadeout="yes" fadeoutlength="10">
+$8e Earth ~ Sukarabe Fight BGM 3 <time="3:08" fadeout="yes" fadeoutlength="10">
+$83 Earth ~ Rebellion Fight BGM 1 <time="2:06" fadeout="yes" fadeoutlength="10">
+$89 Earth ~ Rebellion Fight BGM 2 <time="3:03" fadeout="yes" fadeoutlength="10">
+$8a Earth ~ PETO Fight BGM 1 <time="3:12" fadeout="yes" fadeoutlength="10">
+$8f Earth ~ PETO Fight BGM 2 <time="3:33" fadeout="yes" fadeoutlength="10">
+$8c At the End of Combat <time="0:49" fadeout="yes" fadeoutlength="10">
+$93 Moon / Mars ~ Sukarabe Fight BGM 1 <time="2:14" fadeout="yes" fadeoutlength="10">
+$94 Moon / Mars ~ Sukarabe Fight BGM 2 <time="2:45" fadeout="yes" fadeoutlength="10">
+$92 Moon / Mars ~ Sukarabe Fight BGM 3 <time="2:37" fadeout="yes" fadeoutlength="10">
+$96 Moon / Mars ~ Cocoon Fight BGM 1 <time="2:45" fadeout="yes" fadeoutlength="10">
+$95 Moon / Mars ~ Cocoon Fight BGM 2 <time="3:34" fadeout="yes" fadeoutlength="10">
+$98 Moon / Mars ~ PETO Fight BGM 1 <time="1:44" fadeout="yes" fadeoutlength="10">
+$97 Moon / Mars ~ PETO Fight BGM 2 <time="1:31" fadeout="yes" fadeoutlength="10">
+$90 Ending Theme <time="4:53" fadeout="yes" fadeoutlength="10">
+$91 Staff Roll <time="2:47" fadeout="yes" fadeoutlength="10">
+$8b Game Over 
+ 
+$88 Title  <time="0:50" fadeout="yes" fadeoutlength="10">
+
+ [Sound Composers]
+  Naofumi Hataya, Junko Shiratsu, Sachio Ogawa
+      
+// M1 list contributed by Knurek
+// Tagging data from Project 2612
+$end

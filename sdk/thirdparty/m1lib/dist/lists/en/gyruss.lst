@@ -1,0 +1,62 @@
+﻿$name=gyruss
+$version=2
+$default=037
+$main
+
+#37 Start <time="14.40">
+#39 Main BGM 1 <time="45.00">
+#40 Main BGM 2 <time="57.00">
+#38 Main BGM 3 <time="42.58">
+#41 Stage Clear <time="32.30">
+#42 Perfect in Chance Stage
+
+------------------------------------------------
+ [SFX]
+
+#01 [SFX]
+#02 [SFX] <time="3">
+#03 [SFX]
+#04 [SFX]
+#05 [SFX]
+#06 [SFX]
+#07 [SFX]
+#08 [SFX]
+#09 [SFX]
+//#10 [SFX] <time="3">
+#11 [SFX]
+#12 [SFX]
+#14 [SFX]
+#15 [SFX]
+#16 [SFX]
+#17 [SFX]
+#18 [SFX]
+#19 [SFX]
+#20 [SFX]
+#21 [SFX]
+#22 [SFX]
+#23 [SFX]
+#24 [SFX]
+#25 [SFX]
+#26 [SFX]
+#27 [SFX]
+#28 [SFX]
+#30 [SFX]
+#31 [SFX]
+#32 [SFX]
+#33 [SFX]
+#34 [SFX]
+#35 [SFX]
+
+  [Soundtracks]
+  Konami Game Music Vol.1
+  Alfa Records  28XA-85  Jun 25, 1986
+
+  Konami Game Music Vol.1 (Legend Series)
+  SME / Scitron  SCDC-00050  Nov 1, 2000
+
+  Legend of Game Music 2 - Platinum Box -
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List by Min
+// Update by Fujix
+$end

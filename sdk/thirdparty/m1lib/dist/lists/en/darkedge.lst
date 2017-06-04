@@ -1,0 +1,137 @@
+﻿$name=darkedge
+$version=2
+$default=213
+$main
+
+#213 Credit Inserted <time="3.5">
+#129 Character Select
+#130 Suburb Stage
+#145 Stage Clear <time="4">
+#131 Green Lung Stage
+#132 Critical Condition 1
+#133 City Stage
+#135 Water Surface Stage
+#144 Continue
+#137 Sandstrom Stage
+#143 Snowfiled Stage
+#139 Bonus Stage
+#142 VS Ram-X
+#140 VS Ruler (Final)
+#138 Critical Condition 2
+#134 Ending
+
+#136 Unused <time="7">
+
+
+#104 [SFX] 
+#108 [SFX]
+#160 [SFX] 
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#165 [SFX]
+#170 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#186 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#213 [SFX] Credit Inserted
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+
+#167 [Voice] First round
+#169 [Voice] Second round
+#171 [Voice] Final round
+#202 [Voice] 
+#216 [Voice] Fight!
+#205 [Voice] Let's
+#211 [Voice] Go!
+#212 [Voice] Wins
+#203 [Voice] Losers
+#200 [Voice] Winner
+#230 [Voice] Bonus stage
+#231 [Voice] You lose
+
+#122 [Voice] Sadd
+#123 [Voice] Brad
+#124 [Voice] Yeager
+#125 [Voice] Galious
+#126 [Voice] M.E.K (Mechanical Enforced Command)
+#127 [Voice] Gini
+
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#164 [Voice] 
+#166 [Voice] 
+#168 [Voice] 
+#176 [Voice] 
+#185 [Voice] 
+#187 [Voice] 
+#195 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#201 [Voice] 
+#204 [Voice] 
+#206 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice]
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#232 [Voice] 
+
+// List contribution by R
+$end

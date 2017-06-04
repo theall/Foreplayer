@@ -1,0 +1,33 @@
+﻿$name=butasan
+$version=2
+$default=09
+$main
+
+#009 Title
+#001 Coin
+#014 Referee Appearing <time="5.4">
+#004 Whistle <time="1.2">
+#006 Gong
+#008 Spring
+#009 Summer
+#010 Autumn
+#012 Bonus Round
+#011 Winter
+#022 Clear
+#025 Play-off
+#019 A Pig Died
+#027 1st in Ranking
+#028 2nd and below in Ranking
+#007 Credits
+#021 History
+#002 Game Over (1)<time="0.6">
+#003 Game Over (2)<time="0.6">
+#002 Game Over (3)
+
+  [Source]
+  Game Sound Jaleco -G.S.M. Jaleco 1-
+  Pony Canyon / Scitron  D28B0003  Aug 21, 1988
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

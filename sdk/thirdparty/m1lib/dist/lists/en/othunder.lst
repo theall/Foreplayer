@@ -1,0 +1,60 @@
+﻿$name=othunder
+$version=2
+$default=7
+$main
+
+#007 Demo <time="39.5">
+#064 [Voice] Operation Thunderbolt <time="5">
+#019 Credit Inserted <time="3">
+#008 Mission Start<time="30">
+#009 Mission 1 Completed
+#010 Mission 2 Completed
+#011 Mission 3 Completed
+#012 Mission 4 Completed
+#013 Mission 5 Completed
+#014 Mission 6 Completed
+#015 Mission 7 Completed
+#016 Mission 8 Completed
+#017 Mission Failed
+#018 End Credit & Name Entry
+
+-----------------------------------------
+
+#065 [Voice] (Mission Start) Operation initiated! Rescue all hostages.
+#066 [Voice] (Mission 1) Gather intelligence infomation.
+#074 [Voice] (Mission 1 Completed) Made contact with intelligence agent and obtained information.
+#067 [Voice] (Mission 2) Confiscate ammunitions and means of transportation.
+#075 [Voice] (Mission 2 Completed) Raid successful. Got ammunition and jeeps.
+#068 [Voice] (Mission 3) Search enemy bunkers.
+#076 [Voice] (Mission 3 Completed) Arrived at enemy hide-outs.
+#069 [Voice] (Mission 4, 6) Rescue hostages.
+#077 [Voice] (Mission 4 Completed) Succeeded in rescuing hostages.
+#070 [Voice] (Mission 5) Head for enemy hedquarters.
+#078 [Voice] (Mission 5 Completed) Arrived at enemy headquarters.
+#079 [Voice] (Mission 6 Completed) Succeeded in rescuing hostages.
+#072 [Voice] (Mission 7) Secure escape routes.
+#080 [Voice] (Mission 7 Completed) Secured a passanger plane for escape.
+#073 [Voice] (Mission 8) Escape!
+#081 [Voice] (Mission 8 Completed) Escape successful!
+#085 [Voice] Mission Completed! Your operation was successfuly completed.
+#086 [Voice] Now, You can go on R & R.
+#087 [Voice] Nobody knows when orders for your next mission will be given.
+#083 [Voice] (Mission Failed) You are fatally wounded. Your mission has failed.
+#082 [Voice] (Mission 4, 6 Failed) The hostages are all dead. Your mission has failed.
+#084 [Voice] (Mission 8 Failed) The pilot is dead! Escape is impossible.
+
+-----------------------------------------
+020-022 FM Effects
+021-031 SFX
+032-035 Silent
+036-038 FM Effects
+039-063 SFX
+098-101 FM Effects
+102 SFX
+103 Voice
+104-127 PCM Rhythm
+128 SFX
+
+// Original contribution by MuramuraNight
+// Updated by Fuj
+$end

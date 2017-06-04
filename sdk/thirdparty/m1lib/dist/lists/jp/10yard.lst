@@ -1,0 +1,33 @@
+$name=10yard
+$version=2
+$default=021
+$songmax=026
+$main
+
+#021 [Music] Start of Half
+#022 [Music] Game Over
+#025 [Music]
+#026 [Music]
+
+#007 [Voice] "Ready..."
+#008 [Voice] "Hut"
+#010 [Voice] "First Down!"
+#011 [Voice] "Touchdown!"
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#009 [S.E.]
+#012 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#023 [S.E.]
+
+// Basic listing by Tafoid
+$end

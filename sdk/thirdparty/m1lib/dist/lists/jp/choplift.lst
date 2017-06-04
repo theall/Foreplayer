@@ -1,0 +1,69 @@
+﻿$name=choplift
+$version=2
+$default=157
+$main
+
+#171 [S.E.] Title Demo <time="3">
+#157 Mission Start
+#129 Mission 1
+#163 Mission 2
+#132 Mission 3
+#165 Mission 4
+#162 Mission Completed
+#160 Perfect! Bonus
+#158 Game Over
+#166 Name Entry
+
+#169 未使用曲 1
+#168 未使用曲 2
+#164 未使用曲 3
+#161 未使用曲 4
+#159 未使用曲 5
+
+---------------------------------------------------
+  [S.E.]
+
+#130 [S.E.] ヘリ <time="5">
+#133 [S.E.]
+#134 [S.E.]
+#134 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.] 
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.] 
+#147 [S.E.]
+#148 [S.E.] 
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.]
+#167 [S.E.]
+#170 [S.E.]
+#171 [S.E.] タイトルヘリ <time="5">
+
+---------------------------------------------------
+
+ [Voice] 
+
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+
+// List contribution by ZEK.
+$end

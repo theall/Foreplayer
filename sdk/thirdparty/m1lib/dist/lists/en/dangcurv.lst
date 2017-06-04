@@ -1,0 +1,29 @@
+$name=dangcurv
+$version=2
+$default=$0b
+$main
+
+$0b Title Demo
+$06 Select
+$07 Dangerous Curves (BGM 1 lead-in) <time="2">
+$08 Dangerous Curves (BGM 1)
+$10 SBS595 (BGM 2)
+$11 Watch Out Red Car #2 (BGM 3)
+$0f 10 Count
+$12 Laughing Clown (BGM 4)
+$0a Watch Out Red Car (Ending 1)
+$14 J-Curves (BGM 5)
+$0c Goal
+$13 Magic Touch (Ending 2)
+$0e Name Entry
+$0d Game Over
+
+  [Source]
+  Dangerous Curves / Taito Zuntata
+  Pony Canyon / Scitron  PCCB-00194  Oct 20, 1995
+
+  [Sound Composer]
+  Hideki Takahagi
+
+// List by Phil B
+$end

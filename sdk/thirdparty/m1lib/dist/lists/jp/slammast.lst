@@ -1,0 +1,264 @@
+﻿$name=slammast
+$version=2
+$default=32
+$songmax=500
+$main
+
+#032 TITLE
+#053 GAME SELECT <time="0:30">
+#052 PLAYER SELECT <time="0:30">
+#061 PLAYER 決定
+#054 VS
+#033 TOKYO (STAGE 1) <time="1:54">
+#034 MOSCOW (STAGE 2) <time="2:01">
+#035 HANOVER (STAGE 3) <time="2:33">
+#036 LONDON (STAGE 4)　<time="2:33">
+#037 NEW YORK (STAGE 5) <time="1:50">
+#060 勝敗
+#055 途中参加
+#056 途中参加 PLAYER SELECT <time="0:32">
+#038 CALGARY (STAGE 6) <time="2:26">
+#039 LOS ANGELES (STAGE 7) <time="2:15">
+#040 MEXICO (STAGE 8) <time="1:27">
+#041 SYDNEY (STAGE 9) <time="2:14">
+#042 THEME OF ZALAZOF <time="2:13">
+#043 THEME OF COLT <time="1:55">
+#044 THEME OF STINGER <time="2:03">
+#045 THEME OF TITAN <time="2:13">
+#046 THEME OF BUDO <time="2:43">
+#047 THEME OF HAGGAR <time="1:39">
+#048 THEME OF GOMES <time="1:56">
+#049 THEME OF SHEEP <time="2:10">
+#050 THEME OF KIMARA <time="1:05">
+#051 THEME OF ASTORO <time="2:05">
+#062 ENDING (1周目) <time="0:40">
+#063 ENDING (2周目) <time="0:40">
+#027 STAFF ROLL (1COIN) <time="1:09">
+#058 CONTINUE <time="0:57">
+#059 GAME OVER
+#057 RANKING
+
+------------------------------------------------------
+ [Voice]
+
+#074 [Voice] Tokyo
+#075 [Voice] Moscow
+#076 [Voice] Hanover
+#077 [Voice] London
+#078 [Voice] New York
+#079 [Voice] Calgary
+#080 [Voice] Los Angeles
+#081 [Voice] Mexico
+#082 [Voice] Sydney
+#083 [Voice] you
+#084 [Voice] win
+#085 [Voice] lose
+#086 [Voice] perfect
+#087 [Voice] fall
+#088 [Voice] fight
+#089 [Voice] give up
+#090 [Voice] ring out
+#297 [Voice] draw game
+#298 [Voice] judgement
+#299 [Voice] tie break
+#316 [Voice] count out
+#489 [Voice] double count out
+#317 [Voice] double ring out
+#318 [Voice] no contest
+#320 [Voice] pin
+#321 [Voice] エントリー受付中です
+#091 [Voice] one
+#092 [Voice] two
+#093 [Voice] three
+#094 [Voice] four
+#095 [Voice] five
+#096 [Voice] six
+#097 [Voice] seven
+#098 [Voice] eight
+#099 [Voice] nine
+#100 [Voice] ten
+#101 [Voice] eleven
+#102 [Voice] twelve
+#103 [Voice] thirteen
+#104 [Voice] fourteen
+#105 [Voice] fifteen
+#106 [Voice] sixteen
+#107 [Voice] seventeen
+#108 [Voice] eighteen
+#109 [Voice] nineteen
+#110 [Voice] twenty
+#111 [Voice] one!
+#112 [Voice] two!
+#113 [Voice] three!
+#300 [Voice] one!
+#301 [Voice] two!
+#302 [Voice] three!
+#303 [Voice] fall
+#490 [Voice] pin
+#491 [Voice] one!
+#492 [Voice] two!
+#493 [Voice] three!
+#065 [Voice] ウオォォォ…
+#069 [Voice] ウオォァァ…
+#072 [Voice] キッキーー！
+#073 [Voice] ゥキィーー！
+#114 [Voice] ハァッ！
+#118 [Voice] ハイィィッ！
+#122 [Voice] ヌェィッ！
+#126 [Voice] ホァッ！
+#130 [Voice] オオォォーーリャ！
+#134 [Voice] フッ！
+#138 [Voice] アアッ！
+#142 [Voice] ゥアッ！
+#146 [Voice] ベロベロベロベロベェェーッ！
+#150 [Voice] ゥアアッ…！
+#154 [Voice] フウッ！
+#322 [Voice] ダーリーン！
+#324 [Voice] ウガアアァァッ…！
+#326 [Voice] ウッソォーッ…
+#328 [Voice] ヤアァァーッ！
+#330 [Voice] ヒョオウゥーーッ！
+#332 [Voice] オゥレッ！
+#334 [Voice] ヌゥンッ！
+#336 [Voice] ウァゥッ…！
+#338 [Voice] シャッ！
+#340 [Voice] ヤッフォゥッ！
+#342 [Voice] フゥッ…！
+#344 [Voice] ンゲェッ…！
+#346 [Voice] ハァイッ！
+#348 [Voice] カモォォーン！
+#350 [Voice] ノォッ…！
+#352 [Voice] グォッ…！
+#354 [Voice] グァァーーッ…！
+#356 [Voice] グワァァッ…！
+#358 [Voice] ホォォーーッ！
+#360 [Voice] ハァッ！
+#362 [Voice] ハッ！
+#364 [Voice] ヨォォォーーーーッ！
+#366 [Voice] ゥウオォォ…！
+#368 [Voice] アゥォォッ…！
+#370 [Voice] ッシャッ…！
+#372 [Voice] シャァッ！
+#374 [Voice] ゥリャッ！
+#376 [Voice] グオォ…！
+#378 [Voice] グッ…！
+#382 [Voice] ッツグォォッ！
+#384 [Voice] ングァァッ！
+#386 [Voice] ウガァァーーッ！
+#388 [Voice] フガァッ！
+#390 [Voice] フゥンッ！
+#392 [Voice] ガァッ！
+#394 [Voice] ゴァァッ！
+#396 [Voice] ゥンッ！
+#398 [Voice] ゥワァァ…
+#400 [Voice] グゥァッ…
+#402 [Voice] ゥォアッ…
+#404 [Voice] フンッ！
+#406 [Voice] ゥワッハッハッハッ…
+#408 [Voice] ゥリャァッ！
+#410 [Voice] ダァーィッ！
+#412 [Voice] フゥンッ！
+#414 [Voice] Eat This !
+#416 [Voice] オゥラァーーッ！
+#418 [Voice] ガァァーーッ！
+#420 [Voice] ゥウウーー…
+#422 [Voice] グァッ…
+#424 [Voice] グァァ…
+#426 [Voice] オゥッ！
+#428 [Voice] ウガァーーーッ！
+#430 [Voice] ギャッ…
+#432 [Voice] アーッハッハッハッハッ…
+#434 [Voice] ウキィーーッ！
+#436 [Voice] ゥガァッ…
+#438 [Voice] ボゲェェッ…
+#440 [Voice] ボワァーーッ！
+#444 [Voice] ゥオオォーー…
+#446 [Voice] オウッ…
+#494 [Voice] ヌカッタァッ！
+
+
+------------------------------------------------------
+ [S.E.]
+
+#000 [S.E.]
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.] <time="0:05">
+#023 [S.E.]
+#161 [S.E.]
+#164 [S.E.]
+#168 [S.E.]
+#172 [S.E.]
+#176 [S.E.]
+#180 [S.E.]
+#184 [S.E.]
+#188 [S.E.]
+#192 [S.E.]
+#196 [S.E.]
+#200 [S.E.]
+#204 [S.E.]
+#208 [S.E.]
+#212 [S.E.]
+#216 [S.E.]
+#220 [S.E.]
+#224 [S.E.]
+#228 [S.E.]
+#232 [S.E.]
+#236 [S.E.]
+#240 [S.E.]
+#241 [S.E.]
+#242 [S.E.]
+#243 [S.E.]
+#244 [S.E.] 歓声 1<time="0:05">
+#245 [S.E.] 歓声 2
+#246 [S.E.]
+#247 [S.E.]
+#248 [S.E.]
+#252 [S.E.]
+#256 [S.E.]
+#260 [S.E.]
+#264 [S.E.]
+#268 [S.E.]
+#273 [S.E.] 歓声 3<time="0:05">
+#274 [S.E.] 歓声 4
+#275 [S.E.]
+#276 [S.E.]
+#280 [S.E.]
+#284 [S.E.]
+#288 [S.E.]
+#292 [S.E.]
+#304 [S.E.]
+#308 [S.E.]
+#312 [S.E.]
+#448 [S.E.]
+#452 [S.E.]
+#456 [S.E.]
+#460 [S.E.]
+#464 [S.E.]
+#468 [S.E.]
+#470 [S.E.]
+#474 [S.E.]
+#478 [S.E.] <time="0:05">
+#487 [S.E.]
+#488 [S.E.]
+#497 [S.E.] 歓声 5
+#498 [S.E.]
+#499 [S.E.] 歓声 6<time="0:05">
+#500 [S.E.]
+
+  ■出典
+  Muscle Bomber / CAPCOM ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00136  1993.9.17
+
+//リスト作成：NKさん
+$end

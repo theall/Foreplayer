@@ -1,0 +1,65 @@
+﻿$name=flipshot
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#038 Attract Mode
+#033 Title Screen
+#127 [SFX] Credit Inserted
+#040 How to Play
+#034 Player Select
+#036 Round 1
+#037 Round 2
+#046 Lose
+#041 Continue
+#038 Round 3
+#039 Final Round
+#045 Win
+#035 Winner
+#043 Ending
+#040 Name Entry
+#042 Game Over
+
+#044 Unused 1
+#047 Unused 2
+
+---------------------------------------------------
+  [SFX] 
+
+#127 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#195 [Voice] Round
+#196 [Voice] Stage
+#197 [Voice] Zero
+#214 [Voice] One
+#215 [Voice] Two
+#216 [Voice] Three
+#217 [Voice] Four
+#218 [Voice] Five
+
+// List contribution by ZEK.
+// English list QA and fixed by Fujix
+$end

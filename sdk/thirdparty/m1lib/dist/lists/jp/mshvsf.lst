@@ -1,0 +1,85 @@
+﻿$name=mshvssf
+$version=2
+$default=7
+$fixed_volume=223
+$main
+
+$007 Q Sound Logo
+
+$001 OPENING & TITLE
+$002 PLAYER SELECT
+$003 BREAK
+$004 VS
+$005 WIN
+$009 CONTINUE
+$00a GAME OVER
+$033 NORIMARO TOUJOU
+$006 HURRY UP
+$032 ENDING INTRODUCTION
+$00d THEME OF CYCLOPS
+$030 CYCLOPS ENDING
+$010 THEME OF WOLVERINE
+$028 WOLVERINE ENDING
+$015 THEME OF RYU
+$02c RYU ENDING
+$016 THEME OF KEN
+$00e THEME OF CAPTAIN AMERICA
+$023 CAPTAIN AMARICA ENDING
+$00f THEME OF HULK
+$027 HULK ENDING
+$013 THEME OF SPIDER-MAN
+$02b SPIRDER MAN ENDING
+$017 THEME OF CHUN-LI
+$026 CHUN-LI ENDING
+$019 THEME OF ZANGIEF
+$018 THEME OF DHALSIM
+$02d DHALSIM ENDING
+$011 THEME OF SHUMA-GORATH
+$029 SHUMA-GORATH ENDING 1
+$02a SHUMA-GORATH ENDING 2
+$01e THEME OF DAN
+$024 DAN ENDING
+$01b THEME OF GOUKI
+$025 GOUKI ENDING
+$01c THEME OF SAKURA
+$01d THEME OF NORIMARO
+$02e NORIMARO ENDING 1
+$02f NORIMARO ENDING 2
+$014 THEME OF BLACKHEART
+$012 THEME OF OMEGA RED
+$01a THEME OF VEGA
+$00b BOSS INTRODUCTION
+$00c THEME OF APOCALYPSE
+$031 THEME OF HIDDEN CHARACTER
+$021 CONQUEROR ENDING
+$022 TRANQUILITY ENDING
+$020 STAFF ROLL
+$01f THEME OF MECH-GOUKI (未収録)
+
+--------------------------------------------------
+ [Voices and SEs]
+
+#064 [Voice] Are you ready, true believers? Capcom and Marvel have joined forces and once again to bring you.<time="5.8">
+#066 [Voice] It's <time="0.7">
+#065 [Voice] Marvel Super Heroes versus Street Fighter <time="3.5">
+#072 [Voice] Survive! Uncanny adventure! <time="2.7">
+#071 [Voice] Look! Spectacular action! <time="2.5">
+#068 [Voice] Don't miss out on the enjoyment of lifetime. <time="3.5">
+#074 [Voice] Behold amazing fantasy! <time="2.8">
+#073 [Voice] Feel sensational thrills. <time="2.8">
+#069 [Voice] Don't miss the most amazing tag team fighting game ever! <time="3.6">
+#070 [Voice] Are you ready for a new challenger? <time="2.5">
+#075 [Voice] Now, come join <time="2.3">
+#076 [Voice] Now, experience <time="2.4">
+#077 [Voice] Marvel Super Heroes versus Street Fighter
+
+  ■出典
+  マーヴルスーパーヒーローズVS.ストリートファイター
+  オリジナルサウンドトラック＆アレンジ
+  Firstsmile  FSCA-10017  1997.09.19
+
+  ■作曲
+  岩井 由紀, 角田 裕子
+
+// Base list contributed by Monyons
+$end

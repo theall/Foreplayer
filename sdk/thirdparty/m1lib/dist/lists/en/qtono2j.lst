@@ -1,0 +1,110 @@
+﻿$name=qtono2j
+$version=2
+$default=106
+$main
+
+#106 Capcom Logo (1) <time="1.4">
+#060 Capcom Logo (2) <time="3">
+#028 Title (1) <time="48">
+#048 Title (2) <time="5">
+#049 Credit Inserted <time="3">
+#025 Select Daimyo <time="46.2">
+#001 Battle Plan BGM 1 - Owari: Oda Nobunaga <time="1:32.5">
+#004 Battle Plan BGM 2 - Echigo: Uesugi Kenshin <time="1:01.8">
+#003 Battle Plan BGM 3 - Kai: Takeda Shingen <time="1:23.5">
+#002 Battle Plan BGM 4 - Mikawa: Tokugawa Ieyasu <time="1:01.5">
+#008 Battle Plan BGM 5 - Mutsu: Date Masamune <time="1:01.6">
+#005 Battle Plan BGM 6 - Aki: Mouri Motonari <time="1:01.6">
+#006 Battle Plan BGM 7 - Tosa: Chousokabe Motochika <time="48.2">
+#007 Battle Plan BGM 8 - Satsuma: Shimazu Yoshihisa <time="1:07.4">
+#021 Begin (Normal) <time="24.8">
+#009 Quiz BGM 1 - Normal (Q.1 - Q.3) <time="41.2">
+#010 Quiz BGM 1 - Normal (Q.4 - Q.6) <time="38.5">
+#011 Quiz BGM 1 - Normal (Q.7 - Q.10) <time="37">
+#026 Victorious 1 (1) <time="8.5">
+#056 Victorious 1 (2) <time="2">
+#024 Confront <time="57.63">
+#015 Quiz BGM 2 - War (Q.1 - Q.3) <time="51.34">
+#016 Quiz BGM 2 - War (Q.4 - Q.6) <time="24.61">
+#017 Quiz BGM 2 - War (Q.7 - Q.10) <time="24.44">
+#020 Quiz BGM 3 - War (Final) <time="55.6">
+#026 Victory 2 (1) <time="8.5">
+#058 Victory 2 (2) <time="2.5">
+#023 Quiz BGM 4 - Policy <time="49.3">
+#022 Begin (Hard Enemy) <time="23">
+#012 Quiz BGM 5 - Hard Enemy (Q.1 - Q.3) <time="1:04.2">
+#013 Quiz BGM 5 - Hard Enemy (Q.4 - Q.6) <time="30.7">
+#014 Quiz BGM 5 - Hard Enemy (Q.7 - Q.10) <time="31">
+#032 Unified the County <time="17">
+#019 Ending - Matsuri <time="1:22">
+#033 Credits Roll <time="1:36.5">
+#018 Continue <time="45.5">
+#098 Game Over (1) <time="0.6">
+#099 Game Over (2) <time="2.5">
+#059 Game Over (3) <time="3">
+#103 Game Over (4) <time="3">
+#031 High Score Table <time="3">
+
+#027 Unified the County - Credits Roll <time="1:51">
+#030 Unused <time="6">
+
+-----------------------------------------------------------
+ [Voice]
+
+#048 [Voice] Quizu, tonosamano yagou 2, zenkokuban
+#049 [Voice] Iza
+#050 [Voice] Iza, shutsujin!
+#051 [Voice] Tenmei wareni ari
+#052 [Voice] Nerihibar ni shitekureruwa
+#053 [Voice] Katana no sabi ni shitekureruwa
+#054 [Voice] Waga bujin no chiga sawagu
+#055 [Voice] Ki wa jukuseri
+#056 [Voice] Appare
+#057 [Voice] Nuoo
+#058 [Voice] Oooh
+#059 [Voice] Munen shigoku
+#060 [Voice] Kapukon
+#061 [Voice] Dai ichi mon
+#062 [Voice] Dai ni mon
+#063 [Voice] Dai san mon
+#064 [Voice] Dai yon mon
+#065 [Voice] Dai go mon
+#066 [Voice] Dai roku mon
+#067 [Voice] Dai nana mon
+#068 [Voice] Dai hachi mon
+#069 [Voice] Dai kyuu mon
+#070 [Voice] Saigo no mondaidesuzo
+#110 [Voice] Seikai
+#071 [Voice] Tono, watakushino kimochi o ouketorikudasai
+#072 [Voice] Tono, watakushino kimochi o ouketorikudasai
+#073 [Voice] Tsuzukenasaruka
+
+-----------------------------------------------------------
+ [SFX]
+
+#089 [SFX] 
+#029 [SFX] Drum
+#080 [SFX]
+#081 [SFX] Festival music
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#086 [SFX]
+#087 [SFX] 
+#088 [SFX]
+#090 [SFX] Tanegashima
+#092 [SFX] Conch horn
+#093 [SFX] 
+#094 [SFX] 
+#096 [SFX] Flame
+#098 [SFX] Thunderbolt 1
+#099 [SFX] Thunderbolt 2
+#100 [SFX] High water
+#101 [SFX] Flash flood
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+
+// List Contribution by NK
+// English list by Fujix.
+$end

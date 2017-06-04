@@ -1,0 +1,60 @@
+﻿$name=psychic5
+$version=2
+$default=020
+$main
+
+#020 Attract Mode
+#056 Credit Inserted
+#002 Theme of Naoki
+#028 Time Stop 
+#004 Theme of Akiko
+#016 Magic Broom
+#006 Theme of Bunta
+#019 Scene Cleared
+#008 Theme of Makoto
+#010 Theme of Genzou
+#018 Great Satan 
+#024 Ending
+#022 Name Entry
+#025 Continue
+#021 Game Over
+
+#027 Unused
+
+----------------------------------------------------
+  [SFX]
+
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#056 [SFX] Credit Inserted
+#058 [SFX]
+
+  [Sound Composer]
+  Shin'ichi Sakamoto
+
+// List contribution by R
+// English list by Fuj.
+$end

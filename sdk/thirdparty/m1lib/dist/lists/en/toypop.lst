@@ -1,0 +1,51 @@
+﻿$name=toypop
+$version=2
+$default=027
+$main
+
+#027 Credit Inserted
+#007 Game Start Music
+#000 Introduction <time="4.3">
+#004 BGM
+#016 Hurry Up Music <time="15">
+#006 Round Clear
+#001 Counting Points
+#005 Bounus Round
+#025 Touched Enemy
+#002 Game Over
+#003 Name Entry
+
+-----------------------------------------------------------
+
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#026 [SFX]
+
+  [Source]
+  All About Namco I, II
+  Dempa
+
+  [Soundtrack]
+  Video Game Graffiti Vol.2
+  Victor Entertainment  VDR-5222  Oct 21, 1987
+
+  [Sound Composer]
+  Junko Ozawa
+
+// List Contribution by Min
+// Update by Fujix
+$end

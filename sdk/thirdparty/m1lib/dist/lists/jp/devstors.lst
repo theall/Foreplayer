@@ -1,0 +1,27 @@
+﻿$name=devstors
+$version=2
+$default=$40
+$songmax=$56
+$main
+
+$40 Sent On A Special Mission (ステージ1 BGM)
+$42 The Air Force Base (ステージ2 BGM)
+$4b Tough Enemy (ボス BGM)
+$46 Isolated Battlefield (ステージ3 BGM)
+$50 Watch Out (ステージ4 BGM)
+$54 Go Speedy! (ステージクリア)
+$4e The Navy Base (ステージ5 BGM)
+$48 Bombardment (ステージ6 BGM)
+$53 Went To The Ground (ゲームオーバー)
+$55 Priseworthy Braves (ランキング BGM)
+$44 "Destruction" That's All (ステージ7 BGM)
+$56 Triumph (エンディング BGM)
+
+$52 ???1
+$4c ???2
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.0
+  KING RECORDS  276A-7708  1989.07.21
+
+$end

@@ -1,0 +1,25 @@
+﻿$name=scramble
+$version=2
+$default=09
+$main
+
+#09 Start
+#11 ??
+#13 ??
+#14 ??
+
+------------------------------------------------------
+
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#018 [SFX]
+#032 [SFX]
+#033 [SFX]
+#035 [SFX]
+#036 [SFX]
+#189 [SFX?]
+#193 [SFX?] <time="5.0">
+
+// List contribution by Neo Techno Bou on 2003-12-23
+$end

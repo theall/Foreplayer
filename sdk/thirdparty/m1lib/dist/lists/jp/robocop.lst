@@ -1,0 +1,91 @@
+﻿$name=robocop
+$version=2
+$default=049
+$main
+
+#049 SUGGESTION (TITLE)
+#050 PROLOGUE (OPEN)
+#052 MAIN THEME (BGM 1)
+#059 WINNER (CLEAR)
+#056 CRISIS (BOSS 1)
+//#051 MAIN THEME (BGM 1) =NO INTRO A=
+//#054 MAIN THEME (BGM 1) =NO INTRO B=
+#053 CRIME FIELD (BGM 2)
+#058 TRIAL SHOOTING (BONUS)
+#055 LAST BATTLE (BGM 3)
+#057 LAST THEME (BOSS 2)
+#060 DEAD END (OVER)
+#061 EPILOGUE (NAME)
+
+-----------------------------------------------------------
+
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.] Grenade falling
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.] bip bip
+#048 [S.E.]
+
+#062 [PCM] Robocop dying
+#063 [PCM]
+#064 [PCM] Car skid noise
+#065 [Voice] Serve the public trust. Protect the Innocent. Uphold the law.
+#066 [S.E.]
+#067 [S.E.] Boss on fire
+#068 [Voice] (Boss) ????
+#069 [Voice] Gordon
+#070 [Voice] Robocop
+#071 [Voice] Woman's yell
+#072 [Voice]
+#073 [Voice] Robocop hit
+#074 [PCM]
+#075 [Voice] Murphy
+#076 [Voice] Thank you for your cooperation
+#077 [Voice] You are under arrest
+#078 [Voice] (Boss) ????
+#079 [Voice] Thank you
+
+  ■出典
+  GAME SOUND DECO / -G.S.M. DATA EAST 1-
+  PONY CANYON / SCITRON  D25B1002  1989.06.21
+
+// リスト作成：みん☆さん
+// Updated by CrashTest
+$end

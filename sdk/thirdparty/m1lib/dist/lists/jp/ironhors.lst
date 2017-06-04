@@ -1,0 +1,32 @@
+﻿$name=ironhors
+$version=2
+$default=74
+$main
+
+#74 デモ <time="53" fadeout="yes" fadeoutlength="10">
+#78 [SE] クレジット <time="2">
+#69 スタート <time="7">
+#66 BGM 1
+#76 ボス
+#65 ステージ～ステージデモ <time="13">
+#68 BGM 2
+#75 BGM 3
+#79 BGM 4
+#77 BGM 5
+#71 BGM 6
+#67 オールステージクリア <time="7">
+#70 クリアデモ
+#80 DIXIE BREAK DOWN (ランキング) <time="1:15" fadeout="yes" fadeoutlength="15">
+
+#72 CD未収録
+#73 [SE] Player Killed
+
+  ■出典
+  コナミ・ゲーム・ミュージック VOL.2
+  ALFA RECORDS  ALC-22904  1986.09.25
+
+  コナミ・ゲーム・ミュージック VOL.2 (LEGEND SERIES)
+  SME / SCITRON  SCDC-00060  2001.01.11
+
+// lst by Fuj
+$end

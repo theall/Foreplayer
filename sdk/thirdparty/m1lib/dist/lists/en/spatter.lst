@@ -1,0 +1,35 @@
+﻿$name=spatter
+$version=2
+$default=145
+$songmax=162
+$fixed_volume=118
+$main
+
+#145 Coin
+#162 Start / Main BGM
+#151 Main BGM
+#144 Stage Clear
+#161 Bonus Stage BGM
+#132 Bonus Stage (Clear)
+#146 Bonus Stage (Failed)
+#150 Miss!
+#137 Game Over
+#152 Name Entry
+
+-----------------------------------------
+ [SFX]
+
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#153 [SFX]
+#160 [SFX]
+
+$end

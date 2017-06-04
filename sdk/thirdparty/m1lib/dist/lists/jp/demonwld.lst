@@ -1,0 +1,83 @@
+﻿$name=demonwld
+$version=2
+$default=010
+$fixed_volume=115
+$main
+
+ &lt;東亜プラン版&gt;
+#010 Credit
+#032 Name Entry
+#031 Opening Demo
+#001 Round 1
+#002 Round 2
+#001 Round 3
+#003 Round 4
+#004 Round 5
+#005 Round 6
+#006 Round 7
+#007 Round 8
+#008 Round 9
+#009 Round 10
+#037 Ending
+#035 Continue
+#030 Game Over
+
+ &lt;タイトー版&gt;
+#010 Credit
+#032 Name Entry
+#031 Opening Demo
+#006 Round 1
+#003 Round 2
+#004 Round 3
+#005 Round 4
+#001 Round 5
+#002 Round 6
+#001 Round 7
+#007 Round 8
+#008 Round 9
+#009 Round 10
+#037 Ending
+#035 Continue
+#030 Game Over
+
+--------------------------------
+ [S.E.]
+
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#036 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+
+  ■作曲
+  富沢 敏明, 太田 理
+
+// List contributed by: NK
+$end
+

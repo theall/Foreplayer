@@ -1,0 +1,91 @@
+﻿$name=contra
+$version=2
+$default=$4d
+$songmax=$4d
+$fixed_volume=337
+$main
+
+$4d Contra (Title)
+$40 Battle in the Jungle (Main BGM)
+$44 Labyrinthine Fortress 1 (3D BGM)
+$47 Labyrinthine Fortress 2 (3D BOSS BGM)
+$4b Triumphal Return 1 (Round Clear 1)
+$42 Bloody Sault (Sault Stage)
+$46 Fortress in the Ice (Tundra Stage)
+$43 Fortress in the Fire (Enemy Base)
+$48 Pulse of the Shudder (Boss)
+$4c Triumphal Return 2 (Round Clear 2)
+$49 Sandinista (Ending)
+$4a Game Over
+$45 Ranking
+
+-----------------------------------------
+ [SFX]
+
+$02 [SFX]
+$03 [SFX]
+$04 [SFX]
+$05 [SFX]
+$06 [SFX]
+$07 [SFX]
+$08 [SFX]
+$09 [SFX]
+$0a [SFX]
+$0b [SFX]
+$0c [SFX]
+$0d [SFX]
+$0e [SFX]
+$0f [SFX]
+$10 [SFX]
+$11 [SFX]
+$12 [SFX] Credit
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX]
+$1b [SFX]
+$1c [SFX]
+$1d [SFX]
+$1e [SFX]
+$1f [SFX]
+$20 [SFX]
+$21 [SFX]
+$22 [SFX]
+$23 [SFX]
+$24 [SFX]
+$25 [SFX]
+$26 [SFX]
+$27 [SFX]
+$28 [SFX]
+$29 [SFX]
+$2a [SFX]
+$2b [SFX]
+$2c [SFX]
+$2d [SFX]
+$2e [SFX]
+$2f [SFX]
+$30 [SFX]
+$31 [SFX]
+$32 [SFX]
+$33 [SFX]
+$34 [SFX]
+$35 [SFX]
+$36 [SFX]
+$37 [SFX]
+$38 [SFX]
+$39 [SFX]
+$3a [SFX]
+$3b [SFX]
+
+  [Source]
+  Konami Game Music Vol.4 - A-Jax
+  Alfa Records  28XA-201  Mar 10, 1988
+
+  Konami Game Music Vol.4 - A-Jax (Legend Series)
+  Scitron Digital Contents  SCDC-00472  Nov 23, 2005
+
+$end

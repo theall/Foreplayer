@@ -1,0 +1,70 @@
+﻿$name=outzone
+$version=2
+$default=001
+$songmax=049
+$fixed_volume=100
+$main
+
+#001 Coin (Credit)
+#002 Operation (Start) - To the Earth (Ver. 1.0) (Chapter 1)
+#006 To the Earth (Ver1.0) (Chapter 1)
+#008 Pump Them with Bullets (Chapter 2)
+#009 Hired Gun in O,Z (Chapter 3)
+#007 Soldier a GoGo (Chapter 4)
+#004 Secret of Ogiwara (Chapter 5)
+#005 Close to Finish (Chapter 6)
+#010 Get the Last Laugh (Chapter 7)
+#014 Flower of Victory (Ending)
+#011 Game Over
+#013 For Tomorrow (Continue)
+#012 Eternal Life (Name Entry)
+#003 To the Earth (Ver. 1.1) (Chapter 1, When skipped demo scene)
+
+-----------------------------------------
+ [SFX]
+
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+
+  [Source]
+  Out Zone, Snow Bros. / Toaplan
+  Pony Canyon / Scitron  PCCB-00044  Oct 21, 1990
+
+  [Sound Composer]
+  Tatsuya Uemura
+
+// English list translation by Fuj
+$end

@@ -1,0 +1,33 @@
+$name=g_noblor
+$version=2
+$default=2032120
+$songmax=9999999
+$main
+
+#2032120 mn5oda  
+#2032868 mn5take 
+#2034020 mn5ues  
+#2034810 mn5ashik
+#2035670 mn5mori 
+#2036242 mn5toku 
+#2037732 mn5shima
+#2038590 mn5date 
+#2039242 mn5hojo 
+#2039830 mn5sono 
+#2041564 mn5shijo
+#2042684 mn5honjo
+#2043750 mn5yasen
+#2045322 mn5syoki
+#2046280 mn5ronko
+#2046946 mn5hyojo
+#2047334 mn5gaiko
+#2047810 mn5syori
+#2048112 mn5haibo
+#2048386 mn5open 
+#2048960 mn5seuma
+#2050210 mn5honou
+#2050990 mn5shibo
+#2051730 mn5end  
+
+// Basic list contributed by Knurek
+$end

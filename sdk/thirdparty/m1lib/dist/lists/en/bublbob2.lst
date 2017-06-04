@@ -1,0 +1,36 @@
+$name=bublbob2
+$version=2
+$default=155
+$main
+
+#155 Opening ~ Magical Beginning (Attract Demo)
+#159 One Day Something Happened (Opening Demo) Intro <time="8">
+#160 One Day Something Happened (Opening Demo)
+#152 At the Entrance to the Country of Magic (Chara Select)
+#144 Inside a Picture Book (Normal Round BGM) Intro <time="8.8">
+#145 Inside a Picture Book (Normal Round BGM)
+#146 Super Bubble
+#150 Scall Appears!
+#153 That's Rough! (Normal Boss Round BGM)
+#148 Event Scenery 1 ~ Meet Yamato (Darius Area Boss BGM)
+#170 Event Scenery 1 ~ Meet Yamato
+#167 Event Scenery 2 ~ Jack O' Colsona´s Cape (Pulirula Area Boss BGM)
+#168 Event Scenery 3 ~ The Fake Continues ~ (Strange World Boss BGM)
+#156 Candy Everywhere (Boss Clear BGM)
+#149 Round Clear (Round Clear)
+#158 Sacred Cave (Extra Round BGM)
+#162 Sorcerer Drunk (Last Boss BGM)
+#163 The Road Leads On to the Village (All Clear Demo)
+#164 Talking of Memories of a Far-off Land (Ending)
+#157 Wasn't it Fun? (Name Register)
+#151 Game Over (Game Over)
+#165 Map Display (Unused Track)
+#169 Old Man's Legend ~ Bubble Bobble Theme (Bubble Bobble BGM)
+
+#013 Unknown
+
+  [Source]
+  Bubble Symphony / Yasuko Yamada
+  Pony Canyon / Scitron  PCCB-00172  1995.1.20
+
+$end

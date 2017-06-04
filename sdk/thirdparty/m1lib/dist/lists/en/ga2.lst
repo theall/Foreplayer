@@ -1,0 +1,148 @@
+﻿$name=ga2
+$version=2
+$default=140
+$main
+
+#140 character select  <time="1:48" fadeout="yes" fadeoutlength="14">
+#129 main theme 1 <time="2:47" fadeout="yes" fadeoutlength="14">
+#135 waterfall  <time="0:29" fadeout="yes" fadeoutlength="14">
+#132 strong attack  <time="2:13" fadeout="yes" fadeoutlength="14">
+#134 children of mischief  <time="1:18" fadeout="yes" fadeoutlength="14">
+#130 a hope for tomorrow <time="2:43" fadeout="yes" fadeoutlength="14">
+#131 The theme of the boss  <time="1:34" fadeout="yes" fadeoutlength="14">
+#139 Map indication
+#133 cave  <time="1:06" fadeout="yes" fadeoutlength="14">
+#137 The forest of the mushroom  <time="1:07" fadeout="yes" fadeoutlength="14">
+#149 Children of season  <time="1:52" fadeout="yes" fadeoutlength="14">
+#136 The dance of the soldier  <time="0:35" fadeout="yes" fadeoutlength="14">
+#138 Bonus side in the town <time="0:53" fadeout="yes" fadeoutlength="14">
+#143 In a fortress <time="2:57" fadeout="yes" fadeoutlength="14">
+#142 On a ship <time="2:11" fadeout="yes" fadeoutlength="14">
+#145 Death Adder1 <time="2:07" fadeout="yes" fadeoutlength="14">
+#146 Death Adder2 <time="1:48" fadeout="yes" fadeoutlength="14">
+#141 Continue
+#148 All Clear
+#147 Ending
+#144 Result <time="1:00" fadeout="yes" fadeoutlength="14">
+
+  [Source] 
+  Golden Axe The Music / SEGA
+  WAVE MASTER  WM-0595~7  Feb 21, 2008
+
+  [Composers]
+  Masanori Takeuchi
+  Tomoyuki Kawamura
+
+---------------------------------------------------
+
+  [Voices]
+
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+#174 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#179 [Voice] 
+#183 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#189 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#202 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#210 [Voice] 
+#218 [Voice] 
+#229 [Voice] 
+#232 [Voice] 
+#237 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+#250 [Voice] 
+#253 [Voice] 
+#254 [Voice] 
+
+  [SFX] 
+  
+#152 [SFX] 
+#153 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#175 [SFX] 
+#178 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#184 [SFX] 
+#187 [SFX] 
+#188 [SFX] 
+#190 [SFX] 
+#193 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#238 [SFX] 
+#245 [SFX] 
+#246 [SFX] 
+#247 [SFX] 
+#248 [SFX] 
+#249 [SFX] 
+#251 [SFX] 
+#252 [SFX] 
+
+// List contribution by Simon B.
+$end

@@ -1,0 +1,47 @@
+﻿$name=asterix
+$version=2
+$default=209
+$songmax=256
+$fixed_volume=244
+$main
+
+#209 Together (Attract Mode)
+#219 Profile (Player Introduction)
+#211 Asterix Obelix (Player Selection)
+#192 Asterix in Gauls Village (Act 1 BGM)
+#216 In Egypt (Intermission  &lt;Egypt&gt;)
+#195 Defeat the Evil Architects (Act 2-1 &lt;Egypt&gt;)
+#221 Pyramid (Act 2-2 &lt;Pyramid&gt;)
+#217 In Britain (Intermission &lt;Britain&gt;)
+#196 Wave (Act 3-1 &lt;The Sea&gt;)
+#206 The Galley (Act 3-2 &lt;The Ship&gt;)
+#214 Help Me (Intermission &lt;Bandits&gt;)
+#208 Save Falbara (Act 4-1 &lt;Bandits&gt;)
+#205 Ahhhhh.. (Act 4-2 &lt;Trucks&gt;)
+#215 In Spain (Intermission  &lt;Spain&gt;)
+#199 Spanish Village (Act 5 &lt;Spain&gt;)
+#218 The Magic Carpet (Intermission  &lt;India&gt;)
+#200 Rescue the Indian Princess (Act 6 &lt;India&gt;)
+#213 Asterix vs. Caesar (Intermission &lt;Rome&gt;)
+#193 Asterix in Rome (Act 7 &lt;Rome&gt;)
+#194 They are Crazy (Boss 1)
+#198 Do You Want to Fight? (Boss 2)
+#203 Ol・(Bullfighting)
+#204 Gladiators (Final Boss)
+#197 Stage Clear
+#210 Are You Ready? (Bonus Stage Intro)
+#220 Ave Caesar (Gladiators)
+#222 Let's Party! (Ending)
+#223 Thank You, Asterix & Obelix (Stage Clear)
+#201 Hurry Up! (Bonus Stage 1 &lt;Ben-Hur&gt;)
+#202 Crash, Crash! (Bonus Stage 2 &lt;Barrel Breaking&gt;)
+#207 I Hate Gauls (Result)
+#212 Game Over
+
+#240 Sound Scale Check
+
+  [Source]
+  Konami Game Music Collection Vol.5
+  King Records  KICA-7605  Sep 26, 1992
+
+$end

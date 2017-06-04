@@ -1,0 +1,169 @@
+﻿$name=narc
+$version=2
+$default=073
+$main
+
+#073 [Voice] CREDIT <time="2.8">
+#010 LEVEL SELECT <time="18.5">
+#002 THEME 1 
+#004 ESCAPE (HOME)
+#140 [S.E.] ESCAPE <time="2.9">
+#131 REX (ISLAND CLEAR) <time="4">
+#009 COFFE BRAKE (TROG'S CAVE) <time="33">
+#007 THEME 2 
+#193 [S.E.] METAMORPHOSE <time="2.8">
+#013 DINOS
+#192 [S.E.] METAMORPHOSE <time="3">
+#061 [Voice] FALL <time="4">
+#180 [S.E.] WARP BOUNS. <time="5.3">
+#181 [S.E.] WARP ！<time="2.7">
+#185 [S.E.] WOW <time="3">
+#014 BONUS STAGE <time="15">
+#011 TIME IS UP ! <time="3">
+#140 [S.E.] ESCAPE <time="3">
+#014 THEME 3 
+#150 [S.E.] ESCAPE <time="3.8">
+#193 [S.E.] YOU DID IT ! <time="2.8">
+#013 CONGRATULATIONS ! <time="16.4">
+#053 [Voice] SPECIAL BONUS <time="2">
+#005 ENDING <time="19.9">
+#131 THE WINNER ! <time="4">
+#009 STAFF ROLL <time="33">
+#001 GAME OVER <time="6">
+
+#132 SWEN (ISLAND CLEAR) <time="4">
+#133 SPIKE (ISLAND CLEAR) <time="4">
+#134 BLOOP (ISLAND CLEAR) <time="4.5">
+#008 THEME 1 Ver.2
+#006 THEME 1 Ver.3
+#012 未使用曲 1 <time="4">
+
+---------------------------------------------------
+  [S.E.]
+
+#030 [S.E.] <time="3">
+#071 [S.E.] <time="3">
+#080 [S.E.] <time="3">
+#081 [S.E.] <time="3">
+#093 [S.E.] <time="3">
+#094 [S.E.] <time="3">
+#095 [S.E.] <time="3">
+#122 [S.E.] <time="3">
+#124 [S.E.] <time="3">
+#125 [S.E.] <time="3">
+#130 [S.E.] <time="3">
+#135 [S.E.] <time="3">
+#136 [S.E.] <time="3">
+#137 [S.E.] <time="3">
+#138 [S.E.] <time="3">
+#139 [S.E.] <time="3">
+#140 [S.E.] ESCAPE 2 <time="3">
+#141 [S.E.] <time="3">
+#142 [S.E.] <time="3">
+#143 [S.E.] <time="3">
+#144 [S.E.] <time="3">
+#145 [S.E.] <time="3">
+#146 [S.E.] <time="3">
+#147 [S.E.] <time="3">
+#148 [S.E.] <time="3">
+#149 [S.E.] <time="3">
+#150 [S.E.] ESCAPE 3 <time="4">
+#151 [S.E.] <time="3">
+#152 [S.E.] <time="3">
+#153 [S.E.] <time="3">
+#154 [S.E.] <time="3">
+#155 [S.E.] <time="3">
+#156 [S.E.] <time="3">
+#157 [S.E.] <time="3">
+#158 [S.E.] <time="3">
+#159 [S.E.] <time="3">
+#160 [S.E.] <time="3">
+#161 [S.E.] <time="3">
+#162 [S.E.] <time="3">
+#163 [S.E.] <time="3">
+#164 [S.E.] <time="3">
+#165 [S.E.] <time="3">
+#166 [S.E.] <time="3">
+#167 [S.E.] <time="3">
+#168 [S.E.] <time="3">
+#169 [S.E.] <time="3">
+#170 [S.E.] <time="3">
+#171 [S.E.] <time="3">
+#172 [S.E.] <time="3">
+#173 [S.E.] <time="3">
+#174 [S.E.] <time="3">
+#175 [S.E.] <time="3">
+#176 [S.E.] <time="3">
+#177 [S.E.] <time="3">
+#178 [S.E.] <time="3">
+#179 [S.E.] <time="3">
+#180 [S.E.] WARP BOUNS. <time="8">
+#181 [S.E.] WARP ！<time="3">
+#182 [S.E.] <time="3">
+#183 [S.E.] <time="3">
+#184 [S.E.] <time="3">
+#185 [S.E.] WOW <time="3">
+#186 [S.E.] <time="3">
+#187 [S.E.] <time="3">
+#188 [S.E.] <time="3">
+#189 [S.E.] <time="3">
+#191 [S.E.] <time="3">
+#192 [S.E.] METAMOL <time="3">
+#193 [S.E.] METAMOL <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#024 [Voice] <time="3">
+#025 [Voice] <time="3">
+#027 [Voice] <time="3">
+#028 [Voice] <time="3">
+#029 [Voice] <time="3">
+#048 [Voice] <time="3">
+#049 [Voice] <time="3">
+#050 [Voice] <time="3">
+#051 [Voice] <time="3">
+#052 [Voice] <time="3">
+#053 [Voice] <time="3">
+#054 [Voice] <time="5">
+#055 [Voice] <time="3">
+#056 [Voice] <time="3">
+#057 [Voice] <time="3">
+#058 [Voice] <time="3">
+#059 [Voice] <time="3">
+#060 [Voice] <time="3">
+#061 [Voice] <time="5">
+#062 [Voice] <time="3">
+#063 [Voice] <time="3">
+#064 [Voice] <time="3">
+#065 [Voice] <time="5">
+#066 [Voice] <time="3">
+#067 [Voice] <time="3">
+#068 [Voice] <time="3">
+#069 [Voice] <time="3">
+#070 [Voice] <time="3">
+#072 [Voice] <time="5">
+#073 [Voice] CREDIT <time="3">
+#074 [Voice] <time="3">
+#076 [Voice] <time="3">
+#077 [Voice] <time="3">
+#078 [Voice] <time="3">
+#079 [Voice] <time="3">
+#082 [Voice] <time="5">
+#083 [Voice] <time="7">
+#084 [Voice] <time="3">
+#085 [Voice] <time="3">
+#086 [Voice] <time="3">
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#089 [Voice] <time="3">
+#090 [Voice] <time="3">
+#091 [Voice] <time="3">
+#092 [Voice] <time="3">
+#190 [Voice] <time="3">
+
+  ■作曲
+  CHRIS GRANNER
+
+// List contribution by ZEK.
+$end

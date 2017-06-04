@@ -1,0 +1,41 @@
+﻿$name=mmaze
+$version=2
+$default=$14
+$fixed_volume=193
+$main
+
+$14 スタートデモ
+$15 ゲームスタート
+$00 1面～おかしの国
+$0e ボス出現
+$0f ボスBGM (A Part)
+$10 ボスBGM (B Part)
+$17 ラウンドクリア
+$1c ラウンドスタート
+$01 2面～おもちゃの国 (A Part)
+$02 2面～おもちゃの国 (B Part)
+$03 3面～つみきの国
+$04 4面～きかいの国 (A Part)
+$05 4面～きかいの国 (B Part)
+$06 4面～きかいの国 (C Part)
+$07 5面～そらの国
+$08 6面～びっくりの国
+$09 7面～むしの国 (A Part)
+$0a 7面～むしの国 (B Part)
+$0b 8面～へいたいの国
+$0c 9面～女王の国 (A Part)
+$0d 9面～女王の国 (B Part)
+$11 最終ボス出現
+$12 最終ボスBGM (A Part)
+$13 最終ボスBGM (B Part)
+$1b エンディング
+$16 ゲームオーバー
+$18 コンティニューBGM
+$1a ネームエントリーBGM
+$19 ネームエントリー終了BGM
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.5
+  VICTOR ENTERTAINMENT  VDR-5300  1989.08.21
+
+$end

@@ -1,0 +1,38 @@
+﻿$name=kizuna
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#055 Super Tag Battle (Title)
+#050 Select
+#033 Slums
+#034 Old Tollway
+#035 The 150th Floor of Skyscraper
+#036 Waterway
+#043 King Lion Palace
+#044 Strange Space (Jyazu)
+#049 Emersion 1 (King Lion Demo)
+#051 Completion (Stage Clear)
+#052 Emersion 2 (Jyazu Demo)
+#053 End of the Fights (Ending)
+#046 Name
+#045 Elegy (Credits)
+#048 Emersion 3 (Real King Lion Demo)
+#037 Provision (Bonus Stage)
+#054 Once Again (Continue)
+#056 Defeat 1
+#057 Defeat 2
+#080 Sadness (Game Over)
+
+  [Source]
+  Fuu'un Super Tag Battle
+  Pony Canyon / Scitron  PCCB-00236  Dec 16, 1996
+
+  [Composers]
+  Kitapy, Mitsuo, Tate-Norio
+
+// List Contribution by GolGol
+// English list by Fuj
+$end

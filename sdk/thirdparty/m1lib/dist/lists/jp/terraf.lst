@@ -1,0 +1,50 @@
+﻿$name=terraf
+$version=2
+$default=001
+$songmax=056
+$main
+
+#001 CREDIT
+// #021 GAME START～地上BGM
+#046 GAME START～地上BGM
+#049 地上BGM (CD未収録曲)
+#047 RESTART
+#048 LAST START
+#050 地下BGM (TERRA FORCEのテーマ)
+#051 バルガー (小ボス)
+#052 グリフォン (中ボス)
+#053 ゴーランド (大ボス)
+#054 GAME OVER
+#055 ENDING
+#056 NAME ENTRY
+
+-----------------------------------------
+ [S.E.]
+
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#032 [S.E.]
+#034 [S.E.]
+#036 [S.E.]
+#038 [S.E.]
+
+  ■出典
+  GAME SOUND NICHIBUTSU -G.S.M. Nichibutsu 1-
+  PONY CANYON / SCITRON  D28B0004  1988.09.21
+
+  ■作曲
+  吉田 昇
+
+$end

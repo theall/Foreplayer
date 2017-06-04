@@ -1,0 +1,26 @@
+﻿$name=bigrun
+$version=2
+$default=007
+$main
+
+#007 Paris Dakar
+#001 Tunisia - Tunis
+#002 Tunisia - Tozeur
+#003 Libya - Tumu
+#004 Niger - Agades
+#010 Finish / Next Stage <time="7">
+#005 Mali - Bamako
+#010 Finish / Next Stage <time="7">
+#006 Senegal - Saintlouis
+#009 Ending
+#008 Name Entry
+
+#012 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#013 [SFX] 
+
+// List contribution by ZEK.
+$end

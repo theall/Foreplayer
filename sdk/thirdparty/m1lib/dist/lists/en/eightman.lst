@@ -1,0 +1,33 @@
+﻿$name=eightman
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#043 Demo
+#034 Stage 1-1
+#035 Area Cleared
+#038 Stage 1-2, 4-1
+#048 Boss Intro
+#036 Boss 1
+#037 Stage Cleared
+#033 Stage 2-1
+#041 Boss 2
+#042 Stage 3-1
+#040 Stage 3-2
+#039 Stage 3-3
+#045 Boss 3
+#050 Stage 4-2
+#044 Stage 4-3
+#046 Stage 4-4
+#051 Final Boss 1
+#047 Final Boss 2
+#052 Final Boss 3
+#049 Credit
+
+  [Composers]
+  Junjouha Kita-P, Yoko Osaka
+
+// Original List contribution by GolGol
+$end

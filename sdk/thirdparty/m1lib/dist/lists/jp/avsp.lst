@@ -1,0 +1,305 @@
+﻿$name=avsp
+$version=2
+$default=048
+$fixed_volume=249
+$main
+
+#048 [Voice] Time to Hunt (Credit)
+#026 Opening
+#005 Select Player
+#007 City of Despair (Round 1, 7)
+#031 Demo (Boss Approaching)
+#015 Boss 1 -Chrysalis-
+#004 Round Clear
+
+#022 Demo-A
+#006 War in the Underpass (Round 2, 6-2)
+#009 Round 2-2, 4-2)
+#031 Demo (Boss Approaching)
+#016 Boss 2 -Razor Claws-
+
+#021 Demo-B
+#008 Forced Assault (Round 3, 5, 7-2)
+
+#010 Assault on a Queen (Round 4)
+#009 Round 4-2, 2-2
+#031 Demo (Boss Approaching)
+#018 Boss 3 -Queen Alien 1-
+#024 Demo, Ending
+
+#021 Demo-B
+#008 Secerts (Round 5, 3)
+#031 Demo (Boss Approaching)
+#017 Boss 4 -Power Loader-
+
+#023 Demo-C
+#011 Nightmare in the Lab (Round 6)
+#028 Elevator (Bonus Round)
+#006 Round 6-2, 2
+#031 Demo (Boss Approaching)
+#019 Boss 5 -Mad Predator-
+#024 Demo, Ending
+
+#007 Hants End (Round 7, 1)
+#023 Demo-C
+#008 Round 7-2, 3, 5
+#031 Demo (Boss Approaching)
+#014 Final Boss -Queen Alien 2-
+#024 Demo, Ending
+#027 Credits Roll
+
+#001 Continue
+#003 Game Over
+
+#032 Q-Sound Logo (Main)
+#033 Q-Sound Logo (Sub)
+
+
+#049 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] <time="5">
+#091 [S.E.] <time="5">
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] <time="5">
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] <time="5">
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#109 [S.E.] 
+#110 [S.E.] 
+#111 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] 
+#117 [S.E.] 
+#118 [S.E.] 
+#119 [S.E.] 
+#120 [S.E.] 
+#121 [S.E.] 
+#125 [S.E.] 
+#126 [S.E.] 
+#127 [S.E.] <time="5">
+#128 [S.E.] 
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] <time="5">
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] <time="5">
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] <time="5">
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] <time="5">
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.] 
+#160 [S.E.] 
+
+
+#048 [Voice] Time to hunt
+#512 [Voice] 
+#513 [Voice] 
+#514 [Voice] 
+#515 [Voice] 
+#516 [Voice] 
+#517 [Voice] 
+#518 [Voice] 
+#519 [Voice] 
+#520 [Voice] 
+#521 [Voice] 
+#512 [Voice] 
+#513 [Voice] 
+#514 [Voice] 
+#515 [Voice] 
+#516 [Voice] 
+#517 [Voice] 
+#518 [Voice] 
+#519 [Voice] 
+#520 [Voice] 
+#521 [Voice] 
+#522 [Voice] 
+#523 [Voice] 
+#524 [Voice] 
+#525 [Voice] 
+#526 [Voice] 
+#527 [Voice] 
+#528 [Voice] 
+#529 [Voice] 
+#530 [Voice] 
+#531 [Voice] 
+#532 [Voice] 
+#533 [Voice] 
+#534 [Voice] 
+#535 [Voice] 
+#536 [Voice] 
+#537 [Voice] 
+#538 [Voice] 
+#539 [Voice] 
+#540 [Voice] 
+#541 [Voice] 
+#542 [Voice] 
+#543 [Voice] 
+#544 [Voice] 
+#545 [Voice] 
+#546 [Voice] 
+#547 [Voice] 
+#548 [Voice] 
+#549 [Voice] 
+#550 [Voice] 
+#551 [Voice] 
+#542 [Voice] 
+#543 [Voice] 
+#544 [Voice] 
+#545 [Voice] 
+#546 [Voice] 
+#547 [Voice] 
+#548 [Voice] 
+#549 [Voice] 
+#550 [Voice] 
+#551 [Voice] 
+#552 [Voice] 
+#553 [Voice] 
+#554 [Voice] 
+#555 [Voice] 
+#556 [Voice] 
+#557 [Voice] 
+#558 [Voice] 
+#559 [Voice] 
+#560 [Voice] 
+#561 [Voice] 
+#562 [Voice] 
+#563 [Voice] 
+#564 [Voice] 
+#565 [Voice] 
+#566 [Voice] 
+#567 [Voice] 
+#568 [Voice] 
+#569 [Voice] 
+#570 [Voice] 
+#571 [Voice] 
+#572 [Voice] 
+#573 [Voice] 
+#574 [Voice] 
+#575 [Voice] 
+#576 [Voice] 
+#577 [Voice] 
+#578 [Voice] 
+#579 [Voice] 
+#580 [Voice] 
+#581 [Voice] 
+#582 [Voice] 
+#583 [Voice] 
+#584 [Voice] 
+#585 [Voice] 
+#586 [Voice] 
+#587 [Voice] 
+#588 [Voice] 
+#589 [Voice] 
+#590 [Voice] 
+#591 [Voice] 
+#592 [Voice] 
+#593 [Voice] 
+#594 [Voice] 
+#596 [Voice] 
+#598 [Voice] 
+#599 [Voice] 
+#600 [Voice] 
+#601 [Voice] 
+#602 [Voice] 
+#603 [Voice] 
+#604 [Voice] 
+#605 [Voice] 
+#606 [Voice] 
+#607 [Voice] 
+#608 [Voice] 
+#609 [Voice] 
+#610 [Voice] 
+#611 [Voice] 
+#612 [Voice] 
+#613 [Voice] 
+#614 [Voice] 
+#615 [Voice] 
+#616 [Voice] 
+#617 [Voice] 
+#619 [Voice] 
+#621 [Voice] 
+#622 [Voice] 
+#623 [Voice] 
+#624 [Voice] 
+#625 [Voice] 
+#626 [Voice] 
+#627 [Voice] 
+#628 [Voice] 
+#629 [Voice] 
+
+  ■作曲
+  HIDEKI OK
+
+// List contribution by R
+$end

@@ -1,0 +1,64 @@
+﻿$name=flstory
+$version=2
+$default=006
+$main
+
+#006 [SFX] Credit
+#007 Intro (Start) -- Main Theme #1 (Round 1-49)
+#009 Main Theme #1 (No Intro)
+#048 Intro -- Main Theme #2 (Round 50-100)
+#049 Main Theme #2 (No Intro)
+#008 Player Extended
+#010 Power Up
+#011 Missed
+#012 Round Cleared
+#013 Breaking Demo
+#018 Horned Devil Appears / Final Boss (Round 101)
+#019 All Rounds Cleared (Ending)
+#016 Game Over
+#017 Name Entry
+
+------------------------------------------------------
+ [SFX]
+
+#005 [SFX]
+#006 [SFX]
+#014 [SFX]
+#015 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+
+// List Contribution by a2c-s438
+$end

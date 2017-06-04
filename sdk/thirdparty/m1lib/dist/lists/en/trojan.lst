@@ -1,0 +1,35 @@
+﻿$name=trojan
+$version=2
+$default=053
+$songmax=067
+$main
+
+#053 Credit
+#048 Introduction
+#059 Stage 1 BGM
+#060 Stage 2 BGM
+#061 Stage 3 BGM
+#062 Stage 4 BGM
+#063 Stage 5 BGM
+#066 Stage Cleared
+#064 Stage 6 BGM
+#065 Sword King BGM
+#050 Ending
+#067 Continue
+#054 Game Over after Two Rounds
+#055 Name Entry - 1st Place
+#057 Name Entry Finished - 1st Place
+#056 Name Entry - Below 2nd Place
+#058 Name Entry FInished - Below 2nd Place
+
+#051 Heart Appeared
+#049 Heart Siezed
+
+  [Source]
+  Capcom Game Music
+  Alfa Records  28XA-94  Aug 25, 1986
+
+  Capcom Game Music (Legend Series)
+  SME / Scitron  SCDC-00193  Jun 19, 2002
+
+$end

@@ -1,0 +1,111 @@
+﻿$name=mazinger
+$version=2
+$default=001
+$main
+
+#001 Mazinger Z
+#002 Theme of Z (intro only) (Player Select, Demo)
+#003 Theme of Z (w/o intro) (Story 1)
+#004 Orewa Great Mazingar (Story 2)
+#009 Soratobu Mazingar Z (Story 3)
+#005 ? (Story 4)
+#006 ? (Story 5)
+#007 ? (Story 6)
+#008 ? (Story 7)
+#010 Tobe! Grendizer (Goldrake) (Story 8)
+#014 ? (Story Boss)
+#012 Story Clear
+#015 ? (Final Story Boss)
+#011 Bokurano Mazinger Z (Cradits Roll)
+#013 Yuushawa Mazingar (Name Entry, 1st Round Cear)
+
+#016 Mazinger Z (Demo)
+#017 Orewa Great Mazingar (Demo)
+#018 Tobe! Grendizer (Goldrake) (Demo)
+
+-----------------------------------------------------------
+ [SFX & Voice]
+
+#255 [Command] (bank change)
+#130 [Voice] Mazin go
+#131 [Voice] Pilder on
+#132 [Voice] 
+#133 [Voice] Grendizer, go
+#134 [Voice] Shoot in
+#135 [Voice] 
+#136 [Voice] Mazin go
+#137 [Voice] Fire on
+#138 [Voice] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] Credit inserted
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+
+#254 [Command] (bank change)
+#130 [SFX] 
+#131 [Voice] Breast fire
+#132 [Voice] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [Voice] Space thunder
+#136 [Voice] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [Voice] Thunder break
+#140 [Voice] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [Voice] Koushiryoku beam
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [Voice] Rocket punch
+#149 [Voice] Rust hurricane
+#150 [Voice] Hanjuuryoku storm
+#151 [Voice] Screw crusher
+#152 [Voice] Double haken
+#153 [Voice] Blade boomerang
+#154 [Voice] Drill crusher punch
+#155 [Voice] Great booster attack
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+
+-----------------------------------------------------------
+
+  [Original Sound Composer]
+     Mazinger Z, Great Mazinger
+        Original songs by Michiaki Watanabe
+     U.F.O. Robo Grendizer
+        Original songs by Shunsuke Kikuchi
+
+// List contributed by Hiroshi
+$end

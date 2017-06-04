@@ -1,0 +1,34 @@
+﻿$name=mslug5
+$version=2
+$default=002
+$songmax=255
+$main
+
+#002 Neo Geo Logo
+
+#038 The Military System (Dencyu's Remix Version)
+#039 Sortie!
+#035 Heavy African
+#045 Ruins Excavation
+#044 Windy Day
+#036 Zoom Down
+#033 Intrigue
+#046 Run Through
+#034 Bottom of the Sea
+#042 Speeder
+#047 Lastditch Resistance
+#037 Fierce Battle
+#043 Final Attack (Dencyu's Remix Version)
+#040 Carry Out (Dencyu's Remix Version)
+#064 Road to Success
+#041 Gravestone (Dencyu's Remix Version)
+
+  [Source]
+  Metal Slug 5 Original Sound Track
+  Noise Factory  Mar 12, 2004
+
+  [Composers]
+  Toshikazu Tanaka (Sutudio AQUA)
+
+// Original list contributed by Nyanko.
+$end

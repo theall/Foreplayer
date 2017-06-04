@@ -1,0 +1,30 @@
+﻿$name=wjammers
+$version=2
+$default=002
+$songmax=188
+$fixed_volume=254
+$main
+
+#002 GET READY！ (セレクト画面)
+#003 GO FOR BROKE！ (ラウンドスタート)
+#016 SHOOT!! (タイル)
+#004 SET CLEAR (セットクリアー)
+#011 NEXT ROUND (ネクストラウンド)
+#017 WINDJAMMERS (ローン)
+#009 DRAW SET (ドローセット)
+#015 FLYING POWER DISC (ビーチ)
+#010 LOST SET (ロストセット)
+#013 CONTINUE!? (ロストセット2)
+#028 HURRY！ (DOG DISTANCE & DISC BOWLING)
+#020 REACH FOR THE TOP (ランギング･コンティニュー)
+#019 YOU GOT A POWER (コンクリート)
+#018 BREAK POINT CHAMPS (スタジアム)
+#027 THE WINNER (エンディング)
+#014 GAME OVER (ゲームオーバー)
+
+  ■出典
+  FIGHTERS HISTORY DYNAMITE & FLYING POWER DISC
+  PONY CANYON / SCITRON  PCCB-00149  1994.03.18
+
+// List Contribution by cyada
+$end

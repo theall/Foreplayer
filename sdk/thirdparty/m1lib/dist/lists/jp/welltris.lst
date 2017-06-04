@@ -1,0 +1,60 @@
+﻿$name=welltris
+$version=2
+$default=032
+$main
+
+#032 TITLE SCREEN
+#033 DEMO SOUND
+#128 [S.E.] CREDIT
+#039 LESSON
+#035 MAIN THEME
+#148 GAME OVER
+#036 NAME ENTRY
+#034 RANKING
+
+#037 DEMO SOUND Ver.2
+
+---------------------------------------------------
+  [S.E.]
+
+#128 [S.E.] CREDIT
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] GAME OVER
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.] 
+#160 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#129 [Voice] 
+#161 [Voice] 
+
+// List contribution by ZEK.
+$end

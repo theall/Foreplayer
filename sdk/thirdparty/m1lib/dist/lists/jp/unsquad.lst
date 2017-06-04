@@ -1,0 +1,79 @@
+﻿$name=unsquad
+$version=2
+$default=066
+$songmax=066
+$main
+
+#066 CREDIT <time="0:03.5">
+#001 PLAYER 選択 <time="0:30.6">
+#002 SHOP <time="0:28.5">
+#004 油田基地 (ROUND 1) <time="2:00.6">
+//サントラ未収録
+#015 地上戦 (BOSS 1) <time="1:06.3">
+#019 ROUND CLEAR
+#005 雷雲 (ROUND 2) <time="2:38.5">
+#014 空中戦 (BOSS 2) <time="1:02.1">
+#006 森林要塞 (ROUND 3) <time="1:20.6">
+#018 要塞 (BOSS 3) <time="0:47">
+#009 砂漠 (ROUND 4) <time="1:45.3">
+#017 地上空母 (BOSS 4) <time="1:33.5">
+#008 渓谷 (ROUND 5) <time="2:00.1">
+#025 EMERGENCY <time="0:10.8">
+#023 SPECIAL ROUND <time="1:29.3">
+#024 洞窟 (ROUND 6) <time="2:04.5">
+#010 上昇 (ROUND 7) <time="1:50.8">
+#011 海上 (ROUND 8) <time="2:40.7">
+#016 戦艦 (BOSS 5) <time="1:12.4">
+#003 GAME OVER
+#012 兵器工場 (ROUND 9) <time="2:22.6">
+#013 最終戦 (ROUND 10) <time="1:33.5">
+#021 LAST ROUND CLEAR
+#022 ENDING & STAFF ROLL <time="2:09.5">
+#020 LAST RANKING
+#007 未使用曲
+//サントラではこの曲が"油田基地 (ROUND 1)"となっています。
+
+-----------------------------------------------
+ [S.E.]
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+
+  ■出典
+  エリア88 / CAPCOM  ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00018  1990.01.21
+
+// List Contribution by NK
+$end

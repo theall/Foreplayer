@@ -1,0 +1,41 @@
+﻿$name=faceoff
+$version=2
+$default=4
+$fixed_volume=147
+$main
+
+#004 Selection
+#006 1st Period Start
+#001 Main BGM
+#009 2nd Period Start
+#010 3rd Period Start
+#012 Final Period Start
+#002 Lost
+#003 Won
+#005 Goal
+#007 Game Set
+#008 Ending
+
+#000 Sound Test from Druaga
+
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+
+  [Source]
+  Namco Video Game Graffiti Vol.6
+  Victor Entertainment  VDR-5301  1989.10.04
+
+  [Sound Composers]
+  Yoshinori Kawamoto, Kazuo Noguchi
+
+$end

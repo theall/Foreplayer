@@ -1,0 +1,99 @@
+﻿$name=mercs
+$version=2
+$default=000
+//$songmax=089
+$main
+
+#000 CREDIT
+#001 OPENING
+#002 MISSION 1 (作戦開始) <time="1:44">
+#008 BOSS 1 <time="0:28">
+#014 ROUND CLEAR
+#003 MISSION 2 (敵戦車地帯) <time="1:56">
+#009 BOSS 2 <time="0:38">
+#004 MISSION 3 (敵主力戦艦) <time="1:48">
+#015 BOSS 3 <time="0:38">
+#005 MISSION 4 (山岳地) <time="1:25">
+#009 BOSS 2 <time="0:31">
+#006 MISSION 5 (市街地) <time="1:17">
+#016 BOSS 4 <time="0:49">
+#007 MISSION 6 (R国空軍基地) <time="1:13">
+#008 BOSS 1 <time="0:28">
+#015 FINAL MISSION (LAST BOSS) <time="0:28">
+#017 ENDING
+#011 STAFF ROLL <time="2:13">
+#010 RANKING
+#012 RANKING DISPLAY
+#013 GAME OVER
+
+-----------------------------------------------------------
+ [Voice]
+
+#051 [Voice]
+#053 [Voice]
+#054 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#052 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+
+  ■出典
+  Final Fight -G.S.M. CAPCOM 3- / アルフ ライラ ワ ライラ
+  PONY CANYON / SCITRON  PCCB-00030  1990.05.21
+
+// List Contribution by NK
+$end

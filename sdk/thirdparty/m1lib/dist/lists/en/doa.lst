@@ -1,0 +1,33 @@
+﻿$name=doa
+$version=2
+$default=010
+$main
+
+#010 Dead or Alive Overture (Opening)
+#012 Chopper's Final Moment (Demonstration, Unused)
+#011 Show Down (Character Select)
+#002 No Money (Zack's Stage)
+#032 Stage Clear
+#005 The Fist of TAIKYOKU Blows Up (Lei-Fang's Stage)
+#004 Blade of "RYU" (Ryu Hayabusa's Stage)
+#006 Lonely Warrior (Jann-Lee's Stage)
+#001 Power is Beauty (Tina's Stage)
+#008 Codename "Bayman" (Bayman's Stage)
+#003 Legend of the Secret Fist (Gen-Fu's Stage)
+#000 Decisive Scratch (Kasumi's Stage)
+#016 Dead or Alive (Raidou's Stage)
+#013 In Between Life and Death (Continue)
+#017 Show Must Go On! (Credits)
+#014 Your Name Is... (Name Entry)
+
+#033 Logo
+
+  [Source]
+  Dead or Alive / Tecmo
+  Pony Canyon / Scitron  PCCB-00228  Nov 21, 1996
+
+  [Sound Composer]
+  Eiji Suzuki, Yoaki Takahashi, Yutaka Fujishima
+
+// Updated by Ayaya
+$end

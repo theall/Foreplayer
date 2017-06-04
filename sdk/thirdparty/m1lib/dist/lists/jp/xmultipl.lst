@@ -1,0 +1,113 @@
+﻿$name=xmultipl
+$version=2
+$default=008
+$main
+
+#008 X-Multiply (Title Back)
+#040 Coin
+#004 Stage Start
+#013 Into the Human Body (Stage 1)
+#015 Boss Theme
+#006 Stage Clear
+#000 Babe Good-Lookin' (Stage 2)
+#009 The Rolling Worms (Stage 3-1)
+#003 The Rolling Worms (Stage 3-2)
+#002 Illegal Illusion (Stage 4)
+#001 Bloody Bloom (Stage5)
+#014 Twilight Sight (Stage 6)
+#012 Lusty Her Majesty (Stage 7)
+#007 The End of Operation (All Clear)
+#011 Game Over
+#005 Body Scratchers (Name Entry)
+#010 Continue
+
+---------------------------------------------------------------
+  [S.E.]
+
+#044 [S.E.] Ship Lost
+#045 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.] Ship Departure
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#102 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#123 [S.E.]
+#124 [S.E.]
+#128 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+
+  ■出典
+  R-TYPE II -G.S.M. IREM 2-
+  PONY CANYON / SCITRON  PCCB-00017  1990.01.21
+
+// List contribution by bcass
+// リスト作成: みん☆さん
+$end

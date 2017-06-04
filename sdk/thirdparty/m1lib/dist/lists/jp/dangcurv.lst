@@ -1,0 +1,30 @@
+$name=dangcurv
+$version=2
+$default=$0a
+$main
+
+$0a Watch Out Red Car (Ending 1)
+$0b Title Demo
+$06 Select
+$07 Dangerous Curves (BGM 1 lead-in) <time="2">
+$08 Dangerous Curves (BGM 1)
+$10 SBS595 (BGM 2)
+$11 Watch Out Red Car #2 (BGM 3)
+$0f 10 Count
+$12 Laughing Clown (BGM 4)
+
+$14 J-Curves (BGM 5)
+$0c Goal
+$13 Magic Touch (Ending 2)
+$0e Name Entry
+$0d Game Over
+
+  ■出典
+  デンジャラスカーブス TAITO ZUNTATA
+  Pony Canyon / Scitron  PCCB-00194  1995.10.20
+
+  ■作曲
+  Hideki Takahagi
+
+// List by Phil B
+$end

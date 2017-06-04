@@ -1,0 +1,50 @@
+﻿$name=samsho5
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+#033 Bushido (Opening Demo)
+#034 Twenty Four Troops (Character Select)
+#040 Journey (Map)
+#041 Ready
+#047 Shogun (Yoshitora Tokugawa)
+#042 Set
+#043 Winner (Win Demo)
+#046 AYAHABERU (Mina Majikina)
+#048 Ceremonial (Liu Yunfei)
+#049 Moonlight Dinner (Youkai, Kusare-Gedou)
+#067 Water Personified (Sougetsu Kazama)
+#037 Sankurou Appears (Sankurou Yorozu)
+#066 Mind Mirror (Rimururu)
+#065 Natural Feast (Nakoruru)
+#064 Tunny Personified (Galford)
+#038 Yumeji Appears (Kurokouchi Yumeji)
+#051 Yomigahara (Kurokouchi Yumeji)
+#068 Sakura (Haoumaru)
+#050 Western Origin (Dejima Stage)
+#069 San'no Miya (Coast Stage)
+#070 Bamboo Forest (Bamboo Stage)
+#071 Dog (Ruin Stage)
+#072 Hell of Flame (Fire Stage)
+#073 Old Temple (Old Temple Stage)
+#039 Gaou Appears (Kyougoku Hiwanokami Gaou Demo)
+#052 MASURAOYO (Gaou Stage)
+#053 Doukoku (Kuraki Sumeragi)
+#035 Last of Gaou (Ending)
+#036 New Journey (Credit)
+#044 Reproduction Necessitated (Continue)
+#045 Last Curtain (Game Over)
+
+#058 Bushido (Opening Demo) with voice
+#074 ?
+#075 ?
+#076 ?
+
+  [Source]
+  Samurai Spirits NeoGeo's Soundtrack Collection Box
+  Dex Entertainment  DECX-0011-5  Jul 7, 2004
+
+// List Contribution by GolGol
+// English list by Fujix
+$end

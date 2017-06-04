@@ -1,0 +1,77 @@
+﻿$name=thunderxa
+$version=2
+$default=137
+$songmax=143
+$fixed_volume=320
+$main
+
+#137 The Thunder Fighters (Title)
+#067 Coin
+#133 First Attack (Stage 1)
+#130 Skywalker (Stage 2 - JP version)
+#135 Machine Graveyard (Stage 3)
+#139 Great Battleship (Stage 4)
+#140 Endless Labyrinth (Stage 5)
+#128 Fire Cavern (Stage 6)
+#141 Final Base (Stage 7)
+#129 Gloidential Mechanism (Boss)
+#132 Stage Clear (Stage Clear)
+#131 Ranking (Ranking)
+#134 Game Over
+#138 A Long Way (Ending)
+
+-----------------------------------------
+ [SFX]
+
+#098 [SFX] Blast Off #1 <time="8">
+#099 [SFX] Blast Off #2 <time="4">
+#100 [SFX] Blast Off #3
+//#097 [SFX] Stage 4 #1 <fixed_volume="266">
+//#017 [SFX] Stage 4 #2 <fixed_volume="266">
+//#074 [SFX] Stage 4 #3 <fixed_volume="266">
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#016 [SFX]
+#018 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#028 [SFX]
+#030 [SFX]
+#031 [SFX]
+#033 [SFX]
+#036 [SFX]
+#064 [SFX]
+#065 [SFX]
+#068 [SFX]
+#070 [SFX]
+#072 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#096 [SFX]
+
+  [Source]
+  Thunder Corss / Konami Kukeiha Club
+  King Records  276A-7703  May 21, 1989
+
+$end

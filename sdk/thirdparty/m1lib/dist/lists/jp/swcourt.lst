@@ -1,0 +1,26 @@
+$name=swcourt
+$version=2
+$default=$2D
+$main
+
+#045 コイン投入
+#044 Take it Easy
+#039 Start
+#006 "Let's Play"
+#047 Enjoy
+#038 拍手
+#040 Game set and Match
+#060 Score
+#058 スマッシュ
+#041 The Victory
+#046 Continue?
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI VOL.10
+  VICTOR ENTERTAINMENT  VICL-40097  1993.12.16
+
+  ■作曲・編曲
+  福澤 正洋
+
+// リスト作成: らま
+$end

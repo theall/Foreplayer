@@ -1,0 +1,23 @@
+$name=g_insx
+$version=2
+$default=61456
+$songmax=9999999
+$main
+
+$F010 Driver Init
+$0001 BGM 1
+$0002 BGM 2
+$0003 BGM 3
+$0004 BGM 4
+$0005 BGM 5
+$0006 BGM 6
+$0007 BGM 7
+$0008 BGM 8
+$0009 BGM 9
+$000a BGM 10
+$000b BGM 11
+$000c BGM 12
+$000d BGM 13
+
+// Basic list contributed by Knurek
+$end

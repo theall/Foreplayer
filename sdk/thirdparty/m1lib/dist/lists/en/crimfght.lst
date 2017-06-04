@@ -1,0 +1,35 @@
+﻿$name=crimfght
+$version=2
+$default=$8e
+$songmax=$92
+$main
+
+$8e Burn (Title)
+$83 Dirty Fighters (Start)
+$82 Metallic Fight (Stage 1, 5)
+$81 Humburger Men (Boss)
+$80 Clear
+$85 Crimson Street (Stage 2, 6)
+$8b Go To Hell (Stage 3, 7)
+$90 Fifty Fifty (Fighting)
+$91 Hunger City (Stage 4, 8)
+$8a Black Emperor (Final Boss)
+$8f Immitation (Feint ｷ Cleared All Petterns)
+$87 Bad End (Bad Ending)
+$8d Carry Out (Cleared All Petterns)
+$86 Hot Dog Blues (Ranking)
+$92 Revenge Of Boss (Revenge ｷ Boss)
+$8c Fighting Chance (Continue)
+$84 Dead End (Game Over)
+$88 Joy (Good Ending)
+$89 Satisfaction (Ending)
+
+  [Source]
+  Konami Game Music Collection Vol.2
+  King Records  KICA-1016  Aug 21, 1990
+
+  [Sound Composer]
+  Izumi
+
+// Addition by Ayaya
+$end

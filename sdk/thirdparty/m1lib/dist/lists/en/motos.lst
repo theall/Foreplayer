@@ -1,0 +1,38 @@
+﻿$name=motos
+$version=2
+$default=0
+$songmax=25
+$main
+
+#00 BGM
+#01 Giga Got Closed to Motos (Far)
+#02 Giga Got Closed to Motos (Near)
+#03 Power Parts and Flying Parts
+#04 Field Floor Dropped
+#05 Beacon Dropped
+#06 Power Parts or Flying Parts Dropped
+#07 Space Bee or Motos Dropped
+#08 Motos Struck Beacon
+#09 Motos Struck Pupa
+#10 Parts Selection
+#11 Motos Struck Gear or Mega
+#12 Motos Struck Space Bee
+#13 Motos Jumped
+#14 Parts Selection (End)
+#15 Meteor Hit
+#16 Meteor
+#17 Cursor Moved
+#18 Round Clear Fanfare
+#19 Name Entry BGM
+#20 Round Start
+#21 Extended
+#22 High Score Fanfare
+#23 Game Over Music
+#24 Attract Mode BGM
+#25 Credit Inserted
+
+  [Source]
+  Namco Video Game Music Program
+  Dempa
+
+$end

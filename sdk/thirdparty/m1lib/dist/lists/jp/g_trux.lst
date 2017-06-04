@@ -1,0 +1,20 @@
+﻿$name=g_trux
+$version=2
+$default=$1c
+$songmax=9999999
+$main
+
+$1c Brave Man (Take Off)
+$01 Far Away (Stage 1) <time="1:46" fadeout="yes" fadeoutlength="7">
+$02 Sally (Stage 2) <time="1:48" fadeout="yes" fadeoutlength="7">
+$05 Hope (Stage 3) <time="1:16" fadeout="yes" fadeoutlength="7">
+$04 Friend (Stage 4) <time="1:34" fadeout="yes" fadeoutlength="7">
+$03 Unknown (Stage 5) <time="1:43" fadeout="yes" fadeoutlength="7">
+$06 Crisis (Boss Theme) <time="1:10" fadeout="yes" fadeoutlength="7">
+$1e Down Fall (Ending Theme) <time="1:03" fadeout="yes" fadeoutlength="7">
+$21 Again (Continue)
+$1d Recollection (Game Over)
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

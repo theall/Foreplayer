@@ -1,0 +1,126 @@
+﻿$name=madgear
+$version=2
+$default=035
+$fixed_volume=144
+$main
+
+#035 Coin Inserted <time="0:02">
+#018 Car Select <time="0:23.9">
+#001 Capital (Stage 1) <time="2:35.5">
+#010 Stage Clear <time="0:37.9">
+#004 Net Wood Forest (Stage 2) <time="1:46.5">
+#003 Coral Sea (Stage 3) <time="1:47.7">
+#002 Big Cave Tunnel (Stage 4) <time="1:42.7">
+#005 Ruins Desert (Stage 5) <time="1:39.4">
+#014 Million Valley (Stage 6) <time="1:29.35">
+#007 Thunder Road (Stage 7) <time="1:56.7">
+#006 Marine Snow Pipe Way (Stage 8) <time="1:11.8">
+#015 Sky City (Stage 9) & Attract Mode <time="2:33.2">
+#016 Ending <time="1:10">
+#013 Name Entry (1st - 3rd) <time="0:49.7">
+#011 Name Entry (4th - 10th) <time="0:45.1">
+#008 Game Over <time="0:03.5">
+#009 Result <time="0:03.5">
+#012 Continue <time="0:12">
+#017 Unused <time="0:05.5">
+
+----------------------------------------------------------------------------------------
+ [Voices]
+
+#129 [Voice] Hello there. I'm ... another leading computer type ... mounted on your Storm 11 vehicle. You can call me ... Let's go!
+#130 [Voice] Oh my creator.
+#131 [Voice] Let's go!
+#132 [Voice] We've come halfway already. Let's keep on going.
+#133 [Voice] Nice run! You can handle this vehicle real well. Let's keep going the same way!
+#134 [Voice] That was close! Next time be more careful. I can't keep up this way!
+#135 [Voice] We're running out of energy!
+#136 [Voice] I'm sorry to say, but we've run out of energy.
+#137 [Voice] We made it! I'm very glad that I was with you.
+#138 [Voice] I will keep this memory deep into my RAM and I'll never forget this.
+#139 [Voice] I hope to see you again... Good luck... Goodbye!
+#140 [Voice] Energy
+#141 [Voice] Barrier
+#142 [Voice] Oh no! Stop!!!
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+
+  [Sound Composer]
+  Ogeretsukun (Ogeretu-kun, Ogeretsu Kun)
+
+// List contribution by NK
+$end

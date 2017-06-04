@@ -1,0 +1,124 @@
+$name=qad
+$version=2
+$default=073
+$songmax=124
+$main
+
+#073 Opening Demo 1
+#074 Opening Demo 2
+#072 Title
+#001 Coin
+#032 Character Select
+#033 World Map
+#034 STAGE 1: Woods of Legend
+#061 Prepare for: ENEMY
+#043 Quiz BGM-A (Question 1, 2, 3, 4, 5)
+#044 Quiz BGM-A (Question 6, 7, 8, 9, 10)
+#045 Quiz BGM-A (After Question 11)
+#075 Victory
+#060 Bonus
+#046 Quiz BGM-B (Question 1, 2, 3, 4, 5)
+#047 Quiz BGM-B (Question 6, 7, 8, 9, 10)
+#048 Quiz BGM-B (After Question 11)
+#049 Quiz BGM-C (Question 1, 2, 3, 4, 5)
+#050 Quiz BGM-C (Question 6, 7, 8, 9, 10)
+#051 Quiz BGM-C (After Question 11)
+#058 Quiz BGM-D (Caution)
+#064 Prepare for: ELF & INN MASTER
+#059 Quiz BGM-E (ELF & INN MASTER)
+#062 Prepare for: BOSS
+#052 Quiz BGM-F (Question 1, 2, 3, 4, 5)
+#053 Quiz BGM-F (Question 6, 7, 8, 9, 10)
+#054 Quiz BGM-F (After Question 11)
+#035 Stage 2-1: The Flatfield
+#036 Stage 2-2: Beast Mountain
+#037 Stage 3: Chateau of Avalon
+#038 Stage 4: Fairy Lake
+#039 Stage 5-1: Midnight Forest
+#040 Stage 5-2: Destroyed Town
+#041 Stage 6: Dungeon
+#042 Stage 7: Gordian's Palace
+#063 Prepare for: FINAL BOSS
+#055 Quiz BGM-G (Question 1, 2, 3, 4, 5)
+#056 Quiz BGM-G (Question 6, 7, 8, 9, 10)
+#057 Quiz BGM-G (After Question 11)
+#065 Ending
+#066 Name Registry
+#067 Ranking Display 1
+#069 Ranking Display 2
+#068 Continue
+#071 Game Over
+
+ [Voice]
+
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#094 [Voice]
+#095 [Voice]
+#096 [Voice]
+#097 [Voice]
+#098 [Voice]
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#102 [Voice]
+#103 [Voice]
+#104 [Voice]
+#105 [Voice]
+#106 [Voice]
+#107 [Voice]
+#108 [Voice]
+#109 [Voice]
+#110 [Voice]
+#111 [Voice]
+#112 [Voice]
+#113 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#118 [Voice]
+#119 [Voice]
+#120 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+#124 [Voice]
+
+ [SFX]
+
+#001 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#014 [SFX]
+#016 [SFX]
+#017 [SFX]
+#019 [SFX]
+#026 [SFX]
+#027 [SFX]
+#029 [SFX]
+#117 [SFX]
+
+Note: Different tunes from the Japanese version
+
+// List done by ：NK-san
+$end

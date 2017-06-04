@@ -1,0 +1,32 @@
+﻿$name=butasan
+$version=2
+$default=09
+$main
+
+#009 TITLE
+#001 COIN
+#014 審判登場
+#004 笛
+#006 GONG
+#008 春
+#009 夏
+#010 秋
+#012 BONUS ROUND
+#011 冬
+#022 CLEAR
+#025 王座決定戦
+#019 ぶたさん死
+#027 RANKING1位
+#028 RANKING2位以下
+#007 STAFF ROLL
+#021 HISTORY
+#002 GAME OVER <time="0.6">
+#003 ↓<time="0.6">
+#002 ↓
+
+  ■出典
+  ゲームサウンド・ジャレコ -G.S.M. JALECO 1-
+  PONY CANYON / SCITRON  D28B0003  1988.08.21
+
+// リスト作成: らま
+$end

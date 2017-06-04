@@ -1,0 +1,51 @@
+﻿$name=cscluba
+$version=2
+$default=038
+$fixed_volume=716
+$main
+
+#038 QSound Logo
+
+#001 Theme of Capcom Sports Club
+#003 Welcome To C.S.C.
+#007 Team Select -Soccer-
+#008 Soccer Tournament
+#009 Football Samba
+#010 Sea Samba
+#011 Today's Super Goal
+#012 Football Remix '97
+#013 Winner's Demo -Soccer-
+#014 Loser's Demo -Soccer-
+#017 Player Select -Tennis-
+#018 Tennis Tournament
+#019 Prairie Wind
+#020 Face to Face in the Wilderness
+#021 Let's Go to the Seaside
+#022 Dubb Bossa
+#023 Winner's Demo -Tennis-
+#024 Loser's Demo -Tennis-
+#027 Team Select -Basketball-
+#028 Basketball Tournament
+#029 Dunk The Bomb
+#030 Raggae Guy at the Pier
+#031 Altimeter
+#032 They are Different
+#033 Winner's Demo -Basketball-
+#034 Loser's Demo -Basketball-
+#004 Continue
+#005 Game Over
+#006 New Challenger Joined
+#002 Super Player
+#035 Forever
+#036 Melody
+#037 Theme of Capcom Sports Club (reprise)
+
+#039 QSound Logo 2
+
+  [Source]
+  Pocket Fighter Remix /  Capcom Sports Club
+  Suleputer  CFCL-0002  Sep 18, 1998
+
+// List Contribution by NK
+// English List by Fuji
+$end

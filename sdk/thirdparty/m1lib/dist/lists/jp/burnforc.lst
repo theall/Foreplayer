@@ -1,0 +1,39 @@
+﻿$name=burnforc
+$version=2
+$default=525
+$fixed_volume=388
+$main
+
+#525 Coin <time="2">
+#010 [S.E.] 母艦登場 <time="6.6">
+#000 Taking Off
+#027 Bay Yard (1st Day)
+#009 Clear
+#011 Sarinuka Sands (2nd Day)
+#019 Aero Space (3rd Day)
+#015 Boss II
+#023 Bonus Stage
+#013 Grass Land (4th Day)
+#017 Another World I (5th Day)
+#056 Another World II (5th Day)
+#031 Boss I
+#007 Continue
+#005 Lunar Spaceport (Final Day)
+#039 Graduation
+#002 Closing Theme
+#021 Winners
+
+#054 Bay Yard (1st Day) -Part B-
+#050 Sarinuka Sands (2nd Day) -Part B-
+#052 Aero Space (3rd Day) -Part B-
+#048 Grass Land (4th Day) -Part B-
+
+  ■出典
+  BURNING FORCE / NAMCO GAME SOUND EXPRESS VOL.2
+  VICTOR ENTERTAINMENT  VICL-15001  1990.2.07
+
+  ■作曲
+  川元 義徳
+
+// List by Fuj
+$end

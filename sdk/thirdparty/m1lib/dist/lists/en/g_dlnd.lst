@@ -1,0 +1,23 @@
+﻿$name=g_dlnd
+$version=2
+$default=$01
+$songmax=255
+$main
+
+$01 Title Theme <time="3:42" fadeout="yes" fadeoutlength="10">
+$02 Dinoland <time="3:35" fadeout="yes" fadeoutlength="10">
+$06 Dinoland Boss <time="0:42" fadeout="yes" fadeoutlength="10">
+$03 Dinoland Ending <time="5:45" fadeout="yes" fadeoutlength="10">
+$07 Showerboard <time="2:54" fadeout="yes" fadeoutlength="10">
+$08 Showerboard Boss <time="2:00" fadeout="yes" fadeoutlength="10">
+$0a Showerboard Ending <time="2:34" fadeout="yes" fadeoutlength="10">
+$09 Sea <time="2:25" fadeout="yes" fadeoutlength="10">
+$05 Sea Boss <time="4:06" fadeout="yes" fadeoutlength="10">
+$04 Sea Ending <time="1:53" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Ichirou Hada
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

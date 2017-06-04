@@ -1,0 +1,129 @@
+﻿$name=scij
+$version=2
+$default=015
+$main
+
+#015 Demo
+#068 Coin <time="2.5">
+#001 Start <time="44.5">
+#002 City (Round 1)
+#007 Main Theme
+#014 Round Clear
+#003 Bay Area (Round 2)
+#004 Off Road (Round 3)
+#005 Highway (Round 4)
+#006 Desert (Round 5)
+#008 Helicopter Chase
+#009 Warehouse
+#010 All Missions Completed
+#013 Count Down
+#011 Game Over <time="7.3">
+#012 Name Entry
+
+#244 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#016 [SFX] Turbo<time="5">
+#017 [SFX] 
+#022 [SFX] Skid<time="5">
+#023 [SFX] Siren<time="8">
+#024 [SFX] 
+#025 [SFX] 
+#027 [SFX] Door closed
+#028 [SFX] 
+#029 [SFX] Crash
+#030 [SFX] Crash
+#031 [SFX] Crash
+#032 [SFX] Crash
+#033 [SFX] Crash
+#034 [SFX] Gun
+#035 [SFX] Gun
+#036 [SFX] Gun
+#037 [SFX] Gun
+#038 [SFX] Bazooka
+#039 [SFX] Explosion
+#040 [SFX] 
+#042 [SFX] Fire
+#043 [SFX] Hit
+#044 [SFX] Helicopter Approaching<time="4"> 
+#045 [SFX] Helicopter Leaving
+#046 [SFX] <time="5">
+#047 [SFX] <time="5">
+#048 [SFX] 
+#049 [SFX] Train<time="5">
+#050 [SFX] Train
+#051 [SFX] <time="5">
+#052 [SFX] 
+#053 [SFX] 
+#056 [SFX] <time="5">
+#057 [SFX] Ignition
+#058 [SFX] <time="4">
+#059 [SFX] 
+#060 [SFX] <time="4">
+#061 [SFX] 
+#062 [SFX] Horn
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] Credit
+#069 [SFX] <time="5">
+#070 [SFX] Air
+#071 [SFX] Siren<time="8">
+#072 [SFX] 
+#073 [SFX] <time="4">
+#074 [SFX] 
+#242 [SFX] 
+#243 [SFX] <time="5">
+
+---------------------------------------------------
+ [Voices] 
+
+#081 [Voice] (ナ) オープンチャンネルコード4。失踪中のパティらしき女を乗せたスポーツカーが、郊外に向かって逃走中。作戦を開始せよ。どうぞ。
+#082 [Voice] (ナ) オープンチャンネルコード4。失踪中のジョイスらしき女を乗せたワゴン車を、海岸線で発見。直ちに、追跡せよ。どうぞ。
+#083 [Voice] (ナ) オープンチャンネルコード4。組織暴力団ボスのボブ・ブラックを乗せたリムジンが、山岳地帯を逃走中。逮捕せよ。どうぞ。
+#084 [Voice] (ナ) オープンチャンネルコード4。計画実行者、ボブ・ブラックを乗せた護送車が、掠奪され逃走中。ショットガンの使用を許可する。即刻、拘束せよ。どうぞ。
+#085 [Voice] (ナ) オープンチャンネルコード4。真犯人、トニー・レイモンドを乗せたコンボイを、砂漠地帯で発見。逮捕に向かえ。どうぞ。
+#086 [Voice] 了解。
+#087 [Voice] 感度良好、どうぞ。
+#088 [Voice] (ナ) タイムアップまで15秒。緊急に処理せよ。
+#089 [Voice] ナンシー、逃走車発見。逮捕に向かう。どうぞ。
+#090 [Voice] (ナ) 了解。
+#091 [Voice] パパー
+#092 [Voice] ジェニファー、よかった。よかった。
+#093 [Voice] 夢、野望…都会での「悲しみ」は無限であり、あらゆる形をとる。しかし、強い勇気があるかぎり、また太陽が輝くというものだ…私は悪を粉砕した、君の栄光を記録し、長く記憶に留めよう。
+#094 [Voice] うるせえな。??街のボス、ボブの仕業だぁ。この娘はおとり。人質は別の車だよ。俺は他の車のことなんか、知りっこねえだろうが。
+#095 [Voice] お兄さん方、事件のおとりばっかり捕まえたって、何の足しにもなりゃしねえぜ。ボスは、今頃はリムジンで山を抜けてる頃だ。
+#096 [Voice] 弁護士、弁護士だよ！弁護士が来るまではノーコメント。街のボスが、そう簡単に情報を教えるとでも思ってるんですかい？ええ！
+#097 [Voice] ふーはっはっははは。これでお前らも解散だな。全ては、そう、次期市長候補のトニーレイモンドさんだよ。
+#098 [Voice] そうだ！私だ。市長を権力の座から突き落とすにはね、市長、いいか、お前の娘は時限爆弾と一緒に倉庫の中。時間はあと30秒だな。
+#099 [Voice] 発射！
+#102 [Voice] （歓声）
+#105 [Voice] 出てきたなー。マシンが鳴くよ、マシンが。
+#107 [Voice] リムジンの大安売りですか～？
+#111 [Voice] 諸君、腕の違いの勝負だ。
+#113 [Voice] ミスタードライバー、頼みますよ？
+#114 [Voice] 道はデッドエンド！
+#116 [Voice] うあぁぁ～ぁ。全開でいけー！
+#118 [Voice] 君たち、どうやら勝負ありだな。
+#120 [Voice] (ナ) 高架を狙って攻撃せよ。どうぞ。
+#121 [Voice] やったぞ！倉庫発見！アジトに向かう。
+#122 [Voice] グレイトだよ。
+#123 [Voice] オーケイ。
+#124 [Voice] イヤッホー！
+#125 [Voice] おーっとっとととと。
+#126 [Voice] 頼みますよ。
+#127 [Voice] あのね。
+#241 [Voice] 作戦を開始せよ。（繰り返し）<time="10">
+
+  [Source]
+  S.C.I / Taito
+  Pony Canyon / Scitron  PCCB-00024  Apr 21, 1990
+
+  [Sound Composer]
+  Takami Asano (Godiego)
+
+// Original list contribution by ZEK.
+$end

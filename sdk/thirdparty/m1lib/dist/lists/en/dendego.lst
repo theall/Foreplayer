@@ -1,0 +1,28 @@
+﻿$name=dendeg
+$version=2
+$default=14
+$main
+
+#14 Go! Go! Train (Title Demo)
+#11 Traffic [intro] (Line Select) <time="16.5">
+#12 Traffic [main] (Line Select)
+#15 Game Start
+#08 Departure Bell
+#04 Bonus Hit (just on the stop line)
+#06 Bonus Stage
+#05 Docking!! (successful in a bonus stage / just on the stop line and schedule)
+#09 Name Entry
+#07 Congratulation!! (Accomplished)
+#13 Take me sunset (Ending)
+
+  [Source]
+  Densha de Go! / Side By Side 2
+  Zuntata / J.A.M.
+  Zuntata Records  ZTTL-0018  Dec 21, 1997
+
+  [Sound Composer]
+  Norihiro Furukawa
+
+// List Contribution by Mappi
+// English list by Fuji
+$end

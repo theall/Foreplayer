@@ -1,0 +1,35 @@
+﻿$name=aburner2
+$version=2
+$default=146
+$songmax=255
+$main
+
+#146 Maximum Power
+#145 Final Take Off 
+#148 Red Out
+#147 Super Stripe 
+#149 After Burner 
+
+------------------------------------------------------
+#163 [Voice] Be Careful
+#164 [Voice] The Enemy
+#165 [Voice] Get Ready
+#167 [Voice] Break Left
+#168 [Voice] Look Out
+#169 [Voice] 3 o'clock
+#170 [Voice] Wow!!
+#171 [Voice] Break Right
+#172 [Voice] 9 o'clock
+#193 [Voice] Fire!
+#195 [Voice] Over there
+
+#126 [S.E.] Credit
+#224 [S.E.] Sight Lock
+#225 [S.E.] Warning
+#231 [S.E.] Check Point
+
+  ■出典
+  セガ体感ゲーム・スペシャル
+  ALFA RECORDS  28XA-198  1987.12.21
+
+$end

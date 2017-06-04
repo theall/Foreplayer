@@ -1,0 +1,32 @@
+﻿$name=myhero
+$version=2
+$default=129
+$songmax=160
+$main
+
+#129 Coin
+#147 Round 1 (現代)
+#148 Round 2 (過去 -忍者-)
+#149 Round 3 (未来 -猿の惑星-)
+#150 Boss
+#151 Boss戦勝利～Next Round Demo
+#160 Miss!
+#152 Game Over
+#153 Name Entry
+
+-----------------------------------------
+ [S.E.]
+
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+
+$end

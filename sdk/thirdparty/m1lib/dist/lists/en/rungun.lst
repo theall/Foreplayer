@@ -1,0 +1,39 @@
+﻿$name=rungun
+$version=2
+$default=$e2
+$songmax=$ff
+$main
+
+$e2 Slam Dunk (Opening)
+$dd Let's Play (Game mode selection)
+$d9 Go Challenge (Team selection)
+$db TV Broadcast (Demo)
+$d1 L.A. (In game music 1)
+$d2 Boston (In game music 2)
+$d3 Chalotte (In game music 3)
+$d4 Phoenix (In game music 4)
+$d5 Orland (In game music 5)
+$d6 ChicagO (In game music 6)
+$d7 Cleveland (In game music 7)
+$d8 Detroito (In game music 8)
+$da Coaching Tips
+$e8 Half Time Show -intro-
+$e1 Half Time Show
+$e0 Winner
+$df Loser
+$e4 Final 1 (Final game music 1)
+$e5 Final 2 (Final game music 2)
+$e6 Final 3 (Final game music3)
+$e7 Final 4 (Final game music 4)
+$e9 Fanfare (Ending 1)
+$ea Champion (Ending 2)
+$eb Glorious Victory (Credits roll)
+$de Continue
+$dc Game Over
+$ed Speaker Test
+
+  [Source]
+  Konami Amusement Sounds '94 - Spring
+  King Records  KICA-7631 - 7632  Feb 23, 1994
+
+$end

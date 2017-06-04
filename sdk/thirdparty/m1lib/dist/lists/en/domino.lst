@@ -1,0 +1,37 @@
+﻿$name=domino
+$version=2
+$default=016
+//$fixed_volume=214
+$main
+
+#016 [SFX] Coin Inserted
+#037 Main Tune
+#042 Bow (Stage Clear)
+#036 Lose Game
+#041 Intermission & Game Over
+
+#020 Test Tone
+#039 [Command: #037 Resumption]
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#007 [SFX] shoe squeak
+#008 [SFX] place domino
+#009 [SFX] take domino
+#010 [SFX] bump person
+#011 [SFX] bully right
+#012 [SFX] bully left
+#015 [SFX] bonus man
+#016 [SFX] coin
+#023 [SFX] swat whack
+#021 [SFX] doms falling
+#033 [SFX] bee
+#017 [SFX] tilt
+#030 [SFX] bird chirp
+#027 [SFX] end fall
+#029 [SFX] laser
+#019 [SFX] boom
+
+// List contribution by NK
+$end

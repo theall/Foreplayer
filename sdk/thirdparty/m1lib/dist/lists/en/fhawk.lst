@@ -1,0 +1,55 @@
+﻿$name=fhawk
+$version=2
+$default=005
+$main
+
+#005 Title
+#043 Credit
+#006 Opening Theme - BGM 1 (Round 1, 3)
+#007 BGM 1 (Round 1, 3)
+#010 Round 1, 3, 5 Clear
+#008 BGM 2 (Round 2, 5)
+#011 Round 2, 4 Clear
+#009 BGM 3 (Round 4, 6)
+#012 Ending
+#013 Name Entry
+#014 Continue
+
+-----------------------------------------------------------
+ [SFX]
+
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+
+// List Contribution by NK
+$end

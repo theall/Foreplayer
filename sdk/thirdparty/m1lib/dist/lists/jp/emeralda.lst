@@ -1,0 +1,27 @@
+﻿$name=emeralda
+$version=2
+$default=$55
+$main
+
+#085 はじめの選択BGM
+#065 エメラルディアへようこそ。
+#067 レッドラインの攻防 (ピンチBGM)
+#069 ミントとガム・恋のキャッチボール (V.S.モードBGM)
+#079 決着ついたよーん
+#071 幕間BGM
+#073 暗黒海魔王ジャミールのテーマ
+#089 コンティニュー
+#075 脱出のテーマ
+#077 脱出成功！
+#087 ミントの新たなる旅立ち (エンディング)
+#091 ネーム入れBGM
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI VOL.10
+  VICTOR ENTERTAINMENT VICL-40098 1993.12.16
+
+  ■作曲・編曲
+  荒川 美恵
+
+// List contribution by らま
+$end

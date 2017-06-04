@@ -1,0 +1,41 @@
+﻿$name=4dwarrio
+$version=2
+$default=144
+$main
+
+#144 Credit Inserted
+#129 Ready
+#130 BGM 1
+#135 BGM 2
+#136 BGM 3
+#137 BGM 4
+#131 BGM 5 (Area 4)
+#132 Proceeding to the Next Stage
+#162 Got Killed
+#133 Game Over
+#134 Name Entry
+
+-------------------------------
+  [SFX]
+
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+
+// List contributed by NK
+$end

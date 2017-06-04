@@ -1,0 +1,36 @@
+﻿$name=kungfum
+$version=2
+$default=032
+$songmax=036
+$main
+  
+#032 Opening <time="0:07">
+#036 Main BGM
+#034 Stage Clear
+#035 All Clear
+#033 Game Over <time="0:05">
+  
+----------------------------
+
+#001 [Voice]
+#002 [Voice]
+#003 [Voice]
+#004 [Voice]
+#005 [Voice] (Mr. X)
+#006 [S.E.]
+#007 [Voice]
+
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.] <time="0:02">
+#024 [S.E.] <time="0:03">
+#025 [S.E.]
+#026 [S.E.]
+
+// リスト作成：NKさん
+$end

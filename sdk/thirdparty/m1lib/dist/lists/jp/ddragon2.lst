@@ -1,0 +1,84 @@
+﻿$name=ddragon2
+$version=2
+$default=001
+$songmax=089
+$main
+  
+#001 Title
+#002 Mission 1
+#007 Mission 1 Boss
+#011 Mission Clear
+#013 Intermission
+#003 Mission 2
+#008 Mission 2 Boss
+#004 Mission 3
+#009 Mission 3 Boss
+#006 Mission 4
+#010 Mission 4 Boss 1
+#088 Mission 4 Boss 2 Part I
+#089 Mission 4 Boss 2 Part II
+#012 Ending
+  
+#005 (unused)
+#014 (unused)
+#015 (unused)
+  
+------------------------------------
+ [Voice & S.E.]
+  
+#085 (all)
+  
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#059 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#063 [Voice]
+#064 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#071 [Voice]
+#073 [Voice]
+  
+#016 [S.E.]
+#017 [S.E.]
+#019 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#042 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#048 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+
+// リスト作成：NKさん
+$end

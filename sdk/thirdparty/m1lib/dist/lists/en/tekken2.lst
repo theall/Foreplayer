@@ -1,0 +1,313 @@
+﻿$name=tekken2
+$default=278
+$main
+
+#278 Tekken 2 Attract Movie Soundtrack
+#085 Fighter Select
+#144 Michelle Chang -Wandering Female Fighter-
+#096 Yoshimitsu -Mechanized Space Ninja-
+#128 King -Wild Beast Father-
+#101 Lei Wulong -Super Police-
+#149 Nina Williams -Silent Assasin-
+#439 Marshall Law -Legendary Dragon Once More-
+#133 Paul Phoenix -Hot Blooded Martial Artist-
+#448 Jack2 -Super Killing Machine-
+#112 Jun Kazama -Ecological Fighter-
+#460 Baek Doo San -Killing Hawk-
+#160 Heihachi Mishima -Iron Fist King-
+#117 Inside Boss
+#165 Kazuya Mishima -Devil Kazuya-
+#464 Ending BGM
+
+#080 Roger & Alex
+#480 Name Entry
+
+#197 [Voice] Bruce Irvin
+#198 [Voice] Jun Kazama
+#199 [Voice] Lei Wulong
+#309 [Voice] Kazuya Mishima
+#310 [Voice] Paul Phoenix
+#311 [Voice] King
+#312 [Voice] Nina Williams
+#313 [Voice] Lee Chaolan
+#314 [Voice] Jack-2
+#315 [Voice] Michelle Chang
+#316 [Voice] Wang Jinrey
+#317 [Voice] Marshall Law
+#318 [Voice] Yoshimitsu
+#319 [Voice] Baek Doo San
+#320 [Voice] Heihachi Mishima
+#321 [Voice] Anna Williams
+#322 [Voice] Armor King
+#323 [Voice] Prototype Jack
+#324 [Voice] Ganryu
+#325 [Voice] Kuma
+#326 [Voice] Kunimitsu
+#327 [Voice] Roger
+#328 [Voice] Alex
+#262 [Voice] Round 1
+#263 [Voice] Round 2
+#264 [Voice] Round 3
+#176 [Voice] Round 4
+#177 [Voice] Round 5
+#178 [Voice] Round 6
+#179 [Voice] Round 7
+#180 [Voice] Round 8
+#181 [Voice] Round 9
+#265 [Voice] Final Round
+#259 [Voice] Great
+#260 [Voice] Continue
+#261 [Voice] One
+#266 [Voice] Fight
+#267 [Voice] You Win
+#268 [Voice] You Lose
+#269 [Voice] Draw
+#270 [Voice] Double KO
+#271 [Voice] Game Over
+#272 [Voice] Perfect
+#276 [Voice] Time Up
+#277 [Voice] KO
+#258 [Voice] Kazuya Mishima Wins
+
+
+ Law
+#182 [SFX] Atk1
+#183 [SFX] Atk2
+#184 [SFX] Atk3
+#185 [SFX] Atk4
+#186 [SFX] Atk5
+#187 [SFX] Atk6
+#188 [SFX] Dmg1
+#189 [SFX] Dmg2
+#190 [SFX] KO
+#191 [SFX] Woooo
+
+ Jun
+#200 [SFX] Atk1
+#201 [SFX] Atk2
+#202 [SFX] Atk3
+#203 [SFX] Atk4
+#204 [SFX] Atk5
+#205 [SFX] Atk6
+#206 [SFX] Atk7
+#207 [SFX] Dmg1
+#208 [SFX] Dmg2
+#209 [SFX] KO
+#210 [SFX] Laugh
+
+ Ganryu
+#211 [SFX] Atk1
+#212 [SFX] Atk2
+#213 [SFX] Atk3
+#214 [SFX] Atk4
+#215 [SFX] Atk5
+#216 [SFX] Atk6
+#217 [SFX] Dmg1
+#218 [SFX] Dmg2
+#219 [SFX] KO
+
+ Lei
+#221 [SFX] Atk1
+#222 [SFX] Atk2
+#223 [SFX] Atk3
+#224 [SFX] Atk4
+#225 [SFX] Atk5
+#226 [SFX] Atk6
+#227 [SFX] Atk7
+#228 [SFX] Atk8
+#229 [SFX] Atk9
+#230 [SFX] Dmg1
+#231 [SFX] Dmg2
+#232 [SFX] KO
+
+ Lee
+#234 [SFX] Atk1
+#235 [SFX] Atk2
+#236 [SFX] Atk3
+#237 [SFX] Atk4
+#238 [SFX] Atk5
+#239 [SFX] Atk6
+#240 [SFX] Atk7
+#241 [SFX] Atk8
+#245 [SFX] Atk9 [SFX] (Unused)
+#242 [SFX] Dmg1
+#243 [SFX] Dmg2
+#244 [SFX] KO
+#429 [SFX] Laugh
+
+ Baek
+#246 [SFX] Atk1
+#247 [SFX] Atk2
+#248 [SFX] Atk3
+#249 [SFX] Atk4
+#250 [SFX] Atk5
+#251 [SFX] Atk6
+#252 [SFX] Atk7
+#253 [SFX] Atk8
+#254 [SFX] Dmg1
+#255 [SFX] Dmg2
+#256 [SFX] KO
+
+ Bruce
+#288 [SFX] Atk1
+#289 [SFX] Atk2
+#290 [SFX] Atk3
+#291 [SFX] Atk4
+#292 [SFX] Atk5
+#293 [SFX] Dmg1
+#294 [SFX] Dmg2
+#295 [SFX] KO
+
+ Michelle
+#296 [SFX] Atk1
+#297 [SFX] Atk2
+#298 [SFX] Atk3
+#299 [SFX] Atk4
+#300 [SFX] Atk5
+#301 [SFX] Atk6
+#302 [SFX] Dmg1
+#303 [SFX] Dmg1
+#304 [SFX] KO
+#305 [SFX] Sigh
+
+ [SFX] Yoshimitsu
+#333 [SFX] Atk1
+#334 [SFX] Atk2
+#335 [SFX] Atk3
+#336 [SFX] Atk4
+#337 [SFX] Atk5
+#338 [SFX] Dmg1
+#339 [SFX] Dmg2
+#340 [SFX] KO
+#066 [SFX] Sword1
+#342 [SFX] Sword2
+#344 [SFX] Sword3 (Unused)
+#329 [SFX] Teleport
+
+ Heihachi
+#345 [SFX] Atk1
+#346 [SFX] Atk2
+#347 [SFX] Atk3
+#348 [SFX] Atk4
+#349 [SFX] Atk5
+#350 [SFX] Atk6
+#351 [SFX] Dmg1
+#352 [SFX] Dmg2
+#353 [SFX] KO
+
+ Kunimitsu
+#354 [SFX] Atk1
+#355 [SFX] Atk2
+#356 [SFX] Atk3
+#357 [SFX] Atk4
+#358 [SFX] Atk5
+#359 [SFX] Dmg1
+#360 [SFX] Dmg2
+#361 [SFX] KO
+
+ Roger
+#362 [SFX] Atk1
+#363 [SFX] Atk2
+#364 [SFX] Atk3
+#365 [SFX] Atk4
+#366 [SFX] Atk5
+#367 [SFX] Dmg
+#370 [SFX] KO
+
+ Alex
+#371 [SFX] Atk1
+#372 [SFX] Atk2
+#373 [SFX] Atk3
+#374 [SFX] Atk4
+#375 [SFX] Atk5
+#376 [SFX] Atk6
+#377 [SFX] Dmg
+#379 [SFX] KO
+
+ Jack-2/P.Jack
+#381 [SFX] Atk1
+#382 [SFX] Atk2
+#383 [SFX] Atk3
+#384 [SFX] Atk4
+#385 [SFX] Atk5
+#386 [SFX] Atk6
+#387 [SFX] Dmg1
+#388 [SFX] Dmg2
+#389 [SFX] Dmg3
+#390 [SFX] KO
+#391 [SFX] Laugh
+#284 [SFX] Motor1
+#053 [SFX] Motor2
+#051 [SFX] Ground
+#055 [SFX] Punch1
+#057 [SFX] Punch2
+#060 [SFX] Step1
+#286 [SFX] Step2
+#062 [SFX] Kick
+
+ Nina/Anna
+#392 [SFX] Atk1
+#393 [SFX] Atk2
+#394 [SFX] Atk3
+#395 [SFX] Atk4
+#396 [SFX] Atk5
+#397 [SFX] Atk6
+#398 [SFX] Dmg1
+#399 [SFX] Dmg2
+#400 [SFX] KO
+#401 [SFX] Laugh
+
+ King/Armor King/Kuma
+#402 [SFX] Atk1
+#403 [SFX] Atk2
+#404 [SFX] Atk3
+#405 [SFX] Atk4
+#406 [SFX] Atk5
+#407 [SFX] Atk6
+#408 [SFX] Dmg1
+#409 [SFX] Dmg2
+#410 [SFX] KO
+
+ Paul
+#412 [SFX] Atk1
+#413 [SFX] Atk2
+#414 [SFX] Atk3
+#415 [SFX] Atk4
+#416 [SFX] Atk5
+#417 [SFX] Dmg1
+#418 [SFX] Dmg2
+#419 [SFX] KO
+
+ Kazuya/Devil
+#421 [SFX] Atk1
+#422 [SFX] Atk2
+#423 [SFX] Atk3
+#424 [SFX] Atk4
+#425 [SFX] Atk5
+#426 [SFX] Dmg1
+#427 [SFX] Dmg2
+#428 [SFX] KO
+#040 [SFX] Laser
+
+ Wang
+#430 [SFX] Atk1
+#431 [SFX] Atk2
+#432 [SFX] Atk3
+#433 [SFX] Atk4
+//#434 [SFX] Atk5 (missing?)
+#435 [SFX] Dmg1
+#436 [SFX] Dmg2
+#437 [SFX] KO
+#438 [SFX] Laugh
+
+  [Source]
+  Tekken 2 / Namco Game Sound Express Vol.26
+  Victor Entertainment  VICL-15050  Nov 22, 1995
+  
+  [Composers]
+  Yoshie Arakawa, Kae Takayanagi
+
+// List by Thomas "Dark Pulse" Warnica - Feb 10 2007
+// Revised off earlier list by Heihachi_73 - Mar 22 2004
+// OST Info Updated by Fuj
+$end

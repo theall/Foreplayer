@@ -1,0 +1,41 @@
+﻿$name=skysmash
+$version=2
+$default=001
+$main
+
+#001 [SFX] Credit
+#026 Start
+#021 Main Theme
+#029 Boss Battle
+#027 Game Over
+
+#022 Unused #1
+#023 Unused #2
+#030 Unused #3
+
+------------------------------------------------------
+ [SFX]
+
+#001 [SFX] Credit
+#002 [SFX] Player Extended
+#003 [SFX] Power Up
+#004 [SFX] Got Missile
+#005 [SFX]
+#019 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+
+// List Contribution by a2c-s438
+$end

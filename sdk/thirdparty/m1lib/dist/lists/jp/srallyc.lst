@@ -1,0 +1,38 @@
+﻿$name=srallyc
+$version=2
+$default=002
+$main
+
+#002 Power Games (Attract Mode) <time="0:58">
+#003 Judgement (Car Select) <time="0:36">
+#011 Conditioned Reflex <time="3:38">
+#008 Desert Land <time="2:15">
+#001 Getting Muddy <time="1:32">
+#010 My Dear Friend, Rally <time="1:32">
+#014 Reckless Running <time="2:40">
+#005 Ignition (Stage Complete) <time="3:18">
+#004 End Road of Monaco <time="0:09">
+#009 Fanfare <time="0:09">
+#012 Game Over Yeah! <time="0:07">
+#006 Around a Letter (Enter Name) <time="0:56">
+#017 Welcome to Sega Rally (Awaiting Challengers)<time="1:06">
+#013 Put Up a Sign (Title Screen) <time="0:09">
+
+#007 My Dear Friend, Rally (Short) <time="0:48">
+#015 Conditioned Reflex (Short) <time="0:58">
+#016 Getting Muddy (Loop)
+
+  ■出典
+  セガラリー・チャンピオンシップ PC版
+
+  ■サウンドトラック
+  COMPETITION / SEGA RALLY CHAMPIONSHIP COMPLETE
+  TOSHIBA EMI  TYCY-5484  1996.02.07
+
+  セガ レーシング ベスト
+  Marvelous Entertainment (MMV)  MJCA-00043  1999.03.03
+    &lt;"Conditioned Reflex", "Getting Muddy"収録&gt;
+
+// List contribution by Toby
+// List Contribution by NK
+$end

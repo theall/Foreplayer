@@ -1,0 +1,96 @@
+﻿$name=riotcity
+$version=2
+$default=008
+$main
+
+#008 Introduction <time="0:40">
+#021 Title <time="0:03.5">
+#042 Credit <time="0:03">
+#010 Opening <time="0:03.5">
+#001 Round 1 Part I <time="2:12.1">
+#003 Round 1 Part II <time="1:09.5">
+#004 Round 1 Part III <time="2:00.9">
+#011 Round Clear <time="0:04">
+#005 Round 2 Part I <time="1:47.2">
+#018 Round 2 Part II <time="2:13.7">
+#020 Round 2 Part III <time="0:58.5">
+#006 Round 2 Part IV <time="1:50.2">
+#004 Round 3 Part I <time="1:02.4">
+#009 Round 3 Part II <time="0:54.6">
+#006 Round 3 Part III <time="1:03.4">
+#003 Round 4 Part I <time="0:38.4">
+#005 Round 4 Part II <time="0:45.8">
+#007 Round 4 Part III <time="1:18">
+#009 Round 4 Part IV <time="0:31.2">
+#014 Final Round Start Demo <time="0:33">
+#002 Round 5 Part I <time="2:13.3">
+#004 Round 5 Part II <time="1:02.4">
+#019 Round 5 Part III <time="1:33.6">
+#017 Ending <time="1:37">
+#015 Continue <time="0:23.4">
+#013 Game Over <time="0:05">
+
+#012 Unused 1 <time="0:05">
+#016 Unused 2 <time="0:03">
+#022 Unused 3 <time="0:12">
+
+-----------------------------------------------------------
+ [Voice]
+
+#021 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#067 [Voice]
+#069 [Voice]
+#073 [Voice]
+#077 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#079 [S.E.]
+#095 [S.E.]
+
+// List Contribution by NK
+$end

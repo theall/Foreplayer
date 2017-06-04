@@ -1,0 +1,89 @@
+﻿$name=crimec
+$version=2
+$default=023
+$main
+
+#023 CREDIT
+#008 START DEMO
+#009 PRISON BREAKING (ROUND 1)
+#012 ROUND 2 START DEMO <time="4">
+#013 BANK ROBBERY (ROUND 2)
+#015 SMUGGLING (ROUND 3)
+#017 KIDNAPPING (1) (ROUND 4)
+#018 KIDNAPPING (2) (ROUND 5)
+#019 KIDNAPPING (3) (ROUND 6) 
+#010 BOSS BGM (ROUND 1, 3, 4, 6)
+#020 ROUND CLEAR
+#021 ENDING
+#022 NAME ENTRY
+
+#014 ROUND 2 START DEMO
+#064 ROUND 2, 3 Ver.2
+
+#062 未使用曲 1
+#063 未使用曲 2
+
+#244 スピーカーテスト
+
+---------------------------------------------------
+ [S.E.] 
+
+#024 [S.E.] 1UP
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#052 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#075 [S.E.] 
+#074 [S.E.] <time="4">
+#242 [S.E.] <time="5">
+#243 [S.E.] <time="3">
+
+---------------------------------------------------
+ [Voice] 
+
+#034 [Voice] 
+#035 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#051 [Voice] 
+#053 [Voice] 
+#065 [Voice] 
+#245 [Voice] <time="4">
+
+// List contribution by ZEK.
+$end

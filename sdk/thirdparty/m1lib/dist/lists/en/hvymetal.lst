@@ -1,0 +1,65 @@
+﻿$name=hvymetal
+$version=2
+$default=163
+$main
+
+#143 [SFX] Credit Inserted <time="3">
+#164 [SFX] Submarine <time="5">
+#165 [SFX] Getting the to shore <time="2">
+#166 [SFX] Vent open <time="2">
+#167 [SFX] Landing <time="2.7">
+#168 [SFX] Good Luck <time="3">
+#134 [SFX] Target acquisition <time="4">
+#135 [SFX] Fire!! <time="2.5">
+#139 [SFX] Explosion <time="2.5">
+
+#163 Battle 1
+#145 Battle 2
+#132 [SFX] Player destroyed <time="2.5">
+#162 Battle 2 Ver.2 (Secret Music)
+#160 Battle 3
+#161 Battle 4
+#138 Boss 
+#147 Clear!
+#146 Game Over
+#144 Name Entry
+
+#129 Battle 2 (Part)
+#171 Unused
+
+---------------------------------------------------
+  [SFX]
+
+#143 [SFX] Credit Inserted
+#164 [SFX] Submarine
+#165 [SFX] Getting the to shore
+#166 [SFX] Vent open
+#167 [SFX] Landing
+#168 [SFX] Good Luck
+#134 [SFX] Target acquisition
+#135 [SFX] Fire <time="6">
+#155 [SFX] Spot
+#158 [SFX] Soner
+#159 [SFX] Locked on by enemy
+#151 [SFX] Fire from enemy
+#156 [SFX] Item 
+#169 [SFX] Super shot
+#131 [SFX] Explosion 1
+#130 [SFX] Explosion 2
+#139 [SFX] Explosion 3
+#132 [SFX] Player Destroyed
+#133 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#157 [SFX] 
+#170 [SFX] 
+
+// List contribution by ZEK.
+// Special Thanks to up2
+$end

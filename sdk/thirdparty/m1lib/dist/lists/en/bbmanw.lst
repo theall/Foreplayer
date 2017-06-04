@@ -1,0 +1,86 @@
+﻿$name=bbmanw
+$version=2
+$default=059
+$main
+
+#059 [SFX] Coin
+#011 Game Mode Select <time="12">
+#060 [SFX] Normal Game
+#017 Introduction 1
+#028 World Map Preview
+#009 Game Start
+#022 Area 1, 4
+#012 Continue <time="12">
+#029 Bonus Stage
+#010 Time Out
+#001 Area 2, 5
+#024 Boss BGM 1
+#015 Area 3, 6
+#030 Boss BGM 2
+#020 Area Clear
+#019 Ending
+#014 Game Over
+#013 Name Entry
+
+#060 [SFX] VS Super Game
+#027 Awaiting Challengers <time="6.8">
+#018 Introduction 2 <time="9.3">
+#009 Game Start
+#025 BGM 1
+#008 Draw or Lose
+#003 BGM 2
+#007 Won!
+#026 BGM 3
+#021 All Cleared
+#013 Name Entry
+
+---------------------------------------------------
+ [SFX] 
+
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#069 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] <time="5">
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+
+  [Sound Composer]
+  Miyako Omori
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

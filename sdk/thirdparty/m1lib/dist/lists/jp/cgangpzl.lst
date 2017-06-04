@@ -1,0 +1,32 @@
+﻿$name=cgangpzl
+$version=2
+$default=$65
+$main
+//
+//Title : Cosmo Gang The Puzzle
+//Copyright : (c)namco 1992
+//System : NA-1
+//Sound CPU : 68000 (sound cpu not independent)
+//Sound Chip : C219
+//Composer : 荒川美恵(すとろんぐよしえ)
+
+$65 モードセレクト
+$61 ひとりでパズルをするBGM
+$63 きゃーたいへん！のBGM
+$69 ゲームオーバー
+$6f 続けますか？
+$6b 対戦でパズルをするBGM
+$67 決着つきました
+$6d ネーム入れ
+
+  ■出典
+  COSMO GANG THE PUZZLE PCB (NA-1)
+
+  namco GAME SOUND EXPRESS Vol.8 (COSMO GANG THE VIDEO / THE PUZZLE)
+  VICTOR ENTERTAINMENT  VICL-15018 1993.3.24
+
+  ■作曲
+  荒川 美恵(すとろんぐよしえ)
+
+// リスト作成：加山。さん
+$end

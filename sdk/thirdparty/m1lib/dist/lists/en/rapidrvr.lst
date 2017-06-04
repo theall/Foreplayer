@@ -1,0 +1,29 @@
+﻿$name=rapidrvr
+$version=2
+$default=160
+$main
+
+#160 Attract
+#112 Valley of Autumn
+#115 Big Canyon
+#134 Dinosaur Zone <time="17.5">
+#131 Dinosaur Zone
+#122 Glacier Zone
+#128 Volcano Zone
+#118 Night of The Nile
+#135 Paradise in Southern Sea
+#151 Aurora Snowfield
+#140 Great Waterfall
+#177 Name Entry
+
+#001 Sound Check
+
+  [Source]
+  Rapid River / Arcade Soundtrack 014
+  Pony Canyon / Wonder Spirits  WSCA-00015  Apr 17, 1998
+
+  [Sound Composer / Adapter]
+  Yoshie Arakawa
+
+// List by Skeleton081983
+$end

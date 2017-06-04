@@ -1,0 +1,218 @@
+﻿$name=batrider
+$version=2
+$default=032
+$fixed_volume=102
+$main
+
+#032 Raizing Logo 
+#001 Zero Cop (Opening) 
+#033 [SFX] Credit Inserted <time="02">
+#034 [SFX] Start <time="02">
+#002 Choice Or Die (Player Select)
+#003 Easy To Go (Stage 1: Manhattan City)
+#004 Purple Twilight (Stage 2: Zenovia Airport)
+#005 Missile Fever (Stage 3: Sky High)
+#006 No Way Out (Stage 4: Sewage System)
+#007 Chasing Gang, Need Speed (Stage 5: High Way)
+#008 Cool Riding (Stage 6: Zenovia City)
+#009 External View (Stage 7: Building)
+#010 Chop U! (Boss 1: Air)
+#011 Let Ass Kick Together! (Boss 2: Surface)
+#012 Nimbus (Boss 3: Rival)
+#013 Spiral Locus (Boss 4: Mahou Daisakusen)
+#014 Devided By Zero (Boss 5: Shippuu Mahou Daisakusen)
+#015 Stab'n Stomp! (Boss 6: Battle Garegga)
+#016 Drag Ster (Last Boss)
+#017 Funky Dude (Stage Clear)
+#018 Ure Fired! (Game Over)
+#019 Flashback (Ranking)
+#020 Morning News (Ending 1: Police Team)
+#021 Circus Fooligan (Ending 2: Criminal Team)
+#022 Hyper Ventilation (Ending 3: Psychic Team)
+#023 Sad But True (Ending 4: Raizing All Stars)
+#024 Theme Of Carpet Stories (Ending 5: Carpet)
+#025 Chop Me Again (Credits Roll)
+
+#000 Percussion Test (PCM)
+
+------------------------------------------------
+
+#032 [SFX] SYS system
+#033 [SFX] SYS system
+#034 [SFX] SYS system
+#035 [SFX] SYS system
+#036 [SFX] SYS click
+#037 [SFX] SYS click
+#038 [SFX] SYS click
+#039 [SFX] SYS click
+#040 [SFX] SYS click
+#041 [SFX] SYS item
+#048 [SFX] SYS item
+#049 [SFX] SYS item
+#050 [SFX] SYS item
+#051 [SFX] SYS item
+#052 [SFX] SYS item
+#053 [SFX] SYS item
+#054 [SFX] SYS item
+#055 [SFX] SYS item
+
+#064 [SFX] MYC shot
+#065 [SFX] MYC shot
+#066 [SFX] MYC shot
+#067 [SFX] MYC shot
+#068 [SFX] MYC shot
+#069 [SFX] MYC shot
+#070 [SFX] MYC shot
+#071 [SFX] MYC shot
+#072 [SFX] MYC shot
+#073 [SFX] MYC shot
+#074 [SFX] MYC shot
+#075 [SFX] MYC shot
+#076 [SFX] MYC shot
+#077 [SFX] MYC shot
+#078 [SFX] MYC bomb
+#079 [SFX] MYC bomb
+#080 [SFX] MYC bomb
+#081 [SFX] MYC bomb
+#082 [SFX] MYC bomb
+#083 [SFX] MYC bomb
+#084 [SFX] MYC bomb
+#085 [SFX] MYC bomb
+#086 [SFX] MYC bomb
+#087 [SFX] MYC bomb
+#088 [SFX] MYC bomb
+#089 [SFX] MYC bomb
+#090 [SFX] MYC bomb
+#091 [SFX] MYC bomb
+#092 [SFX] MYC bomb
+#093 [SFX] MYC bomb
+#094 [SFX] MYC bomb
+#095 [SFX] MYC bomb
+#096 [SFX] MYC bomb
+#097 [SFX] MYC bomb
+#098 [SFX] MYC bomb
+#099 [SFX] MYC bomb
+#100 [SFX] MYC bomb
+#101 [SFX] MYC other
+#102 [SFX] MYC other
+#103 [SFX] MYC other
+#104 [SFX] MYC other
+#105 [SFX] MYC other
+#106 [SFX] MYC shot
+#107 [SFX] MYC shot
+#108 [SFX] MYC shot
+#109 [SFX] MYC shot
+#110 [SFX] MYC shot
+#111 [SFX] MYC other
+#112 [SFX] MYC bomb
+#113 [SFX] MYC bomb
+#114 [SFX] MYC bomb
+#115 [SFX] MYC shot
+#116 [SFX] MYC bomb
+#117 [SFX] MYC shot
+
+#128 [SFX] ENC explosion
+#129 [SFX] ENC explosion
+#130 [SFX] ENC explosion
+#131 [SFX] ENC explosion
+#132 [SFX] ENC explosion
+#133 [SFX] ENC explosion
+#134 [SFX] ENC explosion
+#135 [SFX] ENC explosion
+#136 [SFX] ENC explosion
+#137 [SFX] ENC explosion
+#138 [SFX] ENC attack
+#139 [SFX] ENC attack
+#140 [SFX] ENC attack
+#141 [SFX] ENC attack
+#142 [SFX] ENC attack
+#143 [SFX] ENC attack
+#144 [SFX] ENC attack
+#145 [SFX] ENC attack
+#146 [SFX] ENC attack
+#147 [SFX] ENC attack
+#148 [SFX] ENC attack
+#149 [SFX] ENC explosion
+#150 [SFX] ENC attack
+#151 [SFX] ENC attack
+#152 [SFX] ENC attack
+#153 [SFX] ENC attack
+#154 [SFX] ENC attack
+#155 [SFX] ENC attack
+#156 [SFX] ENC attack
+#157 [SFX] ENC attack
+#158 [SFX] ENC attack
+#159 [SFX] ENC attack
+
+#161 [SFX] ETC opening
+
+#163 [SFX] ETC opening
+#164 [SFX] ETC opening
+#165 [SFX] ETC stage A
+#166 [SFX] ETC stage A
+#167 [SFX] ETC stage A
+#168 [SFX] ETC stage A
+#169 [SFX] ETC stage B
+#170 [SFX] ETC stage B
+#171 [SFX] ETC stage B
+#172 [SFX] ETC stage B
+#173 [SFX] ETC stage C
+#174 [SFX] ETC stage C
+#175 [SFX] ETC stage D
+#176 [SFX] ETC stage D
+#177 [SFX] ETC stage D
+#178 [SFX] ETC stage D
+#179 [SFX] ETC stage D
+#180 [SFX] ETC stage E
+#181 [SFX] ETC stage E
+#182 [SFX] ETC stage E
+#183 [SFX] ETC stage F
+#184 [SFX] ETC stage F
+#185 [SFX] ETC stage G
+#186 [SFX] ETC stage G
+#187 [SFX] ETC stage G
+#188 [SFX] ETC stage G
+#189 [SFX] ETC stage G
+#190 [SFX] ETC ending
+#191 [SFX] ETC ending
+#192 [SFX] ETC ending
+#193 [SFX] ETC ending
+
+#195 [SFX] ETC others
+
+#197 [SFX] ETC others
+
+#200 [SFX] ETC others
+#201 [SFX] ETC others
+#202 [SFX] ETC others
+#203 [SFX] ETC others
+#204 [SFX] ETC others
+#205 [SFX] ETC others
+#206 [SFX] ETC others
+
+#208 [SFX] ETC others
+#209 [SFX] ETC others
+#210 [SFX] ENC attack
+#211 [SFX] ETC others
+#212 [SFX] ETC others
+#213 [SFX] ETC others
+#214 [SFX] SYS item
+#215 [SFX] ETC others
+
+#224 [SFX] ALL STOP
+
+  [Sound Composers]
+  Manabu Namiki: #02 - #07, #10, #11, #15, #17 - #24
+  Hitoshi Sakimoto: #01, #25
+  Ken'ichi Koyano: #08, #09, #12, #16
+  Atsuhiro Motoyama: #13
+  Masaharu Iwata: #14
+
+  [Sound Programers]
+  Hitoshi Sakimoto: #08, #09, #12, #16
+  Manabu Namiki: #13, #14
+
+// Info by buddy, chief.
+// Edit by Fujix
+$end
+

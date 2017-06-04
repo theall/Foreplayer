@@ -1,0 +1,34 @@
+﻿$name=neobombe
+$version=2
+$default=002
+$main
+
+* Preliminary List
+
+#002 NeoGeo Logo
+
+#067 Attract Mode
+#035 Title Screen
+#127 Coin
+#047 How to Play
+#049 Options Screen
+#055 Introduction
+#037 Stage 1-x
+#048 Time Running Out
+#062 Score Tally
+#064 Round Complete
+#063 Round Complete 2 (Bombermen Saved)
+#042 Boss
+#066 Stage Intermission
+#038 Stage 2-x
+#039 Stage 3-x
+#058 Continue
+#051 Game Over
+
+#044 Battle Mode
+#050 Battle Mode Results
+#045 Battle Mode 2
+#046 Battle Mode 3
+
+//List by Yawachary
+$end

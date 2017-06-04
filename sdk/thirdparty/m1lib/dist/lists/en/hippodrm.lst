@@ -1,0 +1,23 @@
+﻿$name=hippodrm
+$version=2
+$default=$31
+$songmax=$3a
+$main
+
+$31 Beginning Battle (Opening)
+$34 Fighting Spirit (BGM 1)
+$37 Victory I (Clear)
+$36 Battle Shopping (Shop)
+$35 Big The Powerful Monster (BGM 2)
+$32 Victory II (Clear 2)
+$3a New Champion (Ending)
+$38 Dead of Fighter (Game Over)
+$39 Fighting Requiem (Name Entry)
+
+$33 ???
+
+  [Source]
+  Game Sound Deco -G.S.M. Data East 1-
+  Pony Canyon / Scitron  D25B1002  Jun 21, 1989
+
+$end

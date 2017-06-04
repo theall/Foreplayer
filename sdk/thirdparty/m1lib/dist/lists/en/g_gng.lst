@@ -1,0 +1,39 @@
+﻿$name=g_gng
+$version=2
+$default=129
+$songmax=255
+$main
+
+#129 Main Theme
+#136 Menu
+#132 Options
+#139 Level Start
+#141 The Hill of Torture [Level 1] <time="3:05" fadeout="yes" fadeoutlength="10">
+#142 Shielder [Level 1 Boss] <time="1:09" fadeout="yes" fadeoutlength="10">
+#131 Level Complete
+#143 The Village of Decay and Destruction [Level 2] <time="2:02" fadeout="yes" fadeoutlength="10">
+#144 Cerberus [Level 2 Boss] <time="1:16" fadeout="yes" fadeoutlength="10">
+#145 Baron Rankle's Tower [Level 3] <time="2:42" fadeout="yes" fadeoutlength="10">
+#146 Gassuto [Level 3 Boss] <time="1:37" fadeout="yes" fadeoutlength="10">
+#147 The Crystal Forest [Level 4] <time="3:23" fadeout="yes" fadeoutlength="10">
+#148 Ohme [Level 4 Boss] <time="1:03" fadeout="yes" fadeoutlength="10">
+#149 The Castle [Level 5] <time="1:50" fadeout="yes" fadeoutlength="10">
+#150 Beelzebub [Level 5 Boss] <time="1:03" fadeout="yes" fadeoutlength="10">
+#152 Arthur Must Return
+#151 Loki [Final Boss] <time="4:05" fadeout="yes" fadeoutlength="10">
+#154 Ending
+#138 Time Running Out <time="1:19" fadeout="yes" fadeoutlength="10">
+#137 Death
+#140 Continue
+#130 Game Over
+#133 Unused (Name Entry, 2nd or Below)
+#134 Unused (Name Entry Complete, 1st)
+#135 Unused (Name Entry Complete, 2nd or Below)
+#153 Unused (Zap)
+
+  [Sound Composer]
+  Tamayo Kawamoto
+
+// M1 list contributed by Knurek
+// Tagging data from Project 2612
+$end

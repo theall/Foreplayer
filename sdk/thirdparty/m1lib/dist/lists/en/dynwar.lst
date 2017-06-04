@@ -1,0 +1,138 @@
+﻿$name=dynwar
+$version=2
+$default=001
+$main
+
+#001 Introduction
+#021 Select Player
+#002 Daxingshan (round 1)
+#010 Boss
+#016 Round Clear
+#005 Sishuiguan (round 2)
+#003 Tiemenxia (round 3)
+#014 Senario 1 Clear
+#023 Senario 2 Start
+#004 Longmengu (round 4)
+#006 Hulaoguan (round 5)
+#011 Theme of Lu Bu
+#007 Luoyang (round 6)
+#008 Shinyang Castle (round 7)
+#009 Meiwu Castle (round 8)
+#012 Theme of fake Dung Min
+#013 Theme of Dung Jio
+#015 Senario 2 Clear
+#018 End Demo
+#019 Credits Roll
+#026 Top Ranking
+#027 Top Ranking Display
+#024 Ranking
+#025 Ranking Display
+#020 Continue
+#017 Game Over
+
+#028 Not Released on CD
+
+------------------------------------------------------
+  [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+
+  [Voice]
+
+#129 [Voice] Let's select player.
+#130 [Voice] I'm taking the field! Liu Bei.
+#131 [Voice] I'm taking the field! Kuan Yu.
+#132 [Voice] I'm taking the field! Chang Fei.
+#133 [Voice] I'm taking the field! Shao Yun.
+#134 [Voice] You have really defeated the Huang Jin.
+#135 [Voice] Do not be too confident.
+#136 [Voice] We are too strong, they cannot touch us.
+#137 [Voice] I have killed the general Cheng Yuan Zhi.
+#138 [Voice] I have killed the general Zhang Jiao.
+#139 [Voice] I have killed the general Wei Siang.
+#140 [Voice] I have killed the general Zhiang Ji.
+#141 [Voice] I have killed the general Li Ru.
+#142 [Voice] I have killed the general Dong Zhou.
+#143 [Voice] 
+#144 [Voice] You will never defeat us.
+#145 [Voice] You will never get your hands on me, haahaahaa
+#146 [Voice] You're going to get my head? Hahaha, you make me laugh! Come to see me at Ton Men Gu.
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [PCM] 
+#156 [PCM] 
+
+  [Source]
+  Strider Hiryu -G.S.M. Capcom 2- / Alfh Lyra Wa Lyra
+  Pony Canyon / Scitorn  D25B1001  May 21, 1989
+
+  [Sound Composer]
+  Chanchakorin (Alfh Lyra Wa Lyra)
+
+// English list and updated by Fuji
+$end

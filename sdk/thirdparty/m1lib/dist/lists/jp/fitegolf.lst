@@ -1,0 +1,39 @@
+﻿$name=fitegolf
+$version=2
+$default=65
+$main
+
+$41 BGM #65
+$42 BGM #66
+$45 BGM #69
+$47 BGM #71
+$48 BGM #72
+$49 BGM #73
+$4a BGM #74
+$4b BGM #75
+$4c BGM #76
+$4d BGM #77
+$4e BGM #78
+$4f BGM #79
+$50 BGM #80
+$51 BGM #81
+$52 BGM #82
+$53 BGM #83
+$54 BGM #84
+$55 BGM #85
+$57 BGM #87
+$65 BGM #101
+$6d BGM #109
+$6f BGM #111
+$71 BGM #113
+$75 BGM #117
+$77 BGM #119
+$78 BGM #120
+$79 BGM #121
+$7b BGM #123
+$7c BGM #124
+$7d BGM #125
+$7e BGM #126
+$7f BGM #127
+
+$end

@@ -1,0 +1,61 @@
+﻿$name=skytargt
+$version=2
+$default=016
+$main
+
+#016 Advertise
+#005 Select Your Wing
+#001 Archipelago (Mission 1)
+#002 DD-B-48 "Halbert" (Mission 1 Boss)
+#015 Intermission
+#007 Clouds (Mission 2, 6c)
+#014 DD-B-51 "Talwar" (Mission 2, 6c Boss)
+#019 Jungle (Mission 3a)
+#020 DD-AS-3 "Flanberge" (Mission 3a Boss)
+#022 City (Mission 3b, 6a)
+// from After Burner (rev. A)
+#032 DD-AH-12 "Vajura" (Mission 3b, 6a Boss)
+#025 High Altitude (Mission 4)
+#038 DD-LSBM-1 "Scepter" (Mission 4 Boss)
+// not SLBM
+#000 Canyon (Mission 5a, 6d)
+#008 DD-GBS-22 "Hrathnir": Level 1 (Mission 5a, 6d Boss)
+#009 DD-GBS-22 "Hrathnir": Level 2 (Mission 5a, 6d Boss)
+#017 Ice Floes (Mission 5b)
+#018 DD-B-111 "Gungnir" (Mission 5b Boss)
+#030 Desert (Mission 6b)
+#031 DD-HBS-6 "Claymore" (Mission 6b Boss)
+#028 Fortress (Final Mission)
+#037 DD-BCH-111 "Brigandine" (Final Mission Boss 1)
+#029 XF/A-49 "White Sword" (Final Mission Boss 2)
+#035 End Credits
+#021 Name Entry
+// same as #027
+#036 Ace Pilots (Ranking Display)
+#012 Game Over
+
+#024 Advertise &lt;ver 2&gt;
+#034 Advertise &lt;ver 2, short&gt;
+#023 Advertise &lt;ver 3&gt;
+#033 Advertise &lt;ver 3, short&gt;
+#026 High Altitude (Mission 4) &lt;ver 2&gt;
+#013 Game Over &lt;ver 2&gt;
+#003 Unused 1
+#004 Unused 2
+#006 Unused 3
+#010 Unused 4
+#011 Unused 5
+
+  [Source]
+  Sky Target (Saturn version)
+  Sega  GS-9103  Apr 25, 1997
+
+  Sky Target (PC version)
+  Sega  HCJ-0115  Aug 14, 1997
+
+  Sega Con -The Best of Sega Music- Vol.1
+  SME / Visual Works  SVWC-7092, 7093, 7094  Oct 24, 2001
+
+// (DD stands for 'DelDine'.)
+// List contribution by NK
+$end

@@ -1,0 +1,151 @@
+﻿$name=gauntlet
+$version=2
+$default=66
+//$songmax=$dc
+$main
+
+#66 タイトル / コンティニュー <time="24">
+#73 ステージ スタート <time="6">
+#68 トレジャールーム 1 (ボーナスステージ) <time="28">
+#69 トレジャールーム 2 (ボーナスステージ) <time="27">
+#70 トレジャールーム 3 (ボーナスステージ) <time="26">
+#71 トレジャールーム 4 (ボーナスステージ) <time="22">
+
+#04 Music Chip Test <time="10">
+#05 POKEY Chip Test <time="5">
+#08 Speech Chip Test
+
+------------------------------------------------------
+ [Voice]
+
+#081 [Voice] One
+#082 [Voice] Two
+#083 [Voice] Three
+#084 [Voice] Four
+#085 [Voice] Five
+#086 [Voice] Six
+#087 [Voice] Seven
+#088 [Voice] Eight
+#089 [Voice] Nine
+#090 [Voice] Ten
+#091 [Voice] Zero
+#093 [Voice] Try and find a way out.
+#094 [Voice] Welcome to the treasure room.
+#095 [Voice] You have found my treasure.
+#096 [Voice] Try this level now.
+#097 [Voice] Warrior
+#098 [Voice] Valkyrie
+#099 [Voice] Wizard
+#100 [Voice] Elf
+#101 [Voice] Welcome
+#102 [Voice] Elf
+#103 [Voice] Needs food, badly.
+#104 [Voice] Valkyrie
+#105 [Voice] Wizard
+#106 [Voice] Wizard
+#107 [Voice] Your life force is running out.
+#108 [Voice] All your powers will be lost.
+#109 [Voice] Is about to die.
+#110 [Voice] Let's see you get out of here!
+#111 [Voice] Good cooperation!
+#112 [Voice] I've not seen such bravery!
+#113 [Voice] That was a heroic effort!
+#114 [Voice] Someone shot the food.
+#115 [Voice] Hehehehe
+#116 [Voice] You can't touch me.
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+
+------------------------------------------------------
+ [S.E.]
+
+#09 [S.E.]
+#10 [S.E.]
+#11 [S.E.]
+#12 [S.E.]
+#13 [S.E.]
+#14 [S.E.]
+#15 [S.E.]
+#16 [S.E.]
+#17 [S.E.]
+#18 [S.E.]
+#19 [S.E.]
+#20 [S.E.]
+#21 [S.E.]
+#22 [S.E.]
+#23 [S.E.]
+#24 [S.E.]
+#25 [S.E.]
+#26 [S.E.]
+#27 [S.E.]
+#28 [S.E.]
+#29 [S.E.]
+#30 [S.E.]
+#31 [S.E.]
+#32 [S.E.]
+#33 [S.E.]
+#34 [S.E.]
+//#35 [S.E.]
+//#36 [S.E.]
+//#37 [S.E.]
+#38 [S.E.]
+#39 [S.E.]
+#40 [S.E.]
+#41 [S.E.]
+#42 [S.E.]
+#43 [S.E.]
+#44 [S.E.]
+#45 [S.E.]
+#46 [S.E.]
+#47 [S.E.] <time="45">
+#49 [S.E.] <time="45">
+#51 [S.E.] <time="45">
+#53 [S.E.] <time="45">
+#55 [S.E.] Coin P1 
+#56 [S.E.] Coin P2
+#57 [S.E.] Coin P3
+#58 [S.E.] Coin P4
+#59 [S.E.]
+#60 [S.E.]
+#61 [S.E.]
+#62 [S.E.]
+#63 [S.E.]
+#64 [S.E.]
+#65 [S.E.]
+#67 [S.E.]
+#74 [S.E.]
+#75 [S.E.]
+#76 [S.E.]
+#77 [S.E.]
+#78 [S.E.]
+#79 [S.E.]
+#80 [S.E.]
+
+  ■出典
+  THAT'S ATARI MUSIC VOL.II -G.S.M. ATARI GAMES 2-
+  PONY CANYON / SCITRON  PCCB-00070  1991.09.21
+
+  THAT'S ATARI MUSIC VOL.II -G.S.M. ATARI GAMES 2- (LEGEND SERIES)
+  SME / SCITRON  SCDC-00314  2003.12.03
+
+// 2004年2月11日完成 by Neoテクノ坊
+// Updated by Fuj
+// Voices by RB
+$end

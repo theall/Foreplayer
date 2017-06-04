@@ -1,0 +1,135 @@
+﻿$name=gradius3
+$version=2
+$default=072
+$fixed_volume=283
+$main
+
+#072 Coin (コイン音)
+#140 Prelude of Legend (Title BGM)
+#137 Invitation (Select BGM)
+#128 Departure for Space (空中戦 1)
+#160 Departure for Space -Type B- (空中戦 1B)
+#152 Try to Star (空中戦 2)
+#129 Sand Storm (第1ステージBGM) 
+#133 Aqua Illusion (第2ステージBGM) 
+#134 In The Wind (第3ステージBGM 1) 
+#153 Underground (第3ステージBGM 2)
+#159 Congratulations (ビギナーエンディング)
+#151 High Speed Dimension (第4ステージBGM) 
+#132 Easter Stone (第5ステージBGM) 
+#155 Dead End Cell (第6ステージBGM)
+#157 Fire Scramble (第7ステージBGM) 
+#139 Cosmo Plant (第8ステージBGM) 
+#130 Crystal Labyrinth (第9ステージBGM)
+#141 Gradius I Boss (ボスステージ)
+#142 Salamander Boss (ボスステージ)
+#149 Gradius II Boss (ボスステージ)
+#138 Mechanincal Base (第10ステージBGM 1)
+#156 Final Shot (第10ステージBGM 2)
+#131 Dark Force (ボスBGM)
+#154 Escape to The Freedom (高速脱出)
+#158 Return to The Star (エンディング)
+#135 Game Over (ゲームオーバー)
+#136 King of Kings (ランキング)
+#143 A Long Time Ago (隠しBGM ステージ 3) 
+#147 Power of Anger (隠しステージ / 沙羅曼蛇1面BGM)
+#146 Poison of Snake (隠しステージ / 沙羅曼蛇ボスBGM)
+#145 Challenger 1985 (隠しステージ / グラディウス1面BGM)
+#150 Aircraft Carrier (隠しステージ / グラディウスボスBGM)
+#144 Beginning of the History (未使用 / グラディウス空中戦)
+#148 Maximum Speed  -Gradius III version- (未使用)
+#161 Ranking 2 (未使用)
+
+-----------------------------------------------
+
+#001 [S.E.] NORMAL SHOT
+#002 [S.E.] DOUBLE
+#003 [S.E.] LASER
+#004 [S.E.] RIPLE
+#005 [S.E.] MISSILE
+#006 [S.E.] 壁、壊れない金属にあたった音
+#007 [S.E.] BIG CORE Mk-III LASER
+#008 [S.E.] BOSS LASER
+#009 [S.E.] 雑魚破壊
+#010 [S.E.] 雑魚破壊
+#011 [S.E.] 雑魚破壊
+#012 [S.E.] ？
+#013 [S.E.] ダッカー破壊
+#014 [S.E.] SELECT
+#015 [S.E.] グレゴーレム、ワイバーン破壊
+#016 [S.E.] ブロッディングウィード出現
+#017 [S.E.] CUBE結合
+#018 [S.E.] CUBE破壊
+#019 [S.E.] STAGE8つぼみ破壊
+#020 [S.E.] ?
+#021 [S.E.] STAGE6 肉球撃ち込み
+#022 [S.E.] 泡分裂 (大)
+#023 [S.E.] 泡分裂 (小)
+#024 [S.E.] ディスラプト
+#027 [S.E.] 泡破壊
+#028 [S.E.] FORCE FIELD削れ
+#029 [S.E.] STAGE10 要塞壁破壊
+#030 [S.E.] STAGE1 蜘蛛破壊
+#031 [S.E.] E LASER発射
+#032 [S.E.] E LASER溜め
+#033 [S.E.] ?
+#034 [S.E.] STAGE6 細胞壁撃ち込み
+#035 [S.E.] STAGE10 要塞壁はがれる音
+#036 [S.E.] ?
+#037 [S.E.] ?
+#038 [S.E.] ?
+#040 [S.E.] ?
+#041 [S.E.] ?
+#048 [S.E.] ヴァイフダメージ
+#049 [S.E.] BOSS CORE板ダメージ
+#050 [S.E.] 火山弾
+#051 [S.E.] STAGE1 砂竜破壊
+#052 [S.E.] OPTION取られ
+#053 [S.E.] OPTION HUNTER
+#064 [S.E.] カプセル取得
+#065 [S.E.] RANKING SELECT
+#066 [S.E.] ダッカー破壊
+#067 [S.E.] 噴火
+#068 [S.E.] メガクラッシュ
+#069 [S.E.] SELECT決定
+#070 [S.E.] ENDING 星優爆
+#071 [S.E.] BIG VIPER MISS
+#072 CREDIT
+#073 [S.E.] 脱出
+#074 [S.E.] 1UP
+#075 [S.E.] ダッカー破壊
+#076 [S.E.] STAGE1 砂竜破壊
+#077 [S.E.] ?
+#078 [S.E.] 残機 OPTION
+#079 [S.E.] 脱出2
+#080 [Voice] double
+#081 [Voice] laser
+#082 [Voice] missile
+#083 [Voice] multiple
+#084 [Voice] force field
+#085 [Voice] 2 way
+#086 [Voice] shield
+#087 [Voice] speed up
+#088 [Voice] destroy them all
+#089 [Voice] destroy the core
+#090 [Voice] destroy the eye
+#091 [Voice] destroy the mouse
+#092 [Voice] destroy the chest
+#093 [Voice] warning
+#094 [Voice] I was born out of the greediness of mankind
+#095 [Voice] while mem exist so will I
+#096 [Voice] owaaaaaaaaa
+#097 [Voice] ahaaa
+#098 [Voice] ahaaaaaaaaa
+
+  ■出典，サントラ
+　グラディウスIII & MIDI Power ver.2.0
+
+  グラディウスIII
+  KING RECORDS  KICA-1101  1990.02.21
+
+  グラディウス アーケードサウンドトラック
+  KONAMI MUSIC ENTERTAINMENT  KMCA-155, 156  2002.04.03
+
+// Fixed by 匿名さん
+$end

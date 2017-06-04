@@ -1,0 +1,151 @@
+﻿$name=nitrobal
+$version=2
+$default=065
+$main
+
+#065 [S.E.] COIN Insertion
+#007 NITRO BALL's Players Presentation
+#046 [Voice] "Welcome to STRANGE FOOTBALL Field!"
+#008 STRANGE FOOTBALL (1st Field)
+#119 [Voice] "Bingo" Bonus
+#027 Bingo Bonus
+#019 BOSS 1
+#025 Field CLEAR!
+#026 CHANCE POINT ~ BONUS FIELD
+#047 [Voice] "Welcome to COMBAT FIELD!"
+#009 COMBAT FIELD (2nd Field)
+#020 BOSS 2
+#053 [Voice] "Welcome to GHOST TOWN!"
+#011 GHOST TOWN (3rd Field)
+#022 BOSS 3
+#051 [Voice] "Welcome to ALIENS WORLD!"
+#010 ALIENS WORLD (4th Field)
+#021 BOSS 4
+#067 [Voice] "Welcome to SPACE STATION!"
+#012 SPACE STATION (5th Field)
+#023 Last BOSS
+#028 Ending
+#029 GAME OVER
+
+#024 BOSS 1~4 BGM (unused)
+#013 unknow #1
+#014 unknow #2
+#015 unknow #3
+#016 unknow #4
+#017 unknow #5
+#018 unknow #6
+#030 unknow #7
+
+
+---------------------------------------------------
+  [Voice] 
+
+#031 [Voice] 
+#032 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#046 [Voice] "Welcome to STRANGE FOOTBALL Field!"
+#047 [Voice] "Welcome to COMBAT FIELD!"
+#051 [Voice] "Welcome to ALIENS WORLD!"
+#053 [Voice] "Welcome to GHOST TOWN!"
+#067 [Voice] "Welcome to SPACE STATION!"
+#074 [Voice] 
+#075 [Voice] 
+#077 [Voice] 
+#078 [Voice]
+#083 [Voice] 
+#096 [Voice] 
+#100 [Voice] 
+#109 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] "Bingo" Bonus
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+
+
+---------------------------------------------------
+  [S.E.] 
+
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#052 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] Cheers
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] COIN Insertion
+#066 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#076 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#108 [S.E.] 
+#110 [S.E.] 
+
+  ■作曲
+  吉田 博昭 (MARO)
+  竹本 晃 (Raika) 
+  Voices recorded at Orio Sound Production Studio, San Jose, CA 
+
+// List contribution by Simon B., done in playing the game.
+$end

@@ -1,0 +1,53 @@
+﻿$name=hasamu
+$version=2
+$default=066
+$main
+
+#066 [SFX] Coin Inserted
+#009 Prologue
+#002 [SFX] Gong <time="5">
+#005 Intro <time="4.7">
+#001 Main Theme
+#007 Clear
+#006 Stalemate
+#003 Continue? <time="18.1">
+#008 Ending
+#004 Name Entry
+#005 Game Over
+
+---------------------------------------------------
+ [SFX] 
+
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX]
+#071 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#082 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#102 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

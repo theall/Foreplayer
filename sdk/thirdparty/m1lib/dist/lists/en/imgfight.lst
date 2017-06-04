@@ -1,0 +1,42 @@
+﻿$name=imgfight
+$version=2
+$default=6
+$main
+
+#006 Title Screen
+#001 Introduction (Stage 1)
+#010 Boss Theme - Active (Boss 1)
+#011 You Get Point (Clear)
+#002 Flight over the City (Stage 2)
+#005 Loose, Loose, Loose (Stage 3)
+#013 Boss Theme - Negative (Boss 2)
+#009 Theme of Factory (Stage 4)
+#000 Organic Zone (Stage 5)
+#015 Skill (Penalty)
+#008 Into the "Real Fight" (Cockpit 2)
+#014 Front Line (Stage 6)
+//??? Song "C" (Continue)
+#012 Quiet Crisis (Stage 7)
+#004 Final Mission (Stage 8)
+#007 Dedicate to the Superior Fighter (Ending)
+#003 What's Your Name? (Ranking)
+
+#140 Into the "Image Fight" (Cockpit 1) (sub)
+#141 Into the "Image Fight" (Cockpit 1) (main)
+#142 Into the "Image Fight" (Cockpit 1) (bass)
+
+  [Source]
+  Image Fight -G.S.M. Irem 1-
+  Pony Canyon / Scitron  D28B0012  1989.1.21
+
+  [Sound Coposer]
+  Sclap
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// Original list contribution by Monyons
+// Updated by Fujix
+// Updated by Ayaya
+$end

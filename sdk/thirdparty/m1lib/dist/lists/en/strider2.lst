@@ -1,0 +1,48 @@
+﻿$name=shiryu2
+$version=2
+$default=029
+$songmax=128
+$fixed_volume=281
+$main
+
+#029 QSound Logo
+
+#001 The theme
+#003 Mission select
+#004 The command
+#005 Invade and attack the armed fortress 1
+#010 Invade and attack the armed fortress 2
+#015 Maddness lurking in the antre
+#023 The poem at death
+#007 Take out the terrorists who are occpupying the city
+#012 Scud
+#017 In the air of Neo Hong Kong
+#025 An obedient dog
+#006 The arctic reserch facility
+#011 Ancient life arised
+#028 The reversed ambiance
+#016 The fate of the compositive life
+#024 The roundetable discussion
+#008 Pursue the Flying Battleship Balrog 1
+#013 Pursue the Flying Battleship Balrog 2
+#018 The duel on the escape ship
+#026 Nightmare
+#009 The 3rd Moon
+#019 Grand Master
+#020 The divine musnud
+#021 Mission accomplished
+#027 The end of destiny
+#002 Footsteps
+#022 The demise
+//
+//#032 SFX
+//#034 snd (low level)
+//#035 Q Sound (low level)
+//#036 snd (low level)
+
+  [Source]
+  Strider Hiryuu 2 / Original Soundtrack
+  Suleputer  CPCA-1035  Jan 21, 2000
+
+// English list by Fuj
+$end

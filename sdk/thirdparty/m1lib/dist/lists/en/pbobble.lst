@@ -1,0 +1,21 @@
+﻿$name=pbpbble
+$version=2
+$default=040
+$main
+
+#40 Title Screen
+#24 Ready? <time="2">
+#25 Go! <time="1">
+#18 Let's Go to Pao Pao Island! (BGM1)
+#22 Forest in April (BGM2)
+#21 Clear
+#37 Continue
+#38 Ending
+#20 Game Over
+
+  [Source]
+  Puzzle Bobble Variety / Zuntata
+  Zuntata Records  ZTTL-0009  Mar 28, 1997
+
+// List Contribution by M
+$end

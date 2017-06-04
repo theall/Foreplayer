@@ -1,0 +1,27 @@
+﻿$name=lethalth
+$version=2
+$default=001
+$main
+
+#001 Opening
+#002 Stage 1
+#003 Boss
+#012 Clear
+#006 Stage 2
+#005 Stage 3
+#007 Stage 4
+#004 Stage 5
+#009 Stage 6
+#008 Stage 7
+#010 Last Boss
+#014 Ending 1
+#013 Ending 2
+#016 Game Over
+#011 Ranking
+
+  [Composed by]
+  Hiroshi Kimura
+
+// Original contribution by Gol Gol
+// English list by Fuj
+$end

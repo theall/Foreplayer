@@ -1,0 +1,30 @@
+﻿$name=undrfire
+$version=2
+$default=022
+$main
+
+#022 Rain
+#010 Tactical Tracer
+#005 Crossing Street
+#007 Trigger Happy
+#009 Terminal Domain
+#011 Round Clear  <time="7">
+#012 Round Clear
+#018 All Clear
+#014 Game Over
+#013 47 Hours
+#008 Silent Groove
+#017 Fake Metal
+
+#021 Not Released on a CD
+#015 Accident (Not Released on a CD)
+#016 Not Released on a CD
+#019 Not Released on a CD
+#020 Not Released on a CD
+
+  [Source]
+  Zuntata Rare Selection Vol.5  Hot Menu / karu.(ZUNTATA)
+  Zuntata Records  ZTTL-0036  Feb 20, 1999
+
+// List Contribution by Hiroshi
+$end

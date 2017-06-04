@@ -1,0 +1,31 @@
+﻿$name=uccopsj
+$version=2
+$default=$13
+$main
+
+$13 Tell a Motion (Title)
+$01 Soldat Choix (Select)
+$04 Northern Barramundi (Stage 1)
+$02 Sarah Sowertty (Stage 2-1)
+$16 Chaca Chaca Move Ya (Stage 2-2)
+$0b Nasty Loud Quack (Boss)
+$12 Even Homer Sometimes Nods (Game Over)
+$08 Assessment Day
+$14 Harder Order (Stage Start)
+$03 Redtailed Cat (Stage 3)
+$06 Dandy N.D. (Stage 4)
+$05 Than Hawk Anger (Stage 5-1)
+$17 Indifferent Zero Other (Stage 5-4, Theme of Black)
+$15 Laugh And Grow Fat (Stage Clear)
+$11 An-non To.Ki.Me.Ki Street
+
+  [Source]
+  Undercover Cops
+  Victor Entertainment  VICL-5180  Dec 16, 1992
+
+  [Sound Composer]
+  Hiyamuta (HIYA!)
+
+// List Contribution by Kayama
+// English list by Fujimon
+$end

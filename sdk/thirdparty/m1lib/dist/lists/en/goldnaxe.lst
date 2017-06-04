@@ -1,0 +1,113 @@
+﻿$name=goldnaxe
+$version=2
+$default=156
+$main
+
+#156 [SFX] Credit Inserted
+#197 The Battle (Player Select) <time="20">
+#193 Wilderness (Round 1) <time="52">
+#192 Battle Field (Boss 1) <time="2:15">
+#198 Theme of Thief (Bonus) <time="42">
+#199 Old Map (Map) <time="19">
+#195 Turtle Village 1 (Round 2) <time="2:07">
+#203 The Road of Dead (Round 3) <time="42">
+#200 Turtle Village 2 (Round 4) <time="2:02">
+#194 Death Adder the Old Enemy (Boss 2) <time="1:56">
+#201 Windup (Ending) <time="20">
+#204 Beat It! (Credits Roll) <time="32">
+#202 Battle Axe March (Ranking) <time="1:07">
+#196 Game Over
+
+----------------------------------------------
+  [SFX]
+
+#191 [SFX]
+#190 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#171 [SFX]
+#170 [SFX]
+#169 [SFX]
+#168 [SFX]
+#167 [SFX]
+#166 [SFX]
+#165 [SFX]
+#164 [SFX]
+#163 [SFX]
+#162 [SFX]
+#161 [SFX]
+#160 [SFX]
+#159 [SFX]
+#158 [SFX]
+#157 [SFX]
+#156 [SFX] Credit Inserted
+#153 [SFX]
+#152 [SFX]
+#151 [SFX]
+#150 [SFX]
+#149 [SFX]
+#148 [SFX]
+#147 [SFX]
+#146 [SFX]
+#145 [SFX]
+#144 [SFX]
+#143 [SFX]
+#142 [SFX]
+#141 [SFX]
+#140 [SFX]
+#139 [SFX]
+#138 [SFX]
+#137 [SFX]
+#136 [SFX]
+#135 [SFX]
+#134 [SFX]
+#133 [SFX]
+#132 [SFX]
+#131 [SFX]
+#130 [SFX]
+#129 [SFX]
+
+  [Voice]
+
+#084 [Voice] 
+#083 [Voice] Dead
+#082 [Voice] Yell
+#081 [Voice] Woman 
+#080 [Voice] Woman Yell
+#079 [Voice] Dragon strike
+#078 [Voice] Village People Fleeing
+#077 [Voice] Thunder
+#076 [Voice] 
+#075 [Voice] 
+#074 [Voice]
+#073 [Voice] 
+#072 [Voice]
+#071 [Voice] 
+#070 [Voice]
+#069 [Voice]
+#068 [Voice] Magic dwarf 
+#067 [Voice] Magic dwarf
+#066 [Voice] Magic dwarf
+#065 [Voice] Welcome
+
+  [Source]
+  Super Sonic Team -G.S.M. SEGA 3- / S.S.T. BAND
+  Pony Canyon / Scitron  PCCB-00009  Oct 21, 1989
+
+// List contribution by R
+// English list translation by Fujix
+// Updated by CrashTest (added times)
+$end

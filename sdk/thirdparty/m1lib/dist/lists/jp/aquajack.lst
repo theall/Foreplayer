@@ -1,0 +1,81 @@
+﻿$name=aquajack
+$version=2
+$default=$01
+$main
+
+$01 オープニング <time="17">
+$0F クレジット <time="4">
+$02 ゲームスタート ～ BGM 1 (Round 1～3) <time="2:19.56">
+$04 ボス 1 (Round 1～3) <time="1:0.22">
+//$06 ボス 1 (Round 1～3) <time="1:0.22">
+$0B ラウンドクリア <time="10">
+$10 エクステンド <time="4">
+$07 BGM 2 (Round 4～7) <time="2:6.43">
+$08 ボス 2 (Round 4～7) <time="1:3.4">
+$09 BGM 3 (Round 8) <time="2:3.27">
+$0A ボス 3 (Round 8) <time="1:32.83">
+$0C エンディング <time="31">
+$05 スタッフロール <time="2:6.43">
+$2D コンティニュー <time="15">
+$0E ゲームオーバー <time="7">
+$0D ネームエントリー <time="37.1">
+
+$02 ゲームスタート <time="13.3">
+// Auto機能を有効にしておいて下さい
+$03 BGM 1 (Round 1～3) <time="2:6.43">
+
+-----------------------------------------------------------
+  [Voice]
+
+$1A [Voice] "Fire !"
+$31 [Voice] "See You Again"
+$78 [Voice]
+$79 [Voice]
+
+-----------------------------------------------------------
+  [S.E.]
+
+$12 [S.E.]
+$13 [S.E.] Gate Open
+$14 [S.E.]
+$15 [S.E.]
+$16 [S.E.] <time="4">
+$17 [S.E.] <time="4">
+$18 [S.E.] Shot
+$19 [S.E.] Missile
+$1B [S.E.] Enemy Shot
+$1D [S.E.] Explosion
+$1E [S.E.]
+$1F [S.E.]
+$22 [S.E.] <time="4">
+$23 [S.E.] <time="4">
+$24 [S.E.] <time="4">
+$25 [S.E.] <time="4">
+$28 [S.E.]
+$29 [S.E.] <time="4">
+$2A [S.E.] <time="4">
+$2C [S.E.]
+$6E [S.E.]
+$6F [S.E.] <time="4">
+$70 [S.E.]
+$71 [S.E.]
+$72 [S.E.]
+$73 [S.E.]
+$74 [S.E.]
+$75 [S.E.]
+$76 [S.E.]
+$77 [S.E.]
+$7A [S.E.] Speed Up
+$7B [S.E.] <time="4">
+
+$F1 [Test] <time="7">
+$F2 [Test]
+$F3 [Test] <time="4">
+$F4 [Test] <time="6.6">
+$F5 [Test] <time="4">
+
+  ■作曲
+  相沢 静夫 (SPLATTER A)
+
+// List contribution by Cratch
+$end

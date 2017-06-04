@@ -1,0 +1,116 @@
+﻿$name=thndrx2
+$version=2
+$default=142
+$fixed_volume=100
+$main
+
+#142 Rise in Arms (オープニングデモ)
+#001 Credit (コイン音)
+#128 Air Battle = Thunder Cross II (Stage 1 BGM)
+#143 Approach the Boss (ボス接近BGM)
+#135 奴は死んではいなかった。= Evil Eyes (Stage 1, 5 ボスBGM)
+#144 Clear Demo (ステージクリア)
+#129 Kartus - Part 2 (Stage 2 BGM)
+#136 Theme of Ragamuffin (Stage 2 ボスBGM)
+#130 Heavy Metal Bomber (Stage 3 BGM)
+#137 Dark Force (Stage 3, 6 ボスBGM)
+#131 Dog Fight III (Stage 4 BGM)
+#138 Theme of Dinosavr Jr. (Stage 4 ボスBGM)
+#132 Battles of Battleship (Stage 5 BGM)
+#133 Star Light (Stage 6 BGM)
+#134 At the Front (Stage 7 BGM)
+#148 An Ominous Silence (大ボス接近BGM)
+#141 Theme of Sprouts Layber (Stage 7 ボスBGM)
+#146 A Shooting Star (エンディング)
+#147 A Victory March (ランキング)
+#145 Game Over (ゲームオーバー)
+
+#047 Speaker Check
+
+-----------------------------------------
+ [S.E.]
+
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.4
+  KING RECORDS  KICA-7505  1991.10.05
+
+  ■作曲
+  斉藤 幹雄 (METAL YUHKI)
+
+$end

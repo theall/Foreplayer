@@ -1,0 +1,110 @@
+﻿$name=slyspy
+$version=2
+$default=068
+$main
+
+#068 [VOICE] SLY SPY
+#005 [S.E.] CREDIT
+#071 [VOICE] WELCOME AGENT
+#043 GOOD MORNING, AGENT <TIME="12.1">
+#040 STAGE 1 (DESCEND) 
+#038 STAGE 1
+#044 DEMO & MAP
+#037 STAGE INTRO <TIME="3.5">
+#041 STAGE 2
+#037 STAGE INTRO <TIME="3.5">
+#038 STAGE 3, 5
+#039 STAGE 4, 7
+#038 STAGE 6, 8
+#042 BOSS BGM
+#045 ENDING
+#079 [VOICE] OH! SLY (RANKING)
+
+---------------------------------------------------
+  [S.E.]
+
+#005 [S.E.] CREDIT
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] <time="3">
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#051 [S.E.] 
+#057 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#069 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#080 [S.E.] 
+#126 [S.E.] <time="4">
+#270 [S.E.] 
+#273 [S.E.] 
+#274 [S.E.] 
+#275 [S.E.] 
+#277 [S.E.] 
+#278 [S.E.] 
+#279 [S.E.] 
+#282 [S.E.] 
+#283 [S.E.] 
+#284 [S.E.] 
+#286 [S.E.] 
+#288 [S.E.] 
+#289 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#046 [Voice] 
+#047 [Voice] 
+#048 [Voice] YOU DIE
+#049 [Voice] 
+#050 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#068 [Voice] SLY SPY
+#070 [Voice] GOLDEN GUN
+#071 [Voice] WELCOME AGENT
+#072 [Voice] GREAT JOB
+#073 [Voice] HELP
+#074 [Voice] KILL HIM
+#075 [Voice] NO
+#079 [Voice] OH! SLY
+#081 [Voice] 
+
+  ■作曲
+  原 あづさ (AZUSA)
+  吉田 博昭 (MARO)
+
+// List contribution by ZEK.
+$end

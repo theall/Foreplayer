@@ -1,0 +1,37 @@
+﻿$game=fgtlayer
+$version=2
+$default=005
+$main
+
+#005 Credit Inserted
+#009 Emblem of Dragon (Demo)
+#022 George Jensent
+#020 Hong Gillson
+#021 Lan-Yingfua
+#019 Tetsuo Kato
+#023 Janis Luciani
+#024 Jigjid Bartol
+#025 Capriccio
+#026 Shang-Fengfuang
+#010 Sessyu Tsukikage
+#028 Exodus
+#029 Allen Snider
+#030 Blair Dame
+#017 Continue
+#011 Animals (Tiger, Shark, Eagle)
+#012 Human (Middle Boss)
+#013 Vold Ignitio
+#015 Fighting Layer (End Credits)
+#018 Game Over
+
+#001 Stereo Check
+
+  [Source]
+  Fighting Layer / Arika
+  Pony Canyon / Scitron  PCCB-00358  1999.02.17
+
+  [Sound Composer]
+  Takayuki Aihara:  #09 #13 #15 #17 #18 #19 #21 #22 #28 #29 #30
+  Ayako Saso:  #10 #11 #12 #20 #23 #24 #25 #26
+
+$end

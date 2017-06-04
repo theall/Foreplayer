@@ -1,0 +1,33 @@
+﻿$name=aircombj
+$version=2
+$default=043
+$main
+
+#043 Theme
+//#052 Theme
+//#056 Theme
+//#060 Theme
+//#069 Theme
+//#073 Theme
+#112 Dog Fight
+//#116 Dog Fight
+//#120 Dog Fight
+//#124 Dog Fight
+#128 Victory was Ours
+#032 Formation Flight
+#144 Winning Run
+//#148 Winning Run
+//#152 Winning Run
+
+#039 Theme w/o intro
+
+  [Soundtrack]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097, 40098  Dec 16, 1993
+
+  [Sound Composer]
+  Hiroyuki Kawada
+
+// List Contribution by Min
+// Updated by Fuj
+$end

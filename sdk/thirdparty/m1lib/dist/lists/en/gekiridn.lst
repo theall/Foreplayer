@@ -1,0 +1,25 @@
+﻿$name=gekiridn
+$version=2
+$default=99
+
+$main
+
+#099 Player Select
+#094 Pure Spirit (BGM 1 / A.D.3195)
+#095 Recursion (BGM 2 / A.D.1942)
+#096 Untitled Soldier (BGM 3 / A.D.1999)
+#097 Mixing Beat (BGM 4 / A.D.2373)
+#098 Whats Inside (BGM 5 / A.D.4580)
+#100 Title Demo
+#101 Ending
+
+  [Source]
+  Puzzle Bobble, Gekirindan etc. - Welcome to Karu. land -
+  Pony Canyon / Scitron  PCCB-00196   Nov 17, 1995
+
+  [Sound Composer]
+  Kazuko Umino (ZUNTATA)
+
+// List Contribution by J
+// Updated by Fuj
+$end

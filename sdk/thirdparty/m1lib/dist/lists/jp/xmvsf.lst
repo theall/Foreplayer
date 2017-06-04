@@ -1,0 +1,112 @@
+﻿$name=xmvsf
+$version=2
+$default=007
+$fixed_volume=207
+$main
+
+$007 Q Sound Logo
+
+$001 OPENING & TITLE <time="0:24">
+$00B WOLVERINE STAGE <time="2:26">
+$00C CYCLOPS STAGE <time="1:54">
+$00D STORM STAGE <time="2:09">
+$00E ROGUE STAGE <time="2:10">
+$00F GAMBIT STAGE <time="2:04">
+$010 SABRETOOTH STAGE <time="1:56">
+$011 JUGGERNAUT STAGE <time="1:34">
+$012 MANGETO STAGE <time="1:21">
+$002 PLAYER SELECT <time="0:31">
+$004 VS <time="0:06">
+$005 WIN <time="0:05">
+$014 RYU STAGE <time="2:14">
+$015 KEN STAGE <time="2:30">
+$016 CHUN-LI STAGE <time="1:54">
+$017 DHALSIM STAGE <time="2:32">
+$018 ZANGIEF STAGE <time="2:10">
+$019 VEGA STAGE <time="1:31">
+$01a GOUKI STAGE <time="1:46">
+$01b NASH STAGE <time="2:10">
+$01c CAMMY STAGE <time="2:34">
+$02b INTRODUCTION
+$013 APOCALYPSE STAGE <time="1:37">
+$009 CONTINUE <time="0:43">
+$00a GAME OVER <time="0:06">
+$006 BREAK OUT <time="0:32">
+$01e Ending ～SILENCE～ <time="0:38">
+$01f Ending ～SPIRITS～ <time="1:07">
+$029 Ending ～MOONLIGHT～ <time="0:47">
+$021 Ending ～FIGHT !!～ <time="0:51">
+$023 Ending ～TEMPTATION OF EVIL～ <time="0:43">
+$02a Ending ～FRIENDS～ <time="0:44">
+$026 Ending ～MEDITATION～ <time="0:46">
+$022 Ending ～PEACE～ <time="1:00">
+$028 Ending ～LOVING YOU～ <time="1:25">
+$025 Ending ～A SCOLDING～ <time="0:44">
+$020 Ending ～AMBITION～ <time="1:07">
+$027 Ending ～TRUE LOVE～ <time="1:08">
+$024 Ending ～WONDERING～ <time="1:42">
+$01d STAFF ROLL <time="2:24">
+
+$003 HERE COMES A NEW CHALLENGER (未収録)
+
+--------------------------------------------
+
+$081 [Voice] This is X-Men vs. Street Fighter
+$082 [S.E.] Credit
+$084 [S.E.] Cursor
+$086 [S.E.] Decision
+$087 [S.E.] Stage start
+$088 [S.E.] Lose out
+$089 [S.E.] Hyper Combo Finish
+$08a [S.E.] Shungokusatsu Finish
+$08b [Voice] X!
+$08c [Voice] X-Men vs. Street Fighter!
+$08d [Voice] This is X-Men vs. Street Fighter. You'll not see anything like it in the whole world.
+$08e [Voice] Fight!  (with SE)
+$090 [Voice] Ready
+$091 [Voice] Fight!
+$092 [Voice] K.O.!
+$093 [Voice] And
+$094 [Voice] Win!
+$095 [Voice] Lose
+$096 [Voice] Perfect!
+$097 [Voice] Double K.O.
+$098 [Voice] Time over
+$099 [Voice] Game over
+$09a [Voice] First attack
+$09b [Voice] Tech hit!
+$09c [Voice] Good
+$09d [Voice] Marvelous!
+$09e [Voice] Aerial rave
+$09f [Voice] Air combo
+$0a0 [Voice] Wolverine
+$0a1 [Voice] Cyclops
+$0a2 [Voice] Storm
+$0a3 [Voice] Rogue
+$0a4 [Voice] Gambit
+$0a5 [Voice] Sabretooth
+$0a6 [Voice] Juggernaut
+$0a7 [Voice] Magneto
+$0a8 [Voice] Apocalypse
+$0a9 [Voice] Ryu
+$0aa [Voice] Ken
+$0ab [Voice] Chun-Li
+$0ac [Voice] Dhalsim
+$0ad [Voice] Zangief
+$0ae [Voice] Vega
+$0af [Voice] Gouki
+$0b0 [Voice] Nash
+$0b1 [Voice] Cammy
+$0b2 [Voice] Bison
+$0b3 [Voice] Akuma
+$0b4 [Voice] Charlie
+
+  ■出典
+  X-MEN VS. STREET FIGHTER
+  VICTOR ENTERTAINMENT  VICL-2176  1996.11.21
+
+  ■作曲
+  岩井 由紀, 角田 裕子
+
+// List by Fuj
+$end

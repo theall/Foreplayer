@@ -1,0 +1,28 @@
+﻿$name=bchopper
+$version=2
+$default=015
+$main
+
+#015 Title
+#013 Ahead (Start)
+#005 Theme (Stage 1)
+#006 Half Measure (Sub-Boss)
+#004 May 9 1987 (Cave)
+#007 A Hell of a Noise (Boss)
+#010 Helis March (Stage Clear)
+#012 Volcano (Stage 2)
+#003 Blink (Stage 3)
+#008 Seven o'clock (Stage 4)
+#000 Inside (Stage 5)
+#002 At B (Stage 6)
+#009 Astern (Game Over)
+#011 Helis Awards (Continue)
+#001 Name Entry
+#014 Resume (Ending)
+
+  [Soundtrack]
+   R-Type / IREM Game Music
+   Alfa Records  28XA-199  Jan 25, 1988
+
+// List Contribution by Min
+$end

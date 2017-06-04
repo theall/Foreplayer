@@ -1,0 +1,52 @@
+﻿$name=midres
+$version=2
+$default=058
+$main
+
+#058 Flood of Power (BGM 1)
+#062 The First Formidable Enemy (Boss 1)
+#090 Enemy's Armory (Intermission)
+#059 Hope, Disapointment and Counterattack (BGM 2)
+#063 In the Forest (Boss 2)
+#060 ?
+#064 Huge Battleship (Boss 3)
+#066 Decision (Monitor Room)
+#061 Kao Kao Kao (Last Stage)
+#065 King Crimson (Final Boss)
+#067 Daybreak (Ending)
+#068 Wind Trip (Credits Roll)
+
+-------------------------------------------------
+  [Voice]
+
+#076 [Voice] full auto
+#077 [Voice] 3-way
+#078 [Voice] fire
+#079 [Voice] shot gun
+#080 [Voice] homing missile
+#081 [Voice] nitro
+#082 [Voice] shower
+#083 [Voice] barrier
+#084 [Voice] power up
+#085 [Voice] super power up
+#086 [Voice] take a weapon
+#087 [Voice] hurry up!
+#088 [Voice] woh!
+#089 [Voice] urg!
+#097 [Voice] help!
+#098 [Voice] thank you, son.
+#099 [Voice] thank you.
+#100 [Voice] thank you.
+#101 [Voice] thanks a lot.
+#102 [Voice] thank you.
+#103 [Voice] bless you.
+#104 [Voice] ha ha ha hah
+#105 [Voice] ha ha ha ha hah
+
+  [Source]
+  Crude Buster / Midnight Resistance
+  Pony Canyon / Scitron  PCCB-00039  Aug 21, 1990
+
+// Orignal List by Monyons
+// Update and Translate by Fujix
+$end

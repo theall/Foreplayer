@@ -1,0 +1,42 @@
+﻿$name=bbusters
+$version=2
+$default=33
+$main
+
+#033 Beast Busters (Attract Mode)
+#034 Decide It! (Player Select)
+#038 Exorcism Part 1 (Area 1, Intro)
+#037 The Paradise of Monsters (Main Theme 1)
+#053 Hotbed of Vice (Boss)
+#049 I Just Killed a Monster (Cleared)
+#043 Witching Time (Sum up)
+#044 Exorcism Part 2 (Area 2, Intro)
+#040 I Wanna Be a Monster (Main Theme 2)
+#045 Exorcism Part 3 (Area 3, Intro)
+#052 Oh! My Buddah! (Main Theme 3)
+#046 Exorcism Part 4 (Area 4, Intro)
+#054 Water Monsters (Main Theme 4)
+#047 Exorcism Part 5 (Area 5, Intro)
+#037 The Paradise of Monsters (Main Theme 1)
+#048 Exorcism Part 6 (Area 6, Intro)
+#052 Oh! My Buddah! (Main Theme 3)
+#050 Exorcism Part 7 (Area 7, Intro)
+#055 Bad Visitor (Main Theme 7, Part 1)
+#059 Komeder's Theme (Main Theme 7, Part 2)
+#053 Hotbed of Vice (Boss)
+#051 Completion (Final Boss)
+#056 World Peace (Epilogue)
+#058 The Pain of Parting (Credits)
+#042 Evil! Evil! Evil! (Continue)
+#041 Game Over
+
+  [Source]
+  Beast Busters / SNK
+  Pony Canyon / Scitron  PCCB-00036  Jul 21, 1990
+
+  [Composed By]
+  Papaya (Masahiko Hataya)
+
+// Original list Contributed By Llama
+// English list By Fuj
+$end

@@ -1,0 +1,47 @@
+﻿$name=asterix
+$version=2
+$default=209
+$songmax=256
+$fixed_volume=244
+$main
+
+#209 Together (タイトルデモBGM)
+#219 Profile (プレイヤー紹介BGM)
+#211 Asterix Obelix (セレクトBGM)
+#192 Asterix in Gauls Village (ステージ 1 BGM)
+#216 In Egypt　(中間デモ BGM &lt;エジプト&gt;)
+#195 Defeat the evil architects (ステージ 2 &lt;エジプト&gt;)
+#221 Pyramid (ステージ 2 BGM2 &lt;ピラミッド&gt;)
+#217 In Britain (中間デモ BGM &lt;イギリス&gt;)
+#196 Wave (ステージ 3 BGM1 &lt;海&gt;)
+#206 The Galley (ステージ 3 BGM2 &lt;船&gt;)
+#214 Help Me (中間デモ &lt;山賊&gt;)
+#208 Save Falbara (ステージ 4 BGM1 &lt;山賊&gt;)
+#205 Ahhhhh… (ステージ 4 BGM2 &lt;トロッコ&gt;)
+#215 In Spain (中間デモ BGM &lt;スペイン&gt;)
+#199 Spanish Village (ステージ 5 BGM &lt;スペイン&gt;)
+#218 The Magic Carpet (中間デモ BGM &lt;インド&gt;)
+#200 Rescue the Indian Princess (ステージ 6 BGM &lt;インド&gt;)
+#213 Asterix vs. Caesar (中間デモ BGM &lt;ローマ&gt;)
+#193 Asterix in Rome (ステージ 7 BGM &lt;ローマ&gt;)
+#194 They are crazy (ボス BGM1)
+#198 Do you want to fight? (ボス BGM2)
+#203 オーレ！ （闘牛ボス BGM)
+#204 Gladiators (最終ボス BGM)
+#197 Stage clear (ステージクリア BGM)  <time="0:07">
+#210 Are you ready? (ボーナスステージファンファーレ)
+#220 Ave Caesar (剣闘士ファンファーレ)
+#222 Let's party! (エンディングBGM)
+#223 Thank you, Asterix & Obelix (クリアデモBGM)
+#201 Hurry up! (ボーナスステージBGM 1 &lt;ベンハー&gt;)
+#202 Crash, Crash! (ボーナスステージBGM2 &lt;樽壊し&gt;)
+#207 I Hate Gauls (ボーナス表示BGM)
+#212 Game Over (ゲームオーバーBGM)
+
+#240 Sound Scale Check
+
+  ■出典
+  コナミゲームミュージックコレクション Vol.5
+  KING RECORDS  KICA-7605  1992.09.26
+
+$end

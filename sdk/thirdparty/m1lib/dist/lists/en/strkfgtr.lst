@@ -1,0 +1,88 @@
+﻿$name=strkfgtr
+$version=2
+$default=154
+$main
+
+#154 Opening
+#145 Funkey Bomb
+#147 Shuffle Canon
+#144 Burn Out
+#148 K-City
+#155 Luner Ground
+#149 Hyper Hopper
+#150 Ending
+#146 What's your Name?
+#152 One more Time
+#151 Unused
+
+-----------------------------------------
+ [SFXs] 160-178, 256-383
+
+#192 [Voice] Be careful.
+#193 [Voice] Break right.
+#194 [Voice] Break left.
+#195 [Voice] ??
+#196 [Voice] Got off quick.
+#197 [Voice] I got 'em.
+#198 [Voice] No more missiles.
+#199 [Voice] The enemy.
+#200 [Voice] Missed
+#201 [Voice] Three o'clock
+#202 [Voice] Gotta locked
+#203 [Voice] 3, 2, 1, Go
+#204 [Voice] Hold out
+#205 [Voice] Hold your position.
+#206 [Voice] It's firing!
+#207 [Voice] Hurry up!
+#208 [Voice] Hold power!
+#209 [Voice] Go down!
+#210 [Voice] Get ready, good luck.
+#211 [Voice] Nine o'clock.
+#212 [Voice] You're great.
+#213 [Voice] Congratulations.
+#214 [Voice] Your choice.
+#215 [Voice] Trainee.
+#216 [Voice] Rookie.
+#217 [Voice] Ace.
+#218 [Voice] Got a rader contact.
+#219 [Voice] On your tail.
+#220 [Voice] He's all over me.
+#221 [Voice] Bingo!
+#222 [Voice] Here they come.
+#223 [Voice] Mission is completed, return to the base. Roger.
+#224 [Voice] "course wo erande kudasai"
+#225 [Voice] Wow!
+#226 [Voice] Ow!
+#227 [Voice] Fire!
+#228 [Voice] Turn right.
+#229 [Voice] Turn left.
+#230 [Voice] Bow up.
+#231 [Voice] Bow down.
+#232 [Voice] "game wo keizoku shimasuka?"
+#233 [Voice] Shoot down 4 enemies.
+#234 [Voice] Shoot down 5 enemies.
+#235 [Voice] Shoot down 6 enemies.
+#236 [Voice] Shoot down 7 enemies.
+#237 [Voice] Shoot down 8 enemies.
+#238 [Voice] Shoot down 9 enemies.
+#239 [Voice] Shoot down 10 enemies.
+#240 [Voice] Shoot down 11 enemies.
+#241 [Voice] Shoot down 12 enemies.
+#242 [Voice] Shoot down 13 enemies.
+#243 [Voice] Shoot down 14 enemies.
+#244 [Voice] Shoot down 15 enemies.
+#245 [Voice] Shoot down 20 grand targets.
+#246 [Voice] Shoot down 25 grand targets.
+#247 [Voice] Shoot down 30 grand targets.
+#248 [Voice] Shoot down 35 grand targets.
+#249 [Voice] Congratulations.
+#250 [Voice] Last 10 seconds.
+#251 [Voice] Shoot down.
+#253 [Voice] The last few enemy?
+#254 [Voice] Look out.
+
+  [Source]
+  Strike Fighter / Sega
+  Pony Canyon / Scitron  PCCB-00067  Aug 21, 1991
+
+$end

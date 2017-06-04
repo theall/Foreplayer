@@ -1,0 +1,52 @@
+$name=lastblad
+$version=2
+$default=052
+$main
+
+#002 Neo Geo Logo
+
+#052 The Gate of Four Symbols - Dawn of the War Clouds (Demo)
+#056 Shishi (Character Select) <time="33" fadeout="yes" fadeoutlength="10">
+#049 Gekka no Kenshi - Predawn (Theme 1)
+#055 Honor (Won)
+#033 Kaede Stage Sounds <time="1:11" fadeout="yes" fadeoutlength="10">
+#034 Moriya Minakata Stage Sounds <time="1:11" fadeout="yes" fadeoutlength="10">
+#035 Yuki Stage Sounds 1 <time="1:08" fadeout="yes" fadeoutlength="10">
+#036 Yuki Stage Sounds 2 <time="1:03" fadeout="yes" fadeoutlength="10">
+#050 Transition (Theme 2)
+#062 Rebirth - Part 1 (Cinematic 1)
+#037 Genbu no Okina Stage Sounds <time="1:09" fadeout="yes" fadeoutlength="10">
+#080 Akari Ichijou Intro Sounds <time="54" fadeout="yes" fadeoutlength="10">
+#038 Akari Ichijou Stage Sounds <time="1:06" fadeout="yes" fadeoutlength="10">
+//#069 Akari Ichijou Stage Sounds (Censored) <time="1:06" fadeout="yes" fadeoutlength="10">
+#039 Juuzou Kanzaki Stage Sounds <time="1:02" fadeout="yes" fadeoutlength="10">
+#051 Flux (Theme 3)
+#040 Kei'ichirou Washizuka Stage Sounds <time="1:04" fadeout="yes" fadeoutlength="10">
+#041 Hyou Amano Stage Sounds <time="1:01" fadeout="yes" fadeoutlength="10">
+#042 Lee Rekka Stage Sounds <time="1:07" fadeout="yes" fadeoutlength="10">
+#070 Fate (Theme 4)
+#043 Shikyou Stage Sounds <time="1:13" fadeout="yes" fadeoutlength="10">
+#044 Zantetsu Stage Sounds <time="1:07" fadeout="yes" fadeoutlength="10">
+#083 Shigen Naoe Intro Sounds
+#045 Shigen Naoe Stage Sounds <time="1:01" fadeout="yes" fadeoutlength="10">
+#068 Fate - Conversation (After the Clash of Fate)
+#064 Rebirth - Part 2 (First Boss Cinematic 1)
+#046 Blade Master (First Boss)
+#065 Ascension (First Boss Cinematic 2)
+#066 Mansion under the Cliff (Final Boss Cinematic)
+#047 Suzaku (Final Boss, Round 1)
+#048 The Gate of Evil (Final Boss, Round 2)
+#059 Demise (Ending 1)
+#060 Floating Lantern (Ending 2-1)
+#061 Thereafter... (Ending 2-2)
+#058 Continue
+#057 The End (Game Over)
+//#063 
+//#053 The Gate of Four Symbols - Dawn of the War Clouds (Demo) - Later Part
+
+  [Source]
+  Bakumatsu Roman - Gekka no Kenshi / SNK Shinsekai Gakkyoku Zatsugidan
+  Pony Canyon / Scitron  PCCB-00287  Dec 17, 1997
+
+// List by Fujix
+$end

@@ -1,0 +1,27 @@
+$name=kurikint
+$version=2
+$default=053
+$main
+
+#053 Theme of Kurikinton (Title)
+#059 Inserting Coin
+#054 Curtain-up (Opening Theme)
+#055 Chinese Kids (Main Theme)
+#058 Face-off of Martial Artists (Mid Boss)
+#065 Retreat of Martial Artist (Clear ~ Main Theme)
+#056 Face-off of Hairs I (Boss)
+#057 Face-off of Hairs II (Final Boss)
+#060 Wu Shu (Ending Theme)
+#062 Continue
+#061 Game Over
+#064 State-channel 5th Song (Name Entry)
+
+  [Source]
+  Taito DJ Station -G.S.M. Taito 5-
+  Pony Canyon / Scitron  PCCB-00037  Aug 21, 1990
+
+  [Composers]
+  Masahiko Takagi, Yasuhisa Watanabe
+
+// List contribution by szk
+$end

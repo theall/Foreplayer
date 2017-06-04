@@ -1,0 +1,97 @@
+﻿$name=mugsmash
+$version=2
+$default=020
+$songmax=094
+$main
+ 
+#020 Player Select
+#004 Map
+#023 Stage 1
+#022 Go to Next Stage
+#013 Bonus Stage
+#016 Stage 2-1
+#008 Elevator
+#006 Elevator Arrival
+#009 Stage 2-2
+#010 Stage 3
+#014 Stage 4
+#012 Stage 5-1
+#011 Stage 5-2
+#017 Stage 5-3
+#015 Stage 6-1
+#010 Stage 6-2
+#014 Stage 6-3
+#013 Ending
+ 
+#007 (unused)
+#021 (unused)
+#024 (unused)
+
+ [Voices] & [SFX]
+ 
+#093 (all)
+ 
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#074 [Voice]
+#076 [Voice]
+#077 [Voice]
+#078 [Voice]
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+ 
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#075 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+ 
+$end

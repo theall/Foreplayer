@@ -1,0 +1,22 @@
+﻿$name=g_buba
+$version=2
+$default=$0
+$songmax=65536
+$main
+
+$0000 Sound Test #0
+$2300 Sound Test #1
+$6800 Sound Test #2
+$a900 Sound Test #3
+$f000 Sound Test #4
+$1a01 Sound Test #5
+$5601 Sound Test #6
+$6a01 Sound Test #7
+$7001 Sound Test #8
+$b501 Sound Test #9
+$6b01 Sound Test #10
+$6f01 Sound Test #11
+$7b01 Sound Test #12
+
+// Basic list contributed by Knurek
+$end

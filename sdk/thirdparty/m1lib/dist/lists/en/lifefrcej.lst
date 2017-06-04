@@ -1,0 +1,166 @@
+﻿$name=lifefrcej
+$version=2
+$default=001
+$songmax=256
+$main
+
+#001 Coin
+#007 Power of Anger (Stage 1)
+#009 Thunderbolt (Stage 2)
+#023 Planet RATIS (Stage 3)
+#031 Slash Fighter (Stage 4)
+#012 Combat (Stage 5)
+#013 Aircraft Carrier (Gradius Boss)
+#029 Destroy Them All (Stage 6-1)
+#017 Destroy Them All -Type 2- (Stage 6-2)
+#022 Poison of Snake (Boss)
+#008 Peace Again (Credits Roll)
+#024 Crystal Forever (Game Over)
+
+#010 Fly High (Salamander Stage 2)
+#004 Starfield (Salamander Stage 4)
+#003 Burn the Wind (Salamander Stage 5)
+#015 Unused 01 (X68000 Version, Loading Music)
+#005 Unused 02
+#011 Unused 03
+#014 Unused 04
+#016 Unused 05
+#018 Unused 06
+#019 Unused 07
+#020 Unused 08
+#021 Unused 09
+#025 Unused 10
+#026 Unused 11
+#027 Unused 12
+#030 Unused 13
+
+---------------------------------------------
+ [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+
+#249 [SFX]
+#250 [SFX]
+#251 [SFX]
+#252 [SFX]
+#253 [SFX]
+
+ [Voice]
+
+#128 [Voice] Missile chamber is empty
+#129 [Voice] Hyper speed
+#130 [Voice] Destruct missile
+#131 [Voice] Multiple
+#132 [Voice] Shield
+#133 [Voice] Pulse laser
+#134 [Voice] Laser
+#135 [Voice] Missle chamber is empty
+#136 [Voice] Hyper speed
+#137 [Voice] Destruct missle
+#138 [Voice] Multiple
+#139 [Voice] Shield
+#140 [Voice] Pulse lazer
+#141 [Voice] Lazer
+#142 [Voice] Danger! Danger!
+#143 [Voice] Try again
+#144 [Voice] Destroy them all!
+#145 [Voice] Enter stomach muscle zone
+#146 [Voice] Destroy violent anti-biotics
+#147 [Voice] Increase power
+#148 [Voice] Make way through muscle tissue
+#149 [Voice] Fire!
+#150 [Voice] Destroy eye of mutant
+#151 [Voice] Enter kidney zone
+#152 [Voice] Kidney stones cannot be destroyed
+#153 [Voice] Mutant zylon attacking
+#154 [Voice] Destroy centre membrane
+#155 [Voice] Enter stomach inner chamber
+#156 [Voice] Warning! Warning! Danger zone!
+#157 [Voice] Acid flame
+#158 [Voice] Flame eruption
+#159 [Voice] Attack head
+#160 [Voice] Enter liver zone
+#161 [Voice] Fend off mutant toxin
+#162 [Voice] Cut through liver
+#163 [Voice] Entering lung zone
+#164 [Voice] Link-up with weapon
+#165 [Voice] Prepare for bio-mechanical mutant
+#166 [Voice] Entering brain area
+#167 [Voice] Biomechanical brain attacks
+#168 [Voice] Destroy the four points
+#169 [Voice] Escape out of brain quickly
+#170 [Voice] Watch for flame eruption
+#171 [Voice] Arrrrgggggghhhhhh!
+#172 [Voice] Sound out
+
+  [Sources]
+  Salamander -Again- / Konami Kukeiha Club
+  King Records  KICA-7601  Mar 25, 1992
+
+  Konami Game Music Vol.4 - A-Jax
+  Alfa Records  28XA-201  Mar 10, 1988
+
+  Salamnder Arcade Soundtrack
+  Sony Music Entertainmnet  KOLA-030  Apr 9, 2003
+
+  Konami Game Music Vol.4 - A-Jax (Legend Series)
+  Scitron Digital Contents  SCDC-00472  Nov 23, 2005
+
+//English list adjustment by bcass
+$end
+

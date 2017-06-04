@@ -1,0 +1,33 @@
+﻿$name=viostorm
+$version=2
+$default=$db
+$fixed_volume=147
+$main
+
+$db Pleased to meet you (Introduction)
+$e9 Prologue (Prologue 1)
+$ea Prologue 2 (Prologue 2)
+$e0 Funky guys (Player Selection)
+$d0 Who'll be the hero? (Stage 1)
+$d1 Oh the train (Stage 2)
+$d2 Feel my power (Stage 3-1)
+$e2 Sharara's dancing - Light steps (Stage 3-2)
+$d3 Drifting tension (Stage 4)
+$d4 We are free (Stage 5)
+$d5 Hey! Hey! Hey! (Stage 6)
+$d6 The final technique (Stage 7)
+$d8 Who are you? (Boss 1)
+$d9 In the shadows (Boss 2)
+$e6 VS Geldo -intro- (Final Boss, Intro)
+$da VS Geldo (Final Boss)
+$df Kick it! (Clear)
+$dd Out of luck! (Game Over)
+$e1 Nice fight, Congratulations! (Name)
+$de Are you ready to have a good time? (Ending)
+$eb Speaker Test
+
+  [Source]
+  Konami Amusement Sounds '94 - Spring
+  King Records  KICA-7631, 7632   Feb 23, 1994
+
+$end

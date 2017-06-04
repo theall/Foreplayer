@@ -1,0 +1,22 @@
+$name=ikari
+$version=2
+$default=112
+$main
+
+#112 タイトルデモ
+#144 クレジット
+#165 不時着
+#065 怒のテーマ
+#072 ゲート
+#104 勝利
+#096 ゲームオーバー～栄光
+
+  ■出典
+  SNK ゲーム・ミュージック
+  ALFA RECORDS  28XA-120  1987.2.25
+
+  ■作曲
+  O氏＋？
+
+// List contribution by szk
+$end

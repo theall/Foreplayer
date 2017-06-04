@@ -1,0 +1,68 @@
+﻿$name=valtric
+$version=2
+$default=037
+$main
+
+#037 [SFX] Credit
+#017 Start
+#005 Area 1
+#003 Area 2
+#011 Area 3
+#013 Area 4
+#026 Mid-Boss
+#015 Boss
+#038 Area Cleared
+#039 Game Over
+#040 Name Entry #1 (1st Rank)
+#041 Name Entry #2 (2nd-5th Rank)
+
+#006 Area 1 (Fast)
+#004 Area 2 (Fast)
+#012 Area 3 (Fast)
+#014 Area 4 (Fast)
+#016 Boss (Fast)
+#001 Unused #1
+#007 Unused #2
+#009 Unused #3
+#045 Unused #4
+#056 Unused #5
+#002 Unused #1 (Fast)
+#008 Unused #2 (Fast)
+#010 Unused #3 (Fast)
+
+------------------------------------------------------
+ [SFX]
+
+#018 [SFX]
+#019 [SFX]
+#020 [SFX] Shield Running
+#021 [SFX] Shield Running Out
+#022 [SFX]
+#023 [SFX] Jumping
+#024 [SFX] Landing
+#025 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX] Missed
+#030 [SFX]
+#031 [SFX]
+#032 [SFX] Wiping Out Enemies
+#033 [SFX] Player Extended
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX] Credit
+#042 Area Cleared [=038]
+#043 [SFX]
+#044 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+
+// List Contribution by a2c-s438
+$end

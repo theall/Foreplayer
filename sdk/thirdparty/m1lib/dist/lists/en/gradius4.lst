@@ -1,0 +1,45 @@
+﻿$name=gradius4
+$version=2
+$default=$101
+// $songmax=$000
+$main
+
+$101 Konami Logo
+$007 Demo Intro
+$115 Demo BGM
+$00b Credit Inserted
+$103 Select BGM
+$104 Apollon (Intro 1)
+$105 Feiton (Intro 2)
+$117 Hydra (Stage 1 - Fruid Metal)
+$106 Demeter (Stage 2 - Plants)
+$108 Oceanus (Stage 3 - Bubbles)
+$10a Cronos (Stage 4 - Magma)
+$10b Hades (Stage 4 - Magma)
+$10d Uranus (Stage 5 - Moai)
+$10f Hera (Stage 6 - Cells)
+$11c Dupon (Stage 7 - High Speed)
+$112 Boss 1 (Boss Rush 1)
+$113 Boss 2 (Boss Rush 2)
+$119 Prometheus (Stage 9 - Base)
+$11a Athena (Stage 9 - Base)
+$118 Titans (Boss)
+$116 Game Over
+$114 Ranking
+$11b Gaia (Credits)
+
+-----------------------------------------
+// [S.E.] (おまかせ)
+// 
+//-----------------------------------------
+
+  [Source]
+  Gradius Arcade Soundtrack
+  Konami Music Entertainment  KMCA155~156  Apr 24, 2002
+
+//  ■作曲
+//  
+
+// Orignal List Contributed by Ayaya
+// 
+$end

@@ -1,0 +1,37 @@
+﻿$name=superspy
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#042 THE SUPER SPY (タイトル)
+#037 CODE "X" (1エリア)
+#035 BLOT (通路中のボス1)
+#061 ESCAPISM (中間デモ)
+#043 BEND THE RULE (2エリア・パート1)
+#057 MAKE A BET (通路中のボス2）
+#045 VIXEN (中ボス)
+#040 IMPUTATION (ボス)
+#060 ON THE ROVE (2エリア・パート2）
+#047 CHIEF TAIN (最終ボス)
+#050 NEW WORLD (エンディング)
+#041 (unused)
+#048 (unused)
+#063 (unused)
+
+#058 CODE "X" (1エリア) &lt;w/o intro&gt;
+#062 BLOT (通路中のボス1) &lt;w/o intro&gt;
+#039 IMPUTATION (ボス) &lt;w/o intro&gt;
+#059 BEND THE RULE (2エリア・パート1) &lt;w/o intro&gt;
+#046 CHIEF TAIN (最終ボス) &lt;w/o intro&gt;
+#049 NEW WORLD (エンディング) &lt;w/o intro&gt;
+
+  ■出典
+  THE SUPER SPY・NINJA COMBAT / SNK
+  PONY CANYON / SCITRON  PCCB-00046  1990.11.21
+
+  ■作曲
+  幡谷正彦 (PAPAYA)
+
+//「CODE "X"」が鳴っている状態でゲームオーバーになったときコンティニューすると、それぞれ同名の&lt;w/o intro&gt;の曲（この場合は#058）が鳴るようです。エンディングにまでこれがあるのは謎ですが…
+$end

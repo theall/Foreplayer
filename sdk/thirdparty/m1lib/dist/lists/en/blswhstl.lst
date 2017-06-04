@@ -1,0 +1,99 @@
+﻿$name=blswhstl
+$version=2
+$default=$91
+$songmax=$92
+$main
+
+$91 Detana Twin Bee (Attract)
+$17 Coin
+$8b Message from the Princess Mell (Demo)
+$80 Gift from the Wind (Stage 1)
+$83 Beyond the Sea of Clouds (Stage 2)
+$82 Laputa, Fortress in the Sky (Stage 3)
+$84 World of the Mold (Stage 4)
+$81 March on the Water (Stage 5)
+$85 Temple in Iba (Stage 6)
+$86 Paradise Beyond the Fog (Stage 7)
+$87 Attack from the Planet Iba (Stage 1, 2, 5, 6 Boss)
+$88 Got Prepared to Fight (Stage 3, 4 Boss)
+$8c Thank you, Twin Bee! (Stage Clear)
+$92 The Dynast of Iba, Brain Bug (Final Boss)
+$8e A Day When Peace Returns to Planet Mell (Ending)
+$8a Let's Try Again (Game over)
+$90 Congratulations! (Ranking)
+
+-----------------------------------------
+
+#023 [Voice] "faitoo!" (Fight)
+$19 [Voice] "ite!"
+$1a [Voice] "supiido appu"
+$1b [Voice] "twin hou"
+$1c [Voice] 3 WAY
+$1d [Voice] "bunshiin"
+$1e [Voice] "barier"
+$1f [Voice] "shippo barrier"
+$23 [Voice] "twin bee ikimaasu"
+$24 [Voice] "win bee ikimaasu"
+$28 [Voice] "speed down" (slow down)
+$29 [Voice] "boku guin bee"
+$2a [Voice] "ite" 2
+$33 [Voice] "yattaa!"
+$34 [Voice] "yattene!"
+$35 [Voice] "lucky!"
+$36 [Voice] "gerogero!"
+$37 [Voice] "eeen"
+$38 [Voice] "yaan"
+$39 [Voice] "ite!" 3
+$3a [Voice] "gacchinko!"
+
+$01 [SFX] 01
+$02 [SFX] 02
+$03 [SFX] 03
+$04 [SFX] 04
+$05 [SFX] 05
+$06 [SFX] 06
+$07 [SFX] 07
+$08 [SFX] 08
+$09 [SFX] 09
+$0a [SFX] 10
+$0b [SFX] 11
+$0c [SFX] 12
+$0d [SFX] 13
+$0e [SFX] 14
+$0f [SFX] 15
+$10 [SFX] 16
+$11 [SFX] 17
+$12 [SFX] 18
+$13 [SFX] 19
+$14 [SFX] 20
+$15 [SFX] 21
+$16 [SFX] 22
+$18 [SFX] 23
+$20 [SFX] 24
+$21 [SFX] 25
+$22 [SFX] 26
+$25 [SFX] 27
+$26 [SFX] 28
+$27 [SFX] 29
+$2b [SFX] 30
+$2c [SFX] 31
+$2d [SFX] 32
+$2e [SFX] 33
+$2f [SFX] 34
+$30 [SFX] 35
+$31 [SFX] 36
+$32 [SFX] 37
+$3b [SFX] 38
+$3c [SFX] 39
+$3d [SFX] 40
+$3e [SFX] 41
+$3f [SFX] 42
+$40 [SFX] 43
+$41 [SFX] 44
+$42 [SFX] 45
+
+  [Source]
+  Detana!! TwinBee / Konami Kukeiha Club
+  King Records  KICA-7503  Jun 5, 1991
+
+$end

@@ -1,0 +1,40 @@
+﻿$name=viofight
+$version=2
+$default=007
+$main
+
+#007 TITLE
+#015 CREDIT <time="6">
+#017 CHRACTER SELECT <time="15">
+#008 THEME 1
+#010 THEME 2
+#009 THEME 3
+#011 WINNER <time="9">
+#012 BONUS
+#014 BONUS STAGE
+#013 ENDING
+#077 NAME ENTRY
+#016 GAME OVER
+
+#062 THEME 1 (Ver.2)
+#078 THEME 2 (Ver.2)
+
+---------------------------------------------------
+ [S.E.] 
+
+#038 [S.E.] 
+#040 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#079 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#049 [Voice] <time="5">
+
+  ■作曲
+  高木 正彦, 山田 靖子, 渡辺 恭久
+
+// List contribution by ZEK.
+$end

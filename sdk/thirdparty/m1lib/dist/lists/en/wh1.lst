@@ -1,0 +1,236 @@
+﻿$name=wh1
+$version=2
+$default=002
+$songmax=239
+$main
+
+#002 Neo Geo Logo
+
+#023 Uchuuichi Budoukai (Universal Tournament) Now Opens (Opening)
+#034 Player Select
+#025 Begin
+#004 Unrivaled Rekkozan (Theme of Hanzo)
+#017 Wind and Flame (Theme of Fuuma)
+#011 A Man Who Is Called Dragon (Theme of Dragon)
+#010 Great Fighting Spirit (Theme of Janne)
+#005 The Lord of the Continent (Theme of J.Carn)
+#006 Power Wall (Theme of Muscle Power)
+#016 Cyber General (Theme of Brocken)
+#012 Wizard of Love (Theme of Rasputin)
+#015 Loudness, Gone Gone (Death Match Mode)
+#033 Stage Clear
+#239 Go Go J.Ferry (Bonus Stage)
+#237 Okiyama Sakichi (Doctor's Applause)
+#238 The Strongest Man in The Universe (Gigas Appearing)
+#018 Final Battle Over Earth (Theme of Gigas)
+#022 The End of Outlaw Ninja (Hanzou's Ending)
+#027 Gorgeous Days of an Everyday-Person (Fuuma's Ending)
+#021 Go for a Hong Kong Movie Star! (Dragon's Ending)
+#035 Sometime I'll Take My Prince (Janne's Ending)
+#030 Tomato Squash (J.Carn's Ending)
+#029 Icchan GENKIJIRUSHI (Muscle Power's Ending)
+#026 Sophisticated Effector (Brocken's Ending)
+#028 Tricky, Time Slider (Rasputin's Ending)
+#019 The Final Station March (End Credits)
+#014 Continue (Hanzo)
+#013 Continue (Fuuma)
+#007 Continue (Dragon)
+#009 Continue (Janne)
+#020 Continue (J.Carn)
+#031 Continue (Muscle Power)
+#008 Continue (Brocken)
+#032 Continue (Rasputin)
+#024 Game Over
+
+--------------------------------------------------------
+  [Voice]
+
+  Hanzo
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#120 [Voice]
+#121 [Voice]
+#122 [Voice]
+
+  Fuuma
+#093 [Voice]
+#094 [Voice]
+#095 [Voice]
+#096 [Voice]
+#097 [Voice]
+#098 [Voice]
+#099 [Voice]
+
+  Dragon
+#110 [Voice]
+#111 [Voice]
+#112 [Voice]
+#113 [Voice]
+#115 [Voice]
+
+  Janne
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#092 [Voice]
+
+  J.Carn
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+
+  Muscle Power
+#102 [Voice]
+#103 [Voice]
+#105 [Voice]
+#106 [Voice]
+#107 [Voice]
+#108 [Voice]
+#109 [Voice]
+
+  Brocken
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#149 [Voice]
+#131 [Voice]
+
+  Rasputin
+#148 [Voice]
+#100 [Voice]
+#101 [Voice]
+
+  Gigas
+#128 [Voice]
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+
+
+#150 [Voice] round
+#151 [Voice] 1
+#152 [Voice] 2
+#153 [Voice] 3
+#154 [Voice] 4
+#155 [Voice] 5
+#156 [Voice] 6
+#157 [Voice] 7
+#158 [Voice] 8
+#159 [Voice] 9
+#160 [Voice] fight
+#161 [Voice] winner
+#162 [Voice] loser
+#163 [Voice] Hanzo
+#164 [Voice] Fuuma
+#166 [Voice] Dragon
+#167 [Voice] Janne
+#168 [Voice] J. Carn
+#169 [Voice] Geegus
+#170 [Voice] Muscle Power
+#171 [Voice] Brocken
+#172 [Voice] Ras Putin
+#173 [Voice] versus
+#174 [Voice] final battle
+
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+
+
+ [SFX]
+
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+
+  [Source]
+  World Heroes / SNK
+  Pony Canyon / Scitron  PCCB-00106  Jan 21, 1993
+
+// List Contribution by NK
+// English list by Fuji
+$end

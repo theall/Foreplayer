@@ -1,0 +1,70 @@
+﻿$name=vball
+$version=2
+$default=005
+$main
+
+  Soundtrack
+
+#005 V'BALL (Title ~ Attract Mode)  <time="2:00">
+#022 [SE] CREDIT Insertion <time="1.5">
+#002 Match Location Map - 2P Vs. Match BGM  <time="1:57.5">
+#009 First Wave: 1st Match (Daytona Beach)  <time="1:59">
+#003 Hurry! 30 seconds left  <time="1:46">
+#020 Match Won!
+#011 "An off-day, we're going to shopping" (Buy a car)
+#006 Twilight Game: 2nd Match (New York City)   <time="2:04.5">
+#007 SeaSide Walker: 3rd Match (Los Angeles)  <time="1:28.5">
+#008 Beyond The Sky: 4th Match (Hawaii)  <time="2:32">
+#013 Iron Wing: 5th Match (Aircraft Carrier-USA CVN FC-15)  <time="2:27">
+#018 CONGRATULATIONS!-Winner's Theme (U.S. Championship)   <time="1:48.5">
+#014 Match Lost!  <time="7.0">
+#005 CONTINUE PLAY?  <time="14.0">
+#016 GAME OVER
+
+#004 Unused BGM #1 <time="1:39">
+#021 Unused BGM #2 <time="1:56">
+#012 Unused Jingle #1
+#015 Unused Jingle #2
+#017 Unused Jingle #3
+#019 Unused Jingle #4 
+
+---------------------------------------------------
+  S.E. & Voice Collection
+
+#001 [SE] 
+#022 [SE] CREDIT Insertion
+#032 [SE] SFX Medley 
+#033 [SE] 
+#034 [SE] 
+#035 [SE] 
+#036 [SE] 
+#037 [SE] 
+#038 [SE] 
+#039 [SE] 
+#040 [SE] 
+#041 [SE] 
+#042 [SE] 
+#043 [SE] 
+#044 [SE] 
+#045 [SE] 
+#046 [SE] 
+#047 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#050 [SE] 
+#051 [SE] 
+#053 [SE] Cheers 1
+#054 [SE] Cheers 2
+#055 [SE] Cheers 3
+#056 [SE] Cheers 4
+#057 [SE] Engine 1
+#062 [SE] Engine 2
+#067 [SE] Engine 3
+#072 [SE] Engine 4
+#077 [SE] Engine 5
+
+  ■作曲
+  テクノスサウンドチーム
+  
+// List contribution by Simon B., done in playing the game.
+$end

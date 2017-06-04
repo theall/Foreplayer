@@ -1,0 +1,125 @@
+﻿$name=wildfang
+$version=2
+$default=001
+$main
+
+#001 [S.E.] CREDIT <time="3">
+#029 タイトル <time="14">
+#048 ROUND 1
+#053 ROUND 1 BOSS (ドラゴ)
+#056 ROUND 1 CLEAR <time="9">
+#044 MAP <time="7">
+#049 ROUND 2
+#054 ROUND 2 BOSS (メデューサ姉妹)
+#057 ROUND 2 CLEAR <time="7">
+#044 MAP <time="7">
+#050 ROUND 3
+#061 TIME OVER
+#047 CONTINUE?
+#055 ROUND 3 BOSS (アイアン)
+#058 ROUND 3 CLEAR <time="6.8">
+#044 MAP <time="7">
+#051 ROUND 4
+#045 ROUND 4 BOSS (ウリボー)
+#059 ROUND 4 CLEAR <time="5">
+#044 MAP <time="7">
+#052 ROUND 5
+#045 ROUND 5 BOSS (ウリボー)
+#046 LAST BOSS (デグロメス)
+#060 ALL CLEAR
+#063 KING OF KINGS
+#062 GAME OVER
+
+---------------------------------------------------
+ [S.E.]
+
+#001 [S.E.] <time="3">
+#002 [S.E.] <time="3">
+#003 [S.E.] <time="3">
+#005 [S.E.] <time="3">
+#007 [S.E.] <time="3">
+#008 [S.E.] <time="3">
+#009 [S.E.] <time="3">
+#010 [S.E.] <time="3">
+#011 [S.E.] <time="3">
+#012 [S.E.] <time="3">
+#013 [S.E.] <time="3">
+#015 [S.E.] <time="3">
+#016 [S.E.] <time="3">
+#017 [S.E.] <time="3">
+#018 [S.E.] <time="3">
+#019 [S.E.] <time="3">
+#022 [S.E.] <time="3">
+#028 [S.E.] <time="3">
+#031 [S.E.] <time="3">
+#032 [S.E.] <time="3">
+#033 [S.E.] <time="3">
+#034 [S.E.] <time="3">
+#035 [S.E.] <time="3">
+#036 [S.E.] <time="3">
+#037 [S.E.] <time="3">
+#038 [S.E.] <time="3">
+#039 [S.E.] <time="3">
+#040 [S.E.] <time="3">
+#045 [S.E.] <time="3">
+#046 [S.E.] <time="3">
+#047 [S.E.] <time="3">
+#048 [S.E.] <time="3">
+#049 [S.E.] <time="3">
+#050 [S.E.] <time="3">
+#051 [S.E.] <time="3">
+#052 [S.E.] <time="3">
+#053 [S.E.] <time="3">
+#054 [S.E.] <time="3">
+#055 [S.E.] <time="3">
+#056 [S.E.] <time="3">
+#057 [S.E.] <time="3">
+#058 [S.E.] <time="3">
+#059 [S.E.] <time="3">
+#060 [S.E.] <time="3">
+#061 [S.E.] <time="3">
+#062 [S.E.] <time="3">
+#063 [S.E.] <time="3">
+#064 [S.E.] <time="3">
+#065 [S.E.] <time="3">
+#066 [S.E.] <time="3">
+#067 [S.E.] <time="3">
+#068 [S.E.] <time="3">
+#069 [S.E.] <time="3">
+#070 [S.E.] <time="3">
+#071 [S.E.] <time="3">
+#072 [S.E.] <time="3">
+#073 [S.E.] <time="3">
+#074 [S.E.] <time="3">
+#075 [S.E.] <time="3">
+#076 [S.E.] <time="3">
+#077 [S.E.] <time="3">
+#078 [S.E.] <time="3">
+#079 [S.E.] <time="3">
+#080 [S.E.] <time="3">
+#081 [S.E.] <time="3">
+#082 [S.E.] <time="3">
+#083 [S.E.] <time="3">
+#084 [S.E.] <time="3">
+
+---------------------------------------------------
+ [Voice]
+
+#014 [Voice] <time="5">
+#020 [Voice] <time="5">
+#021 [Voice] <time="5">
+#023 [Voice] <time="5">
+#024 [Voice] <time="5">
+#025 [Voice] <time="5">
+#026 [Voice] <time="5">
+#027 [Voice] <time="5">
+#030 [Voice] <time="5">
+#041 [Voice] <time="5">
+#042 [Voice] <time="5">
+#043 [Voice] <time="5">
+
+  ■作曲 
+  斎藤 幹雄 (METAL YUHKI), MAYU
+
+// List contribution by ZEK.
+$end

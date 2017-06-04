@@ -1,0 +1,72 @@
+﻿$name=mofflott
+$version=2
+$default=028
+$main
+
+#028 [S.E.] CREDIT <time="3.5">
+#011 DEMO <time="8">
+#006 SHOP
+#012 INTRO <time="3.4">
+#004 STAGE 1
+#005 STAGE 2
+#013 CRASH ! <time="4.9">
+#018 CONTINUE <time="12">
+#008 STAGE 4
+#009 STAGE 5
+#010 STAGE 3, 6
+#057 CONGRATULATIONS !! <time="8">
+#017 ENDING
+#019 NAME ENTRY
+#014 GAME OVER
+
+#007 未使用曲 1
+#015 未使用曲 2
+#016 未使用曲 3
+
+---------------------------------------------------
+ [S.E.] 
+
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] CREDIT
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] <time="3">
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] <time="3">
+#042 [S.E.] 
+#044 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] <time="3">
+
+---------------------------------------------------
+ [Voice]
+
+#020 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+
+  ■作曲
+  K.KATSU, 渡辺 恭久, S.SAITOU
+
+// List contribution by ZEK.
+$end

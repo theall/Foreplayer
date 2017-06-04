@@ -1,0 +1,23 @@
+$name=f1en
+$version=2
+$default=138
+$main
+
+#138 Attract Mode
+#160 Credit Inserted
+#133 Waiting for Entry
+#131 Game 0
+#132 Game 1
+#130 Game 2
+#135 Win
+#134 Lost
+#129 Winning
+#139 Name Entry
+#140 Game Over
+#137 Unused
+
+  [Source]
+  Test mode
+
+// List contribution by szk
+$end

@@ -1,0 +1,21 @@
+﻿$name=indy500
+$version=2
+$default=005
+$main
+
+#005 Advertize
+#001 Course Select
+#000 Beginner - Indy 500
+#002 Medium - Highland Raceway
+#007 Expert - Bay Side Street
+#004 Finish
+#008 Ending
+#003 Name Entry
+#006 Game Over
+
+  [OST]
+  Sega Con -The Best of Sega Music- Vol.1
+  SME / Visual Works  SVWC-7092, 7093, 7094  Oct 24, 2001
+
+// List Contribution by NK
+$end

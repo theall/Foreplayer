@@ -1,0 +1,32 @@
+﻿$name=s1945jn
+$version=2
+$default=048
+$songmax=065
+$main
+
+#048 In the name of Strikers (Main Title)
+#045 Strikers Scramble (自機セレクト -YM2610 version-)
+#033 Rising Sun (日本面)
+#042 Devil in the Steel (Boss:1)
+#046 Mission Over (Stage Clear)
+#034 Shadow of Reich (ドイツ面)
+#035 Twin Mustang (アメリカ面 -YM2610 version-)
+#036 White Hell (ロシア面)
+#043 Deadline (Boss:2)
+#037 Triebflugel (基地面 -YM2610 version-)
+#038 Stratesphere Flight (宇宙面)
+#039 Strange Moon (月面)
+#040 Decisive Battle (最終面)
+#044 Caught in Fire (Final Boss)
+#047 Battle Report (ランキング)
+
+-----------------------------------------
+ [S.E.]
+
+//#065 [S.E.]～
+
+  ■出典
+  ストライカーズ1945II・ストライカーズ1945
+  PONY CANYON / SCITRON  SGCD-0001  1997.12.20
+
+$end

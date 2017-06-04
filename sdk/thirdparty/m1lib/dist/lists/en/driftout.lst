@@ -1,0 +1,56 @@
+﻿$name=driftout
+$version=2
+$default=010
+$main
+
+#010 Coin
+#032 Name Entry
+#027 Lonbird Rally (Round 1)
+#028 Safari Rally Kenya (Round 2)
+#031 Acropolis Rally (Round 3)
+#035 Continue ? <time="15">
+#029 Swedish Rally (Round 4)
+#033 1000 Lakes Rally (Round 5)
+#030 Rally Monte-Carlo (Round 6)
+#034 Good Work !
+#036 Congratulations !
+#025 Game Over
+
+#024 Unused 1
+#026 Unused 2
+#037 Unused 3
+
+#244 Speaker Check
+
+---------------------------------------------------
+  [SFX]
+
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#014 [SFX] <time="4">
+#015 [SFX] 
+#016 [SFX] <time="3">
+#017 [SFX] <time="3"> 
+#018 [SFX] <time="3">  
+#019 [SFX] <time="3">  
+#020 [SFX] <time="3">  
+#021 [SFX] <time="3">  
+#022 [SFX]  
+#023 [SFX] 
+#242 [SFX] <time="3">
+#243 [SFX] <time="3">
+#245 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#012 [Voice] 
+#013 [Voice] 
+
+  [Sound Composer]
+  Mr. Fukumori, Space Creative
+
+// List contribution by ZEK.
+// English list QA by Fuj
+$end

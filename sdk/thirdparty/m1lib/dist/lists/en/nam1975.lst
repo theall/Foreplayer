@@ -1,0 +1,173 @@
+﻿$name=nam1975
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#048 Theme of NAM (Title Demo) <time="21">
+#040 Sub Theme (Select) <time="31">
+#049 Blood Mission (Introduction) <time="19">
+#039 Prologue of Soldiers (Area 1) <time="2:24">
+#055 Shootout (Area 1 Boss) <time="12">
+#035 Hammer Head (Human Boss) <time="1:21">
+#057 Interim Report (Intermission) <time="29">
+#053 Street Battle (Area 2) <time="1:45">
+#051 Departure!! (Area 3, Demo) <time="10">
+#042 Aerial Combat (Area 3) <time="1:53">
+#043 Bombardment Aircraft (Demo) <time="1:43">
+#044 Airfield (Area 4) <time="2:03">
+#036 Mechanical Wars (Mechanical Boss) <time="1:51">
+#058 Military Arsenal (Area 5) <time="1:53">
+#056 Shivering (Command Nancy, Demo) <time="33">
+#050 Raid (Assault Area, Demo 1) <time="2.5">
+#046 Raid (Assault Area, Demo 2) <time="6">
+#041 Raid (Assault Area) <time="52">
+#047 Night War (Area 6) <time="2:13">
+#037 Laser Weapon (Ultimate Weapn) <time="1:16">
+#062 Good Luck (Victorious Ending) <time="27">
+#063 Sight in the Memory -Epilogue of Soldiers - (Staff Credit)<time="54">
+#061 Game Over <time="3">
+
+#054 Street Battle (Area 2) - w/o intro
+#045 Bombardment Aircraft (Demo) - w/o intro
+#034 Mechanical Wars (Mechanical Boss) - w/o intro
+#038 Laser Weapon (Ultimate Weapn) - w/o intro
+
+-----------------------------------------------------------
+ [Voice]
+
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#142 [Voice]
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#160 [Voice]
+#161 [Voice]
+#162 [Voice]
+#163 [Voice]
+#167 [Voice]
+#168 [Voice]
+#169 [Voice]
+#170 [Voice]
+#171 [Voice]
+#172 [Voice]
+#173 [Voice]
+#174 [Voice]
+#175 [Voice]
+#176 [Voice]
+#177 [Voice]
+#178 [Voice]
+#179 [Voice]
+#180 [Voice]
+#181 [Voice]
+#182 [Voice]
+#183 [Voice]
+#184 [Voice]
+#185 [Voice]
+#186 [Voice]
+#187 [Voice]
+#188 [Voice]
+#189 [Voice]
+#190 [Voice]
+#191 [Voice]
+#201 [Voice]
+#207 [Voice]
+#211 [Voice]
+#215 [Voice]
+#216 [Voice]
+#217 [Voice]
+#226 [Voice]
+#227 [Voice]
+#240 [Voice]
+#242 [Voice]
+#244 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#143 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#204 [SFX]
+#206 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#214 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#246 [SFX]
+#247 [SFX]
+#248 [SFX]
+#249 [SFX]
+#250 [SFX]
+#251 [SFX]
+#252 [SFX]
+#253 [SFX]
+#254 [SFX]
+#255 [SFX]
+
+  [OST]
+  Neo-Geo Sound Power -G.S.M. SNK 2-
+  Pony Canyon / Scitron  PCCB-00031  Jun 21, 1990
+
+  Scitron Video Game Music Almanac 1990
+  Pony Canyon / Scitron  PCCB-00055  Feb 21, 1991
+
+// List Contribution by NK
+// English List by Fujix
+$end

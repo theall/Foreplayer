@@ -1,0 +1,203 @@
+﻿$name=punisher
+$version=2
+$default=004
+$fixed_volume=759
+$main
+
+#004 TITLE (1) <time="0:30">
+#020 TITLE (2)
+#161 PLAYER SELECT <time="0:30.9">
+#000 CRIME HUNTER (STAGE 1) <time="1:49.1">
+#027 BRUNO COSTA (ボス登場) <time="1:01.7">
+#013 BOSS 1 <time="0:56.8">
+#016 STAGE CLEAR <time="0:07">
+#008 STAGE 2 START DEMO (プール) <time="0:21">
+#001 CASTLE "PANTABERDE" (STAGE 2) <time="1:44.6">
+#025 SHOCK! (未使用BGM)
+#009 STAGE 3 START DEMO (港) <time="0:19.1">
+#002 SEASIDE TRAP (STAGE 3) <time="2:09.9">
+#010 STAGE 4 START DEMO (巨大洞窟) <time="0:19.4">
+#003 暴走列車 -巨大洞窟- (STAGE 4) <time="1:04.7">
+#026 BONUS STAGE <time="1:07.1">
+#024 IRON GOLEM -ガードロイド登場- (ボス登場) <time="0:43.3">
+#014 BOSS 2 (宿敵) <time="0:48.2">
+#011 STAGE 5 START DEMO (アジト) <time="0:30">
+#004 REVENGER -復讐のテーマ- (STAGE 5) <time="1:53.5">
+#012 STAGE 6 START DEMO (キングビル) <time="0:11.1">
+#005 キングビル潜入 (STAGE 6-1) <time="2:17.5">
+#164 リフト (STAGE 6-2) <time="1:38.5">
+//サントラ未収録
+#006 無限回廊 (STAGE 6-3) <time="2:09.4">
+#015 LAST BOSS (キングピン) <time="0:58.3">
+#017 LAST STAGE CLEAR <time="0:09">
+#160 ENDING THEME <time="2:59.7">
+#162 CONTINUE <time="0:34.8">
+#019 GAME OVER <time="0:07">
+
+#021 未使用BGM 2 <time="2:16.3">
+#018 未使用BGM 3
+#007 未使用BGM 4
+#023 未使用BGM 5
+#163 未使用BGM 6
+
+-----------------------------------------------------------
+ [Voice]
+
+#032 [Voice]
+#033 [Voice]
+#034 [Voice]
+#035 [Voice]
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#059 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#063 [Voice]
+#064 [Voice]
+#065 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#147 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#154 [Voice]
+#176 [Voice]
+#177 [Voice]
+#178 [Voice]
+#179 [Voice]
+#180 [Voice]
+#181 [Voice]
+#182 [Voice]
+#183 [Voice]
+#184 [Voice]
+#185 [Voice]
+#186 [Voice]
+#187 [Voice]
+#188 [Voice]
+#189 [Voice]
+#190 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#028 [S.E.] Credit
+#020 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.] <time="0:05">
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.] <time="0:05">
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.] <time="0:05">
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.] <time="0:05">
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+#119 [S.E.] <time="0:05">
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#123 [S.E.] <time="0:05">
+#124 [S.E.]
+#125 [S.E.]
+#126 [S.E.]
+#127 [S.E.]
+#128 [S.E.]
+#129 [S.E.]
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.] <time="0:05">
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+
+  ■出典
+  天地を喰らう II ～赤壁の戦い～ -G.S.M. CAPCOM 7- / ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00133  1993.08.20
+
+// List Contribution by NK
+$end

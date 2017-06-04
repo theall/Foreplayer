@@ -1,0 +1,30 @@
+$name=slrasslt
+$version=2
+$default=268
+$main
+
+$10c Konami Logo
+$10e Opening
+$113 Credit
+$107 Player Select
+$101 The River Styx (Stage 1)
+$104 Boss 1
+$106 Abyssal Forest (Stage 2)
+$10d Boss 2
+$102 Curse (Stage 3)
+$110 Boss 3
+$105 Speed Demon (Stage 4)
+$109 Boss 4
+$103 Solar Assault (Stage 5)
+$108 Final Boss
+$112 Ending
+$10b Game Over
+$10f Name
+$115 Fierce Blaze (From Revised) (Stage EX)
+$116 EX Boss (From Revised)
+$111 Unknown
+$114 Speaker Test
+
+// Hoot list by B.D
+// M1 list by Knurek
+$end

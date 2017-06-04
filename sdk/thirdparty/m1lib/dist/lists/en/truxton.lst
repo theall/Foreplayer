@@ -1,0 +1,58 @@
+﻿$name=truxton
+$version=2
+$default=039
+$songmax=039
+$fixed_volume=112
+$main
+
+#039 Credit
+#028 Brave Man (Take Off) <time="15.82">
+#001 Far Away (Stage 1)
+#002 Sally (Stage 2)
+#005 Hope (Stage 3)
+#004 Friend (Stage 4)
+#003 Unknown (Stage 5)
+#006 Crisis (Boss)
+#029 Recollection (Game Over)
+#030 Down Fall (Ranking)
+#033 Again (Continue)
+
+-----------------------------------------
+ [SFX]
+
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#031 [SFX]
+#032 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+
+  [Source]
+  Toaplan Game Music Scene One / Tatsujin
+  Polystar  H24X-10005  Jun 25, 1989
+
+  [Sound Composer]
+  Masahiro Yuge
+
+$end

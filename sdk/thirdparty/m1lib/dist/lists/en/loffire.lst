@@ -1,0 +1,30 @@
+﻿$name=loffire
+$version=2
+$default=079
+$songmax=142
+$main
+
+#079 Title Demo
+#140 Opening
+#137 Map
+#139 Advertise
+#129 Dynamite Guy (Stage 1)
+#138 Stage Clear
+#130 Jungle Queen (Stage 2)
+#131 Stranger (Stage 3)
+#132 Drastic!! (Stage 4)
+#133 Take It Easy!! (Stage 5)
+#134 Into The Fire (Stage 6)
+#135 All or Nothing (Stage 7)
+#136 Good Feeling (Stage 8)
+#141 Game Over
+#142 Majestic Army (Ending)
+
+  [Source]
+  Hyper Drive -G.S.M. Sega 4-
+  Pony Canyon / Scitron  PCCB-00035  July 21, 1990
+
+-----------------------------------------
+ [SFX]
+
+$end

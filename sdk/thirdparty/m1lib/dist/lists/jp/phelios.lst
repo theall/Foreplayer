@@ -1,0 +1,88 @@
+﻿$name=phelios
+$version=2
+$default=$1f
+$main
+
+$1f デュポンへの挑戦 (Opening Demo)
+$138 Credit (Coin)
+$25 ディロスの丘 (Chapter 1-1)
+$29 ラドーン (Chapter 1-2)
+$2b デススカル (Chapter 1-3)
+$2d 神殿 (Chapter 1-4)
+$21 邪神との闘い (Boss)
+$44 邪神の死 (Chapter Clear)
+$35 アルテミスの涙 (Chapter Demo 1)
+$30 死の洞窟 (Chapter 2-1)
+$23 ソギンの眠る壺 (Chapter 2-2)
+$17 邪獣デュポン (Chapter Demo 2)
+$1b ペルボレオスの空 (Chapter 3)
+$32 炎の怪物 (Chapter 4)
+$5c デュポンへの挑戦 (Chapter Demo 3)
+$1d 魂の彷徨 (Chapter 5)
+$3e 地獄の番犬 (Chapter 6)
+$37 光の剣フェリオス (Chapter 7-1)
+$51 デュポンの神殿 (Chapter 7-2)
+$53 デュポンの最期 (Last Boss)
+$46 アルテミスの微笑～大団円 (Ending～Staffroll)
+$49 アルテミスの願い (Continue)
+$4b 勇者の碑(いしぶみ) (Name Entry)
+
+$15 アルテミスの涙 (Chapter Demo 1 -デモキャンセル時-)
+$3a (場面切り替え時BGM)
+$36 (不明)
+
+$100 ?
+$139 ?
+$13a ?
+
+-----------------------------------------
+ [S.E.] & [Voice]
+
+$60 SPEAKER CHECK (R:もっと泣きわめけ!。L:キャー! 嬉しいｗ)
+
+$00 [S.E.] アポロン、私はデュポンの神殿にいるわ。早く助けに来て。
+$01 [S.E.] アポロン、私に逆らえばどうなるか見せてやる。 キャー!ｗ
+$02 [S.E.] さぁ、もっと泣きわめけ。アポロンをおびき寄せろ。
+$03 [S.E.] アポロン、あなたと暮らしたディロスの丘に帰りたい。
+$04 [S.E.] この私から逃げられると思っているのか。愚か者め。
+$05 [S.E.] アポロン、光の剣を手に入れなければデュポンに勝てないわ。大地ガイアに眠る光の剣、フェリオスを!
+$06 [S.E.] 来てくれたのね、嬉しい! 好きよ、アポロン。
+$07 [S.E.] OPTION
+$08 [S.E.] SPEED UP
+$09 [S.E.] SPEED DOWN
+$0a [S.E.] HOMING
+$0b [S.E.] ACCROSS
+$0c [S.E.] BEAM
+$0d [S.E.] LIFE
+$0e [S.E.] SEARCH
+$16 [S.E.] うわぁ～! (アポロン MISS)
+$1a [S.E.] 1面ボスの声
+$0f [S.E.]
+$10 [S.E.]
+$11 [S.E.]
+$12 [S.E.]
+$13 [S.E.]
+$19 [S.E.]
+$39 [S.E.]
+$4e [S.E.]
+$4f [S.E.]
+$50 [S.E.]
+$55 [S.E.]
+$56 [S.E.]
+$57 [S.E.]
+$58 [S.E.]
+$59 [S.E.]
+$5a [S.E.]
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.6
+  VICTOR ENTERTAINMENT  VDR-5301  1989.10.04
+
+  GAME MUSIC BEST OF THE YEAR 1989
+  PONY CANYON / SCITRON  PCCB-00022  1990.03.21
+
+  ■作曲
+  川元 義徳 (Kawagen)
+
+// ($23 ソギンの眠る壺は PONY CANYON / SCITRON CD のみ収録)
+$end

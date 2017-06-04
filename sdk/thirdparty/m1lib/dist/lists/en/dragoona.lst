@@ -1,0 +1,56 @@
+﻿$name=dragoona
+$version=2
+$default=514
+$fixed_volume=292
+$main
+
+#514 Legend of Dragoon Might (Title Screen)
+#516 Selected Memory Keepers (Character Select)
+#538 Come on, put 'em up! (VS)
+#518 Vagabond..(Yamato's Stage)
+#517 New Beginning (Intermission)
+#537 The Magnificent Fragment (Thumbprint)
+#519 Crazy Tornade (Drake's Stage)
+#520 A Butterfly Descend to the Forest (Tsugumi's Stage)
+#521 Perfervid Feast (Kodama's Stage)
+#522 The Cold-Hearted Fellow (Tekkamen's Stage)
+#523 ah, dokkoisetto (Sarumaru's Stage)
+#524 Fullasea'l (Reggie's Stage)
+#525 Dark King (Jaoh's Stage)
+#526 In a Foreign Country (Zack's Stage)
+#527 Urbanity (Ryan's Stage)
+#528 Rough Neck Monk (Suiko's Stage)
+#529 Live Dragoon-Arena (Layla's Stage)
+#536 Evil Pulse (Boss Appearing)
+#530 Go Baldheaded into Fight (Dogma's Stage)
+#535 Requiem to Evil (Boss Dead)
+#539 Fever Everyday!? (Yamato's Ending)
+#540 Theme of Hero (Drake's Ending)
+#541 The Day When She Goes Hidden Home to Her Parents (Tsugumi's Ending)
+#546 Ninja of Fire (Kodama's Ending)
+#547 Alone Killer (Tekkamen's Ending)
+#545 Peace Returned to the Apery (Sarumaru's Ending)
+#544 King of Ring (Reggie's Ending)
+#549 Endless Fight (Jaoh's Ending)
+#548 Far Skyward (Zack's Ending)
+#542 For Me, the Thumbprint is.. (Ryan's Ending)
+#543 For My Ass, the Thumbprint is.. (Suiko's Ending)
+#550 My Most Significant Other.. (Leyla's Ending)
+#534 Getting Over the Fights (End Credits)
+#532 Stand Up! (Continue)
+#531 Lost Thumbprint (Game Over)
+
+#513 Speaker Test
+
+---------------------------------------------------
+
+  [Source]
+  Dragoon Might Original Game Soundtrack
+  King Records  KICA-7691  Jan 24, 1996
+
+  [Sound Composers]
+  Kage7, Ary
+
+// List contribution by ZEK.
+// English list translation by Fuji
+$end

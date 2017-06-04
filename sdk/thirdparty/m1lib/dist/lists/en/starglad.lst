@@ -1,0 +1,58 @@
+﻿$name=starglad
+$version=2
+$default=$00D
+$main
+
+$00D Opening Demo <time="0:37.19">
+$00B Character Select <time="0:36.02">
+$001 Stage 1 <time="2:34.51">
+$002 Stage 2 <time="2:40.67">
+$003 Stage 3 <time="3:05.34">
+$004 Stage 4 <time="2:47.14">
+$005 Stage 5 <time="1:39.36">
+$006 Stage 6 <time="3:03.52">
+$007 Stage 7 <time="2:42.66">
+$008 Stage 8 <time="2:07.74">
+$009 Stage 9 <time="1:57.17">
+$00A Stage 10 <time="2:02.51">
+$011 Special Stage <time="2:57.32">
+$00F Here Come A New Challenger <time="0:06.06">
+$00C Continue <time="0:15.19">
+$00E Name Entry <time="0:43.59">
+$010 Bad Ending <time="0:40.62">
+$012 Good Ending Hayato <time="0:42.74">
+$013 Good Ending June <time="0:43.29">
+$014 Good Ending Saturn <time="0:43.14">
+$015 Good Ending Gamof <time="0:54.71">
+$016 Good Ending Gerelt <time="0:34.04">
+$017 Good Ending Rimgal <time="0:34.14">
+$018 Good Ending Zelkin <time="1:17.39">
+$019 Good Ending Vector <time="1:08.52">
+$01A Good Ending Gore <time="1:04.06">
+$01B Good Ending Bilstein <time="0:59.42">
+$01C End Credit <time="1:56.19">
+
+//029   VOICE COLLECTION I <time="3:26.06">
+//030   VOICE COLLECTION II <time="2:38.27">
+//031   S.E. COLLECTION <time="2:31.56">
+
+-----------------------------------------
+
+$01F Q Sound
+$020 [Voice] ready
+$021 [Voice] fight
+$022 [Voice] final round
+$023 [Voice] KO
+$024 [Voice] perfect
+$025 [Voice] draw
+$026 [Voice] ring out
+$027 [Voice] time over
+$028 [Voice] game over
+$029 [Voice] ???
+
+  [Source]
+  Capcom Game Soundtrack /  Star Gladiator Episode:I Final Crusade
+  Victor Entertainment  VICL-2174  Sep 21, 1996
+
+// List by MuramuraNight
+$end

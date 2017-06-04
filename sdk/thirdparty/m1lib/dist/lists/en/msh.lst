@@ -1,0 +1,72 @@
+﻿$name=msh
+$version=2
+$default=047
+$fixed_volume=465
+$main
+
+#047 QSound Logo
+//Main QSound
+
+#001 Opening Title
+#007 Ranking Display
+#002 Player Select 1
+#008 Player Select 2
+#004 VS.
+#009 Spider-Man: Stage
+#021 Spider-Man: Winning
+#034 Spider-Man: Ending
+#010 Captain America: Stage
+#022 Captain America: Winning
+#035 Captain America: Ending
+#011 Hulk: Stage
+#023 Hulk: Winning
+#036 Hulk: Ending 1
+#049 Hulk: Ending 2
+#014 Psylocke: Stage
+#026 Psylocke: Winning
+#039 Psylocke: Ending 1
+#053 Psylocke: Ending 2
+#012 Ironman: Stage
+#024 Ironman: Winning
+#037 Ironman: Ending 1
+#050 Ironman: Ending 2
+#019 Doctor Doom: Stage
+#031 Doctor Doom: Winning
+#044 Theme Of Doctor Doom
+#003 Here Comes A New Challenger
+#017 Juggernaut: Stage
+#029 Juggernaut: Winning
+#042 Juggernaut: Ending 1
+#051 Juggernaut: Ending 2
+#016 Shuma-Gorath: Stage
+#028 Shuma-Gorath: Winning
+#041 Shuma-Gorath: Ending
+#013 Wolverine: Stage
+#025 Wolverine: Winning
+#038 Wolverine: Ending
+#015 Blackheart: Stage
+#027 Blackheart: Winning
+#040 Blackheart: Ending 1
+#052 Blackheart: Ending 2
+#018 Magneto: Stage
+#030 Magneto: Winning
+#043 Magneto: Ending
+#020 Thanos: Stage
+#032 Thanos: Winning
+#045 Theme Of Thanos
+#033 Return Of The Heroes
+#005 Continue
+#006 Game Over
+#046 Credits Roll
+#054 Unused
+
+#048 QSound Logo 2
+//Sub QSound
+
+  [Source]
+  Marvel Super Heroes Arcade Game Track
+  Sony Records  SRCL-3448  Dec 1, 1995
+
+// List Contribution by NK
+// English List by Fujix
+$end

@@ -1,0 +1,98 @@
+﻿$name=ssideki2
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode
+#127 Coin
+#034 How to Play/Team Select
+#035 GOAL! (Player's Team)
+#045 Team Victory
+#043 GOAL! (Alt)
+#046 Continue
+#047 The World Champions (Complete Victory)
+#037 Credits
+#036 Unknown?
+
+#038 Football/Soccer Ambience
+#039 Football/Soccer Ambience 2
+#040 Football/Soccer Ambience 3
+#041 Football/Soccer Ambience 4
+#042 Football/Soccer Ambience 5
+#044 Football/Soccer Ambience 6
+
+---------------------------------------------------
+  [SFX]
+
+#048 [SFX] 
+#049 [SFX] Cheering
+#050 [SFX] 
+#051 [SFX] Cheering
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#127 [SFX] Coin
+#128 [SFX] 
+#129 [SFX]
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] Full Time Whistle
+#215 [SFX] 
+#217 [SFX] 
+#219 [SFX]
+#220 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#251 [SFX]
+#252 [SFX]
+
+---------------------------------------------------
+  [Voice]
+
+#240 [Voice] First Stage, First Game
+#241 [Voice] Second Stage, Quarter Final
+#242 [Voice] Third Stage, Semi Final
+#243 [Voice] Unknown language
+#244 [Voice] Unknown language
+#245 [Voice] Unknown language
+#250 [Voice] GOAL! Goal! Goal.
+
+// English List by Yawachary
+$end

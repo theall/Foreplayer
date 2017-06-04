@@ -1,0 +1,219 @@
+﻿$name=batrider
+$version=2
+$default=032
+$fixed_volume=102
+$main
+
+#032 [Voice] RAIZING Logo 
+#001 Zero Cop (Opening) 
+#033 [S.E.] Credit <time="0:02">
+#034 [S.E.] Start <time="0:02">
+#002 Choice Or Die (Player Select)
+#003 Easy To Go (Stage 1 -Manhattan City-)
+#004 Purple Twilight (Stage 2 -Zenovia Airport-)
+#005 Missile Fever (Stage 3 -Sky High-)
+#006 No Way Out (Stage 4 -Sewage System-)
+#007 Chasing Gang, Need Speed (Stage 5 -High Way-)
+#008 Cool Riding (Stage 6 -Zenovia City-)
+#009 External View (Stage 7 -Building-)
+#010 Chop U! (Boss 1 -Air-)
+#011 Let Ass Kick Together! (Boss 2 -Surface-)
+#012 Nimbus (Boss 3 -Rival-)
+#013 Spiral Locus (Boss 4 -魔法大作戦-)
+#014 Devided By Zero (Boss 5 -疾風魔法大作戦-)
+#015 Stab'n Stomp! (Boss 6 -Battle Garegga-)
+#016 Drag Ster (Last Boss)
+#017 Funky Dude (Stage Clear)
+#018 Ure Fired! (Game Over)
+#019 Flashback (Ranking)
+#020 Morning News (Ending 1 -Police Team-)
+#021 Circus Fooligan (Ending 2 -Criminal Team-)
+#022 Hyper Ventilation (Ending 3 -Psychic Team-)
+#023 Sad But True (Ending 4 -RAIZING All Stars-)
+#024 Theme Of Carpet Stories (Ending 5 -Carpet-)
+#025 Chop Me Again (Staffroll)
+
+#000 Percussion Test (PCM)
+
+------------------------------------------------
+
+#032 [S.E.] SYS system
+#033 [S.E.] SYS system
+#034 [S.E.] SYS system
+#035 [S.E.] SYS system
+#036 [S.E.] SYS click
+#037 [S.E.] SYS click
+#038 [S.E.] SYS click
+#039 [S.E.] SYS click
+#040 [S.E.] SYS click
+#041 [S.E.] SYS item
+#048 [S.E.] SYS item
+#049 [S.E.] SYS item
+#050 [S.E.] SYS item
+#051 [S.E.] SYS item
+#052 [S.E.] SYS item
+#053 [S.E.] SYS item
+#054 [S.E.] SYS item
+#055 [S.E.] SYS item
+
+#064 [S.E.] MYC shot
+#065 [S.E.] MYC shot
+#066 [S.E.] MYC shot
+#067 [S.E.] MYC shot
+#068 [S.E.] MYC shot
+#069 [S.E.] MYC shot
+#070 [S.E.] MYC shot
+#071 [S.E.] MYC shot
+#072 [S.E.] MYC shot
+#073 [S.E.] MYC shot
+#074 [S.E.] MYC shot
+#075 [S.E.] MYC shot
+#076 [S.E.] MYC shot
+#077 [S.E.] MYC shot
+#078 [S.E.] MYC bomb
+#079 [S.E.] MYC bomb
+#080 [S.E.] MYC bomb
+#081 [S.E.] MYC bomb
+#082 [S.E.] MYC bomb
+#083 [S.E.] MYC bomb
+#084 [S.E.] MYC bomb
+#085 [S.E.] MYC bomb
+#086 [S.E.] MYC bomb
+#087 [S.E.] MYC bomb
+#088 [S.E.] MYC bomb
+#089 [S.E.] MYC bomb
+#090 [S.E.] MYC bomb
+#091 [S.E.] MYC bomb
+#092 [S.E.] MYC bomb
+#093 [S.E.] MYC bomb
+#094 [S.E.] MYC bomb
+#095 [S.E.] MYC bomb
+#096 [S.E.] MYC bomb
+#097 [S.E.] MYC bomb
+#098 [S.E.] MYC bomb
+#099 [S.E.] MYC bomb
+#100 [S.E.] MYC bomb
+#101 [S.E.] MYC other
+#102 [S.E.] MYC other
+#103 [S.E.] MYC other
+#104 [S.E.] MYC other
+#105 [S.E.] MYC other
+#106 [S.E.] MYC shot
+#107 [S.E.] MYC shot
+#108 [S.E.] MYC shot
+#109 [S.E.] MYC shot
+#110 [S.E.] MYC shot
+#111 [S.E.] MYC other
+#112 [S.E.] MYC bomb
+#113 [S.E.] MYC bomb
+#114 [S.E.] MYC bomb
+#115 [S.E.] MYC shot
+#116 [S.E.] MYC bomb
+#117 [S.E.] MYC shot
+
+#128 [S.E.] ENC explosion
+#129 [S.E.] ENC explosion
+#130 [S.E.] ENC explosion
+#131 [S.E.] ENC explosion
+#132 [S.E.] ENC explosion
+#133 [S.E.] ENC explosion
+#134 [S.E.] ENC explosion
+#135 [S.E.] ENC explosion
+#136 [S.E.] ENC explosion
+#137 [S.E.] ENC explosion
+#138 [S.E.] ENC attack
+#139 [S.E.] ENC attack
+#140 [S.E.] ENC attack
+#141 [S.E.] ENC attack
+#142 [S.E.] ENC attack
+#143 [S.E.] ENC attack
+#144 [S.E.] ENC attack
+#145 [S.E.] ENC attack
+#146 [S.E.] ENC attack
+#147 [S.E.] ENC attack
+#148 [S.E.] ENC attack
+#149 [S.E.] ENC explosion
+#150 [S.E.] ENC attack
+#151 [S.E.] ENC attack
+#152 [S.E.] ENC attack
+#153 [S.E.] ENC attack
+#154 [S.E.] ENC attack
+#155 [S.E.] ENC attack
+#156 [S.E.] ENC attack
+#157 [S.E.] ENC attack
+#158 [S.E.] ENC attack
+#159 [S.E.] ENC attack
+
+#161 [S.E.] ETC opening
+
+#163 [S.E.] ETC opening
+#164 [S.E.] ETC opening
+#165 [S.E.] ETC stage A
+#166 [S.E.] ETC stage A
+#167 [S.E.] ETC stage A
+#168 [S.E.] ETC stage A
+#169 [S.E.] ETC stage B
+#170 [S.E.] ETC stage B
+#171 [S.E.] ETC stage B
+#172 [S.E.] ETC stage B
+#173 [S.E.] ETC stage C
+#174 [S.E.] ETC stage C
+#175 [S.E.] ETC stage D
+#176 [S.E.] ETC stage D
+#177 [S.E.] ETC stage D
+#178 [S.E.] ETC stage D
+#179 [S.E.] ETC stage D
+#180 [S.E.] ETC stage E
+#181 [S.E.] ETC stage E
+#182 [S.E.] ETC stage E
+#183 [S.E.] ETC stage F
+#184 [S.E.] ETC stage F
+#185 [S.E.] ETC stage G
+#186 [S.E.] ETC stage G
+#187 [S.E.] ETC stage G
+#188 [S.E.] ETC stage G
+#189 [S.E.] ETC stage G
+#190 [S.E.] ETC ending
+#191 [S.E.] ETC ending
+#192 [S.E.] ETC ending
+#193 [S.E.] ETC ending
+
+#195 [S.E.] ETC others
+
+#197 [S.E.] ETC others
+
+#200 [S.E.] ETC others
+#201 [S.E.] ETC others
+#202 [S.E.] ETC others
+#203 [S.E.] ETC others
+#204 [S.E.] ETC others
+#205 [S.E.] ETC others
+#206 [S.E.] ETC others
+
+#208 [S.E.] ETC others
+#209 [S.E.] ETC others
+#210 [S.E.] ENC attack
+#211 [S.E.] ETC others
+#212 [S.E.] ETC others
+#213 [S.E.] ETC others
+#214 [S.E.] SYS item
+#215 [S.E.] ETC others
+
+#224 [S.E.] ALL STOP
+
+  ■作曲
+  並木 学: #02～#07, #10, #11, #15, #17～#24
+  崎本 仁: #01, #25
+  小谷野 謙一: #08, #09, #12, #16
+  本山 淳弘: #13
+  岩田 匡治: #14
+
+  ■データ化担当
+  崎本 仁: #08, #09, #12, #16
+  並木 学: #13, #14
+
+// List Contribution by buddy, chief.
+// Updated by Fujix
+// SFX data from Amuse
+$end
+

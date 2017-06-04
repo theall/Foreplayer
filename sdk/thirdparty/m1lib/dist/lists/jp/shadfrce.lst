@@ -1,0 +1,122 @@
+﻿w$name=shadfrce
+$version=2
+$default=002
+$main
+
+#002 Title
+#004 Player Select
+#013 Construction Site
+#015 Boss 1 (Oni, Amoeba, Mars)
+#022 Intermission
+#009 Secret Forest
+#010 Weapons Factory
+#007 Scientific Laboratory
+#012 Teaser's Sanctuary
+#001 In Lucifer's Body
+#016 Boss 2 (Lucifer, Bio Mother)
+#017 Ending
+#008 Staff Roll
+#020 Game Over
+
+#003 Unused 1
+#005 Unused 2
+#006 Unused 3
+#011 Unused 4
+#019 Unused 5
+#023 Unused 6
+#014 Unused 7
+#018 Unused 8
+#124 Unused 9
+//原曲　Wedding March (Mendelssohn)
+#127 Unused 10
+
+-----------------------------------------------------------
+ [Voice]
+
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+#108 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#027 [S.E.] Credit
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+
+// List contributed by NK
+$end

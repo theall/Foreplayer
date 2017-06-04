@@ -1,0 +1,49 @@
+$name=rbff2
+$version=2
+$default=002
+$main
+
+#002 Neo-GeO Logo
+#033 The Newcomers (Title)
+#034 The Newcomers b (MVS Title)
+#035 Understand (Operation Explanation)
+#036 4 HITs (Player Select)
+#038 Get In The Ring I (VS Demo 1)
+#048 With Kuri Forever (Terry Bogard)
+#049 Thunder Surge Gaiden (Andy Bogard)
+#050 A Special Poem Handed Down by Southern Thailand (Joe Higashi)
+#051 Mai Mai kyuun (Shiranui Mai)
+#039 Get In The Ring II (VS Demo 2)
+#052 Soy Sauce on Geese (Geese Howard)
+#053 TAKU-HATSU-Rock (Mochizuki Sokaku)
+#054 Taste of Honey (Bob Wilson)
+#055 Donchika!! Chi!! Chi!! (Hon-Fu)
+#056 Blue Mary's BLUES (Blue Mary)
+#040 Gain a victory (Victory Demo)
+#057 GOLI-Rock (Franco Bash)
+#058 C62 -Shirokuni- Ver.2 (Yamazaki Ryuji)
+#059 No.3 from Pandora's Box "Determination" (Jin Chonshu & Jin Chonrei)
+#060 Duck! Duck! Duck! (Duck King)
+#045 4 HITs II (Ran'nyuu Player Select)
+#061 It's Seoul (Kim Kaphwan)
+#062 London March (Billy Kane)
+#064 How Can China Have 4000 Years of History? II (Tung Fu Rue)
+#063 Hapushu! Fuuu (Cheng Sinzan)
+#042 Get In The Ring III (VS Demo 3)
+#065 Play with the Cattle (Laurence Blood)
+#066 Requiem K.626 [Lacrimosa] (Wolfgang Krauser)
+#068 Manly Help for the Female Support ~Competitive Poem~ (Li Xiangfei)
+#067 Exceed The Limit (Rick Strowd)
+#069 Get The Sky -With Your Dream-
+#047 Over The Mind (Staff Roll)
+#043 Hurry Up! (Continue)
+#041 The End (Game Over)
+
+  [Source]
+  Real Bout Garou Densetsu 2 ~ RB2 The Newcomers / SNK New World Music Performance Group
+  Pony Canyon / Scitron  PCCB-00310  1998.04.17
+
+　[Sound Composer]
+  SHA-V, MIWA, marimo, beroOu
+
+$end

@@ -1,0 +1,43 @@
+﻿$name=fvipers2
+$version=2
+$default=027
+$main
+
+ * Preliminary list for imcomplete emulation
+
+? Beginning
+#00 As you choose
+? Under the Sun
+#01 Burning Bear
+? Inspire
+? Ravin'
+? Deepr
+? Good Noise
+#13 3rd Signal
+
+
+
+? Insert Coin
+#09 Game Is Over
+#17 Master cat in neighborhood
+
+
+#02 
+#03 
+#04 
+#05 
+#06 
+#07 
+#08 
+
+#10 
+#11 
+#12 
+
+#14 
+#15 
+#16 
+
+#18 
+
+$end

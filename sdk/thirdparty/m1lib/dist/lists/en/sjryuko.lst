@@ -1,0 +1,48 @@
+﻿$name=sjryuko
+$version=2
+$default=184
+$main
+
+#184 [SFX] Credit
+#144 Main Theme #1
+#145 Enemy Called "Riichi" (Ready Hand)
+#153 Ryu-kyoku (Round Goes Out)
+#154 Enemy Wins
+#148 Main Theme #2
+#151 Ryuko Called "Riichi"
+#150 Ryuko Wins
+#157 Final Boss Appearing
+#152 Ending
+#146 Game Over
+
+#147 Unused #1
+#149 Unused #2
+
+------------------------------------------------------
+ [SFX]
+
+#176 [SFX]
+#177 [SFX]
+#178 [SFX] Hurry Up !
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX] Angry Power Turning On
+#184 [SFX] Credit
+#185 [SFX] Dice Rolling
+#186 [SFX] Angry Power Charging (Level 0)
+#187 [SFX] Angry Power Charging (Level 1)
+#188 [SFX] Angry Power Charging (Level 2)
+#189 [SFX] Angry Power Charging (Level 3)
+#190 [SFX] Angry Power Charging (Level 4)
+#191 [SFX] Angry Power Charging (Level 5)
+#192 [SFX] Angry Power Charging (Level 6)
+#193 [SFX] Angry Power Charging (Level 7)
+#195 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+
+// List Contribution by a2c-s438
+$end

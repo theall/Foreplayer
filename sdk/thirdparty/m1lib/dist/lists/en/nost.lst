@@ -1,0 +1,96 @@
+﻿$name=nost
+$version=2
+$default=017
+$main
+
+  * Note (0.7.3) : Play speed is slow. Some sound is missing.
+
+#001 [Command] Sound Stop
+
+#017 Opening - Title <time="32">
+#001 [Command] Sound Stop <time="5">
+#065 Credit Inserted <time="2">
+#018 Character Select <time="49">
+#029 Stage 1 <time="01:24">
+#025 Boss #1 (Stage 1, 4, 7) <time="01:16">
+#022 Stage Clear <time="7">
+#030 Stage 2 <time="01:30">
+#020 Stage 3 <time="02:02">
+#019 Stage 4 <time="02:20">
+#031 Stage 5 <time="02:23">
+#032 Boss #2 (Stage 2, 3, 5, 6, 8) <time="01:44">
+#033 Stage 6 <time="02:19">
+#027 Stage 7 <time="02:06">
+#026 Stage 8 <time="01:45">
+#024 Stage 9 <time="01:07">
+#028 Boss #3 (Stage 9) <time="01:54">
+#034 Ending <time="01:18">
+#035 Game Over <time="6">
+#023 Continue <time="21">
+#021 Name Entry <time="01:02">
+
+-----------------------------------------------------------
+  [SFX]
+
+#001 [Command] Sound Stop <time="5">
+#065 [SFX] Credit Inserted
+#066 [SFX] Extend Ship
+#067 [SFX] 
+#068 [SFX] Player 1 Shot
+#069 [SFX] Player 2 Shot
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] <time="3">
+#001 [Command] Sound Stop <time="5">
+#073 [SFX] <time="3">
+#001 [Command] Sound Stop <time="5">
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] Plasmic Wave 1
+#077 [SFX] Plasmic Wave 2
+#078 [SFX] 
+#079 [SFX] Phenix Wave 1
+#080 [SFX] Phenix Wave 2
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] Item Get 1
+#085 [SFX] Launch Get
+#086 [SFX] Item Get 2
+#087 [SFX] Item Get 3
+#088 [SFX] Player Start
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] <time="3">
+#001 [Command] Sound Stop <time="5">
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] Explosion
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] *Not Play
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] *Not Play
+
+#001 [Command] Sound Stop
+
+  [Sound Composers]
+  Mika Nozawa, Matsudaira Ako, A. Iwanaga
+
+// English list contribution by Cratch
+$end

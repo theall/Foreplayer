@@ -1,0 +1,59 @@
+﻿$name=arkretrn
+$version=2
+$default=055
+$main
+
+  [BGM]
+  
+#055 [BGM] Attract Mode
+#022 [SFX] Credit Insertion
+#057 [BGM] Game Start
+#058 [BGM] BGM #1 (ROUND 1~9)
+#073 [BGM] Game Start ROUND 10,19,28,37,46
+#059 [BGM] BGM #2 (ROUND 10~18)
+#060 [BGM] BGM #3 (ROUND 19~27)
+#062 [BGM] BGM #4 (ROUND 37~46)
+#071 [BGM] Ending
+#070 [BGM] ENTER YOUR NAME
+#072 [BGM] GAME OVER
+#056 [BGM] unused #1
+#063 [BGM] unused #2
+#065 [BGM] unused #3
+#066 [BGM] unused #4
+#067 [BGM] unused #5
+#068 [BGM] unused #6
+#069 [BGM] unused #7
+
+---------------------------------------------------
+  [SFX] 
+  
+#010 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#020 [SFX] 
+#021 [SFX] time
+#022 [SFX] Credit Insertion
+#032 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#040 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] time
+#050 [SFX] time
+#051 [SFX] time
+#052 [SFX] time
+#053 [SFX] time
+
+
+  [Composers]
+  Yasuhisa Watanabe (YACK)
+  Ishikawa Babio (BABI)
+
+// List contribution by Simon B., done in playing the game.
+$end

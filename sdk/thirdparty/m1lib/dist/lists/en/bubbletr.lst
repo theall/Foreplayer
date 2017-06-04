@@ -1,0 +1,197 @@
+﻿$name=bubbletr
+$version=2
+$default=153
+$main
+
+#153 Attract Mode (1) <time="10">
+#640 Coin
+#010 Game Intro Music
+#005 Main Music
+#030 Boss Music
+#015 Win and Lose Music / Name Entry / End Game
+#040 Staff Credit
+
+#256 Stereo Test
+
+-----------------------------------------------------------
+  [Voice, SFX]
+
+#129 [Voice]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX] <time="5">
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX] <time="5">
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX] <time="5">
+#146 [SFX] <time="5">
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+
+#153 Attract Mode (1)
+#154 Attract Mode (2)
+#155 Attract Mode (3)
+#156 Attract Mode (4)
+#157 Attract Mode (5)
+#158 [SFX]
+#159 [Voice]
+#160 [Voice]
+
+#385 [SFX]
+#386 [SFX]
+#387 [SFX]
+#388 [SFX]
+#389 [SFX] <time="5">
+#390 [SFX]
+#391 [SFX] <time="5">
+#392 [SFX]
+#393 [SFX]
+#394 [SFX]
+#395 [SFX]
+
+#512 [PCM]
+#513 [PCM]
+#514 [PCM]
+#515 [PCM]
+#516 [PCM]
+#517 [PCM]
+#518 [PCM]
+#519 [PCM]
+#520 [PCM]
+#521 [PCM]
+
+#542 
+#543 
+#544 
+#545 
+
+#546 [PCM]
+#547 [PCM]
+#548 [PCM]
+#549 [PCM]
+#550 [PCM]
+#551 [PCM]
+
+#572 [PCM]
+#573 [PCM]
+#574 [PCM]
+#575 [PCM]
+#576 [PCM]
+#577 [PCM]
+#578 [PCM]
+#579 [PCM]
+#580 [PCM]
+
+#581 [PCM]
+#582 [PCM]
+#583 [PCM]
+
+#602 [PCM]
+#603 [PCM]
+#604 [PCM]
+#605 [PCM]
+#606 [PCM]
+
+#612 
+
+//#632 [SFX]
+//#633 [SFX]
+//#635 [SFX]
+//#636 [SFX]
+#640 COIN
+
+#642 [SFX]
+#643 [SFX]
+#644 [SFX]
+#645 [SFX]
+#646 [SFX]
+#648 [SFX]
+#649 [SFX]
+#651 [SFX]
+#652 [SFX]
+#653 [SFX]
+#655 [SFX]
+#657 [SFX]
+#659 [SFX]
+#660 [SFX]
+#661 [SFX]
+#662 [SFX]
+#663 [SFX]
+#664 [SFX]
+#665 [SFX]
+#666 [SFX]
+#667 [SFX]
+#668 [SFX]
+
+#669 [Voice]
+#670 [Voice]
+#671 [Voice]
+#672 [Voice]
+
+#673 [SFX]
+#674 [SFX]
+#675 [SFX]
+#676 [SFX]
+#677 [SFX]
+#678 [SFX]
+#679 [SFX]
+#680 [SFX]
+#681 [SFX]
+#682 [SFX]
+#683 [SFX]
+#684 [SFX]
+#685 [SFX]
+#686 [SFX]
+#687 [SFX]
+#689 [SFX]
+#690 [SFX]
+#691 [SFX]
+#692 [SFX]
+#694 [SFX]
+#695 [SFX]
+#696 [SFX]
+#697 [SFX]
+#699 [SFX]
+//#700 
+//#701 
+//#702 
+//#724 
+//#726 
+//#729 ??? <time="5">
+//#730 
+//#731 
+//#752 
+//#757 
+//#758 
+//#759 
+//#760 
+//#761 
+//#762 
+//#763 
+//#764 
+//-----------------------------------------------------------
+//#773 MAIN BGM
+//-----------------------------------------------------------
+
+  [Source]
+  Namco Video Game Graffiti Vol.9
+  Victor Entertainment  VICL-8089  Aug 22, 1993
+
+  Namco Ele-Mech Encyclopedia
+  Victor Entertainment  VICL-40191  Jul 24, 1996
+
+// List contribution by Min
+$end

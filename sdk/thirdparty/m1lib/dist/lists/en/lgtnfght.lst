@@ -1,0 +1,106 @@
+﻿$name=lgtnfght
+$version=2
+$default=$94
+$songmax=$97
+$main
+
+$94 Departure
+$8a An Ominous Predicament (AD)
+$81 Faraway (Stage 1, 2)
+$89 A Strange Enemy (Stage 1 Boss)
+$95 Go Ahead! (Clear)
+$80 Thud! (Stage 2 Boss)
+$84 Sturdy Wings (Stage 3, 4)
+$82 Fighting Above The Sea (Stage 3 Boss)
+$83 Deadly Laser (Stage 4 Boss)
+$8c A Rought Scene (Stage 5, 6)
+$88 Monster Ship (Stage 5 Boss)
+$8d Danger Zone! (Stage 6 Boss)
+$8b No Turning Back (Stage 7, 8)
+$8e Mighty Metal Body (Stage 7 Boss)
+$91 Firearm (Stage 8 Boss)
+$90 Into The Unknown (Stage 9 Boss)
+$8f Mad Enperor (Final Boss)
+$97 Calm Yourself (All Clear)
+$85 A Wise Decision (Continue)
+$86 Destruction (Game Over)
+$87 Victry March (Ranking)
+$92 Nostalgic (Ending)
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX] Missile Destroyed
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX] Missed
+#068 [SFX]
+#069 [SFX] 1UP
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#092 [SFX]
+#094 [SFX]
+#096 [SFX]
+#095 [SFX + Voice] Dragon Laser
+
+#080 [Voice] Trigon!
+#081 [Voice] Single Trigon!
+#082 [Voice] Twin Trigon!
+#083 [Voice] Hunting Trigon!
+#084 [Voice] Blast Trigon!
+#085 [Voice] Lightning Sword
+#086 [Voice] Paricle Beam (US ver.)
+#087 [Voice] Dragon Laser
+#088 [Voice] Emegency *2
+#089 [Voice] Emegency *3
+#090 [Voice] Please Continue!!
+#093 [Voice] Dragon
+#103 [Voice] Dragon
+#108 [Voice] Killed Dragon
+
+  [Source]
+  Konami Game Music Collection Vol.2
+  King Records  KICA-1016  Aug 21, 1990
+
+  [Sound Composer]
+  Ken
+
+// English list adjustment by bcass
+// Addition by Ayaya
+$end

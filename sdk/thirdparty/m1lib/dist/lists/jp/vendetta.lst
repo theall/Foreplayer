@@ -1,0 +1,37 @@
+﻿$name=vendetta
+$version=2
+$default=$80
+$songmax=$93
+$fixed_volume=105
+$main
+
+$80 The Declaration of War (タイトルデモ)
+$81 Forcible Men (タイトル)
+$82 The Theme of "THE COBRAS" (プレイヤーセレクト)
+$83 Imminent Danger (スタートデモ)
+$84 The Bridge And The Warehouse (1st.BGM)
+$8a Vicious Stmptom (ボスBGM 1)
+$8d Stage Clear (ステージクリア)
+$8e A Death Cry (ボスアウトデモ)
+$85 Auto-Controlled Structure (2st.BGM)
+$8b The Crucel Villains (ボスBGM 2)
+$86 Power in The Darkness (3st.BGM)
+$87 Bay Area (4st.BGM)
+$8c The Armageddon (最終ボスBGM)
+$88 Break Into The Hide-Out! (5st.BGM)
+$89 One After Another (エクストラステージBGM)
+$8f Limited Time (コンティニュー)
+$90 Put Your Name! (ネーミング)
+$91 Game Over (ゲームオーバー)
+$92 Short-Lived Joy (フェイクエンディング)
+$93 After The Battle (エンディング)
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.4
+  KING RECORDS  KICA-7505  1991.10.05
+
+  ■作曲
+  Mika & Chika
+
+// Addition by Ayaya
+$end

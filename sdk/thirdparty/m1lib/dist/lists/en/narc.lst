@@ -1,0 +1,111 @@
+﻿$name=narc
+$version=2
+$default=133
+$main
+
+#133 [SFX] Credit Inserted <time="5">
+#007 The Junkyard (Sector 1-1, 1-3)
+#008 The Pipeline (Sector 1-2)
+#009 Krak Street (Sector 2-1)
+#008 K.R.A.K. Stop (Sector 2-2)
+#006 The Bridge (Sector 3-1) 
+#001 Sunset Strip (Sector 4-1)
+#003 Swamp (Sector 4-2)
+#066 Skyhich's Nursery (Sector 5-1) 
+#008 The Green House (Sector 5-2) 
+#007 Down Town (sector 6-1) 
+#009 The K.R.A.K. Lobby (Sector 6-2) 
+#008 Red Level 1 (Sector 6-3) 
+#002 Blue Level 2 (Sector 6-4) 
+#066 Mr. Big's Office (Sector 7-1)
+#011 Inner Sanctum (Sector 8-1, 8-2) 
+#006 Congratulations !
+#004 Name Entry
+#135 Game Over <time="5">
+
+#010 Unused 1
+#005 Unused 2
+#064 Unused 3
+#065 Unused 4
+#067 Unused 5
+#154 Unused 6
+
+---------------------------------------------------
+  [SFX]
+
+#128 [SFX] <time="7">
+#129 [SFX] <time="5">
+#130 [SFX] <time="5">
+#131 [SFX] <time="3">
+#132 [SFX] <time="5">
+#133 [SFX] <time="5">
+#134 [SFX] <time="5">
+#135 [SFX] <time="5">
+#136 [SFX] <time="5">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="5">
+#140 [SFX] <time="5">
+#141 [SFX] <time="3">
+#142 [SFX] <time="3">
+#143 [SFX] <time="5">
+#144 [SFX] <time="15">
+#145 [SFX] <time="15">
+#146 [SFX] <time="15">
+#147 [SFX] <time="3">
+#148 [SFX] <time="3">
+#149 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="3">
+#152 [SFX] <time="3">
+#153 [SFX] <time="3">
+#155 [SFX] <time="3">
+#156 [SFX] <time="3">
+#157 [SFX] <time="3">
+#158 [SFX] <time="3">
+#159 [SFX] <time="5">
+#160 [SFX] <time="3">
+#161 [SFX] <time="3">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#164 [SFX] <time="3">
+#165 [SFX] <time="3">
+#166 [SFX] <time="5">
+#167 [SFX] <time="3">
+#168 [SFX] <time="3">
+#169 [SFX] <time="3">
+#170 [SFX] <time="3">
+#171 [SFX] <time="3">
+#172 [SFX] <time="3">
+#173 [SFX] <time="3">
+#176 [SFX] <time="3">
+#177 [SFX] <time="3">
+#178 [SFX] <time="3">
+#179 [SFX] <time="5">
+#180 [SFX] <time="3">
+#181 [SFX] <time="3">
+#182 [SFX] <time="3">
+#183 [SFX] <time="3">
+#184 [SFX] <time="3">
+#185 [SFX] <time="3">
+#186 [SFX] <time="5">
+#187 [SFX] <time="3">
+#188 [SFX] <time="3">
+#189 [SFX] <time="3">
+#192 [SFX] <time="3">
+#206 [SFX] <time="3">
+#207 [SFX] <time="3">
+#208 [SFX] <time="5">
+#209 [SFX] <time="3">
+#210 [SFX] <time="3">
+#211 [SFX] <time="3">
+#212 [SFX] <time="3">
+#217 [SFX] <time="3">
+#218 [SFX] <time="3">
+#240 [SFX] <time="3">
+#241 [SFX] <time="3">
+#242 [SFX] <time="3">
+
+// List contribution by ZEK.
+// English list qc by Fuj
+$end

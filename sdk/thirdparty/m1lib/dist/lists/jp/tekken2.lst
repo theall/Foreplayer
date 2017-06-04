@@ -1,0 +1,317 @@
+﻿$name=tekken2
+$default=278
+$main
+
+#278 Tekken 2 - Attract Movie Soundtrack
+#085 Fighter Select
+#144 Michelle Chang -放浪の女拳士-
+#096 吉光 -カラクリ宇宙忍者-
+#128 King -野獣神父-
+#101 雷武竜 -スーパー・ポリス-
+#149 Nina Williams -サイレント・アサシン-
+#439 Marshall Law -伝説の竜再び-
+#133 Paul Phoenix -熱血格闘家-
+#448 Jack2 -超殺戮兵器-
+#112 風間準 -エコロジカル・ファイター
+#460 白頭山 -キリング・ホーク-
+#160 三島平八 -鉄拳王-
+#117 中ボス
+#165 三島平八 -デビルカズヤ-
+#464 Ending BGM
+
+#080 Roger & Alex (not on CD)
+#480 Name Entry
+//#278 Attract Movie (crash)
+//#439 Law (part)
+
+
+#000 [Voice] Good Morning
+#197 [Voice] Bruce Irvin
+#198 [Voice] Jun Kazama
+#199 [Voice] Lei Wulong
+#309 [Voice] Kazuya Mishima
+#310 [Voice] Paul Phoenix
+#311 [Voice] King
+#312 [Voice] Nina Williams
+#313 [Voice] Lee Chaolan
+#314 [Voice] Jack-2
+#315 [Voice] Michelle Chang
+#316 [Voice] Wang Jinrey
+#317 [Voice] Marshall Law
+#318 [Voice] Yoshimitsu
+#319 [Voice] Baek Doo San
+#320 [Voice] Heihachi Mishima
+#321 [Voice] Anna Williams
+#322 [Voice] Armor King
+#323 [Voice] Prototype Jack
+#324 [Voice] Ganryu
+#325 [Voice] Kuma
+#326 [Voice] Kunimitsu
+#327 [Voice] Roger
+#262 [Voice] Round 1
+#263 [Voice] Round 2
+#264 [Voice] Round 3
+#176 [Voice] Round 4
+#177 [Voice] Round 5
+#178 [Voice] Round 6
+#179 [Voice] Round 7
+#180 [Voice] Round 8
+#181 [Voice] Round 9
+#265 [Voice] Final Round
+#259 [Voice] Great
+#260 [Voice] Continue
+#261 [Voice] One
+#266 [Voice] Fight
+#267 [Voice] You Win
+#268 [Voice] You Lose
+#269 [Voice] Draw
+#270 [Voice] Double KO
+#271 [Voice] Game Over
+#272 [Voice] Perfect
+#276 [Voice] Time Up
+#277 [Voice] KO
+#258 [Voice] Kazuya Mishima Wins
+
+
+ Law
+#182 [S.E.] Atk1
+#183 [S.E.] Atk2
+#184 [S.E.] Atk3
+#185 [S.E.] Atk4
+#186 [S.E.] Atk5
+#187 [S.E.] Atk6
+#188 [S.E.] Dmg1
+#189 [S.E.] Dmg2
+#190 [S.E.] KO
+#191 [S.E.] Woooo
+
+ Jun
+#200 [S.E.] Atk1
+#201 [S.E.] Atk2
+#202 [S.E.] Atk3
+#203 [S.E.] Atk4
+#204 [S.E.] Atk5
+#205 [S.E.] Atk6
+#206 [S.E.] Atk7
+#207 [S.E.] Dmg1
+#208 [S.E.] Dmg2
+#209 [S.E.] KO
+#210 [S.E.] Laugh
+
+ Ganryu
+#211 [S.E.] Atk1
+#212 [S.E.] Atk2
+#213 [S.E.] Atk3
+#214 [S.E.] Atk4
+#215 [S.E.] Atk5
+#216 [S.E.] Atk6
+#217 [S.E.] Dmg1
+#218 [S.E.] Dmg2
+#219 [S.E.] KO
+
+ Lei
+#221 [S.E.] Atk1
+#222 [S.E.] Atk2
+#223 [S.E.] Atk3
+#224 [S.E.] Atk4
+#225 [S.E.] Atk5
+#226 [S.E.] Atk6
+#227 [S.E.] Atk7
+#228 [S.E.] Atk8
+#229 [S.E.] Atk9
+#230 [S.E.] Dmg1
+#231 [S.E.] Dmg2
+#232 [S.E.] KO
+
+ Lee
+#234 [S.E.] Atk1
+#235 [S.E.] Atk2
+#236 [S.E.] Atk3
+#237 [S.E.] Atk4
+#238 [S.E.] Atk5
+#239 [S.E.] Atk6
+#240 [S.E.] Atk7
+#241 [S.E.] Atk8
+#245 [S.E.] Atk9
+#242 [S.E.] Dmg1
+#243 [S.E.] Dmg2
+#244 [S.E.] KO
+#429 [S.E.] Laugh
+
+ Baek
+#246 [S.E.] Atk1
+#247 [S.E.] Atk2
+#248 [S.E.] Atk3
+#249 [S.E.] Atk4
+#250 [S.E.] Atk5
+#251 [S.E.] Atk6
+#252 [S.E.] Atk7
+#253 [S.E.] Atk8
+#254 [S.E.] Dmg1
+#255 [S.E.] Dmg2
+#256 [S.E.] KO
+
+ Bruce
+#288 [S.E.] Atk1
+#289 [S.E.] Atk2
+#290 [S.E.] Atk3
+#291 [S.E.] Atk4
+#292 [S.E.] Atk5
+#293 [S.E.] Dmg1
+#294 [S.E.] Dmg2
+#295 [S.E.] KO
+
+ Michelle
+#296 [S.E.] Atk1
+#297 [S.E.] Atk2
+#298 [S.E.] Atk3
+#299 [S.E.] Atk4
+#300 [S.E.] Atk5
+#301 [S.E.] Atk6
+#302 [S.E.] Dmg1
+#303 [S.E.] Dmg1
+#304 [S.E.] KO
+#305 [S.E.] Sigh
+
+ [S.E.] Yoshimitsu
+#333 [S.E.] Atk1
+#334 [S.E.] Atk2
+#335 [S.E.] Atk3
+#336 [S.E.] Atk4
+#337 [S.E.] Atk5
+#338 [S.E.] Dmg1
+#339 [S.E.] Dmg2
+#340 [S.E.] KO
+#066 [S.E.] Sword1
+#342 [S.E.] Sword2
+#344 [S.E.] Sword3 (Unused)
+#329 [S.E.] Teleport
+
+ Heihachi
+#345 [S.E.] Atk1
+#346 [S.E.] Atk2
+#347 [S.E.] Atk3
+#348 [S.E.] Atk4
+#349 [S.E.] Atk5
+#350 [S.E.] Atk6
+#351 [S.E.] Dmg1
+#352 [S.E.] Dmg2
+#353 [S.E.] KO
+
+ Kunimitsu
+#354 [S.E.] Atk1
+#355 [S.E.] Atk2
+#356 [S.E.] Atk3
+#357 [S.E.] Atk4
+#358 [S.E.] Atk5
+#359 [S.E.] Dmg1
+#360 [S.E.] Dmg2
+#361 [S.E.] KO
+
+ Roger
+#362 [S.E.] Atk1
+#363 [S.E.] Atk2
+#364 [S.E.] Atk3
+#365 [S.E.] Atk4
+#366 [S.E.] Atk5
+#367 [S.E.] Dmg
+#370 [S.E.] KO
+
+ Alex
+#371 [S.E.] Atk1
+#372 [S.E.] Atk2
+#373 [S.E.] Atk3
+#374 [S.E.] Atk4
+#375 [S.E.] Atk5
+#376 [S.E.] Atk6
+#377 [S.E.] Dmg
+#379 [S.E.] KO
+
+ Jack-2/P.Jack
+#381 [S.E.] Atk1
+#382 [S.E.] Atk2
+#383 [S.E.] Atk3
+#384 [S.E.] Atk4
+#385 [S.E.] Atk5
+#386 [S.E.] Atk6
+#387 [S.E.] Dmg1
+#388 [S.E.] Dmg2
+#389 [S.E.] Dmg3
+#390 [S.E.] KO
+#391 [S.E.] Laugh
+#284 [S.E.] Motor1
+#053 [S.E.] Motor2
+#051 [S.E.] Ground
+#055 [S.E.] Punch1
+#057 [S.E.] Punch2
+#060 [S.E.] Step1
+#286 [S.E.] Step2
+#062 [S.E.] Kick
+
+ Nina/Anna
+#392 [S.E.] Atk1
+#393 [S.E.] Atk2
+#394 [S.E.] Atk3
+#395 [S.E.] Atk4
+#396 [S.E.] Atk5
+#397 [S.E.] Atk6
+#398 [S.E.] Dmg1
+#399 [S.E.] Dmg2
+#400 [S.E.] KO
+#401 [S.E.] Laugh
+
+ King/Armor King/Kuma
+#402 [S.E.] Atk1
+#403 [S.E.] Atk2
+#404 [S.E.] Atk3
+#405 [S.E.] Atk4
+#406 [S.E.] Atk5
+#407 [S.E.] Atk6
+#408 [S.E.] Dmg1
+#409 [S.E.] Dmg2
+#410 [S.E.] KO
+
+ Paul
+#412 [S.E.] Atk1
+#413 [S.E.] Atk2
+#414 [S.E.] Atk3
+#415 [S.E.] Atk4
+#416 [S.E.] Atk5
+#417 [S.E.] Dmg1
+#418 [S.E.] Dmg2
+#419 [S.E.] KO
+
+ Kazuya/Devil
+#421 [S.E.] Atk1
+#422 [S.E.] Atk2
+#423 [S.E.] Atk3
+#424 [S.E.] Atk4
+#425 [S.E.] Atk5
+#426 [S.E.] Dmg1
+#427 [S.E.] Dmg2
+#428 [S.E.] KO
+#040 [S.E.] Laser
+
+ Wang
+#430 [S.E.] Atk1
+#431 [S.E.] Atk2
+#432 [S.E.] Atk3
+#433 [S.E.] Atk4
+//#434 [S.E.] Atk5 (missing?)
+#435 [S.E.] Dmg1
+#436 [S.E.] Dmg2
+#437 [S.E.] KO
+#438 [S.E.] Laugh
+
+  ■出典
+  鉄拳2 / NAMCO GAME SOUND EXPRESS Vol.26
+  VICTOR ENTERTAINMENT  VICL-15050  1995.11.22
+
+  ■作曲
+  高柳 佳恵，荒川 美恵
+
+// List by Thomas "Dark Pulse" Warnica - Feb 10 2007
+// Revised off earlier list by Heihachi_73 - Mar 22 2004
+// OST Info Updated by Fuj
+// Song numbers updated by Ayaya
+$end

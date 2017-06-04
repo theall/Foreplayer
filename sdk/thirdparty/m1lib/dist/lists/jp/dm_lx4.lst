@@ -1,0 +1,281 @@
+$name=dm_lx4
+$version=2
+$default=001
+$songmax=1089
+$main
+
+#1 Music: Main Prelaunch
+#2 Music: Main Game, var 1
+#3 Music: Main Game, var 2
+#4 Music: Multiball Mode 1
+#5 Music: Multiball Ready
+#6 Music: MBall Ready Pre
+#8 Music: Demolition Time
+#9 Music: ACMAG
+#10 Music: Demolition Time
+#11 Music: Multiball Mode 2
+#12 Music: Explode Hurry-Up
+#14 Music: Cryo-Claw
+#16 Music: ??
+#19 Music: Computer Award
+#26 Music: Collect Bonus
+#31 Music: High Score Entry
+#32 Music: High Score Entry
+#33 Music: Super Jackpot
+#35 Music: Capture Simon
+#36 Music: Game Over, var 2
+#37 Music: Multiball Mode 3
+#100 SFX: Resounding Slam
+#104 SFX: Flamethrower
+#106 SFX: Comm noise
+#108 SFX: Misc 1
+#109 SFX: Computer Beeps 1
+#112 SFX: Misc 2
+#114 SFX: Elevator
+#115 SFX: Tires Screeching
+#117 SFX: Crash 1
+#119 SFX: Misc 3
+#120 SFX: Pop-Drop
+#121 SFX: Misc 4
+#122 SFX: Misc 5
+#123 SFX: Misc 6
+#124 SFX: Ricochet
+#126 SFX: Whoosh
+#129 SFX: Tinkle-Rustle
+#136 SFX: Helicopter
+#139 SFX: Industrial 1
+#140 SFX: Industrial 2
+#141 SFX: Industrial 3
+#147 SFX: Jet Bumper 1
+#148 SFX: Jet Bumper 2
+#149 SFX: Jet Bumper 3
+#152 SFX: Boom 1
+#153 SFX: Boom 2
+#155 SFX: Boom 3
+#163 SFX: Misc 7
+#165 SFX: Flyby 1
+#166 SFX: Flyby 2
+#170 SFX: Alarm
+#171 SFX: Techno Ding
+#176 SFX: Misc 8
+#180 SFX: Industrial 4
+#182 SFX: Industrial 5
+#184 SFX: Industrial 6
+#185 SFX: Industrial 7
+#186 SFX: Industrial 8
+#187 SFX: Industrial 9
+#188 SFX: Industrial 10
+#189 SFX: Industrial 11
+#190 SFX: Industrial 12
+#191 SFX: Industrial 13
+#197 SFX: Misc 9
+#198 SFX: Thunder 1
+#199 SFX: Thunder 2
+#200 SFX: Thunder 3
+#203 SFX: Boom 4
+#204 SFX: Boom 5
+#205 SFX: Boom 6
+#209 SFX: Flamethrower
+#212 SFX: Car Drive-By
+#217 SFX: Crash 2
+#252 SFX: Boom 1
+#253 SFX: Boom 2
+#255 SFX: Boom 3
+#298 SFX: Thunder 1
+#299 SFX: Thunder 2
+#320 "Glorious!"
+#323 "What I wouldn't give"
+#324 "Not many people get.."
+#330 "Close enough"
+#331 "This is between..."
+#340 "Forgot to say Simon.."
+#341 "Somebody put me..."
+#342 "Go left!"
+#347 "Just catch up to him!"
+#350 (Sp) "Let's go!"
+#354 VOX: Phoenix Laugh 1
+#355 VOX: Phoenix Laugh 2
+#356 VOX: Phoenix Laugh 3
+#357 VOX: Phoenix Laugh 4
+#358 "Aaaaaaaaaa!"
+#364 "Oh yeah!"
+#368 "Punch it, Hawkley!"
+#369 "Push the pedal as..."
+#383 "Wonder if I can..."
+#385 VOX: Phoenix Laugh 5
+#386 "Yeah, well I feel..."
+#392 "Oh, I'm so scared!"
+#394 "Illuminate!"
+#401 SFX: Thunder 3
+#403 SFX: Boom 4
+#404 SFX: Boom 5
+#405 SFX: Boom 6
+#504 SFX: Footstep 1
+#505 SFX: Footstep 2
+#507 SFX: Synth Hit 1
+#508 SFX: Zap!
+#512 SFX: Misc 10
+#513 SFX: Drop in Liquid
+#514 SFX: Launch Ball
+#517 SFX: Computer Beeps 1
+#520 SFX: Twang 1
+#521 SFX: Twang 2
+#525 SFX: Twang 3
+#526 SFX: Twang 4
+#527 SFX: Twang 5
+#528 SFX: Orchestra Hit 1
+#530 SFX: Orchestra Hit 2
+#531 SFX: Orchestra Hit 3
+#534 SFX: Synth Hit 2
+#536 SFX: Synth Hit 3
+#537 SFX: Ground Loop
+#539 SFX: Misc 11
+#540 SFX: Twang 1
+#541 SFX: Motorcycle
+#542 SFX: Motorcycle
+#543 Music: Extra Ball!
+#544 Music: Accordian
+#545 Music: Extra Ball!
+#602 "D'ya see any cows...?"
+#609 VOX: Girl screaming
+#611 "Okay okay I got it..."
+#612 "Simon Phoenix knows.."
+#617 "EXCUSE ME???"
+#619 "Whoa!"
+#620 "What're you doing?"
+#622 "Is it cold in here..."
+#624 "Oh we gotta stop this"
+#625 "Heads up!"
+#629 "Send a maniac..."
+#633 "...the best day of..."
+#634 "What can I say? I'm.."
+#636 VOX: Phoenix Misc 1
+#649 "How nice!"
+#650 "I love this gun!"
+#657 "Now we need those..."
+#658 VOX: Phoenix Growling
+#663 "No free rides!"
+#664 "Oh that is just..."
+#668 "Prepare for Simon..."
+#670 "Oh I musta done..."
+#681 "2 for the price of 1!"
+#684 "What're ya doin here?"
+#686 "You're dead, Spartan!"
+#687 "You're under arrest."
+#688 "Arrest?"
+#689 "And you're trespassin"
+#690 "Do somethin'!"
+#691 VOX: Misc 1
+#692 "Phoeniiiiiiiiix!!"
+#700 (Ph) "Extra ball!"
+#703 "You're gonna need..."
+#707 "Move!"
+#708 (Ph) "Move it!"
+#709 (Ph) "Nice move!"
+#711 (Ph) "Go!"
+#712 (Ph) "Great shot!"
+#722 (Ph) "Hurryup!"
+#724 (Ph) "Double Jackpot!"
+#726 "Get the Sup.Jackpot!"
+#737 (Ph) "Nice shot!"
+#738 (Ph) "Nice shooting!"
+#743 VOX: Phoenix Laugh 6
+#744 VOX: Phoenix Laugh 7
+#745 VOX: Phoenix Laugh 8
+#758 (Ph) "Outstanding!"
+#767 "Simon says"
+#771 "Step on it!"
+#774 "Too bad!"
+#776 "That was pathetic!"
+#779 "Yeee-haa!"
+#780 "You got it!"
+#781 (Ph) "Amazing!"
+#784 "Come and get me!"
+#800 (Sp) "Amazing!"
+#803 "Let's go!"
+#807 (Sp) "Move it!"
+#808 "Nice!"
+#809 "Very nice!"
+#810 (Sp) "Nice move!"
+#812 "Don't move."
+#814 "Drive!"
+#817 "Excellent!"
+#826 (Sp) "Go!"
+#827 "Hurry!"
+#832 "Cryo-Prison Breakout"
+#833 "Be well, Phoenix."
+#842 (Sp) "Extra ball!"
+#845 "Get the extra ball!"
+#851 (Sp) "Nice shooting!"
+#852 (Sp) "Nice shot!"
+#853 (Sp) "Great shot!"
+#854 "Great shooting!"
+#856 "Now that's what..."
+#859 (Sp) "Shoot again!"
+#865 "Skill shot!"
+#866 "I hate it when..."
+#868 "I love it when..."
+#878 "Jackpot!"
+#884 "Double Jackpot!"
+#885 "Doubled!"
+#886 "Tripled!"
+#888 "Super Jackpot!"
+#891 "Now!"
+#892 "Oh no..."
+#894 "Woah, yeah!"
+#895 "Ohhhh yeah!"
+#896 "Outstanding!"
+#900 "Replay!"
+#901 "You and me, Phoenix"
+#1000 "ACMAG now activated"
+#1004 "Accessing..."
+#1006 "Car Crash Tripled"
+#1007 "Computer Award"
+#1008 "Collect Bonus"
+#1010 "Cryo-Claw now act..."
+#1020 "Explode activated"
+#1021 "Explode Hurry-Up..."
+#1029 "Player One"
+#1030 "Player Two"
+#1031 "Player Three"
+#1032 "Player Four"
+#1038 (CPU) "Shoot again!"
+#1042 "Super Jets completed"
+#1044 "S.Jets now activated"
+#1046 "You look great today!"
+#1047 "Use buttons to..."
+#1048 "Use triggers to..."
+#1050 "Don't you ever want.."
+#1051 "Anybody to this.." (?)
+#1052 "You always were a..."
+#1053 "I'm the Demol. Man"
+#1054 "Shoulda stayed there"
+#1056 "Don't worry!"
+#1057 "I'll getcha with..."
+#1058 "I know that musta..."
+#1059 "JOHN SPARTAN!??"
+#1060 "Bad aim, Blondie!"
+#1061 "Phoenix!"
+#1063 VOX: Cow
+#1064 VOX: Cow
+#1065 VOX: Misc 2
+#1066 VOX: Misc 3
+#1067 VOX: Misc 4
+#1070 "Triple car crash"
+#1073 "Collect Standups"
+#1076 "Light Arrows"
+#1077 "Light Extra Ball"
+#1078 "Maximize Freezes"
+#1079 "Multiball Activated"
+#1080 "Shoot Left Loop"
+#1081 "Quick-Freeze Now..."
+#1082 "Double Retina-Scan"
+#1084 "It ain't over yet!"
+#1085 "Don't move, Phoenix"
+#1086 "Who is that?"
+#1087 "I've been dreamin..."
+#1088 "Well, keep dreamin'!"
+#1089 SFX: Gunshot
+
+// Basic listing by Tafoid, extracted from PinMAME's SOUNDS.DAT
+$end

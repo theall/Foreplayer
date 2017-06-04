@@ -1,0 +1,72 @@
+﻿$name=gradius
+$version=2
+$default=064
+$songmax=129
+$main
+
+#064 Coin (コイン音)
+#065 Beginning of the History (空中戦BGM)
+#075 Challenger 1985 (St.1 BGM)
+#066 Beat Back (St.2 BGM)
+#068 Blank Mask (St.3 BGM)
+#069 Free Flyer (St.4 BGM)
+#076 Mazed Music (St.5 BGM)
+#067 Mechanical Globule (St.6 BGM)
+#077 Final Attack (St.7 BGM)
+#073 Aircraft Carrier (ボスBGM)
+#072 Game Over (ゲームオーバーBGM)
+#074 Historic Soldier (ネーミングBGM)
+
+#070 Unused 1
+#071 Unused 2
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.] Shot
+#002 [S.E.] Double
+#003 [S.E.] Laser
+#004 [S.E.] Missile
+#005 [S.E.] つぶつぶ破壊
+#006 [S.E.] 細胞破壊
+#007 [S.E.] 固い敵に命中
+#008 [S.E.] 空中物破壊
+#009 [S.E.] アメーバー破壊
+#012 [S.E.] 小型兵器破壊
+#013 [S.E.] モアイリング破壊
+#014 [S.E.]
+#015 [S.E.] ボス破壊 (残響音)
+#016 [S.E.] 中型兵器破壊
+#018 [S.E.] 敵消滅カプセル取得
+#024 [S.E.] 大型兵器破壊
+#026 [S.E.] カプセル取得
+#028 [S.E.]
+#030 [S.E.] パワーアップ
+#032 [S.E.]
+#034 [S.E.] 1UP
+#036 [S.E.] ネームエントリー (決定)
+#039 [S.E.] ネームエントリー (選択)
+#042 [S.E.] 火山噴火
+#051 [S.E.] ミス
+#129 [S.E.] ボス破壊
+
+  ■出典・収録サントラ
+  Konami Game Music Vol.1
+  ALFA RECORDS  28XA-85  1986.06.25
+
+  Konami Game Music Vol.1 (Legend Series)
+  SME / SCITRON  SCDC-00050  2000.11.01
+
+  オリジナル・サウンド・オブ・グラディウス
+  APOLLON  KHY1016  1987.05.05
+
+  組曲グラディウス・ファンタジア
+  APOLLON  BY30-5207  1988.11.21
+
+  MIDI Power X68000 Collection ver 2.0
+  KING RECORDS  KICA-7611  1993.01.21
+
+  グラディウスIV 復活 オリジナル・ゲーム・サントラ
+  KING RECORDS  KICA-7947  1999.03.05
+
+$end

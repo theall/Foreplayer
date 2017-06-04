@@ -1,0 +1,24 @@
+﻿$name=acedrvrw
+$version=2
+$default=112
+$main
+
+#112 Introduction <time="5.2">
+#064 Select
+#068 R U Ready
+#080 Game Over
+#208 Attract
+#202 Illusion [Extend 1]
+#197 Alpha Dance [Extend 2]
+#073 Spectrum [Extend 3]
+#224 Winning Run
+
+#001 Sound Check
+
+  [Source]
+  Ace Driver Series / Arcade Soundtrack 005
+  Pony Canyon / Wonder Spirits  WSCA-00003  Sep 19, 1997
+
+// List by Fuj
+// Updated by Skeleton081983
+$end

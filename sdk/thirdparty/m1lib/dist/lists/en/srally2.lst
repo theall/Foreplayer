@@ -1,0 +1,35 @@
+﻿$name=srally2
+$version=2
+$default=02
+$main
+
+#02 Go Go! Sega Rally (Advertise) <time="2:00">
+#11 Ignition '98 ...4 select (Name Entry - Game Start) <time="1:06">
+#10 Soul on Desert (R1 Desert - Novice) <time="2:40">
+#03 Euro Fight!! (R2 Mountain - Intermediate) <time="1:41">
+#05 Searchin' for My Dreams (R3 Snowy - Expert) <time="3:10">
+#01 Go Go! Sega Rally &lt;Instrumental Mix&gt; (R4 Riviera - Super Expert) <time="2:02">
+#04 Insert Jungle (Finish) <time="1:09">
+#14 MNF? <time="1:37">
+#06 Night Groovin' <time="1:57">
+#07 Estrada Nova <time="1:45">
+#12 Ignition '98 ... in the groove <time="2:27">
+#08 Route 246 (Ending) <time="1:04">
+#09 Big Sur (Ranking) <time="0:33">
+
+#13 Game Over
+
+  [Source]
+  Saga Rally Championship 2 Original Soundtrack
+  Marvelous Entertainment (MMV)  MJCA-00017  Apr 1, 1998
+
+  [Sound Staff]
+  Tatsuhiko Fuyuno [prime direction] : 01, 02, 03, 04, 06, 14
+  Jun Senoue [Sega] : 10, (11, 12 Produce & Remix)
+  Low Dogs [prime direction] : 05, 07
+  Tetsuya Yamamoto [prime direction] : 08
+  Kenji Iino [Warp] : 09
+  Takenobu Mitsuyoshi [Sega] : (11, 12 Compose)
+
+// List contribution by Anonymous
+$end

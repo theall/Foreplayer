@@ -1,0 +1,68 @@
+﻿$name=mx5000
+$version=2
+$default=128
+$main
+
+#128 Counter Attack (Stage 1)
+#130 Counter Blow (Stage 2)
+#132 Counter Charge (Stage 3)
+#137 Counter Work (Boss) 
+#140 Clear 
+#134 Counter Mine (Stage 4) 
+#136 Counter Force (Stage 5) 
+#138 Counter Sign (Last Boss Intro) - Last-Ditch Registance (Last Boss) 
+#143 Peace Sign (2nd Round Clear: Ending)
+#142 Ranking 
+#141 Game Over 
+
+#129 Counter Attack (w/o intro) 
+#131 Counter Blow (w/o intro)
+#133 Counter Charge (w/o intro)
+#135 Counter Mine (w/o intro) 
+#139 Last-Ditch Registance (Last Boss) 
+
+----------------------------------------------------------------------------
+  [PCM]
+
+#064 [PCM] 
+#065 [PCM]
+#066 [PCM]
+#067 [PCM]
+#068 [PCM]
+#069 [PCM]
+#070 [PCM]
+#071 [PCM]
+#072 [PCM]
+#073 [PCM]
+
+----------------------------------------------------------------------------
+  [Voice]
+
+#074 [Voice] 
+#075 [Voice]
+#076 [Voice]
+#078 [Voice]
+#081 [Voice]
+#088 [Voice]
+----------------------------------------------------------------------------
+  [SFX]
+
+#077 [SFX] 
+#079 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#089 [SFX]
+#090 [SFX]
+#092 [SFX]
+#097 [SFX] 
+
+  [Source]
+  Konami Game Music Collection Vol.0
+  King Records  276A-7708  Jul 21, 1989
+
+// List contribution by R
+$end

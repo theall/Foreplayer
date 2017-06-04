@@ -1,0 +1,57 @@
+﻿$name=ufosensi
+$version=2
+$default=171
+$main
+
+#171 Title / Episode 3 #1
+#163 [SFX] Credit
+#151 [SFX] Start
+#169 Episode 1 Theme #1 / Ending
+#135 Episode 1 Theme #2
+#139 Boss Theme #1 (Episode 1,2)
+#170 Episode 2 Theme #1
+#136 Episode 2 Theme #2
+#171 Episode 3 Theme #1 / Title
+#137 Episode 3 Theme #2
+#140 Boss Theme #2 (Episode 3)
+#172 Episode 4 Theme #1 / Continue
+#138 Episode 4 Theme #2
+#174 Final Boss Theme (Episode 4)
+#169 Ending (All Episode Cleared) / Episode 1 #1
+#172 Continue / Episode 4 #1
+#160 [SFX] Continue Allowed
+#150 [SFX] Continue Canceled -- Game Over
+
+------------------------------------------------------
+ [SFX]
+
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX] Continue Canceled -- Game Over
+#151 [SFX] Start !!
+#152 [SFX]
+#153 [SFX] Invincible
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX] Continue Allowed
+#161 [SFX]
+#162 [SFX]
+#163 [SFX] Credit
+#164 [SFX]
+#165 [SFX] Invincible (Short)
+#166 [SFX]
+#167 [SFX]
+
+// List Contribution by a2c-s438
+$end

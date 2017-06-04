@@ -1,0 +1,89 @@
+﻿$name=crimec
+$version=2
+$default=023
+$main
+
+#023 Credit Inserted
+#008 Introduction
+#009 Prison Breaking (Round 1)
+#012 Round 2 Start <time="4">
+#013 Bank Robbery (Round 2)
+#015 Smuggling (Round 3)
+#017 Kidnapping (1) (Round 4)
+#018 Kidnapping (2) (Round 5)
+#019 Kidnapping (3) (Round 6) 
+#010 Boss (Round 1, 3, 4, 6)
+#020 Round Clear
+#021 Ending
+#022 Name Entry
+
+#014 Round 2 Start
+#064 Round 2, 3 (Ver.2)
+
+#062 Unused 1
+#063 Unused 2
+
+#244 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#024 [SFX] Extend
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#052 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#075 [SFX] 
+#074 [SFX] <time="4">
+#242 [SFX] <time="5">
+#243 [SFX] <time="3">
+
+---------------------------------------------------
+ [Voice] 
+
+#034 [Voice] 
+#035 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#051 [Voice] 
+#053 [Voice] 
+#065 [Voice] 
+#245 [Voice] <time="4">
+
+// List contribution by ZEK.
+$end

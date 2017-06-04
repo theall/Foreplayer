@@ -1,0 +1,24 @@
+﻿$name=pdrift
+$version=2
+$default=148
+$songmax=151
+$main
+
+#148 Poker Face (Car Select)
+#150 Side Street (Course A)
+#151 Like the Wind (Course B)
+#149 Silent Language (Course C)
+#147 Adjustment Mind (Course D)
+#146 Artistic Traps (Course E)
+#144 Diversity (Ending)
+#145 Demo
+
+  [Source]
+  Power Drift & Mega Drive / G.S.M. Sega 2
+  Pony Canyon  D28B0010  Dec 8, 1988
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

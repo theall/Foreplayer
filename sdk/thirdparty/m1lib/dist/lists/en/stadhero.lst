@@ -1,0 +1,58 @@
+﻿$name=stadhero
+$version=2
+$default=028
+$main
+
+#028 Select
+#023 Paradise Spirit (BGM 1)
+#027 Change
+#024 Hurricane (BGM 2)
+#031 Home Run
+#025 Escape (BGM 3)
+#029 Win
+#026 Stella (BGM 4)
+#030 Lose
+#033 Over
+#032 Continue
+
+-----------------------------------------------------------
+
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+
+  [Soundtrack]
+  Game Sound DECO -G.S.M. Data East 1-
+  Pony Canyon / Scitron  D25B1002  Jun 21, 1989
+
+// List Contribution by Min
+$end

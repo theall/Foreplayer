@@ -1,0 +1,28 @@
+﻿$name=rthunder
+$version=2
+$default=006
+$fixed_volume=100
+$main
+
+//#000 クレジット音
+#006 スタート～BGM 1 (倉庫・指令室)
+#005 ラウンドクリア
+#010 スタート～BGM 2 (洞窟)
+#008 MABU BGM
+#007 MABU DEAD
+#009 コングラチュレーション
+#012 ゲームオーバー
+#011 ネーム入れ
+
+#037 スタート
+#013 BGM 2 (洞窟)
+#001 サウンドテスト
+
+  ■出典
+  NAMCO GAME MUSIC Vol.1 / G.M.O.
+  ALFA RECORDS  28XA-170  1987.07.25
+
+  ■作曲
+  小沢 純子
+
+$end

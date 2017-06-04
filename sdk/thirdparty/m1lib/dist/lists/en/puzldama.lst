@@ -1,0 +1,46 @@
+﻿$name=puzldama
+$version=2
+$default=258
+$fixed_volume=274
+$main
+
+#258 Welcome to Puzzle-dama (Title)
+#259 Doh Renny (Mode Select)
+#260 Soult Know (Character Select)
+#261 Marutama-walk (Map)
+#282 Fight!! (Vs)
+#262 Match-up
+#266 Puzz-Rock - Double Edge (Match-up)
+#263 Puzzle Exercise (1P Pactice)
+#264 Puzzle is Puzzle-dama (Normal Mode)
+#265 Adults' Puzzle-dama (1P Hard Mode)
+#267 Puzz-Rock - Head Knocker (1P, Danger)
+#269 I Shall Win (Boss)
+#268 Puzz-Rock - Nightmare Load (vs Boss, Danger)
+#285 Hop Step Chance! (Chance)
+#271 Hallelujahn! (Win)
+#272 Great Hallelujahn! (Cleared All Stages)
+#283 Requiem Chorus (Lose)
+#270 Continue?
+#281 Makorin in D major (Practice Mode, Ending)
+#275 Penkuro Is at School (Penkuro, Ending)
+#276 Vagabond Ryo (Ryo, Ending)
+#277 A Super Bogus Scientist, Nakasugi (Dr. Nakasugi, Ending)
+#278 Oh! Mayu Has Taken First Prize! (Mayu, Ending)
+#279 Yumichang Is Alive (Yumi, Ending)
+#280 Wonderful Wan! (Wanjiro, Ending)
+#273 A Piece of Peace (Ranking)
+
+#257 Credit Inserted
+#274 ? (Not on CD)
+#284 Sound Test
+
+  [OST]
+  Speed King / Taisen Puzzle-dama
+  Original Game Soundtrack
+  King Records  KICA-7690  Jan 24, 1996
+
+// List contribution by Mappi
+// English list by Fuj.
+// Correction by Cratch
+$end

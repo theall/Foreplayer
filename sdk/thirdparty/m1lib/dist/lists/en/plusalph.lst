@@ -1,0 +1,48 @@
+﻿$name=plusalph
+$version=2
+$default=008
+$songmax=045
+$main
+
+#008 Prelude to Triumph (Title)
+#028 Coin
+#013 Game Start 1
+#001 Dancing Girl in the Wind (Stage 1: Wind Country)
+#017 Extra Game
+#002 Into Blue (Stage 2: Sea Colony)
+#004 Bird Island (Stage 3: Flower Town)
+#010 Sun Colors (Stage 4: Snow Country)
+#005 Last Heart (Stage 5: Sand City)
+#011 Alborada (Stage 6: Dark Sodom)
+#012 Neo Baroque (Stage 7: Eden)
+#014 Game Start 2
+#003 Boss Stage
+#009 Explosion
+#015 Ending Theme
+#007 Continue
+#006 Game Over
+#016 Harmonica for Peace (Unused)
+
+-----------------------------------------
+
+#021 [Voice] Ready, go!
+#022 [Voice] Lucky!
+#023 [Voice] Congratulations!
+#024 [Voice] 1up!
+#025 [Voice] Lazer
+#026 [Voice] Shot up
+#027 [Voice] Hyper
+#045 [Voice] Yay yay
+
+  [Source]
+  Plus Alpha / Jaleco
+  Pony Canyon / Scitron  PCCB-00015  Dec 15, 1989
+
+  [Sound Composer]
+  Tsukasa Tawada
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

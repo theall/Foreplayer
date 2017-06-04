@@ -1,0 +1,23 @@
+﻿$name=blazer
+$version=2
+$default=001
+$songmax=014
+$main
+
+#001 The Desrt on The Horizon (Intro)
+#002 The Desrt on The Horizon
+#010 Pastel Sealane
+#006 Just Struck Two Noon
+#012 Flood Tide part 1
+#013 Flood Tide part 2
+#014 Sunspot Parade
+
+  [Source]
+  Namco Video Game Graffiti Vol.2
+  Victor Entertainment  VDR-5222  Oct 21, 1987
+
+  [Sound Composer / Adapter]
+  Seiichi Sakurai (Namco)
+
+// List Contribution by Hiroshi
+$end

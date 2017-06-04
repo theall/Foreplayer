@@ -1,0 +1,46 @@
+﻿$name=g_gcm
+$version=2
+$default=0
+$songmax=255
+$main
+
+#000 Capcom Logo
+#016 Title Theme
+#017 Introduction <time="1:34" fadeout="yes" fadeoutlength="10">
+#018 The Mystery Begins
+#019 Player Select <time="0:36" fadeout="yes" fadeoutlength="10">
+#020 Map Screen <time="0:26" fadeout="yes" fadeoutlength="10">
+#021 Stage Start
+#001 The Haunted Circus <time="1:01" fadeout="yes" fadeoutlength="10">
+#002 The Jungle <time="1:38" fadeout="yes" fadeoutlength="10">
+#003 The Haunted House <time="1:29" fadeout="yes" fadeoutlength="10">
+#004 The Caves <time="1:24" fadeout="yes" fadeoutlength="10">
+#005 The Frozen Plains <time="1:12" fadeout="yes" fadeoutlength="10">
+#007 Weasel <time="1:08" fadeout="yes" fadeoutlength="10">
+#008 Turtle <time="1:16" fadeout="yes" fadeoutlength="10">
+#009 Emperor Pete <time="1:18" fadeout="yes" fadeoutlength="10">
+#010 Boss Theme <time="1:21" fadeout="yes" fadeoutlength="10">
+#023 New Outfit <time="0:06" fadeout="yes" fadeoutlength="2">
+#013 General Store <time="0:37" fadeout="yes" fadeoutlength="10">
+#014 Time Stop <time="0:17" fadeout="yes" fadeoutlength="10">
+#015 Time Stop Ends
+#024 Drumroll <time="0:11" fadeout="yes" fadeoutlength="10">
+#025 Drumroll End
+#026 Stage Clear
+#022 The Baron's Castle Intro <time="0:34" fadeout="yes" fadeoutlength="10">
+#006 The Baron's Castle <time="1:31" fadeout="yes" fadeoutlength="10">
+#011 Baron Pete <time="1:13" fadeout="yes" fadeoutlength="10">
+#012 Dragon Pete <time="2:24" fadeout="yes" fadeoutlength="10">
+#031 Ending Theme (Part 1) <time="2:01" fadeout="yes" fadeoutlength="10">
+#032 Ending Theme (Part 2)
+#027 Continue?
+#028 Continued
+#029 Game Over
+#030 Password <time="0:26" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Mari Yamaguchi
+
+// M1 list contributed by Knurek
+// Tagging data from Project 2612
+$end

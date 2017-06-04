@@ -1,0 +1,29 @@
+﻿$name=nspirit
+$version=2
+$default=2
+$main
+
+$002 IZA (Title Back)
+$00d OSHIE (Start Demo)
+$007 Theme from BUTSUZO (Round 1)
+$009 KESSEN (Normal Boss)
+$00f IZANAI (Stage Clear)
+$00a FOREST (Round 2)
+$000 MOON (Round 3)
+$00b KARAKURI (Round 4)
+$003 MUNEN (Game Over)
+$008 SASURAI NO SAMURAI NO TOMURAI (Ranking)
+$005 KANE (Cotinue) <time="0:22">
+$006 BEHIND THE WIND (Round 5)
+$004 DARK BLUE (Round 6)
+$00e KIZASHI Part 1 (Round 7)
+$001 KIZASHI Part 2 (Final Boss)
+$00c DEEP BLUE (Ending)
+
+  ■出典
+  イメージファイト -G.S.M. IREM 1-
+  PONY CANYON / SCITRON  D28B0012  1989.1.21
+
+// オリジナルリスト投稿：Monyonsさん
+// 更新：Fujix
+$end

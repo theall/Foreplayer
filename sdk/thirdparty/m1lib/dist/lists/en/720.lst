@@ -1,0 +1,121 @@
+$name=720
+$version=2
+$default=054
+$songmax=184
+$main
+
+#054 [Music]
+#055 [Music]
+#056 [Music]
+#057 [Music]
+#058 [Music]
+#059 [Music]
+#060 [Music]
+#061 [Music]
+#062 [Music]
+#063 [Music]
+#064 [Music]
+#065 [Music]
+#069 [Music]
+#036 [Music] Music Test #1
+#037 [Music] Music Test #2
+
+#039 [Voice] Speech Chip Test
+#126 [Voice] "Hey kid.. over here"
+#127 [Voice] "Hey.. come here"
+#128 [Voice] "Thanks a lot kid"
+#129 [Voice] "Here ya go"
+#130 [Voice] "What do you think this is, a charity organization?"
+#131 [Voice[ "Get out of here, you punk!"
+#132 [Voice] "Ahhh.."
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice] "Hey, you can't get in here if you don't have a ticket!"
+#137 [Voice] "Come back when you've got a ticket"
+#138 [Voice] "Take it easy"
+#139 [Voice] "Tell ya what.. come back when you've got some money"
+#140 [Voice] "Hey good choice kid.. your going to love it"
+#141 [Voice]
+#142 [Voice]
+#143 [Voice]
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice] "Ow.."
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+#160 [Voice]
+#161 [Voice] "Skate or die!"
+#162 [Voice]
+#163 [Voice]
+#164 [Voice]
+#165 [Voice]
+#166 [Voice]
+#167 [Voice]
+#168 [Voice]
+#169 [Voice]
+#170 [Voice]
+#171 [Voice]
+#172 [Voice]
+#173 [Voice]
+#174 [Voice]
+#175 [Voice] "Good choice kid.. your going to love it"
+#176 [Voice] "Here ya go.. have fun"
+#177 [Voice] "Tear 'em up, kid"
+#178 [Voice] "Come back real soon.."
+#179 [Voice] "Have a good one"
+#180 [Voice] "Good Luck"
+#181 [Voice] "You don't got enough money?  Scram, punk!"
+#182 [Voice] "You've got to have a ticket"
+#183 [Voice]
+#184 [Voice]
+
+
+#067 [SFX]
+#070 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+
+// Basic listing by Tafoid
+$end

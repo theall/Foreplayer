@@ -1,0 +1,31 @@
+﻿$name=cameltry
+$version=2
+$default=$08
+//$songmax=$00
+$main
+
+$08 Coin Inserted
+$09 Course Select
+$0a Message
+$0b Pa.Ma.Day
+$0c Psychedelic Delicacy
+$0d Do Re Mi Fa Drug, Headache Pill
+$0e Mouse Circle
+$0f Goal In
+$10 Lucky Slot
+$11 Jackpot
+$12 Lottery Win
+$13 Lottery Lose
+$14 Game Over
+$15 Congratulations
+$16 Ending
+$17 Hurry Up
+$18 Rotation
+$4b Final Round
+
+  [Source]
+  Camel Try, Cadash / Taito
+  Pony Canyon / Scitron  PCCB-00043  Oct 21, 1990
+
+// List contirbution by Yakza
+$end

@@ -1,0 +1,133 @@
+﻿$name=vr
+$version=2
+$default=067
+$main
+
+#067 Waiting Your Entry
+#006 Course Select <time="1:23">
+#001 Beginner
+#013 Medium
+#014 Expert
+#097 Extend Time - 1
+#010 Best Lap - 2
+#007 Extend Time - 2
+#009 Best Lap - 3
+#004 Extend Time - 3
+//#078と同一
+#096 Best Lap - 4
+#085 Extend Time - 4
+#015 Best Lap - 5
+#066 Extend Time - 5
+#080 Pit Out
+#003 Pit In
+#005 Goal
+#002 Game Over
+#011 Name Entry
+#012 Congratulations - 1
+//サントラ未収録
+#008 Congratulations - 2
+
+-------------------------------------------------
+ [Voice]
+ 
+#073 [Voice] Virtua Racing
+#088 [Voice] 他車のエントリーを受け付けています。しばらくお待ち下さい。
+#089 [Voice] エントリーを受付中です。
+#108 [Voice] 1人まで参加できます。
+#109 [Voice] 2人まで参加できます。
+#110 [Voice] 3人まで参加できます。
+#111 [Voice] 4人まで参加できます。
+#112 [Voice] 5人まで参加できます。
+#113 [Voice] 6人まで参加できます。
+#114 [Voice] 7人まで参加できます。
+#115 [Voice] 8人まで参加できます。
+#087 [Voice] 相手の車と対戦できます。
+#075 [Voice] ボタンでシートを調整して下さい。
+#071 [Voice] コースを選んでアクセルを踏んで下さい。
+#079 [Voice] スタートボタンを押しながらアクセルを踏むと、マニュアル7速になります。
+#035 [Voice] Good luck!
+#043 [Voice] 歓声 1
+#081 [Voice] 3 <time="1">
+#082 [Voice] 2 <time="1">
+#083 [Voice] 1 <time="1">
+#084 [Voice] Go!
+#034 [Voice] Hurry up!
+#038 [Voice] Final lap!
+#037 [Voice] Go!
+#023 [Voice] 歓声 2
+#036 [Voice] You're a real winner.
+#039 [Voice] Congratulations!
+#077 [Voice] Adjust seat position.
+#090 [Voice] Adjust seat position. (louder)
+#091 [Voice] Select course by wheel and step on the gas pedal.
+#092 [Voice] To play manual 7-speed, holding start button, step to start.
+#094 [Voice] Waiting for challengers.
+#095 [Voice] Waiting your entry.
+#100 [Voice] Up to 1 racer wanted.
+#101 [Voice] Up to 2 racers wanted.
+#102 [Voice] Up to 3 racers wanted.
+#103 [Voice] Up to 4 racers wanted.
+#104 [Voice] Up to 5 racers wanted.
+#105 [Voice] Up to 6 racers wanted.
+#106 [Voice] Up to 7 racers wanted.
+#107 [Voice] Up to 8 racers wanted.
+#093 [Voice] Race against other players.
+#035 [Voice] Good luck!
+ 
+ [S.E.]
+ 
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#072 [S.E.]
+#074 [S.E.]
+#076 [S.E.]
+#086 [S.E.]
+
+  ■出典
+  Virtua Racing & Out Runners / B-univ
+  TOSHIBA EMI  TYCY-5365～5366  1993.12.15
+
+// List Contribution by NK
+$end

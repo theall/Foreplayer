@@ -1,0 +1,25 @@
+﻿$name=lghost
+$default=221
+//$songmax=223
+$main
+
+  * Track names are from the original!
+
+#221 Title
+#219 Opening
+#208 Brain Fissure (BGM 1)
+#209 Something Like Chicken Meat (Boss 1)
+#220 Fanfare
+#222 Interval
+#210 M (BGM 2)
+#211 Inubouzaki in the Storm (Boss 2)
+#212 Sour Puke - Acidic Content (BGM 3)
+#213 Foot Smell - My Shadow.. (Boss 3)
+#223 Game Over
+#218 Ending
+
+  [Source]
+  Formula -G.S.M. Sega 5-
+  Pony Canyon / Scitron  PCCB-00059  Apr 21, 1991
+
+$end

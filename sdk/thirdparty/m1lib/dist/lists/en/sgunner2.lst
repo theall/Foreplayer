@@ -1,0 +1,39 @@
+﻿$name=sgunner2
+$version=2
+$default=83
+$main
+
+#083 Attract
+#026 [SFX] Radio <time="6">
+#005 Shopping Arcade to Motorway
+#028 BGM X (Unreleased)
+#057 Laboratory (Intro) <time="14">
+#058 [SFX] Destroyed the Laboratory <time="8">
+#033 Laboratory
+#060 Enemy Boss Appeared (Unreleased) <time="2">
+#066 Laboratory - Last Half (Not Released on CD)
+#041 Naval Warfare
+#087 Enemy Presidial Island - The Ground (Not Released on CD)
+#014 Enemy Presidial Island
+#069 Street Fighting
+#054 Huge Battleship
+#108 Inside the Battleship
+#102 Center of the Battleship (Not Released on CD)
+#111 Escape
+#059 Geek Appearing 1 (Not Released on CD)
+#114 Geek Appearing 2
+#131 [SFX] Geek Destroyed <time="2">
+#127 [SFX] Geek's Last Agnoy
+#122 Ending - Intro <time="9">
+#128 Ending
+#256 Stereo Test
+
+  [Source]
+  Namco Video Game Graffiti Vol.9
+  Victor Entertainment  VICL-8089  Sep 22, 1993
+
+  [Sound Composer / Adapter]
+  Yoshie Takayanagi
+
+// List Contributed by Kyuu
+$end

@@ -1,0 +1,17 @@
+$name=g_gomo
+$version=2
+$default=$F078
+$songmax=9999999
+$main
+
+$F078 Driver Init <time="1">
+$d101 BGM 1
+$d102 BGM 2
+$d103 BGM 3
+$d104 BGM 4
+$d105 BGM 5
+$001e Game Over
+$001f Continue
+
+// Basic list contributed by Knurek
+$end

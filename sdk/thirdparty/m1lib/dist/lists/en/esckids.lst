@@ -1,0 +1,167 @@
+﻿$name=esckids
+$version=2
+$default=150
+$main
+
+#150 New Kids on the Run (Attract Mode)
+#384 Dream Malibu (Normal Stage)
+#400 U.S.A. for America (US Runner Vicotry Dance)
+#393 Gacchiri Kaima-Show (Item Shop)
+#151 Welcome to Green Aid (Jungle Stage)
+#404 Where's Chada? (Indian Runner Victory Dance)
+#391 Junky Cowboy (Sand Stage)
+#386 Proof of Victory (Champion Fanfare)
+#394 Gacchiri Kasegima-Show (Bonus Stage)
+#396 Fall in Love (Fell Down)
+#389 Rock Around Ice (Ice Stage)
+#403 Fuji-san Papa (Japanese Runner Victory Dance)
+#387 Two of Lives (Sea Stage)
+#402 Rosanna (Italian Runner Victory Dance)
+#398 Helmet Underground (Underground Stage)
+#399 Front 747 (Mecha Stage)
+#388 Smell Bad (Goal, CPU Won)
+#405 Maruku Won (CPU Victory Demo)
+#392 Ranking Record - Go Go Otowa Group (Ranking)
+#390 London Bridge is Falling Down (Game Over)
+
+#385 Goal (Player Won)
+#395 Gacchiri Kasegima-Show (Bonus Stage, Short?)
+#397 ???
+#401 Results
+
+------------------------------------------------------
+  [SFX]
+
+#257 [SFX] 
+#258 [SFX] 
+#259 [SFX] 
+#260 [SFX] 
+#261 [SFX] 
+#262 [SFX] 
+#263 [SFX] 
+#264 [SFX] 
+#265 [SFX] 
+#266 [SFX] 
+#267 [SFX] 
+#268 [SFX] 
+#269 [SFX] 
+#263 [SFX] 
+#272 [SFX] 
+#273 [SFX] 
+#274 [SFX] 
+#275 [SFX] 
+#276 [SFX] 
+#277 [SFX] 
+#278 [SFX] 
+#279 [SFX] 
+#280 [SFX] 
+#281 [SFX] 
+#282 [SFX] 
+#283 [SFX] 
+#284 [SFX] 
+#285 [SFX] 
+#286 [SFX] 
+#287 [SFX] 
+#288 [SFX] 
+#289 [SFX] 
+#290 [SFX] 
+#291 [SFX] 
+#292 [SFX] 
+#295 [SFX] 
+#296 [SFX] 
+#298 [SFX] 
+#299 [SFX] 
+#300 [SFX] 
+#301 [SFX] 
+#302 [SFX] 
+#300 [SFX] 
+#301 [SFX] 
+#302 [SFX] 
+#303 [SFX] 
+#304 [SFX] 
+#305 [SFX] 
+#306 [SFX] 
+#307 [SFX] 
+#308 [SFX] 
+#309 [SFX] 
+#310 [SFX] 
+#311 [SFX] 
+#312 [SFX] 
+#314 [SFX] 
+#315 [SFX] 
+#316 [SFX] 
+#317 [SFX] 
+#318 [SFX] 
+#319 [SFX] 
+#320 [SFX] 
+#323 [SFX] 
+#324 [SFX] 
+#325 [SFX] 
+#326 [SFX] 
+#327 [SFX] 
+#329 [SFX] 
+#331 [SFX] 
+#334 [SFX] 
+#335 [SFX] 
+#337 [SFX] 
+#342 [SFX] 
+#344 [SFX] 
+#346 [SFX] 
+#348 [SFX] 
+#355 [SFX] 
+#356 [SFX] 
+#358 [SFX] 
+#359 [SFX] 
+#360 [SFX] 
+#362 [SFX] 
+#364 [SFX] 
+#366 [SFX] 
+#367 [SFX] 
+#368 [SFX] 
+#370 [SFX] 
+#376 [SFX] 
+#377 [SFX] 
+#378 [SFX] 
+
+  [Voice]
+
+#328 [Voice] 
+#330 [Voice] 
+#332 [Voice] 
+#333 [Voice] 
+#336 [Voice] 
+#338 [Voice] 
+#339 [Voice] 
+#340 [Voice] 
+#341 [Voice] 
+#343 [Voice] 
+#345 [Voice] 
+#347 [Voice] 
+#349 [Voice] 
+#350 [Voice] 
+#351 [Voice] 
+#352 [Voice] 
+#353 [Voice] 
+#354 [Voice] 
+#357 [Voice] 
+#361 [Voice] 
+#363 [Voice] 
+#365 [Voice] 
+#369 [Voice] 
+#371 [Voice] 
+#372 [Voice] 
+#373 [Voice] 
+#374 [Voice] 
+#375 [Voice] 
+#372 [Voice] 
+#373 [Voice] 
+#374 [Voice] 
+#375 [Voice] 
+
+  [Source]
+  Konami Game Music Collection Vol.3
+  King Records  KICA-7502  May 5, 1991
+
+// Original contribution by Gol Gol
+// English list by Fuj
+$end

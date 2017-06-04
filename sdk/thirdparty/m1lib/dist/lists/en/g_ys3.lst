@@ -1,0 +1,45 @@
+﻿$name=g_ys3
+$version=2
+$default=$02
+$songmax=255
+$main
+
+$02 Premonition ~Styx~ <time="2:01" fadeout="yes" fadeoutlength="10">
+$2c Introduction!! <time="1:05" fadeout="yes" fadeoutlength="10">
+$0c Redmont, the Street of Trading <time="2:57" fadeout="yes" fadeoutlength="10">
+$03 Welcome!! <time="1:01" fadeout="yes" fadeoutlength="10">
+$04 A Quiet Moment <time="0:57" fadeout="yes" fadeoutlength="10">
+$05 Prologue to the Adventure <time="1:51" fadeout="yes" fadeoutlength="10">
+$0d Winged Boy <time="4:06" fadeout="yes" fadeoutlength="10">
+$0e Caution - Be Careful! <time="2:08" fadeout="yes" fadeoutlength="10">
+$09 Black Monster <time="1:25" fadeout="yes" fadeoutlength="10">
+$0a Death's Shock <time="0:57" fadeout="yes" fadeoutlength="10">
+$0f Ruins of Ilverns <time="2:02" fadeout="yes" fadeoutlength="10">
+$10 Burning Fight <time="2:42" fadeout="yes" fadeoutlength="10">
+$2d The Theme of Chester <time="5:23" fadeout="yes" fadeoutlength="10">
+$11 Dark Trap <time="1:43" fadeout="yes" fadeoutlength="10">
+$12 Severe Fighting Spirit <time="2:34" fadeout="yes" fadeoutlength="10">
+$13 Valestein Castle <time="2:38" fadeout="yes" fadeoutlength="10">
+$14 Pray for Mercy <time="1:06" fadeout="yes" fadeoutlength="10">
+$15 Key of Light <time="1:29" fadeout="yes" fadeoutlength="10">
+$06 Seal of Time <time="1:51" fadeout="yes" fadeoutlength="10">
+$30 My Dear Elena <time="2:17" fadeout="yes" fadeoutlength="10">
+$08 Sentimental Twilight <time="1:13" fadeout="yes" fadeoutlength="10">
+$07 Beat to Destruction <time="1:39" fadeout="yes" fadeoutlength="10">
+$21 Tower of Fate <time="1:36" fadeout="yes" fadeoutlength="10">
+$22 Look at This!! <time="1:26" fadeout="yes" fadeoutlength="10">
+$0b Final Fight ~The Strongest Foe~ <time="3:15" fadeout="yes" fadeoutlength="10">
+$2f Dear my Brother <time="1:09" fadeout="yes" fadeoutlength="10">
+$23 Morning of the Journey <time="5:28" fadeout="yes" fadeoutlength="10">
+$2e Wanderers From Ys
+$2b Get Item!
+$25 Dream in a Brief Time
+$01 Dancing on the Road <time="1:01" fadeout="yes" fadeoutlength="10">
+$24 Wanderers From Ys (intro) <time="3:36" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composerse]
+  Falcom Sound Team jdk (Mieko Ishikawa, Masaaki Kawai)
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

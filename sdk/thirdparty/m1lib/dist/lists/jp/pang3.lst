@@ -1,0 +1,112 @@
+﻿$name=pang3
+$version=2
+$default=114
+$main
+
+#114 [Voice] Paaaang...
+#126 [Voice] Threeeeee !!!!
+#123 [Voice] Thank You ! (Credit)
+#001 キャラクター選択
+#016 チュートリアル
+#017 メインBGM #1 (ノーマル＆ビギナーモード)
+#018 メインBGM #2 (ノーマル＆ビギナーモード)
+#019 メインBGM #3 (ノーマル＆ビギナーモード)
+#020 メインBGM #4 (ノーマル＆ビギナーモード)
+#008 最終ステージBGM (ノーマル＆ビギナーモード)
+#006 時間切れ間近、急げ！
+#013 ステージクリア
+#021 プライベートギャラリー
+#012 スタッフロール (エンディング)
+#009 コンティニュー
+#010 ネームエントリー
+#111 [Voice] Game Over.
+
+#003 パニックモードBGM (レベル0)
+#004 パニックモードBGM (レベル1)
+#005 パニックモードBGM (レベル2)
+
+------------------------------------------------------
+ [S.E. & Voice]
+
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.] プレイヤーエクステンド
+#054 [S.E.] パワーワイヤー発射
+#055 [S.E.] バルカンショット発射
+#056 [S.E.]
+#057 [S.E.] バリア入手
+#059 [S.E.] ワイヤー発射不能
+#060 [S.E.] アイテム入手 #1
+#061 [S.E.] アイテム入手 #2
+#062 [S.E.] フード入手 #1
+#063 [S.E.] タイマー停止
+#064 [S.E.] タイマー再始動
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.] フード入手 #2
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.] ボール破裂
+#077 [S.E.]
+#078 [S.E.] ボム爆発
+#079 [S.E.] ワイヤー発射
+#080 [S.E.]
+#081 [S.E.] ワープ
+#082 [S.E.] フード入手 #3
+#084 [S.E.] コイン入手 #1
+#085 [S.E.] コイン入手 #2
+#086 [S.E.] コイン入手 #3
+#087 [S.E.] コイン入手 #4
+#088 [S.E.] コイン入手 #5
+#089 [S.E.] コイン入手 #6
+#090 [S.E.] コイン入手 #7
+#091 [S.E.] コイン入手 #8
+
+#092 [Voice] (歓声 #1)
+#097 [Voice] Bingo !
+#098 [Voice] Great !
+#099 [Voice] Fantastic !
+#100 [Voice] Welldone !
+#101 [Voice] Awesome !
+#102 [Voice] Marvelous !
+#103 [Voice] Gotcha !
+#105 [Voice] Incredible !
+#106 [Voice] Excellent !
+#107 [Voice] Brilliant !
+#108 [Voice] Congratulations !!
+#109 [Voice] Get Ready !
+#110 [Voice] Go !!
+#111 [Voice] Game Over.
+#112 [Voice] What'a shame!
+#113 [Voice] 
+#114 [Voice] Paaaang...
+#115 [Voice] Oh, No !!
+#116 [Voice] Come down, do best.
+#117 [Voice] Take Your Time !
+#118 [Voice] 
+#119 [Voice] Don Tacos !!
+#120 [Voice] Pink Leopard !!
+#121 [Voice] Captain Hog !!
+#122 [Voice] Shiela The Thief !!
+#123 [Voice] Thank You ! (クレジット)
+#124 [Voice] Show Time !
+#125 [Voice] Come On !
+#126 [Voice] Threeeeee !!!!
+#128 [Voice] (ドン・タコスのミス)
+#129 [Voice] (キャプテン・ホッグのミス)
+#130 [Voice] (ピンク・レパードのミス)
+#131 [Voice] (シーラ・ザ・シーフのミス)
+#133 [Voice]
+#134 [Voice]
+#135 [Voice] (歓声 #2)
+
+// List Contribution by a2c-s438
+$end

@@ -1,0 +1,37 @@
+﻿$name=tengai
+$version=2
+$default=050
+$main
+
+#050 Gem of Hope (Title Demo)
+#033 Temptation (Character Select)
+#034 Dance of the Sky (Clouds Sea)
+#043 "De-A-E" (Boss)
+#046 Breakthrough (Stage Clear)
+#035 Silence Breaker (Canyon)
+#036 Somberness (Shrine)
+#037 A High Cedar (Foreset)
+#038 Practice of Festive Music (Castle Town)
+#039 Gloomy Air (Outer Moat)
+#040 Counterattack (Inside Castle)
+#041 Approach of Dawn (Castle Tower)
+#044 Last Resort (Final Boss 1)
+#032 Booby Trap (Basement)
+#053 Sign of Ruin (Hyakkirou)
+#045 Enlightenment (Final Boss 2)
+#047 Then.. (Ending 1)
+#048 "A-Re-Yo" (Ending 2)
+#049 Woe (Ending 3)
+#051 "Bad as me, ren't you?" (High Score)
+#042 Treasue (Unused)
+
+  [Source]
+  Sengoku Blade / Psikyo
+  Pony Canyon / Scitron  PCCB-00216  May 17, 1996
+
+  [Composed and Arranged]
+  Masaki Izutani
+
+// Original list contributed by Llama
+// English list by Fuj helped by Tafoid
+$end

@@ -1,0 +1,36 @@
+﻿$name=dariusg
+$version=2
+$default=078
+$songmax=256
+$main
+
+#078 Title
+#082 VISIONNERZ
+#067 Burst Out
+#075 INDUCTION
+#069 E･E･G
+#076 AXON
+#066 Diffusion
+#068 FAKE
+#072 Singing in the BRAIN
+#071 Tranquilizers
+#073 SELF
+#065 Refrain
+#077 name
+#070 end titles
+#074 Over
+
+$53 VISIONNERZ -ver.2-
+$4a INDUCTION -intro-
+$4f Over #1
+$50 Over #2
+$51 Over #3
+
+  [Source]
+  Darius Gaiden / Taito Zuntata
+  Pony Canyon / Scitron  PCCB-00166  Nov 18, 1994
+
+  [Sound Composer]
+  Hisayoshi Ogura (OGR.)
+
+$end

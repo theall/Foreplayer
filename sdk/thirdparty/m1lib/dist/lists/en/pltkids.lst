@@ -1,0 +1,35 @@
+﻿$name=pltkids
+$songmax=255
+$version=2
+$default=000
+$main
+
+#000 Cool Boy (Jeff's Room) <time="2:33">
+#001 Pop Gal (Ema's Room) <time="2:21">
+#002 Father's Hobby (Father's Study Room A) <time="1:58">
+#004 Outer World (Garden) <time="1:28">
+#010 Giant Atom (Garden, Dog's Scene) <time="26">
+#003 Bubble Bath Room (Bath Room) <time="1:04">
+#005 Run up the Stairs! (Stairs) <time="1:41">
+#006 Theat in the Attic (Attic Room) <time="2:29">
+#007 First Boss <time="1:08">
+#008 Later Boss <time="1:03">
+#009 Last Boss, It's a Showdown!! <time="1:14">
+#011 Disc Catcher (Father's Study Room B / Title) <time="33">
+#012 Beaut! (Stage Clear) <time="6">
+#014 Forever Dream (Credits Roll) <time="2:09.5">
+#013 Please Come Again (Ranking) <time="45">
+
+  [Sound Composer]
+  Manami Matsumae
+
+  [Assistants]
+  Kimitaka Matsumae, Masaki Izumiya
+
+  [Source]
+  Pilot Kids, Space Bomber / Psikyo
+  Scitron / Gamest  SGCD-006  Mar 5, 1999
+
+// List Contribution by baddy
+// English List by Fujix.
+$end

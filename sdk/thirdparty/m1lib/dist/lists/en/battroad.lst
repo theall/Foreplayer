@@ -1,0 +1,42 @@
+﻿$name=battroad
+$version=2
+$default=065
+$main
+
+#065 Credit Inserted <time="3.5">
+#032 Player 1 Ready <time="7">
+#033 Sea
+#040 Goal
+#039 Base <time="6.2">
+#034 Forest
+#036 Valley
+#037 Waste
+#035 Farm
+#038 Town
+#041 Front
+#042 Game Over
+
+---------------------------------------------------
+ [SFX] 
+
+#065 [SFX] <time="3.5">
+#066 [SFX] <time="3">
+#067 [SFX] <time="3">
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#093 [SFX] <time="5">
+#094 [SFX] <time="3">
+#095 [SFX] 
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,29 @@
+﻿$name=mpatrol
+$version=2
+$default=028
+$main
+
+#028 Opening <time="6">
+#024 BGM
+#029 Step Passage
+#030 Congratulation
+#027 Ending (Game Over)
+
+#031 [S.E.] 爆発
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+
+  ■出典
+  R-TYPE / IREM GAME MUSIC
+  ALFA RECORDS  28XA-199  1988.01.25
+
+// リスト作成：みん☆さん
+$end

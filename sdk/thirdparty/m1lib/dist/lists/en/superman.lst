@@ -1,0 +1,123 @@
+﻿$name=superman
+$version=2
+$default=005
+$main
+
+#005 Attract Mode <time="14">
+#025 Credit
+#006 Main Theme 1 (Round 1)
+#008 Boss BGM 1 (Round 1, 2, 3, 4, 5)
+#009 Main Theme 2 (Round 1, 2, 3, 4)
+#010 Boss BGM 2 (Round 1)
+#020 Round Clear
+#007 Main Theme 3 (Round 2, 3, 4)
+#011 Boss BGM 3 (Round 2)
+#012 Boss BGM 4 (Round 3)
+#013 Boss BGM 5 (Round 4)
+#021 To Continue Game <time="13">
+#014 Round 5 BGM 1
+#015 Round 5 BGM 2
+#016 Round 5 BGM 3
+#017 Round 5 BGM 4
+#018 Boss BGM 6 (Round 5)
+#019 Boss BGM 7 (Round 5)
+#022 Ending
+#023 Name Entry
+#024 Game Over
+
+#244 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#026 [SFX] 
+#027 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#114 [SFX] 
+#028 [SFX] <time="4">
+#060 [SFX] <time="4">
+#099 [SFX] <time="4">
+#243 [SFX] <time="4">
+#245 [SFX] <time="4">
+
+---------------------------------------------------
+ [Voice] 
+
+#098 [Voice] 
+
+   [Sound Composer]
+   Masahiko Takaki, Kazuyuki Ohnui, Splatter.A, Takami Asano
+
+// List contribution by ZEK.
+$end

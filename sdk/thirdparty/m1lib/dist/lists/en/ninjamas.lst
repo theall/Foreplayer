@@ -1,0 +1,50 @@
+﻿$name=ninjamas
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#208 Murderous Intent, Invisible Chain (Opening)
+#209 How to Play
+#210 Player Select
+#192 Yasha Power (Sasuke)
+#193 Mad Nightmare (Kamui)
+#194 Reverie of Might (Raiga)
+#195 Drizzle (Tenho)
+#211 Finish Demo
+#212 Irruption
+#196 Blank Minute (Karasu)
+#197 Crashed Reality (Houoh)
+#198 Sexiness (Natsume)
+#199 Spray from Ryuga Antro (Goemon)
+#200 Stound (Unzen)
+#201 Sakura in Full Bloom (Kasumi)
+#202 Amphichrome (Ranmaru)
+#203 Illume Decaying Dream (Nobunaga)
+#224 Sasuke's Ending
+#225 Kamui's Ending
+#226 Raiga's Ending
+#227 Tenho's Ending
+#228 Karasu's Ending
+#229 Houoh's Ending
+#230 Natsume's Ending
+#231 Goemon's Ending
+#232 Unzen's Ending
+#233 Kasumi's Ending
+#234 Ranmaru's Ending
+#235 Nobunaga's Ending
+#215 Back of My Mind (End Roll)
+#213 Continue
+#214 Game Over
+#216 Ranking
+#217 Disappearing Shadow (Memory Save & Load)
+#238 Old Memory (Theme of Ninja Masters)
+
+  [Source]
+  Ninja Masters - Haouninpouchou - / ADK, ADK Sound Factory
+  Pony Canyon / Scitron  PCCB-00209  Jun 21, 1996
+
+// List Contribution by NK
+// Power-translation by Fuji.
+$end

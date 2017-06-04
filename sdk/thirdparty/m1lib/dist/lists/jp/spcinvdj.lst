@@ -1,0 +1,14 @@
+﻿$name=spcinvdj
+$version=2
+$default=003
+$main
+
+  ※ベータ版リスト
+
+#003 TITLE DEMO
+#004 SELECT A PLAY MODE
+#005 VS GAME MODE
+#006 WIN !
+
+// List contribution by ZEK.
+$end

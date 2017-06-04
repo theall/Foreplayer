@@ -1,0 +1,36 @@
+﻿$name=timecrs2
+$version=2
+$default=230
+$songmax=512
+$main
+
+#230 Main Title
+#190 2nd Theme from Time Crisis 'Again'
+#327 Behind Closed Door
+#133 Street Fight
+#333 To the River...
+#107 Chase on Water
+#188 Getting New Information
+#187 Chase on Chase
+#224 Dedley Fight
+#139 With a Tension 'Again'
+#335 Fight on Train
+#173 Count Down for Launching Satellite
+#109 Rumbling of The Earth
+#324 Wild Dog's Rage
+#338 General Diaz
+#132 Mission Completed
+#189 Good Night - Theme from Sunrise-Sunset
+#330 End Title
+
+#001 Sound Check
+
+  [Source]
+  Time Crisis II / Arcade Soundtrack 016
+  Pony Canyon / Wonder Spirits  WSCA-00021  Sep 18, 1998
+
+  [Sound Composer / Adapter]
+  Kazuhiro Nakamura
+
+// List updated by Skeleton081983
+$end

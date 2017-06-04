@@ -1,0 +1,267 @@
+﻿$name=machbrkr
+$version=2
+$default=575
+$main
+
+#575 アトラクト <time="0:30.44">
+#512 オープニング (停止ごとにマンチンポウ版と切り替え) <time="1:20.47">
+#516 競技セレクト <time="0:27.59">
+#515 操作説明 <time="1:03.09">
+#519 4Pジングル <time="0:04.11">
+#514 1Pジングル <time="0:04.12">
+#524 マキシマム・スピード <time="0:32.26">
+#525 モンスター・ドラッグ <time="1:03.27">
+#526 アイス・クラッシャー <time="0:45.01">
+#572 ハイパー・グライダー <time="0:42.04">
+#573 ビースト・ホール <time="0:55.49">
+#563 フューチャー・ゲート <time="0:56.74">
+#608 スーパー・スタント <time="0:45.42">
+#574 ボムズ・アウェイ <time="0:48.69">
+#522 ディープ・ダイバー <time="1:22.46">
+#566 ラピッド・ジャンプ <time="1:02.59">
+#560 ブロック・バスター <time="0:51.34">
+#570 グランド・スパイク <time="0:54.34">
+#517 競技クリア <time="0:04.12">
+#520 競技失敗 <time="0:04.11">
+#567 チャルメラ <time="0:04.12">
+#521 競技オーバー <time="0:04.11">
+#568 同着判定 <time="0:16.34">
+#527 ワールド・レコード <time="0:50.04">
+#561 1人でもクリア <time="0:55.29">
+#562 コンティニュー <time="0:31.19">
+#612 エキシビジョン <time="0:28.09">
+#569 表彰式 <time="2:01.32">
+#609 エンディング (CPUに勝った場合) <time="1:29.01">
+#614 ジョニー・サンダースBGM <time="0:32.47">
+#616 ソフィア・レイリーBGM <time="0:44.04">
+#617 ロン・ルイファンBGM <time="0:47.74">
+#618 マコト・コトブキBGM <time="0:41.39">
+#619 マサラ・ティッカ・マサラBGM <time="0:45.24">
+#620 カール・バイセマンBGM <time="0:39.29">
+#621 マイケル・フレッチャーBGM <time="0:34.06">
+#613 エンディング (CPUに負けた場合) <time="2:23.32">
+#564 バッド・エンド <time="0:27.39">
+#571 ランキング/結果表示 <time="0:37.85">
+
+#523 未使用曲?
+#565 未使用曲?
+
+-----------------------------------------
+  [S.E.]
+
+#001 Sound Check
+
+  場内アナ(日本語版) 声:天野由梨
+#256 [Voice] ｢キャラクターを選んで下さい｣
+#257 [Voice] ｢次の競技はこれです｣
+#258 [Voice] ｢次の競技を選んで下さい｣
+#259 [Voice] ｢以上のようにクリアしました｣
+#260 [Voice] ｢以上のように決定しました｣
+#261 [Voice] ｢最終結果発表です｣
+#262 [Voice] ｢続けて参加して下さい｣
+#263 [Voice] ｢そんなあ｣
+#264 [Voice] ｢まってえ｣
+#265 [Voice] ｢ネームを登録して下さい｣
+#266 [Voice] ｢それでは競技を開始します｣
+#267 [Voice] ｢それでは1回目を開始します｣
+#268 [Voice] ｢それでは2回目を開始します｣
+#269 [Voice] ｢所定の位置に着いて下さい｣
+#270 [Voice] ｢エキシビジョンマッチです｣
+
+  場内アナ(英語版)
+#271 [Voice] "SELECT YOUR CHARACTER"
+#272 [Voice] "NEXT"
+#273 [Voice] "PLEASE SELECT A MATCH"
+#274 [Voice] "AND NOW FOR THE FINAL RESULTS"
+#275 [Voice] "PLEASE DON'T GIVE UP"
+#276 [Voice] "WAIT!"
+#277 [Voice] "PLEASE ENTER YOUR NAME"
+#278 [Voice] "GO TO THE SPECIFIED POSITION"
+#279 [Voice] "THIS IS AN EXHIBITION STAGE"
+
+  実況
+#280 [Voice] "READY?"
+#281 [Voice] "1"
+#282 [Voice] "2"
+#283 [Voice] "3"
+#284 [Voice] "4"
+#285 [Voice] "5"
+#286 [Voice] "GO"
+#287 [Voice] "TIME OVER"
+#288 [Voice] "OK"
+#289 [Voice] "ARE YOU READY?"
+#290 [Voice] "HERE WE GO!"
+#291 [Voice] "WHO'S THE CHAMPION THIS YEAR?"
+#292 [Voice] "HAVE MERCY!!"
+#293 [Voice] "IT'S A WORLD RECORD!!"
+#294 [Voice] "HIT IT! HIT IT!"
+#295 [Voice] "HURRY! HURRY!!"
+#296 [Voice] "THERE!!"
+#297 [Voice] "DIVE, DIVE!"
+#298 [Voice] "LOSING OXYGEN!"
+#299 [Voice] "DANGER!"
+#300 [Voice] "TURN! TURN!!"
+
+  ジョニー
+#301 [Voice] "IT'S TIME!"
+#302 [Voice] "I DID IT!"
+#303 [Voice] "YEAH!"
+#304 [Voice] "OH NO!"
+#305 [Voice] "THIS IS WHO I AM!"
+#306 [Voice] "HMM! WAIT A SECOND!"
+#307 [Voice] "HUH?! WAAAAIT!"
+#308 [Voice] "GEE, IT HURTS!"
+#309 [Voice] 気合い
+#310 [Voice] 短気合い
+#311 [Voice] アタック
+#312 [Voice] アタック失敗
+#313 [Voice] 短ジャンプ
+#314 [Voice] 長ジャンプ
+#315 [Voice] 着地
+#426 [Voice] 悲鳴
+
+  マコト(英語版)
+#317 [Voice] "LET'S DO IT!"
+#318 [Voice] "EASY, EASY! No.1"
+#319 [Voice] "WELL?"
+#320 [Voice] "GEEE!"
+#321 [Voice] "THIS IS JUSY TOO EASY!"
+#322 [Voice] "OOPS? WHY, WHY, WHY?"
+#323 [Voice] "THIS IS STRANGE!?"
+#324 [Voice] 気合い
+#325 [Voice] 短気合い
+#326 [Voice] 長気合い
+#327 [Voice] アタック
+#328 [Voice] アタック失敗
+#329 [Voice] 短ジャンプ
+#330 [Voice] 長ジャンプ
+#331 [Voice] 着地
+#427 [Voice] 悲鳴
+
+  マイケル
+#333 [Voice] "HEY! HELLOW!"
+#334 [Voice] "HERE'S THE VICTORY POSE!"
+#335 [Voice] "I'M SO HAPPY MAN!!"
+#336 [Voice] "OH MY GOODNESSSS!"
+#337 [Voice] "ME, No.1 MAN!"
+#338 [Voice] "WAIT A MINUTE! I'LL BE..."
+#339 [Voice] 気合い
+#340 [Voice] 短気合い
+#341 [Voice] 長気合い
+#342 [Voice] アタック
+#343 [Voice] アタック失敗
+#344 [Voice] 短ジャンプ
+#345 [Voice] 長ジャンプ
+#346 [Voice] 着地
+#428 [Voice] 悲鳴
+
+  ソフィア
+#348 [Voice] "HERE I GO"
+#349 [Voice] "OK! OK!"
+#350 [Voice] "ALRIGHT! WAY TO GO!"
+#351 [Voice] "WHY? I CAN'T TAKE IT! SNIFF SNIFF..."
+#352 [Voice] "IT WAS GREAT!!"
+#353 [Voice] "WAIT FOR ME!!"
+#354 [Voice] "OH! NO!"
+#355 [Voice] 気合い
+#356 [Voice] 短気合い
+#357 [Voice] 長気合い
+#358 [Voice] アタック
+#359 [Voice] アタック失敗
+#360 [Voice] 短ジャンプ
+#361 [Voice] 長ジャンプ
+#362 [Voice] 着地
+#429 [Voice] 悲鳴
+
+  カール
+#364 [Voice] "I DID IT!"
+#365 [Voice] "HERE'S THE VICTORY POSE!!"
+#366 [Voice] "GOOD HEAVENS!"
+#367 [Voice] "IS IT THE DELICIOUS DRINK OF VICTORY?"
+#368 [Voice] "WHAT? WAS I DOROPPED?!"
+#369 [Voice] "WHAT? WHO DO YOU THINK YOU ARE??"
+#370 [Voice] 気合い
+#371 [Voice] 短気合い
+#372 [Voice] 長気合い
+#373 [Voice] アタック
+#374 [Voice] アタック失敗
+#375 [Voice] 短ジャンプ
+#376 [Voice] 長ジャンプ
+#377 [Voice] 着地
+#430 [Voice] 悲鳴
+#379 [Voice] 笑い
+
+  ロン
+#380 [Voice] "I'M REALLY SORRY"
+#381 [Voice] "HOW ABOUT THIS??"
+#382 [Voice] "OH, BOY"
+#383 [Voice] 気合い
+#384 [Voice] 短気合い
+#385 [Voice] 長気合い
+#386 [Voice] アタック
+#387 [Voice] アタック失敗
+#388 [Voice] 短ジャンプ
+#389 [Voice] 長ジャンプ
+#390 [Voice] 着地
+#431 [Voice] 悲鳴
+#392 [Voice] 笑い
+
+  マサラ
+#393 [Voice] "HERE I GO!"
+#394 [Voice] "VERY WELL VERY WELL!"
+#395 [Voice] "GOOD ENOUGH!"
+#396 [Voice] "I AM IN A SLUMP, YOU KNOW!"
+#397 [Voice] "NOBODY CAN TAKE MY VICTORY AWAY"
+#398 [Voice] 気合い
+#399 [Voice] 短気合い
+#400 [Voice] 長気合い
+#401 [Voice] アタック
+#402 [Voice] アタック失敗
+#403 [Voice] 短ジャンプ
+#404 [Voice] 長ジャンプ
+#405 [Voice] 着地
+#406 [Voice] 悲鳴
+#407 [Voice] びっくり
+#432 [Voice] ふらふら飛んでいく
+#409 [Voice] 悲鳴2
+
+  マコト(日本語版) 声:かない みか
+#410 [Voice] "はりきっていこう!!"
+#411 [Voice] "やったあ！ やったあ！ いちばんっ!!"
+#412 [Voice] "どーだっ！"
+#413 [Voice] "なあんだよもうっ！ フンっだ！"
+#414 [Voice] "ざーっとこんなもんよ!!"
+#415 [Voice] "れれっ? あれれれれれっ?"
+#416 [Voice] "なんでかなぁ…んっ?"
+#417 [Voice] 気合い
+#418 [Voice] 短気合い
+#419 [Voice] 長気合い
+#420 [Voice] アタック
+#421 [Voice] アタック失敗
+#422 [Voice] ジャンプ
+#423 [Voice] 長ジャンプ
+#424 [Voice] 着地
+#433 [Voice] 悲鳴
+
+  シャロン
+#442 [Voice] "WONDERFUL"
+
+  マンチンボウ
+#443 [Voice] "もおう、おこったよー"
+#444 [Voice] "うおっほほほほ"
+
+  ■出典
+  MACH BREAKERS / NAMCO GAME SOUND EXPRESS Vol.19
+  VICTOR ENTERTAINMENT  VICL-15041  1995.06.21
+
+  ■作曲･編曲
+  細江 慎治: #575
+  佐宗 綾子: #573
+  佐野 信義: #512, #612, #621
+  佐々木 宏人: 上記以外
+
+//※  BGM #512, S.E. #443の人物名表記違いはサントラの表記に準拠した。
+//※  BGM #571はサントラ中では同曲だが二曲に分かれ別トラック扱い。
+
+// List by MuramuraNight
+$end

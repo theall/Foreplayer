@@ -1,0 +1,64 @@
+﻿$name=metlhawk
+$version=2
+$default=$0d
+$fixed_volume=418
+$main
+
+$0d MAP MODE A
+$03 GAME BGM 1
+$23 GAME BGM 2
+$2a MAP MODE B
+$25 GAME BGM 3
+$27 GAME BGM 4
+$28 GAME BGM 5
+$0e ROUND CLEAR
+$06 ENDING
+$2b NAME [A]
+$2c NAME [B]
+$11 NAME [C]
+$2e NAME [D]
+
+-----------------------------------------
+ [S.E.]
+
+$42 [Voice] 勝利ポイント表示
+$43 [Voice] タイム表示
+$41 [Voice] メタルホーク発進！
+$44 [Voice] 目標地点レーダー表示
+$45 [Voice] 目標接近
+$46 [Voice] 目標確認
+$47 [Voice] 攻撃せよ！
+$48 [Voice] 目標破壊
+$49 [Voice] 作戦終了
+$4a [Voice] 帰還せよ
+$4b [Voice] エンジン被弾！
+$4c [Voice] 燃料タンク被弾！
+$4d [Voice] 脱出せよ！
+$4e [Voice] 上昇せよ
+$4f [Voice] 下降せよ
+$40 [Voice] Count down to Time up!
+$30 [Voice] '60
+$31 [Voice] '50
+$32 [Voice] '40
+$33 [Voice] '30
+$34 [Voice] '20
+$35 [Voice] '10
+$36 [Voice] '9
+$37 [Voice] '8
+$38 [Voice] '7
+$39 [Voice] '6
+$3a [Voice] '5
+$3b [Voice] '4
+$3c [Voice] '3
+$3d [Voice] '2
+$3e [Voice] '1
+$3f [Voice] '0
+
+  ■出典
+  WINNING RUN -G.S.M. NAMCO 2-
+  PONY CANYON / SCITRON  D24B1003  1989.07.21
+
+  ■作曲
+  細江 慎治, 野口 和雄
+
+$end

@@ -1,0 +1,66 @@
+﻿$name=tnzsjo
+$version=2
+$default=014
+$main
+
+#014 COIN
+#005 OPENING ～ MAIN THEME
+#006 MAIN THEME
+#010 HURRY UP 1
+#059 HURRY UP 2
+#049 BOOK OF DEATH
+#057 CLOCK
+#012 POWER UP BGM
+#013 EXTEND
+#016 ROUND CLEAR
+#007 BOSS BGM
+#017 PLAYER DEAD
+#056 ENTRANCE OF HEAVEN
+#008 HEAVEN BGM
+#009 ENDING
+#011 NAME REGISTER
+#015 GAME OVER
+
+-----------------------------------------------------------
+
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#058 [S.E.]
+
+// List contribution by みん☆さん
+$end

@@ -1,0 +1,119 @@
+﻿$name=fightfev
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#037 ATTRACT MODE
+#127 [S.E.] CREDIT
+#045 HOW TO PLAY
+#039 PLAYER SELECT
+#043 WORLD MAP
+#035 HAN BAEDAL (KOREA)
+#050 MIYUKI (JAPAN)
+#049 ROPHEN HEIMER (GERMAN)
+#041 CONTINUE ? <time="17">
+#033 GOLRIO (BRASIL) 
+#051 CHINTAO (CHINA) 
+#048 KIM HOON (MEXICO)
+#034 NICK COMMANDO (U.S.A)
+#040 BONUS GAME
+#053 MAGIC DUNKER (U.S.A)
+#036 MASTER TAEKUK (KOREA)
+#055 WON
+#047 TAEKWON CHAMPION
+#054 CONGRATULATION
+#052 KARATE KENJI (JAPAN)
+#042 NAME ENTRY
+#055 GAME CLEAR
+#038 STAFF ROLL
+#044 GAME OVER
+
+#046 未使用曲
+#065 未使用曲 Ver.2
+
+---------------------------------------------------
+  [S.E.]
+
+#002 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#127 [S.E.] CREDIT
+#128 [S.E.]  
+#129 [S.E.]  
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#206 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#216 [S.E.] 
+#217 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] 
+#225 [S.E.] 
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#237 [S.E.] 
+#238 [S.E.] 
+#239 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#229 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+
+// List contribution by ZEK.
+$end

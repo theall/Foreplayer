@@ -1,0 +1,64 @@
+﻿$name=armwar
+$version=2
+$default=030
+$fixed_volume=201
+$main
+
+#030 QSound Logo
+
+#022 Opening
+#032 Player Demo
+#008 Ranking Display
+#001 Player Select
+#006 Map 1
+#034 Map 2
+#002 Area Clear
+#003 Stage Clear
+#009 Deserted Town (Stage 1)
+#010 Win Back (Stage 2)
+#011 Chase (Stage 3)
+#012 Forgotten Ruins 1 (Stage 4-1)
+#024 Forgotten Ruins 2 (Stage 4-2)
+#013 Railroad in Flames (Stage 5)
+#014 Truth (Stage 6)
+#015 Starry Ocean (Stage 7)
+#004 Continue
+#017 AVA-13H Agmiss Theme
+#018 TEX-665H Rad Theme
+#019 V2-200HL Sculd Theme
+#020 SVA-1000S Helion Theme
+#021 Mecha Brain Theme
+#043 Score Count Demo
+#044 Score Count Demo 2
+#016 SVA-100M Warlock Theme
+#027 SVA-100MR Warlock Mark II Theme
+#023 SVA-100MSR "nu" Warlock Theme
+#005 Game Over
+#025 Shooting Area
+#026 Terminate Them!
+#035 Demo 1
+#036 Demo 2
+#033 Demo 3
+#037 Demo 4
+#038 Demo 5
+#039 Demo 6
+#040 Mecha Brain Demo
+#073 Farewell to Human
+#028 Ending 1
+#047 Ending 2
+#007 Name Entry
+#041 Ending Jeff Perkins
+#042 Ending Ray Turner
+#045 Ending Glenn Reed
+#046 Ending Sarah White
+#029 Credits Roll
+
+  [Source]
+  Powered Gear Arcade Game Track
+  Sony Music Works  SRCL-3089  Dec 1, 1994
+
+  [Sound Composer]
+  Alfh Lyra
+
+// English list adjustment by bcass
+$end

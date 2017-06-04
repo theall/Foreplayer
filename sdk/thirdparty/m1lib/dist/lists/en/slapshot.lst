@@ -1,0 +1,103 @@
+﻿$name=slapshot
+$version=2
+$default=008
+$main
+
+#008 Demo <time="11">
+#010 Title <time="7">
+#242 [SFX] Credit Inserted <time="2">
+#015 Player Select
+#009 Space Shuttle
+#011 VS
+#003 U.S.A
+#001 Japan
+#005 Brazil
+#006 China
+#002 Germany
+#004 England
+#014 Win
+#013 Ending
+#018 Name Entry
+#007 Game Over
+
+#012 Continue ?
+#016 Unused 1
+#017 Unused 2
+
+---------------------------------------------------
+ [SFX] 
+
+#129 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#229 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+#232 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#240 [SFX] 
+#241 [SFX] 
+#242 [SFX] 
+#243 [SFX] 
+#244 [SFX] 
+#245 [SFX] 
+#246 [SFX] 
+#247 [SFX] 
+#248 [SFX] 
+#249 [SFX] 
+#250 [SFX] 
+#251 [SFX] 
+#252 [SFX] 
+#253 [SFX] 
+#254 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+
+  [Sound Composer]
+  H.Kudoh
+
+// List contribution by ZEK.
+$end

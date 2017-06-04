@@ -1,0 +1,19 @@
+﻿$name=grainbow
+$version=2
+$default=22
+$main
+
+#022 BGM 1
+#025 BGM 2
+#028 BGM 3
+#031 BGM 4
+#034 BGM 5
+#037 BGM 6
+#040 BGM 7
+#043 BGM 8
+#046 BGM 9
+#049 BGM 10
+
+#001 - 021 [SFX]
+
+$end

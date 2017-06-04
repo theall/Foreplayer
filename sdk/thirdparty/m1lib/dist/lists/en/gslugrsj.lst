@@ -1,0 +1,22 @@
+$name=gslugrsj
+$version=2
+$default=159
+$main
+
+$9f Opening Theme
+$a0 Forward Field (Great Sluggers Sub Theme)
+$a4 Great Sluggers (Theme from Great Sluggers)
+$a5 Second Wind
+$a6 Full Base
+$a3 Namco Sports News Opening Theme
+$a2 Namco Sports News Main Theme
+$91 Defense Theme 1
+$92 Defense Theme 2
+$93 Defense Theme 3
+$94 Defense Theme 4
+$90 Homerun
+$7f Game End
+$a1 Unknown
+
+// list by Knurek
+$end

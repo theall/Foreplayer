@@ -1,0 +1,271 @@
+﻿$name=le2
+$version=2
+$default=$111
+$songmax=929
+$main
+
+$111 Opening <time="33.8">
+#929 [Voice] "Lethal Enforcers II - The Western" <time="3.7">
+#519 [S.E.] 
+$112 Stage Select
+$104 The Bank Robbery (Stage 1-1)
+$101 The Bank Robbery (Stage 1-2)
+$10c Stage Boss 1 (Stage 1, 2, 4 Boss)
+$115 Stage Clear <time="4.8">
+$116 Promotion <time="1.8">
+
+$113 Bonus Stage 1
+$107 The Stage Hold-Up (Stage 2, 4 Chase)
+$102 The Saloon Showdown (Stage 3-1)
+$109 The Saloon Showdown (Stage 3-2)
+$103 The Saloon Showdown (Stage 3-3)
+$10d Stage Boss 2 (Stage 3 Boss)
+$115 Stage Clear <time="4.8">
+$117 Demotion <time="1.8">
+
+$114 Bonus Stage 2
+$106 The Hide-Out (Stage 5-1)
+$105 The Hide-Out (Stage 5-2)
+$108 The Hide-Out (Stage 5-3)
+$10e Stage Boss 3 (Stage 5 Boss)
+
+$119 Staff Credits
+$11a Game Over
+$118 Name Entry
+
+$120 Speaker Test
+
+------------------------------------------------
+  [S.E.]
+
+#513 [S.E.] 
+#514 [S.E.] 
+#515 [S.E.] 
+#516 [S.E.] 
+#517 [S.E.] 
+#518 [S.E.] 
+#519 [S.E.] 
+#520 [S.E.] 
+#521 [S.E.] 
+
+#528 [S.E.] gunshot
+#529 [S.E.] gunshot
+#530 [S.E.] gunshot
+#531 [S.E.] gunshot
+#532 [S.E.] gunshot
+#533 [S.E.] gunshot
+#534 [S.E.] gattling
+#535 [S.E.] gunshot
+#544 [S.E.] gunshot
+#545 [S.E.] gunshot
+#546 [S.E.] gunshot
+#547 [S.E.] bomb
+#548 [S.E.] gattling
+#549 [S.E.] gunshot
+
+#560 [S.E.]
+#561 [S.E.]
+#562 [S.E.]
+#563 [S.E.]
+#564 [S.E.] knife
+#565 [S.E.] knife
+#566 [S.E.] knife
+#567 [S.E.] breaking glass
+#568 [S.E.] breaking glass
+#569 [S.E.] breaking bottle
+#570 [S.E.] breaking bottle
+#571 [S.E.] breaking bottle
+#572 [S.E.] breaking bottle
+#573 [S.E.] breaking bottle
+#574 [S.E.] breaking bottle
+#575 [S.E.] breaking bottle
+#576 [S.E.] bell
+#577 [S.E.]
+#578 [S.E.]
+#579 [S.E.]
+#580 [S.E.]
+#581 [S.E.]
+#582 [S.E.]
+#583 [S.E.]
+#584 [S.E.]
+#585 [S.E.]
+#592 [S.E.] stuck
+#593 [S.E.] stuck
+#594 [S.E.] stuck
+
+#608 [S.E.] booom
+#609 [S.E.] booom
+#610 [S.E.] booooom
+#611 [S.E.] kaboooom
+#612 [S.E.] kabooooooom
+#613 [S.E.] boom
+#614 [S.E.] boom
+#615 [S.E.] boom
+#616 [S.E.] boom
+
+#624 [S.E.] slap
+#625 [S.E.] slap
+#626 [S.E.]
+#627 [S.E.] slap
+#628 [S.E.] slap
+#629 [S.E.] slap
+#630 [S.E.]
+#631 [S.E.]
+#632 [S.E.]
+#633 [S.E.] breaking glasses
+#634 [S.E.]
+#635 [S.E.]
+#636 [S.E.]
+#637 [S.E.]
+#638 [S.E.]
+
+#656 [S.E.] reload
+#657 [S.E.] snap
+#658 [S.E.] 
+#659 [S.E.] 
+#660 [S.E.] 
+#661 [S.E.] 
+#662 [S.E.] 
+#663 [S.E.] 
+#664 [S.E.] 
+#665 [Voice] nicker
+#666 [Voice] nicker
+#667 [S.E.] hoofbeats
+#668 [S.E.] whip
+#669 [Voice] moo
+#670 [S.E.] trains
+#671 [S.E.] trains
+#672 [S.E.] steam whistle
+#673 [S.E.] 
+#674 [S.E.] 
+#675 [S.E.] bugle
+#676 [S.E.] 
+#677 [Voice] laughter
+#678 [Voice] screech
+#679 [S.E.] 
+#680 [S.E.] steam
+#681 [S.E.] SL sounds
+#682 [S.E.] 
+#683 [S.E.] 
+#684 [S.E.] 
+#685 [S.E.] 
+//#752 Sound test = #288
+
+#769 [Voice] "Let's Ride"
+#770 [Voice] "The Bank Robbery"
+#771 [Voice] "Come on Sheriff, we're waiting for ya"
+#772 [Voice] "Sheriff, the bank has been robbed!"
+#773 [Voice] "The Stage Holdup"
+#774 [Voice] "Yeeeehaw!"
+#775 [Voice] "Stop that stage!"
+#776 [Voice] "Saloon Showdown"
+#777 [Voice] "Mind if I play, boys?"
+#778 [Voice] "Get'em boys!"
+#780 [Voice] "The Train Robbery"
+#781 [Voice] "Yaaah!"
+#782 [Voice] "The Hideout"
+#783 [Voice] "Come on, boys, the Sheriff ain't goin to find us in there!"
+#784 [Voice] "Bonus Stage"
+#785 [Voice] "Let's see if you've got what it takes to be a Sheriff" - Female
+#786 [Voice] "Try n' hit the bottles" - Female
+#787 [Voice] "Nice shooting" - Female
+
+#800 [Voice] "Get back or I'll blow his brains out!"
+#801 [Voice] "Eat lead, Sheriff!"
+#802 [Voice] "You ain't a gonna kill me!"
+#803 [Voice] "You can't hit the broad side of a barn!" 
+#804 [Voice] "Die, ya varmint!"
+#805 [Voice] "Eat lead, Sheriff!" - Female
+#806 [Voice] "You ain't gonna kill me!" - Female
+#807 [Voice] "You can't hit the broad side of a barn!" - Female
+#808 [Voice] "Die, ya varmint!" - Female
+#809 [Voice] 
+#810 [Voice] 
+#816 [Voice] 
+#817 [Voice] 
+#818 [Voice] 
+#819 [Voice] 
+#820 [Voice] 
+#821 [Voice] 
+#822 [Voice] 
+#823 [Voice] 
+#824 [Voice] "You ain't gonna take me alive, Sheriff!"
+#828 [Voice] 
+#829 [Voice] 
+#832 [Voice] 
+#833 [Voice] 
+#836 [Voice] 
+#837 [Voice] 
+#838 [Voice] 
+#840 [Voice] "When we draw, start shooting"
+#841 [Voice] "You can't shoot till we draw"
+#842 [Voice] "I said, you can't shoot till we draw"
+#843 [Voice] "You lose"
+#844 [Voice] "Hahahahahaha, you lose"
+#845 [Voice] 
+#846 [Voice] 
+#847 [Voice] 
+#848 [Voice] 
+#849 [Voice] 
+#852 [Voice] 
+#853 [Voice] 
+#854 [Voice] 
+#856 [Voice] "Arise, my braves!"
+#857 [Voice] 
+#858 [Voice] 
+#860 [Voice] 
+#861 [Voice] 
+#862 [Voice] 
+#864 [Voice] "Don't shoot!"
+#865 [Voice] "Don't shoot!" - Female
+#866 [Voice] "Save me, sheriff!"
+#867 [Voice] "Save me, sheriff!" - Female
+#868 [Voice] "No!"
+#869 [Voice] "No!" - Female
+#870 [Voice] "I don't wanna die"
+#871 [Voice] "I don't wanna die" - Female
+#872 [Voice] "Don't shoot - they're plumb loco!"
+#873 [Voice] "Don't shoot - they're plumb loco!" - Female
+#876 [Voice] (moan + alarm)
+#877 [Voice] (moan + alarm)
+#878 [Voice] (ouch + alarm)
+#879 [Voice] (cry + alarm)
+#880 [Voice] "Don't shoot innocent folks"
+#881 [Voice] "Nice shootin', partner"
+#882 [Voice] "Look out!"
+#883 [Voice] "Be careful!"
+#884 [Voice] 
+#885 [Voice] 
+#888 [Voice] "Use your head, boy!"
+#889 [Voice] "Whoa!"
+#892 [Voice] "Drop them irons!"
+#893 [Voice] "This is the Sheriff!"
+#894 [Voice] "This is the Sheriff.  Drop them irons!"
+#896 [Voice] "Perfect shot"
+#897 [Voice] "Real pretty shootin', son"
+#898 [Voice] "Great shooting"
+#899 [Voice] "Posse"
+#900 [Voice] "Deputy"
+#901 [Voice] "Sheriff"
+#902 [Voice] "Deputy Marshal"
+#903 [Voice] "Marshal"
+#904 [Voice] "U.S. Marshal"
+#912 [Voice] "Shotgun"
+#913 [Voice] "Rifle"
+#914 [Voice] "Double Rig"
+#915 [Voice] "Cannon"
+#916 [Voice] "Gattling Gun"
+#917 [Voice] "50 Caliber Sharp"
+#920 [Voice] "Player 1"
+#921 [Voice] "Player 2"
+#922 [Voice] "Reload"
+#923 [Voice] "Game Over"
+#924 [Voice] "Keep a goin"
+#928 [Voice] "Lethal Enforcers II - Gun Fighers"
+#929 [Voice] "Lethal Enforcers II - The Western"
+
+// Hoot list by Saitou
+// M1 list by Knurek
+// Updated by Fujix
+// Voices helped by Tafoid
+$end

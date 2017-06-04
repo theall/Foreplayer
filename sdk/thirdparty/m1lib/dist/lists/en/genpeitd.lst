@@ -1,0 +1,106 @@
+﻿$name=genpeitd
+$version=2
+$default=$002
+$fixed_volume=100
+$main
+
+#002 Theme of Genpei Toumaden
+#016 Game Start
+#006 Small Mode
+$021 Map Mode Intro
+$01e Large Mode
+$012 Theme of Heiankyo
+$022 Theme of Yoshitsune
+$01c Theme of Biwahoushi
+$01f Large Mode (consequent)
+$02f Theme of Benkei
+$02a Bonus Stage
+$033 Yoritomo
+$028 Ending
+$018 Game Over
+$031 Pun Land (& Name Entry)
+
+---------------------------------------------------------
+  [Voice]
+
+#512 [Voice] huh!
+#513 [Voice] torya!
+#514 [Voice] orokamono
+#515 [Voice] wagatamashii wa fumetsuja
+#516 [Voice] orokamonome
+#517 [Voice] hu!
+#518 [Voice] gyoe!
+#519 [Voice] hyoo!
+#520 [Voice] nuo!
+#521 [Voice] uwaaaaaa
+#522 [Voice] namuamidabu..
+#523 [Voice] imaippo jatta no
+
+#524 [Voice] mada
+#525 [Voice] ikidomarija
+#526 [Voice] doku
+#527 [Voice] tou!
+#528 [Voice] fuuzenno tomoshibi
+#529 [Voice] tawamurewa owarija
+#530 [Voice] shogyoumujou
+#531 [Voice] koroshiteshinzeyou
+#532 [Voice] hiehiehie
+#533 [Voice] nasakenaya
+#534 [Voice] kiotsukenasare
+#535 [Voice] uhahahahaa
+#536 [Voice] ougha
+#537 [Voice] midokoronoaruyatsuja
+#538 [Voice] baakamee
+#539 [Voice] shogyoumujouyono
+#540 [Voice] imanimiteore
+#541 [Voice] ohhohohoho
+#542 [Voice] guhhahahhaha
+#543 [Voice] gyoeeee!
+#544 [Voice] sakiwa nagai!
+#545 [Voice] dame
+#546 [Voice] iza
+#547 [Voice] iyaan
+#548 [Voice] senpuuken
+#549 [Voice] hanashimasenuzo
+#550 [Voice] katahara itaiwa
+#551 [Voice] isogunoja
+#552 [Voice] koredekattato omounayo
+#553 [Voice] gyue!
+#554 [Voice] arigatayaa
+#555 [Voice] gyoe!
+#556 [Voice] tekinagara appare
+#557 [Voice] madawakainou
+#558 [Voice] 
+#559 [Voice] hissatsu
+#560 [Voice] 
+#561 [Voice] onoree
+#562 [Voice] nakanakayaruwai
+#563 [Voice] shikisokuzekuu
+#564 [Voice] 
+#565 [Voice] omaeno chikarawa sonna monoka
+#566 [Voice] atowazuka
+#567 [PCM] 
+#568 [PCM] 
+#569 [PCM] 
+#570 [PCM] 
+#571 [PCM] 
+#572 [PCM] 
+#573 [PCM] 
+#574 [PCM] 
+#575 [Voice] 
+#576 [PCM] 
+#577 [PCM] 
+#578 [PCM] 
+#579 [PCM] 
+#580 [PCM] 
+
+  [Source]
+  Namco Game Music Vol.1
+  Alfa Records  28XA-170  Jul 25, 1987
+
+  [Sound Composer]
+  Norio Nakagata (NAK)
+
+// Based on list by Monyons
+// Update and English translation by Fujix
+$end

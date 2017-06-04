@@ -1,0 +1,58 @@
+﻿$name=neodrift
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode
+#127 Coin <time="2.8">
+#034 How to Play
+#035 Stage Start
+#033 Practice Stage (Stage 0)
+#036 European Stage (Stage 1)
+#037 African Stage (Stage 2)
+#038 Snow Land Stage (Stage 3)
+#046 Continue <time="15">
+#039 Southern Hemisphere (Stage 4)
+#040 Scandinavian Stage (Stage 5)
+#041 Great Britain Stage (Stage 6)
+#045 Result
+#044 Ending
+#042 Credits
+#043 Game Over
+
+---------------------------------------------------
+  [SFX]
+
+#127 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+
+  [Sound Composer]
+  Ken'ichi Kamio
+
+// List contribution by ZEK.
+// English list QC and updated by Fuj
+$end

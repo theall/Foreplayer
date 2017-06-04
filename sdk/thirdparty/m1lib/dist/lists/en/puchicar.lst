@@ -1,0 +1,44 @@
+﻿$name=puchicar
+$version=2
+$default=306
+$main
+
+#306 Gemstone Land
+#294 Go Go West (Garnet)
+#305 Swallow (Ruco)
+#298 Child Play (Rald)
+#319 Episode #1
+#295 Jewel Box (Shyst)
+#307 Episode #2
+#296 Smile for Me
+#300 Sylban Library (Bee)
+#309 Sands of Time
+#292 Player Select
+#299 Nervous Delivery (Pearl & Dearl)
+#301 Deja Vu (Perydot)
+#303 Old Vision (Opa)
+#310 Over the Sky
+#315 For You
+#293 Puchi Carat
+#316 Congratulation
+#302 Bad Moon (Sapphire)
+#297 Mirage (C-Mond)
+#308 Episode #3
+#304 Order of Blue Shield (Paz)
+#311 Episode #4
+#317 Friends Staff
+#318 SHININ' QUEEN (Patoraco)
+#313 Parade
+#314 Game Over
+
+#312 Unknown (Background music for SFX collection on CD)
+
+  [Source]
+  Puchi Carat / Zuntata
+  Zuntata Records / ZTTL-0023  Jun 25, 1998
+
+  [Sound Composer]
+  Yasuhisa Watanabe
+
+// Updated by Fuj.
+$end

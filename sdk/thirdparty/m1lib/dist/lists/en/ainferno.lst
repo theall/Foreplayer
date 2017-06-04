@@ -1,0 +1,49 @@
+﻿$name=ainferno
+$version=2
+$default=009
+//$songmax=245
+$fixed_volume=273
+$main
+
+#009 Open (Attract)
+#010 Ju Ju (Select)
+#021 #1279 (Briefing)
+#016 Flight (Practice)
+#017 Fire (Fire-fighting Exercise)
+#011 Bom (Oil Carrier - Unused)
+#014 Red City (Street of Buildings - Unused)
+#012 Volcano (Volcanic Island)
+#013 Camel Land (Pyramid)
+#015 In Focus (Main Theme)
+#018 Clear (Mission Completed)
+#020 Morning (Ending)
+#022 Na-Ma-Su-Te (Name Entry)
+#069 Over (Game Over)
+
+-----------------------------------------
+
+#046 [Voice] You're ready for take off, over.
+#047 [Voice] Increase altitude immediately.
+#048 [Voice] Reduce altitude immediately.
+#049 [Voice] Make a right turn, over.
+#050 [Voice] Make a left turn, over.
+#051 [Voice] Go straight ahead, over.
+#056 [Voice] Warning, your time is running up.
+#059 [Voice] Warning.
+#061 [Voice] We'll be arriving on the scene soon, over.
+#062 [Voice] We've spotted the missing person to the rescue, over.
+#064 [Voice] Give up the search, over.
+#065 [Voice] It's burn down completely. It's ensued lost all the crew with it, over.
+#066 [Voice] Danger, danger. Stop the rescue immediately.
+#067 [Voice] It's burn down completely. There's no sign of survivors, over.
+#245 [Voice] Over, over.. <time="4">
+#246 [Command] Shut it up.
+//
+//#023-#045 [se]
+//#074-#097 [se]
+
+  [Source]
+  Taito DJ Station -G.S.M. Taito 5-
+  Pony Canyon / Scitron  PCCB-00037  Aug 21, 1990
+
+$end

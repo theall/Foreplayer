@@ -1,0 +1,139 @@
+﻿$name=dynwar
+$version=2
+$default=001
+$main
+
+#001 Start Demo
+#021 キャラ選択
+#002 大興山 (1 Round BGM)
+#010 Boss
+#016 Round Clear
+#005 汜水関 (2 Round BGM)
+#003 鉄門峡 (3 Round BGM)
+#014 シナリオ1 Clear
+#023 シナリオ2 Start
+#004 竜門谷 (4 Round BGM)
+#006 虎牢関 (5 Round BGM)
+#011 呂布のテーマ
+#007 洛陽 (6 Round BGM)
+#008 滎陽城 (7 Round BGM)
+#009 郿塢城 (8 Round BGM)
+#012 影武者董旻のテーマ
+#013 董卓のテーマ
+#015 シナリオ2 Clear
+#018 End Demo
+#019 Staff Roll
+#026 Top Ranking
+#027 Top Ranking Display
+#024 Ranking
+#025 Ranking Display
+#020 Continue
+#017 Game Over
+
+#028 CD未収録
+
+------------------------------------------------------
+ [S.E.]
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+
+ [Voice]
+
+#129 [Voice] Let's select player.
+#130 [Voice] I'm taking the field! Liu Bei.
+#131 [Voice] I'm taking the field! Kuan Yu.
+#132 [Voice] I'm taking the field! Chang Fei.
+#133 [Voice] I'm taking the field! Shao Yun.
+#134 [Voice] You have really defeated the Huang Jin.
+#135 [Voice] Do not be too confident.
+#136 [Voice] We are too strong, they cannot touch us.
+#137 [Voice] I have killed the general Cheng Yuan Zhi.
+#138 [Voice] I have killed the general Zhang Jiao.
+#139 [Voice] I have killed the general Wei Siang.
+#140 [Voice] I have killed the general Zhiang Ji.
+#141 [Voice] I have killed the general Li Ru.
+#142 [Voice] I have killed the general Dong Zhou.
+#143 [Voice] 
+#144 [Voice] You will never defeat us.
+#145 [Voice] You will never get your hands on me, haahaahaa
+#146 [Voice] You're going to get my head? Hahaha, you make me laugh! Come to see me at Ton Men Gu.
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [PCM] 
+#156 [PCM] 
+
+  ■出典
+  ストライダー飛竜 -G.S.M. CAPCOM 2- / アルフライラ ワ ライラ
+  PONY CANYON / SCITRON  D25B1001  1989.5.21
+
+  ■作曲
+  ちゃんちゃこりん (アルフライラ ワ ライラ)
+
+// リスト作成：ひろしさん
+// update by Fuj
+$end

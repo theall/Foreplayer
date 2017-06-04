@@ -1,0 +1,158 @@
+﻿$name=wof
+$version=2
+$default=123
+$fixed_volume=317
+$main
+
+#123 DEMO
+#096 GAME START DEMO <time="0:26">
+#112 PLAYER SELECT <time="0:36">
+#097 博望坡の戦い (ROUND 1-1) <time="1:48">
+#098 博望坡の戦い (ROUND 1-2) <time="0:56">
+#113 ROUND CLEAR
+#099 博望坡の戦い (ROUND 2) <time="1:54">
+#116 中間デモ (ROUND 2～3 A) <time="0:28">
+#115 BONUS <time="0:48">
+#117 中間デモ (ROUND 2～3 B) <time="0:23">
+#100 新野城 (ROUND 3) <time="1:14">
+#109 BOSS <time="0:53">
+#118 中間デモ (ROUND 3～4 A) <time="0:21">
+#119 中間デモ (ROUND 3～4 B) <time="0:39">
+#120 中間デモ (ROUND 3～4 C) <time="0:27">
+#101 白河 (ROUND 4) <time="2:01">
+#102 長坂坡の戦い (ROUND 5-1) <time="0:27">
+#121 中間デモ (ROUND 5-1～5-2) <time="0:38">
+#103 長坂坡の戦い (ROUND 5-2) <time="1:10">
+#122 中間デモ (ROUND 5～6) <time="1:31">
+#104 長坂橋 (ROUND 6) <time="1:48">
+#132 中間デモ (ROUND 6～7 A) <time="0:45">
+#133 中間デモ (ROUND 6～7 B) <time="0:40">
+#134 中間デモ (ROUND 6～7 C) <time="0:25">
+#105 赤壁の戦い (ROUND 7) <time="1:42">
+#106 赤壁の戦い (ROUND 8-1) <time="1:53">
+#107 赤壁の戦い (ROUND 8-2) <time="1:09">
+#135 赤壁の戦い (ROUND 8-3) <time="1:27">
+#108 華容道 (ROUND 9) <time="1:40">
+#110 BOSS (呂布) <time="1:07">
+#111 BOSS (曹操) <time="0:36">
+#114 LAST ROUND CLEAR
+#124 ENDING -historical fact- <time="1:44">
+#125 ENDING その後 A <time="1:09">
+#126 ENDING その後 B <time="0:58">
+#127 ENDING その後 C <time="0:38">
+#130 ENDING (1 COIN CLEAR) <time="0:50">
+#131 STAFF ROLL <time="1:20">
+#128 CONTINUE <time="0:31">
+#129 GAME OVER
+
+-----------------------------------------------------------
+ [Voice]
+
+#015 [Voice] 
+#016 [Voice] 
+#017 [Voice] 
+#018 [Voice] 
+#019 [Voice] 
+#020 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+#023 [Voice] 
+#024 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#047 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#051 [Voice] 
+#053 [Voice] 敵将
+#054 [Voice] 討ち取ったりー
+#055 [Voice] 李典
+#056 [Voice] 夏侯惇
+#057 [Voice] 許?
+#058 [Voice] 曹仁
+#059 [Voice] 張遼
+#060 [Voice] 徐晃
+#061 [Voice] 呂布
+#062 [Voice] 曹操
+#063 [Voice] 我こそは
+#065 [Voice] 関羽雲長なりー
+#066 [Voice] 張飛翼徳なりー
+#067 [Voice] 趙雲子龍なりー
+#068 [Voice] 黄忠漢升なりー
+#069 [Voice] 魏延文長なりー
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 助太刀に参った
+#074 [Voice] ちょこざいな
+#075 [Voice] こわっぱめ
+#076 [Voice] おのれー
+#077 [Voice] この青二才がぁ
+#081 [Voice] 
+#091 [Voice] 淳于導
+#092 [Voice] 夏侯傑
+#093 [Voice] 晏明
+
+-----------------------------------------------------------
+ [S.E.]
+
+#000 [S.E.]
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#050 [S.E.]
+#052 [S.E.]
+#064 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.] <time="0:05">
+#082 [S.E.] <time="0:05">
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#136 [S.E.]
+
+  ■出典
+  天地を喰らう II ～赤壁の戦い～ -G.S.M. CAPCOM 7- / ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00133  1993.08.20
+
+// List Contribution by NK
+$end

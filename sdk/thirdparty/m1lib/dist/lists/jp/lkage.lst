@@ -1,0 +1,18 @@
+﻿$name=lkage
+$version=2
+$default=04
+$main
+
+$04 Credit
+$15 BGM 1 (Main Theme) [Run!]
+$0a Miss
+$16 BGM 2 (Stage Clear) [Fight!]
+$18 Theme of Princess (Name Register) [Party!]
+$20 BGM 1 (Main Theme) [Run!] (No Intro 1)
+$14 BGM 1 (Main Theme) [Run!] (No Intro 2)
+$17 BGM 2 (Stage Clear) [Fight!] (No Intro)
+$1e Theme of Princess (Name Register) [Party!] (Short Version)
+
+// Hoot list by FM Daioh
+// English M1 list by Knurek
+$end

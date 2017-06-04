@@ -1,0 +1,63 @@
+﻿$name=pitfight
+$version=2
+$default=022
+$songmax=235
+$main
+
+#022 ATTRACT MODE <time="02.5">
+#023 ATTRACT MODE
+#024 ATTRACT MODE
+#025 ATTRACT MODE
+#026 ATTRACT MODE
+#027 SELECT <time="50">
+#041 MATCH1 <time="2:31">
+#043 CONTINUE1 <time="19">
+#042 CLEAR1
+#044 BONUS
+#032 MATCH2 <time="3:36">
+#034 CONTINUE2 <time="19">
+#033 CLEAR2
+#051 GRUDGE MATCH <time="2:28">
+#052 CLEAR A
+#055 BONUS A
+#038 MATCH3 <time="3:26">
+#040 CONTINUE3 <time="21">
+#039 CLEAR3
+#035 MATCH4 <time="2:35">
+#037 CONTINUE4 <time="31">
+#036 CLEAR4
+#053 GRUDGE MATCH2 <time="1:00">
+#054 CLEAR B
+#056 BONUS B
+#057 BONUS C
+#045 CHAMPIONSHIP MATCH <time="4:01">
+#046 CONTINUE A <time="46">
+#047 NEW CHAMPION <time="44">
+#058 STAFF ROLL <time="2:31">
+
+  ■出典
+  THAT'S ATARI MUSIC -G.S.M. ATARI GAMES 1-
+  PONY CANYON / SCITRON  PCCB-00066  1991.07.21
+
+  THAT'S ATARI MUSIC -G.S.M. ATARI GAMES 1- (LEGEND SERIES)
+  SME / SCITRON  SCDC-00313  2003.12.03
+
+// #55,56,57(BONUS A,B,C)は, サンプリング音(Voice)の再生レートが高いのか, バージョン違いか何らかの理由によって, 曲中のサンプリング音声が少し違う.
+// 一番分かりやすいのが55で, M1では"Ah!"と聞こえるが, 本当は"Oh!"とやや低い声で聞こえるはず.
+//
+//#004 [S.E.] <time="10">
+//#021 [S.E.]
+//#049 [S.E.]
+//#050 [S.E.]
+//#060～095 [S.E.]
+//#180～235 [S.E.]
+//#277～ [S.E.] #21からのループ?
+//
+//#005 [Voice]
+//#096～168 [Voice]
+//#169 [Voice] <time="2">
+//#170 [Voice]
+//#173～179 [S.E.]
+//
+// List Contribution by Penpen
+$end

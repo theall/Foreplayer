@@ -1,0 +1,159 @@
+﻿$name=tmnt
+$version=2
+$default=$7d
+$main
+
+$7d (オープニングデモ)
+$76 Title (国内タイトルデモ)
+$6f Let's Start (オープニングセレクト)
+$63 Fire! (Stage 1 BGM)
+$68 Aprils Room (Stage 2 BGM)
+$72 Danger (シュレッダー・デモ)
+$67 Down Town (Stage 3 BGM)
+$64 Fight! (ボスBGM)
+$65 Underground (Stage 4 BGM)
+$73 Clear Two (パターンクリアー2)
+$66 (Stage 5 BGM ?)
+$61 It's a Party (Stage 6 BGM)
+$6e Clear One (パターンクリアー1)
+$60 Highway Chaser (Stage 7 BGM)
+$62 (Stage 8 BGM ?)
+$75 Technodome (テクノドーム・デモ)
+$69 Battle of T.M.N.T. (Stage 9 BGM)
+$6a Shredder (最終ボスBGM)
+$77 Continue (コンティニュー)
+$6d Game Over (ゲームオーバー)
+$78 Profeel (プロフィール)
+$71 Ranking (ランキング)
+$6c Epilogue (エピローグ)
+$70 Turtle Boogie (エンディング)
+
+-----------------------------------------
+
+$01 [S.E.]
+$02 [S.E.]
+$03 [S.E.]
+$04 [S.E.]
+$05 [S.E.]
+$06 [S.E.]
+$07 [S.E.]
+$08 [S.E.]
+$09 [S.E.]
+$0a [S.E.]
+$0b [S.E.]
+$0c [S.E.]
+$0d [S.E.]
+$0e [S.E.]
+$0f [S.E.]
+$10 [S.E.]
+$11 [S.E.]
+$12 [S.E.]
+$13 [S.E.]
+$14 [S.E.]
+$15 [S.E.]
+$16 [S.E.]
+$17 [S.E.]
+$18 [S.E.]
+$19 [S.E.]
+$1a [S.E.]
+$1b [S.E.]
+$1c [S.E.]
+$1d [S.E.]
+$1e [S.E.]
+$1f [S.E.]
+$20 [S.E.]
+$21 [S.E.]
+$22 [S.E.]
+$23 [S.E.]
+$24 [S.E.]
+$25 [S.E.]
+$26 [S.E.]
+$27 [S.E.]
+$28 [S.E.]
+$29 [S.E.]
+$2a [S.E.]
+$2b [S.E.]
+$2c [S.E.]
+$2d [S.E.]
+$2e [S.E.]
+$2f [S.E.]
+$30 [S.E.]
+$31 [S.E.]
+$32 [S.E.]
+$33 [S.E.]
+$34 [S.E.]
+$35 [S.E.]
+$36 [S.E.]
+$37 [S.E.]
+$38 [S.E.]
+$39 [S.E.]
+$3a [S.E.]
+$3b [S.E.]
+$3c [S.E.]
+$3d [S.E.]
+$3e [S.E.]
+$3f [S.E.]
+$40 [S.E.]
+$41 [S.E.]
+$84 [S.E.]
+$85 [S.E.]
+#134 [Voice] 
+#135 [S.E.]
+#136 [Voice] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [Voice] 
+#140 [S.E.] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+
+#134 [Voice] Cowabunga!
+#135 [S.E.]
+#136 [Voice] Noooooooo!
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [Voice] NO No No no.
+#140 [S.E.] 
+#141 [Voice] Cowabunga!
+#142 [Voice] Noooooooo! (Alt)
+#143 [Voice] Gaahhh!
+
+#162 [S.E.] 
+#167 [Voice] Hahahaha,ha! (Shredder)
+#168 [S.E.] 
+#169 [Voice] Hang on, April.
+#170 [Voice] We gotta save Splinter!
+#171 [Voice] Let's move it. (April)
+#172 [Voice] There it is!
+#173 [Voice] You're dead (snort), shell brain.
+#174 [Voice] Say your prayers, toitles.
+#175 [Voice] Tonight, I dine on turtle soup. (Shredder)
+#176 [Voice] I'm invincible! (Krang)
+#177 [Voice] Crush the turtles!
+#178 [Voice] Do not resist us.
+#179 [Voice] Attaaaack!
+#180 [Voice] Thank you, my turtles. (Splinter)
+#181 [Voice] Hang on, guys.
+#182 [Voice] Fire!!
+#183 [Voice] Pizza time.
+#184 [Voice] Speedy
+#185 [Voice] Zappy
+#186 [Voice] Aaahhhhh!
+#187 [Voice] Oh, Shell shock.
+#188 [Voice] Duuuh, who put the light out?
+#189 [Voice] They ain't getting any prettier.
+#190 [Voice] Watch your mouth (snort), slime ball.
+#191 [Voice] Yippee I Aye.
+#192 [Voice] Oh, no! It's that overgrown corkscrew again!
+#193 [Voice] Help me! (April)
+#194 [Voice] Come and get 'em, shell brain.
+#195 [Voice] I owe you one. (April)
+
+
+  ■出典
+  こなみ・すぺしゃる・みゅ～じっく千両箱 平成三年度版
+  KING RECORDS  KICA-9005～9008  1990.12.21
+
+//Fixes by Yawachary
+$end

@@ -1,0 +1,186 @@
+﻿$name=xmcota
+$version=2
+$default=026
+$fixed_volume=277
+$main
+
+#026 QSound Logo
+
+#028 Opening Title
+#112 Credit
+#001 Player Select
+#007 Savage Land (Wolverine)
+#008 Moon Night (Psylocke)
+#009 Mutant Hunting (Colossus)
+#010 Danger Room (Cyclops)
+#011 On the Blackbird (Storm)
+#012 Ice on the Beach (Iceman)
+#005 Winner
+#006 Here Comes A New Charenger!
+#013 Mojo World (Spiral)
+#014 Samurai Shrine (Silver Samurai)
+#015 The Deep (Omega Red)
+#016 Genosha (Sentinel)
+#017 Space Port (Juggernaut)
+#018 Avalon (Magneto)
+#024 Ending - The Theme of Battle
+#019 Ending - Forest
+#020 Ending - Summer Beach
+#021 Ending - The Theme of Mojo 1
+#029 Ending - The Theme of Mojo 2
+#023 Ending - Crossrd in Love
+#022 Ending - Love and Friendship
+#025 Credits Roll
+#003 Continue
+#004 Game Over
+#002 Get out of Danger
+
+-----------------------------------------
+ [SFX]
+
+#128 [Voice] X-Men
+#129 [Voice] Round
+#130 [Voice] One
+#131 [Voice] Two
+#132 [Voice] Three
+#133 [Voice] Sudden Death
+#134 [Voice] Fight!
+#135 [Voice] K.O.
+#136 [Voice] You win!
+#137 [Voice] You, lose.
+#138 [Voice] Perfect
+#144 [Voice] Wolverine
+#145 [Voice] Psylocke
+#146 [Voice] Colossus
+#147 [Voice] Cyclops
+#148 [Voice] Storm
+#149 [Voice] Iceman
+#150 [Voice] Spiral
+#151 [Voice] Silver Samurai
+#152 [Voice] Omega Red
+#153 [Voice] Sentinel
+#160 [Voice] Wolverine
+#161 [Voice] Psylocke
+#162 [Voice] Colossus
+#163 [Voice] Cyclops
+#164 [Voice] Storm
+#165 [Voice] Iceman
+#166 [Voice] Spiral
+#167 [Voice] Silver Samurai
+#168 [Voice] Omega Red
+#169 [Voice] Sentinel
+#400 [Voice] (Wolverine)
+#401 [Voice] (Wolverine)
+#402 [Voice] (Wolverine)
+#403 [Voice] (Wolverine)
+#404 [Voice] (Wolverine)
+#405 [Voice] (Wolverine)
+#406 [Voice] (Wolverine) Toranado Craw
+#407 [Voice] (Wolverine) Drill Craw
+#408 [Voice] (Wolverine) Berserker Barrage
+#409 [Voice] (Psylocke)
+#410 [Voice] (Psylocke)
+#411 [Voice] (Psylocke)
+#412 [Voice] (Psylocke)
+#413 [Voice] (Psylocke)
+#414 [Voice] (Psylocke) Psy-Blade
+#415 [Voice] (Psylocke) Psy-Blast
+#416 [Voice] (Psylocke) Psy-Thrust
+#417 [Voice] (Psylocke) C'mon
+#418 [Voice] (Colossus)
+#419 [Voice] (Colossus)
+#420 [Voice] (Colossus)
+#421 [Voice] (Colossus)
+#422 [Voice] (Colossus)
+#423 [Voice] (Colossus)
+#424 [Voice] (Colossus)
+#425 [Voice] (Colossus) Do svidania
+#426 [Voice] (Colossus) Da
+#427 [Voice] (Colossus)
+#428 [Voice] (Cyclops)
+#429 [Voice] (Cyclops)
+#430 [Voice] (Cyclops)
+#431 [Voice] (Cyclops)
+#432 [Voice] (Cyclops)
+#433 [Voice] (Cyclops) Optic Blast
+#434 [Voice] (Cyclops) Gene Splice
+#435 [Voice] (Cyclops) Yes!
+#436 [Voice] (Storm)
+#437 [Voice] (Storm)
+#438 [Voice] (Storm)
+#439 [Voice] (Storm)
+#440 [Voice] (Storm)
+#441 [Voice] (Storm) Lightning Storm
+#442 [Voice] (Storm) Typhoon
+#443 [Voice] (Iceman)
+#444 [Voice] (Iceman)
+#445 [Voice] (Iceman)
+#446 [Voice] (Iceman)
+#447 [Voice] (Iceman) Ice Beam
+#448 [Voice] (Iceman) Freeze
+#449 [Voice] (Iceman) Arctic Attack
+#450 [Voice] (Iceman) Yeah
+#451 [Voice] (Spiral)
+#452 [Voice] (Spiral)
+#453 [Voice] (Spiral)
+#454 [Voice] (Spiral)
+#455 [Voice] (Spiral)
+#456 [Voice] (Spiral)
+#457 [Voice] (Spiral) Dancing Sword
+#458 [Voice] (Spiral) Switch
+#459 [Voice] (Spiral) Spiral Buster
+#460 [Voice] (Silver Samurai)
+#461 [Voice] (Silver Samurai) Yeah
+#462 [Voice] (Silver Samurai) Dossei
+#463 [Voice] (Silver Samurai)
+#464 [Voice] (Silver Samurai)
+#465 [Voice] (Silver Samurai) Nukatta-
+#466 [Voice] (Silver Samurai) Mmmmmmmmm
+#467 [Voice] (Silver Samurai) Raimeiken
+#468 [Voice] (Silver Samurai) Uchitottarii
+#469 [Voice] (OmegaRed)
+#470 [Voice] (OmegaRed)
+#471 [Voice] (OmegaRed)
+#472 [Voice] (OmegaRed)
+#473 [Voice] (OmegaRed) Omega Destroyer
+#474 [Voice] (OmegaRed) Omega Strike
+#475 [Voice] (OmegaRed) Destroyer
+#476 [Voice] (OmegaRed)
+#477 [Voice] (Sentinel) Damage
+#478 [Voice] (Sentinel) Unit Damage
+#479 [Voice] (Sentinel) Destroyed
+#480 [Voice] (Sentinel) Unit Destroyed
+#481 [Voice] (Sentinel) Rocket Punch
+#482 [Voice] (Sentinel) Neutralize
+#483 [Voice] (Sentinel) Plazma Storm
+#484 [Voice] (Sentinel) Mission Completed
+#485 [Voice] (Jaggarnaut)
+#486 [Voice] (Jaggarnaut)
+#487 [Voice] (Jaggarnaut)
+#488 [Voice] (Jaggarnaut)
+#489 [Voice] (Jaggarnaut) Earthquake
+#490 [Voice] (Jaggarnaut) Head Crash
+#491 [Voice] (Jaggarnaut) Wooooooooooo
+#492 [Voice] (Jaggarnaut) I'm unstoppable
+#493 [Voice] (Magneto)
+#495 [Voice] (Magneto)
+#496 [Voice] (Magneto)
+#497 [Voice] (Magneto)
+#498 [Voice] (Magneto) E-M Pulse
+#499 [Voice] (Magneto) Shockwave
+#500 [Voice] (Magneto) Hyper Grav
+#501 [Voice] (Magneto) Magnetic
+#502 [Voice] (Magneto) Tempest
+#503 [Voice] (Magneto) You dare to rise against me
+#504 [Voice] (Magneto) The human era is over.
+#505 [Voice] (Magneto) The mutant era has come.
+#506 [Voice] (Magneto) You are beat'n
+#507 [Voice] (Magneto) Magneto is...
+#508 [Voice] ?
+#509 [Voice] ?
+
+  [Source]
+  X-Men / Arcade Game Track
+  Sony Records  SRCL-3120  Mar 24, 1995
+
+$end

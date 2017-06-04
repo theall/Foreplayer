@@ -1,0 +1,148 @@
+﻿$name=gallop
+$version=2
+$default=$0C
+$main
+
+  * Note: M1 doesn't detect silence.
+
+$0C Title <time="10">
+$9E [Voice] Gallop <time="2">
+$2B Credit Inserted <time="2">
+$01 Name Entry <time="55.44">
+$04 The Funky Flamingo - Zone A (Stage 1) <time="3:11.55">
+$82 [Voice] Warning <time="2">
+$3B Alert <time="5">
+$07 Boss <time="2:20.64">
+$08 Zone Clear <time="33.3">
+$03 Zone B (Stage 2) <time="3:18.95">
+$02 Zone C (Stage 3) <time="3:51.1">
+$06 Electronic Hurricane - Zone D (Stage 4) <time="3:14.8">
+$0B Zone E (Stage 5) <time="3:45.25">
+$05 Ending <time="3:18.87">
+$01 Game Over - Continue <time="55.44">
+
+-----------------------------------------------------------
+  [Voice]
+
+$82 [Voice] Warning <time="2">
+$83 [Voice] Ready <time="2">
+$84 [Voice] Stage Report <time="2">
+$85 [Voice] Laser <time="2">
+$8F [Voice] Weapon <time="2">
+$92 [Voice] Power <time="2">
+$93 [Voice] Danger <time="2">
+$9E [Voice] Gallop <time="2">
+
+-----------------------------------------------------------
+  [SFX]
+
+$28 [SFX] <time="4">
+$29 [SFX] <time="2">
+$2A [SFX] <time="2">
+$2B [SFX] Credit Inserted <time="2">
+$2C [SFX] <time="2">
+$2D [SFX] <time="2">
+$2E [SFX] Extend <time="2">
+$2F [SFX] <time="4">
+$30 [SFX] <time="2">
+$31 [SFX] <time="4">
+$32 [SFX] <time="2">
+$33 [SFX] <time="2">
+$34 [SFX] Counting points <time="4">
+$35 [SFX] <time="4">
+$36 [SFX] <time="2">
+$37 [SFX] <time="4">
+$38 [SFX] <time="15">
+$3A [SFX] <time="19">
+$3B [SFX] Alert <time="5">
+$3C [SFX] <time="2">
+$3D [SFX] <time="2">
+$3E [SFX] <time="2">
+$3F [SFX] <time="4">
+$42 [SFX] <time="11">
+$43 [SFX] <time="2">
+$44 [SFX] <time="2">
+$45 [SFX] <time="2">
+$46 [SFX] <time="2">
+$48 [SFX] <time="2">
+$49 [SFX] <time="2">
+$4A [SFX] <time="2">
+$4B [SFX] <time="2">
+$4C [SFX] <time="2">
+$4F [SFX] <time="4">
+$50 [SFX] <time="2">
+$51 [SFX] <time="2">
+$53 [SFX] <time="2">
+$54 [SFX] <time="2">
+$55 [SFX] <time="2">
+$57 [SFX] <time="2">
+$59 [SFX] <time="2">
+$5A [SFX] <time="2">
+$5B [SFX] <time="2">
+$5C [SFX] <time="3">
+$5D [SFX] <time="5">
+$5E [SFX] <time="2">
+$5F [SFX] <time="2">
+$60 [SFX] <time="2">
+$61 [SFX] <time="2">
+$62 [SFX] <time="2">
+$63 [SFX] <time="2">
+$64 [SFX] <time="2">
+$65 [SFX] <time="2">
+$66 [SFX] <time="2">
+$67 [SFX] <time="2">
+$68 [SFX] <time="2">
+$69 [SFX] <time="2">
+$6A [SFX] <time="2">
+$6B [SFX] <time="2">
+$6D [SFX] <time="2">
+$6E [SFX] <time="2">
+$6F [SFX] <time="2">
+$70 [SFX] <time="2">
+$71 [SFX] <time="2">
+$72 [SFX] <time="2">
+$73 [SFX] <time="2">
+$74 [SFX] <time="2">
+$75 [SFX] <time="2">
+$76 [SFX] <time="2">
+$77 [SFX] <time="2">
+$78 [SFX] <time="2">
+$79 [SFX] <time="2">
+$7A [SFX] <time="2">
+$7B [SFX] <time="2">
+$7C [SFX] <time="2">
+$7D [SFX] <time="2">
+$7E [SFX] <time="2">
+$7F [SFX] <time="2">
+$86 [SFX] <time="2">
+$87 [SFX] <time="2">
+$88 [SFX] <time="2">
+$89 [SFX] <time="2">
+$8A [SFX] <time="2">
+$8B [SFX] <time="2">
+$8C [SFX] <time="2">
+$8D [SFX] <time="2">
+$8E [SFX] <time="2">
+$96 [SFX] <time="2">
+$97 [SFX] <time="2">
+$98 [SFX] <time="2">
+$99 [SFX] <time="2">
+$9A [SFX] <time="2">
+$9B [SFX] <time="2">
+$9C [SFX] <time="2">
+$9D [SFX] <time="2">
+
+  [Sound Composer]
+  HIYA !
+
+  [Source]
+  R-Type Special
+  Victor Entertainment  VICL-8077  Sep 22, 1993
+
+//  [Reference]
+//  GAMEST (Shinseisha) - Japanese Arcade Game Magazine
+//
+// List Contribution by Cratch
+// Updated and English version by Fujix
+// Re-updated by Cratch
+$end

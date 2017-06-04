@@ -1,0 +1,33 @@
+﻿$name=chopper
+$version=2
+$default=113
+$main
+
+#113 Start Demo
+#066 Dream of Chopper (Area 1, 5)
+#098 Area End
+#082 Soar up to the Sky (Area 2, 4)
+#091 Boss
+#073 Sea of Fire (Area 3)
+#090 At the Risk of Ones Life (Area 6)
+#126 Final Boss
+#100 Final Area Clear
+#099 Ending
+
+#112 Game Over
+#118 ???
+
+  [Voice]
+
+#220 [Voice]
+#221 [Voice]
+
+  [Source]
+  Game Sound SNK -G.S.M.SNK 1-
+  Pony Canyon  D28B0006  Oct 21, 1988
+
+  [Composer]
+  Kei'ichi Tanaka
+
+// List Contribution by GolGol
+$end

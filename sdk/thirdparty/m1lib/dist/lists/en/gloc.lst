@@ -1,0 +1,27 @@
+﻿$name=gloc
+$version=2
+$default=154
+$songmax=158
+$main
+
+#154 Opening
+#145 BGM A
+#147 Continue
+#146 BGM B
+#144 Battle in the valley
+#149 BGM C
+#151 BGM D
+#150 Ground attack
+#153 Last mission
+#152 Landing
+#148 Congratulations
+#155 Name entry
+#158 Fanfare "HIRO"
+#156 Fanfare (Unused)
+#157 Phrase (Unused)
+
+  [Source]
+  Hyper Drive -G.S.M. Sega 4-
+  Pony Canyon / Scitron   PCCB-00035  Jul 21, 1990
+
+$end

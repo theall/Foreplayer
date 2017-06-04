@@ -1,0 +1,31 @@
+﻿$name=cottonj
+$version=2
+$default=016
+$main
+
+#016 Opening
+#019 Visual 1
+#038 Visual 2
+#022 Stage 1
+#030 Boss 1
+#023 Stage 2
+#031 Boss 2
+#024 Stage 3
+#032 Boss 3
+#025 Stage 4
+#034 Boss 4
+#028 Stage 5
+#035 Boss 5
+#029 Stage 6
+#036 Boss 6
+#037 Last Boss
+#017 Ending <time="1:44">
+#018 Ranking
+#021 Continue
+#020 Game Over
+
+  [Source]
+  Cotton / Sega Success
+  Pony Canyon / Scitron   PCCB-00069  Aug 21, 1991
+
+$end

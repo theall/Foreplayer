@@ -1,0 +1,50 @@
+﻿$name=snowbros
+$version=2
+$default=001
+$songmax=047
+$main
+
+#001 COIN
+#035 YUKIDAMA ONDO (ステージ 1, 3)
+#036 YUKIDA MARCH (ステージ 2, 4)
+#045 DISCOLORATION -ヘンショク- (アイテム)
+#033 BOSS YADE -intro- (ボス)
+#040 BOSS YADE (ボス)
+#039 DOSSKOI SNOW (ステージ 5)
+#044 BOSS DE SUKA (ラストボス)
+#047 YOH (エンディング)
+#046 GAME OVER
+#034 未使用曲
+
+-----------------------------------------
+ [S.E.]
+
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+
+  ■出典
+  OUT ZONE・SNOW BROS. / TOAPLAN
+  PONY CANYON / SCITRON  PCCB-00044  1990.10.21
+
+  ■作曲
+  太田 理
+
+$end

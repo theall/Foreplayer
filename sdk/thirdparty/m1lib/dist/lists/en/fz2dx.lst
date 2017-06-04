@@ -1,0 +1,114 @@
+$name=fz2dx
+$version=2
+$default=$8e
+$main
+
+$8e [SFX] credit
+$f7 [BGM] 10YEARS AFTER ~ CAMA-TERNYA [DEMO]
+$db [BGM] START ~ CHOLACORAY [Round 1]
+$a0 [BGM] SHOP [SHOP FZ A~B]
+$e5 [BGM] GUMBATIGHT [BOSS BRIGHT]
+$8b [SFX] boss defeat
+$ed [BGM] COIN! COIN!
+$dd [BGM] OPA-MARIMBA [Round 2]
+$de [BGM] FROZEN PARTY [Round 3]
+$e3 [BGM] LET'S SHOPPIN' [SHOP A]
+$df [BGM] HEATING WAVE [Round 4]
+$e0 [BGM] AQUA QUA [Round 5]
+$e4 [BGM] MYSTERIOUS SHOP [SHOP SECRET]
+$e1 [BGM] FLY HIGH [Round 6]
+$e2 [BGM] COSMIC DANCE [Round 7]
+$f3 [BGM] LET'S SHOPPIN' [SHOP B]
+$e6 [BGM] GUMBATIGHTER [BOSS DARK]
+$e7 [BGM] SU-KI-DA [BOSS NENON]
+$f6 [BGM] STRANGE FIELD [BOSS FINAL]
+$ea [BGM] TOO LATE [ENDING DARK]
+$f5 [BGM] HEREAFTER [ENDING NORMAL]
+$f8 [BGM] DROP TEARS [FINALE]
+$e9 [BGM] FLOW MY TEARS [ENDING BRIGHT]
+$85 [SFX] miss
+$ec [BGM] SEELOOSE [GAME OVER]
+$f4 [BGM] FANTASTIC REFRAIN [RANKING A]
+$eb [BGM] L OR R? [RANKING B]
+$f1 [BGM] HIDDEN A [RANKING C] (from "SYNDBAD MYSTERY")
+$ee [BGM] HIDDEN B [RANKING D] (from "MISTER VIKING")
+$ef [BGM] HIDDEN C [RANKING E] (from "SPATTER")
+$f0 [BGM] HIDDEN D [RANKING F] (from "PITFALL II")
+$dc [BGM] CHOLACORAY [Round 1 - Restart Version]
+$e8 [BGM] SU-KI-DA [BOSS NENON - Restart Version]
+
+
+$81 [SFX]
+$82 [SFX]
+$83 [SFX]
+$84 [SFX]
+$85 [SFX] miss
+$86 [SFX] coin
+$87 [SFX]
+$88 [SFX]
+$89 [SFX]
+$8a [SFX]
+$8b [SFX] boss defeat
+$8c [SFX]
+$8d [SFX]
+$8e [SFX] credit
+$8f [SFX]
+
+$91 [SFX]
+$92 [SFX]
+$93 [SFX]
+$94 [SFX]
+$95 [SFX]
+$96 [SFX]
+$97 [SFX]
+$98 [SFX]
+
+$9c [SFX]
+$9d [SFX]
+$9e [SFX]
+$9f [SFX]
+
+$a1 [SFX]
+$a2 [SFX]
+$a3 [SFX]
+$a4 [SFX]
+$a5 [SFX]
+$a6 [SFX]
+$a7 [SFX]
+$a8 [SFX]
+
+$a9 one shot FM drum
+$aa one shot FM drum
+$ab one shot FM drum
+$ac one shot FM drum
+$ad one shot FM drum
+$ae one shot FM drum
+$af one shot FM drum
+$b0 one shot FM drum
+$b1 whistle (high)
+$b2 whistle (low)
+
+$b3 one shot FM drum
+$b4 one shot FM drum
+$b5 one shot FM drum
+$b6 one shot FM drum
+$b7 one shot FM drum
+$b8 one shot FM drum
+$b9 one shot FM drum
+$ba one shot FM drum
+$bb one shot FM drum
+$bc one shot FM drum
+$bd one shot FM drum
+$be one shot FM drum
+$bf whistle (high)
+$c0 whistle (low)
+$c1 one shot FM drum
+$c2 one shot FM drum
+$c3 one shot FM drum
+
+  [Source]
+  Fantasy Zone: Ultra Super Big Maximum Great Strong Complete Album
+  WAVE MASTER WM-0604~7  Sep 11, 2008
+
+//List by super32x
+$end

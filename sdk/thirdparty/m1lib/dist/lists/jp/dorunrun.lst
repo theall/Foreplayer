@@ -1,0 +1,45 @@
+﻿$name=dorunrun
+$version=2
+$default=013
+$main
+
+#002 DEMO (Do! Run Run) <time="37.1">
+#013 TITLE <time="2.9">
+#023 CREDIT
+#028 DO YOUR BEST !! (Super Pierrot) <time="10">
+#019 START <time="2.9">
+#008 THEME 1
+#014 CLEAR
+#019 START <time="2.9">
+#009 THEME 2
+#012 EXTRA <time="9">
+#014 CLEAR
+#011 MISS
+#015 GAME OVER
+#025 RANKING
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] ボールの飛ぶ音
+#002 [S.E.] デモ画面 (Do! Run Run専用曲) <time="8">
+#003 [S.E.] ロープが消える音 <time="5">
+#004 [S.E.] 敵が突撃してくる音？
+#005 [S.E.] 引き上げるEXTRAキャラ
+#006 [S.E.] プレイヤー 1UP <time="5"> 
+#007 [S.E.] ?
+#010 [S.E.] 敵を倒した音
+#016 [S.E.] 丸太の転がる音
+#017 [S.E.] 敵が丸太に潰される音
+#018 [S.E.] ダイアモンド出現音？ <time="5">
+#019 [S.E.] ラウンドスタート
+#020 [S.E.] 敵出現音
+#021 [S.E.] 敵が青モンスターに変化 <time="6"> 
+#022 [S.E.] 敵が緑モンスターに変化
+#023 [S.E.] クレジット音
+#027 [S.E.] 敵が突撃してくる音？
+#029 [S.E.] 敵が突撃してくる音？
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+$end

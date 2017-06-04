@@ -1,0 +1,62 @@
+﻿$name=avengers
+$version=2
+$default=035
+$songmax=090
+$main
+
+#035 CREDIT
+#032 START DEMO (STAGE 1)
+#042 STAGE 1
+#049 BOSS
+#051 STAGE CLEAR
+#033 START DEMO (STAGE 2以降)
+#043 STAGE 2
+#044 STAGE 3
+#045 STAGE 4
+#046 STAGE 5
+#047 STAGE 6
+#050 BOSS "GESHITA"
+#052 ENDING～STAFF ROLL
+#036 GAME OVER
+#037 1位ネームレジスト
+#039 1位エントリー終了
+#038 2位以下ネームレジスト
+#040 2位以下エントリー終了
+#041 CONTINUE
+ 
+#048 (unused)
+#053 (unused)
+#034 EXTENSION
+#054 WARNING DEMO
+ 
+ [S.E.]
+ 
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+
+// リスト作成：NKさん
+$end

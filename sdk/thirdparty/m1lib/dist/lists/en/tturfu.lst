@@ -1,0 +1,63 @@
+﻿$name=tturfu
+$version=2
+$default=018
+$main
+
+#018 [SFX] Credit
+#020 [SFX] Life Recovery
+#001 Stage 1
+#009 Stage 2
+#006 Stage 3
+#007 Stage 4
+#005 Stage 5
+#013 Stage 6
+#014 Stage 7
+#003 Boss Battle
+#010 Stage Cleared
+#015 Stage 8 (Final Battle)
+#004 All Stage Cleared
+#002 Continue
+#012 Game Over
+#008 Name Entry
+
+------------------------------------------------------
+ [S.E. & Voice]
+
+#018 [SFX] Credit
+#019 [SFX]
+#020 [SFX] Life Recovery
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX] Credit [=018]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#148 [Voice]
+#160 [Voice]
+
+** Voices don't play correctly except #148 & #160 **
+
+// List Contribution by a2c-s438
+$end

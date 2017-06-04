@@ -1,0 +1,230 @@
+﻿$name=gaunt2
+$version=2
+$default=59
+//$songmax=$d5
+$main
+
+#59 Title Screen / Continue <time="25">
+#66 Start <time="6">
+#61 Treasure Room 1 <time="28">
+#62 Treasure Room 2 <time="27">
+#63 Treasure Room 3 <time="26">
+#64 Treasure Room 4 <time="22">
+
+#04 Music Chip Test <time="10">
+#05 POKEY Chip Test <time="5">
+#08 Speech Chip Test
+
+------------------------------------------------------
+ [Voice]
+
+#074 [Voice] One
+#075 [Voice] Two
+#076 [Voice] Three
+#077 [Voice] Four
+#078 [Voice] Five
+#079 [Voice] Six
+#080 [Voice] Seven
+#081 [Voice] Eight
+#082 [Voice] Nine
+#083 [Voice] Ten
+#084 [Voice] Zero
+#085 [Voice] Try and find a way out
+#086 [Voice] Welcome to the treasure room
+#087 [Voice] You have found my treasure
+#088 [Voice] Try this level now
+#089 [Voice] Welcome!
+#090 [Voice] needs food, badly
+#091 [Voice] Your life force is running out
+#092 [Voice] All your powers will be lost
+#093 [Voice] is about to die
+#094 [Voice] Let's see you get out of here
+#095 [Voice] I've not seen such bravery
+#096 [Voice] That was a heroic effort
+#097 [Voice] Someone shot the food
+#098 [Voice] Laughing
+#099 [Voice] You can't touch me
+#100 [Voice] Laughing 2
+#101 [Voice] You pick the tree
+#102 [Voice] Laughing 3
+#103 [Voice] Laughing 4
+#104 [Voice] Ha-ha ha-ha
+#105 [Voice] Ha-ha
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#171 [Voice] 
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+
+------------------------------------------------------
+ [SFX]
+
+#09 [SFX]
+#10 [SFX] <time="5">
+#11 [SFX]
+#12 [SFX]
+#13 [SFX]
+#14 [SFX]
+#15 [SFX]
+#16 [SFX]
+#17 [SFX]
+#18 [SFX]
+#19 [SFX]
+#20 [SFX]
+#21 [SFX]
+#22 [SFX]
+#23 [SFX]
+#24 [SFX]
+#25 [SFX]
+#26 [SFX]
+#27 [SFX]
+#28 [SFX]
+#29 [SFX]
+#30 [SFX]
+#31 [SFX]
+#32 [SFX] <time="45">
+#34 [SFX]
+#35 [SFX]
+#36 [SFX]
+#37 [SFX]
+#38 [SFX]
+#39 [SFX]
+#40 [SFX]
+#41 [SFX]
+#42 [SFX]
+#43 [SFX]
+#44 [SFX]
+#45 [SFX]
+#46 [SFX]
+#48 [SFX]
+#49 [SFX]
+#50 [SFX]
+#51 [SFX]
+#52 [SFX]
+#53 [SFX]
+#54 [SFX]
+#55 [SFX] <time="4.6">
+#56 [SFX]
+#58 [SFX]
+#67 [SFX]
+#68 [SFX]
+#69 [SFX]
+#70 [SFX]
+#71 [SFX]
+#72 [SFX]
+#73 [SFX]
+#213 [SFX]
+
+  [OST / Source]
+  That's Atari Music Vol.II -G.S.M. Atari Games 2-
+  Pony Canyon / Scitron  PCCB-00070  Sep 21, 1991
+
+  That's Atari Music Vol.II -G.S.M. Atari Games 2- (Legend Series)
+  SME / Scitron  SCDC-00314  Dec 3, 2003
+
+// List contribution by Neo Techno Bou
+// Updated and English list by Fuj
+// Voices by RB
+$end

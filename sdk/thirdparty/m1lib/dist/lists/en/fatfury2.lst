@@ -1,0 +1,43 @@
+$name=fatfury2
+$version=2
+$default=$02
+//$songmax=$3e
+$main
+
+$02 Neo-Geo Logo
+$3e 100M Shock
+$22 Garou Densetsu 2 [Title]
+$2c 30 sec. (MVS Mode)
+$3d Level Up (Level Select)
+$23 Player Select
+$24 VS
+$30 Kurikinton [America Stage I] Terry Bogard
+$31 Pasta [Italy Stage] Andy Bogard
+$32 A New Poem Southern Thailand Wants to Tell [Thai Stage] Joe Higashi
+$25 Winner Demo
+$33 Tarkun and Kitapi [Australia Stage] Big Bear
+$34 Juubei [Nippon Stage I] Yamada Jubei
+$35 Flame Dragon God [Nippon Stage II] Shiranui Mai
+$36 Pangyago Hoho [Hongkong Stage] Cheng Sinzan
+$37 Let's Go to Seoul! [Korea Stage] Kim Kaphwan
+$3c Beat the Depression!! [Bonus Stage]
+$38 London March [England Stage] Billy Kane
+$39 Kinku Konku [America Stage II] Axel Hawk
+$3a Practicing Matador [Spain Stage] Laurence Blood
+$27 Sleep Well
+$3b Requiem in D minor K-626 Dies Irae [Germany Stage] Wolfgang Krauser
+$28 You Were Perfect
+$29 1Coin
+$2a The Sunset Sky Part III (Ending)
+$2e Continue
+$2d Game Over
+$2f Name
+
+-----------------------------------------
+ [SFX]
+
+  [Source]
+  Garou Densetsu 2 / New World Music Performance Group
+  Pony Canyon / Scitron  PCCB-00111  1993.02.19
+
+$end

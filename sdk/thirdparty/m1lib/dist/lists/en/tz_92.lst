@@ -1,0 +1,175 @@
+$name=tz_92
+$version=2
+$default=001
+$songmax=255
+$main
+
+#00 Reset Sound System
+#02 Music: Normal Prelaunch
+#03 Music: Normal Game
+#04 Music: Lock Lit
+#05 Music: Powerball Prelaunch
+#06 Music: Powerball Game
+#07 Music: Battle the Power
+#08 Music: Collect Bonus (pt 1)
+#09 Music: Power Mania
+#10 Music: Multiball (normal)
+#11 Music: Town Square Madness
+#12 Music: T.S.M. Hit 1 + Theme
+#13 Music: T.S.M. Hit 2 + Theme
+#14 Music: T.S.M. Hit 3 + Theme
+#15 Music: Multiball (Hurry-Up)
+#16 Music: Multiball (Jackpot!)
+#17 Music: Multiball Ready Pre
+#18 Music: Multiball Ready Game
+#19 Music: Super Slot
+#20 Music: Super Skill Shot
+#21 Music: Quick Lock Lit
+#22 Music: The Spiral
+#23 Music: Greed
+#24 Music: Clock Chaos level 1
+#25 Music: Clock Chaos level 2
+#26 Music: Clock Chaos level 3
+#27 Music: Clock Chaos level 4
+#28 Music: Clock Chaos level 5
+#29 Music: Quick Lock Theme 1
+#30 Music: Clock Millions
+#31 Music: Continue?
+#48 Music: Collect Bonus (pt 2)
+#49 Music: Normal Prelaunch
+#50 Music: Normal Game *
+#51 Music: Lock Lit *
+#52 Music: Powerball Prelaunch
+#53 Music: Powerball Game *
+#54 Music: Battle the Power *
+#55 Music: Collect Bonus (pt 1)
+#56 Music: Power Mania
+#57 Music: Multiball Ready *
+#64 Music: Load Gumball pt. 1
+#65 Music: Load Gumball pt. 2
+#66 Music: Quick Lock Theme 2
+#67 Music: Quick Lock Theme 3
+#68 Music: Quick Lock Theme 4
+#69 Music: Quick Lock Theme 5
+#90 Increase music tempo
+#91 Decrease music tempo
+#122 (+ param) = Alt. sound bank
+#129 SFX: Camera whirr-click
+#130 SFX: Crash 1
+#132 SFX: Slingshot
+#133 SFX: Tonk!
+#134 SFX: Crank turn 1
+#135 SFX: Crank turn 2
+#136 SFX: Crank turn 3
+#137 SFX: Misc 1
+#138 SFX: Plunk
+#141 SFX: Cuckoo
+#142 SFX: Click 1
+#143 SFX: Energy Release 1
+#144 SFX: Energy Release 2
+#145 SFX: Energy Release 3
+#147 SFX: Energy Release 4
+#148 SFX: Energy Release 5
+#149 SFX: Click 2
+#150 SFX: Crash 2
+#151 SFX: Launch Ball
+#152 SFX: Crash 3
+#155 SFX: Click 3
+#156 SFX: Right Ramp Diverter
+#157 SFX: Gumball whirr-click
+#158 SFX: Slot Machine Wind-up
+#159 SFX: Slot Machine Stop
+#160 SFX: Splat
+#161 SFX: Click 4
+#162 SFX: Click 5
+#163 SFX: Boom 1
+#164 SFX: Boom 2
+#165 SFX: Boom 3
+#167 SFX: Energy Release 1
+#168 SFX: Energy Release 2
+#169 SFX: Energy Release 3
+#171 SFX: Crash 4
+#172 SFX: Crash 5
+#173 Music: Piano 2 (unused)
+#174 SFX: Horn 1
+#175 SFX: Crash 6
+#176 SFX: Horn 2
+#177 SFX: Horn 3
+#178 SFX: Horn 4
+#179 SFX: Energy Release 4
+#180 SFX: Energy Release 5
+#181 SFX: Inlane rollover
+#182 SFX: Outlane rollover
+#183 SFX: Extra Ball Lit
+#184 SFX: Multiball Start
+#185 SFX: Rocket (long)
+#186 SFX: Left Ramp Start
+#187 SFX: Left Ramp Complete
+#188 SFX: Misc 2
+#189 SFX: Clock Chime
+#190 SFX: Misc 3
+#191 SFX: Misc 4
+#192 SFX: Hitchhiker Score
+#193 SFX: TZ Hit (single)
+#194 SFX: TZ Hit (Fade out)
+#195 SFX: Spiral Score 1
+#196 SFX: Spiral Score 2
+#197 SFX: Spiral Breakthru
+#198 SFX: Powerball Loop
+#199 Music: Camera Score
+#200 Music: Camera Next Award
+#201 Music: Misc 1
+#202 Music: Misc 2
+#203 Music: Misc 3
+#204 Music: Misc 4
+#205 SFX: Jackpot Relit
+#206 SFX: Quick Lock Show 1
+#207 SFX: Quick Lock Show 2
+#208 SFX: Slot Launch (ready)
+#209 SFX: Slot Launch (go)
+#210 SFX: Tilt Warning
+#211 SFX: Tilt!
+#212 SFX: Slam Tilt!
+#213 SFX: Skill Red
+#214 SFX: Skill Orange
+#215 SFX: Skill Yellow
+#216 SFX: Skill Shot Missed
+#217 SFX: Echoed Click 1
+#218 SFX: Echoed Click 2
+#219 SFX: Echoed Click 3
+#220 SFX: Echoed Click 4
+#221 SFX: Electric Arc 1
+#224 SFX: Electric Arc 2
+#225 SFX: Super Slot Score
+#226 SFX: T.S.M. Hit 1
+#227 SFX: T.S.M. Hit 2
+#228 SFX: T.S.M. Hit 3
+#229 SFX: Super Skill Red
+#230 SFX: Super Skill Orange
+#231 SFX: Super Skill Yellow
+#232 SFX: Super Skill Missed
+#233 SFX: Start Battle Power
+#234 SFX: Lite Slot Machine
+#235 SFX: Spiral Shot Start
+#236 SFX: Spiral Shot Complete
+#237 SFX: Rocket (short)
+#238 SFX: Door appears
+#239 SFX: Robot Score
+#240 SFX: Kick-out from lock, etc
+#241 SFX: Jet bumper added
+#242 Music: Replay/Special
+#243 SFX: Misc 5
+#244 SFX: Misc 6
+#245 SFX: Misc 7
+#246 SFX: Misc 8
+#247 SFX: Jackpot Score (pt 1)
+#248 SFX: Jackpot Score (pt 2)
+#250 SFX: Right Ramp
+#251 Music: Piano Award
+#252 SFX: Lock Lit!
+#253 SFX: Misc 9
+#254 SFX: Mode Explain
+#255 SFX: Misc 10
+
+// Basic listing by Tafoid, extracted from PinMAME's SOUNDS.DAT
+$end

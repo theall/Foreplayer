@@ -1,0 +1,35 @@
+$name=quiztou
+$version=2
+$default=$01
+$main
+
+#001 History of クイズ島
+#002 The Theme of クイズ島 (テイク1)
+#003 アイランド・クルーズ (工夫のテーマ)
+#004 花畑のワルツ (花の精のテーマ)
+#005 想い島 (農夫のテーマ)
+#006 太古の夢 (古生物学者のテーマ)
+#011 天使のラッパ
+#015 クイズだ!!
+#013 Samba de Quiz
+#014 ROCK is Great!!
+#016 Q-TECH
+#007 勝ちぬきぃ!! (テイク1)
+#008 異変
+#012 キーワードを探せ!!
+#009 地底大魔王出現
+#018 決戦だ!!
+#019 勝ったゾ!!
+#028 New History
+#027 勝ちぬきぃ!! (テイク2)
+#029 The Theme of クイズ島 (テイク2)
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI VOL.10
+  VICTOR ENTERTAINMENT  VICL-40097  1993.12.16
+
+  ■作曲・編曲
+  福澤 正洋
+
+// リスト作成: らま
+$end

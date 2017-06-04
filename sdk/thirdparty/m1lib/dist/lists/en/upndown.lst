@@ -1,0 +1,23 @@
+﻿$name=upndown
+$version=2
+$default=130
+$songmax=146
+$main
+
+#130 Main BGM
+#141 Round Clear
+#144 Time Result
+#140 Name Entry
+#143 Player Miss
+
+-----------------------------------------
+ [SFX]
+
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#145 [SFX]
+#146 [SFX]
+
+$end

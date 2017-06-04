@@ -1,0 +1,43 @@
+﻿$name=arabianm
+$version=2
+$default=009
+$main
+
+  ※再生に不具合あり
+
+#009 序曲
+#033 舞姫
+#010 暗雲 (PLAYER SELECT)
+#012 乱世 (ROUND 1) <time="52.5">
+#013 乱世 (ROUND 1 BOSS MUMUKINSUIA)
+#014 初陣 (ROUND 2 BOSS ASURA)
+#015 勝利 (CLEAR)
+#016 詩吟 (DEMO)
+#019 裂空 (ROUND 3)
+#030 爆雷 (ROUND 3 BOSS GREAT ROC)
+#020 放浪 (ROUND 4)
+#018 流転 (ROUND 4)
+#025 降霊 (ROUND 4 BOSS KANJIJI)
+#017 旅路 (ROUND 4 & NAME NETRY)
+#011 閉幕 (GAME OVER)
+#021 異国 (ROUND 5) <time="6">
+#022 異国 (ROUND 5)
+#023 夢魔 (ROUND 5) <time="18">
+#024 夢魔 (ROUND 5)
+#026 神秘 (LAMP)
+#027 進撃 (ROUND 6)
+#028 鼓動 (ROUND 7)
+#029 古城 (ROUND 7)
+#031 修羅 (LAST BOSS BARUANTESS)
+#032 大団円～大いなる流れの中に (ALL ROUND CLEAR)
+#033 大団円～大いなる流れの中に (STAFF ROLL)
+
+  ■作曲
+  古川 典裕 (中山上等兵, Wiz Master)
+
+  ■出典
+  ZUNTATA RARE SELECTION Vol.4 舞姫
+  ZUNTATA RECORDS  ZTTL-0030  1998.09.21
+
+// List contribution by ZEK.
+$end

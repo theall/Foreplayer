@@ -1,0 +1,72 @@
+$name=ws
+$version=2
+$default=265
+$main
+
+#265 [S.E.] Credit
+#009 Selection Screen <time="00:46.48">
+#011 Play Ball <time="0:06">
+#256 Main BGM <time="0:54.40">
+#257 Time <time="0:12.80">
+
+#015 Battle March Kobayakawa <time="00:17">
+#016 Battle March Ransu <time="00:28.30">
+#017 Battle March Hikono<time="00:26.35">
+#018 Battle March Ochiai<time="00:26.80">
+
+#002 Change Sides Korakuen Stadium
+#006 Battle March Hounaa <time="00:29.10">
+#019 Battle March Hirosawa<time="00:20.70">
+#020 Battle March Ponse<time="00:27.15">
+#021 Battle March Yashiki<time="00:24.25">
+
+#003 Change Sides Koushien Stadium
+#022 Battle March Mayumi<time="00:16">
+#024 Battle March Baasu <time="00:15.53">
+#023 Battle March Kakefu <time="00:15.40">
+#025 Battle March Ishige <time="00:18.70">
+#026 Battle March Kiyohara <time="00:26.80">
+
+#004 Change Sides Mejaa Stadium
+#027 Battle March Ishimine <time="00:17.50">
+#028 Battle March Kadota <time="00:17.50">
+#029 Battle March Buryuwa <time="00:23.38">
+#030 Battle March Takazawa <time="00:17.75">
+#031 Battle March Deihisu <time="00:16.30">
+
+#258 Scoring Position BGM <time="0:12.80">
+#005 Homerun Fanfare
+#008 Game Set: Game Won
+#033 Game Set: Game Draw
+#032 Game Set: Game Lost <time="0:24.75">
+#001 Game Over
+
+#034 Stereo Test
+#010 Selection Screen w/out intro <time="00:44">
+#007 Battle March Hounaa w/out intro <time="00:26">	
+
+----------------------------------------------
+
+#259 [S.E.] Ball Lands
+#260 [S.E.] Fence Hit
+#261 [S.E.] Catch
+#262 [S.E.] High Speed Throw
+#263 [S.E.] Medium Speed Throw
+#264 [S.E.] Low Speed Throw
+#266 [S.E.] 
+#267 [S.E.] Unknown
+#268 [S.E.] Unknown
+#269 [S.E.] Unknown
+#270 [S.E.] Selection Screen Change
+#271 [S.E.] Base Stolen
+#272 [S.E.] Cursor
+#273 [S.E.] Shock
+#274 [S.E.] Credit
+#275 [S.E.] Bunt
+
+  [Composed by]
+  Yuriko Keino
+
+// List contribution by MAZ
+// English list by Knurek
+$end

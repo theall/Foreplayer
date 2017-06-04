@@ -1,0 +1,54 @@
+﻿$name=darkmist
+$version=2
+$default=001
+$main
+
+#001 [SFX] Credit
+#002 Start
+#003 Main Theme
+#011 Labyrinth Theme #1
+#016 Missed
+#006 Boss Battle #1
+#005 Defeated Boss
+#012 Town Theme
+#004 Labyrinth Theme #2
+#007 Boss Battle #2
+#013 Found The Castle
+#014 Name Entry
+
+#008 Unused #1
+#018 Unused #2
+#037 Unused #3
+#039 Unused #4
+#072 Unused #5
+#082 Unused #6
+#083 Unused #7
+#123 Unused #8
+#160 Unused #9
+#163 Unused #10
+
+------------------------------------------------------
+ [SFX]
+
+#001 [SFX] Credit
+#017 [SFX]
+#019 [SFX] Attacking
+#020 [SFX]
+#021 [SFX]
+#022 [SFX] Using Magic
+#023 [SFX] Got Item
+#024 [SFX] Warping
+#025 [SFX] Knocking Door
+#026 [SFX]
+#027 [SFX] Life Recovery
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#035 [SFX]
+#036 [SFX] Chime Ringing
+
+// List Contribution by a2c-s438
+$end

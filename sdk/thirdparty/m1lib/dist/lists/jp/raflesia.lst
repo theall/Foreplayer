@@ -1,0 +1,43 @@
+﻿$name=raflesia
+$version=2
+$default=151
+//$songmax=$a4
+$main
+
+#151 RAFFLESIA BGM <time="21.5">
+#149 COIN <time="2">
+#129 PLAYER START <time="1:21">
+#131 BOSS BGM <time="7.4">
+#132 VS.BOSS BGM <time="21.4">
+#146 BOSS DIE <time="1.8">
+#130 (MAIN BGM) <time="1:20">
+#152 PLAYER BOMB <time="2.5">
+#136 AREA CLEAR <time="6.5">
+#135 GAME CLEAR <time="4">
+#133 NAMING <time="48.3">
+#134 NAMING END <time="3">
+
+------------------------------------------------------
+
+#137 [S.E.] BEAM <time="2.5">
+#144 [S.E.] SHOT <time="2.5">
+#145 [S.E.] ENEMY DIE <time="2.5">
+#146 [S.E.] BOSS DIE <time="2.5">
+#147 [S.E.] RAFFLESIA DIE <time="2.5">
+#148 [S.E.] POWER UP <time="2.5">
+#149 [S.E.] COIN <time="2.5">
+#150 [S.E.] EXTRA UP <time="2.5">
+#152 [S.E.] PLAYER BOMB <time="3.5">
+#153 [S.E.] UFO <time="2.5">
+#160 [S.E.] UFO BOMB <time="2.5">
+#161 [S.E.] MESSAGE <time="2.5">
+#162 [S.E.] SCORE UP <time="2.5">
+#163 [S.E.] SPECIAL <time="2.5">
+#164 [S.E.] TEARDROP <time="2.5">
+
+　＊曲名とSE名は、サウンドテストモードより
+
+//2004年1月28日　完全版完成　by Neoテクノ坊
+// 2003年11月27日リスト完成 by Neoテクノ坊
+// 補完 by KC
+$end

@@ -1,0 +1,30 @@
+$name=g_blueal
+$version=2
+$default=61536
+$songmax=9999999
+$main
+
+$F060 Bank #1 Change
+$0001 BGM 1
+$0002 BGM 2
+$0003 BGM 3
+$0004 BGM 4
+$0006 BGM 5
+$0007 BGM 6
+$0008 BGM 7
+$0012 BGM 8
+$0013 BGM 9
+$F068 Bank #2 Change
+$0001 BGM 10
+$0002 BGM 11
+$0003 BGM 12
+$0004 BGM 13 
+$0005 BGM 14
+$0006 BGM 15
+$0007 BGM 16
+$0008 BGM 17
+$0009 BGM 18
+$000a BGM 19
+
+// Basic list contributed by Knurek
+$end

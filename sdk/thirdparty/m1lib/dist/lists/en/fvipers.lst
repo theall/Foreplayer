@@ -1,0 +1,30 @@
+﻿$name=fvipers
+$version=2
+$default=000
+$main
+
+#000 Advertise
+#001 Character Select
+#005 Armstone Town Day
+#006 Big Factory
+#007 UFO Diner
+#008 Armstone Airport
+#009 Armstone Town Night
+#010 Bay Side
+#011 City Tower
+#012 Observation Deck
+#013 Top of the City
+#002 Continue
+#003 Game Over
+#004 Name Entry
+#014 Credits Roll
+
+  [Source]
+  Fighting Vipers Original Sound Track
+  PolyGram  POCX-1030  May 25, 1996
+
+  [Sound Composer]
+  David Leytze
+
+// English List Contributed by NK
+$end

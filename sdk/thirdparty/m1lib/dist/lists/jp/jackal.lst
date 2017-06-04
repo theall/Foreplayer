@@ -1,0 +1,22 @@
+﻿$name=jackal
+$version=2
+$default=072
+$main
+
+#072 OPENING
+#064 MAIN BGM 1
+#065 MAIN BGM 2
+#069 FINAL BGM
+#131 GAME OVER
+#132 ENDING
+#133 RANKING
+//#128 
+//#129 
+//#130 
+
+  ■出典
+  KONAMIC GAME FREAKS / コナミ矩形波倶楽部
+  ALFA RECORDS  28XA-135  1987.03.25
+
+// リスト作成：みん☆さん
+$end

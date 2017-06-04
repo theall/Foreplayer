@@ -1,0 +1,67 @@
+﻿$name=onna34ro
+$version=2
+$default=078
+$main
+
+#078 Title Demo
+#036 [SFX] Credit
+#072 Opening Demo
+#074 Round Start
+#065 Main Theme #1 (Dojo)
+#070 Defeated Boss
+#068 Round Cleared #1
+#067 Main Theme #2 (Grass Field)
+#073 Round Cleared #2
+#076 Main Theme #3 (Shrine)
+#071 Missed
+#069 Game Over
+#075 Name Entry
+
+#077 Unused
+#081 Main Theme #2 (Alternative)
+
+------------------------------------------------------
+ [SFX]
+
+#002 [SFX] Hit Enemy's Balls
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX] Throwing
+#018 [SFX]
+#019 [SFX] Jumping
+#024 [SFX] Wind Blowing #1
+#028 [SFX] Wind Blowing #2
+#029 [SFX]
+#031 [SFX]
+#032 [SFX]
+#035 [SFX]
+#036 [SFX] Wind Blowing #3 (=Credit)
+#037 [SFX]
+#038 [SFX]
+#040 [SFX]
+#041 [SFX]
+#043 [SFX]
+#044 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX] Boss #4 "Franky" Laughing -- Missed
+#049 [SFX] Boss #2 "Hogen" Laughing -- Missed
+#050 [SFX] Boss #1 "Bocher" Laughing -- Missed
+#051 [SFX] Boss #3 "Dumplin" Laughing -- Missed
+#100 [SFX] Boss #4 "Franky" Laughing
+#101 [SFX] Boss #2 "Hogen" Laughing
+#102 [SFX] Boss #1 "Bocher" Laughing
+#103 [SFX] Boss #3 "Dumplin" Laughing
+
+// List Contribution by a2c-s438
+$end

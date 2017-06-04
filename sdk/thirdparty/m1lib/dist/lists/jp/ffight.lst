@@ -1,0 +1,145 @@
+﻿$name=ffight
+$version=2
+$default=149
+//$songmax=159
+$main
+
+ &lt;PROLOGUE&gt;
+#149 [S.E.] Phone 1 <time="0:05.8">
+#150 [S.E.] Phone 2 <time="0:01.5">
+#082 DEMO BGM
+#095 CREDIT
+#085 PLAYER SELECT <time="0:35.7">
+#080 OPENING <time="0:04.5">
+#136 [Voice] Ahhhahahaha... (Damnd) <time="0:02">
+
+ &lt;STAGE 1&gt;
+#064 BGM 1 <time="1:16.1">
+#065 BGM 2 <time="1:09.3">
+#064 BGM 1 <time="0:41.5">
+#087 ROUND CLEAR
+
+ &lt;STAGE 2&gt;
+#133 [Voice] Haaaahhhh! <time="0:02.3">
+#066 BGM 3 <time="2:01.8">
+#148 [S.E.] Subway 1 <time="0:04">
+#147 [S.E.] Subway 2 <time="0:07">
+#067 BGM 4 <time="1:33.2">
+#076 BONUS STAGE <time="0:26.5">
+#118 [S.E.] <time="0:02">
+#142 [Voice] Oh! My God!! (Bred)
+
+ &lt;STAGE 3&gt;
+#064 BGM 1 <time="0:41.5">
+#068 BGM 5 <time="1:09.2">
+#064 BGM 1 <time="0:41.5">
+#068 BGM 5 <time="0:48.5">
+
+ &lt;STAGE 4&gt;
+#072 BGM 9 <time="3:11.6">
+#073 BGM 10 <time="2:49.3">
+
+ &lt;STAGE 5&gt;
+#069 BGM 6 <time="1:57.7">
+#070 BGM 7 <time="1:04.6">
+#071 BGM 8 <time="1:20">
+
+ &lt;STAGE 6&gt;
+#144 [S.E.] Elevator 1 <time="0:01">
+#145 [S.E.] Elevator 2 <time="0:03">
+#146 [S.E.] Elevator 3 <time="0:02">
+#137 [Voice] Hah!
+#064 BGM 1 <time="0:41.5">
+#073 BGM 10 <time="1:32.3">
+#066 BGM 3 <time="1:04.1">
+#157 [Voice] Huhahahaha...! (Belger) <time="0:03">
+#071 BGM 8 <time="0:40">
+#158 [Voice] Aahhhh... (Belger) <time="0:04">
+#109 [S.E.] Belger's End <time="0:02">
+#088 LAST ROUND CLEAR <time="0:08">
+
+ &lt;EPILOGUE&gt;
+#084 ENDING
+#083 CONTINUE
+#081 GAME OVER
+
+-----------------------------------------------------------
+ [Voice]
+
+#099 [Voice] Hummn! (Cody, Haggar)
+#100 [Voice] Deyaah! (Cody)
+#123 [Voice] Deyaah! (Cody)
+#124 [Voice] Haah! (Cody)
+#128 [Voice] Wooahhah... (Cody, Guy)
+#131 [Voice] Uoohh... (Cody)
+#103 [Voice] Uraah! (Haggar)
+#104 [Voice] Deyaah! (Haggar)
+#105 [Voice] Yaah! (Haggar)
+#106 [Voice] Uhryaah! (Haggar)
+#107 [Voice] Tehryah! (Haggar)
+#125 [Voice] Uwaahoh! (Haggar)
+#129 [Voice] Gyuoh... (Haggar)
+#132 [Voice] Uhwahh... (Haggar)
+#101 [Voice] Eiyaah! (Guy)
+#108 [Voice] Haah! (Guy)
+#130 [Voice] Ahhh... (Guy)
+#137 [Voice] Hah! (Andore, Bill Bull, Wong Who)
+#139 [Voice] Kyaahah... (Poison, Roxy)
+#133 [Voice] Haaaahhhh! (Abigail)
+#136 [Voice] Ahhhahahaha... (Damnd)
+#140 [Voice] Uohh...
+#141 [Voice] Uhwaahh...
+#142 [Voice] Oh! My God!! (Bred)
+#156 [Voice] Oh,aahhhhah... (Jessica)
+#157 [Voice] Huhahahaha... (Belger)
+#158 [Voice] Aahhhh... (Belger)
+#138 [Voice] ??? (unused)
+
+-----------------------------------------------------------
+ [S.E.]
+
+#093 [S.E.] (unused)
+#094 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#102 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#126 [S.E.]
+#127 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#143 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#159 [S.E.]
+#148 [S.E.] Subway 1 <time="0:04">
+#147 [S.E.] Subway 2
+#144 [S.E.] Elevator 1 <time="0:01">
+#145 [S.E.] Elevator 2 <time="0:05">
+#146 [S.E.] Elevator 3
+#122 [S.E.]
+#151 [S.E.]
+
+  ■出典
+  Final Fight -G.S.M. CAPCOM 3- / アルフ ライラ ワ ライラ
+  PONY CANYON / SCITRON  PCCB-00030  1990.05.21
+
+  サイトロン ビデオゲームミュージック年鑑 1990
+  PONY CANYON / SCITRON  PCCB-00055  1991.02.21
+
+// List Contribution by NK
+$end

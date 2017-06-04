@@ -1,0 +1,27 @@
+$name=pacapp2
+$version=2
+$default=579
+$main
+
+#579 Opening
+#514 Mode Select
+#010 Private Service
+#009 Mask of Guilty
+#008 NO!gen-AK
+#015 Cool Dancing 2
+#012 Navigator
+#007 Quender Oui
+#013 Blue Noise 2
+#011 Nathasia'99
+#014 Subconscious Asian Soul
+#512 Continue
+#516 Game Over
+#518 Ranking
+#522 Ending ~Miss Good Night~
+
+  [Soundtrack]
+  Paca Paca Passion 2
+  Indie Label Nov 19, 1999
+
+// List Contribution by Knurek
+$end

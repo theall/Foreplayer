@@ -1,0 +1,52 @@
+﻿$name=rdft
+$version=2
+$default=$2
+$main
+//
+//Title : RAIDEN FIGHTERS
+//Copyright : (c)セイブ開発 1996
+//System : SPI
+//Sound CPU : Z80
+//Sound Chip : YMF271
+//Composer : 佐藤豪
+
+$02 オープニング
+*$?? クレジット音
+$04 プレイヤーセレクト
+$03 ミッションブリーフィング
+$05 森林ステージ "Task Force"
+$06 荒れ地ステージ
+$07 海上ステージ
+$0d 巨大敵エリア "Mui-Mui-Moo"
+$09 列車ステージ
+$08 雪原ステージ
+$0a 高空ステージ
+$0b 敵基地中枢ステージ "Invade your mind"
+$0e ボス
+$0c ステージクリア
+$12 エンディング
+$13 スタッフロール "Brought you peace again"
+$11 ネームエントリー
+*$?? ゲームオーバー(クリア時)
+*$?? ゲームオーバー(通常)
+
+$0f ?
+$10 ?
+
+$01 ROM交換時データ転送BGM
+
+
+  ■出典
+  RAIDEN FIGHTERS PCB (SPI System)
+
+  THE ONSLAUGHT RAIDEN FIGHTERS disc 1
+  INH  2005.1.31
+
+  RAIDEN FIGHTERS JET Original Sound Track
+  BANDAI MUSIC ENTERTAINMENT  APCG-4039  1998.11.21
+
+  ■作曲
+  佐藤 豪
+
+// リスト作成：加山。さん
+$end

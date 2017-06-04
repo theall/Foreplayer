@@ -1,0 +1,49 @@
+﻿$name=hellfire
+$version=2
+$default=029
+$songmax=029
+$fixed_volume=100
+$main
+
+#029 COIN (CREDIT)
+#015 READY TO GO (START) ～ CAPTAIN LANCER (STAGE 1)
+#019 CAPTAIN LANCER (STAGE 1)
+#020 EGYPT (STAGE 2)
+#018 JUMPING ROLL (STAGE 3)
+#017 MYSTIC GREEN (STAGE 4)
+#021 IN SIDE DRIVE (STAGE 5)
+#022 LAST DANCE (STAGE 6)
+#016 GAME IS OVER (GAME OVER)
+#023 REQUIEM (NAME ENTRY)
+#026 GET A CHANCE (CONTINUE)
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+
+  ■出典
+  TOAPLAN GAME MUSIC SCENE ONE / TATSUJIN
+  POLYSTAR  H24X-10005  1989.06.25
+
+  ■作曲
+  上村 達也
+
+$end

@@ -1,0 +1,72 @@
+﻿$name=mahretsu
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#044 Kitashinchi in Twilight (Title Demo) <time="34.1">
+#034 Name Entry (not on CD) <time="19.6"> 
+
+#077 Tookuno Anata (Main Song 1) <time="2:24">
+#085 Hoshinofuru Yoru (Main Song 2) <time="2:58">
+
+#080 Yi-Pin in a Mountain (Playing BGM 1) <time="2:29.9">
+#042 Haneman Blues (Playing BGM 2) <time="1:26.6">
+#043 Hissatsu! Tubamegaeshi (Playing BGM 3) <time="43.2">
+#037 Tsumottekoiyo! (BGM after Reach) <time="57.6">
+#036 Wakou (Win) <time="4.5">
+#071 Reminiscenece (Ending) <time="2:23.1">
+#033 Continue (not on CD) <time="17.7">
+#035 Game Over (not on CD) <time="9">
+
+#039 Tookuno Anata (Main Song 1 - instrumental)
+#038 Tookuno Anata (Main Song 1 - instrumental) &lt;w/o intro&gt;
+#081 Tookuno Anata (Main Song 1) &lt;w/o intro&gt;
+#082 Tookuno Anata (Main Song 1) &lt;2&gt;
+#079 Tookuno Anata (Main Song 1) &lt;end&gt;
+#041 Hoshinofuru Yoru (Main Song 2 - instrumental)
+#040 Hoshinofuru Yoru (Main Song 2 - instrumental) &lt;w/o intro&gt;
+#083 Hoshinofuru Yoru (Main Song 2) &lt;w/o intro&gt;
+#084 Hoshinofuru Yoru (Main Song 2) &lt;2&gt;
+#086 Hoshinofuru Yoru (Main Song 2) &lt;end&gt;
+#070 Reminiscenece (Ending) &lt;w/o intro&gt;
+#065 Unused Song
+#064 Unused Song &lt;w/o intro&gt;
+
+-----------------------------------------------------------
+  [SFX]
+
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#127 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+
+  [Source]
+  Neo-Geo Sound Power -G.S.M. SNK 2-
+  Pony Canyon / Scitron  PCCB-00031  Jun 21, 1990
+
+// List Contribution by NK
+// English beta list by Fuj
+$end

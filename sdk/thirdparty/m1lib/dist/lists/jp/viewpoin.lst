@@ -1,0 +1,76 @@
+﻿$name=viewpoin
+$version=2
+$default=33
+$fixed_volume=154
+$main
+
+#33 EYE CATCH SAMMY
+#34 TITLE BACK <time="18">
+#54 INSTRUCTION <time="18">
+#35 NOT ALL THERE / AREA 1 <time="2:28" fadeout="yes" fadeoutlength="10">
+#41 F.O.B. / BOSS <time="2:12" fadeout="yes" fadeoutlength="10">
+#36 UN CAILLOU RICOCHET / AREA 2 <time="4:36" fadeout="yes" fadeoutlength="10">
+#37 BE YOUR AGE! / AREA 3 <time="2:18" fadeout="yes" fadeoutlength="10">
+#38 ASS BACK WARDS / AREA 4 <time="3:55" fadeout="yes" fadeoutlength="10">
+#39 LA NERVATURA M. / AREA 5 <time="3:17" fadeout="yes" fadeoutlength="10">
+#40 PHYSICAL DAYDREAM / AREA 6 <time="3:34" fadeout="yes" fadeoutlength="10">
+#47 F.O.B. -BIOTRON MIX- / FINAL <time="1:46" fadeout="yes" fadeoutlength="10">
+#51 MES VOLUTES BLEUES / ENDING <time="2:26" fadeout="no">
+#50 CONTINUE <time="25" fadeout="yes" fadeoutlength="10">
+#52 NAME ENTRY <time="1:21" fadeout="yes" fadeoutlength="10">
+
+-------------------------------------
+
+#095 [S.E.] NeoGeo Logo
+#127 [S.E.] Credit Inserted
+#193 [S.E.] Take off
+#194 [S.E.] Shot
+#195 [S.E.] Charging
+#196 [S.E.] Full charge
+#197 [S.E.]
+#198 [S.E.]
+#201 [S.E.]
+#202 [S.E.]
+#203 [S.E.]
+#204 [S.E.]
+#205 [S.E.]
+#206 [S.E.]
+#207 [S.E.]
+#208 [S.E.] Gegege
+#209 [S.E.]
+#210 [S.E.]
+#211 [S.E.]
+#212 [S.E.]
+#213 [S.E.]
+#217 [S.E.]
+#218 [S.E.]
+#219 [S.E.]
+#220 [S.E.]
+#221 [S.E.]
+#222 [S.E.]
+#223 [S.E.]
+#224 [S.E.]
+#229 [S.E.]
+#231 [S.E.]
+#232 [S.E.]
+#233 [S.E.]
+#234 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+#238 [S.E.]
+#239 [S.E.]
+#240 [S.E.]
+#241 [S.E.]
+#242 [S.E.]
+#243 [S.E.]
+#244 [S.E.]
+#245 [S.E.]
+#246 [S.E.]
+
+  ■出典
+  VIEWPOINT / SAMMY
+  PONY CANYON / SCITRON  PCCB-00112  1993.02.19
+
+// Times by CrashTest
+// 2 loops edition by Simon B.
+$end

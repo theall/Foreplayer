@@ -1,0 +1,30 @@
+﻿$name=gloc
+$version=2
+$default=154
+$songmax=158
+$main
+
+#154 Opening
+#145 BGM A
+#147 Continue
+#146 BGM B
+#144 谷間の空中戦BGM
+#149 BGM C
+#151 BGM D
+#150 地上攻撃BGM
+#153 Last Mission
+#152 Landing
+#148 Congratulations
+#155 Name Entry
+#158 Fanfare"HIRO"
+#156 Fanfare (未使用曲)
+#157 Phrase (未使用曲)
+
+  ■出典
+  HYPER DRIVE -G.S.M. SEGA 4-
+  PONY CANYON / SCITRON  PCCB-00035  1990.07.21
+
+  ■作曲
+  Hiro.
+
+$end

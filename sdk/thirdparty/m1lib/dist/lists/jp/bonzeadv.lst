@@ -1,0 +1,149 @@
+﻿$name=bonzeadv
+$version=2
+$default=023
+$main
+
+#023 クレジット <time="5">
+#015 閻魔大王を討て <time="7">
+#088 地獄全景 <time="6">
+#009 一丁目 荒寺の墓場
+#022 帝釈鏡 (無敵BGM)<time="12">
+#016 ステージクリア
+#014 六地蔵の導き <time="8">
+#010 ニ丁目 三途の川 
+#011 三丁目 火炎地獄
+#041 [Voice] 亡者の叫び <time="5.2">
+#013 春苦 (ボスBGM)
+#086 四丁目 血の池地獄 <time="8">
+#021 こんてぃにゅう <time="18">
+#010 五丁目 氷地獄
+#011 六丁目 迷い地獄
+#012 七丁目 閻魔の洞窟
+
+#068 [S.E.] 閻魔大王出現<time="2.6">
+#013 閻魔庁 <time="13.94">
+#072 [S.E.] 閻魔大王の正体<time="3">
+#013 龍神と狗炎火
+#075 [Voice] 閻魔の咆哮 <time="9">
+#018 エンディング
+#020 ゲームオーバー
+#019 ネームレジスト
+#088 終<time="6">
+
+---------------------------------------------------
+ [S.E.]
+
+#024 [S.E.] ジャンプ音
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 氷室饅頭の泣き声
+#029 [S.E.] 
+#030 [S.E.] 飛炎魔破, 魔爆破, 魔破雷打, etcアイテムの音
+#031 [S.E.] ハリーアップ
+#032 [S.E.] 
+#033 [S.E.] 着水音
+#034 [S.E.] 
+#035 [S.E.]
+#036 [S.E.] 
+#037 [S.E.] 灯篭のワープ音
+#038 [S.E.] 龍神出現音
+#039 [S.E.] 
+#040 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 雑魚破壊音
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 墓化けの動く音
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#055 [S.E.] 氷室饅頭のジャンプ音
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] つるべえ出現音
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 卒塔婆が折れた音
+#067 [S.E.] 
+#068 [S.E.] 閻魔大王出現
+#069 [S.E.] 
+#070 [S.E.] 
+#072 [S.E.] 閻魔大王の正体
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 鉄球
+#081 [S.E.] 三途の間欠泉
+#082 [S.E.] 
+#083 [S.E.] 木の扉
+#084 [S.E.] 
+#085 [S.E.] 七五三縄の結界音
+#086 [S.E.] 血の池
+#087 [S.E.] 
+#088 [S.E.] 地獄全景・終
+#089 [S.E.] 
+
+---------------------------------------------------
+ [Voice]
+
+#041 [Voice] 亡者の叫び <time="5.2">
+#054 [Voice] 狐火の鳴き声
+#071 [Voice] 閻魔変身
+#073 [Voice] 
+#074 [Voice] 天炎火の叫び
+#075 [Voice] 天炎火の咆哮
+
+  ■作曲
+  小倉 久佳（OGR）
+
+//---------------------------------------------------
+//
+//  ■STAFF
+//          GAME DEIRECTOR  YASUMASA.SASABE
+//                      CREATER  CRAZY-YOSHIKAWA
+//                        CREAMY  TETSU
+//CREATURE DESIGNED BY  JUNJI.YARITA
+// GAME DESIGN DIRECTOR  HIDEHIRO.FUJIWARA
+//             GAME DESIGNER  KENSHI.KAITO
+//  CHARACTER DESIGNERS  YOSHIHIKO.WAKITA
+//                                      TETSURO.KITAGAWA
+//                                     MINORI.ISHINO
+//                                      TAKAKO.KOJIMA
+//     HARDWARE DIRECTOR  TAKASHI.OHARA
+//               ART DIRECTOR  HIROYASU.NAGAI
+//       SOUND DIRECTED BY  H.OGURA
+//                     ASSISTANT  'YACK'
+//
+//                                      Y.OHASHI
+//                                      C.ICHIKAWA
+//
+//            SPECIAL THANKS  TSUKASA.NAKAMURA
+//                                      MARI.IWANO
+//                                      MITSUKOU.KIMURA
+//                                      TOMIO.TAKEDA
+//                                      AKIRA.FUJITA
+//                                      TOSHIO.KOUNO
+//                                      HIROSHI.TSUJINO
+//                                      EIICHI.SATO
+//                                      HARUTOKI.KUME
+//                                      TOSHIYUKI.SANADA
+//                                      KATSUMI.KANEOKA
+//                                      YUKIWO.ISHIKAWA
+//                                      TOSIYUKI.NISIMURA
+//                 TAKE IT EASY  YASUMASA.SASABE
+//                                      TSUTOMU.YOSHIKAWA
+//                                      TETSUSHI.ABE
+//                                      KENSHI.KAITO
+// List contribution by ZEK.
+$end

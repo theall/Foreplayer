@@ -1,0 +1,51 @@
+﻿$name=pairs
+$version=2
+$default=027
+$main
+
+#027 Title
+#028 Picture Set Select
+#003 BGM 1
+#004 BGM 2
+#005 BGM 3
+#022 Girlie Picture
+#029 Set Completed
+#041 Continue
+
+#048 Set Completed (Slow Version)
+#002 BGM 1, 2, 3  (*)
+
+-----------------------------------------------------------
+ [Voice]
+
+#013 [Voice]  (*)
+#210 [Voice]
+#042 [Voice]
+#041 [Voice]
+#043 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#010 [SFX]
+#011 [SFX]  (*)
+#012 [SFX]  (*)
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]  (*)
+#021 [SFX]
+#022 [SFX]
+#024 [SFX]  (*)
+#026 [SFX]
+#037 [SFX]
+#039 [SFX]
+#209 [SFX]
+#213 [SFX]
+#240 [SFX]
+
+ (*) Switchable
+
+// List Contribution by NK
+$end

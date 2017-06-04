@@ -1,0 +1,30 @@
+﻿$name= roishtar
+$version=2
+$default= 01
+$songmax= 128
+$fixed_volume=100
+$main
+
+#01 Opening Theme
+#02 Main Theme
+#14 Druaga
+#06 Quox <time="25">
+#04 Round Clear
+#08 Round Start
+#15 Lauper <time="53.7">
+#10 Sakkabas <time="20">
+#09 Druaga (Entrance Hall)
+#17 Cleared Final Round
+#03 Congratulations
+#05 Game Over
+#07 Main Music (Hurry up)
+#11 Quox (Hurry up) <time="30">
+#12 Sakkabas (Hurry up) <time="22">
+#16 Lauper (Hurry up) <time="22">
+#13 Druaga (Entrance Hall) (Hurry up) 
+
+  [Source]
+  Namco Game Music Vol.1
+  Alfa Records  28XA-170  Jul 25, 1987
+
+$end

@@ -1,0 +1,67 @@
+﻿$name=rambo3p
+$version=2
+$default=005
+$main
+
+#005 Title (1) <time="0:20.5">
+#031 Title (2) <time="0:02.5">
+#036 Title (3)
+#014 Credit
+#006 Introduction
+#063 Escape from a Base (Scene 1)
+#010 Enemy's Area
+#012 Enemies were Cleared!
+#007 Shooting-Battle (Scene 2)
+#009 Chase (Scene 3)
+#008 Fire in the Dark (Scene 4)
+#011 All-out Attack (Scene 5)
+#013 Ending
+#016 Game Over
+#015 Name Entry
+
+-----------------------------------------------------------
+ [Voice]
+
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#043 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#062 [S.E.]
+#064 [S.E.]
+
+// List contributed by NK
+$end

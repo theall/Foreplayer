@@ -1,0 +1,39 @@
+﻿$name=battlnts
+$version=2
+$default=130
+$main
+
+#130 Mysterious Overture (Title)
+#154 Message of Devil (Enemie's Demo)
+#129 Battlantis Act I (BGM 1)
+//#131 Battlantis Act I (BGM 1) - short intro
+//#134 Battlantis Act I (BGM 1) - w/o intro
+#135 Cyclops Attack (Monster's Demo)
+//#132 Cyclops Attack (Monster's Demo) - w/o intro
+#143 Battlantis Act II (BGM 2)
+//#144 Battlantis Act II (BGM 2) - short intro
+//#137 Battlantis Act II (BGM 2) - w/o intro
+#133 Frogger Panic (Mini Frog)
+#138 Frogger Panic (Boss Frog)
+#153 Battlantis Act III (BGM 3)
+//#152 Battlantis Act III (BGM 3) - short intro
+//#147 Battlantis Act III (BGM 3) - w/o intro
+#142 Red Dragon Arrival (Dragon)
+#149 Battlantis Act IV (BGM 4)
+//#150 Battlantis Act IV (BGM 4) - short intro
+//#151 Battlantis Act IV (BGM 4) - w/o intro
+#146 Mad Emperor "Asmodeus" (Last Boss)
+#148 The Conquest of Liberty (All Clear)
+#139 Return with Glory (Credits Roll)
+#140 Victory (Ranking)
+#136 Game Over
+
+  [Soundtrack]
+  Konami Game Music Vol.4 - A-Jax
+  Alfa Records  28XA-201  Mar 10, 1988
+
+  Konami Game Music Vol.4 - A-Jax (Legend Series)
+  Scitron Digital Contents  SCDC-00472  Nov 23, 2005
+
+// List Contribution by Min
+$end

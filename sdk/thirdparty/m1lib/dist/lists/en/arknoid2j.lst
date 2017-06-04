@@ -1,0 +1,51 @@
+﻿$name=arknoid2j
+$version=2
+$default=010
+$main
+
+#010 [SFX] Credit Inserted 
+#031 Introduction
+#023 Get Ready!
+#034 DOH (Dominate Over Hour)
+#035 Ending, Name Entry
+#025 Game Over
+
+#033 Unused
+
+---------------------------------------------------
+  [SFX]
+
+#014 [SFX] Mixtec
+#013 [SFX] Rebound 1
+#005 [SFX] Rebound 2
+#006 [SFX] Rebound 3
+#017 [SFX] Block
+#036 [SFX] Enemy destroyed 1
+#015 [SFX] Enemy destroyed 2
+#038 [SFX] Miss
+#007 [SFX] Coin
+#010 [SFX] Credit
+#026 [SFX] Reducted
+#008 [SFX] Laser
+#012 [SFX] Laser
+#019 [SFX] Catched a ball
+#029 [SFX] Expanded
+#024 [SFX] Extend
+#011 [SFX] Break, Gate Opened
+#018 [SFX] Stage Clear
+#021 [SFX] Hit Boss
+#022 [SFX] Boss Escape
+#027 [SFX] Hit DOH
+#030 [SFX] Boss Disappearing
+
+#028 [SFX] ?
+#009 [SFX] ?
+#020 [SFX] ?
+#016 [SFX] ?
+#037 [SFX] ?
+
+  [Sound Composer]
+  Hisayoshi Ogura (OGR)
+
+// List contribution by ZEK.
+$end

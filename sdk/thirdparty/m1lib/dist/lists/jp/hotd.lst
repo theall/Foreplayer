@@ -1,0 +1,28 @@
+﻿$name=hotd
+$version=2
+$default=000
+$main
+
+#000 THE HOUSE OF THE DEAD (ADVERTISE)
+#001 The First Chapter -Tragedy 惨劇- (Stage 1 BGM)
+#002 The Second Chapter -Revenge 復讐- (Stage 2 BGM)
+#008 The Third Chapter -Truth 真実- (Stage 3 BGM)
+#004 Enemy's (Stage 1～3 Boss BGM)
+#014 The Final Chapter -The house of the dead 終焉- (Stage 4 BGM)
+#010 Nativity of the Magician (Stage 5 Boss 登場) <time="21.86">
+#011 Theme of the Magician (Stage 5 Boss)
+#006 Ending Theme
+#005 Stage clear
+#003 Game over
+#013 Name Entry
+
+#010 Nativity of the Magician Full Ver
+#012 Theme of the Magician Ver.2
+#007 未使用曲 1
+#009 未使用曲 2
+
+  ■作曲
+  河内 哲也
+
+// List contribution by ZEK.
+$end

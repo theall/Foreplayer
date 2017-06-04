@@ -1,0 +1,27 @@
+$name=swcourt
+$version=2
+$default=$2D
+$main
+
+#045 [SFX] Coin Inserted
+#044 Take it Easy
+#039 Start <time="4">
+#006 [Voice] "Let's Play"
+#047 Enjoy
+#038 [SFX] Applause
+#040 Game and Match
+#060 Score
+#058 [SFX] Smash <time="2">
+#041 The Victory
+#046 Continue?
+
+  [Source]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097  Dec 16, 1993
+
+  [Composed and Arranged]
+  Masahiro Fukuzawa
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

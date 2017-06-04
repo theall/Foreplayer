@@ -1,0 +1,38 @@
+﻿$name=amidar
+$version=2
+$default=016
+$main
+
+#016 Credit Inserted
+#019 Game Start
+#037 Main Music (Odd-Numberd Stages)
+#022 Stage Clear
+#034 Bonus Stage
+#028 Win (Bonus Stage)
+#031 Failure (Bonus Stage)
+#040 Main Music (Even-Numberd Stages)
+#043 Power Up ("Floh-Walzer" aka "Chopsticks")
+#025 Game Over
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX] 
+#002 [SFX] 
+#003 [SFX] enemy falling
+#004 [SFX] player killed
+#005 [SFX] enemy killed
+#006 [SFX] eat a dot (odd-numberd stage)
+#007 [SFX] player extend
+#008 [SFX] 
+#009 [SFX] enclose (even-numberd stage)
+#010 [SFX] enemy fell
+#011 [SFX] enemy bouncing
+#012 [SFX] side-stepping pig (bonus stage)
+#013 [SFX] time out
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] credit inserted
+
+// List contributed by Hiroshi
+$end

@@ -1,0 +1,33 @@
+﻿$name=thndrx2
+$version=2
+$default=142
+$songmax=148
+$fixed_volume=100
+$main
+
+#142 Rise in Arms (Attract Mode)
+#128 Air Battle = Thunder Cross II (Stage 1)
+#143 Approach the Boss
+#135 He Hasn't Yet Died = Evil Eyes (Stage 1, 5 Boss)
+#144 Clear Demo (Stage Clear)
+#129 Kartus - Part 2 (Stage 2)
+#136 Theme of Ragamuffin (Stage 2 Boss)
+#130 Heavy Metal Bomber (Stage 3 BGM)
+#137 Dark Force (Stage 3, 6 Boss)
+#131 Dog Fight III (Stage 4)
+#138 Theme of Dinosavr Jr. (Stage 4 Boss)
+#132 Battles of Battleship (Stage 5)
+#133 Star Light (Stage 6)
+#134 At the Front (Stage 7)
+#148 An Ominous Silence (Major boss approaching)
+#141 Theme of Sprouts Layber (Stage 7 Boss)
+#146 A Shooting Star (Ending)
+#147 A Victory March (Ranking)
+#145 Game Over
+
+  [Source]
+  Konami Game Music Collection Vol.4
+  King Records  KICA-7505  Oct 5, 1991
+
+// English list adjustment by bcass
+$end

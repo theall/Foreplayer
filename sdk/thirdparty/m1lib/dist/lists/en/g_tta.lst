@@ -1,0 +1,36 @@
+﻿$name=g_tta
+$version=2
+$default=129
+$songmax=255
+$main
+
+#129 Konami Logo
+#130 Title Screen
+#131 Map Screen <time="0:41" fadeout="yes" fadeoutlength="10">
+#132 Grasslands <time="0:53" fadeout="yes" fadeoutlength="10">
+#133 The Forest <time="1:17" fadeout="yes" fadeoutlength="10">
+#135 Inside the Caverns <time="1:30" fadeout="yes" fadeoutlength="10">
+#139 Inside the Volcano <time="1:30" fadeout="yes" fadeoutlength="10">
+#138 In the Lake <time="1:27" fadeout="yes" fadeoutlength="10">
+#140 Pirate Ship <time="1:45" fadeout="yes" fadeoutlength="10">
+#148 Treasure Found! <time="1:10" fadeout="yes" fadeoutlength="10">
+#136 Snowy Highlands, Lakeside at Sunset <time="2:03" fadeout="yes" fadeoutlength="10">
+#137 Montana Max's Base <time="1:25" fadeout="yes" fadeoutlength="10">
+#134 Wackyland <time="1:32" fadeout="yes" fadeoutlength="10">
+#149 Helper One - Sneezer
+#150 Helper Two - Concord Condor <time="0:20" fadeout="yes" fadeoutlength="10">
+#146 Stage Clear
+#145 Score Tally
+#141 Boss Fight <time="0:58" fadeout="yes" fadeoutlength="10">
+#147 Boss Clear, Buddy Rescued <time="0:23" fadeout="yes" fadeoutlength="10">
+#142 Elmyra <time="1:27" fadeout="yes" fadeoutlength="10">
+#143 Montana Max <time="1:12" fadeout="yes" fadeoutlength="10">
+#151 Password Entry <time="0:58" fadeout="yes" fadeoutlength="10">
+#144 Continue? <time="0:36" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Shinji Tasaka, Tsuyoshi Sekito, Hideto Inoue
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

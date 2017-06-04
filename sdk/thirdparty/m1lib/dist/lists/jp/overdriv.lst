@@ -1,0 +1,103 @@
+﻿$name=overdriv
+$version=2
+$default=137
+$fixed_volume=100
+$main
+
+#137 TITLE BGM
+#135 CREDIT
+#134 MUSIC SELECT
+
+#131 1 KONAMI AVENUE
+#128 2 CHANGE YOUR HEART
+#129 3 FUNKY GUY
+#133 4 LA FIEBTA
+#132 5 DIAMOND BED
+#141 6 MAGIC LADY
+
+#130 GAME OVER <time="5.6">
+#136 CONTINUE ? 
+#140 FINISH
+#138 ENDING
+#142 MAP
+#130 NAME ENTRY 
+
+#139 未使用曲
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] 
+#002 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] 
+#015 [S.E.] <time="5">
+#016 [S.E.] <time="7"> 
+#017 [S.E.] <time="4"> 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#026 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] <time="5">
+#052 [S.E.] <time="5">
+#054 [S.E.] <time="4">
+#055 [S.E.] 
+#057 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#003 [Voice] 
+#004 [Voice] 
+#023 [Voice] 
+#024 [Voice] 
+#025 [Voice] 
+#027 [Voice] 
+#036 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice]
+#043 [Voice] 
+#044 [Voice] 
+#051 [Voice] <time="4">
+#053 [Voice] <time="4">
+#060 [Voice] 
+#061 [Voice] <time="8">
+#062 [Voice] <time="8">
+#063 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+
+// List contribution by ZEK.
+// TAK.Q16.FUJ.YOS.WAD.AKA
+$end

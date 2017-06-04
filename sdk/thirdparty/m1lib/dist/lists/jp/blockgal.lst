@@ -1,0 +1,30 @@
+﻿$name=blockgal
+$version=2
+$default=136
+$main
+
+#136 TITLE
+#148 BALL RELEASE <time="0:04">
+#139 BGM 1
+#133 STAGE CLEAR
+#129 BGM 2
+#132 GAL
+#138 ENDING
+#131 DEAD
+#137 CONTINUE
+#134 GAME OVER
+
+------------------------
+ [S.E.]
+
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+
+$end

@@ -1,0 +1,50 @@
+﻿$name=gulfwar2
+$version=2
+$default=037
+$main
+
+#037 Credit
+#019 BGM 1
+#022 BGM 2
+#023 BGM 3
+#024 BGM 4
+#025 BGM 5
+#021 BGM 6
+#015 Landing Theme
+#031 Name Storage
+#020 Game Over
+#034 Unused - Next Dream from Twin Cobra
+
+#027 [SFX] - BGM 2
+#028 [SFX] - BGM 3
+#029 [SFX] - BGM 4
+#030 [SFX] - BGM 5
+#026 [SFX] - BGM 6
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#032 [SFX]
+#033 [SFX]
+#035 [SFX]
+#036 [SFX]
+
+// List Contribution by NK
+$end

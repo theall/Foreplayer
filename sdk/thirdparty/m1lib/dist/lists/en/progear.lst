@@ -1,0 +1,31 @@
+﻿$name=progear
+$version=2
+$default=014
+$songmax=256
+$main
+
+#014 QSound Logo
+
+#003 Kids' Resolution (Player Select)
+#004 To the Deep Blue Sky (Stage 1)
+#005 White Tragedy (Stage 2)
+#006 Imperial Capital of Rouge (Stage 3)
+#007 Amber Remains (Stage 4)
+#008 Castle of Darkness (Stage 5)
+#002 Senatus (Boss Stage)
+#009 Red-wat Success (Stage Clear)
+#012 War between Old and Young (Last Boss Stage)
+#010 Stairs to Adults (Ending 1)
+#011 To the Heroes.. (Ending 2)
+#013 Music Box of Memories (Name Entry)
+
+------------------------------------------------------
+
+  [Source]
+  Progear no Arashi Original Soundtrack
+  Suleputer  CPCA-1075  Sep 26, 2003
+
+  [Sound Composer]
+  Jun'ya Inoue
+
+$end

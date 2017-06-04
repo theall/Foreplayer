@@ -1,0 +1,28 @@
+﻿$name=robokid
+$version=2
+$default=$0B
+$main
+
+#011 Credit Inserted
+#018 Main Theme (BGM A)
+#040 Finish
+#076 Area Cleared
+#048 BGM B
+#044 BGM C
+#077 Boss
+#038 BGM D
+#037 BGM E
+#020 Staff Credits
+#029 Name Entry
+#046 Unused (BGM E)
+
+  [Source]
+  Omega Fighter, Atomic Robo-Kid / UPL
+  Pony Canyon / Scitron  PCCB-00038  Aug 21, 1990
+
+  [Composed]
+  Mechano Associates
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

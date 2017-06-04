@@ -1,0 +1,33 @@
+﻿$name=doa
+$version=2
+$default=010
+$main
+
+#010 DEAD OR ALIVE Overture (OPENING BGM)
+#012 最後のチョッパー (アピールパートBGM) *未使用曲
+#011 Show Down (キャラセレクト BGM)
+#002 NO MONEY (ザック ステージ BGM)
+#032 Stage Clear
+#005 The Fist of TAIKYOKU Blows Up (レイ・ファン ステージ BGM)
+#004 Blade of "RYU" (リュウ・ハヤブサ ステージ BGM)
+#006 孤高の拳士 (ジャン・リー ステージ BGM)
+#001 Power is Beauty (ティナ ステージ BGM)
+#008 コードネーム "BAYMAN" (バイマン ステージ BGM)
+#003 伝説の秘拳 (ゲンフー ステージ BGM)
+#000 決意の刻 (かすみ ステージ BGM)
+#016 DEAD OR ALIVE (ライドウ ステージ BGM)
+#013 生と死の間で (コンティニュー BGM)
+#017 Show must go on! (スタッフロール BGM)
+#014 Your Name is … (ネームエントリー BGM)
+
+#033 Logo
+
+  ■出典
+  DEAD OR ALIVE / TECMO
+  PONY CANYON / SCITRON  PCCB-00228  1996.11.21
+
+  ■作曲
+  Eiji Suzuki, Yoaki Takahashi, Yutaka Fujishima
+
+// Fixed by Ayaya
+$end

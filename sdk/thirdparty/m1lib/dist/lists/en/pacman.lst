@@ -1,0 +1,25 @@
+﻿$name=pacman
+$version=2
+$default=00
+$main
+
+#00 Game Start
+#01 Intermission
+#08 Extend
+#09 Credit
+#16 Siren #1
+#17 Siren #2
+#18 Siren #3
+#19 Siren #4
+#20 Siren #5
+#21 Energizer
+#22 Monster Escapes
+#24 Munch #1
+#25 Munch #2
+#26 Fruit/Prize Eaten
+#27 Monster Eaten
+#28 Death #1
+#29 Death #2 (2x)
+
+//Basic Listing by Tafoid
+$end

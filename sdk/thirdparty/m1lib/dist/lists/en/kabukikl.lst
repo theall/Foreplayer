@@ -1,0 +1,48 @@
+$name=kabukikl
+$version=2
+$default=02
+$main
+
+#002 Neo-Geo Logo
+#033 Tengai Makyo Shinden Opening
+#046 I Stand in the Land of Jipang (Select)
+#047 Come On, Let's Fight!! (VS Screen)
+#034 Swordsman of the Evening (Manjimaru Sengoku Stage)
+#056 Banzai (Winner Screen)
+#037 Rain Flute (Ziria Stage)
+#036 The Inveterate Skirt Chaser's Usual Tune (Kabuki Danjuro Stage)
+#035 Gokuraku's Ryugudai Restaurant (Taro Gokuraku Stage)
+#052 It's the Leader's Turn (Joining In)
+#040 The Story of Taro Onagane (Tsunade Stage)
+#041 Dance of Kinran (Yagumo Stage)
+#038 Snow, Moon, and Flowers (Orochimaru Stage)
+#039 Maiden of White Sorcery (Kinu Stage)
+#048 Manto A's Entry (Midway Demo 1)
+#042 The Monkey's Foolish Longing for the Sea (Manto A Stage)
+#049 Karakuri Soldier's Entry (Midway Demo 2)
+#043 A Steel Rival Appears! (Karakuri Soldier Stage)
+#050 Jyashinsai's Entry (Midway Demo 3)
+#044 Legend of the Bronze Hell (Jyashinsai Stage)
+#051 Jyashinsai's Transformation (Midway Demo 4)
+#045 The Great Demon's Hunger (Lucifeller Stage)
+#058 Manjimaru Sengoku Ending
+#061 Ziria Ending
+#060 Kabuki Danjuro Ending
+#059 Taro Gokuraku Ending
+#064 Tsunade Ending
+#065 Yagumo Ending
+#062 Orochimaru Ending
+#063 Kinu Ending
+#057 Seeking A New Land (Staff Roll)
+#054 It's Over... (Continue)
+#055 Game Over (Game Over)
+#053 We'll Always Be Together (Ranking)
+
+  [Source]
+  Tengai Makyou Shinden
+  Pony Canyon / Scitron  PCCB-00191  1995.11.17
+
+　[Sound Composer]
+  Masaaki Nishizawa, Eisaku Nanbu, Kennosuke Suemura
+
+$end

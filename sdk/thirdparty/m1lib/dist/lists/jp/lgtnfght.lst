@@ -1,0 +1,107 @@
+﻿$name=lgtnfght
+$version=2
+$default=$5b
+$songmax=$97
+$main
+
+$5b KONAMI Logo
+$94 Departure (コインデモ)
+$68 Credit (コイン音)
+$8a An Ominous Predicament (タイトルデモ)
+$81 Faraway (Stage 1, 2 BGM)
+$89 A Strange Enemy (Stage 1 ボス)
+$95 Go Ahead! (パターンクリア)
+$80 Thud! (Stage 2 ボス)
+$84 Sturdy Wings (Stage 3, 4 BGM)
+$82 Fighting Above The Sea (Stage 3 ボス)
+$83 Deadly Laser (Stage 4 ボス)
+$8c A Rought Scene (Stage 5, 6 BGM)
+$88 Monster Ship (Stage 5 ボス)
+$8d Danger Zone! (Stage 6 ボス)
+$8b No Turning Back (Stage 7, 8 BGM)
+$8e Mighty Metal Body (Stage 7 ボス)
+$91 Firearm (Stage 8 ボス)
+$90 Into The Unknown (Stage 9 BGM)
+$8f Mad Enperor (最終ボス)
+$97 Calm Yourself (オールパターンクリア)
+$85 A Wise Decision (コンティニュー)
+$86 Destruction (ゲームオーバー)
+$87 Victry March (ランキング)
+$92 Nostalgic (エンディング)
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.] MISSILE 破壊音
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.] MISS
+#068 [S.E.]
+#069 [S.E.] 1UP
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#092 [S.E.]
+#094 [S.E.]
+#096 [S.E.]
+#095 [S.E. & Voice]
+
+#080 [Voice] Trigon!
+#081 [Voice] Single Trigon!
+#082 [Voice] Twin Trigon!
+#083 [Voice] Hunting Trigon!
+#084 [Voice] Blast Trigon!
+#085 [Voice] Lightning Sword
+#086 [Voice] Paricle Beam (US版)
+#087 [Voice] Dragon Laser
+#088 [Voice] Emegency *2
+#089 [Voice] Emegency *3
+#090 [Voice] Please Continue!!
+#093 [Voice] Dragon
+#103 [Voice] Dragon
+#108 [Voice] Dragon 死亡 (3 boss 等)
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.2
+  KING RECORDS  KICA-1016  1990.08.21
+
+  ■作曲
+  KEN
+
+// Addition by Ayaya
+$end

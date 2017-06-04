@@ -1,0 +1,30 @@
+﻿$name=darius
+$version=2
+$default=055
+$main
+
+#055 INSERT COIN <time="0:04">
+#006 CAPTAIN NEO (宇宙洞窟) <time="1:35">
+#040 WARNING! <time="0:08">
+#007 BOSS 1 <time="1:15">
+#008 ROUND CLEAR <time="0:53">
+#046 INORGANIC BEAT (都市地帯) <time="2:34">
+#047 BOSS 2 <time="1:12">
+#043 COSMIC AIR WAY (山岳地帯) <time="2:47">
+#048 BOSS 3 <time="1:32">
+#045 CHAOS -Main Theme- (バンアレンベルト) <time="3:32">
+#049 BOSS 4 <time="0:55">
+#044 THE SEA (海底基地) <time="3:28">
+#050 BOSS 5 <time="1:02">
+#058 INSERT COIN B <time="0:04">
+#051 BOSS 6 <time="1:03">
+#052 BOSS 7 <time="2:31">
+#054 ENDING <time="1:38">
+#053 NAME <time="0:52">
+#009 OVER <time="0:10">
+
+  ■出典
+  DARIUS / TAITO ZUNTATA
+  PONY CANYON / SCITRON  PCCB-00093  1992.08.21
+
+$end

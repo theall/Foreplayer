@@ -1,0 +1,46 @@
+﻿$name=viprp1j
+$version=2
+$default=$10
+$main
+//
+//Title : VIPER PHASE1
+//Copyright : (c)セイブ開発 1995
+//System : SPI
+//Sound CPU : Z80
+//Sound Chip : YMF271
+//Composer : 佐藤豪
+
+??? アイキャッチ
+$10 attract
+??? credit
+$01 stage 1
+$02 stage 2
+$03 stage 3
+$04 stage 4
+$0e stage 5 start
+$05 stage 5
+$06 stage 6
+$07 stage 7
+$08 stage 8
+$09 boss
+$0a stage clear
+$0f ending
+$0d name entry
+$0b continue
+??? game over ?
+$11 failure
+
+*$13 ?
+$16 未使用
+
+$15 ROM交換時データ転送BGM
+$14 stereo check
+
+  ■出典
+  VIPER PHASE1 <NEW VERSION> PCB (SPI System)
+
+  ■作曲
+  佐藤 豪
+
+// リスト作成：加山。さん
+$end

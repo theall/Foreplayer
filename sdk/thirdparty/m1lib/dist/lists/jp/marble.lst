@@ -1,0 +1,47 @@
+﻿$name=marble
+$version=2
+$default=65
+$main
+
+#65 [S.E.] Coin Inserted
+#08 Level 1
+#47 Player 1 reaches goal
+#48 Player 2 reaches goal
+#28 Level 2 Preview
+#10 Level 2
+#29 Level 3 Preview
+#12 Level 3
+#14 Level 4 Part 1
+#16 Level 4 Part 2
+#20 Level 5 (Silly Race) Part 1
+#22 Level 5 (Silly Race) Part 2
+#30 Level 6 Preview
+#24 Level 6 (Ultimate Race)
+#26 High Score Entry
+#63 Game Over
+#27 Congratulations
+#49 [S.E.] Beginner Level slope helper
+#50 [S.E.] Collision with Black Marble
+#51 [S.E.] Marble Muncher
+#52 [S.E.] Collision with wall
+#53 [S.E.] Tunnel
+#54 [S.E.] Silly Tunnel
+#56 [S.E.] Marble falls apart
+#57 [S.E.] Marble is dazed
+#60 [S.E.] Marble materializes
+#61 [S.E.] Marble materializes (full)
+#62 [S.E.] Marble hit by Silly Bird
+#66 [S.E.] Collision with Guard Rail
+#67 [S.E.] Slippery surface
+#69 [S.E.] Marble falls off a ledge
+#71 [S.E.] Vacuum Cleaner 1
+#73 [S.E.] Vacuum Cleaner 2
+#75 [S.E.] Vacuum Cleaner 3
+#77 [S.E.] Vacuum Cleaner 4
+#79 [S.E.] Vacuum Cleaner 5
+#81 [S.E.] Vacuum Cleaner 6
+#04 Music Chip Test
+#05 POKEY Chip Test
+
+// List contributed by R. Belmont
+$end

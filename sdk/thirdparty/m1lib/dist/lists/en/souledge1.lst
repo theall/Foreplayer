@@ -1,0 +1,200 @@
+﻿$name=souledge1
+$version=2
+$default=016
+$songmax=400
+$main
+
+#016 The Wind and Clouds (Mitsurugi's Stage)
+#208 Opening Title (Attract Mode)
+
+#031 Epic Calling! (Character Select)
+#003 Into the Battle (Challenger Appeared)
+#019 Future Dancin' (Taki's Stage)
+#084 And the Blind Shall See (Voldo's Ending)
+#017 Heavenly Engage (Sophitia's Stage)
+#020 Soul and Sword (Siegfried's Stage)
+#085 Goddess in Triumph (Sophitia's Ending)
+#018 Dragon's Call (Li Long's Stage)
+#082 "The Deed is Done" (Taki's Ending)
+#021 The Gears of Madness (Voldo's Stage)
+#023 Kkaduri (Seung Mina's Stage)
+#080 War Age (Mitsurugi/Hwang's Ending)
+#026 Horangi Arirang (Hwang's Stage)
+#081 Sparrow's Return (Mina's Ending)
+#022 Recollect Continent (Rock's Stage)
+#024 Bravely Folk Song (Cervantes' Stage)
+#087 Sunrise Promise (Rock's Ending)
+#086 The Carnage has Begun / Into a Trance (Sieg/Cervantes' Ending)
+#029 Courage (Name Entry)
+#025 World Atlas Collapsed (Soul Edge's Stage)
+#083 The Last Bit of Hope / Dragon's Gasp (Li Long's Ending)
+#027 Finale and End Credits <time="1:49">
+
+#001 Sound Test
+#002 Over the Paradise (intro, from T.O.U.R.S)
+
+-----------------------------------------------------------
+ [Voice]
+
+#128 [Voice] Zero
+#129 [Voice] One
+#130 [Voice] Two
+#131 [Voice] Three
+#132 [Voice] Four
+#133 [Voice] Five
+#134 [Voice] Six
+#135 [Voice] Seven
+#136 [Voice] Eight
+#137 [Voice] Nine
+#138 [Voice] Ten
+#139 [Voice] Mitsurugi
+#140 [Voice] Seung Mina
+#141 [Voice] Taki
+#142 [Voice] Li Long
+#143 [Voice] Voldo
+#144 [Voice] Sophitia
+#145 [Voice] Siegfried
+#146 [Voice] Rock
+#147 [Voice] Hwang Sung Kyung
+#148 [Voice] 
+#149 [Voice] The heroes finally meet under the star of destiny.
+#150 [Voice] The fates conspired to arrange their battle.
+#151 [Voice] The mists of darkness swirl around.
+#152 [Voice] Our two souls are fiercly entangled.
+#153 [Voice] The gears of madness quietly start to move.
+#154 [Voice] Watched over by the almighty ones, they unleach themselves.
+#155 [Voice] The almighty ones have granted you a sword to cut your own path.
+#156 [Voice] A hero desires a sword and a sword desires truth.
+#157 [Voice] The end draws near.
+#158 [Voice] Place your noble soul in your sword.
+#159 [Voice] Mitsurugi stood again against impossible enemy.
+#160 [Voice] The gruling battle ended with the victory of Mitsurugi.
+#161 [Voice] Will you challenge the enemy again?
+#162 [Voice] The legend will never die.
+#163 [Voice] Transcending history and the world, a tale of souls and swords, eternally retold.
+#164 [Voice] Soul Edge
+#165 [Voice] Welcome to the Stage of history.
+#166 [Voice] Namco
+#167 [Voice] Versus
+#168 [Voice] Fight
+#169 [Voice] Final battle
+#170 [Voice] Battle zero
+#171 [Voice] Knock out
+#172 [Voice] Draw
+#173 [Voice] Double K.O.
+#174 [Voice] Out of the ring
+#175 [Voice] Time's up
+#176 [Voice] You win
+#177 [Voice] You lose
+#178 [Voice] Go
+#179 [Voice] Perfect
+#180 [Voice] Excellent
+#181 [Voice] Unbeleivable
+#182 [Voice] Fantastic
+#192 [Voice] 
+
+-----------------------------------------------------------
+ [SFX]
+
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#047 [SFX]
+#256 [SFX]
+#257 [SFX]
+#258 [SFX]
+#259 [SFX]
+#260 [SFX]
+#261 [SFX]
+#262 [SFX]
+#263 [SFX]
+#264 [SFX]
+#265 [SFX]
+#266 [SFX]
+#267 [SFX]
+#268 [SFX]
+#269 [SFX]
+#270 [SFX]
+#271 [SFX]
+#272 [SFX]
+#273 [SFX]
+#274 [SFX]
+#275 [SFX]
+#276 [SFX]
+#277 [SFX]
+#278 [SFX]
+#279 [SFX]
+#280 [SFX]
+#281 [SFX]
+#282 [SFX]
+#283 [SFX]
+#284 [SFX]
+#285 [SFX]
+#286 [SFX]
+#287 [SFX]
+#288 [SFX]
+#289 [SFX]
+#290 [SFX]
+#291 [SFX]
+#292 [SFX]
+#293 [SFX]
+#294 [SFX]
+#295 [SFX]
+#296 [SFX]
+#297 [SFX]
+#298 [SFX]
+#299 [SFX]
+#300 [SFX]
+#301 [SFX]
+#302 [SFX]
+#303 [SFX]
+#304 [SFX]
+#305 [SFX]
+#306 [SFX]
+#307 [SFX]
+#308 [SFX]
+#309 [SFX]
+#310 [SFX]
+#311 [SFX]
+#312 [SFX]
+#313 [SFX]
+#314 [SFX]
+#315 [SFX]
+#316 [SFX]
+#320 [SFX]
+#321 [SFX]
+#322 [SFX]
+#323 [SFX]
+#324 [SFX]
+#325 [SFX]
+#326 [SFX]
+
+  [Source]
+  Soul Edge (PlayStation Ver)
+  Namco  SLPS-00555  Dec 20, 1996
+
+  Super Battle Sound Attack Soul Edge
+  Pony Canyon / Media Remoras  MRCA-20099  Sep 20, 1996
+
+  Super Battle Sound Attack Soul Edge
+  Pony Canyon  PCCG-00365  Oct 21, 1996
+
+  T.O.U.R.S
+  Troubadour Record  TTRC-0006  Aug 7, 1994
+
+  [Sound Composers]
+  Takayuki Aihara
+  Ryuukou Ootsuka (#085, #082, #081, #208, #083)
+
+// List contribution by Hiroshi
+// English list and updated by Fujix
+// Updated by Anonymous
+// Voices transcription by RB
+$end

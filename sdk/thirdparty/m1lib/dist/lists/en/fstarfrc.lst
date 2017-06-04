@@ -1,0 +1,97 @@
+﻿$name=fstarfrc
+$version=2
+$default=120
+$songmax=126
+$main
+
+#120 Title
+#009 Credit Inserted
+#110 [SFX]
+#111 Main BGM
+#112 Power up BGM A
+#113 Power up BGM B
+#119 Power up BGM C
+#114 Boss A (Stage 1, 2, 8)
+#115 Boss B (Stage 3, 4, 5, 6, 7, 8)
+#118 Boss C (Stage 9)
+#117 Final Boss (Stage 10)
+
+#121 Ending 1 (Bad)
+#122 Ending 2 (Good)
+#124 Continue
+#123 Game Over
+#126 Name Entry
+
+#116 Unused
+#125 Unused
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+
+//list composed by huntingforce
+$end

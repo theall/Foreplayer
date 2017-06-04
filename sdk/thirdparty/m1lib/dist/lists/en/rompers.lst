@@ -1,0 +1,41 @@
+﻿$name=rompers
+$version=2
+$default=000
+$songmax=256
+$main
+
+#000 Opening
+#256 Coin Sound
+#005 Samba!
+#019 Samba! (faster)
+#017 Stage Clear
+#006 Old-Fashioned Music
+#020 Old-Fashioned Music (faster)
+#007 Spiders!
+#022 Spiders! (faster)
+#008 Waltz
+#021 Waltz (faster)
+#010 The Rompers Show
+#009 Rat-a-Tat-Tat
+#024 Rat-a-Tat-Tat (faster)
+#012 Thunder's
+#023 Thunder's (faster)
+#015 Theme of Glerin
+#025 Jitney Fanfare
+#004 End Credits
+#016 Continue? #1
+#013 Continue? #2
+#011 Game Over
+
+#002 ??? 1
+#003 ??? 2
+#014 ??? 3
+
+  [Source]
+  Namco Video Game Graffiti Vol.6
+  Victor Entertainment  VDR-5301  Oct 4, 1989
+
+  [Sound Composer]
+  Yoshie Takanayagi, Kazuo Noguchi (#012, #023)
+
+$end

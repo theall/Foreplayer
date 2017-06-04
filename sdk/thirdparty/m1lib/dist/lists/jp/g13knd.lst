@@ -1,0 +1,28 @@
+﻿$name=g13knd
+$version=2
+$default=$2d0
+$songmax=1024
+$main
+
+$2d0 Intro
+$1cf Credit
+$d0 How to Play
+$20 Trial Shoot
+$30 Complete
+$40 Story Select
+$02 Story BGM 1
+$50 Story BGM 2
+$c0 Story BGM 3
+$f0 Story BGM 4
+$e0 Target
+$2e0 Killed target
+$60 Injured target
+$70 Missed target
+$90 Ending
+$80 Continue
+$b0 Game Over
+$a0 Name Entry
+$10 ?
+
+// List contributed by Phil Bennett
+$end

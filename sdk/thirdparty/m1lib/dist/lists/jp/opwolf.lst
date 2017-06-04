@@ -1,0 +1,76 @@
+﻿$name=opwolf
+$version=2
+$default=006
+//$songmax=243
+$main
+
+#006 オープニングデモ
+#011 ステージセレクト
+#007 作戦開始
+#008 作戦成功 #1
+#009 作戦成功 #2
+#010 作戦失敗
+#085 ネームエントリー
+
+#086 ステージセレクト #2
+
+-----------------------------------------
+ [S.E.]
+
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+
+#029 [Voice]
+#030 [Voice]
+#031 [Voice]
+#032 [Voice]
+#033 [Voice]
+#034 [Voice]
+#035 [Voice]
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice] ???
+#043 [Voice] ???
+#044 [Voice]
+#045 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#069 [Voice]
+#070 [Voice]
+#073 [Voice]
+#074 [Voice]
+#075 [Voice]
+#083 [Voice]
+#084 [Voice]
+#087 [Voice]
+#193 [Voice] ???
+#241 [Voice] ???
+#243 Tone Check
+
+  ■出典
+  THE NINJA WARRIORS -G.S.M. TAITO 1-
+  PONY CANYON / SCITRON  D28B0001  1988.06.21
+
+// 曲の順番は記憶が正しければこの並びです(自信なし)
+// PCM使用のSEが見つかりません。M1自体のバグかな…
+// 詳細がわかった時点で調べなおします
+$end

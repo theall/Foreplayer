@@ -1,0 +1,112 @@
+﻿$game=xybots
+$version=2
+$default=180
+$songmax=249
+$main
+
+#180 Introduction
+#191 Music 1 <time="56">
+#192 Music 2 <time="56">
+#193 Music 3 <time="1:30">
+#190 Music 4 <time="46">
+#201 Lights off
+#195 Master Xybots <time="23">
+
+#188 Shop Music
+
+#197 Bonus L
+#198 Bonus R
+
+#092 [SFX] Bonus bought L ?
+#093 [SFX] Bonus bought R ?
+#070 [SFX] Bonus End L
+#071 [SFX] Bonus End R
+#084 [SFX] Exit L
+#088 [SFX] Exit pod L
+#089 [SFX] Exit pod R
+#086 [SFX] Exit R
+#090 [SFX] Menu L
+#091 [SFX] Menu R
+#072 [SFX] Shot hit human very close L
+#094 [SFX] Shot hit very close L
+#082 [SFX] Teleport L
+#083 [SFX] Teleport R
+
+#184 Mystery L
+#182 Mystery LR
+#186 Mystery R
+
+#172 [SFX] Coin toss L
+#173 [SFX] Coin toss R
+#174 [SFX] Gun Shake L
+#175 [SFX] Gun Shake R
+#178 [SFX] Sleep L
+#179 [SFX] Sleep R
+#140 [SFX] ? L
+#141 [SFX] ? R
+#222 [SFX] blow on gun L
+#223 [SFX] blow on gun R
+#136 [SFX] Coin Bonus L
+#143 [SFX] Explosion close L
+#145 [SFX] Explosion far L
+#144 [SFX] Explosion L
+#142 [SFX] Explosion very close L
+#146 [SFX] Explosion very far L
+#104 [SFX] Game over L
+#105 [SFX] Game over R
+#138 [SFX] Key? L
+#162 [SFX] Shoot L
+#152 [SFX] Shoot on wall L
+#176 [SFX] Shot L
+#177 [SFX] Shot R
+
+#199 Victory L
+#200 Victory R
+
+#236 [Voice] H: Aw L
+#237 [Voice] H: Aw R
+#226 [Voice] H: Dead 1 L
+#227 [Voice] H: Dead 1 R
+#228 [Voice] H: Dead 2 L
+#229 [Voice] H: Dead 2 R
+#230 [Voice] H: Dead 3 L
+#231 [Voice] H: Dead 3 R
+#234 [Voice] H: Humpf L
+#235 [Voice] H: Humpf R
+#244 [Voice] H: Mm L
+#245 [Voice] H: Mm R
+#242 [Voice] H: mmpf L
+#243 [Voice] H: mmpf R
+#240 [Voice] H: Ouch L
+#232 [Voice] H: Ouch L
+#241 [Voice] H: Ouch R
+#233 [Voice] H: Ouch R
+#238 [Voice] H: Woo L
+#239 [Voice] H: Woo R
+#224 [Voice] H: Yawn L
+#225 [Voice] H: Yawn R
+#212 [Voice] MX: ?
+#219 [Voice] MX: Aaaa
+#213 [Voice] MX: ahahahah
+#215 [Voice] MX: Aw
+#218 [Voice] MX: Aw
+#204 [Voice] MX: Block the humans
+#221 [Voice] MX: Die human, die !
+#220 [Voice] MX: eaaaa
+#217 [Voice] MX: eww
+#207 [Voice] MX: Humans are forbidden
+#214 [Voice] MX: I'll be back
+#210 [Voice] MX: Intruder ! Intruder !
+#202 [Voice] MX: Intruder Alert
+#209 [Voice] MX: Neutralized
+#208 [Voice] MX: One intruder destroyed
+#216 [Voice] MX: Ow
+#211 [Voice] MX: Prepare to meet your doom
+#205 [Voice] MX: the human has been neutralized
+#249 [Voice] Xyb: brbrbr
+#248 [Voice] Xyb: Brrrrr
+#246 [Voice] Xyb: bululululu
+#247 [Voice] Xyb: gninininii
+
+// List contibution by CrashTest
+$end

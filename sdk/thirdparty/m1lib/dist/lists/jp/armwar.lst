@@ -1,0 +1,63 @@
+﻿$name=armwar
+$version=2
+$default=030
+$fixed_volume=201
+$main
+
+#030 Q SOUND Logo
+#022 Opening
+#032 Player Demo
+#008 Ranking Display
+#001 Player Select
+#006 Map 1
+#034 Map 2
+#002 Area Clear
+#003 Stage Clear
+#009 DESERTED TOWN (Stage 1)
+#010 WIN BACK (Stage 2)
+#011 CHASE (Stage 3)
+#012 FORGOTTEN RUINS 1 (Stage 4-1)
+#024 FORGOTTEN RUINS 2 (Stage 4-2)
+#013 RAILROAD IN FLAMES (Stage 5)
+#014 TRUTH (Stage 6)
+#015 STARRY OCEAN (Stage 7)
+#004 Continue
+#017 AVA-13H AGMISS THEME
+#018 TEX-665H RAD THEME
+#019 V2-200HL SCULD THEME
+#020 SVA-1000S HELION THEME
+#021 MECHA BRAIN THEME
+#043 Score Count Demo
+#044 Score Count Demo 2
+#016 SVA-100M WARLOCK THEME
+#027 SVA-100MR WARLOCK Mark II THEME
+#023 SVA-100MSR ν WARLOCK THEME
+#005 Game Over
+#025 SHOOTING AREA
+#026 TERMINATE THEM!
+#035 Demo.1
+#036 Demo.2
+#033 Demo.3
+#037 Demo.4
+#038 Demo.5
+#039 Demo.6
+#040 MECHA BRAIN Demo
+#073 FAREWELL TO HUMAN
+#028 Ending 1
+#047 Ending 2
+#007 Naming
+#041 Ending Jeff Perkins
+#042 Ending Ray Turner
+#045 Ending Glenn Reed
+#046 Ending Sarah White
+#029 Staff Roll
+
+  ■出典
+  パワード ギア アーケード ゲームトラック
+  SONY MUSIC WORKS  SRCL-3089  1994.12.01
+
+  ■作曲
+  アルフ ライラ
+
+// Submitted by Razさん
+$end

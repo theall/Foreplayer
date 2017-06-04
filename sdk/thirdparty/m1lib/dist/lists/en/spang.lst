@@ -1,0 +1,66 @@
+﻿$name=spang
+$version=2
+$default=048
+$main
+
+#048 Mode Select
+#033 World 1 (Asia), Stage 01 (Hong Kong)
+#034 World 1, Stage 02-04 (Java)
+#035 World 1, Stage 05-07 (Silk Road (Xi'an))
+#036 World 1, Stage 08-10 (Himarayas)
+#037 World 1, Stage 11-13 (Istanbul)
+#053 Stage Cleared
+#059 World Cleared
+#038 World 2 (Europe), Stage 14-16 (Germany)
+#039 World 2, Stage 17-18 (Venice)
+#040 World 2, Stage 19-21 (Spain)
+#041 World 2, Stage 22-24 (France (The Sacred-Heart Basilica))
+#042 World 2, Stage 25-27 (Tower Bridge)
+#043 World 3 (America), Stage 28-30 (Canada)
+#044 World 3, Stage 31-33 (The Wild West)
+#045 World 3, Stage 34-35 (The Ruins of Maya)
+#046 World 3, Stage 36-38 (Brazil (Iguazu Falls))
+#047 World 3, Stage 39-40 (The Carribean)
+#054 Congratulations ! (All Stage Cleared)
+#055 Staff Roll (Ending)
+#049 Hurry Up !
+#030 [SFX] Missed #1
+#029 [SFX] Missed #2
+#051 Continue
+#052 Name Entry
+#050 Game Over
+
+#056 Panic Mode Theme
+#057 Danger !!
+#058 Unused
+
+------------------------------------------------------
+ [SFX]
+
+#000 [SFX]
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX] Player Extended
+#025 [SFX]
+#026 [SFX]
+#029 [SFX] Missed #2
+#030 [SFX] Missed #1
+
+// List Contribution by a2c-s438
+$end

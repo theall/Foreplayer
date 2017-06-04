@@ -1,0 +1,26 @@
+﻿$name=bigrun
+$version=2
+$default=007
+$main
+
+#007 PARIS DAKAR
+#001 TUNISIA - TUNIS
+#002 TUNISIA - TOZEUR
+#003 LIBYA - TUMU
+#004 NIGER - AGADES
+#010 GOAL ～ NEXT STAGE <time="7">
+#005 MALI - BAMAKO
+#010 GOAL ～ NEXT STAGE <time="7">
+#006 SENEGAL - SAINTLOUIS
+#009 ENDING
+#008 NAME ENTRY
+
+#012 スピーカーテスト
+
+---------------------------------------------------
+ [S.E.] 
+
+#013 [S.E.] 
+
+// List contribution by ZEK.
+$end

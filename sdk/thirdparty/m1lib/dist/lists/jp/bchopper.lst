@@ -1,0 +1,28 @@
+﻿$name=mrheli
+$version=2
+$default=015
+$main
+
+#015 TITLE BACK (Title)
+#013 AHEAD (Start)
+#005 THEME (Stage 1)
+#006 HALF MEASURE (Middle Boss)
+#004 MAY 9 1987 (Cave)
+#007 A HELL OF A NOISE (Boss)
+#010 HELIS MARCH (Stage Clear)
+#012 VOLCANO (Stage 2)
+#003 BLINK (Stage 3)
+#008 SEVEN O'CLOCK (Stage 4)
+#000 INSIDE (Stage 5)
+#002 AT B (Stage 6)
+#009 ASTERN (Game Over)
+#011 HELIS AWARDS (Continue)
+#001 NAME ENTRY (Neme Entry)
+#014 RESUME (Ending)
+
+  ■出典
+  R-TYPE / IREM GAME MUSIC
+  ALFA RECORDS  28XA-199  1988.01.25
+
+// リスト作成：みん☆さん
+$end

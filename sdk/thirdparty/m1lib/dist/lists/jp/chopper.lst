@@ -1,0 +1,33 @@
+﻿$name=chopper
+$version=2
+$default=113
+$main
+
+#113 スタートデモ
+#066 DREAM OF CHOPPER (エリア1＆5)
+#098 エリアエンド
+#082 SOAR UP TO THE SKY (エリア2＆4)
+#091 大型の敵
+#073 SEA OF FIRE (エリア3)
+#090 AT THE RISK OF ONE’S LIFE (エリア6)
+#126 最終大型敵
+#100 最終エリアクリア
+#099 エンディング
+
+#112 ゲームオーバー
+#118 ???
+
+[Voice]
+
+#220 [Voice]
+#221 [Voice]
+
+  ■出典
+  ゲームサウンドSNK -G.S.M.SNK 1-
+  PONY CANYON  D28B0006  1988.10.21
+
+  ■作曲
+  田中 敬一
+
+// リスト作成: ゴルゴルさん
+$end

@@ -1,0 +1,65 @@
+﻿$name=avengers
+$version=2
+$default=035
+$main
+
+#035 Credit Inserted
+#032 Start Demo (Stage 1)
+#042 Stage 1
+#049 Boss
+#051 Stage Clear
+#033 Start Demo (Stage 2)
+#043 Stage 2
+#044 Stage 3
+#045 Stage 4
+#046 Stage 5
+#047 Stage 6
+#050 Boss "Geshita"
+#052 Ending - End Credits
+#036 Game Over
+#037 Name Regist (1st Place)
+#039 Name Regist Finished (1st Place)
+#038 Name Regist (2nd Place and Below)
+#040 Name Regist (2nd Place and Below)
+#041 Continue
+
+#048 (Unused)
+#053 (Unused)
+#034 Extend
+#054 
+
+--------------------------------------------
+  [SFX]
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+
+ Bug: Some songs don't stop. SFXs are too loud.
+ Note: Missing voices.
+
+// List Contribution by NK
+$end

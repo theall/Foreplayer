@@ -1,0 +1,202 @@
+﻿$name=punisher
+$version=2
+$default=004
+$fixed_volume=759
+$main
+
+#004 Title (1) <time="30">
+#020 Title (2)
+#161 Player Select <time="30.9">
+#000 Crime Hunter (Stage 1) <time="1:49.1">
+#027 Bruno Costa (Boss Appearing) <time="1:01.7">
+#013 Boss 1 <time="56.8">
+#016 Stage Clear <time="7">
+#008 Stage 2 Introduction (Swimming Pool) <time="21">
+#001 Castle "Pantaberde" (Stage 2) <time="1:44.6">
+#025 Shock! (Unused in Game)
+#009 Stage 3 Introduction (Harbor) <time="19.1">
+#002 Seaside Trap (Stage 3) <time="2:09.9">
+#010 Stage 4 Introduction (Underground Cave) <time="19.4">
+#003 Death Express (Stage 4) <time="1:04.7">
+#026 Bonus Stage <time="1:07.1">
+#024 Iron Golem (Guardroid Appearing) <time="43.3">
+#014 Boss 2 (Old Enemy) <time="48.2">
+#011 Stage 5 Introduction (Safe House) <time="30">
+#004 Revenger -Theme of Revenge- (Stage 5) <time="1:53.5">
+#012 Stage 6 Introduction (King Building) <time="11.1">
+#005 Sneak into King Building (Stage 6-1) <time="2:17.5">
+#164 Lift (Stage 6-2) <time="1:38.5">
+#006 Infinite Corridor (Stage 6-3) <time="2:09.4">
+#015 Last Boss (Kingpin) <time="58.3">
+#017 Last Stage Clear <time="9">
+#160 Ending Theme <time="2:59.7">
+#162 Continue <time="34.8">
+#019 Game Over <time="7">
+
+#021 Unused BGM 2 <time="2:16.3">
+#018 Unused BGM 3
+#007 Unused BGM 4
+#023 Unused BGM 5
+#163 Unused BGM 6
+
+-----------------------------------------------------------
+  [Voice]
+
+#032 [Voice]
+#033 [Voice]
+#034 [Voice]
+#035 [Voice]
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#059 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#063 [Voice]
+#064 [Voice]
+#065 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#147 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#154 [Voice]
+#176 [Voice]
+#177 [Voice]
+#178 [Voice]
+#179 [Voice]
+#180 [Voice]
+#181 [Voice]
+#182 [Voice]
+#183 [Voice]
+#184 [Voice]
+#185 [Voice]
+#186 [Voice]
+#187 [Voice]
+#188 [Voice]
+#189 [Voice]
+#190 [Voice]
+
+-----------------------------------------------------------
+  [SFX]
+
+#028 [SFX] Credit
+#020 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX] <time="5">
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX] <time="5">
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX] <time="5">
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX] <time="5">
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX] <time="5">
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX] <time="5">
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX] <time="5">
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+
+  [Source]
+  Tenchi o kurau II -G.S.M. Capcom 7- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00133  Aug 20, 1993
+
+// List Contribution by NK
+$end

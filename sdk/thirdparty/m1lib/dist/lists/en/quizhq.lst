@@ -1,0 +1,70 @@
+﻿$name=quizhq
+$version=2
+$default=020
+$main
+
+#020 [SFX] Credit Inserted
+#021 [SFX] Com <time="2.1">
+#031 [Voice] <time="2.8">
+#008 Target Info <time="17.5">
+#032 [Voice] <time="2.2">
+#009 Map Preview
+#010 Idaho (from Chase H.Q)
+#012 Gas Station, Casino
+#011 Special Refuel - Boss Battle
+#014 Capture
+#013 Target Practice
+#015 Rescue Nancy
+#016 Ending
+#019 Credits
+#018 Name Entry
+#017 Game Over
+
+#035 Rescue Nancy Ver.2
+
+#242 Speaker Test 1 <time="5">
+#000 [Command] Sound Stop
+
+---------------------------------------------------
+ [SFX] 
+
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] <time="3">
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] <time="5">
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#241 [SFX] 
+#245 [SFX] 
+#246 Speaker Test 2 <time="5">
+#000 [Command] Sound Stop
+
+---------------------------------------------------
+ [Voice] 
+
+#031 [Voice] 
+#032 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#231 [Voice] <time="5">
+#243 [Voice] <time="5">
+#000 [Command] Sound Stop
+
+  [Sound Composer]
+  Kazuko Umino, Tamayo Kawamoto, Hiroshige Tonomura
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

@@ -1,0 +1,65 @@
+﻿$name=neomrdo
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#039 ATTRACT MODE
+#068 RANKING TABLE
+#127 [S.E.] CREDIT
+#047 HOW TO PLAY
+#041 MAIN THEME
+#075 CONTINUE ? <time="19">
+#067 EXTRA MODE
+#073 ROUND CLEAR
+#037 EXTRA STAGE
+#073 STAGE CLEAR
+#035 COFFEE BRAKE
+#057 BOSS BGM 
+#072 CONGRATULATIONS
+#070 GAME OVER
+#071 NAME ENTRY
+
+#036 未使用曲 1
+#038 未使用曲 2
+#069 未使用曲 3
+#074 未使用曲 4
+
+---------------------------------------------------
+  [S.E.]
+
+#127 [S.E.] CREDIT
+#128 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#206 [S.E.] 
+#207 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#216 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#217 [Voice] 
+
+// List contribution by ZEK.
+$end

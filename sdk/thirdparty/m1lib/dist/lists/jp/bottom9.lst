@@ -1,0 +1,62 @@
+﻿$name=bottom9
+$version=2
+$default=021
+$main
+
+#021 CREDIT <time="3">
+#129 TEAM SELECT
+#131 BGM 1
+#132 BGM 2
+#133 BGM 3
+#015 SCORE <time="10">
+#134 GAME SET
+#130 GAME OVER
+#128 NAME ENTRY
+
+---------------------------------------------------
+ [S.E.]
+
+#001 [S.E.] 
+#002 [S.E.] 
+#003 [S.E.] 
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#014 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+
+---------------------------------------------------
+ [Voice]
+
+#010 [Voice] Take your base
+#011 [Voice] Oh, it's an air.
+#012 [Voice] Double play
+#013 [Voice] <time="5">
+#018 [Voice] Bottom of the ninth
+#019 [Voice] Play ball
+#020 [Voice] Bonus round
+#026 [Voice] cheer
+#027 [Voice] Ball
+#028 [Voice] Ball four, take your base
+#029 [Voice] Take your base
+#030 [Voice] Strike!
+#031 [Voice] Strike three, you're out.
+#032 [Voice] You're out.
+#033 [Voice] Foul ball
+#034 [Voice] Safe
+#035 [Voice] Out
+#036 [Voice] Home run! <time="8">
+#037 [Voice] We're going into an extra inning.
+#038 [Voice] Time is running out.
+
+// List contribution by ZEK.
+$end

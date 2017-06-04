@@ -1,0 +1,58 @@
+﻿$name=shadowld
+$version=2
+$default=000
+$main
+
+#000 Credit Inserted
+#028 BGM #1
+#054 Opening the Parlor
+#061 Onigashima - BGM
+#040 Oni
+#051 Round Clear
+#016 Ryuuguujou - Mambo Ryuuguu
+#022 Tamatebako
+#048 BGM #2
+#014 Fake Shaman - BGM
+#026 Game Start - Funeral
+#058 Acheron - Enma Daioh
+#055 Upper Region - Elysium
+#032 BGM #3
+#060 Ending - Credits
+#049 Game Over
+
+#002 Speaker Test
+
+-----------------------------------------
+//(unchecked)
+//#003～#013 [SFX]
+//#015 [SFX]
+//#017 [SFX]
+//#039 [SFX]
+//#041～#047 [SFX]
+//#052 [SFX]
+//#257～#260
+//#261～#276 [SFX]
+
+#018 Mambo Ryuuguu
+#023 Tamatebako (End)
+#035 BGM
+#048 BGM (Restart)
+#050 Round Clear #2
+#053 The Dicing Parlor
+#054 The Dicing Parlor #2
+#055 Elysium
+#056 Elysium #2
+#057 Elysium #3
+#059 Enma Daioh
+#062 Upper Region
+#256 Low Life Warning
+
+  [Source]
+  Namco Game Music Vol.2 / G.M.O.
+  Alfa Records  28XA-171  Aug 25, 1987
+
+  [Sound Composer]
+  Hiroyuki Kawada
+
+// English list translation by Fujix.
+$end

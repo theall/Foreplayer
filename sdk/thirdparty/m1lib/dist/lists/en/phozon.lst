@@ -1,0 +1,38 @@
+﻿$name=phozon
+$version=2
+$default=00
+$songmax=23
+$main
+
+#00 Credit Sound
+#01 Round Start Sound
+#02 Re-challenging Sound
+#03 Round Clear Music
+#04 Game Over Sound
+#05 &lt;1st place&gt; Name Entry Music
+#06 &lt;2nd to 5th&gt; Name Entry Music
+#07 Game Start Music
+#08 Background Sound (Normal)
+#09 Molec Appeared
+#10 Molec Disappeared
+#11 Target Form Resolved
+#12 Molec Bonded
+#13 Molec Resolved
+#14 Counterattacked
+#15 Atomic Resolved
+#16 Atomic Bonded
+#17 Warning Sound for Atomic Resolving
+#18 Warning Sound for Atomic Bonding
+#19 Bounus Counter
+#20 Extended
+#21 Missed
+#22 Neutron Shot
+#23 Going back when Counter Attack is allowed.
+
+  [Source]
+  Namco Music Program Collection
+
+  [Sound Composer]
+  Yuriko Keino
+
+$end

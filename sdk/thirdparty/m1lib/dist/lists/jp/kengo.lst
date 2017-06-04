@@ -1,0 +1,27 @@
+﻿$name=kengo
+$version=2
+$default=10
+$main
+
+??? 抜刀(RYO-SHU-ON) - (Coin)
+??? 陽楼 - (Title Back)
+#10 魂叫 - (Opening)
+#02 剣豪 - (Stage 1)
+#05 岩砕 - (Stage 2)
+#07 虚斬 - (Boss A)
+#01 越影 - (Stage CLEAR)
+#03 風浪 - (Stage 3)
+#04 火敷 - (Stage 4)
+#08 鬼襲 - (Boss B)
+#12 雷群 - (Stage 5)
+#11 霞 - (Ending)
+#09 終鐘 - (Game Over)
+#06 お、さ、ら、ば - (Name Entry)
+
+
+  ■出典
+  POUND FOR POUND･KEN-GO/IREM
+  PONY CANYON  PCCB-00049 1990.12.15
+
+// List by MuramuraNight
+$end

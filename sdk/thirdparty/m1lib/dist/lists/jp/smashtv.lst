@@ -1,0 +1,122 @@
+﻿$name=smashtv
+$version=2
+$default=012
+$songmax=207
+$main
+
+#012 Title Theme
+#003 Circuit 1
+#004 Boss
+#009 Stage Clear
+#006 Circuit 2
+#014 Circuit 3
+#001 Last Arena ?
+#010 Cobra Death !
+#008 You Have Enough Keys !
+#015 Ending
+
+#005 Circuit 2 &lt;W/O Intro&gt;
+#007 Circuit 2 &lt;Diffrent Mix&gt;
+#013 (unused) &lt;Mix 1&gt;
+#002 (unused) &lt;Mix 2&gt;
+#016 (unused)
+
+ [Voice]
+
+#063 [Voice] "No way !"
+#080 [Voice] "Bingo !"
+#048 [Voice] "Yeah !"
+#083 [Voice] "Good luck !" <time="0:01.5">
+#090 [Voice] "You'll need it !"
+#081 [Voice] "Big money !" <time="0:01.7">
+#082 [Voice] "Big prizes !" <time="0:01.7">
+#087 [Voice] "I love it !"
+#084 [Voice] "Contestant 1 !"
+#085 [Voice] "Contestant 2 !"
+#086 [Voice] "Total carnage !"
+#050 [Voice] "I buy that for a dollar !"
+#089 [Voice] "Ten seconds !"
+#052 [Voice] "Go !"
+#051 [Voice] "Umm.."
+#049 [Voice] "Uggh !"
+#053 [Voice] "Whooh !"
+#054 [Voice] "Woo !"
+#088 [Voice] "Let's go !"
+#055 [Voice] "Huhuha.. !"
+#056 [Voice] "Aaarrgh.."
+#057 [Voice] "Oooaaarrrg !"
+#058 [Voice] "Uh.."
+#059 [Voice] "Urk.."
+#060 [Voice] "Hahaha.. !"
+#061 [Voice] "Hehe.. !"
+#062 [Voice] "Hehe.. !"x6
+#201 [Voice] "Uggh.."
+#203 [Voice] Cheer 1
+#202 [Voice] Cheer 2
+#204 [Voice] Cheer 3
+
+ [S.E.]
+
+#128 [S.E.]
+#129 [S.E.]
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#159 [S.E.]
+#160 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#166 [S.E.]
+#167 [S.E.]
+#168 [S.E.]
+#169 [S.E.]
+#170 [S.E.]
+#172 [S.E.]
+#173 [S.E.]
+#174 [S.E.]
+#175 [S.E.]
+#176 [S.E.]
+#177 [S.E.]
+#178 [S.E.]
+#179 [S.E.]
+#180 [S.E.]
+#181 [S.E.]
+#182 [S.E.]
+#192 [S.E.]
+#194 [S.E.]
+#195 [S.E.]
+#196 [S.E.]
+#197 [S.E.]
+#198 [S.E.]
+#200 [S.E.]
+#206 [S.E.]
+#207 [S.E.]
+
+// リスト作成：NKさん
+$end

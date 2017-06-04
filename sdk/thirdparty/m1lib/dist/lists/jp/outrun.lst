@@ -1,0 +1,40 @@
+﻿$name=outrun
+$version=2
+$default=133
+$main
+
+#133 Magical Sound Shower <time="5:57" fadeout="yes" fadeoutlength="10">
+#129 Passing Breeze <time="5:47" fadeout="yes" fadeoutlength="10">
+#130 Splash Wave <time="5:45" fadeout="yes" fadeoutlength="10">
+#164 [S.E.] Wave <time="0:07">
+#165 Last Wave <time="1:26">
+
+-------------------------------------
+
+#000 [Command] Sound Stop
+
+#132 [S.E.] Credit Inserted
+#134 [S.E.] Check Point
+#138 [S.E.] Slip <time="0:05">
+#000 [Command] Sound Stop <time="0:01">
+#141 [S.E.] Cheers <time="0:05">
+#000 [Command] Sound Stop <time="0:01">
+#143 [S.E.] Crash 1
+#144 [S.E.] Rebound
+#146 [S.E.] Crash 2
+#148 [S.E.] Signal 1
+#149 [S.E.] Signal 2
+#150 [S.E.] <time="0:05">
+#000 [Command] Sound Stop <time="0:01">
+#153 [S.E.]
+#154 [S.E.] Tuning Radio
+#155 [S.E.] Pi Pi
+#157 [Voice] Check Point
+#158 [Voice] Congratulations
+#159 [Voice] Get Ready?
+
+  ■出典
+  セガ体感ゲーム・スペシャル
+  ALFA RECORDS  28XA-198  1987.12.21
+
+$end

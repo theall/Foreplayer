@@ -1,0 +1,49 @@
+﻿$name=flower
+$version=2
+$default=003
+$main
+
+#003 [S.E.] STAND BY READY ? <time="2">
+#004 [S.E.] CREDIT <time="3">
+#001 START <time="7">
+#029 BGM 1
+#026 [S.E.] COMET <time="5.8">
+#013 BGM 2
+#030 BOSS BGM 1
+#031 BOSS BGM 2
+#032 BOSS BGM 3
+#025 [S.E.] RUSH <time="4.3">
+#033 BGM 3
+#015 BOSS BGM 4 <time="5.2">
+#023 [S.E.] ESCAPE <time="2">
+#028 [S.E.] CLEAR <time="3.1">
+#024 CONGRATULATION ! <time="7">
+#002 GAME OVER <time="7">
+#005 NAME ENTRY
+
+---------------------------------------------------
+ [S.E.]
+
+#003 [S.E.] <time="2">
+#004 [S.E.] CREDIT <time="3">
+#006 [S.E.] <time="2"> 
+#007 [S.E.] <time="2"> 
+#008 [S.E.] <time="2"> 
+#009 [S.E.] <time="5">
+#011 [S.E.] <time="3"> 
+#012 [S.E.] <time="3">  
+#014 [S.E.] <time="2">  
+#015 [S.E.] <time="5">
+#016 [S.E.] <time="3">
+#019 [S.E.] <time="3">
+#020 [S.E.] <time="3">
+#021 [S.E.] <time="2">  
+#022 [S.E.] <time="3">
+#023 [S.E.] ESCAPE <time="2">
+#025 [S.E.] <time="21">
+#026 [S.E.] <time="5.8">
+#027 [S.E.] <time="3">  
+#028 [S.E.] CLEAR <time="3">
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,30 @@
+﻿$name=blockgal
+$version=2
+$default=136
+$main
+
+#136 Title
+#148 Ball Release <time="4">
+#139 BGM 1
+#133 Stage Clear
+#129 BGM 2
+#132 Girlie Show
+#138 Ending
+#131 Dead
+#137 Continue
+#134 Game Over
+
+-----------------------------------------------------------
+ [SFX]
+
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+
+$end

@@ -1,0 +1,58 @@
+﻿$name=volfied
+$version=2
+$default=043
+$main
+
+#043 [S.E.] CREDIT <time="3">
+#005 START DEMO <time="12">
+#006 START <time="5">
+#016 BGM <time="7.6">
+#009 ROUND 12 CLEAR DEMO <time="14">
+#007 ROUND CLEAR <time="10">
+#016 BGM <time="7.6">
+#007 ROUND CLEAR <time="10">
+#009 ENDING
+#011 NAME ENTRY 
+#012 GAME OVER
+
+#010 STAFF ROLL (PART)
+
+---------------------------------------------------
+  [S.E.]
+
+#008 [S.E.]
+#013 [S.E.] <time="3">
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.] <time="3">
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.] <time="3">
+#020 [S.E.] <time="10">
+#021 [S.E.]
+#022 [S.E.] <time="3">
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] <time="3">
+#028 [S.E.]
+#029 [S.E.] ラインに敵が接触
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.] <time="5">
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+
+  ■作曲
+  小倉 久佳 (OGR)
+
+// List contribution by ZEK.
+$end

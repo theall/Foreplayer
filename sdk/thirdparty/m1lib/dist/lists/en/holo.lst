@@ -1,0 +1,146 @@
+﻿$name=holo
+$version=2
+$default=353
+$main
+
+#353 Credit Inserted <time="1">
+#277 [Voice] Welcome ! <time="2">
+#135 Player Select
+#131 Dompayagen
+#136 Dave
+#137 Chen
+#134 Garrison
+#132 Extra Fight !!
+#130 Ending
+#133 Game Over
+
+#129 Unused
+
+---------------------------------------------------
+ [SFX] 
+
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#267 [SFX] 
+#268 [SFX] 
+#347 [SFX] 
+#348 [SFX] 
+#349 [SFX] 
+#350 [SFX] 
+#351 [SFX] 
+#352 [SFX] 
+#353 [SFX] Credit
+#354 [SFX] 
+#355 [SFX] 
+#358 [SFX] 
+#359 [SFX] 
+#360 [SFX] 
+#361 [SFX] 
+#362 [SFX] 
+#363 [SFX] 
+#364 [SFX] 
+#365 [SFX] 
+#372 [SFX] 
+#373 [SFX] 
+#376 [SFX] 
+#377 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#264 [Voice] 
+#265 [Voice] 
+#266 [Voice] 
+#269 [Voice] 
+#270 [Voice] 
+#271 [Voice] 
+#272 [Voice] 
+#273 [Voice] 
+#274 [Voice] 
+#275 [Voice] 
+#276 [Voice] 
+#277 [Voice] Welcome !!
+#278 [Voice] 
+#279 [Voice] 
+#280 [Voice] 
+#281 [Voice] 
+#282 [Voice] 
+#283 [Voice] 
+#284 [Voice] 
+#285 [Voice] 
+#286 [Voice] 
+#287 [Voice] 
+#288 [Voice] 
+#289 [Voice] 
+#290 [Voice] 
+#291 [Voice] 
+#292 [Voice] 
+#293 [Voice] 
+#294 [Voice] 
+#295 [Voice] 
+#296 [Voice] 
+#297 [Voice] 
+#298 [Voice] 
+#299 [Voice] 
+#300 [Voice] 
+#301 [Voice] 
+#302 [Voice] 
+#303 [Voice] 
+#304 [Voice] 
+#305 [Voice] 
+#306 [Voice] 
+#307 [Voice] 
+#308 [Voice] 
+#309 [Voice] 
+#310 [Voice] 
+#311 [Voice] 
+#312 [Voice] 
+#313 [Voice] 
+#314 [Voice] 
+#315 [Voice] 
+#316 [Voice] 
+#317 [Voice] 
+#318 [Voice] 
+#319 [Voice] 
+#320 [Voice] 
+#321 [Voice] 
+#322 [Voice] 
+#323 [Voice] 
+#324 [Voice] 
+#325 [Voice] 
+#326 [Voice] 
+#327 [Voice] 
+#328 [Voice] 
+#329 [Voice] 
+#330 [Voice] 
+#331 [Voice] 
+#332 [Voice] 
+#333 [Voice] 
+#334 [Voice] 
+#335 [Voice] 
+#336 [Voice] 
+#337 [Voice] 
+#338 [Voice] 
+#339 [Voice] 
+#340 [Voice] 
+#341 [Voice] 
+#342 [Voice] 
+#343 [Voice] 
+#344 [Voice] 
+#345 [Voice] 
+#346 [Voice] 
+#370 [Voice] 
+#371 [Voice] 
+#378 [Voice] 
+#379 [Voice] 
+
+// List contribution by ZEK.
+$end

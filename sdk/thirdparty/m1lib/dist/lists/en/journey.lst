@@ -1,0 +1,49 @@
+﻿$name=journey
+$version=2
+$default=$0b
+$songmax=$34
+$main
+
+$0b Don't Stop Believin' [from Escape] (Steve Perry theme)
+$0c Chain Reaction [from Frontiers] (Neil Schon theme)
+$0d Still They Ride [from Escape] (Ross Valory theme)
+$0e Wheel in the Sky [from Infinity] (Steve Smith theme)
+$10 Stone in Love [from Escape] (Jonathan Cain theme)
+$0f Lights [from Infinity] (Intro and stage select)
+$11 Lose player
+$29 Stage clear
+
+  Also features Separate Ways (Worlds Apart) [from Frontiers]
+  on an unemulated tape loop during bonus stage
+
+$07 [SFX] Channel test
+$08 [SFX] Tilt  <time="4">
+$09 [SFX] Coin
+$0a [SFX] Extra player
+$12 [SFX] Boom
+$13 [SFX] Player falling
+$14 [SFX] Player splat
+$15 [SFX] Steve Smith bounces off a drum
+$2a [SFX] Gate explosion
+$16 [SFX] Drum shoot high
+$17 [SFX] Drum shoot low
+$18 [SFX] Platform telescope up
+$19 [SFX] Ross Valory jumps
+$1a [SFX] Bass shoot
+$1b [SFX] Record explode
+$1c [SFX] Jonathan Cain jumps
+$2b [SFX] Groupoid bounce
+$1e [SFX] Piano shoot high
+$1f [SFX] Piano shoot low
+$20 [SFX] Jetpack thrust <time="4">
+$22 [SFX] Guitar shoot
+$23 [SFX] Mini-Scarab blown up
+$24 [SFX] Microphone get
+$25 [SFX] Microphone shoot
+$26 [SFX] Scarab launch
+$27 [SFX] Scarab flight into head <time="4">
+
+// List contribution by ZEK.
+// Updated by R. Belmont
+// Yet Another Updated by wildcat
+$end

@@ -1,0 +1,328 @@
+﻿$name=ringdest
+$version=2
+$default=062
+$songmax=378
+$fixed_volume=177
+$main
+
+#062 Q SOUND Logo
+#001 Title
+#002 Stage "TOKYO" <time="1:54">
+#003 Stage "MOSCOW" <time="2:03">
+#004 Stage "HANOVER" <time="2:33">
+#005 Stage "LONDON" <time="2:33">
+#006 Stage "NEW YORK" <time="1:50">
+#007 Stage "CALGARY" <time="2:26">
+#008 Stage "LOS ANGELS" <time="2:14">
+#009 Stage "MEXICO" <time="1:27">
+#010 Stage "SYDNEY" <time="2:16">
+#011 Stage "SANTO DOMINGO" <time="2:34">
+#012 Stage "NEW DELHI" <time="1:34">
+#013 Stage "LAS VEGAS" <time="1:53">
+#014 Stage "BWA" <time="2:20">
+#015 Stage "CWA" <time="1:52">
+#030 Player Select 1 <time="0:30">
+#031 Stage Starting
+#032 Here Comes A New Challenger
+#033 Player Select 2 <time="0:31">
+#034 Ranking Display
+#035 Continue <time="0:57">
+#037 Winning
+#367 [Voice] ZALAZOF 「トレーニングを怠っているな。そんな奴がリングに上がる資格はない！！」 <time="0:05">
+#016 Theme of ZALAZOF <time="2:11">
+#356 [Voice] COLT 「オイオイ。どうして俺が本気を出す前に倒れちまうんだい？」 <time="0:04">
+#017 Theme of COLT <time="1:55">
+#364 [Voice] STINGER 「アステカの熱い風は決して誰にも止めることはできない。」 <time="0:04">
+#018 Theme of STINGER <time="2:03">
+#365 [Voice] TITAN 「どうだ見たかッ！キャリアが浅かろうと、天才にゃあ関係ねえ！！」 <time="0:05">
+#019 Theme of TITAN <time="2:13">
+#355 [Voice] BUDO 「俺は鬼となった。いかに侍や忍者とて俺にはかなわぬわ！！」 <time="0:05">
+#020 Theme of BUDO <time="2:43">
+#358 [Voice] HAGGAR 「がっかりさせないでくれ。お前の力はこんなものではないだろう？」 <time="0:04">
+#021 Theme of HAGGAR <time="1:38">
+#357 [Voice] GOMES 「おめえ弱えなあ。まだフリークの方が強えんじゃねえか？」 <time="0:05">
+#022 Theme of GOMES <time="1:55">
+#363 [Voice] SHEEP 「俺のパワーはウシさえ絞め殺す…。お前は生きているだけ運がいいぜ。」 <time="0:06">
+#023 Theme of SHEEP <time="2:11">
+#359 [Voice] KIMARA 「おやおや…。もう終わりですか。もう少し頑張って下さいよ…。」 <time="0:06">
+#024 Theme of KIMARA <time="1:05">
+#354 [Voice] ASTORO 「お前の屍は、俺の不敗伝説の一部とさせてもらう！！」 <time="0:05">
+#025 Theme of ASTORO <time="2:05">
+#360 [Voice] SABER 「本当の戦争を知らぬ貴様らに、勝ち目などあろうはずがない！！」 <time="0:04">
+#026 Theme of SABER <time="1:54">
+#366 [Voice] BLACK. W 「お前の攻撃はワンパターン過ぎる。ラクに技が読みきれたぜ！！」 <time="0:05">
+#027 Theme of BLACK. W <time="1:10">
+#362 [Voice] WRAITH 「クックックッ…今ここにオレ様の神話が始まらんとしておるわい…」 <time="0:07">
+#028 Theme of WRAITH <time="1:33">
+#361 [Voice] ORTEGA 「とんだ期待外れだな。私が本気を出せる奴はどこにいるのだ？！」 <time="0:05">
+#029 Theme of ORTEGA <time="1:07">
+#036 Game Over
+#038 Ending <time="0:43">
+#039 Staff Roll <time="2:03">
+#063 (unused)
+//サントラ未収録
+#064 CAPCOM Logo <time="0:02">
+//サントラ未収録
+  
+------------------------------------------------------
+ [Voice]
+  
+#065 [Voice] CAPCOM
+#336 [Voice] SUPER <time="0:00.8">
+#337 [Voice] MUSCLE BOMBER
+#368 [Voice] RING OF <time="0:00.8">
+#369 [Voice] DESTRUCTION
+#333 [Voice] TOKYO
+#328 [Voice] MOSCOW
+#324 [Voice] HANOVER
+#325 [Voice] LONDON
+#330 [Voice] NEW YORK
+#323 [Voice] CALGARY
+#326 [Voice] LOS ANGELS
+#327 [Voice] MEXICO
+#332 [Voice] SYDNEY
+#331 [Voice] SANTO DOMINGO
+#329 [Voice] NEW DELHI
+#334 [Voice] LAS VEGAS
+#321 [Voice] BWA
+#322 [Voice] CWA
+#311 [Voice] YOU
+#310 [Voice] WIN
+#305 [Voice] LOSE
+#307 [Voice] PERFECT
+#304 [Voice] FIGHT
+#302 [Voice] DRAW GAME
+#309 [Voice] TIE BREAK
+#306 [Voice] NO CONTEST
+#308 [Voice] ROUND
+#299 [Voice] 1
+#300 [Voice] 2
+#301 [Voice] 3
+  
+  ZALAZOF
+#234 [Voice] フンッ！
+#235 [Voice] ハッ！
+#236 [Voice] ォワアァァ…
+#237 [Voice] サンセットスプラッシュ！
+#353 [Voice] フッ！
+  
+  COLT
+#170 [Voice] フンッ！
+#171 [Voice] ハッ！
+#172 [Voice] ンアァァ…
+#173 [Voice] サンセットスプラッシュ！
+#174 [Voice] ヘーーイ！
+  
+  STINGER
+#213 [Voice] ハァッ！
+#214 [Voice] ホゥッ！
+#215 [Voice] ホアァァゥ…
+#216 [Voice] スクリューダイバー！
+#217 [Voice] アトミックダイバー！
+#218 [Voice] ヒョオーーゥッ！
+#219 [Voice] オォレィッ！
+  
+  TITAN
+#220 [Voice] ンガアッ！
+#221 [Voice] ボアァッ！
+#222 [Voice] ゥオオォァ…
+#223 [Voice] サークルウェーブ！
+#224 [Voice] ンガァ！
+#225 [Voice] ウガアアァッ！
+  
+  BUDO
+#164 [Voice] ウリャァッ！
+#165 [Voice] シャッ！
+#166 [Voice] ぬかったぁ…
+#167 [Voice] 血風刃！
+#168 [Voice] ハイィ！
+#169 [Voice] ヨーーーォッ！
+  
+  HAGGAR
+#159 [Voice] ダーリーン！ (ジェシカ)
+#180 [Voice] フンッ！
+#181 [Voice] ンラァァッ！
+#182 [Voice] ゥウワオォォ…
+#183 [Voice] ゥオオォーーリャァッ！
+#184 [Voice] ダーーーァッ！
+  
+  GOMES
+#131 [Voice] キッキーー！ (フリーク)
+#175 [Voice] グァァアッ！
+#176 [Voice] デアァッ！
+#177 [Voice] フギャアァァ…
+#178 [Voice] ウッキーーーッ！
+#179 [Voice] ヘッヘッヘッヘッヘッ…
+  
+  SHEEP
+#206 [Voice] フンッ！
+#207 [Voice] ハァッ！
+#208 [Voice] ウオォォゥ…
+#209 [Voice] トルネードスラム！
+#210 [Voice] ハァッ！
+#211 [Voice] フンッ！
+#212 [Voice] ギャアァゥッ！
+  
+  KIMARA
+#185 [Voice] フワァッ！
+#186 [Voice] ボガーァッ！
+#187 [Voice] グオォォァァ…
+#188 [Voice] ウガァァッ！
+#189 [Voice] ボガァァァッ！
+  
+  ASTORO
+#160 [Voice] フゥンッ！
+#161 [Voice] ハァッ！
+#162 [Voice] タリャァッ！
+#163 [Voice] グハハァッ…
+  
+  SABER
+#190 [Voice] フンッ！
+#191 [Voice] タァッ！
+#192 [Voice] ンゴォォォ…
+#193 [Voice] テアァァッ！
+#194 [Voice] ウオォォッ！
+  
+  BLACK. W
+#226 [Voice] ハッ！
+#227 [Voice] ホッ！
+#228 [Voice] ゥオオォォ…
+#229 [Voice] フンッ！
+#230 [Voice] トリャッ！
+#231 [Voice] アッハッハハハハ…
+#232 [Voice] ギョオォッ！
+#233 [Voice] アハハハハハ…
+  
+  WRAITH
+#201 [Voice] エヤァッ！
+#202 [Voice] ウワァッ！
+#203 [Voice] ギャアアァァ…
+#204 [Voice] ヘッヘッヘッヘッヘ…
+  
+  ORTEGA
+#195 [Voice] ダァシャァッ！
+#196 [Voice] デェイッ！
+#197 [Voice] ウオォォゥゥ…
+#198 [Voice] ムンッ！
+#199 [Voice] ウラアァァッ！
+#200 [Voice] ゥワアァァッ！
+  
+------------------------------------------------------
+ [S.E.]
+  
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.] <time="0:07">
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.] <time="0:07">
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.] <time="0:07">
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#123 [S.E.]
+#124 [S.E.]
+#125 [S.E.]
+#126 [S.E.]
+#127 [S.E.]
+#128 [S.E.]
+#129 [S.E.]
+#130 [S.E.] <time="0:07">
+#132 [S.E.]
+#134 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#140 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+#205 [S.E.]
+#312 [S.E.]
+#314 [S.E.]
+#315 [S.E.]
+#316 [S.E.]
+#317 [S.E.]
+#318 [S.E.]
+#319 [S.E.]
+#346 [S.E.]
+#372 [S.E.]
+#373 [S.E.]
+#376 [S.E.]
+#377 [S.E.]
+#378 [S.E.]
+
+  ■出典
+  スーパーマッスルボマー　アーケード　ゲームトラック
+  SONY MUSIC ENTERTAINMENT  SRCL-2919  1994.10.21
+
+$end

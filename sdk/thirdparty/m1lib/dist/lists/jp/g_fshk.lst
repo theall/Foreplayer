@@ -1,0 +1,20 @@
+﻿$name=g_fshk
+$version=2
+$default=$01
+$songmax=9999999
+$main
+
+$01 Fire Shark <time="3:19" fadeout="yes" fadeoutlength="10">
+$02 Give me Your Heart <time="1:36" fadeout="yes" fadeoutlength="10">
+$03 Vice in Tokyo <time="2:38" fadeout="yes" fadeoutlength="10">
+$04 Sadness in Your Eyes <time="1:49" fadeout="yes" fadeoutlength="10">
+$05 From the Sun to Me <time="3:02" fadeout="yes" fadeoutlength="10">
+$07 In the Blue Sky <time="0:35" fadeout="yes" fadeoutlength="10">
+$06 Long Happiness
+$1e Gleam
+$22 Low Expectations and Little Effort
+$1f Last Chance <time="0:39" fadeout="yes" fadeoutlength="10">
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

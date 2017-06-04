@@ -1,0 +1,29 @@
+﻿$name=cuebrickj
+$version=2
+$default=$0c
+$songmax=$8f
+$main
+
+$0c Coin
+$87 Mode Select
+$80 Start Demo
+$88 BGM 1
+$89 Stage Clear
+$8f MOAI's Demo
+$81 BGM 2
+$8c BGM 3
+$8d BGM 4
+$8e BGM 5
+$8b Ending
+$86 Password & Name Entry
+$85 Game Over
+
+-----------------------------------------
+ [SFX]
+
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

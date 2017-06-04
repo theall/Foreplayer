@@ -1,0 +1,143 @@
+﻿$name=dynwarj
+$version=2
+$default=001
+$main
+
+#001 Introduction
+#021 Select Player
+#002 Daxingshan (round 1)
+#010 Boss
+#016 Round Clear
+#005 Sishuiguan (round 2)
+#003 Tiemenxia (round 3)
+#014 Senario 1 Clear
+#023 Senario 2 Start
+#004 Longmengu (round 4)
+#006 Hulaoguan (round 5)
+#011 Theme of Lu Bu
+#007 Luoyang (round 6)
+#008 Shinyang Castle (round 7)
+#009 Meiwu Castle (round 8)
+#012 Theme of fake Dung Min
+#013 Theme of Dung Jio
+#015 Senario 2 Clear
+#018 End Demo
+#019 Credits Roll
+#026 Top Ranking
+#027 Top Ranking Display
+#024 Ranking
+#025 Ranking Display
+#020 Continue
+#017 Game Over
+
+#028 Not Released on CD
+
+------------------------------------------------------
+  [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+
+  [Voice]
+
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+#143 [Voice]
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+#160 [Voice]
+
+  [Source]
+  Strider Hiryu -G.S.M. Capcom 2- / Alfh Lyra Wa Lyra
+  Pony Canyon / Scitorn  D25B1001  May 21, 1989
+
+  [Sound Composer]
+  Chanchakorin (Alfh Lyra Wa Lyra)
+
+// List Contribution by Hiroshi
+// English list and updated by Fuji
+$end

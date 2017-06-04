@@ -1,0 +1,90 @@
+﻿$name=altbeast
+$version=2
+$default=074
+$main
+
+#074 [Voice] Rise From Your Grave
+#148 Rise From Your Grave (Round 1)
+#076 [Voice] Power Up !
+#070 [Voice] Wolf
+#145 Altered Beast
+#077 [Voice] Welcome To Your Doom
+#144 Gaum-Hermer (Boss Theme)
+#149 Closed In Upon Me (Round 2)
+#150 I'll Be Back (Round 3)
+#147 Crystal's Theme (Round Up)
+#146 Game Over / Name Entry
+#151 Ending
+
+-----------------------------------------
+  [Voice & SFX]
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [Voice] Wolf
+#071 [SFX] 
+#072 [Voice] 
+#073 [SFX] 
+#074 [Voice] Rise From Your Grave
+#075 [Voice] Never Give Up
+#076 [Voice] Power Up !
+#077 [Voice] Welcome To Your Doom
+#078 [Voice] Hahahahaha
+#079 [Voice] Aaaaaargh
+#080 [Voice] Dragon
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] Dragon
+#085 [Voice] Bear
+#086 [Voice] Tiger
+
+#176 [SFX]
+#178 [SFX] Flapping Wings <time="3">
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX] Evil Appearing <time="5">
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX] Hole Appearing
+#197 [SFX] Boss Growing
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX] <time="5">
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+
+  [Source]
+  Galaxy Force / G.S.M. SEGA 1
+  Pony Canyon / Scitron  D28B0002  Jul 7, 1988
+
+// List contribution by Toby
+// Updated by CrashTest
+$end

@@ -1,0 +1,15 @@
+﻿$name=f1gpstar
+$version=2
+$default=002
+$main
+
+#002 Introduction / Course Select
+#001 Finish (from Truth / T-Square)
+#004 Name Entry
+#005 Game Over
+
+#003 Unused
+
+// List contribution by ZEK.
+// English list QA by Fujix
+$end

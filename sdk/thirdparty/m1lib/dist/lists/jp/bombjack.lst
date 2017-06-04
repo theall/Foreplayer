@@ -1,0 +1,46 @@
+﻿$name=bombjack
+$version=2
+$default=016
+$fixed_volume=108
+$main
+
+#016 CREDIT <time="1">
+#032 TITLE <time="9">
+#035 BGM 1 <time="35.2">
+#040 SPECIAL COIN GET <time="10">
+#035 BGM 1 <time="49.5">
+#037 CLEAR <time="4">
+#034 BGM 2 <time="23.9">
+#027 POWER BALL <time="3">
+#026 POWER BALL GET  <time="6">
+#034 BGM 2 <time="55.5">
+#043 SPECIAL BONUS <time="16">
+#036 BGM 3 <time="44.5">
+#039 MISS <time="3.5">
+#038 GAME OVER <time="3.6">
+#041 NAME ENTRY 1 <time="13.6">
+#042 NAME ENTRY 2 <time="25">
+#046 (CD未収録)
+
+-----------------------------------------------------------
+
+#017 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+
+  ■出典
+  TECMO GAME MUSIC
+  ALFA RECORDS  28XA-95  1986.09.25
+
+// リスト作成：みん☆さん
+$end

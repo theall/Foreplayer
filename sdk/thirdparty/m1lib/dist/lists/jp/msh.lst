@@ -1,0 +1,71 @@
+﻿$name=msh
+$version=2
+$default=047
+$fixed_volume=465
+$main
+
+#047 QSound Logo
+//Main QSound
+#001 Opening-Title
+#007 Ranking Display
+#002 Player Select 1
+#008 Player Select 2
+#004 VS.
+#009 SPIDER-MAN Stage
+#021 SPIDER-MAN Winning
+#034 SPIDER-MAN Ending
+#010 CAPTAIN AMERICA Stage
+#022 CAPTAIN AMERICA Winning
+#035 CAPTAIN AMERICA Ending
+#011 HULK Stage
+#023 HULK Winning
+#036 HULK Ending 1
+#049 HULK Ending 2
+#014 PSYLOCKE Stage
+#026 PSYLOCKE Winning
+#039 PSYLOCKE Ending 1
+#053 PSYLOCKE Ending 2
+#012 IRONMAN Stage
+#024 IRONMAN Winning
+#037 IRONMAN Ending 1
+#050 IRONMAN Ending 2
+#019 DOCTOR DOOM Stage
+#031 DOCTOR DOOM Winning
+#044 Theme Of DOCTOR DOOM
+#003 Here Comes A New Challenger
+#017 JUGGERNAUT Stage
+#029 JUGGERNAUT Winning
+#042 JUGGERNAUT Ending 1
+#051 JUGGERNAUT Ending 2
+#016 SHUMA-GORATH Stage
+#028 SHUMA-GORATH Winning
+#041 SHUMA-GORATH Ending
+#013 WOLVERINE Stage
+#025 WOLVERINE Winning
+#038 WOLVERINE Ending
+#015 BLACKHEART Stage
+#027 BLACKHEART Winning
+#040 BLACKHEART Ending 1
+#052 BLACKHEART Ending 2
+#018 MAGNETO Stage
+#030 MAGNETO Winning
+#043 MAGNETO Ending
+#020 THANOS Stage
+#032 THANOS Winning
+#045 Theme Of THANOS
+#033 Return Of The Heroes
+#005 Continue
+#006 Game Over
+#046 Staff Roll
+#054 Unused
+//サントラ未収録
+
+#048 QSound Logo 2
+//Sub QSound
+
+  ■出典
+  マーヴル・スーパーヒーローズ　アーケード ゲームトラック
+  SONY RECORDS  SRCL-3448  1995.12.01
+
+// List Contribution by NK
+$end

@@ -1,0 +1,46 @@
+﻿$name=ordyne
+$version=2
+$default=$0f
+$fixed_volume=269
+$main
+
+$0f Coin
+$00 Game start
+$31 Round 1
+$21 Boss 1, 6
+$32 Round 2
+$22 Boss 2
+$33 Round 3
+$08 Dream (ボーナスステージ)
+$0b Dream (ハズレ)
+$0a Dream (アタリ)
+$23 Boss 3
+$34 Round 4
+$42 [Voice] いらっしゃいませ～。空中INへようこそ！
+$02 Shop (空中IN)
+$43 [Voice] ありがとうございました～
+$24 Boss 4
+$35 Round 5
+$25 Boss 5
+$36 Round 6
+$3a Game over
+$04 Continue
+$3e Name Entry A
+$2c Name Entry B
+$2e Name Entry C
+$06 Round Clear
+$37 Round 7
+$27 Boss 7
+$16 Ending
+$3c 未発表 Round X (未使用曲)
+$29 未発表 Boss X (未使用曲)
+$20 ???
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.5
+  VICTOR ENTERTAINMENT  VDR-5300  1989.08.21
+
+  ■作曲
+  細江 慎治
+
+$end

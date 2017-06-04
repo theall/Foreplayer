@@ -1,0 +1,38 @@
+﻿$name=dimahoo
+$version=2
+$default=$c1
+// $songmax=$00
+$main
+
+$c1 Element in the Story (Opening)
+$d3 Credit
+$c2 Purple Advance (Character Select)
+$c3 Scramble! (Stage 1)
+$c9 Black Fight (Boss 1)
+$cd Critical Attack (Stage Clear)
+$c4 Iron Nuckle (Stage 2)
+$ca Bold Trap (Boss 2)
+$c5 Overwhelming Existence (Stage 3)
+$c6 Velvet Fire (Stage 4)
+$c7 Thunder Storm (Stage 5)
+$cc The Genius of Battle (Rival)
+$c8 Dark Plot (Stage 6)
+$cb Dark Sky (Final Boss)
+$ce Perfect Medicine (Completed)
+$cf Soft Machine (Ending)
+$d0 Broken Body (Game Over)
+$d1 Mechanical Petrifaction (Name Entry)
+
+$c0 Speaker Test
+
+-----------------------------------------
+
+  [Source]
+  Great Mahou Daisakusen / Original Sound Track
+  Suleputer  CPCA-1041  Mar 03, 2000
+
+  [Composed]
+  Ken'ichi Onoya, Atsuhiro Motoyama
+
+// Original List Contribution by Ayaya
+$end

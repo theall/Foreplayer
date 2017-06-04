@@ -1,0 +1,99 @@
+﻿$name=jedi
+$version=2
+$default=47
+$main
+
+ [Music]
+
+#047 - Music - Start of Game
+#052 - Music - Completed Forest of Endor
+#055 - Music - Shield Generator Destroyed
+#051 - Music - Entering the Death Star
+#045 - Music - Escaping the Death Star
+#056 - Music - Bonus Life Fanfare
+#053 - Music - Game Over - No High Score
+#054 - Music - Game Over - High Score List
+#048 - Music
+#049 - Music
+#050 - Music
+
+
+ [Voice]
+
+#011 [Voice] Ackbar - "The shield is down.  Commence attack on the Death Star's main reactor!"
+#038 [Voice] Death Star Controller - "The security deflector shield will be deactivated when we have confirmation of your code transmission."
+#012 [Voice] Han - "I have a really bad feeling about this.."
+#024 [Voice] Imperal Officer - "You rebel scum!"
+#006 [Voice] Lando - "Ah Han, old buddy, don't let me down"
+#009 [Voice] Lando - "Don't worry my friends are down there.  He'll have that shield down on time"
+#010 [Voice] Lando - "Han will have that shield down.  We've got to give him more time!"
+#025 [Voice] Lando - "Here goes nothing!"
+#026 [Voice] Lando - "Go for the power regulator on the north tower!"
+#027 [Voice] Lando - "Now lock onto the strongest power source.. it should be the power generator."
+#036 [Voice] ???
+#037 [Voice] Lando - "Watch out.  Squad at .06"
+#043 [Voice] Lando - "The shield is still up."
+#002 [Voice] Leia - "Han hurry!"
+#003 [Voice] Leia - "Han.."
+#004 [Voice] Leia - "hurry!"
+#005 [Voice] Leia - "The Fleet will be here any moment"
+#029 [Voice] Luke - "I see them!"
+#030 [Voice] Luke - "Wait for me!"
+#031 [Voice] Luke - "Stay here!"
+#032 [Voice] Luke - "Move closer!"
+#033 [Voice] Luke - "Get along side that one!"
+#034 [Voice] Luke - "Leia!"
+#035 [Voice] Luke - "Hey!"
+#028 [Voice] Red Three - "Three of them coming in, twenty degrees!"
+#039 [Voice] Scout - "Go for help!"
+#040 [Voice] Scout - "Go get them!"
+#041 [Voice] Scout - "Stop them!"
+#042 [Voice] Stormtrooper - "Let's go!"
+#007 [Voice] Threepio - "Wonderful"
+#008 [Voice] Threepio - "We are now a part of the tribe"
+#044 [Voice] Vader - "Leave them to me. I will deal with them myself."
+#014 [Voice] Chewbacca Yell #1
+#015 [Voice] Chewbacca Yell #2
+#016 [Voice] Chewbacca Yell #3
+#017 [Voice] Ewok Yell #1
+#018 [Voice] Ewok Yell #2
+#019 [Voice] Ewok Yell #3
+#020 [Voice] Ewok Yell #4
+#021 [Voice] Ewok Yell #5
+#022 [Voice] Ewok Yell #6
+#023 [Voice] Ewok Yell #7
+#013 [Voice] R2D2 Hit
+
+ [S.E.]
+
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.] constant
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.] R2D2
+#078 [S.E.]
+#079 [S.E.] constant
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.] constant
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.] constant
+#099 [S.E.] constant
+
+// Basic Listing by Tafoid
+$end

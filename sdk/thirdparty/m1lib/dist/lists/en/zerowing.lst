@@ -1,0 +1,55 @@
+﻿$name=zerowing
+$version=2
+$default=035
+$songmax=035
+$fixed_volume=100
+$main
+
+#035 Coin (Credit)
+#018 Opening (Opening) / Open your eyes (Stage 1)
+#026 Open your eyes (Stage 1)
+#024 New day for me (Stage 2)
+#020 Babylonian nights (Stage 3)
+#025 You get (Stage 4)
+#021 Old sense (Stage 5)
+#023 New say (Stage 6)
+#019 Game set
+#028 Go to his rest (Name Registry)
+#031 Dullard (Continue)
+#027 Same one (Stage 7)
+#022 Hit man (Stage 8)
+#034 Everybody knows (Ending)
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#029 [SFX]
+#030 [SFX]
+#032 [SFX]
+#033 [SFX]
+
+  [Source]
+  Zero Wing / Toaplan
+  Pony Canyon / Scitron  PCCB-00001  Sep 21, 1989
+
+  [Sound Composer]
+  Tatsuya Uemura, Toshiaki Tomisawa, Masahiro Yuge
+
+$end

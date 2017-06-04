@@ -1,0 +1,176 @@
+﻿$name=bayroute
+$version=2
+$default=071
+$fixed_volume=199
+$main
+
+#071 Credit Inserted
+#008 [SFX] Start! <time="08">
+#009 Stage 1
+#006 Boss BGM
+#011 Stage Clear
+#001 Stage 2
+#002 Stage 3
+#004 Stage 4
+#003 Stage 5
+#010 Stage 6
+#013 Stage 7
+#005 Ending 
+#007 Name Entry
+#012 Game Over
+
+---------------------------------------------------
+ [SFX] 
+
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX]
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX]
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX] 
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX]
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX]
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#124 [SFX]
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX]
+#128 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#032 [SFX] <time="03">
+#076 [SFX] <time="03">
+#077 [SFX] <time="05">
+
+---------------------------------------------------
+ [Voice] 
+
+#145 [Voice] 
+#146 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+
+---------------------------------------------------
+
+#160 [PCM] Bass Drum 1
+#161 [PCM] Bass Drum 2
+#162 [PCM] Snare Drum 1
+#163 [PCM] High Tom
+#164 [PCM] Mid Tom
+#165 [PCM] Low Tom
+#166 [PCM] Closed High Hat
+#167 [PCM] Open High Hat 1
+#168 [PCM] Open High Hat 2
+#169 [PCM] Ride Cymbal
+#170 [PCM] Woodblock
+#171 [PCM] Hand Clap
+#172 [PCM] Maracas
+#173 [PCM] ?
+#174 [PCM] Bass Drum + Crash Cymbal
+#175 [PCM] Snare Drum + Crash Cymbal
+#176 [PCM] Bass Drum + Open High Hat
+#177 [PCM] Snare Drum 2
+#178 [PCM] Snare Drum 3
+#179 [PCM] Crash Cymbal
+
+  [Sound Composer]
+  Vial Music, Michie Takenori, Shinichi Seya
+
+// List contribution by ZEK.
+$end

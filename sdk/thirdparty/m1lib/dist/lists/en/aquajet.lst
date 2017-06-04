@@ -1,0 +1,28 @@
+﻿$name=aquajet
+$version=2
+$default=057
+$songmax=260
+$main
+
+#057 Attract
+#062 [SFX] <time="1.9">
+#063 Title Call
+#050 Select
+#048 Noonday Beach
+#055 Run Across
+#060 Aquatic Heat
+#052 Time Up
+#059 Goal
+#061 Staff Roll
+
+#001 Sound Check
+
+  [Source]
+  Aqua Jet / Arcade Soundtrack 009
+  Pony Canyon / Wonder Spirits  WSCA-00005  Nov 19, 1997
+
+  [Sound Composer / Adapter]
+  Keiichi Okabe
+
+// List by Skeleton081983
+$end

@@ -1,0 +1,30 @@
+﻿$name=darius
+$version=2
+$default=055
+$main
+
+#055 Credit Inserted <time="04">
+#006 Captain Neo (Space Cave) <time="1:35">
+#040 Warning! <time="08">
+#007 Boss 1 <time="1:15">
+#008 Round Clear <time="53">
+#046 Inorganic Beat (City) <time="2:34">
+#047 Boss 2 <time="1:12">
+#043 Cosmic Air Way (Mountain Region) <time="2:47">
+#048 Boss 3 <time="1:32">
+#045 Chaos -Main Theme- (Van Allen Belt) <time="3:32">
+#049 Boss 4 <time="55">
+#044 The Sea (Undersea Base) <time="3:28">
+#050 Boss 5 <time="1:02">
+#058 Credit Inserted B <time="04">
+#051 Boss 6 <time="1:03">
+#052 Boss 7 <time="2:31">
+#054 Ending <time="1:38">
+#053 Name <time="52">
+#009 Over <time="10">
+
+  [Source]
+  Darius / Taito Zuntata
+  Pony Canyon / Scitron   PCCB-00093  Aug 21, 1992
+
+$end

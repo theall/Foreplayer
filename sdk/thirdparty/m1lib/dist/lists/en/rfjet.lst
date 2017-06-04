@@ -1,0 +1,45 @@
+﻿$name=rfjet
+$version=2
+$default=$14
+$main
+
+$14 Opening
+$15 Title Screen
+$1e Credit Inserted
+$01 Mission Briefing
+$06 Player Select
+$02 Simulation Level 01
+$04 Simulation Level 05 / Level 15
+$03 Simulation Level 10 / Level 30
+$09 Simulation Level 20
+$0c Simulation Level 35 / Level 50
+$0a Simulation Level 40
+$05 Simulation Level 45
+$0d Actual Fight Phase 01
+$10 Actual Fight Phase 02
+$08 Boss Area
+$11 Actual Fight Final
+$07 Stage Clear
+$16 Ending
+$12 Credits
+$13 Name Entry
+$1a Game Over
+
+$0b Unused
+$0e ?
+$19 ?
+
+$18 Writing Flash ROM
+
+  [Source]
+  Raiden Fighters Jet PCB (SPI System)
+
+  The Onslaught Raiden Fighters Disc 2
+  INH  Jan 31, 2005
+
+  [Sound Composer]
+  Yasuhiro Hashimoto
+
+// List contribution by Kayama
+// English list by Fujimon
+$end

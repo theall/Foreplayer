@@ -1,0 +1,102 @@
+﻿$name=mutntfgt
+$version=2
+$default=013
+$main
+
+#013 "The Great Selection"  Fighter Select
+#007 Start
+#008 "Paean to the Body"  BGM 1 (Stage 1, 2, 3)
+#009 "Flying Bodies"  BGM 2 (Stage 4, 5, 6)
+#014 Clear
+#010 "Endless Fight against Yourself"  BGM 3 (Stage 7)
+#011 "Mortal Combat"  BGM 4 (Stage 8)
+#012 "Pandemonium"  BGM 5 (Stage 9)
+#015 "Loser's Roar"  Game Over
+#023 "Soul-Stirring Co-Stars"  Ending
+#016 "Monumental Combat"  Name Entry
+
+#020 "Endless Fight against Yourself"  BGM 3 (Stage 7) &lt;w/o intro&gt;
+#021 Unused
+
+-----------------------------------------------------------
+ [Voice]
+
+#026 [Voice] "My magic is greater than your strength !"
+#027 [Voice] "Magic !"
+#028 [Voice]
+#029 [Voice] "I will mash you !"
+#030 [Voice] "I am invincible !"
+#031 [Voice]
+#032 [Voice]
+#033 [Voice] "My arena !"
+#034 [Voice] "A pity you must die !"
+#035 [Voice]
+#036 [Voice]
+#037 [Voice] "Our power is very great !"
+#038 [Voice] "We are the Hydra !"
+#039 [Voice]
+#040 [Voice] "You are a bug to me !"
+#041 [Voice]
+#042 [Voice]
+#043 [Voice] "Strong !"
+#044 [Voice] "Know the Authority of my horns !"
+#045 [Voice] "I am the victor now !"
+#046 [Voice]
+#047 [Voice]
+#048 [Voice] "Let's taste your blood !"
+#049 [Voice]
+#050 [Voice] "Take this !"
+#051 [Voice] "You are no match !"
+#052 [Voice] "I am faster !"
+#053 [Voice]
+#054 [Voice]
+#055 [Voice] "You will be ashes now !"
+#056 [Voice] "Feel the heat of my breath !"
+#057 [Voice]
+#058 [Voice] "You're doomed !"
+#059 [Voice] "Feel my fangs !"
+#060 [Voice] "My teeth are hard !"
+#061 [Voice]
+#062 [Voice]
+#063 [Voice] "Brain to eat !"
+#064 [Voice]
+#065 [Voice]
+#066 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#017 [SFX]
+#019 [SFX]
+#007 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+
+  [Source]
+  Death Brade / Data East, Gamadelic
+  Pony Canyon / Scitron  PCCB-00078  Dec 15, 1991
+
+// List contributed by NK
+// English list by NK
+// Updated by Anonymous
+$end

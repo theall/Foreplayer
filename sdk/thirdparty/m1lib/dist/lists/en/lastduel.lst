@@ -1,0 +1,75 @@
+﻿$name=lastduel
+$version=2
+$default=032
+$fixed_volume=115
+$main
+
+#032 Coin Inserted <time="0:03.5">
+#033 Opening <time="0:13">
+#042 Player Select <time="0:39.2">
+// only for 2 players mode
+#034 Startup <time="0:03.5">
+#044 Galden's Route (Stage 1) <time="2:17.1">
+#049 Boss <time="1:06.5">
+#050 Stage Clear <time="0:05.5">
+#043 Mystery Zone (Stage 2) <time="2:28.9">
+#046 Dark Route (Stage 3) <time="3:27.9">
+#045 Burning Route (Stage 4) <time="2:51.3">
+#047 Frozen Route (Stage 5) <time="3:06.5">
+#048 Galden: Last Duel (Stage 6) <time="3:13.7">
+#051 Queen Sheeta (Ending 1) <time="0:50">
+#054 Fighting Scene (Ending 2) <time="1:03">
+#052 End Credits <time="0:34.5">
+#041 Continue <time="0:14">
+#036 Game Over <time="0:09">
+#037 Name Entry (1st) <time="1:52">
+#039 Ranking Display (1st) <time="0:10">
+#038 Name Entry (2nd - 10th) <time="2:09.8">
+#040 Ranking Display (2nd - 10th) <time="0:06">
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#035 [SFX]
+#053 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#080 [SFX]
+
+  [Sound Composer]
+  Tamayo Kawamoto (Tamatama, Golden Tamayo, Tamasan)
+
+// List contribution by NK
+$end

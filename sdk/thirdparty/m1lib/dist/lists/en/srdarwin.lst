@@ -1,0 +1,25 @@
+﻿$name=srdarwin
+$version=2
+$default=41
+$fixed_volume=172
+$main
+
+#41 Start
+#43 Super Real Darwin Theme
+#47 Boss Theme
+#46 Mutation
+#50 Pyramid
+#48 DNA
+#49 Chaos
+#45 Gashalva
+#44 Evolution
+#42 Gashalulu
+#53 Ending
+#52 Name Entry
+
+  [Source]
+  Data East Game Music
+  Alfa Records  28XA-205  May 10, 1988
+
+// English list adjustment by bcass
+$end

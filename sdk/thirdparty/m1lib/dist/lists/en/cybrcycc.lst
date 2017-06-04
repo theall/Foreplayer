@@ -1,0 +1,35 @@
+﻿$name=cybrcycc
+$version=2
+$default=265
+$main
+
+#265 Demo
+#256 Entry
+#259 Rough Rider
+#260 Mighty Sight
+#262 Bahama
+//??? Sweeper
+#258 Game Over
+#268 Hi-Side
+#257 Tag and Rag
+#261 Get a Law
+#263 wind ride kids
+#264 Superior
+#267 Peggy the Poo
+#266 Naughty Seven
+
+#003 Stereo Check
+
+  [Source]
+  Cyber Cycles / Namco Game Sound Express Vol.23
+  Victor Entertainment  VICL-15047  Oct 21, 1995
+
+  [Composers]
+  Yuri Mikado: #265, #259, #260, #267  
+  Ayako Sasou: #256, #258, #257, #261, #264, #266
+  Nobuyoshi Sano: #262
+  Takayuki Aihara: #257
+  Shinji Hosoe: #263
+
+// List by Fuj
+$end

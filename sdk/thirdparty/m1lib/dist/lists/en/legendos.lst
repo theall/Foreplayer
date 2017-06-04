@@ -1,0 +1,103 @@
+﻿$name=legendos
+$version=2
+$default=002
+$songmax=255
+$main
+
+#002 Neo Geo Logo
+
+#050 Title
+#034 Stage 1  Joe Yabuki vs. Mammoth Nishi (Kani'chi Nishi)  &lt;Toko Special Boy's Reformatory&gt;
+#040 Stage Clear
+#032 Stage 2  Joe Yabuki vs. Shohei Inagaki  &lt;Ring&gt;
+#048 Stage 3  Joe Yabuki vs. Wolf Kanagushi  &lt;Waiting Room&gt;
+#041 Stage 4  Joe Yabuki vs. Toru Rikiishi  &lt;Ring&gt;
+#051 Stage 5  Joe Yabuki vs. Goromaki(ruffian) Gondou  &lt;Shopping Street&gt;
+#052 Stage 6  Joe Yabuki vs. Tiger Ozaki  &lt;Ring&gt;
+#048 Stage 7  Joe Yabuki vs. Carlos Rivera  &lt;Park&gt;
+#032 Stage 8  Joe Yabuki vs. Ryuhi Kin  &lt;Ring&gt;
+#034 Stage 9  Joe Yabuki vs. Harimao  &lt;Airport&gt;
+#041 Stage 10  Joe Yabuki vs. Hose Mendose  &lt;Ring&gt;
+#035 Credits Roll
+#049 Continue
+#039 Game Over
+#037 Name Registry
+#036 Credits Roll (w/o intro)
+#038 Name Registry (w/o intro)
+#033 Stage 2, 8 (reprise)
+
+------------------------------------------------------
+ [Voice]
+
+  Danpei Tange
+#209 [Voice] "Tate! Tatsunda!" ("Stand up! Stand up!!")
+#210 [Voice] "Tate! Joe!" ("Stand up! Joe!")
+#211 [Voice] "Tatsunda, Joe!" ("Stand up, Joe!")
+#212 [Voice] "Sokoda! Joe!" ("Hit there! Joe!")
+#213 [Voice] "Ike! Joe!" ("Go! Joe!")
+#214 [Voice] "Mota mota sunja nee!" ("Stop dawdling!")
+#215 [Voice] "Doushita, Joe!" ("What's the matter, Joe!")
+#216 [Voice] "Finish da! Joe!" ("Finish him, Joe!")
+#217 [Voice] "Upperni kiwo tsukero!" ("Watch out for his uppercut!")
+#218 [Voice] "Yoku mirunda!" ("Look hard!")
+#219 [Voice] "Mucha sunja nee!" ("Don't be rash!")
+#220 [Voice] "Sugoizo, Joe!" ("Amazing, Joe!")
+#221 [Voice] "Joe!!"
+#222 [Voice] "Sugoizo, Joe! Boxer ni narunda!" ("Great, Joe! Be a boxer!")
+#223 [Voice] "Dekashita... Dekashitazo, Joe!" ("You have done well.. You have done well, Joe!")
+#244 [Voice] "Washi no Joe wa dounacchimattanda!" ("What can have happened to my Joe!")
+
+  etc.
+#248 [Voice]
+#224 [Voice]
+#225 [Voice]
+#226 [Voice]
+#227 [Voice]
+#241 [Voice]
+#242 [Voice]
+#208 [Voice]
+#243 [Voice]
+#254 [Voice]
+#245 [Voice]
+#246 [Voice]
+#255 [Voice]
+#251 [Voice]
+#253 [Voice]
+
+ [SFX]
+#127 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#247 [SFX]
+#252 [SFX]
+
+// List Contribution by NK
+// English list by NK
+$end

@@ -1,0 +1,37 @@
+﻿$name=dietgo
+$version=2
+$default=51
+$main
+
+#051 Credit Inserted
+#005 Map Preview
+#012 Play Instruction
+
+#098 [Voice] Let's Diet (Male) <time="1.2">
+#009 Europe
+#008 Boss Theme 1
+#011 Stage Clear
+#013 Intermission
+#017 Japan
+#004 Boss Theme 2
+#010 Ice Land
+#006 Atlantic Ocean
+#019 USA
+#007 India
+#014 Bonus Game
+#018 Australia
+
+#016 Africa
+#022 South America
+#023 Madagascar
+#020 Space
+#021 End Credits
+
+#015 Unused?
+// #25-#107 Voice, SFX, etc.
+
+  [Sound Composers]
+  Tomoyoshi Sato, Tatsuya Kiuchi, Seira
+
+// List by Fujimon.
+$end

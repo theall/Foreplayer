@@ -1,0 +1,33 @@
+﻿$name=rallybik
+$version=2
+$default=$0a
+$fixed_volume=164
+$main
+
+$0a [SFX] Ingnition
+$01 Macosa
+$02 South Wind
+$03 Dixie Line
+$04 Sand Storm
+$05 Den
+$07 Black Tea
+$08 Second Line
+$0d Sun Set
+$0e America Bye Bye
+$0f Congra
+$11 Cut Off
+$0b [SFX] Crashed
+
+$09 Not on CD 1
+$0c Not on CD 2
+$10 Not on CD 3
+
+  [Source]
+  Toaplan Game Music Scene One / Tatsujin
+  Polystar  H24X-10005  Jun 25, 1989
+
+  [Sound Composer]
+  Osamu Oota
+
+// English list adjustment by bcass
+$end

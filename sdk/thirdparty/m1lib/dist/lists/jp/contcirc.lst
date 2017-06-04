@@ -1,0 +1,35 @@
+﻿$name=contcirc
+$version=2
+$default=26
+$main
+
+#026 Coin <time="0:03.5">
+#009 Brazil <time="0:14.2">
+#011 America <time="0:11">
+#012 France <time="0:09">
+#010 Monaco <time="0:10">
+#013 Germany <time="0:05.5">
+#014 Spain <time="0:09.5">
+#015 Mexico <time="0:07.5">
+#016 Japan
+
+#017 Pit In <time="0:20">
+#018 Goal In (Clear) <time="0:11">
+#019 Goal In (Not Clear) <time="0:06.5">
+#020 End Map
+#021 Continue
+#022 Ending
+#023 Name Set
+#024 Name Set 2 <time="0:29">
+#025 Game Over
+
+  ■出典
+  究極タイガー -G.S.M. TAITO 2-
+  PONY CANYON / SCITRON  D28B0008  1988.11.21
+
+  ■作曲
+  MAR.
+  Pinch Punch
+
+// List by Fuj
+$end

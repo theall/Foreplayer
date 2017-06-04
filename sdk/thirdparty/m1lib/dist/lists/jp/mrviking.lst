@@ -1,0 +1,28 @@
+﻿$name=mrviking
+$version=2
+$default=130
+$songmax=149
+$main
+
+#130 Start～Main BGM
+#129 Main BGM
+#136 Round Clear
+#147 Explosion～Round Clear
+#132 Miss!
+#131 Name Entry
+
+-----------------------------------------
+ [S.E.]
+
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#146 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+
+$end

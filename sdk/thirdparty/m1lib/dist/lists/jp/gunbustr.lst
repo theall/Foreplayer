@@ -1,0 +1,28 @@
+﻿$name=gunbustr
+$version=2
+$default=002
+$main
+
+#002 STORY DEMO
+#004 CHARACTER SELECT <time="19.8">
+#015 STAGE 1, 4-1, 5-3, 7
+#005 MISSION COMPLETE
+#009 STAGE 2, 6-1, 5-2
+#011 STAGE 3, 5-1, 6-3
+#013 STAGE 4-2, 6-2
+#014 LAST BATTLE
+#016 STAFF ROLL
+#004 NAME ENTRY <time="19.8">
+#006 GAME OVER
+
+#007 未使用曲 1
+#008 未使用曲 2 <time="7">
+#010 未使用曲 3
+#012 未使用曲 4
+#017 未使用曲 5
+
+  ■作曲
+  K.OHNUI, 山田 靖子
+  
+// List contribution by ZEK.
+$end

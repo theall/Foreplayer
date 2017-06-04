@@ -1,0 +1,27 @@
+﻿$name=g_supm
+$version=2
+$default=61441
+$songmax=65536
+$main
+
+$f001 BGM 1
+$f002 BGM 2
+$f003 BGM 3
+$f004 BGM 4
+$f005 BGM 5
+$f006 BGM 6
+$f007 BGM 7
+$f008 BGM 8
+$f101 BGM 9
+$f102 BGM 10
+$f103 BGM 11
+$f104 BGM 12
+$f105 BGM 13
+$f106 BGM 14
+$f107 BGM 15
+$f108 BGM 16
+$f109 BGM 17
+$f10a BGM 18
+
+// Basic list contributed by Knurek
+$end

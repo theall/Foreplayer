@@ -1,0 +1,32 @@
+﻿$name=armedf
+$version=2
+$default=046
+$songmax=059
+$main
+
+#046 Start / Insect (Start / Stage 1)
+#048 Insect (Stage 1)
+#049 Bone (Stage 2)
+#050 Machine City (Stage 3)
+#051 Sarcoma (Stage 4)
+#052 Different King (Stage 5)
+#053 Final Star (Stage 6)
+#058 Boss
+#054 Exzath / Final Boss (Extra Stage / Last Boss)
+#055 Clear
+#056 Star Ship (Ending)
+#059 Earth & Peace (Credits Roll)
+#057 Friendship (Name Entry)
+#047 Game Over
+
+-----------------------------------------
+ [SFX]
+
+  [Source]
+  Armed F, Crazy Climber 2
+  Pony Canyon / Scitron  PCCB-00020  Feb 21, 1990
+
+  [Sound Composer]
+  Kenji Yoshida
+
+$end

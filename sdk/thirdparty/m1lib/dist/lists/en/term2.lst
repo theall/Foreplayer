@@ -1,0 +1,169 @@
+﻿$name=term2
+$version=2
+$default=017
+$main
+
+#017 Attract
+#002 Mission: Battlefield
+#010 Ground HK 
+#011 Endoskeletons
+#012 Mission Clear
+#031 Mission: Human Hideout
+#018 Mission: Trip to Skynet
+#250 Exelent <time="4.5">
+#005 Mission: Skynet
+#013 Skynet <time="12">
+#251 Mission 1 Completed <time="6">
+#025 Mission 2 Start <time="19">
+#028 Cyberdyne Systems <time="8">
+#003 Mission: Cyberdyne
+#006 Escape
+#236 Trerar <time="5">
+#015 In the Steel Mill
+#019 Time to Go
+#008 Missiom Completed
+#015 Name Entry
+
+#007 Escape (Restart)
+#004 Unused 1
+#009 Unused 2
+#029 Unused 3
+#014 Unused 4
+
+---------------------------------------------------
+  [SFX]
+
+#016 [SFX] <time="3">
+#020 [SFX] <time="3">
+#021 [SFX] <time="3">
+#022 [SFX] <time="3">
+#023 [SFX] <time="3">
+#024 [SFX] <time="3">
+#089 [SFX] <time="3">
+#091 [SFX] <time="3">
+#092 [SFX] <time="3">
+#128 [SFX] <time="3">
+#129 [SFX] <time="3">
+#130 [SFX] <time="3">
+#131 [SFX] <time="3">
+#132 [SFX] <time="3">
+#133 [SFX] <time="3">
+#134 [SFX] <time="3">
+#135 [SFX] <time="3">
+#136 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="3">
+#140 [SFX] <time="3">
+#141 [SFX] <time="3">
+#142 [SFX] <time="3">
+#143 [SFX] <time="3">
+#144 [SFX] <time="3">
+#145 [SFX] <time="3">
+#146 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="3">
+#152 [SFX] <time="3">
+#153 [SFX] <time="3">
+#154 [SFX] <time="3">
+#155 [SFX] <time="3">
+#156 [SFX] <time="3">
+#157 [SFX] <time="3">
+#158 [SFX] <time="3">
+#159 [SFX] <time="3">
+#160 [SFX] <time="3">
+#161 [SFX] <time="3">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#164 [SFX] <time="3">
+#165 [SFX] <time="3">
+#166 [SFX] <time="3">
+#167 [SFX] <time="3">
+#168 [SFX] <time="3">
+#169 [SFX] <time="3">
+#170 [SFX] <time="3">
+#171 [SFX] <time="3">
+#172 [SFX] <time="3">
+#173 [SFX] <time="3">
+#174 [SFX] <time="3">
+#175 [SFX] <time="3">
+#176 [SFX] <time="3">
+#177 [SFX] <time="3">
+#178 [SFX] <time="3">
+#179 [SFX] <time="3">
+#180 [SFX] <time="3">
+#181 [SFX] <time="3">
+#182 [SFX] <time="3">
+#183 [SFX] <time="3">
+#184 [SFX] <time="3">
+#185 [SFX] <time="3">
+#186 [SFX] <time="3">
+#187 [SFX] <time="3">
+#188 [SFX] <time="3">
+#189 [SFX] <time="3">
+#190 [SFX] <time="3">
+#191 [SFX] <time="3">
+#192 [SFX] <time="3">
+#195 [SFX] <time="3">
+#196 [SFX] <time="16">
+#197 [SFX] <time="3">
+#198 [SFX] <time="3">
+#199 [SFX] <time="3">
+#200 [SFX] <time="3">
+#201 [SFX] <time="3">
+#202 [SFX] <time="3">
+#203 [SFX] <time="3">
+#204 [SFX] <time="3">
+#205 [SFX] <time="3">
+#206 [SFX] <time="3">
+#207 [SFX] <time="3">
+#212 [SFX] <time="3">
+#213 [SFX] <time="3">
+#214 [SFX] <time="3">
+#215 [SFX] <time="3">
+#216 [SFX] <time="3">
+#217 [SFX] <time="3">
+#218 [SFX] <time="3">
+#219 [SFX] <time="3">
+#220 [SFX] <time="3">
+#221 [SFX] <time="5">
+#225 [SFX] <time="3">
+#230 [SFX] <time="3">
+#231 [SFX] <time="3">
+#234 [SFX] <time="3">
+#238 [SFX] <time="3">
+#241 [SFX] <time="3">
+#242 [SFX] <time="3">
+#243 [SFX] <time="3">
+#244 [SFX] <time="3">
+#245 [SFX] <time="3">
+#246 [SFX] <time="3">
+#247 [SFX] <time="3">
+#248 [SFX] <time="3">
+#249 [SFX] <time="3">
+#252 [SFX] <time="12">
+#253 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#094 [Voice] <time="3">
+#147 [Voice] <time="3">
+#148 [Voice] <time="3">
+#149 [Voice] <time="3">
+#193 [Voice] <time="3">
+#211 [Voice] <time="3">
+#224 [Voice] <time="8">
+#226 [Voice] <time="3">
+#227 [Voice] <time="3">
+#228 [Voice] <time="3">
+#229 [Voice] <time="3">
+#233 [Voice] <time="3">
+#237 [Voice] <time="3">
+#239 [Voice] <time="3">
+
+  [Sound Composer]
+  Chris Granner
+
+// List contribution by ZEK.
+// English list QC by Fuj
+$end

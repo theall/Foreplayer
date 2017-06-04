@@ -1,0 +1,42 @@
+﻿$name=ldrun
+$version=2
+$default=032
+$main
+
+#032 Start <time="2">
+#038 BGM <time="57.80">
+#035 Round Clear <time="2">
+#036 Block Clear <time="3">
+#037 Time Out <time="3">
+#033 Game Over <time="3">
+#034 Continue <time="7">
+#039 All Clear <time="13">
+
+-----------------------------------------------------------
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+
+  [Sourndtrack]
+  R-Type / Irem Game Music
+  Alfa Records  28XA-199  Jan 25, 1988
+
+// List Contribution by Min
+$end

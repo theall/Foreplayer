@@ -1,0 +1,271 @@
+﻿$name=le2
+$version=2
+$default=$111
+$songmax=929
+$main
+
+$111 Opening <time="33.8">
+#928 [Voice] "Lethal Enforcers II Gun Fighters" <time="3.9">
+#519 [SFX] 
+$112 Stage Select
+$104 The Bank Robbery (Stage 1-1)
+$101 The Bank Robbery (Stage 1-2)
+$10c Stage Boss 1 (Stage 1, 2, 4 Boss)
+$115 Stage Clear <time="4.8">
+$116 Promotion <time="1.8">
+
+$113 Bonus Stage 1
+$107 The Stage Hold-Up (Stage 2, 4 Chase)
+$102 The Saloon Showdown (Stage 3-1)
+$109 The Saloon Showdown (Stage 3-2)
+$103 The Saloon Showdown (Stage 3-3)
+$10d Stage Boss 2 (Stage 3 Boss)
+$115 Stage Clear <time="4.8">
+$117 Demotion <time="1.8">
+
+$114 Bonus Stage 2
+$106 The Hide-Out (Stage 5-1)
+$105 The Hide-Out (Stage 5-2)
+$108 The Hide-Out (Stage 5-3)
+$10e Stage Boss 3 (Stage 5 Boss)
+
+$119 Credits
+$11a Game Over
+$118 Name Entry
+
+$120 Speaker Test
+
+------------------------------------------------
+  [SFX]
+
+#513 [SFX] 
+#514 [SFX] 
+#515 [SFX] 
+#516 [SFX] 
+#517 [SFX] 
+#518 [SFX] 
+#519 [SFX] 
+#520 [SFX] 
+#521 [SFX] 
+
+#528 [SFX] gunshot
+#529 [SFX] gunshot
+#530 [SFX] gunshot
+#531 [SFX] gunshot
+#532 [SFX] gunshot
+#533 [SFX] gunshot
+#534 [SFX] gattling
+#535 [SFX] gunshot
+#544 [SFX] gunshot
+#545 [SFX] gunshot
+#546 [SFX] gunshot
+#547 [SFX] bomb
+#548 [SFX] gattling
+#549 [SFX] gunshot
+
+#560 [SFX]
+#561 [SFX]
+#562 [SFX]
+#563 [SFX]
+#564 [SFX] knife
+#565 [SFX] knife
+#566 [SFX] knife
+#567 [SFX] breaking glass
+#568 [SFX] breaking glass
+#569 [SFX] breaking bottle
+#570 [SFX] breaking bottle
+#571 [SFX] breaking bottle
+#572 [SFX] breaking bottle
+#573 [SFX] breaking bottle
+#574 [SFX] breaking bottle
+#575 [SFX] breaking bottle
+#576 [SFX] bell
+#577 [SFX]
+#578 [SFX]
+#579 [SFX]
+#580 [SFX]
+#581 [SFX]
+#582 [SFX]
+#583 [SFX]
+#584 [SFX]
+#585 [SFX]
+#592 [SFX] stuck
+#593 [SFX] stuck
+#594 [SFX] stuck
+
+#608 [SFX] booom
+#609 [SFX] booom
+#610 [SFX] booooom
+#611 [SFX] kaboooom
+#612 [SFX] kabooooooom
+#613 [SFX] boom
+#614 [SFX] boom
+#615 [SFX] boom
+#616 [SFX] boom
+
+#624 [SFX] slap
+#625 [SFX] slap
+#626 [SFX]
+#627 [SFX] slap
+#628 [SFX] slap
+#629 [SFX] slap
+#630 [SFX]
+#631 [SFX]
+#632 [SFX]
+#633 [SFX] breaking glasses
+#634 [SFX]
+#635 [SFX]
+#636 [SFX]
+#637 [SFX]
+#638 [SFX]
+
+#656 [SFX] reload
+#657 [SFX] snap
+#658 [SFX] 
+#659 [SFX] 
+#660 [SFX] 
+#661 [SFX] 
+#662 [SFX] 
+#663 [SFX] 
+#664 [SFX] 
+#665 [Voice] nicker
+#666 [Voice] nicker
+#667 [SFX] hoofbeats
+#668 [SFX] whip
+#669 [Voice] moo
+#670 [SFX] trains
+#671 [SFX] trains
+#672 [SFX] steam whistle
+#673 [SFX] 
+#674 [SFX] 
+#675 [SFX] bugle
+#676 [SFX] 
+#677 [Voice] laughter
+#678 [Voice] screech
+#679 [SFX] 
+#680 [SFX] steam
+#681 [SFX] SL sounds
+#682 [SFX] 
+#683 [SFX] 
+#684 [SFX] 
+#685 [SFX] 
+//#752 Sound test = #288
+
+#769 [Voice] "Let's Ride"
+#770 [Voice] "The Bank Robbery"
+#771 [Voice] "Come on Sheriff, we're waiting for ya"
+#772 [Voice] "Sheriff, the bank has been robbed!"
+#773 [Voice] "The Stage Holdup"
+#774 [Voice] "Yeeeehaw!"
+#775 [Voice] "Stop that stage!"
+#776 [Voice] "Saloon Showdown"
+#777 [Voice] "Mind if I play, boys?"
+#778 [Voice] "Get'em boys!"
+#780 [Voice] "The Train Robbery"
+#781 [Voice] "Yaaah!"
+#782 [Voice] "The Hideout"
+#783 [Voice] "Come on, boys, the Sheriff ain't goin to find us in there!"
+#784 [Voice] "Bonus Stage"
+#785 [Voice] "Let's see if you've got what it takes to be a Sheriff" - Female
+#786 [Voice] "Try n' hit the bottles" - Female
+#787 [Voice] "Nice shooting" - Female
+
+#800 [Voice] "Get back or I'll blow his brains out!"
+#801 [Voice] "Eat lead, Sheriff!"
+#802 [Voice] "You ain't a gonna kill me!"
+#803 [Voice] "You can't hit the broad side of a barn!" 
+#804 [Voice] "Die, ya varmint!"
+#805 [Voice] "Eat lead, Sheriff!" - Female
+#806 [Voice] "You ain't gonna kill me!" - Female
+#807 [Voice] "You can't hit the broad side of a barn!" - Female
+#808 [Voice] "Die, ya varmint!" - Female
+#809 [Voice] 
+#810 [Voice] 
+#816 [Voice] 
+#817 [Voice] 
+#818 [Voice] 
+#819 [Voice] 
+#820 [Voice] 
+#821 [Voice] 
+#822 [Voice] 
+#823 [Voice] 
+#824 [Voice] "You ain't gonna take me alive, Sheriff!"
+#828 [Voice] 
+#829 [Voice] 
+#832 [Voice] 
+#833 [Voice] 
+#836 [Voice] 
+#837 [Voice] 
+#838 [Voice] 
+#840 [Voice] "When we draw, start shooting"
+#841 [Voice] "You can't shoot till we draw"
+#842 [Voice] "I said, you can't shoot till we draw"
+#843 [Voice] "You lose"
+#844 [Voice] "Hahahahahaha, you lose"
+#845 [Voice] 
+#846 [Voice] 
+#847 [Voice] 
+#848 [Voice] 
+#849 [Voice] 
+#852 [Voice] 
+#853 [Voice] 
+#854 [Voice] 
+#856 [Voice] "Arise, my braves!"
+#857 [Voice] 
+#858 [Voice] 
+#860 [Voice] 
+#861 [Voice] 
+#862 [Voice] 
+#864 [Voice] "Don't shoot!"
+#865 [Voice] "Don't shoot!" - Female
+#866 [Voice] "Save me, sheriff!"
+#867 [Voice] "Save me, sheriff!" - Female
+#868 [Voice] "No!"
+#869 [Voice] "No!" - Female
+#870 [Voice] "I don't wanna die"
+#871 [Voice] "I don't wanna die" - Female
+#872 [Voice] "Don't shoot - they're plumb loco!"
+#873 [Voice] "Don't shoot - they're plumb loco!" - Female
+#876 [Voice] (moan + alarm)
+#877 [Voice] (moan + alarm)
+#878 [Voice] (ouch + alarm)
+#879 [Voice] (cry + alarm)
+#880 [Voice] "Don't shoot innocent folks"
+#881 [Voice] "Nice shootin', partner"
+#882 [Voice] "Look out!"
+#883 [Voice] "Be careful!"
+#884 [Voice] 
+#885 [Voice] 
+#888 [Voice] "Use your head, boy!"
+#889 [Voice] "Whoa!"
+#892 [Voice] "Drop them irons!"
+#893 [Voice] "This is the Sheriff!"
+#894 [Voice] "This is the Sheriff.  Drop them irons!"
+#896 [Voice] "Perfect shot"
+#897 [Voice] "Real pretty shootin', son"
+#898 [Voice] "Great shooting"
+#899 [Voice] "Posse"
+#900 [Voice] "Deputy"
+#901 [Voice] "Sheriff"
+#902 [Voice] "Deputy Marshal"
+#903 [Voice] "Marshal"
+#904 [Voice] "U.S. Marshal"
+#912 [Voice] "Shotgun"
+#913 [Voice] "Rifle"
+#914 [Voice] "Double Rig"
+#915 [Voice] "Cannon"
+#916 [Voice] "Gattling Gun"
+#917 [Voice] "50 Caliber Sharp"
+#920 [Voice] "Player 1"
+#921 [Voice] "Player 2"
+#922 [Voice] "Reload"
+#923 [Voice] "Game Over"
+#924 [Voice] "Keep a goin"
+#928 [Voice] "Lethal Enforcers II - Gun Fighers"
+#929 [Voice] "Lethal Enforcers II - The Western"
+
+// Hoot list by Saitou
+// M1 list by Knurek
+// Updated by Fujix
+// Voices helped by Tafoid
+$end

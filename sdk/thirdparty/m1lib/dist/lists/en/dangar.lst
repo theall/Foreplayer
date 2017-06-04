@@ -1,0 +1,29 @@
+﻿$name=dangar
+$version=2
+$default=046
+$songmax=059
+$main
+
+#046 Game Start - Sky - Skyscraper
+#049 Skyscraper
+#047 Restart - Skyscraper
+#048 Last Start - Skyscraper
+#057 Warp Sound
+#050 Blue Paradox (Theme of Another Dimention)
+#055 Restart - Blue Paradox
+#056 Last Start - Blue Paradox
+#058 Bado (Small Boss)
+#053 Dzur (Middle Boss)
+#059 Gallus (Middle Boss)
+#054 Noid (Large Boss)
+#051 Game Over
+#052 Name Entry (Not Released on CD)
+
+  [Source]
+  Game Sound Nichibutsu -G.S.M. Nichibutsu 1-
+  Pony Canyon / Scitron   D28B0004  Sep 21, 1988
+
+  [Sound Composer]
+  Kenji Yoshida
+
+$end

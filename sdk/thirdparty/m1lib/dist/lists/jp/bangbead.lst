@@ -1,0 +1,72 @@
+﻿$name=bangbead
+$version=2
+$default=002
+$main
+
+#002 Neo-Geo Logo
+#033 Attract Mode 1
+#034 Attract Mode 2
+//#127 [S.E.]  Credit
+#035 How to Play
+#036 Player Select
+#059 VS Theme
+#039 Theme 1 Round 1 (Mr. Justice) 
+#038 Theme 1 Round 2 (Mr. Justice) 
+#037 Theme 1 Round 3 (Mr. Justice) 
+#055 New Challenger
+#042 Theme 2 Round 1 (Chinta, Siren)
+#041 Theme 2 Round 2 (Chinta, Siren)
+#040 Theme 2 Round 3 (Chinta, Siren)
+#056 Result
+#045 Theme 3 Round 1 (Hiromu, Bloody Wolf)
+#044 Theme 3 Round 2 (Hiromu, Bloody Wolf)
+#043 Theme 3 Round 3 (Hiromu, Bloody Wolf)
+#050 Continue
+#048 Theme 4 Round 1 (Simon, Surya)
+#047 Theme 4 Round 2 (Simon, Surya)
+#046 Theme 4 Round 3 (Simon, Surya)
+//#056 Result
+#051 Winner
+#052 Ending (Chinta)
+#053 End Credit
+#049 Name Entry
+#058 Game Over
+
+#054 未使用 1
+#057 未使用 2
+
+---------------------------------------------------
+  [S.E.] 
+
+#095 [S.E.] NEO-GEO Logo
+
+#127 [S.E.] 
+
+#219 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.]  <time="4.1">
+#225 [S.E.]  <time="4.0">
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#229 [S.E.] 
+#230 [S.E.] 
+#231 [S.E.] 
+#232 [S.E.] 
+#233 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#237 [S.E.] 
+#238 [S.E.] 
+
+//
+// クレジット音が読み込めない為、ネオジオのディフォルトクレジット音流用。
+//
+// List contribution by ZEK.
+// Updated by Yamasan
+// SFX added by Simon B.
+$end

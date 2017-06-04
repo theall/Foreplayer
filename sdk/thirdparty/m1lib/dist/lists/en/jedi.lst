@@ -1,0 +1,99 @@
+﻿$name=jedi
+$version=2
+$default=47
+$main
+
+ [Music]
+
+#047 - Music - Start of Game
+#052 - Music - Completed Forest of Endor
+#055 - Music - Shield Generator Destroyed
+#051 - Music - Entering the Death Star
+#045 - Music - Escaping the Death Star
+#056 - Music - Bonus Life Fanfare
+#053 - Music - Game Over - No High Score
+#054 - Music - Game Over - High Score List
+#048 - Music
+#049 - Music
+#050 - Music
+
+
+ [Voice]
+
+#011 - Ackbar - "The shield is down.  Commence attack on the Death Star's main reactor!"
+#038 - Death Star Controller - "The security deflector shield will be deactivated when we have confirmation of your code transmission."
+#012 - Han - "I have a really bad feeling about this.."
+#024 - Imperal Officer - "You rebel scum!"
+#006 - Lando - "Ah Han, old buddy, don't let me down"
+#009 - Lando - "Don't worry my friends are down there.  He'll have that shield down on time"
+#010 - Lando - "Han will have that shield down.  We've got to give him more time!"
+#025 - Lando - "Here goes nothing!"
+#026 - Lando - "Go for the power regulator on the north tower!"
+#027 - Lando - "Now lock onto the strongest power source.. it should be the power generator."
+#036 - ???
+#037 - Lando - "Watch out.  Squad at .06"
+#043 - Lando - "The shield is still up."
+#002 - Leia - "Han hurry!"
+#003 - Leia - "Han.."
+#004 - Leia - "hurry!"
+#005 - Leia - "The Fleet will be here any moment"
+#029 - Luke - "I see them!"
+#030 - Luke - "Wait for me!"
+#031 - Luke - "Stay here!"
+#032 - Luke - "Move closer!"
+#033 - Luke - "Get along side that one!"
+#034 - Luke - "Leia!"
+#035 - Luke - "Hey!"
+#028 - Red Three - "Three of them coming in, twenty degrees!"
+#039 - Scout - "Go for help!"
+#040 - Scout - "Go get them!"
+#041 - Scout - "Stop them!"
+#042 - Stormtrooper - "Let's go!"
+#007 - Threepio - "Wonderful"
+#008 - Threepio - "We are now a part of the tribe"
+#044 - Vader - "Leave them to me. I will deal with them myself."
+#014 - Chewbacca Yell #1
+#015 - Chewbacca Yell #2
+#016 - Chewbacca Yell #3
+#017 - Ewok Yell #1
+#018 - Ewok Yell #2
+#019 - Ewok Yell #3
+#020 - Ewok Yell #4
+#021 - Ewok Yell #5
+#022 - Ewok Yell #6
+#023 - Ewok Yell #7
+#013 - R2D2 Hit
+
+ [SFX]
+
+#057 - SFX
+#058 - SFX
+#059 - SFX
+#060 - SFX
+#061 - SFX
+#062 - SFX - constant
+#068 - SFX
+#069 - SFX
+#070 - SFX
+#071 - SFX
+#072 - SFX
+#073 - SFX
+#074 - SFX
+#075 - SFX
+#076 - SFX
+#077 - SFX - R2D2
+#078 - SFX
+#079 - SFX - constant
+#087 - SFX
+#088 - SFX
+#089 - SFX
+#090 - SFX
+#091 - SFX
+#092 - SFX - constant
+#095 - SFX
+#096 - SFX
+#097 - SFX - constant
+#099 - SFX - constant
+
+// Basic Listing by Tafoid
+$end

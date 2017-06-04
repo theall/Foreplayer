@@ -1,0 +1,22 @@
+$name=ikari
+$version=2
+$default=112
+$main
+
+#112 Title Demo
+#144 Credit
+#165 Force Landing
+#065 Theme of Ikari
+#072 Gate
+#104 Victory
+#096 Game Over - Glory
+
+  [Source]
+  SNK Game Music
+  Alfa Records  28XA-120  Feb 25, 1987
+
+  [Composers]
+  Mr. O  + ?
+
+// List contribution by szk
+$end

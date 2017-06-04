@@ -1,0 +1,15 @@
+$name=agress
+$version=2
+$default=001
+$songmax=009
+$main
+
+#001 [Music]
+#002 [Music]
+#003 [Music]
+#006 [Music]
+#007 [Music]
+#009 [Music]
+
+// Basic listing by Tafoid
+$end

@@ -1,0 +1,65 @@
+﻿$name=bladestl
+$version=2
+$default=075
+$main
+
+#075 Demo Music
+#010 Coin
+#071 Team Name Entry
+#065 Goal 1
+#073 Goal 2
+#066 Goal 3
+#070 Bonus Stage
+#068 Game Set
+#072 Continue
+#067 Ending
+#074 Game Over
+#064 Name Entry
+
+#076 Unused
+
+---------------------------------------------------
+ [SFX] 
+
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#124 [SFX] 
+#125 [SFX] 
+
+---------------------------------------------------
+ [Voice]
+
+#069 [Voice] <time="11">
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

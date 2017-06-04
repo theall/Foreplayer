@@ -1,0 +1,56 @@
+﻿$name=hitice
+$version=2
+$default=007
+$main
+
+#007 TITLE SCREEN
+#008 CHARACTER SELECT
+#015 1ST PERIOD LOCKER LOOM
+#022 1ST PERIOD START
+#019 FACE OFF
+#016 PERIOD 2, 3 LOCKER LOOM 
+#017 2ND, 3RD PERIOD START
+#021 FIGHT
+#013 FIGHT 2
+#014 NAME ENTRY
+#018 GAME OVER
+
+#009 SELECT CHARACTER Ver.2
+#011 未使用曲 1 
+#012 未使用曲 1 Ver.2
+#023 未使用曲 2
+#045 未使用曲 2 Ver.2
+#020 未使用曲 3
+#010 未使用曲 4
+
+---------------------------------------------------
+  [S.E.]
+
+#025 [S.E.] <time="5">
+#026 [S.E.] 
+#027 [S.E.] 
+#029 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#062 [S.E.] 
+#064 [S.E.] 
+#066 [S.E.] 
+#068 [S.E.] 
+#070 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] <time="5">
+#075 [S.E.] <time="5">
+#076 [S.E.] <time="5">
+
+// List contribution by ZEK.
+$end

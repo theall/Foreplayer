@@ -1,0 +1,38 @@
+﻿$name=docastle
+$version=2
+$default=016
+$main
+
+#016 START <time="4">
+#002 MAIN THEME
+#021 GATE OPEN <time="4">
+#001 EXTRA CHANCE <time="17.3">
+#009 EXTRA <time="10">
+#010 CLEAR
+#014 [S.E.] ダイヤモンド出現 <time="5">
+#015 DIAMOND BGM
+#012 MISS
+#003 GAME OVER
+#017 RANKING
+
+---------------------------------------------------
+ [S.E.] 
+
+#004 [S.E.] ハンまーを振り下ろす音
+#005 [S.E.] 斜め階段の移動
+#006 [S.E.] ドクロブロック
+#007 [S.E.] 敵が穴にハマる音 <time="5">
+#008 [S.E.] 鍵ブロック
+#013 [S.E.] 敵が潰れる音
+#014 [S.E.] ダイヤモンド出現 <time="5">
+#016 [S.E.] スタート
+#018 [S.E.] 敵青モンスターに変化
+#019 [S.E.] 敵を弾く音
+#020 [S.E.] プレイヤーの移動<time="5">
+#021 [S.E.] ゲートオープン <time="5">
+#022 [S.E.] 
+#023 [S.E.] 落下
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+$end

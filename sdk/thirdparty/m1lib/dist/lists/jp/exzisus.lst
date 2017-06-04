@@ -1,0 +1,41 @@
+﻿$name=exzisus
+$version=2
+$default=018
+$songmax=047
+$main
+
+#018 Coin <time="0:05">
+#046 Stage Intro <time="0:07">
+#036 BGM #1 (Space/Planet Surface)
+#038 Boss Intro/Gold Moai & Mechanical Yeti
+#041 Stage Clear
+#042 BGM #2 (City)
+#047 Boss Intro/Red Scorpion & Violet Salamander
+#044 Enter Your Name
+#045 All Clear/Continue Play?
+#037 Game Over
+
+---------------------------------------------------------------
+ [S.E.]
+
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+
+// Composed by Zuntata?
+// List contribution by bcass
+$end

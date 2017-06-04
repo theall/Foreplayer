@@ -1,0 +1,27 @@
+﻿$name=devstors
+$version=2
+$default=$40
+$songmax=$56
+$main
+
+$40 Sent On A Special Mission (Stage 1)
+$42 The Air Force Base (Stage 2)
+$4b Tough Enemy (Boss)
+$46 Isolated Battlefield (Stage 3)
+$50 Watch Out (Stage 4)
+$54 Go Speedy! (Stage Clear)
+$4e The Navy Base (Stage 5)
+$48 Bombardment (Stage 6)
+$53 Went To The Ground (Game Over)
+$55 Priseworthy Braves (Ranking)
+$44 "Destruction" That's All (Stage 7)
+$56 Triumph (Ending)
+
+$52 ??? 1
+$4c ??? 2
+
+  [Source]
+  Konami Game Music Collection Vol.0
+  King Records  276A-7708  Jul 21, 1989
+
+$end

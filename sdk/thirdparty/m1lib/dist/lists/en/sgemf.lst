@@ -1,0 +1,52 @@
+﻿$name=sgemf
+$version=2
+$default=046
+$fixed_volume=233
+$main
+
+#046 QSound Logo
+#009 Capcom Logo
+
+#010 Theme of Pocket Fighters <time="1:12">
+#011 Player Select <time="42">
+#017 Character Introduction <time="52">
+#012 VS. <time="10">
+#001 BAR: "Maximum" <time="2:02">
+#002 Toyshop: "Dhalsiim" <time="2:08">
+#003 Ski Resort: "La Menkoi" <time="1:53">
+#004 Amazon: Rental Rubber Ring Shop "Surfreel" <time="2:29">
+#005 China Town: Yuan Fandian <time="1:56">
+#006 Tabasa's Room: Secluded Room of Genius <time="2:14">
+#007 Outside Makai: Moonlight Dark Castle <time="1:41">
+#008 Inside Makai: Moving House of Evil <time="1:42">
+#014 Winner <time="28">
+#013 Challenger Appeared <time="4">
+#016 Boss Demo <time="36">
+#033 Ryu - Ending 1 <time="32">
+#048 Ryu - Ending 2 <time="20">
+#034 Ken - Ending <time="57">
+#035 Chun-Li - Ending <time="1:25">
+#036 Sakura - Ending <time="1:14">
+#037 Morrigan - Ending <time="1:29">
+#038 Lei-Lei (Hsien-Ko) - Ending <time="55">
+#039 Felicia - Ending <time="1:31">
+#040 Tabasa (Tessa) - Ending 1 <time="35">
+#049 Tabasa (Tessa) - Ending 2 <time="42">
+#041 Ibuki - Ending <time="59">
+#042 Zangief - Ending <time="1:20">
+#043 Dan - Ending <time="1:44">
+#044 Gouki (Akuma) - Ending <time="37">
+#045 Staff Credits <time="2:29">
+#029 Continue <time="35">
+#030 Game Over <time="7">
+#031 Ranking <time="15">
+#050 Theme of Pocket Fighters (Original Version) <time="1:25">
+
+#047 QSound Logo 2
+
+  [Source]
+  Pocket Fighter Original Soundtrack
+  First Smile Entertainment  FSCA-10024  Dec 17, 1997
+
+// List Contribution by NK
+$end

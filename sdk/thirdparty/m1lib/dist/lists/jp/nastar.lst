@@ -1,0 +1,70 @@
+﻿$name=nastar
+$version=2
+$default=047
+//$songmax=062
+$main
+
+#047 OPENING
+#044 -I- THE STORY (Main Theme)
+#045 -II- THE TRAP (罠)
+#046 -III- THE BATTLE
+#048 MOTIVE (Stage Clear)
+#049 -IV- THE BIG SWORDS (Ending)
+#050 YA-BU'S DREAM (Name Entry)
+//
+//#052 -I- THE STORY #1
+//#053 -I- THE STORY #2
+//#054 -I- THE STORY #3
+//#055 -I- THE STORY #4
+//#056 -II- THE TRAP #1
+//#057 -II- THE TRAP #2
+//#058 -III- THE BATTLE #1
+//#059 -III- THE BATTLE #2
+//#060 -III- THE BATTLE #3
+//#061 -IV- THE BIG SWORDS #2
+
+-----------------------------------------
+ [S.E.]
+
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#051 [S.E.] "Yes, we do."
+#062 [S.E.]
+
+  ■出典
+  TAITO DJ STATION -G.S.M. TAITO 5-
+  PONY CANYON / SCITRON  PCCB-00037  1990.08.21
+
+$end

@@ -1,0 +1,24 @@
+$name=smgp
+$version=2
+$default=134
+$main
+
+#134 F1 Theme
+#144 Credit
+#129 Advertise BGM
+#133 Qualified
+#131 Fan Fare
+#132 The Second Race
+#136 Awarding
+#130 Name Entry
+#135 Game Over
+
+  [Source]
+  Super Sonic Team -G.S.M. Sega 3-
+  Pony Canyon / Scitron  PCCB-00009  1989.10.21
+
+  [Composer]
+  Kouichi Namiki
+
+// List contribution by szk
+$end

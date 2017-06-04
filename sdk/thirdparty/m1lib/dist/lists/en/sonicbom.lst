@@ -1,0 +1,22 @@
+$name=sonicbom
+$version=2
+$default=163
+$main
+
+#163 Credit Inserted
+#167 Stag 1, 4
+#168 Boss
+#169 Stage Clear
+#171 Stage 2, 6
+#170 Stage 3, 5
+#172 Name Entry
+
+  [Source]
+  Sega Aracade 80's Vol. 1
+  SME Scirton  SCDC-00245  Feb 19, 2003
+
+  [Composer]
+  Katsuhiro Hayashi
+
+// List contribution by szk
+$end

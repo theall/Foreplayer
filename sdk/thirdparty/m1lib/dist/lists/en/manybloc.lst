@@ -1,0 +1,32 @@
+﻿$name=manybloc
+$version=2
+$default=045
+$main
+
+#045 [SFX] Coin
+#002 Main Theme 1
+#003 Main Theme 2
+#001 Continue 
+#004 Chance
+#037 Lucky
+#005 Game Over (?)
+
+---------------------------------------------------
+  [SFX]
+
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] Coin
+
+// List contribution by ZEK.
+$end

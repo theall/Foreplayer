@@ -1,0 +1,158 @@
+﻿$name=wof
+$version=2
+$default=123
+$fixed_volume=317
+$main
+
+#123 Advertise Demo
+#096 Opening Demo <time="26">
+#112 Player Select <time="36">
+#097 Round 1 (The Battle of Bowangpo 1) A <time="1:48">
+#098 Round 1 (The Battle of Bowangpo 1) B <time="56">
+#113 Round Clear
+#099 Round 2 (The Battle of Bowangpo 2) <time="1:54">
+#116 Intermission 2 - 3 A <time="28">
+#115 Bonus Stage 1 <time="48">
+#117 Intermission 2 - 3 B <time="23">
+#100 Round 3 (Xinye Castle) <time="1:14">
+#109 Boss <time="53">
+#118 Intermission 3 - 4 A <time="21">
+#119 Intermission 3 - 4 B <time="39">
+#120 Intermission 3 - 4 C <time="27">
+#101 Round 4 (River Baihe) <time="2:01">
+#102 Round 5 (The Battle of Changbanpo) A <time="27">
+#121 Intermission 5 <time="38">
+#103 Round 5 (The Battle of Changbanpo) B <time="1:10">
+#122 Intermission 5 - 6 <time="1:31">
+#104 Round 6 (Changbanqiao Bridge) <time="1:48">
+#132 Intermission 6 - 7 A <time="45">
+#133 Bonus Stage 2 <time="40">
+#134 Intermission 6 - 7 B <time="25">
+#105 Round 7 (The Battle of Chibi 1) <time="1:42">
+#106 Round 8 (The Battle of Chibi 2) A <time="1:53">
+#107 Round 8 (The Battle of Chibi 3) B <time="1:09">
+#135 Round 8 (The Battle of Chibi 4) C <time="1:27">
+#108 Round 9 (Hua Rongdao) <time="1:40">
+#110 Boss (Lu Bu) <time="1:07">
+#111 Boss (Cao Cao) <time="36">
+#114 Last Round Clear
+#124 Ending A Main <time="1:44">
+#125 Ending B Later (Historical) <time="1:09">
+#126 Ending C Later (Bad) <time="58">
+#127 Ending D Later (Good) <time="38">
+#130 Ending E (Completed with one credit) <time="50">
+#131 Credits <time="1:20">
+#128 Continue <time="31">
+#129 Game Over
+
+ [Voice]
+
+#015 [Voice]
+#016 [Voice]
+#017 [Voice]
+#018 [Voice]
+#019 [Voice]
+#020 [Voice]
+#021 [Voice]
+#022 [Voice]
+#023 [Voice]
+#024 [Voice]
+#045 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#051 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#056 [Voice]
+#057 [Voice]
+#058 [Voice]
+#059 [Voice]
+#060 [Voice]
+#061 [Voice]
+#062 [Voice]
+#063 [Voice]
+#065 [Voice]
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#069 [Voice]
+#070 [Voice]
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#074 [Voice]
+#075 [Voice]
+#076 [Voice]
+#077 [Voice]
+#081 [Voice]
+#091 [Voice]
+#092 [Voice]
+#093 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#000 [SFX]
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#050 [SFX]
+#052 [SFX]
+#064 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX] <time="5">
+#082 [SFX] <time="5">
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#094 [SFX]
+#095 [SFX]
+#136 [SFX]
+  
+  [Source]
+  Tenchi wo Kurau II -Sekiheki no Tatakai -G.S.M. Capcom 7- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00133  Aug 20, 1993
+
+// List Contribution by NK
+// List Translation by Fujix
+$end

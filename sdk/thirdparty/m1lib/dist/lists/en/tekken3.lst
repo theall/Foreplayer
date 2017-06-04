@@ -1,0 +1,50 @@
+﻿$name=tekken3
+$version=2
+$default=096
+$main
+
+[Sound Test]
+#000 Good Morning!
+#001 HB/3002 Chip Test?
+#003 C352 Chip Test?
+
+[Music]
+// Boy, at least these were fucking easier to find than Tekken 1 and 2's songs!
+#096 Attract Movie
+#102 Attract EMBU
+#097 Character Select
+#016 Paul Phoenix
+#018 Forest Law
+#019 Lei Wulong
+#020 King
+#021 Yoshimitsu
+#022 Nina Williams
+#025 Hwoarang
+#027 Ling Xiaoyu
+#028 Eddy Gordo
+#029 Jin Kazama
+#017 Hidden Characters
+// Also 024, 026
+#023 Heihachi Mishima
+#030 Ogre
+#099 Continue?
+#100 Game Over
+#101 Result
+
+[SFX]
+
+#272 Second Player Join-In
+#273 Coin Inserted
+#274 Character Selected
+#275 Selection "Tink"
+
+  [Source]
+  Tekken 3 Arcade Soundtrack 001 EX
+  Wonder Spirits Inc. / Namco  WSCAX-10001  Jul 17, 1997
+
+  [Composers]
+  Nobuyoshi Sano, Keiichi Okabe
+
+
+// List by Thomas "Dark Pulse" Warnica - Feb 10 2007
+$end

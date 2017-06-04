@@ -1,0 +1,137 @@
+﻿$name=robocop2
+$version=2
+$default=110
+$main
+
+#110 [Voice] Robocop
+#004 STORY (海外版未使用曲)
+#005 SECTOR 1, 2
+#013 BOSS BGM 1 (SECTOR 1, 2, 4)
+#006 BONUS STAGE
+#019 DEMO BGM 
+#008 SECTOR 3
+#014 BOSS BGM 2 (SECTOR 3)
+#010 SECTOR 4
+#011 SECTOR 5
+#015 BOSS BGM 3 (SECTOR 5)
+#012 FINAL BATTLE
+#016 CLEAR
+#018 ENDING
+#017 GAME OVER
+
+#009 未使用曲 1
+#021 未使用曲 2
+
+---------------------------------------------------
+  [S.E.]
+
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] <time="8">
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] <time="8"> 
+#053 [S.E.] 
+#054 [S.E.] <time="5">
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] <time="8">
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#109 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] 
+#117 [S.E.] 
+#119 [S.E.] 
+#120 [S.E.] 
+#126 [S.E.] <time="5">
+
+---------------------------------------------------
+  [Voice]
+
+#082 [Voice] You're under arrest.
+#083 [Voice] Thank you for your cooperation.
+#084 [Voice] Don't move, creep.
+#085 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice]
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#110 [Voice] Robocop
+#111 [Voice] 
+#118 [Voice] 
+
+  ■作曲
+  木内 達也 (Tatsuya Kiwch)
+  佐藤 共良 (Tom Tom Sato)
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,129 @@
+﻿$name=sfa3
+$version=2
+$default=$02f
+$fixed_volume=267
+$main
+
+$02F QSound Logo
+
+$001 Nobody Blink (Opening - Title) <time="28">
+$101 [Voice] Street Fighter Alpha 3
+$002 Who'll be Your Double? (Character Select)
+$003 Prepare (Challenger Appeared)
+$004 Way to the Glory (Win - VS)
+$005 Rise Again (Continue)
+$006 Zero Time (Game Over)
+$007 Triumph (Ranking Table)
+$008 Beginning (Story Demo 1)
+$009 The Road (Theme of Ryu - Type 1)
+$00A Active Red (Theme of Ken)
+$00B Feel the Cool (Theme of Gouki - Type 1)
+$00C Decisive Bout (Theme of Nash)
+$00D Resolution (Theme of Chun-Li)
+$00E Proof of Divinity (Theme of Adon)
+$00F Tower of SHOGUN (Theme of Sodom - Type 1)
+$010 No More Swingin' (Theme of Guy)
+$011 Behind You (Theme of Birdie)
+$012 Scala (Theme of Rose)
+$013 Fatal Depth (Theme of Vega - Type 1)
+$014 Shining One (Theme of Sagat)
+$015 Performance (Theme of Dan)
+$016 Breese (Theme of Sakura)
+$017 Gimmick (Theme of Rolento)
+$018 Praying (Theme of Dhalsim)
+$019 Heavy Swell (Theme of Zangief)
+$01A Moments (Theme of Gen)
+$01B Groan (Theme of Gouki - Type 2)
+$01D KAKUGO (Theme of Sodom - Type 2)
+$01E Untamable Fists (Theme of M.Bison)
+$01F Doll Eyes (Theme of Cammy)
+$020 Brave or Grave (Theme of Vega - Type 2)
+$021 Mach-Smasher (Theme of E.Honda)
+$022 Wild Nature (Theme of Blanka)
+$023 Prismatic Stars (Theme of R.Mika)
+$024 Stripes (Theme of Cody)
+$025 Crimson (Theme of Balrog)
+$026 Simple Rating (Theme of Karin)
+$027 High-Tech (Theme of Juli & Juni)
+$028 Black Power (Theme of Ryu - Type 2)
+$029 Seek No Escape (Theme of CPU's Character & Final Round)
+$02B I'll be Brief (Story Demo 2)
+$02C Last Duel (Story Demo 3)
+$02D Daybreak (Ending - Credits Roll)
+
+
+$100 [Voice] Street Fighter Zero 3
+$101 [Voice] Street Fighter Alpha 3
+$102 [Voice] This is Street Fighter Zero 3
+$103 [Voice] This is Street Fighter Alpha 3
+$104 [Voice] Nobody blink.
+$105 [Voice] Let's party.
+$106 [Voice] It's show time.
+$107 [Voice] Get ready, fighters.
+$108 [Voice] Beat 'em up, guys.
+$109 [Voice] It all depends on your skill.
+$10A [Voice] Hey c'mon, stand up.
+$10B [Voice] You can't give it up.
+$10C [Voice] Go for it, man!
+$10D [Voice] Triumph or die!
+$10E [Voice] Go for broke!
+$10F [Voice] Face it straight!
+$110 [Voice] Final round
+$111 [Voice] K.O.!
+$112 [Voice] You win!
+$113 [Voice] You lose
+$114 [Voice] Perfect!
+$115 [Voice] Draw Game
+$116 [Voice] Double K.O.!
+$117 [Voice] Time over
+$118 [Voice] Game over
+$11D [Voice] Here comes a new challenger!
+$11E [Voice] Select your character
+$11F [Voice] Select your fighting style
+$120 [Voice] I can't believe my eyes!
+$121 [Voice] You have fists of god!
+$122 [Voice] That's great! Super! Excellent!
+$123 [Voice] What a terrible fighter!
+$124 [Voice] That was only warmin' up!
+$125 [Voice] That's it, buddy!
+$126 [Voice] Sharpen your fangs, it's not the end!
+$127 [Voice] That's enough! Unbeatable.
+$128 [Voice] I've never seen a battle like this.
+$129 [Voice] That was the best fight I ever saw!
+$12A [Voice] You did a great job, streetfighter!
+$12B [Voice] Congratulations!
+$12C [Voice] You've proved yourself!
+$12D [Voice] Ain't there somebody who can stop this fighting machine?
+$12E [Voice] Yeah, the world's waitin' for ya.
+$12F [Voice] Can you march the way to glory.
+$130 [Voice] Zero!
+$131 [Voice] One!
+$132 [Voice] Two!
+$133 [Voice] Three!
+$134 [Voice] Four!
+$135 [Voice] Five!
+$136 [Voice] Six!
+$137 [Voice] Seven!
+$138 [Voice] Eight!
+$139 [Voice] Nine!
+$13A [Voice] Ten!
+
+ 0x200-0x244  SFX
+
+$0c0 [SFX] Cursor moved
+$0c1 [SFX] Selected
+$0e0 [SFX] Logo appeared when a round proceeded
+$0e1 [SFX] Super combo finish
+$0e2 [SFX] Shungokusatsu
+$240 [SFX] Wobble
+$24d [SFX] Super Combo (X-ISM)
+$24e [SFX] Super Combo (Z-ISM)
+$24f [SFX] Original Combo (V-ISM)
+
+  [Source]
+  Street Fighter Zero 3 Original Soundtrack
+  Suleputer CPCA-1012, 1013  Sep 21, 1998
+
+// List contribution by Monyonss
+// Updated by Fujix
+$end

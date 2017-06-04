@@ -1,0 +1,72 @@
+﻿$name=marvlandj
+$version=2
+$default=130
+$main
+
+#130 Credit Inserted
+#002 Round Start
+#070 Normal Stage
+#006 Roller Coaster Stage
+//#030 Roller Coaster Stage
+#014 Underground Stage
+#074 Boss Stage Start
+#123 [Voice] 
+#131 [Voice] <time="3">
+#124 [SFX] Bang <time="1">
+#078 Boss Stage BGM
+#034 Boss Stage Lose
+#134 [SFX] <time="2.2">
+#086 Boss Stage Clear
+#082 World Clear (Fairy's Theme)
+#122 [Voice]
+#018 Parade
+#090 Mole's Theme
+#119 Mole Clear
+#135 [Voice]
+#062 Round Clear
+#022 Escape
+#026 Credits Roll
+#038 Touched Enemy
+#010 Name Entry
+
+#042 ??? (Xevious & Libble Rabble)
+#046 ??? (Mappy)
+#050 ??? (New Rally X & Pac Man)
+
+#256 Sound Check
+
+-------------------------------------------------------------
+  [Voice]
+
+#122 [Voice]
+#123 [Voice]
+#131 [Voice]
+#135 [Voice]
+
+-------------------------------------------------------------
+  [SFX]
+
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] <time="5">
+#140 [SFX] 
+
+  [Source]
+  Marvel Land
+  Pony Canyon / Scitron  PCCB-00026  May 21, 1990
+
+  [Sound Composer]
+  Etsuo Ishii
+
+$end

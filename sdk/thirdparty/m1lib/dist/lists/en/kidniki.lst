@@ -1,0 +1,74 @@
+﻿$name=kidniki
+$version=2
+$default=024
+$main
+
+#024 Chirin (1) <time="4.30">
+#025 Chirin (2)
+#016 Start - BGM 1
+#019 Start - BGM 2
+#026 Start - Boss BGM
+#020 Clear (not released on CD)
+#021 Game Over (not released on CD)
+#022 Ending
+#023 Name Entry
+//#017 BGM 1
+//#018 Boss BGM
+
+-----------------------------------------------------------
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX] <time="5">
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX] <time="5">
+#044 [SFX] <time="5">
+#045 [SFX]
+#046 [SFX]
+#047 [SFX] <time="5">
+#048 [SFX]
+#049 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#064 [SFX] <time="5">
+#065 [SFX] <time="5">
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [PCM]
+#138 [PCM]
+#139 [SFX]
+#140 [SFX]
+#141 [PCM]
+#142 [Voice]
+
+  [Soundtrack]
+  R-Type / IREM Game Music
+  Alfa Records  28XA-199  Jan 25, 1988
+
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List Contribution by Min
+$end

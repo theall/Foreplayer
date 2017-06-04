@@ -1,0 +1,49 @@
+﻿$name=terraf
+$version=2
+$default=001
+$songmax=056
+$main
+
+#001 Credit Inserted
+// #021 GAME START - Ground Music
+#046 Game Start - Ground Music
+#049 Ground Music
+#047 Restart
+#048 Last Start
+#050 Underground Music (Theme of Terra Force)
+#051 Bulgar (Small Boss)
+#052 Griffon (Mid Boss)
+#053 Goround (Big Boss)
+#054 Game Over
+#055 Ending
+#056 Name Entry
+
+-----------------------------------------
+
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#032 [SFX]
+#034 [SFX]
+#036 [SFX]
+#038 [SFX]
+
+  [Source]
+  Game Sound Nichibutsu -G.S.M. Nichibutsu 1-
+  Pony Canyon / Scitron  D28B0004  Sep 21, 1988
+
+  [Sound Composer]
+  Noboru Yoshida
+
+$end

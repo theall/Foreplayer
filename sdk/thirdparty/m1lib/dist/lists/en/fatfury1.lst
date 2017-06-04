@@ -1,0 +1,43 @@
+$name=fatfury1
+$version=2
+$default=$02
+//$songmax=$4d
+$main
+
+$02 Neo-Geo Logo
+$33 Garou Densetsu Title
+$4b Garou Densetsu Title (MVS)
+$4a Garou Densetsu Title (MVS Endless)
+$31 Two Heads are Better Than One  (Player Select)
+$35 Fight! (Garou Densetsu begins)
+$36 Downtown Rascal (Duck King Theme)
+$30 The Halema School of Capoeira's Battle Song (Richard Meyer Theme)
+$25 Sea Knows (Michael Max Theme)
+$3c China's 4000 Years of History (Tung Fu Rue Theme)
+$43 Results are Everything (Fight Result)
+$44 The Suspicious Guy (Midway Demo)
+$34 King Cobra Arrives (Hwa Jai Stage)
+$3a Raiden the Brave (Raiden Stage)
+$39 That Begins (Bonus Game Start)
+$38 Push and Push Till the End of Hell (Bonus Game BGM)
+$48 You're Great! (Bonus Game Victory)
+$49 Losing is Winning (Bonus Game Defeat)
+$46 Kidnapping (Geese's Subordinates Demo)
+$47 The Melancholy of an Awakening (Geese Appearance Demo)
+$32 Kiss for Geese (Geese Howard Theme)
+$37 Just a Stylish Brawler (2P Fight BGM)
+$45 In the Shadow of Victory (Victory Demo)
+$3f When Walking on a Bridge, You Can Find a Line (Billy Kane Stage)
+$4d If You Stare at Reality (Ending)
+$40 Inner Tenacity (Continue)
+$41 In the Other Side of Despair (Game Over)
+$42 Give a Name (Fight Record Display)
+
+-----------------------------------------
+ [SFX]
+
+  [Source]
+  Garou Densetsu 15th Anniversary Box / Neo Geo Music Performance Group
+  Happinet Corporation  SCDC-00553  2006.11.15
+
+$end

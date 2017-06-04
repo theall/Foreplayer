@@ -1,0 +1,142 @@
+﻿$name=ghouls
+$version=2
+$default=007
+$songmax=127
+$fixed_volume=245
+$main
+
+#007 Credit
+#000 Opening
+#012 Stage 1 <time="2:35.5">
+#013 Stage 1 Boss (Shielder) <time="59.4">
+#002 Stage Clear
+#010 The Map
+#014 Stage 2 <time="2:00.7">
+#015 Stage 2 Boss (Cerberus) <time="1:05.2">
+#016 Stage 3 <time="2:41.7">
+#017 Stage 3 Boss (Gassuto) <time="1:27.6">
+#018 Stage 4 <time="2:38">
+#019 Stage 4 Boss (Ohme) <time="1:00.6">
+#020 Stage 5 <time="1:44.3">
+#021 Stage 5 Boss (Beelzebub) <time="54.2">
+#023 Ending (1st Round)
+#024 Zap
+#022 Final Boss (Lucifer) <time="2:37.5">
+#025 Ending <time="4:07">
+#003 Name Regist (1st Place) <time="1:51">
+#005 Name Regist Finished (1st Place)
+#004 Name Regist (2nd Place and below) <time="1:26">
+#006 Name Regist Finished (2nd Place and below)
+#009 Timeout Warning <time="35">
+#008 Player Out <time="3">
+#001 Game Over
+#011 Continue
+
+-------------------------------------------------------------------
+ [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+
+  [OST]
+  Dai Makaimura -G.S.M. Capcom 1- / Alfh Lyra
+  Pony Canyon / Scitron  D28B0011  Jan 11, 1989
+
+  Game Music of The Year 1989
+  Pony Canyon / Scitron  PCCB-00022  Mar 21, 1990
+
+  Suleputer Trial
+  Suleputer  CFCP-0001  May 31, 1998
+
+  Maximo Original Soundtrack
+  Suleputer  CPCA-1058  Mar 6, 2002
+
+// List Contribution by NK
+$end

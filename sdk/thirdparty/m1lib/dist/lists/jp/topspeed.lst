@@ -1,0 +1,50 @@
+﻿$name=topspeed
+$version=2
+$default=$0b
+$songmax=$f3
+$main
+
+$0b Credit
+$03 Hit and Run (Stage 1)
+$04 Run Red Light (Stage 2)
+$05 O･N･D･O (Stage 3)
+$06 Sleeping the Pike Man (Stage 4)
+$07 I Just Lose One's Senses (Stage 5)
+$08 Time Saving (Ending)
+$09 Accel #1 (Name Entry)
+$0a Game Over
+
+$f1 PCM Test
+$f2 FM Test <time="4">
+$f3 Speaker Check <time="12.5">
+
+-----------------------------------------
+ [S.E.]
+
+$0c [S.E.]
+$0e [S.E.]
+$0f [S.E.] <time="4">
+$10 [S.E.]
+$11 [S.E.] <time="4">
+$12 [S.E.]
+$13 [S.E.]
+$14 [S.E.]
+$15 [S.E.]
+$17 [S.E.]
+$19 [S.E.]
+$1a [S.E.]
+$1c [S.E.]
+$1d [S.E.] <time="4">
+$1e [S.E.] <time="4">
+$26 [S.E.]
+$27 [S.E.]
+$2b [S.E.]
+
+  ■出典
+  NINJA WARRIORS -G.S.M. TAITO 1-
+  PONY CANYON / SCITRON  D28B0001  1988.06.21
+
+  ■作曲
+  高木 正彦 (Mar.)
+
+$end

@@ -1,0 +1,20 @@
+﻿$name=totmejan
+$version=2
+$default=1
+$main
+
+#001 COIN
+#040 OPENING
+#042 BGM 1
+#032 BGM 2
+#034 CASINO
+#036 REACH (PLAYER)
+#038 REACH (CPU)
+
+#048 - [SFX]
+#064 - #083 [Voice]
+#084 - [SFX]
+#092 - #100 [Voice]
+#101 - [SFX]
+
+$end

@@ -1,0 +1,41 @@
+﻿$name=4dwarrio
+$version=2
+$default=144
+$main
+
+#144 CREDIT
+#129 READY
+#130 BGM 1
+#135 BGM 2
+#136 BGM 3
+#137 BGM 4
+#131 BGM 5 (AREA 4)
+#132 TRY TO NEXT ENEMY
+#162 MISS
+#133 GAME OVER
+#134 NAME ENTRY
+
+-------------------------------
+ [S.E.]
+
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#166 [S.E.]
+#167 [S.E.]
+#168 [S.E.]
+
+// List contributed by NK
+$end

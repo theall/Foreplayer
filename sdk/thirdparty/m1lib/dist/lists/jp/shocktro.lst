@@ -1,0 +1,45 @@
+﻿$name=shocktro
+$version=2
+$default=002
+$fixed_volume=157
+$main
+
+#002 NeoGeo Logo
+
+#071 Shock Troopers (オープニングデモ)
+#074 操作説明BGM (説明操作)
+#064 Select (モード, プレイヤー, ステージ, 迂回セレクト)
+#038 Ride on (ジャングル1, ジャングル5前半, 渓谷1前半, 渓谷5, 山岳1, 山岳5)
+#040 Neo Tokyo2015 (渓谷1後半, 山岳2前半, ジャングル2前半)
+//#041 Neo Tokyo2015
+//#033 Neo Tokyo2015
+#035 ジャングリズム (ジャングル2後半, 渓谷3後半, 山岳2後半)
+#067 Remark #1 (中間ステージ)
+//#050 Remark #1
+//#068 Remark #1
+//#069 Remark #1
+#072 Remark #2 (中間デモ)
+#039 Undercover (ジャングル3前半, 渓谷3前半, 山岳3前半)
+#037 Bumpers (渓谷2, ジャングル3後半, 山岳3後半)
+//#045 Bumpers
+//#044 Bumpers
+#042 Nu Era of Technorogy (ジャングル4, ジャングル5後半, 渓谷4, 山岳4)
+//#043 Nu Era of Technorogy
+//#036 Nu Era of Technorogy
+#034 Dark Matter (ボスA)
+#048 Breakbeat Science (ボスB)
+#065 Stage Clear BGM
+#066 Last Stage (最終ステージ)
+#049 Last Boss (最終ボス)
+#070 Last Boss Clear BGM (最終ボスクリア)
+
+#051 Talk Darty to Me (エンディング)
+//#052 Talk Darty to me
+#073 ランキングBGM (ランキング)
+
+  ■出典
+  ショックトルーパーズ セカンドスカッド / ショックトルーパーズ
+  PONY CANYON / SCITRON   PCCB-00355  1999.01.20
+
+// List by Fuj
+$end

@@ -1,0 +1,110 @@
+﻿$name=narc
+$version=2
+$default=133
+$main
+
+#133 [S.E.] CREDIT <time="5">
+#007 THE JUNKYARD (SECTOR 1-1, 1-3)
+#008 THE PIPELINE (SECTOR 1-2)
+#009 KRAK STREET (SECTOR 2-1)
+#008 K.R.A.K. STOP (SECTOR 2-2)
+#006 THE BRIDGE (SECTOR 3-1) 
+#001 SUNSET STRIP (SECTOR 4-1)
+#003 SWAMP (SECTOR 4-2)
+#066 SKYHICH'S NURSERY (SECTOR 5-1) 
+#008 THE GREEN HOUSE (SECTOR 5-2) 
+#007 DOWN TOWN (SECTOR 6-1) 
+#009 THE K.R.A.K. LOBBY (SECTOR 6-2) 
+#008 RED LEVEL 1 (SECTOR 6-3) 
+#002 BLUE LEVEL 2 (SECTOR 6-4) 
+#066 MR. BIG'S OFFICE (SECTOR 7-1)
+#011 INNER SANCTUM (SECTOR 8-1, 8-2) 
+#006 CONGRATULATIONS !
+#004 NAME ENTRY
+#135 GAME OVER <time="5">
+
+#010 未使用曲 1
+#005 未使用曲 2
+#064 未使用曲 3
+#065 未使用曲 4
+#067 未使用曲 5
+#154 未使用曲 6
+
+---------------------------------------------------
+  [S.E.]
+
+#128 [S.E.] <time="7">
+#129 [S.E.] <time="5">
+#130 [S.E.] <time="5">
+#131 [S.E.] <time="3">
+#132 [S.E.] <time="5">
+#133 [S.E.] CREDIT <time="5">
+#134 [S.E.] <time="5">
+#135 [S.E.] <time="5">
+#136 [S.E.] <time="5">
+#137 [S.E.] <time="3">
+#138 [S.E.] <time="3">
+#139 [S.E.] <time="5">
+#140 [S.E.] <time="5">
+#141 [S.E.] <time="3">
+#142 [S.E.] <time="3">
+#143 [S.E.] <time="5">
+#144 [S.E.] <time="15">
+#145 [S.E.] <time="15">
+#146 [S.E.] <time="15">
+#147 [S.E.] <time="3">
+#148 [S.E.] <time="3">
+#149 [S.E.] <time="3">
+#150 [S.E.] <time="3">
+#151 [S.E.] <time="3">
+#152 [S.E.] <time="3">
+#153 [S.E.] <time="3">
+#155 [S.E.] <time="3">
+#156 [S.E.] <time="3">
+#157 [S.E.] <time="3">
+#158 [S.E.] <time="3">
+#159 [S.E.] <time="5">
+#160 [S.E.] <time="3">
+#161 [S.E.] <time="3">
+#162 [S.E.] <time="3">
+#163 [S.E.] <time="3">
+#164 [S.E.] <time="3">
+#165 [S.E.] <time="3">
+#166 [S.E.] <time="5">
+#167 [S.E.] <time="3">
+#168 [S.E.] <time="3">
+#169 [S.E.] <time="3">
+#170 [S.E.] <time="3">
+#171 [S.E.] <time="3">
+#172 [S.E.] <time="3">
+#173 [S.E.] <time="3">
+#176 [S.E.] <time="3">
+#177 [S.E.] <time="3">
+#178 [S.E.] <time="3">
+#179 [S.E.] <time="5">
+#180 [S.E.] <time="3">
+#181 [S.E.] <time="3">
+#182 [S.E.] <time="3">
+#183 [S.E.] <time="3">
+#184 [S.E.] <time="3">
+#185 [S.E.] <time="3">
+#186 [S.E.] <time="5">
+#187 [S.E.] <time="3">
+#188 [S.E.] <time="3">
+#189 [S.E.] <time="3">
+#192 [S.E.] <time="3">
+#206 [S.E.] <time="3">
+#207 [S.E.] <time="3">
+#208 [S.E.] <time="5">
+#209 [S.E.] <time="3">
+#210 [S.E.] <time="3">
+#211 [S.E.] <time="3">
+#212 [S.E.] <time="3">
+#217 [S.E.] <time="3">
+#218 [S.E.] <time="3">
+#240 [S.E.] <time="3">
+#241 [S.E.] <time="3">
+#242 [S.E.] <time="3">
+
+// List contribution by ZEK.
+$end

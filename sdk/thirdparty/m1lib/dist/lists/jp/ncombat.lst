@@ -1,0 +1,40 @@
+﻿$name=ncombat
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#005 OPENING
+#006 THE HEAVY RESPONSIBILITIES OF THE NINJA COMBAT (ステージ1)
+#028 BGM A
+#009 BATTLE ACT 1 (ボス1、ボス5)
+#016 STAGE CLEAR 1
+#015 STAGE CLEAR 2
+#020 SELECT
+#007 GOLDEN GATE BRIDGE (ステージ2)
+#017 BATTLE ACT 2 (ボス2)
+#008 NEW YORK UNDERGROUND (ステージ3)
+#024 BGM C
+#018 BATTLE ACT 3 (ボス3)
+#023 総攻撃 (FINAL VERSION)
+#004 潜入 (ステージ4)
+#027 BGM B
+#026 BATTLE ACT 4 (ボス4)
+#013 DANGEROUS LIFE (ステージ5)
+#019 NINJA ROMANTICS (ステージ6)
+#021 BATTLE ACT 6 (ボス6)
+#011 LAST CHANCE OF YOUR LIFE (ステージ7)
+#025 美しき人生 (プリボス)
+#022 BATTLE ACT 7 (ボス7)
+#012 地平の扉 (エンディング)
+#014 GAME OVER
+
+#010 未使用曲1
+#029 未使用曲2
+
+  ■出典
+  ザ・スーパースパイ、ニンジャコンバット / SNK
+  PONY CANYON / SCITRON  PCCB-00046  1990.11.21
+
+// List Contribution by NK
+$end

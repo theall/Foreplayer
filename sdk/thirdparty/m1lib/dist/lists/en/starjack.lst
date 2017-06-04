@@ -1,0 +1,27 @@
+﻿$name=starjack
+$version=2
+$default=147
+$songmax=149
+$main
+
+#147 Start
+#132 BGM 1 -Space-
+#133 BGM 1a -Planet-
+#136 BGM 2 -Fortress-
+#138 BGM 2a -Fortress-
+#149 Warp
+#137 BGM 3 -Escape-
+#148 Clear
+#130 Name Entry
+
+-----------------------------------------
+ [SFX]
+
+#134 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX] Extend
+#144 [SFX]
+
+$end

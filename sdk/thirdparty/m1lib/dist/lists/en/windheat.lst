@@ -1,0 +1,28 @@
+﻿$name=windheat
+$version=2
+$default=267
+$main
+
+#267 Konami Logo
+#258 Check the Beat (Title Screen)
+#259 Winding Beat (Course Selection)
+#260 Dance! (Novice)
+#261 Yo! Man! (Intermidiate)
+#262 One, Two, Three, Four (Expert)
+#264 Speed (Finish)
+#265 Game Over
+#266 Twilight (Credits)
+#263 Black Heat (Name Entry)
+
+#257 Speaker Test
+
+  [Source]
+  GTI Club c/w Jet Wave & Winding Heat Original Game Soundtrack
+  King Records  KICA-7751  Feb 5, 1997
+
+  [Composed]
+  Mutsuhiko Izumi
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

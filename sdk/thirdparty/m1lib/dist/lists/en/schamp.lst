@@ -1,0 +1,40 @@
+﻿$name=schamp
+$version=2
+$default=016
+$main
+
+#016 K.I.Y.O. (Advertise)
+#005 Get into the Wave 2 (Character Select)
+#007 Are You Ready? (Game Start)
+#004 Lovers (South Island)
+#023 Back to Soul (Flying Carpet)
+#003 Black Bed (Aurora Icefield)
+#001 Come on, Mr. Sonic (Mushroom Hill)
+#002 Blue Garden (Canyon Cruise)
+#022 Here We Go (Casino Night)
+#013 Try Again (Dynamite Plant)
+#017 Fire Stone (Giant Wing)
+#010 Emerald (Chaos Emerald)
+#018 Never Let It Go (Death Egg's Eye)
+#015 Hurry Up (Death Egg's Hanger)
+#024 Egg's Fanfare (Mission Complete)
+#019 Everything (Super Sonic)
+#012 North Wind (Sonic Vs. Knuckles)
+#011 Winner's Fanfare (You Are Winner)
+#021 What's Your Name? (Name Entry)
+#020 Take Me Away (Ending Theme)
+#008 Continue
+#009 Game Over
+
+#000 Character Select (Alt.)
+#006 Sunset Town (Unused 1)
+#014 Unused
+
+  [OST]
+  Sonic the Fighters Sound Tracks
+  Toshiba EMI  TYCY-5521  Dec 7, 1996
+
+  [Sound Composers]
+  Maki Morou, Takenobu Mitsuyoshi
+
+$end

@@ -1,0 +1,30 @@
+﻿$name=finehour
+$version=2
+$default=$30
+$songmax=$36
+$main
+
+$30 [Voice] Finest Hour
+$08 Theme of Sygnas (Credits Roll)
+$16 March
+$14 [SFX] -Noise in Battle-
+$1a Jungle (Stage 1, 4)
+$25 Clear
+$1c Desert (Stage 2)
+$1d Stage X  - BGM (Unused)
+$1f Name Entry
+$2b Enemy Fortress (Armory) (Stage 3)
+$2f Ultimate Weapon Gel-Faust (Stage 4, Final Boss)
+$0e Continue Music
+$31 All Clear Music
+$01 [Voice] -Cheers-
+$36 Ending
+
+  [Source]
+  Finest Hour / Namco Game Sound Express Vol.3
+  Victor Entertainment  VICL-15004  Sep 21, 1990
+
+  [Sound Composer]
+  Katsurou Tajima
+
+$end

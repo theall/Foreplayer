@@ -1,0 +1,83 @@
+﻿$name=renegade
+$version=2
+$default=176
+$main
+
+#176 [Voice] "Good luck, kid!" (Credit)
+#135 Showdown
+#129 Mission 1
+#136 Mission Complete
+#130 Mission 2 Part 1
+#131 Mission 2 Part 2
+#132 Mission 3
+#133 Mission 4 Part 1
+#141 Mission 4 Part 2
+#139 Ending
+#137 Defeat
+#140 Game Over
+#134 Name Entry
+
+----------------------------------------------------------------------------
+ [Voice]
+
+#176 [Voice] "Good luck, kid!" (Credit)
+#183 [Voice] "Get lost, punk!" (Mission 1 Boss - Jack)
+#185 [Voice] "Beat it, scum!" (Mission 2 Boss - Joel)
+#181 [Voice] "Giving up already?" (Mission 3 Boss - Kim)
+#182 [Voice] "Get outta town!" (Mission 4 Boss - Sabu)
+#180 [Voice] "Hummn!" (Hero - Mr. K)
+#184 [Voice] "Aahhh..." (Women)
+#187 [Voice] "Wahhh..." (Men)
+
+----------------------------------------------------------------------------
+ [SFX]
+
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#186 [SFX]
+
+  [Source]
+  Nekketsu Kouha Kunio-kun Sound Story
+  Apollon  KHY-1013  Mar 05, 1987
+// Released on Cassette
+
+  Kunio-kun Sound Collection - Downtown Nekketsu Monogatari, etc.
+  Apollon  C228-5008  Jun 05, 1989
+// Released on CD
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// English List Contributed by NK
+$end

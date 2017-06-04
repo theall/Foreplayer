@@ -1,0 +1,83 @@
+﻿$name=baddudes
+$version=2
+$default=5
+$main
+
+#005 [S.E.] CREDIT
+#031 怒りの鉄拳 (MAIN BGM 1)
+#038 忍者火流野夫 (st.1 BOSS)
+#034 CLEAR
+#032 電光石火 (MAIN BGM 2)
+#033 龍の忍者 (BOSS)
+#037 ENDING THEME (US版)
+#035 GAME OVER
+
+------------------------------------------------------------
+ [S.E.]
+
+#005 [S.E.] CREDIT
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.] Lift
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.] Alert
+#039 [S.E.]
+#040 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#061 [S.E.]
+
+------------------------------------------------------------
+ [Voice]
+
+#041 [Voice] (main char) Yaaa
+#042 [Voice] (main char) uh (hit)
+#043 [Voice] (main char) aaaaahhh (dying)
+#044 [Voice] (main char) uah
+#045 [Voice] (main char) Power up !
+#053 [Voice] (main char) Got it (bonus)
+#054 [Voice] (main char) I'm bad !
+#046 [Voice] (Forest boss) ouaaaaah (shout)
+#047 [Voice] (Forest boss) aaahh (dying)
+#048 [Voice] (girl) yah !
+#049 [Voice] (girl) uh !
+#050 [Voice]
+#051 [Voice] Dog barking
+#052 [Voice] Dog hit
+#055 [Voice]
+#058 [Voice]
+#059 [Voice] Ninja Boss magic
+#060 [Voice]
+#062 [Voice]
+#063 [Voice] Crow cheering
+#064 [Voice]
+
+  ■出典
+  DECO HISTORY SCENE I / DATA EAST GAME MUSIC SCENE ONE 
+  POLYSTAR / DATAM  H25X-20008  1988.09.25
+
+  ■作曲
+　AZUSA.HARA, MARO
+
+// List contribution by R
+// Voice by CrashTest
+$end

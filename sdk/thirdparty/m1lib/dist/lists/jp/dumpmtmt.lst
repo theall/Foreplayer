@@ -1,0 +1,113 @@
+﻿$name=dumpmtmt
+$version=2
+$default=136
+$main
+
+#001 [Voice] 17 <time="2">
+#136 [S.E.] Credit <time="2.5">
+#162 Team Select <time="34">
+#167 [S.E.] ゴング <time="2.7">
+#135 Round 1
+#027 [Voice] マジだぜ<time="2.2">
+#158 Round 2
+#019 [Voice] ダンプの登場です！ <time="2.2">
+#159 Round 3
+#160 Game Over <time="8">
+#028 [Voice] やってよな<time="2.5">
+#166 未使用曲（Body Slam Rank Name) <time="9">
+
+#163 Team Select(Long Ver)
+#161 未使用曲 <time="13">
+
+---------------------------------------------------
+ [S.E.]
+
+#136 [S.E.] コイン <time="3">
+#137 [S.E.] <time="3">
+#138 [S.E.] <time="3">
+#139 [S.E.] <time="3">
+#140 [S.E.] <time="3">
+#141 [S.E.] <time="3">
+#142 [S.E.] <time="3"> 
+#143 [S.E.] <time="3">
+#144 [S.E.] <time="5">
+#146 [S.E.] <time="3"> 
+#147 [S.E.] <time="3">
+#148 [S.E.] <time="3"> 
+#149 [S.E.] <time="3">
+#150 [S.E.] <time="3">
+#151 [S.E.] <time="3">
+#152 [S.E.] <time="3"> 
+#153 [S.E.] <time="3"> 
+#154 [S.E.] <time="3"> 
+#155 [S.E.] <time="3"> 
+#156 [S.E.] 決定 <time="3">
+#157 [S.E.] <time="3"> 
+#167 [S.E.] ゴング <time="3"> 
+#168 [S.E.] <time="3"> 
+#008 [S.E.] <time="6">
+#031 [S.E.] <time="6">
+
+---------------------------------------------------
+ [Voice]
+
+#032 [Voice] ファイト！ <time="2">
+#010 [Voice] ブレイク！ <time="2">
+#012 [Voice] 物を投げないで下さい！ <time="2.7">
+#013 [Voice] ダンプー！松本ー！！ <time="3">
+#018 [Voice] おし攻撃だぁ！ <time="3">
+#019 [Voice] ダンプの登場です！ <time="2.3">
+#020 [Voice] 赤コーナー！ <time="2">
+#021 [Voice] チャンピオンです！ <time="2">
+#025 [Voice] ワー！危ない！！ <time="2">
+#026 [Voice] こんのやろぉ～ <time="2.5">
+#027 [Voice] マジだぜ <time="2.3">
+#028 [Voice] やってよな <time="2.5">
+#029 [Voice] ざけんじゃねーよ <time="2.5">
+#030 [Voice] うるせーんだよ <time="2.5">
+#033 [Voice] ダーンープ！ <time="2.5">
+#034 [Voice] このやろぉ！ <time="2.5">
+#035 [Voice] このやろおぉ！ <time="2.5">
+#036 [Voice] えぇっ！？ <time="2">
+#037 [Voice] うっそー <time="2">
+#038 [Voice] やだぁん <time="2.5">
+#039 [Voice] キャアァ！ <time="2.5">
+#040 [Voice] かーえーれ！<time="2.5">
+#005 [Voice] 1 <time="1.5">
+#006 [Voice] 2 <time="1.5">
+#007 [Voice] 3 <time="1.5">
+#164 [Voice] 歓声 1 <time="5">
+#165 [Voice] 歓声 2 <time="5">
+#014 [Voice] 1 <time="1.5">
+#015 [Voice] 2 <time="1.5">
+#016 [Voice] 3 <time="1.5">
+#022 [Voice] 4 <time="1.5">
+#023 [Voice] 5 <time="1.5">
+#009 [Voice] 6 <time="1.5">
+#024 [Voice] 7 <time="1.5">
+#017 [Voice] 8 <time="1.5">
+#041 [Voice] 9 <time="1.5">
+#042 [Voice] 10 <time="1.8">
+#043 [Voice] 11 <time="1.8">
+#044 [Voice] 12 <time="1.8">
+#045 [Voice] 13 <time="1.8">
+#046 [Voice] 14 <time="1.8">
+#047 [Voice] 15 <time="1.8">
+#048 [Voice] 16 <time="1.8">
+#001 [Voice] 17 <time="1.8">
+#002 [Voice] 18 <time="1.8">
+#003 [Voice] 19 <time="1.8">
+#004 [Voice] 20 <time="1.8">
+#011 [Voice] リングアウト！<time="2">
+
+---------------------------------------------------
+
+#129 [FM] High Tom <time="3">
+#130 [FM] Mid Tom <time="3">
+#131 [FM] Low Tom <time="3">
+#132 [FM] Snare Drum <time="3">
+#133 [FM] <time="3">
+#134 [FM] Bass Drum <time="3">
+
+// List contribution by ZEK.
+$end

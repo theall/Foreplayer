@@ -1,0 +1,26 @@
+﻿$name=citybomb
+$version=2
+$default=$5d
+$songmax=$5e
+$fixed_volume=189
+$main
+
+$5d Running Away (スタートデモBGM)
+$52 Escape～Area1 (ステージ1 BGM)
+$53 Escape～Area2 (ステージ2 BGM)
+$5a Clear (ステージクリア)
+$50 Escape～Area3 (ステージ3 BGM)
+$51 Escape～Area4 (ステージ4 BGM)
+$5b Game Over (ゲームオーバー)
+$55 Escape～Area5 (ステージ5 BGM)
+$54 Fleer (隠しステージBGM)
+$59 Ranking (ランキングBGM)
+$5e Success (エンディングBGM)
+
+$34 [S.E.] Power Up!
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.0
+  KING RECORDS  276A-7708  1989.07.21
+
+$end

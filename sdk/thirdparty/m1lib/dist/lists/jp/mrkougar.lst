@@ -1,0 +1,20 @@
+﻿$name=mrkougar
+$version=2
+$default=21
+$main
+
+#021 Insert coin
+#027 BGM 1 (Stage 1)
+#012 BGM 2
+#015 BGM 3
+#018 BGM 4
+#024 BGM 5 (Wedding March)
+#030 BGM 6
+#033 BGM 7
+#036 BGM 8
+#039 BGM 9
+#042 BGM 10
+#045 BGM 11
+#048 BGM 12
+
+$end

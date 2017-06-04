@@ -1,0 +1,148 @@
+﻿$name=tmnt
+$version=2
+$default=$7d
+$main
+
+$7d Opening Demo
+$76 Title (JP Ver, Title logo)
+$78 Profeel (Character Profiles)
+$6f Let's Start (Selection)
+$63 Fire! (Scene 1, Stage 1)
+$68 April's Room (Scene 1, Stage 2)
+$64 Fight! (Boss)
+$72 Danger (Demonstration)
+$67 Down Town (Scene 2, Stage 1)
+$73 Clear Two (Cleared 2)
+$65 Underground (Scene 2, Stage 2)
+$6e Clear One (Cleared 1)
+$66 Parking Lot (Scene 2, Stage 3)
+$61 It's a Party (Scene 3, Stage 1)
+$60 Highway Chaser (Scene 3, Stage 2)
+$66 Factory (Scene 4, Stage 1)
+$75 Technodome
+$69 Battle of T.M.N.T. (Scene 5, Stage 1)
+$62 Krang (Boss)
+$6a Shredder (Final Boss)
+$77 Continue
+$6d Game Over
+$6c Epilogue
+$70 Turtle Boogie (Credits)
+$71 Ranking
+
+-----------------------------------------
+
+$01 [SFX]
+$02 [SFX]
+$03 [SFX]
+$04 [SFX]
+$05 [SFX]
+$06 [SFX]
+$07 [SFX]
+$08 [SFX]
+$09 [SFX]
+$0a [SFX]
+$0b [SFX]
+$0c [SFX]
+$0d [SFX]
+$0e [SFX]
+$0f [SFX]
+$10 [SFX]
+$11 [SFX]
+$12 [SFX]
+$13 [SFX]
+$14 [SFX]
+$15 [SFX]
+$16 [SFX]
+$17 [SFX]
+$18 [SFX]
+$19 [SFX]
+$1a [SFX]
+$1b [SFX]
+$1c [SFX]
+$1d [SFX]
+$1e [SFX]
+$1f [SFX]
+$20 [SFX]
+$21 [SFX]
+$22 [SFX]
+$23 [SFX]
+$24 [SFX]
+$25 [SFX]
+$26 [SFX]
+$27 [SFX]
+$28 [SFX]
+$29 [SFX]
+$2a [SFX]
+$2b [SFX]
+$2c [SFX]
+$2d [SFX]
+$2e [SFX]
+$2f [SFX]
+$30 [SFX]
+$31 [SFX]
+$32 [SFX]
+$33 [SFX]
+$34 [SFX]
+$35 [SFX]
+$36 [SFX]
+$37 [SFX]
+$38 [SFX]
+$39 [SFX]
+$3a [SFX]
+$3b [SFX]
+$3c [SFX]
+$3d [SFX]
+$3e [SFX]
+$3f [SFX]
+$40 [SFX]
+$41 [SFX]
+$84 [SFX]
+$85 [SFX]
+#134 [Voice] Cowabunga!
+#135 [SFX]
+#136 [Voice] Noooooooo!
+#137 [SFX] 
+#138 [SFX] 
+#139 [Voice] NO No No no.
+#140 [SFX] 
+#141 [Voice] Cowabunga!
+#142 [Voice] Noooooooo! (Alt)
+#143 [Voice] Gaahhh!
+
+#162 [SFX] 
+#167 [Voice] Hahahaha,ha! (Shredder)
+#168 [SFX] 
+#169 [Voice] Hang on, April.
+#170 [Voice] We gotta save Splinter!
+#171 [Voice] Let's move it. (April)
+#172 [Voice] There it is!
+#173 [Voice] You're dead (snort), shell brain.
+#174 [Voice] Say your prayers, toitles.
+#175 [Voice] Tonight, I dine on turtle soup. (Shredder)
+#176 [Voice] I'm invincible! (Krang)
+#177 [Voice] Crush the turtles!
+#178 [Voice] Do not resist us.
+#179 [Voice] Attaaaack!
+#180 [Voice] Thank you, my turtles. (Splinter)
+#181 [Voice] Hang on, guys.
+#182 [Voice] Fire!!
+#183 [Voice] Pizza time.
+#184 [Voice] Speedy
+#185 [Voice] Zappy
+#186 [Voice] Aaahhhhh!
+#187 [Voice] Oh, Shell shock.
+#188 [Voice] Duuuh, who put the light out?
+#189 [Voice] They ain't getting any prettier.
+#190 [Voice] Watch your mouth (snort), slime ball.
+#191 [Voice] Yippee I Aye.
+#192 [Voice] Oh, no! It's that overgrown corkscrew again!
+#193 [Voice] Help me! (April)
+#194 [Voice] Come and get 'em, shell brain.
+#195 [Voice] I owe you one. (April)
+
+  [Source]
+  Konami Special Music Senryoubako, Heiesei 3-nendo ban
+  King Records  KICA-9005-9008  Dec 21, 1990
+
+//Fixes by Yawachary
+$end

@@ -1,0 +1,26 @@
+﻿$name=legionna
+$version=2
+$default=16
+$main
+#016 BGM 1
+#018 BGM 2
+#020 BGM 3
+#022 BGM 4
+#024 BGM 5
+#026 BGM 6
+#028 BGM 7
+#030 BGM 8
+#032 BGM 9
+#034 BGM 10
+#036 BGM 11
+#038 BGM 12
+#040 BGM 13
+#042 BGM 14
+#046 BGM 15
+#120 BGM 16
+
+#001 - 015 [SFX]
+#048 - 119 [Voice] and [SFX]
+#122 - 124 [SFX]
+
+$end

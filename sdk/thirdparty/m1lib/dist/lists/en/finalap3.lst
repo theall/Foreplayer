@@ -1,0 +1,44 @@
+﻿$name=finalap3
+$version=2
+$default=005
+//$songmax=259
+$main
+
+#005 Introduction (Attract Demo)
+#001 Around Europe (Entry)
+#003 Battle Is Over (Ending 1)
+#004 After (Ending 2)
+//#000 Drivers (Unused)
+
+#002 Around Europe #2 (ENTRY #2)
+#256 Speaker Check
+
+// #001 and #002 are "Around THE Europe" in the original source.
+----------------------------------------------------------------
+
+#015 [Voice] England
+#016 [Voice] France
+#017 [Voice] San Marino
+#018 [Voice] Spain
+#019 [Voice] Go!
+#020 [Voice] 5 laps to go
+#021 [Voice] 4 laps to go
+#022 [Voice] 3 laps to go
+#023 [Voice] 2 laps to go
+#024 [Voice] Final lap!
+#025 [Voice] Finish!
+#026 [Voice] Congratulations
+
+#257 [SFX] Time tones
+#258 [SFX] Extended
+#259 Start
+#000 [SFX] Engine Sound <time="5">
+
+  [Source]
+  Namco Video Game Graffiti Vol.8
+  Victor Entertainment  VICL-8074  Apr 21, 1993
+
+  [Sound Composer]
+  Masahiro Fukuzawa (Charly)
+
+$end

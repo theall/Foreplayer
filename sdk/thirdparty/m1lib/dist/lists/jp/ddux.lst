@@ -1,0 +1,26 @@
+﻿$name=ddux
+$version=2
+$default=137
+$songmax=011
+$fixed_volume=100
+
+$main
+
+#137 なんてったって　あ・ひ・る (ROUND 1)
+#133 日本 A-CHA-CHA (ROUND 2)
+#138 DUCK OF DUX (BOXING)
+#139 LUCKY DUCKY BABY (BOXING WIN)
+#134 NO DUX NO CRY (ROUND 3)
+#132 岩石ロック (BOSS 1)
+#135 暗闇でDUX (ROUND 4)
+#130 だってアヒルなんだもん (ROUND 5)
+#131 A-CHA-CHA THE CASTLE (ROUND 6)
+#136 DUCK AROUND THE CLOCK (BOSS 2)
+#129 南国LUCKY (UNUSED)
+
+  ■出典
+  POWER DRIFT & MEGA DRIVE GSM SEGA2 / S.S.T.BAND
+  PONY CANYON / SCITRON  D28B0002  1988.12.28
+
+// List contribution by Yakza
+$end

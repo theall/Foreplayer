@@ -1,0 +1,562 @@
+﻿$name=sfa2
+$version=2
+$default=062
+$songmax=894
+$fixed_volume=172
+$main
+
+#062 Q Sound Logo
+
+&lt;DISC 1&gt;
+#019 Opening <time="0:46">
+#189 [Voice] Street Fighter Zero 2
+#018 Stage SAKURA <time="1:47.1">
+#015 Stage ZANGIEF <time="2:31.5">
+#001 Stage RYU <time="1:53">
+#003 Stage CHUN-LI <time="1:54">
+#005 Stage SODOM <time="2:30">
+// "Final Fight"(Round 1-2 & 2-1) のアレンジ曲
+#007 Stage BIRDIE <time="1:44">
+#009 Stage NASH <time="1:57.3">
+#013 Stage DAN <time="3:00">
+#052 Before Final Battle <time="0:26.3">
+//サントラ未収録
+#012 Stage VEGA <time="2:11">
+#022 Stage End 
+#023 Continue <time="0:38.5">
+#024 Here Comes A New Challenger
+#048 Ending SAKURA 1 <time="1:34.5">
+#049 Ending SAKURA 2 <time="0:30.5">
+#044 Ending ZANGIEF 1 <time="0:31">
+#056 Ending ZANGIEF 2 <time="1:04.5">
+#028 Ending RYU 1
+#029 Ending RYU 2 <time="0:50">
+#031 Ending CHUN-LI <time="1:26">
+#033 Ending SODOM <time="1:38">
+// "Final Fight"(Round 1-2) のアレンジ曲
+#036 Ending BIRDIE <time="1:22.5">
+#038 Ending NASH 1 <time="0:31">
+#055 Ending NASH 2 <time="1:32">
+#042 Ending DAN 
+#054 Ending VEGA <time="0:50">
+#050 Staff Roll 1 <time="1:44">
+#051 Staff Roll 2 <time="3:53">
+#058 Before SAGAT VS RYU <time="0:21.2">
+//サントラ未収録
+#053 Stage SAGAT VS RYU <time="2:23.5">
+
+&lt;DISC 2&gt;
+#020 Player Select <time="0:54">
+#021 Versus
+#014 Stage DHALSIM <time="2:06">
+#017 Stage ROLENTO <time="2:44">
+// "Final Fight"(Round 5-1) のアレンジ曲
+#016 Stage GEN <time="1:45">
+#002 Stage KEN <time="2:07">
+#004 Stage SAGAT <time="2:59">
+#008 Stage GUY <time="2:44.5">
+// "Final Fight"(Round 1-1) のアレンジ曲
+#006 Stage ADON <time="2:09.8">
+#010 Stage ROSE <time="1:36">
+#011 Stage GOUKI <time="1:53.5">
+#025 Game Over
+#026 Ranking Display 1
+#027 Ranking Display 2
+#043 Ending DHALSIM <time="1:10">
+#047 Ending ROLENTO <time="1:44">
+#046 Ending GEN 1 <time="1:02">
+#045 Ending GEN 2 <time="0:54.5">
+#030 Ending KEN <time="1:30">
+#032 Ending SAGAT 
+#037 Ending GUY 
+#035 Ending ADON 1 <time="1:12">
+#034 Ending ADON 2 <time="0:29.5">
+#039 Ending ROSE 
+#041 Ending GOUKI 1 <time="1:07">
+#040 Ending GOUKI 2 <time="0:58">
+#057 Staff Roll 3 <time="1:58">
+
+#063 (unused)
+//サントラ未収録
+
+-----------------------------------------------------
+ [Voice]
+
+#161 [Voice] Round 1
+#162 [Voice] Round 2
+#163 [Voice] Round 3
+#164 [Voice] Round 4
+#165 [Voice] Round 5
+#166 [Voice] Final Round
+#167 [Voice] Fight
+#168 [Voice] K.O.
+#169 [Voice] You Win
+#170 [Voice] You Lose
+#171 [Voice] Perfect
+#172 [Voice] Draw Game
+#173 [Voice] Time Over
+#174 [Voice] Game Over
+#175 [Voice] K.O.
+#176 [Voice] 0
+#177 [Voice] 1
+#178 [Voice] 2
+#179 [Voice] 3
+#180 [Voice] 4
+#181 [Voice] 5
+#182 [Voice] 6
+#183 [Voice] 7
+#184 [Voice] 8
+#185 [Voice] 9
+#186 [Voice] Street Fighter Zero
+#187 [Voice] Street Fighter Alpha
+#188 [Voice] 2
+#189 [Voice] Street Fighter Zero 2
+#190 [Voice] Street Fighter Alpha 2
+
+  RYU
+#384 [Voice] 波動拳
+#385 [Voice] 昇龍拳
+#386 [Voice] 竜巻旋風脚
+#387 [Voice] 真空
+#388 [Voice] フッ！
+#389 [Voice] ハッ！
+#390 [Voice] ィヤッ！
+#391 [Voice] ウッ‥
+#392 [Voice] ウワッ‥
+#393 [Voice] アァァ‥
+#394 [Voice] ウワァァ…
+
+  KEN
+#395 [Voice] 波動拳
+#396 [Voice] 昇龍拳
+#397 [Voice] 竜巻旋風脚
+#398 [Voice] いくぜ！
+#399 [Voice] 昇龍裂破
+#400 [Voice] 神龍拳
+#401 [Voice] ハッ！
+#402 [Voice] イヤァッ！
+#403 [Voice] フッ！
+#404 [Voice] やったぜ！
+#405 [Voice] ウッ‥
+#406 [Voice] ウワッ‥
+#407 [Voice] ウゥッ‥
+#408 [Voice] ゥワアァァ…
+
+  GUY
+#476 [Voice] いざ！
+#477 [Voice] 必殺！
+#478 [Voice] エイヤァ！
+#479 [Voice] セヤァッ！
+#480 [Voice] デヤァッ！
+#481 [Voice] フッ！
+#482 [Voice] テァァッ！
+#483 [Voice] ハアァッ！
+#484 [Voice] 悪く思うな‥
+#485 [Voice] これぞ武神流！
+#486 [Voice] ウッ‥
+#487 [Voice] ヌォォッ‥
+#488 [Voice] ゥウゥゥ‥
+#489 [Voice] ウアァァ…
+
+  NASH
+#420 [Voice] ソニックブーム
+#421 [Voice] サマーソルト
+#422 [Voice] ソニックブレイク
+#423 [Voice] フッ！
+#424 [Voice] ィイヤッ！
+#425 [Voice] フンッ！
+#426 [Voice] フン！
+#427 [Voice] Too easy !
+#428 [Voice] ウッ‥
+#429 [Voice] ウグァッ‥
+#430 [Voice] グァァッ‥
+#431 [Voice] ノオォォ…
+
+  SAGAT
+#797 [Voice] タイガー
+#798 [Voice] タイガーブロウ
+#799 [Voice] タイガークラッシュ
+#800 [Voice] タイガー‥
+#801 [Voice] ジェノサイド
+#802 [Voice] レイド
+#803 [Voice] エイッ！
+#804 [Voice] フンッ！
+#805 [Voice] ハァッ！
+#806 [Voice] アーッハッハッハッハッハ‥
+#807 [Voice] フッフッフッフッフ‥
+#808 [Voice] グッ‥
+#809 [Voice] ゥグァッ‥
+#810 [Voice] ヌゥワァァ‥
+#811 [Voice] ウオォァ…
+
+  CHUN-LI
+#432 [Voice] 気功拳
+#433 [Voice] 千裂脚
+#434 [Voice] 覇山
+#435 [Voice] 天昇脚
+#436 [Voice] ハァァァ‥!
+#437 [Voice] 気功掌
+#438 [Voice] ヤッ！
+#439 [Voice] イヤッ！
+#440 [Voice] エイッ！
+#441 [Voice] アハハハハハ…
+#442 [Voice] やったー！
+#443 [Voice] ごめんね！
+#444 [Voice] ウッ‥
+#445 [Voice] アアッ‥
+#446 [Voice] ァアアァ‥
+#447 [Voice] キャーーーァ…
+
+  ROSE
+#768 [Voice] ソウルスパーク
+#769 [Voice] ソウルスルー
+#770 [Voice] リフレクト
+#771 [Voice] 覚悟はいい？
+#772 [Voice] そこまでよ！
+#773 [Voice] ハッ！
+#774 [Voice] ハァッ！
+#775 [Voice] ヤアッ！
+#776 [Voice] それじゃあダメ！
+#777 [Voice] まだまだね‥
+#778 [Voice] やるじゃない？
+#779 [Voice] 大丈夫？
+#780 [Voice] ウッ‥
+#781 [Voice] アァッ‥
+#782 [Voice] アアァァ‥
+#783 [Voice] アアァァァ…
+
+  ADON
+#448 [Voice] ジャガー
+#449 [Voice] ジャガーキック
+#450 [Voice] ジャガートゥース
+#451 [Voice] ルルルルルルァッ！
+#452 [Voice] ホォォォオッ！
+#453 [Voice] ハァッ！
+#454 [Voice] ハァァアッ！
+#455 [Voice] アチョーッ！
+#456 [Voice] テアァ！
+#457 [Voice] Yes !
+#458 [Voice] フフフフフフ‥
+#459 [Voice] ウッ‥
+#460 [Voice] ゥオッ‥
+#461 [Voice] ウゥオッ‥
+#462 [Voice] キョオォァァ…
+
+  SODOM
+#463 [Voice] ブツメツ
+#464 [Voice] テンチュウサツ
+#465 [Voice] モウイッチョウ！
+#466 [Voice] ヌウウゥッ！
+#467 [Voice] ハッ！
+#468 [Voice] ウリャァッ！
+#469 [Voice] セイヤァッ！
+#470 [Voice] アッパレィ！
+#471 [Voice] ブレイコウ！
+#472 [Voice] ヌゥォッ‥
+#473 [Voice] グゥォッ‥
+#474 [Voice] ヌウァァ‥
+#475 [Voice] ヌカッタァァ…
+
+  VEGA
+#784 [Voice] フハハハハ‥
+#785 [Voice] サイコクラッシャー
+#786 [Voice] ヌウゥゥッ！
+#787 [Voice] 甘い！
+#788 [Voice] フッ！
+#789 [Voice] フゥッ！
+#790 [Voice] ムゥッ！
+#791 [Voice] ハッ！
+#792 [Voice] ぬるいわ！
+#793 [Voice] ヌァッ‥
+#794 [Voice] グワッ‥
+#795 [Voice] ヌゥゥアァ‥
+#796 [Voice] グワァァ…
+
+  GOUKI
+#409 [Voice] フンッ！
+#410 [Voice] ヌン！
+#411 [Voice] デヤッ！
+#412 [Voice] ゥウリャァッ！
+#413 [Voice] ンンンン‥！
+#414 [Voice] 滅殺！
+#415 [Voice] 笑止！
+#416 [Voice] ウァッ‥
+#417 [Voice] ガァッ‥
+#418 [Voice] ヌアァァ‥
+#419 [Voice] グオォォ…
+
+  BIRDIE
+#490 [Voice] ブルヘッド
+#491 [Voice] ブルホーン
+#492 [Voice] One !
+#493 [Voice] Two !
+#494 [Voice] Three !
+#495 [Voice] Four !
+#496 [Voice] Final !
+#497 [Voice] Go !
+#498 [Voice] To heaven !
+#499 [Voice] フゥッ！
+#500 [Voice] フンガァッ！
+#501 [Voice] ヌウゥァッ！
+#502 [Voice] Hey !
+#503 [Voice] You !
+#504 [Voice] I'm No.1 !
+#505 [Voice] グォッ‥
+#506 [Voice] ウゥォ‥
+#507 [Voice] ウゥォォ‥
+#508 [Voice] グウゥゥォ…
+
+  DAN
+#812 [Voice] 我道拳
+#813 [Voice] 晃龍拳
+#814 [Voice] ダァッ！
+#815 [Voice] 震空
+#816 [Voice] ウラウラウラウラウラウラ‥！
+#817 [Voice] セイヤァ！
+#818 [Voice] ハァッ！
+#819 [Voice] 行くぞオラァ！
+#820 [Voice] どしたどしたァ！
+#821 [Voice] なめんじゃねえぞ！
+#822 [Voice] おっしゃあぁ！
+#823 [Voice] ヒャッホーィ！
+#824 [Voice] やったぜ‥親父ー！
+#209 [Voice] やったぜ！
+#210 [Voice] 親父ー！
+#825 [Voice] 楽勝！
+#826 [Voice] 余裕ッス！
+#827 [Voice] いかんっ‥
+#828 [Voice] ウオァ‥
+#829 [Voice] ングハァ‥
+#830 [Voice] ウオォァァ…
+#083 [Voice] やったぜ‥親父ー！
+
+  SAKURA
+#832 [Voice] 波動拳
+#833 [Voice] 咲桜拳
+#834 [Voice] 春風脚
+#835 [Voice] 真空
+#836 [Voice] いくよ！
+#837 [Voice] フッ！
+#838 [Voice] ハァッ！
+#839 [Voice] テァッ！
+#840 [Voice] ターーァッ！
+#841 [Voice] よっ！
+#842 [Voice] っと！
+#843 [Voice] ヌウゥゥッ！
+#844 [Voice] せーのっ！
+#845 [Voice] とーーーぉっ！
+#846 [Voice] アッハハ‥
+#847 [Voice] こんなとこだね！
+#848 [Voice] アッ‥
+#849 [Voice] アアッ‥
+#850 [Voice] エェ‥ウンッ‥
+#851 [Voice] フワアァァ…
+
+  ZANGIEF
+#883 [Voice] ファイナル
+#884 [Voice] アトミック
+#885 [Voice] バスター
+#886 [Voice] ウォォオリャッ！
+#887 [Voice] フンッ！
+#888 [Voice] フオッ！
+#889 [Voice] デヤァッ！
+#890 [Voice] フリャァッ！
+#891 [Voice] ダーーァッ！
+#892 [Voice] ハラショー！
+#893 [Voice] ボリショイ・タビエータ！
+#894 [Voice] ガッハッハッハッハ‥
+#224 [Voice] ウゥッ‥
+#225 [Voice] ヌアァ‥
+#226 [Voice] ニアァァ‥
+#227 [Voice] ウアァァ…
+
+  DHALSIM
+#868 [Voice] ヨガ
+#869 [Voice] ヨガファイヤー
+#870 [Voice] ヨガフレイム
+#871 [Voice] ヨガブラスト
+#872 [Voice] ヨォォガァ‥！
+#873 [Voice] ヨガインフェルノ
+#874 [Voice] ヨガ！
+#875 [Voice] ハッ！
+#876 [Voice] フンッ！
+#877 [Voice] ヨーガヨガヨガヨガヨガ‥
+#878 [Voice] ヨガァァァ！
+#879 [Voice] ヌァッ‥
+#880 [Voice] ドァァッ‥
+#881 [Voice] ヨガァァ‥
+#882 [Voice] ムゥァァァ…
+#211 [Voice] パピー！
+
+  ROLENTO
+#852 [Voice] Ready ?
+#853 [Voice] Got set ?
+#854 [Voice] Go !
+#855 [Voice] Fire !
+#856 [Voice] ヌゥゥゥウ‥！
+#857 [Voice] ホッ！
+#858 [Voice] トァ！
+#859 [Voice] ンンッ！
+#860 [Voice] Do answer !
+#861 [Voice] Ouch !
+#862 [Voice] ンーッフッフッフッフ…
+#863 [Voice] Mission Complete !
+#864 [Voice] ヌォッ‥
+#865 [Voice] ヌオァ‥
+#866 [Voice] アアァァ‥
+#867 [Voice] グォアアァ…
+
+  GEN
+#196 [Voice] シュッ！
+#197 [Voice] シャッ！
+#198 [Voice] ハッ！
+#199 [Voice] ヌウゥゥッ！
+#200 [Voice] フッ！
+#201 [Voice] とどめだ！
+#202 [Voice] 死ね！
+#203 [Voice] フッフッフッフッフ‥
+#204 [Voice] You are big fool !
+#205 [Voice] グフッ‥
+#206 [Voice] ヌゥッ‥
+#207 [Voice] ンヌゥゥ‥
+#208 [Voice] ウオォォ…
+
+ [S.E.]
+
+#080 [S.E.]
+#081 [S.E.]
+#085 [S.E.]
+#128 [S.E.]
+#129 [S.E.]
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#134 [S.E.]
+#136 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#256 [S.E.]
+#257 [S.E.]
+#258 [S.E.]
+#259 [S.E.]
+#260 [S.E.]
+#261 [S.E.]
+#262 [S.E.]
+#263 [S.E.]
+#264 [S.E.]
+#265 [S.E.]
+#266 [S.E.]
+#267 [S.E.]
+#268 [S.E.]
+#269 [S.E.]
+#270 [S.E.]
+#271 [S.E.]
+#272 [S.E.]
+#273 [S.E.]
+#274 [S.E.]
+#275 [S.E.]
+#276 [S.E.]
+#277 [S.E.]
+#278 [S.E.]
+#279 [S.E.]
+#280 [S.E.]
+#281 [S.E.]
+#282 [S.E.]
+#283 [S.E.]
+#284 [S.E.]
+#285 [S.E.]
+#286 [S.E.]
+#288 [S.E.]
+#289 [S.E.]
+#290 [S.E.]
+#291 [S.E.]
+#292 [S.E.]
+#293 [S.E.]
+#294 [S.E.]
+#295 [S.E.]
+#296 [S.E.]
+#297 [S.E.]
+#298 [S.E.]
+#299 [S.E.]
+#300 [S.E.]
+#301 [S.E.]
+#302 [S.E.]
+#303 [S.E.]
+#305 [S.E.]
+#306 [S.E.]
+#307 [S.E.]
+#308 [S.E.]
+#309 [S.E.]
+#310 [S.E.]
+#311 [S.E.]
+#312 [S.E.]
+#313 [S.E.]
+#314 [S.E.]
+#315 [S.E.]
+#316 [S.E.]
+#317 [S.E.]
+#318 [S.E.]
+#319 [S.E.]
+#320 [S.E.]
+#321 [S.E.]
+#322 [S.E.]
+#323 [S.E.]
+#324 [S.E.]
+#325 [S.E.]
+#326 [S.E.]
+#327 [S.E.]
+#328 [S.E.]
+#329 [S.E.]
+#330 [S.E.]
+#331 [S.E.]
+#332 [S.E.]
+#333 [S.E.]
+#334 [S.E.]
+#335 [S.E.]
+#336 [S.E.]
+#337 [S.E.]
+#338 [S.E.]
+#339 [S.E.]
+#340 [S.E.]
+#341 [S.E.]
+#342 [S.E.]
+#343 [S.E.]
+#344 [S.E.]
+#345 [S.E.]
+#346 [S.E.]
+#347 [S.E.]
+#348 [S.E.]
+#349 [S.E.]
+#350 [S.E.]
+#351 [S.E.]
+#352 [S.E.]
+#353 [S.E.]
+#354 [S.E.]
+#355 [S.E.]
+#356 [S.E.]
+#357 [S.E.]
+#358 [S.E.]
+#359 [S.E.]
+#360 [S.E.]
+#361 [S.E.]
+#362 [S.E.]
+#363 [S.E.]
+#364 [S.E.]
+#365 [S.E.]
+#366 [S.E.]
+#367 [S.E.]
+#368 [S.E.]
+#369 [S.E.]
+
+  ■出典
+  カプコンゲームサウンドトラック　ストリートファイターZERO2
+  VICTOR ENTERTAINMENT  VIZL-24  1996.06.21
+
+// リスト作成：NKさん
+$end

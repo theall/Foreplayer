@@ -1,0 +1,44 @@
+﻿$name=knckhead
+$version=2
+$default=$65
+$main
+//
+//Title : Knuckle Heads
+//Copyright : (c)namco 1993
+//System : NA-1
+//Sound CPU : 68000 (sound cpu not independent)
+//Sound Chip : C219
+//Composer : 相原隆行(John)
+
+$1e On the air
+$10 鷹舞狼吼 (vs フジオカ 1, 3本目)
+$18 鷹舞狼吼 (vs フジオカ 2本目)
+$11 HARD TOO DIEHARD (vs ビンセント 1, 3本目)
+$19 HARD TOO DIEHARD (vs ビンセント 2本目)
+$12 Hong-Kong etoile (vs ミャオ 1, 3本目)
+$1a Hong-Kong etoile (vs ミャオ 2本目)
+$13 DEADROCKS (vs ダレル 1, 3本目)
+$1b DEADROCKS (vs ダレル 2本目)
+$14 Latin Aphrodite (vs シルバ 1, 3本目)
+$1c Latin Aphrodite (vs シルバ 2本目)
+$15 ECCENTRIC HERO (vs ヴェイク 1, 3本目)
+$1d ECCENTRIC HERO (vs ヴェイク 2本目)
+$60 Kacho Fuugetsu (フジオカ, エンディング)
+$61 American Mind (ビンセント, エンディング)
+$62 Princess Pop (ミャオ, エンディング)
+$63 Against the Groove (ダレル, エンディング)
+$64 Evergreen (シルバ, エンディング)
+$65 Eccentric Hero 2 (ヴェイク, エンディング)
+$32 Off the Air
+$1f New Challenger (not on CD)
+
+  ■出典
+  namco GAME SOUND EXPRESS Vol.9 (KNUCKLE HEADS)
+  VICTOR ENTERTAINMENT  VICL-15019  1993.5.21
+
+  ■作曲
+  相原 隆行 (John)
+
+// リスト作成：加山。さん
+// 更新: Phil B
+$end

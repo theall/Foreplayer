@@ -1,0 +1,31 @@
+﻿$name=mmatrix
+$version=2
+$default=001
+$songmax=$3ff
+$fixed_volume=338
+$main
+
+#001 MARS MATRIX
+#006 ARCADE MOVIE
+#011 SERECT LOOP (Player Select)
+#004 ARMED SATELLITE PHOBOS (Stage 1 / Dreamcast ver. Menu BGM)
+#009 DESCEDUNG TO MARS (Stage 2)
+#005 RED SKY (Stage 4)
+#003 SURPRISE ATTACK (Stage 3)
+#007 TRUE DARKNESS (Stage 5)
+#008 FORBIDDEN FRUIT (Stage 6)
+#010 BOSS
+#012 END OF WAR (Ending)
+#013 GAME OVER
+
+#002 ??? 1
+#015 ??? 2
+
+  ■出典
+  マーズマトリックス・ギガウイング2 / ORIGINAL SOUNDTRACK
+  SULEPUTER  CPCA-1050～1051  2001.01.11
+
+  ■作曲
+  上西 泰史
+
+$end

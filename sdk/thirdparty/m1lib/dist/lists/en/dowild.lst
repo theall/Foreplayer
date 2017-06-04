@@ -1,0 +1,52 @@
+﻿$name=dowild
+$version=2
+$default=025
+$main
+
+#025 Scene 1, 4 Music
+#031 Bonus <time="5.2">
+#013 Clear
+#021 Scene 2
+#018 [SFX] Diamond appearing <time="5">
+#030 Diamond Music
+#011 Scene 3, 5 Music
+#020 Extra Music <time="7.5">
+#013 Clear
+#012 Scene 6 Music
+#027 [SFX] Clash <time="2">
+#019 [SFX] Player Out <time="1">
+#028 [SFX] Falling <time="3">
+#014 Game Over
+#015 Ranking
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] Steel ball spinning (Scene 4, 5, 8)
+#002 [SFX] Roller coaster 1 <time="2.6">
+#003 [SFX] Roller coaster 2 <time="5">
+#004 [SFX] Roller coaster 3 <time="3">
+#005 [SFX] Roller coaster 4 <time="2.8">
+#006 [SFX] Roller coaster 5 <time="3">
+#007 [SFX] Roller coaster 6 <time="2.7">
+#008 [SFX] Elevator moving (Scene 3)
+#009 [SFX] Steel balls crashed (Scene 1, 7)
+#010 [SFX] Obstacle falling (Scene 9)
+#016 [SFX] Small spring ball (Scene 7)
+#017 [SFX] Player moving on a lift (Scene 4) <time="3">
+#018 [SFX] Diamond appears <time="3">
+#019 [SFX] Big spring ball (Scene 4)
+#022 [SFX] Hurry up <time="3">
+#023 [SFX] Extend
+#027 [SFX] Player hit an obstacle
+#028 [SFX] Player wedged between elevators (Scene 3)
+#029 [SFX] Player falling
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by ZEK.
+// Special Thanks to B
+// English list by Fuji
+$end

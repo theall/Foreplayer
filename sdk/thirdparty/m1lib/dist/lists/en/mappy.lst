@@ -1,0 +1,38 @@
+﻿$name=mappy
+$version=2
+$default=0
+$main
+
+#00 Introduction
+#01 Game Start
+#02 Main
+#03 Game Over
+#04 Extend
+#05 Round Clear
+#06 Touched Enemy
+#07 Trampolin
+#08 Got a Target
+#09 First Spurt
+#10 Microwave
+#11 Bonus Round
+#12 Bonus Round Start
+#13 Name Entry
+#14 Name Entry End
+#15 Second Spurt
+#16 Crashed Big Balloon in the Bonus Round
+#17 Compiling Bonus Points
+#18 Bell
+#19 Coin 1 (unused)
+#20 Coin 2 (unused)
+#21 Credit
+#22 Coin 3 (unused)
+
+  [Source]
+  Namco Video Game Music Programming
+  Dempa 1986
+
+  [Sound Composer]
+  Nobuyuki Oonogi
+
+// English list adjustment by bcass
+$end

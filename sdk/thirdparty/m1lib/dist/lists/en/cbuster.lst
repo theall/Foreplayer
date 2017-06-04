@@ -1,0 +1,109 @@
+﻿$name=cbuster
+$version=2
+$default=019
+$songmax=112
+$main
+
+#019 Coin
+#006 The Lifeline of New York (BGM 1)
+#011 Funky Monsters (Boss 1)
+#010 Defeated Guys (Clear)
+#015 Take a Break (Beer)
+#007 Like a Hurricane (BGM 2)
+#008 Fallout of Christmas (BGM 3)
+#012 Kids in Battle (Boss 2)
+#009 The Wild Desire (BGM 4)
+#014 Justice has Won (Ending)
+#013 The Crude is Down (Game Over)
+
+#017 Defeated Guys (Clear)
+#004 ??? 1
+#005 ??? 2
+
+-----------------------------------------
+ [SFX]
+
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#027 [SFX]
+#029 [SFX]
+#031 [SFX]
+#032 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#044 [SFX]
+#046 [SFX]
+#047 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+
+  [Source]
+  Crude Buster / Midnight Resistance
+  Pony Canyon / Scitron   PCCB-00039  Aug 21, 1990
+
+  [Sound Composer]
+  Hiroaki Yoshida, Tatsuya Kinouchi, Azusa Hara
+
+$end

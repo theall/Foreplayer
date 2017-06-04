@@ -1,0 +1,92 @@
+﻿$name=blkpnthr
+$version=2
+$default=019
+//$songmax=203
+$main
+
+#019 COIN DEMO
+#022 STAGE 1
+#004 STAGE 2
+#018 STAGE 3
+#007 STAGE 4
+#008 MIDDLE BOSS
+#009 BOSS STAGE 1
+#014 BOSS STAGE 2
+#013 BOSS STAGE 3
+#003 BOSS STAGE 4
+#001 STAGE CLEAR
+#021 ALL CLEAR
+#020 1st NAME REGIST
+#012 2nd NAME REGIST
+#015 CONTINUE
+#011 GAME OVER
+
+#002 ???
+#006 ???
+#010 ENDING ?
+#017 ???
+
+//#023
+//#024
+//#025
+//#026
+//#027
+//#028
+//#029
+//#030
+//#031
+-----------------------------------------
+ [S.E.]
+
+#005 [S.E.] ボス破壊
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.] Miss!
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#065 [S.E.] (pcm)
+#129 [S.E.] (pcm)
+#130 [S.E.] (pcm)
+#131 [S.E.] (pcm)
+#132 [S.E.] (pcm)
+#133 [S.E.] (pcm)
+#134 [S.E.] (pcm)
+#135 [S.E.] (pcm)
+#167 [S.E.] (pcm)
+#193 [S.E.] (pcm)
+#196 [S.E.] (pcm)
+#197 [S.E.] (pcm)
+#198 [S.E.] (pcm)
+#199 [S.E.] (pcm)
+#200 [S.E.] (pcm)
+#201 [S.E.] (pcm)
+#202 [S.E.] (pcm)
+#203 [S.E.] (pcm)
+//ここから先は未チェックです
+
+$end

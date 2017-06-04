@@ -1,0 +1,101 @@
+﻿$name=alexkidd
+$version=2
+$default=001
+$main
+
+#001 [Voice] Find the miracle ball <time="3">
+#146 Stage 1, 5 BGM
+#168 Stage Clear <time="5">
+#002 Next Stage  <time="4">
+#147 Stage 2, 6 BGM
+#145 Stage 3, 7 BGM
+#148 Stage 4 BGM
+#149 Ending
+
+#174 Game Over <time="3">
+
+---------------------------------------------------
+ [SFX]
+
+#144 [SFX] <time="5">
+#169 [SFX] <time="5">
+#129 [SFX] <time="3">
+#130 [SFX] <time="3">
+#131 [SFX] <time="3">
+#132 [SFX] <time="3">
+#133 [SFX] <time="3">
+#134 [SFX] <time="3">
+#135 [SFX] <time="3">
+#142 [SFX] <time="3">
+#160 [SFX] <time="3">
+#161 [SFX] <time="5">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#164 [SFX] <time="3">
+#165 [SFX] <time="3">
+#166 [SFX] <time="5">
+#167 [SFX] <time="3">
+#170 [SFX] <time="3">
+#171 [SFX] <time="3">
+#172 [SFX] <time="2.5">
+#173 [SFX] <time="3">
+#175 [SFX] <time="3">
+#176 [SFX] <time="3">
+#177 [SFX] <time="3">
+#178 [SFX] <time="3">
+#179 [SFX] <time="3">
+#180 [SFX] <time="3">
+#192 [SFX] <time="3">
+#193 [SFX] <time="3">
+#194 [SFX] <time="3">
+#195 [SFX] <time="3">
+#196 [SFX] <time="3">
+#197 [SFX] <time="3">
+#198 [SFX] <time="3">
+#199 [SFX] <time="3">
+#200 [SFX] <time="3">
+#201 [SFX] <time="3">
+#202 [SFX] <time="3">
+#203 [SFX] <time="3">
+#204 [SFX] <time="3">
+#209 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#001 [Voice] Find the miracle ball <time="6">
+#003 [Voice] The cutomer is king <time="6">
+#002 [Voice] Carry the ball to the holy land ziggurat <time="8">
+#007 [Voice] <time="5">
+#016 [Voice] <time="5">
+
+  [Alex's Voices (Unused)]
+
+#004 [Voice] <time="5">
+#005 [Voice] <time="5">
+#006 [Voice] <time="5">
+#008 [Voice] <time="5">
+#009 [Voice] <time="5">
+#010 [Voice] <time="5">
+#017 [Voice] <time="6">
+#018 [Voice] <time="5">
+
+  [Stella's Voices (Unused)]
+
+#011 [Voice] <time="5">
+#012 [Voice] <time="5">
+#013 [Voice] <time="5">
+#014 [Voice] <time="5">
+#015 [Voice] <time="5">
+#019 [Voice] <time="6">
+#020 [Voice] <time="5">
+
+  [Source]
+  Sega Arcade 80's Vol.1
+  SME / Scitron  SCDC-00245  Feb 19, 2003
+
+  [Sound Composer]
+  Hiroshi Kawaguchi (Hiro)
+
+// List contribution by ZEK.
+$end

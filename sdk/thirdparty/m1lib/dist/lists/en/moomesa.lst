@@ -1,0 +1,236 @@
+﻿$name=moomesa
+$version=2
+$default=220
+$main
+
+#220 Attract Mode
+#221 Title Screen
+#063 [Voice] (Coin Inserted)
+#216 Player Select
+#225 Introduction
+#208 Stage 1 
+#211 Boss
+#214 Stage Clear
+#218 Map Preview
+#217 Next Target
+#212 Stage 2 - Niagara Desert (Boss: Saddle Sore)
+#226 Stage 3 - Sheeza Butte 1
+#229 Stage 3 - Sheeza Butte 2
+#209 Stage 4 - Ghost Town 1 (Boss: Boothill Buzzard)
+#210 Stage 4 - Ghost Town 2 (Boss: Boothill Buzzard)
+#223 Continue / Game Over
+#213 Stage 5 - Mine (Boss: Five Card Stud)
+#224 Stage 6 - Jane Meadow (Boss: Wagon Train)
+#215 Stage 7 - Cow Town 1
+#211 Stage 7 - Cow Town 2
+#222 Stage 8 - Skull Mountain (Boss: The Masked Bull)
+#228 Ending / The End
+#227 Name Entry
+#219 High Score Table
+
+#230 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#001 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#012 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#037 [SFX] 
+#047 [SFX] 
+#049 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#110 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+#186 [SFX] 
+#187 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#002 [Voice] 
+#003 [Voice] 
+#007 [Voice] 
+#008 [Voice] 
+#011 [Voice] 
+#013 [Voice] 
+#014 [Voice] 
+#021 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#038 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#043 [Voice] 
+#044 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#048 [Voice] 
+#050 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] Coin
+#064 [Voice] 
+#092 [Voice] 
+#103 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#111 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#155 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+
+  [Sound Program]
+  Hideaki Kashima (H.Shikama)
+
+  [Sound Composer]
+  Michiru Yamane (Y.Yamane)
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

@@ -1,0 +1,24 @@
+﻿$name=upndown
+$version=2
+$default=130
+$songmax=146
+$fixed_volume=118
+$main
+
+#130 MAIN BGM
+#141 ROUND CLEAR
+#144 TIME RESULT
+#140 NAME ENTRY
+#143 PLAYER MISS
+
+-----------------------------------------
+ [S.E.]
+
+#134 [S.E.]
+#135 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+
+$end

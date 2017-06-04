@@ -1,0 +1,175 @@
+﻿$name=ncommand
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#004 Attract Mode
+#145 [Voice] "Ninja !" <time="1.2">
+#146 [Voice] "Commando !"
+#176 [S.E.] Credits Insertion <time="2.5">
+#011 Story (Introduction) <time="32.5">
+#006 Character Selection <time="53.5">
+#032 Story (Before the Stage) <time="13.5">
+#021 Mars Corporation Hideout (Stage 1) <time="2:37">
+#005 Boss (Stage 1) <time="57">
+#027 Entering in the Time-Machine <time="9">
+#010 Story <time="43">
+#008 The Egyptian Era (Stage2) <time="3:19">
+#033 Story (After the Mid-Boss)  <time="44">
+#020 Boss & Mid-Boss (Stage 2) <time="1:11">
+#015 Boss Death
+#026 Stage Clear
+#007 The Japanese Civil War Era (Stage 3) <time="2:01">
+#031 Mid-Boss (Stage 3) <time="45">
+#028 Boss (Stage 3) <time="1:03">
+#018 The Primitive Age (Stage 4) <time="1:04">
+#016 Boss & Mid-Boss (Stage 4) <time="1:38">
+#017 The Era of Three Countries (Stage 5) <time="2:21">
+#022 Boss & Mid-Boss (Stage 5) <time="2:33">
+#027 World War II (Stage 6) <time="1:58">
+#013 The Future Site of Mars Corporation (Stage 7) <time="1:21">
+#029 Boss (Stage 6) <time="1:20">
+#012 Last Boss (Stage 7) <time="39">
+#019 Story (Before the End) <time="16">
+#030 Ending Story
+#024 Ending Credits  <time="2:06">
+#025 Game Over
+#014 Attract Mode (short)
+#034 Unknown <time="45">
+
+  [Voices]
+
+#038 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#047 [Voice] 
+#050 [Voice] 
+#052 [Voice] 
+#062 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#082 [Voice] 
+#084 [Voice] 
+#094 [Voice]
+#111 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#120 [Voice]
+#122 [Voice]
+#123 [Voice]
+#124 [Voice]
+#125 [Voice]
+#126 [Voice]
+#128 [Voice]
+#145 [Voice] "Ninja !"
+#146 [Voice] "Commando !"
+
+  [S.E.]
+
+#036 [S.E.] 
+#037 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.]
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#048 [S.E.] 
+#051 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#063 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#083 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#119 [S.E.]
+#121 [S.E.]
+#129 [S.E.]
+#144 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#176 [S.E.] Credits Insertion <time="2.5">
+#178 [S.E.] <time="2.5">
+#179 [S.E.] <time="2.5">
+#180 [S.E.] <time="2.5">
+#181 [S.E.] <time="2.5">
+#197 [S.E.]
+#198 [S.E.]
+#203 [S.E.]
+#204 [S.E.]
+#205 [S.E.]
+#207 [S.E.]
+#212 [S.E.]
+#213 [S.E.]
+#214 [S.E.]
+#217 [S.E.]
+#219 [S.E.]
+#222 [S.E.]
+#223 [S.E.]
+#224 [S.E.]
+#228 [S.E.]
+#229 [S.E.]
+#230 [S.E.]
+#231 [S.E.]
+#232 [S.E.]
+#233 [S.E.]
+#234 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+#238 [S.E.]
+#239 [S.E.]
+
+
+// List contribution by Simon B., done in playing the game.
+$end

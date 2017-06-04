@@ -1,0 +1,130 @@
+﻿$name=kotm
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#037 KING OF THE MONSTERS (オープニングデモ)
+#036 滅びる街 (タイトル)
+#035 SELECT MONSTER (プレイヤーセレクト)
+#033 ENTIRELY BREAKER (GEONのテーマ)
+#040 ハレマー教聖歌 [狂気の祈り] (WOOのテーマ)
+#043 WET DANCE (POISON GHOSTのテーマ)
+#038 汚染地帯 (ステージクリア)
+#046 PYRAMID POWER (ROCKYのテーマ)
+#049 かぶと虫のように (BEETLE MANIAのテーマ)
+#052 醜きヒーロー (ASTRO GUYのテーマ)
+#055 THE NEWS (エンディング) &lt;1&gt;
+#056 THE NEWS (エンディング) &lt;2&gt;
+#058 悲嘆の涙 (スタッフロール)
+#060 もう一度 (コンティニュー)
+#039 敗者の叫び (ゲームオーバー)
+
+#034 ENTIRELY BREAKER (GEONのテーマ) &lt;w/o intro&gt;
+#041 ハレマー教聖歌 [狂気の祈り] (WOOのテーマ) &lt;w/o intro&gt;
+#044 WET DANCE (POISON GHOSTのテーマ) &lt;w/o intro&gt;
+#047 PYRAMID POWER (ROCKYのテーマ) &lt;w/o intro&gt;
+#050 かぶと虫のように (BEETLE MANIAのテーマ) &lt;w/o intro&gt;
+#053 醜きヒーロー (ASTRO GUYのテーマ) &lt;w/o intro&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+#128 [Voice]
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#127 [S.E.]
+#192 [S.E.]
+#193 [S.E.]
+#194 [S.E.]
+#195 [S.E.]
+#196 [S.E.]
+#197 [S.E.]
+#198 [S.E.]
+#199 [S.E.]
+#200 [S.E.]
+#201 [S.E.]
+#202 [S.E.]
+#203 [S.E.]
+#204 [S.E.]
+#205 [S.E.]
+#206 [S.E.]
+#207 [S.E.]
+#208 [S.E.]
+#209 [S.E.]
+#210 [S.E.]
+#211 [S.E.]
+#212 [S.E.]
+#213 [S.E.]
+#214 [S.E.]
+#215 [S.E.]
+#216 [S.E.]
+#217 [S.E.]
+#218 [S.E.]
+#219 [S.E.]
+#220 [S.E.]
+#221 [S.E.]
+#222 [S.E.]
+#223 [S.E.]
+#224 [S.E.]
+#225 [S.E.]
+#226 [S.E.]
+#227 [S.E.]
+#228 [S.E.]
+#229 [S.E.]
+#230 [S.E.]
+#231 [S.E.]
+#232 [S.E.]
+#233 [S.E.]
+#234 [S.E.]
+#235 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+#238 [S.E.]
+#239 [S.E.]
+#240 [S.E.]
+#241 [S.E.]
+#242 [S.E.]
+#243 [S.E.]
+#244 [S.E.]
+#245 [S.E.]
+#246 [S.E.]
+#247 [S.E.]
+#248 [S.E.]
+#249 [S.E.]
+#250 [S.E.]
+#251 [S.E.]
+#252 [S.E.]
+#253 [S.E.]
+#254 [S.E.]
+
+  ■出典
+  キング・オブ・ザ・モンスターズ、クイズ大捜査線 / SNK
+  PONY CANYON / SCITRON  PCCB-00072  1991.09.21
+
+// List contribution by NK
+$end

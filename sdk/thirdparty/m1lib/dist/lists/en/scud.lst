@@ -1,0 +1,26 @@
+﻿$name=scud
+$version=2
+$default=06
+$main
+
+?? Advertize <time="1:05">
+#06 Stage Select <time="37">
+#03 Groovin' Daylight <time="3:32">
+#02 Flight in the Dark <time="2:44">
+#01 Ancient Voice <time="2:39">
+#05 Breeze of the Middle Ages <time="3:02">
+#04 Merry Maze <time="3:09">
+#08 Goal <time="38">
+#07 Name Entry <time="1:04">
+#09 Ending <time="1:28">
+
+  [Source]
+  Scud Race Sound Tracks
+  Toshiba EMI  TYCY-5541  Feb 19, 1997
+
+  [Sound Composers]
+  Hideaki Miyamoto : Advertize, 06, 02, 01, 09
+  Kaoru Oohori : 03, 05, 04
+  Fumio Itou : 08, 07
+
+$end

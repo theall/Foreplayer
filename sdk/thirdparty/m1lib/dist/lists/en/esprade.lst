@@ -1,0 +1,33 @@
+﻿$name=esprade
+$version=2
+$default=9
+$songmax=12
+$main
+
+#009 ESP-er (Select)
+#001 Desperate School (Stage a)
+#002 Nightmare (Stage b)
+#003 Act in Judge (Stage c)
+#004 Wangan Rapid Line 1st (Stage 4a)
+#005 Wangan Rapid Line 2nd (Stage 4b)
+#007 Yaksa (Stage 5.1) 
+#006 Fairies Fear (Stage 5.2)
+#008 Raging Deicide (Boss)
+#010 Winner (Clear) <time="0:06.5">
+#012 Snow Illusion (Ending) 
+#011 Great Experience (Name Entry)
+
+  [Source]
+  Dodonpachi/esprade Soundtrack
+  Scitron / Gamest  SGCD-000002  Nov 6,1998
+
+  Guwange/ ESPrade Original Soundtrack
+  Cave  CVST-1000  Dec 30, 2007
+
+  [Composed by]
+  Masahiro Kusunoki
+
+// list by fuj
+// Updted by GolGol
+$end
+

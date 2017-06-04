@@ -1,0 +1,100 @@
+﻿$name=agallet
+$version=2
+$default=011
+$main
+
+#011 ATTRACT MODE <time="52.0">
+#159 [S.E.] CREDIT
+#001 STAGE 1 <time="2:40" fadeout="yes" fadeoutlength="10">
+#007 BOSS BGM <time="2:10" fadeout="yes" fadeoutlength="10">
+#008 STAGE CLEAR <time="11.4">
+#002 STAGE 2 <time="2:25" fadeout="yes" fadeoutlength="10">
+#003 STAGE 3 <time="2:23" fadeout="yes" fadeoutlength="10">
+#004 STAGE 4 <time="2:34" fadeout="yes" fadeoutlength="10">
+#005 STAGE 5 <time="3:13" fadeout="yes" fadeoutlength="10">
+#006 STAGE 6 <time="2:54" fadeout="yes" fadeoutlength="10">
+#012 ENDING <time="1:14">
+#013 CONTINUE <time="17.5">
+#009 GAME OVER
+#010 NAME ENTRY <time="46.0" fadeout="yes" fadeoutlength="10">
+
+#014 [Command] サウンド停止
+
+---------------------------------------------------
+  [S.E.]
+
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+
+#110 [S.E.] 
+#111 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#115 [S.E.] 
+#159 [S.E.] CREDIT
+
+//#160 [S.E.] = #033
+//#161 [S.E.] = #034
+//#162 [S.E.] 
+//#163 [S.E.] 
+//#164 [S.E.] 
+//#165 [S.E.] 
+//#166 [S.E.] 
+//#167 [S.E.] 
+//#168 [S.E.] 
+//#169 [S.E.] 
+//#170 [S.E.] 
+//#171 [S.E.] 
+//#172 [S.E.] 
+//#173 [S.E.] 
+//#174 [S.E.] 
+//#175 [S.E.] 
+//#176 [S.E.] 
+//#177 [S.E.] 
+//#178 [S.E.] 
+//#187 [S.E.] 
+//#188 [S.E.] 
+//
+---------------------------------------------------
+  [Voice]
+
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+//#179 [Voice] = #051
+//#180 [Voice] 
+//#181 [Voice] 
+//#182 [Voice] 
+//#183 [Voice] 
+//#184 [Voice] 
+//#185 [Voice] = #057
+
+  ■作曲
+  Sakai Yoshitatsu (よした2)
+
+// List contribution by ZEK.
+// Track duration by Simon B.
+// Adjustment for fadeout by Fuj.
+$end

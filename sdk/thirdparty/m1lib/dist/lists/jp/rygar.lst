@@ -1,0 +1,83 @@
+﻿$name=rygar
+$version=2
+$default=001
+$main
+
+#001 CREDIT INSERTED
+#050 STORY ～ MAIN BGM
+#063 GET AN INDRA!
+#052 MAIN BGM (W/O INTRO)
+#057 BONUS POINTS
+#061 INVINCIBILITY
+#055 INTERVAL (REPULSE, RANK, TIMER BONUS)
+
+#051 Main BGM (RE-START)
+#059 TIME-UP ALERT ～ UNDEAD-MONSTER
+#056 SPECIAL BONUS POINTS
+// ROUND 13,GET A 1,000,000pts!
+#008 [Voice] PLAYER OUT
+#054 GAME OVER
+
+#062 [Voice] A SHOUT OF JOY (ENDING)
+#053 ENDING
+#048 NAME ENTRY (1ST)
+#049 NAME ENTRY (2ND～)
+
+#058 UNDEAD-MONSTER 
+
+------------------------------------------------------
+ [S.E.]
+
+#001 [S.E.] CREDIT 
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#012 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#030 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.] 1up!
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+
+------------------------------------------------------
+ [Voice]
+
+#002 [Voice] ATTACK
+#003 [Voice] JUMP
+#008 [Voice] PLAYER OUT
+#027 [Voice] 
+#028 [Voice]
+#029 [Voice]
+#031 [Voice]
+#062 [Voice] A SHOUT OF JOY (ENDING)
+
+  ■出典
+  TECMO GAME MUSIC 
+  ALFA RECORDS  28XA-95  1986.10.25
+
+// List contribution by R
+$end

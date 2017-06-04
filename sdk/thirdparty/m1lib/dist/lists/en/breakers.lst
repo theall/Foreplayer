@@ -1,0 +1,96 @@
+﻿$name=breakers
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode
+#127 Coin
+#034 How to Play <time="20">
+#035 Character Select <time="20">
+#036 VS Theme
+#040 Sho
+#046 Pielle
+#039 Challenger Appeared
+#042 Condor
+#044 Rila
+#050 Continue ? <time="20">
+#043 Tia
+#045 Alsion III
+#038 Winner
+#047 Maherl
+#041 Dao-Long
+#037 You Win
+#048 Bai-Fu
+#049 Ending
+#051 Game Over
+
+---------------------------------------------------
+  [SFX]
+
+#127 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#209 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+#232 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#240 [SFX] 
+#241 [SFX] 
+#242 [SFX] 
+#243 [SFX] 
+#244 [SFX] 
+#245 [SFX] 
+#246 [SFX] 
+#247 [SFX] 
+#248 [SFX] 
+#249 [SFX] 
+#250 [SFX] 
+#251 [SFX] 
+#252 [SFX] 
+#253 [SFX] 
+#254 [SFX] 
+
+  [Sound Composer]
+  Ken'ichi Kamio
+
+  [Sound FX]
+  Yoshikazu Egawa (Light Link Music)
+
+// List contribution by ZEK.
+// English list QC and updated by Fuj
+$end

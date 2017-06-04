@@ -1,0 +1,30 @@
+﻿$name=psyforce
+$version=2
+$default=010
+//$songmax=030
+$main
+
+#010 Fire & Ice (Atract Demo BGM)
+#009 Select
+#013 Burning Storm ("Burn" Theme)
+#020 Fallen Angel ("Emilio" Theme)
+#012 Lunatic Crow ("Brad" Theme)
+#002 Carry Away! ("Sonia" Theme)
+#024 Melos of the Seal Magic ("Genma" Theme)
+#016 Revenger ("Gates" Theme)
+#028 Birdie Birdie! ("Wendy" Theme)
+#015 Asian Labyrinth ("WONG" Theme)
+#026 Freezing Point ("KEITH" Theme)
+#018 Last Impact (Final Stage BGM)
+#022 Burning Scape (Ending)
+#007 Continue
+#008 Name Entry (Unused)
+
+  [Source]
+  Psychic Force Original Soundtracks
+  Zuntata Records  ZTTL-0001  Oct 11, 1996
+
+  [Sound Composer]
+  Hideki Takahagi (HAGGY)
+
+$end

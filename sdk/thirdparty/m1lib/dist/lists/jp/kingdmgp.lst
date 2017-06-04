@@ -1,0 +1,139 @@
+﻿$name=kingdmgp
+$version=2
+$default=007
+$songmax=309
+$fixed_volume=136
+$main
+
+#007 Saddle Horn
+#036 Sound from Heaven (Credit) <time="0:03">
+#006 Lead Change
+#002 Lead Departure
+#012 Sock The Brain
+#008 Roll Back
+#004 Flag Race
+#001 Norvice Reining
+#009 Restless Night
+#013 Sonic Keeness
+#010 Bamboo Forest
+#011 Being Rushed
+#003 Sliding Stop!!
+#005 Trail
+#018 Divided By Zero
+#014 The Laurel
+#015 A Ray Of Hope
+#016 I'm The Ruler
+#017 Underdog
+
+-----------------------------------------
+ [S.E.]
+
+#019 [S.E.] Got a Chip
+#020 [S.E.] Got an Item
+#021 [S.E.] Satsujin Ko-Sen
+#022 [S.E.] Slimy
+#023 [S.E.] Mini Bullet
+#024 [S.E.] Powerful Laser
+#025 [S.E.] Small Damaged
+#026 [S.E.] Warning
+#027 [S.E.] Chip Appeared
+#028 [S.E.] Item Appeared
+#029 [S.E.] Aiming
+#030 [S.E.] Hatch Opened
+#031 [S.E.] Homing Beam
+#032 [S.E.] Bless
+#033 [S.E.] Laser Sword
+#034 [S.E.] Hell Ghost
+#035 [S.E.] Bolt Shot
+#037 [S.E.] Extend
+
+#038 [Voice] (Bornam)
+#039 [Voice] (Bornam)
+#040 [Voice] (Bul-Gin) 
+#041 [Voice] (Bul-Gin) 
+#042 [Voice] (Honest-John)
+#043 [Voice] (Honest-John)
+#044 [Voice] (Gain)
+#045 [Voice] (Gain)
+#046 [Voice] (Miyamoto)
+#047 [Voice] (Miyamoto)
+#048 [Voice] (Chitta)
+#049 [Voice] (Chitta)
+#050 [Voice] (Kickle & Laycle)
+#051 [Voice] (Kickle & Laycle)
+#052 [Voice] (Nirvana)
+#053 [Voice] (Nirvana)
+
+#054 [S.E.] Bomb
+#055 [S.E.] Freezed
+#056 [S.E.] Buring
+#057 [S.E.] Electrified
+#058 [S.E.] After Burner
+#059 [S.E.] X Bomber
+#060 [S.E.] Make a Splash
+#061 [S.E.] Splash Down
+#062 [S.E.] Splash Wave
+#063 [S.E.] Fire Starter
+#064 [S.E.] Ice Broken
+#065 [S.E.] Rock Broken
+#066 [S.E.] Door Opened
+#067 [S.E.] Door Closed
+#068 [S.E.] S.O.G.B.S.O.K.B.S <time="5">
+#069 [S.E.] Wingman
+#070 [S.E.] Footfall
+#071 [S.E.] Footstep
+#072 [S.E.] Coco De Bomber
+#073 [S.E.] Docking Sensor
+#074 [S.E.] Energy Pool
+#075 [S.E.] Chakan
+#076 [S.E.] Rare Kick
+#077 [S.E.] Night Roar
+#078 [S.E.] Roar Hero
+#079 [S.E.] Bomb
+#080 [S.E.] Bomb Bomb
+#081 [S.E.] Bomb Bomb Bomb
+#082 [S.E.] Bomb Bomb Bomb Bomb
+#083 [S.E.] Motal Damaged
+#084 [S.E.] Deadly Damaged
+#085 [S.E.] Shoot
+#086 [S.E.] Shooooot!
+#087 [S.E.] Shooooooot!
+#088 [S.E.] Shooooooot!!!
+#089 [S.E.] Hellbent Punch
+#090 [S.E.] Cast a Spell
+#091 [S.E.] Bomb Bomb Bomb Bomb Bomb
+#092 [Voice] Warning
+#093 [Voice] Go!
+#094 [Voice] Hurry Up!
+#095 [S.E.] Bomberdment
+#096 [Voice] Ready?
+#097 [Voice] Yahhoo!
+#098 [Voice] Cheer <time="5">
+#099 [Voice] Cheer <time="5">
+#100 [Voice] Good Job
+//#294 [S.E.] BORNNAM VOICE 1b
+//#295 [S.E.] BORNNAM VOICE 2b
+//#296 [S.E.] BUL-GIN VOICE 1b
+//#297 [S.E.] BUL-GIN VOICE 2b
+//#298 [S.E.] HONEST-JOHN VOICE 1b
+//#299 [S.E.] HONEST-JOHN VOICE 2b
+//#300 [S.E.] GAIN VOICE 1b
+//#301 [S.E.] GAIN VOICE 2b
+//#302 [S.E.] MIYAMOTO VOICE 1b
+//#303 [S.E.] MIYAMOTO VOICE 2b
+//#304 [S.E.] CHITTA VOICE 1b
+//#305 [S.E.] CHITTA VOICE 2b
+//#306 [S.E.] KICKLE & LAYCLE VOICE 1b
+//#307 [S.E.] KICKLE & LAYCLE VOICE 2b
+//#308 [S.E.] NIRVANA VOICE 1b
+//#309 [S.E.] NIRVANA VOICE 2b
+
+  ■出典
+  蒼穹紅蓮隊 御徳用 / SEGA SATURN
+  EAV  T-10626G  1997
+
+  ■作曲
+  崎元 仁 (YmoH.S) (#001～#008)
+  岩田 匡治 (REZON) (#009～#018)
+
+$end

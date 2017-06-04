@@ -1,0 +1,151 @@
+﻿$name=gauntlet
+$version=2
+$default=66
+//$songmax=$dc
+$main
+
+#66 Title Screen / Continue <time="24">
+#73 Stage Start <time="6">
+#68 Treasure Room 1 <time="28">
+#69 Treasure Room 2 <time="27">
+#70 Treasure Room 3 <time="26">
+#71 Treasure Room 4 <time="22">
+
+#04 Music Chip Test <time="10">
+#05 POKEY Chip Test <time="5">
+#08 Speech Chip Test
+
+------------------------------------------------------
+ [Voice]
+
+#081 [Voice] One
+#082 [Voice] Two
+#083 [Voice] Three
+#084 [Voice] Four
+#085 [Voice] Five
+#086 [Voice] Six
+#087 [Voice] Seven
+#088 [Voice] Eight
+#089 [Voice] Nine
+#090 [Voice] Ten
+#091 [Voice] Zero
+#093 [Voice] Try and find a way out.
+#094 [Voice] Welcome to the treasure room.
+#095 [Voice] You have found my treasure.
+#096 [Voice] Try this level now.
+#097 [Voice] Warrior
+#098 [Voice] Valkyrie
+#099 [Voice] Wizard
+#100 [Voice] Elf
+#101 [Voice] Welcome
+#102 [Voice] Elf
+#103 [Voice] Needs food, badly.
+#104 [Voice] Valkyrie
+#105 [Voice] Wizard
+#106 [Voice] Wizard
+#107 [Voice] Your life force is running out.
+#108 [Voice] All your powers will be lost.
+#109 [Voice] Is about to die.
+#110 [Voice] Let's see you get out of here!
+#111 [Voice] Good cooperation!
+#112 [Voice] I've not seen such bravery!
+#113 [Voice] That was a heroic effort!
+#114 [Voice] Someone shot the food.
+#115 [Voice] Hehehehe
+#116 [Voice] You can't touch me.
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+
+------------------------------------------------------
+ [SFX]
+
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+//#035 [SFX]
+//#036 [SFX]
+//#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX] <time="45">
+#049 [SFX] <time="45">
+#051 [SFX] <time="45">
+#053 [SFX] <time="45">
+#055 [SFX] Coin P1 
+#056 [SFX] Coin P2
+#057 [SFX] Coin P3
+#058 [SFX] Coin P4
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#067 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+
+  [OST / Source]
+  That's Atari Music Vol.II -G.S.M. Atari Games 2-
+  Pony Canyon / Scitron  PCCB-00070  Sep 21, 1991
+
+  That's Atari Music Vol.II -G.S.M. Atari Games 2- (Legend Series)
+  SME / Scitron  SCDC-00314  Dec 3, 2003
+
+// List contribution by Neo Techno Bou
+// Updated and English list by Fuj
+// Voices by RB
+$end

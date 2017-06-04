@@ -1,0 +1,34 @@
+﻿$name=timecris
+$version=2
+$default=275
+$main
+
+#275 Main Theme from Time Crisis
+#280 Order (Mission 'Time Crisis')
+#298 Mission (Operation)
+#288 Mission Start (2nd Theme from 'Time Crisis')
+#060 With a Tension
+#048 Dead Fighting (Dead or Alive)
+#284 Wild Dog (Theme of 'Wild Dog')
+#051 Mission Success (Mission Completed)
+#272 Sunrise-Sunset
+#295 Triumphant Return (The Return In Triumph)
+#294 Serenity (Healing - Theme From Sunrise-Sunset)
+
+#001 Sound Check
+-------------------------------------------------------
+
+#035 2nd Theme from 'Time Crisis' (Part 1) <time="30.5">
+#038 2nd Theme from 'Time Crisis' (Part 2) <time="30.0">
+#041 2nd Theme from 'Time Crisis' (Part 3) <time="33.0">
+
+
+  [Source]
+  Time Crisis / Arcade Soundtrack 002EX
+  Pony Canyon / Wonder Spirits  WSCAX-10002  Jul 18, 1997
+
+  [Sound Composer / Adapter]
+  Kazuhiro Nakamura
+
+// List by Skeleton081983
+$end

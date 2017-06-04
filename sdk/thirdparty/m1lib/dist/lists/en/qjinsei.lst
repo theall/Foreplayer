@@ -1,0 +1,115 @@
+﻿$name=qjinsei
+$version=2
+$default=084
+$main
+
+#084 Do You Wanna be a Winner in Life? <time="25.4">
+#012 Title Screen <time="27.5">
+#072 Coin
+#020 Select Character <time="24.5">
+#022 Map Preview <time="8">
+#029 Question Master Appears! <time="4.5">
+#015 Quiz BGM 1
+#025 Round Clear <time="4">
+#024 Bonus Game Intro <time="6.2">
+#033 Bonus Game
+#024 You Win! <time="7">
+#021 Select Item <time="19.4">
+#028 Doctor Appears!
+#083 Life Recovery <time="3">
+#013 Quiz BGM 2
+#014 Quiz BGM 3
+#025 Round Clear <time="4">
+#023 Crisis <time="8">
+#017 Qiuz BGM 4
+#016 Qiuz BGM 5
+#019 Qiuz BGM 6
+#018 Qiuz BGM 7
+#027 All Questions Answered <time="9.5">
+#031 Credits
+#032 Game Over <time="5">
+#030 Name Entry
+
+#026 Unused
+#242 Speaker Test 1
+
+---------------------------------------------------
+ [SFX] 
+
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#078 [SFX] 
+#080 [SFX] <time="3">
+#085 [SFX] 
+#086 [SFX] <time="3">
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] <time="3">
+#096 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#241 [SFX] <time="3">
+#245 [SFX] 
+#246 Speaker Test 2
+
+---------------------------------------------------
+ [Voice] 
+
+#048 [Voice] 
+#049 [Voice] 
+#050 [Voice] 
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#077 [Voice] <time="5">
+#079 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#097 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#009 [Voice] 
+#010 [Voice] 
+#011 [Voice] 
+
+  [Sound Composer]
+  Yasuko Yamada
+
+  [Voice]
+  Kazuko Umino (karu), Norihiro Furukawa (Nakayama-Joutouhei)
+  Shuuichirou Nakazawa (SHU), Naoto Yagishita (YAG)
+  Shiina Funakura
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

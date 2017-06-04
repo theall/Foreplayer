@@ -1,0 +1,76 @@
+$name=ridgerac
+$version=2
+$default=64
+$main
+
+#064 Welcome Racer
+#080 Ridge Racer (POWER REMIX)
+#081 Rare hero (Sanodigy mix)
+#082 Feeling over (UNDERGROUND)
+#083 ROTTERDAM NATION (FOO MIX)
+#084 Speedster (I Like A.T.mix)
+#085 Rhythm shift (12" Version)
+#070 win win win (Death Mix)
+
+#067 Game Over 1 (Not on CD)
+#073 Game Over 2 (Not on CD)
+//$34 
+
+--------------------------------------------
+
+$00 [Voice] Ridge Racer
+$01 [S.E.] Sound Test
+$02 [S.E.] <time="5">
+$07 [S.E.] 
+$08 [S.E.] 
+$09 [S.E.] 
+$0E [S.E.] 
+$0F [S.E.] 
+$10 [Voice] Ridge Racer! Alright, everyone! One minute to go! Are you ready? The engines sound like they're ready to go! Are you all set?
+$11 [S.E.] 
+$13 [S.E.] 
+$14 [S.E.] 
+$15 [S.E.] 
+$16 [S.E.] 
+$17 [S.E.] 
+$18 [S.E.] <time="5">
+$19 [S.E.] <time="5">
+$1A [S.E.] <time="5">
+$1B [S.E.] 
+$1C [S.E.] 
+$1D [S.E.] 
+$1E [S.E.] 
+$1F [S.E.] 
+$20 [Voice] Alright, everyone! One minute to go! Are you ready? The engines sound like they're ready to go! Are you all set?
+$21 [Voice] Wow! What a start! This is just what I wanted to see!
+$22 [Voice] Yeah! It's a new record!
+$23 [Voice] Whew! That was a great counter. You must be one genius of a driver! You've got to teach me!
+$24 [Voice] Gerat job! I got everything on camera, so you'll watch it later huh! You're the greatest!
+$25 [Voice] 2 laps to go!
+$26 [Voice] 3 laps to go!
+$27 [Voice] 4 laps to go!
+$28 [Voice] OK! The final lap! Hang in there!
+$29 [Voice] Come on, Cheer up, You can try again! You'll do it next time!
+$2A [Voice] Hey! Somebody's right on your tail!
+$2B [Voice] Next corner's tough! Watch yourself!
+$2C [Voice] OK! It's the last stretch, keep going!
+$2D [Voice] 3
+$2E [Voice] 2
+$2F [Voice] 1
+$30 [Voice] Go!!
+$31 [Voice] Hurry!
+$32 [Voice] Hey! You're trying for a goal by going the other way around, huh? You're crazy!
+$33 [Voice] Alright, everyone! One minute to go! Are you ready? The engines sound like they're ready to go! Are you all set?
+
+  Å°èoìT
+  RIDGE RACER / NAMCO GAME SOUND EXPRESS Vol.11
+  VICTOR ENTERTAINMENT  VICL-15025  1994.01.21
+
+  Å°çÏÅEï“ã»
+  ç◊ç] êTé°: #64, #80, #83, #84, #85, #70
+  ç≤è@ àªéq: #82
+  ç≤ñÏ êMã`: #81
+
+// List by Fuj
+// Voice transcription and updated by Mikasen
+$end

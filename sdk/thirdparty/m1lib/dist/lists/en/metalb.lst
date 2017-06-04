@@ -1,0 +1,39 @@
+﻿$name=metalb
+$version=2
+$default=073
+$fixed_volume=387
+$main
+
+#073 Red & Yellow (Attract 1) - intro
+#010 Red & Yellow (Attract 2)
+#070 Credit
+#011 Take Off (Opening)
+#012 Born to be free (Round 1 -Down to The Earth-)
+#013 visitor (Boss A -Round 1-)
+#014 Dancing Horming (Bonus A -Override-)
+#015 Dancing Horming -w/o intro-
+#016 Dual Moon (Round 2 -Cry for The Moon-)
+#017 Yueez (Boss B -Round 2-)
+#018 memory (Clear -Round 2-)
+#019 AREA 26-10 (Round 3 -Dream Land-)
+#020 Dio panic! (Boss C -Round 3-)
+#021 non fiction (Bonus B -Black Out-)
+#023 Waste days (Round 4 -Cristal-)
+#024 the gate of guardian (Boss D -Round 4-)
+#025 Doubt (Round 5 -Nemesis Crisis-)
+#026 Phantasm (Boss E -Round 5-)
+#029 Game is over (Bad End)
+#028 Time (Round 6 -A Mirage of Mind Gaia-)
+#030 a mirage of mind #1 (Ending)
+#032 a mirage of mind #2 (Credits Roll)
+#031 Into the H.I. (Name Entry 1)
+#087 Into the H.I. -All Clear- (Name Entry 2)
+
+  [Source]
+  Metal Black / Taito
+  Pony Canyon / Scitron  PCCB-00079  Jan 21, 1992
+
+  [Sound Composer]
+  Yasuhisa Watabe (Yack.)
+
+$end

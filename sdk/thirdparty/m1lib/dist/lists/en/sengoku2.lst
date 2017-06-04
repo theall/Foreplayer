@@ -1,0 +1,45 @@
+﻿$name=sengoku2
+$version=2
+$default=002
+$main
+
+  * Note: Character voice is mixed.
+
+#002 Neo Geo Logo
+#060 Prologue
+#062 Demo 1
+#053 Start
+#033 Area 1 (1)
+#064 Warp
+#054 Area 1 (2), MidBoss 4
+#056 Mid Boss 1
+#047 Boss 前
+#035 Boss 1
+#048 Area Cleared
+#051 Demo 2
+#038 Area 2 (1)
+#057 Mid Boss 2
+#058 Area 2 (2)
+#039 Area 2 (3)
+#042 Boss 2
+#050 Demo 3
+#034 Area 3 (1)
+#059 Mid Boss 3
+#063 Area 3 (2)
+#043 Boss 3
+#052 Demo 4
+#044 Area 4 (1)
+#061 Area 4 (2)
+#045 Boss 4
+#046 Final Boss 
+#049 Completed
+#071 Epilogue
+#068 Ending
+#065 Credit
+#066 Game Over
+
+  [Composer]
+  Yasuo Yamate
+
+// Original List contribution by GolGol
+$end

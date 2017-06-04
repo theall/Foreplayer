@@ -1,0 +1,56 @@
+﻿$name=driftout
+$version=2
+$default=010
+$main
+
+#010 [SFX] CREDIT
+#032 Name Entry
+#027 Lonbird rally (ROUND 1)
+#028 SafariRally Kenya (ROUND 2)
+#031 ACROPOLIS RALLY (ROUND 3)
+#035 CONTINUE ? <time="15">
+#029 SWEDISH RALLY (ROUND 4)
+#033 1000 Lakes Rally (ROUND 5)
+#030 RALLY MONTE-CARLO (ROUND 6)
+#034 GOOD WORK !
+#036 CONGRATULATIONS !
+#025 GAME OVER
+
+#024 未使用曲 1
+#026 未使用曲 2
+#037 未使用曲 3
+
+#244 スピーカーテスト
+
+---------------------------------------------------
+  [SFX]
+
+#009 [SFX] 
+#010 [SFX] CREDIT
+#011 [SFX] 
+#014 [SFX] <time="4">
+#015 [SFX] 
+#016 [SFX] <time="3">
+#017 [SFX] <time="3"> 
+#018 [SFX] <time="3">  
+#019 [SFX] <time="3">  
+#020 [SFX] <time="3">  
+#021 [SFX] <time="3">  
+#022 [SFX]  
+#023 [SFX] 
+#242 [SFX] <time="3">
+#243 [SFX] <time="3">
+#245 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#012 [Voice] 
+#013 [Voice] 
+
+  ■作曲
+  MR.FUKUMORI
+  SPACE CREATIVE
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,65 @@
+﻿$name=pitfight
+$version=2
+$default=022
+$songmax=235
+$main
+
+#022 Attract Mode <time="2.5">
+#023 Attract Mode
+#024 Attract Mode
+#025 Attract Mode
+#026 Attract Mode
+#027 Select <time="50">
+#041 Match 1 <time="2:31">
+#043 Continue 1 <time="19">
+#042 Clear 1
+#044 Bonus
+#032 Match 2 <time="3:36">
+#034 Continue 2 <time="19">
+#033 Clear 2
+#051 Grudge Match <time="2:28">
+#052 Clear A
+#055 Bonus A
+#038 Match 3 <time="3:26">
+#040 Continue 3 <time="21">
+#039 Clear 3
+#035 Match 4 <time="2:35">
+#037 Continue 4 <time="31">
+#036 Clear 4
+#053 Grudge Match 2 <time="1:00">
+#054 Clear B
+#056 Bonus B
+#057 Bonus C
+#045 Championship Match <time="4:01">
+#046 Continue A <time="46">
+#047 New Champion <time="44">
+#058 Credits Roll <time="2:31">
+
+  [Source]
+  That's Atari Music -G.S.M. Atari Games 1-
+  Pony Canyon / Scitron  PCCB-00066  Jul 21, 1991
+
+  That's Atari Music -G.S.M. Atari Games 1- (Legend Series)
+  SME / Scitron  SCDC-00313  Dec 3, 2003
+
+------------------------------------------------------
+
+  Note : It seems that sampling rate may be higher in M1 in #55, 56 and 57.
+          Especially in #55, the Voice "Ah!" should be lower "Oh!".
+
+//#004 [SFX] <time="0:10">
+//#021 [SFX]
+//#049 [SFX]
+//#050 [SFX]
+//#060～095 [SFX]
+//#180～235 [SFX]
+//#277～ [SFX] #21からのループ?
+//
+//#005 [Voice]
+//#096～168 [Voice]
+//#169 [Voice] <time="2">
+//#170 [Voice]
+//#173～179 [SFX]
+//
+// List Contribution by Penpen
+$end

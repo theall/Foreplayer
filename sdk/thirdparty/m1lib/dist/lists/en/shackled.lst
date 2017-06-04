@@ -1,0 +1,61 @@
+﻿$name=shackled
+$version=2
+$default=42
+$main
+
+#042 Brey Wood Theme (Title)
+#278 Credit Inserted (Player 1)
+#039 Rescue from Prison
+#044 Kanbu Theme
+#040 Clear
+#057 Battle of Gumon
+#052 Shitennou Theme
+#056 All Clear - Recapture
+#041 Game Over
+
+----------------------------------------------------------
+  [SFX]
+
+#258 [SFX]
+#259 [SFX]
+#260 [SFX]
+#261 [SFX]
+#262 [SFX]
+#263 [SFX]
+#264 [SFX]
+#265 [SFX]
+#266 [SFX]
+#267 [SFX]
+#268 [SFX]
+#269 [SFX]
+#270 [SFX]
+#271 [SFX]
+#272 [SFX]
+#273 [SFX]
+#274 [SFX]
+#275 [SFX]
+#276 [SFX]
+#277 [SFX]
+#278 [SFX] Credit (Player 1)
+#279 [SFX] Credit (Player 2)
+#280 [SFX]
+#281 [SFX]
+#282 [SFX]
+#283 [SFX]
+#284 [SFX]
+#285 [SFX]
+#286 [SFX]
+#287 [SFX] 
+#288 [SFX]
+#289 [SFX]
+#290 [SFX]
+#291 [SFX]
+#292 [SFX]
+#293 [SFX]
+
+  [Source]
+  Deco History Scene I / Data East Game Music Scene One
+  Poly Star / Datam  H25X-20008  Sep 25, 1988
+
+// List contribution by R
+$end

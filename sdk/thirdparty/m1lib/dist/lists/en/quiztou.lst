@@ -1,0 +1,36 @@
+$name=quiztou
+$version=2
+$default=$01
+$main
+
+#001 History of Quiztou
+#002 The Theme of Quiztou (1)
+#003 Island Cruise (Theme of Laborer)
+#004 Waltz of Flower Garden (Theme of Attar)
+#005 Memory of Island (Theme of Farmer)
+#006 Ancient Dream (Theme of Palaeontoligist)
+#011 Bugle of Angel
+#015 Quiz!!
+#013 Samba de Quiz
+#014 ROCK is Great!
+#016 Q-TECH
+#007 Won Out! (1)
+#008 Abnormality
+#012 Find Keyword!
+#009 Great Satan Appers
+#018 Final Battle
+#019 Won
+#028 New History
+#027 Won Out! (2)
+#029 The Theme of Quiztou (2)
+
+  [Source]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097  Dec 16, 1993
+
+  [Composed and Arranged]
+  Masahiro Fukuzawa
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

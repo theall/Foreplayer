@@ -1,0 +1,150 @@
+﻿$name=nslasher
+$version=2
+$default=012
+$main
+
+#012 Good Choice -Demo- <time="1:00" fadeout="yes" fadeoutlength="10">
+#007 Night Slashers -BGM1-  <time="4:15" fadeout="yes" fadeoutlength="10">
+#010 Beat of Darkness -Boss1- <time="1:30" fadeout="yes" fadeoutlength="10">
+#008 That's It! -Clear- 
+#013 Black Blood -BGM2- <time="1:35" fadeout="yes" fadeoutlength="10">
+#014 Under the Moonlight -BGM3- <time="5:20" fadeout="yes" fadeoutlength="10">
+#016 I Will Crush! -Boss2- <time="1:28" fadeout="yes" fadeoutlength="10">
+#020 Splash -Bonus- <time="1:03" fadeout="yes" fadeoutlength="10">
+#021 OK! -Fanfare-
+#022 From the Hell -Act- <time="35" fadeout="yes" fadeoutlength="10">
+#024 Azteca -BGM4- <time="1:58" fadeout="yes" fadeoutlength="10">
+#015 Chaser -BGM5- <time="1:30" fadeout="yes" fadeoutlength="10">
+#011 At Last -Catch-
+#019 Dead Wind -BGM6- <time="3:47" fadeout="yes" fadeoutlength="10">
+#018 Madness Dream -Last Boss- <time="2:07" fadeout="yes" fadeoutlength="10">
+#023 Run & Run -Continue- <time="41" fadeout="yes" fadeoutlength="10">
+#009 Game Over
+#017 Sunrise -Ending- <time="2:33" fadeout="yes" fadeoutlength="10">
+
+  [Source] 
+  Night Slashers, Flower Busters / Data East
+  Pony Canyon / Scitron  PCCB-00142  Dec 17, 1993
+
+  [Composers]
+  Gamadelic (Data East Sound Team)
+  Mr. K
+  Tom Sato
+
+---------------------------------------------------
+
+  [Voices] 
+
+#027 [Voice] 
+#029 [Voice] 
+#032 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#050 [Voice] 
+#051 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#062 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#118 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#129 [Voice] 
+
+  [SFX] 
+  
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#026 [SFX] 
+#028 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#067 [SFX] 
+#072 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#117 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#130 [SFX] 
+
+// List contribution by Simon B.
+$end

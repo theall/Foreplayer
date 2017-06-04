@@ -1,0 +1,123 @@
+﻿$name=3countb
+$version=2
+$default=002
+$fixed_volume=261
+$main
+
+#002 Neo Geo Logo
+#057 The 100 Mega Shock!
+
+#033 Fire Suplex (Title)
+#066 Come on, you bastard! (Game Start)
+#065 How to Play (Demonstration)
+// not released on CD
+#053 Good Choice (Game Mode Select)
+#034 "Fire Muscle" Macho Man (Stage 1, 3, 5, 7, 9)
+#050 Dark Free Fall (Stage 2)
+#038 "Fighting Spirit" Mountain Guy (Stage 4)
+#035 Dirty Mexican Wall (Stage 6)
+#039 Burning Super Megaton Kick (Stage 8)
+#051 Terrible Master Barnes (Final Stage)
+#046 Theme of The Gandhara
+#054 Theme of Leo Bradlay
+#045 Theme of The Red Dragon
+#047 Theme of Gochack Bigbomb
+#043 Theme of Terry Rogers
+#048 Theme of Blues Hablam
+#044 Theme of Roy Wilson
+#055 Theme of Big Bomberder
+#056 Theme of Blubber Man
+#049 Theme of Master Barnes
+#037 Daaah! (Win)
+#042 Shit! (Loss)
+#052 Oooaaarrrg! (Here Comes a New Player)
+#041 End of Bout (Game Over)
+#040 My Dear Wrestling (Ending)
+
+--------------------------------------------------------------
+ [Voice]
+
+#137 [Voice]
+#240 [Voice]
+#241 [Voice]
+#242 [Voice]
+#243 [Voice]
+#244 [Voice]
+#245 [Voice]
+#246 [Voice]
+#247 [Voice]
+#248 [Voice]
+#249 [Voice]
+#250 [Voice]
+#251 [Voice]
+#252 [Voice]
+#253 [Voice]
+#254 [Voice]
+
+--------------------------------------------------------------
+ [SFX]
+
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#192 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+
+  [Source]
+  Fire Suplex / SNK
+  Pony Canyon / Scitron  PCCB-00134  Sep 17, 1993
+
+// List contributed by NK
+// English list by NK
+$end

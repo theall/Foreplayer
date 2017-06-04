@@ -1,0 +1,29 @@
+$name=champwr
+$version=2
+$default=67
+$main
+
+#67 Credit
+#07 Title
+#08 Player Select
+#25 Main BGM 1
+#17 Main BGM 2
+#33 Title Match
+#30 Champion
+#31 Ending
+#32 Name Entry
+#28 Game Over
+#09 Entrance Theme (Black Machine)
+#10 Entrance Theme (Jimmy Carbon)
+#11 Entrance Theme (Rocky Garner)
+#12 Entrance Theme (Miracle Rastan)
+#13 Entrance Theme (Matterhorn Decker)
+#14 Entrance Theme (Cobra Bloody Joe)
+#15 Entrance Theme (The Samurai)
+#16 Entrance Theme (Nitoro Panks)
+#27 Winner
+#29 Loser
+#35 - [SFX]
+
+// List by MuramuraNight
+$end

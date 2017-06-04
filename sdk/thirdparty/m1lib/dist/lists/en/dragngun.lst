@@ -1,0 +1,142 @@
+﻿$name=dragngun
+$version=2
+$default=030
+$main
+
+#030 Data East Logo
+#007 Grief (Introduction)
+#008 Sympathy (Player Select)
+#016 Presentiment (Map)
+#009 Dimension (Stage 1)
+#020 Red Wind (Boss 1)
+#022 To the Beginning (Stage Clear)
+#010 Rondo Part 1 (Stage 2)
+#015 Rondo Part 2 (Stage 2)
+#018 Evil Dragon (Boss 2)
+#011 Airing (Stage 3)
+#021 Black Beast (Boss 3)
+#019 Dragon Gun
+#012 Giga (Stage 4)
+#017 Purple Tusk (Boss 4)
+#013 Obstructor (Stage 5)
+#014 Need (Stage 6)
+#024 Faraway Encounter (Ending)
+#025 Triumphant Return (Name Entry)
+#026 Right Here, Right Now... (Continue)
+#023 All Brave Warriors (Game Over)
+
+#028 Dimension (Stage 1) &lt;w/o intro&gt;
+#029 Airing (Stage 3) &lt;w/o intro&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#096 [Voice]
+#098 [Voice]
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#102 [Voice]
+#103 [Voice]
+#104 [Voice]
+#105 [Voice]
+#106 [Voice]
+#107 [Voice]
+#108 [Voice]
+#109 [Voice]
+#110 [Voice]
+#111 [Voice]
+#112 [Voice]
+#113 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#121 [Voice]
+#069 [Voice]
+#070 [Voice]
+#071 [Voice]
+#072 [Voice]
+#075 [Voice]
+#076 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#031 [SFX] Credit
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#027 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#073 [SFX]
+#074 [SFX]
+#077 [SFX]
+#078 [SFX]
+#082 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#097 [SFX]
+#120 [SFX]
+#122 [SFX]
+#123 [SFX]
+
+  [Source]
+  Dragon Gun / Data East, Gamadelic
+  Pony Canyon / Scitron  PCCB-00117  Mar 19, 1993
+
+// List contributed by NK
+// English list by NK
+$end

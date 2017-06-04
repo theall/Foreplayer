@@ -1,0 +1,27 @@
+﻿$name=dendego
+$version=2
+$default=14
+$main
+
+#14 Go! Go! Train (タイトルデモ)
+#11 Traffic [イントロ] (セレクト画面)
+#12 Traffic [メイン] (セレクト画面)
+#15 Game Start
+#08 発車ベル
+#04 Bonus Hit (停止位置ジャスト)
+#06 Bonus Stage
+#05 Docking!! (ボーナスステージ成功／停止位置・時刻ジャスト)
+#09 Name Entry
+#07 Congratulation!! (オールクリア)
+#13 Take me sunset (エンディング)
+
+  ■出典
+  電車でGO！／サイドバイサイド 2
+  ZUNTATA / J.A.M.
+  ZUNTATA RECORDS  ZTTL-0018  1997.12.21
+
+  ■作曲
+  古川 典裕
+
+// List Contribution by Mappi
+$end

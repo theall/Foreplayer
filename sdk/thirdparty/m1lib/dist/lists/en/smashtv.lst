@@ -1,0 +1,122 @@
+﻿$name=smashtv
+$version=2
+$default=012
+$songmax=207
+$main
+
+#012 Title Theme
+#003 Circuit 1
+#004 Boss
+#009 Stage Clear
+#006 Circuit 2
+#014 Circuit 3
+#001 Last Arena?
+#010 Cobra Death!
+#008 You Have Enough Keys!
+#015 Ending
+
+#005 Circuit 2 &lt;W/O Intro&gt;
+#007 Circuit 2 &lt;Diffrent Mix&gt;
+#013 (unused) &lt;Mix 1&gt;
+#002 (unused) &lt;Mix 2&gt;
+#016 (unused)
+
+ [Voice]
+
+#063 [Voice] "No way!"
+#080 [Voice] "Bingo!"
+#048 [Voice] "Yeah!"
+#083 [Voice] "Good luck!" <time="1.5">
+#090 [Voice] "You'll need it!"
+#081 [Voice] "Big money!" <time="1.7">
+#082 [Voice] "Big prizes!" <time="1.7">
+#087 [Voice] "I love it!"
+#084 [Voice] "Contestant 1!"
+#085 [Voice] "Contestant 2!"
+#086 [Voice] "Total carnage!"
+#050 [Voice] "I buy that for a dollar!"
+#089 [Voice] "Ten seconds!"
+#052 [Voice] "Go!"
+#051 [Voice] "Umm.."
+#049 [Voice] "Uggh!"
+#053 [Voice] "Whooh!"
+#054 [Voice] "Woo!"
+#088 [Voice] "Let's go!"
+#055 [Voice] "Huhuha..!"
+#056 [Voice] "Aaarrgh.."
+#057 [Voice] "Oooaaarrrg!"
+#058 [Voice] "Uh.."
+#059 [Voice] "Urk.."
+#060 [Voice] "Hahaha..!"
+#061 [Voice] "Hehe..!"
+#062 [Voice] "Hehe..!"x6
+#201 [Voice] "Uggh.."
+#203 [Voice] Cheer 1
+#202 [Voice] Cheer 2
+#204 [Voice] Cheer 3
+
+ [SFX]
+
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#159 [SFX]
+#160 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#192 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#200 [SFX]
+#206 [SFX]
+#207 [SFX]
+
+// List Contribution by NK
+$end

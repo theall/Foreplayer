@@ -1,0 +1,43 @@
+﻿$name=spf2t
+$version=2
+$default=030
+$fixed_volume=100
+$main
+
+#030 QSound Logo (Main Part)
+
+#012 Attract Mode
+#014 Character Select
+#015 Versus
+#001 Stage: Morrigan
+#005 Stage: Lei-Lei (Hsien-Ko)
+#006 Stage: Donovan
+#007 Stage: Felicia
+#016 Winning Theme
+#017 Show Time
+#019 Another Player Joined
+#003 Stage: Ryu
+#004 Stage: Ken
+#002 Stage: Chun-Li
+#008 Stage: Sakura
+#010 Stage: Gouki (Akuma)
+#009 Stage: Devilotte
+#011 Dan's Theme
+#018 Continue
+#020 Game Over
+#021 Ranking 1
+#022 Ranking 2
+#013 Dan's Saikyo-ryu Puzzle Dojo
+#023 Ending
+
+
+#031 QSound Logo (Sub Part)
+
+  [Soundtrack]
+  Quiz Nanairo Dreams Nijiirochou no Kiseki /
+  Super Puzzle Fighter II X
+  Victor Entertainment  VICL-40210, 40211  Jan 22, 1997
+
+// List Contribution by Min
+// EngRish version by Fujix
+$end

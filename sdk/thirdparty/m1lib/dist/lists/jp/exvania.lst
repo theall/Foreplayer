@@ -1,0 +1,30 @@
+$name=exvania
+$version=2
+$default=$69
+$main
+
+#105 オープニング
+#071 参加待ちBGM
+#107 ステージスタート (CD未収録)
+#065 ゲームBGM
+#073 警告BGM
+#079 引き分け＆負けJINGLE
+#067 ゲームBGM 2 (CD未収録)
+#077 勝敗表＆マップ
+#099 ボス・ドラゴンのBGM
+#069 コンティニュー
+#097 ゲームオーバー
+#101 最終ボス・エリニュスのBGM
+#075 勝ちJINGLE
+#103 エンディング (CD未収録)
+#109 スタッフロール (CD未収録)
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI VOL.10
+  VICTOR ENTERTAINMENT  VICL-40097  1993.12.16
+
+  ■作曲・編曲
+  荒川 美恵
+
+// リスト作成: らま
+$end

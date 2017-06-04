@@ -1,0 +1,290 @@
+﻿
+$name=ecofghtr
+$version=2
+$default=17
+$songmax=336
+$fixed_volume=263
+$main
+
+#017 QSound Logo
+
+#032 Credit Inserted
+#016 Story Demo
+#027 Stage Start Demo
+#000 Stage BGM 1
+#007 Boss BGM 1
+#023 Stage Clear
+
+#001 Stage BGM 2
+#008 Boss BGM 2
+#002 Stage BGM 3
+#009 Boss BGM 3
+#003 Stage BGM 4
+#010 Boss BGM 4
+#004 Stage BGM 5
+#011 Boss BGM 5 
+
+#028 Stage Start Demo
+#005 Stage BGM 6
+#012 Boss BGM 6
+#006 Stage BGM 7 (Final Stage)
+#013 Boss BGM 7
+#014 Boss BGM 8
+#015 Boss BGM 9
+
+#025 Ending
+#026 Credits
+#019 Continue
+#020 Game Over
+#021 Ranking Table
+
+#018 QSound Logo (sub)
+
+--------------------------------------------------------------
+  [Voice]
+
+#256 [Voice]
+#257 [Voice]
+#258 [Voice]
+#259 [Voice]
+#260 [Voice]
+#261 [Voice]
+#262 [Voice]
+#263 [Voice]
+#264 [Voice]
+#265 [Voice]
+
+#266 [Voice]
+#267 [Voice]
+#268 [Voice]
+#269 [Voice]
+#270 [Voice]
+#271 [Voice]
+#272 [Voice]
+#273 [Voice]
+#274 [Voice]
+#275 [Voice]
+
+#276 [Voice]
+#277 [Voice]
+#288 [Voice]
+#289 [Voice]
+#290 [Voice]
+#291 [Voice]
+#292 [Voice]
+#293 [Voice]
+#294 [Voice]
+#295 [Voice] 
+
+#296 [Voice]
+#297 [Voice]
+#298 [Voice]
+#299 [Voice]
+#300 [Voice]
+#301 [Voice]
+#302 [Voice]
+#303 [Voice]
+#304 [Voice]
+#305 [Voice] 
+
+#320 [Voice]
+#321 [Voice]
+#322 [Voice]
+#323 [Voice]
+#324 [Voice]
+#335 [Voice]
+#336 [Voice]
+
+--------------------------------------------------------------
+  [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#059 [SFX]
+#060 [SFX]
+
+#061 [SFX]
+#062 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+
+#121 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+
+#131 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+
+#171 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#306 [SFX]
+#307 [SFX]
+
+  [Source]
+  Ultimate Ecology
+  Shinseisha / Gamest  GCD-2  Jan 22, 1994
+
+  [Sound Composer]
+  Syun
+
+// List contribution by R
+$end

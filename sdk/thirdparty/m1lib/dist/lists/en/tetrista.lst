@@ -1,0 +1,19 @@
+﻿$name=tetrista
+$version=2
+$default=17
+//$songmax=$B6
+$main
+
+$11 Coin
+$09 Main Music 1
+$0a Main Music 2
+$0b Main Music 3
+$0c Main Music 4
+$0d Main Music 5
+$0e Deadlock
+$0f Game Over
+$10 Name Entry (The Soviet National Anthem?)
+
+// Hoot list by kikur
+// M1 List by Knurek
+$end

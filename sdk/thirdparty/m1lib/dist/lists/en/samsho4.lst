@@ -1,0 +1,52 @@
+﻿$name=samsho4
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#033 Amakusa's Revenge (Title)
+#057 Seventeen Swordsmen (Player Select)
+#044 Shimabara (Map)
+#058 Fare and Square
+#034 Road to Asura (Haohmaru)
+#059 Conclusion (Conclusion)
+#080 River Part 2 (Ukyo Tachibana) <time="4:44">
+#048 Incarnation of Tunny (Galford)
+#082 Banquet of Nature Part 2 (Nakoruru)
+#083 Mirror of Mind Part 2 (Rimururu)
+#085 Meditation 1 (Image 1)
+#086 Meditation 2 (Image 2)
+#087 Meditation 3 (Image 3)
+#035 Song of Inhumanity Part 2 (Genjuro Kibagami)
+#084 Foreign Lady Part 3 (Charlotte)
+#081 Flame (Kazuki Kazama)
+#049 Incarnation of Water (Sogetsu Kazama)
+#046 Two (Amakusa Demo)
+#050 Dynamic Static (Amakusa Shiro Tokisada)
+#051 Static Dynamic (Zankuro Minazuki)
+#036 Cherry Blossoms (Cherry Blossoms Stage)
+#052 San no Miya (Seaside Stage) <time="5:00">
+#037 Bamboo Grove (Bamboo Grove Stage)
+#053 Dog (Deserted Village Stage) <time="5:00">
+#038 Burning Hell (Fire Stage)
+#039 Old Temple (Old Temple 1)
+#040 Two Deva Kings (Old Temple 2)
+#054 Steam (Rocky Stage)
+#055 Obscure (Execution Stage)
+#047 Three (Rival Appearance Demo)
+#056 Worthy Opponent (Last Battle)
+#060 Encore (Continue)
+#045 View 1 (Normal Ending)
+#062 View 2 (Bad Ending)
+#041 End
+#063 Promoters (Credits Roll)
+#061 Curtain Fall (Game Over)
+
+  [Source]
+  Samurai Spirits - Amakusa Kourin / SNK
+  Pony Canyon / Scitron  PCCB-00231  Dec 04, 1996
+
+// List Contribution by NK
+// English List by NK
+$end

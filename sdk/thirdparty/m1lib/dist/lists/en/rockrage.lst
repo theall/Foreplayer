@@ -1,0 +1,179 @@
+﻿$name=rockrage
+$version=2
+$default=035
+$songmax=255
+$fixed_volume=200
+$main
+
+#035 Credit
+#082 Live! Take 1
+#080 Kidnapping Abduction
+#081 Chase
+#079 Ancient Egypt
+#093 Pyramid
+#064 Cleopatra (Woman) <time="21.7">
+#073 Boss A: Tutankhamen (?: Scorpions)
+
+#086 The Middle Ages Great Britain 
+#096 Castle
+#067 King Arthur (???) <time="22.8">
+#072 Boss B: Sorceress (?: Led Zeppelin)
+
+#084 France (Tout Tout Pour Ma Chérie)
+#094 Palace
+#069 Napoleon (La Marseillaise) <time="17">
+#073 Boss A: Enchantress
+
+#085 Ancient Rome (Twist and Shout)
+#095 Sanctuary (Rock Me Amadeus)
+#066 Venus (Like A Virgin) <time="26.5">
+#072 Boss B : Minotaur
+
+#087 U.S.A.
+#097 Casino
+#068 Statue of Liberty (Born in the U.S.A.) <time="18">
+#070 Space Pilot (The Star Spangled Banner) <time="16.5">
+#065 Bluce King (???) <time="12.5">
+#071 Drago (Theme of Rocky) <time="17">
+#073 Boss A: Monster Kids (Last Boss)
+
+#099 ...Silence
+#100 Rescue!
+#083 Live! Take 2
+#101 Credits Roll
+#088 Game Over
+
+-----------------------------------------------------
+  [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX] Extend
+#031 [SFX]
+#032 [SFX] 
+#033 [SFX]
+#034 [SFX] Player Out
+#035 [SFX] Credit
+#036 [SFX]
+#037 [SFX] Boss Destroyed
+#038 [SFX]
+#039 [SFX] Monster Kids Hands
+#040 [SFX]
+#041 [SFX]
+#089 [SFX] 
+#090 [SFX] Shout of Joy
+#092 [SFX] Boom
+
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice]
+#133 [Voice]
+#134 [Voice] 
+#135 [Voice] 
+#137 [Voice] 
+#138 [Voice]
+#139 [Voice]
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice]
+#144 [Voice]
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice]
+#149 [Voice]
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice]
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+#158 [Voice]
+#159 [Voice]
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice]
+#164 [Voice]
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice]
+#169 [Voice]
+#170 [Voice] 
+#171 [Voice] 
+#172 [Voice] Look for Cleopatra
+#173 [Voice]
+#174 [Voice] 
+#175 [Voice] Look for King Arthur
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice]
+#179 [Voice]
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] Look for Venus
+#183 [Voice] Look for Napoleon
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] Look for the Superstar
+#187 [Voice] Help me!
+#188 [Voice]
+#189 [Voice]
+#190 [Voice] You are my lucky star!!
+#191 [Voice] I'm with you.
+#192 [Voice] I love you.
+#193 [Voice] C'mom boy
+#194 [Voice] Oh, Cleopatra
+#195 [Voice] Oh, King Arthur
+#196 [Voice] Oh, Venus
+#197 [Voice] Oh, Napoleon
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice]
+#202 [Voice]
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice]
+#207 [Voice] 
+
+  [Source]
+  The Konamic Game Freaks
+  Alfa Records  28XA-135  May 25, 1987
+
+  Konami All Stars - Senryoubako Heisei 4-nen ban -
+  King Records  KICA-1053, 1054, 1055  Dec 21, 1991
+
+// List contribution by R
+$end

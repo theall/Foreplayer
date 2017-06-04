@@ -1,0 +1,181 @@
+$name=qcrayon2
+$version=2
+$default=020
+$main
+
+#020 Demo BGM 1
+#019 Demo BGM 2
+#112 Title
+#016 Game Explanation Demo
+#032 [Voice] Credit
+#012 Start Demo
+#021 Map Movement <time="5">
+#014 Team Introduction BGM
+#027 Shutsudai sha ni nin me kara
+#022 Game Select
+#013 Problem Minigame
+#023 Round Clear
+#017 Score Result
+#028 Nohara gin no kai toujou!
+#025 Final Round
+#024 All Round Clear
+#029 Victory Reward Selection
+#018 Chokobi ichi nen bun
+      Sekai isshuu
+      Shinju no necklace
+      Ikasu gaisha
+#011 Staff Roll
+#015 Game Over
+#018 Name Entry
+
+---------------------------------------------------
+
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#057 [S.E.] Credit
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#064 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.] <time="5">
+#070 [S.E.]
+#071 [S.E.] <time="5">
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#096 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#009 [S.E. Voice]
+#010 [S.E. Voice]
+#112 [Voice]
+
+  Shinnosuke
+
+#032 [Voice]
+#055 [Voice] <time="3">
+#056 [Voice] <time="3">
+
+#113 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#120 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+#124 [Voice]
+#125 [Voice]
+#126 [Voice]
+#127 [Voice]
+#128 [Voice]
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+#143 [Voice]
+#144 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+
+  Misae
+
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#160 [Voice]
+#161 [Voice]
+#162 [Voice]
+#163 [Voice]
+#164 [Voice]
+#165 [Voice]
+#166 [Voice]
+#167 [Voice]
+#168 [Voice]
+#169 [Voice]
+#170 [Voice]
+#171 [Voice]
+#172 [Voice]
+#173 [Voice]
+#174 [Voice]
+#175 [Voice]
+#176 [Voice]
+#177 [Voice]
+#178 [Voice]
+#179 [Voice]
+#180 [Voice]
+#181 [Voice]
+#182 [Voice]
+#183 [Voice]
+#184 [Voice]
+#185 [Voice]
+#186 [Voice]
+#187 [Voice]
+#188 [Voice]
+#189 [Voice]
+
+  [Composed by]
+  Yasuko Yamada
+
+// List contribution by ZEK. 
+// Updated by Fujimon.
+// English list by Knurek.
+$end

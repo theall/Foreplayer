@@ -1,0 +1,136 @@
+﻿$name=macross2
+$version=2
+$default=043
+$main
+
+  [BGM] (Tracklist done using the BEGINNER COURSE in-game)
+
+#043 Super Spacefortress MACROSS II Title Screen
+#208 [SFX] COIN Inserted
+#039 GAME TYPE SELECT - SELECT COURSE
+#193 [Voice] "LET'S GO!"
+#001 BEGINNER COURSE: STAGE 1
+#027 Boss BGM#1 (BG: S1-MD: S2-EX: S1,S3) 
+#045 STAGE CLEAR
+#223 STAGE Interlude
+#003 BEGINNER COURSE: STAGE 2
+#025 Boss BGM#2 (BG: S2-MD: S1,S3-EX: S2)
+#005 BEGINNER COURSE: STAGE 3
+#023 Boss BGM#3 (BG: S3)
+#019 SPECIAL STAGE (All COURSE)
+#029 SPECIAL STAGE Boss
+#031 COURSE COMPLETED (Ending)
+#037 RANKING (1st)
+#035 RANKING (2nd~8th) 
+#047 CONTINUE?
+#033 Game Over
+
+#007 MEDIUM COURSE: STAGE 1
+#009 MEDIUM COURSE: STAGE 2
+#011 MEDIUM COURSE: STAGE 3
+
+#013 EXPERT COURSE: STAGE 1
+#017 EXPERT COURSE: STAGE 2
+#015 EXPERT COURSE: STAGE 3
+
+#041 1P VS 2P Results
+
+---------------------------------------------------
+  [Voice]
+
+#192 [Voice] 
+#193 [Voice] "LET'S GO!" 
+#194 [Voice]
+#195 [Voice] 
+
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+
+#200 [Voice]
+#201 [Voice]
+#202 [Voice]
+#203 [Voice]
+
+---------------------------------------------------
+  [SFX]
+
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX] COIN Inserted
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#243 [SFX]
+#244 [SFX]
+
+
+  [Composers]
+  Hide-Kaz 
+  Abraham 
+  Manabu Namiki (Taro) 
+  Mr. Takami  
+
+Note:
+  BG=BEGINNER, MD=MEDIUM, EX=EXPERT, S*=STAGE
+
+  Bosses sorted by COURSE:
+	BEGINNER COURSE
+	  Boss1, Boss BGM#1
+	  Boss2, Boss BGM#2
+	  Boss3, Boss BGM#3
+	
+	MEDIUM COURSE
+	  Boss1, Boss BGM#2
+	  Boss2, Boss BGM#1
+	  Boss3, Boss BGM#2
+
+	EXPERT COURSE
+	  Boss1, Boss BGM#1
+	  Boss2, Boss BGM#2
+	  Boss3, Boss BGM#1
+// List contribution by Simon B., done in playing the game.
+$end

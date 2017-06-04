@@ -1,0 +1,29 @@
+﻿$name=zerogun
+$version=2
+$default=000
+$main
+
+#000 SELECT
+#001 Mission BGM #1
+#002 Boss BGM
+#013 STAGE CLEAR
+#003 Mission BGM #2
+#009 Mission BGM #3
+#008 Mission BGM #4
+#006 Mission BGM #5
+#005 Mission BGM #6
+#004 Mission BGM #7
+#011 Mission BGM #8
+#010 Mission BGM #9
+#007 Mission BGM #10
+#012 Final Mission BGM
+#014 MISSION ALL CLEAR
+
+#015 Unknown
+
+
+  [Composers]
+  Psikyo Sound Team
+
+// List contribution by Simon B., done in playing the game.
+$end

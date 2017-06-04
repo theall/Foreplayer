@@ -1,0 +1,76 @@
+﻿$name=aodk
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#039 We are "THE ADK!" (ADKロゴ)
+#061 悪の教典 第2 (オープニング)
+#058 行進曲 第2 (How to play)
+#019 What is your choice? (Player select)
+#053 Make one's appearance! (条ジングル)
+#018 Levy Fight! (条デモ)
+#020 魂 (条メイン)
+#021 MAN OF SPIRIT (条ピンチ)
+#059 行進曲 第1 (Clear)
+#016 Win? or Lose... (勝ち負けデモ)
+#051 長江の詩 (リージングル)
+#050 リー登場 (リーデモ)
+#062 危険を売る男 (リーメイン)
+#052 交響曲 第1 (リーピンチ)
+#034 THE SEVERE MAN (シンジングル)
+#013 Be seized with fear (シンデモ)
+#011 Winners (シンメイン)
+#033 Your life is in danger (シンピンチ)
+#005 波瀾万丈 (キサラジングル)
+#006 I'm chocked with a thousand emotions (キサラデモ)
+#004 開眼 (キサラメイン)
+#008 As long as one lives -命ある限り- (キサラピンチ)
+#055 フウマの里の詩 (フウマジングル)
+#054 フウマ登場 (フウマデモ)
+#067 風魔の掟 (フウマメイン)
+#046 風魔の掟 2 (フウマピンチ)
+#024 Hold Up! (ボビージングル)
+#026 Free Dancing (ボビーデモ)
+#025 Take it easy (ボビーメイン)
+#027 Now what do I do? (ボビーピンチ)
+#035 黒豹の詩 (レオンハルトジングル)
+#057 レオンハルト登場 (レオンハルトデモ)
+#043 Epitaph in Desert storm (レオンハルトメイン)
+#044 Epitaph in Desert storm 2 (レオンハルトピンチ)
+#056 おら! (剛ジングル)
+#012 よっしゃ来い!! (剛デモ)
+#010 愛と騒音の夜 (剛メイン)
+#032 燃えろバカおとこ (剛ピンチ)
+#023 A PREPOSTEROUS ART 1 (条、レオンハルト ガンガン必殺)
+#037 A PREPOSTEROUS ART 2 (リー、シン、フウマ ガンガン必殺)
+#038 A PREPOSTEROUS ART 3 (キサラ、ボビー、剛 ガンガン必殺)
+#064 Long night in summer (条エンディング)
+#047 Hurricane (リーエンディング)
+#014 CHANCE! (シンエンディング)
+#066 Endless Dream (キサラエンディング) <time="2:38">
+#009 STRANGER (フウマエンディング) <time="2:31">
+#029 Dance Tonight (ボビーエンディング)
+#065 Lost your heart (レオンハルトエンディング) <time="2:06">
+#015 Dear Friend (剛エンディング)
+#007 Eternal intoxication (コンティニュー)
+#017 My fight is done (ゲームオーバー)
+#036 行進曲 第3 (ランキング)
+
+#049 Long night in summer (条エンディング) &lt;short edit&gt;
+#022 Hurricane (リーエンディング) &lt;short edit&gt;
+#068 CHANCE! (シンエンディング)
+#048 Endless Dream (キサラエンディング) &lt;short edit&gt;
+#063 STRANGER (フウマエンディング) &lt;short edit&gt;
+#028 Dance Tonight (ボビーエンディング) &lt;short edit&gt;
+#060 Lost your heart (レオンハルトエンディング) &lt;short edit&gt;
+#030 未使用曲1
+#031 未使用曲2
+#080 未使用曲3
+
+  ■出典
+  痛快ガンガン行進曲 / SNK・ADK
+  PONY CANYON / SCITRON  PCCB-00163  1994.10.21
+
+// List Contribution by NK
+$end

@@ -1,0 +1,26 @@
+﻿$name=gbusters
+$version=2
+$default=127
+$main
+
+#127 Crazy Cop (Title Demo)
+#132 Let's Move Out (Start Demo)
+#128 Catch Those Robbers (Stage 1)
+#134 American Mood (Stage 2)
+#133 Great Shot (Boss)
+#136 Police Force (Stage Clear)
+#129 The Harbor Punk (Stage 3)
+#139 Take That, Cop! (Stage 4)
+#135 Don't Miss the Offender! (Stage 5)
+#138 Last Robber (Last Boss)
+#131 Oh! My God (Game Over)
+#130 Ranking (Ranking)
+#140 Great Police Power (All Clear)
+#137 Copped Robbers (Ending)
+
+  [Soundtrack]
+  Konami Game Music Collection Vol.0
+  King Records  K30X-7705  Jul 21, 1989
+
+// List Contribution by Min
+$end

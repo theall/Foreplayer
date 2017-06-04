@@ -1,0 +1,101 @@
+﻿$name=orunners
+$version=2
+$default=078
+$songmax=244
+$main
+
+$4e [SFX] Coin <time="1">
+$20 [SFX] Ignition <time="2">
+$0f Mega Driver
+$01 Magical Sound Shower (1993)
+$02 Passing Breeze (1993)
+$03 Splash Wave (1993)
+$04 Picture the Rivers
+$05 Blow Your Cool
+$06 Looking for the Rainbow
+$07 Speed King
+$08 Adventure
+$0e Sonic Control
+$12 Last Wave (1993)
+$0b Meaning of the Light (game over version)
+$10 Dream Flying
+
+$f3 Start
+$ec Stage 1 - Grand Canyon
+$f1 Stage 2 - San Francisco
+$e8 Stage 3 - South America
+$f2 Stage 4 - Niagara
+$ed Stage 5 - Hawaii
+$f0 Stage 6 - Pacific Ocean
+$e7 Stage 7 - Spain
+$e9 Stage 8 - Atlantic Ocean
+$e1 Stage 9 - Switzerland
+$ea Stage 10 - China
+$e4 Stage 11 - Japan
+$e6 Stage 12 - Hong Kong
+$e5 Stage 13, 20 - Egypt
+$ef Stage 14, 19 - Mediterranean Sea
+$e2 Stage 15, 18 - France
+$e3 Stage 16, 17 - Germany
+$f4 Final Stage
+
+ [Not released on CD]
+
+$09 Meaning of the Light (long version)
+$0a Game Over
+$0d BGM #0d
+$eb BGM #eb
+$ee BGM #ee
+$0c Sound Test?
+$e0 Passed Check Point (FM Radio)
+
+-------------------------------------------------
+
+#032 [PCM] Ignition
+#034 [PCM] Bell
+#035 [Voice] Elephant
+#036 [Voice] Cheer
+#038 [Voice] Oooh.
+#039 [Voice] Laughter
+#040 [Voice] Boo
+#060 [Voice] Yeah!
+#061 [Voice] Ready!
+#062 [Voice] Go!
+#063 [Voice] You're in the lead as you pass this check point.
+#064 [Voice] Dynamite driver
+#065 [Voice] Great job!
+#066 [Voice] I'm sorry, you didn't make it.
+#067 [Voice] Try again.
+#083 [Voice] Wooo-Hee!
+
+#094 [FM Radio] ..
+#095 [FM Radio] ..
+
+#096 [Voice] Bad boy
+#097 [Voice] Easy handling.
+#098 [Voice] Mad power
+#099 [Voice] Quick reactor
+#100 [Voice] The road monster
+#101 [Voice] Smooth operator
+#102 [Voice] Speed buster
+#103 [Voice] Wild chaser
+#114 [Voice] entering new stage.
+
+#144 [Voice] You're in car number one.
+#145 [Voice] You're in car number two
+#146 [Voice] You're in car number three
+#147 [Voice] You're in car number four
+#148 [Voice] You're in car number five
+#149 [Voice] You're in car number six
+#150 [Voice] You're in car number seven
+#151 [Voice] You're in car number eight
+
+  [Source]
+  Virtua Racing & Out Runners / B-univ
+  Toshiba EMI  TYCY-5365 - 5366  Dec 15, 1993
+
+// List Contribution by Idumi Hatoba
+// Edited by Fujix
+// Helped by Santeri Saarimaa 
+$end
+

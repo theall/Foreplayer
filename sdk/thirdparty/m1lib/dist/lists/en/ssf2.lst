@@ -1,0 +1,350 @@
+﻿$name=ssf2
+$version=2
+$default=061
+$fixed_volume=204
+$main
+
+#061 QSound Logo
+//Main QSound
+
+#051 Opening Demo <time="25">
+#052 Player Select <time="45.2">
+#063 Tournament <time="4">
+#053 VS. <time="5">
+#001 Ken Stage I <time="2:09">
+#017 Ken Stage II <time="48.9">
+#034 Ken Ending I <time="52">
+#033 Ken Ending II <time="1:24">
+// Original Piece : Wedding March (Mendelssohn)
+#002 Ryu Stage I <time="1:40.7">
+#018 Ryu Stage II <time="32.2">
+#035 Ryu Ending <time="1:03">
+#004 Chun-Li Stage I <time="1:47.3">
+#020 Chun-Li Stage II <time="32.3">
+#037 Chun-Li Ending I <time="53.7">
+#038 Chun-Li Ending II <time="39.4">
+#062 Chun-Li Ending III <time="41.1">
+#059 Bonus Stage <time="48.2">
+#016 Dee Jay Stage I <time="1:19.9">
+#032 Dee Jay Stage II <time="39.4">
+#050 Dee Jay Ending <time="59.7">
+#015 T. Hawk Stage I <time="1:16">
+#031 T. Hawk Stage II <time="35.7">
+#049 T. Hawk Ending <time="1:15">
+#013 Fei Long Stage I <time="1:15.2">
+#029 Fei Long Stage II <time="36.1">
+#047 Fei Long Ending <time="55.4">
+#014 Cammy Stage I <time="2:04.6">
+#030 Cammy Stage II <time="32.3">
+#048 Cammy Ending <time="1:36">
+#003 E. Honda Stage I <time="2:09.2">
+#019 E. Honda Stage II <time="34.8">
+#036 E. Honda Ending <time="51.4">
+#007 Guile Stage I <time="2:15.2">
+#023 Guile Stage II <time="57.8">
+#041 Guile Ending <time="50.4">
+#008 Dhalsim Stage I <time="1:46.8">
+#024 Dhalsim Stage II <time="59">
+#042 Dhalsim Ending <time="36">
+#005 Blanka Stage I <time="1:53.5">
+#021 Blanka Stage II <time="29.6">
+#039 Blanka Ending <time="38.2">
+#006 Zangief Stage I <time="1:51.8">
+#022 Zangief Stage II <time="33.5">
+#040 Zangief Ending <time="45.3">
+#054 Stage End <time="5.8">
+#055 Continue <time="38.7">
+#056 Here Comes A New Challenger <time="4">
+#009 Balrog Stage I <time="1:47.4">
+#025 Balrog Stage II <time="31">
+#043 Balrog Ending <time="54">
+#010 Vega Stage I <time="1:55.7">
+#026 Vega Stage II <time="56.7">
+#044 Vega Ending <time="54.3">
+#011 Sagat Stage I <time="1:57.8">
+#027 Sagat Stage II <time="26.7">
+#045 Sagat Ending <time="41.1">
+#012 M. Bison Stage I <time="2:09.5">
+#028 M. Bison Stage II <time="57.7">
+#046 M. Bison Ending <time="32">
+#193 Congratulations! <time="1:11.8">
+#060 Credits Roll <time="2:49.9">
+#057 Game Over <time="4">
+#058 Ranking Display <time="4">
+
+#209 QSound Logo 2
+//Sub-QSound
+
+----------------------------------------------------------------------------
+ [Voice]
+
+#171 [Voice] Round
+#172 [Voice] Fight
+#173 [Voice] Final
+#174 [Voice] You
+#175 [Voice] Win
+#176 [Voice] Lose
+#484 [Voice] Wins
+#485 [Voice] Loses
+#483 [Voice] Versus
+#177 [Voice] Perfect
+#454 [Voice] 0
+#455 [Voice] 1
+#456 [Voice] 2
+#457 [Voice] 3
+#458 [Voice] 4
+#459 [Voice] 5
+#460 [Voice] 6
+#461 [Voice] 7
+#462 [Voice] 8
+#463 [Voice] 9
+#464 [Voice] Ryu
+#465 [Voice] Ken
+#466 [Voice] Chun-Li
+#467 [Voice] Guile
+#468 [Voice] E. Honda
+#469 [Voice] Honda
+#470 [Voice] Blanka
+#471 [Voice] Dhalsim
+#472 [Voice] Zangief
+#473 [Voice] Bison
+#474 [Voice] Balrog
+#475 [Voice] Sagat
+#476 [Voice] Vega
+#477 [Voice] T. Hawk
+#478 [Voice] Hawk
+#479 [Voice] Fei Long
+#480 [Voice] Cammy
+#481 [Voice] Dee Jay
+#178 [Voice] Japan
+#179 [Voice] U.S.A.
+#180 [Voice] China
+#181 [Voice] Brazil
+#182 [Voice] India
+#183 [Voice] U.S.S.R.
+#184 [Voice] Spain
+#185 [Voice] Thailand
+#186 [Voice] Mexico
+#187 [Voice] Hong Kong
+#188 [Voice] England
+#189 [Voice] Jamaica
+#482 [Voice] You are the champion!
+
+  Ken
+#101 [Voice] Shouryuuken
+#102 [Voice] Hadouken
+#103 [Voice] Tatsumaki Senpuukyaku
+#104 [Voice] Ya! (Seoinage, Jigoku-Guruma)
+#105 [Voice] Urk..
+
+  Ryu
+#096 [Voice] Shouryuuken
+#097 [Voice] Hadouken
+#098 [Voice] Tatsumaki Senpuukyaku
+#099 [Voice] Ha! (Seoinage, Tomoenage)
+#100 [Voice] Uurk..
+
+  Chun-Li
+#106 [Voice] Spinning Bird Kick
+#107 [Voice] Ya! (Hyakuretsu Kyaku)
+#108 [Voice] Ei! (Koshuutou)
+#109 [Voice] Kikouken
+#110 [Voice] Hahahaha.. (Win 1)
+#111 [Voice] Yatta! (Win 2)
+#112 [Voice] Aaah..
+
+  Dee Jay
+#434 [Voice] Dei! (Funky Shout Throw, Monkey Flip)
+#436 [Voice] Kick it! (Win 1)
+#438 [Voice] All right! (Win 2)
+#440 [Voice] Dada.. (Macine Gun Upper 1)
+#442 [Voice] Daah! (Macine Gun Upper 2)
+#444 [Voice] Uurgh.. (Double Rolling Sobat 1)
+#446 [Voice] Hah! (Double Rolling Sobat 2)
+#448 [Voice] Slash! (Air Slasher in JP ver.)
+#450 [Voice] Max out! (Air Slasher)
+#452 [Voice] Nooo..
+
+  T. Hawk
+#154 [Voice] Oogh! (Tomahawk Buster, Condor Dive)
+#155 [Voice] Mmmmmg! (Mexican Typhoon)
+#156 [Voice] Huu! (Mexican Throw, Neck-Hanging Tree)
+#157 [Voice] Uaarghh..
+
+  Fei Long
+#158 [Voice] Hai! (Rekkaken 1, 2)
+#159 [Voice] Howaaai! (Rekkaken 3)
+#160 [Voice] Howachoou! (Shienkyaku)
+#161 [Voice] Ha! (Gankaihou, Shuushugai)
+#162 [Voice] Hooooo (Win)
+#163 [Voice] Hoaaarr..
+
+  Cammy
+#164 [Voice] Cannon Drill
+#165 [Voice] Spiral Arrow (Cannon Drill in JP ver.)
+#166 [Voice] Thrust Kick
+#167 [Voice] Cannon Spike (Thrust Kick in JP ver.)
+#168 [Voice] Ha! (Hooligan Suplex)
+#169 [Voice] Ya! (Frankensteiner)
+#170 [Voice] Aaah..
+
+  E. Honda
+#117 [Voice] Huag! (Hyakuretsu Harite)
+#118 [Voice] Eiya! (Super Hyakkan Otoshi, Tawaranage)
+#119 [Voice] Humn! (Sabaori)
+#120 [Voice] Dosukoi! (Super Head Butt)
+#121 [Voice] Gahhahhahaha! (Win)
+#122 [Voice] Wooughh..
+
+  Guile
+#113 [Voice] Sonic Boom
+#114 [Voice] Ha! (Judo Throw)
+#115 [Voice] Humn! (Dragon Suplex)
+#116 [Voice] Ugh oooh..
+
+  Dhalsim
+#126 [Voice] Fire
+#127 [Voice] Flame
+#128 [Voice] Yoga
+#100 [Voice] Uurk..
+
+  Blanka
+#123 [Voice] Uuaarrk! (Rolling Attack)
+#124 [Voice] Yawp, yaawp (Win)
+#486 [Voice] Argh!
+#125 [Voice] %#&?@..
+
+  Zangief
+#129 [Voice] Ugrya (Double Lariat, Flying Power Bomb, Stomach Claw)
+#130 [Voice] Hu! (Screw Pile Driver, Brain Buster)
+#131 [Voice] Ooorya! (Atomic Suplex)
+#132 [Voice] Ha! (Pile Driver, Iron Claw)
+#133 [Voice] Hahahaha (Win)
+#134 [Voice] Geeeh..
+
+  Balrog
+#137 [Voice] Huh! (Head Bomber)
+#138 [Voice] Oooaaarrrg! (Dash Strait, Dash Upper)
+#136 [Voice] Uugh..
+
+  Vega
+#139 [Voice] Hyooow! (Flying Barcelona Attack)
+#140 [Voice] Hyoow! (Izuna Drop, Rainbow Suplex, Back Slash)
+#141 [Voice] Yoolaiyoleihee (Win 1)
+#142 [Voice] Hehehehe (Win 2)
+#143 [Voice] Aaah..
+
+  Sagat
+#144 [Voice] Tiger (Tiger Shot, Ground Tiger Shot)
+#145 [Voice] Tiger Uppercut
+#146 [Voice] Tiger Knee (Tiger Knee Crush)
+#147 [Voice] Huh! (Tiger Carry)
+#148 [Voice] Huhuhu.. (Win 1)
+#149 [Voice] Ahahaha (Win 2)
+#150 [Voice] Ooooh..
+
+  M. Bison
+#151 [Voice] Humn! (Deadly Throw)
+#152 [Voice] Huhuhu.. (Win)
+#153 [Voice] Aaarrgh..
+
+----------------------------------------------------------------------------
+ [SFX]
+
+#065 [SFX] Credit
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#192 [SFX] <time="7">
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#256 [SFX]
+#257 [SFX]
+#258 [SFX]
+#259 [SFX]
+#260 [SFX]
+#261 [SFX]
+#264 [SFX]
+#267 [SFX]
+#270 [SFX]
+#273 [SFX]
+#276 [SFX]
+#279 [SFX]
+#280 [SFX]
+#281 [SFX]
+#282 [SFX]
+#283 [SFX]
+#284 [SFX]
+#285 [SFX]
+#288 [SFX]
+#292 [SFX]
+#295 [SFX]
+#298 [SFX]
+#299 [SFX]
+#302 [SFX]
+#305 [SFX]
+#308 [SFX]
+#309 [SFX]
+#385 [SFX]
+#387 [SFX]
+#389 [SFX]
+#391 [SFX]
+#393 [SFX]
+#395 [SFX]
+#397 [SFX]
+#399 [SFX]
+#401 [SFX]
+#403 [SFX]
+#405 [SFX]
+#406 [SFX]
+#407 [SFX]
+#408 [SFX] <time="7">
+#410 [SFX]
+#411 [SFX]
+#412 [SFX]
+#413 [SFX]
+#415 [SFX]
+#417 [SFX] Cheer 1
+#418 [SFX] Cheer 2
+#419 [SFX]
+#422 [SFX]
+#423 [SFX] <time="7">
+#424 [SFX]
+#426 [SFX] <time="7">
+#428 [SFX] <time="7">
+#430 [SFX] <time="7">
+#509 [SFX]
+
+  [Source]
+  Super Street Fighter II Arcade Game Track
+  Sony Records  SRCL-2822  Jan 21, 1994
+
+// English list contributed by NK
+$end

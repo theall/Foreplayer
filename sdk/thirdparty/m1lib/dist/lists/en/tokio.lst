@@ -1,0 +1,22 @@
+﻿$name=tokio
+$version=2
+$default=$012
+$main
+
+$012 Credit (Ver.1)
+$028 Start (Ver.4) - Main BGM (Ver.4)
+$005 Boss BGM (w/o intro Ver.3)
+$027 Main BGM (Ver.4)
+$029 Game Over (Ver.4)
+$01c Name Entry (Ver.3 unused)
+$011 SFX - Start (Ver.4) - Main BGM (Ver.4)
+$01a Wait - Start (Ver.4) - Main BGM (Ver.4)
+$01b Wait - Boss BGM (Ver.3)
+$024 SFX - Main BGM (Ver.4)
+$023 SFX - Boss BGM (Ver.3)
+
+  [Source]
+  Taito Sound Team Demo Tape Ver.1986
+
+// List Contribution by Monyons
+$end

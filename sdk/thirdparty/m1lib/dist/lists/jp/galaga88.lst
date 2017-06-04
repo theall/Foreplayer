@@ -1,0 +1,71 @@
+﻿$name=galaga88
+$version=2
+$default=256
+$fixed_volume=104
+$main
+
+#256 Credit
+#002 Opening Theme
+#024 Scroll Stage BGM
+//#025 Warp Out ～ Bonus Stage
+#023 Bonus Stage Start
+#007 Galactic Dancing #1 (Waltz)
+#008 Galactic Dancing #2 (Tango)
+#003 Galactic Dancing #3 (Big Band Jazz)
+#014 Galactic Dancing #4 (Salsa)
+#028 Galactic Dancing #5 (March)
+#017 Bonus Stage Clear (Perfect)
+//#032 Warp ～ Ending
+#033 Ending
+#031 Name Entry
+#006 Game Over
+#001 Speaker Check
+#016 Fighter Captured
+
+----------------------------------------------
+
+#010 [S.E.] 面ワープ
+#011 [S.E.] Dimentionワープ
+#012 [S.E.] ワープ 1
+#013 [S.E.] ワープ 2
+#018 [S.E.] 敵合体音
+#019 [S.E.] 自機奪還・接近中
+#020 [S.E.] 自機奪還・回転中
+#021 [S.E.] 
+#022 [S.E.] 
+#026 [S.E.]
+#027 [S.E.] 合体中ザコ・合体音？
+#034 [S.E.]
+#257 [S.E.] 面数表示 1
+#258 [S.E.] 選択
+#259 [S.E.] 面数表示 2
+#260 [S.E.] 
+#261 [S.E.]
+#262 [S.E.] Zako?
+#263 [S.E.] Extend
+#264 [S.E.] Zako Dead
+#265 [S.E.] Capture Beam
+#266 [S.E.] Capture Beam終了
+#267 [S.E.]
+#268 [S.E.]
+#269 [S.E.] Middle Damage
+#270 [S.E.] Middle Dead
+#271 [S.E.] ボス破壊音 1
+#272 [S.E.] ボス破壊音 2
+#273 [S.E.] ボーナスカウント音
+#274 [S.E.] 破壊不可能な敵に弾がヒット
+#275 [S.E.] 分裂ザコ、分裂時の音
+#276 [S.E.] 敵飛来音 (L→R)
+#277 [S.E.] 敵飛来音 (R→L)
+#278 [S.E.] 敵待機状態
+#279 [S.E.]
+#280 [S.E.]
+#281 [S.E.]
+
+  ■作曲
+  川田 宏行
+
+// List from Amuse
+// Updated by Fujix
+// Updated by KC
+$end

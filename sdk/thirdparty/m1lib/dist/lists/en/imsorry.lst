@@ -1,0 +1,35 @@
+﻿$name=imsorry
+$version=2
+$default=184
+$songmax=185
+$main
+
+#184 Title Screen
+#179 Start - BGM 1
+#180 BGM 1
+#182 Mission Clear
+#185 BGM 2
+#181 Miss
+#163 Game Over
+#129 Name Entry (from Oushou / Hideo Murata)
+
+-----------------------------------------
+ [SFX]
+
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#183 [SFX]
+
+$end

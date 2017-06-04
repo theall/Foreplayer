@@ -1,0 +1,45 @@
+﻿$name=vs2
+$version=2
+$default=000
+$main
+
+ * 再生速度は44100Hzのみ正確
+
+#000 selector 1 (国 Select BGM) <time="42" fadeout="yes" fadeoutlength="10">
+#001 howto 1 (操作説明 BGM)
+#002 goal 1 (Long Shootを決めたときのGoal Replay) <time="34" fadeout="yes" fadeoutlength="10">
+#003 goal 3 (Goal Replay - Default)
+#004 jisatsuten 1 (Own Goal Replay)
+#005 goalrush1 (Goal Rush BGM - Default)
+#006 continue3 (Conitnue BGM)
+#007 nameentry1 (Name Entry BGM)
+#008 orc3 (Ending BGM - Default)
+#009 ending4short (Ending BGM - FCSEGAに勝った時)
+#016 vs2miya3short (未使用曲)
+#017 vs2ending4mit (Best Goalが出た時のEnding BGM)
+#018 vs2ending3mit (FCSEGAに負けた時のEnding BGM)
+#019 vs2miya7 (未使用曲)
+#020 vs2adv1mit (Advertisement BGM)
+#021 vs2goal1mit (Todays Best Goal BGM)
+#022 vs2grush1mit (Best GoalのGoal Replay BGM)
+#023 vs2contmap1mit (Tournament Map BGM)
+#024 vsgrush2mit (Final Match前のGoal RushからTournament Map BGM)
+#025 vs2contmap2mi (Final Match敗退後のContinueからTournament Map BGM)
+#026 finalrush (Final Match後のGoal Rush (orc4, vs3miya3short) BGM) <time="50" fadeout="yes" fadeoutlength="10">
+#027 finalrush2 (Final Match後のGoal Rush (ending4short) BGM) <time="44" fadeout="yes" fadeoutlength="10">
+#028 vs2miya7int (Final Match後のGoal Rush (vs2miya7) BGM) <time="37" fadeout="yes" fadeoutlength="10">
+#029 bestgoal2 (Best Goal Replay BGM)
+
+#010 vs1adv1c2long (Virtua Striker Ending BGM)
+#011 vs1c1goalrush (Virtua Striker Goal Rush BGM)
+#012 vs1c1kachinuki (Virtua Striker Select BGM)
+#013 vs1com01 (Virtua Striker Coninue BGM)
+#014 vs1com02 (Virtua Striker Advertisement BGM)
+#015 vs1slow (Virtua Striker Goal Replay BGM)
+
+  ■出典
+  バーチャストライカー & バーチャストライカー2
+  MMV  MJCAX-00006  1997.11.19
+
+// List by Fuji
+$end

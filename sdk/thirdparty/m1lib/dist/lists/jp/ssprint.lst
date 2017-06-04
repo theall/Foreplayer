@@ -1,0 +1,61 @@
+﻿$name=ssprint
+$version=2
+$default=040
+$songmax=107
+$main
+
+#040 SELECT
+#042 GOAL 1
+#058 NEXT STAGE
+#044 GOAL 2
+#063 TUNE UP1
+#046 GOAL 3
+#056 GOAL 4
+#064 TUNE UP2
+#050 GOAL 5
+#052 GOAL 6
+#065 TUNE UP3
+#054 GOAL 7
+#048 GOAL 8
+
+------------------------------------------------------
+ [S.E.]
+
+#066 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#072 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#078 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#084 [S.E.]
+#086 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#099 [S.E.]
+#101 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+
+  ■出典
+  THAT'S ATARI MUSIC VOL.II -G.S.M. ATARI GAMES 2-
+  PONY CANYON / SCITRON  PCCB-00070  1991.09.21
+
+  THAT'S ATARI MUSIC VOL.II -G.S.M. ATARI GAMES 2- (LEGEND SERIES)
+  SME / SCITRON  SCDC-00314  2003.12.03
+
+// List Contribution by Penpen
+$end

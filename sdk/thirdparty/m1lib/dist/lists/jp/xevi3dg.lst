@@ -1,0 +1,36 @@
+﻿$name=xevi3dg
+$version=2
+$default=$015
+$main
+
+$015 credit
+$082 area 1
+$083 boss 1
+$084 area 2
+$085 boss 2
+$086 area 3
+$087 boss 3
+$088 area 4
+$089 boss 4
+$08a area 5
+$08b boss 5
+$08c area 6
+$08d boss 6
+$08e area 7
+$08f boss 7
+$081 continue?
+$0b0 stage clear
+$0b2 ending movie
+$0b1 name entry
+
+$001 stereo check
+
+  ■出典
+  XEVIOUS 3D/G PCB (System11)
+
+  ■作曲
+  佐宗 綾子 (aya), 細江 慎治 (めがてん, mega)
+  佐野 信義 (佐野 電磁, sanodg), 佐々木 宏人 (さ男, saman)
+
+// リスト作成: 加山。さん
+$end

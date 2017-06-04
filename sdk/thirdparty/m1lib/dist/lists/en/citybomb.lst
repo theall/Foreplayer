@@ -1,0 +1,26 @@
+﻿$name=citybomb
+$version=2
+$default=$5d
+$songmax=$5e
+$fixed_volume=189
+$main
+
+$5d Running Away (Introduction)
+$52 Escape - Area 1
+$53 Escape - Area 2
+$5a Clear
+$50 Escape - Area 3
+$51 Escape - Area 4
+$5b Game Over
+$55 Escape - Area 5
+$54 Fleer (Secret Stage)
+$59 Ranking (Ranking)
+$5e Success (Ending)
+
+$34 [SFX] Power Up!
+
+  [Source]
+  Konami Game Music Collection Vol.0
+  King Records  276A-7708  Jul 21, 1989
+
+$end

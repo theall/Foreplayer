@@ -1,0 +1,44 @@
+﻿$name=19xx
+$version=2
+$default=030
+$fixed_volume=122
+$main
+
+#030 Q Sound Logo
+#008 Opening
+#009 Player Select
+#010 Map Display
+#001 A bit of blue sky between the clouds (Mission 1)
+#017 亜也虎改 (Target 1)
+#002 The red naval port (Mission 2)
+#018 雷鳴 (Target 2)
+#003 Dance of green gnome (Mission 3)
+#025 (Mission 3-2 BGM)
+#019 カルベルトワーゲン (Target 3)
+#004 Silver ice sheet (Mission 4)
+#020 グランツ (Target 4)
+#005 City light in the black strait (Mission 5)
+#024 (Mission 5-2 BGM)
+#021 サンチョペドロ (Target 5)
+#006 Glayish tornado (Mission 6)
+#022 アウターリミッツ (Target 6)
+#007 The last ditch fight (Mission 7)
+#023 ブラックノイズ (Target 7)
+#011 Mission Clear
+#015 Ending
+#012 Game Over
+#013 Score Ranking
+
+#529 19-XX
+#532 from 1942 CREDIT
+#533 from 1942 BGM
+$213 1942 BGM アレンジ版
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  CAPCOM GAME SOUNDTRACK / 19XX -THE WAR AGAINST DESTINY-
+  VICTOR ENTERTAINMENT  VICL-2168  1996.04.03
+
+$end

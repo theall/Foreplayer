@@ -1,0 +1,60 @@
+﻿$name=wakuwak7
+$default=095
+$version=2
+$fixed_volume=196
+$main
+
+#095 Neo Geo Logo
+
+#033 Waku Waku 7 Opening
+#034 Waku Waku Battle-ze!
+#093 VS
+#036 Rai's Stage Opening
+#037 Go Fight ! Venturous Kid, Rai
+#043 Politank-Z's Stage Opening
+#044 Go! Go! Politank-Z
+#049 Arina's Stage Opening
+#050 Waku Waku doesn't Stop
+#056 Mauru's Stage Opening
+#057 Forest of Memories
+#088 Winning Theme
+#089 Losing Theme
+#081 Bonus Stage Opening
+#082 Let off Sweetly
+#087 Challenger Appeared !
+#062 Dandy-J's Stage Opening
+#063 The Sun Also Sets
+#069 Tesse's Stage Opening
+#070 Dream Waltz
+#073 Slash's Stage Opening
+#074 Portraint of Fate
+#083 Relief
+#078 Fernadez's Stage Opening
+#080 Prologue of Death
+#085 Fairy 
+#039 Rai's Ending 1
+#041 Rai's Ending 2
+#046 Politank-Z's Ending 1
+#047 Politank-Z's Ending 2
+#053 Arina's Ending 1
+#054 Arina's Ending 2
+#059 Mauru's Ending 1
+#061 Mauru's Ending 2
+#065 Dandy-J's Ending 1
+#067 Dandy-J's Ending 2
+#072 Tesse's Ending 
+#075 Slash's Ending 1
+#076 Slash's Ending 2
+#094 Credits
+#090 Continue
+#091 Game Over 1
+#092 Game Over 2
+#052 Game Over 3
+
+  [Source]
+  Waku Waku 7
+  Pony Canyon / Scitron  PCCB-00215  Aug 21, 1996
+
+// List Contribution by cyada
+// English list by Fuj
+$end

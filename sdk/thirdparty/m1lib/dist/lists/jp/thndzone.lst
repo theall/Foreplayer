@@ -1,0 +1,31 @@
+﻿$name=thndzone
+$version=2
+$default=$07
+$songmax=$ff
+$main
+
+$07 ショータイム お楽しみは、これからだ！
+$08 OPERATIONS THUNDER ZONE
+$11 俺にまかせろ！
+$0f ざっと、こんなもんよ！
+$09 熱き友情
+$0d I am No.1
+$0a 真夜中のダンサー
+$10 こいつは、やばいぜ!!
+$0e 撃って、撃って、撃ちまくれ！
+$0b デンジャラスな午後
+$0c 前進あるのみ！
+$12 地獄で泣きな！
+$14 そして男達は、魚になった...
+$13 ショータイム お楽しみは、終わりだ！
+
+$15 そして男達は、魚になった... -no intro-
+
+  ■出典
+  THUNDER ZONE / DATA EAST / GAMA DELIC
+  PONY CANYON / SCITRON  PCCB-00068  1991.08.21
+
+  ■作曲
+  竹本 晃 (RAIKA), 吉田 博昭 (MARO)
+
+$end

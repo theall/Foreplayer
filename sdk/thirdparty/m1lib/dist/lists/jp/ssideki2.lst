@@ -1,0 +1,98 @@
+﻿$name=ssideki2
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode
+#127 Coin
+#034 How to Play/Team Select
+#035 GOAL! (Player's Team)
+#045 Team Victory
+#043 GOAL! (Alt)
+#046 Continue
+#047 The World Champions (Complete Victory)
+#037 Credits
+#036 Unknown?
+
+#038 Football/Soccer Ambience
+#039 Football/Soccer Ambience 2
+#040 Football/Soccer Ambience 3
+#041 Football/Soccer Ambience 4
+#042 Football/Soccer Ambience 5
+#044 Football/Soccer Ambience 6
+
+---------------------------------------------------
+  [S.E.]
+
+#048 [S.E.] 
+#049 [S.E.] Cheering
+#050 [S.E.] 
+#051 [S.E.] Cheering
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#127 [S.E.] Coin
+#128 [S.E.] 
+#129 [S.E.]
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#206 [S.E.] 
+#207 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+#214 [S.E.] Full Time Whistle
+#215 [S.E.] 
+#217 [S.E.] 
+#219 [S.E.]
+#220 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] 
+#225 [S.E.] 
+#226 [S.E.] 
+#227 [S.E.] 
+#228 [S.E.] 
+#229 [S.E.]
+#230 [S.E.]
+#231 [S.E.]
+#232 [S.E.]
+#233 [S.E.]
+#234 [S.E.]
+#251 [S.E.]
+#252 [S.E.]
+
+---------------------------------------------------
+  [Voice]
+
+#240 [Voice] First Stage, First Game
+#241 [Voice] Second Stage, Quarter Final
+#242 [Voice] Third Stage, Semi Final
+#243 [Voice] Unknown language
+#244 [Voice] Unknown language
+#245 [Voice] Unknown language
+#250 [Voice] GOAL! Goal! Goal.
+
+// English List by Yawachary
+$end

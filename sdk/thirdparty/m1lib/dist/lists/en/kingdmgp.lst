@@ -1,0 +1,139 @@
+﻿$name=kingdmgp
+$version=2
+$default=007
+$songmax=309
+$fixed_volume=136
+$main
+
+#007 Saddle Horn
+#036 Sound from Heaven (Credit) <time="3">
+#006 Lead Change
+#002 Lead Departure
+#012 Sock the Brain
+#008 Roll Back
+#004 Flag Race
+#001 Norvice Reining
+#009 Restless Night
+#013 Sonic Keeness
+#010 Bamboo Forest
+#011 Being Rushed
+#003 Sliding Stop!!
+#005 Trail
+#018 Divided by Zero
+#014 The Laurel
+#015 A Ray of Hope
+#016 I'm the Ruler
+#017 Underdog
+
+-----------------------------------------
+ [SFX]
+
+#019 [SFX] Got a Chip
+#020 [SFX] Got an Item
+#021 [SFX] Satsujin Ko-Sen
+#022 [SFX] Slimy
+#023 [SFX] Mini Bullet
+#024 [SFX] Powerful Laser
+#025 [SFX] Small Damaged
+#026 [SFX] Warning
+#027 [SFX] Chip Appeared
+#028 [SFX] Item Appeared
+#029 [SFX] Aiming
+#030 [SFX] Hatch Opened
+#031 [SFX] Homing Beam
+#032 [SFX] Bless
+#033 [SFX] Laser Sword
+#034 [SFX] Hell Ghost
+#035 [SFX] Bolt Shot
+#037 [SFX] Extend
+
+#038 [Voice] (Bornam)
+#039 [Voice] (Bornam)
+#040 [Voice] (Bul-Gin) 
+#041 [Voice] (Bul-Gin) 
+#042 [Voice] (Honest-John)
+#043 [Voice] (Honest-John)
+#044 [Voice] (Gain)
+#045 [Voice] (Gain)
+#046 [Voice] (Miyamoto)
+#047 [Voice] (Miyamoto)
+#048 [Voice] (Chitta)
+#049 [Voice] (Chitta)
+#050 [Voice] (Kickle & Laycle)
+#051 [Voice] (Kickle & Laycle)
+#052 [Voice] (Nirvana)
+#053 [Voice] (Nirvana)
+
+#054 [SFX] Bomb
+#055 [SFX] Freezed
+#056 [SFX] Buring
+#057 [SFX] Electrified
+#058 [SFX] After Burner
+#059 [SFX] X Bomber
+#060 [SFX] Make a Splash
+#061 [SFX] Splash Down
+#062 [SFX] Splash Wave
+#063 [SFX] Fire Starter
+#064 [SFX] Ice Broken
+#065 [SFX] Rock Broken
+#066 [SFX] Door Opened
+#067 [SFX] Door Closed
+#068 [SFX] S.O.G.B.S.O.K.B.S <time="5">
+#069 [SFX] Wingman
+#070 [SFX] Footfall
+#071 [SFX] Footstep
+#072 [SFX] Coco De Bomber
+#073 [SFX] Docking Sensor
+#074 [SFX] Energy Pool
+#075 [SFX] Chakan
+#076 [SFX] Rare Kick
+#077 [SFX] Night Roar
+#078 [SFX] Roar Hero
+#079 [SFX] Bomb
+#080 [SFX] Bomb Bomb
+#081 [SFX] Bomb Bomb Bomb
+#082 [SFX] Bomb Bomb Bomb Bomb
+#083 [SFX] Motal Damaged
+#084 [SFX] Deadly Damaged
+#085 [SFX] Shoot
+#086 [SFX] Shooooot!
+#087 [SFX] Shooooooot!
+#088 [SFX] Shooooooot!!!
+#089 [SFX] Hellbent Punch
+#090 [SFX] Cast a Spell
+#091 [SFX] Bomb Bomb Bomb Bomb Bomb
+#092 [Voice] Warning
+#093 [Voice] Go!
+#094 [Voice] Hurry Up!
+#095 [SFX] Bomberdment
+#096 [Voice] Ready?
+#097 [Voice] Yahhoo!
+#098 [Voice] Cheer <time="5">
+#099 [Voice] Cheer <time="5">
+#100 [Voice] Good Job
+//#294 [SFX] BORNNAM VOICE 1b
+//#295 [SFX] BORNNAM VOICE 2b
+//#296 [SFX] BUL-GIN VOICE 1b
+//#297 [SFX] BUL-GIN VOICE 2b
+//#298 [SFX] HONEST-JOHN VOICE 1b
+//#299 [SFX] HONEST-JOHN VOICE 2b
+//#300 [SFX] GAIN VOICE 1b
+//#301 [SFX] GAIN VOICE 2b
+//#302 [SFX] MIYAMOTO VOICE 1b
+//#303 [SFX] MIYAMOTO VOICE 2b
+//#304 [SFX] CHITTA VOICE 1b
+//#305 [SFX] CHITTA VOICE 2b
+//#306 [SFX] KICKLE & LAYCLE VOICE 1b
+//#307 [SFX] KICKLE & LAYCLE VOICE 2b
+//#308 [SFX] NIRVANA VOICE 1b
+//#309 [SFX] NIRVANA VOICE 2b
+
+  [Source]
+  Soukyuu Gurentai Otokuyou / Sega Saturn
+  EAV  T-10626G  1997
+
+  [Sound Composer]
+  Hitoshi Sakimoto (YmoH.S): #001 - #008
+  Masaharu Iwata (REZON): #009 - #018
+
+$end

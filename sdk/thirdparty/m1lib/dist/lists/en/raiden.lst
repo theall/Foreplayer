@@ -1,0 +1,78 @@
+﻿$name=raiden
+$version=2
+$default=027
+$songmax=138
+$main
+
+#129 Coin
+#027 Gallantry (Round 1, 4)
+#021 Go To Blazes! (Boss)
+#019 Intermission (Round Clear)
+#023 Lightning War (Round 2, 7)
+#029 Rough and Tumble (Round 3, 6)
+#025 Fighting Thunder (Round 5, 8)
+#020 Name Regist
+#017 Continue
+
+#028 Gallantry (Drums)
+#030 Lightning War (Drums)
+#024 Rough and Tumble (Drums)
+#026 Fighting Thunder (Drums)
+#018 Continue (Drums)
+
+------------------------------------------------
+  [SFX]
+
+#053 [SFX]
+#054 [SFX]
+#058 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#081 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#115 [SFX]
+#121 [SFX]
+#129 [SFX]
+#137 [SFX]
+#138 [SFX]
+
+  [Source]
+  Raiden Densetsu / Seibu Kaihatsu
+  Pony Canyon / Scitron  PCCB-00047  Dec 5, 1990
+
+  [Sound Composer / Adapter]
+  Akira Satoh
+
+// List correction by nZero
+$end

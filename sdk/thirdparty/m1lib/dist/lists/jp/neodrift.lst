@@ -1,0 +1,60 @@
+﻿$name=neodrift
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#033 ATTRACT DEMO 
+#127 [S.E.] CREDIT <time="2.8">
+#034 HOW TO PLAY
+#035 STAGE START
+#033 PRACTICE STAGE (STAGE 0)
+#036 European STAGE (STAGE 1)
+#037 African STAGE (STAGE 2)
+#038 Snow land STAGE (STAGE 3)
+#046 CONTINUE <time="15">
+#039 Southern hemisphere (STAGE 4)
+#040 Scandinavian STAGE (STAGE 5)
+#041 Great Britain STAGE (STAGE 6)
+#045 RESULT
+#044 ENDING
+#042 STAFF ROLL
+#043 GAME OVER
+
+---------------------------------------------------
+  [S.E.]
+
+#127 [S.E.] CREDIT
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#206 [S.E.] 
+#207 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#214 [S.E.] 
+#215 [S.E.] 
+#218 [S.E.] 
+#219 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#203 [Voice] 
+
+  ■作曲
+  神尾 憲一 
+
+// List contribution by ZEK.
+$end

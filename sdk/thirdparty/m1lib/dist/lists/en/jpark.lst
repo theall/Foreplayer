@@ -1,0 +1,187 @@
+﻿$name=jpark
+$version=2
+$default=018
+$main
+
+#018 Good Luck!! <time="0:12">
+#006 Area-1 Start <time="0:21.4">
+#007 Shoot at the Head ! <time="0:29">
+#000 Area-1 Cave 1 <time="0:23.3">
+#005 Escape <time="3.8">
+#001 Area-1 Grassy Plain <time="0:19.4">
+#013 Area-1 Trikeratops <time="0:23.2">
+#005 Escape <time="3.8">
+#013 Area-1 Trikeratops <time="0:23.2">
+#005 Escape <time="3.8">
+#012 Area-1 Jungle 1 <time="0:27.4">
+#008 Area-1 Pteranodon <time="0:50.5">
+#012 Area-1 Jungle 2 <time="01:09">
+#011 Area-2 Jungle 3 <time="0:41.7">
+#015 Area-2 River <time="01:08">
+#011 Area-2 Brachiosaurus <time="9">
+#008 Area-2 T-Rex <time="01:03.02">
+#005 Escape <time="0:11">
+#000 Area-3 Cave 2 <time="0:59">
+#014 Area-3 Volcanic <time="01:13.1">
+#010 Area-3 Drop Fall <time="0:21">
+#007 Area-3 Cave 3 <time="0:42.5">
+#000 Area-4 Visiter Center <time="0:46.4">
+#016 Escape from Jurassic Park <time="01:53.6">
+#017 Ending <time="0:43">
+#002 Credits Roll <time="01:00">
+#004 Game Over <time="5">
+
+#019 Continue <time="0:24">
+#009 Continue Long Ver
+
+---------------------------------------------------
+ [SFX] 
+
+#003 [SFX] <time="3">
+#083 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] <time="5">
+#112 [SFX] 
+#115 [SFX] 
+#124 [SFX] 
+#130 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#136 [SFX] 
+#138 [SFX] 
+#140 [SFX] 
+#142 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#153 [SFX] 
+#155 [SFX] 
+#157 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+#186 [SFX] 
+#189 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#199 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] <time="5">
+#204 [SFX] 
+#205 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#131 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#137 [Voice] 
+#139 [Voice] 
+#141 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#147 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#154 [Voice] 
+#156 [Voice] 
+#158 [Voice] 
+#200 [Voice] 
+#206 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+#234 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+
+  [Sound Composer]
+  Saeko Sasaki, Maki Morrow
+
+// List contribution by ZEK.
+$end

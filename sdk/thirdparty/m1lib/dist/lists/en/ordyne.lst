@@ -1,0 +1,47 @@
+﻿$name=ordyne
+$version=2
+$default=$0f
+$fixed_volume=269
+$main
+
+$0f Coin
+$00 Game Start
+$31 Round 1
+$21 Boss 1, 6
+$32 Round 2
+$22 Boss 2
+$33 Round 3
+$08 Dream (Bonus Stage)
+$0b Dream (Lose)
+$0a Dream (Bingo)
+$23 Boss 3
+$34 Round 4
+$42 [Voice] "irrashaimasee, kyuuchuu IN e youkoso!"
+$02 Shop (kuuchuu IN)
+$43 [Voice] "arigatou gozaimashita"
+$24 Boss 4
+$35 Round 5
+$25 Boss 5
+$36 Round 6
+$3a Game Over
+$04 Continue
+$3e Name Entry A
+$2c Name Entry B
+$2e Name Entry C
+$06 Round Clear
+$37 Round 7
+$27 Boss 7
+$16 Ending
+$3c Round X (Unused)
+$29 Boss X (Unused)
+$20 ???
+
+  [Source]
+  Namco Video Game Graffiti Vol.5
+  Victor Entertainment  VDR-5300  Aug 21, 1989
+
+  [Sound Composer]
+  Sinji Hosoe
+
+// English list adjustment by bcass
+$end

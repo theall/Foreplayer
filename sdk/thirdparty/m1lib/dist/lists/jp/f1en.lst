@@ -1,0 +1,23 @@
+$name=f1en
+$version=2
+$default=138
+$main
+
+#138 ADVERTIZE
+#160 CREDIT
+#133 START WAIT
+#131 GAME 0
+#132 GAME 1
+#130 GAME 2
+#135 WIN
+#134 LOST
+#129 WINING
+#139 NAME ENTRY
+#140 GAME OVER
+#137 ñ¢égóp
+
+  Å°èoìT
+  Test mode Output test
+
+// List contribution by szk
+$end

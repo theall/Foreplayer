@@ -1,0 +1,50 @@
+﻿$name=birdtry
+$version=2
+$default=025
+$main
+
+#025 Idol
+#024 Blue Shower
+#018 Coconut Palm Garden
+#027 Hole in One
+#026 Score
+#019 Ocean Breeze
+#020 Seaside Carnival
+#030 Wine Glass
+#031 Sunset Sky
+#032 Great Ambition
+
+#021 Coconut Palm Garden (w/o intro)
+#022 Ocean Breeze (w/o intro)
+#023 Seaside Carnival (w/o intro)
+
+------------------------------------------------
+  [SFX]
+
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX] on the ground
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#013 [SFX] 
+#014 [SFX]
+#015 [SFX]
+#037 [SFX] cup in
+#038 [SFX] shot
+
+------------------------------------------------
+  [Voice]
+
+#033 [Voice] OB
+#034 [Voice] Nice on!
+#035 [Voice] Nice shot!!
+#036 [Voice] Cheers
+
+  [Source]
+  Deco History Scene I / Data East Game Music Scene One 
+  Polystar / Datam  H25X-20008  Sep 25, 1988
+
+// List contribution by R
+$end

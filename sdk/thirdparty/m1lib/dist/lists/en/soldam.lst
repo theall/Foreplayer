@@ -1,0 +1,40 @@
+﻿$name=soldam
+$version=2
+$default=007
+$fixed_volume=107
+$main
+
+#007 Title
+#017 Mode Select
+#020 Mode Selected
+#001 Morning in the Fairies' Forest (Soldam Mode 1)
+#005 Look for the "Missing Berry"! (Soldam Mode  2)
+#006 Hurry-Scurry under the Tree (Soldam Mode  3)
+#003 VS. Mode
+#015 Victorious Fanfare (VS Mode Finished)
+#002 Theme of Sekiero (Sekiero Mode 1)
+#008 Forest at Sundown (Sekiero Mode 2)
+#009 Fairies Awaiting Spring (Sekiero Mode 3)
+#010 Sounds of the Trees (Sekiero Mode 4)
+#023 Boss Appearing
+#011 Boss Music (Sekiero Mode Boss)
+#018 Extra Fanfare (Sekiero Mode Extra)
+#024 Extra "Fairy Samba"
+#019 Continue
+#012 Ending (Sekiero Mode Ending)
+#014 Game Over
+#025 Result (Sekiero Mode Result)
+#004 Name Entry
+#016 Unused
+#022 Unused
+#090 Ranking
+
+  [Source]
+  Soldam
+  Pony Canyon / Scitron  PCCB-00108  Jan 21, 1993
+
+  [Soound Composer]
+  Atsuyoshi Isemura
+
+// Updated by Anonymous
+$end

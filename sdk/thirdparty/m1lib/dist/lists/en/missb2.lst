@@ -1,0 +1,20 @@
+﻿$name=missb2
+$version=2
+$default=008
+$main
+
+#008 Main Theme (Ending Music from Bubble Bobble)
+#007 Bonus Music (Bonus Music from Bubble Bobble)
+#010 Bonus Music (Bonus Music from Bubble Bobble)
+#011 Game Over (Game Over Music from Bubble Bobble)
+
+// List contribution by ZEK.
+//
+// 完璧になった時のメモ
+// 100面はBGM無し、クリア時にハレー彗星は一緒。
+// 微妙にエンディング曲は本作のメインテーマと違う(？)。
+// 偽りのエンディングの曲はオリジナル版と一緒。
+// シークレットルームミュージックオリジナルと一緒。
+// この曲がSKEL-MONSTAとも一緒。
+// ネームエントリー曲も無し、エンディング曲のまま。
+$end

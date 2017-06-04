@@ -1,0 +1,112 @@
+﻿$name=pang3
+$version=2
+$default=114
+$main
+
+#114 [Voice] Paaaang...
+#126 [Voice] Threeeeee !!!!
+#123 [Voice] Thank You ! (Credit)
+#001 Character Select
+#016 Tutorial
+#017 Main Theme #1 (Normal & Beginner Mode)
+#018 Main Theme #2 (Normal & Beginner Mode)
+#019 Main Theme #3 (Normal & Beginner Mode)
+#020 Main Theme #4 (Normal & Beginner Mode)
+#008 Final Stage (Normal & Beginner Mode)
+#006 Hurry Up !
+#013 Stage Clear
+#021 Private Art Gallery
+#012 Staff Roll (Ending)
+#009 Continue
+#010 Name Entry
+#111 [Voice] Game Over.
+
+#003 Panic Mode Theme (Level 0)
+#004 Panic Mode Theme (Level 1)
+#005 Panic Mode Theme (Level 2)
+
+------------------------------------------------------
+ [SFX & Voice]
+
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX] Player Extended
+#054 [SFX] Throwing Power Harpoon
+#055 [SFX] Shooting Vulcan Shot
+#056 [SFX]
+#057 [SFX] Got Shield
+#059 [SFX] Harpoon Unabled
+#060 [SFX] Got Item #1
+#061 [SFX] Got Item #2
+#062 [SFX] Got Food #1
+#063 [SFX] Timer Stopped
+#064 [SFX] Timer Resumed
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX] Got Food #2
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX] Pang !
+#077 [SFX]
+#078 [SFX] Bomb !
+#079 [SFX] Throwing Normal Harpoon
+#080 [SFX]
+#081 [SFX] Warp
+#082 [SFX] Got Food #3
+#084 [SFX] Got Coin #1
+#085 [SFX] Got Coin #2
+#086 [SFX] Got Coin #3
+#087 [SFX] Got Coin #4
+#088 [SFX] Got Coin #5
+#089 [SFX] Got Coin #6
+#090 [SFX] Got Coin #7
+#091 [SFX] Got Coin #8
+
+#092 [Voice] (Cheer #1)
+#097 [Voice] Bingo !
+#098 [Voice] Great !
+#099 [Voice] Fantastic !
+#100 [Voice] Welldone !
+#101 [Voice] Awesome !
+#102 [Voice] Marvelous !
+#103 [Voice] Gotcha !
+#105 [Voice] Incredible !
+#106 [Voice] Excellent !
+#107 [Voice] Brilliant !
+#108 [Voice] Congratulations !!
+#109 [Voice] Get Ready !
+#110 [Voice] Go !!
+#111 [Voice] Game Over.
+#112 [Voice]
+#113 [Voice]
+#114 [Voice] Paaaang...
+#115 [Voice] Oh, No !!
+#116 [Voice]
+#117 [Voice] Take Your Time !
+#118 [Voice] 
+#119 [Voice] Don Tacos !!
+#120 [Voice] Pink Leopard !!
+#121 [Voice] Captain Hog !!
+#122 [Voice] Shiela The Thief !!
+#123 [Voice] Thank You ! (Credit)
+#124 [Voice] Show Time !
+#125 [Voice] Come On !
+#126 [Voice] Threeeeee !!!!
+#128 [Voice] (Don Tacos Missed)
+#129 [Voice] (Captain Hog Missed)
+#130 [Voice] (Pink Leopard Missed)
+#131 [Voice] (Shiela The Thief Missed)
+#133 [Voice]
+#134 [Voice]
+#135 [Voice] (Cheer #2)
+
+// List Contribution by a2c-s438
+$end

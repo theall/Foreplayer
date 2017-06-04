@@ -1,0 +1,92 @@
+﻿$name=seganinja
+$version=2
+$default=179
+$main
+
+#179 Credit Inserted <time="3">
+#154 Mission 1 BGM
+#147 Stage Clear
+#153 Boss BGM
+#148 Boss Clear BGM
+#149 Bonus Stage BGM
+#144 Mission 2 BGM
+#145 Mission 3 BGM
+#146 Mission 4 BGM
+#151 Mission 5 BGM
+#152 Continue / Name Regist
+
+---------------------------------------------------
+  [SFX]
+
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] <time="5">
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] <time="4">
+#185 [SFX] 
+#186 [SFX] 
+#187 [SFX] 
+#188 [SFX] 
+#189 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#066 [Voice] Mission
+#068 [Voice] One
+#069 [Voice] Two
+#070 [Voice] Three
+#071 [Voice] Four
+#072 [Voice] Five
+#079 [Voice] Five
+#067 [Voice] Finished
+#077 [Voice] Welcome the Bonus Stage
+
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#065 [Voice] 
+#078 [Voice] 
+
+---------------------------------------------------
+
+#129 High Tom
+#130 Mid Tom
+#131 Low Tom
+#132 Snare Drum 1
+#133 Hihat
+#134 Bass Drum
+#135 Snare Drum 2
+#136 Snaer Drum 1
+#137 Snare Drum 2
+#138 Wood block
+#139 
+#140 
+
+  [Source]
+  Sega Arcade 80's Vol.1
+  SME / Scitron  SCDC-00245  Feb 19, 2003 
+
+// List contribution by ZEK.
+$end

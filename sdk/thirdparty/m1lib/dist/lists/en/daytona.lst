@@ -1,0 +1,57 @@
+﻿$name=daytona
+$version=2
+$default=008
+$main
+
+#008 Let's Go Away (Advertisement)
+#043 Awaiting Other Challengers
+#001 Start Your Engines (Car Selection)
+#007 The King of Speed (Short Track)
+#004 Let's Go Away (Medium Track)
+#009 Sky High (Long Track)
+#014 Pounding Pavement (Extra Track)
+#006 Breakdown (Finish: Short)
+#003 Bitchin' (Finish: Medium)
+#010 Check It Out! (Finish: Long)
+#017 Sweat (Finish: Extra)
+#012 Rolling Start (Ending: Short)
+#011 Dreaming of DAYTONA USA (Ending: Medium)
+#013 Can You Fly? (Ending: Long)
+#018 Pounding Pavement (reprise) (Ending: Extra)
+#002 G.A.M.E.O.V.E.R (Game Over)
+#005 David Goes to Victory Lane (Name Entry)
+#016 A.B (Plays - Afterburner - When Entered as Name)
+#019 EXN (Plays - F1 Exhaust Note - When Entered as Name)
+#020 G.F (Plays - Galaxy Force - When Entered as Name)
+#021 GLC (Plays - G-Loc - When Entered as Name)
+#022 GPR (Plays - GP Rider - When Entered as Name)
+#023 H.O (Plays - Hang On - When Entered as Name)
+#024 ORS (Plays - Outrunners - When Entered as Name)
+#025 O.R (Plays - Outrun - When Entered as Name)
+#026 P.D (Plays - Power Drift - When Entered as Name)
+#027 R.M (Plays - Rad Mobile - When Entered as Name)
+#028 S.C (Plays - Stadium Cross - When Entered as Name)
+#029 S.F (Plays - Strike Fighter - When Entered as Name)
+#030 S.H (Plays - Space Harrier - When Entered as Name)
+#032 SMG (Plays - Super Monaco GP - When Entered as Name)
+#033 TOR (Plays - Turbo Outrun - When Entered as Name)
+#034 V.F (Plays - Virtua Fighter - When Entered as Name)
+#035 V.R (Plays - Virtua Racing - When Entered as Name)
+#036 SHO (Plays - Super Hang On - When Entered as Name)
+#037 VMO (Plays - Vermillion - When Entered as Name)
+#039 E.R (Plays - Enduro Racer - When Entered as Name)
+#040 T.B (Plays - Thunder Blade - When Entered as Name)
+#041 QTT (Plays - Quartet - When Entered as Name)
+#042 SDI (Plays - SDI - When Entered as Name)
+#038 F.Z (Plays - Fantazy Zone - When Entered as Name)
+#044 The King of Speed (alt.)
+#045 Pounding Pavement (alt.)
+#046 Let's Go Away (alt.)
+#047 Sky High (alt.)
+
+  [Source]
+  Daytona USA / B-univ
+  Toshiba EMI  TYCY-5392  May 25, 1994
+
+// List adjustment by Toby
+$end

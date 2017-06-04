@@ -1,0 +1,71 @@
+$name=lastbld2
+$version=2
+$default=048
+$main
+
+#002 Neo Geo Logo
+
+#048 No. 1 - 1st Movement "Prosperity on Luna" (Title 1)
+#049 No. 1 - 2nd Movement "Passing Flowers" (Title 2)
+#050 No. 1 - Intermezzo "Swordmen" (Selection)
+
+#052 No. 2 - 1st Movement "The Sworder of Luna - Decision in Dusk" (Theme 1)
+#033 No. 2 - Secene "The Shimiji Pass"
+#034 No. 2 - Secene "Battlefield under Clouds"
+#035 No. 2 - Secene "The 13th Block in the Port Town"
+#053 No. 2 - 2nd Movement "In the Turmoil" (Theme 2)
+#036 No. 2 - Secene "Ruining Village"
+#038 No. 2 - Secene "Forgotten Forest"
+#039 No. 2 - Secene "Vesper for Snow"
+#054 No. 2 - 3rd Movement "KENGEKI SEIFUU" (Theme 3)
+#042 No. 2 - Secene "Massive Fire on Wadamoya"
+#037 No. 2 - Secene "Grave Yard"
+#051 No. 2 - Intermezzo "Interlude" (Win)
+#040 No. 2 - Secene "Sealed Shrine"
+
+#055 No. 3 - 1st Movement "Affection" (Fate)
+#045 No. 3 - 2nd Movement "Post-affection" (After the Fate)
+#056 No. 3 - Intermezzo "Descend" (Demo)
+#041 No. 3 - Secene "Hell Gate"
+
+#057 No. 4 - 1st Movement "Yellow Dragon - Fate" (Yellow Dragon Part 1)
+#058 No. 4 - 2nd Movement "Yellow Dragon - Sense of the Another World" (Yellow Dragon Part 2)
+
+#059 No. 5 - 1st Movement "Breakaway" (Ending Part 1)
+#062 No. 5 - 2nd Movement "Annihilation" (Ending Part 2)
+
+#060 No. 6 - 1st Movement "Moon Shadow" (Credit Part 1)
+#061 No. 6 - 2nd Movement "Azurine Sky" (Credit Part 2)
+
+-----------------------------------------------
+
+#021 [Voice]
+#022 [SFX]
+#023 [Voice]
+#030 [Voice]
+#043 [SFX]
+#044 [SFX]
+
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#127 [SFX] Credit
+
+#250 [Voice] 
+#251 [Voice] 
+#252 [Voice] 
+#253 [Voice] 
+#254 [Voice] 
+#255 [Voice] 
+
+ * NOT ALL VOICES AND SFX ARE FOUND
+
+  [Source]
+  Bakumatsu Roman Dai-2-Maku Gekkano Kenshi 
+     -Tsukinisaku hana, Chiriyuku hana - / SNK Shinsekai Gakkyoku Zatsugidan
+  Pony Canyon / Scitron  PCCB-00350  Dec 18, 1998
+
+// List by Fujix
+$end

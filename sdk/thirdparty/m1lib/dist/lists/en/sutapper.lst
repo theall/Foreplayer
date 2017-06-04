@@ -1,0 +1,71 @@
+﻿$name=sutapper
+$version=2
+$default=009
+$main
+
+#009 Coin
+#042 Get Ready to Serve
+#012 Oh Suzanna (Level 1, 2, 3)
+#034 Sports (Level 4, 5)
+#035 Punk (Level 6, 7, 8, 9)
+#036 Space (Level 10, 11, 12, 13)
+#011 Song 1 (Bonus Stage)
+#046 Song 2 (Dancing Girls)
+#042 You Win
+#047 Shrug
+#041 You Lose
+#007 Unused
+
+-----------------------------------------------------------
+ [SFX]
+
+#010 [SFX] bonus man
+#013 [SFX] zip up
+#014 [SFX] zip down
+#015 [SFX] step 1
+#016 [SFX] step 2
+#018 [SFX] throw mug
+#019 [SFX] collect tip
+#020 [SFX] toss mug
+#021 [SFX] guzzle
+#022 [SFX] tip appear
+#023 [SFX] grab mug
+#024 [SFX] slide
+#025 [SFX] out door 1
+#026 [SFX] mug fall
+#027 [SFX] mug break
+#028 [SFX] pound
+#029 [SFX] pop on
+#030 [SFX] out door 2
+#033 [SFX] thud
+#037 [SFX] shake can
+#038 [SFX] mix cans
+#039 [SFX] pop top
+#040 [SFX] woosh
+#043 [SFX] drip
+#044 [SFX] flash can
+#045 [SFX] tick toc
+#048 [SFX] full mug
+#049 [SFX] laughing
+#050 [SFX] ouch
+#051 [SFX] hit floor
+#052 [SFX] hit foot
+#053 [SFX] duck fall
+#054 [SFX] mug up
+#055 [SFX] duck hit
+#056 [SFX] fill 1
+#057 [SFX] fill 2
+
+#008 [SFX]
+#017 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+
+// List contributed by NK
+$end

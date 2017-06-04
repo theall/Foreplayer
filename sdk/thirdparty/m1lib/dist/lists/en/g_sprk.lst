@@ -1,0 +1,38 @@
+﻿$name=g_sprk
+$version=2
+$default=138
+$songmax=255
+$main
+
+#138 Konami Logo
+#139 Title Screen
+#140 Game Intro <time="1:06" fadeout="yes" fadeoutlength="10">
+#143 Meeting with Evil <time="1:01" fadeout="yes" fadeoutlength="10">
+#142 Splash Screen
+#167 Stage Start <time="0:37" fadeout="yes" fadeoutlength="10">
+#144 Stage 1-1, 1-3 <time="1:49" fadeout="yes" fadeoutlength="10">
+#145 Stage 1-2 <time="1:55" fadeout="yes" fadeoutlength="10">
+#146 Stage 2 <time="1:59" fadeout="yes" fadeoutlength="10">
+#147 Stage 3 <time="2:40" fadeout="yes" fadeoutlength="10">
+#148 Stage 4 <time="2:03" fadeout="yes" fadeoutlength="10">
+#149 Stage 5 <time="1:42" fadeout="yes" fadeoutlength="10">
+#151 Mid-Boss Theme <time="1:47" fadeout="yes" fadeoutlength="10">
+#152 Boss Theme <time="1:22" fadeout="yes" fadeoutlength="10">
+#165 Boss Defeated
+#166 Stage Complete
+#150 Fight with Axel <time="1:36" fadeout="yes" fadeoutlength="10">
+#154 Fight with King Gedol <time="1:11" fadeout="yes" fadeoutlength="10">
+#141 Death of King Gedol
+#162 Normal Ending <time="0:47" fadeout="yes" fadeoutlength="10">
+#164 Return of the Sword
+#163 Credits <time="3:02" fadeout="yes" fadeoutlength="10">
+#168 Continue? <time="0:38" fadeout="yes" fadeoutlength="10">
+#169 Password Screen <time="1:09" fadeout="yes" fadeoutlength="10">
+#170 Game Over
+
+  [Sound Composer]
+  Akira Yamaoka, Akiropito
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

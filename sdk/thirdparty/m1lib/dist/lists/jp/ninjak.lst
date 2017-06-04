@@ -1,0 +1,168 @@
+﻿$name=ninjak
+$version=2
+$default=$63
+$main
+
+$63 オープニング <time="54">
+$5E [Voice] "The Ninja Kids !" (タイトル)
+$5A [Voice] "Thank You" (コイン)
+$64 キャラクターセレクト <time="31.9">
+$6D スタートデモ <time="31.9">
+$65 ステージスタート <time="5">
+$67 ステージ 1 - 狙われた街 <time="1:34.9">
+$6E ボス <time="1:7.5">
+$66 ステージクリア <time="4">
+$68 ステージ 2 - 炎の悪魔 <time="1:1.1">
+$69 ステージ 3 - 工事現場の怪 <time="1:9.7">
+$6A ステージ 4 - 悪の忍者あらわる！ <time="55.7">
+$6B ステージ 5-I - 最期の激闘 <time="59.2">
+$6C ステージ 5-II - 落下 <time="1:0.3">
+$6F 最終ボス - デモン <time="50.3">
+$72 エンディング <time="1:7">
+$74 ゲームオーバー <time="3">
+$73 ネームエントリー <time="34.0">
+
+$70 未使用 1 <time="3">
+$71 未使用 2 <time="5">
+
+$75 ステージ 2 - 炎の悪魔 (Loop) <time="58.1">
+$76 ステージ 3 - 工事現場の怪 (Loop) <time="1:8.7">
+
+-----------------------------------------------------------
+ [Voice]
+
+$5E [Voice] "The Ninja Kids !" (タイトル)
+$5A [Voice] "Thank you" (コイン)
+$11 [Voice] ジャンプ
+$12 [Voice] ダメージ
+$13 [Voice] プレイヤー死亡
+$14 [Voice] "Ninja Power !" (忍術)
+$15 [Voice] 声1
+$16 [Voice] 声2
+$1D [Voice] 雄叫び
+$1F [Voice] 気合
+$20 [Voice] "Kiiiii"
+$21 [Voice] ダメージ (小)
+$22 [Voice] ダメージ (大)
+$23 [Voice] 敵死亡1
+$24 [Voice] 敵死亡2
+$89 [Voice] 掛け声
+$25 [Voice] ハウリング (Boss 1) LUNAR <time="3">
+$27 [Voice] ハウリング (Boss 1) 声
+$29 [Voice] ハウリング (Boss 1) 悲鳴
+$2A [Voice] ハウリング (Boss 1) 死亡
+$36 [Voice] ゲンヨーサイ (Boss 4) 登場
+$3C [Voice] スケルトン (Boss 5) 死亡
+$3D [Voice] デモン (Last Boss) 登場
+$40 [Voice] デモン (Last Boss) ダメージ
+$41 [Voice] デモン (Last Boss) 死亡
+$58 [Voice] "Wow"
+$59 [Voice] "Help" (男性)
+$84 [Voice] "Help" (女性)
+
+-----------------------------------------------------------
+ [S.E.]
+
+$05 [S.E.] 半蔵 振る
+$06 [S.E.] 佐助 振る
+$07 [S.E.] 茜 投げる
+$08 [S.E.] 茜 素手
+$09 [S.E.] 09 STOP (?)
+$0B [S.E.] 半蔵 斬る
+$0C [S.E.] 佐助 斬る
+$0D [S.E.] 茜 攻撃ヒット
+$0E [S.E.] 茜 殴る
+$0F [S.E.] 玄太 撃つ
+$10 [S.E.] ヒット
+$17 [S.E.] 敵 殴る
+$18 [S.E.] 銃
+$19 [S.E.] 瓶 投げる
+$1A [S.E.] 瓶 割れる
+$1B [S.E.] 瓶 燃える
+$1C [S.E.] 敵 素手
+$1E [S.E.] 叩く
+$28 [S.E.] ハウリング (Boss 1) UDE
+$2B [S.E.] イフリート (Boss 2) 登場
+$2C [S.E.] イフリート (Boss 2) 火炎 (長) <time="2">
+$2E [S.E.] イフリート (Boss 2) 死亡
+$2F [S.E.] マツモトXIII号 (Boss 3) 移動
+$30 [S.E.] マツモトXIII号 (Boss 3) UDE
+$31 [S.E.] マツモトXIII号 (Boss 3) FUSHI
+$32 [S.E.] マツモトXIII号 (Boss 3) 歩行
+$33 [S.E.] マツモトXIII号 (Boss 3) 電気 <time="2">
+$35 [S.E.] マツモトXIII号 (Boss 3) 破片
+$37 [S.E.] スケルトン (Boss 5) 登場
+$38 [S.E.] スケルトン (Boss 5) 割れる (長) <time="3">
+$3A [S.E.] スケルトン (Boss 5) 移動 (長) <time="3">
+$3E [S.E.] デモン (Last Boss) UDE
+$3F [S.E.] 壊れる
+$42 [S.E.] デモン (Last Boss) 移動 (長) <time="3">
+$44 [S.E.] 壊れる (大)
+$45 [S.E.] 壊れる (小)
+$46 [S.E.] ガラス
+$47 [S.E.] 瓶
+$48 [S.E.] 缶
+$49 [S.E.] 缶 ヒット
+$4A [S.E.] 未使用 <time="3">
+$4C [S.E.] ドア 開く
+$4D [S.E.] ドア 閉まる
+$4E [S.E.] A DOOR
+$4F [S.E.] 壁 ヒット
+$50 [S.E.] 壁
+$51 [S.E.] 車 ホーン
+$52 [S.E.] ブレーキ
+$55 [S.E.] 水 (長) <time="3">
+$57 [S.E.] 火
+$5B [S.E.] タイマー
+$5C [S.E.] STICK
+$5D [S.E.] ボタン
+$5F [S.E.] 警告 (長) <time="3">
+$77 [S.E.] 半蔵 登場
+$78 [S.E.] 佐助 登場
+$79 [S.E.] 茜 登場
+$7A [S.E.] 玄太 登場
+$7B [S.E.] 稲妻
+$7C [S.E.] 嵐
+$7D [S.E.] 爆弾
+$7E [S.E.] 炎
+$7F [S.E.] 地割れ
+$80 [S.E.] ダメージ
+$81 [S.E.] 電気
+$82 [S.E.] 司祭
+$83 [S.E.] AIR
+$85 [S.E.] 倒れる
+$86 [S.E.] POST
+$87 [S.E.] 転がる
+$88 [S.E.] 潰れる
+$8A [S.E.] 着地
+$8B [S.E.] アイテム取得
+$8C [S.E.] こうもりのはばたき
+$8D [S.E.] 風
+$8E [S.E.] 洪水 (長) <time="3">
+$90 [S.E.] 水
+
+$F1 [Test] CHECK ADB
+$F2 [Test] CHECK PSG
+$F3 [Test] CHECK 10PN
+$F4 [Test] CHECK 20PN
+$F5 [Test] CHECK ADA
+
+$00 [Command] ALL STOP
+$01 [Command] TB STOP
+$02 [Command] P STOP
+$03 [Command] A STOP
+$04 [Command] B STOP
+
+  ■作曲
+  FUMMY
+  殿村 裕誠 (TONO)
+  古川 典裕 (WIZ.MASTER)
+  アーケードサウンドゲリラ部隊 ピンチパンチ (PINCH PUNCH)
+
+// ※ 他のタイトータイトルのように完全な外注サウンドなのかどうかは不明です。
+//
+//  ■参考
+//  ゲーメスト (新声社)
+//
+//  ※ サウンドテストの曲名を基にしてリストの曲名を付けてあります。
+$end

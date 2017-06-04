@@ -1,0 +1,30 @@
+﻿$name=astorm
+$version=2
+$default=220
+$songmax=225
+$main
+
+#220 Break Out (Advertise)
+#222 Player Select
+#218 Theme Of "BUSTERS"
+#217 100Yen
+#214 Noise Of Art!
+#213 That's G.G
+#208 We Are "BUSTERS"
+#210 Speed Queen!
+#211 Dark Alley
+#219 unmee！ (Stage Clear)
+#212 Here We Go Go!
+#216 Neuropath
+#209 Cybernate-P
+#215 Tireless
+#224 Ulcer
+#225 Nucler Dance! (Ending)
+#221 Oh My Buddha! (Game Over)
+#223 100 Yen Part 2
+
+  [Source]
+  Hyper Drive -G.S.M. Sega 4-
+  Pony Canyon / Scitron  PCCB-00035  Jul 21, 1990
+
+$end

@@ -1,0 +1,54 @@
+$name=ddtod
+$version=2
+$default=037
+$main
+
+#037 Q Sound Logo
+
+#044 [Voice] Dungeons &
+#046 [Voice] Dragons
+#048 [Voice] Welcome to the D 'n D world
+#000 Title Screen
+#001 Character Select
+#002 Name Regist
+#010 Forest 1
+#015 Battle 1
+#029 Commission
+#008 Cave, Pond
+#017 Battle 2
+#020 Stage 1 Boss
+#004 Clear
+#027 Level Up
+#006 Shop
+#011 Forest 2
+#012 Forest 3
+#016 Battle 3
+#021 Stage 2 Boss
+#028 Town
+#018 Fight on the ship
+#022 Stage 3 Boss
+#023 Stage 4 Boss
+#032 New Mission
+#030 Selection
+#007 Shop after the Tragedy
+#009 Old Well
+#014 Underground
+#024 Stage 5 Boss
+#025 Stage 6 Boss
+#033 Dragon Slayer
+#013 Sable Tower
+#019 Battle 4
+#036 Room of Deimos
+#026 Final Boss
+#034 Credits
+#035 Ending
+#049 Thank You
+#003 Continue
+#005 Game Over
+#031 ?
+
+  [Source]
+  Dungeons & Dragons Collection Perfect Guide
+  Shinseisha
+
+$end

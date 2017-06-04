@@ -1,0 +1,41 @@
+﻿$name=ncombat
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#005 Opening
+#006 The Heavy Responsibilities of the Ninja Combat (Stage 1)
+#028 BGM A
+#009 Battle Act 1 (Boss 1, Boss 5)
+#016 Stage Clear 1
+#015 Stage Clear 2
+#020 Select
+#007 Golden Gate Bridge (Stage 2)
+#017 Battle Act 2 (Boss 2)
+#008 New York Underground (Stage 3)
+#024 BGM C
+#018 Battle Act 3 (Boss 3)
+#023 Full-scale Attack (Final Version)
+#004 Infiltration (Stage 4)
+#027 BGM B
+#026 Battle Act 4 (Boss 4)
+#013 Dangerous Life (Stage 5)
+#019 Ninja Romantics (Stage 6)
+#021 Battle Act 6 (Boss 6)
+#011 Last Chance of Your Life (Stage 7)
+#025 Beautiful Life (Pre-Boss)
+#022 Battle Act 7 (Boss 7)
+#012 Door on the Horizon (Ending)
+#014 Game Over
+
+#010 Unused 1
+#029 Unused 2
+
+  [Source]
+  The Super Spy, Ninja Combat / SNK
+  Pony Canyon / Scitron  PCCB-00046  1990.11.21
+
+// List Contribution by NK
+$end

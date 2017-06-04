@@ -1,0 +1,31 @@
+﻿$name=fround
+$version=2
+$default=$6e
+$songmax=$6f
+$fixed_volume=331
+$main
+
+$6e Hard Blow (テロップデモ BGM)
+$68 Let's Do It (タイトルデモ BGM)
+$69 Cross Counter (コイン投入 BGM)
+$62 Powermeter (パワーセレクト BGM)
+$61 Introsuction (選手紹介BGM)
+$66 Hard Puncher (ステージ 1,5 BGM)
+$67 You Can't Get Him (コンティニュー BGM)
+$6a Kill Him (ステージ 2,4,6 BGM)
+$63 Power Up (トレーニングBGM)
+$6b Don't Quail (ステージ 3,7 BGM)
+$6f Judgement (判定 BGM)
+$64 Lost Game (ゲームオーバー)
+$60 Ranking (ランキング BGM)
+$6c The Final Round (ステージ 8 BGM)
+$65 You Got Him (ウィナー BGM)
+$6d You Are Perfect! (エンディング BGM)
+
+$1a Cross Counter -with S.E.- (コイン投入BGM -with S.E.-)
+
+  ■出典
+  KONAMI GAME MUSIC COLLECTION Vol.0
+  KING RECORDS  276A-7708  1989.07.21
+
+$end

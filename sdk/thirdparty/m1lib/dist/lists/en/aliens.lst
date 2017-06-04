@@ -1,0 +1,36 @@
+﻿$name=aliens
+$version=2
+$default=148
+$songmax=152
+$main
+
+#148 ....57 Years Later [Title]
+#152 Objective
+#142 Stage 1
+#143 Stage 1 Boss [1st Form]
+#145 Stage 1, 3, 5 Boss [2nd Form]
+#132 Stage 2 / Stage 4
+#149 Newt Captured
+#129 Stage 3-1
+#130 Stage 3-2
+#133 Stage 3-3
+#135 Stage 3, 5, 7 Sub-Boss
+#131 Stage 3 Boss [1st Form]
+#138 Newt Rescued
+#134 Stage 5-1 / Stage 5-2
+#136 Stage 5-3
+#137 Stage 5 Boss [1st Form]
+#139 Stage 6
+#140 Alien Queen [1st Form]
+#144 Stage 7
+#147 Alien Queen [2nd Form]
+#150 Ending
+#146 Mission Completed [Staff]
+#153 Continue
+#141 Game Over
+
+  [Sound Composer]
+   Masanori Adachi
+
+// list contributed by bcass
+$end

@@ -1,0 +1,46 @@
+$name=drgnbstr
+$version=2
+$default=0
+$main
+
+#00 Credit
+#01 Round Start
+#02 Unused (Name Entry)
+#03 Game Over
+#04 Iwayama Dragon BGM
+#05 Renga BGM
+#06 Catacomb BGM
+#07 Limestone Cave BGM
+#08 Room Guard Combat BGM
+#09 Map Movement
+#10 Entering Mountain
+#11 Jump
+#12 Vine Climbing
+#13 Item Get
+#14 Drawing Sword
+#15 Monster Hit with Sword
+#16 Swords Clashing
+#17 Fireball
+#18 Monster Hit with Fireball
+#19 Damage Taken
+#20 Princess Appears
+#21 Dragon Breaths Fire
+#22 Princess Love Scene Music
+#23 Dragon Killed
+#24 Tesutooru Oyobi Inosai no Totsugeki
+#25 Bat, Will-o'-the-wisp, Flying Suraim
+#26 Wizard Throws the Sword
+#27 Cave Shark
+#28 Mountain Disappears
+#29 Energy Low Warning
+#30 Energy Recovery
+#31 Dragon Hit with Sword
+
+  [Source]
+  Namco Video Game Music Program Collection
+  Denpa Publications Inc.
+
+  [Composed by]
+  Yuriko Keino
+
+$end

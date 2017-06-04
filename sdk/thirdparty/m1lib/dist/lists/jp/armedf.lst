@@ -1,0 +1,32 @@
+﻿$name=armedf
+$version=2
+$default=046
+$songmax=059
+$main
+
+#046 START～INSECT (Start～Stage 1)
+#048 INSECT (Stage 1)
+#049 BONE (Stage 2)
+#050 MACHINE CITY (Stage 3)
+#051 SARCOMA (Stage 4)
+#052 DIFFERENT KING (Stage 5)
+#053 FINAL STAR (Stage 6)
+#058 BOSS
+#054 EXZATH～FINAL BOSS (Extra Stage～Last Boss)
+#055 CLEAR
+#056 STAR SHIP (Ending)
+#059 EARTH & PEACE (Staff Roll)
+#057 FRIENDSHIP (Name Entry)
+#047 GAME OVER
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  アームドF・クレイジークライマー2
+  PONY CANYON / SCITRON  PCCB-00020  1990.02.21
+
+  ■作曲
+  吉田 健志
+
+$end

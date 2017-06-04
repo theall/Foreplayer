@@ -1,0 +1,131 @@
+﻿$name=dstlk
+$version=2
+$default=043
+$songmax=690
+$fixed_volume=260
+$main
+
+#043 QSound Logo
+
+#000 Opening - Title
+#001 Player Select 1
+#003 Player Select 2
+#002 VS.
+#005 Ranking Display
+#008 Demitri's Stage (Romania)
+#020 Demitri Won
+#045 Demitri Ending 1
+#032 Demitri Ending 2
+#009 Gallon's Stage (England)
+#021 Gallon Won
+#033 Gallon Ending
+#011 Zabel's Stage (Australia)
+#023 Zabel Won
+#035 Zabel Ending
+#004 Interruption
+#010 Victor's Stage (Germany)
+#022 Victor Won
+#034 Victor Ending
+#016 Aulbath's Stage (Brazil)
+#028 Aulbath Won
+#040 Aulbath Ending
+#013 Anakaris's Stage (Egypt)
+#025 Anakaris Won
+#037 Anakaris Ending
+#018 Phobos Stage (Mexico)
+#030 Phobos Won
+#006 Continue
+#014 Felicia's Stage (U.S.A.)
+#026 Felicia Won
+#038 Felicia Ending
+#015 Bishamon's Stage (Japan)
+#027 Bishamon Won
+#039 Bishamon Ending
+#012 Morrigan's Stage (Scotland)
+#024 Morrigan Won
+#036 Morrigan Ending
+#017 Sasquatch's Stage (Canada)
+#029 Sasquatch Won
+#041 Sasquatch Ending
+#019 Pyron's Stage (Hellstorm)
+#031 Pyron Won
+#007 Game Over
+#042 Credits Roll 1
+#046 Credits Roll 2
+#047 Credits Roll 2 (with Voice)
+
+#044 QSound Logo (Sub Part)
+
+-----------------------------------------
+ [Voices]
+
+#272 [Voice]
+#273 [Voice]
+#276 [Voice]
+#277 [Voice]
+#279 [Voice]
+#280 [Voice]
+#281 [Voice]
+#285 [Voice]
+#287 [Voice]
+#289 [Voice]
+#290 [Voice]
+#291 [Voice]
+#292 [Voice]
+#293 [Voice]
+#294 [Voice]
+#295 [Voice]
+#298 [Voice]
+#299 [Voice]
+#300 [Voice]
+#301 [Voice]
+#308 [Voice]
+#309 [Voice]
+#310 [Voice]
+#311 [Voice]
+#312 [Voice]
+#314 [Voice]
+#315 [Voice]
+#317 [Voice]
+#318 [Voice]
+#319 [Voice]
+#320 [Voice]
+#321 [Voice]
+#322 [Voice]
+#324 [Voice]
+#325 [Voice]
+#329 [Voice]
+#330 [Voice]
+#331 [Voice]
+#332 [Voice]
+#334 [Voice]
+#335 [Voice]
+#336 [Voice]
+#337 [Voice]
+#338 [Voice]
+#339 [Voice]
+#340 [Voice]
+#341 [Voice]
+#342 [Voice]
+#343 [Voice]
+#344 [Voice]
+#345 [Voice]
+#346 [Voice]
+#347 [Voice]
+#348 [Voice]
+#349 [Voice]
+#350 [Voice]
+#351 [Voice]
+#352 [Voice]
+#353 [Voice]
+#354 [Voice]
+#355 [Voice]
+#356 [Voice]
+#357 [Voice]
+
+  [Source]
+  Vampire - The Night Warriors / Arcade Game Track
+  Suleputer SRCL-2969  Sep 7, 1994
+
+// List Contribution by Hiroshi
+$end

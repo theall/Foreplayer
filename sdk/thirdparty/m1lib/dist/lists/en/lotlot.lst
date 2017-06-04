@@ -1,0 +1,36 @@
+﻿$name=lotlot
+$version=2
+$default=041
+//$songmax=$6B
+$main
+
+#41 Round Start <time="4.0">
+#39 Main Music <time="24.7">
+#40 Round Clear <time="3.5">
+#42 Game Over <time="4.0">
+#43 Name Entry <time="11.6">
+
+#105 (Round Start) <time="4.0">
+#103 (Main Music) <time="24.7">
+#104 (Round Clear) <time="3.5">
+#106 (Game Over) <time="4.0">
+#107 (Name Entry) <time="11.6">
+
+------------------------------------------------------
+
+#01 [SFX]
+#18 [SFX] <time="3.1">
+#22 [SFX]
+#23 [SFX]
+#24 [SFX]
+#25 [SFX]
+#26 [SFX]
+#27 [SFX]
+#28 [SFX]
+#31 [SFX]
+#36 [SFX]
+#37 [SFX]
+#38 [SFX]
+
+// List Contribution by Neo Techno Bou on Dec 23, 2003
+$end

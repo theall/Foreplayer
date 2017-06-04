@@ -1,0 +1,161 @@
+﻿$name=dbz2
+$version=2
+$default=150
+$main
+
+#150 [SFX] Coin Insertion
+#015 Select
+#001 Vs. Goku (World Martial Arts Championship Arena)
+#017 Win <time="17.17">
+#012 Between the Battles
+#002 Vs. Gohan (Forest)
+#003 Vs. Vegeta (Mountains)
+#004 Vs. Trunks (City of the Future)
+#005 Vs. Satan (Satan City Stadium Arena)
+#006 Vs. Piccolo (Porunga Temple)
+#007 Vs. No. 20 (Dr. Gero's Laboratory)
+#008 Vs. No. 18 (North Capitale)
+#009 Vs. No. 16 (Red Ribbon Army HeadQuarter)
+#010 Vs. Cell (Cell Games Arena)
+#011 Ending (Perfect Cell)
+#016 Ending
+#013 Lose
+
+#014 Unknown 1 (BGM)
+#018 Unknown 2 (Fanfare)
+#019 Unknown 3 (Fanfare)
+
+  [Voices]
+
+#160 [Voice] Son Goku - "Kamehameha"
+#161 [Voice] Son Goku 
+#162 [Voice] Son Goku 
+#163 [Voice] Son Goku 
+#164 [Voice] Son Goku 
+
+#166 [Voice] Son Gohan - "Kamehameha"
+#167 [Voice] Son Gohan 
+#168 [Voice] Son Gohan 
+#169 [Voice] Son Gohan 
+#170 [Voice] Son Gohan 
+
+#172 [Voice] Vegeta - "Final Flash"
+#173 [Voice] Vegeta
+#174 [Voice] Vegeta
+#175 [Voice] Vegeta
+#176 [Voice] Vegeta
+
+#178 [Voice] Trunks
+#179 [Voice] Trunks
+#180 [Voice] Trunks
+#181 [Voice] Trunks
+#182 [Voice] Trunks
+
+#184 [Voice] Satan - "Dynamite Kick"
+#185 [Voice] Satan
+#186 [Voice] Satan
+#187 [Voice] Satan
+#188 [Voice] Satan
+
+#190 [Voice] Piccolo - "Makankousappou"
+#191 [Voice] Piccolo
+#191 [Voice] Piccolo
+#192 [Voice] Piccolo
+#193 [Voice] Piccolo
+#194 [Voice] Piccolo
+
+#196 [Voice] No. 20 - "Bomber"
+#197 [Voice] No. 20
+#198 [Voice] No. 20
+#199 [Voice] No. 20 - "Ike"
+#200 [Voice] No. 20
+#201 [Voice] No. 20
+
+#205 [Voice] No. 18 - "Kiena"
+#206 [Voice] No. 18
+#207 [Voice] No. 18
+#208 [Voice] No. 18
+#209 [Voice] No. 18
+#210 [Voice] No. 18
+
+#212 [Voice] No. 16 - "Hell's Flash"
+#213 [Voice] No. 16 
+#214 [Voice] No. 16 
+#215 [Voice] No. 16 
+#216 [Voice] No. 16 
+
+#218 [Voice] Cell - "Kamehameha"
+#219 [Voice] Cell 
+#220 [Voice] Cell 
+#221 [Voice] Cell 
+#222 [Voice] Cell 
+
+  [SFX]
+
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] Cheers
+#150 [SFX] Coin Insertion 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+
+ Drums
+#228 [SFX] 
+#229 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+#232 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#240 [SFX] 
+#241 [SFX] 
+#242 [SFX] 
+#243 [SFX] 
+#244 [SFX] 
+
+  [Composers]
+  Yoshiko Yamaguchi (Music Composer) 
+  Idenori Anai (Sound Composer)
+  
+  [Voices Credits]
+  Goku - Masako Nozawa
+  Gohan - Masako Nozawa
+  Vegeta - Ryo Horikawa
+  Trunks - Takeshi Kusao
+  Satan - Daisuke Gouri
+  Piccolo - Toshio Furukawa
+  No. 20 - Koji Yada
+  No. 18 - Miki Ito
+  No. 16 - Hikaru Midorikawa
+  Cell - Norio Wakamoto 
+ 
+// List contribution by Simon B., done in playing the game.
+$end

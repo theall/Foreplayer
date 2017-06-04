@@ -1,0 +1,20 @@
+﻿$name=wgp
+$version=2
+$default=10
+$main
+
+$0a On The Wings Of The Wind (Title)
+$12 Paddock Pass (Credit)
+$0b Set Position (Select)
+$0c Go On!! (Start)
+$14 Run Wild (Last Dash)
+$0d Mega Powers! (Round Clear)
+$13 Shift Up (Continue)
+$0e Great Champ (All Clear)
+$0f Special To Me (Ending)
+$11 P-Zone (Naming)
+$10 What Goes? (Game Over)
+
+// Original Hoot List by Kita Hisashi
+// M1 List by Knurek
+$end

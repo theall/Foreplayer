@@ -1,0 +1,80 @@
+﻿$name=unsquad
+$version=2
+$default=066
+$songmax=066
+$main
+
+#066 Credit <time="3.5">
+#001 Player Select <time="30.6">
+#002 Shop <time="28.5">
+#004 Oil Refinery (Round 1) <time="2:00.6">
+//not released on CD
+#015 Ground Attack (Boss 1) <time="1:06.3">
+#019 Round Clear
+#005 Thundercloud (Round 2) <time="2:38.5">
+#014 Aerial Combat (Boss 2) <time="1:02.1">
+#006 Forest Fortress (Round 3) <time="1:20.6">
+#018 Fortress (Boss 3) <time="47">
+#009 Desert (Round 4) <time="1:45.3">
+#017 Ground Carrier (Boss 4) <time="1:33.5">
+#008 Canyon (Round 5) <time="2:00.1">
+#025 Emergency <time="10.8">
+#023 Special Round <time="1:29.3">
+#024 Cave (Round 6) <time="2:04.5">
+#010 Rise (Round 7) <time="1:50.8">
+#011 Sea (Round 8) <time="2:40.7">
+#016 Battleship (Boss 5) <time="1:12.4">
+#003 Game Over
+#012 Armory (Round 9) <time="2:22.6">
+#013 Final Attack (Round 10) <time="1:33.5">
+#021 Last Round Clear
+#022 Ending & Credits Roll <time="2:09.5">
+#020 Last Ranking
+#007 unused
+//on CD, this tune is 'Oil Refinery (Round 1)'
+
+------------------------------------------------------------------
+
+ [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+
+  [Source]
+  Area 88 / Capcom Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00018  Jan 21, 1990
+
+// List Contribution by NK
+$end

@@ -1,0 +1,68 @@
+﻿$name=gunbird
+$version=2
+$default=040
+$songmax=164
+$fixed_volume=107
+$main
+
+#040 Backstar's Fortress (Title / Castle)
+#158 Coin (Credit)
+#033 Discover The Dream (Charactor Select)
+#041 Pointed Square (Jungle)
+#042 Trick Trump Train (Town)
+#043 Shot In The Underground (Coal Mine)
+#048 Unknown Objects (Ruin)
+#049 Mistery Circle (Shrine)
+#062 Aqua Blue (Ocean)
+#050 The Trap -From The Ancient- (Final)
+#056 Chase The Case (Boss A)
+#057 High Energy (Boss B)
+#058 Reborn (Boss C -vs.魔神-)
+#034 We Did It (Stage Clear)
+#059 The End Of Gunbird A (Ending A)
+#060 The End Of Gunbird B (Ending B)
+#061 The End Of Gunbird C (Ending C)
+#032 The End Of Gunbird D (Ending D)
+#035 Dreamin' Again (Name Resist)
+
+-----------------------------------------
+ [S.E.]
+
+#064 [Voice] マリオン発進！
+#065 [Voice] お待たせあるね！
+#066 [Voice] バルナス発進！
+#067 [Voice] じじい見参！
+#068 [Voice] Let's Go!
+#077 [Voice] 乱れ射ちでぃ
+#080 [Voice] ぶんし～ん
+#082 [Voice] 喰らいやがれ
+#084 [Voice] パワーアーップ
+#085 [Voice] パワーアーップ
+#086 [Voice] パワーアップ也
+#087 [Voice] パワーアップでぃ
+#088 [Voice] パワーアップだ
+#089 [Voice] 大儲けっ
+#090 [Voice] 満足ある
+#091 [Voice] ハハッハハ
+#092 [Voice] じじい感激っ
+#093 [Voice] いいぞっ
+#132 [Voice] 行ってこ～いっ
+#133 [Voice] やぁっ
+#134 [Voice] ロケットパ～ンチ
+#136 [Voice] 発射っ
+#142 [Voice] ウィンド・シェイバー
+#144 [Voice] バルナスバスター
+#146 [Voice] ボンバー
+#161 [Voice] ぅわぁ～っ
+#162 [Voice] あぁ～っ
+#163 [Voice] わあ～っ
+#164 [Voice] ぁあ～っ
+
+  ■出典
+  ガンバード2・ガンバード
+  PONY CANYON / SCITRON  SGCD-0003  1998.12.04
+
+  ■作曲
+  泉谷 雅樹
+
+$end

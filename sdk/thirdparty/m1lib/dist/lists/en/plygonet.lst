@@ -1,0 +1,30 @@
+﻿$name=plygonet
+$version=2
+$default=$d0
+$songmax=$f0
+$main
+
+$d0 Zero G (Title Logo)
+$d1 Frontline Assembly (Selection)
+$d7 Orientrance -Radioactivity Mix- (Empty Lot)
+$da Energy High (Expressway)
+$d4 Brain Expander (Ruins)
+$d8 Knight Horse -Trigger Sync Edit- (Urban Area)
+$d5 Death Before Vision (Mountain Range)
+$d3 Brick Pandemonium (Brick Wall)
+$d6 Mediterranean Pad -Lakeside Mix- (Damp area)
+$d9 Secret Weapon -Resistance Edit- (Missle base)
+$e0 Hi-tech Destroyer (Clear / Successful)
+$e2 Tomorrow Just Another Space (Mission Completed)
+$e1 Transmission (Clear / Failed)
+$df Additional Charge (Continue)
+$db Chill Out (Game Over)
+$dc Acknowledgement (Ranking)
+$f0 Speaker Check
+
+  [Source]
+  Konami Amusement Sounds '94 - Spring
+  King Records  KICA-7631, 7632  Feb 23, 1994
+
+// Translated by Fujix
+$end

@@ -1,0 +1,34 @@
+﻿$name=amazon
+$version=2
+$default=001
+$songmax=059
+$main
+
+#001 CREDIT
+#046 GAME START～ソルジャー・アマテラス (Main BGM)
+#049 ソルジャー・アマテラス (Main BGM)
+#047 再START～ソルジャー・アマテラス (Main BGM)
+#048 LAST START～ソルジャー・アマテラス (Main BGM)
+#053 脱獄者のテーマ
+#056 ヘル・バード (怪鳥)
+#054 ゴーゴン・ヘッド (怪物 1)
+#055 バグダリアン (怪物 2)
+#057 ロブスタ・ガンナー (怪物 3)
+// #059 バグダリアン (怪物 2)
+#052 GAME CLEAR
+#050 GAME OVER
+#051 オレンジ・マウンテン・ヒル (Name Entry)
+// #058 オレンジ・マウンテン・ヒル (Name Entry)
+
+#034 [Voice] ヤッ
+#035 [Voice] 怪物の声
+
+  ■出典
+  GAME SOUND NICHIBUTSU -G.S.M. Nichibutsu 1-
+  PONY CANYON / SCITRON  D28B0004  1988.09.21
+
+  ■作曲
+  吉田 健志
+
+//
+$end

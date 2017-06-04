@@ -1,0 +1,67 @@
+﻿$name=starwars
+$version=2
+$default=27
+$main
+
+#027 Game Over (No High Score)
+#036 Tie Fighter BGM #1 (Stage 1,2 + odd stages)
+#029 Tie Fighter BGM #1 (Stage 4 + even stages)
+#037 Tie Fighter BGM #2
+#030 Approching Death Star
+#032 Bunker/Tower BGM #1
+#033 Bunker/Tower BGM #2
+#034 Trench Flying BGM
+#031 Death Star Destroyed
+#028 Game Over (High Score List)
+
+#001 Music Test #1
+#002 Music Test #2
+
+
+#006 [Voice] Credit Sound #1 [Voice] Obi-Wan - "The Force will be with you.."
+#003 [Voice] Credit Sound #2 [Voice] Obi-Wan - "Always"
+#007 [Voice] Han - "Great Shot, Kid.  That was one in a million!"
+#026 [Voice] Han - "Yahooo!!  You're all clear, kid!"
+#009 [Voice] Luke - "I'm hit, but not bad.  R2 see what you can do with it!"
+#013 [Voice] Luke - "I've lost R2!"
+#015 [Voice] Luke - "R2, try and increase the power!"
+#016 [Voice] Luke - "Red Five standing by.."
+#018 [Voice] Luke - "I can't shake him!"
+#019 [Voice] Luke - "Look at the size of that thing!"
+#023 [Voice] Luke - "This is Red Five, I'm going in!"
+#005 [Voice] Obi-Wan - "The Force will be with you, always.."
+#012 [Voice] Obi-Wan - "Let go, Luke!"
+#017 [Voice] Obi-Wan - "Remember.."
+#024 [Voice] Obi-Wan - "Luke, trust me.."
+#025 [Voice] Obi-Wan - "Use the Force, Luke!"
+#008 [Voice] Vader - "I have you now!"
+#011 [Voice] Vader - "I'm on the leader!"
+#021 [Voice] Vader - "Stay in attack formation!"
+#022 [Voice] Vader - "The force is strong with this one!"
+#014 [Voice] R2D2 Hit
+#004 [Voice] Tie Fighter Sound
+
+#035 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.]  R2D2 Destroyed
+#041 [S.E.] 
+#042 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.]  R2D2 Sound #1
+#048 [S.E.]  R2D2 Sound #2
+#049 [S.E.]  R2D2 Sound #3
+#050 [S.E.]  R2D2 Sound #4
+#051 [S.E.]  Lost a Shield
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.]  Turret Fire
+#058 [S.E.]  Laser
+#059 [S.E.] 
+
+// Basic Listing by Tafoid
+$end

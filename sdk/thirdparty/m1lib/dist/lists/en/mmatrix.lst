@@ -1,0 +1,31 @@
+﻿$name=mmatrix
+$version=2
+$default=001
+$songmax=$3ff
+$fixed_volume=338
+$main
+
+#001 Mars Matrix
+#006 Arcade Movie
+#011 Select Loop (Player Select)
+#004 Armed Satellite Phobos (Stage 1 / Menu BGM in Dreamcast ver.)
+#009 Descedung to Mars (Stage 2)
+#005 Red Sky (Stage 4)
+#003 Surprise Attack (Stage 3)
+#007 True Darkness (Stage 5)
+#008 Forbidden Fruit (Stage 6)
+#010 Boss
+#012 End of War (Ending)
+#013 Game Over
+
+#002 ??? 1
+#015 ??? 2
+
+  [Source]
+  Mars Matrix, Giga Wing 2 / Original Soundtrack
+  Suleputer  CPCA-1050 - 1051  Jan 11, 2001
+
+  [Sound Composer]
+  Yasushi Uenishi
+
+$end

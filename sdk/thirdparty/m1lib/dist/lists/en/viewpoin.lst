@@ -1,0 +1,76 @@
+﻿$name=viewpoin
+$version=2
+$default=33
+$fixed_volume=154
+$main
+
+#33 Eye Catch Sammy
+#34 Title <time="18">
+#54 Instruction <time="18">
+#35 Not All There / Area 1 <time="2:28" fadeout="yes" fadeoutlength="10">
+#41 F.O.B. / Boss <time="2:12" fadeout="yes" fadeoutlength="10">
+#36 Un Caillou Ricochet / Area 2 <time="4:36" fadeout="yes" fadeoutlength="10">
+#37 Be Your Age! / Area 3 <time="2:18" fadeout="yes" fadeoutlength="10">
+#38 Ass Back Wards / Area 4 <time="3:55" fadeout="yes" fadeoutlength="10">
+#39 La Nervatura M. / Area 5 <time="3:17" fadeout="yes" fadeoutlength="10">
+#40 Physical Daydream / Area 6 <time="3:34" fadeout="yes" fadeoutlength="10">
+#47 F.O.B. -Biotron Mix- / Final <time="1:46" fadeout="yes" fadeoutlength="10">
+#51 Mes Volutes Bleues / Ending <time="2:26" fadeout="no">
+#50 Continue <time="25" fadeout="yes" fadeoutlength="10">
+#52 Name Entry <time="1:21" fadeout="yes" fadeoutlength="10">
+
+-------------------------------------
+
+#095 [SFX] Neo Geo Logo
+#127 [SFX] Credit Inserted
+#193 [SFX] Take off
+#194 [SFX] Shot
+#195 [SFX] Charging
+#196 [SFX] Full charge
+#197 [SFX]
+#198 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX] Gegege
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#229 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#243 [SFX]
+#244 [SFX]
+#245 [SFX]
+#246 [SFX]
+
+  [Source]
+  Viewpoint / Sammy
+  Pony Canyon / Scitron  PCCB-00112  Feb 19, 1993
+
+// Times by CrashTest
+// 2 loops edition by Simon B.
+$end

@@ -1,0 +1,133 @@
+﻿$name=danceyes
+$version=2
+$default=013
+$main
+
+#013 Credit
+#128 Course Select
+
+#129 Stage 1-1 - Room
+#170 Stage 1-1 - Show Time
+#130 Stage 1-2 - Flight Attendant
+#205 Stage 1-2 - Show Time
+#131 Stage 1-3 - Tank
+#213 Stage 1-3 - Show Time
+
+#138 Stage 2-1 - Heavy Metal
+#192 Stage 2-1 - Show Time
+#163 Stage 2-2 - Cat
+#204 Stage 2-2 - Show Time 1
+#245 Stage 2-2 - Show Time 2
+#167 Stage 2-3 - Field
+#225 Stage 2-3 - Show Time
+
+#162 Stage 3-1 - Magic
+#244 Stage 3-1 - Show Time
+#136 Stage 3-2 - Milk
+#177 Stage 3-2 - Show Time
+#157 Stage 3-3 - Mermaid
+#198 Stage 3-3 - Show Time
+
+#145 Stage 4-1 - Muscle
+#227 Stage 4-1 - Show Time
+#161 Stage 4-2 - Campaign
+#243 Stage 4-2 - Show Time
+#141 Stage 4-3 - Elevator
+#182 Stage 4-3 - Show Time 1
+#223 Stage 4-3 - Show Time 2
+
+#159 Stage 5-1 - Stump
+#241 Stage 5-1 - Show Time
+#139 Stage 5-2 - Capsule
+#221 Stage 5-2 - Show Time
+#143 Stage 5-3 - Fitting
+#249 Stage 5-3 - Show Time
+
+#148 Stage 6-1 - Barrel
+#230 Stage 6-1 - Show Time
+#154 Stage 6-2 - Room 2
+#236 Stage 6-2 - Show Time
+#144 Stage 6-3 - Medium
+#226 Stage 6-3 - Show Time
+
+#140 Stage 7-1 - Cage
+#239 Stage 7-1 - Show Time
+#151 Stage 7-2 - Shed
+#233 Stage 7-2 - Show Time
+#149 Stage 7-3 - Space 1
+#231 Stage 7-3 - Show Time
+
+#142 Stage 8-1 - Training
+#224 Stage 8-1 - Show Time
+#146 Stage 8-2 - Lamp
+#228 Stage 8-2 - Show Time
+#147 Stage 8-3 - Tennis
+#229 Stage 8-3 - Show Time
+
+#168 Stage 9-2 - Soccer
+#250 Stage 9-1 - Show Time
+#137 Stage 9-2 - Nurse
+#219 Stage 9-2 - Show Time
+#134 Stage 9-3 - Hagoita
+#216 Stage 9-3 - Show Time
+
+#165 Stage 10-1 - Waitress
+#247 Stage 10-1 - Show Time
+#160 Stage 10-2 - Queen
+#242 Stage 10-2 - Show Time
+#166 Stage 10-3 - Truck
+#207 Stage 10-3 - Show Time 1
+#248 Stage 10-3 - Show Time 2
+
+#132 Stage 11-1 - Gun
+#196 Stage 11-1 - Show Time
+#156 Stage 11-2 - Snail (Namco Arrenge)
+#238 Stage 11-2 - Show Time
+#155 Stage 11-3 - Pupa
+#237 Stage 11-3 - Show Time
+
+#153 Stage 12-1 - Diver
+#235 Stage 12-1 - Show Time
+#150 Stage 12-2 - Car
+#191 Stage 12-2 - Show Time 1
+#232 Stage 12-2 - Show Time 2
+#135 Stage 12-3 - Angel
+#217 Stage 12-3 - Show Time
+
+#169 Stage 13-1 - Snowman
+#251 Stage 13-1 - Show Time
+#133 Stage 13-2 - Space 2
+#215 Stage 13-2 - Show Time
+#152 Stage 13-3 - Alien
+#234 Stage 13-3 - Show Time
+
+#164 Stage 14 - Space 3
+#246 Stage 14 - Show Time
+
+#158 Stage 15 - Pineapple
+#240 Stage 15 - Show Time / Ending
+
+#171 Unused 1
+#195 Unused 2
+#212 Unused 3
+
+-----------------------------------------
+  [SFX]
+
+#001 Sound Check
+#003 - #015 [SFX]
+#197 Bosconian - Start
+#294 Bosconian - Hi Score
+#295 Bosconian - Clear
+#296 Bosconian - Credit
+#297 Bosconian - Extend
+#298 Bosconian - Hit 1
+#299 Bosconian - Hit 2
+#300 Bosconian - Hit 3
+#301 Bosconian - Hit 4
+#302 Bosconian - Hit 5
+#304 Bosconian - Hit 6
+#303 Bosconian - Alert
+
+// List by MuramuraNight
+$end

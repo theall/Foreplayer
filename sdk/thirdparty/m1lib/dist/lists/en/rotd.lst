@@ -1,0 +1,44 @@
+﻿$name=rotd
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#056 Rage of the Dragons (Opening)
+#042 Come on! (Player Select)
+#043 Confrontation (VS)
+#044 All over the Place (Intro)
+#033 Cheer Up! (Pepe & Pupa)
+#036 Exorcism (Elias & Alice)
+#034 Funky Togetherness (Jones & Kang)
+#035 Dragons Blues (Jimmy & Sonia)
+#045 You Win!
+#037 Beat Out (Radel & Annie)
+#039 Violent Death (Oni & Cassandra)
+#040 Splendid String From China (Billy & Lynn)
+#047 Heavy Fellow (Abubo Appears)
+#038 Exclamation (Abubo's Stage)
+#058 An Underdog (Abubo Lose)
+#048 Yohan Demo (Yohan Appears)
+#041 Statelessness (Yohan's Stage)
+#049 In The Result (Ending 1)
+#050 Become Lively (Ending 2)
+#051 Sad To Say (Ending 3)
+#052 Since Then (Ending 4)
+#053 Several Minds (Ending 5)
+#057 Glorious Heart (Credits)
+#054 Challenger (Join)
+#046 Don't Stop! (Continue)
+#055 Game Over
+
+  [Source]
+  Rage of the Dragons - Original Arrange High Quality Version
+  Noise Factory  NF-0001  Sep 13, 2002
+
+  [Composition]
+  Keiichi Tanaka (Denchuu)
+
+// List Contribution by GolGol
+// English list by fuj
+$end

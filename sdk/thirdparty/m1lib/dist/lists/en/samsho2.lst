@@ -1,0 +1,53 @@
+﻿$name=samsho2
+$version=2
+$default=002
+$fixed_volume=153
+$main
+
+#002 Neo Geo Logo
+
+#045 Lion Dance (Title)
+#056 Fifteen Swordsmen (Player Select)
+#060 Battle Again (Start Demo)
+#046 Fare and Square
+#033 Masculine Road (Haohmaru)
+#037 Banquet of Nature -Spring- (Nakoruru)
+#041 Silence (Jubei Yagyu) <time="4:30">
+#054 Rebirth (Middle Demo 1)
+#051 Knight (Neinhalt Sieger)
+#049 True Shadow (Hanzo Hattori)
+#038 Bluefin (Galford)
+#055 Vengeful Ghost (Middle Demo 2)
+#034 Flower on the Moon (Ukyo Tachibana)
+#050 Foreign Lady Part 2 (Charlotte)
+#048 Magatama Beads Part 2 (Kyoshiro Senryo)
+#052 Animal Girl (Cham Cham)
+#058 Bad Luck -Occident- (Middle Demo 3-1 -Occident-)
+#057 Bad Luck -Orient- (Middle Demo 3-1 -Orient-)
+#059 True Evil (Middle Demo 3-2, 4)
+#044 Ogre's Road (Gen-an Shiranui)
+#035 Blackhearted (Earthquake)
+#040 Inhumanity (Genjuro Kibagami)
+#043 Wan-Fu (Wan-Fu)
+#042 Illusionary Fog (Nicotine Kafuin) <time="4:00">
+#047 Conclusion (Conclusion)
+#053 Victory (Winning Demo)
+#071 Making a Challenge (Here Comes Challenger)
+#039 Elated Rock (Kuroko)
+#067 Here I Go (Middle Demo 5-1)
+#065 Final Battle (Middle Demo 5-2)
+#036 Evil God (Mizuki)
+#069 Mad Strangeness (Boss Disappearance Demo)
+#064 New Road -Orient- (Ending -Orient-)
+#061 New Road -Occident- (Ending -Occident-)
+#068 Festival Music #2 (Credits Roll)
+#066 Encore (Continue)
+#070 Curtain Fall (Game Over)
+
+  [Source]
+  Shin Samurai Spirits - Haohmaru Jigokuhen / SNK
+  Pony Canyon / Scitron  PCCB-00164  Nov 02, 1994
+
+// List Contribution by NK
+// English List by NK
+$end

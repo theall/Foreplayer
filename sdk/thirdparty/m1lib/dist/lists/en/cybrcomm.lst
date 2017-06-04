@@ -1,0 +1,193 @@
+﻿$name=cybrcomm
+$version=2
+$default=140
+$main
+
+#140 Opening <time="36">
+#240 [Voice] Cyber Commando (Title Screen)
+#141 Machine Select
+
+#128 City Stage 1
+#129 Park Stage 1
+#130 VS Metal Surpent, Versus Game Factory Stage 1
+#131 VS Rafflesia, Versus Game Factory Stage 2
+#132 VS General-D, Versus Game City Stage 2
+#133 VS Nightmare
+
+#139 Ending (starts after 12 sec. silence) <time="1:29">
+//#185 Ending (main)
+//#186 Ending (drums)
+
+#138 Versus Game Park Stage 2
+#143 Continue
+#142 Challenger Machine Select
+
+#136 Unused 1
+#160 Unused 2
+#173 Unused 3
+#174 Unused 4
+#187 Unused 5 (=#136)
+
+#000 Test Tone
+
+-----------------------------------------------
+  [Voice & SFX]
+
+#161 [Voice]  
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#200 [Voice] 
+#202 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#233 [Voice] 
+#234 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+#240 [Voice] Cyber Commando
+#243 [Voice] Battle
+#244 [Voice] Zero
+#245 [Voice] One
+#246 [Voice] Two
+#247 [Voice] Three
+#248 [Voice] Four
+#249 [Voice] Five
+#250 [Voice] Six
+#251 [Voice] Seven
+#252 [Voice] Eight
+#253 [Voice] Nine
+//#254 Test Tone
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#007 [SFX]
+#008 [SFX] <time="5">
+#009 [SFX] <time="5">
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX] <time="5">
+#022 [SFX] <time="5">
+#023 [SFX] <time="5">
+#024 [SFX] <time="5">
+#025 [SFX]
+
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#032 [SFX]
+#033 [SFX]
+#035 [SFX]
+#036 [SFX]
+
+#038 [SFX] <time="5">
+#039 [SFX] <time="5">
+#040 [SFX] <time="5">
+#041 [SFX] <time="5">
+#047 [SFX] <time="5">
+
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX] <time="5">
+#079 [SFX]
+#081 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX] <time="5">
+#088 [SFX] <time="5">
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#093 [SFX] <time="5">
+#096 [SFX] <time="10">
+#097 [SFX]
+#098 [SFX]
+#099 [SFX] <time="5">
+#100 [SFX]
+#101 [SFX] <time="5">
+#102 [SFX] <time="5">
+#106 [SFX] <time="5">
+#107 [SFX] <time="5">
+#108 [SFX]
+
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+
+  [Sound Composer]
+  Shinji Hosoe (Megaten)
+
+// List contirbution by Kayama.
+// Updated by Cycommer Amp
+// Updated by Fujix
+// Updated by Min
+$end

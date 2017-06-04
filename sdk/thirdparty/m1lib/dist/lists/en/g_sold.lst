@@ -1,0 +1,30 @@
+﻿$name=g_sold
+$version=2
+$default=$01
+$songmax=255
+$main
+
+$01 Opening Theme <time="1:04" fadeout="yes" fadeoutlength="10">
+$04 Sol-Deace [Mission 1] <time="2:43" fadeout="yes" fadeoutlength="10">
+$0b Boss Theme 1 [Mission 1, 2, 4] <time="3:12" fadeout="yes" fadeoutlength="10">
+$09 Cilius Moon [Mission 2] <time="2:48" fadeout="yes" fadeoutlength="10">
+$08 An Artificial Sun [Mission 3] <time="2:33" fadeout="yes" fadeoutlength="10">
+$0f Boss Theme 2 [Mission 3, 7] <time="1:54" fadeout="yes" fadeoutlength="10">
+$06 Enemy Cruiseship [Mission 4] <time="3:03" fadeout="yes" fadeoutlength="10">
+$03 Base on Pluto [Mission 5] <time="1:25" fadeout="yes" fadeoutlength="10">
+$0c Boss Theme 3 [Mission 5, 6] <time="1:35" fadeout="yes" fadeoutlength="10">
+$07 Amalthes Moon [Mission 6] <time="2:08" fadeout="yes" fadeoutlength="10">
+$0a Final Destination [Mission 7] <time="1:39" fadeout="yes" fadeoutlength="10">
+$0d Mission Clear <time="0:06" fadeout="yes" fadeoutlength="2">
+$10 Ending Theme <time="3:13" fadeout="yes" fadeoutlength="10">
+$11 Game Creative Staff <time="7:12" fadeout="yes" fadeoutlength="10">
+$0e Game Over <time="0:27" fadeout="yes" fadeoutlength="10">
+$02 Joyous Beat (Unused) <time="2:04" fadeout="yes" fadeoutlength="10">
+$05 Fight for Mankind (Unused) <time="2:41" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Motoi Sakuraba
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

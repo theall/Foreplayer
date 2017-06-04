@@ -1,0 +1,38 @@
+﻿$name=rthun2
+$version=2
+$default=$04d
+$fixed_volume=173
+$main
+
+$04d Attract
+$032 Title
+$103 Credit
+$028 Round Start Ver.1
+$316 Theme from Rolling Thunder 2 (Round 1)
+$31c A Residence of Terrible (Round 2)
+$322 Across the Tube (Round 3)
+$31f Where Is the Target? (Round 4)
+$011 Round Clear (Short Ver.)
+$013 Game Over
+$044 Name Entry
+$047 Round Select
+$041 Gimdo Goes to Egypt (Unused)
+$050 Mission 2 Start (Unused)
+$02b Round Start Ver.2
+$019 View of Dynamism (Round 5)
+$02e An Ancient Way (Round 6)
+$025 Terror for Sale (Round 7)
+$03b Mission Impossible -Running Decayed- (Round 8)
+$03e Mission Impossible -The Final Command- (Round 8)
+$038 Mission Impossible -Theme from Gimdo- (Round 8)
+$000 Round Clear, Long Ver. (Unused) [Missing]
+$04a Ending Theme
+
+  [Source]
+  Rolling Thunder 2 / Namco Game Sound Express Vol.5
+  Victor Entertainment  VICL-15005  Jun 21, 1991
+
+  [Sound Composer]
+  Ayako Sasou
+
+$end

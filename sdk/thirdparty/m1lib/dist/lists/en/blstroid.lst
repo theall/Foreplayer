@@ -1,0 +1,110 @@
+﻿$name=blstroid
+$version=2
+$default=020
+$fixed_volume=163
+$main
+
+#020 Attract Mode <time="0:58">
+#086 [SFX] Coin Inserted <time="0:05">
+#017 Warp
+#010 Main Theme
+#011 Galaxy 1
+#012 Galaxy 2
+#013 Galaxy 3
+#014 Galaxy 4
+#024 Mukor's Theme
+#022 Name Entry <time="0:38">
+
+#004 Music Chip Test <time="0:10">
+
+----------------------------------------------------------------------------------------
+ [Voice]
+
+#107 [Voice] Mukor controls this galaxy.
+#108 [Voice] Shoot me if you dare, Earthscum!
+#109 [Voice] Now to dispose the Muke.
+#110 [Voice] We'll fight again, Earthslime!
+#111 [Voice] Hahahahaa!
+#112 [Voice] You're Earthscum.
+#113 [Voice] Mmm... Earthslime is weak.
+#114 [Voice] Die, purely earthmen!
+#115 [Voice] No earthslime can destroy Mukor.
+#116 [Voice] I'll destroy you yet.
+#117 [Voice] Noooo...
+#118 [Voice] Gyaaa...
+#119 [Voice] Argh...
+#120 [Voice] Urgh...
+#121 [Voice] Orgh...
+#122 [Voice] Heee...
+#123 [Voice] Aa...
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#037 [SFX]
+#039 [SFX]
+#041 [SFX]
+#043 [SFX]
+#045 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#068 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#075 [SFX]
+#077 [SFX]
+#079 [SFX]
+#081 [SFX]
+#082 [SFX]
+#084 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+
+// List contribution by NK
+$end

@@ -1,0 +1,170 @@
+﻿$name=ninjak
+$version=2
+$default=$63
+$main
+
+$63 Opening <time="54">
+$5E [Voice] "The Ninja Kids !" (Title)
+$5A [Voice] "Thank You" (Coin)
+$64 Character Select <time="31.9">
+$6D Start Demo <time="31.9">
+$65 Stage Start <time="5">
+$67 Stage 1 - An Aimed Town <time="1:34.9">
+$6E Boss <time="1:7.5">
+$66 Stage Clear <time="4">
+$68 Stage 2 - The Satan of Flames <time="1:1.1">
+$69 Stage 3 - Construction Work Spot <time="1:9.7">
+$6A Stage 4 - A Bad Ninja Appears ! <time="55.7">
+$6B Stage 5-I - The Last Severe Fight <time="59.2">
+$6C Stage 5-II - Drop <time="1:0.3">
+$6F Last Boss - Demon <time="50.3">
+$72 Ending <time="1:7">
+$74 Game Over <time="3">
+$73 Name Entry <time="34.0">
+
+$70 Unused 1 <time="3">
+$71 Unused 2 <time="5">
+
+$75 Stage 2 - The Satan of Flames (Loop) <time="58.1">
+$76 Stage 3 - Construction Work Spot (Loop) <time="68.7">
+
+-----------------------------------------------------------
+ [Voice]
+
+$5E [Voice] "The Ninja Kids !" (Title)
+$5A [Voice] "Thank you" (Coin)
+$11 [Voice] Jump
+$12 [Voice] Damage
+$13 [Voice] Player Die
+$14 [Voice] "Ninja Power !" (Ninjutsu)
+$15 [Voice] Voice 1
+$16 [Voice] Voice 2
+$1D [Voice] War Cry
+$1F [Voice] Jack Up
+$20 [Voice] "Kiiiii"
+$21 [Voice] Damaged (Small)
+$22 [Voice] Damaged (Large)
+$23 [Voice] Enemy Died 1
+$24 [Voice] Enemy Died 2
+$89 [Voice] Hoy
+$25 [Voice] Boss 1 Lunar <time="3">
+$27 [Voice] Boss 1 Voice
+$29 [Voice] Boss 1 Scream
+$2A [Voice] Boss 1 Die
+$36 [Voice] Boss 4 Appear
+$3C [Voice] Boss 5 Die
+$3D [Voice] Last Boss Appearing
+$40 [Voice] Last Boss Dameged
+$41 [Voice] Last Boss Died
+$58 [Voice] "Wow"
+$59 [Voice] "Help" (Male)
+$84 [Voice] "Help" (Female)
+
+-----------------------------------------------------------
+ [SFX]
+
+$05 [SFX] Hanzou Swing a weapon
+$06 [SFX] Sasuke Swing a weapon
+$07 [SFX] Akane Throw a weapon
+$08 [SFX] Akane Empty-handed
+$09 [SFX] 09 Stop (?)
+$0B [SFX] Hanzou Attack 2
+$0C [SFX] Sasuke Attack 2
+$0D [SFX] Akane Attack hit
+$0E [SFX] Akane Strike
+$0F [SFX] Genta Shoot
+$10 [SFX] Hit
+$17 [SFX] Enemy Strike
+$18 [SFX] Gun
+$19 [SFX] Bottle Thrown
+$1A [SFX] Bottle Broken
+$1B [SFX] Bottle Burned
+$1C [SFX] Enemy Empty-handed
+$1E [SFX] Beat
+$28 [SFX] Boss 1 UDE
+$2B [SFX] Boss 2 Appear
+$2C [SFX] Boss 2 Flame (Long) <time="00:02">
+$2E [SFX] Boss 2 Die
+$2F [SFX] Boss 3 Move
+$30 [SFX] Boss 3 UDE
+$31 [SFX] Boss 3 FUSHI
+$32 [SFX] Boss 3 Walk
+$33 [SFX] Boss 3 Electricity <time="00:02">
+$35 [SFX] Boss 3 Broken piece
+$37 [SFX] Boss 5 Appear
+$38 [SFX] Boss 5 Craked (Long) <time="00:03">
+$3A [SFX] Boss 5 Move (Long) <time="00:03">
+$3E [SFX] Last Boss UDE
+$3F [SFX] Broken
+$42 [SFX] Last Boss Move (Long) <time="00:03">
+$44 [SFX] Broken (Large)
+$45 [SFX] Broken (Small)
+$46 [SFX] Glass
+$47 [SFX] Bottle
+$48 [SFX] Can
+$49 [SFX] Can Hit
+$4A [SFX] Unused <time="00:03">
+$4C [SFX] Door Open
+$4D [SFX] Door Close
+$4E [SFX] A DOOR
+$4F [SFX] Wall Hit
+$50 [SFX] Wall
+$51 [SFX] Car Horn
+$52 [SFX] Blake
+//$53 Not use ?
+//$54 Not use ?
+$55 [SFX] Water (Long) <time="00:03">
+$57 [SFX] Fire
+$5B [SFX] Timer
+$5C [SFX] Stick
+$5D [SFX] Button
+$5F [SFX] Warning (Long) <time="00:03">
+//$61 Not use ?
+$77 [SFX] Hanzou Appear
+$78 [SFX] Sasuke Appear
+$79 [SFX] Akane Appear
+$7A [SFX] Genta Appear
+$7B [SFX] Thunder
+$7C [SFX] Storm
+$7D [SFX] Bomb
+$7E [SFX] Flame
+$7F [SFX] Crakking in the ground
+$80 [SFX] Damage
+$81 [SFX] Electricity
+$82 [SFX] Priest
+$83 [SFX] Air
+$85 [SFX] Fall down
+$86 [SFX] Post
+$87 [SFX] Roll over
+$88 [SFX] Collapse
+$8A [SFX] Landing
+$8B [SFX] Item Get
+$8C [SFX] Flutter
+$8D [SFX] Wind
+$8E [SFX] Water (Long) <time="00:03">
+$90 [SFX] Water
+
+$F1 [Test] ADB Check <time="5">
+$F2 [Test] PSG Check <time="5">
+$F3 [Test] 10PN Check <time="5">
+$F4 [Test] 20PN Check <time="5">
+$F5 [Test] ADA Check <time="5">
+
+$00 [Command] Stop all sound
+$01 [Command] Stop TB
+$02 [Command] Stop P
+$03 [Command] Stop A
+$04 [Command] Stop B
+
+  [Sound Composers]
+  FUMMY
+  Hiroshige Tonomura (TONO)
+  Norihiro Furukawa (WIZ. MASTER)
+  Underground Sound Guerrilla Team PINCH-PUNCH (PINCH PUNCH)
+
+//
+// [Reference]
+// GAMEST (Shinseisha) - Japanese Arcade Game Magazine
+//
+// NOTE : Name of every code is based on sound test one's.
+$end

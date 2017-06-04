@@ -1,0 +1,22 @@
+﻿$name=msisaac
+$version=2
+$default=027
+$main
+
+#027 デモ (CAPTAIN NEO)
+#022 [S.E.] クレジット
+#034 メインBGM
+#035 敵ソルジャー
+#048 ゲームオーバー
+#036 ランキング
+#040 エンドクレジット
+
+  ■出典
+  Legend of Game Music ~Premium Box~
+  Scitron  SCDC-00410~7  2005.03.24
+
+  ■作曲
+  小倉久佳, 君島正
+
+// リスト作成: ゴルゴルさん
+$end

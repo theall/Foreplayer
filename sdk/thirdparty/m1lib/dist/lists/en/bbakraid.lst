@@ -1,0 +1,30 @@
+﻿$name=bbakraid
+$version=2
+$default=001
+$fixed_volume=100
+$main
+
+#001 Outbreak (Opening)
+#002 Odyssey (Player Select)
+#003 Sky Gunner (Stage 1: Forest)
+#007 Illegal Mission (Sea Side Stage)
+#012 Terrible Object (Boss 1)
+#004 Following Wind (Naval Stage)
+#006 The Advance (Desert Stage)
+#009 Steam Syndrome (Railroad Stage)
+#011 Crisis (Boss 2)
+#005 Gray Stream (Stage 6: Cloud)
+#008 Battle Logic (Stage 7: Valley)
+#010 Aqua Zone (Stage 8: Empire)
+#013 Parapsychology (Last Boss)
+#014 Game Over
+#016 Last Episode (Ending)
+#015 Photograph in Twilight (Name Entry)
+
+  [Source]
+  Battle Bakraid / Original Soundtrack
+  Pony Canyon / Scitron  SGCD-0008  Jun 19, 1999
+
+  [Sound Composer]
+  Atsuhiro Motoyama
+$end

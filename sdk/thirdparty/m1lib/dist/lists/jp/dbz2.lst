@@ -1,0 +1,149 @@
+﻿$name=dbz2
+$version=2
+$default=150
+$main
+
+#150 [S.E.] Coin Insertion
+#015 Select
+#001 Vs. Goku (World Martial Arts Championship Arena)
+#017 Win <time="17.17">
+#012 Between the Battles
+#002 Vs. Gohan (Forest)
+#003 Vs. Vegeta (Mountains)
+#004 Vs. Trunks (City of the Future)
+#005 Vs. Satan (Satan City Stadium Arena)
+#006 Vs. Piccolo (Porunga Temple)
+#007 Vs. No. 20 (Dr. Gero's Laboratory)
+#008 Vs. No. 18 (North Capitale)
+#009 Vs. No. 16 (Red Ribbon Army HeadQuarter)
+#010 Vs. Cell (Cell Games Arena)
+#011 Ending (Perfect Cell)
+#016 Ending
+#013 Lose
+
+#014 Unknown 1 (BGM)
+#018 Unknown 2 (Fanfare)
+#019 Unknown 3 (Fanfare)
+
+  [Voices]
+
+#160 [Voice] Son Goku - "Kamehameha"
+#161 [Voice] Son Goku 
+#162 [Voice] Son Goku 
+#163 [Voice] Son Goku 
+#164 [Voice] Son Goku 
+
+#166 [Voice] Son Gohan - "Kamehameha"
+#167 [Voice] Son Gohan 
+#168 [Voice] Son Gohan 
+#169 [Voice] Son Gohan 
+#170 [Voice] Son Gohan 
+
+#172 [Voice] Vegeta - "Final Flash"
+#173 [Voice] Vegeta
+#174 [Voice] Vegeta
+#175 [Voice] Vegeta
+#176 [Voice] Vegeta
+
+#178 [Voice] Trunks
+#179 [Voice] Trunks
+#180 [Voice] Trunks
+#181 [Voice] Trunks
+#182 [Voice] Trunks
+
+#184 [Voice] Satan - "Dynamite Kick"
+#185 [Voice] Satan
+#186 [Voice] Satan
+#187 [Voice] Satan
+#188 [Voice] Satan
+
+#190 [Voice] Piccolo - "Makankousappou"
+#191 [Voice] Piccolo
+#191 [Voice] Piccolo
+#192 [Voice] Piccolo
+#193 [Voice] Piccolo
+#194 [Voice] Piccolo
+
+#196 [Voice] No. 20 - "Bomber"
+#197 [Voice] No. 20
+#198 [Voice] No. 20
+#199 [Voice] No. 20 - "Ike"
+#200 [Voice] No. 20
+#201 [Voice] No. 20
+
+#205 [Voice] No. 18 - "Kiena"
+#206 [Voice] No. 18
+#207 [Voice] No. 18
+#208 [Voice] No. 18
+#209 [Voice] No. 18
+#210 [Voice] No. 18
+
+#212 [Voice] No. 16 - "Hell's Flash"
+#213 [Voice] No. 16 
+#214 [Voice] No. 16 
+#215 [Voice] No. 16 
+#216 [Voice] No. 16 
+
+#218 [Voice] Cell - "Kamehameha"
+#219 [Voice] Cell 
+#220 [Voice] Cell 
+#221 [Voice] Cell 
+#222 [Voice] Cell 
+
+  [S.E.]
+
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] Cheers
+#150 [S.E.] Coin Insertion 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+
+ Drums
+#228 [S.E.] 
+#229 [S.E.] 
+#230 [S.E.] 
+#231 [S.E.] 
+#232 [S.E.] 
+#233 [S.E.] 
+#234 [S.E.] 
+#235 [S.E.] 
+#236 [S.E.] 
+#237 [S.E.] 
+#238 [S.E.] 
+#239 [S.E.] 
+#240 [S.E.] 
+#241 [S.E.] 
+#242 [S.E.] 
+#243 [S.E.] 
+#244 [S.E.] 
+
+  ■作曲
+  Yoshiko Yamaguchi (Music Composer) 
+  Idenori Anai (Sound Composer)
+
+// List contribution by Simon B., done in playing the game.
+$end

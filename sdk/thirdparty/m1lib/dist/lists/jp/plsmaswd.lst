@@ -1,0 +1,93 @@
+﻿$name=sg2j
+$version=2
+$default=060
+$fixed_volume=205
+$main
+
+#060 Q Sound Logo
+
+#058 Prologue
+#001 Opening-Title
+#059 Ranking Display
+#002 Character Select
+#003 Next Stage
+
+#009 ILLUSION OF PEACE
+#010 ARMAMENT TO BATTLE
+#011 FADE TO SILENCE
+#012 LEAD TO DOOM
+
+#004 Here Comes A New Challenger
+#018 Story Demo.1
+
+#013 JUNGLE DISTRESS
+#014 HOLY GRAVEYARD
+#015 AGAINST THE ABSOLUTE
+
+#019 Story Demo.2
+#016 FATE OF THE GALAXY -STAGE 8-
+
+#017 Winning Theme
+#020 Ending Theme 1
+#021 Ending Theme 2
+#022 Ending Theme 3
+
+#024 HAYATO Ending Theme 1
+#025 HAYATO Ending Theme 2
+#027 JUNE Ending Theme
+#032 SATURN Ending Theme
+#030 GAMOF Ending Theme
+#036 GERELT Ending Theme 1
+#037 GERELT Ending Theme 2
+#040 VECTOR Ending Theme 1
+#041 VECTOR Ending Theme 2
+
+#034 ZELKIN Ending Theme
+#044 GORE Ending Theme
+#046 BLOOD Ending Theme
+#048 G.BILSTEIN Ending Theme
+#026 B.HAYATO Ending Theme
+
+#028 ELE Ending Theme 1
+#029 ELE Ending Theme 2
+#033 PRINCE Ending Theme
+#031 GANTETSU Ending Theme
+
+#038 CLAIRE Ending Theme 1
+#039 CLAIRE Ending Theme 2
+#042 OMEGA Ending Theme 1
+#043 OMEGA Ending Theme 2
+
+#035 EAGLE Ending Theme
+#045 LUCA Ending Theme
+#047 SHAKER Ending Theme
+#049 BILSTEIN Ending Theme
+#052 RAIN Ending Theme 1
+#053 RAIN Ending Theme 2
+
+#050 BYAKKO Ending Theme
+#054 KAEDE Ending Theme 1
+#055 KAEDE Ending Theme 2
+#056 KAEDE Ending Theme 3
+#051 RAI-ON Ending Theme
+
+#005 Continue
+#007 Score Display
+#008 Name Entry
+#006 Game Over
+#057 Staff Roll
+
+■CD未収録■
+#005 Story Demo.?
+#061 PRINCE - DANCE
+#062 KAEDE - MOGURA TATAKI
+#064 [S.E.] Coin
+#065 [S.E.] Time Stop
+
+  ■出典
+　STAR GRADIATOR 2 NIGHTMARE OF BILSTEIN ORIGINAL SOUNDTRACK
+　SULEPUTER  CPCA-1008  1998.05.21 
+
+// List by 鳩葉いづみ
+$end
+

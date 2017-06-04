@@ -1,0 +1,386 @@
+﻿$name=ddsom
+$version=2
+$default=001
+$fixed_volume=403
+$main
+
+#001 Fanfare (Coin Inserted)
+#078 [Voice] Welcome to the D&D world (Coin Inserted)
+#076 [Voice] Dungeons & Dragons (Start)
+#002 Moment to Decide (Player Select)
+#042 Prologue (Stage 1)
+#008 Departure (Stage 1)
+#003 Book of Adventure (Stage 2)
+#014 Fight in the Village of Trintan (Stage 2, 5-A)
+#032 Beginning of Disaster
+#004 War Cry
+#043 Destiny (Demo 1)
+#017 Go Down River Vesuvia (Stage 3-B)
+#019 Surprise Attack (Stage 3-B, Demo 3)
+#020 Sprite - Theme (Stage 3-B)
+#012 In A Most Dangerous Situation (Stage 3-B)
+#013 The Heavy Tank, Jaggernaut (Stage 3-A)
+#038 Relief
+#009 Fight against Shadow Elf (Stage 4)
+#036 An Inveterate Enemy, Tel'Arin (Stage 4)
+#045 Chain of the Destiny, Tel'Eleron (Stage 4, 10)
+#026 Tranquillity (Stage 4, Demo 3)
+#021 What Sleeps in the Abyss (Stage 5-B)
+#011 Dead and Treasure (Safe Room)
+#034 Eyes in the Darkness (Stage 10)
+#039 People under the Foreign Sky (Stage 4)
+#015 Wooden Bridges (Stage 5-C, 8-B)
+#022 To the Dark Lord (Demo 2, Stage 7)
+#010 Prison of Difficulties (Stage 6, 10)
+#023 Maze of Forest (Stage 8-A)
+#024 Illusion of Forest (Stage 8-A)
+#027 Paschal (Stage 8-B)
+#040 Healing Timbre
+#025 Mysterious Stone (Stage 4, Demo 3)
+#028 The Lost World (Stage 9-A, 9-B, 9-C)
+#049 Palatium on the Wing (Demo 4, Stage 10)
+#016 Fight in a Spiral (Stage 10)
+#006 True Aspect of the Nightmare (Stage 6, 10)
+#035 Fatal Fight (Stage 6, Demo 3, Stage 10)
+#051 Epiloge (Stage 10)
+#005 Bless Me
+
+#058 QSound Logo (main)
+#059 QSound Logo (sub)
+
+
+#061 [SFX] 
+#062 [SFX] <time="4">
+#063 [SFX] 
+#077 [SFX] 
+#095 [SFX] 
+#125 [SFX] 
+#138 [SFX] 
+#140 [SFX] <time="4">
+#141 [SFX]  
+#142 [SFX] 
+#143 [SFX] <time="6">
+#144 [SFX] <time="6">
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#153 [SFX] 
+#154 [SFX] <time="6"> 
+#156 [SFX] 
+#158 [SFX] 
+#159 [SFX]
+#170 [SFX] 
+#248 [SFX] <time="4">
+#252 [SFX] 
+#254 [SFX] 
+#255 [SFX] 
+#256 [SFX] 
+#257 [SFX] 
+#258 [SFX] 
+#258 [SFX] 
+#260 [SFX] 
+#261 [SFX] 
+#262 [SFX] 
+#263 [SFX] 
+#264 [SFX] 
+#265 [SFX] 
+#266 [SFX] 
+#267 [SFX] 
+#268 [SFX] 
+#269 [SFX] 
+#270 [SFX] 
+#271 [SFX] 
+#272 [SFX] 
+#273 [SFX] 
+#274 [SFX] 
+#275 [SFX] 
+#276 [SFX] 
+#277 [SFX] 
+#278 [SFX] 
+#279 [SFX] 
+#280 [SFX] 
+#281 [SFX] 
+#282 [SFX] 
+#283 [SFX] 
+#284 [SFX] 
+#285 [SFX] 
+#286 [SFX] 
+#287 [SFX] 
+#288 [SFX] 
+#289 [SFX] 
+#290 [SFX] 
+#291 [SFX] 
+#292 [SFX] 
+#293 [SFX] 
+#294 [SFX] 
+#295 [SFX] 
+#296 [SFX] 
+#297 [SFX] 
+#298 [SFX] 
+#299 [SFX] 
+#300 [SFX] 
+#301 [SFX] 
+#302 [SFX] 
+#303 [SFX] 
+#304 [SFX] 
+#305 [SFX] 
+#306 [SFX] 
+#307 [SFX] 
+#308 [SFX] 
+#309 [SFX] 
+#310 [SFX] 
+#311 [SFX] 
+#312 [SFX] 
+#313 [SFX] 
+#314 [SFX] 
+#315 [SFX] 
+#316 [SFX] 
+#317 [SFX] 
+#318 [SFX] 
+#319 [SFX] 
+#320 [SFX] 
+#321 [SFX] 
+#322 [SFX] 
+#323 [SFX] 
+#324 [SFX] 
+#325 [SFX] 
+#326 [SFX] 
+#327 [SFX] 
+#328 [SFX] 
+#329 [SFX] 
+#330 [SFX] 
+#331 [SFX] 
+#332 [SFX] 
+#333 [SFX] 
+#334 [SFX] 
+#335 [SFX] 
+#352 [SFX] 
+#353 [SFX] 
+#354 [SFX] 
+#355 [SFX] 
+#356 [SFX] 
+#357 [SFX] 
+#358 [SFX] 
+#359 [SFX] 
+#360 [SFX] 
+#361 [SFX] 
+#362 [SFX] 
+#363 [SFX] 
+#364 [SFX] 
+#366 [SFX] 
+#367 [SFX] 
+#368 [SFX] 
+#369 [SFX] 
+#370 [SFX] 
+#371 [SFX] 
+#372 [SFX] 
+#373 [SFX] 
+#374 [SFX] 
+#375 [SFX] 
+#376 [SFX] 
+#377 [SFX] 
+#378 [SFX] 
+#379 [SFX] 
+#380 [SFX] 
+#381 [SFX] 
+#382 [SFX] 
+#383 [SFX] 
+#384 [SFX] 
+#385 [SFX] 
+#386 [SFX] 
+#387 [SFX] 
+#388 [SFX] 
+#389 [SFX] 
+#390 [SFX] 
+#391 [SFX] 
+#392 [SFX] <time="4">
+#393 [SFX] 
+#394 [SFX] 
+#395 [SFX] 
+#396 [SFX] 
+#397 [SFX] 
+#398 [SFX] 
+#399 [SFX] 
+#400 [SFX] 
+#401 [SFX] 
+#402 [SFX] 
+#403 [SFX] 
+#405 [SFX] 
+#406 [SFX] 
+
+
+#060 [Voice] 
+#064 [Voice] 
+#065 [Voice] Welcome!
+#066 [Voice] Help!
+#067 [Voice] (Male) Thank you
+#068 [Voice] (Child) Help!
+#069 [Voice] (Adult) Help!
+#070 [Voice] (Old) Help!
+#071 [Voice] (Female) Help!
+#072 [Voice] (Female) Welcome
+#073 [Voice] (Male) Welcome
+#074 [Voice] (Female 2) Welcome
+#075 [Voice] (Female) Thank you
+#076 [Voice] Dungeons & Dragons
+#078 [Voice] Welcome the D&D World
+#080 [Voice] (Cleric) Hold Persons
+#081 [Voice] (Cleric) Continual Light
+#082 [Voice] (Cleric) Striking
+#083 [Voice] (Cleric) Cure Serious Wounds
+#084 [Voice] (Cleric) Stick to Snakes
+#085 [Voice] (Cleric) Cure Critical Wounds
+#086 [Voice] (Cleric) Bless
+#087 [Voice] (Cleric) Insect Plague
+#088 [Voice] (Cleric) Holy Word
+#089 [Voice] (Cleric) Earthquake
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#096 [Voice] (Elf) Magic Missle
+#097 [Voice] (Elf) Fireball
+#098 [Voice] (Elf) Lightning Bolt
+#099 [Voice] (Elf) Icestorm
+#100 [Voice] (Elf) Invisibility
+#101 [Voice] (Elf) Haste
+#102 [Voice] (Elf) Polymorph Others
+#103 [Voice] (Elf) Conjure Elemental
+#104 [Voice] (Lich) 
+#105 [Voice] (Lich) 
+#106 [Voice] (Lich) 
+#107 [Voice] (Lich) 
+#108 [Voice] (Lich) Fireball
+#109 [Voice] (Lich) Lightning Bolt
+#110 [Voice] (Lich) Teleport
+#111 [Voice] (Lich) 
+#112 [Voice] (Magic User) Magic Missile
+#113 [Voice] (Magic User) Fireball
+#114 [Voice] (Magic User) Lightning Bolt
+#115 [Voice] (Magic User) Icestorm
+#116 [Voice] (Magic User) Conjure Elemental
+#117 [Voice] (Magic User) Cloud Kill
+#118 [Voice] (Magic User) Reverse Gravity
+#119 [Voice] (Magic User) Meteor Swarm
+#120 [Voice] (Magic User) Power Word Kill
+#121 [Voice] (Magic User) Flesh to Stone
+#122 [Voice] (Magic User) Wall of Fire
+#123 [Voice] (Magic User) Projected Image
+#124 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] (Tel'Arin) Fireball
+#133 [Voice] (Tel'Arin) Lightning Bolt
+#134 [Voice] (Tel'Arin)
+#135 [Voice] (Tel'Arin) Teleport
+#136 [Voice] (Tel'Arin)
+#137 [Voice] 
+#139 [Voice] 
+#152 [Voice] 
+#157 [Voice] 
+
+#160 [Voice] (Fighter) 
+#161 [Voice] (Fighter) 
+#162 [Voice] (Fighter) 
+#163 [Voice] (Fighter) 
+#164 [Voice] (Fighter) 
+#165 [Voice] (Fighter) 
+#166 [Voice] (Fighter) 
+#167 [Voice] (Fighter) 
+#168 [Voice] (Fighter) 
+#169 [Voice] (Fighter) 
+
+#171 [Voice] (Dwarf) 
+#172 [Voice] (Dwarf) 
+#173 [Voice] (Dwarf) 
+#174 [Voice] (Dwarf) 
+#175 [Voice] (Dwarf) 
+#176 [Voice] (Dwarf) 
+#177 [Voice] (Dwarf) 
+#178 [Voice] (Dwarf) 
+#179 [Voice] (Dwarf) 
+#180 [Voice] (Dwarf) 
+
+#182 [Voice] (Thief) 
+#183 [Voice] (Thief) 
+#184 [Voice] (Thief) 
+#185 [Voice] (Thief) 
+#186 [Voice] (Thief) 
+#187 [Voice] (Thief) 
+#188 [Voice] (Thief) 
+#189 [Voice] (Thief) 
+#190 [Voice] (Thief) 
+#191 [Voice] (Thief) 
+#192 [Voice] (Thief) 
+#193 [Voice] (Thief) 
+#194 [Voice] (Thief) 
+#195 [Voice] (Thief) 
+#196 [Voice] (Thief) 
+#197 [Voice] (Thief) 
+#198 [Voice] (Thief) 
+#199 [Voice] (Thief) 
+
+#201 [Voice] (Cleric) 
+#202 [Voice] (Cleric) 
+#203 [Voice] (Cleric) 
+#204 [Voice] (Cleric) 
+#205 [Voice] (Cleric) 
+#206 [Voice] (Cleric) 
+#207 [Voice] (Cleric) 
+#208 [Voice] (Cleric) 
+#209 [Voice] (Cleric) 
+#210 [Voice] (Cleric) 
+#211 [Voice] (Cleric) 
+#212 [Voice] (Cleric) 
+#213 [Voice] (Cleric) 
+#214 [Voice] (Cleric)
+
+#217 [Voice] (Elf) 
+#218 [Voice] (Elf) 
+#219 [Voice] (Elf) 
+#220 [Voice] (Elf) 
+#221 [Voice] (Elf) 
+#222 [Voice] (Elf) 
+#223 [Voice] (Elf) 
+#224 [Voice] (Elf) 
+#225 [Voice] (Elf) 
+#227 [Voice] (Elf) 
+#228 [Voice] (Elf) 
+#229 [Voice] (Elf) Feel my power!
+#230 [Voice] (Elf) 
+#231 [Voice] (Elf) 
+#232 [Voice] (Elf) 
+#233 [Voice] (Elf) 
+#234 [Voice] (Elf) 
+
+#235 [Voice] (Magic User) 
+#236 [Voice] (Magic User) 
+#237 [Voice] (Magic User) 
+#238 [Voice] (Magic User) 
+#239 [Voice] (Magic User) 
+#240 [Voice] (Magic User) 
+#241 [Voice] (Magic User) 
+#242 [Voice] (Magic User) 
+#243 [Voice] (Magic User) 
+#244 [Voice] (Magic User) Prepare yourself!
+#245 [Voice] (Magic User) 
+#246 [Voice] (Magic User) 
+#247 [Voice] (Magic User) 
+
+  [Source]
+  Dungeons & Dragons - Shadow Over Mystara
+  Victor Entertainment  VICL-2169  May 22, 1996
+
+  [Sound Composer]
+  Masato Koda
+
+// List contribution by R
+// English list by Fuj
+$end

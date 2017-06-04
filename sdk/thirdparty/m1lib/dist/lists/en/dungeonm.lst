@@ -1,0 +1,29 @@
+﻿$name=dungeonm
+$version=2
+$default=003
+$songmax=035
+$main
+
+#170 Title
+#162 Dancing Girl Ver.2 (Opening)
+#163 The Story will be Talked Again (Character Select)
+#160 With the Holy Sword, Light Bringer (Main Theme)
+#168 Stream of Sorrow Wanders Around the Age of Vanity (Shrine)
+#161 Recall It As Providence Leads You (Boss)
+#167 Stand in Silent Fear (Labyrinth)
+#166 Now We Cut Off the Hideous Chains (Fight)
+#165 Consecrate for the Magnificent Volition (Theme of Venom)
+#169 Evel Lord Decends and Humble Again (Last Boss)
+#164 Believe in Eternity.. (Ending)
+#172 Dancing Girl Ver.3 (Name Entry)
+
+  [Source]
+  Light Bringer / Taito Zuntata
+  Pony Canyon / Scitron  PCCB-00154  May 20, 1994
+
+  [Sound Composer]
+  Norihiro Furukawa (ZUNTATA)
+
+// List Contribution by Hiroshi
+// English list by Fuj
+$end

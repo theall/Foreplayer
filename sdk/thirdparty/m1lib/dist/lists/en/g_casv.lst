@@ -1,0 +1,44 @@
+﻿$name=g_casv
+$version=2
+$default=$bd
+$songmax=255
+$main
+
+$bd Konami Logo
+$be The Beating in the Darkness [Title Theme]
+$bf A Vision of Dark Secrets [Opening Theme] <time="1:03" fadeout="yes" fadeoutlength="10">
+$c0 Bonds of Brave Men [Character Selection] <time="0:42" fadeout="yes" fadeoutlength="10">
+$c1 Arduous Journey [Map Theme]
+$c3 Reincarnated Soul, Part 1 [Introduction]
+$c4 Reincarnated Soul, Part 2 [Stage 1] <time="1:53" fadeout="yes" fadeoutlength="10">
+$c5 The Sinking Old Sanctuary [Stage 2] <time="2:02" fadeout="yes" fadeoutlength="10">
+$c6 The Discolored Wall [Stage 3] <time="2:07" fadeout="yes" fadeoutlength="10">
+$cb Beginning [Classic Tune 1] <time="1:48" fadeout="yes" fadeoutlength="10">
+$cc Bloody Tears [Classic Tune 2] <time="1:13" fadeout="yes" fadeoutlength="10">
+$cd Vampire Killer [Classic Tune 3] <time="1:12" fadeout="yes" fadeoutlength="10">
+$db After the Good Fight [Game Over]
+$c2 Mysterious Curse [Password] <time="1:07" fadeout="yes" fadeoutlength="10">
+$c7 Iron-Blue Intention [Stage 4] <time="1:58" fadeout="yes" fadeoutlength="10">
+$c8 The Prayer of a Tragic Queen [Stage 5] <time="1:44" fadeout="yes" fadeoutlength="10">
+$c9 Calling From Heaven [Stage 6] <time="2:31" fadeout="yes" fadeoutlength="10">
+$ca Pressure [Invincibility] <time="0:33" fadeout="yes" fadeoutlength="10">
+$cf Messenger From Devil [Area Boss Theme] <time="0:39" fadeout="yes" fadeoutlength="10">
+$ce Nothing to Lose [Stage 1D] <time="1:14" fadeout="yes" fadeoutlength="10">
+$d0 The Six Servants of the Devil [Stage Boss Theme] <time="1:15" fadeout="yes" fadeoutlength="10">
+$d1 Theme of Simon [Classic Tune 4] <time="2:21" fadeout="yes" fadeoutlength="10">
+$d2 The Vampire's Stomach [Final Boss Theme] <time="1:17" fadeout="yes" fadeoutlength="10">
+$d5 Stage Clear
+$d3 Orb
+$d4 Energy Orb <time="0:04" fadeout="yes" fadeoutlength="2">
+$d6 Dracula Orb
+$d7 All Clear
+$d8 Together Forever [Ending Theme] <time="2:05" fadeout="yes" fadeoutlength="10">
+$d9 Requiem for the Nameless Victims [Staff Roll]
+$da Death
+
+  [Sound Composer]
+  Michiru Yamane
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

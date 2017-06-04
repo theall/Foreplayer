@@ -1,0 +1,45 @@
+﻿$name=gunfront
+$version=2
+$default=52
+$fixed_volume=502
+$main
+
+#052 Red & Yellow (Attract Mode)
+#061 Coin <time="4">
+#009 [SFX] Take Off <time="5">
+#055 Desert Mountain Storm (BGM 1)
+#059 Welcome to Heaven (Boss)
+#062 In the Sky (BGM 5 & 6)
+#056 Ka.Ra.Me.Te (BGM 3)
+#066 Moai (Bad Ending)
+#038 [SFX] wind <time="4">
+#058 To the Wildness (BGM 4)
+#063 Yunfore (BGM 7)
+#064 Maspy (Last Boss)
+#062 Overcast (Good Ending - Former Part)
+#065 Overcast (Good Ending - Later Part)
+#067 Unprost (Name Regist)
+
+
+#057 Ka.Ra.Me.Te (BGM 3) - w/o intro
+#034 Title Screen <time="4">
+#060 Unused
+
+#241 [PSG] Test Tone <time="3">
+#242 [FM] Test Tone 
+#243 [PCM] Test Tone
+#245 [PSG] Test Tone
+#246 [PSG] Test Tone <time="5">
+
+  [Source]
+  Runark, Gun Frontier / Taito
+  Pony Canyon / Scitron  PCCB-00060  Apr 21, 1991
+
+  Scitron Video Game Music Almanac 1991
+  Pony Canyon / Scitron  PCCB-00055  Feb 21, 1992
+
+  [Sound Composers]
+  Yasuhisa Watanabe (Yack.), Hidetoshi Fukumori (Pu-chin)
+
+// List updated by ZEK.
+$end

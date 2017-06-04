@@ -1,0 +1,54 @@
+﻿$name=nightstr
+$version=2
+$default=$3a
+$songmax=$5e
+$main
+
+$3a Coin <time="4">
+$17 Start <time="4">
+$5e Introduction <time="17">
+$2d [Voice] "Stand by, ready? Good luck!"
+$3f Urban Trail
+$22 Warning!
+$32 [Voice] "Warning! Target is approaching."
+$46 Boss 1
+$4c Round Clear
+$3e Trance Parlent in Blue
+$47 Boss 2
+$43 Brain Worker
+$48 Boss 3
+$41 Aquarius
+$40 Fly Away
+$49 Boss 4
+$42 Terarist
+$4a Boss 5
+$45 ma-gu-ri-vu
+$44 Burning Road
+$4b Boss 6
+$3d Schimmel (Ending)
+$3c commune (Name set)
+
+-----------------------------------------
+ [SFX]
+
+$2e [Voice] Shield destroyed.
+$2f [Voice] Be careful! Only a few remaining shields.
+$30 [Voice] Danger, danger. You have lost your shields.
+$31 [Voice] Out of control.
+$33 [Voice] Secret program activated. Transformation begins.
+$34 [Voice] The main engine is destroyed by fire. Escape and good luck.
+$35 [Voice] A supporting plane approaches. It will join you soon.
+$36 [Voice] Right side has caught fire. Drop the outer trim
+$37 [Voice] A booster unit approaches. Coupling will begin.
+$38 [Voice] All gun barrels open!
+$39 [Voice] Congratulations!
+
+  [Source]
+  Darius II -G.S.M. Taito 4- / Zuntata
+  Pony Canyon / Scitron  PCCB-00010-1, 2  Nov 21, 1989
+
+  [Sound Composer]
+  Masahiko Takaki (Mar.)
+
+// Composer's name fixed by Cratch
+$end

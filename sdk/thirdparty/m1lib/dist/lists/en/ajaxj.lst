@@ -1,0 +1,99 @@
+﻿$name=ajax
+$version=2
+$default=144
+$main
+
+#144 Title Demo
+#100 Credit Inserted <time="2">
+#099 [SFX] Take Off (L to R) <time="4">
+#143 Start <time="5">
+#128 Command 770 (2D Stage 1)
+#133 Dive Bomber (3D Stage 1)
+#129 Fighting Spirit (2D Stage 2)
+
+#130 Dead Line (2D Stage3)
+#134 Look for A Fortress (3D Stage 2)
+#131 Grand Battle (2D Stage 4)
+
+#132 Cross Point (2D Stage 5)
+#138 Melt Down (2D BOSS BGM 1)
+#137 UF1 (2D BOSS BGM 2)
+#145 Round Clear <time="2.5">
+#099 [SFX] Take Off (L to R) <time="4">
+
+#135 The Final Zone (3D Stage 3)
+#142 A Boss Appears
+#136 Hotness (3D BOSS BGM)
+#141 Congratulations (Ending)
+#139 Try Again (Game Over)
+#140 Ranking
+
+#146 A-Jax (US Version, 3D Stage 1)
+
+------------------------------------------------------
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+
+#015 [SFX] Siren
+#016 [SFX] Siren (Right Chennel)
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX] 2D Stage, Take Off
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX] Super Weapon
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX] 2D Stage, Take Off
+#097 [SFX] 3D Stage, Take Off (R to L)
+#098 [SFX] 3D Stage, Take Off (R to L)
+#099 [SFX] 3D Stage, Take Off (L to R)
+#100 [SFX] Credit
+
+  [Source]
+  A-Jax / Konami Game Music Vol.4
+  Alfa Records  28XA-201  Mar 10, 1988
+
+  A-Jax / Konami Game Music Vol.4 (Legend Series)
+  Scitron Digital Contents  SCDC-00472  Nov 23, 2005
+
+$end

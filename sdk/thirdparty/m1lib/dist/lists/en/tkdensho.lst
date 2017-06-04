@@ -1,0 +1,104 @@
+﻿$name=tkdensho
+$version=2
+$default=010
+$main
+
+  * Note: Some tracks aren't played correctly.
+
+#010 Tou.Ki.Den.Shou - Angel of Light (Opening) <time="47">
+#011 Character Select <time="40">
+#012 Everything is Set! (VS) <time="3">
+#001 The Name is Mikazuchi Raiya (Raiya) <time="02:14">
+#013 Victory <time="7">
+#002 Hurrie! (Highway Star) <time="02:13">
+#003 Betty my Love (Mysterious Power) <time="02:48">
+#004 Stotter (Lina) <time="02:12">
+#005 Bourgeous Bear (Marry & King) <time="01:32">
+#006 Chibiko March (Chibiko) <time="01:52">
+#008 Eternal Flame (Reika) <time="02:20">
+#009 Kanade (Kiriko) <time="02:32">
+#007 Angel Descends (Angel) <time="02:11">
+#016 Naughty Two (Raiya, Reika: Ending) <time="48">
+#017 After the Struggle's Gone (Rina, Kiriko: Ending) <time="46">
+#018 "Children Made a Name" (Mary & King, Chibiko: Ending) <time="46">
+#019 Maximum (Hiway Star, Mysterious Power: Ending) <time="51">
+#020 Satisphee (Staff Credit) <time="01:52">
+#014 Ha.Ya.Ku! (Continue) <time="21">
+#015 I wanna go home (Game Over) <time="4">
+
+-----------------------------------------------------------
+  [Voice]
+
+-----------------------------------------------------------
+  [SFX]
+
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+
+  [Sound Composers]
+  Hiroaki Takahashi, Takuya Hanaoka
+
+  [OST]
+  Touki Denshou - Angel Eyes
+  Pony Canyon / Scitron  PCCB-00221  Jul 19, 1996
+
+  [Source]
+  Touki Denshou - Angel Eyes Playstation Version
+  Tecmo  SLPS01168
+
+// List contribution by Cratch
+// English list by Fuj
+$end

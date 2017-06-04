@@ -1,0 +1,27 @@
+﻿$name=abcop
+$version=2
+$default=129
+$main
+
+#129 Title
+#130 Openning
+#131 Stage 1-1
+#132 Stage 1-2
+#135 Stage 2-1
+#140 Stage 2-2
+#133 Stage 3-1
+#134 Stage 3-2
+#139 Stage 4-1
+#136 Stage 4-2
+#137 Stage 5-1
+#138 Stage 5-2
+#141 Stage 6
+#142 Stage Clear
+#143 Game Over
+#144 Ranking
+#145 Ending
+#146 Fanfare
+#147 Name Entry
+
+// List file by anonymous contributor
+$end

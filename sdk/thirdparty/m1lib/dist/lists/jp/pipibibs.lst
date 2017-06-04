@@ -1,0 +1,56 @@
+﻿$name=pipibibs
+$version=2
+$default=041
+$main
+
+#041 [S.E.] CREDIT
+#008 TARGET <time="31.7">
+#001 STAGE 1 (Aya)
+#002 STAGE 2 (WhiiPee)
+#003 STAGE 3 (Eri)
+#031 TRY AGAIN <time="5.1">
+#032 CONTINUE ? <time="20">
+#033 GAME OVER <time="5">
+#004 STAGE 4 (Synthia)
+#005 STAGE 5 (Sachiko)
+#006 STAGE 6 (Jennifer)
+#007 COUNT DOWN <time="19.4">
+#020 ESCAPE  <time="2.6">
+#010 BONUS SHOW TIME BGM 1
+#009 BONUS SHOW TIME BGM 2
+#034 ENDING
+#035 ENDING 2
+#037 NAME ENTRY
+#036 THE・END
+
+#039 未使用曲 1
+#040 未使用曲 2
+
+---------------------------------------------------
+ [S.E.] 
+
+#011 [S.E.] 1UP
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] 
+#015 [S.E.] 
+#016 [S.E.] H-COIN 2
+#017 [S.E.] H-COIN 1
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] ESCAPE BGM 2
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#038 [S.E.] 
+#041 [S.E.] CREDIT
+
+// List contribution by ZEK.
+$end

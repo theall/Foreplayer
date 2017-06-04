@@ -1,0 +1,28 @@
+﻿$name=gunbustr
+$version=2
+$default=002
+$main
+
+#002 Intro Story
+#004 Character Select <time="19.8">
+#015 Stage 1, 4-1, 5-3, 7
+#005 Mission Completed
+#009 Stage 2, 6-1, 5-2
+#011 Stage 3, 5-1, 6-3
+#013 Stage 4-2, 6-2
+#014 Last Battle
+#016 Credits Roll
+#004 Name Entry <time="19.8">
+#006 Game Over
+
+#007 Unused 1
+#008 Unused 2 <time="7">
+#010 Unused 3
+#012 Unused 4
+#017 Unused 5
+
+  [Sound Composer]
+  K.Ohnui, Yasuko Yamada
+
+// List contribution by ZEK.
+$end

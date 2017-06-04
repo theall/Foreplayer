@@ -1,0 +1,37 @@
+﻿$name=tharrier
+$version=2
+$default=247
+$main
+
+#247 Credit Inserted
+#001 Night Mountainous Region (Area 1)
+#009 Meeting Friendly Aircraft (Demo 1)
+#008 Antisurface Mode (Game B)
+#010 Touchdown (Demo 2)
+#002 Siberia (Area 2)
+#003 Frozen Sea (Area 3)
+#004 Urban District (Area 4)
+#005 Frontline Base in the Desert (Area 5)
+#007 Base in Ivan Rogoff (Area 6)
+#011 Name Entry
+#006 Unused
+
+  [Soundtrack]
+  Task Force Harrier
+  Pony Canyon / Scitron  PCCB-00041  Sep 21, 1990
+
+-----------------------------------------------------------
+//#257 
+//#258 
+//#259 
+//#260 
+//#261 
+//#262 
+//#263 
+//#264 
+//#265 
+//#266 
+
+// List Contribution by Min
+// English List by Fujix
+$end

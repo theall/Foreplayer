@@ -1,0 +1,61 @@
+﻿$name=sfex2p
+$version=2
+$default=009
+$songmax=054
+$fixed_volume=131
+$main
+
+#009 QSound Logo
+
+#052 Attract <time="35">
+#018 Select
+#039 Flash Train
+#037 Three Trees
+#040 Fake World
+#032 Pearl in the Sky
+#033 White Field
+#035 Lost Sea
+#053 Phantom Bomb
+#038 Crowded Town
+#045 Green Shower
+#041 Crash Power Plant
+#047 Frozen Mist
+#036 Mahatma Temple with Hymn
+#048 Digital Ignition
+#034 The Infinite Earth
+#046 Irene
+#050 Before Moon
+#042 Amusementive Crime 2
+#044 Passage of Lotus
+#043 More Stronger
+#049 The Battle of the Flame
+#054 The Battle of the Flame 2
+#023 Regenerate (Ending)
+#021 Credits Roll
+#051 Bonus Game
+#016 Stage Clear
+#022 Challenger
+#019 Continue
+#017 Game Over
+
+#020 Street Fighter EX 2 (EX2 Opening -Unused-)
+#008 Speaker check
+//
+//#000
+//#004
+//#005
+//#006
+//#007
+
+  [Sources]
+  Street Fighter EX 2 Plus / Arika Capcom
+  Suleputer  CPCA-1038  Feb 19, 2000
+
+  Street Fighter EX 2 Plus / Play Station
+  Capcom  SLPS-02508  Dec 22, 1999
+
+  [Sound Composer]
+  Shinji Hosoe, Ayako Sasou, 
+  Takayuki Aihara, Yasuhisa Watabe (Yack.)
+
+$end

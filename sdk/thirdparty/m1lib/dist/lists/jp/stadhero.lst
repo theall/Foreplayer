@@ -1,0 +1,58 @@
+﻿$name=stadhero
+$version=2
+$default=028
+$main
+
+#028 SELECT
+#023 PARADISE SPIRIT (BGM 1)
+#027 CHANGE
+#024 HURRICANE (BGM 2)
+#031 HOMERUN
+#025 ESCAPE (BGM 3)
+#029 KACHI
+#026 STELLA (BGM 4)
+#030 MAKE
+#033 OVER
+#032 CONTINUE
+
+-----------------------------------------------------------
+
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+
+  ■出典
+  GAME SOUND DECO -G.S.M. DATA EAST 1-
+  PONY CANYON / SCITRON  D25B1002  1989.06.21
+
+// リスト作成：みん☆さん
+$end

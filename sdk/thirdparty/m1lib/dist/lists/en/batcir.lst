@@ -1,0 +1,56 @@
+﻿$name=batcir
+$version=2
+$default=046
+$main
+
+#046 QSound Logo
+
+#026 Opening
+#028 Player Select
+#037 Prologue - Re-entry into the Atmosphere
+#012 Criminal No. 9696X - Dr. Saturn
+#030 Stage Clear
+#031 Battle Upgrade
+#021 Hunters Guild
+#001 Fever in the Disco! The Den of Evil!
+#013 Johnny the Funky Head
+#029 Stage 3 Introduction
+#002 Chase Saturn! Battle Royal in Neo York City!
+#003 Dead Heat in the Desert!
+#014 Cyber Madam, Barbara
+#022 Mystery of the Shiva System
+#004 Sneak in and Foil Dr. Saturn's Plans!
+#005 Trap by Saturn
+#015 Say Hello to Octopus Mark 2
+#038 Top Echelon of "Delete", Zipang
+#011 Horrible Prison
+#006 Jungle Battle! Escape from the Death Line!
+#016 Giant Mandrill Jennifer
+#007 Economic Giant "Fujiyama City"
+#008 Chase Zipang as You Go Donw the River!
+#017 Battle Circuit, Zipang
+#009 Find Out the Shiva System!
+#010 Showdown! A Desperate Battle with the Shiva System!
+#018 Final Battle Circuit, Pluto
+#035 The Shiva System Runs Away!
+#019 Last Battle! Stop the Master Program!
+#034 Ending - Pride of Bounty Hunters
+#036 Credits Roll
+#032 Game Over
+#033 Ranking
+#027 Player Introduction
+
+#020 Unused 1 &lt;Criminal No. 9696X - Dr. Saturn (Jazz Mix)&gt;
+#023 Unused 2 &lt;Top Echelon of "Delete", Zipang (Guitar Mix)&gt;
+#024 Unused 3
+#025 Unused 4
+
+#047 QSound Logo 2
+
+  [Source]
+  Capcom Game Soundtrack / Battle Circuit
+  Victor Entertainment  VICL-60056  Jul 2, 1997
+
+// List Contribution by NK
+// English List by Fujix
+$end

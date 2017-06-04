@@ -1,0 +1,26 @@
+$name=kikikai
+$version=2
+$default=013
+$main
+
+#013 Credit Inserted
+#005 Start Demo
+#006 Main Theme
+#010 Miss
+#007 Boss Fight
+#012 Stage Clear ~ Main Theme
+#014 Extend
+#053 Seven Divinities of Good Fortune
+#008 Staff Credit
+#011 Game Over
+#009 Name Entry
+
+  [Source]
+  Taito Game Music
+  Alfa Records  28XA-110  Jan 25, 1987
+
+  [Composer]
+  Hisayoshi Ogura
+
+// List contribution by szk
+$end

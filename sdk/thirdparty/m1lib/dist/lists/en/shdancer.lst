@@ -1,0 +1,129 @@
+﻿$name=shdancer
+$version=2
+$default=213
+$main
+
+#139 [Voice] Ninja Dog 2 <time="2.5">
+#137 [Voice] Ninja Dog 1 <time="0.7">
+#137 [Voice] Ninja Dog 1 <time="0.9">
+#137 [Voice] Ninja Dog 1 <time="0.7">
+#137 [Voice] Ninja Dog 1 <time="0.4">
+#213 Dance of Kage
+#170 Credit Inserted <time="2">
+#216 Mission 1 <time="4">
+#218 Prevent Subversive Activities <time="6">
+#208 Stage 1-1,1-2 BGM 
+#212 Stage 1-3 Boss 
+#142 [Voice] Boss Dead 1 <time="3.4">
+#216 Mission 1 Completed <time="4">
+#222 Bonus Stage <time="21">
+#228 You Failed! <time="2.5">
+#214 Mission 2, Cut Off The Supply Line <time="9.4">
+#210 Stage 2-1, 2-3
+#226 Stage 2-2
+#220 Stage 2-4 Boss 
+#143 [SFX] Explosion <time="3">
+#216 Mission 2 Completed <time="4">
+#222 Bonus Stage <time="21">
+#227 Perfect! <time="4.5">
+#171 [SFX] Extra <time="2.5">
+#216 Mission 3 <time="4">
+#218 Assault The Underworld System <time="6">
+#211 Stage 3-1, 3-2
+#219 Stage 3-3
+#133 [Voice] <time="0.8">
+#168 [SFX] Falling down <time="2.3">
+#215 Continue? <time="9.9">
+#170 [SFX] Credit <time="2">
+#131 [Voice] katajikenai <time="2.2">
+#221 Stage 3-4 Boss 
+#144 [Voice] Boss Dead 2 <time="2">
+#216 Mission 4 <time="4">
+#218 Frustrate Enemy's Ambition <time="6">
+#209 Stage 4-1, 4-2
+#226 Stage 4-3
+#223 Stage 4-4 Boss 
+#145 [Voice] Boss Dead 3 <time="5">
+#224 Ending 
+#218 Game Over <time="4.1">
+#217 Name Entry
+
+#218 Map Preview
+#215 Continue? 
+#222 Bonus Stage 
+
+#225 Unused
+
+---------------------------------------------------
+ [SFX]
+
+#143 [SFX] Explosion
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="3">
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] Falling down
+#169 [SFX] 
+#170 [SFX] Credit
+#171 [SFX] Extra 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] <time="3">
+#184 [SFX] <time="3">
+#185 [SFX] <time="3">
+#186 [SFX] <time="3">
+#187 [SFX] <time="3">
+#188 [SFX] 
+#189 [SFX] 
+#190 [SFX] 
+#191 [SFX] 
+#192 [SFX] 
+#193 [SFX] <time="3">
+#194 [SFX] <time="3">
+ 
+---------------------------------------------------
+ [Voice]
+
+#129 [Voice] <time="3">
+#132 [Voice] <time="3">
+#130 [Voice] <time="3">
+#131 [Voice] <time="3">
+#133 [Voice] <time="2">
+#134 [Voice] <time="3">
+#130 [Voice] <time="3">
+#135 [Voice] <time="3">
+#130 [Voice] <time="3">
+#136 [Voice] <time="3">
+#130 [Voice] <time="3">
+#137 [Voice] <time="3">
+#139 [Voice] <time="3">
+#140 [Voice] <time="3">
+#141 [Voice] <time="5">
+#142 [Voice] <time="3">
+#144 [Voice] <time="3">
+#145 [Voice] <time="5">
+
+  [Sound Composer]
+  Tsukachan
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

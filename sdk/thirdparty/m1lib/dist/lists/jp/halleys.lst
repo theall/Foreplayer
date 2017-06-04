@@ -1,0 +1,21 @@
+$name=halleys
+$version=2
+$default=024
+$main
+
+#024 クレジット
+#004 メインテーマ「Ed1986」
+#009 中ボス
+#006 彗星接近「Contact」
+#007 彗星内部「Mechanical Brains」
+#008 ネームレジスト
+
+  ■出典
+  タイトー ゲーム・ミュージック
+  ALFA RECORDS  28XA-110  1987.1.25
+
+  ■作曲
+  小倉 久佳
+
+// List contribution by szk
+$end

@@ -1,0 +1,56 @@
+﻿$name=sidepckt
+$version=2
+$default=16
+$main
+
+#016 CREDIT
+#030 SIDE POCKET (MAIN THEME)
+#036 CLEAR 1
+#031 POCKET MAGIC (CHALLENGE STAGE)
+#037 CLEAR 2
+#034 GAME OVER
+#032 CONTINUE
+#035 NAME ENTRY
+
+#033 POCKET MAGIC (W/O INTRO)
+
+------------------------------------------------------------------
+  [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.] 
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.] CREDIT
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.] POWER GAGE
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.] MARKER
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+
+  ■出典
+  DECO HISTORY SCENE I / DATA EAST GAME MUSIC SCENE ONE 
+  POLYSTAR / DATAM  H25X-20008  1988.09.25
+ 
+// List contribution by R
+$end

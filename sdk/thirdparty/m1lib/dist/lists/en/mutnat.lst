@@ -1,0 +1,38 @@
+﻿$name=mutnat
+$version=2
+$default=095
+$main
+
+#095 [SFX] NEO-GEO Logo
+
+#033 Attract Mode
+#034 Title Screen
+#036 HOW TO PLAY
+#037 AREA 1
+#043 Mid-BOSS 1, 3B, 4C, 5B
+#044 BOSS 1, 2, 4, 6B, 6D
+#050 AREA CLEAR!
+#039 AREA 2
+#042 Mid-BOSS 2, 3A, 4A, 4B, 5A, 5C
+#038 AREA 3
+#045 BOSS 3, 4, 5, 6A, 6C
+#040 AREA 4
+#041 AREA 5
+#048 CutScene
+#046 Last BOSS
+#049 Ending
+#047 GAME OVER
+#035 BEST PLAYERS
+
+#093 AREA CLEAR! alt. 
+#092 CutScene alt. 
+#087 GAME OVER alt. 
+#086 BEST PLAYERS alt. 
+#085 Attract Mode alt. 
+#094 Title Screen alt. 
+
+  [Composers]
+  Papaya 
+
+// List contribution by Simon B., done in playing the game.
+$end

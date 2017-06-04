@@ -1,0 +1,136 @@
+﻿$name=wwfsstar
+$version=2
+$default=034
+$main
+
+#034 [Voice] 歓声 <time="5.6">
+#002 TITLE DEMO
+#047 [S.E.] CREDIT
+#010 SELECT PLAYERS
+#003 WWF LIVE FROM NEW YORK <time="10">
+#001 VS THEME <time="5">
+#032 [S.E.] GONG 1 <time="1.5">
+#005 BGM 1
+#033 [S.E.] GONG 2 <time="3">
+#009 BEGIN NEXT MATCH <time="9.3">
+#011 DEMO BGM 1
+
+#001 VS THEME <time="5.5">
+#007 BGM 2
+#009 BEGIN NEXT MATCH <time="9.3">
+#012 DEMO BGM 2
+
+#001 VS THEME <time="5.5">
+#014 BGM 3
+#009 BEGIN NEXT MATCH <time="9.3">
+#017 DEMO BGM 3
+#021 YOU LOSE <time="6.5">
+#019 CONTINUE
+#016 CHAMPION ENTRY
+
+#001 VS THEME <time="5.5">
+#002 BGM 4
+#009 BEGIN NEXT MATCH <time="9.3">
+#013 CONGRATULATIONS BGM 1
+#004 WWF LIVE IN TOKYO <time="12.5">
+#001 VS THEME <time="5.5">
+#008 BGM 5
+#009 BEGIN NEXT MATCH <time="9.3">
+#018 CONGRATULATIONS BGM 2
+#020 ENDING
+
+#006 未使用曲 1
+#015 未使用曲 2
+#023 未使用曲 3
+
+---------------------------------------------------
+ [S.E.] 
+
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] CREDIT
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#082 [S.E.] 
+#095 [S.E.] <time="15">
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#104 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#034 [Voice] 
+#035 [Voice] 
+#043 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#103 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#110 [Voice] 
+
+// List contribution by ZEK.
+$end

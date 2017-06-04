@@ -1,0 +1,32 @@
+﻿$name=pacmania
+$version=2
+$default=256
+$songmax=256
+$main
+
+#256 COIN
+#000 GAME START
+#002 BLOCK TOWN (World 1)
+#003 PACMAN'S PARK (World 2)
+#007 SANDBOX LAND (World 3)
+#006 JUNGLY STEPS (World 4)
+#001 DEMO 1
+#009 DEMO 2
+#011 DEMO 3 -海外 version-
+#008 CONGRATULATION (Ending)
+#005 ALL CLEAR
+#004 GAME OVER
+#012 NAME ENTRY -海外版のみ- (Name Entry / X68000 ver. Loading BGM)
+
+#010 SPEAKER TEST
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.4
+  Victor Entertainment  VDR-5282  1989.07.21
+
+  X68000版パックマニア (サウンドテストより)
+
+  ■作曲
+  戸室 仁人, 慶野 由利子, 小沢 純子
+
+$end

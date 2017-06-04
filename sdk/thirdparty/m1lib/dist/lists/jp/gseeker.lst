@@ -1,0 +1,33 @@
+﻿$name=gseeker
+$version=2
+$default=008
+$main
+
+//#000 Signature
+//#000 Credit
+#008 Stand by ... '99 (機体セレクト)
+#004 Grid Seeker (ラウンド 1,4)
+#011 Northan Base (ラウンド 2)
+#005 D-lagoon (ラウンド 3)
+#009 Air Dancin'! (intro) (ボス A)
+#010 Air Dancin'! (ボス A)
+#015 Stardust (ラウンド 5)
+#012 So High (ラウンド 6)
+#016 Mad Machine (ボス B)
+#013 The Ruins (intro) (ネームエントリー 1)
+#014 The Ruins (ネームエントリー 1)
+#017 Thank you for... (ネームエントリー 2)
+#006 Grid Seeker - Wings of Darkness - (intro) (ラウンド 7) <time="00:23.1">
+#007 Grid Seeker - Wings of Darkness - (ラウンド 7)
+#018 Lucifer (ラストボス)
+#019 Grid Seeker -Over There- (エンディング)
+
+  ■出典
+  GRID SEEKER / TAITO
+  PONY CANYON / SCITRON  PCCB-00131  1993.07/21
+
+  ■作曲
+  古川 典裕 (中山 上等兵, Wiz.Master)
+
+// Submitted by Razさん
+$end

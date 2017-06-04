@@ -1,0 +1,143 @@
+﻿$name=88games
+$version=2
+$default=064
+$main
+
+#064 ATTRACT MODE <time="20">
+#207 [Voice] Hyper Sports Special
+#034 CREDIT
+#065 NAME ENTRY
+#066 READY
+#067 WORLD RECORD
+#068 RECORD CHECK 
+#069 CONGRATULATIONS !
+#070 GAME OVER
+#068 CONTINUE ? <time="26.9">
+#071 THE BEST 100
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] 
+#002 [S.E.] 
+#003 [S.E.] 
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] <time="47">
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] <time="10"> 
+#027 [S.E.] 
+#028 [S.E.] <time="11"> 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] <time="11">  
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#154 [Voice] 
+#153 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#171 [Voice] 
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#192 [Voice] On your mark
+#193 [Voice] Get set
+#194 [Voice] Flying
+#195 [Voice] Foul
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] You have broken the world record
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] Nice
+#203 [Voice] Perfect
+#204 [Voice] Fantastic
+#205 [Voice] Congratulations
+#206 [Voice] 
+#207 [Voice] Hyper Sports Special
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] Konami 88
+#211 [Voice] 88 Games
+#212 [Voice] 
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,37 @@
+﻿$name=lethalen
+$version=2
+$default=$c3
+$songmax=$f0
+$fixed_volume=475
+$main
+
+$c3 Waiting for Challengers (Attract)
+$2b Credit
+$c9 Victory or Defeat (Stage Select)
+$c0 My Mission (Introduction)
+$d4 Rolling Budguys (Stage 1)
+$d1 Black Boots (Stage 2)
+$d5 Fence of Defence (Stage 3)
+$d3 As Long as You Live (Stage 4)
+$d0 Desperate to Survive (Stage 5)
+$d9 Fight for Your Life (Stage 6)
+$d2 Shoot into the Street (Pursuit 1)
+$d6 At Full Speed (Pursuit 2)
+$cd Warning Area (Night Vision Stage)
+$c8 Dead or Alive (Boss)
+$c1 Lucky Plucky (Bonus Stage)
+$c2 Whoa! (Bonus Stage Finished)
+$cb Fanfare I (Promotion)
+$cc Fanfare II (Demotion)
+$ce Fanfare III (No promotion)
+$c4 You are a Good Shooter! (Stage Clear)
+$c5 Just my Luck! (Game Over)
+$c7 So Tired (Name Entry)
+$c6 Thank You, and See You Again (Credits)
+$f0 Speaker Check
+
+  [Source]
+  Konami Amusement Sounds '93 - Summer
+  King Records  KICA-7616-7617  Aug 21, 1993
+
+$end

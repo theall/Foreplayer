@@ -1,0 +1,36 @@
+﻿$name=kungfum
+$version=2
+$default=032
+$songmax=036
+$main
+  
+#032 Opening <time="7">
+#036 Main BGM
+#034 Stage Clear
+#035 Complete
+#033 Game Over <time="5">
+
+-----------------------
+
+#001 [Voice]
+#002 [Voice]
+#003 [Voice]
+#004 [Voice]
+#005 [Voice] (Mr. X)
+#006 [SFX]
+#007 [Voice]
+
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX] <time="2">
+#024 [SFX] <time="3">
+#025 [SFX]
+#026 [SFX]
+
+// List Contribution by NK
+$end

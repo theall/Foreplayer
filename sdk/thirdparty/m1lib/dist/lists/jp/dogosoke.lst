@@ -1,0 +1,56 @@
+﻿$name=dogosoke
+$version=2
+$default=191
+$main
+
+#191 [S.E.] クレジット
+#070 A Storm Of Cheers (1エリア)
+#066 Strange To Say (異次元)
+#117 Cruel Killers (2エリア)
+#067 Run To The Field (3エリア)
+#119 Invasion (門の番人)
+#088 Count Down (4・5エリア)
+#069 Game Over
+#084 Chase Is Over (NAMING)
+#075 未使用曲1
+#086 未使用曲2
+
+#120 ?
+
+  [Voice]
+
+#204 [Voice]
+#192 [Voice]
+#193 [Voice]
+#195 [Voice]
+#211 [Voice]
+#206 [Voice]
+#207 [Voice]
+#208 [Voice]
+#209 [Voice]
+#210 [Voice]
+#212 [Voice]
+#199 [Voice]
+#205 [Voice]
+#194 [Voice]
+#196 [Voice]
+#197 [Voice]
+#198 [Voice]
+#200 [Voice]
+#201 [Voice]
+#202 [Voice]
+#203 [Voice]
+#213 [Voice]
+#214 [Voice]
+#215 [Voice]
+#218 [Voice]
+
+  ■出典
+  SNK ゲーム・ミュージック
+  ALFA RECORDS  28XA-120  1987.02.25
+
+  ■作曲
+  田中敬一
+
+// リスト作成: ゴルゴルさん
+$end

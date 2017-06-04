@@ -1,0 +1,21 @@
+﻿$name=thndrbld
+$version=2
+$default=147
+$songmax=159
+$main
+
+#147 COIN <time="0:03">
+#152 THUNDER BLADE (ST 1,3 BGM)
+#158 BURNING POINT (BOSS THEME)
+#154 ROUND CLEAR <time="0:07">
+#159 TYPE II (ST 2,4 BGM)
+#156 NAME ENTRY
+#153 BGM 1
+#155 BGM 2
+#157 BGM 3
+
+  ■出典
+  GALAXY FORCE -G.S.M. SEGA 1-
+  PONY CANYON / SCITRON  D28B0002  1988.07.01
+
+$end

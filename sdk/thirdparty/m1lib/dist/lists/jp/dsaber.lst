@@ -1,0 +1,43 @@
+﻿$name=dsaber
+$version=2
+$default=005
+$fixed_volume=338
+$main
+
+#005 クレジット音
+#008 ストーリー・オブ・ドラゴンセイバー (オープニング 1) <time="1:40">
+#009 オープニング　ヴィジュアル (オープニング 2) <time="30" fadeout="yes" fadeoutlength="10">
+#033 水没都市 (AREA 1) <time="4:07" fadeout="yes" fadeoutlength="10">
+#017 親玉A (ボス 1) <time="46" fadeout="yes" fadeoutlength="10">
+#034 火山 (AREA 2) <time="3:29.24">
+#018 親玉B (ボス 2) <time="1:15" fadeout="yes" fadeoutlength="10">
+#035 化石 (AREA 3) <time="2:32" fadeout="yes" fadeoutlength="10">
+#019 エイリアンキング (ボス 3) <time="46" fadeout="yes" fadeoutlength="10">
+#036 地じん (AREA 4) <time="3:50" fadeout="yes" fadeoutlength="10">
+#037 渓谷 (AREA 5) <time="1:50" fadeout="yes" fadeoutlength="10">
+#013 コンティニュー <time="41" fadeout="yes" fadeoutlength="10">
+#001 ネームランキング A <time="37" fadeout="yes" fadeoutlength="10">
+#038 氷穴 (AREA 6) <time="4:54" fadeout="yes" fadeoutlength="10">
+#039 魔界 (AREA 7) <time="2:30" fadeout="yes" fadeoutlength="10">
+#023 ドラゴンゾンビ (ボス 4) <time="41" fadeout="yes" fadeoutlength="10">
+#040 暗黒 (AREA 8) <time="1:09" fadeout="yes" fadeoutlength="10">
+#041 ウルティマ (AREA 9) <time="5:56"  fadeout="yes" fadeoutlength="10">
+#025 カオス (最終ボス) <time="2:07" fadeout="yes" fadeoutlength="10">
+#011 エンディング <time="1:45">
+#002 ネームランキング B <time="45" fadeout="yes" fadeoutlength="10">
+
+#801 海上 -Dragon Spirit II- (AREA 1) <time="4:48" fadeout="yes" fadeoutlength="10">
+#802 火山 -Dragon Spirit II- (AREA 2) <time="5:00" fadeout="yes" fadeoutlength="10">
+#803 洞窟 -Dragon Spirit II- (AREA 3) <time="1:30" fadeout="yes" fadeoutlength="10">
+#804 森林 -Dragon Spirit II- (AREA 4) <time="2:27" fadeout="yes" fadeoutlength="10">
+#805 砂漠 -Dragon Spirit II- (AREA 5) <time="3:16" fadeout="yes" fadeoutlength="10">
+#806 氷河 -Dragon Spirit II- (AREA 6) <time="3:55" fadeout="yes" fadeoutlength="10">
+#779 エンディング -Dragon Spirit II- <time="3:05" fadeout="yes" fadeoutlength="10">
+
+#003 裏ネームランキング -Dragon Spirit II- <time="1:47" fadeout="yes" fadeoutlength="10">
+
+  ■出典
+  DRAGON SABER / NAMCO GAME SOUND EXPRESS Vol.4
+  VICTOR ENTERTAINMENT  VICL-40014～40015  1991.03.21
+
+$end

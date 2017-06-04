@@ -1,0 +1,18 @@
+﻿$name=g_twih
+$version=2
+$default=$14
+$songmax=9999999
+$main
+
+$14 Demo <time="0:44" fadeout="yes" fadeoutlength="10">
+$01 Coin
+$06 Opening Theme
+$02 BGM 1 <time="1:55" fadeout="yes" fadeoutlength="10">
+$03 BGM 2 <time="2:19" fadeout="yes" fadeoutlength="10">
+$04 BGM 3 <time="3:10" fadeout="yes" fadeoutlength="10">
+$05 BGM 4 <time="1:40" fadeout="yes" fadeoutlength="10">
+$18 Name Entry <time="1:01" fadeout="yes" fadeoutlength="10">
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

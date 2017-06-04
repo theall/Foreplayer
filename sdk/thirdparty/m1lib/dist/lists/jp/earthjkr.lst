@@ -1,0 +1,26 @@
+﻿$name=earthjkr
+$version=2
+$default=013
+$main
+
+#013 Opening Demo
+#003 Title
+#004 Player Select
+#005 Round 1
+#011 Boss 1 (Round 1, 2, 5)
+#007 Round 2
+#006 Round 3
+#012 Boss 2 (Round 3, 4)
+#008 Round 4
+#009 Round 5
+#010 Round 6
+#013 Boss 3 (Round 6)
+#009 Ending
+#016 Name Entry
+#015 Game Over
+
+#017 Unused 1
+#078 Unused 2
+
+// List Contribution by NK
+$end

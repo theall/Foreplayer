@@ -1,0 +1,53 @@
+﻿$name=64street
+$version=2
+$default=010
+$fixed_volume=100
+$main
+
+#010 Case of the Rich Man's Kidnapped Daughter (Opening Demo)
+#009 Player Select
+#001 64th Street (Stage 1)
+#017 Eye Catch <time="0:02">
+#007 Boss
+#016 Probe Next Hideout (Stage Clear) <time="0:06">
+#003 Smuggler's Wharf (Stage 2)
+#002 Railroad Yard Part 1 (Stage 3)
+#008 Railroad Yard Part 2 (Stage 3)
+#004 Secret Factory (Stage 4)
+#006 The Headquarters (Stage 5)
+#015 Chase and Arrest (Insert Cut) <time="0:03">
+#005 Last Level (Stage 6)
+#011 Ending
+#013 Name Entry
+
+#014 Unused 1 <time="0:04.5">
+//Stage Start
+#012 Unused 2 <time="0:10">
+//Continue
+
+-----------------------------------------------------------
+ [Voice]
+
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#044 [Voice]
+#045 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#032 [S.E.] Credit
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#043 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+
+// List Contribution by NK
+$end

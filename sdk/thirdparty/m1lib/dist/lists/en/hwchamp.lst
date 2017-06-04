@@ -1,0 +1,99 @@
+﻿$name=hwchamp
+$version=2
+$default=145
+$main
+
+#145 Credit Inserted
+#153 Title Demo
+#150 Hayaku Erabankai
+#148 Congratulations
+#152 Name Entry
+#151 Top Fighters
+
+#162 Title demo Ver.2
+
+---------------------------------------------------
+ [SFX]
+
+#031 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] <time="5">
+#143 [SFX] 
+#144 [SFX] <time="5">
+#145 [SFX] Credit
+#146 [SFX] 
+#147 [SFX] 
+
+---------------------------------------------------
+ [Voice]
+
+#001 [Voice] 
+#002 [Voice] 
+#003 [Voice] 
+#004 [Voice] 
+#005 [Voice] 
+#006 [Voice] 
+#007 [Voice] 
+#008 [Voice] 
+#009 [Voice] 
+#010 [Voice] 
+#011 [Voice] 
+#012 [Voice] 
+#013 [Voice] 
+#014 [Voice] 
+#015 [Voice] 
+#016 [Voice] 
+#017 [Voice] 
+#018 [Voice] 
+#019 [Voice] 
+#020 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+#023 [Voice] 
+#024 [Voice] 
+#025 [Voice] 
+#026 [Voice] 
+#027 [Voice] 
+#028 [Voice] 
+#029 [Voice] 
+#030 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#037 [Voice] 
+#038 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#043 [Voice] 
+
+---------------------------------------------------
+ [Percussion]
+
+#154 High Tom
+#155 Snare Drum
+#156 Mid Tom
+#157 Low Tom
+#158 Bass Drum
+#159 High-hat Cymbals
+#160 Snare Drum
+
+  [Sound Composer]
+  Katsuhiro Hayashi (Funky K.H)
+
+// List contribution by ZEK.
+$end

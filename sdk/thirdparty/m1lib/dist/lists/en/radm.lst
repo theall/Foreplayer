@@ -1,0 +1,20 @@
+﻿$name=radm
+$version=2
+$default=131
+$songmax=135
+$fixed_volume=202
+$main
+
+#131 Advertize Mode
+#129 Soup Up (BGM 1)
+#130 Gang Bang (BGM 2)
+#133 Fall Head Over Heal (BGM 3)
+#132 Submission & Domination (BGM 4)
+#135 Finish
+#134 Name Entry
+
+  [Source]
+  Formula -G.S.M. Sega 5-
+  Pony Canyon / Scitron  PCCB-00059  Apr 21, 1991
+
+$end

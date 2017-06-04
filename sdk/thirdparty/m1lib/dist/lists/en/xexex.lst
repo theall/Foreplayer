@@ -1,0 +1,111 @@
+﻿$name=xexex
+$version=2
+$default=061
+$songmax=188
+$fixed_volume=349
+$main
+
+#061 [Voice] Konami Logo
+#138 Battle cry All Hands to Station! (Attract Mode)
+#096 [Voice] Xexex
+#001 Credit Inserted
+#150 Think Tank (Introduction)
+#128 Breeze (Stage 1)
+#135 Boost Up! (Boss)
+#099 Gimme A High Five (Stage Clear)
+#139 Please (Intermission 1)
+#129 With Zero G (Stage 2)
+#140 Hey! Mr.Wonderful (Intermission 2)
+#133 Crystal Clear (Stage 3)
+#145 Help Me Quickly! (Intermission 3)
+#131 Let's Give 'em the BIZ (Stage 4)
+#147 I Dare You (Intermission 4)
+#130 The Polygontal Energy (Stage 5)
+#154 No More Time (Intermission 5)
+#149 Happy Daymare (Stage 6-1 &lt;Before warp&gt;)
+#132 Out of the Blue from the Hyperspace Jump (Stage 6-2 &lt;After warp&gt;)
+#155 Blow Your Top (Intermission 6)
+#158 Shake 'em Retro-roop!! (Stage 7-1 &lt;Aerial Fight&gt;)
+#134 Go for Broke! (Stage 7-2 &lt;Battleship&gt;)
+#157 Keep on Mechanical Dancin'! (Stage 7 &lt;"Crab" appeared&gt;)
+#156 Free as a Bird (Intermission 7)
+#151 Black Eight Ball (Final Boss)
+#148 Birthday Suits (Aftermission)
+#142 My Kutie Pie Ilene (Ending)
+#153 Time to Party Hearty!! (Credits Roll)
+#141 6 Feet Under (Game Over)
+#144 Can't Wait Until Next Saturday (Continue)
+#143 Jack Pot! - Make a Killing!! (Oracle Consulting)
+#152 Way to Go! - Carry the Day!! (Excellent Luck)
+#146 Snapper (Tag Line)
+#159 Sound Test
+
+----------------------------------------------------
+
+#185 [Voice] "watashi no hoshi wo tasukete"
+#160 [Voice] "watashi wa"
+#161 [Voice] "wakusei Isquare no"
+#162 [Voice] "Ilene"
+
+#118 [Voice] "jinruiga wakuseikanhikouwomo onogatenishita mirai. aru kyouryokuna telepathyga chikyuu ni todoita."
+#127 [Voice] "tokiwo onajikushite, jingruiwa fushigina buttaiwo hakken"
+#178 [Voice] "kenkyuunitsugu kenkyuude eraretakotowa, sorega seimeitaide arurashiitoiukotonomi dearu"
+#180 [Voice] "fushigina seimeitai to telepathy"
+#164 [Voice] "wazukana tegakarikara, kono futatsuno settenwo miidashita jin'ruiwa, saishinei sentouki Frint Lock wo kaihatsushi, wakusei Eastria eto mukau"
+#166 [Voice] "sorega, uchuuni ikiru jin'ruino.. sadame no youni"
+
+#025 [Voice] "onegai"
+#091 [Voice] "watashino hoshiwo tasukete"
+
+#027 [Voice] "konowatashini hamukautowa orokana"
+#108 [Voice] "fufufu.."
+
+#107 [Voice] "yatsuwa nyanimono da?"
+#047 [Voice] "aaaan" ;)
+#048 [Voice] "hayaku.. kite.."
+
+#090 [Voice] "onyore!"
+#106 [Voice] "kokomadekitakotowo koukaisasetekurerwa!"
+
+#049 [Voice] "isoganaito"
+#119 [Voice] "maniawana.."
+
+#113 [Voice] "koreijou susumukotowa yurusan!"
+#114 [Voice] "hineritsubushitekureruwa"
+
+#115 [Voice] "omaetachiniwa makasitewa okenu"
+#117 [Voice] "watashi mizukaraga deru!"
+
+#050 [Voice] "yokukokomade kitekuremashita"
+#121 [Voice] "watashiwa"
+#122 [Voice] "wakusei Eastria no"
+#123 [Voice] "Ilene desu"
+#124 [Voice] "anagata hakondekudasatta Frint de"
+#125 [Voice] "watashino hoshiwa sukuwarerunodesu"
+#126 [Voice] "saa"
+
+#066 [Voice] "watashino hoshiwo sukuttekurete"
+#051 [Voice] "arigatou"
+
+#064 [Voice] "daikichi"
+#065 [Voice] "chuukichi"
+#067 [Voice] "gomen'nee"
+
+#052 [Voice] "Speed Up"
+#053 [Voice] "Phenomenone"
+#054 [Voice] "Horming Laser"
+#055 [Voice] "Ground Laser"
+#056 [Voice] "Shadow Laser"
+#057 [Voice] "Search Laser"
+#058 [Voice] "Spiral Laser"
+#059 [Voice] "Round Laser"
+#188 [Voice] "Laser"
+
+  [Source]
+  Xexex Konami Kukeiha Club
+  King Records  KICA-7508  Jan 21, 1992
+
+  [Reprinted Edition]
+  King Records  KICA-7911  Sep 23, 1998
+
+$end

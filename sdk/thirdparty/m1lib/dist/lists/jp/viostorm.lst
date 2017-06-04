@@ -1,0 +1,33 @@
+﻿$name=viostorm
+$version=2
+$default=$db
+$fixed_volume=147
+$main
+
+$db Pleased to meet you (プレーヤー紹介デモ)
+$e9 Prologue (プロローグデモ1)
+$ea Prologue 2 (プロローグデモ2)
+$e0 Funky guys (プレイヤーセレクト)
+$d0 Who'll be the hero? (Stage 1 BGM)
+$d1 Oh the train (Stage 2 BGM)
+$d2 Feel my power (Stage 3 BGM 1)
+$e2 Sharara's dancing～Light steps (Stage 3 BGM 2)
+$d3 Drifting tension (Stage 4 BGM)
+$d4 We are free (Stage 5 BGM)
+$d5 Hey! Hey! Hey! (Stage 6 BGM)
+$d6 The final technique (Stage 7 BGM)
+$d8 Who are you? (ボスステージ BGM 1)
+$d9 In the shadows (ボスステージ BGM 2)
+$e6 VS Geldo -intro- (最終ボスステージ BGM -intro-)
+$da VS Geldo (最終ボスステージ BGM)
+$df Kick it! (ステージクリア)
+$dd Out of luck! (ゲームオーバー)
+$e1 Nice fight, Congraturations! (ネーミング)
+$de Are you ready to have a good time? (エンディング)
+$eb スピーカーテスト
+
+  ■出典
+  コナミ・アミューズメントサウンズ '94 - 春
+  KING RECORDS  KICA-7631～7632  1994.02.23
+
+$end

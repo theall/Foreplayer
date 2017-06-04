@@ -1,0 +1,67 @@
+﻿$name=plumppop
+$version=2
+$default=031
+$main
+
+#031 Credit Inserted
+#005 Player Select <time="9">
+#006 Let's Get Started! <time="6.5">
+#018 [SFX] Airscrew <time="1.5">
+#007 Game Start <time="5.5">
+#008 Theme of Blue Sky
+#011 Stage Clear <time="5">
+#009 Theme of Sunset Glow
+#011 Stage Clear <time="5">
+#012 Bonus Stage
+#013 Bonus Stage Clear <time="6.5">
+#010 Theme of Moonless Night
+#038 [SFX] Explosion <time="3.7">
+#011 Stage Clear <time="5">
+#018 [SFX] Airscrew <time="4">
+#014 Moving Stage
+
+#016 False Boss
+#010 True Boss
+#038 [SFX] Explosion <time="3.7">
+#011 Stage Clear <time="5">
+#017 Ending
+#011 Name Regist
+#015 Game Over
+
+---------------------------------------------------
+  [SFX]
+
+#031 [SFX] Coin
+#018 [SFX] Eggbeater <time="8">
+#019 [SFX] Trampoline
+#021 [SFX] Break a target
+#026 [SFX] Crow
+#027 [SFX] Trampoline
+#037 [SFX] Warp hole
+#022 [SFX] Trampoline
+#029 [SFX] Crashed a monster <time="3">
+#020 [SFX] Jumpedn on the head
+#025 [SFX] Sun
+#036 [SFX] Stars
+#028 [SFX] Got a fruit
+#033 [SFX] Got a fruit in a bonus stage
+#030 [SFX] Put a fruit in a glass
+#035 [SFX] Hit on a dumbbell
+#032 [SFX] Hit
+#040 [SFX] Extend, Perfect
+#034 [SFX] Slot Result
+#039 [SFX] Boss explosion
+#024 [SFX] Hit by a boss
+#038 [SFX] Explosion
+#023 [SFX] ?
+
+  [Sound Composer]
+  Hisayoshi Ogura
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by ZEK.
+// English list by Fujix
+$end

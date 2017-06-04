@@ -1,0 +1,117 @@
+﻿$name=goalx3
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode
+#127 Coin
+#034 How to Play 
+#234 BGM 2 <time="5">
+#132 [Voice] Kick Off
+#041 [Voice] <time="5">
+#215 [Voice] Goal 1
+#141 [Voice] Time Up !
+#036 Result
+#035 Tournament Map
+#038 Congratulations !
+#039 Credits
+#142 [Voice] Game Over
+
+#233 BGM 1 <time="5">
+#234 BGM 2 <time="5">
+#235 BGM 3 <time="5">
+
+#034 How to Play 1
+#040 How to Play 2
+#037 How to Play 3
+
+---------------------------------------------------
+  [SFX]
+
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#127 [SFX] 
+#129 [SFX] <time="5">
+#130 [SFX] <time="5">
+#131 [SFX] <time="5">
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#240 [SFX] 
+#241 [SFX] 
+#242 [SFX] 
+#243 [SFX] 
+#244 [SFX] 
+#245 [SFX] 
+#246 [SFX] 
+#247 [SFX] 
+#248 [SFX] 
+#249 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#041 [Voice] <time="5">
+#132 [Voice] Kick off
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] Time up !!
+#142 [Voice] Game Over
+#215 [Voice] Goal 1
+#216 [Voice] Goal 2
+#217 [Voice] Goal 3
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#230 [Voice] <time="6">
+#231 [Voice] <time="6">
+#232 [Voice] <time="6">
+#236 [Voice] <time="6">
+
+  [Sound Composer]
+  Act Japan
+
+// List contribution by ZEK.
+// English list QC and updated by Fuj
+$end

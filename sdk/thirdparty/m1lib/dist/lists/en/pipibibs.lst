@@ -1,0 +1,57 @@
+﻿$name=pipibibs
+$version=2
+$default=041
+$main
+
+#041 Coin Inserted
+#008 Target <time="31.7">
+#001 Stage 1 (Aya)
+#002 Stage 2 (Whii Pee)
+#003 Stage 3 (Eri)
+#031 Try Again <time="5.1">
+#032 Continue ? <time="20">
+#033 Game Over <time="5">
+#004 Stage 4 (Synthia)
+#005 Stage 5 (Sachiko)
+#006 Stage 6 (Jennifer)
+#007 Count Down <time="19.4">
+#020 Escape  <time="2.6">
+#010 Bonus Show Time 1
+#009 Bonus Show Time 2
+#034 Ending
+#035 Ending 2
+#037 Name Entry
+#036 The End
+
+#039 Unused 1
+#040 Unused 2
+
+---------------------------------------------------
+ [SFX] 
+
+#011 [SFX] Extend
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] H-Coin 2
+#017 [SFX] H-Coin 1
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] Escape 2
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#038 [SFX] 
+#041 [SFX] Coin
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

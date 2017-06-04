@@ -1,0 +1,25 @@
+﻿$name=miexchng
+$version=2
+$default=095
+$main
+
+#095 Neo Geo Logo
+
+#041 Opening
+#035 Select Screen
+#036 VS Screen
+#039 Stage A (Change Fighter Exchanger)
+#037 Stage B (Debt Fighter Dead Miser)
+#040 Interrupt
+#034 Stage C
+#033 Stage D
+#038 Game Over
+#042 Ending
+
+  [Source]
+  Money Idol Exchanger
+  Pony Canyon / Scitron  PCCB-00260  May 16, 1997
+
+// List Contribution by cyada
+// English List by Fujix
+$end

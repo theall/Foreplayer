@@ -1,0 +1,46 @@
+﻿$name=dbzvrvs
+$version=2
+$default=010
+$main
+
+#010 Title Screen
+#082 Coin Insertion
+#012 Character Select, Between Zones
+#000 Vs. Son Goku (Over the Clouds Battle Zone)
+#004 Win the Battle
+#022 Vs. Piccolo (North Pole Battle Zone)
+#023 Vs. Vegeta (Sky Night Battle Zone)
+#001 Vs. Son Gohan (Desert Battle Zone)
+#002 Vs. Trunks (Orange Clouds Battle Zone)
+#021 Vs. Yourself (On Top of the Sea Battle Zone)
+#014 Vs. Ozotto -The Super Monster- (The Green Planet)
+#020 All Clear
+#015 Ending of Son Goku
+#019 Ending of Piccolo
+#018 Ending of Vegeta
+#016 Ending of Son Gohan
+#017 Ending of Trunks
+#026 Staff Credits
+#006 Game Over part1 <time="3">
+#013 Game Over part2
+#007 Continue
+#008 Lose the Battle
+
+#003 Unknown 1
+#005 Unknown 2
+#009 Unknown 3
+#011 Unknown 4
+#024 Unknown 5
+#025 Unknown 6
+
+  [Composers]
+  Sega Sound Team
+
+ Note:
+ - The "Vs. YOU" track is the mirror fight in the game,
+    just before OZOTTO.
+ - In the game the characters have poor translated names,
+    i put the good names, the ones that everybody knows.
+
+// List contribution by Simon B., done in playing the game.
+$end

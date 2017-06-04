@@ -1,0 +1,68 @@
+﻿$name=ctomaday
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#033 ATTRACT MODE 1
+#047 ATTRACT MODE 2
+#127 [SFX] CREDIT
+#042 HOW TO PLAY
+#034 STAGE 1 -Speed Limit 100 k.p.h.-
+#037 STAGE 1 BOSS 
+#034 STAGE 2 -Mind your hrad.-
+#035 STAGE 3 -Danger Deep Water.-Caution.-
+#038 STAGE 2, 3 BOSS 
+#035 STAGE 4 -Out of order.-
+#036 STAGE 5 -No U turn.-
+#039 STAGE 5 BOSS 
+#040 RESULT
+#046 ENDING
+#041 STAFF ROLL
+#045 NAME ENTRY
+#044 GAME OVER
+
+#048 未使用曲 1
+#043 未使用曲 2
+
+---------------------------------------------------
+  [SFX]
+
+#127 [SFX] CREDIT
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#201 [Voice] 
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,31 @@
+﻿$name=feversos
+$version=2
+$default=8
+$songmax=14
+$main
+
+#008 ビートアタック人が舞う (BGMタイトル)
+#002 バトルファイター (BGMプレイヤーセレクト)
+#009 恋のダンシングボンバー [DANCING BOMBER] (BGMステージ1)
+#010 ハロー・ミスター・サイボーグ兵士 [HELLO Mr.CYBORG] (BGMステージ2)
+#012 悲しきバロフィーバー [BAROFEVER] (BGMステージ3)
+#011 ソウルスーパーマーケット [SOUL SUPERMARKET] (BGMステージ4)
+#013 ディスコめざせ999人 [DISCO 999] (BGMステージ5)
+#003 野望にあと一歩 (BGMボス)
+#004 ミラーボールシャワー (BGMステージクリア)
+#007 真ボス登場 (BGM真のラスボス)
+#005 狂ってる (BGMエンディング)
+#006 魚太郎メチャ稼げるっす (BGMネームエントリー)
+#001 A+B押しながらStart (BGMタイムアタック)
+
+  ■出典
+  弾銃FEVERON / CAVE 
+  SCITRON & GAMEST  SGCD-0004  1998.12.04 
+
+  ■作曲
+　RYUICHI YABUKI
+  NANPEI MISAWA
+
+// List contribution by R
+// CDには未使用曲2曲とボイスコレクション、SEコレクションが収録されています。
+$end

@@ -1,0 +1,37 @@
+﻿$name=viprp1j
+$version=2
+$default=$10
+$main
+
+$10 Attract Mode
+$01 Stage 1
+$02 Stage 2
+$03 Stage 3
+$04 Stage 4
+$0e Stage 5 start
+$05 Stage 5
+$06 Stage 6
+$07 Stage 7
+$08 Stage 8
+$09 Boss
+$0a Stage Clear
+$0f Ending
+$0d Name Entry
+$0b Continue
+??? Game Over
+$11 Failure
+
+$16 Unused
+
+$15 Writing Flash ROM
+$14 Stereo Check
+
+  [Source]
+  Viper Phase 1 <New Version> PCB (SPI System)
+
+  [Soudn Composer]
+  Gou Satou
+
+// List Contribution by Kayama
+// English list by Fujimon
+$end

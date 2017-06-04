@@ -1,0 +1,58 @@
+﻿$name=volfied
+$version=2
+$default=043
+$main
+
+#043 Credit Inserted <time="3">
+#005 Attract Mode <time="12">
+#006 Start <time="5">
+#016 Main Music <time="7.6">
+#009 Round 12 Cleared <time="14">
+#007 Rround Cleard <time="10">
+#016 Main Music <time="7.6">
+#007 Rround Cleard <time="10">
+#009 Ending
+#011 Name Entry
+#012 Game Over
+
+#010 End Credits (Part)
+
+---------------------------------------------------
+  [SFX]
+
+#008 [SFX]
+#013 [SFX] <time="3">
+#014 [SFX]
+#015 [SFX]
+#016 [SFX] <time="3">
+#017 [SFX]
+#018 [SFX]
+#019 [SFX] <time="3">
+#020 [SFX] <time="10">
+#021 [SFX]
+#022 [SFX] <time="3">
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] <time="3">
+#028 [SFX]
+#029 [SFX] Enemy touched a line
+#033 [SFX]
+#034 [SFX]
+#035 [SFX] <time="5">
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+
+  [Sound Composer]
+  Hisayoshi Ogura (OGR)
+
+// List contribution by ZEK.
+$end

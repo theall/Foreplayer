@@ -1,0 +1,57 @@
+﻿$name=dogosoke
+$version=2
+$default=191
+$main
+
+#191 [SFX] Credit Inserted
+#070 A Storm of Cheers (Area 1)
+#066 Strange To Say (Different Dimension)
+#117 Cruel Killers (Area 2)
+#067 Run to the Field (Area 3)
+#119 Invasion (Gate Keeper)
+#088 Count Down (Area 4 & 5)
+#069 Game Over
+#084 Chase is Over (Name Entry)
+#075 Unused 1
+#086 Unused 2
+
+#120 ?
+
+  [Voice]
+
+#204 [Voice]
+#192 [Voice]
+#193 [Voice]
+#195 [Voice]
+#211 [Voice]
+#206 [Voice]
+#207 [Voice]
+#208 [Voice]
+#209 [Voice]
+#210 [Voice]
+#212 [Voice]
+#199 [Voice]
+#205 [Voice]
+#194 [Voice]
+#196 [Voice]
+#197 [Voice]
+#198 [Voice]
+#200 [Voice]
+#201 [Voice]
+#202 [Voice]
+#203 [Voice]
+#213 [Voice]
+#214 [Voice]
+#215 [Voice]
+#218 [Voice]
+
+  [Source]
+  SNK Game Music
+  Alfa Records  28XA-120  Feb 25, 1987
+
+  [Composer]
+  Kei'ichi Tanaka
+
+// Original List contribution by GolGol
+
+$end

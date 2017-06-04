@@ -1,0 +1,77 @@
+﻿$name=gunsmoke
+$version=2
+$default=063
+$songmax=093
+$main
+
+#085 Credit Inserted
+#063 Introduction (Wanteds)
+#034 Stage 1, 4, 7, 9 Introduction <time="9.4">
+#037 Stage 1, 4, 7, 9 BGM
+#043 Stage 1 Boss
+#046 Stage 1, 2, 4, 5, 7, 9 Clear
+#062 Stage 2, 5 Introduction
+#032 Stage 2, 5 BGM
+#040 Stage 2 Boss
+#036 Stage 3, 8, 10 Introduction <time="7.5">
+#039 Stage 3, 8, 10 BGM
+#042 Stage 3 Boss
+#048 Stage 3, 8, 10 Clear
+#049 Stage 4, 7 Boss
+#041 Stage 5 Boss
+#035 Stage 6 Introduction <time="8.1">
+#038 Stage 6 BGM
+#060 Stage 6 Boss
+#047 Stage 6 Clear
+#054 Stage 8 Boss
+#045 Stage 9 Boss
+#044 Stage 10 Boss
+#059 Cleared All Stages
+#033 Restart
+#050 Game Over
+#051 Name Regist
+#053 Name Regist Finished
+#052 Name Resist Time Out
+#058 Continue
+
+#056 Unused
+#061 Unused
+
+------------------------------------------
+
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX] Credit Inserted
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+  
+  [Source]
+  Capcom Game Music
+  Alfa Records  28XA-94  Aug 25, 1986
+
+  Capcom Game Music (Legend Series)
+  SME / Scitron  SCDC-00193  Jun 19, 2002
+
+// List Contribution by NK
+$end

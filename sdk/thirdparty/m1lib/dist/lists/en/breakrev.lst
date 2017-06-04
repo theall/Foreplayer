@@ -1,0 +1,112 @@
+﻿$name=breakrev
+$version=2
+$default=002
+$main
+
+#002 NeoGeo Logo
+
+#033 Attract Mode
+#127 Coin
+#034 How to Play <time="20">
+#035 Character Select <time="20">
+#036 VS Theme
+#040 Sho
+#046 Pielle
+#039 Challenger Appeared
+#042 Condor
+#044 Rila
+#050 Continue ? <time="20">
+#043 Tia
+#045 Alsion III
+#037 You Win
+#038 Winner
+#047 Maherl
+#041 Dao-Long
+#055 Saizo
+#048 Bai-Fu
+#049 Ending
+#051 Game Over
+
+---------------------------------------------------
+  [SFX]
+
+#127 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#221 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#233 [SFX] 
+#244 [SFX] 
+#245 [SFX] 
+#246 [SFX] 
+#247 [SFX] 
+#248 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#234 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#251 [Voice] 
+#252 [Voice] 
+#253 [Voice] 
+#254 [Voice] 
+
+  [Sound Composer]
+  Ken'ichi Kamio
+
+  [Sound EXs]
+  Yoshikazu Egawa (Light Link Music)
+  Hiroshi Nishikawa (Light Link Music)
+
+// List contribution by ZEK.
+// English list QC and Updated by Fuj
+$end

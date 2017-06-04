@@ -1,0 +1,33 @@
+﻿$name=kaiserkn
+$version=2
+$default=523
+$main
+
+#523 Kaiser Knuckle (Attract Mode)
+#524 In the World (Player Demo)
+#513 Look at Me ! (Theme from Kazuya)
+#521 Cry for the Moon (Theme from Wu Long)
+#516 Capricious Valkyrie (Theme from Liza)
+#520 Storm of Blossom (Theme from Li Hua)
+#512 Select A
+#517 Spirits of Silence (Theme from Gekkou)
+#515 Rise up to the Star (Theme from J. McCoy)
+#530 Great Mind (Motif of Gonzales)
+#514 Round Clear
+#519 Splendor (Theme from Barts)
+#518 Unavailable #7004 (Theme from Marco)
+#522 Continue
+#526 One Night Dream (Theme from Boggy)
+#525 Select B
+#527 Wheel of Fortune (Motif of Azteca)
+#528 Emperor (Motif of General)
+#529 Beginning of the end'
+
+  [Source]
+  Kaiser Knucle / Taito Zuntata
+  Pony Canyon / Scitron  PCCB-00159  Sep 21, 1994
+
+  [Sound Composer]
+  Yasuhisa Watanabe
+
+$end

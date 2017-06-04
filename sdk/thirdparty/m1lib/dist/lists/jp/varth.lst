@@ -1,0 +1,126 @@
+﻿$name=varth
+$version=2
+$default=032
+$songmax=108
+$main
+
+#032 CREDIT <time="1.5">
+#020 POD TYPE SELECT <time="46">
+#000 STAGE 1, 16 <time="2:25">
+#010 STAGE 1 BOSS "SPIDER" <time="1:03">
+#018 STAGE CLEAR <time="11">
+#001 STAGE 2 <time="1:46">
+#002 STAGE 3 <time="2:02">
+#011 STAGE 4, 21 <time="1:15">
+#012 STAGE 4, 21 BOSS "SATELLITE" <time="1:04">
+#007 STAGE 5, 10 <time="1:59">
+#008 STAGE 6, 26 <time="2:29">
+#013 STAGE 7, 22 BOSS "DRAGON FLY" <time="1:00">
+#006 STAGE 8 <time="1:37">
+#005 STAGE 9, 13 <time="1:58">
+#014 STAGE 11, 23 BOSS "CLOVER FORE" <time="1:12">
+#031 STAGE 12, 17 <time="1:55">
+#009 STAGE 14 <time="2:12">
+#015 STAGE 15, 24 BOSS "IRON GOLEM" <time="1:40">
+#003 STAGE 18, 28 <time="2:16">
+#016 STAGE 19, 25 BOSS "BLOODY HAWK" <time="1:19">
+#030 STAGE 20 BONUS STAGE <time="2:05">
+#004 STAGE 27 <time="2:11">
+#017 STAGE 29 BOSS "CARTRIDGE GUNNER" <time="1:12">
+#107 STAGE 30 LAST BOSS "DUO" (前半) <time="51">
+#108 STAGE 30 LAST BOSS "DUO" (後半) <time="2:10">
+#019 GAME CLEAR <time="12">
+#022 RANKING <time="9">
+#023 ENDING <time="30">
+#026 STAFF ROLL <time="1:26">
+#027 CONTINUE <time="25">
+#028 GAME OVER
+#021 NAME ENTRY <time="38">
+
+-----------------------------------------------------------
+ [Voices & SEs]
+
+#032 [S.E.] Credit
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [Voice] Power Up
+#059 [Voice] 昇龍拳
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [Voice] Varth - Operation Thunderstorm
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [Voice] Machine Gun
+#092 [Voice] Wide Shot
+#093 [Voice] Laser
+#094 [Voice] Homing
+#095 [Voice] Missle
+#096 [Voice] Napalm
+#097 [Voice] Gun Parts
+#098 [Voice] 1 up
+#099 [Voice] Max Power
+#100 [Voice] Bomber
+#101 [Voice] Shield
+#102 [Voice] Bonus Stage
+#103 [Voice] Power Keep
+#106 [S.E.]
+
+  ■出典
+  VARTH -G.S.M. CAPCOM 6- / ALFH LYRA
+  PONY CANYON / SCITRON  PCCB-00110  1993.02.19
+
+  ■作曲
+  ちよま～げ
+
+// List adjustment by bcass
+// List Updated by NK
+$end

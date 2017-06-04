@@ -1,0 +1,30 @@
+﻿$name=vf
+$version=2
+$default=018
+$fixed_volume=140
+$main
+
+#018 Sega Logo
+#019 Advertize
+#001 Game start
+#015 Jacky
+#003 Jeffry
+#016 Sarah
+#010 Kage
+#009 Pai
+#014 Wolf
+#005 Lau
+#004 Akira
+#013 Dural
+#007 Win
+#008 Lose
+#002 Continue
+#006 Ending
+#011 Name entry
+
+  [Source]
+  Virtua Fighter "saikyou no senshi" / B-univ
+  Toshiba EMI  TYCY-5386  Mar 23, 1994
+
+// English list adjustment by bcass
+$end

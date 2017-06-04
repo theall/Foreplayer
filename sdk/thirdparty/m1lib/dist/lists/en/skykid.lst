@@ -1,0 +1,42 @@
+﻿$name=skykid
+$default=0
+$main
+
+#00 Coin
+#01 BGM
+#02 Name Entry
+#03 Game Over Music
+#04 Round Music
+#05 Start Music
+#06 Balloon and Parashute Bursted, Counting Bonus
+#07 BGM Intro
+#08 Looping
+#09 Bomb Approaching
+#10 Crash (Hit by a friendly shot)
+#11 Barron's Shot, Counting Bonus
+#12 Max's Shot
+#13 AA Gun Explosion
+#14 Got a Bomg, Recovery from Crash
+#15 Destroyed an Aircraft
+#16 Destroyed a Ground Enemy
+#17 Destroyed a Target
+#18 Got a Hit
+#19 Crash
+#20 Extend Music
+#21 High Score Music
+#22 Barron, Max Explosion
+#23 Target Approaching
+#24 Midway Start
+#25 Landing
+#26 AA Gun Shot
+#27 Unused
+#28 Missed a Target
+
+  [Source]
+  Namco Video Game Music Programming Collection
+  Dempa  Apr 25, 1986
+
+  [Sound Composer]
+  Junko Ozawa
+
+$end

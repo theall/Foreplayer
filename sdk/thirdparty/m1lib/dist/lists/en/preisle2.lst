@@ -1,0 +1,57 @@
+﻿$name=preisle2
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#043 Attract Mode
+#127 [SFX] Coin
+#044 How to Play
+#045 Player Select
+#034 Stage 1 BGM 1
+#051 Defend People !
+#046 Stage 1 BGM 2
+#033 Stage 2 
+#038 Continue <time="10">
+#041 Stage 3 
+#037 Stage 4 
+#036 Stage 5
+#035 Boss BGM (Stage 1, 2, 3, 4, 5) 
+#048 Stage Clear !
+#047 Stage 6
+#048 You Made It !!!
+#050 Credits
+#039 Game Over
+#040 Name Entry <time="10">
+
+#042 Player Select (alt)
+#052 Unused 1
+#049 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#095 [SFX] Neo Geo Logo
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#127 [SFX] Coin
+
+  [Sound Composer]
+  Masahiko Hataya
+
+// List contribution by ZEK.
+// Checked by Fuj
+$end

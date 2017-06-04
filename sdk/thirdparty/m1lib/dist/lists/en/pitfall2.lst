@@ -1,0 +1,47 @@
+﻿$name=pitfall2
+$version=2
+$default=151
+$main
+
+#151 Credit Inserted
+#129 Scene 1 (Forest) BGM
+#132 Scene 2 (Ice Field) BGM
+#130 Balloon BGM
+#160 Scene 3 (Underground Mine) BGM
+#137 Scene 3 (Trolley) BGM
+#131 Scene 4 (Final) BGM
+#133 Congratulations
+#134 [SFX] Rope 
+#135 Player Dead 1
+#153 Player Dead 2
+#161 Game Over
+#136 Name Entry
+
+---------------------------------------------------
+  [SFX]
+
+#134 [SFX] Rope
+#144 [SFX] Key appearing
+#145 [SFX] Treasure appearing
+#146 [SFX] Taking on a trolley
+#147 [SFX] Treasure appearing 2
+#149 [SFX] Fall from a balloon, trolley broken
+#150 [SFX] ?
+#151 [SFX] Credit inserted, shutter of a trolley, bow
+#152 [SFX] Harry Jumped
+#162 [SFX] Volcanic bomb <time="8">
+#163 [SFX] Thunder <time="8">
+#164 [SFX] Counting time bonus  <time="5">
+#165 [SFX] Timer alarm 
+#166 [SFX] Falling
+#167 [SFX] Splashdown
+#168 [SFX] Volcanic bomb from a stone figure <time="5">
+#169 [SFX] Extend
+
+  [Source]
+  Sega Arcade 80's Vol.2
+  SME / Scitron  SCDC-00252  Mar 19, 2003
+
+// List contribution by ZEK.
+// Special Thanks to MAI-N
+$end

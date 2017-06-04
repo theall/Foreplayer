@@ -1,0 +1,126 @@
+﻿$name=wwfsstar
+$version=2
+$default=034
+$main
+
+#034 [Voice] Cheer <time="5.6">
+#002 Attract Mode
+#047 [SFX] Credit Inserted
+#010 Players Select
+#003 WWF Live from New York <time="10">
+#001 Introduction <time="5">
+#032 [SFX] Gong <time="1.5">
+#005 BGM 1
+#033 [SFX] Gongs <time="3">
+#009 Begin Next Match <time="9.3">
+#011 Demo BGM 1
+
+#007 BGM 2
+#012 Demo BGM 2
+#014 BGM 3
+#017 Demo BGM 3
+#019 Continue
+#016 Champion Entry
+#002 BGM 4
+#013 Congratulations BGM 1
+#004 WWF Live in Tokyo <time="12.5">
+#008 BGM 5
+#018 Congratulations BGM 2
+#020 Ending
+
+#006 Unused 1
+#015 Unused 2
+#023 Unused 3
+
+---------------------------------------------------
+ [SFX] 
+
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] Gong
+#033 [SFX] Gongs
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#082 [SFX] 
+#095 [SFX] <time="15">
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#104 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#034 [Voice] 
+#035 [Voice] 
+#043 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#103 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#110 [Voice] 
+
+// List contribution by ZEK.
+// English list and fixed by Fuj
+$end

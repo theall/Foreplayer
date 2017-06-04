@@ -1,0 +1,32 @@
+﻿$name=vcop
+$version=2
+$default=014
+$main
+
+#014 Virtua Cop
+#005 Advertise
+#002 Stage Select
+#006 Arms Black Market
+#001 Kong
+#012 Underground Weapon Storage
+#008 King
+#007 Gang Headquarters
+#009 President
+#016 Fang
+#015 F I N
+#010 Name Entry
+#004 Game Over
+#003 Stage Clear
+
+#011 Not on CD 1
+#013 Not on CD 2
+
+  [Source]
+  Virtua Cop / Sound Tracks
+  Toshiba EMI  TYCY-5478 - 5479  Jan 24, 1996
+
+  [Composition]
+  Hideaki Miyamoto, Kentarou Koyama
+
+// English list adjustment by bcass
+$end

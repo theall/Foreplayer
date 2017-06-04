@@ -1,0 +1,83 @@
+﻿$name=rainbow
+$version=2
+$default=$03
+$songmax=$f3
+$main
+
+$03 [NORMAL] READY <time="0:6.5">
+$06 [NORMAL] MAIN THEME
+$1a [NORMAL] 無敵
+$0c [NORMAL] 謎の手紙
+$04 [NORMAL] 隠しREADY
+$08 [NORMAL] HURRY UP!
+$07 [NORMAL] GOAL IN
+$09 [NORMAL] BOSS
+$0e [NORMAL] CLEAR
+$13 [NORMAL] いつわりEND
+$0b [ARKANOID] READY
+$17 [ARKANOID] GAME OVER
+$39 [DARIUS] READY
+$0d [DARIUS] COSMIC AIRWAY
+$0a [DARIUS] BOSS
+$0f [DARIUS] CLEAR
+$19 [DARIUS] REGISTER YOUR NAME
+$36 [FAIRLY LAND STORY] READY <time="0:4.3">
+$37 [FAIRLY LAND STORY] BGM
+$38 [FAIRLY LAND STORY] BOSS
+$05 [BUBBLE BOBBLE] READY <time="0:8">
+$10 [BUBBLE BOBBLE] BGM
+$12 [BUBBLE BOBBLE] DRAGON
+$14 ENDING #1
+$15 ENDING #2
+$18 REGISTER YOUR NAME
+
+$11 [BUBBLE BOBBLE] BGM -ver.2-
+$16 (CD未収録曲)
+
+-----------------------------------------
+ [S.E.]
+
+$1b [S.E.]
+$1c [S.E.]
+$1d [S.E.]
+$1e [S.E.]
+$1f [S.E.]
+$20 [S.E.]
+$21 [S.E.]
+$22 [S.E.]
+$23 [S.E.]
+$24 [S.E.]
+$25 [S.E.]
+$26 [S.E.]
+$27 [S.E.]
+$28 [S.E.]
+$29 [S.E.]
+$2a [S.E.]
+$2b [S.E.]
+$2c [S.E.]
+$2d [S.E.]
+$2e [S.E.]
+$2f [S.E.]
+$30 [S.E.]
+$31 [S.E.]
+$32 [S.E.]
+$33 [S.E.]
+$34 [S.E.]
+$35 [S.E.]
+$3a [S.E.]
+$3b [S.E.]
+$3c [S.E.]
+$3d [S.E.]
+$3e [S.E.]
+
+$f2 Sound test #1
+$f3 Sound test #2
+
+  ■出典
+  NINJA WARRIORS -G.S.M. TAITO 1-
+  PONY CANYON / SCITRON  D28B0001  1988.06.21
+
+  ■作曲
+  SPLATTER.A
+
+$end

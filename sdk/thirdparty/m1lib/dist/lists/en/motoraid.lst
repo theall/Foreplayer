@@ -1,0 +1,31 @@
+$name=mortoraid
+$version=2
+$default=7
+$main
+
+#07 Invitation (Logo)
+#13 Fearless Riders (Advertise)
+#12 Chase The Rival (Tutorial)
+#01 No Mercy! (Entry - Select)
+#04 Preliminary Heat (from Yendas)
+#08 Hyper Scramble (from Ido)
+#09 Outride The Wind (from Reef 8)
+#00 Frosty Night (from Junos)
+#03 Scorching Battle (from Bowel)
+#11 Cryptic Finals (from Segal)
+#10 Get The Future (Finish)
+#06 Sky-High Winner (Ending)
+#15 In Your Memories (Staff Roll)
+#14 Only The Victor (Name Entry)
+#05 Overcome Yourself (Game Over)
+
+#02 (Advertise)
+#16 Not on CD
+#17 Not on CD
+
+  [Source]
+  Motor Raid & Sega Water Ski
+  Marvelous Entertainment (MMV)  MJCA-00010  Nov 17, 1997
+
+// List by Fujix
+$end

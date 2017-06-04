@@ -1,0 +1,185 @@
+﻿$name=totcarn
+$version=2
+$default=152
+$main
+
+#152 [SFX] Coin <time="3">
+#207 [Voice] Total Carnage <time="3">
+#001 News Report
+#002 Theme 1 
+#014 Theme 2 
+#008 Theme 3 
+#009 Theme 4  
+#013 Theme 5 
+#012 Theme 6 
+#192 [SFX] Translation <time="3">
+#007 Mission Completed
+#011 Congratulations ! 
+#001 Name Entry
+
+#003 Unused 1
+#004 Unused 2
+#005 Unused 3
+#006 Unused 4
+
+---------------------------------------------------
+  [SFX]
+
+#016 [SFX] <time="3">
+#017 [SFX] <time="3">
+#048 [SFX] <time="3">
+#049 [SFX] <time="3">
+#050 [SFX] <time="3">
+#052 [SFX] <time="3">
+#054 [SFX] <time="3">
+#056 [SFX] <time="3">
+#057 [SFX] <time="3">
+#058 [SFX] <time="3">
+#060 [SFX] <time="3">
+#062 [SFX] <time="3">
+#063 [SFX] <time="3">
+#064 [SFX] <time="3">
+#065 [SFX] <time="3">
+#066 [SFX] <time="3">
+#067 [SFX] <time="3">
+#068 [SFX] <time="3">
+#070 [SFX] <time="3">
+#071 [SFX] <time="3">
+#072 [SFX] <time="3">
+#073 [SFX] <time="3">
+#074 [SFX] <time="3">
+#075 [SFX] <time="3">
+#076 [SFX] <time="3">
+#078 [SFX] <time="3">
+#079 [SFX] <time="3">
+#080 [SFX] <time="3">
+#081 [SFX] <time="3">
+#082 [SFX] <time="3">
+#083 [SFX] <time="3">
+#084 [SFX] <time="3">
+#086 [SFX] <time="3">
+#087 [SFX] <time="3">
+#088 [SFX] <time="3">
+#089 [SFX] <time="3">
+#090 [SFX] <time="3">
+#092 [SFX] <time="3">
+#093 [SFX] <time="3">
+#094 [SFX] <time="3">
+#095 [SFX] <time="3">
+#128 [SFX] <time="3">
+#129 [SFX] <time="3">
+#130 [SFX] <time="3">
+#131 [SFX] <time="3">
+#132 [SFX] <time="3">
+#133 [SFX] <time="3">
+#134 [SFX] <time="3">
+#135 [SFX] <time="3">
+#136 [SFX] <time="3">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="3">
+#140 [SFX] <time="3">
+#141 [SFX] <time="3">
+#142 [SFX] <time="3">
+#143 [SFX] <time="3">
+#144 [SFX] <time="3">
+#145 [SFX] <time="3">
+#146 [SFX] <time="3">
+#147 [SFX] <time="3">
+#148 [SFX] <time="3">
+#149 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="3">
+#152 [SFX] <time="3">
+#153 [SFX] <time="3">
+#154 [SFX] <time="3">
+#155 [SFX] <time="3">
+#156 [SFX] <time="3">
+#157 [SFX] <time="3">
+#158 [SFX] <time="3">
+#159 [SFX] <time="3">
+#160 [SFX] <time="3">
+#161 [SFX] <time="3">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#164 [SFX] <time="3">
+#165 [SFX] <time="3">
+#167 [SFX] <time="3">
+#168 [SFX] <time="3">
+#169 [SFX] <time="3">
+#170 [SFX] <time="3">
+#171 [SFX] <time="3">
+#172 [SFX] <time="3">
+#173 [SFX] <time="3">
+#174 [SFX] <time="3">
+#175 [SFX] <time="3">
+#176 [SFX] <time="3">
+#177 [SFX] <time="3">
+#178 [SFX] <time="3">
+#179 [SFX] <time="3">
+#180 [SFX] <time="3">
+#181 [SFX] <time="3">
+#182 [SFX] <time="3">
+#183 [SFX] <time="3">
+#184 [SFX] <time="3">
+#185 [SFX] <time="3">
+#186 [SFX] <time="3">
+#187 [SFX] <time="3">
+#188 [SFX] <time="3">
+#189 [SFX] <time="3">
+#192 [SFX] <time="3">
+#194 [SFX] <time="3">
+#195 [SFX] <time="3">
+#196 [SFX] <time="3">
+#198 [SFX] <time="3">
+#201 [SFX] <time="3">
+#212 [SFX] <time="3">
+#213 [SFX] <time="3">
+#220 [SFX] <time="3">
+#221 [SFX] <time="3">
+#222 [SFX] <time="3">
+#223 [SFX] <time="3">
+#224 [SFX] <time="3">
+#225 [SFX] <time="3">
+#226 [SFX] <time="3">
+#227 [SFX] <time="3">
+#234 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#193 [Voice] <time="3">
+#197 [Voice] <time="3">
+#199 [Voice] <time="3">
+#200 [Voice] <time="3">
+#202 [Voice] <time="3">
+#203 [Voice] <time="3">
+#204 [Voice] <time="3">
+#205 [Voice] <time="3">
+#206 [Voice] <time="3">
+#207 [Voice] Total Carnage <time="3">
+#208 [Voice] <time="3">
+#209 [Voice] <time="3">
+#210 [Voice] <time="3">
+#211 [Voice] <time="3">
+#228 [Voice] <time="3">
+#232 [Voice] <time="3">
+#235 [Voice] <time="3">
+#236 [Voice] <time="3">
+#237 [Voice] <time="3">
+#239 [Voice] <time="3">
+#240 [Voice] <time="3">
+#241 [Voice] <time="3">
+#243 [Voice] <time="3">
+#244 [Voice] <time="3">
+#245 [Voice] <time="3">
+#246 [Voice] <time="3">
+#247 [Voice] <time="3">
+#248 [Voice] <time="3">
+#250 [Voice] <time="3">
+#251 [Voice] <time="3">
+#252 [Voice] <time="3">
+
+// List contribution by ZEK.
+// English list QC and updated by Fuj
+$end

@@ -1,0 +1,21 @@
+﻿$name=triothep
+$version=2
+$default=050
+$songmax=078
+$main
+
+#050 Character Select
+#046 Theme of Kamakura
+#045 Theme of Tough Guy
+#044 Theme of Rose
+#047 Ending (Credits Roll)
+#051 Game Over
+
+#073 [Voice] Attack
+#074 [Voice] Shake Up
+#075 [Voice] Player Damaged
+#076 [Voice] Enemy Killed
+#077 [Voice] Enemy Damaged
+#078 [Voice] Mater Chin lost
+
+$end

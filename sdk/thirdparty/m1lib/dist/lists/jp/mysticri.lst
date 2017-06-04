@@ -1,0 +1,154 @@
+﻿$name=mysticri
+$version=2
+$default=045
+$main
+
+#045 [S.E.] Coin Inserted
+#001 Midnight Town (Stage 1) <time="3:08" fadeout="yes" fadeoutlength="10">
+#002 Boss BGM <time="3:13" fadeout="yes" fadeoutlength="10">
+#006 Stage Clear
+#012 Bonus Points <time="37" fadeout="yes" fadeoutlength="10">
+#004 Outskirts (Stage 2) <time="2:07" fadeout="yes" fadeoutlength="10">
+#008 Floating Turtles (Stage 3) <time="2:39" fadeout="yes" fadeoutlength="10">
+#005 Seabed (Stage 4) <time="2:28" fadeout="yes" fadeoutlength="10">
+#007 Castle (Stage 5) <time="2:45" fadeout="yes" fadeoutlength="10">
+#009 Fortress (Stage 6) <time="3:01" fadeout="yes" fadeoutlength="10">
+#003 Ranking <time="13">
+#010 Game Over
+#011 Unknown <time="35" fadeout="yes" fadeoutlength="10">
+
+  [Voices]
+
+#050 [Voice] 
+#051 [Voice] 
+#056 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#088 [Voice] 
+#112 [Voice] 
+#116 [Voice] 
+#119 [Voice] 
+#122 [Voice] 
+#124 [Voice] 
+#130 [Voice] 
+
+  [S.E.]
+
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] Coin Inserted
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#071 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#083 [S.E.] 
+#085 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#107 [S.E.]
+#109 [S.E.]
+#125 [S.E.] 
+#126 [S.E.] 
+#127 [S.E.] 
+#128 [S.E.] 
+#137 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#175 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] 
+#185 [S.E.] 
+#186 [S.E.] 
+#187 [S.E.] 
+#188 [S.E.] 
+#189 [S.E.] 
+#190 [S.E.] 
+#191 [S.E.] 
+#191 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+
+  ■作曲
+  渡辺 達也
+  S. Aizu
+
+// List contribution by Simon B., done in playing the game.
+// Updated by Fuj
+$end

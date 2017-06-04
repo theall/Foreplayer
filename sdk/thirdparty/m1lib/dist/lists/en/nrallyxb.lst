@@ -1,0 +1,21 @@
+﻿$name=nrallyxb
+$version=2
+$default=00
+$main
+
+#00 Extend
+#01 Bonus Tick
+#02 Collect Normal Flag
+#03 Collect S Flag
+#04 Smoke Cloud
+#05 Fuel Low
+#10 High Score
+#12 Level BGM
+#13 Level Finish
+#14 Bonus Round Start
+#15 Game Start
+#22 Service Mode Credit
+#23 Credit
+$end
+
+//Basic Listing by Tafoid

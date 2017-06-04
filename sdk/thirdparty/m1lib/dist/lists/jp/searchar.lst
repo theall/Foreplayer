@@ -1,0 +1,100 @@
+﻿$name=searchar
+$version=2
+$default=078
+$main
+
+  [BGM]
+
+#078 SAR Title Screen 
+#191 [SE] COIN INSERTION
+#079 Introduction -THE VANISHED PIONEER SPACE SHIP- ～ STAFF ROLL 
+#067 SECTION 1-0～1-2 
+#081 SECTION 1-3 - BOSS MECH-TYPE "CHAGAMAN" 
+#069 SECTION 2-0～2-2
+#084 SECTION 2-3 - BOSS MECH-TYPE "CHONMA-G TANK" 
+#074 SECTION 3-0～3-4
+#083 SECTION 3-5 - BOSS BIO-TYPE "DEVIL SNAKE"
+#076 SECTION 4-0～4-2
+#085 SECTION 4-3 - BOSS BIO-TYPE "BIG GERM"
+#080 END
+#086 GAME OVER
+
+#068 SECTION 1-0～1-2 (Alt)
+#070 SECTION 2-0～2-2 (Alt)
+#073 SECTION 3-0～3-4 (Alt)
+#077 SECTION 4-0～4-2 (Alt)
+
+---------------------------------------------------
+  [SE]
+
+#136 [SE] 
+#138 [SE] 
+#139 [SE] 
+#140 [SE] 
+#141 [SE] 
+#142 [SE] 
+#143 [SE] 
+#144 [SE] 
+#150 [SE] 
+#151 [SE] 
+#152 [SE] 
+#153 [SE] 
+#154 [SE] 
+#155 [SE] 
+#157 [SE] 
+#158 [SE] 
+#159 [SE] 
+#160 [SE] 
+#161 [SE] 
+#162 [SE] 
+#163 [SE] 
+#164 [SE] 
+#165 [SE] 
+#166 [SE] 
+#168 [SE] 
+#169 [SE] 
+#172 [SE] 
+#174 [SE] 
+#175 [SE] 
+#176 [SE] 
+#177 [SE] 
+#179 [SE] 
+#191 [SE] COIN INSERTION
+#194 [SE] 
+#195 [SE] 
+#197 [SE] 
+#198 [SE] 
+#199 [SE] 
+#200 [SE]
+#201 [SE]
+#202 [SE]
+#204 [SE]
+#205 [SE]
+#206 [SE]
+#208 [SE]
+#209 [SE]
+#210 [SE]
+#212 [SE]
+#213 [SE]
+#214 [SE]
+#215 [SE]
+#216 [SE]
+#217 [SE]
+#218 [SE]
+#219 [SE]
+#220 [SE]
+#221 [SE]
+
+---------------------------------------------------
+  [Voice]
+
+#192 [Voice] 
+#193 [Voice] 
+#222 [Voice] bug
+
+
+  ■作曲
+  Hinjakun
+
+// List contribution by Simon B., done in playing the game.
+$end

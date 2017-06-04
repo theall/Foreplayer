@@ -1,0 +1,22 @@
+﻿$name=rastan
+$version=2
+$default=004
+$fixed_volume=100
+$main
+
+#004 Credit
+#025 Broken The Promises (Opening)
+#026 Aggressive World (Scene 1)
+#039 Scene Clear
+#027 Re-In-Carnation (Scene 2)
+#028 The Devil Boss Carnival (Scene 3 Boss)
+#029 Final Destroy (Scene 3 Round 6 Boss)
+#032 The Man Of Saga (Ending)
+#031 Bad Bible (Name Regist)
+#004 Game Over
+
+  [Source]
+  Kyuukyoku Tiger -G.S.M. Taito 2-
+  Pony Canyon / Scitron  D28B0008  Nov 21, 1988
+
+$end

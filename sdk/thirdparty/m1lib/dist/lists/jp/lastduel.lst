@@ -1,0 +1,75 @@
+﻿$name=lastduel
+$version=2
+$default=032
+$fixed_volume=115
+$main
+
+#032 Credit <time="0:03.5">
+#033 Opening <time="0:13">
+#042 Player Select <time="0:39.2">
+// only for 2 players mode
+#034 Startup <time="0:03.5">
+#044 Galden's Route (Stage 1) <time="2:17.1">
+#049 Boss <time="1:06.5">
+#050 Stage Clear <time="0:05.5">
+#043 Mystery Zone (Stage 2) <time="2:28.9">
+#046 Dark Route (Stage 3) <time="3:27.9">
+#045 Burning Route (Stage 4) <time="2:51.3">
+#047 Frozen Route (Stage 5) <time="3:06.5">
+#048 Galden: Last Duel (Stage 6) <time="3:13.7">
+#051 Queen Sheeta (Ending 1) <time="0:50">
+#054 Fighting Scene (Ending 2) <time="1:03">
+#052 End Credits <time="0:34.5">
+#041 Continue <time="0:14">
+#036 Game Over <time="0:09">
+#037 Ranking Top <time="1:52">
+#039 Display Top <time="0:10">
+#038 Ranking 2位以下 <time="2:09.8">
+#040 Display 2位以下 <time="0:06">
+
+-----------------------------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#035 [S.E.]
+#053 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#080 [S.E.]
+
+  ■作曲
+  河本 圭代 (たまたま, Tamayo, Golden Tamayo, Tamasan)
+
+// List contribution by NK
+$end

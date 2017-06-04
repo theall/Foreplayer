@@ -1,0 +1,80 @@
+﻿$name=gwarrior
+$version=2
+$default=077
+$songmax=078
+$main
+
+#077 Credit
+#064 Player Select - Name Entry
+#065 Round Start
+#068 Stage 1 (MARS)
+#069 Stage 2 (ICE LAND)
+#070 Stage 3 (SATURN)
+#067 Next Battle Information
+#071 Stage 4 (SPACE)
+#072 Stage 5 (STATION)
+#066 Player Win
+#073 Stage 6 (EARTH)
+#078 All Stage Clear
+#076 Player Lose
+#074 Player Game Over
+#075 Ranking
+//
+//#066,#076の使い分けは以下
+//1P PLAY (VS.CPU) PLAYER WIN       -"> #066
+//                 PLAYER LOSE      -"> #076
+//                 PLAYER GAME OVER -"> #074
+//2P PLAY (MATCH)  EITHER WIN/LOSE  -"> #076
+//                 EITHER GAME OVER -"> #066
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+
+  ■出典
+  KONAMI GAME MUSIC Vol.2
+  ALFA RECORDS  28XA-86  1986.09.10
+
+$end

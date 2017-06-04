@@ -1,0 +1,101 @@
+﻿$name=sstriker
+$version=2
+$default=015
+$fixed_volume=256
+$main
+
+#015 Destiny & Ambition (Attract)
+#006 Inspire (Select / Round 6)
+#001 Sorcer Striker (Round 1)
+#007 Exclaim Targets (Boss 1)
+#013 Round Clear
+#002 Riot Dance (Round 2)
+#008 Spiral Locus (Boss 2)
+#003 Silent Anomaly (Round 3)
+#009 Rock The Accept (Boss 3)
+#004 Memorial Fragment (Round 4)
+#012 Devastating Disorder (Boss 4)
+#005 Organic Metal (Round 5)
+#010 Chaos Oppression (Boss 5)
+#011 Augmentative Greed (Boss 6)
+#016 Ever Lasting Emotion (Ending)
+#014 Game Over
+
+-----------------------------------------
+ [S.E.]
+
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+
+  ■出典
+  蒼穹紅蓮隊 御徳用 / SEGA SATURN
+  EAV  T-10626G  1997
+
+  ■作曲
+  本山 淳弘
+
+$end

@@ -1,0 +1,79 @@
+﻿$name=toutrun
+$version=2
+$default=145
+$songmax=195
+$main
+
+#145 VIVACIOUS (Opening) <time="00:46">
+#150 Shake the Street (BGM 1) <time="03:15">
+#147 A Huge Pile of Parts (Parts Select) <time="00:36">
+#144 Rush a Difficulty (BGM 2) <time="03:24">
+#149 Who are You (BGM 3) <time="04:27">
+#146 Keep Your Heart (BGM 4) <time="04:00">
+#151 Checker Flag (Ending)
+#148 Easy going (Name Entry)
+
+-----------------------------------------
+ [S.E.]
+
+#129 [S.E.] 爆発
+#130 [S.E.]
+#131 [S.E.] ブレーキ
+#132 [S.E.] ブレーキ
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.] サイレン
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#152 [S.E.] スタートランプ (READY)
+#153 [S.E.] スタートランプ (START)
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+
+#168 [Voice] Check point!
+#169 [Voice] Very good!
+#170 [Voice] Excellent!
+#171 [Voice] Challenge again
+#172 [Voice] Welcome to the car
+#173 [Voice] Congratulations!
+#174 [Voice] Ouch!
+#175 [Voice] Special turbo
+#176 [Voice] High glip tire
+#177 [Voice] Get ready?
+#178 [Voice] Good luck
+#179 [Voice] High power engine
+#180 [Voice] We set your car.
+#181 [Voice] Arrested the red car. Roger.
+#182 [Voice] Ouch!
+#183 [Voice] Yeoow!
+#188 [Voice] Automatic
+#189 [Voice] Manual
+#190 [Voice] All right
+#191 [Voice] Select transmission
+#192 [Voice] All right
+#193 [Voice] Take a hike, pal!
+#194 [Voice] Ugh!
+#195 [Voice] Ugh!
+
+  ■出典
+  SUPER SONIC TEAM -G.S.M. SEGA 3-
+  PONY CANYON / SCITRON  PCCB-00009  1989.10.21
+
+  ■作曲
+  高木 保浩 (YAS, ケロタン)
+  川口 博史 (Hiro)
+
+// 作曲者情報提供：Cratchさん
+$end

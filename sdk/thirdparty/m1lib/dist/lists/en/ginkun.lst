@@ -1,0 +1,38 @@
+﻿$name=ginkun
+$version=2
+$default=1
+$fixed_volume=172
+$main
+
+#001 Theme of Ganbare Ginkun <time="43">
+#002 As You Like It 1
+#003 As You Like It 2
+#004 Eraberu Waltz
+#005 Here It Comes <time="6">
+#006 Beyond the Stratosphere
+#007 Flamenco of Bull
+#008 King of Curry
+#009 Rub-a-Dub Africa
+#010 Chin-Polka
+#011 Les Feuilles de Marronnier
+#012 Hawaiian Feeling
+#013 Don Boogaloo
+#014 Welcome to Chatan Branch Shop
+#015 Gin's Bar
+#016 Ganbare Shirogumi
+#017 FSF?!
+#018 Cowbunga! <time="7">
+#019 Thank Goodness <time="7">
+#020 How Cruel! <time="7">
+#021 Hopeless <time="4">
+#022 Lucky Balboa Fanfare <time="4">
+#023 See You Next Week <time="8">
+#024 Happy-go-lucky Duo
+#025 Game Over <time="5">
+#026 Love Theme of Ganbare Ginkun <time="1:00">
+
+  [Source]
+  Ganbare Gin-kun
+  Pony Canyon / Scitron  PCCB-00202  Dec 16, 1995
+
+$end

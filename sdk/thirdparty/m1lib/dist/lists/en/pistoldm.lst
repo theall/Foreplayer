@@ -1,0 +1,37 @@
+﻿$name=pistoldm
+$version=2
+$fixed_volume=100
+$default=005
+$main
+
+#005 Chapter of Departure - Let's Get Started
+#003 Chapter of Departure - Theme of Pistol Daimyo
+#002 Chapter of Departure - Sakuranosuke
+#013 Chapter of Naughty Kappa - Frog Song
+#011 Chapter of Ninja Troop - Mokumokunosuke
+#010 Chapter of Odoro Religion - Invocation
+#014 Chapter of Kurofune - Oceanic Cats
+#006 Chapter of Kurofune - Xavier, Hello!
+#007 Chapter of Kurofune - Xevier, Hello! (end)
+#012 Chapter of Gonsuke Troop - Game
+#009 Chapter of Gonsuke Troop - Cowbunga!! Round Clear
+#008 Ending (Song Title : Hinawamaru Counting Rhymes)
+#015 Name Entry
+#004 Game Over
+
+#000 Speaker Test
+#001 Chapter of Departure - Theme of Pistol Daimyo (Alt Ver.)
+#016 ??? 2
+#017 ??? 3
+
+  [OST]
+  Namco Video Game Graffiti Vol.7
+  Victor Entertainment  VICL-8004  May 1, 1991
+
+  [Sound Composers]
+  Seiichi Sakurai, Shinji Hosoe, Yoshie Takayanagi
+
+  [Sound Adapter]
+  Yoshie Takayanagi
+
+$end

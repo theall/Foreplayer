@@ -1,0 +1,39 @@
+﻿$name=g_rkni
+$version=2
+$default=160
+$songmax=255
+$main
+
+#160 Konami Logo
+#185 Interlude <time="0:57" fadeout="yes" fadeoutlength="10">
+#161 Stage Intro
+#162 Stage 1-1 <time="2:27" fadeout="yes" fadeoutlength="10">
+#163 Stage 1-2 <time="1:50" fadeout="yes" fadeoutlength="10">
+#168 Stage 2-1 <time="1:51" fadeout="yes" fadeoutlength="10">
+#171 Stage 2-2 <time="2:24" fadeout="yes" fadeoutlength="10">
+#164 Stage 3 <time="2:07" fadeout="yes" fadeoutlength="10">
+#176 Stage 4 <time="1:27" fadeout="yes" fadeoutlength="10">
+#170 Stage 5-1 <time="2:11" fadeout="yes" fadeoutlength="10">
+#177 Stage 5-2 <time="3:32" fadeout="yes" fadeoutlength="10">
+#180 Stage 5-2 (No Intro) <time="3:25" fadeout="yes" fadeoutlength="10">
+#169 Stage 6 <time="2:01" fadeout="yes" fadeoutlength="10">
+#173 Stage 7 <time="2:32" fadeout="yes" fadeoutlength="10">
+#174 Stage Clear
+#165 Miniboss <time="1:11" fadeout="yes" fadeoutlength="10">
+#166 Boss <time="2:11" fadeout="yes" fadeoutlength="10">
+#187 Boss (Fast Version) <time="1:30" fadeout="yes" fadeoutlength="10">
+#183 Final Boss Intro
+#175 Final Boss <time="1:48" fadeout="yes" fadeoutlength="10">
+#179 Continue? <time="2:03" fadeout="yes" fadeoutlength="10">
+#184 Ending
+#188 Congratulations! <time="0:24" fadeout="yes" fadeoutlength="10">
+#181 Staff Roll
+#186 Game Over
+
+  [Sound Composer]
+  Masanori Oouchi, Masanori Adachi, Aki Hata, Hiroshi Kobayashi, Michiru Yamane
+
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

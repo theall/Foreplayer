@@ -1,0 +1,33 @@
+﻿$name=aircombj
+$version=2
+$default=043
+$main
+
+#043 THEME
+//#052 THEME
+//#056 THEME
+//#060 THEME
+//#069 THEME
+//#073 THEME
+#112 DOG FIGHT
+//#116 DOG FIGHT
+//#120 DOG FIGHT
+//#124 DOG FIGHT
+#128 VICTORY WAS OURS
+#032 FORMATION FLIGHT
+#144 WINNING RUN
+//#148 WINNING RUN
+//#152 WINNING RUN
+
+#039 THEME w/o intro
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.10
+  VICTOR ENTERTAINMENT  VICL-40097, 40098  1993.12.16
+
+  ■作曲
+  川田 宏行
+
+// リスト作成：みん☆さん
+// Updated by Fuj
+$end

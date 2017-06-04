@@ -1,0 +1,22 @@
+﻿$name=sengekis
+$version=2
+$default=001
+$fixed_volume=100
+$main
+
+#001 Attract Mode
+#002 Stage 1, 6
+#003 Stage 2, 7
+#004 Stage 3, 8
+#005 Stage 4, 9
+#006 Boss BGM 1 (Stage 1 - 4, 6 - 9)
+#009 Stage Clear
+#007 Stage 5, 10
+#010 Game Over
+#008 Name Entry
+
+  [Sound Composer]
+  Yukihiko Murabayashi
+
+// List contribution by ZEK.
+$end

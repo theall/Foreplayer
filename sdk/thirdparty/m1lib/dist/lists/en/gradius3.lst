@@ -1,0 +1,135 @@
+﻿$name=gradius3
+$version=2
+$default=072
+$fixed_volume=283
+$main
+
+#072 Coin
+#140 Prelude of Legend (Title)
+#137 Invitation (Equipment Selection)
+#128 Departure for Space (Intro Battle 1) 
+#160 Departure for Space -Type B- (Intro Battle 1B) 
+#152 Try to Star (Intro Battle 2) 
+#129 Sand Storm (Stage 1) 
+#133 Aqua Illusion (Stage 2) 
+#134 In The Wind (Stage 3-1)
+#153 Underground (Stage 3-2) 
+#159 Congratulations (Ending - Beginner)
+#151 High Speed Dimension (Stage 4)
+#132 Easter Stone (Stage 5) 
+#155 Dead End Cell (Stage 6) 
+#157 Fire Scramble (Stage 7)
+#139 Cosmo Plant (Stage 8)
+#130 Crystal Labyrinth (Stage 9) 
+#141 Gradius I Boss (Boss)
+#142 Salamander Boss (Boss)
+#149 Gradius II Boss (Boss) 
+#138 Mechanical Base (Stage 10-1)
+#156 Final Shot (Stage 10-2)
+#131 Dark Force (Boss)
+#154 Escape to The Freedom (Break-out)
+#158 Return to The Star (Ending)
+#135 Game Over
+#136 King of Kings (Ranking)
+#143 A Long Time Ago (Stage 3 - Secret BGM)
+#147 Power of Anger (Secret Stage / from Salamander Stg.1)
+#146 Poison of Snake (Secret Stage / from Salamander Boss)
+#145 Challenger 1985 (Secret Stage / from Gradius Stg.1)
+#150 Aircraft Carrier (Secret Stage / from Gradius Boss)
+#144 Beginning of the History (Unused / from Gradius ACM)
+#148 Maximum Speed  -Gradius III version- (Unused)
+#161 Ranking 2 (Unused)
+
+-----------------------------------------------
+
+#001 [SFX] Normal shot
+#002 [SFX] Double
+#003 [SFX] Laser
+#004 [SFX] Ripple
+#005 [SFX] Missle
+#006 [SFX] Hit on steel or wall
+#007 [SFX] Laser shot from Big Core Mk-III
+#008 [SFX] Laser shot from boss
+#009 [SFX] Destroyed a small enemy 1
+#010 [SFX] Destroyed a small enemy 2
+#011 [SFX] Destroyed a small enemy 3
+#012 [SFX] ?
+#013 [SFX] Destroyed Dakker
+#014 [SFX] Chosen
+#015 [SFX] Destroyed Gregolem and Wyvern
+#016 [SFX] Blooding Weed appeared
+#017 [SFX] Cubes bonded
+#018 [SFX] Cubes destroyed
+#019 [SFX] Destroyed a bud in stage 8
+#020 [SFX] ?
+#021 [SFX] Shooting enemy in stage 6
+#022 [SFX] Big bubble split
+#023 [SFX] Small bubble split
+#024 [SFX] Disrupt
+#027 [SFX] Destryoed bubble
+#028 [SFX] Force field weaken
+#029 [SFX] Destroyed enemy fortress in stage 10
+#030 [SFX] Destroyed spider in stage 1
+#031 [SFX] Shot E-Laser
+#032 [SFX] Charging E-Laser
+#033 [SFX] ?
+#034 [SFX] Shot cell wall in stage 6
+#035 [SFX] Walls breaking down in stage 10
+#036 [SFX] ?
+#037 [SFX] ?
+#038 [SFX] ?
+#040 [SFX] ?
+#041 [SFX] ?
+#048 [SFX] ?
+#049 [SFX] ?
+#050 [SFX] Volcanic bomb
+#051 [SFX] Destroyed Sand Dragon in stage 1
+#052 [SFX] Lost Option
+#053 [SFX] Option Hunter appering
+#064 [SFX] Got a capsule
+#065 [SFX] Selection
+#066 [SFX] Destroyed Dakker
+#067 [SFX] Erruption
+#068 [SFX] Mega-Crash
+#069 [SFX] Decision
+#070 [SFX] Ending
+#071 [SFX] Got enemie's shot
+#072 [SFX] Credit
+#073 [SFX] Escape 2
+#074 [SFX] Extend
+#075 [SFX] Destroyed Dakker
+#076 [SFX] Destroyed Sand Dragon in stage 1
+#077 [SFX] ?
+#078 [SFX] Option
+#079 [SFX] Escape 2
+#080 [Voice] double
+#081 [Voice] laser
+#082 [Voice] missile
+#083 [Voice] multiple
+#084 [Voice] force field
+#085 [Voice] 2 way
+#086 [Voice] shield
+#087 [Voice] speed up
+#088 [Voice] destroy them all
+#089 [Voice] destroy the core
+#090 [Voice] destroy the eye
+#091 [Voice] destroy the mouse
+#092 [Voice] destroy the chest
+#093 [Voice] warning
+#094 [Voice] I was born out of the greediness of mankind
+#095 [Voice] while mem exist so will I
+#096 [Voice] oaarrrghghgh
+#097 [Voice] ahaaa
+#098 [Voice] aarrgh
+
+  [Source & OSTs]
+  Gradius III & MIDI Power ver. 2.0
+
+  Gradius III
+  King Records  KICA-1101  Feb 21, 1990
+
+  Gradius Arcade Soundtrack
+  Konami Music Entertainment  KMCA-155, 156  Apr 3, 2002
+
+// English list adjustment by bcass
+$end

@@ -1,0 +1,29 @@
+﻿$name=g_aspg
+$version=2
+$default=$0
+$songmax=65536
+$main
+
+$0000 Mariner's Dance (plays much too fast, requires writing 0x03 to 0x002a before song command)
+$1900 William Tell
+$2700 1812 Overture (Finale)
+$2900 Radetzky March
+$5d00 Rondo Alla Turca
+$6600 Pizzicato Polka
+$8600 Persian March. Opus 289
+$a400 Hungarian Dance No. 5
+$a700 Horn Concerto No. 4
+$ac00 Air (On the G String)
+$b200 Grand March from Aida
+$df00 Sabre Dance from Gayaneh
+$0501 The Entry of the Nobles
+$1801 Anitra's Dance
+$2201 Egyptian March. Opus 335
+$3e01 Troika
+$5501 Minuet
+$6601 Montagues and Capulets
+$7901 Toreador's March
+$8801 Tritch-Tratch Polka
+
+// Basic list contributed by Knurek
+$end

@@ -1,0 +1,45 @@
+﻿$name=stcc
+$version=2
+$default=001
+$fixed_volume=113
+$main
+
+  ■avex
+#001 So High / Channel X
+#003 Are u Wake up? / Starr Gazer
+#002 Don't Drop Me / Ann Sinclair
+
+  ■TRANCE
+#007 Intence / Ebizoo
+#014 Rising High / Yuki Kubo
+#010 Brave Nu Charge / Yoji Biomehanika
+#009 Sonic Drive / Ryo Arai
+
+  ■SEGA Sound
+#008 Higher Streamer / Sei Matsumura
+#004 Condition RED / Sei Matsumura
+#006 Loose Control / Hiro
+#005 Target / Hiro
+#011 Inductee / Hidenori Shoji
+#012 Cool Tropics / Yohsuke Takeda
+#017 Game Over
+
+#013 Interlude 1
+#015 Interlude 2
+#016 Interlude 3
+
+  ■サウンドトラック
+  セガ・ツーリングカー・チャンピオンシップ
+  Marvelous Entertainment (MMV)
+  MJCA-00002 / MJCA-10002  1997.10.17
+// MJCA-00002はセガサターン用お試しCD-ROM付き限定版
+
+  セガ レーシング ベスト
+  Marvelous Entertainment (MMV)
+  MJCA-00043  1999.03.03
+    &lt;"Higher Streamer", "Condition RED", "Loose Control", "Target"収録&gt;
+
+// List contribution by Toby
+// Japanese List by Fujix
+// Updated by NK
+$end

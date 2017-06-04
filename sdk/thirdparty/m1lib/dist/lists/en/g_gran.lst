@@ -1,0 +1,31 @@
+﻿$name=g_gran
+$version=2
+$default=$10
+$songmax=255
+$main
+
+$10 Advance "Granada" [Opening Theme] <time="1:52" fadeout="yes" fadeoutlength="10">
+$07 Heavy Line [Stage 1: Dead City] <time="2:37" fadeout="yes" fadeoutlength="10">
+$04 Windy Avenue [Stage 2: Carrier] <time="3:32" fadeout="yes" fadeoutlength="10">
+$06 Hopping Express [Stage 3: Underground City] <time="2:05" fadeout="yes" fadeoutlength="10">
+$01 Marching Way [Stage 4: Underground Cavern] <time="2:55" fadeout="yes" fadeoutlength="10">
+$0a Clap [Stage 1-4 Boss] <time="1:17" fadeout="yes" fadeoutlength="10">
+$0e Nature Trail [Stage 5: Mountains] <time="4:03" fadeout="yes" fadeoutlength="10">
+$09 Mountain Path [Stage 6: Fortress] <time="2:25" fadeout="yes" fadeoutlength="10">
+$0b Take a Chance [Stage 7: Destroyed Base] <time="2:08" fadeout="yes" fadeoutlength="10">
+$03 Bumpy Road [Stage 8: Volcano] <time="2:47" fadeout="yes" fadeoutlength="10">
+$0c Tap [Stage 5-8 Boss] <time="1:43" fadeout="yes" fadeoutlength="10">
+$02 Smashing Street [Stage 9: Enemy Base] <time="2:52" fadeout="yes" fadeoutlength="10">
+$0d Beat (Final Boss) <time="1:27" fadeout="yes" fadeoutlength="10">
+$0f Survivor Leon [Level Complete]
+$05 Good-bye "Granada" [Ending Theme]
+$08 Quick Cepter [Timer Low] <time="0:41" fadeout="yes" fadeoutlength="10">
+$12 IPL [Time Over]
+$11 Broken Oath [Game Over]
+
+  [Sound Composer]
+  Masaaki Uno, Motoi Sakuraba, Yasunori Shiono
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

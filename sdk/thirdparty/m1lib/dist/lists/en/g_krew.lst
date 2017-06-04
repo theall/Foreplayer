@@ -1,0 +1,26 @@
+﻿$name=g_krew
+$version=2
+$default=0
+$songmax=65536
+$main
+
+$0000 Opening Theme <time="3:33" fadeout="yes" fadeoutlength="10">
+$3c00 Stage Intro <time="0:16" fadeout="yes" fadeoutlength="10">
+$5500 Stage 1: Monstrocity <time="3:25" fadeout="yes" fadeoutlength="10">
+$6c00 Stage 2: Elevator Shaft <time="3:20" fadeout="yes" fadeoutlength="10">
+$8a00 Stage 3: Sewer Duct <time="3:23" fadeout="yes" fadeoutlength="10">
+$c700 Stage 4: Mars <time="2:54" fadeout="yes" fadeoutlength="10">
+$a800 Stage 5: Venus <time="3:04" fadeout="yes" fadeoutlength="10">
+$e300 Stage 6: Kadaver's Base <time="2:44" fadeout="yes" fadeoutlength="10">
+$1e00 Ending Theme <time="3:30" fadeout="yes" fadeoutlength="10">
+$3e00 Game Over
+$3d00 Sound Test #2
+$4300 Sound Test #5 <time="1:35" fadeout="yes" fadeoutlength="10">
+$fc00 Sound Test #12 <time="0:17" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Nathan McCree
+
+// M1 list contributed by Knurek
+// Tagging data from Project 2612
+$end

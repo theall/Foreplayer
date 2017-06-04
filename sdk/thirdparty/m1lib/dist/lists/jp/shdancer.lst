@@ -1,0 +1,128 @@
+﻿$name=shdancer
+$version=2
+$default=213
+$main
+
+#139 [Voice] 忍犬其のニ <time="2.5">
+#137 [Voice] 忍犬其の一 <time="0.7">
+#137 [Voice] 忍犬其の一 <time="0.9">
+#137 [Voice] 忍犬其の一 <time="0.7">
+#137 [Voice] 忍犬其の一 <time="0.4">
+#213 影の舞
+#170 [S.E.] Credit <time="2">
+#216 Mission 1 <time="4">
+#218 破壊工作を阻止せよ <time="6">
+#208 Stage 1-1,1-2 BGM 
+#212 Stage 1-3 Boss 
+#142 [Voice] 断末魔 1 <time="3.4">
+#216 Mission 1 Completed <time="4">
+#222 Bonus Stage <time="21">
+#228 You Failed! <time="2.5">
+#214 Mission 2, 補給ルートを断て <time="9.4">
+#210 Stage 2-1, 2-3
+#226 Stage 2-2
+#220 Stage 2-4 Boss 
+#143 [S.E.] 爆発音 <time="3">
+#216 Mission 2 Completed <time="4">
+#222 Bonus Stage <time="21">
+#227 Perfect! <time="4.5">
+#171 [S.E.] Extra <time="2.5">
+#216 Mission 3 <time="4">
+#218 地下組織を急襲せよ <time="6">
+#211 Stage 3-1, 3-2
+#219 Stage 3-3
+#133 [Voice] ウッ！<time="0.8">
+#168 [S.E.] 倒れ込む音 <time="2.3">
+#215 Continue? <time="9.9">
+#170 [S.E.] Credit <time="2">
+#131 [Voice] かたじけない <time="2.2">
+#221 Stage 3-4 Boss 
+#144 [Voice] 断末魔 2 <time="2">
+#216 Mission 4 <time="4">
+#218 敵の野望を打ち砕け <time="6">
+#209 Stage 4-1, 4-2
+#226 Stage 4-3
+#223 Stage 4-4 Boss 
+#145 [Voice] 断末魔 3 <time="5">
+#224 Ending 
+#218 Game Over <time="4.1">
+#217 Name Entry
+
+#218 Map
+#215 Continue? 
+#222 Bonus Stage 
+
+#225 未使用曲
+
+---------------------------------------------------
+ [S.E.]
+
+#143 [S.E.] 爆発音 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] <time="3">
+#150 [S.E.] <time="3">
+#151 [S.E.] <time="3">
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 倒れ込む音
+#169 [S.E.] 
+#170 [S.E.] Credit
+#171 [S.E.] Extra 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#175 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] <time="3">
+#184 [S.E.] <time="3">
+#185 [S.E.] <time="3">
+#186 [S.E.] <time="3">
+#187 [S.E.] <time="3">
+#188 [S.E.] 
+#189 [S.E.] 
+#190 [S.E.] 
+#191 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] <time="3">
+#194 [S.E.] <time="3">
+ 
+---------------------------------------------------
+ [Voice]
+
+#129 [Voice] たぁっ！<time="3">
+#132 [Voice] たぁっ！<time="3">
+#130 [Voice] とりゃぁあー！<time="3">
+#131 [Voice] かたじけない！<time="3">
+#133 [Voice] うっ！<time="2">
+#134 [Voice] 忍術其の一 <time="3">
+#130 [Voice] とりゃぁあー！<time="3">
+#135 [Voice] 忍術其のニ <time="3">
+#130 [Voice] とりゃぁあー！<time="3">
+#136 [Voice] 忍術其の三 <time="3">
+#130 [Voice] とりゃぁあー！<time="3">
+#137 [Voice] 忍犬其の一 <time="3">
+#139 [Voice] 忍犬其のニ <time="3">
+#140 [Voice] 忍犬其の三 <time="3">
+#141 [Voice] 忍犬其の四 <time="5">
+#142 [Voice] 断末魔 1 <time="3">
+#144 [Voice] 断末魔 2 <time="3">
+#145 [Voice] 断末魔 3 <time="5">
+
+  ■作曲
+  Tsukachan
+
+// List contribution by ZEK.
+$end

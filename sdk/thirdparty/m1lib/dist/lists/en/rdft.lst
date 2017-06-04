@@ -1,0 +1,45 @@
+﻿$name=rdft
+$version=2
+$default=$2
+$main
+
+$02 Opening Music
+//??  Credit Inserted
+$04 Player Select
+$03 Mission Briefing
+$05 Forest Stage "Task Force"
+$06 Moory Stage
+$07 Sea Stage
+$0d Big Enemy Area "Mui-Mui-Moo"
+$09 Train Stage
+$08 Snow Field Stage
+$0a High Altitude Stage
+$0b Enemy Nerve Stage "Invade your mind"
+$0e Boss
+$0c Stage Clear
+$12 Ending
+$13 Credits "Brought you peace again"
+$11 Name Entry
+??? Game Over (Completed)
+??? Game Over (Normal)
+
+$0f ?
+$10 ?
+
+$01 Writing Flash ROM
+
+  [Source]
+  Raiden Fighters PCB (SPI System)
+
+  The Onslaught Raiden Fighters Disc 1
+  INH  Jan 31, 2005
+
+  Raiden Fighters Jet Original Soundtrack
+  Bandai Music Entertainment  APCG-4039  Nov 21, 1998
+
+  [Sound Composer]
+  Gou Satou
+
+// List Contribution by Kayama
+// English list by Fujimon
+$end

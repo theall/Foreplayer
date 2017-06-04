@@ -1,0 +1,34 @@
+﻿$name=digdug2
+$version=2
+$default=0
+$songmax=21
+$main
+
+#00 Round start music
+#01 BGM
+#02 Hurry up music
+#03 Tumbling down
+#04 Game over music
+#05 Harpoon
+#06 Blowing up
+#07 Cracking
+#08 "ottotto" (whoops-a-daisy)
+#09 Unused
+#10 Name entry
+#11 Unused
+#12 Get a special item
+#13 Digdug touched a monster
+#14 Figer fires
+#15 Fall into the sea
+#16 Blowing out a monster
+#17 Digdug missed
+#18 Round clear
+#19 Extra
+#20 Coin Inserted
+#21 Fanfare 1,000,000 pts.
+
+  [Source]
+  Namco Video Game Music Programming
+  Dempa
+
+$end

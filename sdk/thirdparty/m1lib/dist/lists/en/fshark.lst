@@ -1,0 +1,45 @@
+﻿$name=fshark
+$version=2
+$default=023
+$songmax=025
+$fixed_volume=147
+$main
+
+#023 Credit
+#013 Sky Shark (Opening Theme) - Asia (BGM 1)
+#015 Asia (BGM 1)
+#016 Against The Attack (BGM 2)
+#017 Water Fromt (BGM 3)
+#018 Behind The Bush (BGM 4)
+#019 Last Fighter (BGM 5)
+#009 Triumph (Landing Theme)
+#020 Forgive Your All (Name Storage)
+#014 Restful (Game Over)
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#021 [SFX]
+#022 [SFX]
+#024 [SFX]
+#025 [SFX]
+
+  [Source]
+  Kyukyoku Tiger -G.S.M. Taito 2-
+  Pony Canyon / Scitron   D28B0008  Nov 21, 1988
+
+  [Sound Composer]
+  Tatsuya Uemura, Masahiro Yuge
+
+$end

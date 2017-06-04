@@ -1,0 +1,56 @@
+﻿$name=chplft
+$version=2
+$default=016
+$main
+
+#016 [S.E.] Credit
+#011 Ready <time="6.6">
+#001 Start <time="3.7">
+#002 Main Theme
+#004 Time Stop <time="10.5">
+#005 Endless Play Stopper <time="26">
+#008 Miss <time="3">
+#001 Start <time="3.7">
+#003 Shield <time="12.9">
+#006 Boss <time="40.8">
+#007 Clear <time="5">
+#009 Game Over <time="4">
+#010 All Clear, Name Entry
+
+#012 Clear Long Ver <time="01:10.8">
+#040 Start Ver.2 <time="9.2">
+#042 Main Theme Ver.2
+#041 Main Theme Ver.3
+
+#043 未使用曲 1
+#039 未使用曲 2
+#038 未使用曲 3 <time="9.3">
+#037 未使用曲 4
+
+---------------------------------------------------
+  [S.E.]
+
+#016 [S.E.] Credit
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#029 [S.E.] <time="5">
+
+// List contribution by ZEK.
+$end

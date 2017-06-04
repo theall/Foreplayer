@@ -1,0 +1,66 @@
+﻿$name=whp
+$version=2
+$default=002
+$fixed_volume=143
+$main
+
+    * Track names are textual quotations or 
+       literal translations of originals
+
+#002 Neo Geo Logo
+#025 ADK Logo
+
+#058 When I Fired The First Gun! (Opening)
+#017 How to Win (How to Play)
+#026 Select Heroes (Player Select)
+#027 VS
+#033 Flame Blade of Hell (Earth Genesis)
+#028 Victorious Demo
+#022 I.Z.A (Challenger Appeared)
+#036 Tri Service of Birds and Beasts (Jurassic Period)
+#032 Holy Ice Gorge (Glacial Age)
+#050 Go by Mammoth (Stone Age)
+#009 Sirius Rizing (Megalithic Civilization)
+#007 Ted (Medieval Times)
+#014 Halo in Asia (Genroku Period)
+#004 The Foreigner - Kitten Express (Industrial Revolution)
+#012 Symphony of Evil #2 (World War)
+#013 Big City (Modern Times)
+#019 Go to Front (Unused)
+#059 We Must Take Our Chances! (Zeus Appearing)
+#006 Zeus No.8; Appassionato (Spatiotemporal Dark Castle)
+#018 Shiver with Fright (Neo-Dio Appearing)
+#037 Murder -D- Act.2 (Final Showdown)
+#051 Ode to The Evening (Hanzou Hattori's Ending)
+#038 Monkeyish and Dumb Red Ninja (Kotarou Fuuma's Ending)
+#055 The Final Stroke (Dragon's Ending) 1
+#056 The Final Stroke (Dragon's Ending) 2
+#054 Let's Sun Ourselves (Janne's Ending)
+#021 To Ladies in The World (C. Carn's Ending)
+#053 Escape from The World of Madness (Muscle Power's Ending)
+#042 Go for It, Brocken (Brocken's Ending)
+#034 Merry-Go-Round (Rasputin's Ending)
+#024 Brother (Shura's Ending)
+#040 Dad Delights (Eric's Ending) 1
+#041 Dad Delights (Eric's Ending) 2
+#057 Merrymaker (Mudman's Ending)
+#052 In Pursuit of Universal Truth (J.Max's Ending)
+#015 Let Drop The Curtain (Ryoko Izumo's Ending) 1
+#049 Let Drop The Curtain (Ryoko Izumo's  Ending) 2
+#020 Yarow Domo (Captain Kidd's Ending)
+#035 Hunter's Night (Jack the Ripper's Ending)
+#043 Renegade Hero (Ryofu's Ending)
+#008 Best Stride (Son Gokuu's Ending)
+#039 Dark Hopes (Neo-Dio's Ending)
+#048 Love Forever (Credits Roll)
+#016 It'll Be Yet To Come (Cotinue)
+#010 Game Over
+#011 Ranking
+
+  [Source]
+  World Heroes Perfect / SNK, ADK
+  Pony Canyon / Scitron  PCCB-00185  Jul 21, 1995
+
+// List Contribution by NK
+// English translation by Fuji
+$end

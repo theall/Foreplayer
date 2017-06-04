@@ -1,0 +1,38 @@
+﻿$name=swat
+$version=2
+$default=179
+$main
+
+#179 Credit Inserted
+#130 Main Theme
+#129 Round Clear
+#133 Main Theme <time="6">
+#178 Alert! <time="2.5">
+#145 [SFX] Miss <time="2.5">
+#131 Game Over
+#132 Name Entry
+
+---------------------------------------------------
+  [SFX]
+
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#160 [SFX] 
+#161 [SFX]
+#162 [SFX]
+#178 [SFX] Alert!
+#179 [SFX] Credit
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+#186 [SFX] 
+#187 [SFX] 
+
+// List contribution by ZEK.
+$end

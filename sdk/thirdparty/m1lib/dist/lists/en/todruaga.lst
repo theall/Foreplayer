@@ -1,0 +1,55 @@
+﻿$name=todruaga
+$version=2
+$default=31
+$songmax=31
+$main
+
+#31 Credit Inserted
+#00 Round Start <time="6.5">
+#05 Main Music <time="27.2">
+#21 [SFX] Gate Opened <time="0.65">
+#01 Round Clear <time="4.2">
+#30 [SFX] Extend <time="1.8">
+#00 Round Start <time="6.5">
+#06 Music When a Dragon Appears <time="26">
+#27 Player Killed
+#00 Round Start <time="6.5">
+#07 Music When Druaga Appears <time="20">
+#01 Round Clear <time="4.2">
+#00 Round Start <time="6.5">
+#04 Music When Pricess Appears <time="19">
+#02 Congratulant Fanfare <time="10">
+#29 Name Entry, Congratulant Message
+#28 Game Over
+#03 Zapped
+#24 Unused
+
+#08 [SFX] Chime
+#09 [SFX] Slime moving
+#10 [SFX] Magic word
+#11 [SFX] Light-up
+#12 [SFX] Broken a wall
+#13 [SFX] Dragon's flame
+#14 [SFX] Drawing a sword
+#15 [SFX] Wielding a sword
+#16 [SFX] Crossing swords
+#17 [SFX] Putting up a sword
+#18 [SFX] Cut with a sword
+#19 [SFX] Unused
+#20 [SFX] Reflected magic word
+#21 [SFX] Opening a gate
+#22 [SFX] Obtaining a key
+#23 [SFX] Obtaining a chest
+#25 [SFX] Gill walking
+#26 [SFX] End of the credit inserted sound
+#30 [SFX] Extend
+
+  [Source]
+  The Best of Video Game Music
+  Alfa Records  32XA-66  Apr 25, 1986
+
+  Namco Video Game Music Programing
+  Dempa
+
+  
+$end

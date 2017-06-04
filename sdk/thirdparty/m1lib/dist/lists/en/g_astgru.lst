@@ -1,0 +1,28 @@
+﻿$name=g_astgru
+$version=2
+$default=$0201
+$songmax=65536
+$main
+
+$0201 Sound Test #1
+$0000 Sound Test #2
+$9600 Sound Test #3
+$6600 Sound Test #4
+$3a00 Sound Test #5
+$7700 Sound Test #6
+$a000 Sound Test #7
+$9500 Sound Test #8
+$2e01 Sound Test #9
+$3001 Sound Test #10
+$3201 Sound Test #11
+$3401 Sound Test #12
+$3601 Sound Test #13
+$5800 Sound Test #14
+$4701 Sound Test #15
+$5101 Sound Test #16
+$1800 Sound Test #17
+$c300 Sound Test #18
+$5201 Sound Test #19
+
+// Basic list contributed by Knurek
+$end

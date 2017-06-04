@@ -1,0 +1,26 @@
+﻿$name=xevious
+$version=2
+$default=0
+$main
+
+#00 Credit Sound
+#01 Game Start Music
+#02 Name Entry Music (1st)
+#03 Name Entry Music (2nd to 5th)
+#04 Extended
+#05 Enemy Flying Object Broken Down
+#06 Gal-Xacat Appears
+#07 Andor Genesis Appears
+#08 Xionites United
+#09 Xacat Appears
+#10 Zapper hit on a Bacula
+#11 Zapper Shot
+#12 Blaster Shot
+#13 Got a Special Flag
+#14 BGM
+
+  [Source]
+  Namco Video Game Music Library Vol.1
+  Dempa
+
+$end

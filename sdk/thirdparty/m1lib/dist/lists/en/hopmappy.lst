@@ -1,0 +1,29 @@
+﻿$name=hopmappy
+$version=2
+$default=0
+$songmax=13
+$fixed_volume=1100
+$main
+
+#000 Credit Inserted
+#001 Round Start - Main Music
+#002 Extend
+#003 Round Clear
+#004 Bonus Round
+#005 Miss
+#006 Game Over
+#007 Name Entry
+#008 Name Entry End
+#009 Hopper
+#010 Got a Target
+#011 Burst a Balloon
+#012 Time Out Warning
+#013 Bonus Round End
+
+  [Source]
+  All About Namco / Dempa
+  
+  [Sound Composer]
+  Nobuyuki Oonogi
+
+$end

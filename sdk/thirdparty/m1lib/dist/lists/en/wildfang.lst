@@ -1,0 +1,126 @@
+﻿$name=wildfang
+$version=2
+$default=001
+$main
+
+#001 Credit Inserted <time="3">
+#029 Title Screen <time="14">
+#048 Round 1
+#053 Round 1 Boss (Drago)
+#056 Round 1 Clear <time="9">
+#044 Map Preview <time="7">
+#049 Round 2
+#054 Round 2 Boss (Medusa)
+#057 Round 2 Clear <time="7">
+#044 Map Preview <time="7">
+#050 Round 3
+#061 Time Out
+#047 Continue?
+#055 Round 3 Boss (Iron)
+#058 Round 3 Clear <time="6.8">
+#044 Map Preview <time="7">
+#051 Round 4
+#045 Round 4 Boss (Uribou)
+#059 Round 4 Clear <time="5">
+#044 Map Preview <time="7">
+#052 Round 5
+#045 Round 5 Boss (Uribou)
+#046 Last Boss (Degromess)
+#060 All Round Cleared
+#063 The King of Kings
+#062 Game Over
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] <time="3">
+#002 [SFX] <time="3">
+#003 [SFX] <time="3">
+#005 [SFX] <time="3">
+#007 [SFX] <time="3">
+#008 [SFX] <time="3">
+#009 [SFX] <time="3">
+#010 [SFX] <time="3">
+#011 [SFX] <time="3">
+#012 [SFX] <time="3">
+#013 [SFX] <time="3">
+#015 [SFX] <time="3">
+#016 [SFX] <time="3">
+#017 [SFX] <time="3">
+#018 [SFX] <time="3">
+#019 [SFX] <time="3">
+#022 [SFX] <time="3">
+#028 [SFX] <time="3">
+#031 [SFX] <time="3">
+#032 [SFX] <time="3">
+#033 [SFX] <time="3">
+#034 [SFX] <time="3">
+#035 [SFX] <time="3">
+#036 [SFX] <time="3">
+#037 [SFX] <time="3">
+#038 [SFX] <time="3">
+#039 [SFX] <time="3">
+#040 [SFX] <time="3">
+#045 [SFX] <time="3">
+#046 [SFX] <time="3">
+#047 [SFX] <time="3">
+#048 [SFX] <time="3">
+#049 [SFX] <time="3">
+#050 [SFX] <time="3">
+#051 [SFX] <time="3">
+#052 [SFX] <time="3">
+#053 [SFX] <time="3">
+#054 [SFX] <time="3">
+#055 [SFX] <time="3">
+#056 [SFX] <time="3">
+#057 [SFX] <time="3">
+#058 [SFX] <time="3">
+#059 [SFX] <time="3">
+#060 [SFX] <time="3">
+#061 [SFX] <time="3">
+#062 [SFX] <time="3">
+#063 [SFX] <time="3">
+#064 [SFX] <time="3">
+#065 [SFX] <time="3">
+#066 [SFX] <time="3">
+#067 [SFX] <time="3">
+#068 [SFX] <time="3">
+#069 [SFX] <time="3">
+#070 [SFX] <time="3">
+#071 [SFX] <time="3">
+#072 [SFX] <time="3">
+#073 [SFX] <time="3">
+#074 [SFX] <time="3">
+#075 [SFX] <time="3">
+#076 [SFX] <time="3">
+#077 [SFX] <time="3">
+#078 [SFX] <time="3">
+#079 [SFX] <time="3">
+#080 [SFX] <time="3">
+#081 [SFX] <time="3">
+#082 [SFX] <time="3">
+#083 [SFX] <time="3">
+#084 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#014 [Voice] <time="5">
+#020 [Voice] <time="5">
+#021 [Voice] <time="5">
+#023 [Voice] <time="5">
+#024 [Voice] <time="5">
+#025 [Voice] <time="5">
+#026 [Voice] <time="5">
+#027 [Voice] <time="5">
+#030 [Voice] <time="5">
+#041 [Voice] <time="5">
+#042 [Voice] <time="5">
+#043 [Voice] <time="5">
+
+  [Sound Composer]
+  Mikio Saitou (Metal Yuhki)
+  Mayu
+
+// List contribution by ZEK.
+$end

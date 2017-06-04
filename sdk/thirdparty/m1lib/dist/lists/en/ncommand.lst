@@ -1,0 +1,175 @@
+﻿$name=ncommand
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#004 Attract Mode
+#145 [Voice] "Ninja !" <time="1.2">
+#146 [Voice] "Commando !"
+#176 [SFX] Credits Insertion <time="2.5">
+#011 Story (Introduction) <time="32.5">
+#006 Character Selection <time="53.5">
+#032 Story (Before the Stage) <time="13.5">
+#021 Mars Corporation Hideout (Stage 1) <time="2:37">
+#005 Boss (Stage 1) <time="57">
+#027 Entering in the Time-Machine <time="9">
+#010 Story <time="43">
+#008 The Egyptian Era (Stage2) <time="3:19">
+#033 Story (After the Mid-Boss)  <time="44">
+#020 Boss & Mid-Boss (Stage 2) <time="1:11">
+#015 Boss Death
+#026 Stage Clear
+#007 The Japanese Civil War Era (Stage 3) <time="2:01">
+#031 Mid-Boss (Stage 3) <time="45">
+#028 Boss (Stage 3) <time="1:03">
+#018 The Primitive Age (Stage 4) <time="1:04">
+#016 Boss & Mid-Boss (Stage 4) <time="1:38">
+#017 The Era of Three Countries (Stage 5) <time="2:21">
+#022 Boss & Mid-Boss (Stage 5) <time="2:33">
+#027 World War II (Stage 6) <time="1:58">
+#013 The Future Site of Mars Corporation (Stage 7) <time="1:21">
+#029 Boss (Stage 6) <time="1:20">
+#012 Last Boss (Stage 7) <time="39">
+#019 Story (Before the End) <time="16">
+#030 Ending Story
+#024 Ending Credits  <time="2:06">
+#025 Game Over
+#014 Attract Mode (short)
+#034 Unknown <time="45">
+
+  [Voices]
+
+#038 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#047 [Voice] 
+#050 [Voice] 
+#052 [Voice] 
+#062 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#082 [Voice] 
+#084 [Voice] 
+#094 [Voice]
+#111 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#120 [Voice]
+#122 [Voice]
+#123 [Voice]
+#124 [Voice]
+#125 [Voice]
+#126 [Voice]
+#128 [Voice]
+#145 [Voice] "Ninja !"
+#146 [Voice] "Commando !"
+
+  [SFX]
+
+#036 [SFX] 
+#037 [SFX] 
+#039 [SFX] 
+#040 [SFX]
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#048 [SFX] 
+#051 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#063 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#083 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#090 [SFX] 
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#112 [SFX]
+#113 [SFX]
+#119 [SFX]
+#121 [SFX]
+#129 [SFX]
+#144 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#176 [SFX] Credits Insertion <time="2.5">
+#178 [SFX] <time="2.5">
+#179 [SFX] <time="2.5">
+#180 [SFX] <time="2.5">
+#181 [SFX] <time="2.5">
+#197 [SFX]
+#198 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#207 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#217 [SFX]
+#219 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+
+
+// List contribution by Simon B., done in playing the game.
+$end

@@ -1,0 +1,99 @@
+﻿$name=mugsmash
+$version=2
+$default=020
+$songmax=094
+$main
+ 
+#020 Player Select
+#004 Map
+#023 Stage 1
+#022 Go to next Stage
+#013 Bonus Stage
+#016 Stage 2-1
+#008 Elevator
+#006 Elevator Arrival
+#009 Stage 2-2
+#010 Stage 3
+#014 Stage 4
+#012 Stage 5-1
+#011 Stage 5-2
+#017 Stage 5-3
+#015 Stage 6-1
+#010 Stage 6-2
+#014 Stage 6-3
+#013 Ending
+ 
+#007 (unused)
+#021 (unused)
+#024 (unused)
+ 
+ [Voice]&[S.E.]
+ 
+#093 (all)
+ 
+#071 [Voice]
+#072 [Voice]
+#073 [Voice]
+#074 [Voice]
+#076 [Voice]
+#077 [Voice]
+#078 [Voice]
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#082 [Voice]
+#083 [Voice]
+#084 [Voice]
+ 
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#075 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+
+//「ザ・コンバットライブス」と曲自体は同じですが、
+// こちらでは[S.E.]や[Voice]が鳴ります。
+$end

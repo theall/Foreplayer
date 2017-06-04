@@ -1,0 +1,49 @@
+﻿$name=hellfire
+$version=2
+$default=029
+$songmax=029
+$fixed_volume=100
+$main
+
+#029 Coin (Credit)
+#015 Ready to Go (Start) - Captain Lancer (Stage 1)
+#019 Captain Lancer (Stage 1)
+#020 Egypt (Stage 2)
+#018 Jumping Roll (Stage 3)
+#017 Mystic Green (Stage 4)
+#021 In Side Drive (Stage 5)
+#022 Last Dance (Stage 6)
+#016 Game is Over (Game Over)
+#023 Requiem (Name Entry)
+#026 Get a Chance (Continue)
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#024 [SFX]
+#025 [SFX]
+#027 [SFX]
+#028 [SFX]
+
+  [Source]
+  Toaplan Game Music Scene One / Tatsujin
+  Polystar  H24X-10005  Jun 25, 1989
+
+  [Sound Composer]
+  Tatsuya Uemura
+
+$end

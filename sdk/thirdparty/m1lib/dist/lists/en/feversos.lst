@@ -1,0 +1,29 @@
+﻿$name=feversos
+$version=2
+$default=8
+$songmax=14
+$main
+
+#008 Beat Attack (Title)
+#002 Battle Fighter (Player Select)
+#009 Dancing Bomber (Stage 1)
+#010 Hello, Mr. Cyborg (Stage 2)
+#012 Barofever (Stage 3)
+#011 Soul Supermarket (Stage 4)
+#013 Disco 999 (Stage 5)
+#003 One More Push (Boss)
+#004 Mirror Ball Shower (Clear)
+#007 True Boss
+#005 Go Bonkers (Ending)
+#006 Uotarou Makes Points Ever So Much (Name Entry)
+#001 Start with the Button A + B Pressed (Time Attack)
+
+  [Soundtrack]
+  Dangun Feveron / Cave
+  Scitron / Gamest  SGCD-0004  Dec 4, 1998
+
+  [Sound Composeres]
+  Ryuichi Yabuki, Nanpei Misawa
+
+// List contribution by R
+$end

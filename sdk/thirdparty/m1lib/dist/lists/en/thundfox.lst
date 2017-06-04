@@ -1,0 +1,89 @@
+﻿$name=thundfox
+$version=2
+$default=009
+$main
+
+#009 Demo <time="22">
+#049 Credit
+#011 Old War Filed (Stage 1)
+#017 Boss 1
+#010 Stage Clear
+#012 Air Fortress (Stage 2)
+#018 Break-out
+#010 Stage Clear
+#014 Sea (Stage 3)
+#016 Aircraft Carrier
+#017 Boss 1
+#010 Stage Clear
+#015 Mine (Stage 4)
+#010 Stage Clear
+#013 Enemy Base (Stage 5)
+#017 Boss 1
+#018 Boss 2
+#010 Stage Clear
+#016 Boss 3
+#010 Stage Clear
+#020 Ending
+#021 Game Over
+#019 Name Entry
+
+---------------------------------------------------
+  [SFX]
+
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX] <time="3">
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX] <time="3">
+#042 [SFX]
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#047 [Voice] 
+#048 [Voice] 
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+
+  [Sound Director]
+  Hisayoshi Ogura (OGR.)
+
+  [Sound Composer]
+  Kazuko Umino (Karu.)
+
+  [Sound Effects]
+  Pochi.
+
+// List contribution by ZEK.
+$end

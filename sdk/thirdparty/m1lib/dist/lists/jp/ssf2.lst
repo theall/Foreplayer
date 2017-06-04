@@ -1,0 +1,354 @@
+﻿$name=ssf2
+$version=2
+$default=061
+$fixed_volume=204
+$main
+
+#061 QSound Logo
+//Main QSound
+#051 Opening Demo <time="0:25">
+#052 Player Select <time="0:45.2">
+#063 Tournament <time="4">
+#053 VS. <time="5">
+#001 Ken Stage I <time="2:09">
+#017 Ken Stage II <time="0:48.9">
+#034 Ken Ending I <time="0:52">
+#033 Ken Ending II <time="1:24">
+//原曲  Wedding March (Mendelssohn)
+#002 Ryu Stage I <time="1:40.7">
+#018 Ryu Stage II <time="0:32.2">
+#035 Ryu Ending <time="1:03">
+#004 Chun-Li Stage I <time="1:47.3">
+#020 Chun-Li Stage II <time="0:32.3">
+#037 Chun-Li Ending I <time="0:53.7">
+#038 Chun-Li Ending II <time="0:39.4">
+#062 Chun-Li Ending III <time="0:41.1">
+#059 Bonus Stage <time="0:48.2">
+#016 Dee Jay Stage I <time="1:19.9">
+#032 Dee Jay Stage II <time="0:39.4">
+#050 Dee Jay Ending <time="0:59.7">
+#015 T. Hawk Stage I <time="1:16">
+#031 T. Hawk Stage II <time="0:35.7">
+#049 T. Hawk Ending <time="1:15">
+#013 Fei Long Stage I <time="1:15.2">
+#029 Fei Long Stage II <time="0:36.1">
+#047 Fei Long Ending <time="0:55.4">
+#014 Cammy Stage I <time="2:04.6">
+#030 Cammy Stage II <time="0:32.3">
+#048 Cammy Ending <time="1:36">
+#003 E. Honda Stage I <time="2:09.2">
+#019 E. Honda Stage II <time="0:34.8">
+#036 E. Honda Ending <time="0:51.4">
+#007 Guile Stage I <time="2:15.2">
+#023 Guile Stage II <time="0:57.8">
+#041 Guile Ending <time="0:50.4">
+#008 Dhalsim Stage I <time="1:46.8">
+#024 Dhalsim Stage II <time="0:59">
+#042 Dhalsim Ending <time="0:36">
+#005 Blanka Stage I <time="1:53.5">
+#021 Blanka Stage II <time="0:29.6">
+#039 Blanka Ending <time="0:38.2">
+#006 Zangief Stage I <time="1:51.8">
+#022 Zangief Stage II <time="0:33.5">
+#040 Zangief Ending <time="0:45.3">
+#054 Stage-End <time="5.8">
+#055 Continue <time="0:38.7">
+#056 Here Comes The New Challenger <time="4">
+#009 M. Bison Stage I <time="1:47.4">
+#025 M. Bison Stage II <time="0:31">
+#043 M. Bison Ending <time="0:54">
+#010 Balrog Stage I <time="1:55.7">
+#026 Balrog Stage II <time="0:56.7">
+#044 Balrog Ending <time="0:54.2">
+#011 Sagat Stage I <time="1:57.8">
+#027 Sagat Stage II <time="0:26.7">
+#045 Sagat Ending <time="0:41.1">
+#012 Vega Stage I <time="2:09.5">
+#028 Vega Stage II <time="0:57.7">
+#046 Vega Ending <time="0:32">
+#193 Congratulations! <time="1:11.8">
+#060 Staff Roll <time="2:49.9">
+#057 Game Over <time="4">
+#058 Ranking Display <time="4">
+
+#209 QSound Logo 2
+//Sub-QSound
+
+-----------------------------------------------------------
+ [Voice]
+
+#171 [Voice] Round
+#172 [Voice] Fight
+#173 [Voice] Final
+#174 [Voice] You
+#175 [Voice] Win
+#176 [Voice] Lose
+#484 [Voice] Wins
+#485 [Voice] Loses
+#483 [Voice] Versus
+#177 [Voice] Perfect
+#454 [Voice] 0
+#455 [Voice] 1
+#456 [Voice] 2
+#457 [Voice] 3
+#458 [Voice] 4
+#459 [Voice] 5
+#460 [Voice] 6
+#461 [Voice] 7
+#462 [Voice] 8
+#463 [Voice] 9
+#464 [Voice] Ryu
+#465 [Voice] Ken
+#466 [Voice] Chun-Li
+#467 [Voice] Guile
+#468 [Voice] E. Honda
+#469 [Voice] Honda
+#470 [Voice] Blanka
+#471 [Voice] Dhalsim
+#472 [Voice] Zangief
+#473 [Voice] Bison
+#474 [Voice] Balrog
+#475 [Voice] Sagat
+#476 [Voice] Vega
+#477 [Voice] T. Hawk
+#478 [Voice] Hawk
+#479 [Voice] Fei Long
+#480 [Voice] Cammy
+#481 [Voice] Dee Jay
+#178 [Voice] Japan
+#179 [Voice] U.S.A.
+#180 [Voice] China
+#181 [Voice] Brazil
+#182 [Voice] India
+#183 [Voice] U.S.S.R.
+#184 [Voice] Spain
+#185 [Voice] Thailand
+#186 [Voice] Mexico
+#187 [Voice] Hong Kong
+#188 [Voice] England
+#189 [Voice] Jamaica
+#482 [Voice] You are the champion!
+
+  KEN
+#101 [Voice] 「昇龍拳」 (昇龍拳)
+#102 [Voice] 「波動拳」
+#103 [Voice] 「竜巻旋風脚」
+#104 [Voice] 「ヤァッ！」 (背負い投げ、地獄車)
+#105 [Voice] 「ゥワァァ…」 (やられ)
+
+  RYU
+#096 [Voice] 「昇龍拳」
+#097 [Voice] 「波動拳」 (波動拳、ファイヤー波動拳)
+#098 [Voice] 「竜巻旋風脚」
+#099 [Voice] 「ハッ！」 (背負い投げ、巴投げ)
+#100 [Voice] 「ゥウワァァ…」 (やられ)
+
+  CHUN-LI
+#106 [Voice] 「スピニングバードキック」
+#107 [Voice] 「ヤッ！」 (百裂脚)
+#108 [Voice] 「エイッ！」 (虎襲倒、龍星落)
+#109 [Voice] 「気功拳」
+#110 [Voice] 「ハハハハハハ…」 (勝利1)
+#111 [Voice] 「やったァ！」 (勝利2)
+#112 [Voice] 「アアァァ…」 (やられ)
+
+  DEE JAY
+#434 [Voice] 「デイッ！」 (ファンキーシャウトスルー、モンキーフリップ)
+#436 [Voice] 「Kick it!」 (勝利1)
+#438 [Voice] 「All right!」 (勝利2)
+#440 [Voice] 「ダダッ‥」 (マシンガンアッパー1)
+#442 [Voice] 「ダァッ！」 (マシンガンアッパー2)
+#444 [Voice] 「ウゥゥーーッ！」 (ダブルローリングソバット1)
+#446 [Voice] 「ハァッ！」 (ダブルローリングソバット2)
+#448 [Voice] 「Slash!」 (エアスラッシャー)
+#450 [Voice] 「Max out!」 (海外版エアスラッシャー)
+#452 [Voice] 「ノオオォォォゥ…」 (やられ)
+
+  T. HAWK
+#154 [Voice] 「オォッ！」 (トマホークバスター、コンドルダイブ)
+#155 [Voice] 「ンンンンーーンッ！」 (メキシカンタイフーン)
+#156 [Voice] 「フゥッ！」 (メキシカンスルー、ネックハンギングツリー)
+#157 [Voice] 「ウオォォォァ…」 (やられ)
+
+  FEI LONG
+#158 [Voice] 「ハッ！」 (烈火拳1、烈火拳2)
+#159 [Voice] 「ホワイィィーーッ！」 (烈火拳3)
+#160 [Voice] 「ホオォォアチョウ！」 (熾炎脚、力叫拳)
+#161 [Voice] 「ハッ！」 (岩塊抱、襲首刈)
+#162 [Voice] 「ホーーーーーォッ！」 (勝利)
+#163 [Voice] 「ホワァァァッ…」 (やられ)
+
+  CAMMY
+#164 [Voice] 「キャノンドリル」 (海外版スパイラルアロー)
+#165 [Voice] 「スパイラルアロー」
+#166 [Voice] 「スラストキック」 (海外版キャノンスパイク)
+#167 [Voice] 「キャノンスパイク」
+#168 [Voice] 「ハッ！」 (アクセルスピンナックル、フーリガンスープレックス、フライングネックハント)
+#169 [Voice] 「ヤッ！」 (フランケンシュタイナー、エアフランケンシュタイナー)
+#170 [Voice] 「アアァァァ…」 (やられ)
+
+  E. HONDA
+#117 [Voice] 「ハァッ！」 (百裂張り手)
+#118 [Voice] 「エイャッ！」 (スーパー百貫落とし、俵投げ)
+#119 [Voice] 「フッ！」 (さば折り)
+#120 [Voice] 「どすこい！」 (スーパー頭突き)
+#121 [Voice] 「ガッハハハハ‥」 (勝利)
+#122 [Voice] 「ゥウオォォ‥」 (やられ)
+
+  GUILE
+#113 [Voice] 「ソニックブーム」
+#114 [Voice] 「ハッ！」 (ジュードースルー、フライングメイヤー)
+#115 [Voice] 「フンッ！」 (ドラゴンスープレックス)
+#116 [Voice] 「ウッオォォ…」 (やられ)
+
+  DHALSIM
+#128 [Voice] 「ヨガ」 (ヨガファイヤー) <time="0.5">
+#126 [Voice] 「ファイヤー」 (ヨガファイヤー)
+#128 [Voice] 「ヨガ」 (ヨガフレイム) <time="0.5">
+#127 [Voice] 「フレイム」 (ヨガフレイム)
+#128 [Voice] 「ヨガ」 (ヨガスマッシュ)
+#099 [Voice] 「ハッ！」 (ヨガスルー)
+#100 [Voice] 「ゥウワァァ…」 (やられ)
+#128 [Voice] 「ヨガ」 (ヨガテレポート) <time="0.5">
+#402 [S.E.] (ヨガテレポート)
+
+  BLANKA
+#123 [Voice] 「ウワゥッ！」 (ローリングアタック)
+#124 [Voice] 「ワウワッ‥ワァァーゥ！」 (勝利)
+#486 [Voice] 「アァッ！」 (未使用)
+#125 [Voice] 「ゥエアァァ…」 (やられ)
+　
+  ZANGIEF
+#129 [Voice] 「リャァッ！」 (ダブルラリアット、フライングパワーボム、ストマッククロー)
+#130 [Voice] 「フゥッ！」 (スクリューパイルドライバー、ブレーンバスター)
+#131 [Voice] 「ォオオーーリャッ！」 (アトミックスープレックス)
+#132 [Voice] 「ハッ！」 (パイルドライバー、アイアンクロー)
+#133 [Voice] 「ッハハハハハ…」 (勝利)
+#134 [Voice] 「ギエェェァ…」 (やられ)
+
+  M. BISON
+#137 [Voice] 「フゥッ！」 (ヘッドボマー)
+#138 [Voice] 「オアァァーー！」 (ダッシュストレート&アッパー)
+#136 [Voice] 「ゥウオォォァ…」 (やられ)
+
+  BALROG
+#139 [Voice] 「ヒャオォーーオッ！」 (フライングバルセロナアタック)
+#140 [Voice] 「ヒョオーーゥッ！」  (イズナドロップ、レインボードロップ、バックスラッシュ)
+#141 [Voice] 「ヨロライヨロレーホーッ！」 (勝利1)
+#142 [Voice] 「ヒッヒヒヒヒ…」 (勝利2)
+#143 [Voice] 「ゥワァァァゥ…」 (やられ)
+
+  SAGAT
+#144 [Voice] 「タイガー」 (タイガーショット、グランドタイガーショット)
+#145 [Voice] 「タイガーアッパーカット」
+#146 [Voice] 「タイガーニー」 (タイガーニークラッシュ)
+#147 [Voice] 「フンッ！」 (タイガーキャリー)
+#148 [Voice] 「フッフッフッフ…」 (勝利1)
+#149 [Voice] 「ゥワッハッハッハッハッハ…」 (勝利2)
+#150 [Voice] 「ゥオオォォォァッ…」 (やられ)
+
+  VEGA
+#151 [Voice] 「フゥンッ！」 (デッドリースルー)
+#152 [Voice] 「フッフッフ…」 (勝利)
+#153 [Voice] 「アアァァウウゥゥ…」 (やられ)
+
+-----------------------------------------------------------
+ [S.E.]
+
+#065 [S.E.] Credit
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#192 [S.E.] <time="7">
+#194 [S.E.]
+#195 [S.E.]
+#196 [S.E.]
+#256 [S.E.]
+#257 [S.E.]
+#258 [S.E.]
+#259 [S.E.]
+#260 [S.E.]
+#261 [S.E.]
+#264 [S.E.]
+#267 [S.E.]
+#270 [S.E.]
+#273 [S.E.]
+#276 [S.E.]
+#279 [S.E.]
+#280 [S.E.]
+#281 [S.E.]
+#282 [S.E.]
+#283 [S.E.]
+#284 [S.E.]
+#285 [S.E.]
+#288 [S.E.]
+#292 [S.E.]
+#295 [S.E.]
+#298 [S.E.]
+#299 [S.E.]
+#302 [S.E.]
+#305 [S.E.]
+#308 [S.E.]
+#309 [S.E.]
+#385 [S.E.]
+#387 [S.E.]
+#389 [S.E.]
+#391 [S.E.]
+#393 [S.E.]
+#395 [S.E.]
+#397 [S.E.]
+#399 [S.E.]
+#401 [S.E.]
+#403 [S.E.]
+#405 [S.E.]
+#406 [S.E.]
+#407 [S.E.]
+#408 [S.E.] <time="7">
+#410 [S.E.]
+#411 [S.E.]
+#412 [S.E.]
+#413 [S.E.]
+#415 [S.E.]
+#417 [S.E.] 歓声1
+#418 [S.E.] 歓声2
+#419 [S.E.]
+#422 [S.E.]
+#423 [S.E.] <time="7">
+#424 [S.E.]
+#426 [S.E.] <time="7">
+#428 [S.E.] <time="7">
+#430 [S.E.] <time="7">
+#509 [S.E.]
+
+  ■出典
+  スーパーストリートファイターII  アーケード ゲームトラック
+  SONY RECORDS  SRCL-2822  1994.01.21
+
+// List Contribution by NK
+$end

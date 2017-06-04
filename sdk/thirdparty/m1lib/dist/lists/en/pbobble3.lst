@@ -1,0 +1,31 @@
+﻿$name=pbobble3
+$version=2
+$default=178
+$main
+
+#178 Title Screen
+#181 Positive Kick Waltz (Select 1)
+#182 The Honest Hits the Sky (Select 2)
+#189 Dream Slipper (Main BGM 1)
+#179 Stage Clear!
+#190 Let's Go to Pao Pao Island! -Uri Mix- (Main BGM 2)
+#183 Blastman Appears! (Select 3)
+#191 Forest in April -Uri Mix- (Main BGM 3)
+#184 Calorie Master (Select 4)
+#192 Recycle Chop (Final Boss)
+#187 Game Over
+#186 Continue
+#185 Radiation Dance - with Mom (Name Entry)
+#180 Completed
+#188 Dream Slipper -Reprised- (Credits)
+
+  [Source]
+  Puzzle Bobble Variety / Zuntata
+  Zuntata Records  ZTTL-0009  Mar 28, 1997
+
+  [Composed]
+  Yukiharu Urita
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

@@ -1,0 +1,96 @@
+﻿$name=techromn
+$version=2
+$default=001
+$main
+
+  * Preliminary list
+
+???  Prelude
+#001 Fight! Kikaioh
+#002 Player Select
+#003 Versus
+#009 Urb - Day
+#010 Urb - Night
+#011 Sea Port
+#012 Military Base
+#013 Desert
+#014 Sunset
+#015 Glacier
+#016 Universe
+#017 Volcano
+???  Raid (Scenario)
+???  Pathos - Man (Scenario)
+???  Look Alive! (Scenario)
+???  Caper (Scenario)
+???  Daily Life (Scenario)
+???  Pathos - Woman (Scenario)
+???  Vigour (Scenario)
+???  Sally (Scenario)
+???  Serenity (Scenario)
+???  Command (Scenario)
+???  Gourai Appears (Theme of Gourai)
+???  Goldibus Transform
+???  Final Battle (Boss)
+???  Differnt Dimentional Space
+#004 Win
+#005 Challenger
+#006 Ranking
+#007 Continue
+#008 Game Over
+???  Kikaioh: Intro
+???  Kikaioh: Subtitle
+???  Kikaioh: Ending A
+???  Kikaioh: Ending B
+???  Dixen: Eye-Catch
+???  Dixen: Subtitle
+???  Dixen: Ending A
+???  Dixen: Ending B
+???  Dixen: Ending C
+???  Rafaga: Intro
+???  Rafaga: Subtitle
+???  Rafaga: Ending A
+???  Rafaga: Ending B
+???  Rafaga: Ending C
+???  Rafaga: Ending D
+???  Bolon: Scenario
+???  Bolon: Eye-Catch
+???  Bolon: Subtitle
+???  Bolon: Ending A
+???  Bolon: Ending B
+???  Bolon: Ending C
+???  Pulsion: Entrance Theme
+???  Pulsion: Eye-Catch
+???  Pulsion: Subtitle
+???  Pulsion: Ending A
+???  Pulsion: Ending B
+???  Wise Duck: Entrance Theme
+???  Wise Duck: Eye-Catch
+???  Wise Duck: Subtitle
+???  Wise Duck: Ending
+???  Diana: Entrance Theme 1
+???  Diana: Entrance Theme 2
+???  Diana: Eye-Catch
+???  Diana: Subtitle
+???  Diana: Ending A
+???  Diana: Ending B
+???  Diana: Ending C
+???  Twinzam: Entrance Theme
+???  Twinzam: Eye-Catch
+???  Twinzam: Subtitle
+???  Twinzam: Ending A
+???  Twinzam: Ending B
+???  Fight!?
+
+  [Source]
+  Choukousenki Kikaioh Original Soundtrack
+  Suleputer  CPCA-1016, 1017  Nov 21, 1998
+
+  Choukousenki Kikaioh (Dreamcast: Sound Box)
+  Capcom  T-1206M  1998, 2000
+
+  [Sound Composer]
+  Yuki Iwai
+
+// List contributed by Hiroshi
+// English list by Fuj
+$end

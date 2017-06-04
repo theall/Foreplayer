@@ -1,0 +1,133 @@
+﻿$name=bgaregga
+$version=2
+$default=114
+$fixed_volume=103
+$main
+
+#114 Raizing Logo <time="03">
+#001 Rebellion (Title Demo) <time="17">
+#002 4:71 am (Select)
+#003 Fly to the Leaden Sky (Stage 1: Valley)
+#004 Underwater Rampart (Stage 2: Plateau)
+#005 Tunnel Vision (Stage 3: Factory)
+#007 Degeneracy (Stage 4: Plant)
+#006 Subversive Awareness (Stage 5: Cloud)
+#008 Megalomaniac (Stage 6: Base)
+#009 Marginal Consciousness (Stage 7: Airport)
+#010 Stab and Stomp! (Boss A)
+//#010 Stab'n Stomp! (Boss A)
+#011 Thrust and Thrash! (Boss B)
+//#011 Thrust'n Thrash! (Boss B)
+#013 Erupter (Boss C)
+#012 Fatality (Game Over) <time="06">
+#015 Bluescape (Name Entry)
+#014 Blood Brothers in the Dawn (Ending) <time="43">
+
+-----------------------------------------
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX] Shot power up!
+#045 [SFX] Wapon level up!
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX] Special power up!
+#052 [SFX] (Pause?)
+#053 [SFX]
+#064 [SFX]
+#065 [SFX] Bomber!! (Gayin)
+#066 [SFX] Alefgamona (Chitta)
+#067 [SFX] Chestooo (Miyamoto)
+#068 [SFX] (Bone num)
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#115 [SFX] Secret Code Successful
+#116 [SFX] Extention
+#117 [SFX] Start
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#133 [SFX]
+#134 [SFX] Bomb
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+
+  [Sources]
+  Battle Garegga / Gamest Video
+  Shinseisha  GV-027(4-88199-284-8)  Sep 30, 1996
+
+  BATTLE GAREGGA / SEGA SATURN
+  EAV  T-10627G  1998
+
+  Soukyuu Gurantai otokuyou / SEGA SATURN
+  EAV  T-10626G  1997
+
+  [Sound Composer]
+  Manabu Namiki
+
+$end

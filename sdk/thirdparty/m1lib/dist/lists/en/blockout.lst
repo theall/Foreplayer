@@ -1,0 +1,55 @@
+﻿$name=blockout
+$version=2
+$default=008
+$main
+
+#008 Title
+#048 [Voice] I am a block master... And I dare you to defeat me at block out... Challenge me... <time="13">
+#032 Coin Inserted <time="3">
+#003 Round Select
+#019 [Voice] Challenge me... <time="3">
+#007 BGM 1
+#002 Round Clear
+#050 [Voice] You are a worthy opponent... But I won't lose the next game... <time="9">
+#009 BGM 2
+#013 BGM 3
+#011 BGM 4
+#012 BGM 5
+#014 BGM 6
+#005 You Lost
+#004 Name Entry
+#049 [Voice] I warned you nobody beats me...
+
+#006 BGM 1 &lt;simple style&gt;
+#010 BGM 4 &lt;simple style&gt;
+
+----------------------------------------------------------------------------
+ [Voice]
+
+#016 [Voice] I am a block master... <time="4">
+#017 [Voice] And I dare you <time="2">
+#018 [Voice] to defeat me at block out... <time="4">
+#019 [Voice] Challenge me...
+#021 [Voice] I warned you <time="2">
+#022 [Voice] nobody beats me...
+#023 [Voice] You are a worthy opponent... <time="4">
+#024 [Voice] But I won't lose the next game...
+#051 [Voice] Block out...
+
+----------------------------------------------------------------------------
+ [SFX]
+
+#020 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#052 [SFX]
+
+// English List Contributed by NK
+$end

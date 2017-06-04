@@ -1,0 +1,124 @@
+﻿$name=forgottn
+$version=2
+$default=000
+$songmax=159
+$main
+
+#000 Credit
+#001 Opening
+#002 1 Round BGM (ダストワールド #1)
+#003 2 Round BGM (ダストワールド #2)
+#004 3 Round BGM (ダストワールド #3)
+#005 4 Round BGM (ピラミッドワールド #1)
+#006 5 Round BGM (ピラミッドワールド #2)
+#007 6 Round BGM (ピラミッドワールド #3)
+#018 Shoppin'
+#008 7 Round BGM (天空界 #1)
+#009 8 Round BGM (天空界 #2)
+#010 9 Round BGM (天空界 #3)
+#011 中敵 A  &lt;外&gt;
+#012 中敵 B  &lt;内&gt;
+#013 大敵  &lt;各ワールド・ボス&gt;
+#014 最終ラウンド・ボス (天帝バイオス)
+#015 Round Clear
+#020 Ending
+#016 Staff Roll
+#019 Game Over
+
+#021 CD未収録曲 1
+#022 CD未収録曲 2
+
+-----------------------------------------
+ [S.E.] & [Voice]
+
+#129 [Voice] Did you find the guy ?
+#130 [Voice] I'll finish you today for sure
+#131 [Voice] You cannot stop me with paramecium alone
+#132 [Voice] Ha ! the tough dragon is no match for us
+#133 [Voice] it didn't take much to get rid of him
+#134 [Voice] did the war guy really died ?
+#135 [Voice] No doubt about it ! The king of god must be saying his payers now !
+#136 [Voice] damnit ! my take ?? spoiled
+#137 [Voice] ?? flying stone also
+#138 [Voice] I'm not sure ! but he won't ?? anymore
+#139 [Voice] Now I've got you pointed
+#140 [Voice] There's no escape for you now !
+#141 [Voice] Now I'm gonna do it my way !
+#142 [Voice] Wait ! Don't underestimate the gods of thunder and wind.
+#143 [Voice] He's gone for us ! I'm going to kill him today !
+#144 [Voice] I'll burn him with my aura !
+#145 [Voice] I've done it ! I'm still shivering...
+#146 [Voice] Yeah ! Me too man !
+
+#147 [Voice] Dragon
+#148 [Voice]
+#155 [Voice]
+
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+
+  ■出典
+  大魔界村 -G.S.M. CAPCOM 1-
+  PONY CANYON / SCITRON  D28B0011  1989.01.11
+
+// Voice checked by CrashTest
+$end

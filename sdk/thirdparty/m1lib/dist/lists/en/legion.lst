@@ -1,0 +1,53 @@
+$name=legion
+$version=2
+$default=001
+$main
+
+#001 [SFX] Credit
+#046 Intro (1st Area) -- Main Theme
+#053 Mid-Boss Battle
+#048 Approaching Crossroads (Area Cleared)
+#047 Intro (After 2nd Area) -- Main Theme
+#050 Final Boss Battle (1st Phase)
+#051 Final Boss Battle (2nd Phase)
+#052 Final Boss Battle (3rd Phase)
+#054 Final Area Cleared -- Main Theme
+
+#049 Main Theme (No Intro)
+#055 Main Theme (No intro, Alternative #1)
+#056 Main Theme (No intro, Alternative #2)
+#058 Main Theme (Crazy intro)
+#057 Unused #1
+#059 Unused #2
+
+------------------------------------------------------
+ [SFX]
+
+#001 [SFX] Credit
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX] Using Time Bomb
+#007 [SFX] Rescue Ship Appearing
+#008 [SFX] Short Cut Notice
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX] Bonus Added
+#019 [SFX] Saved Crew
+#020 [SFX] Loaded Crew on Rescue Ship
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+
+// List Contribution by a2c-s438
+$end

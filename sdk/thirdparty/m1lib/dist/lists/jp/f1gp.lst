@@ -1,0 +1,215 @@
+﻿$name=f1gp
+$version=2
+$default=032
+$main
+
+#032 ATTRACT MODE (T-SQUARE 「TRUTH」)
+#128 [S.E.] CREDIT
+#034 PLEASE SELECT
+#035 WELCOME
+#040 QUALIFYING ROUND
+#038 THEME 1
+#039 THEME 2
+#036 THEME 3
+#041 CONGRATULATIONS
+#043 NAME ENTRY
+
+#042 未使用曲
+
+---------------------------------------------------
+  [S.E.]
+
+#033 [S.E.] <time="5">
+#037 [S.E.] <time="6">
+#044 [S.E.] <time="5">
+#045 [S.E.] <time="5">
+#058 [S.E.] <time="2">
+#059 [S.E.] <time="2">
+#060 [S.E.] <time="2">
+#061 [S.E.] <time="2">
+#062 [S.E.] <time="2">
+#063 [S.E.] <time="2">
+#064 [S.E.] <time="2">
+#065 [S.E.] <time="2">
+#066 [S.E.] <time="2">
+#067 [S.E.] <time="2">
+#068 [S.E.] <time="2">
+#069 [S.E.] <time="2">
+#070 [S.E.] <time="2">
+#071 [S.E.] <time="2">
+#072 [S.E.] <time="2">
+#073 [S.E.] <time="2">
+#074 [S.E.] <time="2">
+#075 [S.E.] <time="2">
+#076 [S.E.] <time="2">
+#077 [S.E.] <time="2">
+#078 [S.E.] <time="2">
+#079 [S.E.] <time="2">
+#080 [S.E.] <time="2">
+#081 [S.E.] <time="2">
+#082 [S.E.] <time="2">
+#083 [S.E.] <time="2">
+#084 [S.E.] <time="2">
+#085 [S.E.] <time="2">
+#086 [S.E.] <time="2">
+#087 [S.E.] <time="2">
+#088 [S.E.] <time="2">
+#089 [S.E.] <time="2">
+#090 [S.E.] <time="2">
+#091 [S.E.] <time="2">
+#092 [S.E.] <time="2">
+#093 [S.E.] <time="2">
+#094 [S.E.] <time="2">
+#095 [S.E.] <time="2">
+#096 [S.E.] <time="2">
+#097 [S.E.] <time="2">
+#098 [S.E.] <time="2">
+#099 [S.E.] <time="2">
+#100 [S.E.] <time="2">
+#101 [S.E.] <time="2">
+#102 [S.E.] <time="2">
+#103 [S.E.] <time="2">
+#104 [S.E.] <time="2">
+#105 [S.E.] <time="2">
+#106 [S.E.] <time="2">
+#107 [S.E.] <time="2">
+#108 [S.E.] <time="2">
+#109 [S.E.] <time="2">
+#110 [S.E.] <time="2">
+#111 [S.E.] <time="2">
+#112 [S.E.] <time="2">
+#113 [S.E.] <time="2">
+#114 [S.E.] <time="2">
+#115 [S.E.] <time="2">
+#116 [S.E.] <time="2">
+#117 [S.E.] <time="2">
+#118 [S.E.] <time="2">
+#119 [S.E.] <time="2">
+#120 [S.E.] <time="2">
+#121 [S.E.] <time="2">
+#127 [S.E.] 
+#128 [S.E.] CREDIT
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#175 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] 
+#185 [S.E.] 
+#186 [S.E.] 
+#187 [S.E.] 
+#188 [S.E.] 
+#189 [S.E.] 
+#190 [S.E.] 
+#191 [S.E.] 
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#195 [S.E.] 
+#196 [S.E.] 
+#197 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#206 [S.E.] 
+#207 [S.E.] 
+#220 [S.E.] 
+#221 [S.E.] 
+#222 [S.E.] 
+#223 [S.E.] 
+#224 [S.E.] 
+#239 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+#245 [Voice] 
+#246 [Voice] 
+#247 [Voice] 
+#248 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#251 [Voice] 
+#252 [Voice] 
+#253 [Voice] 
+#254 [Voice] 
+
+// List contribution by ZEK.
+$end

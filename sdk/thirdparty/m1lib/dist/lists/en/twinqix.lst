@@ -1,0 +1,36 @@
+﻿$name=macrossp
+$version=2
+$default=051
+$main
+
+  [BGM]
+
+#051 BGM#1 (PLAY MODE SELECT)
+#053 BGM#2 (ATTRACT MODE-MAIN BGM) 
+#057 CLEAR (won)
+#055 BGM#3 (WARNING!) 
+#058 MISS! (Lose)
+#060 BGM#4 (BEST PLAYERS)
+#061 unknow 
+
+---------------------------------------------------
+  [SFX]
+  
+#001 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#020 [SFX] 
+#021 [SFX]
+#022 [SFX] 
+#023 [SFX] 
+
+
+  [Composers]
+  Nakayama Jotohei (Zuntata)
+
+// List contribution by Simon B., done in playing the game.
+$end

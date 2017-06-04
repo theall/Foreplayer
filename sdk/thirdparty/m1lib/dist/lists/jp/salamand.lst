@@ -1,0 +1,144 @@
+﻿$name=salamand
+$version=2
+$default=064
+$songmax=256
+$main
+
+#064 Coin (コイン音)
+#070 Power of Anger (St.1 - Bionic Germ)
+#073 Fly High (St.2 - Meteorite Space)
+#086 Planet RATIS (St.3 - Burning Chaos)
+#067 Starfield (St.4 - Volcano)
+#066 Burn the Wind (St.5 - Asteroid Hell)
+#092 Destroy Them All (St.6 - Fortress Zone)
+#076 Aircraft Carrier (グラディウス ボスBGM)
+#080 Destroy Them All -Type 2- (St.6 BGM 2)
+#085 Poison of Snake (ボスBGM)
+#071 Peace Again (パターンクリア)
+#087 Crystal Forever (ゲームオーバー)
+
+#072 Thunderbolt (LIFE FORCE(J) St.2 BGM ドラム無し) (Unused 01)
+#094 Slash Fighter (LIFE FORCE(J) St.4 BGM ドラム無し) (Unused 02)
+#075 Combat (LIFE FORCE(J) St.5 BGM) (Unused 03)
+#078 Unused 04 (X68000 Version, Loading Music)
+#065 Unused 05
+#068 Unused 06
+#069 Unused 07
+#074 Unused 08
+#077 Unused 09
+#079 Unused 10
+#081 Unused 11
+#082 Unused 12
+#083 Unused 13
+#084 Unused 14
+#088 Unused 15
+#089 Unused 16
+#090 Unused 17
+#091 Unused 18
+#093 Unused 19
+
+------------------------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+
+#249 [S.E.]
+#250 [S.E.]
+#251 [S.E.]
+#252 [S.E.]
+#253 [S.E.]
+
+ [Voice]
+
+#128 [Voice] Speed up
+#129 [Voice] Ripple Lazer
+#130 [Voice] Force Field
+#131 [Voice] Missle
+#132 [Voice] Lazer
+#133 [Voice] Multiple
+#134 [Voice] Missile Chamber is empty
+#135 [Voice] Pick it up for Speed up
+#136 [Voice] Pick it up for Missile
+#137 [Voice] Pick it up for Multiple
+#138 [Voice] Pick it up for Force Field
+#139 [Voice] Pick it up for Ripple Lazer
+#140 [Voice] Pick it up for Lazer
+
+#147 [Voice] Ohhh!
+#148 [Voice] Shoot up! Shoot up!
+#149 [Voice] Danger! Danger!
+#150 [Voice] Go to the right
+#151 [Voice] Go up
+#152 [Voice] An intruder has penetrated our force field
+#153 [Voice] Please continue
+#154 [Voice] Try again
+#155 [Voice] Destroy them all!
+#156 [Voice] Ohhhhhh!
+#157 [Voice] Ahhhhhhhhhhh!
+
+  ■出典
+  オリジナル・サウンド・オブ・沙羅曼蛇
+  Apolon  BY12-5020  1986.12.16
+
+  オリジナル・サウンド・オブ・グラディウス＆沙羅曼蛇
+  Apolon  BY12-5180  1987.11.21
+
+  沙羅曼蛇 ～Again～ / KONAMI KUKEIHA CLUB
+  KING RECORDS  KICA-7601  1992.03.25
+
+  沙羅曼蛇アーケードサウンドトラック
+  Sony Music Entertainmnet  KOLA-030  2003.04.09
+
+// Voice check by bcass
+$end

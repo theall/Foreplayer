@@ -1,0 +1,562 @@
+﻿$name=sfa2
+$version=2
+$default=062
+$songmax=894
+$fixed_volume=172
+$main
+
+#062 QSound Logo
+
+  &lt;DISC 1&gt;
+#019 Opening <time="46">
+#190 [Voice] Street Fighter Alpha 2
+#018 Stage - Sakura <time="1:47.1">
+#015 Stage - Zangief <time="2:31.5">
+#001 Stage - Ryu <time="1:53">
+#003 Stage - Chun-Li <time="1:54">
+#005 Stage - Sodom <time="2:30">
+//  from Final Fight (Round 1-2, 2-1)
+#007 Stage - Birdie <time="1:44">
+#009 Stage - Charlie (Nash) <time="1:57.3">
+#013 Stage - Dan <time="3:00">
+#052 Before Final Battle <time="26.3">
+//  not released on CD
+#012 Stage - M. Bison <time="2:11">
+#022 Stage End 
+#023 Continue <time="38.5">
+#024 Here Comes A New Challenger
+#048 Ending - Sakura 1 <time="1:34.5">
+#049 Ending - Sakura 2 <time="30.5">
+#044 Ending - Zangief 1 <time="31">
+#056 Ending - Zangief 2 <time="1:04.5">
+#028 Ending - Ryu 1
+#029 Ending - Ryu 2 <time="50">
+#031 Ending - Chun-Li <time="1:26">
+#033 Ending - Sodom <time="1:38">
+//  from Final Fight (Round 1-2)
+#036 Ending - Birdie <time="1:22.5">
+#038 Ending - Charlie (Nash) 1 <time="31">
+#055 Ending - Charlie (Nash) 2 <time="1:32">
+#042 Ending - Dan 
+#054 Ending - M. Bison <time="50">
+#050 Credits Roll 1 <time="1:44">
+#051 Credits Roll 2 <time="3:53">
+#058 Before Sagat VS Ryu <time="21.2">
+//  not released on CD
+#053 Stage - Sagat VS Ryu <time="2:23.5">
+
+  &lt;DISC 2&gt;
+#020 Player Select <time="54">
+#021 Versus
+#014 Stage - Dhalsim <time="2:06">
+#017 Stage - Rolento <time="2:44">
+//  from Final Fight (Round 5-1)
+#016 Stage - Gen <time="1:45">
+#002 Stage - Ken <time="2:07">
+#004 Stage - Sagat <time="2:59">
+#008 Stage - Guy <time="2:44.5">
+//  from Final Fight (Round 1-1)
+#006 Stage - Adon <time="2:09.8">
+#010 Stage - Rose <time="1:36">
+#011 Stage - Akuma (Gouki) <time="1:53.5">
+#025 Game Over
+#026 Ranking Display 1
+#027 Ranking Display 2
+#043 Ending - Dhalsim <time="1:10">
+#047 Ending - Rolento <time="1:44">
+#046 Ending - Gen 1 <time="1:02">
+#045 Ending - Gen 2 <time="54.5">
+#030 Ending - Ken <time="1:30">
+#032 Ending - Sagat 
+#037 Ending - Guy 
+#035 Ending - Adon 1 <time="1:12">
+#034 Ending - Adon 2 <time="29.5">
+#039 Ending - Rose 
+#041 Ending - Akuma (Gouki) 1 <time="1:07">
+#040 Ending - Akuma (Gouki) 2 <time="58">
+#057 Credits Roll 3 <time="1:58">
+//  not released on CD
+
+#063 (unused)
+//  not released on CD
+
+-----------------------------------------------------
+ [Voices]
+
+#161 [Voice] Round 1
+#162 [Voice] Round 2
+#163 [Voice] Round 3
+#164 [Voice] Round 4
+#165 [Voice] Round 5
+#166 [Voice] Final Round
+#167 [Voice] Fight
+#168 [Voice] K.O.
+#169 [Voice] You Win
+#170 [Voice] You Lose
+#171 [Voice] Perfect
+#172 [Voice] Draw Game
+#173 [Voice] Time Over
+#174 [Voice] Game Over
+#175 [Voice] K.O.
+#176 [Voice] 0
+#177 [Voice] 1
+#178 [Voice] 2
+#179 [Voice] 3
+#180 [Voice] 4
+#181 [Voice] 5
+#182 [Voice] 6
+#183 [Voice] 7
+#184 [Voice] 8
+#185 [Voice] 9
+#186 [Voice] Street Fighter Zero
+#187 [Voice] Street Fighter Alpha
+#188 [Voice] 2
+#189 [Voice] Street Fighter Zero 2
+#190 [Voice] Street Fighter Alpha 2
+
+  Ryu
+#384 [Voice] Hadouken
+#385 [Voice] Shouryuuken
+#386 [Voice] Tatsumaki senpuukyaku
+#387 [Voice] Shinkuu
+#388 [Voice] 
+#389 [Voice] 
+#390 [Voice] 
+#391 [Voice] 
+#392 [Voice] 
+#393 [Voice] 
+#394 [Voice] 
+
+  Ken
+#395 [Voice] Hadouken
+#396 [Voice] Shouryuuken
+#397 [Voice] Tatsumaki senpuukyaku
+#398 [Voice] Ikuze!
+#399 [Voice] Shouryuu reppa
+#400 [Voice] Shinryuuken
+#401 [Voice] 
+#402 [Voice] 
+#403 [Voice] 
+#404 [Voice] Yattaze!
+#405 [Voice] 
+#406 [Voice] 
+#407 [Voice] 
+#408 [Voice] 
+
+  Guy
+#476 [Voice] Iza!
+#477 [Voice] Hissatsu!
+#478 [Voice] 
+#479 [Voice] 
+#480 [Voice] 
+#481 [Voice] 
+#482 [Voice] 
+#483 [Voice] 
+#484 [Voice] Waruku omouna..
+#485 [Voice] Korezo bushinryuu
+#486 [Voice] 
+#487 [Voice] 
+#488 [Voice] 
+#489 [Voice] 
+
+  Charlie (Nash)
+#420 [Voice] Sonic boom
+#421 [Voice] Somersault
+#422 [Voice] Sonic break
+#423 [Voice] 
+#424 [Voice] 
+#425 [Voice] 
+#426 [Voice] 
+#427 [Voice] Too easy!
+#428 [Voice] 
+#429 [Voice] 
+#430 [Voice] 
+#431 [Voice] 
+
+  Sagat
+#797 [Voice] Tiger
+#798 [Voice] Tiger blow
+#799 [Voice] Tiger crash
+#800 [Voice] Tiger..
+#801 [Voice] Genocide
+#802 [Voice] Raid
+#803 [Voice] 
+#804 [Voice] 
+#805 [Voice] 
+#806 [Voice] 
+#807 [Voice] 
+#808 [Voice] 
+#809 [Voice] 
+#810 [Voice] 
+#811 [Voice] 
+
+  Chun-Li
+#432 [Voice] Kikouken
+#433 [Voice] Senretsukyaku
+#434 [Voice] Hazan
+#435 [Voice] Tenshoukyaku
+#436 [Voice] 
+#437 [Voice] Kikouken
+#438 [Voice] 
+#439 [Voice] 
+#440 [Voice] 
+#441 [Voice] 
+#442 [Voice] Yattaa!
+#443 [Voice] Gomenne
+#444 [Voice] 
+#445 [Voice] 
+#446 [Voice] 
+#447 [Voice] 
+
+  Rose
+#768 [Voice] Soul spark
+#769 [Voice] Soul threw
+#770 [Voice] Reflect
+#771 [Voice] Kakugowa ii?
+#772 [Voice] Sokomadeyo
+#773 [Voice] 
+#774 [Voice] 
+#775 [Voice] 
+#776 [Voice] Sorejaa dame
+#777 [Voice] Mada mada ne
+#778 [Voice] Yarujanai?
+#779 [Voice] Daijoubu?
+#780 [Voice] 
+#781 [Voice] 
+#782 [Voice] 
+#783 [Voice] 
+
+  Adon
+#448 [Voice] Jaguar
+#449 [Voice] Jaguar kick
+#450 [Voice] Jaguar tooth
+#451 [Voice] 
+#452 [Voice] 
+#453 [Voice] 
+#454 [Voice] 
+#455 [Voice] 
+#456 [Voice] 
+#457 [Voice] Yes!
+#458 [Voice] 
+#459 [Voice] 
+#460 [Voice] 
+#461 [Voice] 
+#462 [Voice] 
+
+  Sodom
+#463 [Voice] Butsumetsu
+#464 [Voice] Tenchuusatsu
+#465 [Voice] Mouicchou
+#466 [Voice] 
+#467 [Voice] 
+#468 [Voice] 
+#469 [Voice] 
+#470 [Voice] Apparei
+#471 [Voice] Bureikou
+#472 [Voice] 
+#473 [Voice] 
+#474 [Voice] 
+#475 [Voice] Nukatta..
+
+  M. Bison
+#784 [Voice] 
+#785 [Voice] Psycho crasher
+#786 [Voice] 
+#787 [Voice] Amai!
+#788 [Voice] 
+#789 [Voice] 
+#790 [Voice] 
+#791 [Voice] 
+#792 [Voice] Nuruiwa
+#793 [Voice] 
+#794 [Voice] 
+#795 [Voice] 
+#796 [Voice] 
+
+  Akuma (Gouki)
+#409 [Voice] 
+#410 [Voice] 
+#411 [Voice] 
+#412 [Voice] 
+#413 [Voice] 
+#414 [Voice] Messatsu!
+#415 [Voice] Shoushi
+#416 [Voice] 
+#417 [Voice] 
+#418 [Voice] 
+#419 [Voice] 
+
+  Birdie
+#490 [Voice] Bull head
+#491 [Voice] Bull horn
+#492 [Voice] One!
+#493 [Voice] Two!
+#494 [Voice] Three!
+#495 [Voice] Four!
+#496 [Voice] Final!
+#497 [Voice] Go!
+#498 [Voice] To heaven!
+#499 [Voice] 
+#500 [Voice] 
+#501 [Voice] 
+#502 [Voice] Hey!
+#503 [Voice] You!
+#504 [Voice] I'm No. 1!
+#505 [Voice] 
+#506 [Voice] 
+#507 [Voice] 
+#508 [Voice] 
+
+  Dan
+#812 [Voice] Gadouken
+#813 [Voice] Kouryuuken
+#814 [Voice] 
+#815 [Voice] Shinkuu
+#816 [Voice] 
+#817 [Voice] 
+#818 [Voice] 
+#819 [Voice] Ikuzo ora!
+#820 [Voice] Doshita doshita!
+#821 [Voice] Namenja neezo!
+#822 [Voice] Ossha!
+#823 [Voice] 
+#824 [Voice] Yattaze oyajii
+#209 [Voice] Yattaze
+#210 [Voice] Oyaji
+#825 [Voice] Rakushou
+#826 [Voice] Yoyuussu
+#827 [Voice] Ikan..
+#828 [Voice] 
+#829 [Voice] 
+#830 [Voice] 
+#083 [Voice] Yattaze oyajii (echo)
+
+  Sakura
+#832 [Voice] Hadouken
+#833 [Voice] Sououken
+#834 [Voice] Shupuukyaku
+#835 [Voice] Shinnkuu
+#836 [Voice] Ikuyo
+#837 [Voice] 
+#838 [Voice] 
+#839 [Voice] 
+#840 [Voice] 
+#841 [Voice] 
+#842 [Voice] 
+#843 [Voice] 
+#844 [Voice] Seeno!
+#845 [Voice] 
+#846 [Voice] 
+#847 [Voice] Konnatokodane
+#848 [Voice] 
+#849 [Voice] 
+#850 [Voice] 
+#851 [Voice] 
+
+  Zangief
+#883 [Voice] Final
+#884 [Voice] Atomic
+#885 [Voice] Baster
+#886 [Voice] 
+#887 [Voice] 
+#888 [Voice] 
+#889 [Voice] 
+#890 [Voice] 
+#891 [Voice] 
+#892 [Voice] Horosho
+#893 [Voice] Bolshoi tabieta
+#894 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+
+  Dhalsim
+#868 [Voice] Yoga
+#869 [Voice] Yoga fire
+#870 [Voice] Yoga flame
+#871 [Voice] Yoga blast
+#872 [Voice] Yoogaa
+#873 [Voice] Yoga inferno
+#874 [Voice] Yoga!
+#875 [Voice] 
+#876 [Voice] 
+#877 [Voice] Yooga yoga yoga yoga yoga
+#878 [Voice] Yogaaa
+#879 [Voice] 
+#880 [Voice] 
+#881 [Voice] Yogaa
+#882 [Voice] 
+#211 [Voice] 
+
+  Rolento
+#852 [Voice] Ready?
+#853 [Voice] Got set?
+#854 [Voice] Go!
+#855 [Voice] Fire!
+#856 [Voice]
+#857 [Voice]
+#858 [Voice]
+#859 [Voice]
+#860 [Voice] Do answer
+#861 [Voice] Ouch!
+#862 [Voice]
+#863 [Voice] Mission complete!
+#864 [Voice]
+#865 [Voice]
+#866 [Voice]
+#867 [Voice]
+
+  Gen
+#196 [Voice]
+#197 [Voice]
+#198 [Voice]
+#199 [Voice]
+#200 [Voice]
+#201 [Voice] Todomeda!
+#202 [Voice] Shine!
+#203 [Voice] 
+#204 [Voice] You are big fool!
+#205 [Voice]
+#206 [Voice]
+#207 [Voice]
+#208 [Voice]
+
+
+#080 [SFX]
+#081 [SFX]
+#085 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#134 [SFX]
+#136 [SFX]
+#138 [SFX]
+#139 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#256 [SFX]
+#257 [SFX]
+#258 [SFX]
+#259 [SFX]
+#260 [SFX]
+#261 [SFX]
+#262 [SFX]
+#263 [SFX]
+#264 [SFX]
+#265 [SFX]
+#266 [SFX]
+#267 [SFX]
+#268 [SFX]
+#269 [SFX]
+#270 [SFX]
+#271 [SFX]
+#272 [SFX]
+#273 [SFX]
+#274 [SFX]
+#275 [SFX]
+#276 [SFX]
+#277 [SFX]
+#278 [SFX]
+#279 [SFX]
+#280 [SFX]
+#281 [SFX]
+#282 [SFX]
+#283 [SFX]
+#284 [SFX]
+#285 [SFX]
+#286 [SFX]
+#288 [SFX]
+#289 [SFX]
+#290 [SFX]
+#291 [SFX]
+#292 [SFX]
+#293 [SFX]
+#294 [SFX]
+#295 [SFX]
+#296 [SFX]
+#297 [SFX]
+#298 [SFX]
+#299 [SFX]
+#300 [SFX]
+#301 [SFX]
+#302 [SFX]
+#303 [SFX]
+#305 [SFX]
+#306 [SFX]
+#307 [SFX]
+#308 [SFX]
+#309 [SFX]
+#310 [SFX]
+#311 [SFX]
+#312 [SFX]
+#313 [SFX]
+#314 [SFX]
+#315 [SFX]
+#316 [SFX]
+#317 [SFX]
+#318 [SFX]
+#319 [SFX]
+#320 [SFX]
+#321 [SFX]
+#322 [SFX]
+#323 [SFX]
+#324 [SFX]
+#325 [SFX]
+#326 [SFX]
+#327 [SFX]
+#328 [SFX]
+#329 [SFX]
+#330 [SFX]
+#331 [SFX]
+#332 [SFX]
+#333 [SFX]
+#334 [SFX]
+#335 [SFX]
+#336 [SFX]
+#337 [SFX]
+#338 [SFX]
+#339 [SFX]
+#340 [SFX]
+#341 [SFX]
+#342 [SFX]
+#343 [SFX]
+#344 [SFX]
+#345 [SFX]
+#346 [SFX]
+#347 [SFX]
+#348 [SFX]
+#349 [SFX]
+#350 [SFX]
+#351 [SFX]
+#352 [SFX]
+#353 [SFX]
+#354 [SFX]
+#355 [SFX]
+#356 [SFX]
+#357 [SFX]
+#358 [SFX]
+#359 [SFX]
+#360 [SFX]
+#361 [SFX]
+#362 [SFX]
+#363 [SFX]
+#364 [SFX]
+#365 [SFX]
+#366 [SFX]
+#367 [SFX]
+#368 [SFX]
+#369 [SFX]
+
+  [Source]
+  Capcom Game Soundtrack - Street Fighter Zero 2
+  Victor Entertainment  VIZL-24  Jun 21, 1996
+
+// List contribution : NK
+$end

@@ -1,0 +1,36 @@
+﻿$name=aburner2
+$version=2
+$default=146
+$songmax=150
+$main
+
+#146 Maximum Power <time="48">
+#145 Final Take Off <time="04:12">
+#148 Red Out <time="3:18">
+#147 Super Stripe <time="02:00">
+#149 After Burner <time="5:15">
+#150 City 202 <time="1:45">
+
+#163 [Voice] Be careful
+#164 [Voice] The enemy
+#165 [Voice] Get ready
+#167 [Voice] Break left
+#168 [Voice] Look out
+#169 [Voice] 3 o'clock
+#170 [Voice] Wow!!
+#171 [Voice] Break right
+#172 [Voice] 9 o'clock
+#193 [Voice] Fire!
+#195 [Voice] Over there
+
+#126 [SFX] Credit
+#224 [SFX] Sight lock
+#225 [SFX] Warning
+#231 [SFX] Check point
+
+  [Source]
+  Sega Taikan Game Special
+  Alfa Records  28XA-198  Dec 21, 1987
+
+// English list adjustment by bcass
+$end

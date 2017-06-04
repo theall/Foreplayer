@@ -1,0 +1,138 @@
+﻿$name=cworld2j
+$version=2
+$default=002
+$main
+
+#002 Opening <time="1:06">
+#030 Coin Inserted <time="0:03">
+#018 Player Select <time="0:37.3">
+#017 Course Select <time="0:23.2">
+#090 Game Start <time="0:05">
+#000 Grasslands of Departure (Beginner's Course, Stage 1) &lt;from Mega Man "Cut Man"&gt; <time="0:51.4">
+#013 Enemy Appeared <time="0:10.85">
+#070 Quiz BGM 1 (Q.1 - Q.4) <time="0:57.57">
+#071 Quiz BGM 1 (Q.5 - Q.7) <time="0:26.75">
+#072 Quiz BGM 1 (Q.8 -) <time="0:24.66">
+#015 Quiz Quota Fulfilled <time="0:04.7">
+#024 Bonus 1 (Fulfillment) <time="0:07.5">
+#016 Event <time="0:36">
+#079 Quiz BGM 2 (Q.1 - Q.4) <time="0:49.25">
+#080 Quiz BGM 2 (Q.5 - Q.7) <time="0:22.65">
+#081 Quiz BGM 2 (Q.8 -) <time="0:20.6">
+#014 Bonus 2 (Stage Clear) <time="0:22.6">
+#001 Hill of Confrontation (Beginner's Course, Stage 2) &lt;from Mega Man IV "Bright Man"&gt; <time="1:10.07">
+#082 Quiz BGM 3 (Q.1 - Q.4) <time="0:49.25">
+#083 Quiz BGM 3 (Q.5 - Q.7) <time="0:21.6">
+#084 Quiz BGM 3 (Q.8 -) <time="0:18.5">
+#086 Low Vitality Warning <time="0:41.15">
+#093 End of Course <time="0:09.5">
+#003 Raging Earth (Medium Course, Stage 1) &lt;from Ghouls'n Ghosts "Stage 1"&gt; <time="0:41.6">
+#073 Quiz BGM 4 (Q.1 - Q.4) <time="1:14.82">
+#074 Quiz BGM 4 (Q.5 - Q.7) <time="0:35.05">
+#075 Quiz BGM 4 (Q.8 -) <time="0:33.4">
+#004 The Sea You Can't Go Back (Medium Course, Stage 2) &lt;from the King of Dragons "Main Theme (Stage 1, 16)"&gt; <time="1:11.8">
+#005 Castle of Illusion (Medium Course, Stage 3) &lt;from Magic Sword "Dragon's Tower 3 (Round 3)"&gt; <time="1:37">
+#007 Last Voyage (Expert Course, Stage 1) &lt;from Street Fighter II "U.S.A. (Ken)"&gt; <time="0:49.42">
+#076 Quiz BGM 5 (Q.1 - Q.4) <time="0:49.23">
+#077 Quiz BGM 5 (Q.5 - Q.7) <time="0:22.64">
+#078 Quiz BGM 5 (Q.8 -) <time="0:20.57">
+#008 Haggar's Sea (Expert Course, Stage 2) &lt;from Three Wonders "Midnight Wanderers, Stage 3 (Toyland)"&gt; <time="0:58.47">
+#009 Rest Bar (Expert Course, Stage 3) &lt;from Final Fight "Player Select"&gt; <time="1:12.9">
+#010 Monster's Tower (Expert Course, Stage 4) &lt;from Knights of the Round "Round 5 (Coastline)"&gt; <time="1:01.7">
+#011 Ruins (Expert Course, Stage 5) &lt;from Captain Commando "Stage 3 (Ninja House)"&gt; <time="1:01.7">
+#012 Devil's Valley - Last Fight (Expert Course, Stage 6) <time="0:40.1">
+#026 Last Boss Appeared <time="0:22.5">
+#027 Quiz BGM 6 (Last Boss: Brain the Great) <time="2:18">
+#025 Ending <time="0:53">
+#059 End Credits <time="0:40">
+#058 Continue <time="0:22">
+#056 Game Over <time="0:05">
+#057 Name Entry <time="0:23.63">
+#023 Name Entry Finished <time="0:04">
+#022 Ranking Display <time="0:05.5">
+
+----------------------------------------------------------------------------------------
+ [Voice]
+
+#030 [Voice] Capcom World
+#046 [Voice] Warp
+#048 [Voice] San
+#049 [Voice] Ni
+#050 [Voice] Ichi
+#051 [Voice] Bonus desu.
+#052 [Voice] Otetsuki service desu.
+#053 [Voice] Skip
+#085 [Voice] Button wo oshite saikoro wo futte kudasai.
+#096 [Voice] Dai Ichi Mon
+#097 [Voice] Dai Ni Mon
+#098 [Voice] Dai San Mon
+#099 [Voice] Dai Yon Mon
+#100 [Voice] Dai Go Mon
+#101 [Voice] Dai Roku Mon
+#102 [Voice] Dai Nana Mon
+#103 [Voice] Dai Hachi Mon
+#104 [Voice] Dai Kyuu Mon
+#105 [Voice] Saigo no mondai desu.
+#106 [Voice] Button wo oshite hako wo erande ne.
+#110 [Voice] Ahhhh...
+
+----------------------------------------------------------------------------------------
+ [SFX]
+
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#028 [SFX]
+#029 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#047 [SFX]
+#054 [SFX]
+#055 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#091 [SFX]
+#092 [SFX]
+#095 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#111 [SFX]
+#112 [SFX]
+
+  [Sound Composers]
+  Shun Nishigaki (Syun)
+  Manami Matsumae, nee Gotoh (Chanchakorin): #00 original ver, #05 original ver
+  Ojaru: #01 original ver
+  Tamayo Kawamoto (Tamatama, Golden Tamayo, Tamasan) & Ayako Mori: #03 original ver
+  Yoko Shimomura (P, Shimo P): #04 original ver, #07 original ver
+  Masaki Izumiya (T. Yomage, Chiyomaage): #08 original ver, #11 original ver
+  Yoshihiro Sakaguchi (Yuukichan's Papa, Youki Chan's Papa): #09 original ver
+  Isao Abe (Oyaji): #10 original ver
+
+// List contribution by NK
+$end

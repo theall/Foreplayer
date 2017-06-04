@@ -1,0 +1,30 @@
+﻿$name=inthunt
+$version=2
+$default=001
+$main
+
+#001 Title
+#003 Stage 1 - The South Pole
+#017 Boss
+#010 Stage Clear
+#009 Stage 2 - The Channel
+#004 Stage 3 - Seabed Ruins
+#002 Stage 4 - Sunken Town
+#005 Stage 5 - Deep Dark Sea 1
+#007 Stage 5 - Deep Dark Sea 2
+#008 Stage 6 - The Enemy Base
+#023 Ending - Completed without Continue
+#018 Ending - Completed with Continue
+#013 Name Entry
+#020 Game Over
+
+#019 (Unused? 1)
+#021 (Unused? 2)
+#024 (Unused? 3)
+
+  [Composed by]
+  Ai Ai
+
+// Original contribution by Gol Gol
+// English list by Fuj
+$end

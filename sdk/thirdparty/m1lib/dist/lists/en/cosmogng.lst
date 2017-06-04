@@ -1,0 +1,118 @@
+﻿$name=cosmogng
+$songmax=767
+$version=2
+$default=002
+$main
+
+#002 Credit Inserted
+#023 Begin!
+#016 Attack 1
+#011 BGM 1 - Space
+#008 Round Clear
+#047 Challenging Stage - Western
+#050 Challenging Stage - Ninja
+#059 Challenging Stage - Ballerina
+#056 Challenging Stage - Knights
+#053 Challenging Stage - Cooks
+#099 Challenging Stage - Circus
+#102 Challenging Stage - Won!!
+#105 Challenging Stage - Lost
+#086 Sum Bonus Point
+#089 Bonus (Fair)
+#093 Bonus (Good)
+#096 Bonus (Excellent)
+#111 Attack 2
+#108 BGM 2 - Planet
+#042 Game Over
+#113 Showdown with King Cosmo
+#117 Ending
+#001 Speaker Test
+
+---------------------------------------------------------
+
+#018 [Voice]
+#026 [Voice] Oh, no.
+#027 [Voice] I give up.
+#028 [Voice] I'm so sorry.
+#036 [Voice] Here we go!
+#031 [Voice] Ok you guys, steal energy. Okay.
+#069 [Voice] 
+#114 [Voice] 
+#071 [Voice] 
+
+#004 [SFX] Special Flag
+#005 [SFX] 
+#017 [SFX] Lazer
+#020 [SFX] Flame
+#024 [SFX] Jack in the box
+#025 [SFX] Tornado
+#029 [SFX] 
+#033 [SFX] 
+#039 [SFX] 
+#043 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+
+#531 [SFX] 
+#532 [SFX] 
+#533 [SFX]
+#534 [SFX]
+#535 [SFX] 
+#536 [SFX] 
+#537 [SFX] 
+#538 [SFX] 
+#539 [SFX] 
+#540 [SFX]
+#541 [SFX] 
+#542 [SFX] 
+#543 [SFX]
+#544 [SFX] 
+#545 [SFX] 
+#546 [SFX]
+#547 [SFX]
+#548 [SFX]
+#549 [SFX]
+#550 [SFX]
+#551 [SFX]
+#553 [SFX]
+#554 [SFX]
+#560 [SFX]
+#561 [SFX]
+
+#576 [SFX]
+#577 [SFX]
+#578 [SFX]
+#579 [SFX]
+#580 [SFX]
+#581 [SFX]
+#585 [SFX]
+#586 [SFX]
+
+#258 Unused 01
+#259 Unused 02
+#260 Unused 03
+#262 Unused 04
+#263 Unused 05
+#264 Unused 06
+
+  [Source]
+  Cosmo Gang The Video / Namco Game Sound Express Vol.8
+  Victor Entertainment  VICL-15018  Mar 24, 1993
+
+  [Sound Composer]
+  Yoshie Arakawa
+
+$end

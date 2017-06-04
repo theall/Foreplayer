@@ -1,0 +1,27 @@
+﻿$name=g_abus
+$version=2
+$default=$8e
+$songmax=255
+$main
+
+$8e Select <time="0:40" fadeout="yes" fadeoutlength="10">
+$81 Seaside Front [Round 1] <time="2:39" fadeout="yes" fadeoutlength="10">
+$88 Ruins [Round 1] <time="1:27" fadeout="yes" fadeoutlength="10">
+$82 Mechanized Cave [Round 2] <time="5:05" fadeout="yes" fadeoutlength="10">
+$83 Scramble! [Round 3] <time="4:47" fadeout="yes" fadeoutlength="10">
+$84 Out of Gravity [Round 4] <time="1:35" fadeout="yes" fadeoutlength="10">
+$85 The Borderline [Round 5] <time="2:39" fadeout="yes" fadeoutlength="10">
+$86 Death Circus [Round 6] <time="3:09" fadeout="yes" fadeoutlength="10">
+$89 Boss <time="1:03" fadeout="yes" fadeoutlength="10">
+$87 Final Boss 1 <time="3:49" fadeout="yes" fadeoutlength="10">
+$8c Final Boss 2 <time="0:31" fadeout="yes" fadeoutlength="10">
+$8a Clear
+$8d Ending <time="3:07" fadeout="yes" fadeoutlength="10">
+$8b Game Over
+
+  [Sound Composer]
+  Tatsuya Watanabe
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

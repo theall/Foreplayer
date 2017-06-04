@@ -1,0 +1,160 @@
+﻿$name=mnight
+$version=2
+$default=094
+$fixed_volume=300
+$main
+
+#094 [SFX] Coin
+#103 Theme 1 (ACT 1, 10, 15, 21, 24)
+#119 Bonus Stage (ACT 2, 5, 8, 11, 14, 17, 20, 23, 26, 29)
+#121 Theme 2 (ACT 3, 7, 9, 13, 25)
+#134 Theme 3 (ACT 4, 12, 18, 19)
+#135 Theme 4 (ACT 6, 27)
+#120 Theme 5 (ACT 22, 28)
+#102 Theme 6 (ACT 16, 30, 31, False Ending)
+#047 Name Entry (Real Ending)
+#023 Game Over
+
+#118 Theme 2 Ver.2
+
+#026 Unused 1
+#027 Unused 2
+#133 Unused 3
+#132 Unused 4
+#104 Unused 5
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX] 
+#002 [SFX] 
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#136 [SFX] <time="2">
+#137 [SFX] 
+#138 [SFX] <time="2">
+
+  [Sound Composer]
+  Yukari Shimada
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List contribution by ZEK.
+$end

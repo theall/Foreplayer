@@ -1,0 +1,30 @@
+﻿$name= roishtar
+$version=2
+$default= 01
+$fixed_volume=100
+$main
+
+#01 オープニングテーマ
+#02 メインテーマ 
+#14 ドルアーガ
+#06 クオックス <time="00:25">
+#04 ラウンドクリア
+#08 ラウンドスタート
+#15 ローパー <time="00:53.7">
+#10 サッカバス <time="00:20">
+#09 ドルアーガ [ENTRANT HALL]
+#17 最終ラウンドクリア
+#03 コングラチュレーション
+#05 ゲームオーバー
+#07 メインテーマ (Hurry up)
+#11 クオックス (Hurry up) <time="00:30">
+#12 サッカバス (Hurry up) <time="00:22">
+#16 ローパー (Hurry up) <time="00:22">
+#13 ドルアーガ [ENTRANT HALL] (Hurry up) 
+
+  ■出典
+  NAMCO GAME MUSIC VOL.1
+  ALFA RECORDS  28XA-170  1987.07.25
+
+// リスト作成：enoさん
+$end

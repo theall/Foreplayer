@@ -1,0 +1,44 @@
+﻿$name=plusalph
+$version=2
+$default=008
+$songmax=045
+$main
+
+#008 凱旋序曲 (Title)
+#028 COIN
+#013 GAME START 1
+#001 風の踊り子 (Stage 1 -Wind Country-)
+#017 EXTRA GAME
+#002 INTO BLUE (Stage 2 -Sea Colony-)
+#004 BIRD ISLAND (Stage 3 -Flower Town-)
+#010 SUN COLORS (Stage 4 -Snow Country-)
+#005 LAST HEART (Stage 5 -Sand City-)
+#011 ALBORADA (Stage 6 -Dark Sodom-)
+#012 NEO BAROQUE (Stage 7 -Eden-)
+#014 GAME START 2
+#003 BOSS STAGE
+#009 EXPLOSION
+#015 ENDING THEME
+#007 CONTINUE
+#006 GAME OVER
+#016 平和へのハーモニカ (Unused)
+
+-----------------------------------------
+
+#021 [Voice] レディ～ゴー！
+#022 [Voice] ラッキー！
+#023 [Voice] コングラチュレイション！
+#024 [Voice] 1up!
+#025 [Voice] レーザー
+#026 [Voice] ショットアップ
+#027 [Voice] ハイパー
+#045 [Voice] イェィイェィ～！
+
+  ■出典
+  プラスアルファ / JALECO
+  PONY CANYON / SCITRON  PCCB-00015  1989.12.15
+
+  ■作曲
+  多和田 吏
+
+$end

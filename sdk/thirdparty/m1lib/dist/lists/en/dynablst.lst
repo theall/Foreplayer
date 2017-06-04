@@ -1,0 +1,36 @@
+﻿$name=dynablst
+$version=2
+$default=11
+$fixed_volume=100
+$main
+
+#011 Game Mode Select <time="11">
+#004 Introduction (Normal Game) <time="15">
+#009 Game Start <time="5">
+#001 Stage 1, 3, 5
+#012 Continue <time="12.5">
+#015 Stage 2, 4, 6
+#002 Boss BGM
+#006 Stage Clear <time="4.5">
+#016 Ending <time="14.5">
+#014 Game Over <time="5">
+#013 Name Entry
+
+#005 Introduction (vs Game) <time="7.5">
+#009 Game Start <time="5">
+#003 vs Game BGM
+#007 Win <time="5">
+#010 Time Out !!<time="4">
+#008 Draw or Lose <time="4.5">
+
+// List contribution by ZEK.
+// English list and updated by Fuj
+//
+// MANTRO
+// AKI...
+// Y.K
+// MACCOY
+// NANAO.
+// MO!YOR
+// OSHIKU
+$end

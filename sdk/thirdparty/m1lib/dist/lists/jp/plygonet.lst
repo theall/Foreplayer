@@ -1,0 +1,29 @@
+﻿$name=plygonet
+$version=2
+$default=$d0
+$songmax=$f0
+$main
+
+$d0 ZERO G (タイトルロゴ)
+$d1 FRONTLINE ASSEMBLY (セレクト)
+$d7 ORIENTRANCE～RADIOACTIVITY MIX～ (空き地ステージ)
+$da ENERGY HIGH (高速道路ステージ)
+$d4 BRAIN EXPANDER (神殿跡ステージ)
+$d8 KNIGHT HORSE～TRIGGER SYNC EDIT～ (市街地ステージ)
+$d5 DEATH BEFORE VISION (山岳地帯ステージ)
+$d3 BRICK PANDEMONIUM (レンガ壁ステージ)
+$d6 MEDITERRNEAN PAD～LAKESIDE MIX～ (湿地帯ステージ)
+$d9 SECRET WEAPON～RESISTANCE EDIT～ (ミサイル基地ステージ)
+$e0 HI-TECH DESTROYER (パターンクリア / GOOD)
+$e2 TOMORROW JUST ANOTHER SPACE (全ステージクリア)
+$e1 TRANSMISSION (パターンクリア / BAD)
+$df ADDITIONAL CHARGE (コンティニュー待ち)
+$db CHILL OUT (ゲームオーバー)
+$dc ACKNOWLEDGEMENT (ランキング)
+$f0 スピーカーテスト
+
+  ■出典
+  コナミ・アミューズメントサウンズ '94 - 春
+  KING RECORDS  KICA-7631～7632  1994.02.23
+
+$end

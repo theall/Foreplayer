@@ -1,0 +1,22 @@
+$name=mlanding
+$version=2
+$default=06
+$main
+
+#006 Demo
+#005 Select
+#007 Start
+#008 Landing Successful
+#009 Name Regist(Completed)
+#010 Landing Failed
+#011 Game Over
+
+  [ Source ]
+  Kyukyoku Tiger - G.S.M. Taito 2
+  Pony Canyon / Scitron  D28B0008  1988.11.21
+
+  [ Composer ]
+  Shizuo Aizawa (Zuntata)
+
+// List contribution by Llama
+$end

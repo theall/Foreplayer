@@ -1,0 +1,33 @@
+﻿$name=g_lem
+$version=2
+$default=61441
+$songmax=65536
+$main
+
+$f001 BGM 1
+$f002 BGM 2
+$f003 BGM 3
+$f004 BGM 4
+$f005 BGM 5
+$f006 BGM 6
+$f007 BGM 7
+$f008 BGM 8
+$f009 BGM 9
+$f00a BGM 10
+$f00b BGM 11
+$f00c BGM 12
+$f101 BGM 13
+$f102 BGM 14
+$f103 BGM 15
+$f104 BGM 16
+$f105 BGM 17
+$f106 BGM 18
+$f107 BGM 19
+$f108 BGM 20
+$f109 BGM 21
+$f10a BGM 22
+$f10b BGM 23
+$f10c BGM 24
+
+// Basic list contributed by Knurek
+$end

@@ -1,0 +1,41 @@
+﻿$name=bbusters
+$version=2
+$default=33
+$main
+
+#033 BEAST BUSTERS (タイトル・デモ)
+#034 DECIDE IT! (キャラ決定)
+#038 EXORCISM PART 1 (エリア1・スタートデモ)
+#037 THE PARADISE OF MONSTERS (メインテーマ1)
+#053 HOTBED OF VICE (ボスシーン)
+#049 I JUST KILLED A MONSTER (ボスクリア)
+#043 WITCHING TIME (スコア精算)
+#044 EXORCISM PART 2 (エリア2・スタートデモ)
+#040 I WANNA BE A MONSTER (メインテーマ2)
+#045 EXORCISM PART 3 (エリア3・スタートデモ)
+#052 OH! MY BUDDAH! (メインテーマ3)
+#046 EXORCISM PART 4 (エリア4・スタートデモ)
+#054 WATER MONSTERS (メインテーマ4)
+#047 EXORCISM PART 5 (エリア5・スタートデモ)
+#037 THE PARADISE OF MONSTERS (メインテーマ1)
+#048 EXORCISM PART 6 (エリア6・スタートデモ)
+#052 OH! MY BUDDAH! (メインテーマ3)
+#050 EXORCISM PART 7 (エリア7・スタートデモ)
+#055 BAD VISITOR (メインテーマ7・パート1)
+#059 KOMEDER'S THEME (メインテーマ7・パート2)
+#053 HOTBED OF VICE (ボスシーン)
+#051 COMPLETION (最終ボスクリア)
+#056 WORLD PEACE (エンディング)
+#058 THE PAIN OF PARTING (スタッフ・クレジット)
+#042 EVIL! EVIL! EVIL! (コンティニュー)
+#041 GAME OVER
+
+  ■出典
+  BEAST BUSTERS / SNK
+  PONY CANYON / SCITRON  PCCB-00036  1990.07.21
+
+  ■作曲
+  PAPAYA (幡谷 正彦)
+
+// リスト作成: らま
+$end

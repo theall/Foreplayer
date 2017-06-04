@@ -1,0 +1,30 @@
+﻿$name=alpinr2b
+$version=2
+$default=112
+$main
+
+#112 Beyond the Canyon
+#114 Aerial Life
+#116 Anythin' Goes...
+#122 Reach to the Sky
+#118 Kaz's Boogie
+#120 Chasin' the Insanity
+#124 Get Damn It!.
+#129 Earth Works
+
+-----------------------------------------
+#001 Sound Check
+#003 Unknown Music
+#032 [SFX] Wakeup
+#071 [SFX] Credit
+#091 [SFX] Title
+#092 [SFX] Title
+#004 - [SFX]
+#161 - [Voice]
+
+  [Source]
+  Alpine Racer 2 Arcade Soundtrack 004
+  Wonder Spirits  WSCA-00002  Sep 19, 1997
+
+// List by MuramuraNight
+$end

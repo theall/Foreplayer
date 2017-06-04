@@ -1,0 +1,27 @@
+﻿$name=poundfor
+$version=2
+$default=15
+$main
+
+#15 U.S.A. (Title)
+#16 BEATING (Select)
+#05 DAMATO'S TALK "GET ON" (Advice Trainer)
+#10 MOVE AND MOVE (Training)
+#02 HEAVY CORNER (BGM A)
+#09 DAMATO'S TALK "GO ON" (Advice Trainer)
+#06 KEEP ON TIGHT (Stage Clear)
+#14 HEAT STEP (Bonus)
+#05 DAMATO'S TALK "GET ON" (Advice Trainer)
+#03 DEADLY FIGHT (BGM B)
+#08 LOOSE LOSER (Player Out)
+#07 KEEP ON FIGHT (Continue)
+#13 YOU GET THERE (Ending)
+#01 GAME OVER
+#04 CALL UP (Name Entry)
+
+  ■出典
+  POUND FOR POUND･KEN-GO/IREM
+  PONY CANYON  PCCB-00049 1990.12.15
+
+// List by MuramuraNight
+$end

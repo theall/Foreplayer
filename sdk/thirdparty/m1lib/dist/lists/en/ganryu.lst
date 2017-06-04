@@ -1,0 +1,105 @@
+﻿$name=ganryu
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#244 Opening 1 <time="42">
+#245 Opening 2
+#232 [SFX] Coin
+#246 Character Select
+#038 Episode 1 - Avenger, Destruction
+#240 Yasha-hime (Boss 1)
+#035 Episode 2 - Assassin, Darker
+#241 Kikunojo (Boss 2)
+#036 Episode 3 - Ambition, Dark Priest
+#037 Episode 4 - Evilgod
+#034 Boss 3 & 4
+#033 Episode 5 - Ganryujima War, Holyclan
+#039 Chaos (Boss 5)
+#243 Credits
+#230 Game Over
+
+#042 Unused 1
+#040 Unused 1 (Long)
+#242 Unused 2
+#041 Unused 3
+
+---------------------------------------------------
+  [SFX]
+
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#127 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#229 [SFX] 
+#231 [SFX] 
+#232 [SFX] 
+#233 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#248 [SFX] 
+#249 [SFX] 
+#250 [SFX] 
+#251 [SFX] 
+#252 [SFX] 
+#253 [SFX] 
+#254 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#198 [Voice] 
+#201 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#236 [Voice] 
+
+  [Sound Composer]
+  Yasuko Reeb
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

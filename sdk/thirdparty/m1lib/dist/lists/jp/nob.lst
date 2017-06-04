@@ -1,0 +1,57 @@
+﻿$name=nob
+$version=2
+$default=139
+$songmax=175
+$main
+
+#139 Coin <time="1.8">
+#173 [S.E.] <time="3.6">
+#130 Round 1 <time="01:02.61">
+#144 Bubble <time="21.77">
+#166 Round 1 - Hurry Up! <time="48.03">
+#137 Boss 1 <time="59.55">
+#133 Boss 2 <time="01:27.2">
+#171 Round Clear (Round1,2) <time="6.2">
+#163 Bonus Point <time="5.8">
+#131 Round 2 <time="01:02.48">
+#167 Round 2 - Hurry Up! <time="52.87">
+#146 Miss <time="1.4">
+#132 Round 3 <time="02:01.42">
+#168 Round 3 - Hurry Up! <time="01:42.75">
+#172 Round Clear (Round3) <time="7.1">
+#135 Game Over <time="3.2">
+#129 Name Entry <time="20.5">
+#169 Continue
+//#169 Continue <time="21.2">
+
+-----------------------------------------
+ [S.E.]
+
+#138 [S.E.]
+#140 [S.E.] Extend
+#141 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#145 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+#159 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#170 [S.E.]
+
+//list composed by huntingforce
+$end

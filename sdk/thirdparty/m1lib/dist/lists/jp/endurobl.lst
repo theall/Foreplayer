@@ -1,0 +1,31 @@
+﻿$name=endurobl
+$version=2
+$default=131
+$songmax=183
+$main
+//OPN version
+
+#131 Opening
+#129 Main Theme
+#130 Name Entry 1
+#133 Name Entry 2
+#132 BGM #1
+#134 BGM #2 (CD未収録)
+
+-----------------------------------------
+ [S.E.]
+
+#161 [Voice] "Check Point!"
+#162 [Voice] "Congratulation"
+#168 [Voice] "Get Ready?"
+#169 [Voice] "Go!"
+//#139-#183 [S.E.]
+
+  ■出典
+  SEGA GAME MUSIC Vol.2 / G.M.O.
+  ALFA RECORDS  28XA-108  1987.02.25
+
+  ■作曲
+  川口 博史 (Hiro)
+
+$end

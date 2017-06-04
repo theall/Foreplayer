@@ -1,0 +1,26 @@
+﻿$name=regulus
+$version=2
+$default=135
+$main
+
+#135 [S.E.] CREDIT
+#131 START～MAIN THEME
+#132 CLEAR～MAIN THEME
+#136 [S.E.] MISS
+#129 RANK LIST
+
+#130 MAIN THEME
+
+---------------------------------------------------
+  [S.E.]
+
+#133 [S.E.] SHOT
+#134 [S.E.] MISSILE
+#135 [S.E.] CREDIT, ITEM
+#136 [S.E.] MISS, BOMB
+#137 [S.E.] HIT
+#139 [S.E.] 1UP
+
+// List contribution by ZEK.
+// Special Thanks to B
+$end

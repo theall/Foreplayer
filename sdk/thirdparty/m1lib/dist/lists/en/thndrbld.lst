@@ -1,0 +1,21 @@
+﻿$name=thndrbld
+$version=2
+$default=147
+$songmax=159
+$main
+
+#147 Credit Inserted
+#152 Thunder Blade (Stage 1, 3)
+#158 Burning Point (Boss)
+#154 Round Clear
+#159 Type II (Stage 2, 4)
+#156 Name Entry
+#153 BGM 1
+#155 BGM 2
+#157 BGM 3
+
+  [Source]
+  Galaxy Force -G.S.M. Sega 1-
+  Pony Canyon / Scitron  D28B0002  Jul 7, 1988
+
+$end

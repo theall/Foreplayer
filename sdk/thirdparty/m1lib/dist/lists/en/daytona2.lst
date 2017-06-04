@@ -1,0 +1,34 @@
+﻿$name=daytona2
+$default=$02
+$version=2
+$main
+
+$02 Sling Shot
+$03 I Can Do It
+$04 Skyscraper Sequence
+$09 Tips to Win
+$0A Selector
+$0C Beginner Ending
+$0D Advanced Ending
+$0E Expert Ending
+$0B Name Entry
+
+$0F (Beginner Course Finish)
+$10 (Advanced Course Finish)
+$11 (Expert Course Finish)
+
+$05 Battle on the Edge
+$06 Sling Shot
+$07 I Can Do It
+$08 Skyscraper Sequence
+
+  [Source]
+  Daytona USA 2 Battle on the Edge Sound Tracks
+  Pony Canyon / Marvelous Entertainment inc.  MJCA-00025  Jul 17, 1998
+
+  [Vocal]
+  Dennis St. James: #02, #03, #04
+  Takenobu Mitsuyoshi: #05, #06, #07, #08
+
+// Original list contribution by Mikasen
+$end

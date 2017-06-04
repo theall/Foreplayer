@@ -1,0 +1,39 @@
+﻿$name=airbustr
+$version=2
+$default=093
+//$songmax=093
+$main
+
+#093 Coin
+#016 Select
+#017 Seaside Front (Round 1 -海沿いの市街地-)
+#018 Ruins (Round 1)
+#020 Boss
+#021 Clear
+#022 Mechanized Cave (Round 2 -機械化洞窟-)
+#030 Scramble! (Round 3 -地上～成層圏-)
+#025 Out Of Gravity (Round 4 -衛星軌道～地球圏脱出-)
+#031 The Borderline (Round 5 -敵要塞惑星外縁部-)
+#026 Death Circus (Round 6 -敵要塞惑星内部-)
+#039 Final Boss 1
+#045 Final Boss 2
+#042 Ending
+#024 Game Over
+#027 Name Entry
+//
+//#035 Boss ? (CD未収録曲)
+//#041 Boss ? (CD未収録曲)
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  AIR BUSTER / KANEKO
+  PONY CANYON / SCITRON  PCCB-00025  1990.04.21
+
+  ■作曲
+  渡辺 達也
+
+//#042 パクリが激しい曲ですね。
+//勢いあまって篠原重工のヘリが飛んできそうです汗
+$end

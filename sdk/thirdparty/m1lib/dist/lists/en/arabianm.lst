@@ -1,0 +1,42 @@
+﻿$name=arabianm
+$version=2
+$default=009
+$main
+
+#009 Overture
+#033 Dancing Girl
+#010 Dark Cloud (Player Select)
+#012 Wild Times (Round 1) <time="52.5">
+#013 Wild Times (Round 1 Boss: Mumukinsuia)
+#014 Maiden Battle (Round 2 Boss: Asura)
+#015 Victory (Clear)
+#016 Verse (Demo)
+#019 Split in the Sky (Round 3)
+#030 Depth Charge (Round 3 Boss: Great Roc)
+#020 Wandering (Round 4)
+#018 Vagrancy (Round 4)
+#025 Seance (Round 4 Boss: Kanjiji)
+#017 Journey (Round 4 & Name Entry)
+#011 Curtainfall (Game Over)
+#021 Foreign Country (Round 5) <time="6">
+#022 Foreign Country (Round 5)
+#023 Nightmare (Round 5) <time="18">
+#024 Nightmare (Round 5)
+#026 Mystery (Lamp)
+#027 Attack (Round 6)
+#028 Heartthrob (Round 7)
+#029 Ancient Castle (Round 7)
+#031 Timber Chute (Last Boss: Baruantess)
+#032 Grand Finale - Going with the Great Tide (All Round Clear)
+#033 Grand Finale - Going with the Great Tide (End Credits)
+
+  [Source]
+  Zuntata Rare Selection Vol.4 Maihime
+  Zuntata Records  ZTTL-0030  Sep 21, 1998
+
+  [Sound Composer]
+  Norihiro Furukawa (Nakayama-Joutouhei, Wiz Master)
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

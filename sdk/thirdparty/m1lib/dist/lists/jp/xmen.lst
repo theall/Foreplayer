@@ -1,0 +1,99 @@
+﻿$name=xmen
+$version=2
+$default=231
+$songmax=240
+$fixed_volume=592
+$main
+
+#231 Introduction <time="9.6">
+#163 [Voice] X-Men  <time="1">
+#232 All That X-Men (タイトルデモBGM)
+#233 CODE 1012 (セレクトBGM)
+#226 They Come From Hell (スタートデモBGM)
+#208 Here Comes The Hero (Stage 1 BGM)
+#216 Do The Right Thing (ボス BGM)
+#218 Premonition (パターンクリア)
+#209 Junk Factory (Stage 2 BGM)
+#220 Psycho Talking (中間デモ1-1 BGM)
+#221 No Fear To Fight (中間デモ1-2 BGM)
+#210 Dance With A Crocodile (Stage 3 BGM)
+#211 Ambience Of The Underground (Stage 4 BGM)
+#222 Please.. Rescure the Professor (中間デモ2 BGM)
+#212 Mountain Top (Stage 5 BGM)
+#213 Ethnic Cave & Flame (Stage 6 BGM)
+#224 Command From Prof. X to Defeat Enemy Attacks (中間デモ4-1 BGM)
+#225 I Wish You A Pleasant Journey (中間デモ4-2 BGM)
+#214 I'll Keep On Fighting As Long As I Live (Stage 7 BGM)
+#215 Nightmarish Fight (Stage 8 BGM)
+#217 Is That You've Got?  (ゲームオーバー)
+#219 Fake Dance (ランキング)
+#229 They Are Peaceful Loving People (エンディングBGM)
+#223 未使用
+#228 未使用
+
+#230 Sound Test
+#240 Sound Test
+
+-----------------------------------------------
+#001 [Voice] Cyclops
+#002 [Voice] Colossus
+#003 [Voice] Wolverine
+#004 [Voice] Storm
+#005 [Voice] Nightcrawrer
+#006 [Voice] Dazzler
+#007 [S.E.] Credit
+#106 [Voice] (Pyro) Pyro will turn you into toast
+#107 [Voice] (Blob) Nothing moves the blob 
+#108 [Voice] (Juggernaut) Juggernaut will flatten you
+#126 [Voice] (Prof. X) Go and save the city
+#127 [Voice] (Prof. X) X-men, X-men
+#128 [Voice] (Prof. X) We have been taken by Magneto.
+#129 [Voice] (Prof. X) However we had time to locate their base on island M.
+#130 [Voice] (Prof. X) Destroy it
+#131 [Voice] (Prof. X) Go and rescue Kitty from the cave
+#132 [Voice] (fake Prof. X) Magneto is over there, follow me
+#133 [Voice] (Prof. X) Magneto is planning to attack earth from his asteroid base.
+#134 [Voice] (Prof. X) You must foil his plan, before it's too late.
+#135 [Voice] (Prof. X) Go after the giant centinel
+#136 [Voice] (Prof. X) At last, that was Mystieque, not Magneto.
+#137 [Voice] (Prof. X) Magneto is at another place
+#139 [Voice] (3面ボス) ???
+#140 [Voice] (Kitty) You must rescue the professor.
+#141 [Voice] (Whitequeen) The whitequeen welcomes you to die.
+#142 [Voice] (Whitequeen) A-ha, you fell into our trap.
+#143 [Voice] (Magneto) I am Magneto.
+#144 [Voice] (Magneto) You are nothing.
+#145 [Voice] (Magneto) You are helpless against my power, X-men.
+#146 [Voice] (Magneto) Dead!
+#147 [Voice] (Magneto) You shall meet with my wrath. 
+#148 [Voice] (Magneto) Master of magnet
+#149 [Voice] (Magneto) Hahahahahahahaha
+#150 [Voice] hahahaha
+#151 [Voice] (Magneto) Come!
+#152 [Voice] (Magneto) Kill you!
+#153 [Voice] (Magneto) X-men
+#154 [Voice] (Magneto) Welcome
+#155 [Voice] (Magneto) to die
+#156 [Voice] (Magneto) X-chicken!
+#157 [Voice] (Magneto) Ha!
+#158 [Voice] (Magneto) Shield
+#159 [Voice] (Intro) In the twentyfirst century, <time="0:2">
+#160 [Voice] (Intro) Evil mutants led by Magneto aim to destory the world.<time="0:4">
+#161 [Voice] (Intro) Humans can do nothing against the power of the evil mutant.<time="0:4">
+#162 [Voice] The only hope is" <time="0:1.8">
+#187 [Voice] X-MEN
+#163 [Voice] X-MEN
+#164 [Voice] (Magneto) You are
+#165 [Voice] (Magneto) I
+#166 [Voice] (Whitequeen) Aha
+#167 [Voice] (Whitequeen) Hahaha
+#168 [Voice] Go
+#169 [Voice] (Magneto) Die!
+#173 [Voice] X-men
+#186 [Voice] Nice job
+
+  ■出典
+  コナミオールスターズ 1993
+  KING RECORDS  KICA-9016～9018  1992.12.21
+
+$end

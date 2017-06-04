@@ -1,0 +1,34 @@
+﻿$name=rohga
+$version=2
+$default=007
+//$songmax=024
+$fixed_volume=100
+$main
+
+#007 Prologue (Attract Demo)
+#008 In The Garage -'Steely Quicken' (Scene 1)
+#009 Wolf Fang -'Rohga' (BGM 1)
+#016 Cruel Slasher -'Pursuit' (Boss 1)
+#018 Mission Clear
+#010 Cross Fire -'Break Down' (BGM 2)
+#023 Briefing -'Operation' (Scene 2)
+#011 Stormy Blade -'Assault' (BGM 3)
+#012 Midnight Chaser -'Breakthrough' (BGM 4)
+#013 Length Finder -'Capture' (BGM 5)
+#014 Stream of Deepblue -'Spotter' (BGM 6)
+#017 Slaughter Machine -'Destroy' (Boss 2)
+#015 Mechanized Beast -'Steely Fang' (BGM 7)
+#020 Requiem -'To Nameless Heroes' (Ending 1)
+#021 Heroic Verse -'Repatration of Heroes' (Ending 2)
+#024 Death Clow (Continue)
+#019 Dead Lock (Game Over)
+#022 Greatest Knights (Name Entry)
+
+  [Source]
+  Wolf Fang, Tumble Pop
+  Pony Canyon / Scitron   PCCB-00084  Mar 21, 1992
+
+  [Sound Composer]
+  Akira Takemoto, Horoaki Yoshida
+
+$end

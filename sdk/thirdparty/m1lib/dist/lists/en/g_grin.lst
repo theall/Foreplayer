@@ -1,0 +1,22 @@
+﻿$name=g_grin
+$version=2
+$default=1
+$songmax=255
+$main
+
+$01 Wonderful Dreamer <time="1:31" fadeout="yes" fadeoutlength="10">
+$02 Heads Up! <time="3:04" fadeout="yes" fadeoutlength="10">
+$03 Large Charge <time="3:49" fadeout="yes" fadeoutlength="10">
+$04 Free at Last <time="3:13" fadeout="yes" fadeoutlength="10">
+$05 Repercussion <time="8:05" fadeout="yes" fadeoutlength="10">
+$06 A Poisonous Snake <time="3:32" fadeout="yes" fadeoutlength="10">
+$07 Night Bird <time="1:58" fadeout="yes" fadeoutlength="10">
+$0b Invitation From the Wind
+$0c Rainbow Paradise <time="1:04" fadeout="yes" fadeoutlength="10">
+$08 See You
+$09 Moon and Stars
+$0a Intuition Takes me There <time="0:38" fadeout="yes" fadeoutlength="10">
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

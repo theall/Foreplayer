@@ -1,0 +1,96 @@
+﻿$name=qzquest
+$version=2
+$default=009
+$main
+
+#009 Princess Kidnapped <time="18">
+#050 [Voice] tasuketeee <time="3">
+#072 [Voice] arigatougozaimasu (Credit inserted)
+#010 Save the Princess!
+#068 [Voice] saa, genre wo erabinasai <time="3.4">
+#011 Genre Select <time="35.8">
+#033 Chosen! <time="2.5">
+#067 [Voice] kono genre wo erabutowa, nakanaka midokoro no aru yatsu ja <time="6">
+#013 Map Preview
+#014 The Kingdom of Public (World 1)
+#023 You Found a Treasure Box!! <time="14.8">
+#028 You Got a Treasure Box!! <time="2.2">
+#015 Harpazein Sea (World 2)
+#016 Ice World (World 3)
+#017 Underground Labyrinth (World 4)
+#018 Volcanic Area (World 5)
+#063 [Voice] irasshaimasee <time="2.5">
+#026 Shopping <time="75.5">
+#064 [Voice] maido ookini <time="2.5">
+#019 Sky World (World 6)
+#021 Boss
+#020 Dark Lord (World 7)
+#022 World Clear <time="6">
+#012 Ending
+#030 Credits
+#031 Name Entry
+#029 Game Over
+
+#071 Credits Ver.2
+#024 Unused 1
+#025 Unused 2
+#027 Unused 3
+#032 Unused 4
+
+#242 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#241 [SFX] <time="3">
+#245 [SFX] 
+#246 Speaker Test Ver.2
+
+---------------------------------------------------
+ [Voice] 
+
+#050 [Voice] 
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#243 [Voice] <time="5">
+
+  [Sound Composer]
+  Kazuyuki Oonui
+
+// List contribution by ZEK.
+$end

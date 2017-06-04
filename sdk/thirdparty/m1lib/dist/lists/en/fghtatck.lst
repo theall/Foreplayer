@@ -1,0 +1,34 @@
+﻿$name=fghtatck
+$version=2
+$default=$11
+$main
+
+#17 DESERT STORM
+#18 φ1991
+#19 RAVE WAR
+#20 Give me trip
+#21 Beat Resistance
+#22 WAR ART
+#23 Hellharmony
+#24 Drive X
+#26 Take Drastic
+#25 NONAME
+#03 U.K.F.A.
+#28 TIME LOOPER
+#27 Don't touch U
+
+$00 Left-Right Check
+
+  [Source]
+  F/A PCB (NA-1)
+
+  Namco Game Sound Express Vol.7 (F/A)
+  Victor Entertainment  VICL-15011  Oct 21, 1992
+
+  [Sound Composer]
+  Shinji Hosoe (Megaten)
+  Takayuki Aihara: #22, #23, #27
+
+// List contribution by Kayama
+// Fix for composer by Lhama
+$end

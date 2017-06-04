@@ -1,0 +1,100 @@
+﻿$name=agallet
+$version=2
+$default=011
+$main
+
+#011 Attract Mode <time="52.0">
+#159 [SFX] Credit Inserted
+#001 Stage 1 <time="2:40" fadeout="yes" fadeoutlength="10">
+#007 Boss BGM <time="2:10" fadeout="yes" fadeoutlength="10">
+#008 Stage Cleared <time="11.4">
+#002 Stage 2 <time="2:25" fadeout="yes" fadeoutlength="10">
+#003 Stage 3 <time="2:23" fadeout="yes" fadeoutlength="10">
+#004 Stage 4 <time="2:34" fadeout="yes" fadeoutlength="10">
+#005 Stage 5 <time="3:13" fadeout="yes" fadeoutlength="10">
+#006 Stage 6 <time="2:54" fadeout="yes" fadeoutlength="10">
+#012 Ending <time="1:14">
+#013 Continue <time="17.5">
+#009 Game Over
+#010 Name Entry <time="46.0" fadeout="yes" fadeoutlength="10">
+
+#014 [Command] Sound Stop
+
+---------------------------------------------------
+  [SFX]
+
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#115 [SFX] 
+#159 [SFX] Coin
+
+//#160 [SFX] 
+//#161 [SFX] 
+//#162 [SFX] 
+//#163 [SFX] 
+//#164 [SFX] 
+//#165 [SFX] 
+//#166 [SFX] 
+//#167 [SFX] 
+//#168 [SFX] 
+//#169 [SFX] 
+//#170 [SFX] 
+//#171 [SFX] 
+//#172 [SFX] 
+//#173 [SFX] 
+//#174 [SFX] 
+//#175 [SFX] 
+//#176 [SFX] 
+//#177 [SFX] 
+//#178 [SFX] 
+//#187 [SFX] 
+//#188 [SFX] 
+//
+---------------------------------------------------
+  [Voice]
+
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+//#179 [Voice] 
+//#180 [Voice] 
+//#181 [Voice] 
+//#182 [Voice] 
+//#183 [Voice] 
+//#184 [Voice] 
+//#185 [Voice] 
+
+  [Sound Composer]
+  Yoshitatsu Sakai (Yoshita-2)
+
+// List contribution by ZEK.
+// Track duration by Simon B.
+// Adjustment for fadeout by Fuj.
+$end

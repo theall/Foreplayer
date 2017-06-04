@@ -1,0 +1,31 @@
+﻿$name=ctribe
+$version=2
+$default=006
+$main
+
+#006 Title Roll
+#007 The Motorcycle Nuclear Warheads
+#008 Fatman
+#004 Go to next Act
+#009 Amusement Park Nightmare (The Demon Clowns)
+#010 Persian Warlord
+#011 The Slash Skate Screamers
+#012 Destroy Overdrive
+#013 Place of S.O.D. (The Stadium Barbarians)
+#014 War Paint
+#015 The Slaughter Troops
+#016 Swastika is Cyborg
+#017 The Final Battle (Martha Splatterhead)
+#020 Ending (Out of Somewhere)
+#023 Credits Roll (Rest in Peace)
+
+#001 (unused)
+#021 (unused)
+#022 (unused)
+
+  [Source]
+  Double Dragon 3 / The Combatribes
+  Pony Canyon / Scitron  PCCB-00065  Jun 21, 1991
+
+// List contribution by NK
+$end

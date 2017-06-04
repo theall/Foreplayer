@@ -1,0 +1,40 @@
+﻿$name=Mortal Kombat
+$version=2
+$default=19
+$main
+
+#019 Mortal Kombat
+#001 In The Beginning
+#002 The Courtyard
+#006 Goro and The Emporer
+#020 Goro Theme
+#003 The Temple Gate
+#004 The Temple Gate (loop)
+#005 The Temple Gate (end)
+#007 The Palace Gates
+#008 The Palace Gates (loop)
+#009 The Palace Gates (end)
+#013 The Bridge
+#014 The Bridge (loop)
+#015 The Bridge (end)
+#027 The Throne Room
+#028 The Throne Room (loop)
+#029 The Throne Room (end)
+#010 The Cavern
+#011 The Cavern (loop)
+#012 The Cavern (end)
+#021 Tsang Tsung
+#022 Tsang Tsung (loop)
+#023 Tsang Tsung (end)
+#017 Scrlahts
+#031 Unknown Song
+#025 Quick Drum (loop)
+#026 Quick Drum (end)
+#018 Drum Loop
+#016 Short
+#024 Short
+#030 Short
+
+// By Toby from www.system16.com
+// Track names from the Mortal Kombat II Promo CD and MAME
+$end

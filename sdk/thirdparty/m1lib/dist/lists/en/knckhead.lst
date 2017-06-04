@@ -1,0 +1,37 @@
+$name=knckhead
+$version=2
+$default=$31
+$main
+
+$31 On the Air
+$10 Hawk and Wolf (Vs. Fujioka, 1st and 3rd Round)
+$18 Hawk and Wolf (Vs. Fujioka, 2nd Round)
+$11 Hard Too Diehard (Vs. Vincent, 1st and 3rd Round)
+$19 Hard Too Diehard (Vs. Vincent, 2nd Round)
+$12 Hong-Kong Etoile (Vs. Myao, 1st and 3rd Round)
+$1a Hong-Kong Etoile (Vs. Myao, 2nd Round)
+$13 Deadrocks (Vs. Darrell, 1st and 3rd Round)
+$1b Deadrocks (Vs. Darrell, 2nd Round)
+$14 Latin Aphrodite (Vs. Silva, 1st and 3rd Round)
+$1c Latin Aphrodite (Vs. Silva, 2nd Round)
+$15 Eccentric Hero (Vs. Vaike, 1st and 3rd Round)
+$1d Eccentric Hero (Vs. Vaike, 2nd Round)
+$60 Kacho Fuugetsu (Fujioka, ending)
+$61 American Mind (Vincent, ending)
+$62 Princess Pop (Myao, ending)
+$63 Against the Groove (Darrell, ending)
+$64 Evergreen (Silva, ending)
+$65 Eccentric Hero 2 (Vaike, ending)
+$32 Off the Air
+$1f New Challenger (not on CD)
+
+  [Source]
+  Namco Game Sound Express Vol.9 / Knuckle Heads
+  Victor Entertainment  VICL-15019  May 21, 1993
+
+  [Sound Composer]
+  Takayuki Aihara (John)
+
+// List Contribution by Kayama
+// English list by Fujimon and Phil B
+$end

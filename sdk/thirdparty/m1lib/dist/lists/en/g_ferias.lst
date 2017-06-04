@@ -1,0 +1,42 @@
+﻿$name=g_ferias
+$version=2
+$default=$000
+$songmax=036
+$main
+
+#000 Title Screen - Woody Woodpecker Theme
+#002 Stage Intro
+#003 Floresta de pinheiros (Stage 1)
+#001 Boss
+#012 Stage Clear
+#004 A pensão do Leôncio (Stage 2)
+#011 Bonus Stage
+#005 Entrado numa fria (Stage 3-1)
+#006 Skiing (Stage 3-2)
+#007 Correntezas perigosas (Stage 4-1)
+#008 Swimming (Stage 4-2 - Difficult Mode only)
+#009 Trilha perigosa (Stage 5)
+#010 A casa do Zeca (Stage 6)
+#013 Lost a Life
+
+#014 [SFX]
+#015 [SFX] Clue
+#017 [SFX] Woody Woodpecker Laugh
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX] Car Horn
+#023 [SFX] Speedboat
+#024 [SFX] Speedboat
+#025 [SFX] Speedboat
+#026 [SFX]
+#027 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#034 [SFX] Yahow (Woody)
+#035 [SFX] Yahow (Boss) 
+
+// List contributed by Yawackhary. Level names from RaccoonLad.
+$end 

@@ -1,0 +1,60 @@
+﻿$name=afighter
+$version=2
+$default=175
+$fixed_volume=338
+$main
+
+#175 バイクBGM
+#172 チョッパーBGM
+#170 ボートBGM
+#176 バギーBGM
+#171 スーパーカーBGM
+#169 マシンチェンジ
+#174 ラストボス出現
+#177 エンディング
+#173 ネームエントリー
+#168 ゲームオーバー
+
+
+#136 [S.E.] <time="3">
+#137 [S.E.] <time="3">
+#138 [S.E.] <time="3">
+#139 [S.E.] <time="3">
+#140 [S.E.] <time="3">
+#142 [S.E.] 
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+#159 [S.E.]
+#160 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+
+#129 [FM] High Tom
+#130 [FM] Mid Tom
+#131 [FM] Low Tom
+#132 [FM] Snare Drum
+#133 [FM] Closed High Hat
+#134 [FM] Bass Drum
+#135 [FM] Bass Drum
+#166 [FM] Snare Drum 2
+#167 [FM] 
+
+// List contribution by R
+$end

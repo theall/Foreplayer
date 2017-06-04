@@ -1,0 +1,30 @@
+﻿$name=waveshrk
+$version=2
+$default=264
+$main
+
+#264 Konami Logo
+#261 It's a Hot (Title Screen)
+#262 Are You Ready (Course Select)
+#257 Jet Wave (Novice Stage)
+#258 The Adventures (Novice Stage, US Version)
+#260 Water Water (Intermidiate)
+#259 The Rhythm (Expert)
+#266 Win (Finish)
+#268 Win Part 2 (Finish, US Version)
+#267 Game Over
+#265 Sea of Joy (Credits)
+#263 It's a Hot Part 2 (Name Entry)
+
+#272 Speaker Test
+
+  [Source]
+  GTI Club c/w Jet Wave & Winding Heat Original Game Soundtrack
+  King Records  KICA-7751  Feb 5, 1997
+
+  [Composed]
+  Mutsuhiko Izumi
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

@@ -1,0 +1,137 @@
+﻿$name=zupapa
+$version=2
+$default=002
+$main
+
+#002 [S.E.] NEO-GEO Logo
+#127 [S.E.] COIN Insertion
+#058 ZuPaPa! Title
+#056 WORLD SELECT
+#034 "Circus" WORLD
+#050 UFO Catcher BOSS
+#038 WORLD CLEAR
+#046 "Japan" WORLD
+#047 Kabuki BOSS
+#036 "Jungle" WORLD
+#037 Carrion Plant BOSS
+#057 BONUS GAME
+#044 "Nightmare" WORLD
+#045 Vampire BOSS
+#041 "Toy" WORLD
+#042 Teddy Bear BOSS
+#033 "Dino" WORLD
+#043 Big Mammoth BOSS
+#051 "Sci-fi" WORLD
+#052 Alien Cyclop BOSS
+#039 "Dragon" WORLD
+#040 Dark Wizard BOSS
+#053 "Virtual" WORLD
+#054 Mutant ZuPaPa BOSS
+#059 Ending (All Clear)
+#062 [S.E.] Cheers
+#060 Staff Credits
+#055 GAME OVER
+
+#061 Staff Credits w/o intro.
+
+#003 Music Stop
+
+
+  [S.E.]
+---------------------------------------------------
+#200 [Voice]
+#201 [Voice]
+#202 [Voice]
+#203 [Voice]
+#204 [Voice]
+#205 [Voice]
+#206 [Voice]
+#207 [Voice]
+#208 [Voice]
+#209 [Voice]
+#210 [Voice]
+#211 [Voice]
+#212 [Voice]
+#213 [Voice]
+#214 [Voice]
+#215 [Voice]
+#216 [Voice]
+#217 [Voice]
+#218 [Voice]
+#219 [Voice]
+#220 [Voice]
+#221 [Voice]
+#222 [Voice]
+#223 [Voice]
+#224 [Voice]
+#225 [Voice]
+#226 [Voice]
+#227 [Voice]
+#228 [Voice]
+#229 [Voice]
+#230 [Voice]
+#231 [Voice]
+#232 [Voice]
+
+#238 [Voice]
+#239 [Voice]
+#240 [Voice]
+#241 [Voice]
+#242 [Voice]
+
+
+  [S.E.]
+---------------------------------------------------
+#062 [S.E.] Cheers
+
+#095 [S.E.] NEO-GEO Logo
+
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#123 [S.E.]
+#124 [S.E.]
+#125 [S.E.]
+#126 [S.E.]
+#127 [S.E.] COIN Insertion
+
+#192 [S.E.]
+#193 [S.E.]
+#194 [S.E.]
+#195 [S.E.]
+#196 [S.E.]
+#197 [S.E.]
+#198 [S.E.]
+#199 [S.E.]
+
+#233 [S.E.]
+#234 [S.E.]
+#235 [S.E.]
+#236 [S.E.]
+#237 [S.E.]
+
+// List contribution by Simon B., done in playing the game.
+$end

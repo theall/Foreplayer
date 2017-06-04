@@ -1,0 +1,64 @@
+﻿$name=flipshot
+$version=2
+$default=002
+$main
+
+#002 Neo-Geo Logo
+#038 Attract Mode
+#033 Title Screen
+#127 [S.E.] Credit
+#040 How to Play
+#034 Player Select
+#036 Round 1
+#037 Round 2
+#046 Lose
+#041 Continue
+#038 Round 3
+#039 Final Round
+#045 Win
+#035 Winner
+#043 Congratulations
+#040 Name Entry
+#042 Game Over
+
+#044 未使用曲 1
+#047 未使用曲 2
+
+---------------------------------------------------
+  [S.E.] 
+
+#127 [S.E.] Credit
+#192 [S.E.] 
+#193 [S.E.] 
+#194 [S.E.] 
+#198 [S.E.] 
+#199 [S.E.] 
+#200 [S.E.] 
+#201 [S.E.] 
+#202 [S.E.] 
+#203 [S.E.] 
+#204 [S.E.] 
+#205 [S.E.] 
+#206 [S.E.] 
+#208 [S.E.] 
+#209 [S.E.] 
+#210 [S.E.] 
+#211 [S.E.] 
+#212 [S.E.] 
+#213 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+
+// List contribution by ZEK.
+// Updated by Yamasan
+$end

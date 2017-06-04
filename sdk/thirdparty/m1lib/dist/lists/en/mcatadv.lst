@@ -1,0 +1,158 @@
+﻿$name=mcatadv
+$version=2
+$default=031
+$main
+
+#031 [Voice] (Coin)
+#016 Round 1 -Magic Forest 1 -
+#026 Round 1 -Magic Forest 2 -
+#017 Round 2 -Tricky Cave-
+#141 Miss
+#015 Round 3 -Piratical Sea-
+#020 Round 4 -Ghost Castle-
+#022 Round 5 -Battle in the Air-
+#023 Boss BGM
+#010 Round Clear
+#019 Congratulations !
+#009 Name Entry
+#011 Game Over
+
+#025 Round 1 -Magic Forest 2 - (alt)
+#018 Round 2 -Tricky Cave- (alt)
+#021 Boss BGM (alt)
+
+#013 Unused 1
+#014 Unused 1 (alt)
+#024 Unused 2
+#027 Unused 3
+#142 Unused 4 
+#012 Unused 5
+
+#146 Speaker Test
+
+---------------------------------------------------
+  [SFX]
+
+#028 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#123 [SFX] <time="5">
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#157 [SFX] 
+#144 [SFX] <time="3">
+#145 [SFX] <time="3"> 
+
+---------------------------------------------------
+  [Voice]
+
+#029 [Voice] 
+#030 [Voice] 
+#031 [Voice] 
+#032 [Voice] 
+
+// List contribution by ZEK.
+// English list by Fuj (help me!!)

@@ -1,0 +1,33 @@
+﻿$name=chqflag
+$version=2
+$default=128
+$main
+
+#128 Title (1)
+#129 Title (2)
+#130 Start
+#131 Keep on Riding
+//#132 Keep on Riding (fade in)
+#133 Spining the Wheel
+//#134 Spining the Wheel (fade in)
+#135 Thunder Spirit
+//#136 Thunder Spirit (fade in)
+#137 Night Line
+//#138 Night Line (fade in)
+#139 Grand Stroke
+//#140 Grand Stroke (fade in)
+#141 Burning Scramble
+#142 Pit Stop
+#143 Pattern Clear
+#144 Next
+#145 Game Over
+#146 Name Entry
+#147 Ending
+
+  [Soundtracks]
+  Konami Game Music Collection Vol.1
+  King Records  K30X-7705  Aug 5, 1988
+
+  Konami Game Music Collection Vol.1 (Reprint)
+  King Records  KICA-2309  May 21, 1993
+$end

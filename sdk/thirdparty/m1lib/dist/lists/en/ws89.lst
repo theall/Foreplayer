@@ -1,0 +1,49 @@
+$name=ws89
+$version=2
+$default=265
+$main
+
+$109 Credit
+$009 Selection Screen
+$00b Play Ball
+$100 Main BGM
+$101 Time
+$00f Battle March Kobayakawa <time="00:17">
+$010 Battle March Ransu <time="00:28.30">
+$011 Battle March Hikono<time="00:26.35">
+$012 Battle March Ochiai<time="00:26.80">
+$002 Change Sides Korakuen Stadium
+$006 Battle March Hounaa <time="00:29.10">
+$013 Battle March Hirosawa<time="00:20.70">
+$014 Battle March Ponse<time="00:27.15">
+$015 Battle March Yashiki<time="00:24.25">
+$003 Change Sides Koushien Stadium
+$016 Battle March Mayumi<time="00:16">
+$018 Battle March Baasu <time="00:15.53">
+$017 Battle March Kakefu <time="00:15.40">
+$019 Battle March Ishige <time="00:18.70">
+$01a Battle March Kiyohara <time="00:26.80">
+$004 Change Sides Mejaa Stadium
+$01b Battle March Ishimine <time="00:17.50">
+$01c Battle March Kadota <time="00:17.50">
+$01d Battle March Buryuwa <time="00:23.38">
+$01e Battle March Takazawa <time="00:17.75">
+$01f Battle March Deihisu <time="00:16.30">
+$102 Scoring Position BGM <time="0:12.80">
+$005 Homerun Fanfare
+$008 Game Set: Game Won
+$021 Game Set: Game Draw
+$020 Game Set: Game Lost <time="0:24.75">
+$001 Game Over
+$022 Stereo Test
+$00a Selection Screen w/out intro <time="00:44">
+$007 Battle March Hounaa w/out intro <time="00:26">
+
+----------------------------------------------
+
+
+  [Composed by]
+  Yuriko Keino
+
+// English list by Knurek
+$end

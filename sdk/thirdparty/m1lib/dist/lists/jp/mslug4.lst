@@ -1,0 +1,36 @@
+﻿$name=mslug4
+$version=2
+$default=002
+$songmax=255
+$main
+
+#002 Neo Geo Logo
+#050 Declare War (オープニングデモ)
+#036 THE MILITARY SYSTEM (操作説明、ランキング)
+#039 Choose a Person (プレイヤーセレクト)
+#033 Let's Run Through (ステージ 1「都市」)
+#034 Show Spirit (ステージ 2 「国境」)
+#035 Snowy Road (ステージ 3 「雪山」)
+#040 Cadaverous (ステージ 4 「お化け屋敷」)
+#041 Go Ahead! (ステージ 5 「貨物船」)
+#051 Secret Place! (ステージ 6 「最終」)
+#042 The Scene of a Hard Battle (ボス 1)
+#043 Furiously (ボス2)
+#045 Uncanny Laugh (ラスボス前半)
+#044 Final Madness (ラスボス後半)
+#046 Escape (ラスボス倒した後のデモ)
+#047 Good Ending (グッドエンディング)
+#048 Bad Ending (バッドエンディング)
+#049 End to the War (スタッフロール)
+#038 Gravestone (ゲームオーバー)
+#037 Carry Out (ステージクリア)
+
+  ■出典
+  メタルスラッグ～コンプリートサウンドBOX～
+  ハピネット  SCDC-00546  2006.09.06
+
+  ■作曲
+  田中 敬一
+
+// Base list contributed by Knurek
+$end

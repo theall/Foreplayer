@@ -1,0 +1,57 @@
+﻿$name=digdug
+$version=2
+$default=0
+$main
+
+#00 Credit Sound <time="2">
+#01 Game Start Music <time="7.5">
+#17 DigDug Walking <time="9.5">
+#07 Extend Music <time="2.5">
+#08 Round Clear Music
+
+#17 DigDug Walking <time="9">
+#06 Monster Bye-Bye Music <time="2.75">
+#17 DigDug Walking <time="6">
+#04 Monster touched DigDug <time="2">
+#05 DidDug Disappearing <time="2">
+#03 Game Over Music <time="3.5">
+#02 High Score Music <time="11">
+#20 Name Entry Music
+
+-----------------------------------------------
+
+#04 Monster touched DigDug
+#07 Extend Music
+#09 Time Out Warning
+#10 Monster Squashed
+#11 Monster Blown Out
+#12 Rock Dropped on the Floor
+#13 Rock Fall
+#14 Figer Firing
+#15 Harpoon
+#16 Pumping
+#18 Monster Moving
+
+  * #17 Gets faster after you play #06
+     Play #08 to get back to normal speed
+
+  [Source / OST]
+  Video Game Music
+  Alfa Records  YLC-20003  Apr 25, 1984
+
+  The Best of Video Game Music
+  Alfa Records  32XA-66  Apr 25, 1986
+
+  Video Game Music (Legend Series)
+  SME / Scitron  SCDC-00003  Mar 23, 2001
+
+  Namco Video Game Music Program
+  Dempa
+
+  [Sound Composer]
+  Yuriko Keino
+
+// List by Neo Techno Bou
+// Updated and English list by Fuj
+// Timing and composition by R
+$end

@@ -1,0 +1,37 @@
+﻿$name=finallap
+$version=2
+$default=001
+$fixed_volume=178
+$main
+
+#001 Awaiting Entry
+#259 Start
+#257 [SFX] Count Down
+#002 BGM A
+#003 BGM B
+#004 Ending
+ 
+#258 [SFX] Extended
+#260 [SFX] ???
+ 
+#261 Main Part (Awaiting Entry)
+#262 Main Part (BGM A)
+#263 Main Part (BGM B)
+#264 Main Part (Ending)
+
+#017 Drums Part (Awaiting Entry)
+#018 Drums Part (BGM A) 
+#019 Drums Part (BGM B)
+#020 Drums Part (Ending)
+
+#256 Stereo Test
+
+  [Source]
+  Namco Video Game Graffiti Vol.4 
+  Victor Entertainment  VDR-5282  Mar 08, 1989
+
+  [Music Composition]
+  Shinji Hosoe
+
+// List contribution by R
+$end

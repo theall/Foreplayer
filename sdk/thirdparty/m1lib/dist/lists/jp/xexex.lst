@@ -1,0 +1,115 @@
+﻿$name=xexex
+$version=2
+$default=061
+$songmax=188
+$fixed_volume=349
+$main
+
+#061 [Voice] Konami Logo
+#138 Battle cry - All Hands to Station! (タイトルデモBGM)
+#096 [Voice] XEXEX
+#001 [S.E.] Credit
+#150 Think Tank (コインデモBGM)
+#128 Breeze (Stage 1 BGM)
+#135 Boost Up! (ボスBGM)
+#099 Gimme A High Five (Stage Clear BGM)
+#139 Please (中間デモBGM1)
+#129 With Zero G (Stage 2 BGM)
+#140 Hey! Mr.Wonderful (中間デモBGM2)
+#133 Crystal Clear (Stage 3 BGM)
+#145 Help Me Quickly! (中間デモBGM3)
+#131 Let's Give'em The BIZ (Stage 4 BGM)
+#147 I Dare you (中間デモBGM4)
+#130 The Polygontal Energy (Stage 5 BGM)
+#154 No More Time (中間デモBGM5)
+#149 Happy Daymare (Stage 6 BGM1&lt;ワープ前&gt;)
+#132 Out of The Blue From The Hyperspace Jump (Stage 6 BGM2&lt;ワープ後&gt;)
+#155 Blow Your Top (中間デモBGM6)
+#158 Shake'em Retro-roop!! (Stage 7 BGM1&lt;空中戦&gt;)
+#134 Go For Broke! (Stage 7 BGM2&lt;巨大戦艦&gt;)
+#157 Keep On Mechanical Dancin'! (Stage 7 BGM&lt;カニ登場&gt;)
+#156 Free As A Bird (中間デモBGM7)
+#151 Black Eight Ball (最終ボスBGM)
+#148 Birthday Suits (最終デモBGM)
+#142 My Kutie Pie Irene (エンディングBGM)
+#153 Time To Party Hearty!! (スタッフロールBGM)
+#141 6 Feet Under (ゲームオーバーBGM)
+#144 Can't Wait Until Next Saturday (コンティニューBGM)
+#143 Jack Pot! - Make A Killing!! (おみくじBGM)
+#152 Way To Go! - Carry The Day!! (大吉BGM)
+#146 Snapper (おちBGM)
+#159 sound test
+
+----------------------------------------------------
+ [Voice] & [S.E.]
+
+#185 [Voice] 私の星を助けて
+#160 [Voice] 私は
+#161 [Voice] 惑星イースクエアの
+#162 [Voice] イレーヌ
+
+#118 [Voice] 人類が惑星間飛行をも己が手にした未来。ある強力なテレパシーが地球に届いた
+#127 [Voice] 時を同じくして、人類は不思議な物体を発見
+#178 [Voice] 研究に次ぐ研究で得られたことは、それが生命体であるらしいという事のみである
+#180 [Voice] 不思議な生命体とテレパシー
+#164 [Voice] わずかな手がかりから、二つの接点を見出した人類は、最新鋭戦闘機フリントロックを開発し、惑星イースクエアへと向かう
+#166 [Voice] それが、宇宙にいきる人類の…運命の様に
+
+#025 [Voice] おねがい
+#091 [Voice] 私の星を助けて
+
+#027 [Voice] この私に歯向かうとは愚かな
+#108 [Voice] フフフ…
+
+#107 [Voice] やつは何物だ！？
+#047 [Voice] ああ～んｗ
+#048 [Voice] 早く…きて…
+
+#090 [Voice] おにょれ！
+#106 [Voice] ここまで来たことを後悔させてくれるわ
+
+#049 [Voice] いそがないと
+#119 [Voice] 間に合わな…
+
+#113 [Voice] これ以上進むことは許さん！
+#114 [Voice] ひねりつぶしてくれるわ！
+
+#115 [Voice] お前たちにはまかしてはおけぬ
+#117 [Voice] 私自らが出る！
+
+#050 [Voice] よくここまで来てくれました
+#121 [Voice] 私は
+#122 [Voice] 惑星イースクエアの
+#123 [Voice] イレーヌです
+#124 [Voice] あなたが運んでくださったフリントで
+#125 [Voice] 私の星が救われるのです
+#126 [Voice] さあ
+
+#066 [Voice] 私の星を救ってくれて
+#051 [Voice] ありがとう
+
+#064 [Voice] 大吉
+#065 [Voice] 中吉
+#067 [Voice] ごめんね～
+
+#052 [Voice] Speed Up
+#053 [Voice] Phenomenone
+#054 [Voice] Horming Laser
+#055 [Voice] Ground Laser
+#056 [Voice] Shadow Laser
+#057 [Voice] Search Laser
+#058 [Voice] Spiral Laser
+#059 [Voice] Round Laser
+#188 [Voice] Laser
+
+  ■出典
+  XEXEX コナミ矩形波倶楽部
+  KING RECORDS  KICA-7508  1992.01.21
+
+  XEXEX コナミ矩形波倶楽部
+  KING RECORDS  KICA-7911  1998.09.23
+
+// List by Fuj
+// 修正情報提供：かに氏
+// ステージ表記の「1st.」とか「2st.」はStage 1、Stage2に置き換え
+$end

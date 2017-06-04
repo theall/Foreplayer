@@ -1,0 +1,37 @@
+﻿$name=bakutotu
+$version=2
+$default=1
+$songmax=15
+$fixed_volume=120
+$main
+
+#001 Title Demo
+#010 Story of Old Packet
+#005 Main BGM
+#007 Boss 1 (Blue Worm)
+#008 Break Time
+#006 Main BGM 2 (Machingun Ship Start)
+#011 Player Out
+#000 Continue
+#009 Boss 2 (Turning Eye, Dark Packet)
+#012 Ending
+#015 Ranking (1st)
+#013 Ranking (below 2nd)
+
+#014 ??? // Game Over?
+
+----------------------------------------------------------
+
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+
+  [Source]
+  Namco Video Game Graffiti Vol.3
+  Victor Entertainment  VDR-5278  1988.12.16
+
+  [Sound Composers]
+  Norio Nakagata, Takane Okubo
+
+// List contribution by R
+$end

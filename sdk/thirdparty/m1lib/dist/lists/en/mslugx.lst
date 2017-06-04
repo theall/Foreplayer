@@ -1,0 +1,92 @@
+﻿$name=mslugx
+$version=2
+$default=046
+$songmax=255
+$main
+
+#002 Neo Geo Logo [Resets Current Sound Bank]
+//#030 [Command] Bank Switcher (SFX)  <time="1">
+//#229 [Voice] "Metal Slug 2" <time="4">
+#000 [Command] Bank Switcher (Music) <time="1">
+
+#046 The Military System (How to Play, All Missions Complete)
+#048 Barracks (Player Select)
+#033 Judgment (Mission 1-1)
+#044 Steel Beast 6Beets (Boss Theme A)
+#034 Prehistoric Site (Mission 2-1, 2-2)
+#035 The Cenotaph (Mission 2-3)
+#039 First Contact (Boss Theme B, Mission 6-2)
+#036 Livin' on the Deck (Mission 3-1)
+#040 Assault Theme (Boss Theme C, Mission 6-1)
+#037 Back to the China (Mission 4-1)
+#038 New Godokin Street (Mission 5-1)
+#042 Kiss in the Dark (Mission 5-2)
+#043 Metamorphosis (Mission 5-3)
+#045 Gravestone (Game Over)
+#041 Final Attack (Mission 6-3 / Final Boss Theme)
+#047 End Title Again (Ending)
+#032 Carry Out (Mission Complete)
+
+	Note: Call #030 and #000 to switch the sound bank 
+	between SFX and music.
+
+--------------------------------------------------
+
+#030 [Command: Bank Switcher (SFX & Voice) ] <time="1">
+
+#036 [Voice] Okay
+#044 [Voice] Flame shot
+#045 [Voice] Heavy machine gun
+#046 [Voice] Rocket launcher
+#047 [Voice] Shot gun
+#048 [Voice] Lazer gun
+#049 [Voice] Mission 1 start
+#050 [Voice] Mission 2 start
+#051 [Voice] Mission 3 start
+#052 [Voice] Mission 4 start
+#053 [Voice] Mission 5 start
+#054 [Voice] Final mission start
+#055 [Voice] Mission complete
+#057 [Voice] ha! (Aikawa Rumi)
+#058 [Voice] Thank you. (Priosoner)
+#059 [Voice] hoi (Fighting priosoner)
+#060 [Voice] C'mon, boy
+#061 [Voice] Go home to your mummy
+#062 [Voice] ??
+#063 [Voice] aahahahaha
+#064 [Voice] See you in hell
+#065 [Voice] hahahaha (Morden)
+#066 [Voice]
+#067 [Voice]
+#068 [Voice]
+#069 [Voice] cheers
+#070 [Voice] belch
+#073 [Voice] Marco
+#074 [Voice] Tarma
+#075 [Voice] Fio
+#076 [Voice] Eri
+#078 [Voice]
+#080 [Voice] You're great
+#081 [Voice] Mission all over
+#083 [Voice] Oh, big
+#084 [Voice] Armor piercer
+#085 [Voice] Stone
+#086 [Voice] Fire bomb
+#087 [Voice] Grenade
+#088 [Voice] Enemy chaser
+#089 [Voice] Super grenade
+#090 [Voice] Iron lizard
+#091 [Voice] Drop shot
+#092 [Voice] Mobile satellite
+#093 [Voice] Thunder cloud
+#097 [Voice] 
+#098 [Voice] Bow
+#099 [Voice] Ki-yi
+
+#000 [Command : Bank Switcher (Music) ]<time="1">
+
+  [Source]
+  Metal Slug 2 Original Soundtracks
+  Pony Canyon / Scitron  PCCB-00311  Apr 17, 1998
+
+$end

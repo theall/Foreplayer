@@ -1,0 +1,37 @@
+﻿$name=kickridr
+$version=2
+$default=012
+$main
+
+#012 [S.E.] READY <time="4">
+#013 [S.E.] GO ! <time="3">
+#025 THEME 1
+#015 GOAL
+#027 PASSNG BONUS <time="27.7">
+#029 GAME OVER <time="4">
+#028 RANKING
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] エンジン音 1 <time="3">
+#002 [S.E.] エンジン音 2 <time="4">
+#003 [S.E.] エンジン音 3 <time="3">
+#004 [S.E.] エンジン音 4 <time="4">
+#006 [S.E.] 爆弾車 <time="3">
+#007 [S.E.] ドラム缶車 <time="3">
+#008 [S.E.] 爆弾
+#010 [S.E.] 
+#011 [S.E.] クラッシュ
+#012 [S.E.] 位置について
+#013 [S.E.] 信号機
+#014 [S.E.] タイム
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#021 [S.E.] <time="3">
+#029 [S.E.] ゲームオーバー
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+$end

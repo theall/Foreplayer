@@ -1,0 +1,46 @@
+﻿$name=aliensec
+$version=2
+$default=0
+$main
+
+#00 Coin Sound
+#01 Round Start Sound
+#02 Game Over Sound
+#03 Extend Music
+#04 Footstep 1
+#05 Footstep 2
+#06 Ascending
+#07 Descending
+#08 Shot Sound
+#09 Quoty Disappearing
+#10 Entering Way Out
+#11 Name Entry Music
+#12 Way Out Opened
+#13 Lucky Sound
+#14 Damaged
+#15 Miss
+#16 Sound of Bagan
+#17 Heart Beat 1
+#18 Heart Beat 2
+#19 Grand Finale Music
+#20 Great Octy Appearing
+#21 Capsule Opening
+#22 Packet's Thanks Sound
+#23 Roulet Spinning
+#24 Blank Sound
+#25 Unlucky Sound
+#26 Packet Dislike Sound
+#27 Packet Crying Sound
+#28 Got a Pulse Gun
+#29 Game Start Music
+#30 Sound of Great Octy
+#31 REMON (Got a Yellow Angel)
+
+  [Source]
+  Namco Video Game Music Programming
+  Dempa
+
+  [Sound Composer]
+  Yuriko Keino, Norio Nakagata
+
+$end

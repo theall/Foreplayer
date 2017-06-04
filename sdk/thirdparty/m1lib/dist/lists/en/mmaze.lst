@@ -1,0 +1,41 @@
+﻿$name=mmaze
+$version=2
+$default=$14
+$fixed_volume=193
+$main
+
+$14 Introduction
+$15 Game Start
+$00 Round 1 - Sweetland
+$0e Boss Appeared
+$0f Boss Music (Part A)
+$10 Boss Music (Part B)
+$17 Round Clear
+$1c Round Start
+$01 Round 2 - Toyland (Part A)
+$02 Round 2 - Toyland (Part B)
+$03 Round 3 - Marbleland
+$04 Round 4 - Mechanical Land (Part A)
+$05 Round 4 - Mechanical Land (Part B)
+$06 Round 4 - Mechanical Land (Part C)
+$07 Round 5 - Skyland
+$08 Round 6 - Land of Amazement
+$09 Round 7 - Land of Insects (Part A)
+$0a Round 7 - Land of Insects (Part B)
+$0b Round 8 - Land of Soldiers
+$0c Round 9 - Land of Queen (Part A)
+$0d Round 9 - Land of Queen (Part B)
+$11 Final Boss Appeared
+$12 Final Boss (Part A)
+$13 Final Boss (Part B)
+$1b Ending
+$16 Game Over
+$18 Continue
+$1a Name Entry
+$19 Name Entry Finished
+
+  [Source]
+  Namco Video Game Graffiti Vol.5
+  Victor Entertainment  VDR-5300  Aug 21, 1989
+
+$end

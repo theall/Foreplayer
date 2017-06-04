@@ -1,0 +1,130 @@
+﻿$name=lostwrld
+$version=2
+$default=000
+$songmax=159
+$main
+
+#000 Credit Inserted
+#001 Opening
+#002 Round 1 BGM (Dust World #1)
+#003 Round 2 BGM (Dust World #2)
+#004 Round 3 BGM (Dust World #3)
+#005 Round 4 BGM (Pyramid World #1)
+#006 Round 5 BGM (Pyramid World #2)
+#007 Round 6 BGM (Pyramid World #3)
+#018 Shoppin'
+#008 Round 7 BGM (Ethereous Wold #1)
+#009 Round 8 BGM (Ethereous Wold #2)
+#010 Round 9 BGM (Ethereous Wold #3)
+#011 Mid Boss A &lt;Outside&gt;
+#012 Mid Boss B &lt;Inside&gt;
+#013 Boss
+#014 Last Round Boss (Bios)
+#015 Round Clear
+#020 Ending
+#016 Credits Roll
+#019 Game Over
+
+#021 Not on CD 1
+#022 Not on CD 2
+
+-----------------------------------------
+ [SFX] & [Voice]
+
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice]
+#153 [Voice] 
+#154 [Voice] 
+
+#147 [Voice]
+#148 [Voice]
+#155 [Voice]
+
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+
+  [Source]
+  Daimakaimura -G.S.M. Capcom 1
+  Pony Canyon / Scitron  D28B0011  Jan 11, 1989
+
+$end

@@ -1,0 +1,33 @@
+﻿$name=contcirc
+$version=2
+$default=26
+$main
+
+#026 Coin <time="3.5">
+#009 Brazil <time="14.2">
+#011 America <time="11">
+#012 France <time="9">
+#010 Monaco <time="10">
+#013 Germany <time="5.5">
+#014 Spain <time="9.5">
+#015 Mexico <time="7.5">
+#016 Japan
+
+#017 Pit In <time="20">
+#018 Goal In (Clear) <time="11">
+#019 Goal In (Not Clear) <time="6.5">
+#020 End Map
+#021 Continue
+#022 Ending
+#023 Name Set
+#024 Name Set 2 <time="29">
+#025 Game Over
+
+  [Source]
+  Kyukyoku Tiger -G.S.M. Taito 2-
+  Pony Canyon / Scitron  D28B0008  Nov 21, 1988
+
+  [Sound Composer]
+  Zuntata (MAR. & Pinch Punch)
+
+$end

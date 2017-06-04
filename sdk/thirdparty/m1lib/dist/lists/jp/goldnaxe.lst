@@ -1,0 +1,112 @@
+﻿$name=goldnaxe
+$version=2
+$default=156
+$main
+
+#156 [S.E.] CREDIT
+#197 THE BATTLE (プレイヤー選択)
+#193 荒野 (ROUND 1)
+#192 BATTLE FIELD (BOSS 1)
+#198 シーフのテーマ (BONUS) 
+#199 古地図 (マップ表示)
+#195 TURTLE VILLAGE 1 (ROUND 2)
+#203 亡者の道 (ROUND 3)
+#200 TURTLE VILLAGE 2 (ROUND 4)
+#194 宿敵！デス・アダー (BOSS 2)
+#201 終決 (ENDING)
+#204 す・た・こ・ら、さっさ！ (STAFF ROLL) 
+#202 戦斧マーチ (RANKING)
+#196 GAME OVER
+
+----------------------------------------------
+ [S.E.]
+
+#191 [S.E.]
+#190 [S.E.]
+#175 [S.E.]
+#176 [S.E.]
+#177 [S.E.]
+#178 [S.E.]
+#179 [S.E.]
+#180 [S.E.]
+#181 [S.E.]
+#182 [S.E.]
+#183 [S.E.]
+#184 [S.E.]
+#185 [S.E.]
+#186 [S.E.]
+#187 [S.E.]
+#188 [S.E.]
+#189 [S.E.]
+#171 [S.E.]
+#170 [S.E.]
+#169 [S.E.]
+#168 [S.E.]
+#167 [S.E.]
+#166 [S.E.]
+#165 [S.E.]
+#164 [S.E.]
+#163 [S.E.]
+#162 [S.E.]
+#161 [S.E.]
+#160 [S.E.]
+#159 [S.E.]
+#158 [S.E.]
+#157 [S.E.]
+#156 [S.E.] CREDIT
+#153 [S.E.]
+#152 [S.E.]
+#151 [S.E.]
+#150 [S.E.]
+#149 [S.E.]
+#148 [S.E.]
+#147 [S.E.]
+#146 [S.E.]
+#145 [S.E.]
+#144 [S.E.]
+#143 [S.E.]
+#142 [S.E.]
+#141 [S.E.]
+#140 [S.E.]
+#139 [S.E.]
+#138 [S.E.]
+#137 [S.E.]
+#136 [S.E.]
+#135 [S.E.]
+#134 [S.E.]
+#133 [S.E.]
+#132 [S.E.]
+#131 [S.E.]
+#130 [S.E.]
+#129 [S.E.]
+
+ [Voice]
+
+#084 [Voice] 
+#083 [Voice] Dead
+#082 [Voice] Yell
+#081 [Voice] Woman 
+#080 [Voice] Woman Yell
+#079 [Voice] Dragon strike
+#078 [Voice] Village People Fleeing
+#077 [Voice] Thunder
+#076 [Voice] 
+#075 [Voice] 
+#074 [Voice]
+#073 [Voice] 
+#072 [Voice]
+#071 [Voice] 
+#070 [Voice]
+#069 [Voice]
+#068 [Voice] Magic dwarf 
+#067 [Voice] Magic dwarf
+#066 [Voice] Magic dwarf
+#065 [Voice] Welcome
+
+  ■出典
+  SUPER SONIC TEAM -G.S.M.SEGA 3- / S.S.T.BAND 
+  PONY CANYON / SCITRON  PCCB-00009  1989.10.21
+
+// List contribution by R
+// Updated by CrashTest
+$end

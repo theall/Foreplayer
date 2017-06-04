@@ -1,0 +1,28 @@
+﻿$name=grobda
+$version=2
+$default=0
+$songmax=15
+$main
+
+#00 Credit Sound
+#01 [Voice] Get Ready.
+#02 Tank moving sound
+#03 Beam Launched
+#04 Barrier generated
+#05 Zapper neutralized
+#06 Missed
+#07 Energy empty warning
+#08 Enemy tank or fortress exploded
+#09 Hiscore broken
+#10 Name entry music
+#11 Game over
+#12 Attract sound
+#13 Extend sound
+#14 Beam neutralized
+#15 Beam hit on the body of fortress
+
+  [Source]
+  Namco Video Game Music Programming
+  DEMPA
+
+$end

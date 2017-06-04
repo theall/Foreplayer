@@ -1,0 +1,42 @@
+﻿$name=ssriders
+$version=2
+$default=147
+$songmax=152
+$main
+
+#147 The Magnificent Four (Attract Mode)
+#095 [SFX] Shot <time="0.55">
+#107 [Voice] Yeah-Hey!
+#152 Time to Set Off (Player Select)
+#142 Wanted! (Boss Introduction)
+#128 Gunfight at the Sunset Corral (Stage 1, 5, 8)
+#129 Butch Cassidy and Sunset Riders (Stage 2, 7)
+#130 Face with Courage (Stage 3)
+#143 The Rosy Setting Sun (Stage 6)
+#131 It's Time to Pay (Stage 1 Boss)
+#135 Draw Your Gun! (Stage 2 Boss)
+#136 You and He, Big Trouble (Stage 3 Boss)
+#137 We're Gonna Blow You Away! (Stage 4 Boss)
+#138 Adios, Amigo (Stage 5 Boss)
+#144 Me Ready for Pow-wow (Stage 6 Boss)
+#145 Ay, Chihuahua (Stage 7 Boss)
+#146 The Great Petal (Stage 8 Boss)
+#140 Quick Draw (Bonus Stage)
+#141 Please Help My Friends (Stage 3 Demo)
+#139 Dance Over Night (Cancan Dance)
+#149 Escape (Stage 7 Demo)
+#132 Yuppie! (Stage Clear)
+#133 Continue of Sorrow (Continue)
+#134 Hic Jacet (Game Over)
+#150 Looking Up at the Stars (Ranking)
+#148 The Big Win (Ending)
+#151 Speaker Test
+
+  [Source]
+  Konami Game Music Collection Vol.5
+  King Records  KICA-7605  Sep 26, 1992
+
+  [Sound Composer]
+  Motoaki Furukawa
+
+$end

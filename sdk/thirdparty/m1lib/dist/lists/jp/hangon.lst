@@ -1,0 +1,33 @@
+﻿$name=hangon
+$version=2
+$default=150
+$songmax=157
+$main
+
+#150 Title
+#157 Main Theme
+#129 Goal Music
+#130 Name Entry
+//
+//#131 $83
+//#158 $9e
+
+-----------------------------------------
+ [S.E.]
+
+#138 [S.E.] SLIP
+#140 [S.E.] SAFTY ZONE
+#137 [S.E.] REBOUND
+#144 [S.E.] CRASH
+#146 [S.E.] ALARM 1
+#147 [S.E.] ALARM 2
+#148 [S.E.] ALARM 3
+#149 [S.E.] ALARM 4
+#155 [S.E.] OTHER BIKE R
+#156 [S.E.] OTHER BIKE L
+
+  ■出典
+  セガ体感ゲーム・スペシャル
+  ALFA RECORDS  28XA-198  1987.12.21
+
+$end

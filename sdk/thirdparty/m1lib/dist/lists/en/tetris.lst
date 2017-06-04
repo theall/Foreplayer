@@ -1,0 +1,56 @@
+﻿$name=tetris
+$version=2
+$default=180
+//$songmax=$B6
+$main
+
+#180 Coin
+#147 Main Music 1 <time="1:52.8">
+#148 Main Music 2 <time="1:45.2">
+#149 Main Music 3 <time="1:37.7">
+#150 Main Music 4 <time="1:30.2">
+#151 Main Music 5 <time="1:15.1">
+#152 Deadlock <time="30.5">
+#144 Game Over <time="11.5">
+#146 Name Entry (The Soviet National Anthem?)  <time="38.5">
+#145 Unknown
+
+------------------------------------------------------
+
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+
+#129 [FM] High tom
+#130 [FM] Mid tom
+#131 [FM] Low tom
+#132 [FM] Snare drum 1
+#133 [FM] Snare drum 2
+#134 [FM] Bass drum 1
+#135 [FM] Bass drum 2
+#136 [FM] Snare drum 3
+#137 [FM] Bass drum 3
+#138 [FM] Cow bell
+#139 [FM] Snare drum 4
+#140 [FM] 
+#141 [FM] Open high hat
+#160 [FM] High tom
+#161 [FM] Mid tom
+#162 [FM] Low tom
+#163 [FM] Snare drum 4
+#164 [FM] Snare drum 5
+#165 [FM] Closed high hat 1
+#166 [FM] Closed high hat 2
+#167 [FM] 
+#168 [FM] Open Cymbal 1
+#169 [FM] Wood block 
+#170 [FM] Open Cymbal 2
+#171 [FM] Closed high hat 3
+
+// List contribution by Neo Techno Bou on Dec 23, 2003
+// Updated by Fuj
+$end

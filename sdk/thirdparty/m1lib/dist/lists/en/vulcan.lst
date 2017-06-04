@@ -1,0 +1,36 @@
+﻿$name=vulcan
+$version=2
+$default=098
+$main
+
+#098 Title Demo
+#101 Coin
+#092 Equipment
+#080 TABIDACHI (Air Battle 1)
+#088 Burning Heat (Stage 1)
+#085 Take Care! (Boss)
+#093 A Shooting Star (Air Battle 2)
+#089 Synthetic Life (Stage 2)
+#084 Crystal World (Stage 3)
+#100 A Way Out of The Difficulty (Stage 4)
+#081 The Old Stone Age -1- (Stage 5-1)
+#082 The Old Stone Age -2- (Stage 5-2)
+#083 Maximum Speed (Stage 6)
+#086 Gradius I -Boss Theme- (Stage 7-1)
+#087 Salamander -Boss Theme- (Stage 7-2)
+#096 Fire Dragon (Stage 7-3)
+#095 Into Hostile Ship (Stage 8-1)
+#094 Shoot and Shoot (Stage 8-2)
+#097 The Final Enemy (Stage 8-3)
+#099 Farewell (Ending)
+#091 Game Over
+#090 Ranking
+
+  [Source & OST]
+  Space Odyssey, Gradius II - Gofer no Yabou -
+  Apollon  BY30-5202  Jul 21, 1988
+
+  Gradius Arcade Soundtrack
+  Konami Music Entertainment  KMCA-155, 156  Apr 3, 2002
+
+$end

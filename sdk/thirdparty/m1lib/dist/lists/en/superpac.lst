@@ -1,0 +1,35 @@
+﻿$name=superpac
+$version=2
+$default=0
+$main
+
+#00 Credit Sound
+#01 Game Start Music
+#02 Round Clear Music
+#03 Game Over Music
+#04 Name Entry (1st)
+#05 Name Entry (2nd to 5th)
+#06 Monster Moving Sound (Normal Mode)
+#07 Monster Moving Sound (Spurt Mode 1)
+#08 Monsters Became Blue
+#09 PacMan Got a Key
+#10 PacMan Ate a Fruit
+#11 Monster Moving Sound (Spurt Mode 2)
+#12 PacMan Broke a Wall
+#13 PacMan Ate a Monster
+#14 Slot Machine Working
+#15 You Won 100 Points on the Slot Machine
+#16 You Won 2000 Points / 5000 Points on the Slot Machine
+#17 PacMan Ate a Special Power Food
+#18 Challenging Stage Start
+#19 PacMan Disappearing
+#20 Extended
+#21 PacMan Show Music
+#22 Counting Bonus Points
+
+  [Source]
+  Namco Video Game Music Library Vol.1
+  Dempa
+
+// List by Fujix
+$end

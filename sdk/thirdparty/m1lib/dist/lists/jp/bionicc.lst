@@ -1,0 +1,31 @@
+﻿$name=bionicc
+$version=2
+$default=001
+$main
+
+#001 最前線 [THE FRONT LINE] (Round 1)
+#002 大要塞 [BIG FORTRESS] (Round 2)
+#010 悪魔の塔 [THE TOWER OF DEMON] (Round 4)
+#011 トップ・シークレット [TOP SECRET] (Round 5)
+#014 エンディング [ENDING]
+#003 ランキング [RANKING]
+
+  (CD未収録)
+#016 Coin
+#009 Round Clear
+#008 Round 2 Clear (未使用曲)
+#004 Round 3
+#005 Round 3 Clear (未使用曲)
+#006 Round 4 Clear (未使用曲)
+#007 Game Over
+#015 未使用曲
+
+  ■出典
+  カプコン・ゲーム・ミュージック Vol.2
+  ALFA RECORDS  28XA-203  1988.03.25
+
+  ■作曲
+  藤田晴美
+
+// リスト作成: ゴルゴルさん
+$end

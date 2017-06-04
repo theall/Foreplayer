@@ -1,0 +1,24 @@
+﻿$name=bosco
+$version=2
+$default=1
+$main
+
+#00 Formation Sound <time="5">
+#01 Game Start Music
+#02 High Score Music
+#04 Round Clear Music
+#05 Credit Sound
+#06 Extend Sound
+#07 Cannon Hit Sound
+#08 Prua Type Missle Hit Sound
+#09 Formation Hit Sound
+#10 Eich Type Missle, Spy Ship Hit Sound
+#11 Eddore Type Missle Hit Sound
+#12 Wave Assault Sound <time="5">
+#14 Asteroid Hit Sound
+
+  [Source]
+  Namco Video Game Music Program Collection
+  Dempa
+
+$end

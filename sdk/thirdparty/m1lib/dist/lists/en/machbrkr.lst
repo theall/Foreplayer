@@ -1,0 +1,265 @@
+﻿$name=machbrkr
+$version=2
+$default=575
+$main
+
+#575 Attract Mode <time="0:30.44">
+#512 Opening <time="1:20.47">
+#516 Game Select <time="0:27.59">
+#515 Instruction <time="1:03.09">
+#519 Intro - 4 Players <time="0:04.11">
+#514 Intro - 1 Player <time="0:04.12">
+#524 Maximum Speed <time="0:32.26">
+#525 Monster Drag <time="1:03.27">
+#526 Ice Crasher <time="0:45.01">
+#572 Hyper Glider <time="0:42.04">
+#573 Beast Hole <time="0:55.49">
+#563 Future Gate <time="0:56.74">
+#608 Super Stunt <time="0:45.42">
+#574 Bomb's Away <time="0:48.69">
+#522 Deep Diver <time="1:22.46">
+#566 Rapid Jump <time="1:02.59">
+#560 Block Buster <time="0:51.34">
+#570 Ground Spike <time="0:54.34">
+#517 Passed <time="0:04.12">
+#520 Failed <time="0:04.11">
+#567 Shawm <time="0:04.12">
+#521 Completed <time="0:04.11">
+#568 Dead-heat <time="0:16.34">
+#527 World Record <time="0:50.04">
+#561 At Least One Passed <time="0:55.29">
+#562 Continue <time="0:31.19">
+#612 Exhibition <time="0:28.09">
+#569 Awarding Ceremony <time="2:01.32">
+#609 End Credits (Won against CPU) <time="1:29.01">
+#614 Johnny Sanders Theme <time="0:32.47">
+#616 Sophia Revleigh Theme <time="0:44.04">
+#617 Long Rui Hu'an Theme <time="0:47.74">
+#618 Makoto Kotobuki Theme <time="0:41.39">
+#619 Masala Tikka Masala Theme <time="0:45.24">
+#620 Karl Weisemann Theme <time="0:39.29">
+#621 Michael Fletcher Theme <time="0:34.06">
+#613 End Credits (Lose against CPU) <time="2:23.32">
+#564 Bad End <time="0:27.39">
+#571 Ranking / Results <time="0:37.85">
+
+#523 Unused ?
+#565 Unused ?
+
+-----------------------------------------
+
+#001 Sound Check
+
+  Announcements (Japanese)
+#256 [Voice] 
+#257 [Voice] 
+#258 [Voice] 
+#259 [Voice] 
+#260 [Voice] 
+#261 [Voice] 
+#262 [Voice] 
+#263 [Voice] 
+#264 [Voice] 
+#265 [Voice] 
+#266 [Voice] 
+#267 [Voice] 
+#268 [Voice] 
+#269 [Voice] 
+#270 [Voice] 
+
+  Announcements (English)
+#271 [Voice] Select your character
+#272 [Voice] Next
+#273 [Voice] Please select a match
+#274 [Voice] And now for the final results
+#275 [Voice] Please don't give up
+#276 [Voice] Wait!
+#277 [Voice] Please enter your name
+#278 [Voice] Go to the specified position
+#279 [Voice] This is an exhibition stage
+
+  Announcements
+#280 [Voice] Ready?
+#281 [Voice] 1
+#282 [Voice] 2
+#283 [Voice] 3
+#284 [Voice] 4
+#285 [Voice] 5
+#286 [Voice] Go
+#287 [Voice] Time over
+#288 [Voice] OK
+#289 [Voice] Are you ready?
+#290 [Voice] Here we go!
+#291 [Voice] Who's the champion this year?
+#292 [Voice] Have mercy!!
+#293 [Voice] It's a world record!!
+#294 [Voice] Hit it! Hit it!
+#295 [Voice] Hurry! Hurry!!
+#296 [Voice] There!!
+#297 [Voice] Dive, dive!
+#298 [Voice] Losing oxygen!
+#299 [Voice] Danger!
+#300 [Voice] Turn! Turn!!
+
+  Johnny
+#301 [Voice] It's time!
+#302 [Voice] I did it!
+#303 [Voice] Yeah!
+#304 [Voice] Oh no!
+#305 [Voice] This is who i am!
+#306 [Voice] Hmm! Wait a second!
+#307 [Voice] Huh?! Waaaait!
+#308 [Voice] Gee, it hurts!
+#309 [Voice] 
+#310 [Voice] 
+#311 [Voice] 
+#312 [Voice] 
+#313 [Voice] 
+#314 [Voice] 
+#315 [Voice] 
+#426 [Voice] 
+
+  Makoto (English Ver.)
+#317 [Voice] Let's do it!
+#318 [Voice] Easy, easy! no.1
+#319 [Voice] Well?
+#320 [Voice] Geee!
+#321 [Voice] This is jusy too easy!
+#322 [Voice] Oops? Why, why, why?
+#323 [Voice] This is strange!?
+#324 [Voice] 
+#325 [Voice] 
+#326 [Voice] 
+#327 [Voice] 
+#328 [Voice] 
+#329 [Voice] 
+#330 [Voice] 
+#331 [Voice] 
+#427 [Voice] 
+
+  Michael
+#333 [Voice] Hey! Hello!
+#334 [Voice] Here's the victory pose!
+#335 [Voice] I'm so happy man!!
+#336 [Voice] Oh my goodnessss!
+#337 [Voice] Me, no.1 man!
+#338 [Voice] Wait a minute! I'll be...
+#339 [Voice] 
+#340 [Voice] 
+#341 [Voice] 
+#342 [Voice] 
+#343 [Voice] 
+#344 [Voice] 
+#345 [Voice] 
+#346 [Voice] 
+#428 [Voice] 
+
+  Sophia
+#348 [Voice] Here i go
+#349 [Voice] OK! OK!
+#350 [Voice] Alright! Way To go!
+#351 [Voice] Why? I can't take it! Sniff sniff...
+#352 [Voice] It was great!!
+#353 [Voice] Wait for me!!
+#354 [Voice] Oh! no!
+#355 [Voice] 
+#356 [Voice] 
+#357 [Voice] 
+#358 [Voice] 
+#359 [Voice] 
+#360 [Voice] 
+#361 [Voice] 
+#362 [Voice] 
+#429 [Voice] 
+
+  Karl
+#364 [Voice] I did it!
+#365 [Voice] Here's the victory pose!!
+#366 [Voice] Good heavens!
+#367 [Voice] Is it the delicious drink of victory?
+#368 [Voice] What? Was i doropped?!
+#369 [Voice] What? Who do you think you are??
+#370 [Voice] 
+#371 [Voice] 
+#372 [Voice] 
+#373 [Voice] 
+#374 [Voice] 
+#375 [Voice] 
+#376 [Voice] 
+#377 [Voice] 
+#430 [Voice] 
+#379 [Voice] 
+
+  Ron
+#380 [Voice] I'm really sorry
+#381 [Voice] How about this??
+#382 [Voice] Oh, boy
+#383 [Voice] 
+#384 [Voice] 
+#385 [Voice] 
+#386 [Voice] 
+#387 [Voice] 
+#388 [Voice] 
+#389 [Voice] 
+#390 [Voice] 
+#431 [Voice] 
+#392 [Voice] 
+
+  Uasala
+#393 [Voice] Here I Go!
+#394 [Voice] Very well very well!
+#395 [Voice] Good enough!
+#396 [Voice] I am in a slump, you know!
+#397 [Voice] Uobody can take my victory away
+#398 [Voice] 
+#399 [Voice] 
+#400 [Voice] 
+#401 [Voice] 
+#402 [Voice] 
+#403 [Voice] 
+#404 [Voice] 
+#405 [Voice] 
+#406 [Voice] 
+#407 [Voice] 
+#432 [Voice] 
+#409 [Voice] 2
+
+  Makoto (Japanese ver.)
+#410 [Voice] 
+#411 [Voice] 
+#412 [Voice] 
+#413 [Voice] 
+#414 [Voice] 
+#415 [Voice] 
+#416 [Voice] 
+#417 [Voice] 
+#418 [Voice] 
+#419 [Voice] 
+#420 [Voice] 
+#421 [Voice] 
+#422 [Voice] 
+#423 [Voice] 
+#424 [Voice] 
+#433 [Voice] 
+
+  Chalon
+#442 [Voice] Wonderful
+
+  Manchinbou
+#443 [Voice]
+#444 [Voice]
+
+  [Source]
+  Mach Breakers / Namco Game Sound Express Vol.19
+  Victor Entertainment  VICL-15041  Jun 21, 1995
+
+  [Composers]
+  Shinji Hosoe: #575
+  Ayako Sasou: #573
+  Nobuyoshi Sano: #512, #612, #621
+  Hiroto Sasaki: Other songs
+
+// List by MuramuraNight
+// English list translation by Fujix
+$end
+

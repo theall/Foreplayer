@@ -1,0 +1,50 @@
+﻿$name=tankfrce
+$version=2
+$default=261
+$fixed_volume=159
+$main
+
+#261 CREDIT
+// HONJAMACA
+#011 STAGE DEMO - Tank Force March
+#003 Result
+#014 Jungle
+#005 Introduction 1
+#026 AK. Destroyer 
+#018 砂漠の嵐
+#009 時間軸制御装置
+#006 Introduction 2
+#022 BATTLE CITY '92
+#030 Evil Fortress
+#033 Complete Fanfare
+#032 The Eternal Twilight
+#008 Game Over
+#004 Continue
+
+-------------------------------------------------------------
+
+#002 STAGE DEMO
+#010 Tank Force March
+
+#015 Jungle (イントロ無し)
+#016 Jungle (高速)
+#017 Jungle (イントロ無し, 高速)
+
+#027 AK. Destroyer (イントロ無し)
+#028 AK. Destroyer (高速)
+#029 AK. Destroyer (イントロ無し, 高速)
+
+#019 砂漠の嵐 (イントロ無し)
+#020 砂漠の嵐 (高速)
+#021 砂漠の嵐 (イントロ無し, 高速)
+
+#023 BATTLE CITY '92 (イントロ無し)
+#024 BATTLE CITY '92 (高速)
+#025 BATTLE CITY '92 (イントロ無し, 高速)
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.9
+  VICTOR ENTERTAINMENT  VICL-8089  1993.09.22
+
+// リスト作成：みん☆さん
+$end

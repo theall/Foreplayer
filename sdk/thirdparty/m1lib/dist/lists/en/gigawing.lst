@@ -1,0 +1,39 @@
+﻿$name=gigawing
+$version=2
+$default=1
+$songmax=350
+$main
+
+#001 Theme of Giga Wing
+#021 Introduction
+#002 Fighter Selection
+#003 Night Fight
+#004 Base on Molten Lava
+#018 Stronghold in the Dam - Part 1
+#005 Stronghold in the Dam - Part 2
+#006 Floating Continet
+#007 Empyreal Golden City
+#008 Sealed Sanctuary
+#009 At high altitudes on the sea
+#010 Theme of Boss
+#011 Theme of Shin'nosuke
+#012 Theme of Isha
+#013 Theme of Stuck
+#014 Theme of Ruby
+#016 Name Registration
+#019 Rival
+#020 Stage Clear
+#015 I bet it'll come true..
+#017 Ending
+
+  [Source]
+  Giga Wing Original Soundtrack
+  SME CPCA-1026  Apr 21, 1999
+
+  [Sound Composer]
+  Yasushi Uenishi (TAKUMI)
+
+// List contribution by BD
+// English translation by Fujix
+// English list adjustment by bcass
+$end

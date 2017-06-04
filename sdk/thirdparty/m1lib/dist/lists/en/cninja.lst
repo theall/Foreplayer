@@ -1,0 +1,118 @@
+﻿$name=cninja
+$version=2
+$default=030
+$main
+
+#030 [Voice] Go (Coin)
+#004 Start Demo
+#005 BGM 1 (Stage 1, 3)
+#006 BGM 2 (Stage 2, 5)
+#012 Boss BGM 
+#010 Rescue
+#009 Stage Clear <time="10.3">
+#007 BGM 3 (Stage 4)
+#009 Course Select <time="10.3">
+#012 Boss BGM 
+#025 Continue
+#009 Final Select <time="10.3">
+#016 Ending A (Bad)
+#014 Ending B (Bad)
+#013 Ending C (Good)
+
+#011 Unused 1
+#015 Unused 2
+
+---------------------------------------------------
+  [SFX]
+
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#058 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#076 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#126 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#030 [Voice] 
+#031 [Voice] 
+#032 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#035 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#047 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#050 [Voice] 
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#077 [Voice] 
+#080 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#100 [Voice] 
+
+  [Sound Composers]
+  Hiroaki Yoshida (Maro), Seiichi Hamada (Atomic Hanada)
+  Takashi Miura (T.Miura), Yuusuke Takahama (Y.Takahama)
+
+// List contribution by ZEK.
+$end

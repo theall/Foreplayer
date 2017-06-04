@@ -1,0 +1,234 @@
+$name=sexyparo
+$version=2
+$default=552
+//$fixed_volume=308
+$main
+
+#552 Ambition of Takosuke (Opening)
+#553 Sexy Parodius Overture (Title Screen) <time="42" fadeout="yes" fadeoutlength="10">
+#542 Twinkle Assort (Player Select)  <time="46" fadeout="yes" fadeoutlength="10">
+	from	Twinkle Twinkle Little Star / Wolfgang A. Mozart
+#558 Received a Commission (Intro)
+
+#514 Theme of Vic Viper & Lord British <time="49" fadeout="yes" fadeoutlength="10">
+	from 	Beginning of the History / Gradius
+		Theme of Vic Viper / Parodius Da!
+#522 Pastoral March (Mission 1 - Northland Ranch) <time="2:05" fadeout="yes" fadeoutlength="10">
+	from	Hokkaido wa Dokoni Aru? / Gonchichi
+		American Patrol / Frank W. Meacham
+		My Old Kentucky Home / Stephen C. Foster
+#532 Corn Kon Rhapsody (Mission 1 Boss - Corn-chiwa)  <time="47" fadeout="yes" fadeoutlength="10">
+	from 	Summ, Summ, Summ, Bienchen / Hoffmann V. Fallersleben
+
+#515 Theme of Hikaru & Akane <time="47" fadeout="yes" fadeoutlength="10">
+#523 Yi Ar Kung Fu Goes to Ryuuguu (Mission 3-A - Ryuuguujou Palace) <time="2:00" fadeout="yes" fadeoutlength="10">
+	from	Yi Ar Kung Fu
+#533 Lovely Otohime (Mission 3-A Boss - Otohime) <time="1:03" fadeout="yes" fadeoutlength="10">
+	from	Yi Ar Kung Fu
+		Maim Maim / Israeli Folksong
+
+#516 Theme of Mambo & Samba <time="52" fadeout="yes" fadeoutlength="10">
+#524 Choo Choo Polka (Mission 3-B - Schloss) <time="1:06" fadeout="yes" fadeoutlength="10">
+	from	Vampire Killer / Castlevania
+		Clarinet Polka / Polish Folksong
+#534 Welcome, Keed (Mission 3-B Boss - Medusa) <time="1:36" fadeout="yes" fadeoutlength="10">
+	from	Poison Mind / Castlevania
+		Hungarian Dance No. 5 / Brahms
+
+#517 Theme of Michael & Gabriel <time="47" fadeout="yes" fadeoutlength="10">
+#525 Super High Speed Bath (Mission 2 - Bath) <time="1:40" fadeout="yes" fadeoutlength="10">
+	from	Csikos Post / Hermann Necke
+#535 Pengui 'n Penguin (Mission 2 Boss - Toutou Penguin) <time="1:09" fadeout="yes" fadeoutlength="10">
+	from	Bienchen Summ Herum! / Bohemian Folksong
+		Einzug der Gladiatoren / Julius Fucik
+
+#554 Theme of Shooting Star <time="1:00" fadeout="yes" fadeoutlength="10">
+	from	Twin Flight / Twin Bee Yahhoo!
+#518 Departure for Sexy (Black Viper)<time="1:12" fadeout="yes" fadeoutlength="10">
+	from	Departure for Space / Gradius
+#526 Let's Sing! (Mission 5 - The Air)<time="2:04" fadeout="yes" fadeoutlength="10">
+	from	The Battle Hymn of the Republic / William Steffe
+		J'ai perdu le do de ma clarinette / French Folksong
+#536 Destroy the Candy (Mission 5 Boss - Candy Core) <time="57" fadeout="yes" fadeoutlength="10">
+	from 	Aircraft Carrier / Gradius
+
+#519 Theme of Ivan & Tobey <time="45" fadeout="yes" fadeoutlength="10">
+#527 The Moon Appeared (Mission 4-A - Coal Mine) <time="2:14" fadeout="yes" fadeoutlength="10">
+	from	Tankoubushi / Japanese Folksong
+		Hokkai Bon'uta / Japanese Bon Festival Song
+#537 Destiny of Tanukoo (Mission 4-A Boss - Tanukoo) <time="58" fadeout="yes" fadeoutlength="10">
+	from	Symphony No.5 in C-, Op.67 / Ludwig Beethoven
+		Genkotsuyama no Tanukisan / Japanese Children's Song
+
+#520 Theme of Koitsu & Aitsu <time="53" fadeout="yes" fadeoutlength="10">
+#528 "Please Help Me!" (Mission 4-B - Godown (JP ver)) <time="2:39" fadeout="yes" fadeoutlength="10">
+	from	El Bimbo / Calude Morgan
+#538 Hakonde Dance (Mission 4-B Boss - Hakonde Crane) <time="1:18" fadeout="yes" fadeoutlength="10">
+	from	Habanera - from Carmen /  Georges Bizet
+
+#559 Good Clear! (Stage Clear - Success)
+#560 Bad Clear! (Stage Clear - Fail)
+
+#546 Capsule Monster Cappuccino - from Gokujou Parodius (Bosses on Parade 1) <time="1:30" fadeout="yes" fadeoutlength="10">
+	from	Piano Sonata K.331, 3rd: Rondo Alla Turca / Wolfgang A. Mozart
+#543 Boss BGM da! - from Parodius! da (Bosses on Parade 2) <time="56" fadeout="yes" fadeoutlength="10">
+	from	Flight of the Bumblebee / Nikolai Rimsky-Korsakov
+#544 Theme of Eagle Satake - from Parodius! da (Bosses on Parade 3) <time="42" fadeout="yes" fadeoutlength="10">
+	from	Take Care! / Gradius II
+#545 Theme of Hot Lips - from Parodius! da (Bosses on Parade 4) <time="1:00" fadeout="yes" fadeoutlength="10">
+	from	Orphee Aux Enfers / Jacques Offenbach
+#539 Yuuko Will Be a Partner for You (Bosses on Parade) <time="1:18" fadeout="yes" fadeoutlength="10">
+	from	Preludes Op.28 #7 / Frederic Chopin
+		Scene from Swan Lake / Piotr Tchaikovsky
+
+#521 Theme of Option & Multiple <time="44" fadeout="yes" fadeoutlength="10">
+#530 Hallelujah at the Last! (Last Mission - Bedroom) <time="2:09" fadeout="yes" fadeoutlength="10">
+	from	Hornpipe from Water Music / George F. Handel
+		Hallelujah Chorus / George F. Handel
+#540 I am Ka.O.Ri (Last Mission Boss) <time="1:02" fadeout="yes" fadeoutlength="10">
+	from	Dark Force / Gradius III
+
+#551 After the Carnival (Credits) <time="1:07">
+#531 Maniac of Shooters (Special Stage) <time="3:25" fadeout="yes" fadeoutlength="10">
+	from	Challenger 1985 / Gradius
+		Air Battle / Thunder Cross II
+		Counter Attack / MX5000
+		Crystal World / Gradius II
+		Mechanical Base / Gradius III
+		Sturdy Wings / Lightning Fighters
+
+#541 Am I Sexy? (Special Stage Boss) <time="55" fadeout="yes" fadeoutlength="10">
+	from	Fur Elise / Beethoven
+#547 Oh My God, You can Do Better (Continue) <time="37" fadeout="yes" fadeoutlength="10">
+#549 Game is Over (Game Over)
+#548 Ra N Ki N G (Ranking) <time="40" fadeout="yes" fadeoutlength="10">
+#550 See You Again (End Demo)
+	from	Crystal Forever / Salamander
+
+#513 Stereo Test
+
+-----------------------------------------
+
+#1055 [Voice] ieei
+#1056 [Voice] yaa
+#1057 [Voice] too
+#1058 [Voice] iyaan
+#1059 [Voice] yookoso, bouya
+#1061 [Voice] aa
+#1062 [Voice] aaan,aaa
+#1063 [Voice]
+#1064 [Voice]
+#1065 [Voice] my name is sexy
+#1066 [Voice] a
+#1067 [Voice] aa
+#1068 [Voice] aaa
+#1069 [Voice] iyan
+#1070 [Voice] aareee
+#1071 [Voice] ufufu
+#1123 [Voice] thank you
+#1137 [Voice]
+#1138 [Voice] oh
+#1156 [Voice] aa
+#1158 [Voice] hai
+#1177 [Voice] aaahahaha
+#1178 [Voice] oo
+#1179 [Voice] uu
+#1180 [Voice] uuuugh
+
+#1281 [Voice] hayaku narimaaasu
+#1282 [Voice] motto hayaku narimaasu
+#1283 [Voice] dondon hayaku narimaaasu
+#1284 [Voice] hayasugimaasu
+#1285 [Voice] megamawarimaasu
+#1286 [Voice] missile utemaasu
+#1287 [Voice] uenimo utemaasu
+#1288 [Voice] nagakute tsuyoi deesu
+#1289 [Voice] option tsukimaasu
+#1290 [Voice] sukkarakan deesu
+#1291 [Voice] mamotte kuremaasu
+#1292 [Voice] ikuwayo
+#1293 [Voice] maada ikuno?
+#1294 [Voice] sugooi
+#1295 [Voice] hayaai
+#1296 [Voice] moudamee
+#1297 [Voice] uedemo shitademo OK yo
+#1298 [Voice] hakairyoku batsugun
+#1299 [Voice] oryaoryaoryaa
+#1300 [Voice] option
+#1301 [Voice] mouiccho
+#1302 [Voice] madamada
+#1303 [Voice] kanpeki
+#1304 [Voice] aan dame
+#1305 [Voice] korede anshin
+#1306 [Voice] aan
+#1307 [Voice] Speed
+#1308 [Voice] Buble
+#1309 [Voice] Control
+#1310 [Voice] Screw
+#1311 [Voice] Search
+#1312 [Voice] Oh!
+#1313 [Voice] Barrier
+#1314 [Voice] ikuze
+#1315 [Voice] mouiccho
+#1316 [Voice] madamadaa
+#1317 [Voice] tamaranaize
+#1318 [Voice] moutomerarenaize
+#1319 [Voice] koredemo kurae
+#1320 [Voice] matomete yatteyaru
+#1321 [Voice] dokokaredemo kakattekoi
+#1322 [Voice] chikaraga minagiruze
+#1323 [Voice] yatteyaru
+#1324 [Voice] uoooo
+#1325 [Voice] kowaimon nashida
+#1326 [Voice] hogee
+#1327 [Voice] haaa
+#1328 [Voice] Speed Up
+#1329 [Voice] Auto Option
+#1330 [Voice] Wide Blast
+#1331 [Voice] Spark Laser
+#1332 [Voice] Power Up
+#1333 [Voice] Oh My God!
+#1334 [Voice] Psycho Field
+#1335 [Voice] Missle
+#1336 [Voice] Multi Shot
+#1337 [Voice] Laser
+#1338 [Voice] Option
+#1339 [Voice] Shield
+#1340 [Voice] hayaku naru kuwa
+#1341 [Voice] madaiku kuwa
+#1342 [Voice] madamada iku kuwa
+#1343 [Voice] tsuite koreru kuwa
+#1344 [Voice] mega mawaru kuwa
+#1345 [Voice] ochiteiku kuwa
+#1346 [Voice] hourinageru kuwa
+#1347 [Voice] hanemawaru kuwa
+#1348 [Voice] option tsuku kuwa
+#1349 [Voice] mouhitotsu tsuku kuwa
+#1350 [Voice] mada tsuku kuwa
+#1351 [Voice] tsuini yottsume kuwa
+#1352 [Voice] kuwaa kuwaa kuwaa
+#1353 [Voice] Pentarou X kuwa
+#1354 [Voice]
+#1355 [Voice]
+#1356 [Voice]
+#1357 [Voice]
+#1358 [Voice]
+#1359 [Voice]
+#1360 [Voice]
+#1361 [Voice]
+#1362 [Voice]
+#1363 [Voice]
+#1364 [Voice]
+#1365 [Voice]
+#1366 [Voice]
+#1367 [Voice]
+
+  [Source]
+  Sexy Parodius / Original Game Soundtrack
+  King Records  KICA-7703  May 22, 1996
+
+// Original list from Amuse
+// English list translation by Fujix
+// Original track names from R.Belmont, MooglyGuy, Toby, Fujix
+// Updated by shaca and Fujix
+$end

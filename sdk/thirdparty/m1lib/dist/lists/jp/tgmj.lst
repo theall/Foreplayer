@@ -1,0 +1,25 @@
+﻿$name=tgmj
+$version=2
+$default=009
+$fixed_volume=245
+$main
+
+#009 Q Sound Logo
+#033 Hardening drops.(normal mix) : Under Level 500
+#034 Hardening drops.(instant death mix) : Over Level 500
+#035 Happy Happy : エンディング
+#018 Game Over : ゲームオーバー
+#016 Result : 結果報告
+#017 Break Into : 乱入
+#032 Let's live variously : 対戦BGM
+
+  ■出典
+  TGM THE GRAND MASTER / ARIKA
+  PONY CANYON / SCITRON  PCCB-00372  1999.05.19
+
+  ■作・編曲
+  細江 慎治: #33, #34, #18, #16, #17
+  佐宗 綾子: #35, #32
+
+// リスト作成：匿名さん
+$end

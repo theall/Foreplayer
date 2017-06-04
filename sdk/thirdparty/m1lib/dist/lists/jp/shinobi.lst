@@ -1,0 +1,92 @@
+﻿$name=seganinja
+$version=2
+$default=154
+$main
+
+#179 [S.E.] CREDIT <time="3">
+#154 ミッション1 BGM
+#147 ステージクリア
+#153 ボスBGM
+#148 ボスクリア BGM
+#149 ボーナスステージ BGM
+#144 ミッション2 BGM
+#145 ミッション3 BGM
+#146 ミッション4 BGM
+#151 ミッション5 BGM
+#152 コンテニュー～ネームレジスト
+
+---------------------------------------------------
+ [S.E.]
+
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#175 [S.E.] 
+#176 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] <time="5">
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] <time="4">
+#185 [S.E.] 
+#186 [S.E.] 
+#187 [S.E.] 
+#188 [S.E.] 
+#189 [S.E.] 
+
+---------------------------------------------------
+ [Voice]
+
+#066 [Voice] Mission
+#068 [Voice] One
+#069 [Voice] Two
+#070 [Voice] Three
+#071 [Voice] Four
+#072 [Voice] Five
+#079 [Voice] Five
+#067 [Voice] Finished
+#077 [Voice] Welcome the BONUS STAGE
+
+#073 [Voice] ゼィッ！
+#074 [Voice] クゥッ！
+#075 [Voice] トリャアァッ！
+#076 [Voice] アァッ!!
+#065 [Voice] ゴアァッ！
+#078 [Voice] ゴアァッ！
+
+---------------------------------------------------
+
+#129 High Tom
+#130 Mid Tom
+#131 Low Tom
+#132 Snare Drum 1
+#133 Hihat
+#134 Bass Drum
+#135 Snare Drum 2
+#136 Snaer Drum 1
+#137 Snare Drum 2
+#138 Wood block
+#139 Hihat
+#140 
+
+  ■出典
+  SEGA ARCADE 80'S VOL.1
+  SME SCITRON  SCDC-00245  2003.2.19 
+
+// List contribution by ZEK.
+$end

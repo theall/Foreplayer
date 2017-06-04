@@ -1,0 +1,56 @@
+﻿$name=fcombat
+$version=2
+$default=033
+$main
+
+#033 [SFX] Coin <time="1.8">
+#005 Main Theme 1 (Field 1-4)
+#006 Main Theme 2 (Field 5-8)
+#008 Main Theme 3 (Field 9-12)
+#003 Main Theme 4 (Field 13-16)
+#002 Field Clear 
+
+#016 Field Clear (alt)
+#004 Unused 1
+#007 Unused 2
+#009 Unused 3
+#010 Unused 4
+#011 Unused 5
+
+---------------------------------------------------
+  [SFX]
+
+#033 [SFX] <time="3">
+#038 [SFX] <time="3">
+#042 [SFX] <time="5"> 
+#043 [SFX] <time="3">
+#044 [SFX] <time="2"> 
+#048 [SFX] <time="5"> 
+#049 [SFX] 
+#050 [SFX] <time="3"> 
+#051 [SFX] <time="5"> 
+#052 [SFX] <time="3">
+#053 [SFX] <time="5">
+#054 [SFX] <time="3">
+#055 [SFX] <time="3">
+#056 [SFX] <time="5"> 
+#057 [SFX] <time="3">
+#034 [SFX] <time="5">
+#035 [SFX] <time="5">
+#036 [SFX] <time="5">
+#037 [SFX] <time="5">
+#039 [SFX] <time="5">
+#040 [SFX] <time="5">
+#041 [SFX] <time="5">
+#028 [SFX] <time="5">
+#029 [SFX] <time="5">
+#030 [SFX] <time="5">
+#012 [SFX] <time="5">
+#013 [SFX] <time="5">
+#014 [SFX] <time="5">
+#015 [SFX] <time="5">
+#017 [SFX] <time="5.5">
+
+// List contribution by ZEK.
+// Special Thanks to Mr.Itazuratensi
+$end

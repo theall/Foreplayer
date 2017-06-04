@@ -1,0 +1,198 @@
+﻿$name=bucky
+$version=2
+$default=192
+$main
+
+#192 Bucky O'Hare (Title)
+#001 Coin
+#193 Opening
+#194 Planet Warren (Stage 1)
+#195 Planet Punk (Stage 2)
+#196 Climate Converter (Stage 3)
+#197 Space River (Stage 4)
+#198 Planet Rat (Stage 5)
+#199 Mother Ship (Stage 6)
+#200 Toad Star (Stage 7)
+#202 Boss
+#204 Stage Clear
+#201 Planet Life Force (Stage 8)
+#203 Komplex (Last Boss)
+#206 Ending
+#207 Credits
+#006 Game Over
+#205 Name Entry
+
+#208 Speaker Test
+
+---------------------------------------------------
+  [SFX] 
+
+#001 [SFX] 
+#002 [SFX] 
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] <time="24">
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#081 [SFX] 
+
+---------------------------------------------------
+  [Voice] 
+
+#080 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+
+#240 Speaker Test
+
+  [Source]
+  Konami All Stars 1993
+  King Records  Kica-9016, 9017, 9018  Dec 21, 1992
+
+  [Sound Program, Sound FXs]
+  Hideaki Shikama, K.kazaoka, Kazuhito
+
+  [Sound Composer]
+  Norio Hanzawa (Star Hanzawa)
+
+// List contribution by ZEK.
+// English list translation & QA by Fuj
+$end

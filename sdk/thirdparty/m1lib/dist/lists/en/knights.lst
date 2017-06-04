@@ -1,0 +1,128 @@
+﻿$name=knights
+$version=2
+$default=000
+//$songmax=116
+$main
+
+#000 Demo <time="1:58">
+#099 Credit Inserted <time="2">
+#026 Player Select <time="31">
+#027 Mini Map
+#001 Round 1 (Village on Fire) <time="2:03">
+#013 Round 1 Boss <time="43">
+#030 Round Clear
+#002 Round 2 (Confused Fight) <time="2:16">
+#014 Round 2 Boss <time="30">
+#003 Round 3 (Battle at the Castle Fort) <time="2:13">
+#015 Round 3 Boss <time="32">
+#012 Round 3 Clear
+#004 Round 4-1 (Knights Festival) <time="1:19">
+#029 Midway
+#005 Round 4-2 (Coastline) <time="54">
+#006 Round 5 (Coastline) <time="1:48">
+#016 Round 5 Boss <time="38">
+#007 Round 6-1 (Castle Town) <time="1:42">
+#008 Round 6-2 (Cave) <time="1:19">
+#017 Round 6 Boss <time="1:01">
+#009 Round 7 (Castle) <time="2:22">
+#019 Round 7 Boss 1 <time="41">
+#018 Round 7 Boss 2 <time="1:01">
+#030 Clear
+#020 Last Stage Clear
+#010 Round 8 <time="1:17">
+#024 Ending <time="1:10">
+#022 Staff Credit <time="1:45">
+#023 CONTINUE <time="37">
+#025 Game Over
+#028 Ranking <time="27">
+
+-----------------------------------------------------------
+ [Voice]
+
+#032 [Voice]
+#033 [Voice]
+#034 [Voice]
+#035 [Voice]
+#036 [Voice]
+#037 [Voice]
+#038 [Voice]
+#039 [Voice]
+#040 [Voice]
+#041 [Voice]
+#042 [Voice]
+#043 [Voice]
+#044 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#096 [Voice]
+#116 [Voice]
+  
+ [SFX]
+  
+#045 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#115 [SFX]
+
+  [Source]
+  Varth -G.S.M. Capcom 6- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00110  Feb 19, 1993
+
+// List Contribution by NK
+$end

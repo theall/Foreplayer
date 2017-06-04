@@ -1,0 +1,29 @@
+﻿$name=guwange
+$version=2
+$default=008
+$main
+
+#008 Shuttatsu -Departure- (Select)
+#001 Hanafubuki -Shower of Blossom- (Stage 1)
+#002 Matsuri -Festival- (Stage 2-1)
+#003 Kagerou -Air Turbulence- (Stage 2-2)
+#006 Yomi no Hana -Floridness in Pluto- (Stage 3)
+#005 Kagura -Ancient Tunes- (Stage 4-1)
+#004 Hotoke -Stiff- (Stage 4-2)
+#010 Kenzoku -Sept- (Boss)
+#011 Shime -Seal Off- (Clear)
+#012 Guwange-sama (Last Boss)
+#007 Myoujou -Bright Star- (Ending)
+#009 Shirushi -Imprint- (Name Entry)
+
+  [Source]
+  Guwange / ESPrade Original Soundtrack
+  CAVE  CVST-1000  Dec 30, 2007
+
+  [Composed by]
+  Masahiro Kusunoki
+
+// List contribution by bcass
+// Updated based on OST by GolGol
+// English translation by Fuj
+$end

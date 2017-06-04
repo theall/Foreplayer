@@ -1,0 +1,27 @@
+$name=g_librty
+$version=2
+$default=1573174
+$songmax=9999999
+$main
+
+#1573174 ld1  
+#1578584 ld2  
+#1583094 ld3  
+#1585102 ld4  
+#1586388 ld5  
+#1586936 ld6  
+#1592080 ld7  
+#1597080 ld8  
+#1600012 ld9  
+#1600332 ld10 
+#1600592 ld11 
+#1602940 ld12 
+#1603940 ld13 
+#1605632 ld14 
+#1608042 ld15 
+#1609442 ld16 
+#1609976 ld17 
+#1610480 ld18
+
+// Basic list contributed by Knurek
+$end

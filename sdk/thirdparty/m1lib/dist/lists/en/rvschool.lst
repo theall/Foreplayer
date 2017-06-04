@@ -1,0 +1,129 @@
+﻿$name=rvschool
+$version=2
+$default=063
+//$fixed_volume=423
+$main
+
+#063 QSound
+
+#020 Introductory Chapter
+#001 We Save Our School!
+#002 Today's Ichiban
+#003 Select Student
+#004 Fight!!
+#005 Roof of Taiyou Gakuen High School
+#011 Pacific HS Back Gate
+#007 Gorin High School 1st Gym
+#010 Construction Site in Back of Gedou HS
+#006 Taiyou Gakuen Junior High Playing Field
+#012 Drive-in Theatre
+#008 Gorin High School Training Camp
+#009 Riverbed in Front of Gedou High School
+#013 Taiyou Gakuen High School Classroom
+#014 Justice Gakuen Front Gate
+#015 Justice Gakuen Library
+#016 Phantom Space
+#017 The Winner
+#018 Come on!
+#019 Humiliating Defeat
+#021 Theme of Taiyou School
+#022 Theme of Gorin HS
+#023 Theme of Pacific HS
+#024 Theme of Gedou High School
+#025 Theme of Sensei
+#026 Theme of Raizou
+#027 Shootout! Hyou
+#028 Even If We Got Brainwashed..
+#036 Ending 1: Theme of Love
+#029 Ending 2: Theme of Friendship
+#031 Ending 3: Theme of Youth
+#030 Ending 4: Hope of Taiyo Gakuen
+#032 Ending 5: Strength of Gedou High School
+#033 Ending 6: Brotherhood of Kyousuke
+#034 Ending 7: Decision by Edge 
+#038 Ending 8: Sakura's Heart
+#037 Ending 9: Woe of Hyou
+#039 Fanfare
+#035 Bad Ending
+#040 Credits
+#041 The Fight Continues..
+
+-----------------------------------------------------------
+
+#048 [SFX]
+#049 [SFX]
+#051 [SFX]
+#052 [SFX]
+#054 [SFX]
+#055 [SFX]
+#066 [SFX]
+#067 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#096 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+
+#064 [Voice] Shiritsu
+#065 [Voice] Justice Gakuen
+
+#068 [Voice] shoubu atta
+#069 [Voice] dai i ssen
+#070 [Voice] dai ni sen
+#071 [Voice] dai san sen
+#072 [Voice] dai yon sen
+#073 [Voice] dai go sen
+#074 [Voice] dai roku sen
+#075 [Voice] saishuu sen
+#076 [Voice] hajime
+#077 [Voice] K.O.
+#078 [Voice] Knock down
+#079 [Voice] kanshou
+#080 [Voice] asshou
+#081 [Voice] shouri
+#082 [Voice] shinshou
+#083 [Voice] Lose
+#084 [Voice] Time over
+#085 [Voice] Draw
+#086 [Voice] Continue
+#087 [Voice] Game over
+#088 [Voice]
+#089 [Voice]
+
+#095 [Voice]
+#097 [Voice]
+#098 [Voice]
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#102 [Voice]
+
+#112 [Voice] Round 1
+#113 [Voice] Round 2
+#114 [Voice] Round 3
+#115 [Voice] Round 4
+#116 [Voice] Round 5
+#117 [Voice] Round 6
+#118 [Voice] Final round
+#119 [Voice] Fight!
+#120 [Voice] Victory
+#121 [Voice] You win
+#122 [Voice] Here comes a new challenger <fixed_volume="237">
+#123 [Voice] Rival School
+
+  [Soundtrack]
+  Shiritsu Justice Gakuen - Legend of Heroes Orignal Soundtrack
+  Suleputer  CPCA-1002  Jan 29, 1998
+
+// List Contribution by Min
+// English list by Fuji.
+$end

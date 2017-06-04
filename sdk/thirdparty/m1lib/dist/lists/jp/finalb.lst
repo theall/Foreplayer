@@ -1,0 +1,143 @@
+﻿$name=finalb
+$version=2
+$default=017
+$main
+
+#017 TITLE
+#101 [S.E.] CREDIT
+#010 SELECT YOUR BOXER <time="10">
+#011 WINNER
+#009 NEXT BOXER
+#013 NEW CHANPION
+#014 STAFF ROLL
+#016 NAME ENTRY
+#012 GAME OVER
+
+#244 スピーカーテスト
+
+---------------------------------------------------
+ [S.E.] 
+
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#242 [S.E.] <Time="3">
+#243 [S.E.] <Time="3">
+
+---------------------------------------------------
+ [Voice] 
+
+#018 [Voice] 
+#019 [Voice] 
+#020 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+#023 [Voice] 
+#024 [Voice] 
+#025 [Voice] 
+#026 [Voice] 
+#027 [Voice] 
+#028 [Voice] 
+#029 [Voice] 
+#030 [Voice] 
+#031 [Voice] 
+#032 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#037 [Voice] 
+#038 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#043 [Voice]
+#044 [Voice] 
+#045 [Voice]
+#046 [Voice] 
+#054 [Voice] 
+#055 [Voice] <00:03>
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#230 [Voice] 
+#241 [Voice] 
+#245 [Voice] 
+
+---------------------------------------------------
+   ■STAFF
+
+SOFTWARE      ICHIRO  FUJISUE         (I.F)
+                     MASAYA  KINOSHTA    (M.K)
+                     YUICHI  OHNOGI         (YOU) 
+                     TAKAYUKI  ISHIWATA   (ISW)
+CHARACTER   YUKIWO  ISHIKAWA       (ABE)
+                     KAZUHIRO  NUMATA    (KAZ)
+HARDWARE     KATUJIRO  FUJIMOTO  (KAT)
+                     MINORU  YOSHIMURA   (M.Y)
+CABINET        HISAYUKI  YAMAGUCHI   (H.Y)
+                     YOSHIHIRO  AKIYAMA    (Y.A)
+ART DESIGN    AKIO  NOMURA            (A.N)
+SOUND           ZUNTATA  SOUND  TEAM
+GAME DESIGN  YUKIWO  ISHIKAWA       (ABE)
+                     KAZUHIRO  NUMATA      (KAZ)
+
+// List contribution by ZEK.
+$end

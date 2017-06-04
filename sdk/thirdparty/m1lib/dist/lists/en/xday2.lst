@@ -1,0 +1,29 @@
+$name=xday2
+$version=1
+$default=$4c
+$main
+
+$4c HEX-day : Information Mix
+$44 VEX-day : Attract.exe
+$46 VEX-day : Attract.exe II
+$1e FOX-day : Upload
+$20 FOX-day : Parametric Love
+$1c MAX-day : Starting Gate
+$49 MAX-day : Survival Edit
+$40 VEX-day : Ranking.exe
+$3E VEX-day : Ranking.exe II
+$1a FIX-day : Future Lab 3999
+$12 FIX-day : Maintenance Mode
+$21 FOX-day : Super Les Edit
+$22 FOX-day : Ultra Gay Edit
+$26 FOX-day : Coda
+
+  [Source]
+  X-DAY 2 / Namco Game Sound Express Vol.27
+  Victor Entertainment  VICL-15051  Dec 16, 1995
+
+  [Sound Composer]
+  Ayako Sasou
+
+// List by Phil B
+$end

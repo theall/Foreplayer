@@ -1,0 +1,202 @@
+﻿$name=bucky
+$version=2
+$default=192
+$main
+
+#192 バッキーオヘア (タイトル)
+#001 クレジット
+#193 オープニング
+#194 Planet Warren (1 ステージ BGM)
+#195 Planet Punk (2 ステージ BGM)
+#196 Climate Converter (3 ステージ BGM)
+#197 Space River (4 ステージ BGM)
+#198 Planet Rat (5 ステージ BGM
+#199 Mother Ship (6 ステージ BGM)
+#200 Toad Star (7 ステージ BGM)
+#202 1 ～ 7 ステージ ボス BGM 
+#204 ステージクリア
+#201 Planet Life Force (8 ステージ BGM)
+#203 Komplex (最終 ボス BGM)
+#206 エンディング
+#207 スタッフロール
+#006 ゲームオーバー
+#205 ネームエントリー
+
+#208 スピーカーテスト
+
+---------------------------------------------------
+  [S.E.] 
+
+#001 [S.E.] クレジット
+#002 [S.E.] 
+#003 [S.E.] 
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] ゲームオーバー
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] 
+#013 [S.E.] <time="24">
+#014 [S.E.] 
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#081 [S.E.] 
+
+---------------------------------------------------
+  [Voice] 
+
+#080 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#141 [Voice] 
+#142 [Voice] 
+#143 [Voice] 
+#144 [Voice] 
+#145 [Voice] 
+#146 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#149 [Voice] 
+#150 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#157 [Voice] 
+
+#240 スピーカーテスト
+
+  ■出典
+  コナミオールスターズ 1993
+  KING RECORDS  KICA-9016～9018  1992.12.21
+
+  ■サウンドプログラム、効果音
+  鹿間 英章 (アセンブラー鹿間), K.KAZAOKA, KAZUHITO
+
+  ■作曲
+  半沢 紀夫 (STAR HANZAWA)
+
+// List contribution by ZEK.
+// 誤表記詳細
+// CD表記「Space River (4ステージBGM)」は他曲がゲーム中のステージタイトルであるにも関わらず、これだけオリジナル表記の為、誤表記の可能性有り。
+// CD表記「Toad Star (9ステージ BGM)」はToad Star (7ステージBGM)の誤りであると思われる。
+// List contribution by ZEK.
+$end
+$end

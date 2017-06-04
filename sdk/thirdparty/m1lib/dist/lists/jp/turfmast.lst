@@ -1,0 +1,34 @@
+﻿$name=turfmast
+$version=2
+$default=002
+//$fixed_volume=150
+$main
+
+#002 NEO-GEO ロゴ
+#051 NAZCA ロゴ
+#048 タイトル
+#015 クレジット音
+#050 ゲーム説明, コース選択, 結果画面, スタッフロール<time="0:26.70">
+#042 ゲームセレクト, キャラクタ選択<time="1:18.50">
+#043 ゲーム スタート
+#039 コース説明<time="00:29.60">
+
+#034 Fujiyama Oriental Golf Club, Japan<time="3:17.17">
+#046 バーディ
+#036 Grand Canyon Golf Course, U.S.A.<time="3:38.97">
+#044 パー
+#035 BADEN National Golf Course, Germany<time="3:10.05">
+#049 アルバトロス, イーグル
+#037 Blue Lagoon Golf Course, Australia<time="3:07.75">
+#047 ホールインワン, ドラコン記録更新, ニアピン記録更新
+#045 ボギー以下
+#040 ゲームオーバー
+#038 挑戦者登場
+
+#041 ゲームセレクト, キャラクタ選択 (一部の楽器のみ)
+
+  ■作曲
+  HIYA
+
+// List Contribution by Aska-m
+$end

@@ -1,0 +1,41 @@
+﻿$name=galaga
+$version=2
+$default=008
+$main
+
+#008 Credit Inserted
+#011 Game Start Music
+#021 Flag Appears
+#019 Alien Flying
+#015 Shot
+#003 Hit on Zako
+#002 Hit on Goei
+#004 Hit on Boss (1)
+#001 Hit on Boss (2)
+#018 Enemy Division
+#005 Tractor Beam Sound <time="4.16">
+#006 Fighter in the Beam <time="4.16">
+#009 Fighter is teken away <time="6.45">
+#007 Captive is shot
+#013 Challenging Stage Start
+#014 Imperfect Result in the Challenging Stage
+#020 Perfect Result in the Challenging Stage
+#010 Extend
+#012 Name Entry Music (High Score) <time="5.70">
+#012 Name Entry Music (High Score)
+#022 ?
+
+ <Note #016 and #017 don't stop>
+
+#016 Name Entry Music <time="13.00">
+#017 Fighter Recaptured <time="06.40">
+
+  [Source]
+  Namco Video Game Music Program Collection
+  Dempa
+
+  [Sound Composer]
+  Nobuyuki Oonogi
+
+// List contributed by Hiroshi
+$end

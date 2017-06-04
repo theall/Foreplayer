@@ -1,0 +1,31 @@
+﻿$name=bionicc
+$version=2
+$default=001
+$main
+
+#001 The Front Line (Round 1)
+#002 Big Fortress (Round 2)
+#010 The Tower of Demon (Round 4)
+#011 Top Secret (Round 5)
+#014 Ending
+#003 Ranking
+
+  (Not on CD)
+#016 Coin
+#009 Round Clear
+#008 Round 2 Clear (Unused)
+#004 Round 3
+#005 Round 3 Clear (Unused)
+#006 Round 4 Clear (Unused)
+#007 Game Over
+#015 Unused
+
+  [Source]
+  Capcom Game Music Vol.2
+  Alfa Records  28XA-203  March 25, 1988
+
+  [Composer]
+  Harumi Fujita
+
+// Original List contribution by GolGol
+$end

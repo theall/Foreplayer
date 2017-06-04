@@ -1,0 +1,140 @@
+﻿$name=term2
+$version=2
+$default=008
+$main
+
+#008 ATTRACT MODE
+#164 [S.E.] CREDIT <time="2.5">
+#180 [Voice] Welcome to NBA Jam <time="4">
+#001 INTRO / INITIALS ENTRY / TEAM SELECT
+#002 1ST QUARTER
+#010 END OF 1ST QUARTER
+#006 2ND QUARTER
+#004 END OF 2ND QUARTER
+#011 3RD QUARTER
+#010 END OF 3RD QUARTER
+#008 4TH QUARTER
+#003 WIN ～ FINAL GAME STATS
+#009 GAME OVER
+
+#007 3RD QUARTER Ver.2
+#012 未使用曲
+
+---------------------------------------------------
+  [S.E.]
+
+#128 [S.E.] 
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] CREDIT
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#074 [Voice] 
+#080 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] Welcome to NBA Jam
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+#234 [Voice] 
+#235 [Voice] 
+#236 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+
+// List contribution by ZEK.
+// Song title for #001 updated and typo fixed by Fuj
+$end

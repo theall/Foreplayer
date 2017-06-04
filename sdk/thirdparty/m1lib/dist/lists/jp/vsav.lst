@@ -1,0 +1,119 @@
+﻿$name=vsav
+$version=2
+$default=087
+$fixed_volume=295
+$main
+
+#085 Q Sound Logo Main
+#087 Dirty Beret
+
+  Red side (Disc 1)
+
+#001 Opening Title <time="41">
+#008 Ranking Display <time="7">
+#002 Player Select.1 <time="48">
+#003 Player Select.2 <time="47">
+#005 VS. <time="8">
+#009 FEAST OF THE DAMNED (Demitri's Theme) <time="1:53">
+#022 DEMITRI Winning Theme <time="32">
+#038 DEMITRI Ending Theme.1 <time="19">
+#054 DEMITRI Ending Theme.2 <time="43">
+#015 VANITY PARADISE (LEI-LEI's Theme) <time="2:30">
+#034 LEI-LEI Winning Theme <time="26">
+#050 LEI-LEI Ending Theme.1 <time="1:13">
+#066 LEI-LEI Ending Theme.2 <time="1:13">
+#070 Story Demo.1 <time="24">
+#018 GREEN SCREAM (AULBATH and SUSQUATCH's Theme) <time="2:54">
+#030 AULBATH Winning Theme <time="25">
+#046 AULBATH Ending Theme.1 <time="52">
+#062 AULBATH Ending Theme.2 <time="54">
+#031 SUSQUATCH Winning Theme <time="29">
+#047 SUSQUATCH Ending Theme.1 <time="1:32">
+#063 SUSQUATCH Ending Theme.2 <time="40">
+#011 TOWER OF ARROGANCE (FELICIA's Theme) <time="2:28">
+#028 FELICIA Winning Theme <time="25">
+#044 FELICIA Ending Theme.1 <time="1:00">
+#060 FELICIA Ending Theme.2 <time="32">
+#014 ABARAYA.1 (BISHAMON's Theme) <time="3:03">
+#078 Story Demo.2 (OBORO BISHAMON's Demo) <time="38">
+#079 ABARAYA.2 (OBORO BISHAMON's Theme) <time="2:14">
+#029 BISHAMON Winning Theme <time="28">
+#045 BISHAMON Ending Theme.1 <time="55">
+#061 BISHAMON Ending Theme.2 <time="53">
+#016 WAR AGONY (LILITH's Theme) <time="2:33">
+#035 LILITH Winning Theme <time="24">
+#051 LILITH Ending Theme.1 <time="1:31">
+#067 LILITH Ending Theme.2 <time="50">
+#021 BULLETA Winning Theme <time="25">
+#037 BULLETA Ending Theme.1 <time="57">
+#053 BULLETA Ending Theme.2 <time="36">
+// #000 FEAST OF THE DAMNED (Arrange Ver.)
+// #000 NR & STAGE EFECTS
+// #000 RED SIDE VOICE EFECTS
+// 収録順 デミトリ/レイレイ/オルバス/サスカッチ/フェリシア/ビシャモン・朧ビシャモン/
+// #000 RED SIDE VOICE EFECTS (NEW CHARACTER)
+// 収録順 リリス/バレッタ/
+
+  Black side (Disc 2)
+
+#013 DESERTED CHATEAU (MORRIGAN's Theme) <time="2:10">
+#026 MORRIGAN Winning Theme <time="22">
+#042 MORRIGAN Ending Theme.1 <time="1:13">
+#058 MORRIGAN Ending Theme.2 <time="1:02">
+#010 CONCRETE CAVE (BULLETA and GALLON's Theme) <time="2:07">
+#023 GALLON Winning Theme.1 <time="24">
+#082 GALLON Winning Theme.2 (DARK GALLON's Winning Theme ?) <time="29">
+#039 GALLON Ending Theme.1 <time="35">
+#055 GALLON Ending Theme.2 <time="50">
+#004 Here Comes A New Challenger <time="5">
+#017 FOREVER TORMENT (VITOR and ZABEL's Theme) <time="3:11">
+#025 ZABEL Winning Theme <time="26">
+#041 ZABEL Ending Theme.1 <time="1:01">
+#057 ZABEL Ending Theme.2 <time="26">
+#024 VICTOR Winning Theme <time="24">
+#040 VICTOR Ending Theme.1 <time="1:03">
+#056 VICTOR Ending Theme.2 <time="59">
+#012 RED THIRST (ANAKARIS's Theme) <time="3:11">
+#027 ANAKARIS Winning Theme <time="22">
+#043 ANAKARIS Ending Theme.1 <time="58">
+#059 ANAKARIS Ending Theme.2 <time="25">
+#019 IRON HORSE, IRON TERROR (Q-BEE's Theme) <time="2:26">
+#033 Q-BEE Winning Theme <time="21">
+#049 Q-BEE Ending Theme <time="47">
+#071 Story Demo.3 (Last Boss's Demo) <time="26">
+#020 FETUS OF GOD (JEDAH's Theme) <time="2:58">
+#036 JEDAH Winning Theme <time="23">
+#052 JEDAH Ending Theme.1 <time="43">
+#068 JEDAH Ending Theme.2 <time="34">
+#080 SHADOW Winning Theme <time="26">
+#081 SHADOW Ending Theme <time="2:13">
+#006 Continue <time="30">
+#007 Game Over <time="6">
+#069 Staff Roll <time="1:59">
+#083 Special Ending.1 <time="24">
+#084 Special Ending.2 <time="32">
+// #000 DESERTED CHATEAU (Arrange Ver.)
+// #000 BLACK SIDE VOICE & SE.1
+// 収録順 モリガン/ガロン・ダークガロン/ザベル/ビクトル/アナカリス/
+// #000 BLACK SIDE VOICE & SE.2 (NEW CHARACTER)
+// 収録順 クイーンビー/ジェダ/
+// #000 OMAKE (NOT USED VOICE ETC....)
+// #000 VS.JEDAH (デミトリVSジェダ、勝者ジェダ、M1での収録は無理です…)
+
+#086 Q Sound Logo Sub
+
+  ■出典
+  カプコン ゲーム サウンドトラック / ヴァンパイア セイヴァー
+  Victor Entertainment  VICL-60098～9  1997.08.21
+
+  ■作曲
+  岩井 隆之, 甲田 雅人
+
+  ■サウンドデザイン
+  北村 武
+
+  ■アレンジ
+  伊勢 聡
+
+// List Contribution by 鉄鋼
+$end

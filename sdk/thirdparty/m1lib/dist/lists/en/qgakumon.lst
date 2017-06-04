@@ -1,0 +1,65 @@
+﻿$name=qgakumon
+$version=2
+$default=257
+//$fixed_volume=128
+$main
+
+#257 Credit Inserted
+#212 Player Select
+#220 Homeroom
+#214 Genre Select
+#448 Quiz Academy Class 1
+#221 Quiz Academy Class 2
+#235 Quiz Academy Class 2 - w/o intro
+#449 Quiz Academy Class 3
+#450 Quiz Academy Class 4
+#455 Nurse's Office
+#480 Spocko Appears
+#451 V.S. Spocko
+#232 V.S. Hyper Spocko
+#239 Spocko in Dusk
+#231 Spocko Runs
+#236 Delinquent Boss Appears
+#452 Boss Girl Appears
+#215 Quiz Academy Schedule
+#226 Song 1
+#238 Song 2
+#229 Song 3
+#230 Local Section
+#453 Local Questions
+#454 Principal Emma Appears
+#233 Summer Vacation Homework
+#237 Finihsed Homework
+#457 Music 1
+#462 Music 2 (Sidewinder Ito)
+#227 Music 3 (Sencha Maccha)
+#225 Music 4 (Big Wednesday Yamamoto)
+#466 Music 5 (Tsuruta Iseijin)
+#459 Music 6 (Enyaka Onoda)
+#222 Music 7 (Nikko Sarunosuke)
+#458 Music 8 (Issamaru Yosano, Yamajijii)
+#460 Music 9 (Hayauchi Sato)
+#461 Music 10 (Akio Sanada)
+#463 Music 11 (Franken Yamashita)
+#464 Music 12 (Bunny Yoshiko) 
+#465 Music 13 (Sitar Maharaja)
+#484 Evel Vice-Principal Appears
+#456 V.S. Vice-Principal, Final Exam
+#216 Graduation
+#223 Grade Report
+#248 Regret
+#219 Ranking
+#218 Continue
+#217 Game Over
+#213 Good Work
+
+------------------------------------------
+
+#356 Chime <time="6">
+#354 Correct Answer
+#355 Wrong Answer
+#240 Speaker Test
+
+// Original list by Anonymous
+// English list by Fuj
+$end

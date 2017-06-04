@@ -1,0 +1,144 @@
+﻿$name=nbajamte
+$version=2
+$default=012
+$main
+
+#012 ATTRACT MODE
+#164 [S.E.] CREDIT <time="2.5">
+#182 [Voice] SHOW TIME !! <time="2.5">
+#001 INTRO / TEAM SELECT
+#002 1ST QUARTER
+#010 END OF 1ST QUARTER
+#006 2ND QUARTER
+#004 END OF 2ND QUARTER
+#007 3RD QUARTER
+#010 END OF 3RD QUARTER
+#008 4TH QUARTER
+#003 WIN ～ FINAL GAME STATS
+#009 GAME OVER
+
+#174 SCORE BGM 1 <time="4.4">
+#175 SCORE BGM 1 <time="4">
+
+#013 未使用曲 1
+#011 未使用曲 2
+
+---------------------------------------------------
+  [S.E.]
+
+#128 [S.E.] 
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#137 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#155 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] CREDIT
+#165 [S.E.] 
+#166 [S.E.] 
+#167 [S.E.] 
+#168 [S.E.] 
+#169 [S.E.] 
+#192 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#016 [Voice] <time="3">
+#017 [Voice] <time="3">
+#018 [Voice] <time="3">
+#021 [Voice] <time="3">
+#033 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#037 [Voice] 
+#038 [Voice] 
+#061 [Voice] 
+#075 [Voice] 
+#079 [Voice] 
+#081 [Voice] 
+#088 [Voice] 
+#090 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] SHOW TIME !!
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#224 [Voice] 
+#237 [Voice] 
+#238 [Voice] 
+#239 [Voice] 
+#240 [Voice] 
+
+// List contribution by ZEK.
+// #001 曲名訂正 (ENTER INITIALSをINTRO / TEAM SELECTに) by Fuj
+$end

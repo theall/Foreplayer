@@ -1,0 +1,147 @@
+﻿$name=cosmccop
+$version=2
+$default=$0C
+$main
+
+$0C Title <time="10">
+//$9E [Voice] Gallop <time="2"> ※Cosmic Cop内では未使用
+$2B Credit <time="2">
+$01 Name Entry <time="24">
+$04 The Funky Flamingo - Zone A (Stage 1) <time="03:12">
+$82 [Voice] Warning <time="2">
+$3B Alert <time="4">
+$07 Boss <time="02:22">
+$08 Zone Clear <time="34">
+$03 Zone B (Stage 2) <time="03:20">
+$02 Zone C (Stage 3) <time="03:52">
+$06 Electronic Hurricane - Zone D (Stage 4) <time="03:16">
+$0B Zone E (Stage 5) <time="03:46">
+$05 Ending <time="02:52">
+$01 Game Over ～ Continue <time="24">
+
+-----------------------------------------------------------
+ [Voice]
+
+$82 [Voice] Warning <time="2">
+$83 [Voice] Ready <time="2">
+$84 [Voice] Stage Report <time="2">
+$85 [Voice] Laser <time="2">
+$8F [Voice] Weapon <time="2">
+$92 [Voice] Power <time="2">
+$93 [Voice] Danger <time="2">
+$9E [Voice] Gallop &lt;未使用&gt; <time="2">
+
+-----------------------------------------------------------
+ [S.E.]
+
+$28 [S.E.] 特殊ネーム入力時の警告<time="4">
+$29 [S.E.] <time="2">
+$2A [S.E.] <time="2">
+$2B [S.E.] Credit <time="2">
+$2C [S.E.] <time="2">
+$2D [S.E.] <time="2">
+$2E [S.E.] Extend <time="2">
+$2F [S.E.] <time="4">
+$30 [S.E.] <time="2">
+$31 [S.E.] 出撃 <time="4">
+$32 [S.E.] <time="2">
+$33 [S.E.] <time="2">
+$34 [S.E.] 点数加算 <time="4">
+$35 [S.E.] <time="4">
+$36 [S.E.] <time="2">
+$37 [S.E.] <time="4">
+$38 [S.E.] <time="15">
+$3A [S.E.] <time="19">
+$3B [S.E.] Alert <time="5">
+$3C [S.E.] <time="2">
+$3D [S.E.] Miss <time="2">
+$3E [S.E.] <time="2">
+$3F [S.E.] <time="4">
+$42 [S.E.] <time="11">
+$43 [S.E.] <time="2">
+$44 [S.E.] <time="2">
+$45 [S.E.] <time="2">
+$46 [S.E.] <time="2">
+$48 [S.E.] <time="2">
+$49 [S.E.] <time="2">
+$4A [S.E.] <time="2">
+$4B [S.E.] <time="2">
+$4C [S.E.] <time="2">
+$4F [S.E.] <time="4">
+$50 [S.E.] <time="2">
+$51 [S.E.] <time="2">
+$53 [S.E.] <time="2">
+$54 [S.E.] <time="2">
+$55 [S.E.] <time="2">
+$57 [S.E.] <time="2">
+$59 [S.E.] <time="2">
+$5A [S.E.] <time="2">
+$5B [S.E.] <time="2">
+$5C [S.E.] <time="3">
+$5D [S.E.] <time="5">
+$5E [S.E.] <time="2">
+$5F [S.E.] <time="2">
+$60 [S.E.] <time="2">
+$61 [S.E.] <time="2">
+$62 [S.E.] <time="2">
+$63 [S.E.] <time="2">
+$64 [S.E.] <time="2">
+$65 [S.E.] <time="2">
+$66 [S.E.] <time="2">
+$67 [S.E.] <time="2">
+$68 [S.E.] <time="2">
+$69 [S.E.] <time="2">
+$6A [S.E.] <time="2">
+$6B [S.E.] <time="2">
+$6D [S.E.] <time="2">
+$6E [S.E.] <time="2">
+$6F [S.E.] <time="2">
+$70 [S.E.] <time="2">
+$71 [S.E.] <time="2">
+$72 [S.E.] <time="2">
+$73 [S.E.] <time="2">
+$74 [S.E.] <time="2">
+$75 [S.E.] <time="2">
+$76 [S.E.] <time="2">
+$77 [S.E.] <time="2">
+$78 [S.E.] <time="2">
+$79 [S.E.] <time="2">
+$7A [S.E.] <time="2">
+$7B [S.E.] <time="2">
+$7C [S.E.] <time="2">
+$7D [S.E.] <time="2">
+$7E [S.E.] <time="2">
+$7F [S.E.] <time="2">
+$86 [S.E.] <time="2">
+$87 [S.E.] <time="2">
+$88 [S.E.] <time="2">
+$89 [S.E.] <time="2">
+$8A [S.E.] <time="2">
+$8B [S.E.] <time="2">
+$8C [S.E.] <time="2">
+$8D [S.E.] <time="2">
+$8E [S.E.] <time="2">
+$96 [S.E.] <time="2">
+$97 [S.E.] <time="2">
+$98 [S.E.] <time="2">
+$99 [S.E.] <time="2">
+$9A [S.E.] <time="2">
+$9B [S.E.] <time="2">
+$9C [S.E.] <time="2">
+$9D [S.E.] <time="2">
+
+  ■出典
+  R-TYPE スペシャル
+  Victor Entertainment  VICL-8077  1993.09.22
+
+// 効果音に関しては一部未チェックです
+// 演奏時間は2ループを基準に設定しています(1面除く)
+// 1面の曲は1ループ3分オーバーなので…ｽﾐﾏｾﾝ
+//
+// サンプリング系を一度再生すると、以降効果音、ボイス等が演奏終了後無音にならなくなります
+// Autoが有効に機能しなくなってしまうため、全コードに演奏時間を設定してあります
+//
+// List Contribution by Cratch
+// Updated by Fujix
+// Reupdated by Cratch
+$end

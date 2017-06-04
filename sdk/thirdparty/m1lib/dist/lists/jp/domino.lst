@@ -1,0 +1,37 @@
+﻿$name=domino
+$version=2
+$default=016
+//$fixed_volume=214
+$main
+
+#016 [S.E.] Coin Inserted
+#037 Main Tune
+#042 Bow (Stage Clear)
+#036 Lose Game
+#041 Intermission & Game Over
+
+#020 Test Tone
+#039 [Command: #037 Resumption]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#007 [S.E.] shoe squeak
+#008 [S.E.] place domino
+#009 [S.E.] take domino
+#010 [S.E.] bump person
+#011 [S.E.] bully right
+#012 [S.E.] bully left
+#015 [S.E.] bonus man
+#016 [S.E.] coin
+#023 [S.E.] swat whack
+#021 [S.E.] doms falling
+#033 [S.E.] bee
+#017 [S.E.] tilt
+#030 [S.E.] bird chirp
+#027 [S.E.] end fall
+#029 [S.E.] laser
+#019 [S.E.] boom
+
+// List contribution by NK
+$end

@@ -1,0 +1,37 @@
+﻿$name=lethalen
+$version=2
+$default=$c3
+$songmax=$f0
+$fixed_volume=475
+$main
+
+$c3 WAITING FOR CHALLENGERS (タイトルデモBGM)
+$2b CREDIT (コイン音)
+$c9 VICTORY OR DEFEAT (ステージセレクトBGM)
+$c0 MY MISSION (ステージスタートBGM)
+$d4 ROLLING BUDGUYS (ステージBGM 1)
+$d1 BLACK BOOTS (ステージBGM 2)
+$d5 FENCE OF DEFENCE (ステージBGM 3)
+$d3 AS LONG AS YOU LIVE (ステージBGM 4)
+$d0 DESPERATE TO SURVIVE (ステージBGM 5)
+$d9 FIGHT FOR YOUR LIFE (ステージBGM 6)
+$d2 SHOOT INTO THE STREET (チェイスBGM 1)
+$d6 AT FULL SPEED (チェイスBGM 2)
+$cd WARNING AREA (暗視ステージBGM)
+$c8 DEAD OR ALIVE (ステージボスBGM)
+$c1 LUCKY PLUCKY (ボーナスステージBGM)
+$c2 WHOA! (ボーナスステージクリアBGM)
+$cb FANFARE I (階級UP BGM)
+$cc FANFARE II (階級DOWN BGM)
+$ce FANFARE III (階級昇降なし BGM)
+$c4 YOU ARE A GOOD SHOOTER! (ステージクリアBGM)
+$c5 JUST MY LUCK! (ゲームオーバーBGM)
+$c7 SO TIRED (ネーミングBGM)
+$c6 THANK YOU, AND SEE YOU AGAIN (スタッフロールBGM)
+$f0 スピーカーテスト
+
+  ■出典
+  コナミ・アミューズメントサウンズ '93 - 夏
+  KING RECORDS  KICA-7616～7617  1993.08.21
+
+$end

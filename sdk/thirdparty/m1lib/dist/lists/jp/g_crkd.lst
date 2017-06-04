@@ -1,0 +1,19 @@
+$name=g_crkd
+$version=2
+$default=61552
+$songmax=9999999
+$main
+
+$F070 Driver Init
+$0001 BGM 1
+$0002 BGM 2
+$0003 BGM 3
+$0004 BGM 4
+$0005 BGM 5
+$0007 BGM 6
+$0008 BGM 7
+$0009 BGM 8
+$000a BGM 9
+
+// Basic list contributed by Knurek
+$end

@@ -1,0 +1,224 @@
+﻿$name=pspikes2
+$version=2
+$default=032
+$main
+
+#032 NEO-GEO Logo
+#033 [Voice] VIDEO SYSTEM
+#034 ATTRACT MODE
+#064 [S.E.] CREDIT
+#035 LEAGUE SELECT
+
+#066 [S.E.] HYPER LEAGUE
+#039 GAME START
+#048 THEME 1 (1ST, 2ND MATCH)
+#036 A NEW CHALLENGER
+#051 THEME 2 (3RD, 4TH MATCH)
+#045 CONTINUE ?
+#054 THEME 3 (FINAL MATCH)
+#042 YOU WON
+#057 CONGRATULATIONS !
+#058 STAFF ROLL
+
+#066 [S.E.] WORLD MEN 
+#038 GAME START
+#046 THEME 1 (1ST, 2ND MATCH)
+#049 THEME 2 (3RD, 4TH MATCH)
+#043 CONTINUE ?
+#052 THEME 3 (FINAL MATCH)
+#040 YOU WON
+#055 CONGRATULATIONS !
+#058 STAFF ROLL
+
+#066 [S.E.] WORLD WOMEN 
+#038 GAME START
+#047 THEME 1 (1ST, 2ND MATCH)
+#050 THEME 2 (3RD, 4TH MATCH)
+#044 CONTINUE ?
+#053 THEME 3 (FINAL MATCH)
+#041 YOU WON
+#056 CONGRATULATIONS !
+#058 STAFF ROLL
+
+#059 未使用曲 1
+#060 未使用曲 2
+
+---------------------------------------------------
+  [S.E.]
+
+#032 [S.E.] NEO-GEO Logo
+#064 [S.E.] CREDIT
+#065 [S.E.] 
+#066 [S.E.] 決定
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#111 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] 
+#117 [S.E.] 
+#118 [S.E.] 
+#119 [S.E.] 
+#120 [S.E.] 
+#121 [S.E.] 
+#122 [S.E.] 
+#123 [S.E.] 
+#124 [S.E.] 
+#125 [S.E.] 
+#126 [S.E.] 
+#127 [S.E.] 
+#128 [S.E.] 
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] <time="3">
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#073 [Voice] <time="5">
+#074 [Voice] 
+#075 [Voice] <time="5"> 
+#076 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#164 [Voice] 
+#165 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#169 [Voice] 
+#170 [Voice] 
+#171 [Voice] 
+#172 [Voice] 
+#173 [Voice] 
+#174 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+#177 [Voice] 
+#178 [Voice] 
+#179 [Voice] 
+#180 [Voice] 
+#181 [Voice] 
+#182 [Voice] 
+#183 [Voice] 
+#184 [Voice] 
+#185 [Voice] 
+#186 [Voice] 
+#187 [Voice] 
+#188 [Voice] 
+#189 [Voice] 
+#190 [Voice] 
+#191 [Voice] 
+#192 [Voice] 
+#193 [Voice] 
+#194 [Voice] 
+#195 [Voice] 
+#196 [Voice] 
+#197 [Voice] 
+#198 [Voice] 
+#199 [Voice] 
+#200 [Voice] 
+#201 [Voice] 
+#202 [Voice] 
+#203 [Voice] 
+#204 [Voice] 
+#205 [Voice] 
+#206 [Voice] 
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#212 [Voice] 
+#213 [Voice] 
+#214 [Voice] 
+#215 [Voice] 
+#216 [Voice] 
+#217 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#223 [Voice] 
+#224 [Voice] 
+#225 [Voice] 
+#226 [Voice] 
+#227 [Voice] 
+#228 [Voice] 
+#229 [Voice] 
+
+  ■作曲
+  細井 聡司 (HOSO_Q)
+
+  ■効果音
+  NORIE
+
+  ■サウンドメインプログラマー
+  M.YAMANA
+
+  ■サウンドサブプログラマー
+  H.SOYAMA
+   
+// List contribution by ZEK.
+$end

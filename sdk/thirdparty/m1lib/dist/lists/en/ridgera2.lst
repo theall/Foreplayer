@@ -1,0 +1,140 @@
+$name=ridgera2
+$version=2
+$default=92
+$main
+
+#092 Welcome RR
+#082 Drive U 2 dancing
+#081 GRIP
+#080 Over the Highway
+#083 ...DAT DAN DAY...A
+#084 Lords of TECHNO
+#085 MAXIMUM ZONE
+#087 RARE HERO 2
+#088 Feeling over remix
+#089 ROTTERDAM NATION 94
+#090 Speedster Overheat
+#091 Rhythm shift remix
+#093 Winning turn
+#079 Game Over
+
+--------------------------------------------
+
+$02 [SFX] <time="4">
+$07 [SFX] 
+$09 [SFX] 
+$11 [SFX] 
+$13 [SFX] 
+$14 [SFX] 
+$18 [SFX] <time="4">
+$1B [SFX] 
+$1C [SFX] 
+$1D [SFX] 
+$1E [SFX] 
+$1F [SFX] 
+
+$64 [Voice] Watch your back!
+$65 [Voice] They're gaining on you!
+$66 [Voice] Enemy closing!
+$67 [Voice] They're right behind you!
+$68 [Voice] Get ready to block!
+$69 [Voice] Get them!
+$6A [Voice] Now you've got them!
+$6B [Voice] In firing range!
+$6C [Voice] Commence attack!
+$6D [Voice] Target locked!
+$6E [Voice] Don't blow this chance!
+$6F [Voice] Don't ram them!
+$70 [Voice] Give'em a good scare!
+$71 [Voice] Don't chicken out!
+$72 [Voice] You're too slow!
+$73 [Voice] What's your problem?
+$74 [Voice] Try again!
+$75 [Voice] Don't let them get away!
+$76 [Voice] Go after them!
+$77 [Voice] Get them back!
+$78 [Voice] Don't let them beat you!
+$79 [Voice] You lose!
+$7A [Voice] Oh no!
+$7B [Voice] What are you doing?
+$7C [Voice] C'mon! Get going!
+$7D [Voice] Are you alright?
+$7E [Voice] Are you awake out there?
+$7F [Voice] You got them!
+$80 [Voice] Great work!
+$81 [Voice] Nice job!
+$82 [Voice] Keep it up!
+$83 [Voice] Fantastic!
+$84 [Voice] Don't get over confident!
+$85 [Voice] You're the best!
+$86 [Voice] You got' em
+$87 [Voice] Awsome
+$88 [Voice] Super performance!
+$89 [Voice] Great blocking!
+$8A [Voice] That's how to do it!
+$8B [Voice] Yeah!
+$8C [Voice] Alright!
+$8D [Voice] Sparks are flying!
+$8E [Voice] Don't let them get you!
+$8F [Voice] Crush them!
+$90 [Voice] They won't go down that easy!
+$91 [Voice] Just a little more!
+$92 [Voice] Watch it! You got a slow one up ahead!
+$93 [Voice] C'mon! Don't give up yet!
+$94 [Voice] 
+$95 [Voice] Now's your chance!
+$96 [Voice] Make your move!
+$97 [Voice] This is it! Go for it now!
+$98 [Voice] It's still anybody's race!
+$99 [Voice] They're in the final turn! Who'll take the checkered flag!?
+$9A [Voice] There's the finish! This'll settle the score!
+$9B [Voice] Excellent cornering!
+$9C [Voice] Brilliant driving!
+$9D [Voice] What control!
+$9E [Voice] Great start! Now go for the lead!
+$9F [Voice] Taking your time aren't you! What's wrong, engine trouble?
+$A0 [Voice] You're in control of this race!
+$A1 [Voice] Take it to the finish!
+$A2 [Voice] Incredible! Nobody can catch you! You're the real RIDGE RACER!
+$A3 [Voice] You did it! You're the champion!
+$A4 [Voice] That was a tough race. Go after the checkered flag next time!
+$A5 [Voice] Well, you won this one. But can you go all the way?
+$A6 [Voice] Too bad! Game Over Man! Better luck Next time
+$A7 [Voice] We're waiting for you
+$A8 [Voice] The elimination heat is about begin! Get ready to show us whatcha got!
+$A9 [Voice] 3
+$AA [Voice] 2
+$AB [Voice] We're ready and waiting for you! C'mon! Pull up to the starting line and rev your engine!
+$AC [Voice] 1
+$AD [Voice] GO!
+$AE [Voice] You're too slow!
+$AF [Voice] Try again!
+$B0 [Voice] Don't let them beat you
+$B1 [Voice] You lose!
+$B2 [Voice] Oh, no!
+$B3 [Voice] Oh, no..
+$B4 [Voice] Oh, no..
+$B5 [Voice] There's an accident up ahead, be careful.
+$B6 [Voice] Go for it
+$B7 [Voice] Ridge Racer 2
+$B8 [Voice] Ridge Racer 2
+$B9 [Voice] Ridge Racer 2
+$BA [Voice] Ridge Racer 2
+$BB [Voice] 2 laps to go!
+$BC [Voice] 3 laps to go!
+$BD [Voice] 4 laps to go!
+$BE [Voice] OK! The final lap! Hang in there!
+$BF [Voice] Hey You're trying for a goal by going the other way around, huh? You're crazy!
+
+  [OST]
+  Ridge Racer 2 / Namco Game Sound Express Vol.14
+  Victor Entertainment  VICL-15031  Sep 24, 1994
+
+  [Sound Composers]
+  Shinji Hosoe: #92, #80, #83, #89, #90, #91, #83
+  Ayako Sasou: #82, #84, #88
+  Nobuyoshi Sano: #81, #87
+  Takayuki Aihara: #85
+
+// Voice transcription and updated by Mikasen
+$end

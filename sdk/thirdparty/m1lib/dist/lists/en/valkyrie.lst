@@ -1,0 +1,47 @@
+﻿$name=valkyrie
+$version=2
+$default=$0c
+$main
+
+$0c Prologue
+$02 Main Theme
+$62 Level Up
+$3c Black Dragon
+$34 Dzur
+$36 Theme of Underground
+$1c Theme of Castle
+$4d Shindig
+$0e King Elekiman
+$60 Theme of Darkness
+$46 Theme of Marvel Land
+$4b Aurora
+$26 Cammuuzu
+$14 Epilogue I
+$64 Epilogue II
+$124 Name Entry (Not on CD)
+$01 Speaker Test
+
+-----------------------------------------
+
+$30 [SFX] got an item
+$32 [SFX] shop (selected)
+$33 [SFX] shop (canceled)
+$48 [SFX] spoon jump
+$49 [SFX] ground crack
+$4a [SFX] slide jump
+$4f [SFX] ice 1
+$50 [SFX] ice 2
+$51 [SFX] shocked 1
+$52 [SFX] shocked 2
+$57 [SFX] fry drill
+$58 [SFX] ox
+$5b [SFX] black dragon
+
+  [Source]
+  Valkyrie no densetsu / Namco Game Sound Express Vol.1
+  Victor Entertainment  VDR-14001  Sep 21, 1989
+
+  [Sound Composer]
+  Hiroyuki Kawada
+
+$end

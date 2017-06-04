@@ -1,0 +1,103 @@
+﻿$name=alexkidd
+$version=2
+$default=003
+$main
+
+#003 [Voice] The cutomer is king <time="3">
+#001 [Voice] Find the miracle ball <time="3">
+#146 ステージ 1･5 BGM
+#168 ステージクリア <time="5">
+#002 ネクストステージ <time="4">
+      [Voice] Carry the ball to the holy land ziggurat
+#147 ステージ 2･6 BGM
+#145 ステージ 3･7 BGM
+#148 ステージ 4 BGM
+#149 エンディング
+
+#174 ゲームオーバー <time="3">
+
+---------------------------------------------------
+ [S.E.]
+
+#144 [S.E.] <time="5">
+#169 [S.E.] <time="5">
+#129 [S.E.] <time="3">
+#130 [S.E.] <time="3">
+#131 [S.E.] <time="3">
+#132 [S.E.] <time="3">
+#133 [S.E.] <time="3">
+#134 [S.E.] <time="3">
+#135 [S.E.] <time="3">
+#142 [S.E.] <time="3">
+#160 [S.E.] <time="3">
+#161 [S.E.] <time="5">
+#162 [S.E.] <time="3">
+#163 [S.E.] <time="3">
+#164 [S.E.] <time="3">
+#165 [S.E.] <time="3">
+#166 [S.E.] <time="5">
+#167 [S.E.] <time="3">
+#170 [S.E.] <time="3">
+#171 [S.E.] <time="3">
+#172 [S.E.] <time="2.5">
+#173 [S.E.] <time="3">
+#175 [S.E.] <time="3">
+#176 [S.E.] <time="3">
+#177 [S.E.] <time="3">
+#178 [S.E.] <time="3">
+#179 [S.E.] <time="3">
+#180 [S.E.] <time="3">
+#192 [S.E.] <time="3">
+#193 [S.E.] <time="3">
+#194 [S.E.] <time="3">
+#195 [S.E.] <time="3">
+#196 [S.E.] <time="3">
+#197 [S.E.] <time="3">
+#198 [S.E.] <time="3">
+#199 [S.E.] <time="3">
+#200 [S.E.] <time="3">
+#201 [S.E.] <time="3">
+#202 [S.E.] <time="3">
+#203 [S.E.] <time="3">
+#204 [S.E.] <time="3">
+#209 [S.E.] <time="3">
+
+---------------------------------------------------
+ [Voice]
+
+#001 [Voice] Find the miracle ball <time="3">
+#003 [Voice] The cutomer is king <time="3">
+#002 [Voice] Carry the ball to the holy land ziggurat <time="4">
+#007 [Voice] アアァー！ <time="3">
+#016 [Voice] キャアァ！ <time="3">
+
+ [アレク未使用Voice]
+
+#004 [Voice] 待てよぉー！ <time="3">
+#005 [Voice] 急げよぉー！ <time="3">
+#006 [Voice] 押すなよぉー！ <time="3">
+#008 [Voice] やったぁ！ <time="3">
+#009 [Voice] すげぇぇ！ <time="3">
+#010 [Voice] いてぇ！ <time="3">
+#017 [Voice] 一緒に遊ぼうよ！ <time="3">
+#018 [Voice] やぁだよ！ <time="3">
+
+ [ステラ未使用Voice]
+
+#011 [Voice] 待ってよぉ！ <time="3">
+#012 [Voice] 急いでぇー！ <time="3">
+#013 [Voice] やったぁ～！ <time="3">
+#014 [Voice] きれぇー… <time="3">
+#015 [Voice] いったぁぃ！ <time="3">
+#019 [Voice] あっかんべぇ！ <time="3">
+#020 [Voice] 押さないでぇ <time="3">
+
+  ■出典
+  SEGA ARCADE 80'S VOL.1
+  SME / SCITRON  SCDC-00245  2003.02.19 
+
+  ■作曲
+  川口 博史 (Hiro)
+
+// List contribution by ZEK.
+$end

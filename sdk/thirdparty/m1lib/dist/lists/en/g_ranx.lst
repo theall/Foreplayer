@@ -1,0 +1,36 @@
+﻿$name=g_ranx
+$version=2
+$default=040
+$songmax=255
+$main
+
+#040 Opening Theme
+#039 Mission Objective <time="1:04" fadeout="yes" fadeoutlength="10">
+#001 Desert [Stage 1-1] <time="1:52" fadeout="yes" fadeoutlength="10">
+#002 Temple [Stage 1-2] <time="2:04" fadeout="yes" fadeoutlength="10">
+#035 Boss Theme <time="1:49" fadeout="yes" fadeoutlength="10">
+#038 Objective Clear
+#003 Cave [Stage 2-1] <time="2:11" fadeout="yes" fadeoutlength="10">
+#004 Military Complex [Stage 2-2] <time="2:09" fadeout="yes" fadeoutlength="10">
+#005 Jungle [Stage 3-1] <time="2:36" fadeout="yes" fadeoutlength="10">
+#006 River ~ Boss [Stage 3-2] <time="2:13" fadeout="yes" fadeoutlength="10">
+#013 Tower [Stage 4-1] <time="1:12" fadeout="yes" fadeoutlength="10">
+#008 Battleship ~ Boss [Stage 4-2] <time="2:03" fadeout="yes" fadeoutlength="10">
+#009 City at Night [Stage 5-1] <time="2:03" fadeout="yes" fadeoutlength="10">
+#034 Access Tube ~ Boss [Stage 5-2] <time="2:01" fadeout="yes" fadeoutlength="10">
+#011 Factory [Stage 6-1] <time="2:02" fadeout="yes" fadeoutlength="10">
+#012 Command Center [Stage 6-2] <time="2:07" fadeout="yes" fadeoutlength="10">
+#037 Biotech Monster [Final Boss] <time="2:04" fadeout="yes" fadeoutlength="10">
+#041 Ending Theme
+#014 Player Death
+#007 Unknown #1 <time="1:57" fadeout="yes" fadeoutlength="10">
+#010 Unknown #2 <time="2:00" fadeout="yes" fadeoutlength="10">
+#033 Unknown #3 <time="1:59" fadeout="yes" fadeoutlength="10">
+#036 Unknown #4 <time="1:53" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Yoshinobu Hiraiwa, Noriyuki Iwadare
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

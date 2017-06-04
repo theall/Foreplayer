@@ -1,0 +1,101 @@
+﻿$name=sharrier
+$version=2
+$default=231
+$songmax=252
+$main
+
+#231 Coin
+#173 Theme
+#176 Theme (Short Version)
+#165 Squilla
+#166 Ida
+#170 Godarni
+#178 Wiwi Jumbo
+#184 Battle Field (Bonus Stage)
+#171 Syura
+#164 Valda
+#163 Stanray
+#183 Lake Side Memory (Ending)
+#185 Winner's Song (Name Entry)
+
+#174 Theme #2
+#175 Theme #3
+#177 Theme #4
+
+-----------------------------------------
+  [SFX]
+
+#129 [Voice] Welcome to the Fantasy Zone, get ready!
+#130 [Voice] Get ready!
+#135 [Voice] Aaaaargh!
+#137 [Voice] Ouch!
+
+#160 [SFX]
+#162 [SFX]
+#167 [SFX] Extended
+#179 [SFX]
+#180 [SFX] Shot 1
+#181 [SFX] Shot 2
+#182 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#241 [SFX]
+#242 [SFX]
+#243 [SFX]
+#244 [SFX]
+#245 [SFX]
+#246 [SFX]
+#247 [SFX]
+#248 [SFX]
+#249 [SFX]
+#250 [SFX]
+#251 [SFX]
+#252 [SFX]
+
+  [Source]
+  Sega Taikan Game Special
+  Alfa Records  28XA-198  Dec 21, 1987
+
+$end

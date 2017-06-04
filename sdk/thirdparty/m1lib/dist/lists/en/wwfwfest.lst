@@ -1,0 +1,148 @@
+﻿$name=wwfwfest
+$version=2
+$default=002
+$main
+
+#002 Title
+#001 Attract Mode
+#042 [SFX] Coin
+#003 Player Select
+#014 Player's Team Entry
+#004 BGM 1
+#010 BGM 2
+#008 Game Over
+#007 Continue ? <time="10.8">
+#012 BGM 3
+#015 BGM 4
+#005 You Won the Match
+#016 Demo
+#013 The Legion of Doom
+#006 BGM 5
+#011 BGM 6 
+#009 Congratulations
+#007 Prompt Report
+#017 Ending
+#014 Name Entry
+
+#018 Unused
+
+---------------------------------------------------
+  [SFX]
+
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] COIN
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#051 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#049 [Voice]
+#050 [Voice]
+#052 [Voice] Hulkster
+#053 [Voice] Warrior
+#054 [Voice] Jake
+#055 [Voice] Boss Man
+#056 [Voice] Mr. Perfect
+#057 [Voice] DiBiase
+#058 [Voice] Slaughter
+#059 [Voice] Earthquake
+#060 [Voice] Hawk
+#061 [Voice] Animal
+#062 [Voice] Piledriver
+#063 [Voice] Body slam
+#064 [Voice] Shoulder throw
+#065 [Voice] Atomic drop
+#066 [Voice] Clothesline
+#067 [Voice] Power slam
+#068 [Voice] Flying mare
+#069 [Voice] Missing
+#070 [Voice] Million Dollar Dream
+#071 [Voice] Driller press
+#072 [Voice] DDT
+#073 [Voice] Boss Man Slam
+#074 [Voice] Vertical
+#075 [Voice] Sleeper hold
+#076 [Voice] Elbow smash
+#078 [Voice] Stomping
+#079 [Voice] Figure four leg lock
+#080 [Voice] Is disqualified
+#081 [Voice] It's a two count
+#082 [Voice] Suplex
+#083 [Voice] Back suplex
+#084 [Voice] Bearhug
+#085 [Voice] Back breaker
+#086 [Voice] Flying
+#087 [Voice] Oh no!
+#088 [Voice] Elbow butt
+#089 [Voice] Leg drop
+#090 [Voice] Gut wrencher
+#091 [Voice] Double axe handle
+#092 [Voice] Neck breaker
+#093 [Voice] Big foot
+#094 [Voice] Knee smasher
+#095 [Voice] Perfect-Plex
+#096 [Voice] Splash
+#097 [Voice] Cobra Clutch
+#098 [Voice] One!
+#099 [Voice] Two!
+#100 [Voice] Three!
+#101 [Voice] Seventeen!
+#102 [Voice] Eighteen!
+#103 [Voice] Nineteen!
+#104 [Voice] Twenty!
+#105 [Voice] Tags the corner
+#106 [Voice] Ha ha ha! We snack on danger, dine on death!
+#107 [Voice] To bury every gerbil-faced geek we face!
+#108 [Voice] Is the king of Royal Rumble!
+#109 [Voice] Hulk Hogan!
+#110 [Voice] The Ultimate Warrior!
+#111 [Voice] Jake "The Snake" Roberts!
+#112 [Voice] Mr. Perfect!
+#113 [Voice] Sergeant Slaughter!
+#114 [Voice] Earthquake!
+#115 [Voice] Demolition!
+#116 [Voice] The Big Boss Man!
+#117 [Voice] The Million Dollar Man, Ted DiBiase!
+#118 [Voice] Crush
+#119 [Voice] Smash
+#120 [Voice] 
+#121 [Voice] It's time to fight with a powerful challenger
+#122 [Voice] Congratulations! Now go for the next match
+#123 [Voice] This contest is scheduled for one fall!
+#124 [Voice] And
+#125 [Voice] Versus
+#126 [Voice] Climbs on the top rope
+#127 [Voice] Good teamwork
+#128 [Voice]
+#129 [Voice] Big fo...
+
+  [Sound Composer]
+  Yoshihiro Kameoka
+
+// List contribution by ZEK.
+// Updated by Fuj
+// Voices transcription by Phil Bennett
+$end

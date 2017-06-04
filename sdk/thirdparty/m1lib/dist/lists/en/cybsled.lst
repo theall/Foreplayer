@@ -1,0 +1,32 @@
+﻿$name=cybsled
+$version=2
+$default=$70
+$songmax=$70
+$main
+
+$70 Silent Fight
+$03 Enter for Battle
+$06 Ground Rhythm
+$41 Sand Light
+$42 Night Command
+$43 Be Warped Time
+$44 Unvoidable
+$45 Find Out
+$46 Underground Battle
+$47 Be Driven
+$48 An Armed Revolution
+$09 Bury
+$0f Take Measures
+$55 Last Game
+$1c A Defeat
+$1d Twilight Hero
+$00 Speaker Test
+
+  [Source]
+  Cyber Sled / Namco Game Sound Express Vol.10
+  Victor Entertainment  VICL-15024  Jan 21, 1994
+
+  [Sound Composer]
+  Shinji Hosoe
+
+$end

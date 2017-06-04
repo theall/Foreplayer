@@ -1,0 +1,42 @@
+﻿$name=pacland
+$version=2
+$main
+
+#00 Credit Sound
+#01 Round Start Music
+#02 &lt;High Score&gt; Name Entry Music
+#03 Moving Fireplug, Stump and Cactus
+#04 Outward BGM
+#05 Homeward BGM
+#06 Monster Mansion's BGM
+#07 Break Time, Return Home Music
+#08 Monsters Become Blue
+#09 Jump
+#10 Got a Power Dot
+#11 Caught a Blue Monster
+#12 Water Splash from Fireplug
+#13 Car Appeared
+#14 Aircraft Appeared
+#15 Counting Bounus Points
+#16 Collide with a Monster
+#17 Extended
+#18 Opening a Rock Gate
+#19 Caught a Small Monster with a Helmet
+#20 Got a Key
+#21 UFO Flying
+#22 Hopping Sound
+#23 Breaking Sound
+#24 Got a Fruit Target
+#25 Slipped under the Water
+#26 Tumbled from a Cliff
+#27 Water Brings Up
+#28 Game Over Music
+#29 Pac Man Arrived at the Fairy Land
+#30 Bed of Quicksand
+#31 Got a Special Pac Man or Lucky Pac Man
+
+  [Source]
+  All About Namco / Dempa
+
+// English list by Fuj
+$end

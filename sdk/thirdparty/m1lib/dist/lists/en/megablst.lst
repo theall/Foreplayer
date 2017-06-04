@@ -1,0 +1,29 @@
+﻿$name=megab
+$version=2
+$default=26
+$songmax=255
+$main
+
+#026 Notice Screen
+#025 Title
+#020 Prologue - from Fantaisie Impromptu by Chopin
+#045 Credit Inserted
+#017 Round Select 
+#009 Round 1
+#014 Round 2
+#011 Round 3
+#012 Round 4
+#013 Round 5
+#010 Round 6
+#015 Round 7
+#016 Round 8 (Final Round)
+#030 Emergency!
+#018 Boss
+#019 Round Clear
+#023 Ending - from Ode an die Freude by Beethoven
+#021 Name Entry
+
+#024 Unused
+
+// List contribution by R
+$end

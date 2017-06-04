@@ -1,0 +1,25 @@
+﻿$name=cgangpzl
+$version=2
+$default=$65
+$main
+
+$65 Mode Select
+$61 One Player Music
+$63 My Goodness! Music
+$69 Game Over
+$6f Do you continue?
+$6b Match-up Music
+$67 Settled
+$6d Name Entry
+
+  [Source]
+  Cosmo Gang the Puzzle PCB (NA-1)
+
+  Namco Game Sound Express Vol.8
+  Victor Entertainment  VICL-15018  Mar 24, 1993
+
+  [Sound Composer]
+  Yoshie Arakawa (Strong Yoshie)
+
+// List by Kayama
+$end

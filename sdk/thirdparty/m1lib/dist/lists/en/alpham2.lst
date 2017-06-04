@@ -1,0 +1,138 @@
+﻿$name=alpham2
+$version=2
+$default=002
+$fixed_volume=197
+$main
+
+#002 Neo Geo Logo
+
+#059 ASO II Title #1
+#061 ASO II Title #2
+#048 The Space Flight (Area 1)
+#065 Severe Fight (Boss 1)
+#060 Clear
+#080 My Fighter (Shop)
+#050 The Big Battleship (Area 2 - Above the Battleship)
+#058 Sonic Barrier (Area 2 - Inside the Battleship)
+#066 Massacre (Boss 2)
+#046 Macrocosm Space (Area 3)
+#064 Stoicism (Boss 3)
+#045 Warp Zone (Area 4)
+#054 Planet of Water (Area 5)
+#055 Subspace (Area 6)
+#051 The Final Zone (Last Boss)
+#034 Laugh (Ending)
+#063 Game Over
+// not released on CD
+#062 Ranking
+// not released on CD
+
+#041 The Space Flight (Area 1) &lt;w/o intro&gt;
+#040 The Space Flight (Area 1) &lt;mix 1&gt;
+#044 The Space Flight (Area 1) &lt;mix 2&gt;
+#042 The Space Flight (Area 1) &lt;mix 3&gt;
+#057 Sonic Barrier (Area 2 - Inside the Battleship) &lt;w/o intro&gt;
+#056 Subspace (Area 6) &lt;w/o intro&gt;
+#052 The Final Zone (Last Boss) &lt;w/o intro&gt;
+#049 Laugh (Ending) &lt;w/o intro&gt;
+
+----------------------------------------------------------------------------
+ [Voice]
+
+#242 [Voice]
+#243 [Voice]
+#244 [Voice]
+#245 [Voice]
+#246 [Voice]
+#247 [Voice]
+#248 [Voice]
+#249 [Voice]
+#250 [Voice]
+#251 [Voice]
+#252 [Voice]
+
+----------------------------------------------------------------------------
+ [SFX]
+
+#033 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#047 [SFX]
+#097 [SFX]
+#099 [SFX]
+#103 [SFX]
+#106 [SFX]
+#111 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#122 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+#239 [SFX]
+#240 [SFX]
+#253 [SFX]
+#254 [SFX]
+#255 [SFX]
+
+  [Source]
+  ASO II / SNK
+  Pony Canyon / Scitron  PCCB-00062  May 21, 1991
+
+// List contributed by NK
+// English list by NK
+$end

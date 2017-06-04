@@ -1,0 +1,99 @@
+﻿$name=qzchikyu
+$version=2
+$default=009
+$main
+
+#009 Breaking News <time="37">
+#066 [Voice] Quiz Chikyuu Boueigun <time="3">
+#050 [SFX] Credit Inserted
+#022 Game Mode Select <time="25.4">
+#010 Silver Hawk 1, Go!
+#011 Select Quiz-Monster <time="33">
+#031 Story 1 - Challenger from Space - <time="4">
+#012 Defend the Laboratory!
+#018 Ambitions of Planet Riddle
+#031 Story 2 - Chase the UFO - <time="4">
+#014 Shoot Down the Reconnaissance UFO !
+#024 Intent of the Undersea Kingdom, Remlia
+#031 Story 3 - Herald from Remlia - <time="4">
+#017 Let's Get to Work, Battle Shark!
+#031 Story 4 - TDF Base Facing a Crisis - <time="4">
+#025 Quiz Monster Approaching !
+#031 Story 5 - Encounter under Aurora - <time="4">
+#013 Antarctic Bases in Danger !
+#031 Story 6 - Go for the White Planet - <time="4">
+#015 Shout to the Moon !
+#020 Supply
+#029 Select Supply <time="2">
+#016 Battle in the White Land
+#022 Special Training 1
+#021 Special Training 2
+#031 Final Story - Braves Forever - <time="4">
+#026 Space Monster, King Drill
+#028 Victorious Fanfare
+#019 We'll Never Forget You (Ending)
+#022 Name Entry <time="26">
+#027 Game Over
+#051 The End
+
+#023 Theme of Versus Mode
+#030 Unused
+
+#242 Speaker Test 1
+
+---------------------------------------------------
+ [SFX] 
+
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] <time="5">
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] The End
+#052 [SFX] 
+#070 [SFX] 
+#241 [SFX] <time="3">
+#243 [SFX] <time="5">
+#244 [SFX] <time="3">
+#245 [SFX] 
+#246 Speaker Test 2
+
+---------------------------------------------------
+ [Voice] 
+
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+
+  [Sound Composer]
+  Yoshirou Horie
+
+// List contribution by ZEK.
+// English list by Fuj@surfeited
+$end

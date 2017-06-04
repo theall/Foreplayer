@@ -1,0 +1,23 @@
+﻿$name=blazer
+$version=2
+$default=001
+//$songmax=014
+$main
+
+#001 The Desrt on The Horizon (イントロ)
+#002 The Desrt on The Horizon
+#010 Pastel Sealane
+#006 Just Struck Two Noon
+#012 Flood Tide part 1
+#013 Flood Tide part 2
+#014 Sunspot Parade
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.2
+  VICTOR ENTERTAINMENT  VDR-5222  1987.10.21
+
+  ■作曲・編曲
+  桜井 誠一 (Namco)
+
+// リスト作成：ひろしさん
+$end

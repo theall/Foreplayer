@@ -1,0 +1,32 @@
+﻿$name=darius2
+$version=2
+$default=$1c
+$songmax=$4f
+$main
+
+$1c Opening
+$1b Credit Inserted
+$0a Olga Breeze (Sun)
+$0b Muse Vally (Mercury)
+$0c Jamming (Venus)
+$1d Warning!
+$11 War Oh! (Boss 1)
+$15 Round Clear
+$0d Cynthia (Moon)
+$0e Planet Blue (Earth)
+$12 Boss 2
+$0f To Nari (Mars)
+$4f say PAPa (Jupiter)
+$17 All Cleared
+$16 Name Regist
+$18 Ending #1
+$10 Ending #2
+
+  [Source]
+  Darius II -G.S.M. Taito 4- Zuntata
+  Pony Canyon / Scitron   PCCB-00010-12  Nov 21, 1989
+
+  [Sound Composer]
+  Hisayoshi Ogura (OGR.)
+
+$end

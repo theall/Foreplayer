@@ -1,0 +1,589 @@
+﻿$name=kinst
+$version=2
+$default=35
+$main
+
+$023 The Instinct (Title)
+$5ad [SFX] Coin
+$550 [Voice] Killer Instinct
+$009 Character Select <time="23">
+$02c K.I. Feeling (Orchid) <time="41">
+$02d K.I. Feeling (loop) <time="10">
+$02f K.I. Feeling (end) <time="5">
+$001 Controlling Transmission (Glacius) <time="37">
+$002 Controlling Transmission (loop) <time="10">
+$003 Controlling Transmission (end) <time="3">
+$024 Oh Yeah (Thunder) <time="55">
+$025 Oh Yeah (loop) <time="10">
+$026 Oh Yeah (end) <time="3">
+$01e Do It Now! (Jago) <time="44">
+$01f Do It Now! (loop) <time="10">
+$020 Do It Now! (end) <time="2">
+$00a Yo Check This Out! (T.J. Combo)
+$00b Yo Check This Out! (loop) <time="10">
+$00c Yo Check This Out! (end) <time="3">
+$00f Freeze (special stage) <time="34">
+$010 Freeze (loop) <time="10">
+$011 Freeze (end) <time="3">
+$014 Trailblazer (Cinder) <time="30">
+$015 Trailblazer (loop) <time="10">
+$017 Trailblazer (end) <time="2">
+$027 Tooth & Claw (Sabrewulf) <time="42">
+$028 Tooth & Claw (loop) <time="10">
+$02b Tooth & Claw (end) <time="3">
+$012 Rumble (Riptor) <time="45">
+$013 Rumble (loop) <time="10">
+$01d Rumble (end) <time="6">
+$042 Ya Ha Haa (Spinal) <time="38">
+$043 Ya Ha Haa (loop) <time="10">
+$045 Ya Ha Haa (end) <time="7">
+$046 Full-Bore (Fulgore) <time="50">
+$047 Full-Bore (loop) <time="10">
+$049 Full-Bore (end) <time="2">
+$018 The Extreme (Eyedol) <time="45">
+$019 The Extreme (loop) <time="10">
+$01a The Extreme (end) <time="10">
+$04d Credits <time="32">
+$04e The Instinct (Credits loop)
+$00d Fatality <time="8">
+$00e Game Over/Continue <time="10">
+$004 Humiliation (loop) <time="10">
+$005 Humiliation (end) <time="3">
+
+$04f Unused 01
+$008 Unused 02
+
+-----------------------------------------------------------
+ [SFX]
+
+$065 [SFX]
+$067 [SFX]
+$068 [SFX]
+$069 [SFX]
+$06d [SFX]
+$078 [SFX]
+$079 [SFX]
+$07a [SFX]
+$07b [SFX]
+$07c [SFX]
+$07d [SFX]
+$081 [SFX]
+$082 [SFX]
+$08b [SFX]
+$08c [SFX]
+$097 [SFX]
+$098 [SFX]
+$099 [SFX]
+$09b [SFX]
+$0a0 [SFX]
+$0a1 [SFX]
+$0a2 [SFX]
+$0a3 [SFX]
+$0a4 [SFX]
+$0a5 [SFX]
+$0a7 [SFX]
+$0a8 [SFX]
+$0a9 [SFX]
+$0ab [SFX]
+$0ac [SFX]
+$0ad [SFX]
+$0b0 [SFX]
+$0b3 [SFX]
+$0b4 [SFX]
+$0b5 [SFX]
+$0b6 [SFX]
+$0b8 [SFX]
+$0b9 [SFX]
+$0bf [SFX]
+$0c4 [SFX]
+$0c6 [SFX]
+$0c7 [SFX]
+$0c8 [SFX]
+$0c9 [SFX]
+$0ca [SFX]
+$0cc [SFX]
+$0d4 [SFX]
+$0d7 [SFX]
+$0d8 [SFX]
+$0da [SFX]
+$0db [SFX]
+$0dc [SFX]
+$0dd [SFX]
+$0de [SFX]
+$0df [SFX]
+$0e0 [SFX]
+$0e2 [SFX]
+$0e3 [SFX]
+$0e4 [SFX]
+$0e7 [SFX]
+$0e8 [SFX]
+$0e9 [SFX]
+$0ea [SFX]
+$0eb [SFX]
+$0ed [SFX]
+$0ee [SFX]
+$0f3 [SFX]
+$0f7 [SFX]
+$0f8 [SFX]
+$0fb [SFX]
+$0fc [SFX]
+$0fd [SFX]
+$0fe [SFX]
+$101 [SFX]
+$102 [SFX]
+$104 [SFX]
+$107 [SFX]
+$10a [SFX]
+$10b [SFX]
+$10d [SFX]
+$10e [SFX]
+$10f [SFX]
+$12f [SFX]
+$130 [SFX]
+$131 [SFX]
+$135 [SFX]
+$139 [SFX]
+$149 [SFX]
+$191 [SFX]
+$194 [SFX]
+$19c [SFX]
+$1a6 [SFX]
+$1a7 [SFX]
+$1a9 [SFX]
+$1ac [SFX]
+$1ad [SFX]
+$1ae [SFX]
+$1af [SFX]
+$1b0 [SFX]
+$1b3 [SFX]
+$1b4 [SFX]
+$1b5 [SFX]
+$1b6 [SFX]
+$1d8 [SFX]
+$1d9 [SFX]
+$1f5 [SFX]
+$1f6 [SFX]
+$1f7 [SFX]
+$1f8 [SFX]
+$1f9 [SFX]
+$1fa [SFX]
+$1fb [SFX]
+$1fc [SFX]
+$1ff [SFX]
+$200 [SFX]
+$206 [SFX]
+$20e [SFX]
+$20f [SFX]
+$210 [SFX]
+$211 [SFX]
+$212 [SFX]
+$213 [SFX]
+$214 [SFX]
+$216 [SFX]
+$217 [SFX]
+$218 [SFX]
+$219 [SFX]
+$21b [SFX]
+$21c [SFX]
+$21f [SFX]
+$223 [Voice] Fire Flash
+$227 [Voice] Inferno
+$229 [Voice] I'm just too hot!
+$22a [SFX]
+$22b [SFX]
+$22d [SFX]
+$22e [SFX]
+$22f [SFX]
+$232 [SFX]
+$239 [SFX]
+$23a [SFX]
+$23d [SFX]
+$23f [SFX]
+$261 [SFX]
+$262 [SFX]
+$263 [SFX]
+$269 [SFX]
+$26f [SFX]
+$272 [SFX]
+$273 [SFX]
+$275 [SFX]
+$276 [SFX]
+$278 [SFX]
+$279 [SFX]
+$27a [SFX]
+$27b [SFX]
+$27c [SFX]
+$27d [SFX]
+$27e [SFX]
+$281 [SFX]
+$29a [SFX]
+$29e [SFX]
+$2bd [SFX]
+$2be [SFX]
+$2bf [SFX]
+$2c2 [SFX]
+$2c8 [SFX]
+$2c9 [SFX]
+$2ca [SFX]
+$2cc [SFX]
+$2cd [SFX]
+$2ce [Voice] Yo!
+$2cf [Voice] Ha!
+$2d0 [Voice] Whoa!
+$2d1 [Voice] Yeah!
+$2d3 [Voice] Eat It!
+$2d5 [Voice] Oh!
+$2d7 [Voice] Aa!
+$2d8 [Voice] Oh!
+$2d9 [Voice] Ar!
+$2da [Voice] Arr!
+$2db [Voice] Ach!
+$2dc [Voice] Aow!
+$2dd [SFX]
+$2de [Voice] Oooo!
+$2e0 [SFX]
+$2e1 [Voice] Wahhhooo!
+$2e2 [SFX]
+$2e3 [SFX]
+$2ef [Voice] Eat This!
+$305 [SFX]
+$325 [SFX]
+$326 [SFX]
+$32d [SFX]
+$32f [SFX]
+$333 [SFX]
+$334 [SFX]
+$335 [SFX]
+$336 [SFX]
+$337 [SFX]
+$342 [SFX]
+$343 [SFX]
+$347 [SFX]
+$348 [SFX]
+$349 [SFX]
+$350 [SFX]
+$351 [SFX]
+$353 [SFX]
+$356 [SFX]
+$357 [SFX]
+$358 [SFX]
+$359 [SFX]
+$35a [SFX]
+$362 [SFX]
+$363 [SFX]
+$364 [Voice] Phoenix!
+$365 [SFX]
+$384 [Voice] Hahahahahaha!
+$389 [SFX]
+$38a [SFX]
+$38f [SFX]
+$391 [SFX]
+$393 [SFX]
+$394 [SFX]
+$395 [SFX]
+$396 [SFX]
+$39c [SFX]
+$39d [SFX]
+$39e [SFX]
+$3a2 [SFX]
+$3a3 [SFX]
+$3a4 [SFX]
+$3a5 [SFX]
+$3a6 [SFX]
+$3a7 [SFX]
+$3a9 [SFX]
+$3b8 [SFX]
+$3ba [SFX]
+$3bd [SFX]
+$3be [SFX]
+$3c3 [SFX]
+$3d4 [SFX]
+$3d5 [SFX]
+$3d6 [SFX]
+$3d7 [SFX]
+$3d8 [SFX]
+$3d9 [SFX]
+$3da [SFX]
+$3db [SFX]
+$3dc [SFX]
+$3dd [SFX]
+$3e9 [SFX]
+$3f0 [SFX]
+$3f3 [SFX]
+$3f4 [SFX]
+$3f5 [SFX]
+$3f6 [SFX]
+$3f7 [SFX]
+$3f9 [SFX]
+$3fb [SFX]
+$3fc [SFX]
+$3ff [SFX]
+$400 [SFX]
+$401 [SFX]
+$402 [SFX]
+$403 [SFX]
+$404 [SFX]
+$405 [SFX]
+$406 [SFX]
+$407 [SFX]
+$408 [SFX]
+$46a [SFX]
+$46f [SFX]
+$472 [SFX]
+$474 [SFX]
+$475 [SFX]
+$477 [SFX]
+$479 [SFX]
+$47a [SFX]
+$47b [SFX]
+$47d [SFX]
+$47f [SFX]
+$481 [SFX]
+$482 [SFX]
+$483 [SFX]
+$484 [SFX]
+$486 [SFX]
+$487 [SFX]
+$48a [SFX]
+$48c [SFX]
+$48d [SFX]
+$48f [SFX]
+$490 [SFX]
+$491 [SFX]
+$492 [SFX]
+$49c [SFX]
+$49d [SFX]
+$49e [SFX]
+$4a1 [SFX]
+$4a2 [SFX]
+$4a5 [SFX]
+$4a6 [SFX]
+$4a7 [SFX]
+$4a8 [SFX]
+$4a9 [SFX]
+$4aa [SFX]
+$4ab [SFX]
+$4ac [SFX]
+$4ad [SFX]
+$4ae [SFX]
+$4af [SFX]
+$4b0 [SFX]
+$4b1 [SFX]
+$4b2 [SFX]
+$4b3 [SFX]
+$4b4 [SFX]
+$4b5 [SFX]
+$4b6 [SFX]
+$4b7 [SFX]
+$4b8 [SFX]
+$4b9 [SFX]
+$4ba [SFX]
+$4bb [SFX]
+$4bc [SFX]
+$4bd [SFX]
+$4be [SFX]
+$4c2 [SFX]
+$4c3 [SFX]
+$4c4 [SFX]
+$4c5 [SFX]
+$4c6 [SFX]
+$4c8 [SFX]
+$4c9 [SFX]
+$4ca [SFX]
+$4cb [SFX]
+$4cd [SFX]
+$4ce [SFX]
+$4d0 [SFX]
+$4d1 [SFX]
+$4d3 [SFX]
+$4d4 [SFX]
+$4d5 [SFX]
+$4d6 [SFX]
+$4d7 [SFX]
+$4d8 [SFX]
+$4d9 [SFX]
+$4da [SFX]
+$4dc [SFX]
+$4dd [SFX]
+$4de [SFX]
+$4e0 [SFX]
+$4e1 [Voice] Ichi
+$4e2 [Voice] Ni
+$4e3 [Voice] San
+$4e4 [Voice] ???
+$4e5 [SFX]
+$4eb [SFX]
+$4ec [SFX]
+$4ed [SFX]
+$4ef [SFX]
+$4f1 [SFX]
+$4f3 [SFX]
+$4f4 [SFX]
+$4f5 [SFX]
+$4f6 [SFX]
+$4f7 [SFX]
+$4f8 [SFX]
+$4f9 [SFX]
+$4fa [SFX]
+$4fb [SFX]
+$4fc [SFX]
+$4fd [SFX]
+$500 [SFX]
+$501 [SFX]
+$504 [SFX]
+$506 [SFX]
+$507 [SFX]
+$50e [SFX]
+$511 [SFX]
+$512 [SFX]
+$513 [SFX]
+$514 [SFX]
+$515 [SFX]
+$516 [SFX]
+$517 [SFX]
+$518 [SFX]
+$519 [SFX]
+$51a [SFX]
+$51b [SFX]
+$51c [SFX]
+$51d [SFX]
+$51e [SFX]
+$51f [SFX]
+$521 [SFX]
+$522 [SFX]
+$525 [SFX]
+$52a [SFX]
+$52b [SFX]
+$52e [SFX]
+$574 [SFX]
+$575 [SFX]
+$576 [SFX]
+$578 [SFX]
+$579 [SFX]
+$57a [SFX]
+$57b [SFX]
+$584 [SFX]
+$585 [SFX]
+$59b [SFX]
+$59c [SFX]
+$59d [Voice] Hit It!
+$59e [Voice] Boogie!
+$59f [Voice] Dance?!
+$5a0 [Voice] Get It On!
+$5a6 [Voice] Dance!!
+$5b0 [SFX]
+$5b1 [SFX]
+$5b2 [SFX]
+$5b3 [SFX]
+$5b5 [Voice] I Live!
+$5b6 [Voice] Burp!
+$5b8 [SFX] Parp!
+$5b9 [SFX]
+$5ba [SFX]
+$5bc [SFX]
+$5c2 [SFX]
+$5c4 [SFX]
+$5c5 [SFX]
+$5c6 [SFX]
+$5c7 [SFX]
+$5c8 [Voice] Haaaahahahahahaha!
+$5c9 [SFX]
+$5ca [SFX]
+$5cb [SFX]
+$5cc [SFX]
+$5cd [SFX]
+$5d0 [SFX]
+$5d1 [SFX]
+$5d2 [Voice] Killer! Killer!
+$5d3 [SFX]
+$5d4 [SFX]
+$5d7 [SFX]
+$5d8 [SFX]
+$5d9 [SFX]
+$5da [SFX]
+$5db [SFX]
+$5dc [SFX]
+$5de [SFX]
+$5df [SFX]
+$5e0 [SFX]
+$5e1 [SFX]
+$5e2 [SFX]
+$5e3 [Voice] Break It Down!
+$5e4 [Voice] OK Spinal baby, lets go for a take!
+$5e5 [Voice] Action!
+$5e6 [Voice] No! No! No! Cut! Cut!
+$5e7 [SFX]
+$5e8 [SFX]
+$5f5 [SFX]
+$5f6 [SFX]
+$5f6 [SFX]
+$5f8 [SFX]
+$5f9 [SFX]
+$5fa [SFX]
+$5fb [SFX]
+$5fc [SFX]
+$5fd [SFX]
+$5fe [SFX]
+$5ff [SFX]
+$600 [SFX]
+$601 [SFX]
+$602 [SFX]
+
+ [Voice]
+
+$536 [Voice] Triple Combo!
+$539 [Voice] Super Combo!
+$53a [Voice] Hyper Combo!
+$53c [Voice] Master Combo!
+$53d [Voice] Monster Combo!
+$540 [Voice] Brutal Combo!
+$542 [Voice] King Combo!
+$544 [Voice] Blaster Combo!
+$546 [Voice] Awesome Combo!
+$548 [Voice] Killer Combo!
+$54a [Voice] Ultra Combo!
+$5f4 [Voice] Ultimate Combo!
+$54e [Voice] Combo Breaker!
+$550 [Voice] Killer Instinct
+$554 [Voice] Jago!
+$556 [Voice] T.J. Combo!
+$558 [Voice] Chief Thunder!
+$55a [Voice] Spinal!
+$55c [Voice] Glacius!
+$55f [Voice] Riptor!
+$561 [Voice] Sabrewulf
+$563 [Voice] Orchid!
+$564 [Voice] Fulgore!
+$5f1 [Voice] Cinder!
+$5f2 [Voice] Heat Shade!
+$5f3 [Voice] Pyrotech!
+$566 [Voice] Eyedol!
+$568 [Voice] Winner!
+$56a [Voice] Ready!
+$56c [Voice] Ready!!
+$56d [Voice] Time Out!
+$570 [Voice] Game Over
+$572 [Voice] Continue
+$588 [Voice] Fight On!
+$589 [Voice] Welcome!
+$58a [Voice] Awesome Victory!
+$58c [Voice] Supreme Victory!
+$597 [Voice] Show No Mercy!
+$5ed [Voice] Perfect!
+$5ee [Voice] Danger! Danger! Danger!
+$5f0 [Voice] Humiliation!
+$598 [Voice] Available for your home in 1995. Only on Nintendo Ultra64!
+
+  [Source]
+  Killer Cuts
+  Nintendo/RARE 1948-1-1 HMG 1995
+
+  [Sound Composers]
+  Robin Beanland, Graeme Norgate
+
+// Figured out by Toby from names from the Remix CD...
+// List contribution by Sixtoe
+// List adjustment and SE/Voice collection by bcass
+// To do - categorise SE/Voice by character
+// Time length added by CrashTest
+$end

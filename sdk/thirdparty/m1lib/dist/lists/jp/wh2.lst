@@ -1,0 +1,71 @@
+﻿$name=wh2
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#025 HELL'S GODDESSの囁き (タイトル)
+#010 プレイヤーセレクト
+#012 マップ
+#008 VS
+#038 白夜のフィヨルド (エリックのテーマ)
+#039 風舞うや花散るが如く (リョウコのテーマ)
+#032 TIGER NAIL (シュラのテーマ)
+#047 七つの海のナイスガイ (キッドのテーマ)
+#049 JONNY LET'S DANCE (マキシマムのテーマ)
+#015 M'MADMEEEEN! (マッドマンのテーマ)
+#041 先に手が出る足が出る (フウマのテーマ)
+#033 異寇の女剣士 (ジャンヌのテーマ)
+#004 MIGHTY STROKE (ドラゴンのテーマ)
+#020 RUSSIAN SPECULATOR -ロシアの山師- (ラスプーチンのテーマ)
+#079 ドイツ機甲師団鎮魂歌 #9 (ブロッケンのテーマ)
+#034 モンゴリアンダイナマイト (J.カーンのテーマ)
+#017 BLACK OUT #1 (マッスルパワーのテーマ)
+#024 INTUITION (ハンゾウのテーマ)
+#022 A WAY OF ESCAPE (デスマッチ・スクラップ)
+#050 THE LAND OF THE HOLY (デスマッチ・戦場)
+#040 NOT NEW YORK (デスマッチ・酒場)
+#029 FORESIGHT SONGS (デスマッチ・リング)
+#009 ステージクリア
+#043 ガンガン行くべー (ボーナスステージ)
+#019 THE INCARNATION OF A DEVIL (ネオ ギガスのテーマ)
+#042 MURDER -D- (DIOのテーマ)
+#046 DADDY'S WONDER STORIES (エリック エンディング)
+#053 表に出ようよ (リョウコ エンディング)
+#005 美しき兄弟愛～SHURACHAN ONDO DE BURABURA (シュラ エンディング) 1
+#052 美しき兄弟愛～SHURACHAN ONDO DE BURABURA (シュラ エンディング) 2
+#006 'ANA' -THE- WORLD (キッド エンディング) 1
+#011 'ANA' -THE- WORLD (キッド エンディング) 2
+#018 戻れない時を抱いて (マキシマム エンディング) 1
+#031 戻れない時を抱いて (マキシマム エンディング) 2
+#073 RUDDY DREAMING (マッドマン エンディング)
+#071 SHAKE THE COKE (フウマ エンディング)
+#067 LADY ON THE SHINING HEIGHTS (ジャンヌ エンディング)
+#044 TURN RIGHT THE KNOB! (ドラゴン エンディング)
+#069 OH! VANITY MOON (ラスプーチン エンディング)
+#081 BROCKEN, UPSIDE-DOWN (ブロッケン エンディング) 1
+#030 BROCKEN, UPSIDE-DOWN (ブロッケン エンディング) 2
+#051 星は南中 (J.カーン エンディング)
+#048 もう一発 NO.1 (マッスルパワー エンディング)
+#045 必○でござる (ハンゾウ エンディング)
+#026 SYMPHONY OF EVIL -邪悪の交響曲- (スタッフロール)
+#007 ゲームオーバー
+
+#058 風舞うや花散るが如く (リョウコのテーマ) &lt;別バージョン&gt;
+#060 NOT NEW YORK (デスマッチモード・酒場) &lt;別バージョン&gt;
+#062 先に手が出る足が出る (フウマのテーマ) &lt;別バージョン&gt;
+#064 MURDER -D- (DIOのテーマ) &lt;別バージョン&gt;
+#076 もう一発 NO.1 (マッスルパワー エンディング) &lt;別バージョン&gt;
+#013 (unknown)
+#014 (unknown)
+#028 (unknown)
+#056 (unknown)
+#074 (unknown)
+#077 (unknown)
+
+  ■出典
+  ワールドヒーローズ2 / SNK・ADK
+  PONY CANYON / SCITRON  PCCB-00122  1993.06.18
+
+// List Contribution by NK
+$end

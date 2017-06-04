@@ -1,0 +1,154 @@
+﻿$name=mysticri
+$version=2
+$default=045
+$main
+
+#045 [SFX] Coin Inserted
+#001 Midnight Town (Stage 1) <time="3:08" fadeout="yes" fadeoutlength="10">
+#002 Boss BGM <time="3:13" fadeout="yes" fadeoutlength="10">
+#006 Stage Clear
+#012 Bonus Points <time="37" fadeout="yes" fadeoutlength="10">
+#004 Outskirts (Stage 2) <time="2:07" fadeout="yes" fadeoutlength="10">
+#008 Floating Turtles (Stage 3) <time="2:39" fadeout="yes" fadeoutlength="10">
+#005 Seabed (Stage 4) <time="2:28" fadeout="yes" fadeoutlength="10">
+#007 Castle (Stage 5) <time="2:45" fadeout="yes" fadeoutlength="10">
+#009 Fortress (Stage 6) <time="3:01" fadeout="yes" fadeoutlength="10">
+#003 Ranking <time="13">
+#010 Game Over
+#011 Unknown <time="35" fadeout="yes" fadeoutlength="10">
+
+  [Voices]
+
+#050 [Voice] 
+#051 [Voice] 
+#056 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#088 [Voice] 
+#112 [Voice]
+#116 [Voice]
+#119 [Voice] 
+#122 [Voice] 
+#124 [Voice] 
+#130 [Voice] 
+
+  [SFX]
+
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] Coin Inserted
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#071 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#083 [SFX] 
+#085 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#104 [SFX]
+#105 [SFX]
+#107 [SFX]
+#109 [SFX]
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#137 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+#186 [SFX] 
+#187 [SFX] 
+#188 [SFX] 
+#189 [SFX] 
+#190 [SFX] 
+#191 [SFX] 
+#191 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+
+  [Composers]
+  Tatsuya Watanabe
+  S. Aizu
+
+// List contribution by Simon B., done in playing the game.
+// Updated by Fuj
+$end

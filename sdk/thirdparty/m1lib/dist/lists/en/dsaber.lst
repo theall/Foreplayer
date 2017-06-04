@@ -1,0 +1,42 @@
+﻿$name=dsaber
+$version=2
+$default=005
+$fixed_volume=338
+$main
+
+#005 Credit Sound
+#008 Story of Dragon Saber (Opening 1)  <time="1:40">
+#009 Opening Visual (Opening 2) <time="30" fadeout="yes" fadeoutlength="10">
+#033 City Under the Water (Area 1) <time="4:07" fadeout="yes" fadeoutlength="10">
+#017 Boss A (Boss 1) <time="46" fadeout="yes" fadeoutlength="10">
+#034 Volcano (Area 2) <time="3:29.24">
+#018 Boss B (Boss 2) <time="1:15" fadeout="yes" fadeoutlength="10">
+#035 Fossils (Area 3) <time="2:32" fadeout="yes" fadeoutlength="10">
+#019 Alien King (Boss 3) <time="46" fadeout="yes" fadeoutlength="10">
+#036 Dust on the Ground (Area 4) <time="3:50" fadeout="yes" fadeoutlength="10">
+#037 Canyon (Area 5) <time="1:50" fadeout="yes" fadeoutlength="10">
+#013 Continue <time="41" fadeout="yes" fadeoutlength="10">
+#001 Score Ranking A <time="37" fadeout="yes" fadeoutlength="10">
+#038 Ice Hole (Area 6) <time="4:54" fadeout="yes" fadeoutlength="10">
+#039 Devildom (Area 7) <time="2:30" fadeout="yes" fadeoutlength="10">
+#023 Dragon Zombie (Boss 4) <time="41" fadeout="yes" fadeoutlength="10">
+#040 Darkness (Area 8) <time="1:09" fadeout="yes" fadeoutlength="10">
+#041 Ultima (Area 9) <time="5:56"  fadeout="yes" fadeoutlength="10">
+#025 Chaos (Final Boss) <time="2:07" fadeout="yes" fadeoutlength="10">
+#011 Ending <time="1:45">
+#002 Score Ranking B <time="45" fadeout="yes" fadeoutlength="10">
+
+#801 Sea from Dragon Spirit II (Area 1) <time="4:48" fadeout="yes" fadeoutlength="10">
+#802 Volcano from Dragon Spirit II (Area 2) <time="5:00" fadeout="yes" fadeoutlength="10">
+#803 Cave from Dragon Spirit II (Area 3) <time="1:30" fadeout="yes" fadeoutlength="10">
+#804 Forest from Dragon Spirit II (Area 4) <time="2:27" fadeout="yes" fadeoutlength="10">
+#805 Desert from Dragon Spirit II (Area 5) <time="3:16" fadeout="yes" fadeoutlength="10">
+#806 Glacier from Dragon Spirit II (Area 6) <time="3:55" fadeout="yes" fadeoutlength="10">
+#779 Ending from Dragon Spirit II <time="3:05" fadeout="yes" fadeoutlength="10">
+#003 Score Ranking from Dragon Spirit II <time="1:47" fadeout="yes" fadeoutlength="10">
+
+  [Source]
+  Dragon Saber / Namco Game Sound Express Vol.4
+  Victor Entertainment  VICL-40014, 40015  Mar 21, 1991
+
+$end

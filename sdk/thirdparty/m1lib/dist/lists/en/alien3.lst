@@ -1,0 +1,41 @@
+﻿$name=alien3
+$version=2
+$default=023
+$main
+
+#023 Introduction
+#021 Advertise Demo
+#000 Start <time="15.8">
+#001 Demo <time="15.6">
+#028 Map Preview <time="5">
+#002 Stage 1 -Inside of the space ship "Sulaco"-
+#011 Face-Hugger
+#012 Super Face-Hugger
+#017 Stage Clear! <time="4">
+#018 Colonial Marine Ranking
+#003 Stage 2 -Fiorina "Fury" 161 Part 1-
+#013 Iron Tortoise
+#004 Stage 2 -Fiorina "Fury" 161 Part 2-
+#026 Alien
+#005 Stage 3 -Prison-
+#006 Elevator <time="18">
+#007 Level 1
+#008 Level 2
+#014 Super Dogburster
+#009 Stage 4 -Tunnel-
+#019 Continue ?
+#013 Alien
+#010 Stage 5 -Blast furnace-
+#024 Alien
+#027 Stage 6 -Final struggle-
+#014 An Unidentfied Man
+#025 Ending
+#023 Name Entry
+
+#015 Unused 1
+#016 Unused 2
+#020 Unused 3
+#022 Unused 4
+
+// List contribution by ZEK.
+$end

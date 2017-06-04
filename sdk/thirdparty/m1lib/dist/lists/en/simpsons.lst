@@ -1,0 +1,198 @@
+﻿$name=simpsons
+$version=2
+$default=128
+$main
+
+#128 Simpsons Theme Song
+#064 Coin Inserted
+#145 Opening Movie
+#084 Game Start
+#129 Stage 1 - Downtown Springfield)
+#143 Stage 1 Boss (Wrestler)
+#150 Stage 1 Clear
+#149 Demo (Smithers)
+#135 Bonus Stage Intro
+#137 Bonus Stage 1 (Balloon)
+#136 Result
+#173 Bonus Stage End
+#130 Stage 2 - Krustyland Amusement Park
+#141 Stage 2 Boss (A Giant Krusty-Balloon)
+#158 Stage 2 Clear Demo
+#132 Stage 3 - Springfield Discount Cemetery
+#148 Stage 3 - Demo
+#167 Stage 3 - The Crypt Elevator
+#168 Stage 3 Boss (Two Goons)
+#152 Stage 3 Clear
+#133 Stage 4 - Moe's Tavern
+#161 Continue ?
+#140 Stage 4 Boss (Drunk)
+#151 Stage 4 Clear Demo
+#134 Stage 5 - Springfield Butte
+#142 Stage 5 Boss (Bear)
+#154 Stage 6 - Intro
+#164 Stage 6 - Dreamland
+#165 Stage 6 Boss (Giant Bowling Ball)
+#171 Stage 6 - Stage Clear
+#135 Bonus Stage Intro
+#138 Bonus Stage 2 (Wake Up)
+#136 Bonus Stage End
+#160 Stage 7 - Intro
+#147 Stage 7 - Channel 6
+#155 Stage 7 Mid Boss (Robot)
+#157 Stage 7 - Part 2
+#156 Stage 7 Boss (Kabuki Master)
+#131 Stage 7 Clear
+#169 Stage 8 Boss 1 (Smithers)
+#153 Stage 8 Boss 2 (Mr. Burns)
+#170 Stage 8 Boss 3 (Mr. Burns)
+#172 Stage 8 Boss 4 (Mr. Burns)
+#150 Completed
+#139 Ending & Credits
+#144 Name Entry <time="20">
+#146 Game Over
+
+#065 Coin 2
+#066 Coin 3
+
+#162 Stage 5 Boss w/o intro
+#163 Stage 7 Boss w/o intro
+#175 Stage 8 Boss w/o intro
+
+#166 Unused
+
+---------------------------------------------------
+  [SFX] 
+
+#001 [SFX] 
+#002 [SFX] 
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#122 [SFX] 
+#123 [SFX] 
+#124 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+
+---------------------------------------------------
+  [Voice] 
+
+#063 [Voice] 
+#071 [Voice] 
+#075 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#121 [Voice] 
+#083 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+
+  [Source (Partly)]
+  Konami All Stars 1993
+  King Records  KICA-9016, 9017, 9018  Dec 21, 1992
+
+  [Sound Composer]
+  Hideaki Shikama (Assembler Shikama), Norio Hanzawa
+
+// Based on list by ZEK.
+// English list by Fuj
+$end

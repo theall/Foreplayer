@@ -1,0 +1,142 @@
+﻿$name=dragngun
+$version=2
+$default=030
+$main
+
+#030 DATA EAST Logo
+#007 嘆き (STORY BGM)
+#008 共鳴 (PLAYER BGM)
+#016 予感 (MAP BGM)
+#009 神炎 (STAGE 1)
+#020 赤風 (BOSS BGM 1)
+#022 始まりに向かって (STAGE CLEAR)
+#010 飛雷 Part 1 (STAGE 2)
+#015 飛雷 Part 2 (STAGE 2)
+#018 邪竜 (BOSS BGM 2)
+#011 青舞 (STAGE 3)
+#021 黒獣 (BOSS BGM 3)
+#019 神竜銃 (DRAGON GUN BGM)
+#012 狂森 (STAGE 4)
+#017 紫牙 (BOSS BGM 4)
+#013 黄泉 (STAGE 5)
+#014 白夜 (STAGE 6)
+#024 遥かなる邂逅 (ENDING)
+#025 凱旋 (NAME)
+#026 今ここで… (CONTINUE)
+#023 すべての勇者 (GAME OVER)
+
+#028 神炎 (STAGE 1) &lt;w/o intro&gt;
+#029 青舞 (STAGE 3) &lt;w/o intro&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+#113 [Voice]
+#114 [Voice]
+#079 [Voice]
+#080 [Voice]
+#081 [Voice]
+#083 [Voice]
+#084 [Voice]
+#085 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#096 [Voice]
+#098 [Voice]
+#099 [Voice]
+#100 [Voice]
+#101 [Voice]
+#102 [Voice]
+#103 [Voice]
+#104 [Voice]
+#105 [Voice]
+#106 [Voice]
+#107 [Voice]
+#108 [Voice]
+#109 [Voice]
+#110 [Voice]
+#111 [Voice]
+#112 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#121 [Voice]
+#069 [Voice]
+#070 [Voice]
+#071 [Voice]
+#072 [Voice]
+#075 [Voice]
+#076 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+#031 [S.E.] Credit
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#027 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#082 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#097 [S.E.]
+#120 [S.E.]
+#122 [S.E.]
+#123 [S.E.]
+
+  ■出典
+  ドラゴンガン / データイースト・ゲーマデリック
+  PONY CANYON / SCITRON  PCCB-00117  1993.03.19
+
+// List contributed by NK
+$end
+

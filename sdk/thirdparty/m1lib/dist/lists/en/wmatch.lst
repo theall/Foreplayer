@@ -1,0 +1,40 @@
+﻿$name=wmatch
+$version=2
+$default=144
+$main
+
+#144 Ready!
+#130 [SFX] Ready <time="2">
+#131 [SFX] Go! <time="1.5">
+#132 [SFX] Splash <time="2.5">
+#138 Swimming
+#139 Canoe
+#129 [SFX] Cheer <time="4">
+#145 Finish
+#143 New Record <time="6">
+#144 Ready!
+#130 [SFX] Ready <time="2">
+#131 [SFX] Go! <time="1.5">
+#141 Rowing
+#140 Swimming Ver. 2
+#129 [SFX] Cheer <time="4">
+#145 Finish
+#146 Game Over
+#142 High Score Table
+
+#143 New Record
+
+---------------------------------------------------
+ [SFX]
+
+#129 [SFX] Cheer
+#130 [SFX] Ready
+#131 [SFX] Go!
+#132 [SFX] Splash
+#133 [SFX] Turn over
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] Counting Score <time="5">
+
+// List contribution by ZEK.
+$end

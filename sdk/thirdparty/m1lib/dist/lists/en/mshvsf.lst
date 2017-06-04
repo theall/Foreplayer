@@ -1,0 +1,84 @@
+﻿$name=mshvssf
+$version=2
+$default=7
+$fixed_volume=223
+$main
+
+$007 QSound Logo
+
+$001 Opening Title
+$002 Player Select
+$003 Break
+$004 Vs
+$005 Win
+$009 Continue
+$00a Game Over
+$033 Norimaro Toujou
+$006 Hurry Up
+$032 Ending Introduction
+$00d Theme of Cyclops
+$030 Cyclops Ending
+$010 Theme of Wolverine
+$028 Wolverine Ending
+$015 Theme of Ryu
+$02c Ryu
+$016 Theme of Ken
+$00e Theme of Captain America
+$023 Captain Amarica Ending
+$00f Theme of Hulk
+$027 Hulk Ending
+$013 Theme of Spider-man
+$02b Spirder-man Ending
+$017 Theme of Chun-Li
+$026 Chun-Li Ending
+$019 Theme of Zangief
+$018 Theme of Dhalsim
+$02d Dhalsim Ending
+$011 Theme of Shuma-Gorath
+$029 Shuma-Gorath Ending 1
+$02a Shuma-Gorath Ending 2
+$01e Theme of Dan
+$024 Dan Ending
+$01b Theme of Gouki / Akuma
+$025 Gouki / Akuma Ending
+$01c Theme of Sakura
+$01d Theme of Norimaro
+$02e Norimaro Ending 1
+$02f Norimaro Ending 2
+$014 Theme of Blackheart
+$012 Theme of Omega Red
+$01a Theme of Vega / Bison
+$00b Boss Introduction
+$00c Theme of Apocalypse
+$031 Theme of Hidden Character
+$021 Conqueror Ending
+$022 Tranquility Ending
+$020 Credits Roll
+$01f Theme of Mech-Gouki (Not Released on CD)
+
+--------------------------------------------------
+
+#064 [Voice] Are you ready, true believers? Capcom and Marvel have joined forces and once again to bring you.<time="5.8">
+#066 [Voice] It's <time="0.7">
+#065 [Voice] Marvel Super Heroes versus Street Fighter <time="3.5">
+#072 [Voice] Survive! Uncanny adventure! <time="2.7">
+#071 [Voice] Look! Spectacular action! <time="2.5">
+#068 [Voice] Don't miss out on the enjoyment of lifetime. <time="3.5">
+#074 [Voice] Behold amazing fantasy! <time="2.8">
+#073 [Voice] Feel sensational thrills. <time="2.8">
+#069 [Voice] Don't miss the most amazing tag team fighting game ever! <time="3.6">
+#070 [Voice] Are you ready for a new challenger? <time="2.5">
+#075 [Voice] Now, come join <time="2.3">
+#076 [Voice] Now, experience <time="2.4">
+#077 [Voice] Marvel Super Heroes versus Street Fighter
+
+  [Source]
+  Marvel Super Heroes Vs. Street Fighter
+  Original Soundtrack & Arrange
+  Firstsmile  FSCA-10017  Sep 19, 1997
+
+  [Sound Composers]
+  Yuki Iwai, Yuuko Kadota
+
+// Base list contributed by Monyons
+$end

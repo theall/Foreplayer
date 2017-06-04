@@ -1,0 +1,149 @@
+﻿$name=revx
+$version=2
+$default=11
+$main
+
+[Music]
+
+#011 Eat The Rich! (Loop)
+#784 Opening Stage BGM 1.1
+#002 Opening Stage BGM 1.2
+#006 Opening Stage BGM 1.3
+#007 Opening Stage BGM 1.4
+#008 Opening Stage BGM 1.5
+#012 Eat The Rich! (Long Loop)
+#009 Helicopter Fight BGM
+#020 Eat The Rich! (Jungle Rythym)
+#004 Evergreen Chemical Stage BGM 1.1
+#017 Evergreen Chemical Stage BGM 1.2
+#016 Evergreen Chemical Stage BGM 1.3
+#024 Love In An Elevator (Muzak Version)
+#010 Toys In The Attic (Loop) (Middle East Assault Stage)
+#021 Kemmitech Stage BGM 1.1
+#014 Kemmitech Stage BGM 1.2
+#015 Kemmitech Stage BGM 1.3
+#003 Kemmitech Stage BGM 1.3
+#025 Sweet Emotion (Inst. Loop)
+#032 Sweet Emotion (Chorus Loop)
+#026 Walk This Way (Loop)
+----------------------------------------------------------------------------------------
+
+[Sound]
+#153 Car Alarm Deactivated
+#146 Connecting 01 <time="1.16">
+#147 Connecting 02 <time="2.00">
+#870 Phone Ringing
+#875 Dial Tone <time="1.30">
+#871 Phone Ringing on the other end
+#148 Enemy/Bonus Database Load <time="3.00">
+#149 Point Tally <time="7.00">
+#151 Tally Stop
+#1370 Energy
+#1373 Shield
+#1001 DCS Advert!
+#1305 Supergun Aquired!
+#1366 The Revolution Is Here!
+
+
+[Voices]
+#525 NON Communications 01
+#526 NON Communications 02
+#527 NON Communication Breakdown
+#522 "Wake Up! The Revolution Has Begun! Generation X Is In Effect!"
+#562 "No Trespassing!"
+#731 "Clear the street!"
+#732 "Now!"
+#733 "This is a combat zone!"
+#734 "Leave the area!"
+#735 "The show is cancelled!"
+#736 "Whoa!!"
+#561 "The club is closed!"
+#703 "Step out of The Chopper Now."
+#705 "Land the chopper now or we will destroy you."
+#704 "You have disobeyed a command from The New Order."
+#707 "You are illegally operating a New Order Vehicle."
+#706 "This is your last chance."
+#729 "Land the chopper now..."
+#717 "Capture is inevitible."
+#718 "I Repeat..."
+#719 "Turn yourself in."
+#720 "Give yourself up."
+#721 "Surrender now."
+#722 "Make it easy on yourself."
+#723 "You have no choice."
+#724 "There's no hope of escape."
+#725 "What the blazes?"
+#726 "She breaking up!"
+#727 "Not Good!"
+#728 "We're going Down!"
+#1219 "You have destroyed New Order property!"
+#1220 "You've gone to far!"
+#1221 "Now you must pay with your life!"
+#1222 "You have no choice!"
+#1223 "You have no future!"
+#1224 "Submit to The New Order!"
+#1225 "You cannot destroy me!"
+#1226 "It can't shoot?! or Ignorant Youth!"
+#1227 "Come to your doom!"
+#1285 "Get them!"
+#1286 "Stop this nonsense now, If you don't want to deal with me!"
+#1388 "Helga's Laugh"
+#1436 "I will destroy you!"
+#1437 "You will obey!"
+#1389 "Had Enough!?"
+#1390 "You can't harm the Headmistress!"
+#1391 "You've been a Bad Boy!"
+#1392 "Irresponsible!"
+#1393 "Scatterbrained!"
+#1394 "Undisciplined!"
+#1395 "Brat!"
+#1396 "Brats!"
+#1397 "How dare you!"
+#1398 "You ain't seen NOTHING yet!"
+#686 "Hey!"
+#672 "I AM MONDOR!"
+#667 "I'm your worst nightmare!"
+#674 "You are nothing!"
+#673 "You are done!"
+#669 "Pray for a QUICK death!"
+#675 "Don't make me get up!""
+#647 "It's Only A Flesh Wound!"
+#651 Bulabulabulabulab!
+#652 "Com'On! Whadaya Scared?!"
+#653 Take That!
+#654 "I'll rip your head off for that!"
+#655 "I'll eat your guts with Soy Sauce!"
+#677 "I will devour you!"
+#656 "AH! Sushi!"
+#657 HA HA HA HA!
+#658 Rawh!
+#659 UWH!
+#660 UNH!
+#676 Rawr!
+#679 "I've had worse!"
+#661 AHW!
+#662 WAHW!
+#663 UHAHW!
+#670 "Coward!"
+#671 "Go On, Run To Mommy!"
+#665 "Back For More! Huh?"
+#666 DEATH RATTLE!
+#594 KISS
+#1252 Thank You!
+#1255 Free at last!
+#1256 Uh-huh!
+#1257 Ooo Baby!
+#1258 You're Good!
+#1259 You're The Best!
+#1260 My Hero!
+#1261 Can I Have Your Autograph?
+#1262 It's about time!
+#872 If you'd like to make a call...
+
+[Source]
+List By Child Of Fire
+Game BGM by Granner/Pontarelli
+'Toys In The Attic', 'Sweet Emotion' & 'Walk This Way' from "Toys In The Attic" (C)1975 Sony/BMG Music
+'Eat The Rich' from "Get A Grip" (C)1992 Universal Music Group by Tyler/Perry/Johnson/Whitford/Kramer
+
+$end

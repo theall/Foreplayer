@@ -1,0 +1,40 @@
+﻿$name=teddybb
+$version=2
+$default=129
+$songmax=155
+$main
+ 
+#129 Title (TeddyBoy Blues / Yohko Ishino)
+#130 Main BGM (TeddyBoy Blues / Yohko Ishino)
+#131 Stage Clear
+#132 Bonus Stage BGM
+#136 Result
+#155 Extend
+#150 Player Out (1) <time="0.5">
+#133 Player Out (2)
+#137 Game Over
+#130 Name Entry (TeddyBoy Blues / Yohko Ishino)
+
+ [SFX]
+
+#134 [SFX]
+#135 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+ 
+// List Contribution by NK
+$end

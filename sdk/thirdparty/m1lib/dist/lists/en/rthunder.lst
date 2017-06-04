@@ -1,0 +1,27 @@
+﻿$name=rthunder
+$version=2
+$default=006
+$fixed_volume=100
+$main
+
+#006 Start - BGM 1 (Storage, Operations Room)
+#005 Round Clear
+#010 Start - BGM 2 (Cave)
+#008 Mabu's Theme
+#007 Mabu Dead
+#009 Congratulations
+#012 Game Over
+#011 Name Entry
+
+#037 Start
+#013 BGM 2 (Cave)
+#001 Sound Test
+
+  [Source]
+  Namco Game Music Vol.1 / G.M.O.
+  Alfa Records  28XA-170  Jul 25, 1987
+
+  [Sound Composer]
+  Junko Ozawa
+
+$end

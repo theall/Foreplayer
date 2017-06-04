@@ -1,0 +1,98 @@
+﻿$name=ajax
+$version=2
+$default=144
+$songmax=$ff
+$main
+
+#144 TITLE DEMO
+#100 [S.E.] CREDIT <time="1.5">
+#099 [S.E.] TAKE OFF (L to R) <time="4">
+#143 START <time="5">
+#128 COMMAND 770 (2D Stage 1)
+#133 DIVE BOMBER (3D Stage 1)
+#129 FIGHTING SPIRIT (2D Stage 2)
+
+#130 DEAD LINE (2D Stage3)
+#134 LOOK FOR A FORTRESS (3D Stage 2)
+#131 GRAND BATTLE (2D Stage 4)
+
+#132 CROSS POINT (2D Stage 5)
+#138 MELT DOWN (2D BOSS BGM 1)
+#137 UF1 (2D BOSS BGM 2)
+#145 PATTERN CLEAR <time="2.5">
+#097 [S.E.] TAKE OFF (R to L) <time="4">
+
+#135 THE FINAL ZONE (3D Stage 3)
+#142 ボス登場
+#136 HOTNESS (3D BOSS BGM)
+#141 CONGRATULATION (Ending)
+#139 TRY AGAIN (Game Over)
+#140 RANKING
+
+#146 A-JAX (海外版 3D Stage 1)
+
+------------------------------------------------------
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+
+#015 [S.E.] サイレン
+#016 [S.E.] サイレン(R)
+#017 [S.E.] アイテム取得
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.] 2D自機発着進音
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.] SUPER WAPON
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.] 2D自機発進音
+#097 [S.E.] 3D自機発進音 (R→L)
+#098 [S.E.] 3D自機発進音 (R→L)
+#099 [S.E.] 3D自機発進音 (L→R)
+#100 [S.E.] CREDIT
+
+  ■出典
+  コナミ・ゲーム・ミュージック Vol.4 ～A-JAX～
+  ALFA RECORDS  28XA-201  1988.03.10
+
+// List by Fuj
+$end

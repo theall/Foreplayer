@@ -1,0 +1,49 @@
+﻿$name=flower
+$version=2
+$default=003
+$main
+
+#003 [SFX] Stand by <time="2">
+#004 [SFX] Coin <time="3">
+#001 Start <time="7">
+#029 BGM 1
+#026 [SFX] Comet <time="5.8">
+#013 BGM 2
+#030 Boss BGM 1
+#031 Boss BGM 2
+#032 Boss BGM 3
+#025 [SFX] Rush <time="4.3">
+#033 BGM 3
+#015 Boss BGM 4 <time="5.2">
+#023 [SFX] Escape <time="2">
+#028 [SFX] Clear <time="3.1">
+#024 Congratulation ! <time="7">
+#002 Game Over <time="7">
+#005 Name Entry
+
+---------------------------------------------------
+ [SFX]
+
+#003 [SFX] <time="2">
+#004 [SFX] <time="3">
+#006 [SFX] <time="2"> 
+#007 [SFX] <time="2"> 
+#008 [SFX] <time="2"> 
+#009 [SFX] <time="5">
+#011 [SFX] <time="3"> 
+#012 [SFX] <time="3">  
+#014 [SFX] <time="2">  
+#015 [SFX] <time="5">
+#016 [SFX] <time="3">
+#019 [SFX] <time="3">
+#020 [SFX] <time="3">
+#021 [SFX] <time="2">  
+#022 [SFX] <time="3">
+#023 [SFX] Escape <time="2">
+#025 [SFX] <time="21">
+#026 [SFX] <time="5.8">
+#027 [SFX] <time="3">  
+#028 [SFX] Clear <time="3">
+
+// List contribution by ZEK.
+$end

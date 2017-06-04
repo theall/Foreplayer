@@ -1,0 +1,97 @@
+﻿$name=fstarfrc
+$version=2
+$default=120
+$songmax=126
+$main
+
+#120 Title
+#009 Coin
+#110 [S.E.]
+#111 Main BGM
+#112 Power up BGM A
+#113 Power up BGM B
+#119 Power up BGM C
+#114 Boss A (Stage 1, 2, 8)
+#115 Boss B (Stage 3, 4, 5, 6, 7, 8)
+#118 Boss C (Stage 9)
+#117 Final Boss (Stage 10)
+
+#121 Ending 1 (Bad)
+#122 Ending 2 (Good)
+#124 Continue
+#123 Game Over
+#126 Name Entry
+
+#116 Unused
+#125 Unused
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+
+//list composed by huntingforce
+$end

@@ -1,0 +1,48 @@
+﻿$name=kof2002
+$version=2
+$default=002
+$main
+
+#002 NEO GEO Logo
+#033 2002 (タイトル)
+#034 2002[30sec] (30秒タイトル)
+#044 How to play (操作説明)
+#045 Select (プレイヤーセレクト)
+#042 J (日本ステージ)
+#035 Tears ('99草薙京)
+#036 嵐のサキソフォン2 ('96八神庵)
+#055 TACOS DANCE (メキシコステージ)
+#053 KD-0079 ('99チーム)
+#037 ソウルに行こう (キム・カッファン)
+#043 Deserted Town (カンボジアステージ)
+#064 Diet (女性格闘家チーム)
+#047 Winner (勝利デモ)
+#056 RED WIND (中国ステージ)
+#038 Bloody ('98ニューフェイスチーム)
+#060 クリキントン (餓狼チーム)
+#052 the Netherlands (オランダステージ)
+#039 KD0084 ('2000チーム)
+#061 JUNGLE BOUNCER (怒チーム)
+#046 Progress (韓国ステージ)
+#062 サイコソルジャー (サイコソルジャーチーム)
+#063 Beauty & The Beast (龍虎チーム)
+#057 誘惑の時 ('97チーム)
+#051 メドレー　荒れ狂う炎の大地 ('98裏オロチチーム)
+#040 ESAKA ('98草薙京)
+#049 Challenger (乱入)
+#058 NAPOLITAN TRANCE (イタリアステージ)
+#050 Revival (ルガール登場デモ)
+#048 Last Dance (ボスステージ)
+#054 at Last (ルガール消滅デモ～エンディング)
+#059 Festive mood (スタッフロール)
+#041 Continue (コンティニュー～ゲームオーバー)
+
+  ■出典
+  THE KING OF FIGHTERS 2002
+  SCITRON / PLAYMORE  SCDC-00221  2002.11.20
+
+  ■作曲
+  TATE-NORIO, 幡谷 政彦
+
+// List Contribution by GolGol
+$end

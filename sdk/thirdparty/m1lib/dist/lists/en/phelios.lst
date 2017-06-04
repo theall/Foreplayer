@@ -1,0 +1,88 @@
+﻿$name=phelios
+$version=2
+$default=$1f
+$main
+
+$01f Opposition to Dupons (Opening Demo)
+$138 Credit
+$25 The Dilous Hill (Chapter 1-1)
+$29 Radon (Chapter 1-2)
+$2b Death Skull (Chapter 1-3)
+$2d Temple (Chapter 1-4)
+$21 Fight Against the False God (Boss)
+$44 Death of the False God (Chapter Clear)
+$35 Tears of Artemis (Intermission 1)
+$30 Cave of Death (Chapter 2-1)
+$23 Sogin's Jar (Chapter 2-2)
+$17 Dupons (Intermission 2)
+$1b The Sky of Pelboleos (Chapter 3)
+$32 Flame Monster (Chapter 4)
+$5c Opposition to Dupons (Intermission 3)
+$1d Wandering Spirit (Chapter 5)
+$3e Watch Dog in Hell (Chapter 6)
+$37 Lightning Sword, Phelios (Chapter 7-1)
+$51 Temple of Dupons (Chapter 7-2)
+$53 The End of Dupons (Last Boss)
+$46 Smile of Artemis - Grand Finale (Ending - End Credits)
+$49 Prayer of Artemis (Continue)
+$4b Epigraph (Name Entry)
+
+$15 Tears of Artemis (Intermission 1)
+$3a (Scene Shift)
+$36 (Unknown)
+
+$100 ?
+$139 ?
+$13a ?
+
+-----------------------------------------
+
+$60 Speker Check
+
+$00 [Voice]
+$01 [Voice]
+$02 [Voice]
+$03 [Voice]
+$04 [Voice]
+$05 [Voice]
+$06 [Voice]
+$07 [Voice]
+$08 [Voice]
+$09 [Voice]
+$0a [Voice]
+$0b [Voice]
+$0c [Voice]
+$0d [Voice]
+$0e [Voice]
+$16 [Voice]
+$1a [Voice]
+$0f [SFX]
+$10 [SFX]
+$11 [SFX]
+$12 [SFX]
+$13 [SFX]
+$19 [SFX]
+$39 [SFX]
+$4e [SFX]
+$4f [SFX]
+$50 [SFX]
+$55 [SFX]
+$56 [SFX]
+$57 [SFX]
+$58 [SFX]
+$59 [SFX]
+$5a [SFX]
+
+  [Sources]
+  Namco Video Game Graffiti Vol.6
+  Victor Entertainment  VDR-5301  Oct 04, 1989
+
+  Game Music of the Year 1989
+  Pony Canyon / Scitron  PCCB-00022  Mar 21, 1990
+
+  [Sound Composer]
+  Yoshinori Kawamoto (Kawagen)
+
+// English list translation by Fujix.
+// Check needed (proper nouns etc.)
+$end

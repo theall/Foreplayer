@@ -1,0 +1,55 @@
+﻿$name=preisle2
+$version=2
+$default=002
+$main
+
+#002 NEO-GEO Logo
+#043 ATTRACT MODE
+#127 [S.E.] CREDIT
+#044 HOW TO PLAY
+#045 PLAYER SELECT
+#034 STAGE 1 BGM 1
+#051 DEFEND PEOPLE !
+#046 STAGE 1 BGM 2
+#033 STAGE 2 
+#038 CONTINUE <time="10">
+#041 STAGE 3 
+#037 STAGE 4 
+#036 STAGE 5
+#035 BOSS BGM (STAGE 1, 2, 3, 4, 5) 
+#048 STAGE CLEAR !
+#047 STAGE 6
+#048 YOU MADE IT !!!
+#050 STAFF ROLL
+#039 GAME OVER
+#040 NAME ENTRY <time="10">
+
+#042 PLAYER SELECT Ver.2
+#052 未使用曲 1
+#049 未使用曲 2
+
+---------------------------------------------------
+  [S.E.]
+
+#095 [S.E.] NEO-GEO Logo
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#108 [S.E.] 
+#109 [S.E.] 
+#127 [S.E.] CREDIT
+
+  ■作曲
+  幡谷 正彦 (M.Hataya)
+
+// List contribution by ZEK.
+$end

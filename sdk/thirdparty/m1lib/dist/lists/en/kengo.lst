@@ -1,0 +1,26 @@
+﻿$name=kengo
+$version=2
+$default=10
+$main
+
+??? Battou (Ryo-shu-on) - (Coin)
+??? Yourou - (Title Back)
+#10 Kaikyou - (Opening)
+#02 Kengou - (Stage 1)
+#05 Gansai - (Stage 2)
+#07 Kyozan - (Boss A)
+#01 Etsuei - (Stage CLEAR)
+#03 Fuurou - (Stage 3)
+#04 Kashiki - (Stage 4)
+#08 Kishuu - (Boss B)
+#12 Raigun - (Stage 5)
+#11 Kasumi - (Ending)
+#09 Shuushou - (Game Over)
+#06 O.SA.RA.BA - (Name Entry)
+
+  [Source] 
+  Pound for Pound, Ken Go / Irem
+  Pony Canyon / Scitron  PCCB-00049 Dec 15, 1990
+
+// List by MuramuraNight
+$end

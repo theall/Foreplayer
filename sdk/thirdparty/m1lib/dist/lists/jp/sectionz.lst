@@ -1,0 +1,28 @@
+﻿$name=sectionz
+$version=2
+$default=037
+$songmax=038
+$main
+
+#037 クレジット
+#024 スタートデモ (Section A)
+#025 ステージ1 BGM (Section A～E)
+#026 ステージ2 BGM (Section F～J)
+#027 ステージ3 BGM (Section K～O)
+#031 ステージクリア
+#028 ステージ4 BGM (Section P～T)
+#029 ステージ5 BGM (Section U～Z)
+#030 最終ボス (エルブレイン)
+#032 エンディング (Section E)
+#036 コンテイニュー待ち
+#034 ゲームオーバー
+#035 ネームエントリー
+#038 ランキング
+
+#033 [S.E.] エクステンド
+
+  ■出典
+  CAPCOM GAME MUSIC
+  ALFA RECORDS  28XA-94  1986.08.25
+
+$end

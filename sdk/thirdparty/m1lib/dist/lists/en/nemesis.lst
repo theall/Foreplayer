@@ -1,0 +1,72 @@
+﻿$name=gradius
+$version=2
+$default=064
+$songmax=129
+$main
+
+#064 Coin
+#065 Beginning of the History (Intro Battle)
+#075 Challenger 1985 (St.1 BGM)
+#066 Beat Back (St.2 BGM)
+#068 Blank Mask (St.3 BGM)
+#069 Free Flyer (St.4 BGM)
+#076 Mazed Music (St.5 BGM)
+#067 Mechanical Globule (St.6 BGM)
+#077 Final Attack (St.7 BGM)
+#073 Aircraft Carrier (Boss BGM)
+#072 Game Over
+#074 Historic Soldier (Name Entry)
+
+#070 Unused 1
+#071 Unused 2
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX] Shot
+#002 [SFX] Double
+#003 [SFX] Laser
+#004 [SFX] Missile
+#005 [SFX] Hit on a grain
+#006 [SFX] Hit on a cellula
+#007 [SFX] Hit on a hard target
+#008 [SFX] Destroyed an aerial enemy
+#009 [SFX] Killed an ameba
+#012 [SFX] Destroyed a small ground enemy
+#013 [SFX] Destroyed a moai's ring
+#014 [SFX]
+#015 [SFX] Destroyed a boss (reverberant)
+#016 [SFX] Destroyed a middle ground enemy
+#018 [SFX] Enemy vanisher
+#024 [SFX] Destroyed a large ground enemy
+#026 [SFX] Got a capsule
+#028 [SFX]
+#030 [SFX] Power up
+#032 [SFX]
+#034 [SFX] Extend
+#036 [SFX] Name entry
+#039 [SFX] Name entry
+#042 [SFX] Eruption
+#051 [SFX] Miss!
+#129 [SFX] Destroyed a boss
+
+  [Source / OST]
+  Konami Game Music Vol.1
+  Alfa Records  28XA-85  Jun 25, 1986
+
+  Konami Game Music Vol.1 (Legend Series)
+  SME / Scitron  SCDC-00050  Nov 1, 2000
+
+  Original Sound of Gradius
+  Apollon  KHY1016  May 5, 1987
+
+  Suite Gradius - Fantasia
+  Apollon  BY30-5207  Nov 21, 1988
+
+  MIDI Power X68000 Collection ver 2.0
+  King Records  KICA-7611  Jan 21, 1993
+
+  Gradius IV Fukkatsu Original Game Soundtrack
+  King Records  KICA-7947  Mar 5, 1999
+
+$end

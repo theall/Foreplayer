@@ -1,0 +1,21 @@
+﻿$name=suprloco
+$version=2
+$default=144
+$songmax=192
+$main
+
+#144 Credit
+#129 Main BGM (from Rydeen by Y.M.O.)
+#130 Main BGM -ReStart-
+#131 Bonus Stage
+#136 Counting Bounus <time="5">
+#160 Stage Clear
+#192 Miss
+
+-----------------------------------------
+ [SFX]
+
+#133 [SFX]
+#134 [SFX]
+
+$end

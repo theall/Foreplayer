@@ -1,0 +1,103 @@
+﻿$name=hotchase
+$version=2
+$default=001
+$songmax=255
+$main
+
+#001 [S.E.] Credit
+#134 Long Way To Danger (START DEMO)
+#128 It's a Hard Way In The Suburbs (STAGE 1)
+#132 Make Me Dynamic (STGAE 2)
+#129 The Navigation On The Bridge (STAGE 3)
+#139 Ice Won't Let Me Go (STAGE 4)
+#133 And Only Did I My Duty (ENDING 1 RANKING-OUT)
+#135 Soldier's Paths (MAP)
+#130 Finally I Belong To (RANKING)
+#131 Just I've Done It (GAME OVER)
+#140 After The Terrible Running (ENDING 2)
+
+
+#001 [S.E.] Credit
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#026 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#045 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#059 [S.E.] <time="10">
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#071 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+
+  ■出典
+  サンダークロス / コナミ矩形波倶楽部 
+  KING RECORDS  276A-7703  1989.05.21
+
+  サンダークロス / コナミ矩形波倶楽部 (再販版)
+  KING RECORDS  KICA-2306  1993.05.21
+
+  ■作曲
+  きんごろう
+
+// List contribution by R
+$end

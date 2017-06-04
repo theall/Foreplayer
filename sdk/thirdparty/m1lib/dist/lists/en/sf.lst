@@ -1,0 +1,68 @@
+﻿$name=sf
+$version=2
+$default=015
+$main
+
+#015 Game Start (Credit)
+#052 Stage Select
+#051 VS.
+#040 Retsu (Japan, Shourinji Temple)
+#041 Geki (Japan, Ninja)
+#055 Stage Clear
+#042 Joe (USA, Martial Art)
+#043 Mike (USA, Boxer)
+#058 Bonus Stage (Breaking Bricks)
+#044 Birdie (England, Mohican)
+#045 Eagle (England, Ancient Castle)
+#062 Breaking In
+#046 Lee (Chaina, Great Wall)
+#047 Yuan (China, Town)
+#059 Bonus Stage (Breaking Boards)
+#048 Adon (Thai, Sun Set)
+#049 Sagat (Thai, Final Match)
+#050 Final Demo
+#054 Credits Roll
+#056 Name Entry
+#057 Ranking Display
+#060 Continue
+
+------------------------------------------
+  [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#013 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#027 [SFX]
+#028 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+
+  [Source]
+  Capcom Game Music Vol. 2
+  Alfa Records  28XA-203  Mar 25, 1988
+
+  Capcom Game Music Vol. 2 (Legend Series)
+  SME / Scitron  SCDC-00195  Jul 24, 2002
+
+// List Contribution by NK
+$end

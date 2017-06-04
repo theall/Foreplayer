@@ -1,0 +1,235 @@
+﻿$name=moomesa
+$version=2
+$default=220
+$main
+
+#220 ATTRACT MODE
+#221 TITLE SCREEN
+#063 [Voice] (Coin)
+#216 PLAYER SELECT
+#225 INTRODUCTION
+#208 STAGE 1 
+#211 BOSS BGM
+#214 STAGE CLEAR
+#218 MAP PREVIEW
+#217 NEXT TARGET
+#212 STAGE 2 - NIAGARA DESERT (BOSS: SADDLE SORE)
+#226 STAGE 3 - SHEEZA BUTTE 1
+#229 STAGE 3 - SHEEZA BUTTE 2
+#209 STAGE 4 - GHOST TOWN 1 (BOSS: BOOTHILL BUZZARD)
+#210 STAGE 4 - GHOST TOWN 2 (BOSS: BOOTHILL BUZZARD)
+#223 CONTINUE ～ GAME OVER
+#213 STAGE 5 - MINE (BOSS: FIVE CARD STUD)
+#224 STAGE 6 - JANE MEADOW (BOSS: WAGON TRAIN)
+#215 STAGE 7 - COW TOWN 1
+#211 STAGE 7 - COW TOWN 2
+#222 STAGE 8 - SKULL MOUNTAIN (BOSS: THE MASKED BULL)
+#228 ENDING ～ THE END
+#227 NAME ENTRY
+#219 HIGH SCORE TABLE
+
+#230 スピーカーテスト
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] 
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#012 [S.E.] 
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#037 [S.E.] 
+#047 [S.E.] 
+#049 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#068 [S.E.] 
+#069 [S.E.] 
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] 
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#110 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] 
+#122 [S.E.] 
+#123 [S.E.] 
+#124 [S.E.] 
+#125 [S.E.] 
+#126 [S.E.] 
+#127 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#142 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#147 [S.E.] 
+#148 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#152 [S.E.] 
+#153 [S.E.] 
+#154 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#158 [S.E.] 
+#159 [S.E.] 
+#160 [S.E.] 
+#161 [S.E.] 
+#162 [S.E.] 
+#163 [S.E.] 
+#164 [S.E.] 
+#165 [S.E.] 
+#169 [S.E.] 
+#170 [S.E.] 
+#171 [S.E.] 
+#172 [S.E.] 
+#173 [S.E.] 
+#174 [S.E.] 
+#177 [S.E.] 
+#178 [S.E.] 
+#179 [S.E.] 
+#180 [S.E.] 
+#181 [S.E.] 
+#182 [S.E.] 
+#183 [S.E.] 
+#184 [S.E.] 
+#185 [S.E.] 
+#186 [S.E.] 
+#187 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#002 [Voice] 
+#003 [Voice] 
+#007 [Voice] 
+#008 [Voice] 
+#011 [Voice] 
+#013 [Voice] 
+#014 [Voice] 
+#021 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#038 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#043 [Voice] 
+#044 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#048 [Voice] 
+#050 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] Coin
+#064 [Voice] 
+#092 [Voice] 
+#103 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#111 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#155 [Voice] 
+#166 [Voice] 
+#167 [Voice] 
+#168 [Voice] 
+#175 [Voice] 
+#176 [Voice] 
+
+  ■サウンドプログラム
+  鹿間 英章 (H.Shikama)
+
+  ■作曲・効果音
+  山根 ミチル (Y.Yamane)
+
+// List contribution by ZEK.
+$end

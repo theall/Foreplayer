@@ -1,0 +1,84 @@
+﻿$name=baddudes
+$version=2
+$default=5
+$main
+
+#005 [SFX] Credit Inserted
+#031 Fist of Fury (Main BGM 1)
+#038 Ninja Karnov (Boss Stage)
+#034 Clear
+#032 Greased Lightning (Main BGM 2)
+#033 Dragon Ninja (Boss)
+#037 Ending Theme (US Version)
+#035 Game Over
+
+------------------------------------------------------------
+  [SFX]
+
+#005 [SFX] CREDIT
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX] Lift
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX] Alert
+#039 [SFX]
+#040 [SFX]
+#056 [SFX]
+#057 [SFX]
+#061 [SFX]
+
+------------------------------------------------------------
+  [Voice]
+
+#041 [Voice] (main char) Yaaa
+#042 [Voice] (main char) uh (hit)
+#043 [Voice] (main char) aaaaahhh (dying)
+#044 [Voice] (main char) uah
+#045 [Voice] (main char) Power up !
+#053 [Voice] (main char) Got it (bonus)
+#054 [Voice] (main char) I'm bad !
+#046 [Voice] (Forest boss) ouaaaaah (shout)
+#047 [Voice] (Forest boss) aaahh (dying)
+#048 [Voice] (girl) yah !
+#049 [Voice] (girl) uh !
+#050 [Voice]
+#051 [Voice] Dog barking
+#052 [Voice] Dog hit
+#055 [Voice]
+#058 [Voice]
+#059 [Voice] Ninja Boss magic
+#060 [Voice]
+#062 [Voice]
+#063 [Voice] Crow cheering
+#064 [Voice]
+
+  [Source]
+  Deco History Scene I / Data East Game Music Scene One
+  Polystar / Datam  H25X-20008  Sep 25, 1988
+
+  [Sound Composers]
+  Azusa. Hara, Maro
+
+// List contribution by R
+// English List by Fujix
+// Voice by CrashTest
+$end

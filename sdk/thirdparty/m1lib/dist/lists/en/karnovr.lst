@@ -1,0 +1,61 @@
+﻿$name=karnovr
+$version=2
+$default=050
+$main
+
+#050 Kalnov's Revenge (Attract Mode)
+#002 Fighter's History Dynamite (Title)
+#003 Battle Again (Player Select)
+#010 Ray
+#023 Ray (Faster)
+#004 Battle End (Not on CD)
+#011 Feilin's Theme
+#024 Feilin's Theme (loop)
+#012 Ryoko's Theme
+#025 Ryoko's Theme (loop)
+#013 Matlok's Theme
+#026 Matlok's Theme (loop)
+#014 Samchay's Theme
+#027 Samchay's Theme (loop)
+#015 Lee's Theme
+#028 Lee's Theme (loop)
+#016 Mizoguchi's Theme
+#029 Mizoguchi's Theme (loop)
+#017 Jean's Theme
+#030 Jean's Theme (loop)
+#018 Marstrius' Theme
+#031 Marstrius' Theme (loop)
+#049 New Rival
+#019 Yungmie's Theme
+#032 Yungmie's Theme (loop)
+#020 Zazie's Theme
+#033 Zazie's Theme (loop)
+#021 Clown's Theme
+#034 Clown's Theme (loop)
+#022 Karnov's Theme
+#035 Karnov's Theme (loop)
+#005 Indomitable Spirit (Continue)
+#036 Ray's Ending
+#037 Feilin's Ending
+#038 Ryoko's Ending
+#039 Matlok's Ending
+#040 Samchay's Ending
+#041 Lee's Ending
+#042 Mizoguchi's Ending
+#043 Jean's Ending
+#044 Marstrius' Ending
+#045 Yungmie's Ending
+#046 Zazie's Ending
+#047 Clown's Ending
+#048 Karnov's Ending
+#009 Ox's Theme (Extra Round)
+#006 Game Over
+#007 Best Grapplers
+
+  [Source]
+  Fighters History Dynamite & Flying Power Disc
+  Pony Canyon / Scitron  PCCB-00149  Mar 18, 1994
+
+// List Contribution by cyada
+// English list by Fujix
+$end

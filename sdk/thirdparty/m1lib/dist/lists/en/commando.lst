@@ -1,0 +1,58 @@
+﻿$name=commando
+$version=2
+$default=032
+$songmax=044
+$main
+
+#026 Credit Sound
+#032 Start Demo <time="9.3">
+#033 BGM 1
+#043 Player Out <time="2.0">
+#034 Restart <time="3.0">
+#033 BGM 1
+#035 Fortress
+#037 Stage Clear Demo <time="9.0">
+#036 BGM 2
+#038 All Cleared
+#039 Game Over
+#040 Name Regist
+#041 Entry Finished (1st Place)
+#042 Entry Finished (Below 2nd Place)
+
+#044 Restart - BGM 2
+
+------------------------------------------
+
+ [SFX]
+
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#020 [SFX]
+#021 [SFX]
+#024 [SFX]
+#026 [SFX]
+#027 [SFX]
+
+  [Soruce]
+  Capcom Game Music
+  Alfa Records  28XA-94  Aug 25, 1986
+
+  Capcom Game Music (Legend Series)
+  SME / Scitron  SCDC-00193  Jun 19, 2002
+
+// List by NK
+$end

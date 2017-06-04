@@ -1,0 +1,30 @@
+﻿$name=luckywld
+$version=2
+$default=007
+$main
+
+#007 Intro A
+#003 Game BGM A (Stage 1, 4)
+#015 Boss BGM
+#004 Pink Cat's Garage
+#009 Intro B
+#013 Game BGM B (Stage 2, 5)
+#021 Intro C
+#027 Game BGM C (Stage 3, 6)
+#019 Intro D
+#029 Big Cigar
+#017 Pink Cat's Garage (No Bonus)
+#023 Game Clear
+#011 Staff Roll
+#025 Name Entry 
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.9
+  VICTOR ENTERTAINMENT  VICL-8089  1993.09.22
+
+  ■作曲
+  石井 悦夫
+
+// オリジナルリスト：みん☆さん
+// 更新：Fujix
+$end

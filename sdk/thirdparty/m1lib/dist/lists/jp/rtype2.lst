@@ -1,0 +1,106 @@
+﻿$name=rtype2
+$version=2
+$default=038
+$songmax=157
+$main
+
+  ※一部のコードに不具合あり(特にSEパート)
+
+#038 COIN (注：不具合あり) <time="2">
+#001 R-9 TO THE FRONT (Start) <time="6.45">
+#002 COUNTER ATTACK (Stage 1)
+#004 BOSS THEME
+#012 STAGE CLEAR
+#009 WATER SPLASH (Stage 2)
+#010 METAL CRUSHER (Stage 3)
+#008 SLIP SLIDIN' AWAY (Stage 4)
+#003 DEAD END (Stage 5)
+#011 BAIYO (Stage 6)
+#000 ESCAPE FROM EMPIRE (All Clear)
+#005 10 SECONDS BLAST (Continue)
+#014 NAMELESS SOLDIERS (Name Entry)
+#013 GAME OVER
+
+#006 Unused 1
+#007 Unused 2
+#015 Unused 3
+
+-----------------------------------------
+ [S.E.]
+
+#040 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#059 [S.E.]
+#061 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#066 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#099 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#123 [S.E.]
+#124 [S.E.]
+#128 [S.E.]
+#129 [S.E.]
+#130 [S.E.]
+#131 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#137 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#142 [S.E.]
+#143 [S.E.]
+#144 [S.E.]
+#145 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#153 [S.E.]
+#154 [S.E.]
+#155 [S.E.]
+#157 [S.E.]
+
+  ■出典
+  R-TYPE II -G.S.M. IREM 2-
+  PONY CANYON / SCITRON  PCCB-00017  1990.01.21
+
+$end

@@ -1,0 +1,30 @@
+﻿$name=finehour
+$version=2
+$default=$30
+$songmax=$36
+$main
+
+$30 [Voice] -Finest Hour-
+$08 シグナスのテーマ (スタッフロール)
+$16 行進曲
+$14 [S.E.] -戦場の音-
+$1a ジャングル (ステージ1,4)
+$25 クリアーミュージック
+$1c 砂漠 (ステージ2)
+$1d ステージ X - BGM (未使用曲)
+$1f ネームエントリー
+$2b 敵の要塞 (兵器工場) (ステージ3)
+$2f 最終兵器・ゲルファウスト (ステージ4 最終ボス)
+$0e コンティニューミュージック
+$31 オールラウンドクリアーミュージック
+$01 [Voice] -観衆の声-
+$36 エンディング
+
+  ■出典
+  FINEST HOUR / NAMCO GAME SOUND EXPRESS Vol.3
+  VICTOR ENTERTAINMENT  VICL-15004  1990.09.21
+
+  ■作曲
+  田島 勝郎
+
+$end

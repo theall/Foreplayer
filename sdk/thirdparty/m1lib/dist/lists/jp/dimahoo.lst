@@ -1,0 +1,41 @@
+﻿$name=dimahoo
+$version=2
+$default=$c1
+// $songmax=$00
+$main
+
+$c1 ELEMENT IN THE STORY (オープニング)
+$d3 CREDIT (クレジット音)
+$c2 PURPLE ADVANCE (キャラクターセレクト)
+$c3 SCRAMBLE! (ステージ1)
+$c9 BLACK FIGHT (ボス1)
+$cd CRITICAL ATTACK (ステージクリア)
+$c4 IRON NUCKLE (ステージ2)
+$ca BOLD TRAP (ボス2)</title>
+$c5 OVERWHELMING EXISTENCE (ステージ3)
+$c6 VELVET FIRE (ステージ4)
+$c7 THUNDER STORM (ステージ5)
+$cc THE GENIUS OF BATTLE (ライバル)
+$c8 DARK PLOT (ステージ6)
+$cb DARK SKY (最終ボス)
+$ce PERFECT MEDICINE (最終ステージクリア)
+$cf SOFT MACHINE (エンディング)
+$d0 BROKEN BODY (ゲームオーバー)
+$d1 MECHANICAL PETRIFACTION (ランキング)
+
+$c0 スピーカーテスト
+
+-----------------------------------------
+// [S.E.] (おまかせ)
+// 
+//-----------------------------------------
+
+  ■出典
+  GREAT MAHOU DAISAKUSEN / ORIGINAL SOUND TRACK
+  SULEPUTER  CPCA-1041  2000.03.23
+
+  ■作曲
+  小谷野 謙一 / 本山 淳弘
+
+//List作成 : Ayaya
+$end

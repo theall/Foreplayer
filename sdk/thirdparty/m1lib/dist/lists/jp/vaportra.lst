@@ -1,0 +1,102 @@
+﻿$name=vaportra
+$version=2
+$default=$04
+$fixed_volume=150
+$main
+
+$04 Nightmare -Lagnarok- (Idle) <time="2:15.3">
+$40 [Voice] "Vapor Trail" (Credit) <time="0:02.5">
+$05 Take Off (Start) <time="0:37.7">
+$06 Vapor Trail (BGM 1) <time="2:50.2">
+$09 In the Dark (Rocket Boss) <time="0:51.8">
+$0d Mission Accomplished (Clear) <time="0:18">
+$07 Bloody Road (BGM 2) &lt;Intro&gt; <time="0:00.8">
+$08 Bloody Road (BGM 2) <time="3:04">
+$0a Threat of Under Sea (Submarine Boss) <time="1:00">
+$11 A Long Way Ahead (Continue) <time="0:12">
+$0f Death of a Hero (Game Over) <time="0:06">
+$0e Freedom Fighter (Name) <time="0:56.5">
+$10 The Glory Dreamt of (Ending) <time="1:46.8">
+
+$0b Vapor Trail (BGM 1) &lt;Restart&gt;
+
+-----------------------------------------------------------
+ [Voice]
+
+$40 [Voice]
+$41 [Voice]
+$42 [Voice]
+$43 [Voice]
+$44 [Voice]
+$45 [Voice]
+$46 [Voice]
+$47 [Voice]
+$48 [Voice]
+$49 [Voice]
+$4a [Voice]
+$4b [Voice]
+$4c [Voice]
+$4d [Voice]
+$4e [Voice]
+$4f [Voice]
+$50 [Voice]
+$51 [Voice]
+$52 [Voice]
+
+-----------------------------------------------------------
+ [S.E.]
+
+$13 [S.E.]
+$14 [S.E.]
+$15 [S.E.]
+$16 [S.E.]
+$17 [S.E.]
+$18 [S.E.]
+$19 [S.E.]
+$1a [S.E.]
+$1b [S.E.]
+$1c [S.E.]
+$1d [S.E.]
+$1e [S.E.]
+$1f [S.E.]
+$20 [S.E.]
+$21 [S.E.]
+$23 [S.E.]
+$24 [S.E.]
+$25 [S.E.]
+$26 [S.E.]
+$27 [S.E.]
+$28 [S.E.]
+$29 [S.E.]
+$2a [S.E.]
+$2b [S.E.]
+$2c [S.E.]
+$2d [S.E.]
+$2f [S.E.]
+$30 [S.E.]
+$31 [S.E.]
+$32 [S.E.]
+$33 [S.E.]
+$34 [S.E.]
+$35 [S.E.]
+$36 [S.E.]
+$37 [S.E.]
+$38 [S.E.]
+$39 [S.E.]
+$3a [S.E.]
+$3b [S.E.]
+$3c [S.E.]
+$3d [S.E.]
+$3e [S.E.]
+$3f [S.E.]
+
+  ■出典
+  空牙 / データイースト
+  PONY CANYON / SCITRON  PCCB-00027  1990.05.21
+
+  サイトロン ビデオゲームミュージック年鑑 1990
+  PONY CANYON / SCITRON  PCCB-00055  1991.02.21
+
+// Basic List by Monyons
+// Updated by NK
+$end

@@ -1,0 +1,56 @@
+﻿$name=fcombat
+$version=2
+$default=033
+$main
+
+#033 [S.E.] CREDIT <time="1.8">
+#005 MAIN THEME 1 (FIELD 1-4)
+#006 MAIN THEME 2 (FIELD 5-8)
+#008 MAIN THEME 3 (FIELD 9-12)
+#003 MAIN THEME 4 (FIELD 13-16)
+#002 FIELD CLEAR 
+
+#016 FIELD CLEAR Ver.2
+#004 未使用曲 1
+#007 未使用曲 2
+#009 未使用曲 3
+#010 未使用曲 4
+#011 未使用曲 5
+
+---------------------------------------------------
+  [S.E.]
+
+#033 [S.E.] クレジット音 <time="3">
+#038 [S.E.] 面クリア <time="3">
+#042 [S.E.] 味方連れ去られ <time="5"> 
+#043 [S.E.] EXTEND ？ <time="3">
+#044 [S.E.] 面の始まりの音（単音）<time="2"> 
+#048 [S.E.] 自機やられ音 <time="5"> 
+#049 [S.E.] 
+#050 [S.E.] ヘリ音 1 <time="3"> 
+#051 [S.E.] 敵部隊やっつけ音 1 ？ <time="5"> 
+#052 [S.E.] 敵部隊やっつけ音 2 ？ <time="3">
+#053 [S.E.] ヘリ音 2 <time="5">
+#054 [S.E.] タンク音 ？ <time="3">
+#055 [S.E.] 味方部隊やられ音 ？ <time="3">
+#056 [S.E.] 歩兵歩き音 <time="5"> 
+#057 [S.E.] 歩兵歩き音2 ？ <time="3">
+#034 [S.E.] <time="5">
+#035 [S.E.] 洗脳ビーム音 ？ <time="5">
+#036 [S.E.] 洗脳ビーム音 ？ <time="5">
+#037 [S.E.] <time="5">
+#039 [S.E.] 装甲車走行音 <time="5">
+#040 [S.E.] <time="5">
+#041 [S.E.] 面クリア？ <time="5">
+#028 [S.E.] <time="5">
+#029 [S.E.] <time="5">
+#030 [S.E.] <time="5">
+#012 [S.E.] <time="5">
+#013 [S.E.] <time="5">
+#014 [S.E.] <time="5">
+#015 [S.E.] <time="5">
+#017 [S.E.] スピーカテスト (？) <time="5.5">
+
+// List contribution by ZEK.
+// Special Thanks Mr.Itazuratensi
+$end

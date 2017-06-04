@@ -1,0 +1,154 @@
+﻿$name=ninjaw
+$version=2
+$default=$5a
+$songmax=$bd
+$main
+
+$5a A.D.1993
+$b8 [Voice] "No one could maintain the public order. The evil dictator ,Banglar, controlled not only the police, but also the underground world; Drugs, murder, sex. He held the key to everything since he became the president. Mulk, who was the leader of the revolutions, built two assassination machines to kill the president. They were called ...."
+$3d [Voice] "The Ninja Warriors"
+$5b COIN
+$51 DADDY MULK <time="4:41">
+$52 ARE YOU LADY? <time="3:10">
+$53 CHE! <time="2:03">
+$54 JAPANESE SMILE <time="2:00">
+$55 MOTHERLESS CHILDREN <time="2:50">
+$3c [Voice] (Epilogue)
+//$58 PARADOX -with S.E.ver-
+$ba PARADOX
+$59 UP STAIRS
+$57 GAME OVER
+//
+// $b8 [Voice] (Prologue : Unused in game)
+// "No one could maintain the public order."
+// The evil dictator, Banglar, controlled not only the
+// police, but also the underground world; Drugs, murder,
+// sex. He held the key to everything since he became the
+// president. Mulk, who was the leader of the revolutions,
+// built two assassination machines to kill the president.
+// They were called ....
+
+//
+// $3c [Voice] (Ending Narration)
+// "A revolution broke out, and everything
+// became to an end. The troubled country seemed
+// to be finished by the death of the wicked machines.
+// But peace did not come. Because The Ninja
+// Warriors, are the immortal, murder machines.
+
+-----------------------------------------
+ [S.E.] & [Voice]
+
+//$3b [Voice] "The Ninja Warriors." (wait)
+$3e [Voice] "Aaaghhh!""
+$3f [Voice] "Aagh"
+$40 [Voice] "Waaaghhh!"
+$41 [Voice] "No!"
+$42 [Voice] "Aah!"
+$43 [Voice] "Aagh"
+$44 [Voice] "Waaghhh!"
+$45 [Voice] "Ah"
+$46 [Voice] "Oh"
+$47 [Voice] "Waaghhh"
+$48 [Voice] "Oh, No."
+$49 [Voice] "Oh my god!"
+$4a [Voice] "I kill you!"
+$4b [Voice] "Mission Accomplished."
+$4c [Voice] "Retreat!"
+$4d [Voice] "No damn way!"(Man)
+$4e [Voice] "No damn way!"(Woman)
+$4f [Voice] "Attack!"
+$50 [Voice] "Please don't kill me."
+$5d [Voice] "A"
+$5e [Voice] "B"
+$5f [Voice] "C"
+$60 [Voice] "D"
+$61 [Voice] "E"
+$62 [Voice] "F"
+$63 [Voice] "G"
+$64 [Voice] "H"
+$65 [Voice] "I"
+$66 [Voice] "J"
+$67 [Voice] "K"
+$68 [Voice] "L"
+$69 [Voice] "M"
+$6a [Voice] "N"
+$6b [Voice] "O"
+$6c [Voice] "P"
+$6d [Voice] "Q"
+$6e [Voice] "R"
+$6f [Voice] "S"
+$70 [Voice] "T"
+$71 [Voice] "U"
+$72 [Voice] "V"
+$73 [Voice] "W"
+$74 [Voice] "X"
+$75 [Voice] "Y"
+$76 [Voice] "Z"
+$77 [Voice] ???
+$86 [Voice] "Thank you."
+$89 [Voice] "Che!"
+
+$5c [S.E.] Coin (in Play)
+
+$09 [S.E.]
+$0a [S.E.]
+$0b [S.E.]
+$0c [S.E.]
+$0d [S.E.]
+$0e [S.E.]
+$0f [S.E.]
+$10 [S.E.]
+$11 [S.E.]
+$12 [S.E.]
+$13 [S.E.]
+$14 [S.E.]
+$15 [S.E.]
+$16 [S.E.]
+$17 [S.E.]
+$18 [S.E.]
+$19 [S.E.]
+$1a [S.E.]
+$1b [S.E.]
+$1c [S.E.]
+$1d [S.E.]
+$1e [S.E.]
+$1f [S.E.]
+$20 [S.E.]
+$21 [S.E.]
+$22 [S.E.]
+$23 [S.E.]
+$24 [S.E.]
+$25 [S.E.]
+$26 [S.E.]
+$27 [S.E.]
+$28 [S.E.]
+$29 [S.E.]
+$2a [S.E.]
+$2b [S.E.]
+$2c [S.E.]
+$2d [S.E.]
+$2e [S.E.]
+$2f [S.E.]
+$30 [S.E.]
+$31 [S.E.]
+$32 [S.E.]
+$33 [S.E.]
+$34 [S.E.]
+$35 [S.E.]
+$36 [S.E.]
+$37 [S.E.]
+$38 [S.E.]
+$39 [S.E.]
+$40 [S.E.]
+$b9 [S.E.]
+$bd [S.E.]
+
+  ■出典
+  THE NINJA WARRIORS -G.S.M. TAITO 1-
+  PONY CANYON / SCITRON  D28B0001  1988.06.21
+
+  THE NINJA WARRIORS / TAITO ZUNTATA
+  PONY CANYON / SCITRON  PCCB-00074  1991.10.21
+
+$end

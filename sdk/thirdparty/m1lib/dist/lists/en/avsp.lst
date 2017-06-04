@@ -1,0 +1,305 @@
+﻿$name=avsp
+$version=2
+$default=048
+$fixed_volume=249
+$main
+
+#048 [Voice] Time to Hunt (Credit)
+#026 Opening
+#005 Select Player
+#007 City of Despair (Round 1, 7)
+#031 Demo (Boss Approaching)
+#015 Boss 1 -Chrysalis-
+#004 Round Clear
+
+#022 Demo-A
+#006 War in the Underpass (Round 2, 6-2)
+#009 Round 2-2, 4-2)
+#031 Demo (Boss Approaching)
+#016 Boss 2 -Razor Claws-
+
+#021 Demo-B
+#008 Forced Assault (Round 3, 5, 7-2)
+
+#010 Assault on a Queen (Round 4)
+#009 Round 4-2, 2-2
+#031 Demo (Boss Approaching)
+#018 Boss 3 -Queen Alien 1-
+#024 Demo, Ending
+
+#021 Demo-B
+#008 Secerts (Round 5, 3)
+#031 Demo (Boss Approaching)
+#017 Boss 4 -Power Loader-
+
+#023 Demo-C
+#011 Nightmare in the Lab (Round 6)
+#028 Elevator (Bonus Round)
+#006 Round 6-2, 2
+#031 Demo (Boss Approaching)
+#019 Boss 5 -Mad Predator-
+#024 Demo, Ending
+
+#007 Hants End (Round 7, 1)
+#023 Demo-C
+#008 Round 7-2, 3, 5
+#031 Demo (Boss Approaching)
+#014 Final Boss -Queen Alien 2-
+#024 Demo, Ending
+#027 Credits Roll
+
+#001 Continue
+#003 Game Over
+
+#032 Q-Sound Logo (Main)
+#033 Q-Sound Logo (Sub)
+
+
+#049 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] <time="5">
+#091 [SFX] <time="5">
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] <time="5">
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] <time="5">
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#112 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX] 
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] <time="5">
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] <time="5">
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] <time="5">
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] <time="5">
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] <time="5">
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+
+
+#048 [Voice] Time to hunt
+#512 [Voice] 
+#513 [Voice] 
+#514 [Voice] 
+#515 [Voice] 
+#516 [Voice] 
+#517 [Voice] 
+#518 [Voice] 
+#519 [Voice] 
+#520 [Voice] 
+#521 [Voice] 
+#512 [Voice] 
+#513 [Voice] 
+#514 [Voice] 
+#515 [Voice] 
+#516 [Voice] 
+#517 [Voice] 
+#518 [Voice] 
+#519 [Voice] 
+#520 [Voice] 
+#521 [Voice] 
+#522 [Voice] 
+#523 [Voice] 
+#524 [Voice] 
+#525 [Voice] 
+#526 [Voice] 
+#527 [Voice] 
+#528 [Voice] 
+#529 [Voice] 
+#530 [Voice] 
+#531 [Voice] 
+#532 [Voice] 
+#533 [Voice] 
+#534 [Voice] 
+#535 [Voice] 
+#536 [Voice] 
+#537 [Voice] 
+#538 [Voice] 
+#539 [Voice] 
+#540 [Voice] 
+#541 [Voice] 
+#542 [Voice] 
+#543 [Voice] 
+#544 [Voice] 
+#545 [Voice] 
+#546 [Voice] 
+#547 [Voice] 
+#548 [Voice] 
+#549 [Voice] 
+#550 [Voice] 
+#551 [Voice] 
+#542 [Voice] 
+#543 [Voice] 
+#544 [Voice] 
+#545 [Voice] 
+#546 [Voice] 
+#547 [Voice] 
+#548 [Voice] 
+#549 [Voice] 
+#550 [Voice] 
+#551 [Voice] 
+#552 [Voice] 
+#553 [Voice] 
+#554 [Voice] 
+#555 [Voice] 
+#556 [Voice] 
+#557 [Voice] 
+#558 [Voice] 
+#559 [Voice] 
+#560 [Voice] 
+#561 [Voice] 
+#562 [Voice] 
+#563 [Voice] 
+#564 [Voice] 
+#565 [Voice] 
+#566 [Voice] 
+#567 [Voice] 
+#568 [Voice] 
+#569 [Voice] 
+#570 [Voice] 
+#571 [Voice] 
+#572 [Voice] 
+#573 [Voice] 
+#574 [Voice] 
+#575 [Voice] 
+#576 [Voice] 
+#577 [Voice] 
+#578 [Voice] 
+#579 [Voice] 
+#580 [Voice] 
+#581 [Voice] 
+#582 [Voice] 
+#583 [Voice] 
+#584 [Voice] 
+#585 [Voice] 
+#586 [Voice] 
+#587 [Voice] 
+#588 [Voice] 
+#589 [Voice] 
+#590 [Voice] 
+#591 [Voice] 
+#592 [Voice] 
+#593 [Voice] 
+#594 [Voice] 
+#596 [Voice] 
+#598 [Voice] 
+#599 [Voice] 
+#600 [Voice] 
+#601 [Voice] 
+#602 [Voice] 
+#603 [Voice] 
+#604 [Voice] 
+#605 [Voice] 
+#606 [Voice] 
+#607 [Voice] 
+#608 [Voice] 
+#609 [Voice] 
+#610 [Voice] 
+#611 [Voice] 
+#612 [Voice] 
+#613 [Voice] 
+#614 [Voice] 
+#615 [Voice] 
+#616 [Voice] 
+#617 [Voice] 
+#619 [Voice] 
+#621 [Voice] 
+#622 [Voice] 
+#623 [Voice] 
+#624 [Voice] 
+#625 [Voice] 
+#626 [Voice] 
+#627 [Voice] 
+#628 [Voice] 
+#629 [Voice] 
+
+  [Sound Composer]
+  Hideki OK
+
+// List contribution by R
+$end

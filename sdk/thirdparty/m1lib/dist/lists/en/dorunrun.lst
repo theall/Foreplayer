@@ -1,0 +1,46 @@
+﻿$name=dorunrun
+$version=2
+$default=13
+$main
+
+#002 Demo (Do! Run Run) <time="37.1">
+#013 Title <time="2.9">
+#023 Coin Inserted
+#028 Do Your Best !! (Super Pierrot) <time="10">
+#019 Game Start <time="2.9">
+#008 Theme 1
+#014 Clear
+#019 Start <time="2.9">
+#009 Theme 2
+#012 Extra <time="9">
+#014 Clear
+#011 Miss
+#015 Game Over
+#025 Ranking
+
+---------------------------------------------------
+ [SFX] 
+
+#001 [SFX] Ball thrown
+#002 [SFX] Demo (Only in Do! Run Run) <time="8">
+#003 [SFX] Rope disappearing <time="5">
+#004 [SFX] Enemy attacking
+#005 [SFX] "Extra" character disappearing <time="5">
+#006 [SFX] Player extended <time="5"> 
+#007 [SFX] ?
+#010 [SFX] Killed an enemy
+#016 [SFX] Logrolling
+#017 [SFX] Enemy squashed by a log
+#018 [SFX] Diamond appearing <time="5">
+#019 [SFX] Round start
+#020 [SFX] Enemy appeared
+#021 [SFX] Enemy changing to blue <time="6"> 
+#022 [SFX] Enemy changing to green
+#023 [SFX] Coin inserted
+#027 [SFX] 
+#029 [SFX] 
+
+// List contribution by ZEK.
+// Special Thanks to Retro-B
+// English List by Fuj
+$end

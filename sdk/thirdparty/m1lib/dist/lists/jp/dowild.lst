@@ -1,0 +1,47 @@
+﻿$name=dowild
+$version=2
+$default=025
+$main
+
+#025 SCENE 1, 4 BGM
+#031 BONUS <time="5.2">
+#013 CLEAR
+#021 SCENE 2
+#018 [S.E.] ダイヤ出現音 <time="5">
+#030 DIAMOND BGM
+#011 SCENE 3, 5 BGM
+#020 EXTRA BGM <time="7.5">
+#013 CLEAR
+#012 SCENE 6 BGM
+#027 [S.E.] 衝突 <time="2">
+#019 [S.E.] ミス <time="1">
+#028 [S.E.] 落下 <time="3">
+#014 GAME OVER
+#015 RANKING
+
+---------------------------------------------------
+  [S.E.]
+
+#001 [S.E.] 回転鉄球の音 (SCENE 4, 5, 8)
+#002 [S.E.] ジェットコースター1 <time="2.6">
+#003 [S.E.] ジェットコースター2 <time="5">
+#004 [S.E.] ジェットコースター3 <time="3">
+#005 [S.E.] ジェットコースター4 <time="2.8">
+#006 [S.E.] ジェットコースター5 <time="3">
+#007 [S.E.] ジェットコースター6 <time="2.7">
+#008 [S.E.] エレベーター移動音 (SCENE 3)
+#009 [S.E.] 鉄球同士の衝突音 (SCENE 1, 7)
+#010 [S.E.] 障害物の落下音 (SCENE 9) <time="3">
+#016 [S.E.] 小型バネ付き鉄球の伸縮音 (SCENE 7)
+#017 [S.E.] 主人公がリフトに運ばれる音 (SCENE 4) <time="3">
+#018 [S.E.] ダイヤモンド出現音 <time="3">
+#019 [S.E.] 大型バネ付き鉄球の伸縮音 (SCENE 4)
+#022 [S.E.] ハリーアップ <time="3">
+#023 [S.E.] 1UP
+#027 [S.E.] 主人公が障害物に衝突
+#028 [S.E.] 主人公がエレベーターに挟まれる音 (SCENE 3)
+#029 [S.E.] 主人公落下音
+
+// List contribution by ZEK.
+// Special Thanks to B
+$end

@@ -1,0 +1,96 @@
+﻿$name=sg2j
+$version=2
+$default=060
+$songmax=240
+$fixed_volume=205
+$main
+
+#060 QSound Logo
+
+#058 Prologue
+#001 Opening - Title
+#059 Ranking Table
+#002 Character Select
+#003 Next Stage
+
+#009 Illusion of Peace
+#010 Armament to Battle
+#011 Fade to Silence
+#012 Lead to Doom
+
+#004 Here Comes A New Challenger
+#018 Story Demo 1
+
+#013 Jungle Distress
+#014 Holy Graveyard
+#015 Against the Absolute
+
+#019 Story Demo 2
+#016 Fate of the Galaxy -Stage 8-
+
+#017 Win
+#020 Ending 1
+#021 Ending 2
+#022 Ending 3
+
+#024 Hayato's Ending 1
+#025 Hayato's Ending 2
+#027 Jine's Ending
+#032 Saturn's Ending
+#030 Gamof's Ending
+#036 Gerelt's Ending 1
+#037 Gerelt's Ending 2
+#040 Vector's Ending 1
+#041 Vector's Ending 2
+
+#034 Zelkin's Ending
+#044 Gore's Ending
+#046 Blood's Ending
+#048 G.Bilstein's Ending
+#026 B.Hayato's Ending
+
+#028 Ele's Ending 1
+#029 Ele's Ending 2
+#033 Prince's Ending
+#031 Gantestsu's Ending
+
+#038 Claire's Ending 1
+#039 Claire's Ending 2
+#042 Omega's Ending 1
+#043 Omega's Ending 2
+
+#035 Eagle's Ending
+#045 Luca's Ending
+#047 Shaker's Ending
+#049 Bilstein's Ending
+#052 Rain's Ending 1
+#053 Rain's Ending 2
+
+#050 Byakko's Ending
+#054 Kaede's Ending 1
+#055 Kaede's Ending 2
+#056 Kaede's Ending 3
+#051 Rai-on's Ending
+
+#005 Continue
+#007 High Score Table
+#008 Name Entry
+#006 Game Over
+#057 Credits
+
+ [Not on CD]
+
+#005 Introduction?
+#061 Prince - Dance
+#062 Kaede - Mole Attack
+#064 [SFX] Credit Inserted
+#065 [SFX] Timer
+
+  [Source]
+  Star Gladiator 2 - Nightmare of Bilstein Original Soundtrack
+  Suleputer  CPCA-1008  May 21, 1998
+
+// List by Idumi Hatoba
+// English list adjustment by bcass
+// Updated by Fujix
+$end

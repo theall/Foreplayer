@@ -1,0 +1,110 @@
+﻿$name=dbreedm72
+$version=2
+$default=3
+$songmax=255
+$main
+
+#003 Title
+#009 Stage Start
+#002 Born
+#007 Theme of Bahamoot (Stage 1)
+#015 Theme of Zambaquos (Boss)
+#004 Clear
+#013 Eyes (Stage 2)
+#005 Big Dragon (Stage 3)
+#011 Colour (Stage 4)
+#012 Dadada (Stage 5)
+#010 Walk! (Stage 6-1)
+#001 Roll! (Stage 6-2)
+#000 Theme of Kayus (Cleared All)
+#014 Close (Game Over)
+#006 Continue
+#008 Agamen (Name Entry)
+
+----------------------------------------------
+  [SFX]
+
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#050 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#067 [SFX] 
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#082 [SFX]
+#085 [SFX]
+#086 [SFX]
+#088 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+
+  [Soundtrack]
+  Dragon Breed
+  Pony Canyon / Scitron  PCCB-00006  Oct 21, 1989
+
+// List contribution by R
+$end

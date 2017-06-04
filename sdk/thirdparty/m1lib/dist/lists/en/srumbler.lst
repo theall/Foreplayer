@@ -1,0 +1,43 @@
+﻿$name=srumbler
+$version=2
+$default=52
+//$songmax=58
+$main
+
+#052 Credit Inserted
+#037 Opening Demonstration <time="24">
+#038 Start <time="5">
+#040 Sharp Shooting (Stage 1 & 4)
+#044 Area Finished
+
+#041 Chaser (Stage 2 & 6)
+#045 Time Out Warning
+#056 Player Out
+#047 Game Over
+#057 Continue
+
+#042 Go Mad (Stage 3 & 5)
+#043 Last Stage Start <time="19.5">
+#058 Theme from Zapper
+#046 Last Stage Cleared
+
+#048 Top Class Ranking
+#050 Second Class Ranking
+#049 Ranking Display
+
+#053 Extend
+#054 Bonus
+#055 Item
+
+#039 Unused 1
+#051 Unused 2
+
+  [Source]
+  Capcom Game Music Vol.2
+  Alfa Records  28XA-203  Mar 25, 1988
+
+  Capcom Game Music Vol.2 (Legend Series)
+  SME / Scitron  SCDC-00195  Jul 24, 2002
+
+// List contribution by R
+$end

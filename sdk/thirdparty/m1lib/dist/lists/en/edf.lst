@@ -1,0 +1,33 @@
+﻿$name=edf
+$version=2
+$default=015
+//$songmax=015
+$fixed_volume=100
+$main
+
+#015 Prologue #1
+#008 Prologue #2
+#003 Stage 1 "First Encounter"
+// from Big-Challange Dogfight Spirits
+#005 Stage 2 "Midnight Intercept"
+#007 Boss AttacK
+#006 Clear
+#013 Stage 3 "Deep cave" #1
+#014 Stage 3 "Deep Cave" #2
+#001 Stage 4 "Naval Battle"
+#004 Stage 5 "Fortress Charge"
+#011 Stage 6 "Armed Satellite"
+#012 Escape "Escape Road"
+#010 Ending "Peace Maker"
+#002 Name Entry
+
+#009 Not on CD
+
+  [Source]
+  E.D.F. / Jaleco
+  Pony Canyon / Scitron  PCCB-00058  Mar 21, 1991
+
+  [Sound Composer]
+  Tsukasa Tawada
+
+$end

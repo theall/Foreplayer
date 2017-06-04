@@ -1,0 +1,32 @@
+﻿$name=esprade
+$version=2
+$default=9
+$songmax=12
+$main
+
+#009 ESP者 (SELECT)
+#001 DESPERATE SCHOOL (STAGE-A)
+#002 NIGHTMARE (STAGE-B)
+#003 ACT IN JUDGE (STAGE-C)
+#004 WANGAN RAPID LINE 1st (STAGE-4a)
+#005 WANGAN RAPID LINE 2nd (STAGE-4b)
+#007 YAKSA (STAGE-5.1) 
+#006 FAIRIES FEAR (STAGE-5.2)
+#008 RAGING DEICIDE (BOSS)
+#010 WINNER (CLEAR) <time="0:06.5">
+#012 SNOW ILLUSION (ENDING) 
+#011 GREAT EXPERIENCE (NAME ENTRY)
+
+  ■出典
+  怒首領蜂・ESPRADEサウンドトラック
+  SCITRON / GAMEST  SGCD-00002  1998.11.6
+
+  ぐわんげ / エスプレイド オリジナルサウンドトラック
+  CAVE  CVST-1000  2007.12.30
+
+  ■作曲
+  楠 雅弘
+
+// List by Fuj
+$end
+

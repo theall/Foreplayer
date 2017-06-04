@@ -1,0 +1,181 @@
+﻿$name=koshien
+$version=2
+$default=009
+$main
+
+#009 Ah! Glorious Koshien (Title Screen) <time="30">
+#026 [SFX] Credit Inserted <time="2.5">
+#010 Team Select
+#096 [Voice] janken hoi <time="1.9">
+#014 Theme of Time-Out and Rock, Paper, Scissors
+#104 [Voice] omaera, wakatteruna? <time="2.5">
+#086 [Voice] rei <time="1.5">
+#092 [Voice] onegaishimasu <time="2">
+#091 [Voice] playball <time="2.5">
+#011 Music 1
+#018 Music 2
+#012 Music 3
+#083 [Voice] three outs, change <time="3">
+#016 End of Inning <time="23.9">
+#013 Music 4
+#015 Music 5
+#082 [Voice] Home Run <time="2.3">
+#019 Home Run <time="5">
+#102 [Voice] aan mou <time="2.5">
+#146 Music 6
+#017 Music 7
+#085 [Voice] Game Set <time="2.5">
+#020 Theme of Win <time="13">
+#139 [Voice] <time="7">
+#023 Ending
+#024 Credits
+#025 Congratulations
+#021 Game Over <time="18.5">
+#028 [SFX] Siren <time="18">
+
+#022 Unused
+
+#242 Speaker Test (FM)
+#246 Speaker Test (PSG)
+
+---------------------------------------------------
+  [SFX] 
+
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] <time="9">
+#034 [SFX] 
+#035 [SFX] 
+#036 [SFX] 
+#037 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#044 [SFX] 
+#045 [SFX] 
+#046 [SFX] 
+#047 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#053 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#056 [SFX] 
+#057 [SFX] 
+#058 [SFX] 
+#059 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] <time="3">
+#151 [SFX] 
+#152 [SFX] 
+#156 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#241 [SFX] <time="3">
+#245 [SFX] 
+
+
+---------------------------------------------------
+  [Voice]
+
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#127 [Voice] 
+#128 [Voice] 
+#129 [Voice] 
+#130 [Voice] 
+#131 [Voice] 
+#132 [Voice] 
+#133 [Voice] 
+#134 [Voice] 
+#135 [Voice] 
+#136 [Voice] 
+#137 [Voice] 
+#138 [Voice] 
+#139 [Voice] 
+#140 [Voice] 
+#244 [Voice] <time="5">
+
+  [Sound Composers]
+  Yasuko Yamada, Masahiko (MAR) Takagi, Ken'ichi Kamio
+
+// List contribution by ZEK.
+// English list translation and QA by Fujix.
+$end

@@ -1,0 +1,239 @@
+﻿$name=megaman
+$version=2
+$default=049
+$main
+
+#049 Capcom Logo <time="2">
+#001 Title
+#002 Player Select
+#003 Stage Select (Megaman 1 - 2)
+#006 Stage Starting
+#012 Stage 1 (Napalm Man Stage)
+#013 Stage 2 (Crash Man Stage)
+#015 Stage 3 (Guts Man Stage)
+#004 Stage Select (Megaman 3 - 6)
+#017 Stage 4 (Gyro Man Stage)
+#016 Stage 5 (Gemini Man Stage)
+#014 Stage 6 (Shadow Man Stage)
+#007 Stage Clear
+#008 You Got New Weapon
+#005 Stage Select (Megaman 7)
+#018 Stage 7 (Megaman 7 Opening Stage)
+#023 Stage 8 (Cloud Man Stage)
+#019 Stage 9 (Slash Man Stage)
+#022 Stage 10 (Freeze Man Stage)
+#021 Stage 11 (Junk Man Stage)
+#020 Stage 12 (Shade Man Stage)
+#031 Stage 13 (From "Makai")
+#009 VS Wily
+#024 Stage Wily Boss
+#025 Stage Wily Machine
+#026 Stage Wily Capsule
+#010 Continue
+#011 Game Over
+#027 Ending - Megaman 1
+#028 Ending - Protoman
+#029 Ending - Bass
+#030 Ending - Megaman 2
+
+-----------------------------------------------------------
+ [Voice]
+
+#044 [Voice]
+#046 [Voice]
+#047 [Voice]
+#048 [Voice]
+#049 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#086 [Voice]
+#087 [Voice]
+#088 [Voice]
+#089 [Voice]
+#090 [Voice]
+#091 [Voice]
+#112 [Voice]
+#113 [Voice]
+#114 [Voice]
+#115 [Voice]
+#116 [Voice]
+#117 [Voice]
+#118 [Voice]
+#119 [Voice]
+#120 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+#125 [Voice]
+#126 [Voice]
+#127 [Voice]
+#128 [Voice]
+#129 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+#143 [Voice]
+#167 [Voice]
+#234 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#045 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#124 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#173 [SFX]
+#174 [SFX]
+#175 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+
+  [Source]
+  Rockman the Power Battle ~ Arcade Gametrack / Capcom
+  Sony Records  SRCL-3451  Dec 01, 1995
+
+// List Contribution by nZero
+// List Updated by NK
+$end

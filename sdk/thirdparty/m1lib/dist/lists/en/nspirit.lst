@@ -1,0 +1,33 @@
+﻿$name=nspirit
+$version=2
+$default=2
+$main
+
+$002 Iza (Title) <time="11">
+$00d Oshie (Introduction) <time="9">
+$007 Theme from Butsuzo (Round 1)
+$009 Kessen (Normal Boss)
+$00f Izanai (Stage Clear) <time="6">
+$00a Forest (Round 2)
+$000 Moon (Round 3)
+$00b Karakuri (Round 4)
+$003 Munen (Game Over) <time="10">
+$008 Sasurai no Samurai no Tomurai (Ranking) <time="23">
+$005 Kane (Cotinue) <time="11">
+$006 Behind the Wind (Round 5)
+$004 Dark Blue (Round 6)
+$00e Kizashi part 1 (Round 7)
+$001 Kizashi part 2 (Final Boss)
+$00c Deep Blue (Ending)
+
+  [Source]
+  Image Fight -G.S.M. Irem 1-
+  Pony Canyon / Scitron  D28B0012  1989.1.21
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// Original list contribution by Monyons
+// Updated by Fujix
+$end

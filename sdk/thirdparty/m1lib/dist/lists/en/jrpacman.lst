@@ -1,0 +1,26 @@
+﻿$name=jrpacman
+$version=2
+$default=00
+$main
+
+#00 Game Start
+#01 Intermission #1 - "jr meets yum-yum"
+#02 Intermission #3 - "they escape!"
+#03 Intermission #2 - "the gift"
+#09 Credit
+#10 Extend
+#16 Siren #1
+#17 Siren #2
+#18 Siren #3
+#19 Siren #4
+#20 Siren #5
+#21 Energizer
+#22 Monster Escapes
+#24 Munch #1
+#25 Munch #2
+#26 Fruit/Prize Eaten
+#27 Monster Eaten
+#28 Death
+
+//Basic Listing by Tafoid
+$end

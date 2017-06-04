@@ -1,0 +1,48 @@
+﻿$name=berabohm
+$version=2
+$default=25
+$songmax=255
+$fixed_volume=257
+$main
+
+#025 Demo (Prologue)
+#022 Title Screen
+#021 Main Theme (Demo Scene, Suburb)
+#020 Stage Clear
+#009 Sea Beraboh (Undersea Stage)
+#019 Dark Troop (Ninja House)
+#027 Bakuta Laboratory (Final Stage)
+#016 Fanfare - Ending
+#017 Credits
+#018 Ranking (1st)
+#023 Ranking (2nd and below)
+#015 Game Over
+
+#000 Speaker Test <time="15">
+#001 Speaker Test (R) <time="15">
+#002 Speaker Test (L) <time="15">
+
+#003 Steranian Title (Not Released)
+
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX]
+#007 [SFX]
+#008 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#024 [SFX] 
+
+  [Source]
+  Namco Video Game Graffiti Vol.4
+  Victor Entertainment  VDR-5282  Mar 8, 1989
+
+  [Sound Composer]
+  Norio Nakagata (NAK)
+
+// List contribution by R
+// English list by Fuj
+$end

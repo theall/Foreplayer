@@ -1,0 +1,55 @@
+﻿$name=zerowing
+$version=2
+$default=035
+$songmax=035
+$fixed_volume=100
+$main
+
+#035 COIN (CREDIT) <0:03>
+#018 OPENING (OPENING) ～ OPEN YOUR EYES (STAGE 1 BGM)
+#026 OPEN YOUR EYES (STAGE 1 BGM)
+#024 NEW DAY FOR ME (STAGE 2 BGM)
+#020 BABYLONIAN NIGHTS (STAGE 3 BGM)
+#025 YOU GET (STAGE 4 BGM)
+#021 OLD SENSE (STAGE 5 BGM)
+#023 NEW SAY (STAGE 6 BGM)
+#019 GAME SET (GAME SET)
+#028 GO TO HIS REST (NAME REGISTER THEME)
+#031 DULLARD (CONTINUE THEME)
+#027 SAME ONE (STAGE 7 BGM)
+#022 HIT MAN (STAGE 8 BGM)
+#034 EVERYBODY KNOWS (ENDING)
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+
+  ■出典
+  ZERO WING / TOAPLAN
+  PONY CANYON / SCITRON  PCCB-00001  1989.09.21
+
+  ■作曲
+  上村 達也, 富沢 敏明, 弓削 雅稔
+
+$end

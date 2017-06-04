@@ -1,0 +1,41 @@
+﻿$name=questar
+$version=2
+$default=06
+$songmax=30
+$fixed_volume=104
+$main
+
+#06 Opening
+//#14 Opening
+#10 Round Start
+#17 Bonus Stage
+#21 Ending
+#11 Game Over
+#15 Name Entry
+#12 Name Entry (End)
+
+#13 Unused?
+
+
+#01 [S.E.]
+#02 [S.E.]
+#03 [S.E.]
+#04 [S.E.]
+#05 [S.E.]
+#07 [S.E.]
+#08 [S.E.]
+#09 [S.E.]
+#16 [S.E.]
+#18 [S.E.]
+#19 [S.E.]
+#20 [S.E.]
+
+  ■出典
+  NAMCO VIDEO GAME GRAFFITI Vol.4
+  VICTOR ENTERTAINMENT  VDR-5282  1989.03.08
+
+  ■作曲
+  細江 慎治 (めがてん)
+
+// List by Fuj
+$end

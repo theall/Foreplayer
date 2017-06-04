@@ -1,0 +1,163 @@
+﻿$name=lifefrcej
+$version=2
+$default=001
+$songmax=256
+$fixed_volume=204
+$main
+
+#001 Coin (コイン音)
+#007 Power of Anger (St.1)
+#009 Thunderbolt (St.2 - 腎臓)
+#023 Planet RATIS (St.3 - 胃)
+#031 Slash Fighter (St.4 - 肝臓)
+#012 Combat (St.5 - 肺)
+#013 Aircraft Carrier (グラディウス ボスBGM)
+#029 Destroy Them All (St.6-1 - 脳)
+#017 Destroy Them All -Type 2- (St.6-2 - 脳)
+#022 Poison of Snake (ボスBGM)
+#008 Peace Again (パターンクリア)
+#024 Crystal Forever (ゲームオーバー)
+
+#010 Fly High (沙羅曼蛇 St.2 BGM)
+#004 Starfield (沙羅曼蛇 St.4 BGM)
+#003 Burn the Wind (沙羅曼蛇 St.5 BGM)
+#015 Unused 01 (X68000 Version, Loading Music)
+#005 Unused 02
+#011 Unused 03
+#014 Unused 04
+#016 Unused 05
+#018 Unused 06
+#019 Unused 07
+#020 Unused 08
+#021 Unused 09
+#025 Unused 10
+#026 Unused 11
+#027 Unused 12
+#030 Unused 13
+
+---------------------------------------------
+ [S.E.]
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+
+#249 [S.E.]
+#250 [S.E.]
+#251 [S.E.]
+#252 [S.E.]
+#253 [S.E.]
+
+ [Voice]
+
+#128 [Voice] Missile chamber is empty
+#129 [Voice] Hyper speed
+#130 [Voice] Destruct missile
+#131 [Voice] Multiple
+#132 [Voice] Shield
+#133 [Voice] Pulse laser
+#134 [Voice] Laser
+#135 [Voice] Missle chamber is empty
+#136 [Voice] Hyper speed
+#137 [Voice] Destruct missle
+#138 [Voice] Multiple
+#139 [Voice] Shield
+#140 [Voice] Pulse lazer
+#141 [Voice] Lazer
+#142 [Voice] Danger! Danger!
+#143 [Voice] Try again
+#144 [Voice] Destroy them all!
+#145 [Voice] Enter stomach muscle zone
+#146 [Voice] Destroy violent anti-biotics
+#147 [Voice] Increase power
+#148 [Voice] Make way through muscle tissue
+#149 [Voice] Fire!
+#150 [Voice] Destroy eye of mutant
+#151 [Voice] Enter kidney zone
+#152 [Voice] Kidney stones cannot be destroyed
+#153 [Voice] Mutant zylon attacking
+#154 [Voice] Destroy centre membrane
+#155 [Voice] Enter stomach inner chamber
+#156 [Voice] Warning! Warning! Danger zone!
+#157 [Voice] Acid flame
+#158 [Voice] Flame eruption
+#159 [Voice] Attack head
+#160 [Voice] Enter liver zone
+#161 [Voice] Fend off mutant toxin
+#162 [Voice] Cut through liver
+#163 [Voice] Entering lung zone
+#164 [Voice] Link-up with weapon
+#165 [Voice] Prepare for bio-mechanical mutant
+#166 [Voice] Entering brain area
+#167 [Voice] Biomechanical brain attacks
+#168 [Voice] Destroy the four points
+#169 [Voice] Escape out of brain quickly
+#170 [Voice] Watch for flame eruption
+#171 [Voice] Arrrrgggggghhhhhh!
+#172 [Voice] Sound out
+
+  ■出典
+  沙羅曼蛇 ～Again～ / KONAMI KUKEIHA CLUB
+  KING RECORDS  KICA-7601  1992.03.25
+
+  コナミ・ゲーム・ミュージック Vol.4 ～A-JAX～
+  ALFA RECORDS  28XA-201  1988.03.10
+
+  沙羅曼蛇アーケードサウンドトラック
+  Sony Music Entertainmnet  KOLA-030  2003.04.09
+
+// Voice check by bcass
+$end

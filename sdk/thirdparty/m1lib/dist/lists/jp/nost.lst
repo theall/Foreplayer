@@ -1,0 +1,104 @@
+﻿$name=nost
+$version=2
+$default=017
+$main
+
+  ※ 一部の音が再生されません
+  ※ 演奏速度が遅めです (ただし演奏時間はM1ベースで設定)
+
+#001 [Command] Sound Stop
+
+#017 OPENING ～ TITLE <time="32">
+#001 [Command] Sound Stop <time="5">
+#065 CREDIT <time="2">
+#018 CHARACTER SELECT <time="49">
+#029 STAGE 1 <time="01:24">
+#025 BOSS #1 (STAGE 1, 4, 7) <time="01:16">
+#022 STAGE CLEAR <time="7">
+#030 STAGE 2 <time="01:30">
+#020 STAGE 3 <time="02:02">
+#019 STAGE 4 <time="02:20">
+#031 STAGE 5 <time="02:23">
+#032 BOSS #2 (STAGE 2, 3, 5, 6, 8) <time="01:44">
+#033 STAGE 6 <time="02:19">
+#027 STAGE 7 <time="02:06">
+#026 STAGE 8 <time="01:45">
+#024 STAGE 9 <time="01:07">
+#028 BOSS #3 (STAGE 9) <time="01:54">
+#034 ENDING <time="01:18">
+#035 GAME OVER <time="6">
+#023 CONTINUE <time="21">
+#021 NAME ENTRY <time="01:02">
+
+-----------------------------------------------------------
+ [S.E.]
+
+#001 [Command] Sound Stop <time="5">
+#065 [S.E.] Credit
+#066 [S.E.] Extend Ship
+#067 [S.E.] 
+#068 [S.E.] Player 1 Shot
+#069 [S.E.] Player 2 Shot
+#070 [S.E.] 
+#071 [S.E.] 
+#072 [S.E.] <time="3">
+#001 [Command] Sound Stop <time="5">
+#073 [S.E.] <time="3">
+#001 [Command] Sound Stop <time="5">
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] Plasmic Wave 1
+#077 [S.E.] Plasmic Wave 2
+#078 [S.E.] 
+#079 [S.E.] Phenix Wave 1
+#080 [S.E.] Phenix Wave 2
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] Item Get 1
+#085 [S.E.] Launch Get
+#086 [S.E.] Item Get 2
+#087 [S.E.] Item Get 3
+#088 [S.E.] Player Start
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] <time="3">
+#001 [Command] Sound Stop <time="5">
+#094 [S.E.] 
+#095 [S.E.] 
+#096 [S.E.] 
+#097 [S.E.] 
+#098 [S.E.] Explosion
+#099 [S.E.] 
+#100 [S.E.] 
+#101 [S.E.] 
+#102 [S.E.] 
+#103 [S.E.] ※ 再生不可
+#104 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#108 [S.E.] 
+#109 [S.E.] 
+#110 [S.E.] 
+#111 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#114 [S.E.] ※ 再生不可
+
+#001 [Command] Sound Stop
+
+  ■作曲
+  Mika. Nozawa, Matsudaira Ako (松平 あこ), A. Iwanaga (岩永 敦子)
+
+//
+//  松平あこ … はにい いん ざ すかい[PCエンジン]
+//  岩永敦子 … ぐるりん[ネオジオ] ※本作では効果音担当。後に港技研取締役に
+//
+//  ■参考
+//  アーケードゲーム スタッフロールガイドブック MVS編 (柳都製作所)
+//
+// List contribution by Cratch
+$end

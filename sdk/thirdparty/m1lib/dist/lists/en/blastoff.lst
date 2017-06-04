@@ -1,0 +1,61 @@
+﻿$name=blastoff
+$version=2
+$default=022
+$fixed_volume=100
+$main
+
+#022 Opening <time="15">
+#001 Round 1 (1) <time="36.1">
+#002 Round 1 (2) <time="12.4">
+#002 Round 1 (2) <time="12.4">
+#001 Round 1 (1) <time="36.1">
+#002 Round 1 (2) <time="12.4">
+#002 Round 1 (2) <time="13.2">
+#018 Ship 1  <time="21.3">
+#018 Ship 1  <time="22.2">
+#020 Boss    <time="22.1">
+#020 Boss    <time="23.2">
+#019 Mission Completed
+#003 Round 2 (1) <time="12.8">
+#004 Round 2 (2) <time="12.8">
+#004 Round 2 (2) <time="12.8">
+#005 Round 2 (3) <time="12.8">
+#003 Round 2 (1) <time="12.8">
+#004 Round 2 (2) <time="12.8">
+#004 Round 2 (2) <time="12.8">
+#005 Round 2 (3) <time="13.6">
+#009 Round 3 (1) <time="26.5">
+#010 Round 3 (2) <time="13.3">
+#009 Round 3 (1) <time="26.5">
+#010 Round 3 (2) <time="14.1">
+#021 Continue
+#006 Round 4 (1) <time="17.5">
+#007 Round 4 (2) <time="02.8">
+#008 Round 4 (3) <time="29.1">
+#006 Round 4 (1) <time="17.5">
+#007 Round 4 (2) <time="02.8">
+#008 Round 4 (3) <time="29.9">
+#011 Round 5 (1) <time="11.7">
+#011 Round 5 (1) <time="11.7">
+#012 Round 5 (2) <time="23.4">
+#011 Round 5 (1) <time="11.7">
+#011 Round 5 (1) <time="11.7">
+#012 Round 5 (2) <time="25">
+#013 Round 6 <time="1:04">
+#013 Round 6 <time="1:05">
+#022 Ending  <time="13.3">
+#015 Ending (1) <time="10.6">
+#016 Ending (2) <time="03.6">
+#022 Ending     <time="13.7">
+#014 Game Over
+#017 Name Entry
+
+#000 Stereo Test
+
+  [Source]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097, 40098  Dec 16, 1993
+
+  Note: Missing a song named "Zombie Castle".
+
+$end

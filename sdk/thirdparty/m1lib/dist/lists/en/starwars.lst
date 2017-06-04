@@ -1,0 +1,72 @@
+﻿$name=starwars
+$version=2
+$default=27
+$main
+
+[Music]
+
+#001 - Music - Test #1
+#002 - Music - Test #2
+#027 - Game Over (No High Score)
+#036 - Tie Fighter BGM #1 (Stage 1,2 + odd stages)
+#029 - Tie Fighter BGM #1 (Stage 4 + even stages)
+#037 - Tie Fighter BGM #2
+#030 - Approching Death Star
+#032 - Bunker/Tower BGM #1
+#033 - Bunker/Tower BGM #2
+#034 - Trench Flying BGM
+#031 - Death Star Destroyed
+#028 - Game Over (High Score List)
+
+[Voice]
+
+#006 - Credit Sound #1 - Obi-Wan - "The Force will be with you.."
+#003 - Credit Sound #2 - Obi-Wan - "Always"
+#007 - Han - "Great Shot, Kid.  That was one in a million!"
+#026 - Han - "Yahooo!!  You're all clear, kid!"
+#009 - Luke - "I'm hit, but not bad.  R2 see what you can do with it!"
+#013 - Luke - "I've lost R2!"
+#015 - Luke - "R2, try and increase the power!"
+#016 - Luke - "Red Five standing by.."
+#018 - Luke - "I can't shake him!"
+#019 - Luke - "Look at the size of that thing!"
+#023 - Luke - "This is Red Five, I'm going in!"
+#005 - Obi-Wan - "The Force will be with you, always.."
+#012 - Obi-Wan - "Let go, Luke!"
+#017 - Obi-Wan - "Remember.."
+#024 - Obi-Wan - "Luke, trust me.."
+#025 - Obi-Wan - "Use the Force, Luke!"
+#008 - Vader - "I have you now!"
+#011 - Vader - "I'm on the leader!"
+#021 - Vader - "Stay in attack formation!"
+#022 - Vader - "The force is strong with this one!"
+#014 - R2D2 Hit
+#004 - Tie Fighter Sound
+
+[SFX]
+
+#035 SFX
+#038 SFX
+#039 SFX
+#040 R2D2 Destroyed
+#041 SFX
+#042 SFX
+#044 SFX
+#045 SFX
+#046 SFX
+#047 R2D2 Sound #1
+#048 R2D2 Sound #2
+#049 R2D2 Sound #3
+#050 R2D2 Sound #4
+#051 Lost a Shield
+#052 SFX
+#053 SFX
+#054 SFX
+#056 SFX
+#057 Turret Fire
+#058 Laser
+#059 SFX
+
+// Basic Listing by Tafoid
+
+$end

@@ -1,0 +1,38 @@
+﻿$name=burnforc
+$version=2
+$default=525
+$fixed_volume=388
+$main
+
+#525 Coin <time="2">
+#010 [SFX] Mothership Appearing <time="6.6">
+#000 Taking Off
+#027 Bay Yard (1st Day)
+#050 Sarinuka Sands (2nd Day)
+#052 Aero Space (3rd Day)
+#015 Boss II
+#023 Bonus Stage
+#048 Grass Land (4th Day)
+#017 Another World I (5th Day)
+#056 Another World II (5th Day)
+#031 Boss I
+#007 Continue
+#005 Lunar Spaceport (Final Day)
+#039 Graduation
+#002 Closing Theme
+#021 Winners
+#009 Clear
+
+#054 Bay Yard (1st Day) - Part B
+#050 Sarinuka Sands (2nd Day) - Part B
+#052 Aero Space (3rd Day) - Part B
+#048 Grass Land (4th Day) - Part B
+
+  [Source]
+  Burning Force / Namco Game Sound Express Vol.2
+  Victor Entertainment  VICL-15001  Feb 7, 1990
+
+  [Sound Composer]
+  Yoshinori Kawamoto
+
+$end

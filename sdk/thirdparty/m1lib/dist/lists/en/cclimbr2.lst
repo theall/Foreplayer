@@ -1,0 +1,80 @@
+﻿$name=cclimbr2
+$version=2
+$default=01
+//$songmax=$3b
+$main
+
+#01 Coin <time="1.7">
+#46 Start / Samba De Lum (BGM 1) <time="1:50.7">
+#35 [Voice] <time="3.0">
+#47 Restart <time="7.0">
+#57 Mambo De Lum (BGM 2) <time="2:30.7">
+#54 Clear 2 <time="44.3">
+#49 Samba De Lum (BGM 1) <time="1:45.6">
+#50 Gorrila <time="1:11.5">
+#51 Condor <time="1:00.8">
+#52 Balloon <time="44.0">
+#58 Ending <time="42">
+#48 Game Over <time="5.5">
+#59 Name Entry <time="41">
+
+#53 Unused <time="34.9">
+//#55 Unused <time="34.9">
+//#56 Unused <time="34.9">
+//#25 Unused <time="8.3">
+
+------------------------------------------------------
+
+#34 [Voice] ite <time="2.5">
+#35 [Voice] aree <time="2.5">
+#38 [Voice] yoisho <time="2.5">
+#39 [Voice] ganbare <time="2.5">
+#40 [Voice] wow <time="2.5">
+#01 [SFX] coin <time="2.0">
+#02 [SFX] <time="2.5">
+#03 [SFX] <time="2.5">
+#04 [SFX] <time="2.5">
+#05 [SFX] <time="2.5">
+#06 [SFX] <time="2.5">
+#07 [SFX] <time="2.5">
+#08 [SFX] <time="2.5">
+#09 [SFX] <time="3.1">
+#10 [SFX] <time="4.0">
+#11 [SFX] <time="2.5">
+#12 [SFX] <time="2.5">
+#13 [SFX] <time="2.5">
+#14 [SFX] <time="2.5">
+#15 [SFX] <time="2.5">
+#16 [SFX] <time="2.0">
+#17 [SFX] <time="2.5">
+#18 [SFX] <time="2.5">
+#19 [SFX] <time="2.5">
+#20 [SFX] <time="2.5">
+#24 [SFX] <time="4.5">
+#27 [SFX] <time="3.5">
+#31 [SFX] <time="2.5">
+#32 [SFX] <time="2.5">
+#33 [SFX] <time="2.5">
+#36 [SFX] <time="2.5">
+#37 [SFX] <time="2.5">
+#41 [SFX] <time="2.5">
+#42 [SFX] <time="2.5">
+#43 [SFX] <time="2.5">
+#44 [SFX] <time="5.0">
+#45 [SFX] <time="2.5">
+
+  [Source]
+  Armed F, Crazy Climber 2 / Nichibutsu
+  Pony Canyon / Scitron  PCCB-00020  Jun 21, 1990
+
+  Video Game Anthology Vol.5 for X68000
+  Dempa 1993
+
+  [Sound Composer]
+  Kenji Yoshida
+  Satoru Fujiwara (Clear 1, Clear2)
+
+// List contribution by Neo Techno Bou on 2003-11-29
+// Updated by Neo Techno Bou on 2003-12-27
+// English list by Fuj
+$end

@@ -1,0 +1,95 @@
+﻿$name=scontra
+$version=2
+$default=$089
+$main
+
+$089 What is This Place (Title Demo)
+$080 Thunder Landing (BGM 1)
+$085 Great Heli - Ruined Base (Heli BGM - Boss 1)
+$08a Pattern Clear No.1 (Stage Clear 1)
+$081 In a Tight Squeeze (BGM 2)
+$086 Ruined Base (Boss 1)
+$082 Jungle Juncture (BGM 3)
+$087 Creature from Outer Space (Boss 2)
+$083 No Escape (BGM 4)
+$084 Deathbed (BGM 5)
+$088 Hotter Than Hell (Boss 3)
+$08f Pattern Clear No.2 (Stage Clear 2)
+$08e Free World (Ending)
+$08c Game Over
+$08b Continue
+$08d Ranking
+
+------------------------------------
+
+$000 [Command] Sound Stop
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+
+#065 [Voice] What is this place?
+#066 [Voice] Keep your eyes peeled (?)
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [Voice] Please continue.
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+
+  ■出典
+  ミュージック・フロム・スーパー魂斗羅＆A-JAX
+  KING RECORDS  K30X-7702  1988.03.21
+
+  ミュージック・フロム・スーパー魂斗羅＆A-JAX
+  KING RECORDS  KICA-2307  1993.05.21
+
+$end

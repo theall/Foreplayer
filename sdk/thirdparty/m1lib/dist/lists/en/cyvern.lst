@@ -1,0 +1,26 @@
+﻿$name=cyvern
+$version=2
+$default=001
+$main
+
+#001 Title
+#002 Select
+#003 Stage 1
+#004 Stage 1 [alt.]
+#005 Boss 1
+#006 Stage 2
+#007 Boss 2
+#008 Stage 3
+#009 Boss 3
+#010 Stage 4
+#011 Boss 4-1
+#012 Boss 4-2
+#013 Stage 5
+#014 Boss 5-1
+#015 Boss 5-2
+#016 Stage Clear
+#019 Credits Roll
+#018 Game Over
+
+//list composed by huntingforce
+$end

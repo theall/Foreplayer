@@ -1,0 +1,32 @@
+$name=argus
+$version=2
+$default=035
+$main
+
+#035 Demo
+#014 Coin
+#012 Start
+#013 BGM 1
+#047 Stage Clear
+#011 Landing
+#025 Landing Successful
+#033 BGM 2
+#023 Extend
+#045 Battle
+#028 Game Over
+#036 High Score (1st)
+#016 High Score (2nd - )
+#039 Ranking Table
+
+#022 ???
+#042 ???
+
+  [Source]
+  Game Sound Jaleco -G.S.M. JALECO 1-
+  Pony Canyon / Scitron  D28B0003  Aug 21, 1988
+
+  [Composer]
+  Shin'ichi Sakamoto
+
+// List by szk
+$end

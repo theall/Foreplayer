@@ -1,0 +1,82 @@
+﻿$name=topland
+$version=2
+$default=01
+$main
+
+#001 Title Demo
+#019 Credit Inserted
+#002 Control Yoke Adjustment
+#005 Tokyo International Airport
+#011 Main Theme 1 (Practice, Light Airplane)
+#018 Result 1
+#003 Osaka International Airport
+#004 Fukuoka International Airport
+#006 San Francisco International Airport
+#012 Main Theme 2 (Medium Airplane)
+#009 Charles de Gaulle International Airport
+#007 Rio de Janeiro International Airport
+#008 Sydney International Airport
+#013 Main Theme 3 (Large Airplane)
+#010 Dulles International Airport
+#014 Landing Failed
+#015 Result 2
+#020 Credits
+#017 Name Entry
+#016 Game Over
+
+-----------------------------------------------------
+
+#021 [SFX]
+#022 [SFX]
+#023 [SFX] 
+#025 [SFX] 
+#026 [SFX] Landing
+#027 [Voice] Thank you.
+#029 [Voice] (Landing at Osaka)
+#030 [Voice] (Landing at Fukuoka)
+#031 [Voice] (Landing at Tokyo)
+#032 [Voice] (Landing at San Francisco)
+#033 [Voice] (Landing at Charles de Gaulle)
+#034 [Voice] (Landing at Dallas)
+#035 [Voice] (Landing at Rio de Janeiro)
+#036 [Voice] (Landing at Sydney)
+#038 [Voice] Roger.
+#039 [Voice] (Communication)
+#040 [Voice] (Communication)
+#041 [Voice] (Communication)
+#042 [Voice] (Communication)
+#043 [Voice] (Communication)
+#045 [Voice] Emergency, pull up, pull up!
+#046 [Voice] Emergency, decreace altitude, decreace altitude!
+#047 [Voice] Emerency, right turn, right turn!
+#048 [Voice] Emergency, left turn, left turn!
+#049 [Voice] Emergency, throttle down, throttle down!
+#050 [Voice] Course out.
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#230 
+#241 Orchestra Hit (ADPCM-B)
+#242 PSG 440 Hz
+#243 FM 440 Hz
+#244 Sound Check
+#245 
+#246 
+#247 Drums
+#248 
+
+  [Source]
+  Kyukyoku Tiger -G.S.M. Taito 2-
+  Pony Canyon / Scitron  D28B0008  Nov 21, 1988
+
+  [Sound Composer]
+  Zuntata
+
+// Original List from Amuse
+// English List by Fujix
+// Updated by x68030
+$end

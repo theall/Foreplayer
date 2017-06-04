@@ -1,0 +1,113 @@
+﻿$name=pnickj
+$version=2
+$default=103
+$main
+
+#103 [Voice] Capcom
+#001 [SFX] Credit Inserted
+#101 [Voice] Ready <time="1.7">
+#102 [Voice] Go ! <time="1.7">
+#040 Theme 1 (1-player Mode)
+#064 Completed
+#066 Credit
+#067 Result
+#037 Theme 2 (VS Mode)
+#075 Win
+#071 Game Over
+
+#032 Unused Music 01
+#033 Unused Music 02
+#034 Unused Music 03
+#035 Unused Music 04
+#036 Unused Music 05
+#038 Unused Music 06
+#039 Unused Music 07
+#041 Unused Music 08
+#042 Unused Music 09
+#043 Unused Music 10
+#044 Unused Music 11
+#045 Unused Music 12
+#046 Unused Music 13
+#047 Unused Music 14
+#048 Unused Music 15
+#049 Unused Music 16
+#050 Unused Music 17
+#051 Unused Music 18
+#052 Unused Music 19
+#053 Unused Music 20
+#054 Unused Music 21
+#055 Unused Music 22
+#056 Unused Music 23
+#057 Unused Music 24
+#058 Unused Music 25
+#059 Unused Music 26
+#060 Unused Music 27
+#061 Unused Music 28
+#062 Unused Music 29
+#063 Unused Music 30
+#065 Unused Music 31
+#068 Unused Music 32
+#069 Unused Music 33
+#070 Unused Music 34
+#072 Unused Music 35
+#073 Unused Music 36
+#074 Unused Music 37
+
+---------------------------------------------------
+  [SFX] 
+
+#001 [SFX] 
+#002 [SFX] 
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] Ready
+#102 [Voice] Go !
+#103 [Voice] Capcom
+
+// List contribution by ZEK.
+// English List Q/A and Fixed by Fujix
+$end

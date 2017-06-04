@@ -1,0 +1,216 @@
+﻿$name=sonicwi3
+$version=2
+$default=002
+$fixed_volume=129
+$main
+
+#002 Neo Geo Logo
+#032 Video System!
+
+#033 Illusion (Opening & Credits Roll)
+#034 Overture (Player Select)
+#036 Dirty City (Tokyo)
+#051 Show Me What You've Got! (Boss)
+#055 It's A Sonic Jungle (Stage Clear 1)
+#037 Scorchers (Germany - Naval Port)
+#038 Overdrive Man (Africa - Desert)
+#039 The Sonic Jungle Show Part 1 (Bonus Stage 1)
+#040 Stereo Type (Grand Canyon)
+#041 Lackluster Lacuna (London 1)
+#044 Lackluster Lacuna -Remix- (London 2)
+#048 With Deep Emotion (France)
+#042 Motif (Panama Canal)
+#045 The Sonic Jungle Show Part 2 (Bonus Stage 2)
+#046 Overdrive Man -Remix- (Africa - Desert)
+#047 Quacking Meditator (Asia - Ruins)
+#043 An Exalted Executioner Was Exclaimed (Soviet Russia - Fortress)
+#049 Deep Groove (Deep Sea)
+#050 Odyssey (Mars)
+#053 Deja vu (Final Boss)
+#054 The Theme of So-Takeko (Final Boss "So-Takeko")
+#035 It's A Sonic Jungle 2 (Stage Clear 2)
+#058 Queer A Player Piano (Ending)
+#056 Illusion -Short Version- (Name Entry)
+
+#123 Special Weapon 1
+#136 Special Weapon 2
+#142 Special Weapon 3
+
+-----------------------------------------------------------
+ [Voice]
+
+#085 [Voice]
+#174 [Voice]
+#175 [Voice]
+#214 [Voice]
+#215 [Voice]
+#216 [Voice]
+#217 [Voice]
+#218 [Voice]
+#220 [Voice]
+#223 [Voice]
+#230 [Voice]
+#236 [Voice]
+#237 [Voice]
+#238 [Voice]
+#239 [Voice]
+#240 [Voice]
+#241 [Voice]
+#242 [Voice]
+#243 [Voice]
+#244 [Voice]
+#245 [Voice]
+#246 [Voice]
+#247 [Voice]
+#248 [Voice]
+#249 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#080 [SFX] Credit Inserted
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#171 [SFX]
+#172 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#180 [SFX]
+#181 [SFX]
+#182 [SFX]
+#183 [SFX]
+#184 [SFX]
+#185 [SFX]
+#186 [SFX]
+#187 [SFX]
+#188 [SFX]
+#189 [SFX]
+#190 [SFX]
+#191 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#219 [SFX]
+#221 [SFX]
+#222 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#250 [SFX]
+
+  [Source]
+  Sonic Wings 3 / Video System
+  Pony Canyon / Scitron  PCCB-00193  Oct 20, 1995
+
+// List contributed by NK
+// English list by NK
+$end

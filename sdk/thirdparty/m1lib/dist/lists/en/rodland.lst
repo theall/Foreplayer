@@ -1,0 +1,95 @@
+﻿$name=rodland
+$version=2
+$default=26
+$songmax=79
+$fixed_volume=100
+$main
+
+#026 Demonstration
+#031 Credit Inserted
+#001 Chapter 1 - Opening 1
+#002 Chapter 1 - Opening 2
+#020 Secene of the Forest "Morning Has Come to the Forest"
+#007 Chapter 1 - Song 1 "Let's Sing Gaily"
+#003 Chapter 1 - Interval 1
+#008 Chapter 1 - Song 2 "Duet of Birds"
+#013 Extra Game
+#014 When I'm Encouraged (Extend)
+#021 Chapter 1 - Song 3 "Dance on Maple Leaf"
+#004 Chapter 1 - Interval 2
+#016 Theme of Boss 1
+#018 Chapter 1 - Ending
+
+#022 Chapter 2 - Song 1 "What the Auster Encountered"
+#023 Chapter 2 - Interval (unused)
+#009 Chapter 2 - Song 2 "Waltz of the Ants"
+#025 Chapter 2 - Interval
+#006 Chapter 2 - Song 3 "March"
+#019 Theme of Boss 2
+#005 Chapter 2 - Ending
+
+#024 Theme of Boss 3
+#015 Credits Roll "Harmonica of Peace"
+#010 When I'm Discouraged (unused)
+#011 Continue
+#012 Game Over
+#017 Name Entry "Memory of the Old Flautist"
+
+------------------------------------------------------
+
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#067 [SFX] 
+#068 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX] 
+#079 [SFX]
+
+  [Soundtrack]
+  Rod-Land / Jaleco
+  Pony Canyon / Scitron  PCCB-00028  May 21, 1990
+
+  [Sound Composer]
+  Tsukasa Tawada
+
+// List contribution by R
+// English list by Fujix
+// Updated by Anonymous
+$end

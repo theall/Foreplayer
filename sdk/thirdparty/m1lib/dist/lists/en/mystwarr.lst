@@ -1,0 +1,42 @@
+﻿$name=mystwarr
+$version=2
+$default=232
+$songmax=239
+$main
+
+#232 Introduction (Title demo)
+#231 Respectively 1 (Player select)
+#222 Respectively 2 (Prologue)
+#208 Theme from Mystic Warriors (Stage 1 BGM)
+#215 Hellrazor (Normal boss BGM 1)
+#209 Lift & Lodge (Stage 2 BGM 1)
+#210 Sonic Descending (Stage 2 BGM 2)
+#211 Infinite Underground (Stage 3 BGM)
+#217 Chauvinist for Skull (Normal Boss BGM 2)
+#212 Radical River (Stage 4 BGM)
+#213 Beyond The Primeval Forest (Stage 5 BGM)
+#236 On The Blind Track (Stage 6 BGM)
+#226 Interceptor 1 (Immolation death BGM 1)
+#227 Interceptor 2 (Immolation death BGM 2)
+#224 Interceptor 3 (Immolation death BGM 3)
+#234 (Stage 7 BGM 1)
+#220 Up to The Stratosphere (Stage 7 BGM 2)
+#221 Great Airforce (Stage 7 BGM 3)
+#239 Fall into The Air (Hovering Demo BGM)
+#216 Majestic Fortress (Stage 8 BGM)
+#238 Bushido (Appearance of Black Mark - Harakiri BGM)
+#219 Kingdom for Skull (Stage 9 BGM)
+#223 Revenge of Ninja 1 (President's office - Irruption 1)
+#225 Revenge of Ninja 2 (President's office - Irruption 2)
+#228 Dominatior (Final Boss)
+#233 Intermission (Mission ompleted)
+#229 Flashback 1 (Credits roll)
+#237 Flashback 2 (Credits roll end)
+#214 History Repeats Itself (Game over)
+#230 Glad It's All Over (Ranking)
+
+  [Source]
+  Konami Amusument Sounds '93 - Summer
+  King Records  KICA-7616, 7617  Aug 21, 1993
+
+$end

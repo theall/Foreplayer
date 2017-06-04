@@ -1,0 +1,100 @@
+﻿$name=searchar
+$version=2
+$default=078
+$main
+
+  [BGM]
+
+#078 SAR Title Screen 
+#191 [SFX] COIN INSERTION
+#079 Introduction -THE VANISHED PIONEER SPACE SHIP- ~ STAFF ROLL 
+#067 SECTION 1-0~1-2 
+#081 SECTION 1-3 - BOSS MECH-TYPE "CHAGAMAN" 
+#069 SECTION 2-0~2-2
+#084 SECTION 2-3 - BOSS MECH-TYPE "CHONMA-G TANK" 
+#074 SECTION 3-0~3-4
+#083 SECTION 3-5 - BOSS BIO-TYPE "DEVIL SNAKE"
+#076 SECTION 4-0~4-2
+#085 SECTION 4-3 - BOSS BIO-TYPE "BIG GERM"
+#080 END
+#086 GAME OVER
+
+#068 SECTION 1-0~1-2 (Alt)
+#070 SECTION 2-0~2-2 (Alt)
+#073 SECTION 3-0~3-4 (Alt)
+#077 SECTION 4-0~4-2 (Alt)
+
+---------------------------------------------------
+  [SFX]
+
+#136 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#155 [SFX] 
+#157 [SFX] 
+#158 [SFX] 
+#159 [SFX] 
+#160 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+#163 [SFX] 
+#164 [SFX] 
+#165 [SFX] 
+#166 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#172 [SFX] 
+#174 [SFX] 
+#175 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#179 [SFX] 
+#191 [SFX] COIN INSERTION
+#194 [SFX] 
+#195 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+
+---------------------------------------------------
+  [Voice]
+
+#192 [Voice] 
+#193 [Voice] 
+#222 [Voice] bug
+
+
+  [Composers]
+  Hinjakun
+
+// List contribution by Simon B., done in playing the game.
+$end

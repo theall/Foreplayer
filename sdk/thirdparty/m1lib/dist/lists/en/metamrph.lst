@@ -1,0 +1,44 @@
+﻿$name=metamrph
+$version=2
+$default=$cd
+$songmax=$f0
+$main
+
+$cd AD 199X (Opening)
+$ea Legendary Heroes (Select Player)
+$e9 New Beginning (Start Demo)
+$ce Ruin of Bacarous (Stage 1 BGM)
+$d9 Caprious Appears (Stage 1, 3 Boss, Intro)
+$db Gote and Goliath (Stage 1, 3 Boss)
+$eb The Moment of Triumph (Round Clear)
+$cf Flamy Cave (Stage 2 BGM)
+$dc Fire Bird (Stage 2 Boss, Stage 6 Mid Boss)
+$e5 Fanfare (Bonus Stage Start)
+$e7 Destroy Them All! (Bonus Stage "Rock Crush" BGM)
+$e8 Celebration (Bonus Stage Clear)
+$d0 Frozen Land (Stage 3 BGM)
+$d2 Wicked Forest (Stage 4-1 BGM)
+$d4 Four Warriors (Stage 4-2 BGM)
+$da Gun-oh Appears (Stage 4 Boss, Intro)
+$dd Battle Royal in the Forest (Stage 4 Boss)
+$e6 Get a Move On! (Bonus Stage "High Speed" BGM)
+$d6 The Colosseum of Revenge (USA Version, Stage 5 BGM)
+$de The Devil in the Colosseum (Stage 5 Boss)
+$d7 Warriors of Death Shadow's Castle (Stage 6-1)
+$d8 Chorus (Stage 6-2)
+$df Death Shadow (Final Boss 1)
+$e1 The Dragon of Fear (Final Boss 2)
+$e3 The End of Death Shadow (Final Boss 3)
+$ec Somebody Up There Likes Me (All Rounds Clear)
+$ed Toward the Sky of Hope (Ending)
+$ee Stand Up! (Continue)
+$ef End Song (Game Over)
+$f0 Speaker Test
+
+  [Source]
+  Konami Amusement Sounds '93 - Autumn
+  King Records  KICA-7620, 7621  Oct 21, 1993
+
+// English List Translation by Fujix
+// Pointing out typo and mistakes will be welcomed :)
+$end

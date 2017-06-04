@@ -1,0 +1,185 @@
+﻿$name=lockloadu
+$version=2
+$default=007
+$main
+
+#007 TERRORISM (DEMO)
+#012 DOUBLE MAGNUM (START)
+#008 SIGHTING (GAME SELECT)
+#009 PREPARING FOR BATTLE (STAGE SELECT)
+#019 KNOW YOUR JOB (STORY)
+#013 GUNHARD (THEME OF GUNHARD)
+#042 CHANGE MAGAZINE (SCENE CLEAR)
+#014 DEAD LINE (BGM 2)
+#015 HEART OF THE MOMENT (BGM 3)
+#017 MAXIMUM LOAD (BOSS 1)
+#020 SAFE WAY BACK (STAGE CLEAR)
+#016 HYDRA SHOCK (BGM 4)
+#018 CRAZY ROCKN' ROLL (BOSS 2)
+#033 ALL CLEAR (GAME CLEAR)
+#021 LAST RESORT (ROLL)
+#010 SHAKE UP! (CONTINUE)
+#011 TAKE FIRE!! (GAME OVER)
+
+ (GUN CLUB MODE)
+#022 SUPER EVENT (GUN CLUBTHEME)
+#023 SHOOTER ON THE LINE… (START)
+#024 POINT BLANK (BGM 1)
+#043 STOP IT ! (STOP)
+#026 RESULT (STAGE CLEAR)
+#025 10X (BGM 2)
+#027 SORRY (NO CLEAR)
+#028 GRAND MASTER (ENDING)
+
+ (SCORE GAME MODE)
+#029 KILLING HOUSE (SCORE GAME THEME)
+#030 READY FOR ACTION (START)
+#031 SHOOTING LINE (BGM 1)
+#032 TACTICAL (BGM 2)
+
+ (WIN-LOS GAME MODE)
+#034 WONDERLAND (WIN-LOS GAME THEME)
+#035 ENJOY! (START)
+#036 PANEL ATTACK (GAME 1)
+#037 COCKROACH BUSTERS (GAME 2)
+#038 ANIMAL SLOT (GAME 3)
+#039 CONCENTRATION (GAME 4)
+#040 SAVE THE EARTH (GAME 5)
+#041 END HAPPILY (ENDING)
+
+---------------------------------------------------
+  [S.E.]
+
+#044 [S.E.] 
+#045 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#062 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#065 [S.E.] 
+#066 [S.E.] 
+#067 [S.E.] 
+#070 [S.E.] 
+#072 [S.E.] 
+#073 [S.E.] 
+#074 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#125 [S.E.] 
+#127 [S.E.] 
+#128 [S.E.] 
+#129 [S.E.] 
+#130 [S.E.] 
+#131 [S.E.] 
+#132 [S.E.] 
+#133 [S.E.] 
+#134 [S.E.] 
+#135 [S.E.] 
+#136 [S.E.] 
+#138 [S.E.] 
+#139 [S.E.] 
+#140 [S.E.] 
+#141 [S.E.] 
+#143 [S.E.] 
+#144 [S.E.] 
+#145 [S.E.] 
+#146 [S.E.] 
+#149 [S.E.] 
+#150 [S.E.] 
+#151 [S.E.] 
+#153 [S.E.] 
+#156 [S.E.] 
+#157 [S.E.] 
+#159 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#004 [Voice] 
+#005 [Voice] 
+#006 [Voice] 
+#046 [Voice] 
+#058 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#071 [Voice] 
+#083 [Voice] 
+#086 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#126 [Voice] 
+#137 [Voice] 
+#142 [Voice] 
+#147 [Voice] 
+#148 [Voice] 
+#152 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#158 [Voice] 
+
+  ■出典
+  ダンクドリーム・ガンハード / データイースト
+  PONY CANYON / SCITRON  PCCB-00173  1995.01.20
+
+  ■作曲
+  吉田 博昭 (MARO)
+
+// List contribution by ZEK.
+$end

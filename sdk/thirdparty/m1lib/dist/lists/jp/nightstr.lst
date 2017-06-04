@@ -1,0 +1,54 @@
+﻿$name=nightstr
+$version=2
+$default=$3a
+$songmax=$85
+$main
+
+$3a Coin <time="0:04">
+$17 Start <time="0:04">
+$5e Opening <time="0:16">
+$2d [Voice] Stand by, ready? Good luck!" <time="0:3">
+$3f Urban Trail (市街のテーマ)
+$22 Warning!
+$32 [Voice] Warning! Target is approaching.
+$46 Boss 1
+$4c Round Clear
+$3e Trance Parlent in Blue (郊外のテーマ)
+$47 Boss 2
+$43 Brain Worker (地下工場のテーマ)
+$48 Boss 3
+$41 Aquarius (海上のテーマ)
+$40 Fly Away (上空のテーマ)
+$49 Boss 4
+$42 Terarist (ビル街のテーマ)
+$4a Boss 5
+$85 ma-gu-ri-vu -intro- (寺院のテーマ) <time="0:10">
+$45 ma-gu-ri-vu (寺院のテーマ)
+$44 Burning Road (地下道のテーマ)
+$4b Boss 6
+$3d シ・メール (Ending)
+$3c commune (Name set)
+
+-----------------------------------------
+ [S.E.]
+
+$2e [Voice] Shield destroyed.
+$2f [Voice] Be careful! Only a few remaining shields.
+$30 [Voice] Danger, danger. You have lost your shields.
+$31 [Voice] Out of control.
+$33 [Voice] Secret program activated. Transformation begins.
+$34 [Voice] The main engine is destroyed by fire. Escape and good luck.
+$35 [Voice] A supporting plane approaches. It will join you soon.
+$36 [Voice] Right side has caught fire. Drop the outer trim
+$37 [Voice] A booster unit approaches. Coupling will begin.
+$38 [Voice] All gun barrels open!
+$39 [Voice] Congratulations!
+
+  ■出典
+  DARIUS II -G.S.M. TAITO 4- / ZUNTATA
+  PONY CANYON / SCITRON  PCCB-00010-1～2  1989.11.21
+
+  ■作曲
+  高木正彦 (Mar.)
+
+$end

@@ -1,0 +1,101 @@
+$name=g_sons
+$version=2
+$default=016
+$songmax=65536
+$main
+
+#016 Title Screen
+#002 Options/Credits
+#022 Intro
+#011 Toxic Caves
+#004 Boss
+#009 Bonus Stage
+#007 Lava Powerhouse
+#128 The Machine
+#008 Showdown
+#019 Game Over
+
+[SFX]
+
+#014 Chaos Emerald
+#017 [SFX]
+#018 [SFX]
+#020 Sega Logo
+#021 [SFX]
+#023 [SFX]
+#033 Score Tally
+#034 Boss Defeated
+#037 Warp
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#069 Too Bad
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#080 [SFX]
+#083 [SFX]
+#084 [SFX]
+#088 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#115 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+
+  [Sound Composers]
+  Howard Drossin, Brian Coburn
+
+// Full List contributed by Yawackhary. The sound system loops from #130.
+$end 

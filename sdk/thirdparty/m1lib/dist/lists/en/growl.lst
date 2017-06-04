@@ -1,0 +1,63 @@
+﻿$name=growl
+$version=2
+$default=$1d
+$songmax=$73
+$main
+
+$1d Catch #VI (Signature)
+$0d My Earth (Title Screen)
+$0c Credit
+$0e Peaceful (Select)
+$0f Attack (Opening)
+$10 Rune & Ark (Main Theme #1)
+$11 Theme of Kain (Boss A)
+$13 Success (Clear #1)
+$14 Fade in (Clear #2)
+$15 Mazing (Scene 3)
+$1a ___ what's? (Scene 5)
+$16 Paper Guy (Boss B)
+$12 Fazz Top (Bonus Stage)
+$17 Green Land (Scene 4)
+$18 Dear Partner (Main Theme #2)
+$1e Down Way (Ending)
+$20 The Inn of the Last Home (Name Entry)
+
+$1f Not released on CD
+
+--------------------------------------------------
+
+#033 [Voice] Hey, come on!
+#073 [Voice] W, what the?
+#079 [Voice] Argh!
+#080 [Voice] Aargh!
+#081 [Voice] Aaaghhh!
+#082 [Voice] Aghh!
+#083 [Voice] Ough
+#084 [Voice] Ough!
+#085 [Voice] Oh, no! Please spare my life, and I'll give you anything you want!
+#086 [Voice] Uhhahahaha, Big bucks for me.
+#087 [Voice] Just what you deserve. Uhhahahaha.
+#088 [Voice] Drop dead you scum.
+#089 [Voice] Who do you think you are?..
+#090 [Voice] Get lost, wimp.
+#091 [Voice] Make like a tree, and leave.
+#092 [Voice] Gonna get it, sucker.
+#093 [Voice] Hey, stop it.
+#094 [Voice] What do you jerks think you're doing?
+#095 [Voice] You won't get away with this.
+#096 [Voice] Oh, no. He got me.
+#097 [Voice] Thanks!
+#098 [Voice] Good, good.
+#099 [Voice] Hahaha. This is the end for you!
+// #034-#072 SFX
+// #074-#078 SFX
+// #115 SFX
+
+  [Source]
+  Runark, Gun Frontier / Taito
+  Pony Canyon / Scitron  PCCB-00060  Apr 21, 1991
+
+  [Sound Composer]
+  Yasuhisa Watanabe (Yack.)
+
+$end

@@ -1,0 +1,235 @@
+﻿$name=sexyparo
+$version=2
+$default=$228
+$songmax=1367
+//$fixed_volume=308
+$main
+
+$228 タコスケの野望 (Opening)
+$229 序曲「セクシーパロディウス」 (Title) <time="42" fadeout="yes" fadeoutlength="10">
+$21e TWINCLE ASSORT (Player Select) <time="46" fadeout="yes" fadeoutlength="10">
+	きらきら星変奏曲 / モーツァルト
+$22e 依頼来たりて (Start Demo)
+
+$202 ビックバイパー＆ロードブリティッシュのテーマ (ビックバイパー＆ロードブリティッシュ 空中戦) <time="49" fadeout="yes" fadeoutlength="10">
+	Beginning of the History / グラディウス
+	Vic Viperのテーマ / パロディウスだ！
+$20a PASTORAL MARCH (Mission 1 - 北の牧場) <time="2:05" fadeout="yes" fadeoutlength="10">
+	北海道はどこにある？ / ゴンチチ
+	アメリカン・パトロール / F・ミーチャム
+	懐かしの我がケンタッキーの家 / S・フォスター
+$214 コーンこん狂詩曲 (Mission 1 - コーンチワボス) <time="47" fadeout="yes" fadeoutlength="10">
+	こぎつねこんこん / ドイツ童謡
+
+$203 ひかる＆あかねのテーマ (ひかる＆あかね 空中戦) <time="47" fadeout="yes" fadeoutlength="10">
+$20b 1・2・功夫、竜宮を行く (Mission 3-A - 竜宮ステージ) <time="2:00" fadeout="yes" fadeoutlength="10">
+	イーアルカンフー
+$215 ラブリー乙姫 (Mission 3-A - 乙姫ボス) <time="1:03" fadeout="yes" fadeoutlength="10">
+	イーアルカンフー
+	マイムマイム / イスラエル民謡
+
+$204 マンボ＆サンバのテーマ (マンボ＆サンバ 空中戦) <time="52" fadeout="yes" fadeoutlength="10">
+$20c ちゅーちゅーポルカ (Mission 3-B - 館ステージ) <time="1:06" fadeout="yes" fadeoutlength="10">
+	Vampire Killer / 悪魔城ドラキュラ
+	クラリネットポルカ / ポーランド民謡
+$216 ようこそ、坊や (Mission 3-B - メデューサボス) <time="1:36" fadeout="yes" fadeoutlength="10">
+	Poison Mind / 悪魔城ドラキュラ
+	ハンガリー舞曲第5番 / ブラームス
+
+$205 ミカエル＆ガブリエルのテーマ (ミカエル＆ガブリエル 空中戦) <time="47" fadeout="yes" fadeoutlength="10">
+$20d 超高速BATH (Mission 2 - 浴場ステージ) <time="1:40" fadeout="yes" fadeoutlength="10">
+	郵便馬車 / ネッケ
+$217 ベンキ'n　ペンギン (Mission 2 - とうとうペンギンボス) <time="1:09" fadeout="yes" fadeoutlength="10">
+	ぶんぶんぶん / ボヘミア民謡
+	剣士の入場 / ユリアス・フチーク
+
+$22a シューティングスターのテーマ (シューティングスター 空中戦) <time="1:00" fadeout="yes" fadeoutlength="10">
+	Twin Flight / ツインビーヤッホー！
+$206 DEPARTURE FOR SEXY (ブラックバイパー 空中戦)<time="1:12" fadeout="yes" fadeoutlength="10">
+	Departure for Space / グラディウス
+$20e Let's sing! (Mission 5 - 空中ステージ) <time="2:04" fadeout="yes" fadeoutlength="10">
+	リパブリック讃歌 / アメリカ民謡
+	クラリネットをこわしちゃった / フランス民謡
+$218 ですとろいざキャンディー (Mission 5 - キャンディーコアボス) <time="57" fadeout="yes" fadeoutlength="10">
+	Aircraft Carrier / グラディウス
+
+$207 イワン＆トビーのテーマ (イワン＆トビー 空中戦) <time="45" fadeout="yes" fadeoutlength="10">
+$20f THE MOON APPEARED (Mission 4-A - 炭坑ステージ) <time="2:14" fadeout="yes" fadeoutlength="10">
+	炭坑節 / 日本民謡
+	北海盆唄 / 日本民謡
+$219 タヌコーの運命 (Mission 4-A - タヌコーボス) <time="58" fadeout="yes" fadeoutlength="10">
+	交響曲第5番 ハ短調“運命”/ ベートーベン
+	げんこつ山のたぬきさん / 日本童謡
+
+$208 こいつ＆あいつのテーマ (こいつ＆あいつ 空中戦) <time="53" fadeout="yes" fadeoutlength="10">
+$210 「お願い、助けてっ！」 (Mission 4-B - 倉庫ステージ - JP Ver.) <time="2:39" fadeout="yes" fadeoutlength="10">
+	オリーブの首飾り / クロード・モーガン
+$21a はコンデDANCE (Mission 4-B - はコンデクレーンボス) <time="1:18" fadeout="yes" fadeoutlength="10">
+	カルメンより“ハバネラ” /  ビゼー
+$22f グッドクリア!! (Mission Completed - Good!)
+$230 バッドクリア！ (Mission Completed - Bad!)
+
+$222 カプセル怪獣「カプチーノ」 (ボスオンパレード1 - 極上パロディウスステージ5ボスより) <time="1:30" fadeout="yes" fadeoutlength="10">
+	from	Piano Sonata K.331, 3rd: Rondo Alla Turca / Wolfgang A. Mozart
+$21f ボスBGMだ！ -パロディウスだ！より- (ボスオンパレード2 - パロディウスだ！ステージ1ボスより) <time="56" fadeout="yes" fadeoutlength="10">
+	from	Flight of the Bumblebee / Nikolai Rimsky-Korsakov
+$220 イーグル佐武のテーマ -パロディウスだ！より- (ボスオンパレード3 - パロディウスだ！ステージ2ボスより) <time="42" fadeout="yes" fadeoutlength="10">
+	from	Take Care! / Gradius II
+$221 ホットリップスのテーマ -パロディウスだ！より- (ボスオンパレード4 - パロディウスだ！ステージ3ボスより) <time="1:00" fadeout="yes" fadeoutlength="10">
+	from	Orphee Aux Enfers / Jacques Offenbach
+$21b ゆうこがお相手 (ボスオンパレード - ゆうこボス) <time="1:18" fadeout="yes" fadeoutlength="10">
+	from	Preludes Op.28 #7 / Frederic Chopin
+		Scene from Swan Lake / Piotr Tchaikovsky
+
+$209 オプション＆マルチプルのテーマ (オプション＆マルチプル 空中戦) <time="44" fadeout="yes" fadeoutlength="10">
+$212 最後はハレルヤッ！ (Last Mission - 寝室ステージ) <time="2:09" fadeout="yes" fadeoutlength="10">
+	from	Hornpipe from Water Music / George F. Handel
+		Hallelujah Chorus / George F. Handel
+$21c わたしはか・お・り (Last Mission - 最終ボス) <time="1:02" fadeout="yes" fadeoutlength="10">
+	from	Dark Force / Gradius III
+
+$227 AFTER THE CARNIVAL (Staffroll) <time="1:07">
+$213 マニアック・オブ・シューティング (Special Stage) <time="3:25" fadeout="yes" fadeoutlength="10">
+	from	Challenger 1985 / Gradius
+		Air Battle / Thunder Cross II
+		Counter Attack / MX5000
+		Crystal World / Gradius II
+		Mechanical Base / Gradius III
+		Sturdy Wings / Lightning Fighters
+
+$21d 私ってセクシィ？ (Special Stage - セクシー成人ボス) <time="55" fadeout="yes" fadeoutlength="10">
+	from	Fur Elise / Beethoven
+$223 あーん、がんばってぇー (Continue) <time="37" fadeout="yes" fadeoutlength="10">
+$225 ゲームオーバーなの (Game Over)
+$224 ラ・ン・キ・ン・グ (Ranking) <time="40" fadeout="yes" fadeoutlength="10">
+$226 また、遊びにきてねっ (End Demo)
+	from	Crystal Forever / 沙羅曼蛇
+
+$201 スピーカーテスト
+// ??? Help me! (Mission 4-B - 倉庫ステージ - World Ver.)
+
+-----------------------------------------
+ [S.E. & Voice]
+
+#1055 [Voice] いぇーい
+#1056 [Voice] やぁ
+#1057 [Voice] とぉ
+#1058 [Voice] いやーん
+#1059 [Voice] よーこそ、坊や
+#1061 [Voice] あぁ
+#1062 [Voice] あぁ～あんあぁ～
+#1063 [Voice]
+#1064 [Voice]
+#1065 [Voice] my name is sexy
+#1066 [Voice] あっ
+#1067 [Voice] ああっ
+#1068 [Voice] あぁーー!!
+#1069 [Voice] いやん
+#1070 [Voice] ああーれぇ
+#1071 [Voice] うふふ
+#1123 [Voice] thank you
+#1137 [Voice]
+#1138 [Voice] おお
+#1156 [Voice] ああっ
+#1158 [Voice] ハイッ
+#1177 [Voice] あーはっはっはっは
+#1178 [Voice] おぅ
+#1179 [Voice] うぅ
+#1180 [Voice] ううぅぅぅ
+
+#1281 [Voice] はやくなりまーす
+#1282 [Voice] もっとはやくなりまーす
+#1283 [Voice] どんどんはやくなりまーす
+#1284 [Voice] はやすぎまーす
+#1285 [Voice] 目がまわりまーす
+#1286 [Voice] ミサイル撃てまーす
+#1287 [Voice] 上にも撃てまーす
+#1288 [Voice] 長くて強いでーす
+#1289 [Voice] オプション付きまーす
+#1290 [Voice] すっからかんでーす
+#1291 [Voice] まもってくれまーす
+#1292 [Voice] いくわよ
+#1293 [Voice] まーだいくの？
+#1294 [Voice] すごーい
+#1295 [Voice] はやーい
+#1296 [Voice] もうためー
+#1297 [Voice] 上でも下でもＯＫよ
+#1298 [Voice] 破壊力抜群
+#1299 [Voice] おりゃおりゃおりゃー
+#1300 [Voice] おぷしょん
+#1301 [Voice] もういっちょ
+#1302 [Voice] まだまだー
+#1303 [Voice] 完璧ー
+#1304 [Voice] ああーん、ダメ
+#1305 [Voice] これで安心
+#1306 [Voice] ああーん
+#1307 [Voice] SPEED
+#1308 [Voice] ばぶる
+#1309 [Voice] こんとろーる
+#1310 [Voice] すくりゅー
+#1311 [Voice] サーチ
+#1312 [Voice] OH!
+#1313 [Voice] バリア
+#1314 [Voice] いくぜ
+#1315 [Voice] もういっちょ
+#1316 [Voice] まだまだー
+#1317 [Voice] たまらないぜー
+#1318 [Voice] もう止められないぜ
+#1319 [Voice] これでもくらえ
+#1320 [Voice] まとめてやってやる
+#1321 [Voice] どこからでもかかってこい
+#1322 [Voice] 力が漲るぜ
+#1323 [Voice] やってやる
+#1324 [Voice] うおぉぉぉぉ
+#1325 [Voice] こわいもんなしだ
+#1326 [Voice] ほげー
+#1327 [Voice] はぁぁぁ
+#1328 [Voice] Speed Up
+#1329 [Voice] Auto Option
+#1330 [Voice] Wide Blast
+#1331 [Voice] Spark Laser
+#1332 [Voice] Power Up
+#1333 [Voice] Oh My God!
+#1334 [Voice] Psycho Field
+#1335 [Voice] Missile
+#1336 [Voice] Multi Shot
+#1337 [Voice] Laser
+#1338 [Voice] Option
+#1339 [Voice] Shield
+#1340 [Voice] はやくなるくわ
+#1341 [Voice] まだいくくわ
+#1342 [Voice] まだまだいくくわ
+#1343 [Voice] ついてこれるくわ
+#1344 [Voice] めがまわるくわ
+#1345 [Voice] 落ちていくくわ
+#1346 [Voice] 放り投げるくわ
+#1347 [Voice] 跳ねまわるくわ
+#1348 [Voice] おぷしょんつくくわ
+#1349 [Voice] もひとつつくくわ
+#1350 [Voice] まだつくくわ
+#1351 [Voice] ついに4つ目くわ
+#1352 [Voice] くわーくわーくわー
+#1353 [Voice] ぺんたろうXくわ
+#1354 [Voice]
+#1355 [Voice]
+#1356 [Voice]
+#1357 [Voice]
+#1358 [Voice]
+#1359 [Voice]
+#1360 [Voice]
+#1361 [Voice]
+#1362 [Voice]
+#1363 [Voice]
+#1364 [Voice]
+#1365 [Voice]
+#1366 [Voice]
+#1367 [Voice]
+
+  ■出典
+  セクシーパロディウス / ORIGINAL GAME SOUNDTRACK
+  KING RECORDS  KICA-7703  1996.05.22
+
+// Original list from Amuse
+// Original track names from R.Belmont, MooglyGuy, Toby, Fujix
+// Updated by shaca and Fujix
+$end

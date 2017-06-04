@@ -1,0 +1,50 @@
+﻿$name=roadrunn
+$version=2
+$default=018
+$fixed_volume=100
+$main
+
+#018 Danse De Sabre (A.I. Khachaturyan) (Attract mode)
+#100 [SFX] Coin insert <time="1.5">
+#101 [SFX] Intro - Road Runner <time="2.0">
+#102 [SFX] Intro - Coyote <time="2.0">
+#020 [Voice] "Meep-meep!" <time="1.5">
+#015 William Tell Overture (G.Rossini) (Stage 1)
+
+#011 Thats All Folks (Warner Bros.)
+#012 Theme - The RoadRunner Show (1968) (Warner Bros.)
+#013 Theme - The Bugs Bunny Show (1960) (Warner Bros.)
+#014 Merrie Melodies (Warner Bros.)
+#016 Flight Of The Bumblebee (R.Korsakov)
+#017 Nutcracker (Tchaikovsky)
+
+#021 Thats All Folks (Warner Bros.) (alt)
+#022 Theme - The RoadRunner Show (1968) (Warner Bros.) (alt)
+#023 Theme - The Bugs Bunny Show (1960) (Warner Bros.) (alt)
+#024 Merrie Melodies (Warner Bros.) (alt)
+#025 William Tell Overture (G.Rossini) (alt)
+#026 Flight Of The Bumblebee (R.Korsakov) (alt)
+#027 Nutcracker (Tchaikovsky) (alt)
+#028 Danse De Sabre (A.I. Khachaturyan) (alt)
+
+#030 [SFX]
+#043 [SFX]
+#053 [SFX]
+#064 [SFX]
+#082 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX] Car horn "beep beep"
+#106 [SFX] Car horn "honk" 1
+#107 [SFX] Car horn "honk" 2
+#108 [SFX] Car horn "honk" 3
+#109 [SFX] Car horn "honk" 4
+#110 [SFX]
+#111 [SFX] Explosion 1
+#112 [SFX] Explosion 2
+#113 [SFX] Explosion 3
+#114 [SFX]
+#115 [SFX]
+
+// List contribution by Toby, Mr.Do and RB
+$end

@@ -1,0 +1,26 @@
+﻿$name=tgmj
+$version=2
+$default=009
+$fixed_volume=245
+$main
+
+#009 QSound Logo
+
+#033 Hardening drops. (normal mix) (Less than level 500)
+#034 Hardening drops. (instant death mix) (Level 500 and more)
+#035 Happy Happy (Ending)
+#018 Game Over
+#016 Results
+#017 Break Into
+#032 Let's live variously
+
+  [Source]
+  TGM the Ground Master / Arika
+  Pony Canyon / Scitron  PCCB-00372  May 19, 1999
+
+  [Sound Composer / Adapter]
+  Shinji Hosoe: 033, 034, 018, 016, 017
+  Ayako Sasou: 035, 032
+
+// List by an anonymous contributer
+$end

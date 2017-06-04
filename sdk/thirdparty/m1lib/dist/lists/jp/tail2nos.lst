@@ -1,0 +1,71 @@
+﻿$name=tail2nos
+$version=2
+$default=017
+$main
+
+#017 ATTRACT MODE
+#074 [Voice] CREDIT
+#018 PLEASE SELECT
+#019 WELCOME 
+#021 TIME ATTACK
+#020 YOUR GRID
+#022 BRITISH GP 
+#007 JAPAN GP
+#016 COFFE BRAKE
+#008 U.S.A GP
+#025 MONACO GP
+#026 GOAL IN !
+#013 ENDING
+#027 GAME OVER
+
+#012 未使用曲 1
+#014 未使用曲 2
+
+---------------------------------------------------
+  [S.E.]
+
+#015 [S.E.] <time="5">
+#031 [S.E.] <time="5">
+#071 [S.E.] 
+#072 [S.E.] <time="3">
+#073 [S.E.] 
+#075 [S.E.] 
+#076 [S.E.] 
+#077 [S.E.] 
+#078 [S.E.] 
+#079 [S.E.] 
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#103 [S.E.] 
+#104 [S.E.] 
+#105 [S.E.] 
+#107 [S.E.] 
+#108 [S.E.] 
+#109 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#074 [Voice] CREDIT
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#106 [Voice] 
+
+  ■作曲
+  板村 直樹 (GEKKO ITAMURA)
+
+// List contribution by ZEK.
+$end

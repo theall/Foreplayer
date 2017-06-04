@@ -1,0 +1,83 @@
+﻿$name=polynetw
+$version=2
+$default=128
+$songmax=255
+$main
+
+#128 Ready to Fight! (Player Hanger)
+#129 Select Target! (Staff Entry)
+#131 We are the Opponents! (Introduction)
+#132 Charge! (Falling Down Fanfare)
+#133 Go Go Warriors (Si-Fi, Dungeon, Base)
+#134 Kinokonoko (Rock, Kinokonoko)
+#135 Come on Amigo! (Garden, Cactus)
+#136 Go Go Polynet! (GP, CT)
+#143 Wonder Castele (Castle)
+#144 Pinball (Pinball)
+#147 Getting out of Time! (Final 30)
+#026 Lost Out! (Lost)
+#150 Hooray Baby (Ending)
+#152 Polynet Warriors (Normal Course End Demo)
+#153 This is the Poly-Dance (Hard Course End Demo)
+#154 Warrior of Justice (Super Hard Course End Demo)
+#155 Continue
+
+#240 Sound Test
+//#130 Select Target! (Staff Entry)
+//#137 Go Go Warriors (Si-Fi, Dungeon, Base)
+//#138 Kinokonoko (Rock, Kinokonoko)
+//#141 Go Go Polynet! (GP, CT)
+//#142 Go Go Warriors (Si-Fi, Dungeon, Base)
+//#146 Come on Amigo! (Garden, Cactus)
+//#156 Continue w/o Intro
+
+-----------------------------------------
+　[SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#011 [SFX]
+#012 [SFX]
+#013 [Voice] Easy
+#014 [Voice] Normal
+#015 [Voice] Hard
+#016 [Voice] Super Hard
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [Voice] Ite!
+#022 [SFX]
+#023 [Voice] Tairyoku Kaifuku
+#024 [Voice] Aaaah!
+#025 [Voice] Aah!
+#027 [SFX]
+#028 [SFX]
+#029 [Voice] Go
+#030 [Voice] Yon
+#031 [Voice] San
+#032 [Voice] Ni
+#033 [Voice] Ichi
+#034 [SFX]
+#035 [SFX]
+#036 [Voice] Ite!
+#037 [Voice] Aite!
+
+  [Source]
+  Konami Amusement Sounds '94 Spirng
+  King Records  KICA-7631, 7632  Feb 24, 1994
+
+  [Compose and Arrangement]
+  Tappy Iwase
+
+// Original list contribution by Lhama
+// English list by Fuj
+$end

@@ -1,0 +1,31 @@
+﻿$name=g_ttaa
+$version=2
+$default=093
+$songmax=255
+$main
+
+#093 Konami Logo
+#094 Theme
+#096 Menu <time="1:52" fadeout="yes" fadeoutlength="10">
+#107 Story <time="2:06" fadeout="yes" fadeoutlength="10">
+#095 Team Selection <time="0:51" fadeout="yes" fadeoutlength="10">
+#100 Stadium <time="1:49" fadeout="yes" fadeoutlength="10">
+#102 Western <time="1:14" fadeout="yes" fadeoutlength="10">
+#098 Forest <time="1:25" fadeout="yes" fadeoutlength="10">
+#106 Downtown <time="1:40" fadeout="yes" fadeoutlength="10">
+#099 Monty's Playroom <time="1:35" fadeout="yes" fadeoutlength="10">
+#104 Cheerleaders <time="0:52" fadeout="yes" fadeoutlength="10">
+#097 Extra Games <time="1:46" fadeout="yes" fadeoutlength="10">
+#103 Victory
+#101 Win Game <time="2:28" fadeout="yes" fadeoutlength="10">
+#110 Credits
+#109 Password <time="0:34" fadeout="yes" fadeoutlength="10">
+#105 Lose Game
+#108 Game Over <time="0:39" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Masanori Oouchi, Kiyoshi "K-Mu" Murai
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

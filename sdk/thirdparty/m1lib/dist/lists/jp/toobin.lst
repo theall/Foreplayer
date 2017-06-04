@@ -1,0 +1,146 @@
+﻿$name=toobin
+$version=2
+$default=111
+$main
+
+#004 Music Test 1
+#005 Music Test 2
+#111 Colorado River
+#112 Beach Party 1
+#113 Beach Party 2
+#114 Beach Party 3
+#115 Yukon
+#116 Okeefenokee Swamp
+#117 Amazon
+#118 Nile
+#119 American River
+#120 Argentum
+#121 Cuprum
+#122 Styx
+#123 Jurassic
+#124 Nightmare
+#125 Martian Canals
+#126 Black Forest
+#127 Rio Grande
+#128 Left Bank
+#134 Unknown
+#136 Colorado River
+#137 Left Bank
+#138 Cuprum
+#139 Jurassic
+
+-----------------------------------------------------------
+  [S.E.]
+
+#010 [S.E.]
+#011 [S.E.] Splash 1
+#012 [S.E.] Splash 2
+#013 [S.E.] Rushing Water 1
+#017 [S.E.] Rushing Water 2
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.] Inner Tube Deflating
+#024 [S.E.] Inner Tube Bouncing 1
+#025 [S.E.] Throwing
+#026 [S.E.] Fishing Rod Cast
+#027 [S.E.] Picked up Soda Can
+#028 [S.E.] Picked Up Bag of Money
+#029 [S.E.]
+#030 [S.E.] Inner Tube Bouncing 2
+#031 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.] Penguins
+#045 [S.E.] Soda Can Hits Something
+#046 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#052 [S.E.] Crocodile
+#054 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#063 [S.E.]
+#065 [S.E.] Homing Mine
+#067 [S.E.]
+#068 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.] Murderer
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.] Coin
+#099 [S.E.]
+#100 [S.E.] Score Milestone
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#131 [S.E.] Rushing Water 3
+#133 [S.E.] Whirlpool
+
+-----------------------------------------------------------
+  [Voice]
+
+#141 [Voice] Hillbilly Laugh
+#142 [Voice] Bif & Jet "Yay!"
+#143 [Voice] Native American 1
+#144 [Voice] Native American 2
+#145 [Voice] Native American 3
+#146 [Voice] Devil Laugh
+#147 [Voice] Monster Noises 1
+#148 [Voice] Monster Noises 2
+#149 [Voice] Crow Caw
+#150 [Voice] Cow Moo
+#151 [Voice] Mexican "Ariba!"
+#152 [Voice] Mexican "Yee-Hah!"
+#153 [Voice] Caveman "Ook Ook"
+#154 [Voice] Caveman "Zug Zug"
+
+  ■作曲
+  Matt Furniss
+
+// List created by Cleveland Rock
+// Some tracks have yet to be found or identified
+$end

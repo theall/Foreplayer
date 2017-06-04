@@ -1,0 +1,135 @@
+﻿$name=mtlchamp
+$version=2
+$default=218
+$fixed_volume=344
+$main
+
+#218 マーシャルチャンピオンのテーマ (タイトルデモBGM)
+#222 勇者たち (プレーヤーセレクトBGM)
+#234 ドラ一発！ (トーナメントBGM)
+#220 いざ勝負！ (VS-BGM)
+#212 夕暮れの金閣寺 (金閣寺BGM)
+#216 ホワイトハウスにて (ホワイトハウスBGM)
+#210 歌舞伎狂乱 (歌舞伎BGM)
+#235 アフリカの魂 (アフリカBGM)
+#215 闇夜のパリで (パリBGM)
+#214 アラビアの風 (モスクBGM)
+#213 艦上の死闘 (空母BGM)
+#211 山紫水明 (桂林BGM)
+#208 伝説の古代遺跡 (中国地下遺跡BGM)  
+#209 そびえ立つピラミッド (エジプトBGM)
+#217 最も熱い戦い (ファイナルラウンドBGM)
+#224 挑戦者登場！ (2P乱入BGM)
+#238 運命の宿敵 (ボスBGM)
+#221 勝負あり！ (勝敗表示BGM)
+
+#192 陣・エンディング
+#193 レイチェル・エンディング
+#194 禅・エンディング
+#198 マハンバ・エンディング
+#197 ゴルドー・エンディング
+#199 アヴゥ・エンディング
+#201 ボビー・エンディング
+#195 ホイ・エンディング
+#196 ケイオス・エンディング
+#200 ティティ・エンディング
+
+#219 継続は力なり！ (コンティニューBGM)
+#223 終幕 (ゲームオーバーBGM)
+#202 勝利よ永遠に (スタッフロールBGM)
+
+#229 夕暮れの金閣寺 (金閣寺BGM: W/O INTRO)
+#233 ホワイトハウスにて (ホワイトハウスBGM: W/O INTRO)
+#227 歌舞伎狂乱 (歌舞伎BGM: W/O INTRO)
+#236 アフリカの魂 (アフリカBGM: W/O INTRO)
+#232 闇夜のパリで (パリBGM: W/O INTRO)
+#231 アラビアの風 (モスクBGM: W/O INTRO)
+#230 艦上の死闘 (空母BGM: W/O INTRO)
+#228 山紫水明 (桂林BGM: W/O INTRO)
+#225 伝説の古代遺跡 (中国地下遺跡BGM: W/O INTRO)
+#226 そびえ立つピラミッド (エジプトBGM: W/O INTRO)
+#203 運命の宿敵 (ボスBGM: W/O INTRO) 
+
+#237 スピーカーテスト (not on CD)
+
+
+#258 [S.E.] 
+#259 [S.E.] 
+#260 [S.E.] 
+#262 [S.E.] 
+#263 [S.E.] 
+#264 [S.E.] 
+#320 [S.E.] 
+#321 [S.E.] 
+#322 [S.E.] 
+#323 [S.E.] 
+#324 [S.E.] 
+#325 [S.E.] 
+#326 [S.E.] 
+#327 [S.E.] 
+#328 [S.E.] 
+#329 [S.E.] 
+#330 [S.E.] 
+#331 [S.E.] 
+#332 [S.E.] 
+#333 [S.E.] 
+#334 [S.E.] 
+#335 [S.E.] 
+#336 [S.E.] 
+#337 [S.E.] 
+#338 [S.E.] 
+#339 [S.E.] 
+#340 [S.E.] 
+#351 [S.E.] 
+#352 [S.E.] 
+#353 [S.E.] 
+#354 [S.E.] 
+#355 [S.E.] 
+#356 [S.E.] 
+#357 [S.E.] 
+#358 [S.E.] 
+#359 [S.E.] 
+#360 [S.E.] 
+#361 [S.E.] 
+#362 [S.E.] 
+#363 [S.E.] 
+
+
+#288 [Voice] Round One
+#289 [Voice] Round Two
+#290 [Voice] Round Three
+#291 [Voice] Final Round
+#292 [Voice] Fight
+#293 [Voice] Draw
+#294 [Voice] Double Knock Out 
+#295 [Voice] Match One
+#296 [Voice] Win
+#297 [Voice] The Semi-Final
+#298 [Voice] The Final
+#300 [Voice] Here Comes a New Challenger
+#301 [Voice] Another Challenger Broke into the Semi-Final !
+#302 [Voice] Another Challenger Broke into the Final !
+#303 [Voice] Martial Champion
+#304 [Voice] Zero
+#305 [Voice] One
+#306 [Voice] Two
+#307 [Voice] Three
+#308 [Voice] Four
+#309 [Voice] Five
+#310 [Voice] Six
+#311 [Voice] Seven
+#312 [Voice] Eight
+#313 [Voice] Nine
+
+  ■出典
+  コナミ・アミューズメントサウンズ '93 - 秋
+  KING RECORDS  KICA-7620～7621  1993.10.21
+
+  ■作曲
+  ディープスリープ杉沢
+
+  ■トリビア
+  開発名：イーアルカンフーII
+
+// List contribution by R
+$end

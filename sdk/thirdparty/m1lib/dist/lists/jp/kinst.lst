@@ -1,0 +1,588 @@
+﻿$name=kinst
+$version=2
+$default=35
+$main
+
+$023 The Instinct (Title)
+$5ad [S.E.] Coin
+$550 [Voice] Killer Instinct
+$009 Character Select
+$02c K.I. Feeling
+$02d K.I. Feeling (loop)
+$02f K.I. Feeling (end)
+$001 Controlling Transmission
+$002 Controlling Transmission (loop)
+$003 Controlling Transmission (end)
+$024 Oh Yeah
+$025 Oh Yeah (loop)
+$026 Oh Yeah (end)
+$01e Do It Now!
+$01f Do It Now! (loop)
+$020 Do It Now! (end)
+$00a Yo Check This Out!
+$00b Yo Check This Out! (loop)
+$00c Yo Check This Out! (end)
+$00f Freeze
+$010 Freeze (loop)
+$011 Freeze (end)
+$014 Trailblazer
+$015 Trailblazer (loop)
+$017 Trailblazer (end)
+$027 Tooth & Claw
+$028 Tooth & Claw (loop)
+$02b Tooth & Claw (end)
+$012 Rumble
+$013 Rumble (loop)
+$01d Rumble (end)
+$042 Ya Ha Haa
+$043 Ya Ha Haa (loop)
+$045 Ya Ha Haa (end)
+$046 Full-Bore
+$047 Full-Bore (loop)
+$049 Full-Bore (end)
+$018 The Extreme
+$019 The Extreme (loop)
+$01a The Extreme (end)
+$04d Credits
+$04e The Instinct (Credits loop)
+$00d Fatality
+$00e Game Over/Continue
+$004 Humiliation (loop)
+$005 Humiliation (end)
+
+$04f Unused 01
+$008 Unused 02
+
+-----------------------------------------------------------
+ [S.E.]
+
+$065 [S.E.]
+$067 [S.E.]
+$068 [S.E.]
+$069 [S.E.]
+$06d [S.E.]
+$078 [S.E.]
+$079 [S.E.]
+$07a [S.E.]
+$07b [S.E.]
+$07c [S.E.]
+$07d [S.E.]
+$081 [S.E.]
+$082 [S.E.]
+$08b [S.E.]
+$08c [S.E.]
+$097 [S.E.]
+$098 [S.E.]
+$099 [S.E.]
+$09b [S.E.]
+$0a0 [S.E.]
+$0a1 [S.E.]
+$0a2 [S.E.]
+$0a3 [S.E.]
+$0a4 [S.E.]
+$0a5 [S.E.]
+$0a7 [S.E.]
+$0a8 [S.E.]
+$0a9 [S.E.]
+$0ab [S.E.]
+$0ac [S.E.]
+$0ad [S.E.]
+$0b0 [S.E.]
+$0b3 [S.E.]
+$0b4 [S.E.]
+$0b5 [S.E.]
+$0b6 [S.E.]
+$0b8 [S.E.]
+$0b9 [S.E.]
+$0bf [S.E.]
+$0c4 [S.E.]
+$0c6 [S.E.]
+$0c7 [S.E.]
+$0c8 [S.E.]
+$0c9 [S.E.]
+$0ca [S.E.]
+$0cc [S.E.]
+$0d4 [S.E.]
+$0d7 [S.E.]
+$0d8 [S.E.]
+$0da [S.E.]
+$0db [S.E.]
+$0dc [S.E.]
+$0dd [S.E.]
+$0de [S.E.]
+$0df [S.E.]
+$0e0 [S.E.]
+$0e2 [S.E.]
+$0e3 [S.E.]
+$0e4 [S.E.]
+$0e7 [S.E.]
+$0e8 [S.E.]
+$0e9 [S.E.]
+$0ea [S.E.]
+$0eb [S.E.]
+$0ed [S.E.]
+$0ee [S.E.]
+$0f3 [S.E.]
+$0f7 [S.E.]
+$0f8 [S.E.]
+$0fb [S.E.]
+$0fc [S.E.]
+$0fd [S.E.]
+$0fe [S.E.]
+$101 [S.E.]
+$102 [S.E.]
+$104 [S.E.]
+$107 [S.E.]
+$10a [S.E.]
+$10b [S.E.]
+$10d [S.E.]
+$10e [S.E.]
+$10f [S.E.]
+$12f [S.E.]
+$130 [S.E.]
+$131 [S.E.]
+$135 [S.E.]
+$139 [S.E.]
+$149 [S.E.]
+$191 [S.E.]
+$194 [S.E.]
+$19c [S.E.]
+$1a6 [S.E.]
+$1a7 [S.E.]
+$1a9 [S.E.]
+$1ac [S.E.]
+$1ad [S.E.]
+$1ae [S.E.]
+$1af [S.E.]
+$1b0 [S.E.]
+$1b3 [S.E.]
+$1b4 [S.E.]
+$1b5 [S.E.]
+$1b6 [S.E.]
+$1d8 [S.E.]
+$1d9 [S.E.]
+$1f5 [S.E.]
+$1f6 [S.E.]
+$1f7 [S.E.]
+$1f8 [S.E.]
+$1f9 [S.E.]
+$1fa [S.E.]
+$1fb [S.E.]
+$1fc [S.E.]
+$1ff [S.E.]
+$200 [S.E.]
+$206 [S.E.]
+$20e [S.E.]
+$20f [S.E.]
+$210 [S.E.]
+$211 [S.E.]
+$212 [S.E.]
+$213 [S.E.]
+$214 [S.E.]
+$216 [S.E.]
+$217 [S.E.]
+$218 [S.E.]
+$219 [S.E.]
+$21b [S.E.]
+$21c [S.E.]
+$21f [S.E.]
+$223 [Voice] Fire Flash
+$227 [Voice] Inferno
+$229 [Voice] I'm just too hot!
+$22a [S.E.]
+$22b [S.E.]
+$22d [S.E.]
+$22e [S.E.]
+$22f [S.E.]
+$232 [S.E.]
+$239 [S.E.]
+$23a [S.E.]
+$23d [S.E.]
+$23f [S.E.]
+$261 [S.E.]
+$262 [S.E.]
+$263 [S.E.]
+$269 [S.E.]
+$26f [S.E.]
+$272 [S.E.]
+$273 [S.E.]
+$275 [S.E.]
+$276 [S.E.]
+$278 [S.E.]
+$279 [S.E.]
+$27a [S.E.]
+$27b [S.E.]
+$27c [S.E.]
+$27d [S.E.]
+$27e [S.E.]
+$281 [S.E.]
+$29a [S.E.]
+$29e [S.E.]
+$2bd [S.E.]
+$2be [S.E.]
+$2bf [S.E.]
+$2c2 [S.E.]
+$2c8 [S.E.]
+$2c9 [S.E.]
+$2ca [S.E.]
+$2cc [S.E.]
+$2cd [S.E.]
+$2ce [Voice] Yo!
+$2cf [Voice] Ha!
+$2d0 [Voice] Whoa!
+$2d1 [Voice] Yeah!
+$2d3 [Voice] Eat It!
+$2d5 [Voice] Oh!
+$2d7 [Voice] Aa!
+$2d8 [Voice] Oh!
+$2d9 [Voice] Ar!
+$2da [Voice] Arr!
+$2db [Voice] Ach!
+$2dc [Voice] Aow!
+$2dd [S.E.]
+$2de [Voice] Oooo!
+$2e0 [S.E.]
+$2e1 [Voice] Wahhhooo!
+$2e2 [S.E.]
+$2e3 [S.E.]
+$2ef [Voice] Eat This!
+$305 [S.E.]
+$325 [S.E.]
+$326 [S.E.]
+$32d [S.E.]
+$32f [S.E.]
+$333 [S.E.]
+$334 [S.E.]
+$335 [S.E.]
+$336 [S.E.]
+$337 [S.E.]
+$342 [S.E.]
+$343 [S.E.]
+$347 [S.E.]
+$348 [S.E.]
+$349 [S.E.]
+$350 [S.E.]
+$351 [S.E.]
+$353 [S.E.]
+$356 [S.E.]
+$357 [S.E.]
+$358 [S.E.]
+$359 [S.E.]
+$35a [S.E.]
+$362 [S.E.]
+$363 [S.E.]
+$364 [Voice] Phoenix!
+$365 [S.E.]
+$384 [Voice] Hahahahahaha!
+$389 [S.E.]
+$38a [S.E.]
+$38f [S.E.]
+$391 [S.E.]
+$393 [S.E.]
+$394 [S.E.]
+$395 [S.E.]
+$396 [S.E.]
+$39c [S.E.]
+$39d [S.E.]
+$39e [S.E.]
+$3a2 [S.E.]
+$3a3 [S.E.]
+$3a4 [S.E.]
+$3a5 [S.E.]
+$3a6 [S.E.]
+$3a7 [S.E.]
+$3a9 [S.E.]
+$3b8 [S.E.]
+$3ba [S.E.]
+$3bd [S.E.]
+$3be [S.E.]
+$3c3 [S.E.]
+$3d4 [S.E.]
+$3d5 [S.E.]
+$3d6 [S.E.]
+$3d7 [S.E.]
+$3d8 [S.E.]
+$3d9 [S.E.]
+$3da [S.E.]
+$3db [S.E.]
+$3dc [S.E.]
+$3dd [S.E.]
+$3e9 [S.E.]
+$3f0 [S.E.]
+$3f3 [S.E.]
+$3f4 [S.E.]
+$3f5 [S.E.]
+$3f6 [S.E.]
+$3f7 [S.E.]
+$3f9 [S.E.]
+$3fb [S.E.]
+$3fc [S.E.]
+$3ff [S.E.]
+$400 [S.E.]
+$401 [S.E.]
+$402 [S.E.]
+$403 [S.E.]
+$404 [S.E.]
+$405 [S.E.]
+$406 [S.E.]
+$407 [S.E.]
+$408 [S.E.]
+$46a [S.E.]
+$46f [S.E.]
+$472 [S.E.]
+$474 [S.E.]
+$475 [S.E.]
+$477 [S.E.]
+$479 [S.E.]
+$47a [S.E.]
+$47b [S.E.]
+$47d [S.E.]
+$47f [S.E.]
+$481 [S.E.]
+$482 [S.E.]
+$483 [S.E.]
+$484 [S.E.]
+$486 [S.E.]
+$487 [S.E.]
+$48a [S.E.]
+$48c [S.E.]
+$48d [S.E.]
+$48f [S.E.]
+$490 [S.E.]
+$491 [S.E.]
+$492 [S.E.]
+$49c [S.E.]
+$49d [S.E.]
+$49e [S.E.]
+$4a1 [S.E.]
+$4a2 [S.E.]
+$4a5 [S.E.]
+$4a6 [S.E.]
+$4a7 [S.E.]
+$4a8 [S.E.]
+$4a9 [S.E.]
+$4aa [S.E.]
+$4ab [S.E.]
+$4ac [S.E.]
+$4ad [S.E.]
+$4ae [S.E.]
+$4af [S.E.]
+$4b0 [S.E.]
+$4b1 [S.E.]
+$4b2 [S.E.]
+$4b3 [S.E.]
+$4b4 [S.E.]
+$4b5 [S.E.]
+$4b6 [S.E.]
+$4b7 [S.E.]
+$4b8 [S.E.]
+$4b9 [S.E.]
+$4ba [S.E.]
+$4bb [S.E.]
+$4bc [S.E.]
+$4bd [S.E.]
+$4be [S.E.]
+$4c2 [S.E.]
+$4c3 [S.E.]
+$4c4 [S.E.]
+$4c5 [S.E.]
+$4c6 [S.E.]
+$4c8 [S.E.]
+$4c9 [S.E.]
+$4ca [S.E.]
+$4cb [S.E.]
+$4cd [S.E.]
+$4ce [S.E.]
+$4d0 [S.E.]
+$4d1 [S.E.]
+$4d3 [S.E.]
+$4d4 [S.E.]
+$4d5 [S.E.]
+$4d6 [S.E.]
+$4d7 [S.E.]
+$4d8 [S.E.]
+$4d9 [S.E.]
+$4da [S.E.]
+$4dc [S.E.]
+$4dd [S.E.]
+$4de [S.E.]
+$4e0 [S.E.]
+$4e1 [Voice] Ichi
+$4e2 [Voice] Ni
+$4e3 [Voice] San
+$4e4 [Voice] ???
+$4e5 [S.E.]
+$4eb [S.E.]
+$4ec [S.E.]
+$4ed [S.E.]
+$4ef [S.E.]
+$4f1 [S.E.]
+$4f3 [S.E.]
+$4f4 [S.E.]
+$4f5 [S.E.]
+$4f6 [S.E.]
+$4f7 [S.E.]
+$4f8 [S.E.]
+$4f9 [S.E.]
+$4fa [S.E.]
+$4fb [S.E.]
+$4fc [S.E.]
+$4fd [S.E.]
+$500 [S.E.]
+$501 [S.E.]
+$504 [S.E.]
+$506 [S.E.]
+$507 [S.E.]
+$50e [S.E.]
+$511 [S.E.]
+$512 [S.E.]
+$513 [S.E.]
+$514 [S.E.]
+$515 [S.E.]
+$516 [S.E.]
+$517 [S.E.]
+$518 [S.E.]
+$519 [S.E.]
+$51a [S.E.]
+$51b [S.E.]
+$51c [S.E.]
+$51d [S.E.]
+$51e [S.E.]
+$51f [S.E.]
+$521 [S.E.]
+$522 [S.E.]
+$525 [S.E.]
+$52a [S.E.]
+$52b [S.E.]
+$52e [S.E.]
+$574 [S.E.]
+$575 [S.E.]
+$576 [S.E.]
+$578 [S.E.]
+$579 [S.E.]
+$57a [S.E.]
+$57b [S.E.]
+$584 [S.E.]
+$585 [S.E.]
+$59b [S.E.]
+$59c [S.E.]
+$59d [Voice] Hit It!
+$59e [Voice] Boogie!
+$59f [Voice] Dance?!
+$5a0 [Voice] Get It On!
+$5a6 [Voice] Dance!!
+$5b0 [S.E.]
+$5b1 [S.E.]
+$5b2 [S.E.]
+$5b3 [S.E.]
+$5b5 [Voice] I Live!
+$5b6 [Voice] Burp!
+$5b8 [S.E.] Parp!
+$5b9 [S.E.]
+$5ba [S.E.]
+$5bc [S.E.]
+$5c2 [S.E.]
+$5c4 [S.E.]
+$5c5 [S.E.]
+$5c6 [S.E.]
+$5c7 [S.E.]
+$5c8 [Voice] Haaaahahahahahaha!
+$5c9 [S.E.]
+$5ca [S.E.]
+$5cb [S.E.]
+$5cc [S.E.]
+$5cd [S.E.]
+$5d0 [S.E.]
+$5d1 [S.E.]
+$5d2 [Voice] Killer! Killer!
+$5d3 [S.E.]
+$5d4 [S.E.]
+$5d7 [S.E.]
+$5d8 [S.E.]
+$5d9 [S.E.]
+$5da [S.E.]
+$5db [S.E.]
+$5dc [S.E.]
+$5de [S.E.]
+$5df [S.E.]
+$5e0 [S.E.]
+$5e1 [S.E.]
+$5e2 [S.E.]
+$5e3 [Voice] Break It Down!
+$5e4 [Voice] OK Spinal baby, lets go for a take!
+$5e5 [Voice] Action!
+$5e6 [Voice] No! No! No! Cut! Cut!
+$5e7 [S.E.]
+$5e8 [S.E.]
+$5f5 [S.E.]
+$5f6 [S.E.]
+$5f6 [S.E.]
+$5f8 [S.E.]
+$5f9 [S.E.]
+$5fa [S.E.]
+$5fb [S.E.]
+$5fc [S.E.]
+$5fd [S.E.]
+$5fe [S.E.]
+$5ff [S.E.]
+$600 [S.E.]
+$601 [S.E.]
+$602 [S.E.]
+
+ [Voice]
+
+$536 [Voice] Triple Combo!
+$539 [Voice] Super Combo!
+$53a [Voice] Hyper Combo!
+$53c [Voice] Master Combo!
+$53d [Voice] Monster Combo!
+$540 [Voice] Brutal Combo!
+$542 [Voice] King Combo!
+$544 [Voice] Blaster Combo!
+$546 [Voice] Awesome Combo!
+$548 [Voice] Killer Combo!
+$54a [Voice] Ultra Combo!
+$5f4 [Voice] Ultimate Combo!
+$54e [Voice] Combo Breaker!
+$550 [Voice] Killer Instinct
+$554 [Voice] Jago!
+$556 [Voice] T.J. Combo!
+$558 [Voice] Chief Thunder!
+$55a [Voice] Spinal!
+$55c [Voice] Glacius!
+$55f [Voice] Riptor!
+$561 [Voice] Sabrewulf
+$563 [Voice] Orchid!
+$564 [Voice] Fulgore!
+$5f1 [Voice] Cinder!
+$5f2 [Voice] Heat Shade!
+$5f3 [Voice] Pyrotech!
+$566 [Voice] Eyedol!
+$568 [Voice] Winner!
+$56a [Voice] Ready!
+$56c [Voice] Ready!!
+$56d [Voice] Time Out!
+$570 [Voice] Game Over
+$572 [Voice] Continue
+$588 [Voice] Fight On!
+$589 [Voice] Welcome!
+$58a [Voice] Awesome Victory!
+$58c [Voice] Supreme Victory!
+$597 [Voice] Show No Mercy!
+$5ed [Voice] Perfect!
+$5ee [Voice] Danger! Danger! Danger!
+$5f0 [Voice] Humiliation!
+$598 [Voice] Available for your home in 1995. Only on Nintendo Ultra64!
+
+  ■出典
+  Killer Cuts
+  Nintendo / RARE  1948-1-1 HMG  1995
+
+  ■作曲
+  Robin Beanland, Graeme Norgate
+
+// Figured out by Toby from names from the Remix CD...
+// List contribution by Sixtoe
+// List adjustment and SE/Voice collection by bcass
+// To do - categorise SE/Voice by character
+$end

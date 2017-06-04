@@ -1,0 +1,40 @@
+﻿$name=gijoe
+$version=2
+$default=$e2
+$songmax=229
+$main
+
+$e2 We Are G.I. JOES (Title Demo)
+$db (Character Select)
+#203 [Voice] Mission 1
+$d6 Map Out A Plan Of Operations I (Introduction)
+#021 [Voice] (Duke) Yo! Joe!
+$d0 (Stage 1 - Base)
+$d8 (Boss A)
+$d1 Go To The Airport! (Stage 2 BGM)
+$d2 Shooting Small Flies (Stage 3 BGM)
+$d9 (Boss B)
+#221 (Intermission)
+#204 [Voice] Mission 2
+$d7 (Stage 4 - Intro)
+$d3 (Stage 4 - Jungle)
+#199 [Voice] Cobraa!
+$d4 (Stage 5 - Entrance of the secret base)
+$d5 (Stage 6 - Inside the secret base)
+$e1 (Boss C)
+$da (Stage 7 - Intro)
+#205 [Voice] The final battle
+$e0 Dash Toward The Final Battle! (Stage 7 BGM)
+$e4 (Boss D)
+$dc (Ending)
+$e5 (Name Entry)
+$de (Game Over)
+$df (Unused)
+$e3 Speaker Test
+
+  [Source]
+  Koanmi All Stars 1993
+  King Records  KICA-9016 - 9018  Dec 21, 1992
+
+// 
+$end

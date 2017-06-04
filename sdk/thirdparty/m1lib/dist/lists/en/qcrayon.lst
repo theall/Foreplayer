@@ -1,0 +1,161 @@
+﻿$name=qcrayon
+$version=2
+$default=009
+$main
+
+#009 Tricycle and Shin-chan <time="3">
+#029 Nohara Family (Demo) <time="19">
+#124 [SFX] Trick by Shin'nosuke 1 <time="2.5">
+#125 [SFX] Trick by Shin'nosuke 2 <time="2.5">
+#126 [SFX] Trick by Shin'nosuke 3 <time="2.5">
+#127 [SFX] Trick by Shin'nosuke 4 <time="2.5">
+#128 [SFX] Trick by Shin'nosuke 5 <time="4.1">
+#076 [Voice]  <time="2.5">
+#077 [Voice]  <time="2.5">
+#044 [Voice]  <time="2">
+#031 Demo <time="7.5">
+#078 [Voice]  <time="5">
+#028 Introduction
+#011 Credit Inserted <time="4">
+#029 Nohara Family Scene <time="38">
+#020 Map Preview <time="5.1">
+#026 Question Master Appeared <time="8">
+#018 Genre Select
+#012 Quiz BGM 1
+#015 Quiz BGM 2
+#014 Quiz BGM 3
+#013 Quiz BGM 4
+#016 Quiz BGM 5
+#022 Passed <time="5.1">
+#019 Won the Ingridents of Dinner !
+#021 Challenge the Bonus Game !
+#025 Bonus Game
+#023 All Stage Cleared
+#029 Ending <time="38">
+#017 Credits
+#030 Name Entry
+#027 Game Over
+
+#131 Quiz BGM 1 Ver.2
+#024 Quiz BGM 5 Ver.2
+
+#241 Speaker Test 1
+
+---------------------------------------------------
+ [SFX] 
+
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#090 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#113 [SFX] 
+#114 [SFX] 
+#115 [SFX] 
+#123 [SFX] 
+#124 [SFX] C
+#125 [SFX] D
+#126 [SFX] E
+#127 [SFX] F
+#128 [SFX] G
+#129 [SFX] <time="5">
+#133 [SFX] 
+#242 [SFX] <time="3">
+#244 [SFX] 
+#245 [SFX] <time="5">
+#246 Speaker Test 1
+
+---------------------------------------------------
+ [Voice] 
+
+#032 [Voice] 
+#033 [Voice] 
+#034 [Voice] 
+#035 [Voice] 
+#036 [Voice] 
+#037 [Voice] 
+#038 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#043 [Voice] 
+#044 [Voice] O?
+#045 [Voice] 
+#046 [Voice] 
+#047 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#050 [Voice] 
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#104 [Voice] 
+#105 [Voice] 
+#106 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#112 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#118 [Voice] 
+#119 [Voice] 
+#120 [Voice] 
+#121 [Voice] 
+#122 [Voice] 
+#132 [Voice] 
+#243 [Voice] <time="5">
+
+  [Sound Composer]
+  Splatter.A, Blastman.F, Yasuko (Zuntata)
+
+// List contribution by ZEK.
+$end

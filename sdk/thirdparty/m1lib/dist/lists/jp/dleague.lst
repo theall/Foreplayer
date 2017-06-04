@@ -1,0 +1,27 @@
+﻿$name=dleague
+$version=2
+$default=009
+$main
+
+#009 TITLE
+#010 TEAM SELECT <time="25">
+#011 PLAY BALL <time="5">
+#020 BGM 1
+#012 TIME
+#021 BGM 2
+#016 HOME RUN <time="8">
+#015 SCORE <time="4">
+#014 CHANGE
+#019 CONTINUE
+#018 GAME SET
+#010 NAME ENTRY <time="40">
+#022 STAFF ROLL
+
+#013 ？ <time="4">
+#017 ？
+
+  ■作曲
+  八木下 直人, S. Imaoka, 古川 典裕
+
+// List contribution by ZEK.
+$end

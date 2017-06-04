@@ -1,0 +1,15 @@
+$name=kickoff
+$version=2
+$default=002
+$main
+
+#002 Opening
+#003 Congratulation (Continue)
+#005 Goal In
+#011 Human Dance (Break BGM)
+#004 Sunset Seaside (Scene Select)
+#010 Unknown
+
+// Hoot list by FM Daioh
+// M1 List by Knurek
+$end

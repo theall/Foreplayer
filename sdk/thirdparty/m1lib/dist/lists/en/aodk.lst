@@ -1,0 +1,78 @@
+﻿$name=aodk
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+#039 We are ADK! (ADK Logo)
+
+#061 Evil Scripture the 2nd (Opening)
+#058 The 2nd March (How to Play)
+#019 What is Your Choice? (Player Select)
+#053 Make One's Appearance! (Jo: Jingle)
+#018 Levy Fight! (Jo)
+#020 Spirit (Jo: Loop)
+#021 Man of Spirit (Jo: Pinch)
+#059 The 1st March (Clear)
+#016 Win? or Lose... (Result)
+#051 Song of ChinagJiang (Lee: Jingle)
+#050 Lee Appears (Lee)
+#062 A Man Who Sells Danger (Lee: Loop)
+#052 Sympony 1 (Lee: Pinch)
+#034 The Severe Man (Sheen: Jingle)
+#013 Be Seized with Fear (Sheen)
+#011 Winners (Sheen: Loop)
+#033 Your Life Is in Danger (Sheen: Pinch)
+#005 Vicissitudes (Kisarah: Jingle)
+#006 I'm chocked with a thousand emotions (Kisarah)
+#004 Open Eyes (Kisarah: Loop)
+#008 As long as one lives (Kisarah: Pinch)
+#055 Poem of Fuma's Home (Fuma: Jingle)
+#054 Fuma Appears (Fuma)
+#067 Rule of Fuma (Fuma: Loop)
+#046 Rule of Fuma 2 (Fuma: Pinch)
+#024 Hold Up! (Bobby: Jingle)
+#026 Free Dancing (Bobby)
+#025 Take It Easy (Bobby: Loop)
+#027 Now What Do I Do? (Bobby: Pinch)
+#035 Poem of Black Panther (Leonhalt: Jingle)
+#057 Leonhalt Appears (Leonhalt)
+#043 Epitaph in Desert storm (Leonhalt: Loop)
+#044 Epitaph in Desert storm 2 (Leonhalt: Pinch)
+#056 Hey! (Go: Jingle)
+#012 Come On!! (Go)
+#010 Love and Bustle Night (Go: Loop)
+#032 Glow Yourself, You Air Head! (Go: Pinch)
+#023 A Preposterous Art 1 (Jo, Leonhalt: GanGan)
+#037 A Preposterous Art 2 (Lee, Sheen, Fuma: GanGan)
+#038 A Preposterous Art 3 (Kisarah, Bobby, Go: GanGan)
+#064 Long Night in Summer (Jo: Ending)
+#047 Hurricane (Lee: Ending)
+#014 Chance! (Sheen: Ending)
+#066 Endless Dream (Kisarah: Ending) <time="2:38">
+#009 Stranger (Fuma: Ending) <time="2:31">
+#029 Dance Tonight (Bobby: Ending)
+#065 Lost Your Heart (Leonhalt: Ending) <time="2:06">
+#015 Dear Friend (Go: Ending)
+#007 Eternal Intoxication (Continue)
+#017 My Fight is Done (Game Over)
+#036 The 3rd March (Ranking)
+
+#049 Long Night in Summer (Jo: Ending) &lt;short&gt;
+#022 Hurricane (Lee: Ending) &lt;short&gt;
+#068 Chance! (Sheen: Ending)
+#048 Endless Dream (Kisarah: Ending) &lt;short&gt;
+#063 Stranger (Fuma: Ending) &lt;short&gt;
+#028 Dance Tonight (Bobby: Ending) &lt;short&gt;
+#060 Lost Your Heart (Leonhalt: Ending) &lt;short&gt;
+#030 Unused 1
+#031 Unused 2
+#080 Unused 3
+
+  [Source]
+  Tsuukai Gan Gan Koushinkyoku / SNK, ADK
+  Pony Canyon / Scitron  PCCB-00163  Oct 21, 1994
+
+// List Contribution by NK
+// English List by Fujix
+$end

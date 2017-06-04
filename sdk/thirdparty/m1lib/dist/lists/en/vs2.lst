@@ -1,0 +1,46 @@
+﻿$name=vs2
+$version=2
+$default=000
+$main
+
+ * Play @ 44100Hz for correct speed
+
+#000 selector 1 (Team Select) <time="42" fadeout="yes" fadeoutlength="10">
+#001 howto 1 (Instruction)
+#002 goal 1 (Goal Replay - Long Shoot) <time="34" fadeout="yes" fadeoutlength="10">
+#003 goal 3 (Goal Replay - Default)
+#004 jisatsuten 1 (Goal Replay - Own Goal)
+#005 goalrush1 (Goal Rush - Default)
+#006 continue3 (Conitnue)
+#007 nameentry1 (Name Entry)
+#008 orc3 (Ending - Default)
+#009 ending4short (Ending - When defeated FC SEGA)
+#017 vs2ending4mit (Ending - When made a best goal)
+#018 vs2ending3mit (Ending - When lose a match with FC SEGA)
+#020 vs2adv1mit (Advertisement)
+#021 vs2goal1mit (Todays Best Goal)
+#022 vs2grush1mit (Goal Replay - Best Goal)
+#023 vs2contmap1mit (Tournament Map Preview)
+#024 vsgrush2mit (Tournament Map - Before Final Match)
+#025 vs2contmap2mi (Tournament Map - Continue on Final Match)
+#026 finalrush (Goal Rush - After Final Match (orc4, vs3miya3short)) <time="50" fadeout="yes" fadeoutlength="10">
+#027 finalrush2 (Goal Rush - After Final Match (ending4short)) <time="44" fadeout="yes" fadeoutlength="10">
+#028 vs2miya7int (Goal Rush - After Final Match (vs2miya7)) <time="37" fadeout="yes" fadeoutlength="10">
+#029 bestgoal2 (Best Goal Replay)
+
+#016 vs2miya3short (Unused)
+#019 vs2miya7 (Unused)
+
+#010 vs1adv1c2long (Virtua Striker Ending)
+#011 vs1c1goalrush (Virtua Striker Goal Rush)
+#012 vs1c1kachinuki (Virtua Striker Select)
+#013 vs1com01 (Virtua Striker Coninue)
+#014 vs1com02 (Virtua Striker Advertisement)
+#015 vs1slow (Virtua Striker Goal Replay)
+
+  [Source]
+  Virtua Striker & Virtua Striker 2
+  MMV  MJCAX-00006  Nov 19, 1997
+
+// List by Fuji
+$end

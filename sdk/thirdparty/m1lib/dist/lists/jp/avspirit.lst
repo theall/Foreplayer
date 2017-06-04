@@ -1,0 +1,50 @@
+﻿$name=avspirit
+$version=2
+$default=017
+$main
+
+#017 [S.E.] Coin Insertion
+#001 MAIN BGM <time="2:11" fadeout="yes" fadeoutlength="10">
+#002 BOSS BGM <time="1:07" fadeout="yes" fadeoutlength="10">
+#003 KICHI <time="2:09" fadeout="yes" fadeoutlength="10">
+#004 GUESUIDO <time="1:34" fadeout="yes" fadeoutlength="10">
+#005 WARNNING <time="51" fadeout="yes" fadeoutlength="10">
+#006 LAST BOSS BGM <time="1:57" fadeout="yes" fadeoutlength="10">
+#007 STAGE CLEAR
+#008 TRICK ROOM <time="49" fadeout="yes" fadeoutlength="10">
+#009 KNAOJYO <time="50" fadeout="yes" fadeoutlength="10">
+#010 CONTINUE
+#011 ENDING
+#012 NAME REGIST.<time="1:18" fadeout="yes" fadeoutlength="10">
+
+  [S.E.]
+
+#016 [S.E.]
+#017 [S.E.] COIN Insertion
+#018 [S.E.]
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.]
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+
+  ■作曲
+  Studio O. K.
+ 
+// List contribution by Simon B., with the help of the PCB Sound-Test.
+$end

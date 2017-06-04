@@ -1,0 +1,126 @@
+﻿$name=chasehq
+$version=2
+$default=112
+$main
+
+#112 Round Start
+#113 Los Angeles
+#114 Idaho
+#124 Count Down
+#115 Washington
+#116 Chicago
+#117 New York
+#118 This is Chase H.Q.! (Main Theme)
+#119 Arrest (Round Clear)
+#120 Perfect Chaser
+#121 My Name & Your Name (Name Entry)
+
+#122 Not Released on CD
+#123 This is Chase H.Q.! (Attract Mode)
+
+------------------------------------------------------
+ [Voice]
+
+#009 [Voice] This is Nancy at Chase Headquaters, we've got an emergency here, Ralph, the Idaho slasher, is fleeing toward the suburbs. The target vehcle is a white Britich sports car, over
+#010 [Voice] This is Nancy at Chase Headquaters, we've got an emergency here, Carlos, the New York armed robber, has been spotted in a yellow sports car on the freeway, over
+#011 [Voice] This is Nancy at Chase Headquaters, we've got an emergency here, a gang of Chicago pushers are fleeing towards the suburbs, the target vehicle is a german sports car, over
+#012 [Voice] This is Nancy at Chase Headquaters, we've got an emergency here, the la kidnappers are speeding towards the outskirts of town, in a blue 2 seater, over
+#013 [Voice] This is Nancy at Chase Headquaters, we've got an emergency here, the eastern block spy from Washington is fleeing towards the suberbs, the target vehicle is unknown, over
+#014 [Voice] Gotcha Nancy
+#015 [Voice] Leave it to us, Nancy baby.
+#016 [Voice] We read loud and clear, over
+#017 [Voice] Roger
+//#018 [Voice] 
+//#019 [Voice] 
+//#020 [Voice] 
+#021 [Voice] Let's go, Mr. driver.
+#022 [Voice] Giddyup Boy
+#023 [Voice] Hold on man, punch the pedal.
+#024 [Voice] Where are you goin' man? The bad guys are going left.
+#025 [Voice] Where are you goin' man? The bad guys are going right.
+#027 [Voice] Yaahhoo!
+#028 [Voice] Great!
+//#029 [Voice] 
+#032 [Voice] *BANG* Bear Down!
+#033 [Voice] *BANG* More, push it more!
+#034 [Voice] Get a move on buddy
+#043 [Voice] This is Nancy at Chase Headquaters, you keep putting around like that and times gonna run out, over
+#044 [Voice] This is Nancy at Chase Headquaters, you keep putting around like that and times gonna run out, over
+#045 [Voice] *BANG* Ouch!
+#046 [Voice] *BANG* O no!
+//#047 [Voice] 
+//#048 [Voice] 
+#141 [Voice] *BANG* Oh, man
+#142 [Voice] *BANG* Please
+
+#051 [Voice] This is Nancy at Chase Headquaters, the target vehicle should be in your site at any second, over
+#052 [Voice] Nancy, we got the suspect in our sights, over.
+//#053 [Voice] Nancy, we got the suspect in our sights, over.
+//#054 [Voice] Nancy, we got the suspect in our sights, over.
+#055 [Voice] Now we show what this machine can do.
+//#56
+//#57
+//#58
+//#59
+#060 [Voice] OK, we got 'em fast Mr driver
+#061 [Voice] Too bad we have to bash in that machine now
+//#062 [Voice]
+#063 [Voice] Okay, let's get 'em.
+#064 [Voice] Let's get movin', man.
+#065 [Voice] This is special investigation airborne. The target vehicle has turned right up ahead. Over.
+#066 [Voice] This is special investigation airborne. The target vehicle has turned left up ahead. Over.
+#070 [Voice] OK, you're under arrest on suspicion of 1st degree murder
+#071 [Voice] OK, you're under arrest on suspicion of armed robbery and murder
+#072 [Voice] OK, you're under arrest on suspicion of selling drugs
+#073 [Voice] OK, you're under arrest on suspicion of kidnapping
+#074 [Voice] OK, you're under arrest on suspicion of espionage and 1st degree murder
+#080 [Voice] This is Chase Special Investiagtion chief, Anus, I want to congratulate you on a great job, I hearby record your heroism, and remember it for a long time to come, for completing 5 missons without a flaw, bless you perfect chaser.
+#081 [Voice] Roger (Female)
+//#082 [Voice] Roger (Female)
+#083 [Voice] Roger (Male)
+
+ [SFX]
+
+#084 [SFX] 
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX] <time="5">
+#093 [SFX]
+#094 [SFX] <time="5">
+#095 [SFX] <time="5">
+#096 [SFX] <time="5">
+#097 [SFX]
+#098 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#103 [SFX] 
+#105 [SFX]
+#107 [SFX] 
+#108 [SFX]
+#110 [SFX]
+
+#130 [SFX]
+#147 [SFX]
+#151 [SFX]
+#152 [SFX] <time="5">
+
+#242 Test Tone
+#243 Test Tone
+#244 FM Test Tone
+
+  [Source]
+  Syvalion -G.S.M. Taito 3- / Zuntata Sound Team
+  Pony Canyon / Scitron   D28B0014  Mar 21, 1989
+
+  [Sound Composer]
+  Takami Asano (Godiego)
+
+// List contribution by Hiroshi
+// Updated by Fuji helped by Toby
+$end

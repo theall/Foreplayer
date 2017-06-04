@@ -1,0 +1,133 @@
+﻿$name=raimais
+$version=2
+$default=005
+$fixed_volume=301
+$main
+
+#005 Title (Unused)
+#040 1st Credit Inserted
+#006 Theme #1
+#007 Round Clear (Unused)
+#041 2nd Credit Inserted
+#012 Theme #2
+#042 3rd Credit
+#013 Theme of Giant Crab
+#008 Player Extended
+#043 4th Credit Inserted
+#014 Theme #3
+#044 5th Credit Inserted
+#015 Final Round
+#016 Ending
+#010 Game Over
+#011 Name Regist (1st Place)
+#009 Name Regist (2nd to 5th Place)
+
+--------------------------------------------------
+  [Voice & SFX]
+
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] <time="1.2">
+#076 [Voice] <time="2">
+#077 [Voice] <time="1.5">
+#078 [Voice] <time="4">
+#079 [Voice] <time="3.3">
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] <time="5.5">
+#084 [Voice] <time="2">
+#085 [Voice] <time="2">
+#086 [Voice] <time="3">
+#087 [Voice] 
+#088 [Voice] <time="7">
+#089 [Voice] <time="6.8">
+#090 [Voice] <time="3.5">
+#091 [Voice] 
+#092 [Voice] <time="2.3">
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] <time="6">
+#097 [Voice] <time="1.5">
+#098 [Voice] <time="4">
+#099 [Voice] 
+#100 [Voice] <time="4">
+#101 [Voice] 
+#102 [Voice] 
+
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX] <time="5">
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX] <time="5">
+#041 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX] <time="5">
+#059 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX] <time="5">
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX] <time="4">
+#072 [SFX] <time="4">
+
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#134 [SFX]
+#135 [SFX]
+#141 [SFX]
+//#154 [SFX]
+#162 [SFX]
+#163 [SFX]
+
+  [Source]
+  Taito DJ Station -G.S.M. Taito 5-
+  Pony Canyon / Scitron  PCCB-00037  Aug 21, 1990
+
+  [Sound Composer]
+  Mar. (ZUNTATA)
+
+// List Contribution by Hiroshi
+// Updated by Fuj (Removed sound stop commands. Fixed in 0.7.4)
+$end

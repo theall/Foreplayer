@@ -1,0 +1,35 @@
+﻿$name=vigilant
+$version=2
+$default=001
+//$songmax=015
+$main
+
+#001 Title Back
+#003 Help Me <time="0:13.00">
+#007 Stage Start <time="0:03.00">
+#000 Bad Company (Stage 1)
+#005 Left Alone <time="0:08">
+#008 Taken Prisoner <time="0:11">
+#012 Scraps Fight (Stage 2)
+#013 High Time (Stage 3)
+#010 Back Street (Stage 4)
+#009 Emergency <time="0:09">
+#014 Last Mission (Stage 5)
+#011 Final Story <time="0:56">
+#006 Continue <time="0:12.27">
+#004 Roll It Over <time="0:07">
+#002 Enter Your Name
+#015 (Unused)
+
+
+---------------------------------------------------------------
+
+  [OST]
+  Image Fight ~ G.S.M. Irem 1 ~
+  Scitron  D28B0012  Jan 21, 1989
+
+  [Sound Composer]
+  Masato Ishizaki
+
+// English list by bcass
+$end

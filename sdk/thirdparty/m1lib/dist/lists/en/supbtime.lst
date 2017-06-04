@@ -1,0 +1,21 @@
+﻿$name=supbtime
+$version=2
+$default=004
+$main
+
+#004 Long Long Way
+#005 Frying Pan in Hand, Courage in Mind
+#008 C'mon! Big Eater Prince
+#010 Here You Go!
+#006 Feet in Roller Skates, Justice in Mind
+#009 Fighting against Boses
+#011 Closedown
+#007 Gaisen
+
+  [Soundtrack]
+  Edward Randy / Super Burger Time
+  Pony Canyon / Scitron  PCCB-00061  Apr 21, 1991
+
+// Base list contribution by Min
+// Update and translation by Fujix
+$end

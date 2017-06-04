@@ -1,0 +1,31 @@
+﻿$name=mslug
+$version=2
+$default=002
+//$songmax=255?
+$main
+
+#002 Neo Geo Logo [resets current sound bank]
+#030 [Command] Bank Switcher (sfx)  <time="1">
+#224 [Voice] "Metal Slug" <time="2">
+#000 [Command] Bank Switcher (Music) <time="1">
+#043 The Military System
+#033 Main Theme from Metal Slug (Mission 1)
+#034 Inner Station (Mission 2)
+#035 Assault Theme (Mission 3)
+#040 Steel Beast (Boss)
+#032 Carry Out (Misson Complete)
+#036 Ridge 256 (Mission 4)
+#037 Gerhardt City (Mission 5)
+#039 Gravestone (Game Over)
+#038 Final Attack (Mission 6)
+#041 End Title (Ending)
+#042 Hold you still! (2 Player Game Ending)
+#044 Nazca Logo
+
+  Note: Call #000 or #030 to switch sound banck between SFX and music.
+--------------------------------------------------
+
+#000 [Command : Bank Switcher (Music) ]<time="1">
+#030 [Command : Bank Switcher (SFX) ] <time="1">
+
+$end

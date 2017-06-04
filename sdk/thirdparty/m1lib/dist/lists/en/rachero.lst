@@ -1,0 +1,18 @@
+﻿$name=rachero
+$version=2
+$default=154
+$main
+
+#154 Title
+#156 Stage Select
+#145 BGM 1
+#153 BGM 2
+#150 BGM 3
+#149 BGM 4
+#147 Game Over
+#148 Name Regist
+#146 Continue
+#155 Ending
+
+// List file by anonymous contributor
+$end

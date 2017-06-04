@@ -1,0 +1,86 @@
+﻿$name=raveracw
+$version=2
+$default=93
+$main
+
+#093 Linx On
+#094 Rave On
+#080 Wrong Love
+#087 Blue Topaz
+#088 Exh" Notes
+#082 Rotten 7
+#084 Kamikaze
+#089 Jazz Mission
+#091 Rare Hero 3
+#081 Yororei Hey
+#086 Euphoria
+#090 Teknopera
+#085 Heart of Hearts
+#083 Heart Floor
+#078 Rally-Jngl-X (intro) <time="12.5">
+#077 Rally-Jngl-X (loop)
+#095 G.O.
+#092 Water Front
+
+#001 Sound Test
+
+---------------------------------------------
+  [Voice]
+
+#129 [Voice]
+#130 [Voice]
+#131 [Voice]
+#132 [Voice]
+#133 [Voice]
+#134 [Voice]
+#135 [Voice]
+#136 [Voice]
+#137 [Voice]
+#138 [Voice]
+#139 [Voice]
+#140 [Voice]
+#141 [Voice]
+#142 [Voice]
+#143 [Voice]
+#144 [Voice]
+#145 [Voice]
+#146 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#154 [Voice]
+#155 [Voice]
+#156 [Voice]
+#157 [Voice]
+#158 [Voice]
+#159 [Voice]
+#160 [Voice]
+#161 [Voice]
+#162 [Voice]
+#163 [Voice]
+#164 [Voice]
+#165 [Voice]
+#166 [Voice]
+#167 [Voice]
+#168 [Voice]
+#169 [Voice]
+#170 [Voice]
+#171 [Voice]
+#172 [Voice]
+#173 [Voice]
+
+  [OST]
+  Rave Racer / Namco Game Sound Express Vol.24
+  Victor Entertainment  VICL-15048  Oct 21, 1995
+
+  [Sound Composers]
+  Shinji Hosoe: #93, #94, #80, #82, #81, #83
+  Ayako Sasou: #84, #86, #85, #95
+  Takayuki Aihara: #87, #17
+  Nobuyoshi Sano: #88, #89, #91, #90, #77, #78
+
+$end

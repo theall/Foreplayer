@@ -1,0 +1,36 @@
+﻿$name=omegaf
+$version=2
+$default=$30
+$main
+
+#048 Credit Inserted
+#019 Mission 1-1
+#020 Mission 1-2
+#021 Game Over
+#018 Mission 2-1
+#059 Mission 2-2
+#082 Mission 3-1
+#083 Mission 3-2
+#084 Mission 4-1
+#085 Mission 4-2
+#086 Mission 5-1
+#087 Mission 5-2
+#088 Mission 6-1
+#089 Mission 6-2
+#090 Mission 7-1
+#091 Mission 7-2
+#092 Mission 8-1
+#093 Mission 8-2
+#094 Ending
+#044 Name Entry
+
+  [Source]
+  Omega Fighter, Atomic Robo-Kid / UPL
+  Pony Canyon / Scitron  PCCB-00038  Aug 21, 1990
+
+  [Composed]
+  Mechano Associates
+
+// Original list contributed by Llama
+// English list by Fuj
+$end

@@ -1,0 +1,32 @@
+﻿$name=myhero
+$version=2
+$default=129
+$songmax=160
+$main
+
+#129 Coin
+#147 Round 1 (Present)
+#148 Round 2 (Past - Ninja)
+#149 Round 3 (Future - Planet of the Apes)
+#150 Boss
+#151 Win - Next Round Demo
+#160 Miss!
+#152 Game Over
+#153 Name Entry
+
+-----------------------------------------
+ [SFX]
+
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+
+$end

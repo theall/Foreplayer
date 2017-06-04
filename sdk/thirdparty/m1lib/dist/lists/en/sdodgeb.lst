@@ -1,0 +1,101 @@
+﻿$name=sdodgeb
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#144 Title
+#138 Team Select
+#130 Kunio Team Stage
+#139 Winning Demo
+#131 Riki Team Stage
+#132 Shinji Team Stage
+#134 Misuzu Team Stage
+#135 Sabu Team Stage
+#133 Miyuki Team Stage
+#137 Kenji Team Stage
+#136 Maou Team Stage
+#142 Ending
+#143 Credits Roll
+#140 Continue
+#141 Game Over
+
+-----------------------------------------------------------
+ [Voice]
+
+#043 [Voice] Nekketsu <time="1">
+#044 [Voice] Dodge Ball
+#127 [Voice] Hoi! (Credit)
+#004 [Voice] Sore!
+#007 [Voice] 3(San)
+#008 [Voice] 2(Ni)
+#009 [Voice] 1(Ichi)
+#010 [Voice] Sokomade!
+#011 [Voice] Tai
+#012 [Voice] Shouri!
+#013 [Voice] Kunio Team
+#014 [Voice] Riki Team
+#015 [Voice] Kenji Team
+#016 [Voice] Shinji Team
+#017 [Voice] Miyuki Team
+#018 [Voice] Misuzu Team
+#019 [Voice] Sabu Team
+#020 [Voice] Maou Team
+#021 [Voice] Zako Team
+#022 [Voice] Fukkatsu Team
+#023 [Voice] Edit Team
+#027 [Voice] Usshaah!
+#028 [Voice] Dorah!
+#029 [Voice] Taisen shiyouze!
+#030 [Voice] Rannyuu da!
+#031 [Voice] Otenami haiken!
+#032 [Voice] Puff...
+#033 [Voice] Mattete Mattete!
+#034 [Voice] Ikuwayo!
+#035 [Voice] Ittaroukai!
+#036 [Voice] Shoubu desu!
+#037 [Voice] Ikuyo!
+#042 [Voice] Ikuze!
+#076 [Voice] Cheer 1
+#078 [Voice] Cheer 2
+#126 [Voice] Uff!
+
+-----------------------------------------------------------
+ [SFX]
+
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#129 [SFX]
+
+// English list contributed by NK
+$end

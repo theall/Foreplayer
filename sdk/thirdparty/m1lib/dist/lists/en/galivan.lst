@@ -1,0 +1,63 @@
+﻿$name=galivan
+$version=2
+$default=037
+$songmax=059
+$main
+
+#037 Credit Inserted <time="2">
+#046 Game Start / Civilian Control II (Main BGM 1)
+#047 Restart / Civilian Control II (Main BGM 1)
+#048 Civilian Control II (Main BGM 1)
+#049 Hard Galivan (Main BGM 2)
+#053 Theme of The Devil (Boss)
+#055 Stage Clear
+#050 Game Over
+#051 Corus of Hunters (Name Entry)
+#059 Montbard (Name Entry)
+
+#024 Hard Galivan - alt?
+
+-----------------------------------------
+ [SFX]
+
+#001 [SFX] <time="3">
+#002 [SFX] <time="3">
+#003 [SFX] <time="3">
+#004 [SFX] <time="3">
+#005 [SFX] <time="3">
+#006 [SFX] <time="3">
+#007 [SFX] <time="3">
+#008 [SFX] <time="3">
+#009 [SFX] <time="3">
+#010 [SFX] <time="3">
+#011 [SFX] <time="3">
+#012 [SFX] <time="3">
+#013 [SFX] <time="3">
+#014 [SFX] <time="3">
+#015 [SFX] <time="3">
+#016 [SFX] <time="3">
+#017 [SFX] <time="3">
+#018 [SFX] <time="3">
+#019 [SFX] <time="3">
+#020 [SFX] <time="3">
+
+#034 [PCM] <time="3">
+#035 [PCM] <time="3">
+#036 [PCM] <time="3">
+#038 [PCM] <time="3">
+#039 [PCM] <time="3">
+#040 [PCM] <time="3">
+//#041 ???
+//#042 ???
+//#043 ???
+//#044 ???
+//#045 ???
+
+  [Source]
+  Game Sound Nichibutsu -G.S.M. Nichibutsu 1-
+  Pony Canyon / Scitron  D28B0004  Sep 21, 1988
+
+  [Sound Composer]
+  Kenji Yoshida
+
+$end

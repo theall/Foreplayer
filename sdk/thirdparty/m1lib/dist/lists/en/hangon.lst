@@ -1,0 +1,34 @@
+﻿$name=hangon
+$version=2
+$default=150
+$songmax=157
+$main
+
+#150 Title
+#157 Main Theme
+#129 Goal Music
+#130 Name Entry
+//
+//#131 $83
+//#158 $9e
+
+--------------------------------------------
+  [SFX]
+
+#138 [SFX] Skid <time="3">
+#140 [SFX] Safety Area <time="3">
+#137 [SFX] Rebound
+#144 [SFX] Crash
+#146 [SFX] Alarm 1
+#147 [SFX] Alarm 2
+#148 [SFX] Alarm 3
+#149 [SFX] Alarm 4
+#155 [SFX] Bike Sound R
+#156 [SFX] Bike Sound L
+
+  [Source]
+  Sega Taikan Game Special
+  Alfa Records  28XA-198  Dec 21, 1987
+
+// Updated by CrashTest (adding times)
+$end

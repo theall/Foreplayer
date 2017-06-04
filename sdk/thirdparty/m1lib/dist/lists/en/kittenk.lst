@@ -1,0 +1,41 @@
+﻿$name=kittenk
+$version=2
+$default=$5f
+$songmax=$68
+$fixed_volume=260
+$main
+
+$5f Why Don't You Join Us! (Attract Mode)
+$0b Coin
+$50 "Daisuki nyan nyan, Kawaii nyan nyan" (St.1 BGM)
+$63 Door of Adventure (After the Exit Opened)
+$55 Congratulation Fanfare (Clear) <time="3.5">
+$3c [Voice] nyan nya nyan <time="1.4">
+$51 "norinori cat" (St.2 BGM)
+$56 If You Open the Magical Door? (Demo)
+$53 "Wan wan oniisan no uta" (Shop)
+$5c Can't Stop Dancing (St.3 BGM)
+$54 Adult's Dream (Casino BGM)
+$5a "yokatta-nyan no fanfare" (Jackpot)
+$59 Suka Suka (Lost)
+$5b Up and Down Adventure (St.4 BGM)
+$32 [Voice] Invincibility!! <time="1">
+$57 Stray-cat Adventure (Invincible)
+$60 Fight! (Boss)
+$67 "yossha!!" (Won)
+$68 "uuun.." (Lose)
+$62 MOGURA Bassing (Mole attack BGM)
+$52 "zan'nen dattane" "mouikkai guwaanbarei!" (Game Over - Continue)
+$64 "uwaa, ganbattane!" (Intermission)
+$5e "Cat yori aiwo komete" (Name Entry)
+$61 "nyanpy! Happy!" (Ending)
+$66 Triumphant Return (Epilogue)
+
+  [Source]
+  Konami Game Music Collection Vol.2
+  King Records  KICA-1016  Sep 21, 1990
+
+  [Sound Composers]
+  Ken, J_Kane
+
+$end

@@ -1,0 +1,35 @@
+﻿$name=liblrabl
+$version=2
+$default=0
+$songmax=19
+$main
+
+#00 Credit
+#01 Overcharged Music
+#02 Flower Completed Music
+#03 Intro
+#04 BGM
+#05 Bashishi sound
+#06 Killer, Share and Changer appeared
+#07 Line cut by Share
+#08 Changing sound
+#09 Round start
+#10 Touched an enemy
+#11 Name entry music
+#12 Game over music
+#13 Alert when energy is running out and the overcharged mode finished
+#14 Sound notifies that a treasure chest exists when Bashishi is done
+#15 Bonus counter
+#16 Treasure chest appeared
+#17 Extended
+#18 Charging energy
+#19 Marriage completed
+
+  [Source]
+  Namco Video Game Music Programming
+  Dempa
+
+  [Sound Composer]
+  Nobuyuki Oonogi
+
+$end

@@ -1,0 +1,113 @@
+﻿$name=gforce2
+$version=2
+$default=130
+$main
+
+#130 Credit Inserted
+#191 Scene Select
+#182 Beyond the Galaxy (Scene A - Level 1)
+#181 Defeat (Scene B - Level 2)
+#190 Try-Z (Scene E - Level 5)
+#188 Take Back (Scene C - Level 3)
+#189 Alone Fighter (Scene D - Level 4)
+#183 Stage Clear
+#197 Name Entry
+
+#129 Credit Inserted #2 - Galaxy Force I
+
+-----------------------------------------
+ [Voice]
+
+#065 [Voice] Check.
+#066 [Voice] Weapon, check
+#067 [Voice] Control, check
+#068 [Voice] Fuel, check
+#069 [Voice] Roger
+#070 [Voice] Take 'her outta here.
+#071 [Voice] The enemy headquarters.
+#072 [Voice] in
+#073 [Voice] Refueling finished.
+#074 [Voice] You're doing great!
+#075 [Voice] Round 2
+#076 [Voice] Seat belt fasten, check.
+#077 [Voice] One
+#078 [Voice] Two
+#079 [Voice] Three
+#080 [Voice] Four
+#081 [Voice] Five
+#082 [Voice] Six
+#083 [Voice] Last mission
+#084 [Voice] Mission
+#085 [Voice] Danger!
+#086 [Voice] Fire!
+#087 [Voice] Target destroyed.
+#088 [Voice] Direct hit!
+#089 [Voice] You're crashed.
+#090 [Voice] Go up!
+#091 [Voice] Go down!
+#092 [Voice] Right turn!
+#093 [Voice] Left turn!
+#094 [Voice] Extra energy.
+#095 [Voice] Lift off!
+#096 [Voice] Caution
+#097 [Voice] Careful!
+#098 [Voice] Destroyer, begin take-off countdown.
+#099 [Voice] Starship command to to destroyer, begin take off countdown.
+#100 [Voice] for-Take off.
+#101 [Voice] Cleared for take off.
+#102 [Voice] Begin takeoff countdown.
+#103 [Voice] Systems, check.
+#104 [Voice] All clear for Take off.
+#105 [Voice] Clear.
+#106 [Voice] All systems check.
+#107 [Voice] Strength Maximum
+#108 [Voice] Engine
+#109 [Voice] Maximum
+#110 [Voice] Headquarters
+#111 [Voice] Fortress
+#112 [Voice] Commence operation
+#113 [Voice] Good luck, commander.
+#114 [Voice] Crash warning!
+#115 [Voice] Hurry up!
+#116 [Voice] Shield broken.
+#117 [Voice] Broken
+#118 [Voice] Lost
+#119 [Voice] Go up!
+#120 [Voice] Turn!
+#121 [Voice] Take off.
+#122 [Voice] Countdown
+#123 [Voice] Commander,
+#210 [Voice] Mission 1
+#211 [Voice] Mission 2
+#212 [Voice] Mission 3
+#213 [Voice] Mission 4
+#214 [Voice] Mission 5
+#215 [Voice] Mission 6
+#216 [Voice] Roger, refueling finished.
+#217 [Voice] Clear, check
+#218 [Voice] Shield Strength Maximum
+#219 [Voice] Destroy the enemy headquarters
+#220 [Voice] The enemy fortress
+#221 [Voice] Destroy the enemy fortress
+#222 [Voice] Round 2 clear, check
+#223 [Voice] Round 2 commence operation
+#224 [Voice] Starship command to Round 2 commence operation
+#225 [Voice] Roger.
+#226 [Voice] Take 'her in.
+#227 [Voice] Control lost.
+#228 [Voice] Shield lost.
+#229 [Voice] Go down!
+//#001 [SFX]
+//#129 - #180 [SFX]
+//#204 - #209 [SFX]
+//#219 - #238 [SFX]
+
+  [Source]
+  Galaxy Force -G.S.M. Sega 1-
+  Pony Canyon / Scitron   D28B0002  July 21, 1988
+
+  [Sound Composer]
+  Jouji Iijima
+
+// Voice transcriptions by Tom Braider
+$end

@@ -1,0 +1,39 @@
+﻿$name=jjack
+$version=2
+$default=20
+//$songmax=$1d
+$main
+
+#20 Game Start <time="2.0">
+#01 Round 1, 3, 5 <time="45.2">
+#21 Round Clear <time="3.2">
+#10 Next Round Start <time="2.5">
+#02 Round 2 <time="46.5">
+#11 Extended <time="12.0">
+#03 Round 4 <time="44.9">
+#15 All Round Cleared <time="11.4">
+#14 Name Entry <time="11.3">
+#16 Game Over <time="3.3">
+#04 ??? <time="10.0">
+
+------------------------------------------------------
+
+#05 [SFX] <time="2.5">
+#06 [SFX] <time="2.5">
+#07 [SFX] <time="2.5">
+#08 [SFX] <time="2.5">
+#09 [SFX] <time="2.5">
+#12 [SFX] <time="2.5">
+#13 [SFX] <time="2.5">
+#17 [SFX] <time="2.5">
+#18 [SFX] <time="2.5">
+#19 [SFX] <time="2.5">
+#22 [SFX] <time="2.5">
+#23 [SFX] <time="2.5">
+#25 [SFX] <time="2.5">
+#27 [SFX] <time="2.5">
+#28 [SFX] <time="10.0">
+#29 [SFX] <time="2.5">
+
+// List contribution by Neo Techno Bou
+$end

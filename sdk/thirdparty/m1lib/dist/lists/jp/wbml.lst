@@ -1,0 +1,37 @@
+﻿$name=wbml
+$version=2
+$default=$03
+$songmax=$ff
+$main
+
+$03 BGM 1 (Monster Land - Round 1, 2)
+$21 BGM 2 (Town - Round 2, 7)
+$05 SHOP 1 (Wepon)
+$04 SHOP 2 (Bar)
+$2c BGM 3 (Cave - Round 2, 5, 8, 9, 10)
+$2e BGM 4 (Castle - Round 3, 6, 7, 10, 11)
+$31 BGM 4a (Castle -short ver.-)
+$20 SHOP 3 (Hospital)
+$34 BGM 5 (Beach - Round 4, 7, 10)
+$37 BGM 6 (Under Water - Round 4, 10)
+$23 BGM 7 (Desert - Round 5, 7, 8)
+$1a [S.E.] Door open
+$08 BOSS 1 (Normal)
+$2d [S.E.] Gate open
+$09 ROUND CLEAR
+$0a BGM 8 (Dragon Castle - Round 11)
+$3c BOSS 2 (Metal Dragon)
+$3e [S.E.] UFO
+$3a ENDING
+$0c GAME OVER
+
+$06 Unused 1
+$07 Unused 2
+$0d Unused 3
+$24 Unused 4
+$25 BGM 1
+
+  ■作曲
+  坂本 慎一
+
+$end

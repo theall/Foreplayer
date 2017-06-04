@@ -1,0 +1,143 @@
+﻿$name=captaven
+$version=2
+$default=004
+$main
+
+#004 Attract Mode<time="107.6">
+#025 Title Screen
+#067 [Voice] Fight (Credit)
+#007 Player Select
+#017 Demo BGM 1 
+#022 Scene 1 'The Avengers'
+#009 Stage 1
+#014 Boss BGM 1 (Whirlwind)
+#013 Stage Clear
+#005 Demo BGM 2 <time="14.5">
+#023 Scene 2 'Target Town'
+#010 Stage 2
+#014 Boss BGM 1 (Grim Reaper)
+#013 Stage Clear
+#005 Demo BGM 2 <time="14.5">
+#024 Scene 3 'Challenge from the Bottom of the Sea '
+#011 Stage 3
+#018 Boss BGM 2 (Mandarin)
+#013 Stage Clear
+#005 Demo BGM 2 <time="14.5">
+#023 Scene 4 'The Giant Laser Canonon'
+#012 Stage 4
+#008 Continue ?
+#016 Boss BGM 3 (Ultron, Crossbones)
+#013 Stage Clear
+#005 Demo BGM 2 <time="14.5">
+#024 Scene 5 'The End of Red Skull'
+#019 Stage 5
+#018 Boss BGM 2 (Red Skull)
+#014 Boss BGM 1 (Mech. Skull)
+#021 Ending
+#006 Staff Roll <time="180">
+#015 Name Entry
+#020 Game Over
+#025 Best Avengers
+
+---------------------------------------------------
+  [S.E.]
+
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] 
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#054 [S.E.] 
+#055 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#083 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#092 [S.E.] 
+#093 [S.E.] 
+#094 [S.E.] 
+#096 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#107 [S.E.] 
+#108 [S.E.] 
+#109 [S.E.] 
+#110 [S.E.] 
+#112 [S.E.] 
+#113 [S.E.] 
+#115 [S.E.] 
+#116 [S.E.] 
+
+---------------------------------------------------
+  [Voice]
+
+#028 [Voice] 
+#041 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#060 [Voice] 
+#061 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#064 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#067 [Voice] Fight
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#084 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#091 [Voice] 
+#095 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#111 [Voice] 
+
+  ■作曲
+  佐藤 共良 (TOM SATO)
+  木内 達也 (MR.K)
+
+// List contribution by ZEK.
+$end

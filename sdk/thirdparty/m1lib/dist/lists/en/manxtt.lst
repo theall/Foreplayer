@@ -1,0 +1,34 @@
+﻿$name=manxtt
+$version=2
+$default=019
+$main
+
+#019 Attract Mode 1 <time="0:31.5">
+#004 Attract Mode 2 <time="0:39">
+#002 Course Select <time="0:51.2">
+#017 Under the Windy Sky (Laxey Coast) <time="2:36.5">
+#023 Slip Stream (TT Course) <time="2:09.8">
+#022 Feel the Power (Laxey Coast Reverse Mirrored) <time="2:21.92">
+#001 Maximum Speed (TT Course Reverse Mirrored) <time="3:09.95">
+#024 Exhaust Notes (Extra Racing Music 1) <time="2:09.2">
+#005 Get the Ace (Extra Racing Music 2, Ending Theme) <time="1:57.7">
+#007 Finish <time="0:08">
+#006 Race Result 1 <time="0:36">
+#018 Race Result 2 <time="0:42.1">
+#008 End Credits <time="0:51">
+#016 Name Entry <time="0:59.4">
+#003 Game Over <time="0:08">
+
+#020 Unused <time="0:32.7">
+#010 Sheep Ride (Extra Racing Music 3)
+// from Mary Had a Little Lamb
+
+  [Source]
+  Manx TT Superbike (Saturn version)
+  Sega  GS-9102  Mar 14, 1997
+
+  Manx TT Superbike (PC version)
+  Sega  HCJ-0113  Dec 05, 1997
+
+// List contribution by NK
+$end

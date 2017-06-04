@@ -1,0 +1,50 @@
+﻿$name=kof2002
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#033 2002 (Title)
+#034 2002 [30sec] (30sec Title)
+#044 How to play
+#045 Select
+#042 J (Japan Stage)
+#035 Tears ('99 Kyo Kusanagi)
+#036 Stormy Saxophone 2 ('96 Iori Yagami)
+#055 Tacos Dance (Mexico Stage)
+#053 KD-0079 ('99 Team)
+#037 Let's Go to Seoul (Kim Kaphwan)
+#043 Deserted Town (Cambodia Stage)
+#064 Diet (Female Team)
+#047 Winner
+#056 Red Wind (China Stage)
+#038 Bloody ('98 New Face Team)
+#060 Kurikinton (Garou Team)
+#052 The Netherlands (Holland Team)
+#039 KD0084 ('2000 Team)
+#061 Jungle Bouncer (Ikari Team)
+#046 Progress (Korea Stage)
+#062 Psycho Soldier (Psycho Soldier Team)
+#063 Beauty & The Beast (AOF Team)
+#057 Temptation Time ('97 Team)
+#051 Medlay - Turbulent Ground of Flame ('98 Orochi Team)
+#040 Esaka ('98 Kyo Kusanagi)
+#049 Challenger
+#058 Napolitan Trance (Italy Stage)
+#050 Revival (Rugal Appears)
+#048 Last Dance (Boss Stage)
+#054 at Last (Rugal Disappears - Ending)
+#059 Festive mood (Credits)
+#041 Continue (Continuye - Game Over)
+
+  [Source]
+  The King of Fighters 2002
+  Scitron / Playmore  SCDC-00221  Nov 20, 2002
+
+  [Composers]
+  Tate-Norio, Masahiko Hataya
+
+// List Contribution by GolGol
+// English list by Fuj
+$end

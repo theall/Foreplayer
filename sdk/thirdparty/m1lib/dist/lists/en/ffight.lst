@@ -1,0 +1,145 @@
+﻿$name=ffight
+$version=2
+$default=149
+//$songmax=159
+$main
+
+  &lt;Prologue&gt;
+#149 [SFX] Phone 1 <time="5.8">
+#150 [SFX] Phone 2 <time="1.5">
+#082 Demo BGM
+#095 Credit Inserted
+#085 Player Select <time="35.7">
+#080 Opening <time="4.5">
+#136 [Voice] Ahhhahahaha... (Damnd) <time="2">
+
+  &lt;Stage 1&gt;
+#064 BGM 1 <time="1:16.1">
+#065 BGM 2 <time="1:09.3">
+#064 BGM 1 <time="41.5">
+#087 Round Clear
+
+  &lt;Stage 2&gt;
+#133 [Voice] Haaaahhhh! <time="2.3">
+#066 BGM 3 <time="2:01.8">
+#148 [SFX] Subway 1 <time="4">
+#147 [SFX] Subway 2 <time="7">
+#067 BGM 4 <time="1:33.2">
+#076 Bonus Stage <time="26.5">
+#118 [SFX] <time="2">
+#142 [Voice] Oh! My God!! (Bred)
+
+  &lt;Stage 3&gt;
+#064 BGM 1 <time="41.5">
+#068 BGM 5 <time="1:09.2">
+#064 BGM 1 <time="41.5">
+#068 BGM 5 <time="48.5">
+
+  &lt;Stage 4&gt;
+#072 BGM 9 <time="3:11.6">
+#073 BGM 10 <time="2:49.3">
+
+  &lt;Stage 5&gt;
+#069 BGM 6 <time="1:57.7">
+#070 BGM 7 <time="1:04.6">
+#071 BGM 8 <time="1:20">
+
+  &lt;Stage 6&gt;
+#144 [SFX] Elevator 1 <time="1">
+#145 [SFX] Elevator 2 <time="3">
+#146 [SFX] Elevator 3 <time="2">
+#137 [Voice] Hah!
+#064 BGM 1 <time="41.5">
+#073 BGM 10 <time="1:32.3">
+#066 BGM 3 <time="1:04.1">
+#157 [Voice] Huhahahaha...! (Belger) <time="3">
+#071 BGM 8 <time="40">
+#158 [Voice] Aahhhh... (Belger) <time="4">
+#109 [SFX] Belger's End <time="2">
+#088 Last Round Clear <time="8">
+
+  &lt;Epilogue&gt;
+#084 Ending
+#083 Continue
+#081 Game Over
+
+-----------------------------------------------------------
+ [Voice]
+
+#099 [Voice] Hummn! (Cody, Haggar)
+#100 [Voice] Deyaah! (Cody)
+#123 [Voice] Deyaah! (Cody)
+#124 [Voice] Haah! (Cody)
+#128 [Voice] Wooahhah... (Cody, Guy)
+#131 [Voice] Uoohh... (Cody)
+#103 [Voice] Uraah! (Haggar)
+#104 [Voice] Deyaah! (Haggar)
+#105 [Voice] Yaah! (Haggar)
+#106 [Voice] Uhryaah! (Haggar)
+#107 [Voice] Tehryah! (Haggar)
+#125 [Voice] Uwaahoh! (Haggar)
+#129 [Voice] Gyuoh... (Haggar)
+#132 [Voice] Uhwahh... (Haggar)
+#101 [Voice] Eiyaah! (Guy)
+#108 [Voice] Haah! (Guy)
+#130 [Voice] Ahhh... (Guy)
+#137 [Voice] Hah! (Andore, Bill Bull, Wong Who)
+#139 [Voice] Kyaahah... (Poison, Roxy)
+#133 [Voice] Haaaahhhh! (Abigail)
+#136 [Voice] Ahhhahahaha... (Damnd)
+#140 [Voice] Uohh...
+#141 [Voice] Uhwaahh...
+#142 [Voice] Oh! My God!! (Bred)
+#156 [Voice] Oh,aahhhhah... (Jessica)
+#157 [Voice] Huhahahaha... (Belger)
+#158 [Voice] Aahhhh... (Belger)
+#138 [Voice] ??? (unused)
+
+-----------------------------------------------------------
+ [SFX]
+
+#093 [SFX] (unused)
+#094 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX]
+#102 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#126 [SFX]
+#127 [SFX]
+#134 [SFX]
+#135 [SFX]
+#143 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#159 [SFX]
+#148 [SFX] Subway 1 <time="4">
+#147 [SFX] Subway 2
+#144 [SFX] Elevator 1 <time="1">
+#145 [SFX] Elevator 2 <time="5">
+#146 [SFX] Elevator 3
+#122 [SFX]
+#151 [SFX]
+
+  [Source]
+  Final Fight -G.S.M. Capcom 3- / Alfh Lyra Wa Lyra
+  Pony Canyon / Scitron   PCCB-00030  May 21, 1990
+
+  Scitron Video Game Music Almanac 1990
+  Pony Canyon / Scitron  PCCB-00055  Feb 21, 1991
+
+// List Contribution and Updated by NK
+$end

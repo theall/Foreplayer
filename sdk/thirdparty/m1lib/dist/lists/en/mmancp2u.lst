@@ -1,0 +1,61 @@
+﻿$name= mmancp2u
+$version=2
+$default=034
+$songmax=959
+$fixed_volume=277
+$main
+
+#034 Q Sound Logo 1 <time="10">
+
+#001 TITLE
+#002 PLAYER SELECT
+#003 STAGE SELECT (ROCKMAN 1 - 2)
+#006 STAGE STARTING
+#012 STAGE 1 (Theme of Napalm Man)
+#013 STAGE 2 (Theme of Crash Man)
+#015 STAGE 3 (Theme of Guts Man)
+#004 STAGE SELECT (ROCKMAN 3 - 6)
+#017 STAGE 4 (Theme of Gyro Man)
+#016 STAGE 5 (Theme of Gemini Man)
+#014 STAGE 6 (Theme of Shadow Man)
+#007 STAGE CLEAR
+#008 YOU GOT NEW WEAPON
+#005 STAGE SELECT (ROCKMAN 7)
+#018 STAGE 7 (ROCKMAN 7 - Opening Stage)
+#023 STAGE 8 (Theme of Crowd Man)
+#019 STAGE 9 (Theme of Slash Man)
+#022 STAGE 10 (Theme of Freeze Man)
+#021 STAGE 11 (Theme of Junk Man)
+#020 STAGE 12 (Theme of Shade Man)
+#031 STAGE 13 (From "Makai")
+#009 VS. WILY
+#024 STAGE WILY BOSS
+#025 STAGE WILY MACHINE
+#026 STAGE WILY CAPSULE
+#010 CONTINUE
+#011 GAME OVER
+#027 ENDING - ROCKMAN 1
+#028 ENDING - FORTE
+#029 ENDING - BLUES
+#030 ENDING - ROCKMAN 2
+
+#035 Q Sound Logo 2
+
+-----------------------------------------------------------
+ [SFX] #256 - #443
+
+#256 [SFX]
+
+-----------------------------------------------------------
+ [Voice] #448 -
+
+#448 [Voice] 
+
+
+  [Source]
+  Capcom Gaem Soundtrack / Rock Man 2 The Power Fighters
+  Victor Entertainment  VICL-2173  Sep 21, 1996
+
+// List Contribution by nZero
+// Updated by NK
+$end

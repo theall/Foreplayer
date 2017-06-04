@@ -1,0 +1,28 @@
+﻿$name=hippodrm
+$version=2
+$default=$31
+$songmax=$3a
+$main
+
+$31 BEGINNING BATTLE (Opening)
+$34 FIGHTING SPIRIT (BGM 1)
+$37 VICTORY I (Clear)
+$36 BATTLE SHOPPING (Shop)
+$35 BIG THE POWERFUL MONSTER (BGM 2)
+$32 VICTORY II (Clear 2)
+$3a NEW CHAMPION (Ending)
+$38 DEAD OF FIGHTER (Game Over)
+$39 FIGHTING REQUIEM (Name Entry)
+
+$33 ???
+
+-----------------------------------------
+ [S.E.]
+
+  ■出典
+  GAME SOUND DECO -G.S.M. DATA EAST 1-
+  PONY CANYON / SCITRON  D25B1002  1989.06.21
+
+// ???は未使用曲かもしれづ。でもいい曲です
+// ある曲が某ウ○フのコード運びにそっくり…
+$end

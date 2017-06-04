@@ -1,0 +1,120 @@
+﻿$name=fightfev
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#037 Attract Mode
+#127 Coin
+#045 How to Play
+#039 Player Select
+#043 World Map
+#035 Han Baedal (Korea)
+#050 Miyuki (Japan)
+#049 Rophen Heimer (German)
+#041 Continue ? <time="17">
+#033 Golrio (Brasil) 
+#051 Chin Tao (China) 
+#048 Kim Hoon (Mexico)
+#034 Nick Commando (U.S.A)
+#040 Bonus Game
+#053 Magic Dunker (U.S.A)
+#036 Master Taekuk (Korea)
+#055 Won
+#047 Taekwon Champion
+#054 Congratulation
+#052 Karate Kenji (Japan)
+#042 Name Entry
+#055 Completed
+#038 Credits
+#044 Game Over
+
+#046 Unused
+#065 Unused Ver.2
+
+---------------------------------------------------
+  [SFX]
+
+#002 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#127 [SFX] Coin
+#128 [SFX]  
+#129 [SFX]  
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#207 [Voice] 
+#208 [Voice] 
+#209 [Voice] 
+#210 [Voice] 
+#211 [Voice] 
+#218 [Voice] 
+#219 [Voice] 
+#220 [Voice] 
+#221 [Voice] 
+#222 [Voice] 
+#229 [Voice] 
+#230 [Voice] 
+#231 [Voice] 
+#232 [Voice] 
+#233 [Voice] 
+
+// List contribution by ZEK.
+$end

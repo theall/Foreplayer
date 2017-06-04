@@ -1,0 +1,95 @@
+﻿$name=nwarr
+$version=2
+$default=0043
+$fixed_volume=274
+//$songmax=1023
+$main
+
+#0043 QSound Logo
+//Main QSound
+
+ &lt;DISC 1&gt;
+#0001 Opening - Title
+#0003 Player Select 1
+#0047 Player Select 2
+#0002 VS.
+#1004 Hsien-ko: Stage (China)
+#1006 Hsien-ko: Winning
+#1008 Hsien-ko: Ending 1
+#1022 Hsien-ko: Ending 2
+#0016 Rikuo: Stage (Brazil)
+#0028 Rikuo: Winning
+#0040 Rikuo: Ending 1
+#1018 Rikuo: Ending 2
+#0010 Victor: Stage (Germany)
+#0022 Victor: Winning
+#0034 Victor: Ending 1
+#1012 Victor: Ending 2
+#0013 Anakaris: Stage (Egypt)
+#0025 Anakaris: Winning
+#0037 Anakaris: Ending 1
+#1015 Anakaris: Ending 2
+#0018 Huitzil: Stage (Mexico)
+#0030 Huitzil: Winning
+#1002 Huitzil: Ending 1
+#1020 Huitzil: Ending 2
+#0012 Morrigan: Stage (Scotland)
+#0024 Morrigan: Winning
+#0036 Morrigan: Ending 1
+#1014 Morrigan: Ending 2
+#0019 Pyron: Stage (Hellstorm)
+#0031 Pyron: Winning
+#1003 Pyron: Ending 1
+#1021 Pyron: Ending 2
+
+ &lt;DISC 2&gt;
+#0011 Lord Raptor: Stage (Australia)
+#0023 Lord Raptor: Winning
+#0035 Lord Raptor: Ending 1
+#1013 Lord Raptor: Ending 2
+#0009 Jon Talbain: Stage (England)
+#0021 Jon Talbain: Winning
+#0033 Jon Talbain: Ending 1
+#1011 Jon Talbain: Ending 2
+#0008 Demitri: Stage (Romania)
+#0020 Demitri: Winning
+#0045 Demitri: Ending 1-A
+#0032 Demitri: Ending 1-B
+#1010 Demitri: Ending 2
+#0004 Here Comes A New Challenger
+#0014 Felicia: Stage (U.S.A.)
+#0026 Felicia: Winning
+#0038 Felicia: Ending 1
+#1016 Felicia: Ending 2
+#0015 Bishamon: Stage (Japan)
+#0027 Bishamon: Winning
+#0039 Bishamon: Ending 1
+#1017 Bishamon: Ending 2
+#0017 Sasquatch: Stage (Canada)
+#0029 Sasquatch: Winning
+#0041 Sasquatch: Ending 1
+#1019 Sasquatch: Ending 2
+#1005 Donovan: Stage (Unknown)
+#1007 Donovan: Winning
+#1009 Donovan: Ending 1
+#1023 Donovan: Ending 2
+#0006 Continue
+#0007 Game Over
+#0005 Ranking Display
+#0042 Credits Roll 1
+#0046 Credits Roll 2
+
+#0044 QSound Logo 2
+//Sub QSound
+
+  [Source]
+  Vanpire Hunter Arcade Game Track
+  Sony Records  SRCL-3197, 3198  May 21, 1995
+
+  Characters' names are altered in US version respectively.
+  Gallon -> Jon Talbain, Lei-Lei -> Hsien-ko, Zabel -> Lord Raptor
+  Aulbath -> Rikuo, Phobos -> Huizil
+
+// List Contribution by NK
+// English list by Fuj.
+$end

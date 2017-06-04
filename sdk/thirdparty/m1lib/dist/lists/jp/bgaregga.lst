@@ -1,0 +1,135 @@
+﻿$name=bgaregga
+$version=2
+$default=114
+$fixed_volume=103
+$main
+
+#114 RAIZING Logo <time="0:03">
+#001 Rebellion (Title Demo) <time="0:17">
+#002 4:71am (Select)
+#003 Fly to the Leaden Sky (Stage 1 -VALLEY-)
+#004 Underwater Rampart (Stage 2 -PLATEAU-)
+#005 Tunnel Vision (Stage 3 -FACTORY-)
+#007 Degeneracy (Stage 4 -PLANT-)
+#006 Subversive Awareness (Stage 5 -CLOUD-)
+#008 Megalomaniac (Stage 6 -BASE-)
+#009 Marginal Consciousness (Stage 7 -AIR PORT-)
+#010 Stab and Stomp! (Boss A)
+//#010 Stab'n Stomp! (Boss A)
+#011 Thrust and Thrash! (Boss B)
+//#011 Thrust'n Thrash! (Boss B)
+#013 Erupter (Boss C)
+#012 Fatality (Game Over) <time="0:06">
+#015 Bluescape (Name Entry)
+#014 Blood Brothers in the Dawn (Ending) <time="0:43">
+
+-----------------------------------------
+ [S.E.]
+
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.] SHOT POWER UP!
+#045 [S.E.] WAPON LEVEL UP!
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.] SPECIAL POWER UP!
+#052 [S.E.] (PAUSE音?)
+#053 [S.E.]
+#064 [S.E.]
+#065 [S.E.] ボンバー!! (ガイン)
+#066 [S.E.] アレフガモナ (チッタ)
+#067 [S.E.] チェストォー (ミヤモト)
+#068 [S.E.] (ボーンナム)
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#081 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#087 [S.E.]
+#088 [S.E.]
+#089 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#092 [S.E.]
+#093 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#100 [S.E.]
+#101 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#110 [S.E.]
+#111 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#115 [S.E.] コマンド入力成功
+#116 [S.E.] EXTEND
+#117 [S.E.] コマンド入力後スタート
+#118 [S.E.]
+#119 [S.E.]
+#120 [S.E.]
+#121 [S.E.]
+#122 [S.E.]
+#123 [S.E.]
+#124 [S.E.]
+#125 [S.E.]
+#126 [S.E.]
+#127 [S.E.]
+#133 [S.E.]
+#134 [S.E.] ボンバー
+#135 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+
+  ■出典
+  バトルガレッガ / ゲーメストビデオ (付録)
+  新声社 GV-027(4-88199-284-8) 1996.08.30
+
+  BATTLE GAREGGA / SEGA SATURN
+  EAV  T-10627G  1998
+
+  蒼穹紅蓮隊 御徳用 / SEGA SATURN
+  EAV  T-10626G  1997
+
+  ■作曲
+  並木 学
+
+// 出典情報提供（ゲーメストビデオ）：かに氏
+$end

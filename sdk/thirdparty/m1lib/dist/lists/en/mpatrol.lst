@@ -1,0 +1,32 @@
+﻿$name=mpatrol
+$version=2
+$default=028
+$main
+
+#028 Opening <time="6">
+#024 BGM
+#029 Step Passage
+#030 Congratulations
+#027 Ending (Game Over)
+
+#031 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#054 [SFX]
+#055 [SFX]
+
+  [Soundtrack]
+  R-Type / IREM Game Music
+  Alfa Records  28XA-199  Jan 25, 1988
+
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+// List Contribution by Min
+$end

@@ -1,0 +1,27 @@
+﻿$name=dleague
+$version=2
+$default=009
+$main
+
+#009 Title
+#010 Team Select <time="25">
+#011 Play Ball <time="5">
+#020 BGM 1
+#012 Time
+#021 BGM 2
+#016 Home Run <time="8">
+#015 Score <time="4">
+#014 Change
+#019 Continue
+#018 Game Set
+#010 Name Entry <time="40">
+#022 Credits Roll
+
+#013 ? <time="4">
+#017 ?
+
+  [Sound Composer]
+  Naoto Yagishita, S. Imaoka, Norihiro Furukawa
+
+// List contribution by ZEK.
+$end

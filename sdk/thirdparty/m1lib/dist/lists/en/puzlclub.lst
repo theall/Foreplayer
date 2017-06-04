@@ -1,0 +1,74 @@
+﻿$name=puzlclub
+$version=2
+$default=018
+$main
+
+#018 Coin Inserted
+#019 [SFX] "Young Version" Selected
+#001 PacMan Story BGM 1
+#002 PacMan Story BGM 1 (Faster)
+#012 Round Clear <time="2.9">
+#013 Bonus Picture <time="4.6">
+#003 PacMan Story BGM 2
+#004 PacMan Story BGM 2 (Faster)
+#022 Try Again ? <time="13.5">
+#012 Round Clear <time="2.9">
+#013 Bonus Picture / Ending
+#014 Name Entry
+
+#019 [SFX] "Adult Version" Selected
+#005 Floor Exercise BGM 1
+#006 Floor Exercise BGM 1 (Faster)
+#012 Round Clear <time="2.9">
+#009 Shuffle !!! / Challenge !!! <time="10">
+#017 [SFX] Hurry !!! <time="2.8">
+#010 Shuffle !!! / Challenge !!! (Faster) <time="10">
+#011 Congratulations !!! <time="5">
+#013 Bonus Picture <time="13.1">
+#007 Floor Exercise BGM 2
+#008 Floor Exercise BGM 2 (Faster)
+#012 Round Clear <time="2.9">
+#013 Bonus Picture / Ending
+#014 Name Entry
+
+---------------------------------------------------
+ [SFX] 
+
+#015 [SFX] Time Out
+#016 [SFX] 
+#017 [SFX] Hurry !!!
+#018 [SFX] Coin
+#019 [SFX] Select
+#020 [SFX] 
+#021 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#194 [SFX] 
+#256 [SFX] 
+#257 [SFX] 
+#259 [SFX] 
+#260 [SFX] 
+#261 [SFX] 
+#262 [SFX] 
+#263 [SFX] 
+#264 [SFX] 
+#265 [SFX] 
+#266 [SFX] 
+#267 [SFX] 
+#268 [SFX] 
+#269 [SFX] 
+#270 [SFX] 
+#271 [SFX] 
+#272 [SFX] 
+#273 [SFX] 
+#274 [SFX] 
+#158 [SFX] 
+#172 [SFX] 
+#253 [SFX] 
+
+  [Sound Composers]
+  Seiichi Sakurai (Sack Chan), Shinji Hosoe (Megaten)
+  Ayako Sasou (A.Sasou)
+
+// List contribution by ZEK.
+$end

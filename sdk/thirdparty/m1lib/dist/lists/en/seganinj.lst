@@ -1,0 +1,46 @@
+﻿$name=seganinj
+$version=2
+$default=129
+$main
+
+#129 Opening Demo
+#158 Main Stage BGM
+#160 Daishuriken BGM
+#143 River Stage <time="22">
+#155 Avenue Stage BGM
+#154 Player Killed
+#156 Game Over
+#157 Name Entry
+
+---------------------------------------------------
+  [SFX]
+
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] <time="5">
+#135 [SFX] <time="5">
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#144 [SFX] <time="5">
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#151 [SFX] 
+#152 [SFX] 
+#153 [SFX] 
+#154 [SFX] 
+#161 [SFX] 
+#162 [SFX] 
+
+  [Source]
+  Sega Arcade 80's Vol.1
+  SME / Scitron  SCDC-00245  Feb 19, 2003
+
+// List contribution by ZEK.
+$end

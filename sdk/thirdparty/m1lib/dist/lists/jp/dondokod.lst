@@ -1,0 +1,89 @@
+﻿$name=dondokod
+$version=2
+$default=007
+$songmax=080
+$main
+
+#007 TITLE DEMO
+#008 OPENING DEMO
+#009 森の国 (ROUND 1 BGM)
+#015 BONUS STAGE
+#010 お菓子の国 (ROUND 2 BGM)
+#022 HURRY UP!! (TIME UP)
+#021 MAP DEMO
+#011 氷の国 (ROUND 3 BGM)
+#077 SECRET ROOM (ワープシーン)
+#017 SECRET ROOM
+#012 不思議の国 (ROUND 4 BGM)
+#013 ダンジョン (ROUND 5 BGM)
+#016 BOSS SCENE
+#019 BAD END
+#079 天の城 (イントロ？)
+#014 天の城 (ROUND 6 BGM)
+#018 HAPPY END
+#025 GAME OVER
+#020 NAME REGISTER
+
+-----------------------------------------
+ [S.E.]
+
+#023 [S.E.] EXTEND  
+#024 [S.E.] COIN  
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#066 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#071 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#078 [S.E.]
+
+  ■出典
+  DONDOKODON / TAITO
+  PONY CANYON / SCITRON  PCCB-00008  1989.10.21
+
+// リスト作成：ひろしさん
+$end

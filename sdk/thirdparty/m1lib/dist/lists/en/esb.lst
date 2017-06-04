@@ -1,0 +1,92 @@
+﻿$name=esb
+$version=2
+$default=47
+$main
+
+[Music]
+
+#001 - Music - Test #1
+#002 - Music - Test #2
+#047 - Music - Game Start
+#046 - Music - Probots BGM
+#043 - Music - Imperial Walker BGM
+#044 - Music - Tie Fighter BGM
+#041 - Music - Asteroid Field BGM
+#042 - Music - JEDI Power BGM
+#048 - Music - Game Over (No High Score)
+#049 - Music - Game Over (High Score List)
+
+[Voice]
+
+#010 - Credit Sound - Emperor - "He could destroy us.."
+#018 - Derlin - "Shield doors must be closed"
+#020 - Emperor - "The son of Skywalker must not become a Jedi!"
+#005 - Han - "Droid of some kind.."
+#031 - Han - "Never tell me the odds!"
+#035 - Han - "Prepare to make the jump to light-speed"
+#039 - Han - "I think we'er in trouble!"
+#003 - Luke - "That armor is too strong for blasters!"
+#009 - Luke - "Go for the legs.  It might be our only chance of stopping them!"
+#013 - Luke - "May the Force be with you"
+#014 - Luke - "There's a meteorite that hit the ground near here"
+#023 - Luke - "Use your harpoons and tow cables"
+#025 - Luke - "Watch that cross fire, boys!"
+#030 - Obi-Wan - "Luke, don't give in to hate.  That leads to the dark side!"
+#015 - Rieekan - "We've picked up something outside the base"
+#021 - Rieekan - "Start the evacuation!"
+#004 - Threepio - "Between ourselves, I think Master Luke is in considerable danger!"
+#029 - Threepio - "Sir, we just lost the main rear deflector shield"
+#032 - Threepio - "Oh, thank goodness we're coming out of the asteroid field"
+#033 - Threepio - "One more direct hit and we're done for"
+#034 - Threepio - "Sir, the possibility of successfully navigating an asteroid field is approximately three thousand, seven hundred and twenty to one."
+#037 - Threepio - "This is suicide!"
+#038 - Threepio - "There's no where to go!"
+#024 - Trench Officer - "We have spotted Imperial walkers!"
+#007 - Vader - "The Force is with you!"
+#008 - Vader - "General, prepare your troops for a surface attack!"
+#012 - Vader - "He will join us, or die!"
+#016 - Vader - "That's it, the rebels are there!"
+#017 - Vader - "Set your course to the Hoth system!"
+#022 - Vader - "That is the system.  And I'm sure Skywalker is with them"
+#026 - Vader - "You are beaten!"
+#028 - Vader - "Asteroids do not concern me, Admiral!"
+#036 - Vader - "I want that ship, not excuses!"
+#006 - Tie Fighter Sound
+#027 - Chewbacca Yell
+#040 ???
+
+[SFX]
+
+#045 SFX
+#050 SFX
+#051 SFX
+#052 SFX
+#053 SFX
+#055 SFX
+#056 SFX
+#057 SFX
+#058 SFX
+#059 SFX
+#060 SFX
+#061 SFX
+#063 SFX
+#064 SFX
+#065 SFX
+#066 SFX
+#067 SFX
+#069 SFX
+#070 SFX
+#071 SFX
+#072 SFX
+#073 SFX
+#074 SFX
+#075 SFX
+#076 SFX
+#077 SFX
+#078 SFX
+#079 SFX
+#080 SFX
+#081 SFX
+
+// Basic Listing by Tafoid
+$end

@@ -1,0 +1,54 @@
+﻿$name=stdragon
+$version=2
+$default=009
+$main
+
+#009 Title
+#015 Coin
+#001 Metal Planet (Area 1)
+#002 Dark Subterranean Cave "La Danse Magnetique" (Area 2)
+#003 Argent Inside of the Fort (Area 3)
+#004 Pleiads (Area 4)
+#005 Huge Artificial Planet (Area 5)
+#006 Insede of the Planet (Area 6)
+#007 Arch Fore (Boss)
+#008 Final Thrust (Last Boss)
+#012 Ending
+#011 Continue
+#010 Name Entry
+
+#061 ???
+
+------------------------------------------------------------------------
+
+#016 [SFX]
+#017 [SFX] Extend
+#018 [SFX]
+#019 [SFX] Enemy Shot 1
+#020 [SFX] Enemy Shot 2
+#021 [SFX]
+#022 [SFX] Enemy Shot 3
+#023 [SFX] Enemy Shot 4
+#024 [SFX] Enemy Shot 5
+#025 [SFX] Player's Shot
+#026 [SFX] Got an item
+#027 [SFX] Dash
+#028 [SFX]
+#029 [SFX] Fire Element
+#030 [SFX] Ring Laser
+#031 [SFX]
+#032 [SFX]
+#033 [SFX] Bound Crash
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX] Hit
+
+  [Soundtrack]
+  Saint Dragon / Jaleco
+  Pony Canyon / Scitron  PCCB-00003  Sep 21, 1989
+
+  [Sound Composers]
+  Shizuyoshi Okamura (Sizzla), Tecchan
+
+$end

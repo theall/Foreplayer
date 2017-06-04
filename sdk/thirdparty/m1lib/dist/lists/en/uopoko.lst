@@ -1,0 +1,25 @@
+﻿$name=uopoko
+$version=2
+$default=001
+$main
+
+#001 Title Screen
+#002 Game Mode Select
+#003 Main Theme 1 (Stage 1 - 6)
+#004 Main Theme 2 (Stage 7 - 12)
+#005 Main Theme 3 (Stage 13 - 18)
+#009 Theme of Crunch <time="12">
+#010 Continue? <time="11.83">
+#006 Main Theme 4 (Stage 19 - 24)
+#007 Main Theme 5 (Stage 25 - 28)
+#008 Main Theme 6 (Stage 29 - 30)
+#011 Stage Clear <time="2.75">
+#012 Ending
+#013 Name Entry
+
+  [Sound Composer]
+  Ryuuichi Yabuki
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

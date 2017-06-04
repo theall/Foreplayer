@@ -1,0 +1,32 @@
+﻿$name=rallybik
+$version=2
+$default=$0a
+$fixed_volume=164
+$main
+
+$0a [S.E.] ENGINE START
+$01 MACOSA
+$02 SOUTH WIND
+$03 DIXIE LINE
+$04 SAND STORM
+$05 DEN
+$07 BLACK TEA
+$08 SECOND LINE
+$0d SUN SET
+$0e AMERICA Bye Bye
+$0f CONGRA
+$11 CUT OFF
+$0b [S.E.] MISS!
+
+$09 CD未収録曲 1
+$0c CD未収録曲 2
+$10 CD未収録曲 3
+
+  ■出典
+  TOAPLAN GAME MUSIC SCENE ONE / TATSUJIN
+  POLYSTAR  H24X-10005  1989.06.25
+
+  ■作曲
+  太田 理
+
+$end

@@ -1,0 +1,96 @@
+﻿$name=uballoon
+$version=2
+$default=208
+$main
+
+#019 [S.E.] CREDIT <time="3">
+#208 OPENING DEMO
+	オペラ座の怪人
+#205 STORY 1
+	クラリネットポルカ / ポーランド民謡
+#198 STORY 1 BOSS
+	ハンガリー舞曲第5番 / ブラームス
+#192 STAGE CLEAR
+#203 CLEAR DEMO
+	美しく青きドナウ / シュトラウス
+#206 STORY 2
+	パイプライン / ザ・ベンチャーズ
+#198 TREASURE HUNTING
+	ハンガリー舞曲第5番 / ブラームス
+#192 CONGRATULATIONS <time="11.8">
+#196 STORY 2 BOSS
+	テキーラ / チャック・リオ
+#197 STORY 3
+	アイネ・クライネ・ナハトムジーク / モーツァルト
+#201 STORY 3 BOSS
+#199 STORY 4
+	ウィリアムテル序曲 / ロッシーニ
+#204 CONTINUE？
+#194 STORY 4 BOSS
+	歌劇「カルメン」より闘牛士の歌 / ビゼー
+#207 STORY 5
+	ポップコーン / ガーション・キングスレイ
+#198 STORY 5 BOSS
+	ハンガリー舞曲第5番 / ブラームス
+#195 STORY 6
+	She'll Be Comin' 'Round The Mountain (When She Comes)
+#202 BONUS
+	インベンション第1番 ハ長調 BWV 772 / バッハ
+#196 STORY 6 BOSS
+#193 STORY 7
+	ボレロ / ラヴェル
+#201 STORY 7 BOSS
+#205 STORY 8
+	クラリネットポルカ / ポーランド民謡
+#194 STORY 8 BOSS
+	歌劇「カルメン」より闘牛士の歌 / ビゼー
+#192 ENDING
+#209 NAME ENTRY
+#200 GAME OVER <time="6">
+	ハンガリー舞曲第5番 / ブラームス
+
+---------------------------------------------------
+ [S.E.]
+
+#001 [S.E.] <time="3">
+#002 [S.E.] <time="3">
+#003 [S.E.] <time="3">
+#005 [S.E.] <time="3">
+#006 [S.E.] <time="3">
+#007 [S.E.] <time="3">
+#008 [S.E.] <time="3">
+#009 [S.E.] <time="3">
+#010 [S.E.] <time="3">
+#012 [S.E.] <time="3">
+#013 [S.E.] <time="3">
+#014 [S.E.] <time="3">
+#015 [S.E.] <time="3">
+#016 [S.E.] <time="3">
+#017 [S.E.] <time="3">
+#018 [S.E.] <time="3">
+#019 [S.E.] <time="3">
+#020 [S.E.] <time="3">
+#021 [S.E.] <time="3">
+#022 [S.E.] <time="3">
+#024 [S.E.] <time="3">
+#025 [S.E.] <time="3">
+#026 [S.E.] <time="3">
+#029 [S.E.] <time="3">
+#030 [S.E.] <time="3">
+#031 [S.E.] <time="3">
+#032 [S.E.] <time="3">
+
+---------------------------------------------------
+ [Voice] 
+
+#004 [Voice] <time="3">
+#011 [Voice] <time="3">
+#023 [Voice] <time="5">
+#027 [Voice] <time="3">
+#028 [Voice] <time="3">
+#033 [Voice] <time="3">
+#034 [Voice] <time="3">
+
+// List contribution by ZEK.
+// Updated with infomations on official M1 message board.
+$end

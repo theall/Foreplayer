@@ -1,0 +1,29 @@
+﻿$name=mrdrillr
+$version=2
+$default=011
+$main
+
+#011 Georian
+#002 Mr.Driller's Theme
+#078 sala de masala
+#110 Fanfare
+#008 Mr.Driller
+
+#051 Mode Select
+#056 Game Over
+
+#001 Stereo Check
+#075 ?
+#083 ?
+#085 ?
+#101 ?
+
+  [Source]
+  Mr. Driller Soundtracks
+  Scitron  SCDC-00178-9  May 22, 2002
+
+  [Composer]
+  Masaru Shiina
+
+// List Contribution by GolGol
+$end

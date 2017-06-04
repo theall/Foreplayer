@@ -1,0 +1,28 @@
+﻿$name=dbz
+$version=2
+$default=009
+$main
+
+#009 Player Select <time="1:18" fadeout="yes" fadeoutlength="10">
+#001 Vs. Son Goku [ 孫 悟空 ] (World Martial Arts Championship Arena)
+#012 Player Win Stage 
+#014 Intermission
+#002 Vs. Vegeta [ ベジータ ] (Mountains of the Dr. Gero's Laboratory)
+#003 Vs. Son Gohan [ 孫 悟飯 ] (Kame-Sen'nin Island)
+#004 Vs. Piccolo [ ピッコロ ] (Kami's Lookout)
+#005 Vs. Reacoom [ リクーム ] (Namek village)
+#007 Vs. Commander Ginyu [ ギニュー隊長 ] (The freeza spaceship)
+#009 Vs. Commander Ginyu [ ギニュー隊長 ] (Outside the Freeza Spaceship) 
+#006 Vs. Butta [ バータ ] (Planet Namek)
+#008 Vs. Freeza [ フリーザ ] (Planet Namek)
+#016 Ending
+#011 Staff Credits
+#013 Player Lose Stage
+#015 Unknown 1 (alt. Ending?)
+#010 Unknown 2 (BGM)
+
+  [Composers]
+  Yoshiko Yamaguchi 
+
+// List contribution by Simon B., done in playing the game.
+$end

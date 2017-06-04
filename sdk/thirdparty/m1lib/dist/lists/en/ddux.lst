@@ -1,0 +1,27 @@
+﻿$name=ddux
+$version=2
+$default=137
+$songmax=011
+$fixed_volume=100
+
+$main
+
+#137 Nantettate A-Hi-Ru (Stage 1)
+#133 Nippon A-Cha-Cha (Stage 2)
+#138 Duck of Dux (Boxing)
+#139 Lucky Ducky Baby (Boxing Win)
+#134 No Dux No Cry (Stage 3)
+#132 Rock'n Rock (Stage 1)
+#135 DUX in the Dark (Stage 4)
+#130 Datte Ahiru Nandamon (Stage 5)
+#131 A-Cha-Cha the Castle (Stage 6)
+#136 Duck Around the Clock (Boss 2 & 4)
+#129 Tropcal Lucky (Unused)
+
+  [Source]
+  Power Drift & Mega Drive GSM Sega 2 / S.S.T. Band
+  Pony Canyon / Scitron  D28B0002  Dec 28, 1988
+
+// English List Contribution by Yawachary
+// Updated by Fuj
+$end

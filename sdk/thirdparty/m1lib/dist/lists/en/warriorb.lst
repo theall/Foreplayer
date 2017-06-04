@@ -1,0 +1,30 @@
+﻿$name=warriorb
+$version=2
+$default=$b9
+//$songmax=$df
+$main
+
+$b9 Introduction 1
+$ba Introduction 2
+$bb Player Select
+$c7 Close your Eyes
+$b1 Rising
+$b2 Evils-foot step
+$c9 Round Clear
+$c3 Spiral life
+$ce Evils-silence
+$ca Intermission
+$bc Map
+$bd Breath
+$53 Evils-nightmare
+$bf Voice of siren
+$cc Search one’s memory
+
+  [Source]
+  Nouvelle Vague -G.S.M. Taito 7-
+  Pony Canyon / Scitron  PCCB-00086  May 21, 1992
+
+  [Composer]
+  Masahiko Takagi (Mar.)
+
+$end

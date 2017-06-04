@@ -1,0 +1,30 @@
+﻿$name=pbobbl2n
+$version=2
+$default=31
+$fixed_volume=266
+$main
+
+#31 Title Screen
+#26 Welcome My Lovely (Select)
+#28 oppekepee no pee (Demo)
+#16 Step Skip Go Go! (BGM 1)
+#35 Round Clear
+#19 Let's Go to Pao Pao Island! - Nakayama Mix (BGM 2)
+#21 Forest in April - Nakayama Mix (BGM 3)
+#29 Continue
+#32 Bye Bye gokkun (Name Regist)
+#18 Travelers Dream (BGM 4)
+#22 Qi-Qi (BGM 5)
+#23 Paradise Cha Cha Cha! (BGM 6, from 2X)
+#24 buruburu Nightmare (Drunk BGM)
+#34 Completed
+#30 Let's Go to the Dream World with You (Ending)
+#33 Game Over
+
+  [Source]
+  Puzzle Bobble Variety / Zuntata
+  Zuntata Records  ZTTL-0009  Mar 28, 1997
+
+// Original List contributed by M
+// Updated by Fuj
+$end

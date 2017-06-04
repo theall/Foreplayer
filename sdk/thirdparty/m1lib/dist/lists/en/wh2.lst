@@ -1,0 +1,73 @@
+﻿$name=wh2
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#025 Wispering of Hell's Goddess (Title)
+#010 Player Select
+#012 Map Preview
+#008 VS
+#038 Fiord under Midnight Sun (Theme of Eric)
+#039 As Like As The Flower Scatter before The Wind (Theme of Ryoko)
+#032 Tiger Nail (Theme of Shura)
+#047 Nice Guys of The Seas (Theme of Kidd)
+#049 Jonny, Let's Dance (Theme of Max)
+#015 M'Madmeeeen! (Theme of Mudman)
+#041 Touch and Go (Theme of Fuuma)
+#033 Outland Gladiator (Theme of Janne)
+#004 Mighty Stroke (Theme of Dragon)
+#020 Russian Speculator (Theme of Rasputin)
+#079 Requiem for German Panzer Division #9 (Theme of Brocken)
+#034 Mongolian Dynamite (Theme of J.Carn)
+#017 Black Out #1 (Theme of Muscle Power)
+#024 Intuition (Theme of Hanzou)
+#022 A Way of Escape (Death Match: Scrapped)
+#050 The Land of The Holy (Death Match: War Field)
+#040 Not New York (Death Match: Bar)
+#029 Foresight Songs (Deth Match: Ring)
+#009 Stage Clear
+#043 Let's Blaze Away (Bonus Stage)
+#019 The Incarnation of A Devil (Theme of Neo Gigas)
+#042 Murder -D- (Theme of DIO)
+#046 Daddy's Wonder Stories (Eric's Ending)
+#053 Let's Go Outside (Ryoko's Ending)
+#005 Beautiful Brotherhood - Shurachan Ondo De Burabura (Shura's Ending 1)
+#052 Beautiful Brotherhood - Shurachan Ondo De Burabura (Shura's Ending 2)
+#006 'ANA' -The- World (Kidd's Ending 1)
+#011 'ANA' -The- World (Kidd's Ending 2)
+#018 Holiding Temps Perdu (Max's Ending 1)
+#031 Holiding Temps Perdu (Max's Ending 2)
+#073 Ruddy Dreaming (Mudman Ending)
+#071 Shake The Coke (Fuuma's Ending)
+#067 Lady on The Shining Heights (Janne's Ending)
+#044 Turn Right The Knob! (Dragon's Ending)
+#069 Oh! Vanity Moon (Rasputin's Ending)
+#081 Brocken, Upside-Down (Brocken's Ending 1)
+#030 Brocken, Upside-Down (Brocken's Ending 2)
+#051 Meridian Star (J.Carn's Ending)
+#048 Yet Another Blow No.1 (Muscle Power's Ending)
+#045 Back and Edge (Hanzou's Ending)
+#026 Symphony of Evil (End Credits)
+#007 Game Over
+
+#058 As Like As The Flower Scatter before The Wind (Theme of Ryoko) alt.
+#060 Not New York (Death Match: Bar) alt.
+#062 Touch and Go (Theme of Fuuma) alt.
+#064 Murder -D- (Theme of DIO) alt.
+#076 Yet Another Blow No.1 (Muscle Power's Ending) alt.
+#013 (unknown)
+#014 (unknown)
+#028 (unknown)
+#056 (unknown)
+#074 (unknown)
+#077 (unknown)
+
+  [Source]
+  World Heroes 2 / SNK, ADK
+  Pony Canyon / Scitron  PCCB-00122  Jun 18, 1993
+
+// List Contribution by NK
+// English version by Fuji
+$end

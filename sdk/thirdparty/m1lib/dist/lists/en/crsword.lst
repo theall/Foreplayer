@@ -1,0 +1,44 @@
+﻿$name=crsword
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#004 Cross Sword Prelude
+#009 Map
+#025 Stage Select
+#007 Disaster in the Poor Village of Dio
+#011 Heavy Metal
+#015 Clear
+#008 Laosta the Peddler
+#023 Fingerpost
+#010 The Shaken Castle in Pulista
+#024 Aged
+#012 A Desperate Fight at the Matius Tower
+#005 Fear
+#006 Tine
+#020 Death Masquerade
+#016 Monster Fish in the Fort of Gouda
+#029 Worm
+#013 Assault Landing Ship
+#028 Baxley
+#014 Cave in Leary
+#030 Old Soldier
+#027 Kiaugh
+#026 Evil Castle of Glacier
+#022 Nauthiz
+#019 Faraway Thunder
+#031 Clore
+#017 Remembrance
+#018 Game Over
+
+#035 Evil Castle of Glacier (Alt.)
+
+  [Source]
+  Cross Sword, Sengoku Denshou / Alpha Denshi, SNK
+  Pony Canyon / Scitron  PCCB-00076  Nov 21, 1991
+
+// List Contribution by NK
+// English list by Fujix.
+$end

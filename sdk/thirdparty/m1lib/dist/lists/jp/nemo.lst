@@ -1,0 +1,133 @@
+﻿$name=nemo
+$version=2
+$default=000
+$songmax=119
+$main
+
+#000 TITLE DEMO
+#030 CREDIT <time="0:02">
+#003 STAGE 1 - KING MORPHEUS <time="1:32">
+#010 STAGE 1 BOSS <time="0:52">
+#022 STAGE CLEAR
+#001 STAGE 2 - SLUMBER LAND <time="1:46">
+#028 STAGE 2 BOSS <time="0:43">
+#005 STAGE 3 - BIG BALLOON <time="2:15">
+#012 STAGE 3 BOSS <time="0:48">
+#006 STAGE 4 - POLICE STATION I <time="1:50">
+#101 STAGE 4 - POLICE STATION II <time="0:30">
+#013 STAGE 4 BOSS <time="0:56">
+#020 STAGE 5 START DEMO <time="0:34">
+#007 STAGE 5 - NIGHTMARE LAND I <time="0:59">
+#110 STAGE 5 - NIGHTMARE LAND II <time="1:09">
+#014 STAGE 5 BOSS <time="0:38">
+#008 STAGE 6 - NIGHTMARE CASTLE <time="1:47">
+#015 STAGE 6 BOSS <time="0:46">
+#009 STAGE 7 - NIGHTMARE KING <time="1:35.6">
+#016 STAGE 7 BOSS <time="1:48">
+#093 ENDING～STAFF ROLL <time="2:06.6">
+#092 ENDING (1 COIN CLEAR) <time="0:51">
+#025 NAME ENTRY <time="0:43">
+#024 GAME OVER
+
+#002 (unused) <time="2:14">
+#004 (unused) <time="1:40">
+#011 (unused) <time="0:41">
+#017 (unused) <time="0:28">
+#018 (unused) <time="0:27.5">
+#019 (unused) <time="0:40.5">
+#021 (unused) <time="0:45">
+#023 (unused) <time="0:43">
+#027 (unused) <time="0:51">
+#029 (unused) <time="0:55">
+#111 (unused) <time="0:43">
+#100 (unused)
+
+ [Voice]
+
+#088 [Voice]
+#089 [Voice]
+#119 [Voice]
+
+ [S.E.]
+
+#026 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+#036 [S.E.]
+#037 [S.E.]
+#038 [S.E.]
+#039 [S.E.]
+#040 [S.E.]
+#041 [S.E.]
+#042 [S.E.]
+#043 [S.E.]
+#044 [S.E.]
+#045 [S.E.]
+#046 [S.E.]
+#047 [S.E.]
+#048 [S.E.]
+#049 [S.E.]
+#050 [S.E.]
+#051 [S.E.]
+#052 [S.E.]
+#053 [S.E.]
+#054 [S.E.]
+#055 [S.E.]
+#056 [S.E.]
+#057 [S.E.]
+#058 [S.E.]
+#059 [S.E.]
+#060 [S.E.]
+#061 [S.E.]
+#062 [S.E.]
+#063 [S.E.]
+#064 [S.E.]
+#065 [S.E.]
+#067 [S.E.]
+#068 [S.E.]
+#069 [S.E.]
+#070 [S.E.]
+#072 [S.E.]
+#073 [S.E.]
+#074 [S.E.]
+#075 [S.E.]
+#076 [S.E.]
+#077 [S.E.]
+#078 [S.E.]
+#079 [S.E.]
+#080 [S.E.]
+#082 [S.E.]
+#083 [S.E.]
+#084 [S.E.]
+#085 [S.E.]
+#086 [S.E.]
+#090 [S.E.]
+#091 [S.E.]
+#094 [S.E.]
+#095 [S.E.]
+#096 [S.E.]
+#097 [S.E.]
+#098 [S.E.]
+#099 [S.E.]
+#102 [S.E.]
+#103 [S.E.]
+#104 [S.E.]
+#105 [S.E.]
+#106 [S.E.]
+#107 [S.E.]
+#108 [S.E.]
+#109 [S.E.]
+#112 [S.E.]
+#113 [S.E.]
+#114 [S.E.]
+#115 [S.E.]
+#116 [S.E.]
+#117 [S.E.]
+#118 [S.E.]
+
+// リスト作成：NKさん
+$end

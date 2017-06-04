@@ -1,0 +1,46 @@
+﻿$name=samsho3
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#060 Sword Spirit (Title)
+#048 Twelve Swordsmen (Player Select)
+#049 Fare and Square
+#033 Masculine Sake (Haohmaru)
+#050 Conclusion (Conclusion)
+#034 River (Ukyo Tachibana)
+#035 Waterfall Training (Galford)
+#036 Feeling of Nature in the Air (Nakoruru)
+#052 Victory (Winning Demo)
+#053 Matchless Sword (Middle Demo)
+#055 Black Chap (Kuroko Demo)
+#044 Fighting Drama (Kuroko)
+#061 Tune of Biwa (Image)
+#037 Song of Inhumanity (Genjuro Kibagami)
+#038 Dancing at the Banquet (Kyoshiro Senryo) <time="5:00">
+#039 Hell (Hanzo Hattori) <time="5:00">
+#040 Styx ("Kubikiri" Basara)
+#041 Temple (Gaira Kafuin)
+#042 Breeze Smells Sweet (Shizumaru Hisame)
+#043 Mirror of Mind (Rimururu)
+#045 Disgraceful Conduct (Amakusa Shiro Tokisada)
+#054 Strong Man (Boss Demo)
+#058 Fare and Square 2 (Zankuro Stage - Fare and Square)
+#046 Final Edge (Zankuro Minazuki 1)
+#056 Daibutsuden Tumbled Down (Breakdown)
+#047 Infinity (Zankuro Minazuki 2)
+#064 Drum in the Rain (Ending)
+#059 Festival Music #3 (Credits Roll)
+#051 Encore (Continue)
+#062 Curtain Fall (Game Over)
+#057 Unused
+
+  [Source]
+  Samurai Spirits - Zankuro Musouken / SNK
+  Pony Canyon / Scitron  PCCB-00200  Dec 16, 1995
+
+// List Contribution by NK
+// English List by NK
+$end

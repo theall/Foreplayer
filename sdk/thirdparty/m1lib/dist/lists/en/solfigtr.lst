@@ -1,0 +1,107 @@
+﻿$name=solfigtr
+$version=2
+$default=013
+$main
+
+#013 Title Demo
+#018 Credit Inserted
+#012 Player Select - Theme 1
+#010 Winner
+#008 Theme 1
+#009 Theme 2
+#010 Winner
+#011 Bonus Stage
+#015 Ending
+#016 Name Entry
+#017 Game Over
+
+#014 Unused
+
+#242 Speaker Test
+
+---------------------------------------------------
+ [SFX] 
+
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#035 [SFX] 
+#060 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] <time="5">
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] <time="5"> 
+#071 [SFX] <time="5">
+#072 [SFX] 
+#073 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#241 [SFX] <time="3">
+#243 [SFX] <time="6">
+#244 [SFX] 
+#245 [SFX] 
+#246 Speaker Test 2
+
+---------------------------------------------------
+ [Voice] 
+
+#036 [Voice] 
+#037 [Voice] 
+#038 [Voice] 
+#039 [Voice] 
+#040 [Voice] 
+#041 [Voice] 
+#042 [Voice] 
+#043 [Voice] 
+#044 [Voice] 
+#045 [Voice] 
+#046 [Voice] 
+#047 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#050 [Voice] 
+#051 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#057 [Voice] <time="5">
+#058 [Voice] 
+#059 [Voice] 
+#061 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+
+  [Sound Composer]
+  Kazuko Umino (Karu)
+
+// List contribution by ZEK.
+// English list by Fuj
+$end

@@ -1,0 +1,26 @@
+﻿$name=regulus
+$version=2
+$default=135
+$main
+
+#135 Credit Inserted
+#131 Start / Main Theme
+#132 Clear / Main Theme
+#136 [SFX] Player Destroyed
+#129 Raniking List
+
+#130 Main Theme
+
+---------------------------------------------------
+  [SFX]
+
+#133 [SFX] Shot
+#134 [SFX] Missile
+#135 [SFX] Credit Inserted, Item
+#136 [SFX] Player Destroyed, Bomb
+#137 [SFX] Hit
+#139 [SFX] Extend
+
+// List contribution by ZEK.
+// Special Thanks to B
+$end

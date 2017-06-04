@@ -1,0 +1,129 @@
+﻿$name=sonicwi2
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+#032 Video System!
+
+#033 Opening
+#034 Player Select
+#035 Japan
+#044 Boss
+#049 Intermission
+#036 France
+#037 Atlantic Ocean (Bonus Stage)
+#038 Brazil
+#039 America
+#040 Nepal (Bonus Stage)
+#041 Australia
+#042 Mexico
+#043 Hawaii
+#045 Fortress 1 / Monkey Station
+#046 Fortress 2
+#047 Final Boss (Big Monster Ball)
+#048 Final Boss (Tenukii-Chaudo)
+#051 Ending (Theme of Steve)
+#053 Ending (Theme of Mao Mao)
+#054 Ending (Theme of Mao Mao) -Instrumental-
+#055 Ending (Theme of Hien)
+#056 Ending (Theme of Silver)
+#057 Ending (Best)
+#058 Ending (Bad)
+#059 Ending (Serious)
+#060 Ending (Heartwarming)
+#061 Ending (Damned Fool)
+#062 Ending (Sadness)
+#052 Credits Roll
+#050 Name Entry
+
+-----------------------------------------------------------
+ [Voice]
+
+#072 [Voice]
+#119 [Voice]
+#121 [Voice]
+#122 [Voice]
+#123 [Voice]
+#147 [Voice]
+#148 [Voice]
+#149 [Voice]
+#150 [Voice]
+#151 [Voice]
+#152 [Voice]
+#153 [Voice]
+#173 [Voice]
+#177 [Voice]
+
+-----------------------------------------------------------
+ [SFX]
+
+#064 [SFX] Credit
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#073 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#159 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#163 [SFX]
+#164 [SFX]
+#165 [SFX]
+#166 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#170 [SFX]
+#171 [SFX]
+#172 [SFX]
+#174 [SFX]
+#175 [SFX]
+#176 [SFX]
+#178 [SFX]
+#179 [SFX]
+
+  [Source]
+  Sonic Wings 2 / Video System
+  Pony Canyon / Scitron  PCCB-00158  Dec 16, 1994
+
+  [Sound Composers]
+  HosoQ (Soushi Hosoi)
+  Pirowo
+
+// List contributed by NK
+// English list by NK
+// List fixed by Ayaya
+$end

@@ -1,0 +1,55 @@
+﻿$name=lomakai
+$version=2
+$default=032
+$main
+
+#032 CREDIT
+#002 START <time="3.2">
+#003 AREA 1 (森), 5
+#035 ユニコーン
+#007 BOSS BGM
+#033 GO TO NEXT !
+#002 START <time="3.2">
+#038 AREA 2 (洞窟の森), 6
+#034 [S.E.] 赤い液体
+#004 小人の村
+#002 START <time="3.2">
+#036 AREA 3 (滝)
+#028 永久パターン防止キャラ <time="7.4">
+#013 MISS (死んでしまった…) <time="3">
+#009 MISS 2 (死んでしまった…) <time="4">
+#010 CONTINUE ？ <time="11">
+#012 AREA 3 (人面の城)
+#002 START <time="3.2">
+#037 AREA 4 (怒りの洞窟・人骨の森)
+#002 START <time="3.2">
+#005 AREA 7 (最後の城) 
+#002 START <time="3.2">
+#006 AREA 8 
+#014 決着を つけろ！ <time="2.6">
+#008 ウイザード
+#015 ENDING
+#011 NAME ENTRY
+
+#040 AREA 1, 5 Ver.2 (未使用曲)
+
+---------------------------------------------------
+  [S.E.]
+
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#029 [S.E.] 
+#039 [S.E.] 
+#030 [S.E.] 力の薬 <time="4.7">
+
+  ■作曲
+  岡村 静良, K (てっちゃん)
+
+// List contribution by ZEK.
+$end

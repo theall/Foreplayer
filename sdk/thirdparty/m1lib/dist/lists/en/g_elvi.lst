@@ -1,0 +1,35 @@
+﻿$name=g_elvi
+$version=2
+$default=$0c
+$songmax=255
+$main
+
+$0c Opening Theme <time="0:51" fadeout="yes" fadeoutlength="2">
+$0d Main Theme <time="1:29" fadeout="yes" fadeoutlength="2">
+$16 New York City [Stage 1] <time="1:47" fadeout="yes" fadeoutlength="10">
+$09 Intermission 1 <time="2:54" fadeout="yes" fadeoutlength="10">
+$0a Park [Stage 2] <time="2:38" fadeout="yes" fadeoutlength="10">
+$01 Bar [Stage 3] <time="2:33" fadeout="yes" fadeoutlength="10">
+$0f Boss Theme 1 [Stages 1-3] <time="2:01" fadeout="yes" fadeoutlength="10">
+$0e Factory [Stage 4] <time="2:29" fadeout="yes" fadeoutlength="10">
+$0b Temple [Stage 5] <time="2:41" fadeout="yes" fadeoutlength="10">
+$12 Boss Theme 2 [Stages 4-5] <time="2:08" fadeout="yes" fadeoutlength="10">
+$10 Detroit Car Factory [Stage 6] <time="2:37" fadeout="yes" fadeoutlength="10">
+$08 Intermission 2 <time="1:26" fadeout="yes" fadeoutlength="10">
+$03 High Sky [Stage 7] <time="2:28" fadeout="yes" fadeoutlength="10">
+$05 Boss Theme 3 [Stages 6-7] <time="2:39" fadeout="yes" fadeoutlength="10">
+$11 Empire State Building [Stage 8] <time="1:28" fadeout="yes" fadeoutlength="10">
+$02 Final Battle <time="2:44" fadeout="yes" fadeoutlength="10">
+$13 Stage Clear <time="0:05" fadeout="yes" fadeoutlength="2">
+$04 Ending Theme <time="2:47" fadeout="yes" fadeoutlength="2">
+$07 Game Over <time="0:06" fadeout="yes" fadeoutlength="2">
+$14 Staff Roll <time="2:23" fadeout="yes" fadeoutlength="2">
+$06 Unknown Track 1 <time="0:10" fadeout="yes" fadeoutlength="2">
+$15 Unknown Track 2 <time="0:04" fadeout="yes" fadeoutlength="2">
+
+  [Sound Composer]
+  Motoi Sakuraba
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

@@ -1,0 +1,110 @@
+﻿$name=slyspy
+$version=2
+$default=068
+$main
+
+#068 [Voice] Sly Spy
+#005 [SFX] Credit
+#071 [Voice] Welcome Agent
+#043 Good Morning, Agent <time="12.1">
+#040 Stage 1 (Descend) 
+#038 Stage 1
+#044 DEMO & MAP
+#037 Stage Intro <time="3.5">
+#041 Stage 2
+#037 Stage Intro <time="3.5">
+#038 Stage 3, 5
+#039 Stage 4, 7
+#038 Stage 6, 8
+#042 Boss BGM
+#045 Ending
+#079 [Voice] Oh! Sly (Ranking)
+
+---------------------------------------------------
+  [SFX]
+
+#005 [SFX] Credit
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#021 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#024 [SFX] 
+#026 [SFX] 
+#027 [SFX] 
+#028 [SFX] 
+#029 [SFX] <time="3">
+#030 [SFX] 
+#031 [SFX] 
+#032 [SFX] 
+#033 [SFX] 
+#051 [SFX] 
+#057 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#064 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#069 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#080 [SFX] 
+#126 [SFX] <time="4">
+#270 [SFX] 
+#273 [SFX] 
+#274 [SFX] 
+#275 [SFX] 
+#277 [SFX] 
+#278 [SFX] 
+#279 [SFX] 
+#282 [SFX] 
+#283 [SFX] 
+#284 [SFX] 
+#286 [SFX] 
+#288 [SFX] 
+#289 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#046 [Voice] 
+#047 [Voice] 
+#048 [Voice] You die
+#049 [Voice] 
+#050 [Voice] 
+#052 [Voice] 
+#053 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#056 [Voice] 
+#058 [Voice] 
+#059 [Voice] 
+#062 [Voice] 
+#063 [Voice] 
+#068 [Voice] Sly Spy
+#070 [Voice] Golden Gun
+#071 [Voice] Welcome Agent
+#072 [Voice] Great job
+#073 [Voice] Help
+#074 [Voice] Kill him
+#075 [Voice] No
+#079 [Voice] Oh! Sly
+#081 [Voice] 
+
+  [Sound Composers]
+  Azusa Hara (AZUSA)
+  Hiroaki Yoshida (MARO)
+
+// List contribution by ZEK.
+$end

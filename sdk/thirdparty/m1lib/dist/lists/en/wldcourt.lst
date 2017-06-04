@@ -1,0 +1,16 @@
+﻿$name=wldcourt
+$version=2
+$default=01
+$main
+
+#01 Game Select
+#04 Play
+#06 BGM 1 (New York, Hard Court)
+#07 BGM 2 (London, Lawn Court)
+#05 BGM 3 (Paris, Clay Court)
+#03 Result
+#02 Unused?
+
+  PSG and voices are missing.
+
+$end

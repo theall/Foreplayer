@@ -1,0 +1,85 @@
+$name=yuyugogo
+$version=2
+$main
+
+#008 Demo: Introduction
+#009 Demo: Item Introduction
+#010 Demo: Program Introduction
+#059 [Voice] hai!, shikai no yuuyu desu <time="3.5">
+#011 Rule Information <time="0:1">
+#035 [Voice] ichi funkan de borderline o koere ba, tsugini susume masu
+#012 Genre Selection
+#013 Stage Start Jingle <time="0:1">
+#062 [Voice] sorede wa mairi masu quiz de Go! Go! <time="0:4">
+#014 Stage 1
+#015 Stage 2
+#016 Stage 3
+#017 Stage 4
+#018 Stage 5
+#019 Stage Clear
+#020 Stage Failed
+#021 Last Stage
+#022 Last Stage Clear
+#023 ?
+#024 Name Entry
+#025 Bonus Game A
+#026 Bonus Game B
+#027 Bonus Game C
+#028 Continue
+#029 Game Over
+#030 Credits
+#031 Ending
+
+
+#032 [Voice] mata no chousen o, omachi shite masu
+#033 [Voice] omedetou gozaimasu, tsugi mo ganbatte kudasai ne
+#034 [Voice] achi!
+#035 [Voice] ichi funkan de borderline o koere ba, tsugini susume masu
+#036 [Voice] dameda, korya
+#037 [Voice] dameda, korya
+#038 [Voice] anata mo challenge shite mi masen ka
+#039 [Voice] komatta toki ni wa santaku enpitsu, ataru ka dou ka wa un shidai da yo. santaku enpitsu, kouhyou hatsubai chuu
+#040 [Voice] wakatta toki ni wa gold hammer, totta tokuten ga 2 bai ni naru yo. gold hammer, kouhyou hatsubai chuu
+#041 [Voice] machigae chattara chai no moto, mou 1 kai dake kotae te ii yo. chai no moto, kouhyou hatsubai chuu
+#042 [Voice] uwaki na kimi ni wa skip card, suki na janru ni henkou dekiru yo. skip card, kouhyou hatsubai chuu
+#043 [Voice] seikai
+#044 [Voice] hazure
+#045 [Voice] chai
+#046 [Voice] pinpon
+#047 [Voice] bubu
+#048 [Voice] omedetou gozaimasu, go kansou o shitokoto
+#049 [Voice] mouichido minasan de, ookina hakushu o
+#050 [Voice] yuuyu no quiz de Go! Go!, mite ne
+#051 [Voice] shouhin wa kochira desu
+#052 [Voice] sore ja, konshuu wa kono hen de
+#053 [Voice] matta raishuu
+#054 [Voice] kono bangumi wa, taito no teikyou de ookuri shimasu
+#055 [Voice] kono bangumi wa, taito no teikyou de ookuri shimashita
+#056 [Voice] sorede wa, bonus game desu
+#057 [Voice] tokuten ni ouji te, gouka na shouhin ga morae masu yo?
+#058 [Voice] kono koonaa wa, yuuyu nikansuru mondai desu
+#059 [Voice] hai!, shikai no yuuyu desu
+#060 [Voice] taito
+#061 [Voice] yuuyu no quiz de Go! Go!
+#062 [Voice] sorede wa mairi masu. quiz de Go! Go!
+#063 [Voice] iyoiyo saigo desu, yoroshii desu ka
+#064 [Voice] koko de, akirame te mo yoi no ka
+#065 [Voice] midokoro no aru yatsu ja, home te tsukawasu
+#066 [Voice] ei! denaoshi te maire
+#067 [Voice] hai! soko made
+#068 [Voice] bonus chance
+#069 [Voice] Public: Applause 
+#070 [Voice] Public: Booing
+#071 [Voice] Frog: Gerogaro
+#072 [Voice] Frog: Gerogaro
+#082 Bonus Game Jingle
+#085 [Voice] ngakkuku
+#092 [Voice] Voice Looping Off 
+#093 [Voice] yoku kangae te kudasai ne
+
+  [Composed by]
+  Tamayo "Ray" Kawamoto
+
+// original list from Amuse
+// english list by Knurek
+$end

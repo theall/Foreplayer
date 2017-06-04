@@ -1,0 +1,41 @@
+﻿$name=viofight
+$version=2
+$default=007
+$main
+
+#007 Title Screen
+#015 Credit Inserted <time="6">
+#017 Chracter Select <time="15">
+#008 Theme 1
+#010 Theme 2
+#009 Theme 3
+#011 Winner <time="9">
+#012 Bonus
+#014 Bonus Stage
+#013 Ending
+#077 Name Entry
+#016 Game Over
+
+#062 Theme 1 (Ver.2)
+#078 Theme 2 (Ver.2)
+
+---------------------------------------------------
+ [SFX] 
+
+#038 [SFX] 
+#040 [SFX] 
+#060 [SFX] 
+#061 [SFX] 
+#079 [SFX] 
+
+---------------------------------------------------
+ [Voice] 
+
+#049 [Voice] <time="5">
+
+  [Sound Composer]
+  Masahiko Takaki, Yasuko Yamada, Yasuhisa Watanabe
+
+// List contribution by ZEK.
+// Composer's name fixed by Cratch
+$end

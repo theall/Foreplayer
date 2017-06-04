@@ -1,0 +1,59 @@
+﻿$name=gyruss
+$version=2
+$default=037
+$main
+
+#037 START BGM <time="00:14.40">
+#039 MAIN BGM 1 <time="00:45.00">
+#040 MAIN BGM 2 <time="00:57.00">
+#038 MAIN BGM 3 <time="00:42.58">
+#041 STAGE CLEAR BGM <time="00:32.30">
+#042 CHANCE STAGE PERFECT BGM
+
+------------------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.] <time="0:03">
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+//#010 [S.E.] <time="0:03">
+#011 [S.E.]
+#012 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#016 [S.E.]
+#017 [S.E.]
+#018 [S.E.]
+#019 [S.E.]
+#020 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#030 [S.E.]
+#031 [S.E.]
+#032 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#035 [S.E.]
+
+  ■出典
+  KONAMI GAME MUSIC Vol.1
+  ALFA RECORDS  28XA-85  1986.06.25
+
+  KONAMI GAME MUSIC Vol.1 (LEGEND SERIES)
+  SME / SCITRON  SCDC-00050  2000.11.01
+
+// オリジナルリスト：みん☆さん
+// 追加&更新：Fujix
+$end

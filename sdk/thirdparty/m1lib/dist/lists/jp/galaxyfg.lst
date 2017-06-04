@@ -1,0 +1,53 @@
+﻿$name=galaxyfg
+$version=2
+$default=095
+$fixed_volume=186
+$main
+
+#095 NEO-GEO Logo
+#035 Galaxy Fight (オープニング)
+#036 Here We Go! (キャラクターセレクト)
+#055 ロルフ オープニング
+#056 Power Of Fire (ロルフ ステージ - 惑星エアラス)
+#060 カズマ オープニング
+#061 闇神楽 (カズマ ステージ - 惑星エアラス)
+#045 ジュリ オープニング
+#046 Eternal Beauty Forever (ジュリ ステージ - 惑星レザール)
+#042 ルーミ オープニング
+#043 みんなぁーきいてるぅー！ (ルーミ ステージ - 惑星ルーテシア)
+#053 ギュンター オープニング
+#054 Ancient Wrath (ギュンター ステージ - 惑星グルジェフ)
+#038 アルバン オープニング
+#039 Ba-Rock (アルバン ステージ - 惑星ロザリス)
+#040 ゴールデン・ドーン オープニング
+#041 Ethereal Dance (ゴールデン・ドーン ステージ - 惑星マニ)
+#051 ムサファー オープニング
+#052 Strong Of Bring The NOISE (ムサファー ステージ - 惑星ファキール)
+#034 Bloody Street (対戦ステージ - 惑星ベラズケス)
+#048 ヤコプ オープニング
+#049 トリップ！トリップ！トリップ！ (ヤコプ ステージ - 惑星ルーテシア)
+#058 フェルデン・クライス オープニング
+#059 Pressure Drop (フェルデン・クライス ステージ)
+#062 ローウェ オープニング
+#063 You Will Not A Mysterious Hermit (ローウェ ステージ)
+#065 What the hell are you doing? (コンティニュー)
+#067 FULL OF FIGHT (ロルフ、ムサファー エンディング)
+#071 血塗れの安息日 (カズマ、ジュリ、ゴールデン・ドーン エンディング)
+#069 Good FORTUNE! (ギュンター、アルバン エンディング)
+#073 スターパンチャー (ルーミ エンディング)
+#074 戦いの果てに (スタッフロール)
+//
+//#066 ゲームオーバー
+//
+
+  ■出典
+  ギャラクシーファイト / サンソフト
+  PONY CANYON / SCITRON  PCCB-00177  1995.03.17
+
+  ■作曲
+  MASATO ARAIKAWA (MUTEC)
+  TAKAYUKI SASAKI (MUTEC)
+
+// List composed by huntingforce
+// List fixed by Ayaya
+$end

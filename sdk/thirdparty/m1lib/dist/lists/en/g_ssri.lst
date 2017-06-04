@@ -1,0 +1,40 @@
+﻿$name=g_ssri
+$version=2
+$default=144
+$songmax=255
+$main
+
+#144 Konami Logo
+#148 Escape [Title]
+#146 Time to Set Off [Player Select] <time="0:37" fadeout="yes" fadeoutlength="10">
+#128 Gunfight at the Sunset Corral [Town Stage 1] <time="1:49" fadeout="yes" fadeoutlength="10">
+#141 Yuppie! [Stage Clear]
+#147 Wanted! [Boss Introduction]
+#131 Face With Courage [Town Stage 2, Forest Stage 1] <time="1:39" fadeout="yes" fadeoutlength="10">
+#133 It's Time to Pay [Simon Greedwell] <time="1:02" fadeout="yes" fadeoutlength="10">
+#132 Quick Draw [Bonus Stage] <time="0:36" fadeout="yes" fadeoutlength="10">
+#129 Butch Cassidy and Sunset Riders [Train Stage 1] <time="1:03" fadeout="yes" fadeoutlength="10">
+#153 Train Stage 2 <time="1:21" fadeout="yes" fadeoutlength="10">
+#139 Ay, Chihuahua [Paco Loco] <time="0:53" fadeout="yes" fadeoutlength="10">
+#130 The Rosy Setting Sun [Mountain Stage 1] <time="1:17" fadeout="yes" fadeoutlength="10">
+#152 Mountain Stage 2 <time="1:02" fadeout="yes" fadeoutlength="10">
+#138 Me Ready for Pow-Wow [Chief Scalpen] <time="0:43" fadeout="yes" fadeoutlength="10">
+#150 Please Help my Friends [Chief Scalpen Clear]
+#134 Draw Your Gun! [Forest Stage 2] <time="1:05" fadeout="yes" fadeoutlength="10">
+#140 The Great Petal [Sir Richard Rose] <time="1:08" fadeout="yes" fadeoutlength="10">
+#151 The Magnificent Four [Sir Richard Rose Part 2] <time="1:03" fadeout="yes" fadeoutlength="10">
+#142 Continue of Sorrow [Continue] <time="0:28" fadeout="yes" fadeoutlength="10">
+#149 Hic Jacet [Game Over]
+#154 Dance Over Night [Easy Game Clear] <time="0:56" fadeout="yes" fadeoutlength="10">
+#143 The Big Win [Staff Roll]
+#145 Looking Up at the Stars [Name Entry] <time="0:27" fadeout="yes" fadeoutlength="10">
+#136 You and He, Big Trouble [Versus Mode: Round 1] <time="0:46" fadeout="yes" fadeoutlength="10">
+#137 Adios, Amigo [Versus Mode: Round 2] <time="0:51" fadeout="yes" fadeoutlength="10">
+#135 We're Gonna Blow You Away! [Versus Mode: Round 3] <time="1:05" fadeout="yes" fadeoutlength="10">
+
+  [Sound Composer]
+  Masahiro Ikariko, Hideto Inoue
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

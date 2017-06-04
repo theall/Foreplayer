@@ -1,0 +1,23 @@
+﻿$name=miexchng
+$version=2
+$default=095
+$main
+
+#095 NEO-GEO Logo
+#041 オープニング
+#035 セレクト画面
+#036 VS画面
+#039 ステージA (両替戦士エクスチェンジャー)
+#037 ステージB (借金戦士デッドマイザー)
+#040 乱入
+#034 ステージC
+#033 ステージD
+#038 ゲームオーバー
+#042 エンディング
+
+  ■出典
+  マネーアイドル エクスチェンジャー
+  PONY CANYON / SCITRON  PCCB-00260  1997.05.16
+
+// List Contribution by cyada
+$end

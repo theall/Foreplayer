@@ -1,0 +1,44 @@
+﻿$name=gradius4
+$version=2
+$default=$101
+// $songmax=$500
+$main
+
+$101 KONAMI Logo
+$007 DEMO BGM -intro- (デモ)
+$115 DEMO BGM (デモ)
+$00b COIN (コイン音)
+$103 SELECT BGM (セレクト)
+$104 APOLLON (空中戦 1)
+$105 FEITON (空中戦 2)
+$117 HYDRA (第1ステージBGM - 流体金属ステージ)
+$106 DEMETER (第2ステージBGM - 植物ステージ)
+$108 OCEANUS (第3ステージBGM - バブルステージ)
+$10a CRONOS (第4ステージBGM - マグマステージ)
+$10b HADES (第4ステージBGM - マグマステージ)
+$10d URANUS (第5ステージBGM - モアイステージ)
+$10f HERA (第6ステージBGM - 細胞ステージ)
+$11c DUPON (第7ステージBGM - 高速ステージ)
+$112 BOSS BGM 1 (ボス ラッシュステージ 1)
+$113 BOSS BGM 2 (ボス ラッシュステージ 2)
+$119 PROMETHEUS (第9ステージBGM - 基地ステージ)
+$11a ATHENA (第9ステージBGM - 基地ステージ)
+$118 TITANS (ボスBGM)
+$116 GAME OVER (ゲームオーバー)
+$114 RANKING BGM (ランキング)
+$11b GAIA (スタッフロール)
+
+-----------------------------------------
+// [S.E.] (編集中)
+// 
+//-----------------------------------------
+
+  ■出典
+  GRADIUS ARCADE SOUNDTRACK
+  Konami Music Entertainment  KMCA155~156  2002.04.24
+
+//  ■作曲
+//  
+
+//List作成 : Ayaya
+$end

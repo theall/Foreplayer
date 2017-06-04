@@ -1,0 +1,42 @@
+﻿$name=fshark
+$version=2
+$default=023
+$songmax=025
+$fixed_volume=147
+$main
+
+#023 Credit
+#013 Sky Shark (Opening Theme) ～ Asia (BGM 1)
+#015 Asia (BGM 1)
+#016 Against The Attack (BGM 2)
+#017 Water Fromt (BGM 3)
+#018 Behind The Bush (BGM 4)
+#019 Last Fighter (BGM 5)
+#009 Triumph (Landing Theme)
+#020 Forgive Your All (Name Storage)
+#014 Restful (Game Over)
+
+-----------------------------------------
+ [S.E.]
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#004 [S.E.]
+#005 [S.E.]
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#021 [S.E.]
+#022 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+
+  ■出典
+  究極TIGER -G.S.M. TAITO 2-
+  PONY CANYON / SCITRON  D28B0008  1988.11.21
+
+$end

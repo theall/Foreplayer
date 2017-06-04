@@ -1,0 +1,22 @@
+﻿$name=indy500
+$version=2
+$default=005
+$main
+
+#005 アドバタイズ
+#001 コースセレクト
+#000 初級コースBGM -Indy 500-
+#002 中級コースBGM -Highland Raceway-
+#007 上級コースBGM -Bay Side Street-
+#004 フィニッシュ
+#008 エンディング
+#003 ネームエントリー
+#006 ゲームオーバー
+
+  ■出典
+  セガコン -THE BEST OF SEGA GAME MUSIC- VOL.1
+  SME / Visual Works  SVWC-7092～4  2001.10.24
+    &lt;"初級コースBGM"収録&gt;
+
+// List Contribution by NK
+$end

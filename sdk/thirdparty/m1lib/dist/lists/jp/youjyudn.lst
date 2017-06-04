@@ -1,0 +1,34 @@
+﻿$name=youjyudn
+$version=2
+$default=020
+$main
+
+#020 START
+#021 BGM
+#019 PATTERN CLEAR
+#017 GO TO NEXT AREA
+#021 BGM
+#016 GAME OVER
+#018 SCORING
+
+#001 [S.E.]
+#002 [S.E.]
+#003 [S.E.]
+#023 [S.E.]
+#024 [S.E.]
+#025 [S.E.]
+#026 [S.E.]
+#027 [S.E.]
+#028 [S.E.]
+#029 [S.E.]
+#031 [S.E.]
+#033 [S.E.]
+#034 [S.E.]
+#036 [S.E.]
+
+  ■出典
+  R-TYPE / IREM GAME MUSIC
+  ALFA RECORDS  28XA-199  1988.01.25
+
+// リスト作成: らま
+$end

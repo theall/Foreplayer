@@ -1,0 +1,31 @@
+﻿$name=sectionz
+$version=2
+$default=037
+$songmax=038
+$main
+
+#037 Credit
+#024 Introduction (Section A)
+#025 Stage 1 BGM (Section A - E)
+#026 Stage 2 BGM (Section F - J)
+#027 Stage 3 BGM (Section K - O)
+#031 Stage Clear
+#028 Stage 4 BGM (Section P - T)
+#029 Stage 5 BGM (Section U - Z)
+#030 Final Boss (Elbrain)
+#032 Ending (Section E)
+#036 Continue
+#034 Game Over
+#035 Name Entry
+#038 Ranking
+
+#033 [SFX] Extend
+
+  [Source]
+  Capcom Game Music
+  Alfa Records  28XA-94  Aug 25, 1986
+
+  Capcom Game Music (Legend Series)
+  SME / Scitron  SCDC-00193  Jun 19, 2002
+
+$end

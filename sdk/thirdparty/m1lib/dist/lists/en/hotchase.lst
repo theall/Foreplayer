@@ -1,0 +1,103 @@
+﻿$name=hotchase
+$version=2
+$default=001
+$songmax=255
+$main
+
+#001 [SFX] Credit Inserted
+#134 Long Way To Danger (Start Demo)
+#128 It's a Hard Way In The Suburbs (Stage 1)
+#132 Make Me Dynamic (STGAE 2)
+#129 The Navigation On The Bridge (Stage 3)
+#139 Ice Won't Let Me Go (Stage 4)
+#133 And Only Did I My Duty (Ending 1)
+#135 Soldier's Paths (Map Preview)
+#130 Finally I Belong To (Name Entry)
+#131 Just I've Done It (Game Over)
+#140 After The Terrible Running (Ending 2)
+
+
+#001 [SFX] Credit
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#017 [SFX] 
+#018 [SFX] 
+#019 [SFX] 
+#020 [SFX] 
+#022 [SFX] 
+#023 [SFX] 
+#026 [SFX] 
+#030 [SFX] 
+#031 [SFX] 
+#033 [SFX] 
+#034 [SFX] 
+#038 [SFX] 
+#039 [SFX] 
+#040 [SFX] 
+#041 [SFX] 
+#042 [SFX] 
+#043 [SFX] 
+#045 [SFX] 
+#048 [SFX] 
+#049 [SFX] 
+#050 [SFX] 
+#051 [SFX] 
+#052 [SFX] 
+#054 [SFX] 
+#055 [SFX] 
+#059 [SFX] <time="10">
+#061 [SFX] 
+#062 [SFX] 
+#063 [SFX] 
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#071 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] 
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#091 [SFX] 
+#092 [SFX] 
+#093 [SFX] 
+#094 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#099 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#104 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+
+  [Source]
+  Thunder Cross / Konami Kukeiha Club
+  King Records  276A-7703  May 21, 1989
+
+  Thunder Cross / Konami Kukeiha Club
+  King Records  KICA-2306  May 21, 1993
+
+  [Sound Composer]
+  Kingorou
+
+// List contribution by R
+$end

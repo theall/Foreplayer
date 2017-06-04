@@ -1,0 +1,39 @@
+﻿$name=sfex
+$version=2
+$default=016
+$fixed_volume=351
+$main
+
+#016 Q Sound Logo
+#001 Street Fighter EX
+#017 Character select
+#002 Rising Dragoon
+#003 光の守護神
+#004 天脚舞歌
+#005 Cold pipe
+#006 Strange sunset
+#007 夜桜満開
+#008 Under tube
+#009 Arabessque
+#010 Garnet sky
+#011 Amusementive Crime
+#012 Irreconcilably
+#013 Stronger
+#014 God Hands
+#018 New challenger
+#019 Stage Clear
+#022 Staffroll
+#021 Continue
+#020 Game Over
+#015 ???
+
+  ■出典
+  STREET FIGHTER EX / ARIKA CAPCOM
+  PONY CANYON / SCITRON  PCCB-00241  1997.02.21
+
+  ■作曲･編曲
+  相原 隆行: #01, #02, #09, #11, #12, #14, #19, #20
+  佐宗 綾子: #03, #05, #06, #10, #17, #18, #22
+  細江 慎治: #04, #07, #08, #13, #21
+
+$end

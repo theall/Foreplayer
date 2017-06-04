@@ -1,0 +1,100 @@
+﻿$name=astyanax
+$version=2
+$default=052
+$fixed_volume=100
+$main
+
+#052 [S.E.] CREDIT
+#049 [S.E.] THUNDER
+#057 STAGE 1 - IN THE FOREST
+#054 STAGE 1 - BOSS
+#066 STAGE CLEAR <time="4.8">
+#058 STAGE 2 - IN THE CAVE
+#060 STAGE 2 - BOSS
+#066 STAGE CLEAR <time="4.8">
+#059 STAGE 3 - ON THE LAKE
+#011 [Voice] Don't you give up playing the game ? <time="3.7">
+#010 [Voice] ハッハッハッハッハ！ <time="3">
+#067 CONTINUE <time="15.2">
+#055 STAGE 3 - BOSS
+#066 STAGE CLEAR <time="4.8">
+#063 STAGE 4 - ON THE LIFT
+#056 STAGE 4 - IN THE GATE <time="8.5">
+#061 STAGE 5 - IN THE CASTLE
+#056 STAGE 5 - BOSS
+#006 [Voice] 断末魔 <time="2.5">
+#062 LAST STAGE
+#053 LAST BOSS
+#038 [S.E.] 閃光 <time="2">
+#026 [S.E.] 崩れ去る塔 <time="4.7">
+#065 ENDING
+#064 NAME ENTRY
+#068 GAME OVER
+
+---------------------------------------------------
+ [S.E.] 
+
+#012 [S.E.] 
+#013 [S.E.] 
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 崩れ去る塔
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#032 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 閃光
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#048 [S.E.] 
+#049 [S.E.] THUNDER
+#050 [S.E.] 
+#051 [S.E.] 
+#052 [S.E.] CREDIT
+#069 [S.E.] 
+#070 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#001 [Voice] 
+#002 [Voice] 
+#003 [Voice] 
+#004 [Voice] 
+#005 [Voice] 
+#006 [Voice] 断末魔
+#007 [Voice] 
+#008 [Voice] 
+#009 [Voice] 
+#010 [Voice] ハッハッハッハッハ！
+#011 [Voice] 
+#014 [Voice] 
+#021 [Voice] 
+#022 [Voice] 
+
+  ■作曲
+  Kiyoshi Yokoyama
+
+// List contribution by ZEK.
+$end

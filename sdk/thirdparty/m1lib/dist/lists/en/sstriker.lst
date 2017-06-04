@@ -1,0 +1,100 @@
+﻿$name=sstriker
+$version=2
+$default=015
+$fixed_volume=256
+$main
+
+#015 Destiny & Ambition (Attract Mode)
+#006 Inspire (Select / Round 6)
+#001 Sorcer Striker (Round 1)
+#007 Exclaim Targets (Boss 1)
+#013 Round Clear
+#002 Riot Dance (Round 2)
+#008 Spiral Locus (Boss 2)
+#003 Silent Anomaly (Round 3)
+#009 Rock The Accept (Boss 3)
+#004 Memorial Fragment (Round 4)
+#012 Devastating Disorder (Boss 4)
+#005 Organic Metal (Round 5)
+#010 Chaos Oppression (Boss 5)
+#011 Augmentative Greed (Boss 6)
+#016 Ever Lasting Emotion (Ending)
+#014 Game Over
+
+-----------------------------------------
+
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#031 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#064 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+
+  [Source]
+  Soukyuu Gurentai otokuyou / Sega Saturn
+  EAV  T-10626G  1997
+  
+  [Sound Composer]
+  Atsuhiro Motoyama
+
+$end

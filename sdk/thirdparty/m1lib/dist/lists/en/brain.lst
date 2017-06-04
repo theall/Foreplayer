@@ -1,0 +1,53 @@
+﻿$name=brain
+$version=2
+$default=129
+$main
+
+#129 Credit Inserted
+#163 BGM 1
+#182 Boss 1
+#180 Round Clear
+#164 BGM 2
+#183 Boss 2
+#192 BGM 3
+#184 Boss 3
+#162 Ending
+#137 Player Destroyed 1
+#144 Player Destroyed 2
+#185 Game Over
+#165 Name Entry
+#166 Unused
+
+-----------------------------------------------------------
+ [SFX]
+
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#160 [SFX]
+#161 [SFX]
+#167 [SFX]
+#168 [SFX]
+#169 [SFX]
+#176 [SFX]
+#177 [SFX]
+#178 [SFX]
+#179 [SFX]
+#181 [SFX]
+
+// List contributed by NK
+// English list by NK
+$end

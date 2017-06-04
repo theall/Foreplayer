@@ -1,0 +1,219 @@
+﻿$name=f1gp2
+$version=2
+$default=032
+$main
+
+#032 Attract Mode (from Truth / T-Square )
+#128 [SFX] Coin
+#034 Select
+#035 Round Start
+#036 Time Attack 
+#039 Theme 1
+#037 Theme 2
+#038 Theme 3
+#045 Name Entry
+
+#033 Unused 1
+#043 Unused 2
+#040 Unused 3
+
+---------------------------------------------------
+  [SFX]
+
+#058 [SFX] <time="2">
+#059 [SFX] <time="2">
+#068 [SFX] <time="2">
+#069 [SFX] <time="2">
+#070 [SFX] <time="2">
+#071 [SFX] <time="2">
+#072 [SFX] <time="2">
+#073 [SFX] <time="2">
+#074 [SFX] <time="2">
+#075 [SFX] <time="2">
+#076 [SFX] <time="2">
+#077 [SFX] <time="2">
+#078 [SFX] <time="2">
+#079 [SFX] <time="2">
+#080 [SFX] <time="2">
+#081 [SFX] <time="2">
+#082 [SFX] <time="2">
+#083 [SFX] <time="2">
+#084 [SFX] <time="2">
+#085 [SFX] <time="2">
+#086 [SFX] <time="2">
+#087 [SFX] <time="2">
+#088 [SFX] <time="2">
+#089 [SFX] <time="2">
+#090 [SFX] <time="2">
+#091 [SFX] <time="2">
+#092 [SFX] <time="2">
+#093 [SFX] <time="2">
+#094 [SFX] <time="2">
+#095 [SFX] <time="2">
+#096 [SFX] <time="2">
+#097 [SFX] <time="2">
+#098 [SFX] <time="2">
+#099 [SFX] <time="2">
+#100 [SFX] <time="2">
+#101 [SFX] <time="2">
+#102 [SFX] <time="2">
+#103 [SFX] <time="2">
+#104 [SFX] <time="2">
+#105 [SFX] <time="2">
+#106 [SFX] <time="2">
+#107 [SFX] <time="2">
+#119 [SFX] <time="2">
+#120 [SFX] <time="2">
+#121 [SFX] <time="2">
+#233 [SFX] <time="3">
+#234 [SFX] 
+#235 [SFX] 
+#236 [SFX] 
+#237 [SFX] 
+#238 [SFX] 
+#239 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+#147 [SFX] 
+#148 [SFX] 
+#149 [SFX] 
+#150 [SFX] 
+#157 [SFX] <time="3">
+#164 [SFX] <time="3">
+#166 [SFX] 
+#167 [SFX] 
+#168 [SFX] 
+#169 [SFX] 
+#170 [SFX] 
+#171 [SFX] 
+#172 [SFX] 
+#173 [SFX] 
+#174 [SFX] 
+#176 [SFX] 
+#177 [SFX] 
+#178 [SFX] 
+#179 [SFX] 
+#180 [SFX] 
+#181 [SFX] 
+#182 [SFX] 
+#183 [SFX] 
+#184 [SFX] 
+#185 [SFX] 
+#186 [SFX] 
+#187 [SFX] 
+#188 [SFX] 
+#189 [SFX] 
+#190 [SFX] 
+#191 [SFX] 
+#192 [SFX] 
+#193 [SFX] 
+#194 [SFX] 
+#195 [SFX] 
+#196 [SFX] 
+#197 [SFX] 
+#198 [SFX] 
+#199 [SFX] 
+#200 [SFX] 
+#201 [SFX] 
+#202 [SFX] 
+#203 [SFX] 
+#204 [SFX] 
+#205 [SFX] 
+#206 [SFX] 
+#207 [SFX] 
+#208 [SFX] 
+#209 [SFX] 
+#210 [SFX] 
+#211 [SFX] 
+#212 [SFX] 
+#213 [SFX] 
+#214 [SFX] 
+#215 [SFX] 
+#216 [SFX] 
+#217 [SFX] 
+#218 [SFX] 
+#219 [SFX] 
+#220 [SFX] 
+#221 [SFX] 
+#222 [SFX] 
+#223 [SFX] 
+#224 [SFX] 
+#225 [SFX] 
+#226 [SFX] 
+#227 [SFX] 
+#228 [SFX] 
+#229 [SFX] 
+#230 [SFX] 
+#231 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#117 [Voice] 
+#122 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#125 [Voice] 
+#126 [Voice] 
+#151 [Voice] 
+#152 [Voice] 
+#153 [Voice] 
+#154 [Voice] 
+#155 [Voice] 
+#156 [Voice] 
+#158 [Voice] 
+#159 [Voice] 
+#160 [Voice] 
+#161 [Voice] 
+#162 [Voice] 
+#163 [Voice] 
+#165 [Voice] 
+#240 [Voice] 
+#241 [Voice] 
+#242 [Voice] 
+#243 [Voice] 
+#244 [Voice] 
+#245 [Voice] 
+#246 [Voice] 
+#247 [Voice] 
+#248 [Voice] 
+#249 [Voice] 
+#250 [Voice] 
+#251 [Voice] 
+#252 [Voice] 
+#253 [Voice] 
+#254 [Voice] 
+
+  [Sound Composed]
+  Soushi Hosoi
+
+// List contribution by ZEK.
+// Mimimum check by Fuj
+$end

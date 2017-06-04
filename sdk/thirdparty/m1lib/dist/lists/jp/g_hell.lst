@@ -1,0 +1,20 @@
+﻿$name=g_hell
+$version=2
+$default=$1
+$songmax=9999999
+$main
+
+$01 Ready to Go ~ Captain Lancer <time="3:24" fadeout="yes" fadeoutlength="10">
+$06 Egypt <time="4:12" fadeout="yes" fadeoutlength="10">
+$04 Jumping Roll <time="2:23" fadeout="yes" fadeoutlength="10">
+$03 Mystic Green <time="3:59" fadeout="yes" fadeoutlength="10">
+$07 In Side Drive <time="3:45" fadeout="yes" fadeoutlength="10">
+$08 Last Dance <time="2:56" fadeout="yes" fadeoutlength="10">
+$02 Game is Over
+$09 Requiem
+$0a Get a Chance
+$05 Captain Lancer <time="3:13" fadeout="yes" fadeoutlength="10">
+
+// List contributed by Knurek
+// Tagging data from Project2612
+$end

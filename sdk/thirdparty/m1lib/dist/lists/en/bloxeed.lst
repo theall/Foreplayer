@@ -1,0 +1,30 @@
+﻿$name=bloxeed
+$version=2
+$default=192
+//$songmax=206
+$main
+
+#192 O-Choice (Stage Select)
+#193 Prank (BGM 1-1)
+#178 Space Ship Appearing Fan Fare
+#194 Prank (BGM 1-2)
+#195 Prank (BGM 1-3)
+#196 Prank (BGM 1-4)
+#197 Prank (BGM 1-5)
+#206 Too Severe (BGM 2)
+#204 NBG! (Game Over)
+#198 Victor's Platform (vs BGM1-1)
+#179 Flicky Appearing Fan Fare
+#199 Victor's Platform (vs mode, BGM 1-2)
+#200 Victor's Platform (vs mode, BGM 1-3)
+#201 Victor's Platform (vs mode, BGM 1-4)
+#202 Victor's Platform (vs mode, BGM 1-5)
+#203 Pronto! (Continue)
+
+#205 Not on CD
+
+  [Source]
+  Flash Point, Bloxeed
+  Pony Canyon / Scitron  PCCB-00033  Jun 21, 1990
+
+$end

@@ -1,0 +1,41 @@
+﻿$name=wbml
+$version=2
+$default=$03
+$songmax=$ff
+$main
+
+$03 BGM 1 (Monster Land - Round 1, 2)
+$21 BGM 2 (Town - Round 2, 7)
+$05 Shop 1 (Arms)
+$04 Shop 2 (Bar)
+$2c BGM 3 (Cave - Round 2, 5, 8, 9, 10)
+$2e BGM 4 (Castle - Round 3, 6, 7, 10, 11)
+$31 BGM 4a (Castle - short ver)
+$20 Shop 3 (Hospital)
+$34 BGM 5 (Beach - Round 4, 7, 10)
+$37 BGM 6 (Under Water - Round 4, 10)
+$23 BGM 7 (Desert - Round 5, 7, 8)
+$1a [SFX] Door opened
+$08 Boss 1 (Normal)
+$2d [SFX] Gate opened
+$09 Rround Clear
+$0a BGM 8 (Dragon Castle - Round 11)
+$3c Boss 2 (Metal Dragon)
+$3e [SFX] U.F.O
+$3a Ending
+$0c Game Over
+
+$06 Unused 1
+$07 Unused 2
+$0d Unused 3
+$24 Unused 4
+$25 BGM 1
+
+  [Sound Composer]
+  Shin'ichi Sakamoto
+
+  [Soundtrack]
+  Legend of Game Music 2 - Platinum Box
+  Scitron Digital Contents  SCDC-00473 to 00482  Jan 18, 2006
+
+$end

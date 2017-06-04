@@ -1,0 +1,63 @@
+﻿$name=vulcan
+$version=2
+$default=098
+$main
+
+#098 Title Demo (タイトルデモBGM)
+#101 Coin (コイン音)
+#092 Equipment (セレクトBGM)
+#080 TABIDACHI (空中戦1BGM)
+#088 Burning Heat (第1ステージBGM)
+#085 Take Care! (各ボスBGM)
+#093 A Shooting Star (空中戦2BGM)
+#089 Synthetic Life (第2ステージBGM)
+#084 Crystal World (第3ステージBGM)
+#100 A Way Out of The Difficulty (第4ステージBGM)
+#081 The Old Stone Age -1- (第5ステージBGM -1-)
+#082 The Old Stone Age -2- (第5ステージBGM -2-)
+#083 Maximum Speed (第6ステージBGM)
+#086 GRADIUS I  -Boss Theme- (第7ステージBGM -1-)
+#087 SALAMANDER -Boss Theme- (第7ステージBGM -2-)
+#096 Fire Dragon (第7ステージBGM -3-)
+#095 Into Hostile Ship (第8ステージBGM -1-)
+#094 Shoot and Shoot (第8ステージBGM -2-)
+#097 The Final Enemy (第8ステージBGM -3-)
+#099 Farewell (エンディングBGM)
+#091 Game Over (ゲームオーバーBGM)
+#090 Ranking (ランキングBGM)
+
+-----------------------------------------
+ [S.E.]
+
+$70 [Voice] speed up
+$71 [Voice] double
+$72 [Voice] laser
+$73 [Voice] missile
+$74 [Voice] multiple
+$75 [Voice] force field
+$76 [Voice] spread bomb
+$77 [Voice] photon torpedo
+$78 [Voice] 2 way missile
+$79 [Voice] tail gun
+$7a [Voice] pulse laser
+$7b [Voice] ripple laser
+$7c [Voice] option
+$7d [Voice] shield
+$7e [Voice] destroy them all!
+$7f [Voice] destroy the core!
+$80 [Voice] shoot it in the head!
+$81 [Voice] shoot it in the eyes!
+$82 [Voice] shoot it in the mouth!
+$83 [Voice] you need some practice.
+$84 [Voice] you shall never return alive!
+$85 [Voice] I'll bash you down!
+$86 [Voice] you shall be crashed!
+$87 [Voice] you can't go any farther.
+$88 [Voice] I am the strongest!
+$89 [Voice] I am just the small portion of the empire of bacterium.
+
+  ■出典
+  スペース・オデッセイ グラディウスII～GOFERの野望～
+  APOLLON  BY30-5202  1988.07.21
+
+$end

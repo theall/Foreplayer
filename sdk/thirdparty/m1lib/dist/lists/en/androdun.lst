@@ -1,0 +1,104 @@
+﻿$name=androdun
+$version=2
+$default=002
+$fixed_volume=239
+$main
+
+#002 Neo Geo Logo
+
+#047 Title
+#048 Take Off
+#034 Stage 1 -The Moon-
+#044 Boss 1 (Stage 1, 5)
+#049 Stage Clear
+#035 Stage 2 -Mechanized Unit-
+#043 Boss 2 (Stage 2, 4)
+#037 Stage 3 -Alien-
+#045 Boss 3 (Stage 3, 6)
+#036 Stage 4 -Caven-
+#038 Stage 5 -Meteorite-
+#040 Stage 6 -Secret Base-
+#041 Stage 7 -Core-
+#046 Boss 4 (Stage 7)
+#042 Escape
+#033 Credits
+#050 Game Over
+#051 Name Entry
+#039 Unused
+
+-----------------------------------------------------------
+ [SFX]
+
+#129 [SFX]
+#130 [SFX]
+#131 [SFX]
+#132 [SFX]
+#133 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+#140 [SFX]
+#141 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#192 [SFX]
+#193 [SFX]
+#194 [SFX]
+#195 [SFX]
+#196 [SFX]
+#197 [SFX]
+#198 [SFX]
+#199 [SFX]
+#200 [SFX]
+#201 [SFX]
+#202 [SFX]
+#203 [SFX]
+#204 [SFX]
+#205 [SFX]
+#206 [SFX]
+#207 [SFX]
+#208 [SFX]
+#209 [SFX]
+#210 [SFX]
+#211 [SFX]
+#212 [SFX]
+#213 [SFX]
+#214 [SFX]
+#215 [SFX]
+#216 [SFX]
+#217 [SFX]
+#218 [SFX]
+#219 [SFX]
+#220 [SFX]
+#221 [SFX]
+#222 [SFX]
+#223 [SFX]
+#224 [SFX]
+#225 [SFX]
+#226 [SFX]
+#227 [SFX]
+#228 [SFX]
+#229 [SFX]
+#230 [SFX]
+#231 [SFX]
+#232 [SFX]
+#233 [SFX]
+#234 [SFX]
+#235 [SFX]
+#236 [SFX]
+#237 [SFX]
+#238 [SFX]
+
+  [Sound Composer]
+  Ken'ichi Kamio
+
+// List contributed by NK
+// English list by NK
+$end

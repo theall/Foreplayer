@@ -1,0 +1,39 @@
+﻿$name=perfrman
+$version=2
+$default=026
+$main
+
+#026 [SFX] Credit
+#018 Start
+#001 Main Theme
+#023 Power
+#017 Color Ball Time
+#019 Clear
+#022 Coffee Break
+#020 Game Over
+#021 Name Entry
+
+---------------------------------------------------
+  [SFX]
+
+#002 [SFX] <time="5">
+#003 [SFX] 
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#007 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] <time="5">
+#015 [SFX] Extend
+#016 [SFX] 
+#024 [SFX] 
+#025 [SFX] 
+#026 [SFX] Credit
+
+// List contribution by ZEK.
+$end

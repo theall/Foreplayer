@@ -1,0 +1,25 @@
+﻿$name=rtypeleo
+$version=2
+$default=008
+//$songmax=611
+$main
+
+//#000 Title [SFX]
+#008 Start Demo BGM
+#001 Area 1 (Paradise Planet)
+#002 Area 2 (Red-Hot Desert)
+#003 Area 3 (Tropical Forest)
+#004 Area 4 (Floating Continent)
+#009 Area 5 (Inside of Ruins)
+#010 Final Area (Core of the Plant)
+#005 Boss BGM
+#011 Ending
+#006 Game Over
+#012 Name Entry
+
+#007 ??? (Stage Clear?)
+
+  [Sound Composers]
+  Hiroshi, Aiai
+
+$end

@@ -1,0 +1,50 @@
+﻿$name=gardia
+$version=2
+$default=149
+$main
+
+#149 [SFX] Credit
+#130 [SFX] Start
+#137 Main Theme
+#151 Shield Turned On -- Power Up
+#131 Shutter Zone
+#177 Mid-Boss Battle
+#179 Boss Approaching
+#132 Boss Battle
+#176 Boss Defeated -- Area 1-3 Cleared
+#165 Let's Go Next Area #1
+#169 Boss Defeated -- Congratulations ! (Area 4 Cleared)
+#166 Let's Go Next Area #2
+#133 Name Entry
+
+#129 Unused
+#134 Power Up (Without SFX)
+#168 Area 1-3 Cleared (Without SFX)
+#163 Boss Defeated (Alternative) -- Area 1-3 Cleared
+
+------------------------------------------------------
+ [SFX]
+
+#130 [SFX] Start
+#135 [SFX]
+#136 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#148 [SFX] Got Wing Part
+#149 [SFX] Credit
+#150 [SFX]
+#152 [SFX] Missed
+#153 [SFX]
+#160 [SFX]
+#161 [SFX]
+#162 [SFX]
+#164 [SFX]
+#167 [SFX]
+#178 [SFX]
+#180 [SFX] Got A Mark
+#181 [SFX] Player Extended
+
+// List Contribution by a2c-s438
+$end

@@ -1,0 +1,87 @@
+﻿$name=fantzone1
+$version=2
+$default=142
+$songmax=256
+$fixed_volume=245
+$main
+
+#142 Credit <time="2">
+#155 Opa-Opa! (Stage 1)
+#160 Shopping
+#196 Keep on the Beat (Stage 2)
+#191 Saari (Stage 3)
+#193 Prome (Stage 4)
+#153 Round Up <time="4.1">
+#195 Hot Snow (Stage 5, JP ver.)
+#192 Don't Stop (Stage 6)
+#194 Dreaming Tomorrow (Stage 7)
+#145 Boss
+#188 Ya-Da-Yo (Stage 8)
+#143 Victory Way (Ending)
+#154 Game Over
+
+#185 Opa-Opa! (Restart)
+#189 Ya-Da-Yo (Restart)
+#144 Victory Way (Name Entry)
+
+------------------------------------------
+
+#129 [S.E.]
+#130 [S.E.]
+#131 [S.E.]
+#132 [S.E.]
+#133 [S.E.]
+#134 [S.E.]
+#135 [S.E.]
+#136 [S.E.]
+#137 [S.E.]
+#138 [S.E.]
+#139 [S.E.]
+#140 [S.E.]
+#141 [S.E.]
+#146 [S.E.]
+#147 [S.E.]
+#148 [S.E.]
+#149 [S.E.]
+#150 [S.E.]
+#151 [S.E.]
+#152 [S.E.]
+#156 [S.E.]
+#157 [S.E.]
+#158 [S.E.]
+#159 [S.E.]
+#161 [S.E.]
+#162 [S.E.]
+#163 [S.E.]
+#164 [S.E.]
+#165 [S.E.]
+#166 [S.E.]
+#167 [S.E.]
+#168 [S.E.]
+#169 [S.E.]
+#170 [S.E.]
+#171 [S.E.]
+#172 [S.E.]
+#183 [S.E.]
+#187 [S.E.]
+#190 [S.E.]
+
+#173 [FM] Bass Drum
+#174 [FM] Snare Drum 1
+#175 [FM] High Tom
+#176 [FM] Mid Tom
+#177 [FM] Low Tom
+#178 [FM] Closed Highhat
+#179 [FM] Cow Bell 1
+#180 [FM] Cow Bell 2
+#181 [FM] Whistle 1 <time="4">
+#182 [FM] Whistle 2 <time="4">
+#184 [FM] Snare Drum 2
+#186 [FM] Closed Highhat
+
+  ■出典
+  セガ・ゲーム・ミュージック VOL.2
+  ALFA RECORDS  28XA-108  1987.02.25
+
+// List by Fuj
+$end

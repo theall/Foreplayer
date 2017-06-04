@@ -1,0 +1,82 @@
+﻿$name=rygar
+$version=2
+$default=001
+$main
+
+#001 Credit Inserted
+#050 Introduction - Main BGM
+#063 Get An Indra!
+#052 Main BGM (w/o intro)
+#057 Bonus Points
+#061 Invincibility
+#055 Interval (Repulse, Rank, Timer Bonus)
+
+#051 Main BGM (Restart)
+#059 Timer Alert / Undead Monster
+#056 Special Bonus Points
+#008 [Voice] Player Dead
+#054 Game Over
+
+#062 [Voice] Shout of joy (Ending)
+#053 Ending
+#048 Name Entry (1st)
+#049 Name Entry (2nd -)
+
+#058 Undead Monster
+
+------------------------------------------------------
+  [SFX]
+
+#001 [SFX] Credit Inserted
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#012 [SFX]
+#014 [SFX]
+#015 [SFX]
+#016 [SFX]
+#017 [SFX]
+#018 [SFX]
+#019 [SFX]
+#020 [SFX]
+#021 [SFX]
+#022 [SFX]
+#023 [SFX]
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#030 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX] Extend
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+
+------------------------------------------------------
+  [Voice]
+
+#002 [Voice] Attack
+#003 [Voice] Jump
+#008 [Voice] Player Dead
+#027 [Voice] 
+#028 [Voice]
+#029 [Voice]
+#031 [Voice]
+#062 [Voice] A shout of joy (Ending)
+
+  [Source]
+  Tecmo Game Music
+  Alfa Records  28XA-95  Oct 25, 1986
+
+// List contribution by R
+$end

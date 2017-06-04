@@ -1,0 +1,35 @@
+﻿$name=numanath
+$version=2
+$default=$70
+$main
+
+#112 Attract Mode
+#049 Opening
+#051 The Next Event is
+#053 How to Play
+#057 Game Start
+#007 Interceptor 1
+#009 Interceptor 2
+#055 No Stop Rock Chop
+#015 Numan Sniper
+#017 Tower Topper 1
+#019 Tower Topper 2
+#021 Tower Topper 3
+#059 Failure!
+#061 Success!
+#063 Game Over!
+#065 Results
+#071 Results (over rega edit)
+#069 A World Record
+#067 Total Points
+#117 4th, 3rd, 2nd, and this years winner is! - ending
+
+  [Source]
+  Namco Video Game Graffiti Vol.10
+  Victor Entertainment  VICL-40097  Dec 16, 1993
+
+  [Composed by]
+  Nobuyoshi Sano
+
+// List contribution by Llama
+$end

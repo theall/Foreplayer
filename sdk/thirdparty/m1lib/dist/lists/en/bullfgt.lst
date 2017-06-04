@@ -1,0 +1,49 @@
+﻿$name=bullfgt
+$version=2
+$default=029
+$main
+
+#029 [SFX] Credit Inserted
+#027 Main Theme
+#034 Bull Appears <time="6">
+#020 Winner
+#019 Bonus Demo
+#026 Bonus Stage
+#022 Miss <time="3">
+#025 Bonus Points
+#027 Main Theme <time="10.3">
+#018 Bull Gets Up <time="8">
+#021 Miss <time="3">
+#033 Game Over
+#024 Name Entry
+// from Carmen Suite No.1 / George Bizet
+
+#023 Bonus Stage Intro
+
+---------------------------------------------------
+  [SFX]
+
+#001 [SFX]
+#002 [SFX] <time="5">
+#003 [SFX]
+#004 [SFX] 
+#005 [SFX] 
+#006 [SFX] 
+#008 [SFX] 
+#009 [SFX] 
+#010 [SFX] 
+#011 [SFX] 
+#012 [SFX] 
+#013 [SFX] 
+#014 [SFX] 
+#015 [SFX] 
+#016 [SFX] 
+#017 [SFX] 
+#018 [SFX] Bull Gets Up <time="8">
+#029 [SFX] Credit Inserted
+#030 [SFX]
+#031 [SFX]
+#032 [SFX] 
+
+// List contribution by ZEK.
+$end

@@ -1,0 +1,139 @@
+﻿$name=popbounc
+$version=2
+$default=032
+$main
+
+#032 Neo Geo Logo
+#033 [Voice] Video System
+
+#034 Attract Mode <time="21.7">
+#064 [SFX] Coin Inserted
+#045 Start <time="7">
+#046 Stage (Map)
+#123 [Voice] Let's Try ! <time="3">
+#112 [Voice] Startoo !
+#035 Land Area (Stage 1)
+#044 Stage Clear !
+#036 Sea Area (Stage 2)
+#080 [SFX] Attack <time="3.5">
+#039 Attack Mode
+#037 Space Area (Stage 3)
+#118 [SFX] Warning <time="2.5">
+#042 Warning BGM
+#041 Continue ?
+#034 Variety Area (Stage 4)
+#040 Name Entry
+#043 Ending
+
+#045 Challenger Appeared
+#034 VS Mode Theme 1
+#036 VS Mode Theme 2
+#037 VS Mode Theme 3
+#044 Result
+
+#038 Unused
+
+---------------------------------------------------
+ [SFX]
+
+#064 [SFX] Coin
+#065 [SFX] 
+#066 [SFX] 
+#067 [SFX] 
+#068 [SFX] 
+#069 [SFX] 
+#070 [SFX] 
+#071 [SFX] 
+#072 [SFX] 
+#073 [SFX] 
+#074 [SFX] 
+#075 [SFX] 
+#076 [SFX] 
+#077 [SFX] 
+#078 [SFX] 
+#079 [SFX] 
+#080 [SFX] Attack
+#081 [SFX] 
+#082 [SFX] 
+#083 [SFX] 
+#084 [SFX] 
+#085 [SFX] 
+#086 [SFX] 
+#087 [SFX] 
+#088 [SFX] 
+#089 [SFX] 
+#093 [SFX] 
+#095 [SFX] 
+#096 [SFX] 
+#097 [SFX] 
+#098 [SFX] 
+#100 [SFX] 
+#101 [SFX] 
+#102 [SFX] 
+#103 [SFX] 
+#105 [SFX] 
+#106 [SFX] 
+#107 [SFX] 
+#108 [SFX] 
+#109 [SFX] 
+#110 [SFX] 
+#111 [SFX] 
+#115 [SFX] 
+#116 [SFX] 
+#117 [SFX] 
+#118 [SFX] Warning
+#119 [SFX] 
+#120 [SFX] 
+#121 [SFX] 
+#122 [SFX] 
+#125 [SFX] 
+#126 [SFX] 
+#127 [SFX] 
+#128 [SFX] 
+#129 [SFX] 
+#130 [SFX] 
+#131 [SFX] 
+#132 [SFX] 
+#133 [SFX] 
+#134 [SFX] 
+#135 [SFX] 
+#136 [SFX] 
+#137 [SFX] 
+#138 [SFX] 
+#139 [SFX] 
+#140 [SFX] 
+#141 [SFX] 
+#142 [SFX] 
+#143 [SFX] 
+#144 [SFX] 
+#145 [SFX] 
+#146 [SFX] 
+
+---------------------------------------------------
+  [Voice]
+
+#033 [Voice] Video System
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#094 [Voice] 
+#099 [Voice] 
+#104 [Voice] 
+#112 [Voice] Start!
+#113 [Voice] 
+#114 [Voice] 
+#123 [Voice] Let's Try!
+#124 [Voice] 
+
+  [Sound Composer]
+  Naoki Sakamura (Itamura Nao)
+
+  [Sound FX]
+  Pirowo, Norie
+
+  [Sound Programmers]
+  Mami, H.Soyama
+
+// List contribution by ZEK.
+// Updated by Fuj
+$end

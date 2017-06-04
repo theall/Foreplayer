@@ -1,0 +1,42 @@
+﻿$name=schamp
+$version=2
+$default=016
+$main
+
+#016 K.I.Y.O. (Advertise) <time="1:43">
+#005 Get into the Wave 2 (Character Select) <time="1:48">
+#007 Are You Ready? (Game Start) <time="0:05">
+#004 Lovers (South Island) <time="2:44">
+#023 Back to Soul (Flying Carpet) <time="3:10">
+#003 Black Bed (Aurora Icefield) <time="2:20">
+#001 Come on, Mr. Sonic (Mushroom Hill) <time="2:16">
+#002 Blue Garden (Canyon Cruise) <time="3:27">
+#022 Here We Go (Casino Night) <time="2:28">
+#013 Try Again (Dynamite Plant) <time="2:41">
+#017 Fire Stone (Giant Wing) <time="3:02">
+#010 Emerald (Chaos Emerald) <time="0:06">
+#018 Never Let It Go (Death Egg's Eye) <time="2:33">
+#015 Hurry Up (Death Egg's Hanger) <time="2:21">
+#024 Egg's Fanfare (Mission Complete) <time="0:07">
+#019 Everything (Super Sonic) <time="3:18">
+#012 North Wind (Sonic Vs. Knuckles) <time="2:56">
+#011 Winner's Fanfare (You Are Winner) <time="0:07">
+#021 What's Your Name? (Name Entry) <time="1:21">
+#020 Take Me Away (Ending Theme) <time="0:53">
+#008 Continue <time="0:15">
+#009 Game Over <time="0:06">
+
+#000 Character Select (別バージョン) <time="2:48">
+#006 Sunset Town (未使用曲 1)
+#014 未使用曲 2
+
+  ■出典
+  SONIC THE FIGHTERS SOUND TRACKS
+  TOSHIBA EMI  TYCY-5521  1996.12.07
+
+  ■作曲
+  茂籠 真樹, 光吉 猛修
+
+// List by Fuj
+// 時間指定 by NK
+$end

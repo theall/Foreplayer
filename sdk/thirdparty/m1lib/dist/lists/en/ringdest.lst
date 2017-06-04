@@ -1,0 +1,329 @@
+﻿$name=ringdest
+$version=2
+$default=062
+$songmax=378
+$fixed_volume=177
+$main
+
+#062 QSound Logo
+#064 Capcom Logo (1) <time="1.5">
+#065 Capcom Logo (2)
+
+#001 Title
+#002 Stage "Tokyo" <time="1:54">
+#003 Stage "Moscow" <time="2:03">
+#004 Stage "Hanover" <time="2:33">
+#005 Stage "London" <time="2:33">
+#006 Stage "New York" <time="1:50">
+#007 Stage "Calgary" <time="2:26">
+#008 Stage "Los ANgels" <time="2:14">
+#009 Stage "Mexico" <time="1:27">
+#010 Stage "Sydney" <time="2:16">
+#011 Stage "Santo Domingo" <time="2:34">
+#012 Stage "New Delhi" <time="1:34">
+#013 Stage "Las Vegas" <time="1:53">
+#014 Stage "BWA" <time="2:20">
+#015 Stage "CWA" <time="1:52">
+#030 Player Select 1 <time="30">
+#031 Stage Starting
+#032 Here Comes A New Challenger
+#033 Player Select 2 <time="31">
+#034 Ranking Display
+#035 Continue <time="57">
+#037 Winning
+#016 Theme of Biff (Zalazof) <time="2:11">
+#017 Theme of Gunloc (Colt) <time="1:55">
+#018 Theme of Stingr (Stinger) <time="2:03">
+#019 Theme of Titan <time="2:13">
+#020 Theme of Oni (Budo) <time="2:43">
+#021 Theme of Haggar <time="1:38">
+#022 Theme of Rasta (Gomes) <time="1:55">
+#023 Theme of Grater (Sheep) <time="2:11">
+#024 Theme of Jumbo (Kimara) <time="1:05">
+#025 Theme of Scorp (Astoro) <time="2:05">
+#026 Theme of Saber <time="1:54">
+#027 Theme of Black. W <time="1:10">
+#028 Theme of Wraith <time="1:33">
+#029 Theme of Ortega <time="1:07">
+#036 Game Over
+#038 Ending <time="43">
+#039 Credits Roll <time="2:03">
+#063 (unused)
+
+------------------------------------------------------
+ [Voice]
+  
+#065 [Voice] Capcom
+#336 [Voice] Super <time="0.8">
+#337 [Voice] Muscle Bomber
+#368 [Voice] Ring of <time="0.8">
+#369 [Voice] Destruction
+#333 [Voice] Tokyo
+#328 [Voice] Moscow
+#324 [Voice] Hanover
+#325 [Voice] London
+#330 [Voice] New York
+#323 [Voice] Calgary
+#326 [Voice] Los Angels
+#327 [Voice] Mexico
+#332 [Voice] Sydney
+#331 [Voice] Santo Domingo
+#329 [Voice] New Delhi
+#334 [Voice] Las Vegas
+#321 [Voice] BWA
+#322 [Voice] CWA
+#311 [Voice] you
+#310 [Voice] win
+#305 [Voice] lose
+#307 [Voice] perfect
+#304 [Voice] fight
+#302 [Voice] draw game
+#309 [Voice] tie break
+#306 [Voice] no contest
+#308 [Voice] round
+#299 [Voice] one
+#300 [Voice] two
+#301 [Voice] three
+
+  BIFF (ZALAZOF)
+#234 [Voice]
+#235 [Voice]
+#236 [Voice]
+#237 [Voice] "sunset splash"
+#353 [Voice]
+#367 [Voice] "Training wo okotatte iruna? Sonna yatsu ga ring ni agaru shikaku wa nai!!"
+
+  GUNLOC (COLT)
+#170 [Voice]
+#171 [Voice]
+#172 [Voice]
+#173 [Voice] "sunset splash"
+#174 [Voice] "Hey!"
+#356 [Voice] "Oi oi... Doushite ore ga honki wo dasu mae ni taorechimaundai?"
+
+  STINGR (STINGER)
+#213 [Voice]
+#214 [Voice]
+#215 [Voice]
+#216 [Voice] "screw diver"
+#217 [Voice] "atomic diver"
+#218 [Voice]
+#219 [Voice] "o'le!"
+#364 [Voice] "Azteca no atsui kaze wa kesshite dare nimo tomeru koto wa dekinai."
+
+  TITAN
+#220 [Voice]
+#221 [Voice]
+#222 [Voice]
+#223 [Voice] "circle wave"
+#224 [Voice]
+#225 [Voice]
+#365 [Voice] "Douda mitaka! Career ga asakarouto tensai niwa kankei nee!"
+
+  ONI (BUDO)
+#164 [Voice]
+#165 [Voice]
+#166 [Voice] "Nukatta..."
+#167 [Voice] "keppuujin"
+#168 [Voice]
+#169 [Voice]
+#355 [Voice] "Ore wa oni to natta. Ikani samurai ya ninja tote ore niwa kanawanu wa!"
+
+  HAGGAR
+#159 [Voice] "Darling!" (Jessica)
+#180 [Voice]
+#181 [Voice]
+#182 [Voice]
+#183 [Voice]
+#184 [Voice]
+#358 [Voice] "Gakkari sasenaide kure. Omae no chikara wa konna mono dewa nai darou?"
+
+  RASTA (GOMES)
+#131 [Voice]
+#175 [Voice]
+#176 [Voice]
+#177 [Voice]
+#178 [Voice]
+#179 [Voice]
+#357 [Voice] "Omee yoee naa. Mada Freak no hou ga tsueenja neeka?"
+
+  GRATER (SHEEP)
+#206 [Voice]
+#207 [Voice]
+#208 [Voice]
+#209 [Voice] "tornado slam"
+#210 [Voice]
+#211 [Voice]
+#212 [Voice]
+#363 [Voice] "Ore no power wa ushi sae shime korosu. Omae wa ikiteiru dake un ga iize!"
+
+  JUMBO (KIMARA)
+#185 [Voice]
+#186 [Voice]
+#187 [Voice]
+#188 [Voice]
+#189 [Voice]
+#359 [Voice] "Oya oya... Mou owari desuka? Mou sukoshi ganbatte kudasai yo..."
+
+  SCORP (ASTORO)
+#160 [Voice]
+#161 [Voice]
+#162 [Voice]
+#163 [Voice]
+#354 [Voice] "Omae no shikabane wa ore no fuhai densetsu no ichibu to sasete morau!!"
+
+  SABER
+#190 [Voice]
+#191 [Voice]
+#192 [Voice]
+#193 [Voice]
+#194 [Voice]
+#360 [Voice] "Hontou no sensou wo shiranu kisamara ni kachime nado arou hazu ga nai!!"
+
+  BLACK. W
+#226 [Voice]
+#227 [Voice]
+#228 [Voice]
+#229 [Voice]
+#230 [Voice]
+#231 [Voice]
+#232 [Voice]
+#233 [Voice]
+#366 [Voice] "Omae no kougeki wa one-pattern sugiru. Raku ni waza ga yomikireta ze!!"
+
+  WRAITH
+#201 [Voice]
+#202 [Voice]
+#203 [Voice]
+#204 [Voice]
+#362 [Voice] "Hehehehe... Ima koko ni ore-sama no shinwa ga hajimaranto shite oru wai..."
+
+  ORTEGA
+#195 [Voice]
+#196 [Voice]
+#197 [Voice]
+#198 [Voice]
+#199 [Voice]
+#200 [Voice]
+#361 [Voice] "Tonda kitai hazure dana. Watashi ga honki wo daseru yatsu wa doko ni iru noda?!"
+
+------------------------------------------------------
+  [SFX]
+  
+#048 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#052 [SFX]
+#053 [SFX] <time="7">
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#072 [SFX]
+#073 [SFX]
+#074 [SFX]
+#075 [SFX]
+#076 [SFX]
+#077 [SFX]
+#078 [SFX]
+#079 [SFX]
+#080 [SFX]
+#081 [SFX]
+#082 [SFX]
+#083 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX] <time="7">
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#098 [SFX] <time="7">
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+#108 [SFX]
+#109 [SFX]
+#110 [SFX]
+#111 [SFX]
+#112 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#123 [SFX]
+#124 [SFX]
+#125 [SFX]
+#126 [SFX]
+#127 [SFX]
+#128 [SFX]
+#129 [SFX]
+#130 [SFX] <time="7">
+#132 [SFX]
+#134 [SFX]
+#136 [SFX]
+#137 [SFX]
+#140 [SFX]
+#142 [SFX]
+#143 [SFX]
+#144 [SFX]
+#145 [SFX]
+#146 [SFX]
+#147 [SFX]
+#149 [SFX]
+#150 [SFX]
+#151 [SFX]
+#152 [SFX]
+#153 [SFX]
+#154 [SFX]
+#155 [SFX]
+#156 [SFX]
+#157 [SFX]
+#158 [SFX]
+#205 [SFX]
+#312 [SFX]
+#314 [SFX]
+#315 [SFX]
+#316 [SFX]
+#317 [SFX]
+#318 [SFX]
+#319 [SFX]
+#346 [SFX]
+#372 [SFX]
+#373 [SFX]
+#376 [SFX]
+#377 [SFX]
+#378 [SFX]
+
+  [Source]
+  Super Muscle Bomber Arcade Game Track
+  SME SRCL-2919  Oct 21, 1994
+
+// List Contribution by NK
+$end

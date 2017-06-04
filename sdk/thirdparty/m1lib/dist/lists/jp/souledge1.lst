@@ -1,0 +1,200 @@
+﻿$name=souledge1
+$version=2
+$default=016
+$songmax=400
+$main
+
+#016 The Wind and Clouds -風と雲と- (Mitsurugi Stage)
+#208 Opening Title Ver.1 (Attract Mode)
+#031 Epic Calling! (Character Select)
+#003 Into the Battle (乱入時)
+#019 Future Dancin' -灯火の闇- (Taki Stage)
+#084 And the Blind Shall See (Voldo Ending)
+#017 Heavenly Engage -天国の約束- (Sophitia Stage)
+#020 Soul and Sword -黒き森の叫び- (Siegfried Stage)
+#085 Goddess in Triumph (Sophitia Ending)
+#018 Dragon's Call -ドラゴンと呼ばれた男- (Li Long Stage)
+#082 "The Deed is Done" (Taki Ending)
+#021 The Gears of Madness -狂気の歯車- (Voldo Stage)
+#023 Kkaduri -雌雉- (Seung Mina Stage)
+#080 War Age (Mitsurugi/Hwang Ending)
+#026 Horangi Arirang -京畿の虎- (Hwang Stage)
+#081 Sparrow's Return (Mina Ending)
+#022 Recollect Continent -英雄の条件- (Rock Stage)
+#024 Bravely Folk Song -白夜- (Cervantes Stage)
+#087 Sunrise Promise (Rock Ending)
+#208 Opening Title Ver.2 (Ver.2 Attract Mode)
+#086 The Carnage has Begun ～ Into a Trance (Sieg/Cervantes Ending)
+#029 Courage -勇者の碑- (Name Entry)
+#025 World Atlas Collapsed -崩壊の時- (SoulEdge Stage)
+#083 The Last Bit of Hope ～ Dragon's Gasp (Li Long Ending)
+#027 Finale and End Credit <time="1:49">
+
+#001 Sound Test
+#002 Over the Paradise (イントロ，T・O・U・R・Sより）
+
+-----------------------------------------------------------
+ [Voice]
+
+#128 [Voice] Zero
+#129 [Voice] One
+#130 [Voice] Two
+#131 [Voice] Three
+#132 [Voice] Four
+#133 [Voice] Five
+#134 [Voice] Six
+#135 [Voice] Seven
+#136 [Voice] Eight
+#137 [Voice] Nine
+#138 [Voice] Ten
+#139 [Voice] Mitsurugi
+#140 [Voice] Seung Mina
+#141 [Voice] Taki
+#142 [Voice] Li Long
+#143 [Voice] Voldo
+#144 [Voice] Sophitia
+#145 [Voice] Siegfried
+#146 [Voice] Rock
+#147 [Voice] Hwang Sung Kyung
+#148 [Voice] 
+#149 [Voice] The heroes finally meet under the star of destiny.
+#150 [Voice] The fates conspired to arrange their battle.
+#151 [Voice] The mists of darkness swirl around.
+#152 [Voice] Our two souls are fiercly entangled.
+#153 [Voice] The gears of madness quietly start to move.
+#154 [Voice] Watched over by the almighty ones, they unleach themselves.
+#155 [Voice] The almighty ones have granted you a sword to cut your own path.
+#156 [Voice] A hero desires a sword and a sword desires truth.
+#157 [Voice] The end draws near.
+#158 [Voice] Place your noble soul in your sword.
+#159 [Voice] Mitsurugi stood again against impossible enemy.
+#160 [Voice] The gruling battle ended with the victory of Mitsurugi.
+#161 [Voice] Will you challenge the enemy again?
+#162 [Voice] The legend will never die.
+#163 [Voice] Transcending history and the world, a tale of souls and swords, eternally retold.
+#164 [Voice] Soul Edge
+#165 [Voice] Welcome to the Stage of history.
+#166 [Voice] Namco
+#167 [Voice] Versus
+#168 [Voice] Fight
+#169 [Voice] Final battle
+#170 [Voice] Battle zero
+#171 [Voice] Knock out
+#172 [Voice] Draw
+#173 [Voice] Double K.O.
+#174 [Voice] Out of the ring
+#175 [Voice] Time's up
+#176 [Voice] You win
+#177 [Voice] You lose
+#178 [Voice] Go
+#179 [Voice] Perfect
+#180 [Voice] Excellent
+#181 [Voice] Unbeleivable
+#182 [Voice] Fantastic
+#192 [Voice] 
+
+-----------------------------------------------------------
+ [S.E.]
+
+#006 [S.E.]
+#007 [S.E.]
+#008 [S.E.]
+#009 [S.E.]
+#010 [S.E.]
+#011 [S.E.]
+#012 [S.E.]
+#013 [S.E.]
+#014 [S.E.]
+#015 [S.E.]
+#047 [S.E.]
+#256 [S.E.]
+#257 [S.E.]
+#258 [S.E.]
+#259 [S.E.]
+#260 [S.E.]
+#261 [S.E.]
+#262 [S.E.]
+#263 [S.E.]
+#264 [S.E.]
+#265 [S.E.]
+#266 [S.E.]
+#267 [S.E.]
+#268 [S.E.]
+#269 [S.E.]
+#270 [S.E.]
+#271 [S.E.]
+#272 [S.E.]
+#273 [S.E.]
+#274 [S.E.]
+#275 [S.E.]
+#276 [S.E.]
+#277 [S.E.]
+#278 [S.E.]
+#279 [S.E.]
+#280 [S.E.]
+#281 [S.E.]
+#282 [S.E.]
+#283 [S.E.]
+#284 [S.E.]
+#285 [S.E.]
+#286 [S.E.]
+#287 [S.E.]
+#288 [S.E.]
+#289 [S.E.]
+#290 [S.E.]
+#291 [S.E.]
+#292 [S.E.]
+#293 [S.E.]
+#294 [S.E.]
+#295 [S.E.]
+#296 [S.E.]
+#297 [S.E.]
+#298 [S.E.]
+#299 [S.E.]
+#300 [S.E.]
+#301 [S.E.]
+#302 [S.E.]
+#303 [S.E.]
+#304 [S.E.]
+#305 [S.E.]
+#306 [S.E.]
+#307 [S.E.]
+#308 [S.E.]
+#309 [S.E.]
+#310 [S.E.]
+#311 [S.E.]
+#312 [S.E.]
+#313 [S.E.]
+#314 [S.E.]
+#315 [S.E.]
+#316 [S.E.]
+#320 [S.E.]
+#321 [S.E.]
+#322 [S.E.]
+#323 [S.E.]
+#324 [S.E.]
+#325 [S.E.]
+#326 [S.E.]
+
+  ■出典
+  SOUL EDGE (PlayStation版)
+  NAMCO  SLPS-00555  1996.12.20
+
+  SUPER BATTLE SOUND ATTACK SOULEDGE 
+  PONY CANYON / MEDIA REMORAS  MRCA-20099  1996.09.20
+
+  SUPER BATTLE SOUND ATTACK SOULEDGE 
+  PONY CANYON  PCCG-00365  1996.10.21
+
+  T・O・U・R・S
+  TROUBADOUR RECORD  TTRC-0006  1994.08.07
+
+  ■作曲
+  相原 隆行
+  大塚 隆功 (#085, #082, #081, #208, #083)
+
+// List contribution by Hiroshi
+// Updated by Fujix
+// Updated by 匿名さん
+// ボイス書き出し: Belmontさん
+$end

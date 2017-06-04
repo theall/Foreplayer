@@ -1,0 +1,76 @@
+﻿$name=ridgerac
+$version=2
+$default=64
+$main
+
+#064 Welcome Racer
+#080 Ridge Racer (Power Remix)
+#081 Rare Hero (Sanodigy mix)
+#082 Feeling Over (Underground)
+#083 Rotterdam Nation (Foo Mix)
+#084 Speedster (I Like A.T.mix)
+#085 Rhythm Shift (12" Version)
+#070 win win win (Death Mix)
+
+#067 Game Over 1 (Not on CD)
+#073 Game Over 2 (Not on CD)
+//$34 
+
+--------------------------------------------
+
+$00 [Voice] Ridge Racer
+$01 [SFX] Sound Test
+$02 [SFX] <time="5">
+$07 [SFX] 
+$08 [SFX] 
+$09 [SFX] 
+$0E [SFX] 
+$0F [SFX] 
+$10 [Voice] Ridge Racer! Alright, everyone! One minute to go! Are you ready? The engines sound like they're ready to go! Are you all set?
+$11 [SFX] 
+$13 [SFX] 
+$14 [SFX] 
+$15 [SFX] 
+$16 [SFX] 
+$17 [SFX] 
+$18 [SFX] <time="5">
+$19 [SFX] <time="5">
+$1A [SFX] <time="5">
+$1B [SFX] 
+$1C [SFX] 
+$1D [SFX] 
+$1E [SFX] 
+$1F [SFX] 
+$20 [Voice] Alright, everyone! One minute to go! Are you ready? The engines sound like they're ready to go! Are you all set?
+$21 [Voice] Wow! What a start! This is just what I wanted to see!
+$22 [Voice] Yeah! It's a new record!
+$23 [Voice] Whew! That was a great counter. You must be one genius of a driver! You've got to teach me!
+$24 [Voice] Gerat job! I got everything on camera, so you'll watch it later huh! You're the greatest!
+$25 [Voice] 2 laps to go!
+$26 [Voice] 3 laps to go!
+$27 [Voice] 4 laps to go!
+$28 [Voice] OK! The final lap! Hang in there!
+$29 [Voice] Come on, Cheer up, You can try again! You'll do it next time!
+$2A [Voice] Hey! Somebody's right on your tail!
+$2B [Voice] Next corner's tough! Watch yourself!
+$2C [Voice] OK! It's the last stretch, keep going!
+$2D [Voice] 3
+$2E [Voice] 2
+$2F [Voice] 1
+$30 [Voice] Go!!
+$31 [Voice] Hurry!
+$32 [Voice] Hey! You're trying for a goal by going the other way around, huh? You're crazy!
+$33 [Voice] Alright, everyone! One minute to go! Are you ready? The engines sound like they're ready to go! Are you all set?
+
+  [OST]
+  Ridge Racer / Namco Game Sound Express Vol.11
+  Victor Entertainment  VICL-15025  Jan 21, 1994
+
+  [Sound Composers]
+  Shinji Hosoe: #64, #80, #83, #84, #85, #70
+  Ayako Sasou: #82
+  Nobuyoshi Sano: #81
+
+// Original list by Fuj
+// Voice transcription and updated by Mikasen
+$end

@@ -1,0 +1,42 @@
+﻿$name=battroad
+$version=2
+$default=065
+$main
+
+#065 [S.E.] CREDIT <time="3.5">
+#032 1UP READY <time="7">
+#033 SEA
+#040 GOAL
+#039 BASE <time="6.2">
+#034 FOREST
+#036 VALLEY
+#037 WASTE
+#035 FARM
+#038 TOWN
+#041 FRONT
+#042 GAME OVER
+
+---------------------------------------------------
+ [S.E.] 
+
+#065 [S.E.] <time="3.5">
+#066 [S.E.] <time="3">
+#067 [S.E.] <time="3">
+#080 [S.E.] 
+#081 [S.E.] 
+#082 [S.E.] 
+#083 [S.E.] 
+#084 [S.E.] 
+#085 [S.E.] 
+#086 [S.E.] 
+#087 [S.E.] 
+#088 [S.E.] 
+#089 [S.E.] 
+#090 [S.E.] 
+#091 [S.E.] 
+#093 [S.E.] <time="5">
+#094 [S.E.] <time="3">
+#095 [S.E.] 
+
+// List contribution by ZEK.
+$end

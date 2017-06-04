@@ -1,0 +1,47 @@
+﻿$name=kof2001
+$version=2
+$default=002
+$main
+
+#002 Neo Geo Logo
+
+#033 Theme of Nests Body Building Plan &lt;Opening Ver 1.0&gt; (Title)
+#034 Theme of Nests Body Building Plan &lt;Opening Ver 2.0&gt; (30 sec title)
+#047 Theme of Nests Body Building Plan &lt;Instruction&gt;
+#048 Hit Me! (Character Select)
+#049 Hit Me More! (Versus Character Select)
+#037 Big Pain (Main Team)
+#038 Invincible Flame (Japanese Team)
+#039 Immortal Sun Disk (Iori Team)
+#040 My Whip (Ikari Team)
+#041 All OK! (Garou Team)
+#042 Extreme Fight (AOF Team)
+#043 The Queen of Fighters (Female Team)
+#044 Dark Ruler, Nests (Nests Team)
+#045 Psycho Guys (Psycho Soldier Team)
+#046 Naeryo Chagi (Korean Team)
+#050 Fighting Spirit No.1 (Win)
+#052 Fighting Spirit No.2 (Join)
+#053 Theme of Nests Body Building Plan &lt;Demo Ver 1.0&gt; (Intermission)
+#054 Theme of Nests Body Building Plan &lt;Demo Ver 2.0&gt; (Zero Demo)
+#035 0 (Zero)
+#055 Theme of Nests Body Building Plan &lt;Demo Ver 3.0&gt; (Ignis Demo)
+#036 I'm No.1 (Ignis)
+#056 Theme of Nests Body Building Plan &lt;Demo Ver 4.0&gt; (Final Demo)
+#058 The King of Fighters 2001 Ending (delight)
+#059 The King of Fighters 2001 Ending (anger)
+#060 The King of Fighters 2001 Ending (sorrow)
+#061 The King of Fighters 2001 Ending (pleasure)
+#051 Fighting Spirit No.3 (Continue - Game Over)
+#062 The King of Fighters 2001 Credits
+
+  [Source]
+  The King of Fighters 2001
+  Scitron / Eolith (& SNK)  SCDC-00143  Dec 19, 2001
+
+  [Composers]
+  Masahiko Hataya, Kidon
+
+// List Contribution by GolGol
+// English list by Fuj
+$end

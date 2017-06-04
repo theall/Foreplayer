@@ -1,0 +1,22 @@
+﻿$name=jackal
+$version=2
+$default=072
+$main
+
+#072 Opening
+#064 Main BGM 1
+#065 Main BGM 2
+#069 Final BGM
+#131 Game Over
+#132 Ending
+#133 Ranking
+//#128 
+//#129 
+//#130 
+
+  [Soundtrack]
+  Konamic Game Freaks / Konami Kukeiha Club
+  Alfa Records  28XA-135  Mar 25, 1987
+
+// リスト作成：みん☆さん
+$end

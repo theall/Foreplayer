@@ -1,0 +1,146 @@
+﻿$name=combatsc
+$version=2
+$default=052
+$main
+
+#052 ATTRACT MODE
+#032 [S.E.] CREDIT
+#041 READY
+#037 OBSTACLE COURSE (STEP 1)
+#038 FIRING RANGE I (STEP 2)
+#044 IRON-MAN RACE (STEP 3)
+#048 YOU MADE IT
+#055 SCORE
+#039 INTERMISSION 1
+#040 FIRING RANGE II (STEP 4)
+#035 ARM WRESTLING (STEP 5)
+#053 FIRING RANGE III (STEP 6)
+#055 SCORE
+#049 INTERMISSION 2
+#054 FIGHT WITH INSTRUCTOR (STEP 7)
+#033 CONGRATULATIONS
+#056 YOUR TITLE
+#046 INTERMISSION 3
+#047 LAST MISSION (STEP 8)
+#045 LAST BOSS
+#046 MISSION COMPLETE
+#056 YOUR TITLE
+#036 NAME ENTRY
+#042 GAME OVER
+
+#051 未使用曲 1
+#043 未使用曲 2
+#034 未使用曲 3
+
+---------------------------------------------------
+ [S.E.] 
+
+#001 [S.E.] 
+#002 [S.E.] 
+#003 [S.E.] 
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#007 [S.E.] 
+#008 [S.E.] 
+#009 [S.E.] 
+#010 [S.E.] 
+#011 [S.E.] 
+#012 [S.E.] 
+#013 [S.E.] 
+#014 [S.E.] <time="10">
+#015 [S.E.] 
+#016 [S.E.] 
+#017 [S.E.] 
+#018 [S.E.] 
+#019 [S.E.] 
+#020 [S.E.] 
+#021 [S.E.] 
+#022 [S.E.] 
+#023 [S.E.] 
+#024 [S.E.] 
+#025 [S.E.] 
+#026 [S.E.] 
+#027 [S.E.] 
+#028 [S.E.] 
+#029 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] <time="6"> 
+#032 [S.E.] CREDIT
+#132 [S.E.] 
+#133 [S.E.] 
+
+---------------------------------------------------
+ [Voice] 
+
+#064 [Voice] Go!
+#065 [Voice] Fire!
+#066 [Voice] Ready!
+#067 [Voice] You're a loser.
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#072 [Voice] Nick
+#073 [Voice] Time's up.
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] Come on!
+#077 [Voice] Hurry up!
+#078 [Voice] Hey
+#079 [Voice] 
+#080 [Voice] Go home to your mother.
+#081 [Voice] 
+#082 [Voice] You made it.
+#083 [Voice] Pull up
+#084 [Voice] Congratulations on your graduation.
+#085 [Voice] Don't be a chicken.
+#086 [Voice] Okay.
+#087 [Voice] 
+#088 [Voice] Yeah.
+#089 [Voice] Ough
+#090 [Voice] Aarg
+#091 [Voice] Yes, sir!
+#092 [Voice] Son of a gun.
+#093 [Voice] 
+#094 [Voice] Ouch!
+#095 [Voice] C'mon
+#096 [Voice] uuuugh
+#097 [Voice] Help me.
+#098 [Voice] 
+#099 [Voice] イヤァッ！
+#100 [Voice] トォゥッ！
+#101 [Voice] ウゥッ！
+#102 [Voice] ニック！
+#103 [Voice] ジョー！
+#104 [Voice] 始めッ！！
+#105 [Voice] 急げッ！ 
+#106 [Voice] 来いッ！
+#107 [Voice] 隙ありッ！
+#108 [Voice] 遅いッ！
+#109 [Voice] それでも男かッ！
+#110 [Voice] 撃てぇッ！
+#111 [Voice] 十年早いぜッ！
+#112 [Voice] よしッ！
+#113 [Voice] 合格だッ！
+#114 [Voice] もう一回だけチャンスをやろう
+#115 [Voice] けんすい始めッ！
+#116 [Voice] 卒業おめでとう！
+#117 [Voice] 故郷へ帰れ！
+#118 [Voice] 中途半端じゃ出来ないぜ
+#119 [Voice] 気を抜くなッ！
+#120 [Voice] 良くやったッ！
+#121 [Voice] スタートッ！
+#122 [Voice] タアァッ！
+#123 [Voice] ホッ！
+#124 [Voice] 頑張れッ！
+#125 [Voice] ハァハァッ
+#126 [Voice] くっそぉぉッ！
+#127 [Voice] いてッ！
+#128 [Voice] やったぜッ！
+#129 [Voice] イエーイッ！ 
+#130 [Voice] よーいッ！
+
+// List contribution by ZEK.
+// Updated by Fuj
+$end

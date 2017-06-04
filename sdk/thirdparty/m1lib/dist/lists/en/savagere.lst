@@ -1,0 +1,47 @@
+$name=savagere
+$version=2
+$default=002
+$main
+
+#002 Neo-Geo Logo
+#048 Pachi Pachi (Opening ~ Title)
+#071 Savage Reign (Tilte Overseas Version)
+#044 Dore ga ii? (Select Screen)
+#033 "Chaa Chaa Chaa" (Hayate Stage)
+#074 Hitoyasumi, hitoyasumi (Each Stage Clear)
+#034 "Chararara Chararara" (Eagle Stage)
+#035 Hisabisa no hen (Gozu Stage)
+#036 Piano no Dance (Mezu Stage)
+#045 Mou choi (Bonus Stage)
+#046 Tsuzukete! (Continue)
+#050 Mou sugu Over da! (Credit Limit Time BGM)
+#037 "Zunchatcha" (Carol Stage)
+#038 Awa Awa (Nicola Stage)
+#039 Kaba no akubi (Joker Stage)
+#040 Hiyoko no Dance (Chung Stage)
+#041 Pachi Pachi! (Gordon Stage)
+#042 Kagemusha de wa nai no da (Shishioh Stage)
+#049 Ikaran to ite-kure (Shin Shishioh Appearance 1)
+#047 Ikattaa! (Shin Shishioh Appearance 2)
+#043 Don't you understand? (Shin Shishioh Stage)
+#078 Oyaji to Macho (Hayate, Eagle Ending)
+#077 Yabou (Gozu, Mezu, Shishioh, Gordon 1 Ending)
+#058 Guitar no Rumba (Gordon 2 Ending)
+#051 Tymbello no Rumba (Carol Ending)
+#075 Kenkyuujo? (Nicola 1 Ending)
+#076 Ocharake Time (Nicola 2, Joker Ending)
+#056 Hiyoko no Rumba (Chung Ending)
+#059 Guitar no Dance (Staff Roll)
+#052 Mou oshimai? (All Clear)
+#080 Mou ikkai! (Game Over)
+#053 3-moji shika iran-yan (Name Entry)
+
+  [Source]
+  Fuu'un Mokushiroku / SNK New World Music Performance Group
+  PONY CANYON / SCITRON  PCCB-00181  1995.06.21
+
+　[Composed by]
+  Jojouha Kitapy, Mariko, Yassun
+
+// List Contribution by GolGol
+$end

@@ -1,0 +1,17 @@
+﻿$name=g_raid
+$version=2
+$default=$110
+$songmax=9999999
+$main
+
+$110 BGM 1
+$111 BGM 2
+$113 BGM 3
+$115 BGM 4
+$117 BGM 5
+$119 BGM 6
+$11b BGM 7
+$11d BGM 8
+
+// Basic list contributed by Knurek
+$end

@@ -1,0 +1,130 @@
+﻿$name=kod
+$version=2
+$default=026
+$songmax=126
+$main
+
+#026 Credit Inserted
+#012 Player Select <time="40">
+#011 BGM 1 (Stage 1, 6-B, 16) <time="1:21">
+#006 Boss BGM 1 (Stage 1-Orc King, 2-Minotaur, 7-Giant Spider, 8-Dragon Rider, 15-Cyclops II) <time="57">
+#021 Stage Clear
+#019 Treasure Box <time="30">
+#013 Map Preview
+#002 BGM 2 (Stage 2, 9) <time="1:07">
+#003 BGM 3 (Stage 3, 6-A, 13) <time="1:30">
+#004 BGM 4 (Stage 4, 14) <time="1:13">
+#009 BGM 5 (Stage 5, 11) <time="1:08">
+#010 BGM 6 (Stage 6-C) <time="50">
+#000 BGM 7 (Stage 7, 10, 15) <time="53">
+#001 BGM 8 (Stage 8, 12) <time="1:32">
+#015 Demo 1 (Wise Tree)
+#016 Demo 2 (Dark Wizard)
+#005 Boss BGM 2 (Stage 4-hydra, 9-Black Knight, 12-Royal Knights) <time="1:00">
+#007 Boss BGM 3 (Stage 3-Wyvern I, 6-Cyclops I, 14-Wyvern II) <time="43">
+#008 Boss BGM 4 (Stage 11-Great Dragonian, 13-Dark Wizard, 16-Red Dragon) <time="53">
+#020 All Stage Clear
+#018 Ending <time="1:17">
+#022 Credits Roll <time="1:12">
+ 
+#014 (unused)
+#017 (unused)
+
+--------------------------------------------------------
+  [Voice]
+
+#048 [Voice]
+#050 [Voice]
+#051 [Voice]
+#052 [Voice]
+#053 [Voice]
+#054 [Voice]
+#055 [Voice]
+#059 [Voice]
+#064 [Voice]
+#097 [Voice]
+#108 [Voice]
+#110 [Voice]
+#112 [Voice]
+#123 [Voice]
+ 
+  [SFX]
+
+#024 [SFX]
+#025 [SFX]
+#026 [SFX]
+#027 [SFX]
+#028 [SFX]
+#029 [SFX]
+#030 [SFX]
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#047 [SFX]
+#056 [SFX]
+#057 [SFX]
+#058 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#063 [SFX]
+#065 [SFX]
+#066 [SFX]
+#067 [SFX]
+#068 [SFX]
+#069 [SFX]
+#070 [SFX]
+#071 [SFX]
+#073 [SFX]
+#075 [SFX]
+#078 [SFX]
+#080 [SFX]
+#082 [SFX]
+#084 [SFX]
+#085 [SFX]
+#086 [SFX]
+#087 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#099 [SFX]
+#100 [SFX]
+#101 [SFX]
+#102 [SFX]
+#103 [SFX]
+#105 [SFX]
+#106 [SFX]
+#111 [SFX]
+#113 [SFX]
+#114 [SFX]
+#115 [SFX]
+#116 [SFX]
+#117 [SFX]
+#118 [SFX]
+#119 [SFX]
+#120 [SFX]
+#121 [SFX]
+#122 [SFX]
+#126 [SFX]
+ 
+  [Source]
+  Captain Commando -G.S.M. Capcom 5- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00083  Mar 21, 1992
+
+// List contribution by NK
+$end

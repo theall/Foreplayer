@@ -1,0 +1,27 @@
+﻿$name=poundfor
+$version=2
+$default=15
+$main
+
+#15 U.S.A. (Title)
+#16 Beating (Select)
+#05 Damato's Talk "Get On" (Advice Trainer)
+#10 Move and Move (Training)
+#02 Heavy Corner (BGM A)
+#09 Damato's Talk "Go On" (Advice Trainer)
+#06 Keep on Tight (Stage Clear)
+#14 Heat Step (Bonus)
+#05 Damato's Talk "Get On" (Advice Trainer)
+#03 Deadly Fight (BGM B)
+#08 Loose Loser (Player Out)
+#07 Keep on Fight (Continue)
+#13 You Get There (Ending)
+#01 Game Over
+#04 Call Up (Name Entry)
+
+  [Source] 
+  Pound for Pound, Ken Go / Irem
+  Pony Canyon / Scitron  PCCB-00049 Dec 15, 1990
+
+// List by MuramuraNight
+$end

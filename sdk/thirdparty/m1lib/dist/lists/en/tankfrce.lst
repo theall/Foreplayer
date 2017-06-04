@@ -1,0 +1,45 @@
+﻿$name=tankfrce
+$version=2
+$default=261
+$fixed_volume=159
+$main
+
+#261 Credit Inserted
+#011 Stage Demo - Tank Force March
+#003 Result
+#014 Jungle
+#005 Introduction 1
+#026 AK. Destroyer 
+#018 Desert Storm
+#009 Time Axis Control Unit
+#006 Introduction 2
+#022 Battle City '92
+#030 Evil Fortress
+#033 Complete Fanfare
+#032 The Eternal Twilight
+#008 Game Over
+#004 Continue
+
+---------------------------------------------------------
+
+#002 Stage Demo 
+#010 Tank Force March
+#015 Jungle w/o intro
+#016 Jungle faster
+#017 Jungle w/o intro, faster
+#027 AK. Destroyer w/o intro
+#028 AK. Destroyer faster
+#029 AK. Destroyer w/o intro, faster
+#019 Desert Storm w/o intro
+#020 Desert Storm faster
+#021 Desert Storm w/o intro, faster
+#023 Battle City '92 w/o intro
+#024 Battle City '92 faster
+#025 Battle City '92 w/o intro, faster
+
+  [OST]
+  Namco Video Game Graffiti Vol.9
+  Victor Entertainment  VICL-8089  Sep 22, 1993
+
+// List Contribution by Min
+$end

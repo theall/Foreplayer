@@ -1,0 +1,16 @@
+$name=g_xdaze
+$version=2
+$default=61536
+$songmax=9999999
+$main
+
+$F060 Driver Init
+$0001 BGM 1
+$0002 BGM 2
+$0003 BGM 3
+$0004 BGM 4
+$0005 BGM 5
+$0006 BGM 6
+
+// Basic list contributed by Knurek
+$end

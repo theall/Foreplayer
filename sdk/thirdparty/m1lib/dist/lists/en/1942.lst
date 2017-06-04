@@ -1,0 +1,52 @@
+﻿$name=1942
+$version=2
+$default=010
+$songmax=031
+$main
+
+#010 Credit Inserted <time="3">
+#013 Start (1) <time="2">
+#006 Start (2) <time="4">
+#017 Main BGM <time="1:15.3">
+#016 [Command : Sound Stop] <time="1">
+#027 Stage Clear <time="2">
+#018 Restart (1) <time="5.3">
+#026 Ayako Appeared <time="3.8">
+#020 Ayako BGM <time="38.4">
+#021 Bonus Stage Clear <time="12">
+#008 Extend <time="2.5">
+#019 Restart (2) <time="6">
+#022 Game Over <time="9">
+#023 Name Regist <time="21.7">
+#024 Name Regist End (1st) <time="6.4">
+#025 Name Regist End (2nd - ) <time="5.3">
+#016 [Command : Sound Stop]
+
+-----------------------------------------------------------
+ [SFX]
+
+#001 [SFX]
+#002 [SFX]
+#003 [SFX]
+#004 [SFX]
+#005 [SFX]
+#006 [SFX]
+#007 [SFX]
+#008 [SFX]
+#009 [SFX]
+#010 [SFX]
+#012 [SFX]
+#013 [SFX]
+#014 [SFX]
+#027 [SFX]
+#031 [SFX]
+
+  [Source]
+  Capcom Game Music
+  Alfa Records  28XA-94  Aug 25, 1986
+
+  Capcom Game Music
+  SME / Scitron  SCDC-00193  Jun 19, 2002
+
+// List contribution by NK
+$end

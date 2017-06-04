@@ -1,0 +1,176 @@
+﻿$name=hiimpact
+$version=2
+$default=194
+$main
+
+#194 Attract <time="18">
+#151 [SFX] Credit Inserted <time="5.5">
+#002 Team Select <time="25">
+#199 Kick Off
+#007 Formation Chenge <time="10">
+#003 Main Theme 1
+#012 End of Quarter <time="5">
+#198 Half Time <time="30.7">
+#199 Kick Off <time="20">
+#192 Turnover <time="5">
+#007 Formation CHenge <time="15">
+#006 Main Theme 2
+#009 Touchdown <time="10">
+#011 Extra Point Attempted <time="10">
+#013 It's Good <time="5">
+#001 FinaL Score
+#008 Your Points <time="13">
+#193 Name Entry
+
+//#223 Main Theme 1 Ver.2
+//#004 Main Theme 1 Ver.3
+//#005 Main Theme 1 Ver.4
+//#195 Formation Chenge ver.2
+//#196 Formation Chenge Ver.3
+//#197 Formation Chenge Ver.3
+#202 Unused 1
+//#203 Unused 1 Ver.2
+//#204 Unused 1 Ver.3
+//#205 Unused 1 Ver.4
+#206 Unused 2 
+//#207 Unused 2 Ver.2
+//#208 Unused 2 Ver.3
+//#209 Unused 2 Ver.4
+//#210 Unused 2 Ver.5
+#201 Unused 3 
+#010 Unused 4 <time="7">
+#014 Unused 5 <time="7">
+#200 Unused 6 <time="5">
+
+---------------------------------------------------
+  [SFX]
+
+#128 [SFX] <time="3">
+#129 [SFX] <time="3">
+#130 [SFX] <time="3">
+#131 [SFX] <time="3">
+#132 [SFX] <time="3">
+#133 [SFX] <time="3">
+#134 [SFX] <time="3">
+#135 [SFX] <time="5">
+#136 [SFX] <time="5">
+#137 [SFX] <time="3">
+#138 [SFX] <time="3">
+#139 [SFX] <time="3">
+#140 [SFX] <time="3">
+#141 [SFX] <time="3">
+#142 [SFX] <time="3">
+#143 [SFX] <time="3">
+#144 [SFX] <time="3">
+#145 [SFX] <time="3">
+#146 [SFX] <time="3">
+#147 [SFX] <time="3">
+#148 [SFX] <time="3">
+#149 [SFX] <time="3">
+#150 [SFX] <time="3">
+#151 [SFX] <time="5">
+#152 [SFX] <time="3">
+#153 [SFX] <time="3">
+#154 [SFX] <time="3">
+#155 [SFX] <time="3">
+#156 [SFX] <time="3">
+#157 [SFX] <time="3">
+#158 [SFX] <time="3">
+#159 [SFX] <time="3">
+#160 [SFX] <time="5">
+#161 [SFX] <time="3">
+#162 [SFX] <time="3">
+#163 [SFX] <time="3">
+#164 [SFX] <time="3">
+#165 [SFX] <time="3">
+#166 [SFX] <time="3">
+#167 [SFX] <time="3">
+#168 [SFX] <time="3">
+#169 [SFX] <time="3">
+
+---------------------------------------------------
+  [Voice]
+
+#017 [Voice] <time="3">
+#018 [Voice] <time="3">
+#019 [Voice] <time="3">
+#020 [Voice] <time="3">
+#021 [Voice] <time="3">
+#022 [Voice] <time="3">
+#023 [Voice] <time="3">
+#024 [Voice] <time="3">
+#025 [Voice] <time="3">
+#026 [Voice] <time="3">
+#027 [Voice] <time="3">
+#028 [Voice] <time="3">
+#029 [Voice] <time="3">
+#030 [Voice] <time="3">
+#031 [Voice] <time="3">
+#048 [Voice] <time="5">
+#049 [Voice] <time="5">
+#050 [Voice] <time="3">
+#051 [Voice] <time="4">
+#052 [Voice] <time="3">
+#053 [Voice] <time="4">
+#054 [Voice] <time="3">
+#055 [Voice] <time="3">
+#056 [Voice] <time="3"> 
+#057 [Voice] <time="3">
+#058 [Voice] <time="3">
+#059 [Voice] <time="3"> 
+#060 [Voice] <time="3">
+#061 [Voice] <time="5">
+#062 [Voice] <time="3">
+#063 [Voice] <time="3">
+#064 [Voice] <time="3">
+#065 [Voice] <time="3">
+#066 [Voice] <time="3">
+#067 [Voice] <time="3">
+#068 [Voice] <time="3">
+#069 [Voice] <time="4">
+#070 [Voice] <time="3">
+#071 [Voice] <time="3">
+#072 [Voice] <time="3">
+#073 [Voice] <time="3">
+#074 [Voice] <time="3">
+#075 [Voice] <time="3">
+#076 [Voice] <time="3">
+#077 [Voice] <time="3">
+#078 [Voice] <time="3">
+#081 [Voice] <time="3">
+#082 [Voice] <time="3">
+#083 [Voice] <time="3">
+#084 [Voice] <time="3">
+#085 [Voice] <time="3">
+#086 [Voice] <time="3">
+#087 [Voice] <time="3">
+#088 [Voice] <time="3">
+#089 [Voice] <time="3"> 
+#090 [Voice] <time="4">
+#091 [Voice] <time="3">
+#092 [Voice] <time="3">
+#093 [Voice] <time="3">
+#094 [Voice] <time="3">
+#095 [Voice] <time="3">
+#121 [Voice] <time="3">
+#122 [Voice] <time="3">
+#123 [Voice] <time="3">
+#124 [Voice] <time="3">
+#125 [Voice] <time="3">
+#176 [Voice] <time="3">
+#177 [Voice] <time="3">
+#178 [Voice] <time="3">
+#179 [Voice] <time="3">
+#180 [Voice] <time="3">
+#181 [Voice] <time="3">
+#182 [Voice] <time="3">
+#183 [Voice] <time="3">
+#184 [Voice] <time="3">
+#185 [Voice] <time="3">
+#186 [Voice] <time="3">
+#187 [Voice] <time="3">
+#188 [Voice] <time="3">
+
+// List contribution by ZEK.
+// English list QC by Fuj
+$end

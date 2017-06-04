@@ -1,0 +1,158 @@
+﻿$name=sf2
+$version=2
+$default=022
+$songmax=139
+$main
+
+#022 Title
+#032 Credit
+#014 Player Select <time="35">
+#061 [SFX] Plane <time="2">
+#087 [Voice] Japan <time="1">
+#015 VS. <time="4">
+#095 [Voice] Round <time="0.7">
+#096 [Voice] 1 <time="1">
+#086 [Voice] Fight <time="1">
+#001 Japan (Ryu) I <time="1:37">
+#121 Japan (Ryu) II <time="28">
+#082 [Voice] You <time="0.5">
+#083 [Voice] Win <time="1">
+#016 Stage End
+#003 Brazil (Blanka) I <time="1:49">
+#123 Brazil (Blanka) II <time="28">
+#005 U.S.A. (Guile) I <time="2:11">
+#124 U.S.A. (Guile) II <time="56">
+#006 China (Chun Li) I <time="1:47">
+#126 China (Chun Li) II <time="31">
+#013 Bonus Stage <time="33">
+#021 Here Comes A New Challenger <time="1.9">
+#002 Japan (E. Honda) I <time="2:05">
+#122 Japan (E. Honda) II <time="33">
+#004 U.S.A. (Ken) I <time="2:04">
+#125 U.S.A. (Ken) II <time="43">
+#007 U.S.S.R. (Zangief) I <time="1:41">
+#127 U.S.S.R. (Zangief) II <time="30">
+#008 India (Dhalsim) I <time="1:18">
+#128 India (Dhalsim) II <time="51">
+#009 U.S.A. (Balrog) I <time="1:44">
+#129 U.S.A. (Balrog) II <time="31">
+#010 Spain (Vega) I <time="1:47">
+#130 Spain (Vega) II <time="48">
+#011 Thailand (Sagat) I <time="1:18">
+#131 Thailand (Sagat) II <time="27">
+#012 Thailand (M. Bison) I <time="2:01">
+#132 Thailand (M. Bison) II <time="56">
+#024 Ending (Ryu)
+#026 Ending (Blanka) <time="37">
+#027 Ending (Guile) <time="56">
+#029 Ending (Chun Li) I <time="25">
+#053 Ending (Chun Li) II <time="1:22">
+#025 Ending (E. Honda) <time="55">
+#028 Ending (Ken) I <time="33">
+#052 Ending (Ken) II <time="1:12">
+// Original Piece : Wedding March (Mendelssohn)
+#030 Ending (Zangief) <time="28">
+#031 Ending (Dhalsim)
+#017 Continue <time="28">
+#019 Game Over
+#020 Ranking Display
+#018 (unused)
+
+------------------------------------------------------
+ [Voice]
+
+#082 [Voice] you
+#083 [Voice] win
+#084 [Voice] lose
+#085 [Voice] perfect
+#086 [Voice] fight
+#087 [Voice] Japan
+#088 [Voice] Brazil
+#089 [Voice] U.S.A.
+#090 [Voice] China
+#091 [Voice] U.S.S.R.
+#092 [Voice] India
+#093 [Voice] Spain
+#094 [Voice] Thailand
+#095 [Voice] round
+#096 [Voice] one
+#097 [Voice] two
+#098 [Voice] three
+#099 [Voice] four
+#100 [Voice] five
+#101 [Voice] six
+#102 [Voice] seven
+#103 [Voice] eight
+#104 [Voice] nine
+#105 [Voice] final
+#106 [Voice] "shouryuuken"
+#107 [Voice] "tatsumaki senpuukyaku"
+#108 [Voice] "dosukoi"
+#109 [Voice] "uuaarrk!"
+#110 [Voice] "fire"
+#111 [Voice] "flame"
+#112 [Voice] "sonic boom" 
+#115 [Voice] "spinning bird kick"
+#116 [Voice] "hadouken"
+#117 [Voice] "hyooow!"
+#118 [Voice] "tiger"
+#119 [Voice] "upper cut"
+#133 [Voice] "yoga"
+#064 [Voice] "ugh.." (unused)
+#066 [Voice] "ha..kk.." (unused)
+#067 [Voice] "uurk.."
+#069 [Voice] "aaah.."
+#070 [Voice] "ei!"
+#071 [Voice] "ha!"
+#072 [Voice] "ya!"
+#074 [Voice] "ahahaha.."
+#076 [Voice] "hahahaha.."
+#077 [Voice] "yoolaiyoleihee"
+#079 [Voice] "yatta!"
+#080 [Voice] cheer 1 (unused)
+#081 [Voice] cheer 2 (unused)
+
+ [SFX]
+
+#032 [SFX]
+#033 [SFX]
+#034 [SFX]
+#035 [SFX]
+#036 [SFX]
+#037 [SFX]
+#038 [SFX]
+#039 [SFX]
+#040 [SFX]
+#041 [SFX]
+#042 [SFX]
+#043 [SFX]
+#044 [SFX]
+#045 [SFX]
+#046 [SFX]
+#047 [SFX]
+#049 [SFX]
+#050 [SFX]
+#051 [SFX]
+#054 [SFX]
+#055 [SFX]
+#056 [SFX]
+#057 [SFX]
+#059 [SFX]
+#060 [SFX]
+#061 [SFX]
+#062 [SFX]
+#113 [SFX]
+#114 [SFX]
+#134 [SFX]
+#135 [SFX]
+#136 [SFX]
+#137 [SFX]
+#138 [SFX]
+#139 [SFX]
+
+  [Source]
+  Street Fighter II -G.S.M. Capcom 4- / Alfh Lyra
+  Pony Canyon / Scitron  PCCB-00056  Mar 21, 1991
+
+// List Contribution by NK
+$end

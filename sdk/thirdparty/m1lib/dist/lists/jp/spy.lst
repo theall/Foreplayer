@@ -1,0 +1,25 @@
+﻿$name=spy
+$version=2
+$default=142
+$songmax=094
+$main
+
+$8e Title
+$10 Credit
+$88 Stage 1
+$84 Stage 1, 2, 3 Boss
+$83 Stage Clear
+$86 Stage 2, 4, 5, 7
+$80 Stage 3, 6
+$8a Stage 4 Boss
+$89 Stage 5 Boss
+$8b Stage 7 Boss
+$8d Final Boss Escape Demo
+$8f Ending
+$82 Ranking
+$87 Game Over
+$85 Unused
+
+// Hoot list by Saitou
+// M1 list by Knurek
+$end

@@ -1,0 +1,31 @@
+﻿$name=overtop
+$version=2
+$default=002
+$fixed_volume=153
+$main
+
+#002 NEO-GEO Logo
+#051 EMERGENCY ON THE ROAD (オープニング)
+#048 HOLD ON (How to Play～セレクト)
+#010 ROTTERDAM? (BGM 1)
+#011 ROTTER DAM DAM DAM (BGM 2)
+#004 DRIVE OR DIE (BGM 3)
+#005 MUSIC OF THE WIND (BGM 4)
+#006 CRAZY KIDS (BGM 5)
+#007 砂漠の砂嵐作戦 (BGM 6)
+#032 NO MORE TEARS (BGM 7)
+#050 NATURAL CONCLUSION (ゴールイン)
+#049 SUCCESSFUL CONCLUSION (Congratulations)
+#012 NO PAIN (スタッフロール)
+#013 OVER NOW (ゲームオーバー)
+#052 YOU'RE THE CHAMP (ネーム)
+
+#016 未使用曲1
+#017 未使用曲2
+
+  ■出典
+  オーバートップ、押し出しジントリック / ADK・ADK SOUND FACTORY
+  PONY CANYON / SCITRON  PCCB-00206  1996.02.21
+
+// List Contribution by NK
+$end

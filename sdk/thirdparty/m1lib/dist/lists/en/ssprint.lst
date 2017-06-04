@@ -1,0 +1,61 @@
+﻿$name=ssprint
+$version=2
+$default=040
+$songmax=107
+$main
+
+#040 Select
+#042 Goal 1
+#058 Next Stage
+#044 Goal 2
+#063 Tune Up 1
+#046 Goal 3
+#056 Goal 4
+#064 Tune Up 2
+#050 Goal 5
+#052 Goal 6
+#065 Tune Up 3
+#054 Goal 7
+#048 Goal 8
+
+------------------------------------------------------
+  [SFX]
+
+#066 [SFX]
+#069 [SFX]
+#070 [SFX]
+#072 [SFX]
+#075 [SFX]
+#076 [SFX]
+#078 [SFX]
+#081 [SFX]
+#082 [SFX]
+#084 [SFX]
+#086 [SFX]
+#088 [SFX]
+#089 [SFX]
+#090 [SFX]
+#091 [SFX]
+#092 [SFX]
+#093 [SFX]
+#094 [SFX]
+#095 [SFX]
+#096 [SFX]
+#097 [SFX]
+#099 [SFX]
+#101 [SFX]
+#103 [SFX]
+#104 [SFX]
+#105 [SFX]
+#106 [SFX]
+#107 [SFX]
+
+  [Source]
+  That's Atari Music Vol.II -G.S.M. Atari Games 2-
+  Pony Canyon / Scitron  PCCB-00070  Sep 21, 1991
+
+  That's Atari Music Vol.II -G.S.M. Atari Games 2- (Legend Series)
+  SME / Scitron  SCDC-00314  Dec 3, 2003
+
+// List Contribution by Penpen
+$end

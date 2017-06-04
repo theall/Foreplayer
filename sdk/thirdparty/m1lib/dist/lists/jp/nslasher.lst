@@ -1,0 +1,150 @@
+﻿$name=nslasher
+$version=2
+$default=012
+$main
+
+#012 Good Choice -Demo- <time="1:00" fadeout="yes" fadeoutlength="10">
+#007 Night Slashers -BGM1-  <time="4:15" fadeout="yes" fadeoutlength="10">
+#010 Beat of Darkness -Boss1- <time="1:30" fadeout="yes" fadeoutlength="10">
+#008 That's It! -Clear- 
+#013 Black Blood -BGM2- <time="1:35" fadeout="yes" fadeoutlength="10">
+#014 Under the Moonlight -BGM3- <time="5:20" fadeout="yes" fadeoutlength="10">
+#016 I Will Crush! -Boss2- <time="1:28" fadeout="yes" fadeoutlength="10">
+#020 Splash -Bonus- <time="1:03" fadeout="yes" fadeoutlength="10">
+#021 OK! -Fanfare-
+#022 From the Hell -Act- <time="35" fadeout="yes" fadeoutlength="10">
+#024 Azteca -BGM4- <time="1:58" fadeout="yes" fadeoutlength="10">
+#015 Chaser -BGM5- <time="1:30" fadeout="yes" fadeoutlength="10">
+#011 At Last -Catch-
+#019 Dead Wind -BGM6- <time="3:47" fadeout="yes" fadeoutlength="10">
+#018 Madness Dream -Last Boss- <time="2:07" fadeout="yes" fadeoutlength="10">
+#023 Run & Run -Continue- <time="41" fadeout="yes" fadeoutlength="10">
+#009 Game Over
+#017 Sunrise -Ending- <time="2:33" fadeout="yes" fadeoutlength="10">
+
+  ■出典
+  ナイトスラッシャーズ フラワーバスターズ
+  Pony Canyon / Scitron  PCCB-00142  1993.11.17
+
+  ■作曲
+  Gamadelic (Data East Sound Team)
+  Mr. K
+  Tom Sato
+
+---------------------------------------------------
+
+  [Voices] 
+
+#027 [Voice] 
+#029 [Voice] 
+#032 [Voice] 
+#048 [Voice] 
+#049 [Voice] 
+#050 [Voice] 
+#051 [Voice] 
+#054 [Voice] 
+#055 [Voice] 
+#062 [Voice] 
+#065 [Voice] 
+#066 [Voice] 
+#068 [Voice] 
+#069 [Voice] 
+#070 [Voice] 
+#071 [Voice] 
+#073 [Voice] 
+#074 [Voice] 
+#075 [Voice] 
+#076 [Voice] 
+#077 [Voice] 
+#078 [Voice] 
+#079 [Voice] 
+#080 [Voice] 
+#081 [Voice] 
+#082 [Voice] 
+#083 [Voice] 
+#085 [Voice] 
+#086 [Voice] 
+#087 [Voice] 
+#088 [Voice] 
+#089 [Voice] 
+#090 [Voice] 
+#091 [Voice] 
+#092 [Voice] 
+#093 [Voice] 
+#094 [Voice] 
+#095 [Voice] 
+#096 [Voice] 
+#097 [Voice] 
+#098 [Voice] 
+#099 [Voice] 
+#100 [Voice] 
+#101 [Voice] 
+#102 [Voice] 
+#103 [Voice] 
+#104 [Voice] 
+#107 [Voice] 
+#108 [Voice] 
+#109 [Voice] 
+#110 [Voice] 
+#111 [Voice] 
+#112 [Voice] 
+#113 [Voice] 
+#114 [Voice] 
+#115 [Voice] 
+#116 [Voice] 
+#118 [Voice] 
+#123 [Voice] 
+#124 [Voice] 
+#129 [Voice] 
+
+  [S.E.] 
+  
+#004 [S.E.] 
+#005 [S.E.] 
+#006 [S.E.] 
+#026 [S.E.] 
+#028 [S.E.] 
+#030 [S.E.] 
+#031 [S.E.] 
+#033 [S.E.] 
+#034 [S.E.] 
+#035 [S.E.] 
+#036 [S.E.] 
+#037 [S.E.] 
+#038 [S.E.] 
+#039 [S.E.] 
+#040 [S.E.] 
+#041 [S.E.] 
+#042 [S.E.] 
+#043 [S.E.] 
+#044 [S.E.] 
+#045 [S.E.] 
+#046 [S.E.] 
+#047 [S.E.] 
+#052 [S.E.] 
+#053 [S.E.] 
+#056 [S.E.] 
+#057 [S.E.] 
+#058 [S.E.] 
+#059 [S.E.] 
+#060 [S.E.] 
+#061 [S.E.] 
+#063 [S.E.] 
+#064 [S.E.] 
+#067 [S.E.] 
+#072 [S.E.] 
+#105 [S.E.] 
+#106 [S.E.] 
+#117 [S.E.] 
+#119 [S.E.] 
+#120 [S.E.] 
+#121 [S.E.] 
+#122 [S.E.] 
+#125 [S.E.] 
+#126 [S.E.] 
+#127 [S.E.] 
+#128 [S.E.] 
+#130 [S.E.] 
+
+// List contribution by Simon B.
+$end
