@@ -3,7 +3,10 @@ pull_requests:
   do_not_increment_build_number: true
 skip_tags: true
 init:
-- cmd: set PATH=%PATH%;%MSYS%;%MINGW%
+- cmd: >-
+    set OLD_PATH=%PATH%
+
+    set PATH=%PATH%;%MSYS%;%MINGW%
 environment:
   QTDIR: C:\Qt\5.8\mingw53_32\bin
   MINGW: c:\msys64\mingw32\bin
@@ -11,6 +14,9 @@ environment:
   MSYS: c:\msys64\usr\bin
   FOREPLAYER_OUTPUT_PATH: c:\foreplayer
   QTMINGW: C:\Qt\Tools\mingw530_32\bin
+  NSIS: C:\Program Files (x86)\NSIS
+  ZIP: C:\Program Files\7-Zip
+  PYTHON: C:\Python34
 install:
 - cmd: >-
     pacman -S --noconfirm mingw-w64-i686-SDL2
@@ -20,17 +26,56 @@ install:
     pacman -S --noconfirm mingw-w64-i686-lame
 build_script:
 - cmd: >-
-    set PATH=%MINGW%;%CMAKE%
+    set PATH=%QTDIR%;%MINGW%;%CMAKE%;%NSIS%;%ZIP%;
 
     call sdk\build.bat
 
-    set PATH=%QTDIR%;%MINGW%;%CMAKE%
+
+    set PATH=%PATH%;%PYTHON%
+
+    set FOREPLAYER_VERSION=%APPVEYOR_BUILD_VERSION%
+
+    cd desktop\app\version
+
+    python gen_win32.py
+
+    cd ..\..\..
 
     call desktop\build.bat
+
+
+    cd dist\win32
+
+    call prepare.bat
+
+    7z a -x@7zignore.txt Foreplayer%FOREPLAYER_VERSION%.7z *
+
+    7z a -x@7zignore.txt Foreplayer%FOREPLAYER_VERSION%.zip *
+
+    makensis install.nsi
+
+    cd ..\..
 artifacts:
-- path: dist\Foreplayer*setup.exe
+- path: dist/win32/Foreplayer*.zip
+  name: archive
+- path: dist/win32/Foreplayer*.7z
+  name: 7zarchive
+- path: dist/win32/Foreplayer*-Setup.exe
   name: installer
-- path: dist\Foreplayer*.7z
-  name: 7zpackage
-- path: dist\Foreplayer*.zip
-  name: zippackage
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: icaJlPkqzI3IUxSqUHgI34BtCpffDWxpp4otuYUAwA1RqMtQvAtdmXjOL9UOdqQI
+  artifact: /Foreplayer.*\.(exe|7z|zip)/
+  draft: true
+  force_update: false
+  on:
+    appveyor_repo_tag: true
+notifications:
+- provider: Email
+  to:
+  - wazcd_1608@qq.com
+  subject: Build status of foreplayer
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: false
