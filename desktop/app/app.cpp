@@ -103,8 +103,10 @@ TApp::TApp(int argc, char *argv[]) :
     mApp(new QApplication(argc, argv))
   , mCheckThread(NULL)
 {
-    TVersionInfo *vi = TVersionInfo::instance(QString(argv[0]));
-    mApp->setOrganizationDomain(vi->domain());
+    TVersionInfo *vi = TVersionInfo::instance();
+    mApp->setOrganizationDomain(vi->legalCopyright());
+    mApp->setApplicationDisplayName(vi->fileDescription());
+    mApp->setOrganizationName(vi->companyName());
     mApp->setApplicationName(vi->productName());
     mApp->setApplicationVersion(vi->productVersion());
 

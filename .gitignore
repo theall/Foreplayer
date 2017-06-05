@@ -8,8 +8,8 @@ sdk/bin/
 dist/win32/plugins/
 dist/win32/playlist/
 *.dll
-sdk/thirdparty/m1lib/dist/
 dist/win32/samples/
 dist/win32/skins/
 *.exe
 *.ini
+*.autosave

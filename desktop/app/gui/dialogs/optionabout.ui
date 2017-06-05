@@ -58,14 +58,14 @@
        <item>
         <widget class="QLabel" name="lblVersion">
          <property name="text">
-          <string>Foreplayer 0.1.0.0, SDK 0.1.0.0 (Mingw 2013 32 bit)</string>
+          <string notr="true">Foreplayer 0.1.0.0, SDK 0.1.0.0 (Mingw 2013 32 bit)</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="lblVersion_2">
+        <widget class="QLabel" name="lblCopyright">
          <property name="text">
-          <string>Copyright (c) 2016-2017 Bilge Theall, All rights reserved.</string>
+          <string notr="true">Copyright (c) 2016-2017 Bilge Theall, All rights reserved.</string>
          </property>
         </widget>
        </item>

@@ -24,14 +24,21 @@
     #include <windows.h>
 #endif
 
-class TVersionInfo
+class TVersionInfo : public QObject
 {
+    Q_OBJECT
+
 public:
-    explicit TVersionInfo(QString fileName);
+    explicit TVersionInfo(QObject *parent=0);
     ~TVersionInfo();
 
-    static TVersionInfo *instance(QString fileName=QString());
+    static TVersionInfo *instance();
     static void deleteInstance();
+
+    int major();
+    int minor();
+    int patch();
+    int build();
 
     QString domain();
     QString companyName();
@@ -43,7 +50,6 @@ public:
     QString productName();
     QString productVersion();
     QString compilePlatform();
-    QString buildNumber();
     QString buildTime();
 
 private:
@@ -62,14 +68,9 @@ private:
     QString mProductName;
     QString mProductVersion;
     QString mCompilePlatform;
-    QString mBuildNumber;
     QString mBuildTime;
 
     static TVersionInfo *mInstance;
-    void read(QString fileName);
-#ifdef Q_OS_WIN32
-    QString value(char *lpData, QString section, LPVOID lpBuffer, UINT uLen);
-#endif
 };
 
 #endif

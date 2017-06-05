@@ -25,6 +25,8 @@ TOptionAbout::TOptionAbout(QWidget *parent) :
     ui(new Ui::TOptionAbout)
 {
     ui->setupUi(this);
+
+    retranslateUi();
 }
 
 TOptionAbout::~TOptionAbout()
@@ -35,4 +37,7 @@ TOptionAbout::~TOptionAbout()
 void TOptionAbout::retranslateUi()
 {
     ui->retranslateUi(this);
+
+    ui->lblVersion->setText(tr("%1(Version%2)").arg(qApp->applicationDisplayName()).arg(qApp->applicationVersion()));
+    ui->lblCopyright->setText(qApp->organizationDomain());
 }
