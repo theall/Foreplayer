@@ -16,3 +16,5 @@ for %%i in (%~dp0\..\..\desktop\app\gui\resource\ts\*.ts) do lrelease %%i -qm ts
 echo Copying std c++ libraries...
 copyDependency foreplayer.exe
 copyDependency exportor.exe
+
+del copyDependency.exe

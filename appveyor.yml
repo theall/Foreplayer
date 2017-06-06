@@ -1,8 +1,16 @@
-version: 0.1.0.{build}
-skip_tags: true
+version: 0.0.0.{build}
 init:
 - cmd: >-
     set OLD_PATH=%PATH%
+
+    FOR /F "tokens=*" %%i in ('git describe') do SET COMMITNOW=%%i
+
+    set VERSION_DATE=%DATE:~10,4%.%DATE:~4,2%.%DATE:~7,2%
+
+    if defined APPVEYOR_REPO_TAG_NAME set APPVEYOR_BUILD_VERSION=%APPVEYOR_REPO_TAG_NAME%.%APPVEYOR_BUILD_NUMBER%
+
+    set FOREPLAYER_VERSION=%APPVEYOR_BUILD_VERSION%
+
 
     set PATH=%PATH%;%MSYS%;%MINGW%
 environment:

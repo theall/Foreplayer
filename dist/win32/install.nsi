@@ -5,8 +5,7 @@
 ;Include Modern UI
 !include "MUI2.nsh"
 
-!define VERSION "0.1.0"
-!define VER "0"
+!define VERSION $%FOREPLAYER_VERSION%
 !define APP_PATH "."
 
 ;--------------------------------
