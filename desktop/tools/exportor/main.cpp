@@ -105,6 +105,8 @@ bool exportTrack(
 
     int bufSize = samples*4;
     byte *buf = (byte*)malloc(bufSize);
+    byte *silentFrameBuf = (byte*)malloc(bufSize);
+    memset(silentFrameBuf, 0, bufSize);
     int silentFrames = 0;
     float framesPerSec = param->sampleRate/samples;
 
@@ -135,19 +137,23 @@ bool exportTrack(
         {
             silentFrames++;
         } else {
-            silentFrames = 0;
+            try {
+                for(int i=0;i<silentFrames;i++)
+                {
+                    exportor->write((const byte*)silentFrameBuf, bufSize);
+                }
+                silentFrames = 0;
+                exportor->write((const byte*)buf, bufSize);
+            } catch(...) {
+                printError(tr("IO error."), exportParam);
+                return false;
+            }
         }
         if(silentFrames >= framesPerSec*3){
             // Frames end
             if(exportParam)
                 exportParam->progressTotalFrames = i;
             break;
-        }
-        try {
-            exportor->write((const byte*)buf, bufSize);
-        } catch(...) {
-            printError(tr("IO error."), exportParam);
-            return false;
         }
 
         if(exportParam)

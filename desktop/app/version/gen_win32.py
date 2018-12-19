@@ -59,7 +59,7 @@ def showHelp():
     print(help_string)
     
 def main():
-    version = os.environ.get("FOREPLAYER_VERSION")
+    version = os.environ.get("FOREPLAYER_VERSION", '0.0.0.0')
     major,minjor,pajor,build = version.split('.')
     major,minjor,pajor,build = int(major),int(minjor),int(pajor),int(build)
     g_keyMap['BUILD_NUMBER'] = '"%d"'%build;
