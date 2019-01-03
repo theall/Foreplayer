@@ -19,6 +19,8 @@
 
 #include "version/version.h"
 #include "utils/preferences.h"
+#include "controller/controllerproxy.h"
+#include "core/core.h"
 
 #include <QTextCodec>
 
@@ -41,9 +43,9 @@ struct PROCESS_CHANNEL
     char command;
 };
 
-TCheckThread::TCheckThread(TGuiManager *gui) :
-    QThread()
-  , mGui(gui)
+TCheckThread::TCheckThread(TGuiProxy *guiProxy) :
+    QThread(guiProxy)
+  , mGuiProxy(guiProxy)
   , mShareMemory(new QSharedMemory(GLOBAL_SHARE_MEMORY_KEY))
 {
     mShareMemory->create(sizeof(PROCESS_CHANNEL));
@@ -84,8 +86,8 @@ void TCheckThread::run()
                     break;
                 case CMD_EXIT:
                     pc->command = CMD_NULL;
-                    if(mGui)
-                        mGui->exit();
+                    if(mGuiProxy)
+                        mGuiProxy->exit();
                     break;
                 case CMD_NULL:
                     break;
@@ -117,36 +119,36 @@ TApp::TApp(int argc, char *argv[]) :
 
 TApp::~TApp()
 {
-    if(mCheckThread)
-    {
-        mCheckThread->terminate();
-        mCheckThread->wait();
-        delete mCheckThread;
-        mCheckThread = NULL;
-    }
-
     TPreferences::deleteInstance();
 }
 
 int TApp::start()
 {
-    TMainController controller;
-    TGuiManager gui(&controller);
+    TControllerProxy controller;
+    TGuiProxy gui(&controller);
     TCore core;
-    if(!core.isInitialized())
-        gui.mainWindow()->setTitles(core.getErrorString());
-
     if(!controller.joint(&gui, &core))
         return 0;
+
+    core.loadPlayList();
+    if(!core.isInitialized())
+        gui.setTitle(core.getErrorString());
 
     if(!mCheckThread)
     {
         mCheckThread = new TCheckThread(&gui);
-        QObject::connect(mCheckThread, &TCheckThread::requestRestoreGui, &gui, &TGuiManager::restoreGui);
+        QObject::connect(mCheckThread, &TCheckThread::requestRestoreGui, &gui, &TGuiProxy::restoreGui);
         mCheckThread->start();
     }
 
+    gui.open();
     int ret = mApp->exec();
+    if(mCheckThread)
+    {
+        mCheckThread->terminate();
+        mCheckThread->wait();
+        mCheckThread = NULL;
+    }
     return ret;
 }
 

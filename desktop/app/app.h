@@ -18,17 +18,18 @@
 #ifndef TAPP_H
 #define TAPP_H
 
+#include <QThread>
 #include <QApplication>
 #include <QSharedMemory>
 
-#include "controller/maincontroller.h"
+#include "gui/guiproxy.h"
 
 class TCheckThread : public QThread
 {
     Q_OBJECT
 
 public:
-    explicit TCheckThread(TGuiManager *gui);
+    TCheckThread(TGuiProxy *guiProxy);
     ~TCheckThread();
 
 signals:
@@ -38,7 +39,7 @@ protected:
     void run() Q_DECL_OVERRIDE;
 
 private:
-    TGuiManager *mGui;
+    TGuiProxy *mGuiProxy;
     QSharedMemory *mShareMemory;
 };
 

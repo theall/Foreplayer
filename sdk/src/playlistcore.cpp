@@ -24,7 +24,7 @@
 
 #define PLAYLIST_DIR            L"playlist"
 #define PLAYLIST_INDEX          L"index.json"
-#define DEFAULT_PLUGIN_NAME     L"default"
+#define DEFAULT_PLAYLIST_NAME     L"default"
 #define SEC_PLAYLIST            "playlist"
 #define SEC_CURRENT_PLAYLIST    "currentPlaylist"
 #define SEC_CURRENT_MUSIC       "currentMusic"
@@ -61,7 +61,7 @@ TPlaylistCore::TPlaylistCore() :
 
     findPlaylist();
     if(mPlaylist.size()<=0)
-        insert(DEFAULT_PLUGIN_NAME);
+        insert(DEFAULT_PLAYLIST_NAME);
 
     time_t tm;
     srand(time(&tm));

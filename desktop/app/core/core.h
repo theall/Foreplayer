@@ -55,6 +55,8 @@ public:
     bool isInitialized();
     QString getErrorString();
 
+    void loadPlayList();
+
     // Return playlist count
     int playlistCount();
     QStringList playlists();

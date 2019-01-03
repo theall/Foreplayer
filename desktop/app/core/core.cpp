@@ -22,6 +22,7 @@
 #include <QCoreApplication>
 
 #define tr(x)   qApp->translate("core", x)
+void (*LOAD_PLAYLIST_CALLBACK)(int current, int total);
 
 TCore *TCore::mInstance = NULL;
 
@@ -119,6 +120,11 @@ bool TCore::isInitialized()
 QString TCore::getErrorString()
 {
     return mErrorString;
+}
+
+void TCore::loadPlayList()
+{
+
 }
 
 int TCore::playlistCount()

@@ -8,6 +8,7 @@ CONFIG += c++11
 TARGET = foreplayer
 TEMPLATE = app
 
+DEFINES += GUI_LEGACY
 SOURCES += main.cpp
 
 include(app/app.pri)
