@@ -16,8 +16,8 @@ INCLUDEPATH += \
     include \
     thirdparty
 
-LIBS += -L$$PWD/lib -lfftreal -laudio3d
-LIBS += -lsdl2 -lz
+LIBS += -L$$PWD/lib -lsdl2 -lfftreal -laudio3d
+LIBS += -lz
 
 DESTDIR = $(FOREPLAYER_OUTPUT_PATH)
 

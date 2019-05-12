@@ -17,6 +17,10 @@
  */
 #include "scrolllabel.h"
 
+#include <QPainter>
+#include <QHideEvent>
+#include <QMouseEvent>
+
 static int c_offset_y = 1;
 
 TScrollLabel::TScrollLabel(QWidget *parent) : QWidget(parent)

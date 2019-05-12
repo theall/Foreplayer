@@ -18,7 +18,12 @@
 #ifndef PREFERENCES_H
 #define PREFERENCES_H
 
-#include "pch.h"
+#include <QDate>
+#include <QTime>
+#include <QColor>
+#include <QVariant>
+#include <QSettings>
+#include <QStringList>
 
 enum TWindowType
 {

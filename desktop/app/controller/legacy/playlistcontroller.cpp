@@ -19,8 +19,10 @@
 
 #include "utils.h"
 
+#include <QTimer>
 #include <QMimeData>
 #include <QClipboard>
+#include <QApplication>
 
 TPlaylistController::TPlaylistController(QObject *parent) :
     TAbstractController(parent)

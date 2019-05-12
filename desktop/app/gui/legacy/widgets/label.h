@@ -18,6 +18,9 @@
 #ifndef TLABEL_H
 #define TLABEL_H
 
+#include <QLabel>
+#include <QMouseEvent>
+
 #include "../skin/skin.h"
 
 class TLabel : public QLabel, TSkinReader

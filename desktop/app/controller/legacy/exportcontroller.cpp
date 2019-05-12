@@ -18,6 +18,7 @@
 #include "exportcontroller.h"
 
 #include <QUuid>
+#include <QDebug>
 #include <QProcess>
 
 #include "preferences.h"

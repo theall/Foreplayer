@@ -12,18 +12,22 @@ TEMPLATE = lib
 TARGET = aosdk
 
 LIBS += -lz
-LIBS += -lsdl2
 
 DEFINES += LSB_FIRST PATH_MAX=1024 HAS_PSXCPU
 
-INCLUDEPATH += 
+if(contains(DEFINES, ENABLE_PLAY)){
+    INCLUDEPATH += $PWD/../../include
+    LIBS += -L$$PWD/../../lib -lsdl2
+}
 
 CONFIG(debug, debug|release) {
-    DLLDESTDIR = Z:/build/foreplayer/debug/debug/plugins/backend/ao
+
 } else {
+
 }
 
 win32 {
+
 }
 
 unix {

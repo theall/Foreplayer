@@ -18,8 +18,10 @@
 #ifndef TABSTRACTCONTROLLER_H
 #define TABSTRACTCONTROLLER_H
 
-#include "../gui/legacy/guimanager.h"
 #include "../core/core.h"
+#include "../gui/legacy/guimanager.h"
+
+#include <QTimer>
 
 class TAbstractController : public QObject
 {

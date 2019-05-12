@@ -33,6 +33,8 @@ set(m1plugin
     ../../pluginutils/pluginutils.cpp
 )
 
+set(CMAKE_CXX_FLAGS "-std=c++11")
+
 find_library(M1_LIB m1 HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
 
 # set make to a shared library

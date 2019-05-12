@@ -19,9 +19,11 @@
 
 #include "preferences.h"
 
+#include <QLocale>
+#include <QTranslator>
 #include <QDirIterator>
 #include <QLibraryInfo>
-#include <QTranslator>
+#include <QCoreApplication>
 
 TLanguageManager* TLanguageManager::mInstance = NULL;
 

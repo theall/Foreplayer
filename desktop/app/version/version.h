@@ -18,7 +18,8 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#include "pch.h"
+#include <QObject>
+#include <QString>
 
 #ifdef Q_OS_WIN32
     #include <windows.h>

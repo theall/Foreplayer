@@ -18,6 +18,9 @@
 #ifndef TSLIDERBAR_H
 #define TSLIDERBAR_H
 
+#include <QSlider>
+#include <QMouseEvent>
+
 #include "style/sliderbarstyle.h"
 #include "../skin/skin.h"
 

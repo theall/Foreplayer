@@ -18,7 +18,6 @@
 #ifndef TMAINMENU_H
 #define TMAINMENU_H
 
-#include "pch.h"
 #include "abstractmenu.h"
 #include "playcontrolmenu.h"
 #include "volumecontrolmenu.h"

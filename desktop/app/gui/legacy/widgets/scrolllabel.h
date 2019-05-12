@@ -21,6 +21,7 @@
 #include "../skin/skin.h"
 
 #include <QMutex>
+#include <QWidget>
 
 class TScrollLabel : public QWidget, TSkinReader
 {

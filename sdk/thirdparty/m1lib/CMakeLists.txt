@@ -32,8 +32,8 @@ else()
     add_definitions(-DM1_RELEASE)
 endif()
 
-find_package(expat REQUIRED)
-find_package(SDL2 REQUIRED)
+find_file(SDL2_HEADER sdl.h HINTS ${CMAKE_CUSTOME_INCLUDE_PATH}/SDL2)
+find_library(SDL2_LIB sdl2 HINTS ${CMAKE_CUSTOME_LIB_PATH})
 find_file(UNZIP_HEADER unzip.h HINTS ${CMAKE_CUSTOME_INCLUDE_PATH}/unzip)
 find_library(UNZIP_LIB unzip HINTS ${CMAKE_CUSTOME_LIB_PATH})
 
@@ -45,8 +45,8 @@ include_directories(
     src/emulator/cpu
     src/emulator/sound
     ../../include
-    ${EXPAT_INCLUDE_DIR}
-    ${SDL2_INCLUDE_DIR}
+    ${CMAKE_CUSTOME_INCLUDE_PATH/expat}
+    ${CMAKE_CUSTOME_INCLUDE_PATH/SDL2}
     ${CMAKE_CUSTOME_INCLUDE_PATH}
 )
 

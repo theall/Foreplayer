@@ -17,6 +17,8 @@
  */
 #include "abstractmenu.h"
 
+#include <QCloseEvent>
+
 TAbstractMenu::TAbstractMenu(QWidget *parent, bool keepActive) :
     QMenu(parent)
   , mKeepActive(keepActive)

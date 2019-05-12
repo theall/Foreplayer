@@ -1,5 +1,4 @@
-PRECOMPILED_HEADER += \
-    $$PWD/pch.h
+PRECOMPILED_HEADER +=
 
 INCLUDEPATH += \
     $$PWD

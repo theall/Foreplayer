@@ -18,8 +18,14 @@
 #ifndef SKINLOADER_H
 #define SKINLOADER_H
 
-#include <minizip/unzip.h>
+#include "minizip/unzip.h"
 #include "skinutils.h"
+
+#include <QDir>
+#include <QColor>
+#include <QPixmap>
+#include <QDomElement>
+#include <QXmlStreamReader>
 
 class TSkin : public QObject
 {

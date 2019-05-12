@@ -23,6 +23,8 @@ cmake_minimum_required(VERSION 3.6)
 # project name: exampleplugin
 project(exampleplugin)
 
+set(CMAKE_CXX_FLAGS "-std=c++11")
+
 include_directories(../)
 
 # set source files

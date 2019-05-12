@@ -18,6 +18,9 @@
 #ifndef TIMAGEBUTTON_H
 #define TIMAGEBUTTON_H
 
+#include <QPushButton>
+#include <QMouseEvent>
+
 #include "buttonimage.h"
 #include "../skin/skin.h"
 

@@ -17,6 +17,8 @@
  */
 #include "playlistwidget.h"
 
+#include <QVBoxLayout>
+
 TPlaylistWidget::TPlaylistWidget(QWidget *parent) :
     QWidget(parent),
     mMinWidth(100),

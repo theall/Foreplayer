@@ -19,8 +19,8 @@
 
 // Sound output driver using SDL
 #undef main
-#include <SDL2/SDL.h>
 #include <iostream>
+#include "../../include/SDL2/SDL.h"
 
 #define DEFAULT_SAMPLE_SIZE 512
 

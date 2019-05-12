@@ -20,6 +20,11 @@
 
 #include "../skin/skin.h"
 
+#include <QWidget>
+#include <QPixmap>
+#include <QPaintEvent>
+#include <QMouseEvent>
+
 class TLedWidget : public QWidget, TSkinReader
 {
     Q_OBJECT

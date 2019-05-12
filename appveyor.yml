@@ -23,13 +23,7 @@ environment:
   NSIS: C:\Program Files (x86)\NSIS
   ZIP: C:\Program Files\7-Zip
   PYTHON: C:\Python34
-install:
-- cmd: >-
-    pacman -S --noconfirm mingw-w64-i686-SDL2
 
-    pacman -S --noconfirm mingw-w64-i686-libsamplerate
-
-    pacman -S --noconfirm mingw-w64-i686-lame
 build_script:
 - cmd: >-
     set PATH=%QTDIR%;%MINGW%;%CMAKE%;%NSIS%;%ZIP%;

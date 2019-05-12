@@ -3,7 +3,7 @@ QT += gui widgets xml
 INCLUDEPATH += \
     $$PWD/skin
 
-LIBS += -lminizip -lbz2 -lz
+LIBS += -lz
 
 SOURCES += \
     $$PWD/widgets/imagebutton.cpp \
@@ -70,7 +70,12 @@ SOURCES += \
     $$PWD/skin/skin.cpp \
     $$PWD/skin/skinsetting.cpp \
     $$PWD/skin/skinmanager.cpp \
-    $$PWD/skin/skinutils.cpp
+    $$PWD/skin/skinutils.cpp \
+    $$PWD/skin/minizip/ioapi.c \
+    $$PWD/skin/minizip/iowin32.c \
+    $$PWD/skin/minizip/mztools.c \
+    $$PWD/skin/minizip/unzip.c \
+    $$PWD/skin/minizip/zip.c
 
 HEADERS  += \
     $$PWD/widgets/imagebutton.h \
@@ -137,7 +142,13 @@ HEADERS  += \
     $$PWD/skin/skinsetting.h \
     $$PWD/skin/skinmanager.h \
     $$PWD/skin/skin.h \
-    $$PWD/skin/skinutils.h
+    $$PWD/skin/skinutils.h \
+    $$PWD/skin/minizip/crypt.h \
+    $$PWD/skin/minizip/ioapi.h \
+    $$PWD/skin/minizip/iowin32.h \
+    $$PWD/skin/minizip/mztools.h \
+    $$PWD/skin/minizip/unzip.h \
+    $$PWD/skin/minizip/zip.h
 
 FORMS += \
     $$PWD/dialogs/optionsdialog.ui \

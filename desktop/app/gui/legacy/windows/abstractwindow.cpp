@@ -17,6 +17,9 @@
  */
 #include "abstractwindow.h"
 
+#include <QPainter>
+#include <QMouseEvent>
+
 #define RESIZE_CHECK_WIDTH 4
 
 TEdge::TEdge(int start, int end, int _value, TEdgeType _edgeType)

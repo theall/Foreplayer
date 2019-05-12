@@ -17,6 +17,8 @@
  */
 #include "ledwidget.h"
 
+#include <QPainter>
+
 TLedWidget::TLedWidget(QWidget *parent) :
     QWidget(parent),
     mSeconds(0),

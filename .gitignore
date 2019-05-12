@@ -14,3 +14,6 @@ dist/win32/skins/
 *.exe
 *.ini
 *.autosave
+cmake
+share
+/desktop/app/version/win32_ver.h

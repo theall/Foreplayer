@@ -17,8 +17,11 @@
  */
 #include "utils.h"
 
+#include <QDir>
 #include <QtMath>
 #include <QProcess>
+#include <QFileInfo>
+#include <QApplication>
 
 QString Utils::microSecToTimeStr(long ms, bool padZero)
 {

@@ -18,6 +18,11 @@
 #ifndef TVISUALWIDGET_H
 #define TVISUALWIDGET_H
 
+#include <QWidget>
+#include <QPaintEvent>
+#include <QMouseEvent>
+#include <QContextMenuEvent>
+
 #include "../skin/skin.h"
 
 #define LEVEL_COUNT     4096

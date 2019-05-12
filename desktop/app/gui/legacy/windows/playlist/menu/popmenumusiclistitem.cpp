@@ -19,8 +19,9 @@
 
 #define MIME_TYPE_MUSIC_ITEM    "Foreplayer/MusicItem"
 
-#include <QClipboard>
 #include <QMimeData>
+#include <QClipboard>
+#include <QApplication>
 
 bool hasMusicItem()
 {

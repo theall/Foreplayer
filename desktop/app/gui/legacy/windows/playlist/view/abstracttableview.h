@@ -18,6 +18,9 @@
 #ifndef TABSTRACTTABLEVIEW_H
 #define TABSTRACTTABLEVIEW_H
 
+#include <QTableView>
+#include <QStyledItemDelegate>
+
 #include "../../../widgets/scrollbar.h"
 
 class TTableViewDelegate : public QStyledItemDelegate

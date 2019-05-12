@@ -21,6 +21,7 @@
 #include "optionpagebase.h"
 
 #include <QShowEvent>
+#include <QModelIndex>
 
 namespace Ui {
 class TOptionSkin;

@@ -18,7 +18,9 @@
 #ifndef LANGUAGEMANAGER_H
 #define LANGUAGEMANAGER_H
 
-#include "pch.h"
+#include <QString>
+#include <QTranslator>
+#include <QStringList>
 
 class TLanguageManager
 {

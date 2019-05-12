@@ -16,9 +16,16 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 #include "abstracttableview.h"
-
 #include "utils.h"
+
+#include <QTimer>
+#include <QPainter>
 #include <QMimeData>
+#include <QDropEvent>
+#include <QHeaderView>
+#include <QDragMoveEvent>
+#include <QDragEnterEvent>
+#include <QDragLeaveEvent>
 
 #define DEFAULT_ROW_HEIGHT      20
 

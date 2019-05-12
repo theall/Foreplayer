@@ -1,9 +1,9 @@
 #include "guiproxy.h"
 
 TGuiProxy::TGuiProxy(QObject *parent) :
-    mGuiManager(NULL)
+    mGuiManager(nullptr)
 {
-    mGuiManager = new TGuiManager(this);
+    mGuiManager = new TGuiManager(parent);
 }
 
 void TGuiProxy::exit()

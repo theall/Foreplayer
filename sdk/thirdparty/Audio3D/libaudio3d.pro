@@ -7,13 +7,14 @@ CONFIG -= app_bundle
 
 TEMPLATE = lib
 
-LIBS += -lsamplerate
+LIBS += -L$$PWD/../../lib -lsamplerate-0
 
 DEFINES += MIT_KEMAR
 
 INCLUDEPATH += include \
     data \
-    kissfft
+    kissfft \
+    $$PWD/../../include
 
 HEADERS += \
     include/audio_3d.h \

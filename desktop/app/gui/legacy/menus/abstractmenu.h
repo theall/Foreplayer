@@ -18,7 +18,7 @@
 #ifndef TABSTRACTMENU_H
 #define TABSTRACTMENU_H
 
-#include "pch.h"
+#include <QMenu>
 
 class TAbstractMenu : public QMenu
 {

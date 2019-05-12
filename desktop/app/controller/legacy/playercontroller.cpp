@@ -18,6 +18,7 @@
 #include "playercontroller.h"
 #include "preferences.h"
 
+#include <QDebug>
 #include <QDateTime>
 
 TPlayerController::TPlayerController(QObject *parent) :

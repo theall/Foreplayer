@@ -18,6 +18,8 @@
 #ifndef TABSTRACTWINDOW_H
 #define TABSTRACTWINDOW_H
 
+#include <QMainWindow>
+
 #include "../skin/skin.h"
 
 enum TEdgeType

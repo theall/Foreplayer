@@ -18,7 +18,9 @@
 #ifndef SKINUTILS_H
 #define SKINUTILS_H
 
-#include "pch.h"
+#include <QFont>
+#include <QRect>
+#include <QDomElement>
 
 #define ZIP_SKIN_NAME        "skin.xml"
 

@@ -20,6 +20,13 @@
 
 #include "../core/core.h"
 
+#include <QFont>
+#include <QList>
+#include <QColor>
+#include <QVariant>
+#include <QModelIndex>
+#include <QAbstractTableModel>
+
 class TAbstractModel : public QAbstractTableModel
 {
     Q_OBJECT

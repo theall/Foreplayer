@@ -17,9 +17,11 @@
  */
 #include "guimanager.h"
 
-#include <QMessageBox>
-#include "app/utils/preferences.h"
 #include "skin/skinSetting.h"
+#include "app/utils/preferences.h"
+
+#include <QMessageBox>
+#include <QApplication>
 
 #define DELETE_POINTER(x) \
     if(x) \

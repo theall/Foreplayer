@@ -18,6 +18,7 @@
 #include "exportmissionsdialog.h"
 #include "ui_exportmissionsdialog.h"
 
+#include <QPainter>
 #include <QMessageBox>
 
 #include "utils.h"

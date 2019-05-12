@@ -14,8 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
- */
+ */
 #include "abstractstyle.h"
+
+#include <QStyle>
+#include <QWidget>
+#include <QPainter>
+#include <QStyleOptionComplex>
 
 TAbstractStyle::TAbstractStyle():
     QCommonStyle()
@@ -26,6 +31,7 @@ TAbstractStyle::TAbstractStyle():
 void TAbstractStyle::polish(QWidget *widget){
     widget->setAttribute(Qt::WA_Hover, true);
 }
+
 void TAbstractStyle::unpolish(QWidget *widget){
     widget->setAttribute(Qt::WA_Hover, false);
 }

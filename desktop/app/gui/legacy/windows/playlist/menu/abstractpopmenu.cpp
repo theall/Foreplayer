@@ -17,6 +17,8 @@
  */
 #include "abstractpopmenu.h"
 
+#include <QEvent>
+
 TAbstractPopMenu::TAbstractPopMenu(QWidget *parent) :
     QMenu(parent)
 {

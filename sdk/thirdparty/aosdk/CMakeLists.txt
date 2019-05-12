@@ -73,12 +73,12 @@ set(src
     mem.c
 )
 
-find_package(SDL2 REQUIRED)
+# find_package(SDL2 REQUIRED)
 find_package(zlib REQUIRED)
 
 # set make to a SHARED library
 add_library(aosdk SHARED ${src})
-target_link_libraries(aosdk SDL2 z)
+target_link_libraries(aosdk z)
 
 install(FILES ${CMAKE_SOURCE_DIR}/aosdk.h DESTINATION include)
 install(TARGETS aosdk

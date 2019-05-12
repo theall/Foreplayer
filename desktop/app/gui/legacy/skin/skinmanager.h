@@ -18,7 +18,8 @@
 #ifndef TSKINMANAGER_H
 #define TSKINMANAGER_H
 
-#include <pch.h>
+#include <QStringList>
+
 #include "skin.h"
 
 typedef QList<TSkin*> TSkins;

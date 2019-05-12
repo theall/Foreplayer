@@ -30,6 +30,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../include/unzip)
 
 set(EXTERNAL_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/../../../lib)
+set(CMAKE_CXX_FLAGS "-std=c++11")
 
 # set source files
 set(aosdkplugin 

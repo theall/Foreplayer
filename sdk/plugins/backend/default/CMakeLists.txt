@@ -33,6 +33,8 @@ set(bassplugin
     ../../pluginutils/pluginutils.cpp
 )
 
+set(CMAKE_CXX_FLAGS "-std=c++11")
+
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")  
     set(DIST_PATH linux)  
 elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")  

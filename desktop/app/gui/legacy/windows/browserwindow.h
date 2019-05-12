@@ -18,7 +18,7 @@
 #ifndef TBROWSERWINDOW_H
 #define TBROWSERWINDOW_H
 
-#include "pch.h"
+#include <QDomElement>
 
 #include "../widgets/linklabel.h"
 #include "../widgets/checkbox.h"

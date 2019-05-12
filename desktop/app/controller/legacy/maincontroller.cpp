@@ -16,10 +16,10 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 #include "maincontroller.h"
-
 #include "preferences.h"
 
 #include <QMessageBox>
+#include <QApplication>
 
 TMainController::TMainController(QObject *parent) :
     TAbstractController(parent)

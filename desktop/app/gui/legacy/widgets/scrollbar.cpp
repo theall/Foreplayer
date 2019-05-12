@@ -17,6 +17,9 @@
  */
 #include "scrollbar.h"
 
+#include <QShowEvent>
+#include <QHideEvent>
+
 QPixmap *TScrollBar::mGroovePixmap = NULL;
 TButtonPixmap *TScrollBar::mHandlePixmap = NULL;
 TButtonPixmap *TScrollBar::mUpPixmap = NULL;

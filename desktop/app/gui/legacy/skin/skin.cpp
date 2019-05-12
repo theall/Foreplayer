@@ -16,9 +16,14 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 #include "skin.h"
-
-#include <QTemporaryFile>
 #include "utils.h"
+
+#include <QIcon>
+#include <QDebug>
+#include <QBitmap>
+#include <QTextStream>
+#include <QDomDocument>
+#include <QTemporaryFile>
 
 #define BUF_SIZE                    16384
 
@@ -228,14 +233,6 @@ QIcon TSkin::readIconFromZip(QString fileName)
     return QIcon(tempFile.fileName());
 }
 
-int fileNameComparer(unzFile file, const char *filename1, const char *filename2)
-{
-    Q_UNUSED(file);
-    QString f1(filename1);
-    QString f2(filename2);
-    return f1.toLower()==f2.toLower()?UNZ_OK:UNZ_ERRNO;
-}
-
 bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)
 {
     if(!mZipfile)
@@ -243,7 +240,7 @@ bool TSkin::readFileFromZip(QString fileName, QByteArray &byteArray)
         mError = tr("Zip file is not opened.");
         return false;
     }
-    int status = unzLocateFile(mZipfile, TEXT(fileName), fileNameComparer);
+    int status = unzLocateFile(mZipfile, TEXT(fileName), false);
     if(status != UNZ_OK)
     {
         mError = tr("Fail to locate file %1").arg(ZIP_SKIN_NAME);

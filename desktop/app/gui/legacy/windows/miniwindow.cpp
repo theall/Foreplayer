@@ -17,6 +17,8 @@
  */
 #include "miniwindow.h"
 
+#include <QMenu>
+
 TMiniWindow::TMiniWindow(QWidget *parent) : TAbstractWindow(parent)
   , mBtnPlay(new TImageButton(this))
   , mBtnPrev(new TImageButton(this))

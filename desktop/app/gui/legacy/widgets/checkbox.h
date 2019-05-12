@@ -18,8 +18,11 @@
 #ifndef TCHECKBOX_H
 #define TCHECKBOX_H
 
-#include "../skin/skin.h"
+#include <QCheckBox>
+#include <QMouseEvent>
+#include <QPaintEvent>
 
+#include "../skin/skin.h"
 #include "buttonimage.h"
 
 class TCheckBox : public QCheckBox, TSkinReader

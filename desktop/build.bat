@@ -28,7 +28,10 @@ pushd %foreplayer_build_path%
 
 echo Generating makefile...
 qmake %project_file% -r
-mingw32-make -f Makefile.Release -j2
+
+set BUILD_CORES=2
+if DEFINED CXX_BUILD_CORES set BUILD_CORES=%CXX_BUILD_CORES%
+mingw32-make -f Makefile.Release -j%BUILD_CORES%
 
 rem check whether exe file is generated successful
 set foreplayer_exe_file=release\foreplayer.exe

@@ -18,7 +18,8 @@
 #ifndef TGUIMANAGER_H
 #define TGUIMANAGER_H
 
-#include "pch.h"
+#include <QString>
+#include <QSystemTrayIcon>
 
 #include "windows/mainwindow.h"
 #include "windows/miniwindow.h"
