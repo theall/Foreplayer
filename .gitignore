@@ -2,9 +2,6 @@
 ui_*.h
 *.zip
 *.qm
-sdk/include/
-sdk/lib/
-sdk/bin/
 dist/win32/plugins/
 dist/win32/playlist/
 *.dll
@@ -14,6 +11,5 @@ dist/win32/skins/
 *.exe
 *.ini
 *.autosave
-cmake
 share
 /desktop/app/version/win32_ver.h
