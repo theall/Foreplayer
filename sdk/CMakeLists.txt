@@ -22,6 +22,7 @@ cmake_minimum_required(VERSION 3.0)
 
 project(foreplayerlib)
 
+set(CMAKE_CUSTOME_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/include)
 set(CMAKE_CUSTOME_LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 add_definitions(-DFOREPLAYER_EXPORT)
@@ -40,7 +41,8 @@ set(FOREPLAYERLIB_VERSION 0.1.0)
 set(LIB_INSTALL_DIR lib${LIB_SUFFIX})
 set(FOREPLAYERLIB_OUTPUT_PATH bin/foreplayer)
 
-find_package(SDL2 REQUIRED)
+find_file(SDL2_HEADER sdl.h HINTS ${CMAKE_CUSTOME_INCLUDE_PATH}/SDL2)
+find_library(SDL2_LIB sdl2 HINTS ${CMAKE_CUSTOME_LIB_PATH})
 
 # The foreplayer library.
 set(source

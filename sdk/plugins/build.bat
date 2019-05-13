@@ -1,2 +1,3 @@
 @echo Building backend plugins...
 @call %~dp0\backend\build.bat
+@echo Built backend plugins ok.
