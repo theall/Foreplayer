@@ -1,5 +1,19 @@
 version: 0.0.0.{build}
 init:
+- cmd: ''
+environment:
+  QTDIR: C:\Qt\5.6.3\mingw49_32
+  MINGW: C:\Qt\Tools\mingw492_32\bin
+  CMAKE: C:\Program Files (x86)\CMake\bin
+  FOREPLAYER_OUTPUT_PATH: c:\foreplayer
+  QTMINGW: C:\Qt\Qt5.6.3\Tools\mingw492_32\bin
+  NSIS: C:\Program Files (x86)\NSIS
+  ZIP: C:\Program Files\7-Zip
+  PYTHON: C:\Python34
+  CXX_BUILD_CORES: 8
+install:
+- cmd: ''
+build_script:
 - cmd: >-
     set OLD_PATH=%PATH%
 
@@ -12,20 +26,6 @@ init:
     set FOREPLAYER_VERSION=%APPVEYOR_BUILD_VERSION%
 
 
-    set PATH=%PATH%;%MSYS%;%MINGW%
-environment:
-  QTDIR: C:\Qt\5.8\mingw53_32\bin
-  MINGW: c:\msys64\mingw32\bin
-  CMAKE: C:\Program Files (x86)\CMake\bin
-  MSYS: c:\msys64\usr\bin
-  FOREPLAYER_OUTPUT_PATH: c:\foreplayer
-  QTMINGW: C:\Qt\Tools\mingw530_32\bin
-  NSIS: C:\Program Files (x86)\NSIS
-  ZIP: C:\Program Files\7-Zip
-  PYTHON: C:\Python34
-
-build_script:
-- cmd: >-
     set PATH=%QTDIR%;%MINGW%;%CMAKE%;%NSIS%;%ZIP%;
 
     call sdk\build.bat
