@@ -1,5 +1,8 @@
-#include <QCoreApplication>
+#include <QDir>
 #include <QTime>
+#include <QThread>
+#include <QFileInfo>
+#include <QCoreApplication>
 
 #include "../../app/core/core.h"
 #include "export/exportfactory.h"

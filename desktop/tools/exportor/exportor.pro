@@ -6,7 +6,8 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-LIBS += -lmp3lame
+INCLUDEPATH += $$PWD/../include
+LIBS += -L$$PWD/../lib -lmp3lame
 
 SOURCES += main.cpp \
     export/abstractexport.cpp \
@@ -31,4 +32,5 @@ CONFIG(debug, debug|release){
     CONFIG += console
     DESTDIR = $(FOREPLAYER_OUTPUT_PATH)
 } else {
+
 }
