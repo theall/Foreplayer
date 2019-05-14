@@ -38,5 +38,8 @@ set exportor_exe_file=release\exportor.exe
 @echo on
 if exist %exportor_exe_file% copy /y %exportor_exe_file% %dist_path%
 
+set mp3lame_lib=%cur_path%..\bin\libmp3lame.dll
+if exist %mp3lame_lib% copy /y %mp3lame_lib% %dist_path%
+
 popd
 @echo on

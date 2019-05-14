@@ -112,6 +112,13 @@ else()
     MESSAGE(FATAL_ERROR "Didn't find sdl2 library!")
 endif()
 
+find_library(SAMPLERATE_LIBRARY samplerate-0 HINTS ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+if(SAMPLERATE_LIBRARY)
+    install(FILES ${SAMPLERATE_LIBRARY} DESTINATION ${DIST_PATH})
+else()
+    MESSAGE(FATAL_ERROR "Didn't find samplerate-0 library!")
+endif()
+
 #install(FILES ${CMAKE_SOURCE_DIR}/include/foreplayer.h DESTINATION include)
 install(TARGETS foreplayer
         RUNTIME DESTINATION ${DIST_PATH}
