@@ -189,7 +189,7 @@ bool parse(const wstring fileName, TMusicInfo* musicInfo)
         int trackParam = (trackCmd<<16) | gameId;
         trackInfo->index = i;
         wchar_t buf[20];
-        swprintf_s(buf, L"#%d", trackCmd);
+        swprintf(buf, L"#%d", trackCmd);
         trackInfo->indexName = buf;
 
         //Save the duration (unit: ms)

@@ -6,6 +6,7 @@ Foreplayer is a video game music/track player.
 # Prerequirements
 
  - [Qt5.6.3](http://download.qt.io/archive/qt/5.6/5.6.3/)
+ - [CMake 3](https://cmake.org/download/)
  
 # Compiling
 On windows:
