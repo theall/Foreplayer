@@ -65,7 +65,7 @@ artifacts:
 deploy:
 - provider: GitHub
   auth_token:
-    secure: h4/lNVACzd5kyzWmLWCE4CpQGiC2iz2zQTV5KX6J9gi679b7ru3bEL+KLY+8VUPa
+    secure: icaJlPkqzI3IUxSqUHgI34BtCpffDWxpp4otuYUAwA1RqMtQvAtdmXjOL9UOdqQI
   artifact: /Foreplayer.*\.(exe|7z|zip)/
   draft: true
   force_update: false
