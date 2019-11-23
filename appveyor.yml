@@ -26,7 +26,7 @@ build_script:
     set FOREPLAYER_VERSION=%APPVEYOR_BUILD_VERSION%
 
 
-    set PATH=%QTDIR%;%MINGW%;%CMAKE%;%NSIS%;%ZIP%;
+    set PATH=%QTDIR%;%MINGW%;%QTMINGW%;%CMAKE%;%NSIS%;%ZIP%;
 
     call sdk\build.bat
 
