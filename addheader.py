@@ -1,5 +1,5 @@
 g_header ="""\
-/*\r\n
+/**\r\n
  * Copyright (C) Bilge Theall, wazcd_1608@qq.com\r\n
  *\r\n
  * This program is free software; you can redistribute it and/or\r\n
@@ -22,7 +22,10 @@ import sys
 
 def main(filename):
     headlines = g_header.split("\r\n")
-    f = open(filename)
+    try:
+        f = open(filename)
+    except:
+        f = open(filename, encoding='UTF-8')
     lines = f.readlines()
     f.close()
     
